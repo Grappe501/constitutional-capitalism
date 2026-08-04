@@ -14,7 +14,9 @@
 
 ## 4. Ending commit
 
-Recorded after commit on `main`.
+`0f24a8b654b62d4ad4ae320e89b574058de28d8e`
+
+Message: `build: establish Constitutional Capitalism declaration`
 
 ## 5. Branch
 
@@ -133,7 +135,8 @@ All **PASSED**. Book-site and build-board: 0 check errors; both builds succeeded
 
 ## 24. GitHub push status
 
-Pending at return-writing; updated after push.
+**SUCCESS** — `71cce43..0f24a8b  main -> main`  
+Remote: https://github.com/Grappe501/constitutional-capitalism
 
 ## 25. Netlify deployment implications
 
