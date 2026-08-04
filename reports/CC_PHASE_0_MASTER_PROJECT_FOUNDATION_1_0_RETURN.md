@@ -22,9 +22,9 @@
 
 ## 6. Ending commit
 
-Recorded after commit as HEAD on `main` (see git log). Expected message:
+`fc73d33efdf074fe170f3b9658c51100dbb112e7`
 
-`build: establish Constitutional Capitalism project foundation`
+Message: `build: establish Constitutional Capitalism project foundation`
 
 ## 7. Exact files created
 
@@ -162,7 +162,16 @@ Overall progress snapshot: **24%** (honest Phase 0 mix; manuscript/legal/source 
 
 ## 19. GitHub push result
 
-Pending at return-writing time; updated after `git push -u origin main`.
+**SUCCESS**
+
+```text
+branch 'main' set up to track 'origin/main'.
+To https://github.com/Grappe501/constitutional-capitalism.git
+ * [new branch]      main -> main
+```
+
+Remote: https://github.com/Grappe501/constitutional-capitalism  
+Default branch: `main`
 
 ## 20. Netlify readiness
 
