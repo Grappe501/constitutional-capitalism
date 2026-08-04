@@ -27,7 +27,7 @@ import {
   <section class="panel" style="margin-top:1rem;">
     <h2>Unresolved factual / research questions</h2>
     <ul class="list-plain">
-      {researchQuestions.questions.map((q) => <li><code>{q.id}</code> — {q.question}</li>)}
+      {researchQuestions.questions.map((q: any) => <li><code>{q.id}</code> — {q.question}</li>)}
     </ul>
   </section>
 
@@ -35,7 +35,7 @@ import {
     <h2>Open project questions</h2>
     <ul class="list-plain">
       {
-        openQuestions.questions.map((q) => (
+        openQuestions.questions.map((q: any) => (
           <li>
             <span class="pill pill--open">{q.importance}</span> {q.question}
           </li>
@@ -47,7 +47,21 @@ import {
   <section class="panel" style="margin-top:1rem;">
     <h2>Counterarguments / objections</h2>
     <ul class="list-plain">
-      {objections.objections.map((o) => <li><code>{o.id}</code> — {o.objection}</li>)}
+      {objections.objections.map((o: any) => <li><code>{o.id}</code> — {o.objection}</li>)}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Claim ledger (unsupported until sourced)</h2>
+    <ul class="list-plain">
+      {
+        (claims.claims || []).map((c: any) => (
+          <li>
+            <code>{c.claim_id}</code> — {c.claim_text}{" "}
+            <span class="pill">{c.support_level}</span>
+          </li>
+        ))
+      }
     </ul>
   </section>
 

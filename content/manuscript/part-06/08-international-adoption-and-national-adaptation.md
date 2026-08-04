@@ -3,12 +3,12 @@ chapter_id: CC-CH-080
 title: "International Adoption and National Adaptation"
 part_id: CC-PART-06
 chapter_number: 73
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
+summary: "Universal principles of enterprise-plus-accountability can travel; statutory design must adapt to constitutional structure and local institutions."
+central_question: "Which principles are universal, and which designs must vary by nation?"
 core_claims: []
-research_requirements: []
+research_requirements: ["Constitutional adaptation across nations"]
 source_ids: []
 word_count_target: 2500
 current_word_count: 0
@@ -18,31 +18,43 @@ last_updated: 2026-08-04
 
 # International Adoption and National Adaptation
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-080` (reorder-safe)
+> **Status:** Outline brief — not a finished chapter.  
+> **Stable ID:** `CC-CH-080`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+Which principles are universal, and which designs must vary by nation?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Universal principles of enterprise-plus-accountability can travel; statutory design must adapt to constitutional structure and local institutions.
 
-## Questions This Chapter Must Eventually Answer
+## Supporting Principles
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+- `CC-PRIN-18`
+
+## Objections to Address
+
+- `CC-OBJ-012`
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Constitutional adaptation across nations
+
+## Factual Claims Requiring Verification
+
+- None registered for this unit yet beyond normative argument.
+
+## Dependencies
+
+- Canonical definition and central belief in `data/project/book_identity.json`
+- Declaration draft: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+- Principles register: `data/project/principles.json`
+
+## Target Reader Outcome
+
+Reader sees CC as framework, not U.S.-only program.
 
 ## Editorial Note
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+Advanced from `concept` to `outline` during Phase 1. Do not mark `draft_complete` until substantive drafting and review standards are met.

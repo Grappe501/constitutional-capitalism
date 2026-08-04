@@ -3,12 +3,12 @@ chapter_id: CC-CH-018
 title: "The Responsibilities of Ownership"
 part_id: CC-PART-02
 chapter_number: 11
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
+summary: "Ownership rights remain; responsibilities include bearing risk, avoiding monopoly abuse, and honoring obligations attached to legal privilege."
+central_question: "What responsibilities accompany ownership and investment?"
 core_claims: []
-research_requirements: []
+research_requirements: ["Corporate charter history; limited liability duties"]
 source_ids: []
 word_count_target: 2500
 current_word_count: 0
@@ -18,31 +18,44 @@ last_updated: 2026-08-04
 
 # The Responsibilities of Ownership
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-018` (reorder-safe)
+> **Status:** Outline brief — not a finished chapter.  
+> **Stable ID:** `CC-CH-018`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+What responsibilities accompany ownership and investment?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Ownership rights remain; responsibilities include bearing risk, avoiding monopoly abuse, and honoring obligations attached to legal privilege.
 
-## Questions This Chapter Must Eventually Answer
+## Supporting Principles
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+- `CC-PRIN-03`
+- `CC-PRIN-08`
+
+## Objections to Address
+
+- `CC-OBJ-011`
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Corporate charter history; limited liability duties
+
+## Factual Claims Requiring Verification
+
+- None registered for this unit yet beyond normative argument.
+
+## Dependencies
+
+- Canonical definition and central belief in `data/project/book_identity.json`
+- Declaration draft: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+- Principles register: `data/project/principles.json`
+
+## Target Reader Outcome
+
+Reader rejects both anti-ownership hostility and privilege without duty.
 
 ## Editorial Note
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+Advanced from `concept` to `outline` during Phase 1. Do not mark `draft_complete` until substantive drafting and review standards are met.

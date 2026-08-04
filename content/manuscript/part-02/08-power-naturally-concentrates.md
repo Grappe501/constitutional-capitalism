@@ -3,12 +3,12 @@ chapter_id: CC-CH-022
 title: "Power Naturally Concentrates"
 part_id: CC-PART-02
 chapter_number: 15
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
-core_claims: []
-research_requirements: []
+summary: "Without rules protecting rivalry and accountability, power gathers in markets as in politics; both public and private concentration threaten liberty."
+central_question: "Why does economic power concentrate, and why does that matter constitutionally?"
+core_claims: ["CC-CLAIM-003"]
+research_requirements: ["Political economy of concentrated wealth"]
 source_ids: []
 word_count_target: 2500
 current_word_count: 0
@@ -18,31 +18,46 @@ last_updated: 2026-08-04
 
 # Power Naturally Concentrates
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-022` (reorder-safe)
+> **Status:** Outline brief — not a finished chapter.  
+> **Stable ID:** `CC-CH-022`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+Why does economic power concentrate, and why does that matter constitutionally?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Without rules protecting rivalry and accountability, power gathers in markets as in politics; both public and private concentration threaten liberty.
 
-## Questions This Chapter Must Eventually Answer
+## Supporting Principles
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+- `CC-PRIN-02`
+- `CC-PRIN-10`
+- `CC-PRIN-20`
+
+## Objections to Address
+
+- `CC-OBJ-009`
+- `CC-OBJ-016`
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Political economy of concentrated wealth
+
+## Factual Claims Requiring Verification
+
+- `CC-CLAIM-003` (see claim ledger)
+
+## Dependencies
+
+- Canonical definition and central belief in `data/project/book_identity.json`
+- Declaration draft: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+- Principles register: `data/project/principles.json`
+
+## Target Reader Outcome
+
+Reader accepts concentration as a structural tendency requiring institutions.
 
 ## Editorial Note
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+Advanced from `concept` to `outline` during Phase 1. Do not mark `draft_complete` until substantive drafting and review standards are met.

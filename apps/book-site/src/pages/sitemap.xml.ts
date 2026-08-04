@@ -3,8 +3,10 @@ import type { APIRoute } from "astro";
 const pages = [
   "/",
   "/definition/",
+  "/declaration/",
   "/why/",
   "/principles/",
+  "/compare/",
   "/book/",
   "/read/",
   "/about/",

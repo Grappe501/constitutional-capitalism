@@ -10,24 +10,28 @@ import {
   deployments,
   decisions,
   risks,
+  principles,
+  objections,
+  terms,
   daysSince,
 } from "../lib/data";
 
 const statusCounts = snapshot.manuscript?.status_counts || {};
-const openDecisions = decisions.decisions.filter((d) => d.status === "open").slice(0, 5);
+const openDecisions = decisions.decisions.filter((d: any) => d.status === "open").slice(0, 5);
 const topRisks = risks.risks
-  .filter((r) => r.severity === "critical" || r.severity === "high")
+  .filter((r: any) => r.severity === "critical" || r.severity === "high")
   .slice(0, 5);
 const days = daysSince(snapshot.generated_at || buildState.last_updated);
-const activeSlice = slices.slices.find((s) => s.slice_id === slices.active_slice);
-const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
+const activeSlice = slices.slices.find((s: any) => s.slice_id === slices.active_slice);
+const phase0 = slices.slices.find((s: any) => s.slice_id === "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0");
+const phase1 = slices.slices.find((s: any) => s.slice_id === "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0");
+const bookDeploy = deployments.applications.find((a: any) => a.id === "book-site");
 ---
 
 <BoardLayout title="Executive Overview" path="/">
   <h1 class="page-title">{identity.title}</h1>
   <p class="page-lede">
-    Master Build Board — command center for architecture, research, manuscript, and deployment.
-    Source of truth remains structured records in <code>data/</code>.
+    Master Build Board. Source of truth remains structured records in <code>data/</code>.
   </p>
 
   <div class="grid grid--stats">
@@ -36,26 +40,30 @@ const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
       <div class="stat__value">{snapshot.overall_percent ?? 0}%</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Current phase</div>
-      <div class="stat__value">{snapshot.current_phase || buildState.phase}</div>
+      <div class="stat__label">Phase 0</div>
+      <div class="stat__value" style="font-size:1.1rem;">{phase0?.status || "—"}</div>
+      <div class="stat__note">Accepted at 71cce43</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Active slice</div>
-      <div class="stat__value" style="font-size:1.05rem;">{activeSlice?.slice_id || "—"}</div>
-      <div class="stat__note">{activeSlice?.title}</div>
+      <div class="stat__label">Phase 1 / active slice</div>
+      <div class="stat__value" style="font-size:1.05rem;">{phase1?.status || activeSlice?.status}</div>
+      <div class="stat__note">{activeSlice?.slice_id}</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Writing focus</div>
-      <div class="stat__value" style="font-size:1.05rem;">{buildState.writing_focus}</div>
+      <div class="stat__label">Declaration</div>
+      <div class="stat__value" style="font-size:1.1rem;">{snapshot.declaration?.status || "—"}</div>
+      <div class="stat__note">{snapshot.declaration?.words ?? 0} words</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Manuscript words</div>
-      <div class="stat__value">{snapshot.manuscript?.current_word_count ?? 0}</div>
-      <div class="stat__note">Target {snapshot.manuscript?.target_word_count ?? 0}</div>
+      <div class="stat__label">Principles / objections / terms</div>
+      <div class="stat__value" style="font-size:1.2rem;">
+        {principles.principles.length}/{objections.objections.length}/{terms.terms.length}
+      </div>
     </div>
     <div class="stat">
-      <div class="stat__label">Days since update</div>
-      <div class="stat__value">{days ?? "—"}</div>
+      <div class="stat__label">Manuscript outlined</div>
+      <div class="stat__value">{snapshot.manuscript?.outlined_units ?? statusCounts.outline ?? 0}</div>
+      <div class="stat__note">of {snapshot.manuscript?.units ?? 0} units</div>
     </div>
   </div>
 
@@ -63,7 +71,7 @@ const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
     <section class="panel">
       <h2>Progress layers</h2>
       <div class="progress-list">
-        {layers.layers.map((l) => <ProgressBar label={l.label} percent={l.percent} />)}
+        {layers.layers.map((l: any) => <ProgressBar label={l.label} percent={l.percent} />)}
       </div>
     </section>
     <div class="grid">
@@ -77,7 +85,9 @@ const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
           <li>Latest snapshot: {snapshot.generated_at || "not generated"}</li>
           <li>Book site: {bookDeploy?.status || "unknown"}</li>
           <li>Board access: public URL unprotected</li>
-          <li>Blockers: {(buildState.blockers || []).length ? buildState.blockers.join(", ") : "none recorded"}</li>
+          <li>Days since update: {days ?? "—"}</li>
+          <li>Research questions: {snapshot.research?.open_questions ?? 0}</li>
+          <li>Claims tracked: {snapshot.research?.claims ?? 0}</li>
         </ul>
       </section>
       <section class="panel">
@@ -91,30 +101,22 @@ const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
 
   <div class="grid grid--stats" style="margin-top:1rem;">
     <section class="panel">
-      <h2>Latest decisions</h2>
+      <h2>Latest open decisions</h2>
       <ul class="list-plain">
-        {openDecisions.map((d) => <li><span class="pill pill--open">{d.status}</span> {d.title}</li>)}
+        {openDecisions.map((d: any) => <li><span class="pill pill--open">{d.status}</span> {d.title}</li>)}
       </ul>
     </section>
     <section class="panel">
       <h2>Top risks</h2>
       <ul class="list-plain">
         {
-          topRisks.map((r) => (
+          topRisks.map((r: any) => (
             <li>
               <span class="pill pill--risk">{r.severity}</span> {r.title}
             </li>
           ))
         }
       </ul>
-    </section>
-    <section class="panel">
-      <h2>Research claims</h2>
-      <p>
-        Registered claims: {snapshot.research?.claims ?? 0}. Sources:
-        {snapshot.research?.sources ?? 0}. Open research questions:
-        {snapshot.research?.open_questions ?? 0}.
-      </p>
     </section>
   </div>
 </BoardLayout>

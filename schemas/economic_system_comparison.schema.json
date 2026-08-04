@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "ownership_model",
+      "role_of_markets",
+      "role_of_government",
+      "private_property",
+      "labor_treatment",
+      "concentrated_power_approach",
+      "accountability_source",
+      "strengths",
+      "risks",
+      "relationship_to_cc",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "pattern": "^CC-SYS-"
+      },
+      "status": {
+        "const": "developing_analytical_tool"
+      }
+    },
+    "additionalProperties": true
+  }
+}

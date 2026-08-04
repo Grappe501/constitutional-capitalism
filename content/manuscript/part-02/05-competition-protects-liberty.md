@@ -3,12 +3,12 @@ chapter_id: CC-CH-019
 title: "Competition Protects Liberty"
 part_id: CC-PART-02
 chapter_number: 12
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
-core_claims: []
-research_requirements: []
+summary: "Competition disperses power, protects choice, strengthens bargaining, and limits political capture; antitrust is part of republican architecture."
+central_question: "Why is competition a constitutional safeguard?"
+core_claims: ["CC-CLAIM-005"]
+research_requirements: ["Antitrust and republican government literature queue"]
 source_ids: []
 word_count_target: 2500
 current_word_count: 0
@@ -18,31 +18,44 @@ last_updated: 2026-08-04
 
 # Competition Protects Liberty
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-019` (reorder-safe)
+> **Status:** Outline brief — not a finished chapter.  
+> **Stable ID:** `CC-CH-019`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+Why is competition a constitutional safeguard?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Competition disperses power, protects choice, strengthens bargaining, and limits political capture; antitrust is part of republican architecture.
 
-## Questions This Chapter Must Eventually Answer
+## Supporting Principles
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+- `CC-PRIN-09`
+- `CC-PRIN-10`
+
+## Objections to Address
+
+- `CC-OBJ-016`
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Antitrust and republican government literature queue
+
+## Factual Claims Requiring Verification
+
+- `CC-CLAIM-005` (see claim ledger)
+
+## Dependencies
+
+- Canonical definition and central belief in `data/project/book_identity.json`
+- Declaration draft: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+- Principles register: `data/project/principles.json`
+
+## Target Reader Outcome
+
+Reader stops seeing competition only as a price-efficiency tool.
 
 ## Editorial Note
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+Advanced from `concept` to `outline` during Phase 1. Do not mark `draft_complete` until substantive drafting and review standards are met.

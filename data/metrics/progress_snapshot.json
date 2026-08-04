@@ -1,28 +1,38 @@
 {
-  "version": "0.1.0",
-  "generated_at": "2026-08-04T18:57:14.696Z",
-  "overall_percent": 24,
-  "current_phase": "phase-0",
-  "active_slice": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
+  "version": "0.2.0",
+  "generated_at": "2026-08-04T19:30:19.367Z",
+  "overall_percent": 34,
+  "current_phase": "phase-1",
+  "active_slice": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0",
+  "declaration": {
+    "exists": true,
+    "words": 5005,
+    "status": "first_draft"
+  },
+  "principles_count": 20,
+  "objections_count": 20,
+  "terms_count": 25,
   "manuscript": {
     "units": 98,
     "status_counts": {
-      "concept": 98
+      "concept": 85,
+      "outline": 13
     },
     "current_word_count": 0,
-    "target_word_count": 235900
+    "target_word_count": 235900,
+    "outlined_units": 13
   },
   "research": {
-    "open_questions": 12,
-    "claims": 0,
+    "open_questions": 24,
+    "claims": 8,
     "sources": 0
   },
   "decisions": {
-    "open": 13,
+    "open": 25,
     "approved": 0
   },
   "risks": {
-    "open": 19,
+    "open": 24,
     "critical": 5
   },
   "milestones": [
@@ -34,7 +44,7 @@
     {
       "id": "MS-002",
       "title": "Canonical definition approved",
-      "status": "not_started"
+      "status": "in_progress"
     },
     {
       "id": "MS-003",
@@ -59,11 +69,12 @@
       "production_url": null
     }
   ],
+  "identity_version": "0.2.0-phase1",
   "layers": [
     {
       "id": "project_governance",
       "label": "Project Governance",
-      "percent": 85,
+      "percent": 90,
       "status": "strong",
       "basis": [
         "phase_0_scaffold",
@@ -89,8 +100,8 @@
     {
       "id": "foundational_philosophy",
       "label": "Foundational Philosophy",
-      "percent": 25,
-      "status": "early",
+      "percent": 70,
+      "status": "underway",
       "basis": [
         "phase_0_scaffold",
         "generated_from_canonical_records"
@@ -115,7 +126,7 @@
     {
       "id": "research_foundation",
       "label": "Research Foundation",
-      "percent": 20,
+      "percent": 27,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -128,8 +139,8 @@
     {
       "id": "source_verification",
       "label": "Source Verification",
-      "percent": 0,
-      "status": "not_started",
+      "percent": 2,
+      "status": "early",
       "basis": [
         "phase_0_scaffold",
         "generated_from_canonical_records"
@@ -141,7 +152,7 @@
     {
       "id": "policy_development",
       "label": "Policy Development",
-      "percent": 10,
+      "percent": 15,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -167,7 +178,7 @@
     {
       "id": "constitutional_analysis",
       "label": "Constitutional Analysis",
-      "percent": 5,
+      "percent": 25,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -193,8 +204,8 @@
     {
       "id": "editorial_review",
       "label": "Editorial Review",
-      "percent": 0,
-      "status": "not_started",
+      "percent": 10,
+      "status": "early",
       "basis": [
         "phase_0_scaffold",
         "generated_from_canonical_records"
@@ -206,7 +217,7 @@
     {
       "id": "public_book_website",
       "label": "Public Book Website",
-      "percent": 40,
+      "percent": 65,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -219,7 +230,7 @@
     {
       "id": "build_board",
       "label": "Build Board",
-      "percent": 45,
+      "percent": 70,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -232,7 +243,7 @@
     {
       "id": "accessibility",
       "label": "Accessibility",
-      "percent": 35,
+      "percent": 40,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -245,7 +256,7 @@
     {
       "id": "publishing_formats",
       "label": "Publishing Formats",
-      "percent": 5,
+      "percent": 8,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -258,7 +269,7 @@
     {
       "id": "free_distribution",
       "label": "Free Distribution",
-      "percent": 15,
+      "percent": 20,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -271,7 +282,7 @@
     {
       "id": "deployment_readiness",
       "label": "Deployment Readiness",
-      "percent": 50,
+      "percent": 55,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -284,7 +295,7 @@
     {
       "id": "public_launch_readiness",
       "label": "Public Launch Readiness",
-      "percent": 5,
+      "percent": 18,
       "status": "early",
       "basis": [
         "phase_0_scaffold",

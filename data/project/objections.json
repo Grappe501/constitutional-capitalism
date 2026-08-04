@@ -1,42 +1,502 @@
-{
-  "version": "0.1.0",
-  "last_updated": "2026-08-04",
-  "note": "Seed objections for adversarial development. Not rebutted yet.",
-  "objections": [
-    {
-      "id": "CC-OBJ-001",
-      "objection": "This is just conventional capitalism with nicer language.",
-      "category": "identity",
-      "status": "open",
-      "response_status": "not_drafted"
-    },
-    {
-      "id": "CC-OBJ-002",
-      "objection": "This is socialism or Marxism in constitutional clothing.",
-      "category": "identity",
-      "status": "open",
-      "response_status": "not_drafted"
-    },
-    {
-      "id": "CC-OBJ-003",
-      "objection": "Corporate taxes are always passed to workers and consumers.",
-      "category": "economics",
-      "status": "open",
-      "response_status": "not_drafted"
-    },
-    {
-      "id": "CC-OBJ-004",
-      "objection": "Any transition will trigger capital flight and investment collapse.",
-      "category": "implementation",
-      "status": "open",
-      "response_status": "not_drafted"
-    },
-    {
-      "id": "CC-OBJ-005",
-      "objection": "Constitutionalizing economic rules will empower courts and bureaucrats excessively.",
-      "category": "constitutional",
-      "status": "open",
-      "response_status": "not_drafted"
-    }
-  ]
-}
+[
+  {
+    "id": "CC-OBJ-001",
+    "title": "Socialism rename",
+    "objection": "This is socialism relabeled: it subordinates private property and markets to political goals.",
+    "why_reasonable": "The proposals emphasize public duties and broad ownership, which can resemble socialist rhetoric.",
+    "provisional_response": "The draft protects property and enterprise while asking how legal privileges and concentrated power fit constitutional self-government.",
+    "evidence_needed": [
+      "Comparative legal analysis",
+      "Property-rights safeguards",
+      "Case studies of mixed economies"
+    ],
+    "unresolved_weaknesses": [
+      "The boundary between public obligation and state control remains unsettled."
+    ],
+    "related_principles": [
+      "CC-PRIN-01",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-005"
+    ],
+    "response_maturity_percent": 10,
+    "status": "open",
+    "category": "ideological"
+  },
+  {
+    "id": "CC-OBJ-002",
+    "title": "Ordinary capitalism branding",
+    "objection": "This is ordinary capitalism with a new brand and no meaningful institutional difference.",
+    "why_reasonable": "Many stated commitments are already claimed by market democracies.",
+    "provisional_response": "The distinction is the constitutional treatment of private domination, broad ownership, and reciprocal market-access duties; it needs operational tests.",
+    "evidence_needed": [
+      "Comparison matrix",
+      "Institutional criteria",
+      "Historical definitions"
+    ],
+    "unresolved_weaknesses": [
+      "Novelty may be rhetorical rather than substantive."
+    ],
+    "related_principles": [
+      "CC-PRIN-02",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-006"
+    ],
+    "response_maturity_percent": 11,
+    "status": "open",
+    "category": "definition"
+  },
+  {
+    "id": "CC-OBJ-003",
+    "title": "Corporations will leave",
+    "objection": "Stronger duties or anti-concentration rules will drive firms and investment elsewhere.",
+    "why_reasonable": "Capital and high-value firms can relocate across jurisdictions.",
+    "provisional_response": "Rules must be predictable, proportionate, and coordinated where possible; the claim requires sector-specific evidence.",
+    "evidence_needed": [
+      "Mobility studies",
+      "Tax incidence research",
+      "International policy comparisons"
+    ],
+    "unresolved_weaknesses": [
+      "Transition costs and jurisdictional competition are real."
+    ],
+    "related_principles": [
+      "CC-PRIN-03",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-015"
+    ],
+    "response_maturity_percent": 12,
+    "status": "open",
+    "category": "economic"
+  },
+  {
+    "id": "CC-OBJ-004",
+    "title": "Consumers will pay the tax",
+    "objection": "Corporate taxes and obligations are ultimately passed to consumers, workers, or investors.",
+    "why_reasonable": "Tax incidence often falls beyond the legal taxpayer.",
+    "provisional_response": "Policy cannot assume firms bear all costs; transparent incidence analysis is a stated requirement.",
+    "evidence_needed": [
+      "Tax incidence evidence",
+      "Distributional models",
+      "Country comparisons"
+    ],
+    "unresolved_weaknesses": [
+      "Some burdens may still fall regressively."
+    ],
+    "related_principles": [
+      "CC-PRIN-04",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-016"
+    ],
+    "response_maturity_percent": 13,
+    "status": "open",
+    "category": "taxation"
+  },
+  {
+    "id": "CC-OBJ-005",
+    "title": "Worker ownership reduces investment",
+    "objection": "Worker ownership and profit sharing reduce outside investment and managerial flexibility.",
+    "why_reasonable": "Investors may discount firms with constrained control or cash distributions.",
+    "provisional_response": "The project should evaluate mechanisms, not mandate a single ownership form, against investment and productivity outcomes.",
+    "evidence_needed": [
+      "Capital-cost studies",
+      "ESOP performance data",
+      "Governance research"
+    ],
+    "unresolved_weaknesses": [
+      "Evidence may vary by firm size and sector."
+    ],
+    "related_principles": [
+      "CC-PRIN-05",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-018"
+    ],
+    "response_maturity_percent": 14,
+    "status": "open",
+    "category": "ownership"
+  },
+  {
+    "id": "CC-OBJ-006",
+    "title": "Government is untrustworthy",
+    "objection": "An untrustworthy government cannot be trusted to regulate private power.",
+    "why_reasonable": "Regulators can be captured, partisan, or incompetent.",
+    "provisional_response": "The principle calls for limited, reviewable, transparent government precisely because public power is also dangerous.",
+    "evidence_needed": [
+      "Administrative-law evidence",
+      "Capture studies",
+      "Institutional design comparisons"
+    ],
+    "unresolved_weaknesses": [
+      "Constitutional language does not itself prevent abuse."
+    ],
+    "related_principles": [
+      "CC-PRIN-06",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-019"
+    ],
+    "response_maturity_percent": 15,
+    "status": "open",
+    "category": "governance"
+  },
+  {
+    "id": "CC-OBJ-007",
+    "title": "It creates bureaucracy",
+    "objection": "The framework will create a costly bureaucracy that burdens small firms and citizens.",
+    "why_reasonable": "New accountability rules can add complexity and compliance expense.",
+    "provisional_response": "Any mechanism must pass necessity, clarity, and proportionality tests and prefer simple enforceable rules.",
+    "evidence_needed": [
+      "Compliance-cost data",
+      "Small-business impact studies",
+      "Implementation designs"
+    ],
+    "unresolved_weaknesses": [
+      "The project has not specified a bureaucracy ceiling."
+    ],
+    "related_principles": [
+      "CC-PRIN-07",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-022"
+    ],
+    "response_maturity_percent": 16,
+    "status": "open",
+    "category": "governance"
+  },
+  {
+    "id": "CC-OBJ-008",
+    "title": "Prosperity cannot be guaranteed",
+    "objection": "No constitution or system can guarantee prosperity, so this promises what politics cannot deliver.",
+    "why_reasonable": "Economic outcomes depend on discovery, culture, and events beyond government control.",
+    "provisional_response": "The declaration should promise conditions for opportunity and accountability, not guaranteed outcomes.",
+    "evidence_needed": [
+      "Language review",
+      "Growth determinants research",
+      "Historical comparisons"
+    ],
+    "unresolved_weaknesses": [
+      "Aspirational language may still be read as a guarantee."
+    ],
+    "related_principles": [
+      "CC-PRIN-08",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-023"
+    ],
+    "response_maturity_percent": 17,
+    "status": "open",
+    "category": "scope"
+  },
+  {
+    "id": "CC-OBJ-009",
+    "title": "It confuses political and economic power",
+    "objection": "Economic success is not political domination, and treating it so confuses different kinds of power.",
+    "why_reasonable": "Wealth can reflect voluntary exchange rather than coercion.",
+    "provisional_response": "The concern is not success itself but durable control over markets, communities, or rule-making without meaningful countervailing power.",
+    "evidence_needed": [
+      "Political-economy research",
+      "Market-structure evidence",
+      "Legal theory"
+    ],
+    "unresolved_weaknesses": [
+      "Defining domination without punishing success is difficult."
+    ],
+    "related_principles": [
+      "CC-PRIN-09",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-025"
+    ],
+    "response_maturity_percent": 18,
+    "status": "open",
+    "category": "theory"
+  },
+  {
+    "id": "CC-OBJ-010",
+    "title": "It harms retirement",
+    "objection": "Anti-concentration or corporate duties could reduce returns for pension funds and retirees.",
+    "why_reasonable": "Retirement savings are deeply invested in public markets.",
+    "provisional_response": "Assessment must include long-term risk, competition, and worker-security effects rather than only short-term valuations.",
+    "evidence_needed": [
+      "Pension-return studies",
+      "Antitrust event studies",
+      "Portfolio analysis"
+    ],
+    "unresolved_weaknesses": [
+      "Transition losses may be concentrated among retirees."
+    ],
+    "related_principles": [
+      "CC-PRIN-10",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-035"
+    ],
+    "response_maturity_percent": 19,
+    "status": "open",
+    "category": "retirement"
+  },
+  {
+    "id": "CC-OBJ-011",
+    "title": "It discourages entrepreneurs",
+    "objection": "New duties and scrutiny will make people less willing to start and grow businesses.",
+    "why_reasonable": "Entrepreneurs value autonomy, upside, and regulatory certainty.",
+    "provisional_response": "Free enterprise is an express principle; duties should target actual power and privilege, not ordinary creation.",
+    "evidence_needed": [
+      "Startup formation data",
+      "Regulatory burden studies",
+      "Entrepreneur surveys"
+    ],
+    "unresolved_weaknesses": [
+      "Line-drawing could burden scaling firms."
+    ],
+    "related_principles": [
+      "CC-PRIN-11",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-073"
+    ],
+    "response_maturity_percent": 20,
+    "status": "open",
+    "category": "entrepreneurship"
+  },
+  {
+    "id": "CC-OBJ-012",
+    "title": "It is nationalism",
+    "objection": "Local resilience and national constitutional language risk economic nationalism.",
+    "why_reasonable": "Place-based policy can slide into protectionism and exclusion.",
+    "provisional_response": "International adaptability and open exchange are compatible with resilience; examples must not become chauvinist prescriptions.",
+    "evidence_needed": [
+      "Trade research",
+      "Comparative policy studies",
+      "Text review"
+    ],
+    "unresolved_weaknesses": [
+      "The rhetoric may still invite nationalist appropriation."
+    ],
+    "related_principles": [
+      "CC-PRIN-12",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-080"
+    ],
+    "response_maturity_percent": 21,
+    "status": "open",
+    "category": "international"
+  },
+  {
+    "id": "CC-OBJ-013",
+    "title": "It is too vague",
+    "objection": "The declaration uses attractive abstractions without actionable commitments.",
+    "why_reasonable": "Broad principles can conceal unresolved policy disagreements.",
+    "provisional_response": "Phase 1 is explicitly foundational; open questions and a claim ledger make incompleteness visible.",
+    "evidence_needed": [
+      "Operational definitions",
+      "Policy mapping",
+      "Reader testing"
+    ],
+    "unresolved_weaknesses": [
+      "Delay in specifying mechanisms may reduce credibility."
+    ],
+    "related_principles": [
+      "CC-PRIN-13",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-091"
+    ],
+    "response_maturity_percent": 22,
+    "status": "open",
+    "category": "scope"
+  },
+  {
+    "id": "CC-OBJ-014",
+    "title": "It is too detailed",
+    "objection": "A constitutional declaration should not embed contested economic program details.",
+    "why_reasonable": "Specificity can make enduring principles partisan and brittle.",
+    "provisional_response": "The framework distinguishes principles from policies and should preserve that boundary.",
+    "evidence_needed": [
+      "Constitutional drafting comparisons",
+      "Versioning rules",
+      "Stakeholder feedback"
+    ],
+    "unresolved_weaknesses": [
+      "The boundary has not yet been consistently applied."
+    ],
+    "related_principles": [
+      "CC-PRIN-14",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-005"
+    ],
+    "response_maturity_percent": 23,
+    "status": "open",
+    "category": "scope"
+  },
+  {
+    "id": "CC-OBJ-015",
+    "title": "Inequality is not inherently unjust",
+    "objection": "Inequality from voluntary exchange is not inherently unjust or unconstitutional.",
+    "why_reasonable": "Differences can reward risk, skill, and innovation.",
+    "provisional_response": "The concern is domination and blocked opportunity, not equality of outcome as such.",
+    "evidence_needed": [
+      "Mobility data",
+      "Power-concentration studies",
+      "Normative legal scholarship"
+    ],
+    "unresolved_weaknesses": [
+      "The project needs a precise account of unjust inequality."
+    ],
+    "related_principles": [
+      "CC-PRIN-15",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-006"
+    ],
+    "response_maturity_percent": 24,
+    "status": "open",
+    "category": "inequality"
+  },
+  {
+    "id": "CC-OBJ-016",
+    "title": "Markets correct concentration",
+    "objection": "Markets naturally correct concentration when firms become inefficient.",
+    "why_reasonable": "Entry, innovation, and consumer choice can displace incumbents.",
+    "provisional_response": "Correction may fail where network effects, political capture, or barriers to entry are durable; interventions must be evidence-led.",
+    "evidence_needed": [
+      "Market-concentration studies",
+      "Platform competition research",
+      "Antitrust outcomes"
+    ],
+    "unresolved_weaknesses": [
+      "Over-intervention can freeze beneficial innovation."
+    ],
+    "related_principles": [
+      "CC-PRIN-16",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-015"
+    ],
+    "response_maturity_percent": 25,
+    "status": "open",
+    "category": "competition"
+  },
+  {
+    "id": "CC-OBJ-017",
+    "title": "Workers prefer wages",
+    "objection": "Many workers prefer stable wages to ownership risk and governance responsibility.",
+    "why_reasonable": "Risk-bearing is not suitable or desired for everyone.",
+    "provisional_response": "Broad ownership should expand options, not require every worker to hold concentrated employer equity.",
+    "evidence_needed": [
+      "Worker preference surveys",
+      "Portfolio-risk research",
+      "Ownership program data"
+    ],
+    "unresolved_weaknesses": [
+      "Optional programs may still exclude lower-income workers."
+    ],
+    "related_principles": [
+      "CC-PRIN-17",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-016"
+    ],
+    "response_maturity_percent": 10,
+    "status": "open",
+    "category": "labor"
+  },
+  {
+    "id": "CC-OBJ-018",
+    "title": "Localism is inefficient",
+    "objection": "Local resilience sacrifices specialization, scale, and lower consumer prices.",
+    "why_reasonable": "Trade and specialization create genuine gains.",
+    "provisional_response": "Resilience is a risk-management value, not self-sufficiency; policy must weigh redundancy against efficiency.",
+    "evidence_needed": [
+      "Supply-chain resilience studies",
+      "Regional economic data",
+      "Price impact models"
+    ],
+    "unresolved_weaknesses": [
+      "The correct balance is context-dependent."
+    ],
+    "related_principles": [
+      "CC-PRIN-18",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-018"
+    ],
+    "response_maturity_percent": 11,
+    "status": "open",
+    "category": "localism"
+  },
+  {
+    "id": "CC-OBJ-019",
+    "title": "Unlimited public obligations",
+    "objection": "Calling property socially responsible creates unlimited public claims on private assets.",
+    "why_reasonable": "Vague public obligations can justify arbitrary taking.",
+    "provisional_response": "Duties must be defined by law, due process, proportionality, and constitutional limits.",
+    "evidence_needed": [
+      "Takings jurisprudence",
+      "Comparative constitutional law",
+      "Legal design analysis"
+    ],
+    "unresolved_weaknesses": [
+      "The framework has not specified a limiting doctrine."
+    ],
+    "related_principles": [
+      "CC-PRIN-19",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-019"
+    ],
+    "response_maturity_percent": 12,
+    "status": "open",
+    "category": "property"
+  },
+  {
+    "id": "CC-OBJ-020",
+    "title": "Constitutional language hides partisanship",
+    "objection": "Constitutional language gives partisan economic preferences undeserved moral authority.",
+    "why_reasonable": "Foundational vocabulary can mask ordinary policy disagreements.",
+    "provisional_response": "The declaration must disclose its normative commitments, preserve dissent, and separate durable principles from contestable policies.",
+    "evidence_needed": [
+      "Textual review",
+      "Cross-ideological critique",
+      "Governance process design"
+    ],
+    "unresolved_weaknesses": [
+      "The project may still encode contestable assumptions."
+    ],
+    "related_principles": [
+      "CC-PRIN-20",
+      "CC-PRIN-20"
+    ],
+    "related_chapters": [
+      "CC-CH-022"
+    ],
+    "response_maturity_percent": 13,
+    "status": "open",
+    "category": "legitimacy"
+  }
+]

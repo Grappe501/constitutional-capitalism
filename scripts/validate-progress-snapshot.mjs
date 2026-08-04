@@ -27,12 +27,15 @@ if (!Array.isArray(snapshot.layers) || snapshot.layers.length < 10) {
 // Honesty checks for Phase 0
 const byId = Object.fromEntries(snapshot.layers.map((l) => [l.id, l]));
 if (byId.manuscript && byId.manuscript.percent > 15) {
-  fail("Manuscript progress falsely inflated for Phase 0 (>15%)");
+  fail("Manuscript progress falsely inflated (>15%) before substantive drafting");
 } else {
   ok("Manuscript progress remains appropriately low");
 }
 if (byId.source_verification && byId.source_verification.percent > 5) {
-  fail("Source verification progress inflated without sources");
+  const claims = JSON.parse(fs.readFileSync(r("data/research/claim_ledger.json"), "utf8"));
+  const hasSources = (claims.claims || []).some((c) => (c.source_ids || []).length > 0);
+  if (!hasSources) fail("Source verification progress inflated without linked sources");
+  else ok("Source verification reflects linked sources");
 } else {
   ok("Source verification progress honest");
 }

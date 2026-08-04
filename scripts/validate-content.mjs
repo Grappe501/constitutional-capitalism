@@ -86,6 +86,31 @@ if (identity.subtitle !== "Restoring Prosperity Through Constitutional Principle
 }
 ok("Book identity title/subtitle intact");
 
+const declaration = r("content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md");
+if (!fs.existsSync(declaration)) {
+  fail("Missing Declaration: content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md");
+} else {
+  const decl = fs.readFileSync(declaration, "utf8");
+  const body = decl.replace(/^---[\s\S]*?---/, "").trim();
+  const words = body.split(/\s+/).filter(Boolean).length;
+  const required = [
+    "## I. Preamble",
+    "## II. The Purpose of an Economy",
+    "## III. What Constitutional Capitalism Preserves",
+    "## IV. What Constitutional Capitalism Changes",
+    "## XV. The Declaration",
+  ];
+  for (const heading of required) {
+    if (!decl.includes(heading)) fail(`Declaration missing section: ${heading}`);
+  }
+  if (words < 5000) fail(`Declaration word count too low for Phase 1 first draft: ${words}`);
+  else ok(`Declaration present (${words} words)`);
+}
+
+const boundary = r("docs/governance/WHAT_CONSTITUTIONAL_CAPITALISM_IS_AND_IS_NOT.md");
+if (!fs.existsSync(boundary)) fail("Missing boundary document");
+else ok("Boundary document present");
+
 console.log("");
 console.log(`Content validation: ${errors.length ? "FAILED" : "PASSED"}`);
 if (warnings.length) console.log(`Warnings: ${warnings.length}`);

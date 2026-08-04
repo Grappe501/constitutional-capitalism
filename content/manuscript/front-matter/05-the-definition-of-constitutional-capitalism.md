@@ -3,12 +3,12 @@ chapter_id: CC-CH-005
 title: "The Definition of Constitutional Capitalism"
 part_id: null
 chapter_number: null
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
-core_claims: []
-research_requirements: []
+summary: "Present the approved definition, explain each clause, and show why free enterprise and constitutional accountability are jointly necessary."
+central_question: "What precisely is Constitutional Capitalism, and how does the canonical definition govern the book?"
+core_claims: ["CC-CLAIM-001"]
+research_requirements: ["Historical definitions of capitalism","Uses of “constitutional” as applied to economic power"]
 source_ids: []
 word_count_target: 1200
 current_word_count: 0
@@ -18,31 +18,48 @@ last_updated: 2026-08-04
 
 # The Definition of Constitutional Capitalism
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-005` (reorder-safe)
+> **Status:** Outline brief — not a finished chapter.  
+> **Stable ID:** `CC-CH-005`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+What precisely is Constitutional Capitalism, and how does the canonical definition govern the book?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Present the approved definition, explain each clause, and show why free enterprise and constitutional accountability are jointly necessary.
 
-## Questions This Chapter Must Eventually Answer
+## Supporting Principles
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+- `CC-PRIN-01`
+- `CC-PRIN-02`
+- `CC-PRIN-04`
+- `CC-PRIN-10`
+
+## Objections to Address
+
+- `CC-OBJ-001`
+- `CC-OBJ-002`
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Historical definitions of capitalism
+- [ ] Uses of “constitutional” as applied to economic power
+
+## Factual Claims Requiring Verification
+
+- `CC-CLAIM-001` (see claim ledger)
+
+## Dependencies
+
+- Canonical definition and central belief in `data/project/book_identity.json`
+- Declaration draft: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+- Principles register: `data/project/principles.json`
+
+## Target Reader Outcome
+
+Reader can state the definition accurately and distinguish it from slogans.
 
 ## Editorial Note
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+Advanced from `concept` to `outline` during Phase 1. Do not mark `draft_complete` until substantive drafting and review standards are met.

@@ -1,13 +1,13 @@
 # Project Validation Report
 
-Generated: 2026-08-04T18:57:15.396Z
+Generated: 2026-08-04T19:30:20.088Z
 
 ## Identity
 
 - **Title:** Constitutional Capitalism
 - **Subtitle:** Restoring Prosperity Through Constitutional Principles
-- **Version:** 0.1.0-phase0
-- **Status:** foundation
+- **Version:** 0.2.0-phase1
+- **Status:** foundational_declaration
 
 ## H:-Only Environment
 
@@ -25,10 +25,63 @@ Run `pnpm env:verify` for the authoritative check. This report does not claim OS
 ## Repository State
 
 - Branch: `main`
-- HEAD: `(unavailable: Command failed: git rev-parse --short HEAD)`
+- HEAD: `71cce43`
 - Git status:
 ```
-(clean)
+M apps/book-site/src/env.d.ts
+ M apps/book-site/src/layouts/BaseLayout.astro
+ M apps/book-site/src/lib/data.ts
+ M apps/book-site/src/pages/definition.astro
+ M apps/book-site/src/pages/index.astro
+ M apps/book-site/src/pages/principles.astro
+ M apps/book-site/src/pages/sitemap.xml.ts
+ M apps/book-site/src/pages/status.astro
+ M apps/build-board/src/lib/data.ts
+ M apps/build-board/src/pages/constitution.astro
+ M apps/build-board/src/pages/index.astro
+ M apps/build-board/src/pages/policy.astro
+ M apps/build-board/src/pages/research.astro
+ M content/manuscript/closing/01-the-declaration-of-constitutional-capitalism.md
+ M content/manuscript/front-matter/05-the-definition-of-constitutional-capitalism.md
+ M content/manuscript/front-matter/06-the-central-proposition.md
+ M content/manuscript/part-02/01-the-purpose-of-an-economy.md
+ M content/manuscript/part-02/02-the-dignity-of-work.md
+ M content/manuscript/part-02/04-the-responsibilities-of-ownership.md
+ M content/manuscript/part-02/05-competition-protects-liberty.md
+ M content/manuscript/part-02/08-power-naturally-concentrates.md
+ M content/manuscript/part-02/09-government-must-be-limited-and-capable.md
+ M content/manuscript/part-02/11-ownership-is-the-foundation-of-economic-freedom.md
+ M content/manuscript/part-03/10-article-ix-the-proper-role-of-government.md
+ M content/manuscript/part-06/01-reform-without-revolution.md
+ M content/manuscript/part-06/08-international-adoption-and-national-adaptation.md
+ M data/decisions/decisions.json
+ M data/generated/progress_snapshot_latest.json
+ M data/manuscript/book_structure.json
+ M data/manuscript/chapters_index.json
+ M data/metrics/build_history.json
+ M data/metrics/progress_layers.json
+ M data/metrics/progress_snapshot.json
+ M data/metrics/project_milestones.json
+ M data/project/book_identity.json
+ M data/project/current_build_state.json
+ M data/project/latest_cursor_return.json
+ M data/project/objections.json
+ M data/project/open_questions.json
+ M data/project/phases.json
+ M data/project/principles.json
+ M data/project/risk_register.json
+ M data/project/slice_queue.json
+ M data/project/terms_to_define.json
+ M data/project/updates.json
+ M data/research/claim_ledger.json
+ M data/research/research_questions.json
+ M docs/handoffs/CURRENT_THREAD_HANDOFF.md
+ M reports/CURRENT_THREAD_HANDOFF.md
+ M reports/PROJECT_VALIDATION_REPORT.md
+ M scripts/generate-progress-snapshot.mjs
+ M scripts/validate-content.mjs
+ M scripts/validate-progress-snapshot.mjs
+ M scripts/validate-project-data.mjs
 ```
 
 ## Schema / Data Validation
@@ -37,8 +90,8 @@ Structured records under `data/` are validated by `pnpm project:validate` and `p
 
 - Architectural units: **98**
 - Numbered chapters: **91**
-- Open decisions: **13**
-- Open risks: **19**
+- Open decisions: **25**
+- Open risks: **24**
 
 ## Application Builds
 
@@ -49,28 +102,28 @@ Structured records under `data/` are validated by `pnpm project:validate` and `p
 
 ## Progress
 
-**Overall:** 24%
+**Overall:** 34%
 
 | Layer | Progress | % | Status |
 |---|---|---|---|
-| Project Governance | █████████████████░░░ | 85% | strong |
+| Project Governance | ██████████████████░░ | 90% | strong |
 | Book Architecture | ██████████████████░░ | 90% | strong |
-| Foundational Philosophy | █████░░░░░░░░░░░░░░░ | 25% | early |
+| Foundational Philosophy | ██████████████░░░░░░ | 70% | underway |
 | Manuscript | █░░░░░░░░░░░░░░░░░░░ | 3% | early |
-| Research Foundation | ████░░░░░░░░░░░░░░░░ | 20% | early |
-| Source Verification | ░░░░░░░░░░░░░░░░░░░░ | 0% | not_started |
-| Policy Development | ██░░░░░░░░░░░░░░░░░░ | 10% | early |
+| Research Foundation | █████░░░░░░░░░░░░░░░ | 27% | early |
+| Source Verification | ░░░░░░░░░░░░░░░░░░░░ | 2% | early |
+| Policy Development | ███░░░░░░░░░░░░░░░░░ | 15% | early |
 | Economic Modeling | ░░░░░░░░░░░░░░░░░░░░ | 0% | not_started |
-| Constitutional Analysis | █░░░░░░░░░░░░░░░░░░░ | 5% | early |
+| Constitutional Analysis | █████░░░░░░░░░░░░░░░ | 25% | early |
 | Legal Review | ░░░░░░░░░░░░░░░░░░░░ | 0% | not_started |
-| Editorial Review | ░░░░░░░░░░░░░░░░░░░░ | 0% | not_started |
-| Public Book Website | ████████░░░░░░░░░░░░ | 40% | underway |
-| Build Board | █████████░░░░░░░░░░░ | 45% | underway |
-| Accessibility | ███████░░░░░░░░░░░░░ | 35% | underway |
-| Publishing Formats | █░░░░░░░░░░░░░░░░░░░ | 5% | early |
-| Free Distribution | ███░░░░░░░░░░░░░░░░░ | 15% | early |
-| Deployment Readiness | ██████████░░░░░░░░░░ | 50% | underway |
-| Public Launch Readiness | █░░░░░░░░░░░░░░░░░░░ | 5% | early |
+| Editorial Review | ██░░░░░░░░░░░░░░░░░░ | 10% | early |
+| Public Book Website | █████████████░░░░░░░ | 65% | underway |
+| Build Board | ██████████████░░░░░░ | 70% | underway |
+| Accessibility | ████████░░░░░░░░░░░░ | 40% | underway |
+| Publishing Formats | ██░░░░░░░░░░░░░░░░░░ | 8% | early |
+| Free Distribution | ████░░░░░░░░░░░░░░░░ | 20% | early |
+| Deployment Readiness | ███████████░░░░░░░░░ | 55% | underway |
+| Public Launch Readiness | ████░░░░░░░░░░░░░░░░ | 18% | early |
 
 ## Deployment Readiness
 

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "title",
+      "statement",
+      "text",
+      "explanation",
+      "protects",
+      "prohibits",
+      "implications",
+      "related_declaration_sections",
+      "related_chapters",
+      "related_policy_pillars",
+      "open_questions",
+      "maturity_percent",
+      "approval_status",
+      "last_updated",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "pattern": "^CC-PRIN-\\d{2}$"
+      },
+      "maturity_percent": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "approval_status": {
+        "const": "draft"
+      }
+    },
+    "additionalProperties": true
+  }
+}

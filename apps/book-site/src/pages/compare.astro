@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { comparison } from "../lib/data";
+---
+
+<BaseLayout
+  title="Compare Systems"
+  path="/compare/"
+  description="Initial philosophical comparison of economic systems with Constitutional Capitalism."
+>
+  <article>
+    <h1 style="font-family:var(--serif);margin-top:0;">Economic system comparison</h1>
+    <p class="status-note">Developing analytical tool — not settled scholarship</p>
+    <p class="lede">
+      This matrix is an initial philosophical comparison. Future research will add primary and
+      scholarly sources. Categories may overlap. Real-world systems are usually hybrids. This page
+      is not a substitute for full historical analysis.
+    </p>
+
+    <div class="table-wrap" style="overflow-x:auto; margin-top:1.5rem;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th scope="col">System</th>
+            <th scope="col">Ownership</th>
+            <th scope="col">Markets</th>
+            <th scope="col">Government</th>
+            <th scope="col">Concentrated power</th>
+            <th scope="col">Relation to CC</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            comparison.systems.map((s: any) => (
+              <tr>
+                <th scope="row">{s.name}</th>
+                <td>{s.ownership_model}</td>
+                <td>{s.role_of_markets}</td>
+                <td>{s.role_of_government}</td>
+                <td>{s.concentrated_power_approach}</td>
+                <td>{s.relationship_to_cc}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:1.5rem;">
+      Full notes: <a href="/resources/">Resources</a> and repository file
+      <code>content/public-resources/economic-system-comparison.md</code>.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  .compare-table th,
+  .compare-table td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 0.65rem 0.5rem;
+    vertical-align: top;
+  }
+  .compare-table thead th {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+</style>

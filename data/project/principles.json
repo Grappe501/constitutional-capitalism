@@ -1,68 +1,755 @@
-{
-  "version": "0.1.0",
-  "last_updated": "2026-08-04",
-  "status": "initial_working_set",
-  "note": "Initial first principles for Phase 0–1 development. Not final doctrine until approved.",
-  "principles": [
-    {
-      "id": "CC-PRIN-01",
-      "text": "Free enterprise creates wealth most effectively when opportunity is broad and competition is real.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-02",
-      "text": "Private property and responsible ownership are foundations of economic freedom.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-03",
-      "text": "The dignity of work is central to a free and self-governing people.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-04",
-      "text": "Markets require rules that protect liberty, competition, and accountability.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-05",
-      "text": "Economic power naturally concentrates and must be constitutionally constrained.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-06",
-      "text": "Local communities are essential economic and civic centers.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-07",
-      "text": "Government must be limited in scope and capable in legitimate functions.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-08",
-      "text": "Prosperity must be broadly rooted, not merely aggregated at the top.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-09",
-      "text": "Corporations are powerful institutions that carry public responsibilities when they exercise public-scale power.",
-      "status": "draft",
-      "related_chapters": []
-    },
-    {
-      "id": "CC-PRIN-10",
-      "text": "Democratic self-government requires that economic power remain accountable to the people.",
-      "status": "draft",
-      "related_chapters": []
-    }
-  ]
-}
+[
+  {
+    "id": "CC-PRIN-01",
+    "title": "Human purpose of economy",
+    "statement": "The economy exists to serve human flourishing, not to make people serve wealth.",
+    "text": "The economy exists to serve human flourishing, not to make people serve wealth.",
+    "explanation": "Economic institutions are judged by whether they expand the conditions for people, families, and communities to live purposeful lives.",
+    "protects": [
+      "human dignity",
+      "family stability",
+      "community life"
+    ],
+    "prohibits": [
+      "treating growth as the sole end",
+      "reducing people to inputs"
+    ],
+    "implications": [
+      "evaluate prosperity beyond aggregate output",
+      "design markets around human agency"
+    ],
+    "related_declaration_sections": [
+      "I. Purpose",
+      "II. First Principles"
+    ],
+    "related_chapters": [
+      "CC-CH-005",
+      "CC-CH-006"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-01"
+    ],
+    "open_questions": [
+      "Which measures of flourishing should guide public assessment?"
+    ],
+    "maturity_percent": 25,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-02",
+    "title": "Constitutional accountability",
+    "statement": "Economic power must be accountable to constitutional rules and democratic institutions.",
+    "text": "Economic power must be accountable to constitutional rules and democratic institutions.",
+    "explanation": "Private authority can shape civic life as profoundly as public authority, so both require lawful limits and remedies.",
+    "protects": [
+      "self-government",
+      "equal citizenship",
+      "rule of law"
+    ],
+    "prohibits": [
+      "power without review",
+      "special exemptions from law"
+    ],
+    "implications": [
+      "apply due process to economic regulation",
+      "require enforceable institutional accountability"
+    ],
+    "related_declaration_sections": [
+      "II. First Principles",
+      "VI. Constitutional Order"
+    ],
+    "related_chapters": [
+      "CC-CH-006",
+      "CC-CH-025"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-01",
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "What constitutional tests apply to private power?"
+    ],
+    "maturity_percent": 30,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-03",
+    "title": "Private property",
+    "statement": "Secure private property is a foundation of liberty, responsibility, and independence.",
+    "text": "Secure private property is a foundation of liberty, responsibility, and independence.",
+    "explanation": "Ownership gives people durable standing to plan, create, exchange, and resist arbitrary control.",
+    "protects": [
+      "personal independence",
+      "investment",
+      "innovation"
+    ],
+    "prohibits": [
+      "arbitrary seizure",
+      "property privileges detached from law"
+    ],
+    "implications": [
+      "protect clear titles",
+      "recognize property’s public legal framework"
+    ],
+    "related_declaration_sections": [
+      "III. Property and Enterprise"
+    ],
+    "related_chapters": [
+      "CC-CH-015",
+      "CC-CH-035"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-02"
+    ],
+    "open_questions": [
+      "How should public obligations of property be defined?"
+    ],
+    "maturity_percent": 35,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-04",
+    "title": "Free enterprise",
+    "statement": "People should be free to start, improve, and exchange through lawful enterprise.",
+    "text": "People should be free to start, improve, and exchange through lawful enterprise.",
+    "explanation": "Open entry and voluntary exchange create opportunity when rules prevent coercion, fraud, and exclusion.",
+    "protects": [
+      "entrepreneurship",
+      "consumer choice",
+      "innovation"
+    ],
+    "prohibits": [
+      "unjustified barriers to entry",
+      "coercive commerce"
+    ],
+    "implications": [
+      "simplify lawful formation",
+      "protect freedom of contract within fair rules"
+    ],
+    "related_declaration_sections": [
+      "III. Property and Enterprise"
+    ],
+    "related_chapters": [
+      "CC-CH-015",
+      "CC-CH-016"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-02"
+    ],
+    "open_questions": [
+      "Which regulations protect rather than burden free enterprise?"
+    ],
+    "maturity_percent": 30,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-05",
+    "title": "Limited and capable government",
+    "statement": "Government must be limited by law and capable of enforcing the common rules of a free economy.",
+    "text": "Government must be limited by law and capable of enforcing the common rules of a free economy.",
+    "explanation": "Weak government invites private domination; unlimited government threatens liberty. Constitutional capacity is neither absence nor control of government.",
+    "protects": [
+      "liberty",
+      "predictable law",
+      "public trust"
+    ],
+    "prohibits": [
+      "arbitrary administration",
+      "government abdication"
+    ],
+    "implications": [
+      "build competent enforcement",
+      "limit discretion with transparent rules"
+    ],
+    "related_declaration_sections": [
+      "VI. Constitutional Order"
+    ],
+    "related_chapters": [
+      "CC-CH-025",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "What capacities are essential at each level of government?"
+    ],
+    "maturity_percent": 35,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-06",
+    "title": "Broad ownership",
+    "statement": "A free society should widen meaningful access to ownership of homes, savings, businesses, and productive assets.",
+    "text": "A free society should widen meaningful access to ownership of homes, savings, businesses, and productive assets.",
+    "explanation": "Dispersed ownership strengthens independence and makes prosperity more durable and broadly shared.",
+    "protects": [
+      "economic independence",
+      "social mobility",
+      "civic pluralism"
+    ],
+    "prohibits": [
+      "permanent ownership exclusion",
+      "policies that entrench asset monopolies"
+    ],
+    "implications": [
+      "support asset-building pathways",
+      "measure ownership concentration"
+    ],
+    "related_declaration_sections": [
+      "III. Property and Enterprise",
+      "IV. Work and Ownership"
+    ],
+    "related_chapters": [
+      "CC-CH-015",
+      "CC-CH-018"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-03"
+    ],
+    "open_questions": [
+      "Which ownership pathways are most scalable?"
+    ],
+    "maturity_percent": 32,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-07",
+    "title": "Dignity of work",
+    "statement": "Work deserves respect, fair terms, and a real path to security and advancement.",
+    "text": "Work deserves respect, fair terms, and a real path to security and advancement.",
+    "explanation": "Workers are citizens and contributors, not merely variable costs.",
+    "protects": [
+      "worker agency",
+      "safe conditions",
+      "economic security"
+    ],
+    "prohibits": [
+      "exploitative conditions",
+      "discrimination in work"
+    ],
+    "implications": [
+      "protect lawful organizing",
+      "link work to advancement"
+    ],
+    "related_declaration_sections": [
+      "IV. Work and Ownership"
+    ],
+    "related_chapters": [
+      "CC-CH-018",
+      "CC-CH-019"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-03"
+    ],
+    "open_questions": [
+      "Which labor standards best preserve flexibility and dignity?"
+    ],
+    "maturity_percent": 28,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-08",
+    "title": "Responsible ownership",
+    "statement": "Ownership carries responsibilities to use power lawfully and avoid foreseeable harm to others.",
+    "text": "Ownership carries responsibilities to use power lawfully and avoid foreseeable harm to others.",
+    "explanation": "Property rights are strengthened, not negated, when owners remain answerable for the effects of their conduct.",
+    "protects": [
+      "trust",
+      "property legitimacy",
+      "community stability"
+    ],
+    "prohibits": [
+      "reckless externalization",
+      "abuse of legal privileges"
+    ],
+    "implications": [
+      "align liability with control",
+      "disclose material harms"
+    ],
+    "related_declaration_sections": [
+      "III. Property and Enterprise"
+    ],
+    "related_chapters": [
+      "CC-CH-015",
+      "CC-CH-022"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-02",
+      "CC-PILLAR-05"
+    ],
+    "open_questions": [
+      "Where should responsibility end and public regulation begin?"
+    ],
+    "maturity_percent": 25,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-09",
+    "title": "Fair competition",
+    "statement": "Markets should reward better service and innovation under rules that keep rivalry real.",
+    "text": "Markets should reward better service and innovation under rules that keep rivalry real.",
+    "explanation": "Competition is a constitutional condition of economic liberty, not a guarantee that every firm succeeds.",
+    "protects": [
+      "consumer welfare",
+      "innovation",
+      "market access"
+    ],
+    "prohibits": [
+      "collusion",
+      "fraud",
+      "exclusionary abuse"
+    ],
+    "implications": [
+      "enforce neutral competition rules",
+      "preserve contestable markets"
+    ],
+    "related_declaration_sections": [
+      "V. Competition and Power"
+    ],
+    "related_chapters": [
+      "CC-CH-022",
+      "CC-CH-023"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-04"
+    ],
+    "open_questions": [
+      "How should competition law account for digital platforms?"
+    ],
+    "maturity_percent": 38,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-10",
+    "title": "Anti-concentration",
+    "statement": "No private institution should accumulate economic power sufficient to dominate markets, communities, or politics.",
+    "text": "No private institution should accumulate economic power sufficient to dominate markets, communities, or politics.",
+    "explanation": "Concentration can turn nominal markets and elections into systems of dependency.",
+    "protects": [
+      "pluralism",
+      "democratic independence",
+      "small enterprise"
+    ],
+    "prohibits": [
+      "monopoly domination",
+      "political capture"
+    ],
+    "implications": [
+      "monitor structural concentration",
+      "use proportionate anti-concentration remedies"
+    ],
+    "related_declaration_sections": [
+      "V. Competition and Power"
+    ],
+    "related_chapters": [
+      "CC-CH-022",
+      "CC-CH-023",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-04"
+    ],
+    "open_questions": [
+      "What thresholds signal domination rather than scale?"
+    ],
+    "maturity_percent": 40,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-11",
+    "title": "Local economic resilience",
+    "statement": "Economic policy should preserve the capacity of communities to sustain livelihoods and adapt to shocks.",
+    "text": "Economic policy should preserve the capacity of communities to sustain livelihoods and adapt to shocks.",
+    "explanation": "Resilient local institutions reduce dependence on distant, unaccountable decision makers.",
+    "protects": [
+      "community continuity",
+      "regional opportunity",
+      "crisis resilience"
+    ],
+    "prohibits": [
+      "avoidable community abandonment",
+      "single-employer dependency"
+    ],
+    "implications": [
+      "consider place effects",
+      "support local enterprise ecosystems"
+    ],
+    "related_declaration_sections": [
+      "VII. Community and Nation"
+    ],
+    "related_chapters": [
+      "CC-CH-023",
+      "CC-CH-080"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-05"
+    ],
+    "open_questions": [
+      "How can local resilience avoid protectionism?"
+    ],
+    "maturity_percent": 22,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-12",
+    "title": "Transparent taxation",
+    "statement": "Taxes should be lawful, understandable, fairly administered, and visible to those who bear them.",
+    "text": "Taxes should be lawful, understandable, fairly administered, and visible to those who bear them.",
+    "explanation": "A constitutional tax system lets citizens evaluate obligations and prevents hidden transfers of power.",
+    "protects": [
+      "democratic consent",
+      "predictability",
+      "equal treatment"
+    ],
+    "prohibits": [
+      "opaque taxation",
+      "selective enforcement"
+    ],
+    "implications": [
+      "publish incidence analysis",
+      "make tax privileges reviewable"
+    ],
+    "related_declaration_sections": [
+      "VI. Constitutional Order"
+    ],
+    "related_chapters": [
+      "CC-CH-025",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "How should destination-based taxation be designed?"
+    ],
+    "maturity_percent": 24,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-13",
+    "title": "Market-access responsibility",
+    "statement": "Access to markets created and protected by law carries duties not to exploit that public framework.",
+    "text": "Access to markets created and protected by law carries duties not to exploit that public framework.",
+    "explanation": "Corporate privileges, infrastructure, and enforceable contracts are public conditions that justify reciprocal responsibility.",
+    "protects": [
+      "fair dealing",
+      "public trust",
+      "market legitimacy"
+    ],
+    "prohibits": [
+      "abuse of charter privileges",
+      "free riding on public institutions"
+    ],
+    "implications": [
+      "review corporate duties",
+      "link privileges to accountability"
+    ],
+    "related_declaration_sections": [
+      "III. Property and Enterprise",
+      "V. Competition and Power"
+    ],
+    "related_chapters": [
+      "CC-CH-016",
+      "CC-CH-022"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-05"
+    ],
+    "open_questions": [
+      "Which duties should be legal versus voluntary?"
+    ],
+    "maturity_percent": 20,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-14",
+    "title": "Intergenerational stewardship",
+    "statement": "Economic choices should preserve opportunity, institutions, and natural resources for those who follow.",
+    "text": "Economic choices should preserve opportunity, institutions, and natural resources for those who follow.",
+    "explanation": "Present consumption must not impose avoidable, unaccountable burdens on future citizens.",
+    "protects": [
+      "future opportunity",
+      "fiscal sustainability",
+      "environmental continuity"
+    ],
+    "prohibits": [
+      "shifting avoidable costs to future generations",
+      "asset stripping"
+    ],
+    "implications": [
+      "use long-term fiscal measures",
+      "protect durable common assets"
+    ],
+    "related_declaration_sections": [
+      "VII. Community and Nation"
+    ],
+    "related_chapters": [
+      "CC-CH-035",
+      "CC-CH-080"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-07"
+    ],
+    "open_questions": [
+      "What representation can future citizens receive?"
+    ],
+    "maturity_percent": 23,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-15",
+    "title": "Technological shared prosperity",
+    "statement": "Technology should expand broadly shared capability and opportunity, not merely concentrate returns and control.",
+    "text": "Technology should expand broadly shared capability and opportunity, not merely concentrate returns and control.",
+    "explanation": "Innovation is welcome, while its institutional gains and disruptions require accountable governance.",
+    "protects": [
+      "innovation",
+      "worker transition",
+      "broad opportunity"
+    ],
+    "prohibits": [
+      "avoidable technological exclusion",
+      "unaccountable algorithmic control"
+    ],
+    "implications": [
+      "support transition pathways",
+      "assess distributional effects of automation"
+    ],
+    "related_declaration_sections": [
+      "VIII. Innovation and Future"
+    ],
+    "related_chapters": [
+      "CC-CH-019",
+      "CC-CH-080"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-07"
+    ],
+    "open_questions": [
+      "What obligations accompany AI-driven displacement?"
+    ],
+    "maturity_percent": 26,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-16",
+    "title": "Due process",
+    "statement": "Economic rules and enforcement must provide notice, neutral procedures, and meaningful appeal.",
+    "text": "Economic rules and enforcement must provide notice, neutral procedures, and meaningful appeal.",
+    "explanation": "Neither public agencies nor powerful private systems should impose opaque, unreviewable deprivation.",
+    "protects": [
+      "legal security",
+      "equal treatment",
+      "freedom from arbitrariness"
+    ],
+    "prohibits": [
+      "retroactive punishment",
+      "secret criteria",
+      "unreviewable sanctions"
+    ],
+    "implications": [
+      "guarantee hearings and appeals",
+      "make enforcement reasons public"
+    ],
+    "related_declaration_sections": [
+      "VI. Constitutional Order"
+    ],
+    "related_chapters": [
+      "CC-CH-025",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "How does due process apply to platforms?"
+    ],
+    "maturity_percent": 35,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-17",
+    "title": "Reform without revolution",
+    "statement": "Needed economic reform should proceed through lawful, peaceful, and institution-building means.",
+    "text": "Needed economic reform should proceed through lawful, peaceful, and institution-building means.",
+    "explanation": "A constitutional project seeks correction of injustice without discarding liberty, continuity, or democratic legitimacy.",
+    "protects": [
+      "social peace",
+      "legal continuity",
+      "practical reform"
+    ],
+    "prohibits": [
+      "political violence",
+      "arbitrary confiscation"
+    ],
+    "implications": [
+      "use transparent transitions",
+      "test and revise reforms democratically"
+    ],
+    "related_declaration_sections": [
+      "IX. Democratic Renewal"
+    ],
+    "related_chapters": [
+      "CC-CH-073",
+      "CC-CH-091"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "When are transition measures sufficiently protective?"
+    ],
+    "maturity_percent": 30,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-18",
+    "title": "International adaptability",
+    "statement": "Constitutional Capitalism offers principles for adaptation, not a single nation’s policy template.",
+    "text": "Constitutional Capitalism offers principles for adaptation, not a single nation’s policy template.",
+    "explanation": "Different legal traditions and development levels require locally legitimate institutional expressions.",
+    "protects": [
+      "national self-government",
+      "cross-border learning",
+      "policy humility"
+    ],
+    "prohibits": [
+      "exporting a fixed blueprint",
+      "ignoring local institutions"
+    ],
+    "implications": [
+      "compare institutions carefully",
+      "distinguish principles from examples"
+    ],
+    "related_declaration_sections": [
+      "X. International Horizon"
+    ],
+    "related_chapters": [
+      "CC-CH-080",
+      "CC-CH-091"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-08"
+    ],
+    "open_questions": [
+      "Which principles are universal and which context-bound?"
+    ],
+    "maturity_percent": 20,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-19",
+    "title": "Democratic accountability",
+    "statement": "Economic policy must remain answerable to citizens through representative, transparent, and lawful institutions.",
+    "text": "Economic policy must remain answerable to citizens through representative, transparent, and lawful institutions.",
+    "explanation": "Democracy requires citizens to be able to understand, contest, and change economic rules.",
+    "protects": [
+      "popular sovereignty",
+      "public deliberation",
+      "legitimacy"
+    ],
+    "prohibits": [
+      "elite insulation",
+      "regulatory capture"
+    ],
+    "implications": [
+      "require disclosure and oversight",
+      "protect civic participation"
+    ],
+    "related_declaration_sections": [
+      "VI. Constitutional Order",
+      "IX. Democratic Renewal"
+    ],
+    "related_chapters": [
+      "CC-CH-025",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "How can accountability be protected from moneyed influence?"
+    ],
+    "maturity_percent": 35,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  },
+  {
+    "id": "CC-PRIN-20",
+    "title": "Separation of economic and political domination",
+    "statement": "A free republic must prevent either wealth from buying governing power or government from arbitrarily commanding private life.",
+    "text": "A free republic must prevent either wealth from buying governing power or government from arbitrarily commanding private life.",
+    "explanation": "The separation is a reciprocal safeguard: economic liberty needs political equality, and political liberty needs independent civil society.",
+    "protects": [
+      "republican self-government",
+      "economic liberty",
+      "civic equality"
+    ],
+    "prohibits": [
+      "plutocracy",
+      "politicized economic coercion"
+    ],
+    "implications": [
+      "limit capture channels",
+      "protect independent ownership and institutions"
+    ],
+    "related_declaration_sections": [
+      "V. Competition and Power",
+      "VI. Constitutional Order"
+    ],
+    "related_chapters": [
+      "CC-CH-022",
+      "CC-CH-023",
+      "CC-CH-073"
+    ],
+    "related_policy_pillars": [
+      "CC-PILLAR-04",
+      "CC-PILLAR-06"
+    ],
+    "open_questions": [
+      "What institutional safeguards best enforce this separation?"
+    ],
+    "maturity_percent": 40,
+    "approval_status": "draft",
+    "last_updated": "2026-08-04",
+    "status": "draft"
+  }
+]

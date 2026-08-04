@@ -1,29 +1,76 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
 import ProgressBar from "../components/ProgressBar.astro";
-import { articles } from "../lib/data";
+import { articles, principles, snapshot, openQuestions } from "../lib/data";
+
+const constitutionalQs = openQuestions.questions.filter(
+  (q: any) =>
+    String(q.domain || "").includes("constitutional") ||
+    String(q.question || "").toLowerCase().includes("constitutional")
+);
 ---
 
 <BoardLayout title="Constitution" path="/constitution/">
   <h1 class="page-title">Economic Constitution</h1>
   <p class="page-lede">
-    Emerging Articles of Constitutional Capitalism. Preamble status: {articles.preamble_status}.
-    Not ratified doctrine.
+    Philosophy precedes enforceable law. The Declaration is the spine; Articles remain emerging architecture.
   </p>
+
+  <section class="panel" style="margin-bottom:1rem;">
+    <h2>Declaration status</h2>
+    <ul class="list-plain">
+      <li>Status: <strong>{snapshot.declaration?.status || "unknown"}</strong></li>
+      <li>Words: {snapshot.declaration?.words ?? 0}</li>
+      <li>File: <code>content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md</code></li>
+      <li>Public page: <code>/declaration/</code> on book-site</li>
+      <li>
+        Distinction: philosophical founding document — not enacted statute and not final ratified doctrine.
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-bottom:1rem;">
+    <h2>Principles ({principles.principles.length})</h2>
+    <div class="progress-list">
+      {
+        principles.principles.map((p: any) => (
+          <ProgressBar
+            label={`${p.id} — ${p.title || p.statement || p.text}`}
+            percent={p.maturity_percent ?? 20}
+          />
+        ))
+      }
+    </div>
+  </section>
+
   <div class="grid">
     {
-      articles.articles.map((a) => (
+      articles.articles.map((a: any) => (
         <section class="panel">
           <h2>
             Article {a.roman}: {a.title}
           </h2>
-          <p><span class="pill">{a.status}</span> <code>{a.article_id}</code></p>
-          <ProgressBar label={`Article ${a.roman}`} percent={a.maturity_percent} />
-          <p style="color:var(--muted);">
-            Related chapters: {(a.related_chapter_ids || []).join(", ") || "—"}
+          <p>
+            <span class="pill">{a.status}</span> <code>{a.article_id}</code>
           </p>
+          <ProgressBar label={`Article ${a.roman}`} percent={a.maturity_percent} />
         </section>
       ))
     }
   </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Unresolved constitutional questions</h2>
+    <ul class="list-plain">
+      {
+        (constitutionalQs.length ? constitutionalQs : openQuestions.questions.slice(0, 8)).map(
+          (q: any) => (
+            <li>
+              <code>{q.id}</code> — {q.question}
+            </li>
+          )
+        )
+      }
+    </ul>
+  </section>
 </BoardLayout>

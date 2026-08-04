@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "last_updated": "2026-08-04",
-  "active_slice": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
+  "active_slice": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -58,6 +58,40 @@
       "validation_commands": [
         "pnpm check:all",
         "pnpm build:all"
+      ],
+      "completion_evidence": [
+        "declaration first draft 5005 words",
+        "20 principles",
+        "20 objections",
+        "terms+comparison",
+        "13 manuscript outlines",
+        "pnpm gate passed"
+      ],
+      "status": "completed",
+      "next_recommended_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
+    },
+    {
+      "slice_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+      "title": "Diagnosis Research Foundation",
+      "purpose": "Begin source-backed diagnosis of wages/productivity, concentration, financialization, monopoly, local decline, corporate power, internet commerce, globalization, and taxation of labor and capital.",
+      "prerequisites": [
+        "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/research/**",
+        "data/research/**",
+        "data/project/**",
+        "apps/**",
+        "reports/**",
+        "docs/**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "sourced research registers",
+        "claim support upgrades"
+      ],
+      "validation_commands": [
+        "pnpm gate"
       ],
       "completion_evidence": [],
       "status": "queued",
