@@ -1,0 +1,23 @@
+# Netlify configuration for the Build Board.
+# Create a SECOND Netlify site from the same GitHub repository.
+# Enable site-level access protection before placing sensitive planning data.
+# This board is NOT private until access controls are configured.
+#
+# Recommended UI settings:
+#   Base directory: apps/build-board
+#   Build command: cd ../.. && corepack enable && pnpm install --frozen-lockfile && pnpm --filter build-board build
+#   Publish directory: dist
+
+[build]
+  base = "apps/build-board"
+  command = "cd ../.. && corepack enable && pnpm install --frozen-lockfile && pnpm --filter build-board build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  ASTRO_TELEMETRY_DISABLED = "1"
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

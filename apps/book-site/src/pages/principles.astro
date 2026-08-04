@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { principles } from "../lib/data";
+---
+
+<BaseLayout
+  title="Principles"
+  path="/principles/"
+  description="Initial first principles of Constitutional Capitalism."
+>
+  <article class="prose">
+    <h1>First principles</h1>
+    <p class="status-note">Initial working set — not final doctrine</p>
+    <p class="lede">
+      These principles guide the book’s architecture. They will be tested, refined, and bounded
+      against capitalism, socialism, Marxism, corporatism, and social democracy in Phase 1.
+    </p>
+    <div class="stack">
+      {
+        principles.principles.map((p) => (
+          <div class="principle">
+            <div class="principle__id">{p.id}</div>
+            <p>{p.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </article>
+</BaseLayout>

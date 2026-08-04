@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "note": "Do not invent production URLs. Update only with confirmed information.",
+  "applications": [
+    {
+      "id": "book-site",
+      "name": "Constitutional Capitalism Book Site",
+      "suggested_netlify_name": "constitutional-capitalism",
+      "path": "apps/book-site",
+      "status": "not_deployed",
+      "production_url": null,
+      "last_build_status": null,
+      "last_known_commit": null,
+      "build_command": "pnpm build",
+      "publish_directory": "dist",
+      "base_directory": "apps/book-site",
+      "netlify_config": "netlify.book.toml",
+      "access": "public",
+      "manual_setup_required": [
+        "Import GitHub repo in Netlify",
+        "Set base directory apps/book-site",
+        "Set build command pnpm build (with pnpm install at root or package-dir strategy)",
+        "Set publish directory dist",
+        "Confirm production branch main",
+        "Record production URL after first deploy"
+      ]
+    },
+    {
+      "id": "build-board",
+      "name": "Constitutional Capitalism Build Board",
+      "suggested_netlify_name": "constitutional-capitalism-board",
+      "path": "apps/build-board",
+      "status": "not_deployed",
+      "production_url": null,
+      "last_build_status": null,
+      "last_known_commit": null,
+      "build_command": "pnpm build",
+      "publish_directory": "dist",
+      "base_directory": "apps/build-board",
+      "netlify_config": "netlify.board.toml",
+      "access": "public_url_unprotected",
+      "access_note": "Board is NOT private until Netlify site-level access protection or another approved auth layer is configured. Do not place sensitive planning information until protected.",
+      "manual_setup_required": [
+        "Import same GitHub repo as second Netlify site",
+        "Set base directory apps/build-board",
+        "Set build command pnpm build",
+        "Set publish directory dist",
+        "Confirm production branch main",
+        "Enable access protection before sensitive content",
+        "Record production URL after first deploy"
+      ]
+    }
+  ]
+}

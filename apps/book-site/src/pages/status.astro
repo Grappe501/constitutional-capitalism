@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { snapshot, publicProgressLayers } from "../lib/data";
+
+const publicLayers = publicProgressLayers();
+---
+
+<BaseLayout
+  title="Status"
+  path="/status/"
+  description="Public-facing progress summary for Constitutional Capitalism."
+>
+  <article>
+    <h1 style="font-family:var(--serif);margin-top:0;">Project status</h1>
+    <p class="status-note">Derived from safe public metrics — not a claim of manuscript completion</p>
+    <p class="lede">
+      Overall completion estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>
+      {snapshot.generated_at ? ` (snapshot ${snapshot.generated_at})` : ""}
+    </p>
+    <div class="progress-list" style="margin-top:1.5rem;">
+      {
+        publicLayers.map((layer) => (
+          <div class="progress-item">
+            <label>
+              <span>{layer.label}</span>
+              <span aria-hidden="true">{layer.percent}%</span>
+            </label>
+            <div
+              class="bar"
+              role="progressbar"
+              aria-label={`${layer.label} progress`}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={layer.percent}
+            >
+              <span style={`width:${layer.percent}%`} />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <p class="lede" style="margin-top:1.5rem;">
+      Manuscript units: {snapshot.manuscript?.units ?? "—"}. Claims registered:
+      {snapshot.research?.claims ?? 0}. Sources registered: {snapshot.research?.sources ?? 0}.
+    </p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "active_slice": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
+  "slices": [
+    {
+      "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
+      "title": "Master Project Foundation",
+      "purpose": "Establish repository, governance, apps, data, validation, and deployment readiness.",
+      "prerequisites": [],
+      "allowed_paths": [
+        "**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "apps/book-site",
+        "apps/build-board",
+        "data/**",
+        "docs/**",
+        "reports/CC_PHASE_0_MASTER_PROJECT_FOUNDATION_1_0_RETURN.md"
+      ],
+      "validation_commands": [
+        "pnpm gate"
+      ],
+      "completion_evidence": [
+        "pnpm gate passed",
+        "both apps build",
+        "schemas validate",
+        "governance docs present",
+        "98 manuscript units"
+      ],
+      "status": "completed",
+      "next_recommended_slice": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0"
+    },
+    {
+      "slice_id": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0",
+      "title": "Foundational Declaration",
+      "purpose": "Define Constitutional Capitalism, first principles, boundaries, declaration, and key terms.",
+      "prerequisites": [
+        "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/**",
+        "data/project/**",
+        "data/manuscript/**",
+        "docs/governance/**",
+        "docs/writing/**",
+        "apps/book-site/**",
+        "apps/build-board/**",
+        "reports/**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "content/declarations/",
+        "updated principles",
+        "definition approval path"
+      ],
+      "validation_commands": [
+        "pnpm check:all",
+        "pnpm build:all"
+      ],
+      "completion_evidence": [],
+      "status": "queued",
+      "next_recommended_slice": null
+    }
+  ]
+}

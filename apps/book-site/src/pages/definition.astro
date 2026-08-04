@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { identity } from "../lib/data";
+---
+
+<BaseLayout
+  title="Definition"
+  path="/definition/"
+  description="The canonical definition of Constitutional Capitalism."
+>
+  <article class="prose">
+    <h1>The Definition of Constitutional Capitalism</h1>
+    <p class="status-note">Canonical working definition — final approval pending</p>
+    <blockquote class="quote">{identity.canonical_definition}</blockquote>
+    <h2>Central belief</h2>
+    <blockquote class="quote">{identity.central_belief}</blockquote>
+    <p>
+      This definition is stored in the project’s canonical record
+      (<code>data/project/book_identity.json</code>) and should not be casually restated in
+      conflicting forms across the project.
+    </p>
+    <p><a href="/principles/">Continue to first principles →</a></p>
+  </article>
+</BaseLayout>

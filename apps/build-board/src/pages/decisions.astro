@@ -1,0 +1,54 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { decisions } from "../lib/data";
+
+const groups = {
+  open: decisions.decisions.filter((d) => d.status === "open"),
+  approved: decisions.decisions.filter((d) => d.status === "approved"),
+  rejected: decisions.decisions.filter((d) => d.status === "rejected"),
+  superseded: decisions.decisions.filter((d) => d.status === "superseded"),
+};
+---
+
+<BoardLayout title="Decisions" path="/decisions/">
+  <h1 class="page-title">Decision log</h1>
+  <p class="page-lede">Stable decision IDs. Licensing and byline remain open pending Steve.</p>
+
+  {
+    Object.entries(groups).map(([status, items]) => (
+      <section class="panel" style="margin-bottom:1rem;">
+        <h2>
+          {status} <span class="pill">{items.length}</span>
+        </h2>
+        {items.length === 0 ? (
+          <p style="color:var(--muted);">None</p>
+        ) : (
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Title</th>
+                  <th>Question</th>
+                  <th>Rationale</th>
+                  <th>Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                {items.map((d) => (
+                  <tr>
+                    <td>{d.decision_id}</td>
+                    <td>{d.title}</td>
+                    <td>{d.question}</td>
+                    <td>{d.rationale || "—"}</td>
+                    <td>{(d.impact || []).join(", ") || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+    ))
+  }
+</BoardLayout>

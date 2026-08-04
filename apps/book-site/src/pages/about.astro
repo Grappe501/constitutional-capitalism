@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { identity } from "../lib/data";
+---
+
+<BaseLayout title="About" path="/about/" description="About the Constitutional Capitalism project.">
+  <article class="prose">
+    <h1>About this project</h1>
+    <p>
+      <strong>{identity.title}</strong> is a long-form public project to develop, research, write,
+      and freely publish an economic philosophy grounded in constitutional principles.
+    </p>
+    <h2>Purpose</h2>
+    <p>
+      To articulate how free enterprise can remain dynamic while economic power stays accountable
+      to a prosperous, free, and self-governing people.
+    </p>
+    <h2>Origin</h2>
+    <p>
+      Project creator (working field): {identity.working_author}. Public byline remains configurable
+      and is an open decision. No final author byline has been locked.
+    </p>
+    <h2>Free distribution</h2>
+    <p>{identity.public_availability_commitment}</p>
+    <h2>Nonpartisan intent</h2>
+    <p>
+      The project aims to argue from principles, evidence, and institutional design — not from
+      party identity. Accidental partisanship is tracked as a project risk.
+    </p>
+    <h2>Evolving status</h2>
+    <p>
+      Current project status: <strong>{identity.project_status}</strong>. Version:
+      {identity.version}.
+    </p>
+  </article>
+</BaseLayout>

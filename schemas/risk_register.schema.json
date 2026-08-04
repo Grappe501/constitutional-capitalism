@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/risk_register.schema.json",
+  "title": "RiskRegister",
+  "type": "object",
+  "required": ["version", "risks"],
+  "properties": {
+    "version": { "type": "string" },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "risk_id",
+          "title",
+          "severity",
+          "likelihood",
+          "mitigation",
+          "owner",
+          "status"
+        ],
+        "properties": {
+          "risk_id": { "type": "string" },
+          "title": { "type": "string" },
+          "severity": { "type": "string" },
+          "likelihood": { "type": "string" },
+          "category": { "type": "string" },
+          "affected_layers": { "type": "array" },
+          "mitigation": { "type": "string" },
+          "owner": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    }
+  }
+}

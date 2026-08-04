@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/decisions.schema.json",
+  "title": "Decisions",
+  "type": "object",
+  "required": ["version", "decisions"],
+  "properties": {
+    "version": { "type": "string" },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["decision_id", "title", "question", "status"],
+        "properties": {
+          "decision_id": { "type": "string" },
+          "title": { "type": "string" },
+          "question": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["open", "approved", "rejected", "superseded"]
+          },
+          "rationale": { "type": "string" },
+          "impact": { "type": "array" },
+          "approved_by": { "type": ["string", "null"] },
+          "decided_at": { "type": ["string", "null"] },
+          "supersedes": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/deployment_status.schema.json",
+  "title": "DeploymentStatus",
+  "type": "object",
+  "required": ["version", "applications"],
+  "properties": {
+    "version": { "type": "string" },
+    "applications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "path",
+          "status",
+          "build_command",
+          "publish_directory",
+          "base_directory"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "path": { "type": "string" },
+          "status": { "type": "string" },
+          "production_url": { "type": ["string", "null"] },
+          "build_command": { "type": "string" },
+          "publish_directory": { "type": "string" },
+          "base_directory": { "type": "string" },
+          "manual_setup_required": { "type": "array" }
+        }
+      }
+    }
+  }
+}

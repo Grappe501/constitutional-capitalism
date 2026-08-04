@@ -1,0 +1,58 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import {
+  researchQuestions,
+  claims,
+  sources,
+  factCheck,
+  expertReview,
+  openQuestions,
+  objections,
+} from "../lib/data";
+---
+
+<BoardLayout title="Research" path="/research/">
+  <h1 class="page-title">Research system</h1>
+  <p class="page-lede">
+    No invented citations. Source registry and claim ledger start empty of fabricated support.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat"><div class="stat__label">Sources</div><div class="stat__value">{sources.sources.length}</div></div>
+    <div class="stat"><div class="stat__label">Claims</div><div class="stat__value">{claims.claims.length}</div></div>
+    <div class="stat"><div class="stat__label">Research questions</div><div class="stat__value">{researchQuestions.questions.length}</div></div>
+    <div class="stat"><div class="stat__label">Fact-check queue</div><div class="stat__value">{factCheck.queue.length}</div></div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Unresolved factual / research questions</h2>
+    <ul class="list-plain">
+      {researchQuestions.questions.map((q) => <li><code>{q.id}</code> — {q.question}</li>)}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Open project questions</h2>
+    <ul class="list-plain">
+      {
+        openQuestions.questions.map((q) => (
+          <li>
+            <span class="pill pill--open">{q.importance}</span> {q.question}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Counterarguments / objections</h2>
+    <ul class="list-plain">
+      {objections.objections.map((o) => <li><code>{o.id}</code> — {o.objection}</li>)}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Queues</h2>
+    <p>Fact-check queue: {factCheck.queue.length}. Expert-review queue: {expertReview.queue.length}.</p>
+  </section>
+</BoardLayout>

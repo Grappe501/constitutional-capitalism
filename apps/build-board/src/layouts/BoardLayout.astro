@@ -1,0 +1,74 @@
+---
+import "../styles/global.css";
+import { identity } from "../lib/data";
+
+interface Props {
+  title: string;
+  description?: string;
+  path?: string;
+}
+
+const {
+  title,
+  description = "Constitutional Capitalism master Build Board — project command center.",
+  path = "/",
+} = Astro.props;
+
+const pageTitle = `${title} | Build Board`;
+const nav = [
+  { href: "/", label: "Overview" },
+  { href: "/master-plan/", label: "Master Plan" },
+  { href: "/book/", label: "Book" },
+  { href: "/research/", label: "Research" },
+  { href: "/policy/", label: "Policy" },
+  { href: "/constitution/", label: "Constitution" },
+  { href: "/decisions/", label: "Decisions" },
+  { href: "/risks/", label: "Risks" },
+  { href: "/deployments/", label: "Deployments" },
+  { href: "/activity/", label: "Activity" },
+  { href: "/handoff/", label: "Handoff" },
+  { href: "/settings/", label: "Settings" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="frame">
+      <aside class="sidebar">
+        <a class="sidebar__brand" href="/">Build Board</a>
+        <p class="sidebar__tag">{identity.title}</p>
+        <p class="notice" style="font-size:0.85rem;">
+          Access protection not yet configured. Treat this URL as public until Netlify
+          site protection is enabled.
+        </p>
+        <nav class="side-nav" aria-label="Board">
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={path === item.href ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </aside>
+      <div class="content">
+        <main id="main">
+          <slot />
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

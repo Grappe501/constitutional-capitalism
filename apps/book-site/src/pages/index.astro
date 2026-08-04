@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { identity, snapshot } from "../lib/data";
+---
+
+<BaseLayout path="/">
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="hero__brand">{identity.title}</h1>
+    <p class="hero__subtitle">{identity.subtitle}</p>
+    <blockquote class="hero__belief">
+      {identity.central_belief}
+    </blockquote>
+    <div class="cta-row">
+      <a class="button button--primary" href="/definition/">Read the definition</a>
+      <a class="button button--ghost" href="/book/">Explore the book</a>
+      <a class="button button--ghost" href="/principles/">Project principles</a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="intro-title">
+    <h2 id="intro-title">A public project to restore prosperity through constitutional principles</h2>
+    <p class="lede">
+      {identity.title} argues that free enterprise remains the most effective engine of wealth
+      creation — and that lasting prosperity depends on broad opportunity, meaningful competition,
+      responsible ownership, and institutions that keep economic power accountable to the people.
+    </p>
+  </section>
+
+  <section class="section stack" aria-labelledby="preserve-title">
+    <h2 id="preserve-title">What this project seeks to preserve</h2>
+    <p class="lede">
+      Free markets, private property, entrepreneurship, innovation, and the constitutional tradition
+      of limited government accountable to a self-governing people.
+    </p>
+  </section>
+
+  <section class="section stack" aria-labelledby="change-title">
+    <h2 id="change-title">What this project seeks to change</h2>
+    <p class="lede">
+      Conditions in which economic power concentrates beyond democratic accountability; tax and
+      market structures that burden ordinary work while rewarding extraction; and the erosion of
+      local economic centers that sustain free communities.
+    </p>
+  </section>
+
+  <section class="section stack" aria-labelledby="free-title">
+    <h2 id="free-title">Why the book will be free</h2>
+    <p class="lede">
+      {identity.public_availability_commitment}
+    </p>
+  </section>
+
+  <section class="section stack" aria-labelledby="status-title">
+    <h2 id="status-title">Current development status</h2>
+    <p class="status-note">Foundation phase — manuscript not yet drafted</p>
+    <p class="lede">
+      Overall public-facing progress estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>.
+      Architecture and governance are underway; chapters remain concept placeholders.
+    </p>
+    <p><a class="button button--solid" href="/status/">View public status</a></p>
+  </section>
+</BaseLayout>

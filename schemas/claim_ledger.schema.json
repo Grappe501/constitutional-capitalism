@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/claim_ledger.schema.json",
+  "title": "ClaimLedger",
+  "type": "object",
+  "required": ["version", "claims"],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "note": { "type": "string" },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "claim_text",
+          "chapter_ids",
+          "claim_type",
+          "importance",
+          "support_level",
+          "source_ids",
+          "fact_check_status",
+          "publication_readiness"
+        ],
+        "properties": {
+          "claim_id": { "type": "string" },
+          "claim_text": { "type": "string" },
+          "chapter_ids": { "type": "array", "items": { "type": "string" } },
+          "claim_type": { "type": "string" },
+          "importance": { "type": "string" },
+          "support_level": { "type": "string" },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "opposing_evidence": { "type": "array" },
+          "uncertainty": { "type": "string" },
+          "fact_check_status": { "type": "string" },
+          "legal_review_requirement": { "type": "boolean" },
+          "publication_readiness": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import ProgressBar from "../components/ProgressBar.astro";
+import { structure, snapshot } from "../lib/data";
+
+const totalTarget = snapshot.manuscript?.target_word_count || 0;
+const totalCurrent = snapshot.manuscript?.current_word_count || 0;
+const wordPercent = totalTarget ? Math.round((totalCurrent / totalTarget) * 100) : 0;
+---
+
+<BoardLayout title="Book" path="/book/">
+  <h1 class="page-title">Book progress</h1>
+  <p class="page-lede">
+    {structure.totals.architectural_units} architectural units ·
+    {structure.totals.numbered_chapters} numbered chapters
+  </p>
+  <div class="panel" style="margin-bottom:1rem;">
+    <ProgressBar label="Manuscript word progress" percent={wordPercent} />
+  </div>
+
+  {
+    structure.parts.map((part) => {
+      const chapters = structure.chapters.filter((c) => c.part_id === part.part_id);
+      return (
+        <section class="panel" style="margin-bottom:1rem;">
+          <h2>
+            Part {part.number} — {part.title}
+          </h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Public</th>
+                  <th>Words</th>
+                  <th>Research</th>
+                  <th>Editorial</th>
+                </tr>
+              </thead>
+              <tbody>
+                {chapters.map((ch) => (
+                  <tr>
+                    <td>{ch.chapter_number}</td>
+                    <td>
+                      {ch.title}
+                      <div style="color:var(--muted);font-size:0.8rem;">{ch.chapter_id}</div>
+                    </td>
+                    <td>{ch.status}</td>
+                    <td>{ch.public_status}</td>
+                    <td>
+                      {ch.current_word_count}/{ch.word_count_target}
+                      <ProgressBar
+                        label={`${ch.title} words`}
+                        percent={
+                          ch.word_count_target
+                            ? Math.round((ch.current_word_count / ch.word_count_target) * 100)
+                            : 0
+                        }
+                      />
+                    </td>
+                    <td>{ch.research_readiness ?? 0}%</td>
+                    <td>{ch.editorial_readiness ?? 0}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      );
+    })
+  }
+</BoardLayout>

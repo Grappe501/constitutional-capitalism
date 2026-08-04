@@ -1,0 +1,73 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { phases, milestones, slices } from "../lib/data";
+---
+
+<BoardLayout title="Master Plan" path="/master-plan/">
+  <h1 class="page-title">Master plan</h1>
+  <p class="page-lede">Phases 0–9 and major deliverables. Current phase: {phases.current_phase}.</p>
+
+  <div class="grid">
+    {
+      phases.phases.map((phase) => (
+        <section class="panel">
+          <h2>
+            Phase {phase.number} — {phase.title}{" "}
+            <span class="pill">{phase.status}</span>
+          </h2>
+          <ul class="list-plain">
+            {phase.deliverables.map((d) => (
+              <li>{d}</li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Milestones</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>Phase</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {
+            milestones.milestones.map((m) => (
+              <tr>
+                <td>{m.id}</td>
+                <td>{m.title}</td>
+                <td>{m.phase}</td>
+                <td>{m.status}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Build slices</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Slice</th><th>Title</th><th>Status</th><th>Next</th></tr>
+        </thead>
+        <tbody>
+          {
+            slices.slices.map((s) => (
+              <tr>
+                <td><code>{s.slice_id}</code></td>
+                <td>{s.title}</td>
+                <td>{s.status}</td>
+                <td><code>{s.next_recommended_slice || "—"}</code></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BoardLayout>

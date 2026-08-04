@@ -1,0 +1,92 @@
+---
+import "../styles/global.css";
+import { identity } from "../lib/data";
+
+interface Props {
+  title?: string;
+  description?: string;
+  path?: string;
+}
+
+const {
+  title,
+  description = "Constitutional Capitalism — Restoring Prosperity Through Constitutional Principles. A free public book project in development.",
+  path = "/",
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} | ${identity.title}`
+  : `${identity.title} | ${identity.subtitle}`;
+const canonical = new URL(path, Astro.site).toString();
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/definition/", label: "Definition" },
+  { href: "/why/", label: "Why" },
+  { href: "/principles/", label: "Principles" },
+  { href: "/book/", label: "Book" },
+  { href: "/read/", label: "Read" },
+  { href: "/status/", label: "Status" },
+  { href: "/about/", label: "About" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={identity.title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">{identity.title}</a>
+        <nav class="nav" aria-label="Primary">
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={path === item.href ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="shell">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>
+          <strong>{identity.title}</strong> — {identity.subtitle}
+        </p>
+        <p>
+          Free public edition intended. Manuscript in development. Licensing decision open.
+          Project status: {identity.project_status}.
+        </p>
+        <p>
+          <a href="/resources/">Resources</a> ·
+          <a href="/updates/">Updates</a> ·
+          <a href="/status/">Status</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import ProgressBar from "../components/ProgressBar.astro";
+import {
+  identity,
+  snapshot,
+  layers,
+  buildState,
+  slices,
+  deployments,
+  decisions,
+  risks,
+  daysSince,
+} from "../lib/data";
+
+const statusCounts = snapshot.manuscript?.status_counts || {};
+const openDecisions = decisions.decisions.filter((d) => d.status === "open").slice(0, 5);
+const topRisks = risks.risks
+  .filter((r) => r.severity === "critical" || r.severity === "high")
+  .slice(0, 5);
+const days = daysSince(snapshot.generated_at || buildState.last_updated);
+const activeSlice = slices.slices.find((s) => s.slice_id === slices.active_slice);
+const bookDeploy = deployments.applications.find((a) => a.id === "book-site");
+---
+
+<BoardLayout title="Executive Overview" path="/">
+  <h1 class="page-title">{identity.title}</h1>
+  <p class="page-lede">
+    Master Build Board — command center for architecture, research, manuscript, and deployment.
+    Source of truth remains structured records in <code>data/</code>.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Overall completion</div>
+      <div class="stat__value">{snapshot.overall_percent ?? 0}%</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Current phase</div>
+      <div class="stat__value">{snapshot.current_phase || buildState.phase}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Active slice</div>
+      <div class="stat__value" style="font-size:1.05rem;">{activeSlice?.slice_id || "—"}</div>
+      <div class="stat__note">{activeSlice?.title}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Writing focus</div>
+      <div class="stat__value" style="font-size:1.05rem;">{buildState.writing_focus}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Manuscript words</div>
+      <div class="stat__value">{snapshot.manuscript?.current_word_count ?? 0}</div>
+      <div class="stat__note">Target {snapshot.manuscript?.target_word_count ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Days since update</div>
+      <div class="stat__value">{days ?? "—"}</div>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:1rem; grid-template-columns: 1.2fr 1fr;">
+    <section class="panel">
+      <h2>Progress layers</h2>
+      <div class="progress-list">
+        {layers.layers.map((l) => <ProgressBar label={l.label} percent={l.percent} />)}
+      </div>
+    </section>
+    <div class="grid">
+      <section class="panel">
+        <h2>Next recommended action</h2>
+        <p>{buildState.next_action}</p>
+      </section>
+      <section class="panel">
+        <h2>Validation / deployment</h2>
+        <ul class="list-plain">
+          <li>Latest snapshot: {snapshot.generated_at || "not generated"}</li>
+          <li>Book site: {bookDeploy?.status || "unknown"}</li>
+          <li>Board access: public URL unprotected</li>
+          <li>Blockers: {(buildState.blockers || []).length ? buildState.blockers.join(", ") : "none recorded"}</li>
+        </ul>
+      </section>
+      <section class="panel">
+        <h2>Chapters by status</h2>
+        <ul class="list-plain">
+          {Object.entries(statusCounts).map(([k, v]) => <li>{k}: {v}</li>)}
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="grid grid--stats" style="margin-top:1rem;">
+    <section class="panel">
+      <h2>Latest decisions</h2>
+      <ul class="list-plain">
+        {openDecisions.map((d) => <li><span class="pill pill--open">{d.status}</span> {d.title}</li>)}
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Top risks</h2>
+      <ul class="list-plain">
+        {
+          topRisks.map((r) => (
+            <li>
+              <span class="pill pill--risk">{r.severity}</span> {r.title}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Research claims</h2>
+      <p>
+        Registered claims: {snapshot.research?.claims ?? 0}. Sources:
+        {snapshot.research?.sources ?? 0}. Open research questions:
+        {snapshot.research?.open_questions ?? 0}.
+      </p>
+    </section>
+  </div>
+</BoardLayout>

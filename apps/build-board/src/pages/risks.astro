@@ -1,0 +1,41 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { risks } from "../lib/data";
+---
+
+<BoardLayout title="Risks" path="/risks/">
+  <h1 class="page-title">Risk register</h1>
+  <p class="page-lede">Economic, legal, constitutional, political, implementation, editorial, and technical risks.</p>
+  <div class="table-wrap panel">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Risk</th>
+          <th>Severity</th>
+          <th>Likelihood</th>
+          <th>Category</th>
+          <th>Mitigation</th>
+          <th>Owner</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          risks.risks.map((r) => (
+            <tr>
+              <td>{r.risk_id}</td>
+              <td>{r.title}</td>
+              <td><span class="pill pill--risk">{r.severity}</span></td>
+              <td>{r.likelihood}</td>
+              <td>{r.category}</td>
+              <td>{r.mitigation}</td>
+              <td>{r.owner}</td>
+              <td>{r.status}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</BoardLayout>

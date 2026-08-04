@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/book_structure.schema.json",
+  "title": "BookStructure",
+  "type": "object",
+  "required": ["version", "parts", "chapters", "totals"],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "note": { "type": "string" },
+    "identity_ref": { "type": "string" },
+    "front_matter": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["part_id", "number", "title", "chapter_ids"],
+        "properties": {
+          "part_id": { "type": "string" },
+          "number": { "type": "integer" },
+          "title": { "type": "string" },
+          "dir": { "type": "string" },
+          "chapter_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "closing": { "type": "object" },
+    "chapters": {
+      "type": "array",
+      "minItems": 90,
+      "items": {
+        "type": "object",
+        "required": [
+          "chapter_id",
+          "title",
+          "status",
+          "public_status",
+          "file",
+          "word_count_target",
+          "current_word_count"
+        ],
+        "properties": {
+          "chapter_id": { "type": "string", "pattern": "^CC-CH-\\d{3}$" },
+          "title": { "type": "string" },
+          "part_id": { "type": ["string", "null"] },
+          "status": {
+            "type": "string",
+            "enum": [
+              "concept",
+              "outline",
+              "researching",
+              "drafting",
+              "draft_complete",
+              "editing",
+              "fact_check",
+              "legal_review",
+              "final",
+              "published"
+            ]
+          },
+          "public_status": {
+            "type": "string",
+            "enum": ["hidden", "preview", "available"]
+          },
+          "file": { "type": "string" },
+          "word_count_target": { "type": "integer", "minimum": 0 },
+          "current_word_count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "totals": { "type": "object" }
+  }
+}

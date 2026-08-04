@@ -1,0 +1,40 @@
+{
+  "name": "constitutional-capitalism",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Canonical operating system for the Constitutional Capitalism book, research, and public education project.",
+  "type": "module",
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "env:enter": "powershell -ExecutionPolicy Bypass -File scripts/enter-cc-environment.ps1",
+    "env:verify": "powershell -ExecutionPolicy Bypass -File scripts/verify-h-drive-only.ps1",
+    "scaffold:data": "node scripts/scaffold-phase0-data.mjs",
+    "book:dev": "pnpm --filter book-site dev",
+    "book:build": "pnpm --filter book-site build",
+    "book:check": "pnpm --filter book-site check",
+    "board:dev": "pnpm --filter build-board dev",
+    "board:build": "pnpm --filter build-board build",
+    "board:check": "pnpm --filter build-board check",
+    "content:validate": "node scripts/validate-content.mjs",
+    "project:validate": "node scripts/validate-project-data.mjs",
+    "progress:generate": "node scripts/generate-progress-snapshot.mjs",
+    "progress:validate": "node scripts/validate-progress-snapshot.mjs",
+    "report:generate": "node scripts/generate-project-report.mjs",
+    "handoff:generate": "node scripts/generate-thread-handoff.mjs",
+    "build:all": "pnpm env:verify && pnpm content:validate && pnpm project:validate && pnpm progress:generate && pnpm progress:validate && pnpm book:build && pnpm board:build",
+    "check:all": "pnpm env:verify && pnpm content:validate && pnpm project:validate && pnpm book:check && pnpm board:check",
+    "gate": "pnpm check:all && pnpm build:all && pnpm report:generate && pnpm handoff:generate"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

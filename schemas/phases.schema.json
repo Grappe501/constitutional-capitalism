@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/phases.schema.json",
+  "title": "ProjectPhases",
+  "type": "object",
+  "required": ["version", "current_phase", "phases"],
+  "properties": {
+    "version": { "type": "string" },
+    "current_phase": { "type": "string" },
+    "phases": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "number", "status", "deliverables"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "number": { "type": "integer" },
+          "status": { "type": "string" },
+          "deliverables": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

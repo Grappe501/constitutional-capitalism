@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { structure, chapterAvailability } from "../lib/data";
+
+const front = structure.chapters.filter((c) => c.section === "front-matter");
+const closing = structure.chapters.filter((c) => c.section === "closing");
+---
+
+<BaseLayout
+  title="Book"
+  path="/book/"
+  description="Full table of contents for Constitutional Capitalism."
+>
+  <article>
+    <h1 style="font-family: var(--serif); margin-top:0;">Book architecture</h1>
+    <p class="status-note">Initial master architecture — titles not permanently fixed</p>
+    <p class="lede">
+      Stable chapter IDs survive reordering. Public pages are not published as finished content
+      until review standards are met.
+    </p>
+
+    <section class="toc-part" aria-labelledby="fm">
+      <h2 id="fm">Front Matter</h2>
+      <ol class="toc-list">
+        {
+          front.map((ch) => {
+            const avail = chapterAvailability(ch.status, ch.public_status);
+            return (
+              <li>
+                <span aria-hidden="true">—</span>
+                <span>{ch.title}</span>
+                <span class:list={["badge", avail === "available" && "badge--available", avail === "in_development" && "badge--dev"]}>
+                  {avail.replace("_", " ")}
+                </span>
+              </li>
+            );
+          })
+        }
+      </ol>
+    </section>
+
+    {
+      structure.parts.map((part) => {
+        const chapters = structure.chapters.filter((c) => c.part_id === part.part_id);
+        return (
+          <section class="toc-part" aria-labelledby={part.part_id}>
+            <h2 id={part.part_id}>
+              Part {part.number} — {part.title}
+            </h2>
+            <ol class="toc-list">
+              {chapters.map((ch) => {
+                const avail = chapterAvailability(ch.status, ch.public_status);
+                return (
+                  <li>
+                    <span>{ch.chapter_number}</span>
+                    <span>{ch.title}</span>
+                    <span
+                      class:list={[
+                        "badge",
+                        avail === "available" && "badge--available",
+                        avail === "in_development" && "badge--dev",
+                      ]}
+                    >
+                      {avail.replace("_", " ")}
+                    </span>
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+        );
+      })
+    }
+
+    <section class="toc-part" aria-labelledby="close">
+      <h2 id="close">Closing Materials</h2>
+      <ol class="toc-list">
+        {
+          closing.map((ch) => {
+            const avail = chapterAvailability(ch.status, ch.public_status);
+            return (
+              <li>
+                <span>{ch.chapter_number}</span>
+                <span>{ch.title}</span>
+                <span class:list={["badge", avail === "available" && "badge--available", avail === "in_development" && "badge--dev"]}>
+                  {avail.replace("_", " ")}
+                </span>
+              </li>
+            );
+          })
+        }
+      </ol>
+    </section>
+  </article>
+</BaseLayout>
