@@ -1,7 +1,7 @@
 {
-  "version": "0.2.5",
+  "version": "0.2.6",
   "last_updated": "2026-08-04",
-  "note": "Phase 2 priority sources plus democracy, justice/safety, and resource-sovereignty sources (EPA scope 1/2, GHGRP, data-center CAA resources; DOI mining/Tribal; USDA/FSA soil carbon; DOE community solar). No fabricated findings. Secondary sources labeled.",
+  "note": "Phase 2 priority sources plus democracy, justice/safety, resource-sovereignty, and community food security sources (ERS food security; EPA wasted food; AMS LAMP/local food). No fabricated findings. Secondary sources labeled.",
   "sources": [
     {
       "source_id": "CC-SRC-001",
@@ -862,6 +862,98 @@
       "ideological_or_institutional_considerations": "DOE Solar Energy Technologies Office / CMEI framing.",
       "verification_status": "url_verified",
       "notes": "Supports community-owned energy design agenda; microgrids listed as options without claiming this page defines them."
+    },
+    {
+      "source_id": "CC-SRC-037",
+      "title": "Food Security in the U.S.",
+      "authors": ["USDA Economic Research Service"],
+      "year": 2026,
+      "url": "https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s",
+      "source_type": "federal_research_topic",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "food_security",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "ERS topic hub defining food security as access by all people at all times to enough food for an active, healthy life. Leads federal research and measurement on household and community food security; also points to Food Access Research Atlas and Food Environment Atlas tools.",
+      "key_findings": [
+        "USDA ERS defines food security as access by all people at all times to enough food for an active, healthy life",
+        "ERS maintains research and measurement programs for U.S. household food security"
+      ],
+      "limitations": "Definition and research hub, not a local production-capacity statute; do not invent food-insecurity percentages from this architecture slice.",
+      "ideological_or_institutional_considerations": "USDA ERS research program.",
+      "verification_status": "url_verified",
+      "notes": "Anchors food-as-infrastructure doctrine in the federal access definition while extending to place-based capacity."
+    },
+    {
+      "source_id": "CC-SRC-038",
+      "title": "Wasted Food Scale",
+      "authors": ["U.S. Environmental Protection Agency"],
+      "year": 2026,
+      "url": "https://www.epa.gov/sustainable-management-food/food-recovery-hierarchy",
+      "source_type": "federal_guidance",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "food_waste",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "EPA Wasted Food Scale (update to the earlier Food Recovery Hierarchy) prioritizes pathways that prevent wasted food, donate, and upcycle before less preferred disposal pathways. Emphasizes that wasting food wastes the resources used to produce it; donation keeps food for its intended purpose of nourishing people.",
+      "key_findings": [
+        "Preventing wasted food is the most preferred pathway",
+        "Donation and upcycling are preferred over landfill, incineration, and drain disposal"
+      ],
+      "limitations": "Environmental ranking of management pathways; does not alone set economic/social design for a State Food Exchange; scale notes it does not consider economic and social factors.",
+      "ideological_or_institutional_considerations": "EPA sustainable management of food framing.",
+      "verification_status": "url_verified",
+      "notes": "Supports surplus-to-people/reserves design without inventing national waste rates as locked doctrine claims."
+    },
+    {
+      "source_id": "CC-SRC-039",
+      "title": "Local Agriculture Market Program (LAMP)",
+      "authors": ["USDA Agricultural Marketing Service"],
+      "year": 2024,
+      "url": "https://www.ams.usda.gov/services/grants/lamp",
+      "source_type": "federal_program",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "food_local_regional_markets",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "USDA AMS Local Agriculture Market Program supports development, coordination, and expansion of direct producer-to-consumer marketing; local and regional food markets and enterprises; and value-added agricultural products. Goals include regional food economies, value-added production strategies, mid-tier value chains, and producer income/opportunity.",
+      "key_findings": [
+        "Federal program family explicitly supports local/regional markets and value-added agricultural products",
+        "Program goals include connecting regional food economies and strengthening mid-tier value chains"
+      ],
+      "limitations": "Grant/program umbrella, not evidence that any specific State Food Exchange design works; outcomes vary by project.",
+      "ideological_or_institutional_considerations": "USDA AMS grant-program framing.",
+      "verification_status": "url_verified",
+      "notes": "Supports Regional Food Network, value-local, and local/regional market infrastructure design agendas."
+    },
+    {
+      "source_id": "CC-SRC-040",
+      "title": "Local Food Research and Development",
+      "authors": ["USDA Agricultural Marketing Service, Local and Regional Foods Division"],
+      "year": 2024,
+      "url": "https://www.ams.usda.gov/services/local-regional",
+      "source_type": "federal_program_page",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "food_local_regional_markets",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "AMS Local and Regional Foods Division page describing purpose-driven research and tools supporting farmers and food businesses in local and regional markets — market access, finance bottlenecks, and scale-appropriate tools. Useful as institutional context for Community Food Dashboard measurement design.",
+      "key_findings": [
+        "USDA AMS maintains a dedicated local/regional foods research and development function",
+        "Agency framing emphasizes actionable insights for farmers accessing high-value domestic markets"
+      ],
+      "limitations": "Program overview, not a sourced baseline of local-food share for any state or county.",
+      "ideological_or_institutional_considerations": "USDA AMS research/service framing.",
+      "verification_status": "url_verified",
+      "notes": "Supports dashboard/research agenda posture without inventing local-sourcing metrics."
     }
   ]
 }

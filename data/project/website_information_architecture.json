@@ -154,7 +154,32 @@
       "note": "Healthcare content is seeded under Essential Systems (CC-WEB-ESSENTIAL); keep this node for navigation compatibility until branch pages mature."
     },
     { "node_id": "CC-WEB-HOUSING", "title": "Housing", "status": "proposed" },
-    { "node_id": "CC-WEB-AGRICULTURE", "title": "Agriculture", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-AGRICULTURE",
+      "title": "Community Food Security System",
+      "status": "seeded",
+      "decision_id": "CC-DEC-063",
+      "related_decision_ids": ["CC-DEC-062"],
+      "path": "/food-security/",
+      "central_promise": "Every community should have the capacity to provide a meaningful share of its essential food needs while remaining connected to broader markets that increase resilience and economic opportunity. Food is critical infrastructure — local resilience first, trade as complementary strength, never export-only staples.",
+      "branches": [
+        "Food as critical infrastructure",
+        "Regional Food Network",
+        "State Food Exchange",
+        "Local value-added production",
+        "Local First, Export Second",
+        "Fresh Food Networks",
+        "Food waste reduction",
+        "Community Food Reserves",
+        "Regenerative agriculture payments",
+        "Food education",
+        "Community Food Dashboard",
+        "Nutrition and affordability",
+        "Family farms and mid-scale producers",
+        "Trade and supply resilience"
+      ],
+      "framework_file": "data/project/community_food_security_framework.json"
+    },
     { "node_id": "CC-WEB-TECH_AI", "title": "Technology & AI", "status": "proposed" },
     {
       "node_id": "CC-WEB-ENVIRONMENT",

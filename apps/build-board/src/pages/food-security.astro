@@ -1,0 +1,125 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine, claims, baselineStatus } from "../lib/data";
+import food from "../../../../data/project/community_food_security_framework.json";
+
+const doctrineIds = ["CC-DEV-058", "CC-DEV-059", "CC-DEV-060", "CC-DEV-061"];
+const claimIds = [
+  "CC-CLAIM-064",
+  "CC-CLAIM-065",
+  "CC-CLAIM-066",
+  "CC-CLAIM-067",
+  "CC-CLAIM-068",
+];
+const doctrine = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const foodClaims = (claims.claims || []).filter((c: any) =>
+  claimIds.includes(c.claim_id)
+);
+---
+
+<BoardLayout title="Food Security" path="/food-security/">
+  <h1 class="page-title">{food.domain_title}</h1>
+  <p class="page-lede">
+    Broad testable system — not one locked food-network structure.
+    Framework: <code>data/project/community_food_security_framework.json</code> v{food.version}.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Doctrine items</div>
+      <div class="stat__value">{doctrine.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Food Test Qs</div>
+      <div class="stat__value">{food.community_food_security_test?.questions?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Branches</div>
+      <div class="stat__value">{food.website_branches?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Claims</div>
+      <div class="stat__value">{foodClaims.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Baseline (all)</div>
+      <div class="stat__value" style="font-size:1.1rem;">
+        {baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Central principle</h2>
+    <p>{food.central_principle?.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Rejected principle</h2>
+    <p>“{food.rejected_principle?.text}”</p>
+    <p class="muted">{food.rejected_principle?.reason}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Local First, Export Second</h2>
+    <p>{food.local_first_export_second?.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Design agendas</h2>
+    <ul class="list-plain">
+      <li>Regional Food Network — {food.regional_food_network?.status}</li>
+      <li>State Food Exchange — {food.state_food_exchange?.status}</li>
+      <li>Community Food Reserves — {food.community_food_reserves?.status}</li>
+      <li>Community Food Dashboard — {food.community_food_dashboard?.status}</li>
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Developing doctrine</h2>
+    <ul class="list-plain">
+      {
+        doctrine.map((d: any) => (
+          <li>
+            <code>{d.doctrine_id}</code> — {d.statement}{" "}
+            <span class="pill">{d.maturity}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Claims</h2>
+    <ul class="list-plain">
+      {
+        foodClaims.map((c: any) => (
+          <li>
+            <code>{c.claim_id}</code> — {c.public_wording || c.claim_text}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Community Food Security Test</h2>
+    <ol>
+      {(food.community_food_security_test?.questions || []).map((q: any) => (
+        <li>
+          <code>{q.question_id}</code> — {q.text}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Research status</h2>
+    <p>
+      Phase: {food.research_status?.phase}. Policy drafting:{" "}
+      {food.research_status?.policy_drafting}. Next: {food.research_status?.next}
+    </p>
+  </section>
+</BoardLayout>
