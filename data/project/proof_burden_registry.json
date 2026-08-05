@@ -131,21 +131,27 @@
       "priority_evidence_packets": [
         {
           "packet_id": "PP-FF-01",
-          "title": "Local procurement research",
+          "title": "Local Food and Family Farm Prosperity",
           "priority": 1,
-          "status": "scaffold_only",
+          "status": "executive_draft",
+          "verdict": "Qualifies",
+          "confidence": "Low",
           "topics": [
             "Farm-to-school outcomes",
             "Hospital procurement",
             "Institutional purchasing",
-            "Regional food systems"
+            "Regional food systems",
+            "Family farm structure"
           ],
-          "dossier_path": "content/research/proof-packets/family-farm/01-local-procurement.md",
+          "dossier_path": "research/proof_packets/PP-FF-01/PP-FF-01.md",
+          "legacy_scaffold_path": "content/research/proof-packets/family-farm/01-local-procurement.md",
           "related_claim_ids": [
+            "CC-CLAIM-124",
             "CC-CLAIM-125",
             "CC-CLAIM-126"
           ],
           "related_source_ids": [
+            "CC-SRC-073",
             "CC-SRC-074",
             "CC-SRC-039"
           ]
@@ -331,10 +337,29 @@
       "architecture": "frozen",
       "governance": "established",
       "research_methodology": "defined",
-      "next_milestone": "execution — PP-FF-01"
+      "next_milestone": "PP-02 / register contrary literature — PP-FF-01 executive draft Qualifies"
     },
     "momentum_from": "steadily converting architectural hypotheses into well-supported, well-qualified, or honestly contradicted conclusions — not adding more concepts",
     "strongest_symmetry_expression": "Evidence decides refinement."
+  },
+  "proof_packet_operating_system": {
+    "slice_id": "CC-PHASE-2.1-PROOF-PACKET-OPERATING-SYSTEM-1.0",
+    "methodology_version": "1.0",
+    "root": "research/proof_packets",
+    "validate_command": "npm run proofpacket:validate",
+    "summary": "Canonical Proof Packet OS: template, JSON contract, verdict/confidence standards, lifecycle, checklist, methodology audit, registry, automated validation. No doctrine changes.",
+    "recorded_as_update": "UPD-067"
+  },
+  "pp_ff_01_execution": {
+    "slice_id": "CC-PHASE-2.2-PP-FF-01-FAMILY-FARM-PROSPERITY-RESEARCH-1.0",
+    "packet_id": "PP-FF-01",
+    "verdict": "Qualifies",
+    "confidence": "Low",
+    "review_status": "Draft",
+    "summary": "First executive packet. Descriptive federal baselines support narrow predicates; full HYP-116 comparative prosperity claim unproven. Architecture and principles unchanged. OS validated in practice.",
+    "recorded_as_update": "UPD-068",
+    "doctrine_changed": false,
+    "architecture_changed": false
   },
   "constitutional_case_law_model": {
     "anchored_at_decision_id": "CC-DEC-102",
@@ -380,11 +405,11 @@
       "arbiter": "evidence, not author preference, determines whether refinement is warranted"
     },
     "methodology_note": "At this stage, the methodology is as important as the conclusions it produces. PP-FF-01 validates the packet method as much as local-procurement substance.",
-    "next_major_achievement": "Successful completion of PP-FF-01 as the first fully executed demonstration that the research methodology works in practice — validating the framework every subsequent packet will follow.",
+    "next_major_achievement": "PP-FF-01 executive draft delivered (Qualifies, Low confidence). Next: register contrary literature; Internal/Methodology Review; PP-02 using the same OS.",
     "priority_work": [
-      "Burt Step 2 — establish the proof workflow as the project's operating rhythm",
-      "PP-FF-01 — first full proof packet; validate methodology",
-      "Use PP-FF-01 as the template for every subsequent evidence dossier"
+      "Register contrary external literature before raising PP-FF-01 confidence",
+      "Advance PP-FF-01 through Internal / Methodology Review",
+      "Execute next proof packet (PP-FF-02 or scoped PP-02) on the same OS"
     ]
   },
   "honesty_rules": [

@@ -7,8 +7,8 @@
   "mission_lock": "data/project/phase2_mission_lock.json",
   "decision_id": "CC-DEC-093",
   "forensic_status_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-05.md",
-  "writing_focus": "RESEARCH EXECUTION — evidence hierarchy Level 1 first (UPD-066). LCL planning closed. What have we learned?",
-  "next_action": "LCL CONCEPTUAL PLANNING CLOSED (UPD-066). Burt Step 2; execute PP-FF-01. Community studies later.",
+  "writing_focus": "RESEARCH EXECUTION — Proof Packet OS live (UPD-067); PP-FF-01 executive draft Qualifies (UPD-068). What have we learned?",
+  "next_action": "Register contrary literature for PP-FF-01; Internal/Methodology Review; next packet on same OS. LCL field work later.",
   "living_identity": "data/project/living_project_identity.json",
   "organizing_artifacts": [
     "data/project/systems_map.json",
@@ -57,7 +57,7 @@
   "reviewers_charter": {
     "update_id": "UPD-058",
     "file": "data/project/reviewers_charter.json",
-    "rule": "Deferred. Do not invite public review platform. Execute PP-FF-01 first.",
+    "rule": "Deferred. Do not invite public review platform. Advance PP-FF-01 review; deepen contrary corpus.",
     "refined_as_update": "UPD-060",
     "registration": "disciplinary + optional analytical framework — not political identity",
     "panel_purpose": "stress-test complementary domains — not consensus",
@@ -67,12 +67,25 @@
     "update_id": "UPD-059",
     "role": "Founding Steward",
     "holder": "Steve",
-    "rule": "Beta end-to-end steward of governance system. Role simulation before external invite. PP-FF-01 remains next research milestone."
+    "rule": "Beta end-to-end steward of governance system. Role simulation before external invite. PP-FF-01 draft executed; deepen evidence before external invite."
   },
   "meta_governance_complete": {
     "update_id": "UPD-061",
     "status": "complete",
-    "next": "PP-FF-01"
+    "next": "PP-FF-01 review + contrary literature; then next packet"
+  },
+  "proof_packet_os": {
+    "update_id": "UPD-067",
+    "methodology_version": "1.0",
+    "root": "research/proof_packets",
+    "validate": "npm run proofpacket:validate"
+  },
+  "pp_ff_01": {
+    "update_id": "UPD-068",
+    "status": "Draft",
+    "verdict": "Qualifies",
+    "confidence": "Low",
+    "path": "research/proof_packets/PP-FF-01/"
   },
   "living_community_laboratories": {
     "update_id": "UPD-066",
@@ -80,7 +93,7 @@
       "CC-CASE-LEWISVILLE-001",
       "CC-CASE-ROSEBUD-001"
     ],
-    "rule": "Comparative LCL methodology captured. Scaffolds only. PP-FF-01 remains next execution milestone.",
+    "rule": "Comparative LCL methodology captured. Scaffolds only. Level-1 packets executing first.",
     "research_streams": [
       "LCL-STREAM-RURAL-PROSPERITY-CAMPUS",
       "LCL-STREAM-DISTRIBUTED-PROSPERITY-NETWORK"

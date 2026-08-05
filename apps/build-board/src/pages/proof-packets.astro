@@ -1,0 +1,86 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import registry from "../../../../research/proof_packets/registry/proof_packet_registry.json";
+import burden from "../../../../data/project/proof_burden_registry.json";
+
+const packets = registry.packets || [];
+const osNote = burden.proof_packet_operating_system || {};
+const ff01 = burden.pp_ff_01_execution || {};
+---
+
+<BoardLayout title="Proof Packets" path="/proof-packets/">
+  <h1 class="page-title">Proof Packet Operating System</h1>
+  <p class="page-lede">
+    Methodology {registry.methodology_version}. Research execution only — no new doctrine.
+    Root: <code>{registry.root}</code>. Validate with <code>npm run proofpacket:validate</code>.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{packets.length}</div>
+      <div class="stat__label">Registered packets</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{registry.methodology_version}</div>
+      <div class="stat__label">Methodology version</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{packets.filter((p) => p.verdict === "Qualifies").length}</div>
+      <div class="stat__label">Qualifies</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{packets.filter((p) => p.status === "Complete").length}</div>
+      <div class="stat__label">Complete</div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Operating system</h2>
+    <p class="muted">
+      {osNote.summary || "Canonical lifecycle, contracts, verdict/confidence standards, and automated validation under research/proof_packets/."}
+    </p>
+    <ul class="list-plain">
+      <li>Verdicts: Supports · Qualifies · Contradicts (+ lifecycle statuses)</li>
+      <li>Confidence: evidence quality, never certainty</li>
+      <li>Scholarship rule: CC-DEC-102 — packets must be able to disprove doctrine</li>
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Packet registry</h2>
+    <ul class="list-plain">
+      {
+        packets.map((p) => (
+          <li>
+            <code>{p.packet_id}</code> — {p.title}
+            <span class="chip">{p.status}</span>
+            <span class="chip">{p.verdict}</span>
+            <span class="muted"> confidence {p.confidence} · {p.completion_percent}%</span>
+            {p.reviewer ? <span class="muted"> · reviewer {p.reviewer}</span> : null}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    ff01.packet_id ? (
+      <section class="panel" style="margin-top:1rem;">
+        <h2>PP-FF-01 execution status</h2>
+        <p>
+          <code>{ff01.packet_id}</code> — verdict <strong>{ff01.verdict}</strong>, confidence{" "}
+          {ff01.confidence}. {ff01.summary}
+        </p>
+        <p class="muted">Doctrine unchanged. Architecture unchanged. Principles frozen at 47.</p>
+      </section>
+    ) : null
+  }
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Related</h2>
+    <p>
+      <a href="/proof-incubator/">Proof Incubator</a> · <a href="/research/">Research</a> ·{" "}
+      <a href="/family-farm-prosperity/">Family Farms</a> · <a href="/phase-2-gate/">Phase 2 Gate</a>
+    </p>
+  </section>
+</BoardLayout>

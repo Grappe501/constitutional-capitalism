@@ -1,8 +1,11 @@
-# PP-FF-01 — Local procurement research
+# PP-FF-01 — Local procurement research (LEGACY SCAFFOLD)
+
+> **Superseded for execution** by `research/proof_packets/PP-FF-01/PP-FF-01.md` (OS 1.0 executive draft). Keep this file as historical scaffold only.
 
 **Principle:** CC-PRIN-44  
 **Hypothesis:** HYP-116  
-**Packet status:** `scaffold_only`  
+**Packet status:** `superseded_by_executive_draft`  
+**Executive path:** `research/proof_packets/PP-FF-01/`  
 **Proof Burden categories served:** Historical precedent · Economic literature · Pilot programs  
 **Scholarship rule:** CC-DEC-102 — this packet must be capable of **disproving** the doctrine it examines.
 
