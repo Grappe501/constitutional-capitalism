@@ -1,12 +1,20 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-094",
-  "related_decision_ids": ["CC-DEC-093", "CC-DEC-075", "CC-DEC-089"],
+  "related_decision_ids": [
+    "CC-DEC-093",
+    "CC-DEC-075",
+    "CC-DEC-089",
+    "CC-DEC-102",
+    "CC-DEC-094",
+    "CC-DEC-101",
+    "CC-DEC-100"
+  ],
   "status": "governing",
   "title": "Proof Burden Standard",
   "purpose": "Separate architectural completion from evidentiary completion. Every principle carries an explicit burden of proof so readers and contributors can see remaining work.",
-  "operating_rule": "Advance the proof before expanding the architecture.",
+  "operating_rule": "Advance the proof before expanding the architecture. Every packet must be capable of disproving the doctrine it examines.",
   "bottleneck_note": "Creativity is no longer the binding constraint. Scholarship — verifying, modeling, testing, and documenting — is the bottleneck. That is a good sign.",
   "standard": {
     "applies_to": "Every principle intended for eventual manuscript or public-policy use",
@@ -15,7 +23,13 @@
       "evidence_complete_means": "Proof categories are closed or honestly scoped; Proof Packets graduated through historical, economic, and constitutional/legal layers",
       "rule": "Architectural completion never implies evidentiary completion"
     },
-    "default_category_statuses": ["open", "partial", "supported", "disputed", "not_applicable"],
+    "default_category_statuses": [
+      "open",
+      "partial",
+      "supported",
+      "disputed",
+      "not_applicable"
+    ],
     "required_proof_categories": [
       "historical_precedent",
       "economic_literature",
@@ -32,7 +46,9 @@
       "Illustrative design parameters (e.g., purchase floors, multipliers) remain hypotheses until modeled",
       "No invented citations, statistics, or modeled results",
       "Phase 2 remains PARTIAL until canonical acceptance checklist passes",
-      "Architecture Candidate / Hypothesis Card principles are not publishable until Proof Packets graduate"
+      "Architecture Candidate / Hypothesis Card principles are not publishable until Proof Packets graduate",
+      "Packets seek contrary evidence and non-adoption conditions, not confirmation alone",
+      "Architecture revision recommended by evidence is governance success, not project failure"
     ]
   },
   "principles": [
@@ -125,8 +141,14 @@
             "Regional food systems"
           ],
           "dossier_path": "content/research/proof-packets/family-farm/01-local-procurement.md",
-          "related_claim_ids": ["CC-CLAIM-125", "CC-CLAIM-126"],
-          "related_source_ids": ["CC-SRC-074", "CC-SRC-039"]
+          "related_claim_ids": [
+            "CC-CLAIM-125",
+            "CC-CLAIM-126"
+          ],
+          "related_source_ids": [
+            "CC-SRC-074",
+            "CC-SRC-039"
+          ]
         },
         {
           "packet_id": "PP-FF-02",
@@ -156,8 +178,12 @@
             "Cold storage economics"
           ],
           "dossier_path": "content/research/proof-packets/family-farm/03-regional-food-infrastructure.md",
-          "related_claim_ids": ["CC-CLAIM-126"],
-          "related_source_ids": ["CC-SRC-039"]
+          "related_claim_ids": [
+            "CC-CLAIM-126"
+          ],
+          "related_source_ids": [
+            "CC-SRC-039"
+          ]
         },
         {
           "packet_id": "PP-FF-04",
@@ -171,8 +197,12 @@
             "Cooperative ownership transitions"
           ],
           "dossier_path": "content/research/proof-packets/family-farm/04-family-farm-succession.md",
-          "related_claim_ids": ["CC-CLAIM-124"],
-          "related_source_ids": ["CC-SRC-073"]
+          "related_claim_ids": [
+            "CC-CLAIM-124"
+          ],
+          "related_source_ids": [
+            "CC-SRC-073"
+          ]
         },
         {
           "packet_id": "PP-FF-05",
@@ -198,5 +228,49 @@
     "next_exemplar": "CC-PRIN-44",
     "then": "Apply the same Proof Burden table to other Architecture Candidate principles (CC-PRIN-45–47) without minting new principles",
     "burt_priority_unchanged": "Burt steps 2→3/4→5→6→8→9→10 remain the Phase 2 spine; PRIN-44 packets are the incubator scholarship track for HYP-116"
-  }
+  },
+  "research_program_mode": {
+    "decision_id": "CC-DEC-102",
+    "from": "design effort",
+    "to": "research program",
+    "success_question": "Can we prove what we already have?"
+  },
+  "falsifiability_standard": {
+    "decision_id": "CC-DEC-102",
+    "title": "Proof Packet Falsifiability Standard",
+    "kind": "scholarship_operating_rule",
+    "not_architecture": true,
+    "text": "Every proof packet should be capable of disproving the doctrine it examines.",
+    "purpose": "Honestly answer whether the evidence supports, qualifies, or contradicts the architectural hypothesis — not to prove the architecture correct.",
+    "each_packet_must_actively_seek": [
+      "the strongest supporting evidence",
+      "the strongest contrary evidence",
+      "implementation failures",
+      "boundary conditions",
+      "unintended consequences",
+      "alternative explanations",
+      "the conditions under which the proposal should not be adopted"
+    ],
+    "revision_rule": "If a packet concludes that part of the architecture should be revised, that is not a failure of Constitutional Capitalism — it is evidence that the governance process is working as intended.",
+    "constitutional_symmetry_expression": {
+      "architecture": "stable enough to resist casual change",
+      "scholarship": "rigorous enough to challenge any assumption",
+      "arbiter": "evidence, not author preference, determines whether refinement is warranted"
+    },
+    "methodology_note": "At this stage, the methodology is as important as the conclusions it produces. PP-FF-01 validates the packet method as much as local-procurement substance.",
+    "priority_work": [
+      "Burt Step 2 — establish the proof workflow as the project's operating rhythm",
+      "PP-FF-01 — first full proof packet; validate methodology",
+      "Use PP-FF-01 as the template for every subsequent evidence dossier"
+    ]
+  },
+  "honesty_rules": [
+    "Three baseline claims do not constitute a comprehensive evidentiary dossier",
+    "Illustrative design parameters (e.g., purchase floors, multipliers) remain hypotheses until modeled",
+    "No invented citations, statistics, or modeled results",
+    "Phase 2 remains PARTIAL until canonical acceptance checklist passes",
+    "Architecture Candidate / Hypothesis Card principles are not publishable until Proof Packets graduate",
+    "Packets seek contrary evidence and non-adoption conditions, not confirmation alone",
+    "Architecture revision recommended by evidence is governance success, not project failure"
+  ]
 }

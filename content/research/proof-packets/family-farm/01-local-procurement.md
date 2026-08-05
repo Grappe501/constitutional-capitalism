@@ -4,6 +4,23 @@
 **Hypothesis:** HYP-116  
 **Packet status:** `scaffold_only`  
 **Proof Burden categories served:** Historical precedent · Economic literature · Pilot programs  
+**Scholarship rule:** CC-DEC-102 — this packet must be capable of **disproving** the doctrine it examines.
+
+## Falsifiability standard
+
+Purpose is not to prove Local Food / Family Farm Prosperity correct. Purpose is to answer whether evidence **supports, qualifies, or contradicts** the architectural hypothesis.
+
+Actively seek:
+
+- strongest supporting evidence
+- strongest contrary evidence
+- implementation failures
+- boundary conditions
+- unintended consequences
+- alternative explanations
+- conditions under which the proposal should **not** be adopted
+
+Evidence-driven revision of architecture is governance success, not project failure. This packet also validates the **proof methodology** for later dossiers.
 
 ## Proposition (working)
 
@@ -45,11 +62,16 @@ _Architecture only: Local Food Purchasing Guarantees are a design agenda requiri
 ## Research checklist
 
 - [ ] Literature review (outcomes, costs, barriers)
-- [ ] Contrary evidence table
+- [ ] Strongest supporting evidence table
+- [ ] Strongest contrary evidence table
+- [ ] Implementation failures / non-adoption conditions
+- [ ] Boundary conditions and unintended consequences
+- [ ] Alternative explanations
 - [ ] Hospital / non-school institutional studies
 - [ ] Regional case comparisons
 - [ ] Link to fiscal modeling open questions
 - [ ] Three-layer review ready
+- [ ] Explicit verdict: supports / qualifies / contradicts (with confidence)
 
 ## Confidence
 

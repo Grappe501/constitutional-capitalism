@@ -2,7 +2,8 @@
 
 **Principle:** CC-PRIN-44  
 **Hypothesis:** HYP-116  
-**Packet status:** `scaffold_only`  
+**Packet status:** `scaffold_only`
+**Scholarship rule:** CC-DEC-102 — packet must be capable of disproving the doctrine it examines (supports / qualifies / contradicts).  
 **Proof Burden categories served:** Pilot programs · Economic literature · Administrative feasibility  
 
 ## Proposition (working)
