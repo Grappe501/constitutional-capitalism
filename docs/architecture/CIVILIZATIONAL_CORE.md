@@ -130,6 +130,20 @@ Technology doctrine (`CC-DEV-021`): **Automate the routine. Elevate the human** 
 
 Full architecture: `docs/architecture/PUBLIC_SERVICE_AND_21ST_CENTURY_STATE.md` and `data/project/government_capacity_framework.json`. Website domain: **Public Service and the 21st-Century State** (`CC-WEB-GOVERNMENT`). Research precedes detailed administrative policy (`CC-DEC-047`, `CC-DEC-048`, `CC-DEC-049`).
 
+## Transparency spine (developing)
+
+Fourth institutional spine — not absolute disclosure.
+
+Guiding principle (`CC-DEV-030`):
+
+> In a constitutional republic, government does not own public information. It holds public information in trust for the people, subject only to those limited protections necessary to preserve constitutional rights, legitimate privacy, public safety, and national security.
+
+Openness presumption (`CC-DEV-029`): presumed open; government generally bears the burden of explaining withholding.
+
+Named instrument (`CC-DEV-031`): **The People's Ledger** — a constitutional accountability ledger (design agenda).
+
+Full architecture: `docs/architecture/CONSTITUTIONAL_TRANSPARENCY_AND_PEOPLES_LEDGER.md` and `data/project/transparency_framework.json`. Website domain: **Constitutional Transparency and the People's Ledger** (`CC-WEB-TRANSPARENCY`). Research precedes detailed open-records policy (`CC-DEC-050`, `CC-DEC-051`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

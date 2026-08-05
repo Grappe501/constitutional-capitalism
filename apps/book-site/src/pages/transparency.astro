@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import trn from "../../../../data/project/transparency_framework.json";
+
+const testQs = trn.constitutional_transparency_test?.questions || [];
+const branches = trn.website_branches || [];
+const ledgerPath = trn.peoples_ledger?.example_path || [];
+const exceptions = trn.legitimate_exceptions_examples || [];
+const dashboardFields = trn.public_dashboard?.fields || [];
+const budgetReqs = trn.open_budgets?.requirements || [];
+---
+
+<BaseLayout
+  title="Constitutional Transparency and the People's Ledger"
+  path="/transparency/"
+  description="Government holds public information in trust — presumed open unless justified protections apply."
+>
+  <article class="prose">
+    <h1>{trn.domain_title}</h1>
+    <p class="status-note">
+      Fourth institutional spine — architecture before detailed open-records law.
+      Not absolute disclosure. No invented FOIA or portal statistics.
+    </p>
+    <p class="lede">{trn.role_in_philosophy}</p>
+
+    <h2>Guiding principle</h2>
+    <blockquote>
+      <p>{trn.guiding_principle.text}</p>
+    </blockquote>
+
+    <h2>Openness presumption</h2>
+    <blockquote>
+      <p>{trn.openness_presumption.text}</p>
+    </blockquote>
+    <p>{trn.exceptions_rule}</p>
+    <p>Examples of legitimate protections:</p>
+    <ul>
+      {exceptions.map((e: string) => (
+        <li>{e}</li>
+      ))}
+    </ul>
+
+    <h2>The People's Ledger</h2>
+    <p>
+      <strong>{trn.peoples_ledger.name}</strong> — {trn.peoples_ledger.definition}
+    </p>
+    <p class="status-note">{trn.peoples_ledger.note}</p>
+    <p>Example trail:</p>
+    <ol>
+      {ledgerPath.map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+
+    <h2>Digital trail</h2>
+    <p>{trn.digital_trail_doctrine.summary}</p>
+    <p>The public should be able to see:</p>
+    <ul>
+      {trn.digital_trail_doctrine.public_should_see.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ul>
+
+    <h2>Public dashboard</h2>
+    <p>{trn.public_dashboard.summary}</p>
+    <ul>
+      {dashboardFields.map((f: string) => (
+        <li>{f}</li>
+      ))}
+    </ul>
+    <p>{trn.public_dashboard.rule}</p>
+
+    <h2>Traceable law, procurement, budgets</h2>
+    <p>{trn.traceable_law.summary}</p>
+    <p>{trn.public_procurement.summary}</p>
+    <p>{trn.open_budgets.rule}</p>
+    <ul>
+      {budgetReqs.map((r: string) => (
+        <li>{r}</li>
+      ))}
+    </ul>
+
+    <h2>Equal access and identity</h2>
+    <p>{trn.public_access_equity.summary}</p>
+    <p>
+      <strong>Routine records:</strong> {trn.identity_and_access_balance.routine_public_records}
+    </p>
+    <p>
+      <strong>Sensitive / high-volume:</strong>{" "}
+      {trn.identity_and_access_balance.sensitive_or_high_volume}
+    </p>
+    <p>
+      <strong>Changes to records:</strong>{" "}
+      {trn.identity_and_access_balance.actions_that_change_records}
+    </p>
+
+    <h2>AI for transparency</h2>
+    <p>{trn.ai_for_transparency.rule}</p>
+    <p>
+      Role: {trn.ai_for_transparency.role}. Official records remain the source of truth.
+    </p>
+
+    <h2>Constitutional Transparency Test</h2>
+    <p>{trn.constitutional_transparency_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>{b.title}</li>
+      ))}
+    </ul>
+
+    <p>
+      See also <a href="/public-service/">Public Service</a>, <a href="/democracy/">Democracy</a>,
+      <a href="/justice/">Justice</a>, and <a href="/where-we-are/">Where we are</a>.
+    </p>
+  </article>
+</BaseLayout>

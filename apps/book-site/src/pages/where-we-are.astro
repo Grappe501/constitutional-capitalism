@@ -14,6 +14,7 @@ const priorityDomains = [
   { id: "justice", title: "Justice, safety, and restoration", claim: "CC-CLAIM-021", note: "Developing doctrine seeded; sourced diagnosis queued for Phase 2.1 — no invented justice statistics." },
   { id: "democracy", title: "Democracy and distributed government", claim: "CC-CLAIM-025", note: "Second constitutional spine: Rucho holding sourced; anti-entrenchment doctrine seeded; quantitative competition metrics pending." },
   { id: "public-service", title: "Public service and institutional modernization", claim: "CC-CLAIM-031", note: "Invisible—but never unaccountable; reduce friction while improving service — architecture seeded; no invented board counts." },
+  { id: "transparency", title: "Constitutional transparency and the People's Ledger", claim: "CC-CLAIM-034", note: "Presumed open with justified exceptions; People's Ledger is a design agenda — no invented FOIA or portal statistics." },
 ];
 
 const byId = Object.fromEntries((claims.claims || []).map((c: any) => [c.claim_id, c]));
@@ -65,8 +66,9 @@ const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || 
       <li>Not a partisan scorecard. Contrary evidence is preserved in the claim ledger.</li>
     </ul>
     <p>
-      See <a href="/justice/">Justice</a>, <a href="/democracy/">Democracy</a>, and
-      <a href="/public-service/">Public Service</a> for developing doctrine spines,
+      See <a href="/justice/">Justice</a>, <a href="/democracy/">Democracy</a>,
+      <a href="/public-service/">Public Service</a>, and
+      <a href="/transparency/">Transparency</a> for developing doctrine spines,
       <a href="/evidence/">Evidence</a> for claim support levels, and
       <a href="/metrics/">Metrics</a> for baseline completeness.
     </p>

@@ -22,6 +22,8 @@ Priority domains now have sourced first-pass briefs: wealth/ownership, wages/pro
 
 **Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`028`) is a **defining institutional design doctrine**: better outcomes with fewer layers, less friction, greater accountability — *Government should become invisible—but never unaccountable.* Architecture, Regulation Reason Test, and Government Capacity Test are seeded; Arkansas Public Authority Inventory and Civic Service Credential are design agendas — no invented board counts or 80/20 statistics.
 
+**Constitutional Transparency and the People's Ledger** (`CC-DEV-029`–`032`) is the **fourth institutional spine**: public information held in trust; presumed open unless constitutionally or legally justified protections apply; People's Ledger as named accountability design agenda — no invented FOIA or portal statistics.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.

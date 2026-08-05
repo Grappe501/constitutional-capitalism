@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/transparency_framework.schema.json",
+  "title": "TransparencyFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "guiding_principle",
+    "openness_presumption",
+    "peoples_ledger",
+    "constitutional_transparency_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_ids": { "type": "array", "items": { "type": "string" } },
+    "domain_title": { "type": "string" },
+    "research_domain_title": { "type": "string" },
+    "website_node_id": { "type": "string" },
+    "note": { "type": "string" },
+    "role_in_philosophy": { "type": "string" },
+    "guiding_principle": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "openness_presumption": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "legitimate_exceptions_examples": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exceptions_rule": { "type": "string" },
+    "digital_trail_doctrine": { "type": "object" },
+    "peoples_ledger": {
+      "type": "object",
+      "required": ["name", "definition"],
+      "properties": {
+        "name": { "type": "string" },
+        "definition": { "type": "string" },
+        "example_path": { "type": "array", "items": { "type": "string" } },
+        "status": { "type": "string" },
+        "note": { "type": "string" },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "public_dashboard": { "type": "object" },
+    "traceable_law": { "type": "object" },
+    "public_procurement": { "type": "object" },
+    "boards_and_commissions_publication": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "open_budgets": { "type": "object" },
+    "ai_for_transparency": { "type": "object" },
+    "public_access_equity": { "type": "object" },
+    "identity_and_access_balance": { "type": "object" },
+    "constitutional_transparency_test": {
+      "type": "object",
+      "required": ["title", "questions"],
+      "properties": {
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "minItems": 10,
+          "items": {
+            "type": "object",
+            "required": ["question_id", "number", "text"]
+          }
+        }
+      }
+    },
+    "website_branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["branch_id", "title"]
+      }
+    },
+    "research_status": { "type": "object" }
+  }
+}
