@@ -101,7 +101,24 @@ a {
 .sidebar__tag {
   color: var(--muted);
   font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+.sidebar__meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
   margin: 0 0 1.25rem;
+}
+
+.status-note,
+.lede-soft {
+  margin: 0.35rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+  background: transparent;
+  padding: 0;
 }
 
 .side-nav {
@@ -276,11 +293,12 @@ th {
 }
 
 .notice {
-  border-left: 3px solid var(--warn);
-  background: var(--warn-bg);
-  color: var(--ink);
-  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  padding: 0.5rem 0 0.5rem 0.75rem;
   margin: 0 0 1rem;
+  font-size: 0.95rem;
 }
 
 .list-plain {

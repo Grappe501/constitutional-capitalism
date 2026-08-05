@@ -15,10 +15,7 @@ const total = hfi.research_status?.total_domains ?? domains.length;
 >
   <article class="prose">
     <h1>{hfi.title}</h1>
-    <p class="status-note">
-      Design agenda — {sourced}/{total} domains sourced. Architecture is not measurement.
-      No invented composite scores.
-    </p>
+
     <p class="lede">{hfi.role_in_philosophy}</p>
 
     <h2>Ultimate question</h2>
@@ -43,7 +40,7 @@ const total = hfi.research_status?.total_domains ?? domains.length;
       {domains.map((d: any) => (
         <li>
           <code>{d.domain_id}</code> — {d.title}{" "}
-          <span class="status-note">({d.status})</span>
+          <span class="chip">{d.status}</span>
         </li>
       ))}
     </ul>
@@ -57,10 +54,8 @@ const total = hfi.research_status?.total_domains ?? domains.length;
 
     <h2>Living project context</h2>
     <p>{identity.scope_shift.current_framing}</p>
-    <p class="status-note">
-      Phase 1: {identity.canonical_honesty_state.phase_1}. Phase 2:{" "}
-      {identity.canonical_honesty_state.phase_2}. Modeling:{" "}
-      {identity.canonical_honesty_state.modeling}.
+    <p class="muted">
+      Domains sourced so far: {sourced} of {total}. The index design is not yet a published composite score.
     </p>
 
     <p>

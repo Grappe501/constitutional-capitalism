@@ -17,10 +17,7 @@ const budgetReqs = trn.open_budgets?.requirements || [];
 >
   <article class="prose">
     <h1>{trn.domain_title}</h1>
-    <p class="status-note">
-      Fourth institutional spine — architecture before detailed open-records law.
-      Not absolute disclosure. No invented FOIA or portal statistics.
-    </p>
+
     <p class="lede">{trn.role_in_philosophy}</p>
 
     <h2>Guiding principle</h2>
@@ -44,7 +41,7 @@ const budgetReqs = trn.open_budgets?.requirements || [];
     <p>
       <strong>{trn.peoples_ledger.name}</strong> — {trn.peoples_ledger.definition}
     </p>
-    <p class="status-note">{trn.peoples_ledger.note}</p>
+    
     <p>Example trail:</p>
     <ol>
       {ledgerPath.map((step: string) => (

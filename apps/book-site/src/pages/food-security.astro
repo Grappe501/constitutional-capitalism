@@ -15,10 +15,7 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
 >
   <article class="prose">
     <h1>{food.domain_title}</h1>
-    <p class="status-note">
-      Developing doctrine — Regional Food Network, State Food Exchange, Reserves, and Dashboard are design agendas.
-      No invented local-sourcing or food-waste statistics.
-    </p>
+
     <p class="lede">{food.role_in_philosophy}</p>
 
     <h2>Central principle</h2>
@@ -39,7 +36,7 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
 
     <h2>Food as critical infrastructure</h2>
     <p>{food.food_as_critical_infrastructure.summary}</p>
-    <p class="status-note">{food.food_as_critical_infrastructure.federal_definition_note}</p>
+    
 
     <h2>Local First, Export Second</h2>
     <blockquote>
@@ -51,9 +48,9 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
     </p>
 
     <h2>Regional Food Network</h2>
-    <p class="status-note">Status: {food.regional_food_network.status}</p>
+    
     <p>{food.regional_food_network.summary}</p>
-    <p class="status-note">{food.regional_food_network.illustrative_geography}</p>
+    
     <ul>
       {food.regional_food_network.each_district_includes.map((item: string) => (
         <li>{item}</li>
@@ -61,7 +58,7 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
     </ul>
 
     <h2>State Food Exchange</h2>
-    <p class="status-note">Status: {food.state_food_exchange.status}</p>
+    
     <p>{food.state_food_exchange.summary}</p>
 
     <h2>Keep value local</h2>
@@ -77,10 +74,10 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
 
     <h2>Reduce food waste</h2>
     <p>{food.reduce_food_waste.summary}</p>
-    <p class="status-note">{food.reduce_food_waste.federal_context_note}</p>
+    
 
     <h2>Community Food Reserves</h2>
-    <p class="status-note">Status: {food.community_food_reserves.status}</p>
+    
     <p>{food.community_food_reserves.summary}</p>
 
     <h2>Regenerative agriculture</h2>
@@ -93,7 +90,7 @@ const indicators = food.community_food_dashboard?.candidate_indicators || [];
     <p>{food.food_education.summary}</p>
 
     <h2>Community Food Dashboard</h2>
-    <p class="status-note">Status: {food.community_food_dashboard.status}</p>
+    
     <p>{food.community_food_dashboard.summary}</p>
     <ul>
       {indicators.map((i: string) => (

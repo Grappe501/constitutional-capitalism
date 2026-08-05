@@ -31,11 +31,6 @@ const branches = es.website_branches || [];
 >
   <article class="prose">
     <h1>{es.domain_title}</h1>
-    <p class="status-note">
-      Major national doctrine — architecture before statutes. Prosperity Fund percentages are
-      illustrative design parameters requiring modeling. Legal drafting and fund modeling remain 0%.
-      EIA/DOE baselines are sourced context — not proof that public-return institutions already exist.
-    </p>
 
     <h2>Governing principle</h2>
     <blockquote>
@@ -70,7 +65,7 @@ const branches = es.website_branches || [];
     </blockquote>
 
     <h2>Sourced context baselines</h2>
-    <p class="status-note">{es.sourced_context_baselines.note}</p>
+    
     <ul>
       {baselines.map((b: any) => (
         <li>
@@ -115,8 +110,9 @@ const branches = es.website_branches || [];
         <li>{s}</li>
       ))}
     </ul>
-    <p class="status-note">
-      {es.national_energy_prosperity_fund.illustrative_distributable_allocation.note}
+    
+    <p class="muted">
+      Possible allocation of distributable returns (illustrative — to be modeled before adoption):
     </p>
     <ul>
       {allocation.map((a: any) => (
@@ -221,7 +217,7 @@ const branches = es.website_branches || [];
       ))}
     </ul>
 
-    <p class="status-note">
+    <p class="muted">
       See also <a href="/resource-sovereignty/">Resource Sovereignty</a>,{" "}
       <a href="/federalism/">Federalism</a>,{" "}
       <a href="/constitutional-defense/">Constitutional Defense</a>, and{" "}

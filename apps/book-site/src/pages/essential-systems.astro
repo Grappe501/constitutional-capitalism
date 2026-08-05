@@ -17,10 +17,7 @@ const preventionDomains = ess.preventive_society?.applies_beyond_healthcare || [
 >
   <article class="prose">
     <h1>{ess.domain_title}</h1>
-    <p class="status-note">
-      System-design architecture — not conclusions of inherent corruption.
-      No invented banking, insurance, or healthcare statistics. Research before detailed sector law.
-    </p>
+
     <p class="lede">{ess.role_in_philosophy}</p>
 
     <h2>Framing rule</h2>
@@ -55,7 +52,7 @@ const preventionDomains = ess.preventive_society?.applies_beyond_healthcare || [
               <strong>Principle:</strong> {s.principle.text}
             </p>
           )}
-          {s.framing_caution && <p class="status-note">{s.framing_caution}</p>}
+          {s.framing_caution && <p class="muted">{s.framing_caution}</p>}
           {s.design_questions?.length > 0 && (
             <>
               <p>Questions for study:</p>
@@ -76,7 +73,7 @@ const preventionDomains = ess.preventive_society?.applies_beyond_healthcare || [
               </ul>
             </>
           )}
-          {s.note && <p class="status-note">{s.note}</p>}
+          {s.note && <p class="muted">{s.note}</p>}
         </section>
       ))
     }
@@ -85,7 +82,7 @@ const preventionDomains = ess.preventive_society?.applies_beyond_healthcare || [
     <p>
       <strong>{ess.community_health_index.name}</strong> — {ess.community_health_index.summary}
     </p>
-    <p class="status-note">{ess.community_health_index.note}</p>
+    
     <ul>
       {chiMeasures.map((m: string) => (
         <li>{m}</li>

@@ -19,7 +19,7 @@ const allocation =
   <p class="page-lede">
     Framework: <code>data/project/energy_sovereignty_framework.json</code> v{es.version}.
     Principle: <code>{es.principle_id}</code>. Decision: <code>CC-DEC-086</code>. Major national
-    doctrine — architecture only; fund modeling 0%.
+    doctrine.; fund modeling 0%.
   </p>
 
   <div class="grid grid--stats">
@@ -47,7 +47,7 @@ const allocation =
 
   <section class="panel">
     <h2>Sourced context baselines</h2>
-    <p class="status-note">{es.sourced_context_baselines.note}</p>
+    
     <ul>
       {baselines.map((b: any) => (
         <li>
@@ -59,9 +59,7 @@ const allocation =
 
   <section class="panel">
     <h2>Illustrative fund allocation (not locked)</h2>
-    <p class="status-note">
-      {es.national_energy_prosperity_fund.illustrative_distributable_allocation.note}
-    </p>
+    
     <ul>
       {allocation.map((a: any) => (
         <li>
@@ -101,8 +99,7 @@ const allocation =
   </section>
 
   <section class="panel">
-    <h2>Integrity</h2>
-    <p>{es.note}</p>
+    <h2>Related</h2>
     <p>
       Related: <a href="/resource-sovereignty/">Resource Sovereignty</a>,{" "}
       <a href="/phase-2-gate/">Phase 2 Gate</a>.

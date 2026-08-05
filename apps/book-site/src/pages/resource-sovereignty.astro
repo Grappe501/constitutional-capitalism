@@ -17,10 +17,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
 >
   <article class="prose">
     <h1>{rs.domain_title}</h1>
-    <p class="status-note">
-      Central developing doctrine — Community Resource Compacts, Ledger, and Carbon Restoration Exchange are design agendas.
-      Illustrative revenue percentages require modeling. No invented water, power, or carbon statistics.
-    </p>
+
     <p class="lede">{rs.role_in_philosophy}</p>
 
     <h2>Central doctrine</h2>
@@ -40,7 +37,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
     </blockquote>
 
     <h2>Community Resource Compact</h2>
-    <p class="status-note">Status: {rs.community_resource_compact.status}</p>
+    
     <p>{rs.community_resource_compact.summary}</p>
     <p>Applies especially to:</p>
     <ul>
@@ -66,7 +63,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
               <li>{f}</li>
             ))}
           </ul>
-          {t.rate && <p class="status-note">{t.rate}</p>}
+          {t.rate && <p class="muted">{t.rate}</p>}
         </section>
       ))
     }
@@ -77,10 +74,10 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
 
     <h2>Total footprint</h2>
     <p>{rs.total_footprint_assessment.summary}</p>
-    <p class="status-note">{rs.total_footprint_assessment.scope_1_scope_2_rule}</p>
+    
 
     <h2>Community Resource Dividend</h2>
-    <p class="status-note">Status: {rs.community_resource_dividend.status}</p>
+    
     <p>{rs.community_resource_dividend.summary}</p>
     <ul>
       {accounts.map((a: any) => (
@@ -93,9 +90,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
     {
       allocation && (
         <>
-          <p class="status-note">
-            {allocation.note} Status: {allocation.status}.
-          </p>
+          
           <ul>
             {allocation.shares.map((s: any) => (
               <li>
@@ -116,7 +111,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
     <h2>Sector Compacts</h2>
     <h3>Mineral extraction</h3>
     <p>{rs.mineral_extraction_compact.summary}</p>
-    <p class="status-note">{rs.mineral_extraction_compact.bankruptcy_rule}</p>
+    
 
     <h3>Data centers</h3>
     <p>{rs.data_center_compact.summary}</p>
@@ -129,11 +124,11 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
     <p>{rs.warehouse_compact.summary}</p>
 
     <h2>Resource and Pollution Ledger</h2>
-    <p class="status-note">Status: {rs.resource_and_pollution_ledger.status}</p>
+    
     <p>{rs.resource_and_pollution_ledger.summary}</p>
 
     <h2>Local Carbon Restoration Exchange</h2>
-    <p class="status-note">Status: {rs.local_carbon_restoration_exchange.status}</p>
+    
     <p>{rs.local_carbon_restoration_exchange.summary}</p>
 
     <h2>Anti-fraud carbon hierarchy</h2>
@@ -146,7 +141,7 @@ const allocation = rs.community_resource_dividend?.illustrative_allocation;
 
     <h2>Community-owned energy and household floor</h2>
     <p>{rs.community_owned_energy.summary}</p>
-    <p class="status-note">{rs.community_owned_energy.community_solar_note}</p>
+    
     <p>{rs.household_energy_floor.summary}</p>
 
     <h2>Community Carrying-Capacity Test</h2>

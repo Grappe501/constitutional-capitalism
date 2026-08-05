@@ -299,14 +299,37 @@ main {
   color: var(--ink);
 }
 
-.status-note {
+/* Quiet supporting prose — never a yellow direction/warning banner */
+.muted,
+.lede-soft {
+  margin: 0.35rem 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 400;
+  background: transparent;
+  padding: 0;
+}
+
+.chip {
   display: inline-block;
-  margin: 0.5rem 0 1rem;
-  padding: 0.4rem 0.7rem;
-  background: var(--warn-bg);
-  color: var(--warn);
-  font-size: 0.9rem;
-  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: transparent;
+}
+
+/* Legacy class retained only as muted text (no highlight) */
+.status-note {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 .toc-part {

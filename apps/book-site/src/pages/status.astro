@@ -12,10 +12,7 @@ const publicLayers = publicProgressLayers();
 >
   <article>
     <h1 style="font-family:var(--serif);margin-top:0;">Project status</h1>
-    <p class="status-note">
-      Derived from regenerated progress layers. Phase 2 remains PARTIAL — architecture ahead of evidence.
-      Manuscript incomplete; modeling and legal review at 0%; baseline proof is still thin.
-    </p>
+    
     <p class="lede">
       Overall completion estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>
       {snapshot.generated_at ? ` (snapshot ${snapshot.generated_at})` : ""}

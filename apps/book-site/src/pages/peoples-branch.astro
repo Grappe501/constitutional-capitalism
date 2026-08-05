@@ -19,11 +19,6 @@ const ethicsRules = ps.supreme_court_reform?.enforceable_ethics_and_recusal?.req
 >
   <article class="prose">
     <h1>{ps.domain_title}</h1>
-    <p class="status-note">
-      Major pillar — architecture before amendment text. Federal initiatives, federal recall, fixed
-      active Supreme Court terms, and a third Article V pathway require constitutional redesign.
-      Legal drafting remains 0%. Illustrative thresholds are design parameters, not locked law.
-    </p>
 
     <h2>Governing principle</h2>
     <blockquote>
@@ -55,7 +50,7 @@ const ethicsRules = ps.supreme_court_reform?.enforceable_ethics_and_recusal?.req
     <p>{ps.four_branches.operating_mode}</p>
 
     <h2>Current-law baselines</h2>
-    <p class="status-note">{ps.current_law_baselines.note}</p>
+    
     <ul>
       {baselines.map((b: any) => (
         <li>
@@ -92,9 +87,7 @@ const ethicsRules = ps.supreme_court_reform?.enforceable_ethics_and_recusal?.req
     <p>
       <strong>Active terms:</strong> {ps.supreme_court_reform.active_terms.proposal}
     </p>
-    <p class="status-note">
-      Amendment likely required for durable fixed active terms.
-    </p>
+    <p class="muted">Amendment likely required for durable fixed active terms.</p>
     <p>
       <strong>Judicial Accountability Council:</strong>{" "}
       {ps.supreme_court_reform.judicial_accountability_council.summary} It does not{" "}
@@ -145,10 +138,9 @@ const ethicsRules = ps.supreme_court_reform?.enforceable_ethics_and_recusal?.req
       ))}
     </ul>
 
-    <p class="status-note">
-      See also <a href="/federalism/">Federalism</a>,{" "}
-      <a href="/equal-standing/">Equal Standing</a>, <a href="/democracy/">Democracy</a>, and{" "}
-      <a href="/transparency/">Transparency</a>.
+    <p class="muted">
+      See also <a href="/federalism/">Federalism</a>, <a href="/equal-standing/">Equal Standing</a>,{" "}
+      <a href="/democracy/">Democracy</a>, and <a href="/transparency/">Transparency</a>.
     </p>
   </article>
 </BaseLayout>

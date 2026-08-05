@@ -17,7 +17,7 @@ const pending = metrics.filter((m: any) => m.current_value == null);
     <p class="lede">
       Completeness dashboard for measurement slots. Targets are not invented in Phase 2.
     </p>
-    <p class="status-note">
+    <p class="muted">
       Status: {baselineStatus.status}. Sourced {baselineStatus.sourced_metrics} of{" "}
       {baselineStatus.total_metrics} metrics. Pending: {baselineStatus.pending_metrics}.
     </p>

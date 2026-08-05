@@ -35,10 +35,10 @@ const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || 
       Phase 2 asks what the present condition of American economic and civic life is — and what
       evidence would justify restructuring the system. Findings below are sourced or explicitly marked incomplete.
     </p>
-    <p class="status-note">
-      National diagnosis: partial first pass. Sources registered: {sources.sources?.length ?? 0}.
+    <p class="muted">
+      National diagnosis: first-pass in progress. Sources registered: {sources.sources?.length ?? 0}.
       Claims with sources: {sourcedClaims}. Baseline metrics sourced: {baselineStatus.sourced_metrics ?? 0}
-      / {baselineStatus.total_metrics ?? "—"}. Modeling and legal review remain at 0%.
+      / {baselineStatus.total_metrics ?? "—"}.
     </p>
 
     <h2>Priority domains</h2>

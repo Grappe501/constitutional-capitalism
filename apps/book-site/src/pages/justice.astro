@@ -19,10 +19,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
 >
   <article class="prose">
     <h1>{justice.domain_title}</h1>
-    <p class="status-note">
-      Developing doctrine and research architecture — not finished justice policy. Legal review 0%.
-      Community Safety Corps and Restoration Councils are design agendas. No invented crime or recidivism statistics.
-    </p>
+
     <p class="lede">{justice.role_in_philosophy}</p>
 
     <h2>System objective</h2>
@@ -53,7 +50,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
     </p>
 
     <h2>Community Safety Corps</h2>
-    <p class="status-note">Status: {justice.community_safety_corps.status}</p>
+    
     <p>{justice.community_safety_corps.summary}</p>
     {
       corps.map((c: any) => (
@@ -90,7 +87,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
       <p>{justice.public_corrections_rule.text}</p>
     </blockquote>
     <p>{justice.public_corrections_rule.ban}</p>
-    <p class="status-note">{justice.public_corrections_rule.federal_policy_instability_note}</p>
+    
 
     <h2>Decision pathways</h2>
     <p>{justice.decision_pathways.summary}</p>
@@ -101,7 +98,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
             {p.path_id}: {p.title}
           </h3>
           {p.rule && <p>{p.rule}</p>}
-          {p.evidence_note && <p class="status-note">{p.evidence_note}</p>}
+          {p.evidence_note && <p class="muted">{p.evidence_note}</p>}
           {p.responses && (
             <ul>
               {p.responses.map((r: string) => (
@@ -115,7 +112,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
 
     <h2>Secure restoration campuses</h2>
     <p>{justice.secure_restoration_campuses.summary}</p>
-    <p class="status-note">{justice.secure_restoration_campuses.recidivism_note}</p>
+    
 
     <h2>Reentry from day one</h2>
     <p>{justice.reentry_from_day_one.summary}</p>
@@ -125,22 +122,20 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
         <li>{item}</li>
       ))}
     </ul>
-    <p class="status-note">{justice.reentry_from_day_one.evidence_caution}</p>
+    
 
     <h2>Productive citizenship</h2>
     <p>{justice.productive_citizenship_destination.summary}</p>
 
     <h2>Restoration Councils</h2>
-    <p class="status-note">Status: {justice.restoration_councils.status}</p>
+    
     <p>{justice.restoration_councils.summary}</p>
 
     {
       justice.permanent_public_safety_system && (
         <>
           <h2>Permanent Public Safety System</h2>
-          <p class="status-note">
-            Status: {justice.permanent_public_safety_system.status}. Design agenda — not operating campuses.
-          </p>
+          
           <p>
             Rejected language: <em>“{justice.permanent_public_safety_system.rejected_language}.”</em>{" "}
             {justice.permanent_public_safety_system.rejected_language_reason}
@@ -164,9 +159,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
               )
             )}
           </ul>
-          <p class="status-note">
-            {justice.permanent_public_safety_system.narrow_eligibility.risk_score_rule}
-          </p>
+          
 
           <h3>Secure Public Safety Campuses</h3>
           <p>{justice.permanent_public_safety_system.secure_public_safety_campuses.summary}</p>
@@ -177,9 +170,7 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
             )}
             .
           </p>
-          <p class="status-note">
-            {justice.permanent_public_safety_system.secure_public_safety_campuses.constitutional_conditions_note}
-          </p>
+          
 
           <h3>Graduated custody</h3>
           <p>{justice.permanent_public_safety_system.graduated_custody.summary}</p>
@@ -190,8 +181,8 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
               </li>
             ))}
           </ol>
-          <p class="status-note">{justice.permanent_public_safety_system.graduated_custody.aging_cost_note}</p>
-          <p class="status-note">{justice.permanent_public_safety_system.graduated_custody.aging_risk_note}</p>
+          
+          
 
           <h3>Periodic dangerousness review</h3>
           <p>{justice.permanent_public_safety_system.periodic_dangerousness_review.summary}</p>

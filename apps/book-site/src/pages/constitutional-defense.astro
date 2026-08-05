@@ -26,12 +26,11 @@ const branches = cdf.website_branches || [];
 >
   <article class="prose">
     <h1>{cdf.domain_title}</h1>
-    <p class="status-note">
-      Major pillar — architecture before statutes. Neither hawkish nor pacifist:{" "}
-      <strong>constitutionally defensive</strong>. No invented force-structure, procurement, or VA
-      cost statistics. Legal drafting remains 0%.
+
+    <p class="lede">
+      Neither hawkish nor pacifist — <strong>constitutionally defensive</strong>.{" "}
+      {cdf.stance.purpose_of_national_power}
     </p>
-    <p class="lede">{cdf.stance.purpose_of_national_power}</p>
 
     <h2>Governing principle</h2>
     <blockquote>
@@ -58,7 +57,7 @@ const branches = cdf.website_branches || [];
         <li>{f}</li>
       ))}
     </ul>
-    <p class="status-note">{cdf.federal_defense_responsibilities.links_to_federalism}</p>
+    
 
     <h2>Strength through deterrence</h2>
     <blockquote>
@@ -82,7 +81,7 @@ const branches = cdf.website_branches || [];
         <li>{m}</li>
       ))}
     </ul>
-    <p class="status-note">{cdf.veterans_as_civic_leaders.links_to_citizen_service}</p>
+    
 
     <h2>National service</h2>
     <p>{cdf.national_service.summary}</p>
@@ -183,9 +182,8 @@ const branches = cdf.website_branches || [];
       ))}
     </ul>
 
-    <p class="status-note">
-      See also <a href="/civic-wealth/">Civic Wealth</a>,{" "}
-      <a href="/federalism/">Federalism</a>,{" "}
+    <p class="muted">
+      See also <a href="/civic-wealth/">Civic Wealth</a>, <a href="/federalism/">Federalism</a>,{" "}
       <a href="/citizen-service/">Citizen-Service Government</a>,{" "}
       <a href="/peoples-branch/">People’s Branch</a>, and{" "}
       <a href="/food-security/">Food Security</a>.

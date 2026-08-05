@@ -19,10 +19,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
 >
   <article class="prose">
     <h1>{hc.domain_title}</h1>
-    <p class="status-note">
-      Pillar architecture — regional academies are a pilot design agenda, not a locked statewide system.
-      No invented enrollment, retention, or earnings statistics.
-    </p>
+
     <p class="lede">{hc.role_in_philosophy}</p>
 
     <h2>First principle</h2>
@@ -41,7 +38,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
     <p>{hc.pilot_posture.portable_doctrine}</p>
 
     <h2>Arkansas academy design agenda</h2>
-    <p class="status-note">Status: {hc.arkansas_academy_model.status}</p>
+    
     <p>{hc.arkansas_academy_model.naming_rule}</p>
     <p>Name candidates (undecided):</p>
     <ul>
@@ -56,7 +53,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
 
     <h3>Regional strengths</h3>
     <p>{hc.arkansas_academy_model.regional_specialization.rule}</p>
-    <p class="status-note">{hc.arkansas_academy_model.regional_specialization.note}</p>
+    
     {
       regions.map((r: any) => (
         <section style="margin-bottom:1rem;">
@@ -72,10 +69,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
 
     <h3>Living-learning campuses</h3>
     <p>{hc.arkansas_academy_model.living_learning_campus.summary}</p>
-    <p class="status-note">
-      Institutional reference: {hc.arkansas_academy_model.living_learning_campus.institutional_reference.name}
-      — {hc.arkansas_academy_model.living_learning_campus.institutional_reference.limit}
-    </p>
+    
 
     <h3>Paid apprenticeships</h3>
     <p>{hc.arkansas_academy_model.paid_apprenticeships.rule}</p>
@@ -111,7 +105,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
         <li>{m}</li>
       ))}
     </ul>
-    <p class="status-note">{hc.arkansas_academy_model.success_metrics.note}</p>
+    
 
     <h2>Human Capital Test</h2>
     <p>{hc.human_capital_test.purpose}</p>
