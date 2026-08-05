@@ -187,7 +187,8 @@
     "hfi_note": "Architecture is not measurement; source first indicators before composites"
   },
   "related_decision_ids": [
-    "CC-DEC-093"
+    "CC-DEC-093",
+    "CC-DEC-094"
   ],
   "doctrine_freeze": {
     "decision_id": "CC-DEC-093",
@@ -197,5 +198,11 @@
     "workflow": "Proof Packets + three-layer historical/economic/legal reviews before doctrine graduation",
     "note": "Architectural appeal alone is not a Phase 2 gate. Route non-proof ideas to Hypothesis Cards."
   },
-  "controlling_shift": "Priority shifts from inventing to proving. The three-layer retrofit is the doctrine workflow, not a side task."
+  "controlling_shift": "Priority shifts from inventing to proving. The three-layer retrofit is the doctrine workflow, not a side task.",
+  "proof_burden": {
+    "decision_id": "CC-DEC-094",
+    "registry_file": "data/project/proof_burden_registry.json",
+    "rule": "Architectural completion never implies evidentiary completion. Every principle intended for manuscript/policy use carries an explicit Proof Burden table.",
+    "exemplar": "CC-PRIN-44"
+  }
 }

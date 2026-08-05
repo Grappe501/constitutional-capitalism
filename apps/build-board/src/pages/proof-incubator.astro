@@ -1,6 +1,7 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
 import inc from "../../../../data/project/architecture_incubator.json";
+import burden from "../../../../data/project/proof_burden_registry.json";
 
 const cards = inc.hypothesis_cards || [];
 const freeze = inc.doctrine_freeze || {};
@@ -8,6 +9,9 @@ const layers = inc.proof_packet?.three_layer_reviews_required_before_doctrine_gr
 const sections = inc.proof_packet?.required_sections || [];
 const doNot = inc.operating_commands?.do_not || [];
 const defaults = inc.architecture_candidate_default_status || {};
+const prin44 = (burden.principles || []).find((p: any) => p.principle_id === "CC-PRIN-44");
+const burdenRows = prin44?.proof_burden || [];
+const packets = prin44?.priority_evidence_packets || [];
 ---
 
 <BoardLayout title="Proof Incubator" path="/proof-incubator/">
@@ -83,6 +87,64 @@ const defaults = inc.architecture_candidate_default_status || {};
           </ul>
         </div>
       ))
+    }
+  </section>
+
+  <section class="panel">
+    <h2>Proof Burden Standard</h2>
+    <p>
+      Decision: <code>{burden.decision_id}</code>. {burden.purpose}
+    </p>
+    <blockquote>
+      <p>{burden.operating_rule}</p>
+    </blockquote>
+    <p class="muted">{burden.bottleneck_note}</p>
+    {
+      prin44 && (
+        <>
+          <h3>
+            Exemplar: <code>{prin44.principle_id}</code> — {prin44.title}
+          </h3>
+          <p>
+            Architecture: {prin44.architecture_status} · Evidence: {prin44.evidence_status} ·
+            Publishable: {String(prin44.publishable)}
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Proof Category</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {burdenRows.map((r: any) => (
+                <tr>
+                  <td>{r.category}</td>
+                  <td>
+                    <code>{r.status}</code>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <h4>Priority evidence packets</h4>
+          <ol>
+            {packets.map((pk: any) => (
+              <li>
+                <code>{pk.packet_id}</code> — <strong>{pk.title}</strong> ({pk.status})
+                <ul>
+                  {(pk.topics || []).map((t: string) => (
+                    <li>{t}</li>
+                  ))}
+                </ul>
+                <p class="muted">
+                  <code>{pk.dossier_path}</code>
+                </p>
+              </li>
+            ))}
+          </ol>
+        </>
+      )
     }
   </section>
 

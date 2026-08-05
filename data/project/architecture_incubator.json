@@ -2,7 +2,11 @@
   "version": "0.1.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-093",
-  "related_decision_ids": ["CC-DEC-075", "CC-DEC-064"],
+  "related_decision_ids": [
+    "CC-DEC-075",
+    "CC-DEC-064",
+    "CC-DEC-094"
+  ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
   "central_diagnosis": "The design space is expanding faster than the evidentiary foundation.",
@@ -100,8 +104,14 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 18,
-      "related_principle_ids": ["CC-PRIN-45", "CC-PRIN-43"],
-      "related_decision_ids": ["CC-DEC-090", "CC-DEC-088"],
+      "related_principle_ids": [
+        "CC-PRIN-45",
+        "CC-PRIN-43"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-090",
+        "CC-DEC-088"
+      ],
       "related_framework": "data/project/community_prosperity_framework.json",
       "public_path": "/community-prosperity/",
       "evidence_needed": [
@@ -125,8 +135,12 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 16,
-      "related_principle_ids": ["CC-PRIN-45"],
-      "related_decision_ids": ["CC-DEC-090"],
+      "related_principle_ids": [
+        "CC-PRIN-45"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-090"
+      ],
       "related_framework": "data/project/community_prosperity_framework.json",
       "public_path": "/community-prosperity/",
       "evidence_needed": [
@@ -148,8 +162,12 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 20,
-      "related_principle_ids": ["CC-PRIN-47"],
-      "related_decision_ids": ["CC-DEC-092"],
+      "related_principle_ids": [
+        "CC-PRIN-47"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-092"
+      ],
       "related_framework": "data/project/local_ownership_framework.json",
       "public_path": "/local-ownership/",
       "evidence_needed": [
@@ -171,8 +189,14 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 22,
-      "related_principle_ids": ["CC-PRIN-47", "CC-PRIN-44"],
-      "related_decision_ids": ["CC-DEC-092", "CC-DEC-089"],
+      "related_principle_ids": [
+        "CC-PRIN-47",
+        "CC-PRIN-44"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-092",
+        "CC-DEC-089"
+      ],
       "related_framework": "data/project/local_ownership_framework.json",
       "public_path": "/local-ownership/",
       "evidence_needed": [
@@ -195,8 +219,12 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 24,
-      "related_principle_ids": ["CC-PRIN-46"],
-      "related_decision_ids": ["CC-DEC-091"],
+      "related_principle_ids": [
+        "CC-PRIN-46"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-091"
+      ],
       "related_framework": "data/project/community_resilience_framework.json",
       "public_path": "/community-resilience/",
       "evidence_needed": [
@@ -219,8 +247,12 @@
       "status": "Architectural hypothesis",
       "publishable": false,
       "confidence_percent": 19,
-      "related_principle_ids": ["CC-PRIN-44"],
-      "related_decision_ids": ["CC-DEC-089"],
+      "related_principle_ids": [
+        "CC-PRIN-44"
+      ],
+      "related_decision_ids": [
+        "CC-DEC-089"
+      ],
       "related_framework": "data/project/family_farm_prosperity_framework.json",
       "public_path": "/family-farm-prosperity/",
       "evidence_needed": [
@@ -233,8 +265,16 @@
         "Legal / antitrust and procurement law",
         "Constitutional / federalism interaction"
       ],
-      "proof_packet_status": "not_started",
-      "note": "USDA ERS/FNS baselines are diagnosis context only — illustrative purchase floors remain unlocked."
+      "proof_packet_status": "scaffolds_opened_not_complete",
+      "note": "USDA ERS/FNS baselines are diagnosis context only. Proof Burden table and five packet scaffolds opened under CC-DEC-094 — not a graduated Proof Packet.",
+      "proof_burden_principle_id": "CC-PRIN-44",
+      "priority_evidence_packets": [
+        "PP-FF-01",
+        "PP-FF-02",
+        "PP-FF-03",
+        "PP-FF-04",
+        "PP-FF-05"
+      ]
     }
   ],
   "website_node": {
@@ -250,5 +290,6 @@
       "Claim modeling or legal progress without actual work",
       "Inflate overall % as Phase 2 completion"
     ]
-  }
+  },
+  "proof_burden_registry": "data/project/proof_burden_registry.json"
 }

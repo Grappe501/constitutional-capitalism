@@ -1,0 +1,202 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-094",
+  "related_decision_ids": ["CC-DEC-093", "CC-DEC-075", "CC-DEC-089"],
+  "status": "governing",
+  "title": "Proof Burden Standard",
+  "purpose": "Separate architectural completion from evidentiary completion. Every principle carries an explicit burden of proof so readers and contributors can see remaining work.",
+  "operating_rule": "Advance the proof before expanding the architecture.",
+  "bottleneck_note": "Creativity is no longer the binding constraint. Scholarship — verifying, modeling, testing, and documenting — is the bottleneck. That is a good sign.",
+  "standard": {
+    "applies_to": "Every principle intended for eventual manuscript or public-policy use",
+    "architecture_vs_evidence": {
+      "architecture_complete_means": "IDs, frameworks, surfaces, and cross-links exist and validate",
+      "evidence_complete_means": "Proof categories are closed or honestly scoped; Proof Packets graduated through historical, economic, and constitutional/legal layers",
+      "rule": "Architectural completion never implies evidentiary completion"
+    },
+    "default_category_statuses": ["open", "partial", "supported", "disputed", "not_applicable"],
+    "required_proof_categories": [
+      "historical_precedent",
+      "economic_literature",
+      "pilot_programs",
+      "international_comparisons",
+      "constitutional_analysis",
+      "fiscal_modeling",
+      "domain_impact",
+      "environmental_outcomes",
+      "administrative_feasibility"
+    ],
+    "honesty_rules": [
+      "Three baseline claims do not constitute a comprehensive evidentiary dossier",
+      "Illustrative design parameters (e.g., purchase floors, multipliers) remain hypotheses until modeled",
+      "No invented citations, statistics, or modeled results",
+      "Phase 2 remains PARTIAL until canonical acceptance checklist passes",
+      "Architecture Candidate / Hypothesis Card principles are not publishable until Proof Packets graduate"
+    ]
+  },
+  "principles": [
+    {
+      "principle_id": "CC-PRIN-44",
+      "title": "Local Food and Family Farm Prosperity",
+      "hypothesis_id": "HYP-116",
+      "decision_id": "CC-DEC-089",
+      "framework_file": "data/project/family_farm_prosperity_framework.json",
+      "public_path": "/family-farm-prosperity/",
+      "architecture_status": "complete_as_architecture",
+      "evidence_status": "not_yet_validated",
+      "publishable": false,
+      "phase_2_label": "PARTIAL — architecture ahead of evidence",
+      "architecture_summary": [
+        "Doctrine IDs, framework, IA node, book/board surfaces, and cross-links are integrated",
+        "Initial empirical anchors registered: USDA ERS family-farm structure, FNS Farm to School, AMS LAMP (CC-CLAIM-124–126)"
+      ],
+      "evidence_summary": [
+        "Architecture is not yet validated as public policy",
+        "Institutional assumptions (purchase targets, prosperity dividends, community food accounts, multipliers) remain hypotheses requiring modeling and legal analysis",
+        "Three baseline claims are a starting evidence base, not a comprehensive dossier"
+      ],
+      "proof_burden": [
+        {
+          "category": "Historical precedent",
+          "id": "historical_precedent",
+          "status": "partial",
+          "note": "Farm-to-school and local-market programs exist; not a finished historical synthesis for the full thirteen-pillar system."
+        },
+        {
+          "category": "Economic literature",
+          "id": "economic_literature",
+          "status": "partial",
+          "note": "ERS/FNS/AMS anchors and related literatures exist; regenerative economics, hub economics, and multiplier claims not yet dossiered."
+        },
+        {
+          "category": "Pilot programs",
+          "id": "pilot_programs",
+          "status": "partial",
+          "note": "Farm-to-school and LAMP-style tools are pilots/programs in the wild; CC-specific Prosperity Fund / Food Utility designs are not piloted as specified."
+        },
+        {
+          "category": "International comparisons",
+          "id": "international_comparisons",
+          "status": "open",
+          "note": "Not yet assembled."
+        },
+        {
+          "category": "Constitutional analysis",
+          "id": "constitutional_analysis",
+          "status": "open",
+          "note": "Legal drafting 0%; federalism/procurement/antitrust interactions pending."
+        },
+        {
+          "category": "Fiscal modeling",
+          "id": "fiscal_modeling",
+          "status": "open",
+          "note": "Modeling 0%; purchase floors and fund formulas remain illustrative."
+        },
+        {
+          "category": "Rural economic impact",
+          "id": "rural_economic_impact",
+          "status": "open",
+          "note": "Requires community-multiplier and employment dossiers."
+        },
+        {
+          "category": "Environmental outcomes",
+          "id": "environmental_outcomes",
+          "status": "open",
+          "note": "Stewardship and regenerative outcome evidence not yet packeted."
+        },
+        {
+          "category": "Administrative feasibility",
+          "id": "administrative_feasibility",
+          "status": "open",
+          "note": "Regional food utility governance and inspection/standard administration pending."
+        }
+      ],
+      "priority_evidence_packets": [
+        {
+          "packet_id": "PP-FF-01",
+          "title": "Local procurement research",
+          "priority": 1,
+          "status": "scaffold_only",
+          "topics": [
+            "Farm-to-school outcomes",
+            "Hospital procurement",
+            "Institutional purchasing",
+            "Regional food systems"
+          ],
+          "dossier_path": "content/research/proof-packets/family-farm/01-local-procurement.md",
+          "related_claim_ids": ["CC-CLAIM-125", "CC-CLAIM-126"],
+          "related_source_ids": ["CC-SRC-074", "CC-SRC-039"]
+        },
+        {
+          "packet_id": "PP-FF-02",
+          "title": "Regenerative agriculture economics",
+          "priority": 2,
+          "status": "scaffold_only",
+          "topics": [
+            "Profitability",
+            "Yield stability",
+            "Soil economics",
+            "Transition costs",
+            "Risk management"
+          ],
+          "dossier_path": "content/research/proof-packets/family-farm/02-regenerative-economics.md",
+          "related_claim_ids": [],
+          "related_source_ids": []
+        },
+        {
+          "packet_id": "PP-FF-03",
+          "title": "Regional food infrastructure",
+          "priority": 3,
+          "status": "scaffold_only",
+          "topics": [
+            "Food hubs",
+            "Cooperative processing",
+            "Shared logistics",
+            "Cold storage economics"
+          ],
+          "dossier_path": "content/research/proof-packets/family-farm/03-regional-food-infrastructure.md",
+          "related_claim_ids": ["CC-CLAIM-126"],
+          "related_source_ids": ["CC-SRC-039"]
+        },
+        {
+          "packet_id": "PP-FF-04",
+          "title": "Family farm succession",
+          "priority": 4,
+          "status": "scaffold_only",
+          "topics": [
+            "Land transfer",
+            "Aging farmers",
+            "Beginning farmer finance",
+            "Cooperative ownership transitions"
+          ],
+          "dossier_path": "content/research/proof-packets/family-farm/04-family-farm-succession.md",
+          "related_claim_ids": ["CC-CLAIM-124"],
+          "related_source_ids": ["CC-SRC-073"]
+        },
+        {
+          "packet_id": "PP-FF-05",
+          "title": "Community economic multipliers",
+          "priority": 5,
+          "status": "scaffold_only",
+          "topics": [
+            "Dollars retained locally",
+            "Rural employment",
+            "Secondary business creation",
+            "Tax base effects"
+          ],
+          "dossier_path": "content/research/proof-packets/family-farm/05-community-multipliers.md",
+          "related_claim_ids": [],
+          "related_source_ids": [],
+          "honesty_note": "Do not invent multiplier constants. Measure and cite."
+        }
+      ],
+      "graduation_target": "Defensible public-policy posture for CC-PRIN-44 requires material progress on these five packets plus constitutional/fiscal categories — not architectural expansion."
+    }
+  ],
+  "queue_rule": {
+    "next_exemplar": "CC-PRIN-44",
+    "then": "Apply the same Proof Burden table to other Architecture Candidate principles (CC-PRIN-45–47) without minting new principles",
+    "burt_priority_unchanged": "Burt steps 2→3/4→5→6→8→9→10 remain the Phase 2 spine; PRIN-44 packets are the incubator scholarship track for HYP-116"
+  }
+}
