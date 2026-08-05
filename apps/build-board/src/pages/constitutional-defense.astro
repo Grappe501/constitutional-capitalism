@@ -1,0 +1,104 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine } from "../lib/data";
+import cdf from "../../../../data/project/constitutional_defense_framework.json";
+
+const doctrineIds = Array.from({ length: 17 }, (_, i) => `CC-DEV-${176 + i}`);
+const items = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const testQs = cdf.constitutional_defense_test?.questions || [];
+const resilience = cdf.national_resilience?.dimensions || [];
+const limits = cdf.constitutional_limits?.military_must_never || [];
+---
+
+<BoardLayout title="Constitutional Defense" path="/constitutional-defense/">
+  <h1 class="page-title">{cdf.domain_title}</h1>
+  <p class="page-lede">
+    Framework: <code>data/project/constitutional_defense_framework.json</code> v{cdf.version}.
+    Principle: <code>{cdf.principle_id}</code>. Decision: <code>CC-DEC-084</code>. Stance:{" "}
+    <strong>constitutionally defensive</strong> — neither hawkish nor pacifist. Architecture only.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{items.length}</div>
+      <div class="stat__label">Developing doctrine items</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{resilience.length}</div>
+      <div class="stat__label">Resilience dimensions</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{(cdf.website_branches || []).length}</div>
+      <div class="stat__label">Website branches</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Governing principle</h2>
+    <blockquote>
+      <p>{cdf.governing_principle.text}</p>
+    </blockquote>
+    <p>
+      <strong>Deterrence:</strong> {cdf.deterrence.principle}
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Chain of loyalty</h2>
+    <ol>
+      {(cdf.chain_of_loyalty?.order || []).map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>National Resilience</h2>
+    <p>{cdf.national_resilience.summary}</p>
+    <ul>
+      {resilience.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Constitutional limits</h2>
+    <ul>
+      {limits.map((l: string) => (
+        <li>{l}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Constitutional defense test</h2>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Developing doctrine ({items.length})</h2>
+    <ul>
+      {items.map((d: any) => (
+        <li>
+          <code>{d.doctrine_id}</code> — {d.statement.slice(0, 160)}…
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Integrity</h2>
+    <p>{cdf.note}</p>
+    <p>
+      Related: <a href="/federalism/">Federalism</a>,{" "}
+      <a href="/citizen-service/">Citizen Service</a>, <a href="/phase-2-gate/">Phase 2 Gate</a>.
+    </p>
+  </section>
+</BoardLayout>

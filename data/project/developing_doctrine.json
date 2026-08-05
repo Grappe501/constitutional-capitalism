@@ -2,7 +2,7 @@
   "version": "0.2.4",
   "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Constitutional Defense / National Resilience (CC-PRIN-39), Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -862,6 +862,58 @@
         "CC-DEV-175"
       ],
       "note": "Principles CC-PRIN-37/38; anti-aristocracy + accessible service pathway; architecture only."
+    },
+    {
+      "cluster_id": "CC-DCC-24",
+      "title": "Constitutional Defense and National Resilience — peace through strength under the Constitution",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture",
+      "affected_domains": [
+        "national_defense",
+        "veterans",
+        "federalism",
+        "civic_service",
+        "community_resilience"
+      ],
+      "constitutional_questions": [
+        "How does a free republic remain strong without becoming militarized or hawkish?",
+        "How does the military remain loyal to the Constitution rather than persons or parties?",
+        "How do veterans’ obligations differ from political privilege?",
+        "How should national strength be measured beyond force structure alone?"
+      ],
+      "implementation_level": [
+        "constitutional_design",
+        "federal",
+        "state",
+        "local"
+      ],
+      "risks": [
+        "sliding into hawkish or pacifist framing",
+        "conflating veterans’ earned obligations with office-tied privilege",
+        "defense-industry capture of national policy",
+        "invented force-structure or VA cost statistics"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": [
+        "CC-DEV-176",
+        "CC-DEV-177",
+        "CC-DEV-178",
+        "CC-DEV-179",
+        "CC-DEV-180",
+        "CC-DEV-181",
+        "CC-DEV-182",
+        "CC-DEV-183",
+        "CC-DEV-184",
+        "CC-DEV-185",
+        "CC-DEV-186",
+        "CC-DEV-187",
+        "CC-DEV-188",
+        "CC-DEV-189",
+        "CC-DEV-190",
+        "CC-DEV-191",
+        "CC-DEV-192"
+      ],
+      "note": "Principle CC-PRIN-39; constitutionally defensive; architecture only; legal 0%."
     }
   ],
   "items": [
@@ -5088,6 +5140,448 @@
       "related_decision_ids": [
         "CC-DEC-083",
         "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-176",
+      "statement": "Constitutional Defense Doctrine: The first duty of the republic is to preserve the liberty, sovereignty, and constitutional rights of its people. The Armed Forces exist to defend the nation, deter aggression, honor lawful commitments, and preserve peace through strength. Military power shall never become a substitute for constitutional government, diplomacy, or the sovereignty of the people. Stance: constitutionally defensive — neither hawkish nor pacifist. National power protects a free and flourishing society; it must not become the center of it.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-39"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-177",
+      "statement": "Chain of loyalty: Constitution → People → Republic → Civilian Government → Armed Forces. Service members swear an oath to the Constitution, not a president or party. No person is above the Constitution. The military serves the Constitution — not any administration, party, or individual.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-178",
+      "statement": "Federal government remains solely responsible for national defense, intelligence, strategic deterrence, nuclear command, national cybersecurity, border security, treaty obligations, and military alliances approved under constitutional processes — a clearly justified area of centralized national authority, aligned with Federalism Doctrine.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-179",
+      "statement": "Strength through deterrence: the strongest military is the one least likely to be used because it successfully deters conflict. Victory is measured by wars prevented, not wars fought.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-180",
+      "statement": "Veterans become civic leaders: military service is a pathway into civic leadership — not political privilege. Structured post-service opportunities in emergency management, infrastructure, disaster response, education, mentoring, public safety, conservation, civic leadership, boards and commissions, and elected office if chosen.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-181",
+      "statement": "National service pathways without mandatory military service: citizens may choose military service, disaster response, conservation, public-health corps, infrastructure corps, teaching assistance, civic service, elder care, or environmental restoration. Military service remains distinct for unique risks and responsibilities; all forms contribute to the republic.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-182",
+      "statement": "Military family supports — spouse employment, childcare, mental health, housing, transition assistance, and educational continuity for children — are readiness investments that sustain force readiness through family stability.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-183",
+      "statement": "Dedicated veterans’ healthcare and disability compensation fulfill a national obligation arising from risks civilians generally do not assume. That is distinct from creating political privilege for officeholders.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-184",
+      "statement": "Defense industries: competitive procurement, transparency, domestic manufacturing resilience, anti-corruption safeguards, independent oversight, and strict conflict-of-interest rules — a strong defense industrial base without allowing contractors to become permanent beneficiaries of endless conflict or to dominate national policy.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-185",
+      "statement": "Community resilience as national defense: every community contributes through emergency preparedness, cybersecurity awareness, resilient infrastructure, food security, energy resilience, water security, and disaster planning. A resilient nation is harder to attack and quicker to recover.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-186",
+      "statement": "Military technology should reduce unnecessary risk to service members (autonomous systems under meaningful human oversight, logistics, cybersecurity, intelligence analysis, medical support, engineering, communications). Decisions involving the lawful use of force require accountable human judgment.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-187",
+      "statement": "Civic education on the Constitution, civilian control of the military, laws of armed conflict, veterans’ contributions, emergency preparedness, and national resilience — building respect without militarizing schools.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-188",
+      "statement": "Care after service: the nation owes veterans healthcare related to service, rehabilitation, mental-health support, education, employment transition, and opportunities for continued civic contribution. The obligation arises from service rendered, not political status.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-189",
+      "statement": "Connect veterans with local civic institutions as mentors for Youth Leadership Councils, civic academies, emergency-response teams, disaster-preparedness programs, and leadership initiatives — so military leadership experience strengthens civil society.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-190",
+      "statement": "Constitutional limits: the military must never influence domestic elections; must not enforce ordinary domestic politics except where constitutionally authorized and legally necessary; must not become a partisan institution; and must not override civilian constitutional government. Civilian control remains essential.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "constitutional_defense"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-191",
+      "statement": "Larger philosophy: A free republic protects peace through strength, honors those who serve, supports veterans throughout their lives, maintains a military loyal only to the Constitution, and builds resilient communities capable of sustaining liberty during crisis. Military power exists to defend the people and the Constitution — not to replace either.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed",
+      "implications": [
+        "CC-PRIN-39"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-192",
+      "statement": "National Resilience: measure the nation’s ability to endure and recover from crises — military readiness, cybersecurity, energy independence, food resilience, domestic manufacturing capacity, public-health preparedness, disaster response, secure communications, and constitutional continuity of government — not defense spending or troop strength alone. A nation is strongest when its communities are strong.",
+      "origin": "steve_direction_constitutional_defense_national_resilience",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "CC-PRIN-39"
+      ],
+      "conflicts": [
+        "hawkish militarism as national identity",
+        "pacifism that abandons deterrence",
+        "partisan or personal loyalty of the Armed Forces",
+        "office-tied privilege confused with veterans’ earned obligations"
+      ],
+      "research_required": [
+        "comparative civilian-control and deterrence doctrine",
+        "veterans pathway and VA obligation design (no invented cost models)",
+        "national resilience indicator architecture"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-084"
       ],
       "phase_destination": "phase-3_and_phase-4"
     }
