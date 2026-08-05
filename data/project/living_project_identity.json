@@ -78,7 +78,8 @@
   },
   "related_decision_ids": [
     "CC-DEC-100",
-    "CC-DEC-099"
+    "CC-DEC-099",
+    "CC-DEC-101"
   ],
   "architectural_doctrines": [
     {
@@ -115,5 +116,11 @@
         }
       ]
     }
-  ]
+  ],
+  "architectural_freeze_point": {
+    "decision_id": "CC-DEC-101",
+    "anchored_at": "CC-DEC-100",
+    "milestone": "Architecture has transitioned from invention to stewardship.",
+    "success_question_now": "Can we prove what we already have?"
+  }
 }

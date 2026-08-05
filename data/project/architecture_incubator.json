@@ -11,7 +11,8 @@
     "CC-DEC-097",
     "CC-DEC-098",
     "CC-DEC-099",
-    "CC-DEC-100"
+    "CC-DEC-100",
+    "CC-DEC-101"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -402,11 +403,21 @@
   "derivation_test": "New ideas must derive from the First Principle and Ten Foundational Axioms (CC-DEC-095) or remain Hypothesis Cards.",
   "architecture_roadmap_freeze": {
     "decision_id": "CC-DEC-099",
-    "rule": "Architecture chapter closed. Default next work is proof packets, not new platform design.",
+    "rule": "Architecture chapter closed. Default next work is proof. Architectural proposals must clear the CC-DEC-101 threshold gate.",
     "eras_file": "data/project/project_eras_roadmap.json",
     "closed_by_decision_ids": [
       "CC-DEC-099",
       "CC-DEC-100"
+    ],
+    "freeze_point_decision_id": "CC-DEC-101",
+    "anchored_at": "CC-DEC-100",
+    "status": "active_stewardship",
+    "threshold_questions": [
+      "What deficiency in the current architecture does this solve?",
+      "Why can't the existing architecture accommodate it?",
+      "Which decisions would need to be revisited?",
+      "What new complexity does it introduce?",
+      "Does it strengthen or weaken Constitutional Symmetry?"
     ]
   }
 }

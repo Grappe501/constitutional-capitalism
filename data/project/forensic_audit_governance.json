@@ -194,7 +194,8 @@
     "CC-DEC-097",
     "CC-DEC-098",
     "CC-DEC-099",
-    "CC-DEC-100"
+    "CC-DEC-100",
+    "CC-DEC-101"
   ],
   "doctrine_freeze": {
     "decision_id": "CC-DEC-093",
@@ -232,5 +233,10 @@
     "file": "data/project/project_eras_roadmap.json",
     "rule": "Constitutional process + symmetry captured. Burt returns to Step 2. Platform design paused.",
     "meta_doctrine_decision_id": "CC-DEC-100"
+  },
+  "architectural_freeze_point": {
+    "decision_id": "CC-DEC-101",
+    "anchored_at": "CC-DEC-100",
+    "rule": "Freeze active. Burt returns to Step 2. Platform architecture changes require threshold gate."
   }
 }

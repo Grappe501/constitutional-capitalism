@@ -1669,6 +1669,23 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-05",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-101",
+      "title": "Architectural Freeze Point — Stewardship Threshold",
+      "question": "Should CC-DEC-100 be treated as the architectural freeze point at which the project transitions from invention to stewardship, with any future architectural change required to clear a high-threshold gate (deficiency, non-accommodation, decisions revisited, complexity, Constitutional Symmetry), while operational work returns exclusively to Burt Step 2 and proof packets?",
+      "status": "approved",
+      "rationale": "Foundational architectural questions are answered and intentionally frozen before implementation. Further expansion by default would dilute scholarly rigor. Thoughtful evolution remains possible only through a higher bar than adding another idea. No new principle ID. No Phase 8/9 implementation.",
+      "impact": [
+        "project_eras_roadmap.json architectural_freeze_point",
+        "incubator / mission lock / build state stewardship mode",
+        "UPD-052",
+        "NO new CC-PRIN-* / NO platform backends"
+      ],
+      "recommendation": "Approve freeze. Maintain discipline: prove what we have. PP-FF-01 and Burt Step 2 are highest leverage.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
     }
   ]
 }

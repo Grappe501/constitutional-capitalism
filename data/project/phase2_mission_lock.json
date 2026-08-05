@@ -11,7 +11,8 @@
     "CC-DEC-097",
     "CC-DEC-098",
     "CC-DEC-099",
-    "CC-DEC-100"
+    "CC-DEC-100",
+    "CC-DEC-101"
   ],
   "status": "locked",
   "governing_artifacts": {
@@ -217,5 +218,11 @@
     "status": "stable",
     "rule": "Era I Creation (now). Architecture chapter closed for Phase 8/9. Return to Burt Step 2 / PP-FF-01.",
     "meta_doctrine_decision_id": "CC-DEC-100"
+  },
+  "architectural_freeze_point": {
+    "decision_id": "CC-DEC-101",
+    "anchored_at": "CC-DEC-100",
+    "status": "active",
+    "rule": "Invention → stewardship. Threshold gate required for any architectural change. Burt Step 2 / PP-FF-01 next."
   }
 }

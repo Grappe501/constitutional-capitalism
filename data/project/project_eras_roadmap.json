@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-099",
   "related_decision_ids": [
@@ -8,11 +8,12 @@
     "CC-DEC-097",
     "CC-DEC-098",
     "CC-DEC-100",
-    "CC-DEC-099"
+    "CC-DEC-099",
+    "CC-DEC-101"
   ],
-  "status": "stable",
+  "status": "stable_frozen",
   "title": "Constitutional Capitalism — Three Eras Roadmap",
-  "stability_rule": "High-level roadmap is stable (CC-DEC-099/100). No further Phase 8/9 architecture expansion. Return to proof.",
+  "stability_rule": "Architecture frozen at CC-DEC-100/101 (stewardship). Future changes require threshold gate. Return to Phase 2 proof.",
   "lifecycle": [
     "Build",
     "Prove",
@@ -141,13 +142,68 @@
     }
   ],
   "scholarship_return": {
-    "decision_id": "CC-DEC-100",
+    "decision_id": "CC-DEC-101",
     "rule": "Stop designing the future platform. Return to scholarship.",
     "highest_leverage_now": [
       "Burt Step 2",
       "PP-FF-01 and remaining proof packets",
-      "Evidence, legal analysis, and modeling foundations"
+      "Evidence chain strength"
     ],
     "rationale": "Phase 9 quality depends almost entirely on Phase 2 rigor. The best Systems Intelligence Engine cannot compensate for weak evidence."
+  },
+  "architectural_freeze_point": {
+    "decision_id": "CC-DEC-101",
+    "freeze_anchored_at": "CC-DEC-100",
+    "title": "Architecture has transitioned from invention to stewardship",
+    "mindset_was": "What are we missing?",
+    "mindset_now": "Can we prove what we already have?",
+    "mode_was": "creative",
+    "mode_now": "scholarly",
+    "progression": [
+      {
+        "question": "What should Constitutional Capitalism be?",
+        "mode": "creative / definitional",
+        "status": "architecturally answered"
+      },
+      {
+        "question": "How do we prove it?",
+        "mode": "scholarly / evidentiary",
+        "status": "active — Phase 2 / Era I Creation"
+      },
+      {
+        "question": "How should it evolve without losing its integrity?",
+        "mode": "governance / process",
+        "status": "answered by CC-DEC-100; freeze point CC-DEC-101"
+      }
+    ],
+    "foundational_questions_answered": [
+      "What is the philosophy?",
+      "How is doctrine organized?",
+      "How is evidence separated from architecture?",
+      "How does doctrine graduate?",
+      "How does collaboration work?",
+      "What role does AI play?",
+      "Who has authority at each stage?",
+      "How does the system govern itself?"
+    ],
+    "future_change_threshold": {
+      "rule": "Any future architectural change must meet a much higher threshold than adding another idea. Architecture may evolve when truly necessary — not by default.",
+      "must_answer_all": [
+        "What deficiency in the current architecture does this solve?",
+        "Why can't the existing architecture accommodate it?",
+        "Which decisions would need to be revisited?",
+        "What new complexity does it introduce?",
+        "Does it strengthen or weaken Constitutional Symmetry?"
+      ],
+      "approval": "Requires explicit decision record addressing every threshold question; cannot be justified by novelty or architectural appeal alone."
+    },
+    "operational_close": [
+      "No more platform architecture",
+      "No more new principles",
+      "No implementation of Phases 8 or 9",
+      "Return to Burt Step 2",
+      "Build the proof packets",
+      "Strengthen the evidence chain"
+    ]
   }
 }
