@@ -144,6 +144,22 @@ Named instrument (`CC-DEV-031`): **The People's Ledger** — a constitutional ac
 
 Full architecture: `docs/architecture/CONSTITUTIONAL_TRANSPARENCY_AND_PEOPLES_LEDGER.md` and `data/project/transparency_framework.json`. Website domain: **Constitutional Transparency and the People's Ledger** (`CC-WEB-TRANSPARENCY`). Research precedes detailed open-records policy (`CC-DEC-050`, `CC-DEC-051`).
 
+## Essential Systems (developing)
+
+Major system-design domain — not inherent-corruption conclusions.
+
+Constitutional question (`CC-DEV-033`):
+
+> How should a society design essential systems so that private innovation and investment are rewarded while the public interest remains protected?
+
+Finance (`CC-DEV-034`): primarily reward productive value creation.  
+Health (`CC-DEV-035`): measure success by helping people remain healthy, not only by treating illness.  
+Prevention (`CC-DEV-036`): shift investment from avoidable crises toward prevention across domains.
+
+Named instrument: **Community Health Index** (design agenda).
+
+Full architecture: `docs/architecture/ESSENTIAL_SYSTEMS.md` and `data/project/essential_systems_framework.json`. Website domain: **Essential Systems** (`CC-WEB-ESSENTIAL`). Research precedes detailed sector legislation (`CC-DEC-052`, `CC-DEC-053`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

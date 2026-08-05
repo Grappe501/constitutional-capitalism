@@ -24,6 +24,8 @@ Priority domains now have sourced first-pass briefs: wealth/ownership, wages/pro
 
 **Constitutional Transparency and the People's Ledger** (`CC-DEV-029`–`032`) is the **fourth institutional spine**: public information held in trust; presumed open unless constitutionally or legally justified protections apply; People's Ledger as named accountability design agenda — no invented FOIA or portal statistics.
 
+**Essential Systems** (`CC-DEV-033`–`037`) is a **major system-design domain** for banking, insurance, healthcare, pharmaceuticals, community health, and prevention — shared constitutional question and four-question chapter method; Community Health Index design agenda — no invented sector statistics or unsupported systemic-intent claims.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.

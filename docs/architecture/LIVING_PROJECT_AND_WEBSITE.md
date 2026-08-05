@@ -35,6 +35,7 @@ Constitutional Capitalism
 - **Justice, Safety, and Restoration** (principal domain; branches in `justice_framework.json`)  
 - **Public Service and the 21st-Century State** (defining friction-reduction doctrine; *invisible—but never unaccountable*; branches in `government_capacity_framework.json`)  
 - **Constitutional Transparency and the People's Ledger** (presumption of openness with justified exceptions; branches in `transparency_framework.json`)  
+- **Essential Systems** (banking, insurance, healthcare, pharmaceuticals, prevention; system-design method in `essential_systems_framework.json`)  
 - Communities  
 - Families  
 - Education  

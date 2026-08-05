@@ -6,11 +6,11 @@
 
 ## Central question
 
-How does capital access vary geographically and by firm size?
+How does capital access vary geographically and by firm size — and how should finance primarily reward productive value creation rather than extraction?
 
 ## Why it matters
 
-Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality.
+Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality. Parent system-design doctrine: **Essential Systems** (`25-essential-systems.md`, `CC-DEV-033`–`034`).
 
 ## Current findings
 

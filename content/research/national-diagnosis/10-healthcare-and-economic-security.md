@@ -6,11 +6,11 @@
 
 ## Central question
 
-How does healthcare access shape economic security?
+How does healthcare access shape economic security — and how should society design health systems so private innovation is rewarded while the public interest remains protected?
 
 ## Why it matters
 
-Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality.
+Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality. Parent system-design doctrine: **Essential Systems** (`25-essential-systems.md`, `CC-DEV-033`–`037`) — health as civic strength; prevention; Community Health Index design agenda.
 
 ## Current findings
 

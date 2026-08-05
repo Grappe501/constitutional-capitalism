@@ -80,7 +80,43 @@
     { "node_id": "CC-WEB-COMMUNITIES", "title": "Communities", "status": "proposed" },
     { "node_id": "CC-WEB-FAMILIES", "title": "Families", "status": "proposed" },
     { "node_id": "CC-WEB-EDUCATION", "title": "Education", "status": "proposed" },
-    { "node_id": "CC-WEB-HEALTHCARE", "title": "Healthcare", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-ESSENTIAL",
+      "title": "Essential Systems",
+      "status": "seeded",
+      "decision_id": "CC-DEC-053",
+      "related_decision_ids": ["CC-DEC-052"],
+      "central_promise": "Design essential systems so private innovation and investment are rewarded while the public interest remains protected — evaluate banking, insurance, healthcare, and pharmaceuticals through incentives and outcomes, not inherent-corruption conclusions.",
+      "chapter_method": [
+        "What is this system supposed to accomplish?",
+        "How does it currently function?",
+        "Where are the incentives well aligned, and where are they not?",
+        "What reforms would better align the system with Constitutional Capitalism?"
+      ],
+      "branches": [
+        "System design method",
+        "Banking and the real economy",
+        "Insurance and risk spreading",
+        "Healthcare and health maintenance",
+        "Pharmaceuticals and innovation incentives",
+        "Community Health Index",
+        "Preventive society",
+        "Competition and consumer information",
+        "Rural and local access",
+        "Pricing transparency",
+        "Publicly funded research and access",
+        "Outcome measurement"
+      ],
+      "framework_file": "data/project/essential_systems_framework.json",
+      "research_domain_title": "Essential Systems: Banking, Insurance, Healthcare, and Preventive Design",
+      "supersedes_nodes": ["CC-WEB-HEALTHCARE"]
+    },
+    {
+      "node_id": "CC-WEB-HEALTHCARE",
+      "title": "Healthcare",
+      "status": "redirected",
+      "note": "Healthcare content is seeded under Essential Systems (CC-WEB-ESSENTIAL); keep this node for navigation compatibility until branch pages mature."
+    },
     { "node_id": "CC-WEB-HOUSING", "title": "Housing", "status": "proposed" },
     { "node_id": "CC-WEB-AGRICULTURE", "title": "Agriculture", "status": "proposed" },
     { "node_id": "CC-WEB-TECH_AI", "title": "Technology & AI", "status": "proposed" },

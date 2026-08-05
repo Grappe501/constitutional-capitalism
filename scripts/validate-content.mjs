@@ -73,6 +73,7 @@ const domains = [
   "democracy",
   "government-capacity",
   "transparency",
+  "essential-systems",
 ];
 for (const d of domains) {
   const p = r("content/research", d);
