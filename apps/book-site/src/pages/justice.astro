@@ -134,6 +134,93 @@ const leaveWith = justice.reentry_from_day_one?.leave_with || [];
     <p class="status-note">Status: {justice.restoration_councils.status}</p>
     <p>{justice.restoration_councils.summary}</p>
 
+    {
+      justice.permanent_public_safety_system && (
+        <>
+          <h2>Permanent Public Safety System</h2>
+          <p class="status-note">
+            Status: {justice.permanent_public_safety_system.status}. Design agenda — not operating campuses.
+          </p>
+          <p>
+            Rejected language: <em>“{justice.permanent_public_safety_system.rejected_language}.”</em>{" "}
+            {justice.permanent_public_safety_system.rejected_language_reason}
+          </p>
+          <p>
+            Correct language:{" "}
+            <strong>{justice.permanent_public_safety_system.correct_language}</strong>
+          </p>
+          <p>{justice.permanent_public_safety_system.language_distinction}</p>
+          <p>{justice.permanent_public_safety_system.answer}</p>
+          <blockquote>
+            <p>{justice.permanent_public_safety_system.constitutional_capitalism_standard}</p>
+          </blockquote>
+
+          <h3>Narrowest possible category</h3>
+          <p>{justice.permanent_public_safety_system.narrow_eligibility.summary}</p>
+          <ul>
+            {justice.permanent_public_safety_system.narrow_eligibility.criteria_examples.map(
+              (c: string) => (
+                <li>{c}</li>
+              )
+            )}
+          </ul>
+          <p class="status-note">
+            {justice.permanent_public_safety_system.narrow_eligibility.risk_score_rule}
+          </p>
+
+          <h3>Secure Public Safety Campuses</h3>
+          <p>{justice.permanent_public_safety_system.secure_public_safety_campuses.summary}</p>
+          <p>
+            Organized around:{" "}
+            {justice.permanent_public_safety_system.secure_public_safety_campuses.organized_around.join(
+              "; "
+            )}
+            .
+          </p>
+          <p class="status-note">
+            {justice.permanent_public_safety_system.secure_public_safety_campuses.constitutional_conditions_note}
+          </p>
+
+          <h3>Graduated custody</h3>
+          <p>{justice.permanent_public_safety_system.graduated_custody.summary}</p>
+          <ol>
+            {justice.permanent_public_safety_system.graduated_custody.levels.map((l: any) => (
+              <li>
+                <strong>{l.title}</strong> — {l.for}
+              </li>
+            ))}
+          </ol>
+          <p class="status-note">{justice.permanent_public_safety_system.graduated_custody.aging_cost_note}</p>
+          <p class="status-note">{justice.permanent_public_safety_system.graduated_custody.aging_risk_note}</p>
+
+          <h3>Periodic dangerousness review</h3>
+          <p>{justice.permanent_public_safety_system.periodic_dangerousness_review.summary}</p>
+          <p>Cadence: {justice.permanent_public_safety_system.periodic_dangerousness_review.cadence}</p>
+
+          <h3>Pathway when release is unlikely</h3>
+          <p>{justice.permanent_public_safety_system.pathway_even_when_release_unlikely.summary}</p>
+
+          <h3>Resource concentration</h3>
+          <blockquote>
+            <p>{justice.permanent_public_safety_system.resource_concentration.text}</p>
+          </blockquote>
+          <p>{justice.permanent_public_safety_system.resource_concentration.summary}</p>
+
+          <h3>Reject exile; no private profit from permanent confinement</h3>
+          <p>{justice.permanent_public_safety_system.reject_exile_and_banishment.summary}</p>
+          <p>{justice.permanent_public_safety_system.no_private_profit_from_permanent_confinement.summary}</p>
+
+          <h3>Anti-misuse safeguards</h3>
+          <p>{justice.permanent_public_safety_system.anti_misuse_safeguards.summary}</p>
+          <ul>
+            {justice.permanent_public_safety_system.anti_misuse_safeguards.rules.map((r: string) => (
+              <li>{r}</li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+
     <h2>Foundational principle</h2>
     <blockquote>
       <p>{justice.foundational_principle.text}</p>

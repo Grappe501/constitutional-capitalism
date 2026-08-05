@@ -38,6 +38,7 @@
     "reentry_from_day_one": { "type": "object" },
     "productive_citizenship_destination": { "type": "object" },
     "restoration_councils": { "type": "object" },
+    "permanent_public_safety_system": { "type": "object" },
     "core_commitments": { "type": "array" },
     "stages": {
       "type": "array",
@@ -62,6 +63,7 @@
         "questions": {
           "type": "array",
           "minItems": 10,
+          "maxItems": 20,
           "items": {
             "type": "object",
             "required": ["question_id", "number", "text"],

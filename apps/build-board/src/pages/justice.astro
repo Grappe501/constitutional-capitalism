@@ -12,6 +12,9 @@ const justiceIds = [
   "CC-DEV-047",
   "CC-DEV-048",
   "CC-DEV-049",
+  "CC-DEV-050",
+  "CC-DEV-051",
+  "CC-DEV-052",
 ];
 const claimIds = [
   "CC-CLAIM-021",
@@ -21,7 +24,12 @@ const claimIds = [
   "CC-CLAIM-051",
   "CC-CLAIM-052",
   "CC-CLAIM-053",
+  "CC-CLAIM-054",
+  "CC-CLAIM-055",
+  "CC-CLAIM-056",
+  "CC-CLAIM-057",
 ];
+const pps = justice.permanent_public_safety_system;
 const justiceDoctrine = (developingDoctrine.items || []).filter((d: any) =>
   justiceIds.includes(d.doctrine_id)
 );
@@ -96,6 +104,21 @@ const pathCount = justice.decision_pathways?.paths?.length ?? 0;
     <p>{justice.public_corrections_rule?.text}</p>
     <p class="muted">{justice.public_corrections_rule?.federal_policy_instability_note}</p>
   </section>
+
+  {
+    pps && (
+      <section class="panel" style="margin-top:1rem;">
+        <h2>Permanent Public Safety System</h2>
+        <p class="muted">Status: {pps.status}</p>
+        <p>
+          Rejected: “{pps.rejected_language}.” Correct: {pps.correct_language}
+        </p>
+        <p>{pps.constitutional_capitalism_standard}</p>
+        <p>{pps.answer}</p>
+        <p class="muted">{pps.narrow_eligibility?.risk_score_rule}</p>
+      </section>
+    )
+  }
 
   <section class="panel" style="margin-top:1rem;">
     <h2>Developing doctrine</h2>

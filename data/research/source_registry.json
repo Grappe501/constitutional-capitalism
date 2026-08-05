@@ -1,7 +1,7 @@
 {
-  "version": "0.2.3",
+  "version": "0.2.4",
   "last_updated": "2026-08-04",
-  "note": "Phase 2 priority sources plus democracy spine and community-safety/justice sources (COPS, DOJ private prisons 2016/2017, BJA, NIJ). No fabricated findings. Secondary sources labeled.",
+  "note": "Phase 2 priority sources plus democracy spine and community-safety/justice sources (COPS, DOJ private prisons 2016/2017, BJA, NIJ, PSRAC risk assessment, GAO/OIG aging custody, BOP FSA). No fabricated findings. Secondary sources labeled.",
   "sources": [
     {
       "source_id": "CC-SRC-001",
@@ -585,6 +585,122 @@
       "ideological_or_institutional_considerations": "NIJ research library publication.",
       "verification_status": "url_verified",
       "notes": "Use as evidence caution against overclaiming reentry program effectiveness."
+    },
+    {
+      "source_id": "CC-SRC-025",
+      "title": "What Is Risk Assessment",
+      "authors": ["Bureau of Justice Assistance, Public Safety Risk Assessment Clearinghouse"],
+      "year": 2024,
+      "url": "https://bja.ojp.gov/program/psrac/basics/what-is-risk-assessment",
+      "source_type": "federal_guidance",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "justice_risk_assessment",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "BJA/PSRAC overview explaining actuarial risk assessment across justice stages. Risk scores are probabilistic, not definitive predictions; tools vary in validity; static vs dynamic factors matter; reassessment is important as circumstances change. Supports using validated tools to structure decisions and allocate resources — not as sole grounds for permanent custody.",
+      "key_findings": [
+        "Risk assessments provide probabilistic, not certain, predictions of reoffending",
+        "Tool accuracy and validity can vary; tools should fit the population of use",
+        "Risk assessment can improve consistency and resource targeting when properly used"
+      ],
+      "limitations": "Guidance overview, not a validation study of any particular tool; does not authorize score-only permanent confinement decisions.",
+      "ideological_or_institutional_considerations": "DOJ/BJA clearinghouse framing.",
+      "verification_status": "url_verified",
+      "notes": "Supports Permanent Public Safety System rule that a risk score alone is never enough."
+    },
+    {
+      "source_id": "CC-SRC-026",
+      "title": "Amdt8.4.7 Conditions of Confinement",
+      "authors": ["Constitution Annotated (Congress.gov)"],
+      "year": 2024,
+      "url": "https://constitution.congress.gov/browse/essay/amdt8-4-7/ALDE_00000966/",
+      "source_type": "constitutional_annotation",
+      "reliability": "reputable_secondary_legal",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "justice_conditions_of_confinement",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "Constitution Annotated essay on Eighth Amendment conditions of confinement. Full essay retrieval was blocked by site security at registration time; the Annotated’s conditions-of-confinement materials are the intended legal map for the rule that confinement conditions cannot become cruel or deliberately indifferent to serious human needs. Detailed holdings require legal review and primary case citation before policy drafting.",
+      "key_findings": [
+        "Eighth Amendment doctrine addresses conditions of confinement",
+        "Constitutional floor for humane custody remains binding regardless of sentence length"
+      ],
+      "limitations": "Secondary annotation; retrieval blocked by Cloudflare at registration; do not invent specific case holdings from this registry entry alone — legal review required.",
+      "ideological_or_institutional_considerations": "Congressional Research Service / Constitution Annotated institutional product.",
+      "verification_status": "url_retrieval_blocked_cloudflare",
+      "notes": "Anchor for Secure Public Safety Campus constitutional-conditions note pending legal-review package."
+    },
+    {
+      "source_id": "CC-SRC-027",
+      "title": "Bureau of Prisons: Better Planning Could Help BOP Evaluate Its Care for Aging Inmates and Health Care Cost Control (GAO-17-379 context) / Better Planning and Evaluation Needed",
+      "authors": ["U.S. Government Accountability Office"],
+      "year": 2017,
+      "url": "https://www.gao.gov/products/gao-17-379",
+      "source_type": "federal_oversight_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US_federal",
+      "research_domain": "corrections_healthcare_costs",
+      "publication_date": "2017-06",
+      "retrieval_date": "2026-08-04",
+      "summary": "GAO review of BOP inmate health-care costs FY2009–2016. Health-care obligations rose substantially; BOP cited an aging inmate population, rising pharmaceutical prices, and increasing costs of outside medical services among cost drivers. Supports the cost rationale for medical/geriatric custody planning — not a claim that every older person should be released.",
+      "key_findings": [
+        "BOP health-care obligations rose from about $978 million (FY2009) to about $1.34 billion (FY2016)",
+        "BOP cited aging inmate population among factors affecting health-care costs"
+      ],
+      "limitations": "Federal BOP health-care cost study; does not itself establish misconduct/rearrest differentials by age (see CC-SRC-028).",
+      "ideological_or_institutional_considerations": "GAO oversight report.",
+      "verification_status": "url_verified",
+      "notes": "Use for aging-cost / resource-concentration design notes; do not invent state-system cost figures from this alone."
+    },
+    {
+      "source_id": "CC-SRC-028",
+      "title": "The Impact of an Aging Inmate Population on the Federal Bureau of Prisons",
+      "authors": ["U.S. Department of Justice, Office of the Inspector General"],
+      "year": 2015,
+      "url": "https://oig.justice.gov/sites/default/files/reports/15-05.pdf",
+      "source_type": "federal_oversight_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US_federal",
+      "research_domain": "corrections_aging_population",
+      "publication_date": "2015-05",
+      "retrieval_date": "2026-08-04",
+      "summary": "DOJ OIG report on aging federal inmates. Finds aging inmates commit less misconduct while incarcerated and have lower post-release re-arrest rates in OIG sampling than the general federal inmate re-arrest rate cited from BOP research; also discusses limited early-release pathways and cost implications. Supports medical/geriatric secure-care and step-down consideration — not automatic release.",
+      "key_findings": [
+        "Aging inmates represented a smaller share of misconduct incidents than their share of the population in the OIG analysis year",
+        "OIG sampling found lower re-arrest among aging releasees than the BOP general federal re-arrest rate referenced in the report"
+      ],
+      "limitations": "Federal BOP context; sampling and comparison methods are report-specific; age reduces average risk but does not eliminate individual dangerousness; do not invent national percentages beyond careful quotation in later modules.",
+      "ideological_or_institutional_considerations": "DOJ Inspector General oversight.",
+      "verification_status": "url_verified",
+      "notes": "Corrects informal attribution of lower misconduct/rearrest solely to GAO-17-379; OIG 15-05 is the better federal source for that finding."
+    },
+    {
+      "source_id": "CC-SRC-029",
+      "title": "First Step Act, Frequently Asked Questions",
+      "authors": ["Federal Bureau of Prisons"],
+      "year": 2024,
+      "url": "https://www.bop.gov/inmates/fsa/faq.jsp",
+      "source_type": "federal_agency_faq",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US_federal",
+      "research_domain": "corrections_first_step_act",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "BOP FAQ summarizing First Step Act features relevant to resource concentration: expanded recidivism-reduction programming, earned time credits for eligible individuals, residential reentry/home-confinement opportunities, compassionate release / reduction-in-sentence pathways, and elderly-offender pilot mechanisms. Illustrates that federal law already contains tools to move eligible people out of expensive custody — without claiming all state systems match federal design.",
+      "key_findings": [
+        "FSA expands risk-reduction programming and productive activities with earned time credits for eligible inmates",
+        "Compassionate release and elderly-offender/home-confinement mechanisms exist under federal practice described by BOP"
+      ],
+      "limitations": "Federal BOP FAQ; eligibility exclusions apply; not an outcome evaluation; state systems differ.",
+      "ideological_or_institutional_considerations": "BOP operational FAQ interpreting statutory/program features.",
+      "verification_status": "url_verified",
+      "notes": "Supports resource-concentration framing for Permanent Public Safety System affordability."
     }
   ]
 }

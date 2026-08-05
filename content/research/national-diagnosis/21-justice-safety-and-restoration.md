@@ -14,7 +14,7 @@ Justice is the mechanism that determines whether liberty, ownership, opportunity
 
 ## Current findings
 
-_Architecture and developing doctrine established (`CC-DEV-011`–`014`, `CC-DEV-046`–`049`, `data/project/justice_framework.json` v0.2.0)._
+_Architecture and developing doctrine established (`CC-DEV-011`–`014`, `CC-DEV-046`–`052`, `data/project/justice_framework.json` v0.3.0)._
 
 Registered institutional sources (not national crime-rate claims):
 
@@ -22,6 +22,13 @@ Registered institutional sources (not national crime-rate claims):
 - DOJ private-prison policy instability: 2016 Yates phase-down (`CC-SRC-018`); **2017 Sessions rescission** (`CC-SRC-019`) — not a 2023 rescission of that memo.
 - BJA adult treatment courts and mental-health court taxonomy (`CC-SRC-020`, `CC-SRC-021`).
 - NIJ recidivism measurement caution, reentry continuum, and modest/mixed short-term reentry outcomes (`CC-SRC-022`–`024`).
+- BJA/PSRAC risk assessment basics — probabilistic tools, not certainty (`CC-SRC-025`).
+- Constitution Annotated conditions-of-confinement essay — retrieval blocked by site security; legal review pending (`CC-SRC-026`).
+- GAO-17-379 — BOP health-care costs; aging as a cited cost driver (`CC-SRC-027`).
+- DOJ OIG 15-05 — aging federal inmates: lower misconduct share and lower sampled post-release re-arrest than general federal rate cited (`CC-SRC-028`).
+- BOP First Step Act FAQ — programming, time credits, compassionate release, elderly-offender mechanisms (`CC-SRC-029`).
+
+**Language rule:** never “citizens unworthy of reentry.” Correct framing: people whose current, demonstrated danger requires continuing secure custody. Answer for continuing extreme danger: **humane permanent incapacitation with continuing review** via publicly operated Secure Public Safety Campuses (design agenda).
 
 No invented clearance, victimization, or recidivism percentages asserted in this brief.
 
@@ -31,6 +38,8 @@ No invented clearance, victimization, or recidivism percentages asserted in this
 - Federal private-prison contracting posture has reversed across administrations (`CC-SRC-018`, `CC-SRC-019`), supporting the case for settling the no-confinement-profit principle in law rather than memo cycles.
 - Federal justice agencies have long supported treatment-court and justice–behavioral-health collaboration models; quality depends on design (`CC-SRC-020`, `CC-SRC-021`).
 - Reentry is a continuum from intake; success metrics should be more nuanced than rearrest alone (`CC-SRC-023`); short-term reentry-service effects are often modest/mixed (`CC-SRC-024`).
+- Risk scores are probabilistic and tools vary in validity (`CC-SRC-025`) — supports score-plus-judgment, not score-only permanent custody.
+- Aging federal populations drive health-care cost pressure (`CC-SRC-027`); OIG finds lower average misconduct and rearrest patterns for aging cohorts (`CC-SRC-028`); FSA mechanisms illustrate federal resource-concentration tools (`CC-SRC-029`).
 
 ## Contrary evidence
 
@@ -40,6 +49,9 @@ No invented clearance, victimization, or recidivism percentages asserted in this
 - Measurement of rehabilitation success and recidivism is contested (definitions, follow-up windows, selection).
 - Local control of policing can improve accountability **or** enable rights violations or favoritism without constitutional floors and anti-nepotism safeguards.
 - Some argue private corrections expand capacity faster; comparative quality evidence is contested and jurisdiction-specific.
+- Periodic review of long-term custody can create political pressure for unsafe release — or, conversely, rubber-stamp confinement if panels lack independence.
+- Age reduces average risk but does not eliminate individual dangerousness; medical/geriatric step-down is not automatic release.
+- Some argue ordinary maximum-security prisons already suffice without specialized Secure Public Safety Campuses.
 
 ## Uncertainties
 
@@ -57,7 +69,7 @@ No invented clearance, victimization, or recidivism percentages asserted in this
 
 ## Constitutional implications
 
-Developing doctrine holds that public safety belongs to the community; equal justice cannot depend primarily on wealth; punishment must be proportionate; institutions must not profit from punishment or confinement volume; victims must be supported; reentry into citizenship should be the default after lawful completion of sentence, with risk-specific reviewable exceptions; and Community Safety Corps / Restoration Councils are design agendas pending sourced modules. These are **doctrine and research agenda**, not ratified Declaration amendments.
+Developing doctrine holds that public safety belongs to the community; equal justice cannot depend primarily on wealth; punishment must be proportionate; institutions must not profit from punishment or confinement volume; victims must be supported; reentry into citizenship should be the default after lawful completion of sentence, with risk-specific reviewable exceptions; **no person loses human dignity even when they lose liberty**; continuing extreme danger is managed through public, humane, reviewable secure custody — never exile or “unworthy of reentry” categories; and Community Safety Corps / Restoration Councils / Secure Public Safety Campuses are design agendas pending sourced modules. These are **doctrine and research agenda**, not ratified Declaration amendments.
 
 ## Policy implications (not yet resolved)
 
@@ -78,7 +90,12 @@ Phase 2 does **not** write national criminal codes, sentencing grids, or policin
 - `CC-SRC-021` — BJA mental health courts taxonomy  
 - `CC-SRC-022` — NIJ Recidivism  
 - `CC-SRC-023` — NIJ Five Things About Reentry  
-- `CC-SRC-024` — NIJ Impact of Prison Reentry Services (short-term / modest-mixed caution)
+- `CC-SRC-024` — NIJ Impact of Prison Reentry Services (short-term / modest-mixed caution)  
+- `CC-SRC-025` — BJA/PSRAC What Is Risk Assessment  
+- `CC-SRC-026` — Constitution Annotated Amdt8.4.7 Conditions of Confinement (retrieval blocked; legal review pending)  
+- `CC-SRC-027` — GAO-17-379 BOP health-care costs / aging cost driver  
+- `CC-SRC-028` — DOJ OIG 15-05 aging inmate population (misconduct / re-arrest)  
+- `CC-SRC-029` — BOP First Step Act FAQ  
 
 ## Claim IDs
 
@@ -88,7 +105,11 @@ Phase 2 does **not** write national criminal codes, sentencing grids, or policin
 - `CC-CLAIM-050` — complete Community Safety and Restoration System objective  
 - `CC-CLAIM-051` — Community Safety Corps design  
 - `CC-CLAIM-052` — no private financial interest in human confinement  
-- `CC-CLAIM-053` — decision pathways, restoration campuses, reentry from day one
+- `CC-CLAIM-053` — decision pathways, restoration campuses, reentry from day one  
+- `CC-CLAIM-054` — never “unworthy of reentry”; dignity under continuing custody  
+- `CC-CLAIM-055` — Secure Public Safety Campuses / humane permanent incapacitation with review  
+- `CC-CLAIM-056` — risk score alone never authorizes permanent custody  
+- `CC-CLAIM-057` — resource concentration; reject exile; aging cost/risk evidence careful use  
 
 ## Doctrine IDs
 
@@ -100,11 +121,15 @@ Phase 2 does **not** write national criminal codes, sentencing grids, or policin
 - `CC-DEV-047` Community Safety Corps and relationship policing  
 - `CC-DEV-048` public professional corrections / no confinement profit  
 - `CC-DEV-049` decision pathways, restoration campuses, Restoration Councils  
+- `CC-DEV-050` dignity language / never unworthy of reentry  
+- `CC-DEV-051` Secure Public Safety Campuses and continuing review  
+- `CC-DEV-052` anti-misuse safeguards, reject exile, resource concentration  
 
 ## Next research actions
 
 1. Deepen BJS/DOJ/court/GAO modules for bail, defense, incarceration, fines/fees, victimization.  
-2. Create baseline indicator slots with null values only.  
-3. Source state/local private-probation and fee practices beyond federal BOP memos.  
-4. Evaluate co-responder / civilianization models with rural capacity limits labeled.  
-5. Keep detailed justice policy blocked until diagnosis evidence exists.
+2. Complete Eighth Amendment conditions-of-confinement legal-review package (primary cases + Annotated).  
+3. Create baseline indicator slots with null values only.  
+4. Source state/local private-probation and fee practices beyond federal BOP memos.  
+5. Evaluate co-responder / civilianization models with rural capacity limits labeled.  
+6. Keep detailed justice policy blocked until diagnosis evidence exists.

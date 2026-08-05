@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "last_updated": "2026-08-04",
   "status": "developing_doctrine_architecture",
-  "decision_ids": ["CC-DEC-043", "CC-DEC-044", "CC-DEC-058"],
+  "decision_ids": ["CC-DEC-043", "CC-DEC-044", "CC-DEC-058", "CC-DEC-059"],
   "domain_title": "Community Safety, Justice, and Restoration",
   "website_node_id": "CC-WEB-JUSTICE",
-  "note": "Complete Community Safety and Restoration System architecture — not isolated police or prison reforms. Not finished justice legislation. No invented crime, clearance, or recidivism statistics. Detailed statutes blocked until Phase 2.1 sourced diagnosis. Private-prison federal policy history is recorded accurately (2016 Yates phase-down; 2017 Sessions rescission; later executive orders may also change) to illustrate why durable principle should be settled in law.",
+  "note": "Complete Community Safety and Restoration System architecture — not isolated police or prison reforms. Includes Permanent Public Safety System for continuing extreme danger: humane permanent incapacitation with continuing review — never a category of people unworthy of reentry. Not finished justice legislation. No invented crime, clearance, or recidivism statistics. Detailed statutes blocked until Phase 2.1 sourced diagnosis. Private-prison federal policy history is recorded accurately (2016 Yates phase-down; 2017 Sessions rescission).",
   "role_in_philosophy": "Justice is the mechanism that determines whether liberty, ownership, opportunity, and accountability are real—or merely promised. Community safety is a complete system: prevent harm, respond quickly, protect victims, treat addiction and mental illness, hold dangerous people securely, restore everyone who can be restored, and return as many people as safely possible to productive citizenship.",
   "system_objective": {
     "text": "Prevent harm, respond quickly when harm occurs, protect victims, treat addiction and mental illness, hold dangerous people securely, restore everyone who can be restored, and return as many people as safely possible to productive citizenship.",
@@ -267,7 +267,8 @@
           "victim protection",
           "humane conditions",
           "preparation for return when return becomes safe"
-        ]
+        ],
+        "continuing_extreme_danger_note": "When due process and repeated professional review show continuing extreme danger that cannot be safely managed in the community, Path A connects to the Permanent Public Safety System — Secure Public Safety Campuses with continuing review — not exile, abandonment, or a category of people unworthy of reentry."
       },
       {
         "path_id": "CC-PATH-B",
@@ -431,6 +432,172 @@
     ],
     "doctrine_ids": ["CC-DEV-049"]
   },
+  "permanent_public_safety_system": {
+    "status": "design_agenda",
+    "rejected_language": "citizens unworthy of reentry",
+    "rejected_language_reason": "That language gives government power to declare a human being permanently beyond value and conflicts with the dignity at the center of Constitutional Capitalism.",
+    "correct_language": "People whose current, demonstrated danger requires continuing secure custody.",
+    "language_distinction": "One judges a person’s human worth. The other judges what level of restriction is presently required to protect others.",
+    "answer": "Humane permanent incapacitation with continuing review — not exile, abandonment, private imprisonment, or remote punishment colonies.",
+    "constitutional_capitalism_standard": "No person loses human dignity, even when they lose liberty. Secure confinement may be necessary to protect society, but it must remain public, humane, productive, reviewable, and limited to the least restrictive conditions capable of maintaining safety.",
+    "narrow_eligibility": {
+      "summary": "Permanent secure custody should be reserved for people who meet a demanding standard.",
+      "criteria_examples": [
+        "conviction for extremely serious violent or predatory conduct",
+        "strong evidence of continuing danger",
+        "failure of less restrictive interventions",
+        "individualized judicial findings",
+        "access to competent counsel and appeal",
+        "periodic reassessment"
+      ],
+      "risk_score_rule": "A risk-assessment score alone should never be enough. Risk tools can help structure decisions, but they must be validated, reviewed for bias, and combined with individualized professional and judicial judgment.",
+      "source_ids": ["CC-SRC-025"],
+      "doctrine_ids": ["CC-DEV-050", "CC-DEV-051"]
+    },
+    "secure_public_safety_campuses": {
+      "status": "design_agenda",
+      "summary": "For the small group who cannot safely return, create publicly operated Secure Public Safety Campuses — highly secure, geographically separated enough to protect the public, close enough for lawful oversight, family contact, attorneys, courts, and medical care; publicly owned and staffed; independently inspected; transparent in budgets, deaths, violence, discipline, medical outcomes, and use of isolation.",
+      "not": "punishment warehouses",
+      "organized_around": [
+        "work",
+        "education",
+        "treatment",
+        "physical health",
+        "mental healthcare",
+        "restitution where possible",
+        "personal responsibility",
+        "structured social life",
+        "family contact where safe",
+        "preparation for possible future step-down"
+      ],
+      "constitutional_conditions_note": "Confinement conditions cannot become cruel or deliberately indifferent to serious human needs; Eighth Amendment conditions-of-confinement doctrine remains a constitutional floor (legal review required before detailed statutory drafting).",
+      "source_ids": ["CC-SRC-026"],
+      "doctrine_ids": ["CC-DEV-051"]
+    },
+    "graduated_custody": {
+      "summary": "Separate sentence length from current security level. A person may have a life sentence but not need the most expensive level of security for life.",
+      "levels": [
+        {
+          "level": 1,
+          "title": "Maximum secure custody",
+          "for": "active, serious danger"
+        },
+        {
+          "level": 2,
+          "title": "Structured secure custody",
+          "for": "people who remain unsuitable for release but can function safely with fewer controls"
+        },
+        {
+          "level": 3,
+          "title": "Medical or geriatric secure care",
+          "for": "people whose age or health greatly reduces their danger"
+        },
+        {
+          "level": 4,
+          "title": "Closely monitored step-down placement",
+          "for": "only when evidence shows that community placement can be safe"
+        }
+      ],
+      "aging_cost_note": "Aging incarcerated populations are especially expensive because of medical care (GAO findings on BOP health-care cost drivers including aging).",
+      "aging_risk_note": "Federal reviews have also found that older incarcerated people generally have lower misconduct and lower post-release rearrest rates than younger cohorts — supporting medical/geriatric step-down consideration, not automatic release of every older person.",
+      "source_ids": ["CC-SRC-027", "CC-SRC-028"],
+      "doctrine_ids": ["CC-DEV-051"]
+    },
+    "periodic_dangerousness_review": {
+      "summary": "Permanent sentences should not mean permanent intellectual laziness by the state. Review does not guarantee release; it guarantees that confinement remains connected to a legitimate current purpose rather than vengeance alone.",
+      "cadence": "Every five years — or more frequently for aging or medically impaired people.",
+      "examines": [
+        "current conduct",
+        "psychological and medical evaluations",
+        "treatment participation",
+        "evidence of remorse or accountability",
+        "age and physical capacity",
+        "victim-safety concerns",
+        "likelihood and severity of future harm",
+        "whether a lower security level could protect the public"
+      ],
+      "panel_includes": [
+        "a judge or retired judge",
+        "forensic mental-health expertise",
+        "corrections expertise",
+        "victim representation",
+        "public-safety expertise",
+        "independent community representation"
+      ],
+      "doctrine_ids": ["CC-DEV-051"]
+    },
+    "pathway_even_when_release_unlikely": {
+      "summary": "The system should never say that nothing a person does matters. Even someone who may never leave should be able to earn greater movement, meaningful work, education, family contact, mentoring roles, better housing conditions, restorative projects, and lower-security placement when evidence supports it.",
+      "doctrine_ids": ["CC-DEV-050", "CC-DEV-051"]
+    },
+    "productive_contribution": {
+      "summary": "People in long-term secure custody who are medically able should contribute through meaningful, fairly structured work. This cannot become coerced, nearly unpaid labor that enriches private companies. The state should not pretend prison labor will fully pay for incarceration.",
+      "work_examples": [
+        "producing goods for public institutions",
+        "repairing equipment",
+        "agricultural production",
+        "digitizing public archives",
+        "disaster-supply preparation",
+        "approved manufacturing",
+        "mentoring younger incarcerated people",
+        "educational tutoring"
+      ],
+      "compensation_divided_among": [
+        "victim restitution",
+        "family support",
+        "personal savings",
+        "reentry savings if release remains possible",
+        "a limited contribution toward confinement costs"
+      ],
+      "public_responsibility_remains": [
+        "security",
+        "healthcare",
+        "constitutional oversight"
+      ],
+      "doctrine_ids": ["CC-DEV-051", "CC-DEV-048"]
+    },
+    "resource_concentration": {
+      "text": "Use expensive secure custody for people who truly require secure custody.",
+      "summary": "The best way to afford secure custody for the genuinely dangerous is to stop imprisoning people who do not require it — moving appropriate addiction, technical-violation, poverty-related nonpayment, low-level nonviolent, treatable mental-health, and medically incapacitated elderly cases into treatment, restitution, supervision, medical placement, or community alternatives.",
+      "federal_context_note": "Federal law already permits certain compassionate-release and elderly-offender mechanisms; the First Step Act uses risk-reduction programming and prerelease placement for eligible individuals. This is resource concentration, not leniency for its own sake.",
+      "source_ids": ["CC-SRC-029"],
+      "doctrine_ids": ["CC-DEV-052"]
+    },
+    "reject_exile_and_banishment": {
+      "summary": "We should not send people to isolated territories, overseas institutions, private islands, or deliberately harsh colonies. Distance may sometimes be necessary for security, but isolation from law and oversight must never be the objective.",
+      "risks": [
+        "abuse",
+        "disappearance from public oversight",
+        "denial of legal access",
+        "medical neglect",
+        "political misuse",
+        "constitutional violations",
+        "treating people as disposable"
+      ],
+      "doctrine_ids": ["CC-DEV-052"]
+    },
+    "no_private_profit_from_permanent_confinement": {
+      "summary": "No private company should receive more money because more people are incarcerated, people remain longer, beds remain full, release is delayed, or treatment fails. Private vendors may provide carefully contracted goods and services, but authority to confine, discipline, classify, treat, and recommend release must remain public and auditable.",
+      "doctrine_ids": ["CC-DEV-048", "CC-DEV-052"]
+    },
+    "anti_misuse_safeguards": {
+      "summary": "The most dangerous feature of any permanent-confinement system is the possibility that future governments expand it.",
+      "rules": [
+        "only courts may impose it",
+        "eligibility must be defined narrowly in statute",
+        "political beliefs, poverty, addiction, disability, homelessness, protest, or unpopular speech can never qualify",
+        "no administrative agency may add new categories independently",
+        "every person receives counsel and appeal",
+        "periodic review is mandatory",
+        "aggregate data is public",
+        "facilities receive independent inspection",
+        "deaths and serious injuries receive external investigation",
+        "emergency expansion expires automatically unless legislatively renewed"
+      ],
+      "doctrine_ids": ["CC-DEV-052"]
+    },
+    "doctrine_ids": ["CC-DEV-050", "CC-DEV-051", "CC-DEV-052"]
+  },
   "core_commitments": [
     {
       "id": "CC-JUST-C01",
@@ -521,6 +688,12 @@
       "title": "Full reentry into citizenship",
       "summary": "After lawful sentence completion, punishment should not continue indefinitely through automatic lifetime exclusion; residual restrictions must be specific, relevant, reviewable, and limited.",
       "doctrine_ids": ["CC-DEV-014", "CC-DEV-049"]
+    },
+    {
+      "id": "CC-JUST-C11",
+      "title": "Dignity preserved in continuing secure custody",
+      "summary": "Never classify people as unworthy of reentry. When continuing extreme danger requires secure custody, use humane permanent incapacitation with continuing review — public, productive, least-restrictive security, and reviewable — never exile or private profit from confinement.",
+      "doctrine_ids": ["CC-DEV-050", "CC-DEV-051", "CC-DEV-052"]
     }
   ],
   "stages": [
@@ -568,9 +741,11 @@
       { "question_id": "CC-JTEST-05", "number": 5, "text": "Does any institution profit from punishment or confinement volume?" },
       { "question_id": "CC-JTEST-06", "number": 6, "text": "Is the victim meaningfully supported?" },
       { "question_id": "CC-JTEST-07", "number": 7, "text": "Does it use the least coercive professional response that still protects safety?" },
-      { "question_id": "CC-JTEST-08", "number": 8, "text": "Is there a measurable path back to citizenship when return is safely possible?" },
+      { "question_id": "CC-JTEST-08", "number": 8, "text": "Is there a measurable path back to citizenship when return is safely possible — or, if continuing secure custody is required, continuing review and least-restrictive conditions that preserve dignity?" },
       { "question_id": "CC-JTEST-09", "number": 9, "text": "Are officials accountable, transparent, and free from favoritism quotas?" },
-      { "question_id": "CC-JTEST-10", "number": 10, "text": "Does the policy increase or reduce the long-term power and safety of ordinary people?" }
+      { "question_id": "CC-JTEST-10", "number": 10, "text": "Does the policy increase or reduce the long-term power and safety of ordinary people?" },
+      { "question_id": "CC-JTEST-11", "number": 11, "text": "Does it avoid classifying any person as unworthy of reentry while still protecting the public from demonstrated continuing extreme danger?" },
+      { "question_id": "CC-JTEST-12", "number": 12, "text": "If permanent secure custody is used, is it public, humane, productive, reviewable, non-exilic, and free of private confinement-profit incentives?" }
     ]
   },
   "website_branches": [
@@ -586,6 +761,8 @@
     { "branch_id": "CC-JUST-B10", "title": "Sentencing" },
     { "branch_id": "CC-JUST-B11", "title": "Public corrections" },
     { "branch_id": "CC-JUST-B12", "title": "Secure restoration campuses" },
+    { "branch_id": "CC-JUST-B23", "title": "Secure Public Safety Campuses" },
+    { "branch_id": "CC-JUST-B24", "title": "Permanent Public Safety System" },
     { "branch_id": "CC-JUST-B13", "title": "Mental health and addiction" },
     { "branch_id": "CC-JUST-B14", "title": "Youth justice" },
     { "branch_id": "CC-JUST-B15", "title": "Restorative justice" },
@@ -600,6 +777,6 @@
   "research_status": {
     "phase": "phase-2_domain_architecture",
     "policy_drafting": "blocked_until_sourced_diagnosis",
-    "next": "Phase 2.1: deepen COPS/BJA/NIJ/DOJ modules; attach justice baseline indicators; upgrade claims without inventing crime or recidivism statistics; keep Community Safety Corps as design agenda"
+    "next": "Phase 2.1: deepen COPS/BJA/NIJ/DOJ/OIG modules; legal review of Eighth Amendment conditions sourcing; attach justice baseline indicators; keep Community Safety Corps and Secure Public Safety Campuses as design agendas; no invented crime or recidivism statistics"
   }
 }
