@@ -3,14 +3,15 @@
 :root {
   --bg: #edf1f4;
   --bg-2: #e2e8ee;
-  --ink: #132033;
-  --muted: #4b5d73;
-  --line: rgba(19, 32, 51, 0.12);
-  --panel: #f8fafb;
-  --accent: #1b4f72;
-  --good: #1f6b4a;
-  --warn: #9a6414;
-  --risk: #8b2e2e;
+  --ink: #0f1a29;
+  --muted: #2f4258;
+  --line: rgba(15, 26, 41, 0.18);
+  --panel: #ffffff;
+  --accent: #163f5c;
+  --good: #15553a;
+  --warn: #6d4708;
+  --warn-bg: #f3e6c8;
+  --risk: #7a2424;
   --serif: "Newsreader", Georgia, serif;
   --sans: "IBM Plex Sans", "Segoe UI", sans-serif;
   --sidebar: 16.5rem;
@@ -110,7 +111,7 @@ a {
 
 .side-nav a {
   text-decoration: none;
-  color: var(--muted);
+  color: var(--ink);
   padding: 0.45rem 0.55rem;
   border-radius: 0.3rem;
   font-weight: 500;
@@ -134,7 +135,7 @@ a {
 }
 
 .page-lede {
-  color: var(--muted);
+  color: #1c3048;
   max-width: 48rem;
   margin: 0 0 1.5rem;
 }
@@ -158,8 +159,8 @@ a {
   font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .stat__value {
@@ -208,8 +209,8 @@ a {
 
 .bar {
   height: 0.7rem;
-  background: #d9e1e8;
-  border: 1px solid var(--line);
+  background: #c5d0db;
+  border: 1px solid rgba(15, 26, 41, 0.22);
   overflow: hidden;
 }
 
@@ -248,27 +249,36 @@ th {
   display: inline-block;
   padding: 0.15rem 0.45rem;
   border: 1px solid var(--line);
+  background: #eef2f6;
+  color: var(--ink);
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 .pill--open {
   color: var(--warn);
+  background: var(--warn-bg);
+  border-color: rgba(109, 71, 8, 0.35);
 }
 
 .pill--good {
   color: var(--good);
+  background: #dcefe4;
+  border-color: rgba(21, 85, 58, 0.3);
 }
 
 .pill--risk {
   color: var(--risk);
+  background: #f3dede;
+  border-color: rgba(122, 36, 36, 0.3);
 }
 
 .notice {
   border-left: 3px solid var(--warn);
-  background: rgba(154, 100, 20, 0.08);
+  background: var(--warn-bg);
+  color: var(--ink);
   padding: 0.75rem 0.9rem;
   margin: 0 0 1rem;
 }

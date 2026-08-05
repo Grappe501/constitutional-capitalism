@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap");
 
 :root {
-  --ink: #10233a;
-  --ink-soft: #2a4058;
+  --ink: #0d1c2e;
+  --ink-soft: #1c334c;
   --paper: #f3f6f8;
-  --paper-deep: #e4ebf0;
-  --panel: rgba(255, 255, 255, 0.72);
-  --accent: #1f5c45;
-  --accent-deep: #163f30;
-  --line: rgba(16, 35, 58, 0.14);
-  --warn: #8a5a12;
+  --paper-deep: #dfe7ee;
+  --panel: #ffffff;
+  --accent: #1a523c;
+  --accent-deep: #123528;
+  --line: rgba(13, 28, 46, 0.18);
+  --warn: #5a3a06;
+  --warn-bg: #f0e0b8;
   --focus: #0b6e4f;
+  --hero-ink: #f4f7f5;
+  --hero-ink-soft: rgba(244, 247, 245, 0.92);
   --shadow: 0 18px 50px rgba(16, 35, 58, 0.08);
   --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
@@ -35,9 +38,8 @@ html {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    animation: none !important;
+    transition: none !important;
   }
 }
 
@@ -122,7 +124,7 @@ a:hover {
 }
 
 .nav a {
-  color: var(--ink-soft);
+  color: var(--ink);
   text-decoration: none;
   font-weight: 500;
 }
@@ -142,37 +144,40 @@ main {
   display: grid;
   align-content: center;
   gap: 1.25rem;
-  padding-block: 2rem 3rem;
+  padding: 2.5rem 1.25rem 3rem;
   position: relative;
   isolation: isolate;
+  color: var(--hero-ink);
+  background: linear-gradient(135deg, #10233a 0%, #163f30 52%, #1f5c45 100%);
+  border-radius: 0 0 1.5rem 1.5rem;
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  inset: -2rem -1rem auto;
-  height: min(72vh, 36rem);
-  background:
-    linear-gradient(135deg, rgba(16, 35, 58, 0.92), rgba(31, 92, 69, 0.78)),
-    repeating-linear-gradient(
-      -12deg,
-      transparent,
-      transparent 18px,
-      rgba(255, 255, 255, 0.03) 18px,
-      rgba(255, 255, 255, 0.03) 19px
-    );
-  border-radius: 0 0 2rem 2rem;
-  z-index: -1;
-  animation: rise 1.1s ease-out both;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  background: repeating-linear-gradient(
+    -12deg,
+    transparent,
+    transparent 18px,
+    rgba(255, 255, 255, 0.035) 18px,
+    rgba(255, 255, 255, 0.035) 19px
+  );
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes rise {
   from {
-    opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(10px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -181,29 +186,29 @@ main {
   font-family: var(--serif);
   font-size: clamp(2.6rem, 7vw, 4.6rem);
   line-height: 1.08;
-  color: #f7faf8;
+  color: var(--hero-ink);
   margin: 0;
   max-width: 14ch;
-  animation: rise 0.9s ease-out 0.05s both;
+  animation: rise 0.7s ease-out both;
 }
 
 .hero__subtitle {
   font-family: var(--serif);
   font-size: clamp(1.15rem, 2.4vw, 1.55rem);
-  color: rgba(247, 250, 248, 0.92);
+  color: var(--hero-ink-soft);
   margin: 0;
   max-width: 28ch;
-  animation: rise 0.9s ease-out 0.15s both;
+  animation: rise 0.7s ease-out 0.08s both;
 }
 
 .hero__belief {
   margin: 0.5rem 0 0;
   max-width: 38rem;
-  color: rgba(247, 250, 248, 0.9);
+  color: var(--hero-ink);
   font-size: 1.05rem;
-  border-left: 3px solid rgba(247, 250, 248, 0.55);
+  border-left: 3px solid rgba(244, 247, 245, 0.75);
   padding-left: 1rem;
-  animation: rise 0.9s ease-out 0.25s both;
+  animation: rise 0.7s ease-out 0.14s both;
 }
 
 .cta-row {
@@ -211,7 +216,7 @@ main {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.75rem;
-  animation: rise 0.9s ease-out 0.35s both;
+  animation: rise 0.7s ease-out 0.2s both;
 }
 
 .button {
@@ -226,33 +231,34 @@ main {
 }
 
 .button--primary {
-  background: #f7faf8;
+  background: var(--hero-ink);
   color: var(--ink);
 }
 
 .button--primary:hover {
-  background: white;
+  background: #ffffff;
   color: var(--ink);
 }
 
-.button--ghost {
-  border-color: rgba(247, 250, 248, 0.45);
-  color: #f7faf8;
+/* Ghost buttons are for dark surfaces only (hero). */
+.hero .button--ghost {
+  border-color: rgba(244, 247, 245, 0.55);
+  color: var(--hero-ink);
 }
 
-.button--ghost:hover {
-  background: rgba(247, 250, 248, 0.08);
-  color: white;
+.hero .button--ghost:hover {
+  background: rgba(244, 247, 245, 0.12);
+  color: #ffffff;
 }
 
 .button--solid {
   background: var(--accent);
-  color: white;
+  color: #ffffff;
 }
 
 .button--solid:hover {
   background: var(--accent-deep);
-  color: white;
+  color: #ffffff;
 }
 
 .section {
@@ -296,11 +302,11 @@ main {
 .status-note {
   display: inline-block;
   margin: 0.5rem 0 1rem;
-  padding: 0.35rem 0.65rem;
-  background: rgba(138, 90, 18, 0.12);
+  padding: 0.4rem 0.7rem;
+  background: var(--warn-bg);
   color: var(--warn);
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .toc-part {
@@ -386,8 +392,8 @@ main {
 
 .bar {
   height: 0.65rem;
-  background: var(--paper-deep);
-  border: 1px solid var(--line);
+  background: #c8d3de;
+  border: 1px solid rgba(13, 28, 46, 0.22);
   overflow: hidden;
 }
 
