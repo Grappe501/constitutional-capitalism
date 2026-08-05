@@ -1,0 +1,122 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine, claims } from "../lib/data";
+import ps from "../../../../data/project/popular_sovereignty_framework.json";
+
+const doctrineIds = Array.from({ length: 22 }, (_, i) => `CC-DEV-${120 + i}`);
+const claimIds = [
+  "CC-CLAIM-101",
+  "CC-CLAIM-102",
+  "CC-CLAIM-103",
+  "CC-CLAIM-104",
+  "CC-CLAIM-105",
+  "CC-CLAIM-106",
+  "CC-CLAIM-107",
+];
+const items = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const psClaims = (claims.claims || []).filter((c: any) => claimIds.includes(c.claim_id));
+const powers = ps.reserved_powers || [];
+const removal = ps.removal_paths || [];
+---
+
+<BoardLayout title="People’s Branch" path="/peoples-branch/">
+  <h1 class="page-title">{ps.domain_title}</h1>
+  <p class="page-lede">
+    Framework: <code>data/project/popular_sovereignty_framework.json</code> v{ps.version}. Principle:{" "}
+    <code>{ps.principle_id}</code>. Decision: <code>CC-DEC-081</code>. Architecture — amendment
+    required for federal redesign.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{powers.length}</div>
+      <div class="stat__label">Reserved powers</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{items.length}</div>
+      <div class="stat__label">Developing doctrine items</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{psClaims.length}</div>
+      <div class="stat__label">Sourced structural claims</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Hard design limits</h2>
+    <ul>
+      <li>{ps.ordinary_scotus_recall_rejected.rule}</li>
+      <li>{ps.rights_floor.distinction}</li>
+      <li>Illustrative thresholds are design parameters, not locked constitutional text.</li>
+      <li>Federal initiative / federal recall / fixed active SCOTUS terms: amendment-likely.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Central declarations</h2>
+    <blockquote>
+      <p>{ps.central_declaration.text}</p>
+    </blockquote>
+    <blockquote>
+      <p>{ps.peoples_court_declaration.text}</p>
+    </blockquote>
+  </section>
+
+  <section class="panel">
+    <h2>Reserved powers</h2>
+    <ol>
+      {powers.map((p: any) => (
+        <li>
+          <strong>
+            {p.id} {p.title}
+          </strong>
+          — {p.summary}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Justice removal paths (not ordinary recall)</h2>
+    <ol>
+      {removal.map((r: any) => (
+        <li>
+          <strong>{r.title}</strong> — {r.summary}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Sourced baselines ({psClaims.length})</h2>
+    <ul>
+      {psClaims.map((c: any) => (
+        <li>
+          <code>{c.claim_id}</code> — {c.claim_text}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Developing doctrine ({items.length})</h2>
+    <ul>
+      {items.map((d: any) => (
+        <li>
+          <code>{d.doctrine_id}</code> — {d.statement.slice(0, 160)}…
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Integrity</h2>
+    <p>{ps.note}</p>
+    <p>
+      Related: <a href="/federalism/">Federalism</a>, <a href="/phase-2-gate/">Phase 2 Gate</a>,{" "}
+      <a href="/democracy/">Democracy</a>.
+    </p>
+  </section>
+</BoardLayout>

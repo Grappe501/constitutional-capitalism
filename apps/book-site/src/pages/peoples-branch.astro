@@ -1,0 +1,154 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ps from "../../../../data/project/popular_sovereignty_framework.json";
+
+const branches = ps.four_branches?.branches || [];
+const powers = ps.reserved_powers || [];
+const prohibited = ps.rights_floor?.prohibited_ballot_uses || [];
+const removal = ps.removal_paths || [];
+const testQs = ps.popular_sovereignty_test?.questions || [];
+const webBranches = ps.website_branches || [];
+const baselines = ps.current_law_baselines?.items || [];
+const ethicsRules = ps.supreme_court_reform?.enforceable_ethics_and_recusal?.required_rules_cover || [];
+---
+
+<BaseLayout
+  title="People’s Branch"
+  path="/peoples-branch/"
+  description="The Sovereign People as a fourth branch and first source of authority — with bounded direct democracy and an accountable People’s Court."
+>
+  <article class="prose">
+    <h1>{ps.domain_title}</h1>
+    <p class="status-note">
+      Major pillar — architecture before amendment text. Federal initiatives, federal recall, fixed
+      active Supreme Court terms, and a third Article V pathway require constitutional redesign.
+      Legal drafting remains 0%. Illustrative thresholds are design parameters, not locked law.
+    </p>
+
+    <h2>Governing principle</h2>
+    <blockquote>
+      <p>{ps.governing_principle.text}</p>
+    </blockquote>
+
+    <h2>Central declaration</h2>
+    <blockquote>
+      <p>{ps.central_declaration.text}</p>
+    </blockquote>
+
+    <h2>The People’s Court</h2>
+    <blockquote>
+      <p>{ps.peoples_court_declaration.text}</p>
+    </blockquote>
+
+    <h2>The problem</h2>
+    <p>{ps.problem.summary}</p>
+
+    <h2>Four branches</h2>
+    <p>{ps.four_branches.note}</p>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.name}</strong> — {b.role}
+        </li>
+      ))}
+    </ul>
+    <p>{ps.four_branches.operating_mode}</p>
+
+    <h2>Current-law baselines</h2>
+    <p class="status-note">{ps.current_law_baselines.note}</p>
+    <ul>
+      {baselines.map((b: any) => (
+        <li>
+          <code>{b.id}</code> — {b.text}
+        </li>
+      ))}
+    </ul>
+
+    <h2>Reserved powers of the people</h2>
+    <ol>
+      {powers.map((p: any) => (
+        <li>
+          <strong>
+            {p.id}. {p.title}
+          </strong>{" "}
+          — {p.summary}
+        </li>
+      ))}
+    </ol>
+
+    <h2>Rights floor</h2>
+    <blockquote>
+      <p>{ps.rights_floor.distinction}</p>
+    </blockquote>
+    <p>A ballot measure could not lawfully:</p>
+    <ul>
+      {prohibited.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+    <p>{ps.rights_floor.court_role}</p>
+
+    <h2>Supreme Court reform</h2>
+    <p>
+      <strong>Active terms:</strong> {ps.supreme_court_reform.active_terms.proposal}
+    </p>
+    <p class="status-note">
+      Amendment likely required for durable fixed active terms.
+    </p>
+    <p>
+      <strong>Judicial Accountability Council:</strong>{" "}
+      {ps.supreme_court_reform.judicial_accountability_council.summary} It does not{" "}
+      {ps.supreme_court_reform.judicial_accountability_council.does_not.toLowerCase()}
+    </p>
+    <p>
+      <strong>Ethics and recusal:</strong>{" "}
+      {ps.supreme_court_reform.enforceable_ethics_and_recusal.summary}
+    </p>
+    <p>Required rules cover: {ethicsRules.join("; ")}.</p>
+    <p>
+      <strong>Emergency transparency:</strong>{" "}
+      {ps.supreme_court_reform.transparent_emergency_decisions.summary}
+    </p>
+
+    <h2>Removing federal justices</h2>
+    <p>
+      <strong>{ps.ordinary_scotus_recall_rejected.rule}</strong>{" "}
+      {ps.ordinary_scotus_recall_rejected.reason}
+    </p>
+    <ol>
+      {removal.map((r: any) => (
+        <li>
+          <strong>{r.title}</strong> — {r.summary}
+        </li>
+      ))}
+    </ol>
+
+    <h2>Anti-wealth safeguards</h2>
+    <p>{ps.anti_wealth_safeguards.rule}</p>
+
+    <h2>Deliberation before major ballots</h2>
+    <p>{ps.citizens_deliberative_assembly.summary}</p>
+
+    <h2>Popular sovereignty test</h2>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Website branches</h2>
+    <ul>
+      {webBranches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p class="status-note">
+      See also <a href="/federalism/">Federalism</a>,{" "}
+      <a href="/equal-standing/">Equal Standing</a>, <a href="/democracy/">Democracy</a>, and{" "}
+      <a href="/transparency/">Transparency</a>.
+    </p>
+  </article>
+</BaseLayout>
