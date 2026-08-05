@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/resource_sovereignty_framework.schema.json",
+  "title": "ResourceSovereigntyFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "central_doctrine",
+    "community_resource_compact",
+    "community_carrying_capacity_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_ids": { "type": "array", "items": { "type": "string" } },
+    "domain_title": { "type": "string" },
+    "research_domain_title": { "type": "string" },
+    "website_node_id": { "type": "string" },
+    "note": { "type": "string" },
+    "role_in_philosophy": { "type": "string" },
+    "central_doctrine": { "type": "object" },
+    "governing_statement": { "type": "object" },
+    "operational_rule": { "type": "object" },
+    "not_free_inputs": { "type": "object" },
+    "community_resource_compact": { "type": "object" },
+    "progressive_resource_pricing": { "type": "object" },
+    "total_footprint_assessment": { "type": "object" },
+    "community_resource_dividend": { "type": "object" },
+    "community_equity": { "type": "object" },
+    "mineral_extraction_compact": { "type": "object" },
+    "data_center_compact": { "type": "object" },
+    "warehouse_compact": { "type": "object" },
+    "resource_and_pollution_ledger": { "type": "object" },
+    "local_carbon_restoration_exchange": { "type": "object" },
+    "anti_fraud_carbon_hierarchy": { "type": "object" },
+    "community_owned_energy": { "type": "object" },
+    "household_energy_floor": { "type": "object" },
+    "community_carrying_capacity_test": {
+      "type": "object",
+      "required": ["title", "questions"],
+      "properties": {
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "minItems": 12,
+          "items": {
+            "type": "object",
+            "required": ["question_id", "number", "text"],
+            "properties": {
+              "question_id": { "type": "string" },
+              "number": { "type": "integer" },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "website_branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["branch_id", "title"],
+        "properties": {
+          "branch_id": { "type": "string" },
+          "title": { "type": "string" }
+        }
+      }
+    },
+    "research_status": { "type": "object" }
+  }
+}

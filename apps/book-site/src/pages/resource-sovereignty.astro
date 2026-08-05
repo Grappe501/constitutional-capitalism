@@ -1,0 +1,174 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import rs from "../../../../data/project/resource_sovereignty_framework.json";
+
+const tiers = rs.progressive_resource_pricing?.tiers || [];
+const accounts = rs.community_resource_dividend?.accounts || [];
+const testQs = rs.community_carrying_capacity_test?.questions || [];
+const branches = rs.website_branches || [];
+const hierarchy = rs.anti_fraud_carbon_hierarchy?.hierarchy || [];
+const allocation = rs.community_resource_dividend?.illustrative_allocation;
+---
+
+<BaseLayout
+  title="Resource Sovereignty and Community Stewardship"
+  path="/resource-sovereignty/"
+  description="Natural resources belong first to the place that bears the burden — private profit allowed, community return required."
+>
+  <article class="prose">
+    <h1>{rs.domain_title}</h1>
+    <p class="status-note">
+      Central developing doctrine — Community Resource Compacts, Ledger, and Carbon Restoration Exchange are design agendas.
+      Illustrative revenue percentages require modeling. No invented water, power, or carbon statistics.
+    </p>
+    <p class="lede">{rs.role_in_philosophy}</p>
+
+    <h2>Central doctrine</h2>
+    <blockquote>
+      <p>{rs.central_doctrine.text}</p>
+    </blockquote>
+    <p>{rs.not_free_inputs.text}</p>
+
+    <h2>Governing statement</h2>
+    <blockquote>
+      <p>{rs.governing_statement.text}</p>
+    </blockquote>
+
+    <h2>Operational rule</h2>
+    <blockquote>
+      <p>{rs.operational_rule.text}</p>
+    </blockquote>
+
+    <h2>Community Resource Compact</h2>
+    <p class="status-note">Status: {rs.community_resource_compact.status}</p>
+    <p>{rs.community_resource_compact.summary}</p>
+    <p>Applies especially to:</p>
+    <ul>
+      {rs.community_resource_compact.applies_especially_to.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+    <p>The compact determines:</p>
+    <ol>
+      {rs.community_resource_compact.determines.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Progressive resource pricing</h2>
+    <p>{rs.progressive_resource_pricing.summary}</p>
+    {
+      tiers.map((t: any) => (
+        <section style="margin-bottom:0.85rem;">
+          <h3 style="margin-bottom:0.3rem;">{t.title}</h3>
+          <ul>
+            {(t.for || []).map((f: string) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+          {t.rate && <p class="status-note">{t.rate}</p>}
+        </section>
+      ))
+    }
+    <p>
+      Conceptual formula: <em>{rs.progressive_resource_pricing.conceptual_formula}</em>
+    </p>
+    <p>{rs.progressive_resource_pricing.pricing_principle}</p>
+
+    <h2>Total footprint</h2>
+    <p>{rs.total_footprint_assessment.summary}</p>
+    <p class="status-note">{rs.total_footprint_assessment.scope_1_scope_2_rule}</p>
+
+    <h2>Community Resource Dividend</h2>
+    <p class="status-note">Status: {rs.community_resource_dividend.status}</p>
+    <p>{rs.community_resource_dividend.summary}</p>
+    <ul>
+      {accounts.map((a: any) => (
+        <li>
+          <strong>{a.title}</strong>
+          {a.summary ? ` — ${a.summary}` : ""}
+        </li>
+      ))}
+    </ul>
+    {
+      allocation && (
+        <>
+          <p class="status-note">
+            {allocation.note} Status: {allocation.status}.
+          </p>
+          <ul>
+            {allocation.shares.map((s: any) => (
+              <li>
+                {s.percent}% — {s.label}
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+    <blockquote>
+      <p>{rs.community_resource_dividend.firm_doctrine}</p>
+    </blockquote>
+
+    <h2>Community equity</h2>
+    <p>{rs.community_equity.summary}</p>
+
+    <h2>Sector Compacts</h2>
+    <h3>Mineral extraction</h3>
+    <p>{rs.mineral_extraction_compact.summary}</p>
+    <p class="status-note">{rs.mineral_extraction_compact.bankruptcy_rule}</p>
+
+    <h3>Data centers</h3>
+    <p>{rs.data_center_compact.summary}</p>
+    <blockquote>
+      <p>{rs.data_center_compact.residential_protection_rule}</p>
+    </blockquote>
+    <p>{rs.data_center_compact.generation_addition_rule}</p>
+
+    <h3>Warehouses</h3>
+    <p>{rs.warehouse_compact.summary}</p>
+
+    <h2>Resource and Pollution Ledger</h2>
+    <p class="status-note">Status: {rs.resource_and_pollution_ledger.status}</p>
+    <p>{rs.resource_and_pollution_ledger.summary}</p>
+
+    <h2>Local Carbon Restoration Exchange</h2>
+    <p class="status-note">Status: {rs.local_carbon_restoration_exchange.status}</p>
+    <p>{rs.local_carbon_restoration_exchange.summary}</p>
+
+    <h2>Anti-fraud carbon hierarchy</h2>
+    <p>{rs.anti_fraud_carbon_hierarchy.summary}</p>
+    <ol>
+      {hierarchy.map((h: string) => (
+        <li>{h}</li>
+      ))}
+    </ol>
+
+    <h2>Community-owned energy and household floor</h2>
+    <p>{rs.community_owned_energy.summary}</p>
+    <p class="status-note">{rs.community_owned_energy.community_solar_note}</p>
+    <p>{rs.household_energy_floor.summary}</p>
+
+    <h2>Community Carrying-Capacity Test</h2>
+    <p>{rs.community_carrying_capacity_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>{b.title}</li>
+      ))}
+    </ul>
+
+    <h2>Research before policy</h2>
+    <p>
+      Detailed resource statutes are blocked until Phase 2/2.1 diagnosis modules exist.
+      See <a href="/where-we-are/">Where we are</a>, <a href="/evidence/">Evidence</a>, and
+      <a href="/build-your-community/">Build Your Community</a>.
+    </p>
+  </article>
+</BaseLayout>

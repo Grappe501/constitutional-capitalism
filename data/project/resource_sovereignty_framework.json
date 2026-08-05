@@ -1,0 +1,429 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "developing_doctrine_architecture",
+  "decision_ids": ["CC-DEC-060", "CC-DEC-061"],
+  "domain_title": "Resource Sovereignty and Community Stewardship",
+  "research_domain_title": "Community Resource Compacts, Progressive Resource Pricing, Local Dividends, and Ecological Restoration",
+  "website_node_id": "CC-WEB-ENVIRONMENT",
+  "note": "Central developing doctrine. Community Resource Compacts, Local Carbon Restoration Exchange, and Resource and Pollution Ledger are design agendas — not operating products. Illustrative revenue percentages require modeling. No invented water, electricity, emission, or carbon-credit statistics. Detailed statutes blocked until Phase 2.1 sourced modules. Federal GHGRP rules are politically changeable and must not be treated as a permanent floor.",
+  "role_in_philosophy": "Land, water, minerals, energy capacity, clean air, soil, infrastructure, and ecological resilience are part of a community’s inherited wealth. Private enterprise may profit from using those resources, but the affected community must receive a direct, permanent, and measurable return. This connects environmental protection, local ownership, household affordability, rural prosperity, regenerative agriculture, energy resilience, and corporate accountability.",
+  "central_doctrine": {
+    "text": "Natural resources belong first to the place that bears the extraction, consumption, congestion, pollution, and long-term risk. Private enterprise may profit from using those resources, but the affected community must receive a direct, permanent, and measurable return.",
+    "doctrine_ids": ["CC-DEV-053"]
+  },
+  "governing_statement": {
+    "text": "Land, water, minerals, energy capacity, clean air, soil, infrastructure, and ecological resilience are part of a community’s inherited wealth. Those who consume them for private gain must pay their full public cost, restore what they damage, and return a fair share of the resulting prosperity to the people and place that made the activity possible.",
+    "doctrine_ids": ["CC-DEV-053"]
+  },
+  "operational_rule": {
+    "text": "The greater the consumption, scarcity, risk, or damage, the greater the obligation to the affected community.",
+    "doctrine_ids": ["CC-DEV-053"]
+  },
+  "not_free_inputs": {
+    "text": "The system should not treat water, minerals, land, grid capacity, clean air, roads, and soil as free inputs merely because a corporation can obtain a permit.",
+    "doctrine_ids": ["CC-DEV-053"]
+  },
+  "community_resource_compact": {
+    "status": "design_agenda",
+    "summary": "Every large resource-consuming project would negotiate a binding Community Resource Compact before receiving public approval, incentives, utility commitments, or infrastructure access.",
+    "applies_especially_to": [
+      "lithium and other mineral extraction",
+      "data centers",
+      "large warehouses and distribution centers",
+      "industrial agriculture and processing",
+      "timber extraction",
+      "fossil-fuel and energy projects",
+      "water-intensive manufacturing",
+      "large developments consuming farmland or habitat",
+      "facilities creating substantial truck traffic, emissions, waste, or grid demand"
+    ],
+    "determines": [
+      "What resources will the project consume?",
+      "What burdens and risks will the community absorb?",
+      "What direct benefits will remain in the community?",
+      "What restoration obligations continue after the project closes?"
+    ],
+    "doctrine_ids": ["CC-DEV-054"]
+  },
+  "progressive_resource_pricing": {
+    "summary": "Consumption should not be priced as a flat fee. A small business, family farm, or household should not pay the same marginal rate as a billion-dollar facility consuming extraordinary quantities of water, electricity, land, or road capacity.",
+    "tiers": [
+      {
+        "tier_id": "CC-RES-T01",
+        "title": "Essential-use tier",
+        "for": [
+          "households",
+          "small farms",
+          "basic local businesses",
+          "schools",
+          "hospitals",
+          "emergency services"
+        ],
+        "rate": "lowest protected rate"
+      },
+      {
+        "tier_id": "CC-RES-T02",
+        "title": "Commercial-use tier",
+        "for": ["normal business activity using resources within ordinary local capacity"]
+      },
+      {
+        "tier_id": "CC-RES-T03",
+        "title": "Intensive-use tier",
+        "for": ["projects consuming substantially above community norms"]
+      },
+      {
+        "tier_id": "CC-RES-T04",
+        "title": "Transformative-use tier",
+        "for": ["projects whose consumption changes the community’s infrastructure, environment, utility planning, water table, grid demand, traffic, or land use"]
+      }
+    ],
+    "conceptual_formula": "Base resource price + volume surcharge + scarcity surcharge + environmental-risk charge + infrastructure charge + restoration bond.",
+    "purpose": "Not merely to collect money — to ensure the business decision includes the real public cost of the project.",
+    "pricing_principle": "Essential human use receives protection. Extraordinary commercial use pays its full marginal and community cost.",
+    "doctrine_ids": ["CC-DEV-054", "CC-DEV-057"]
+  },
+  "total_footprint_assessment": {
+    "summary": "Charge for the total footprint, not only the resource removed. A lithium operation does not affect only the mineral deposit; a data center does not affect only the electricity meter; a warehouse does not affect only the parcel of land.",
+    "includes": [
+      "water withdrawal",
+      "electricity consumption",
+      "direct emissions",
+      "electricity-related emissions",
+      "truck traffic",
+      "road deterioration",
+      "noise",
+      "light pollution",
+      "wastewater",
+      "hazardous materials",
+      "emergency-service demand",
+      "housing pressure",
+      "farmland loss",
+      "habitat disruption",
+      "heat generation",
+      "future cleanup",
+      "local opportunity cost"
+    ],
+    "scope_1_scope_2_rule": "Major projects must disclose and price both direct emissions controlled by a facility and indirect emissions associated with purchased electricity, rather than appearing clean simply because emissions occur at a distant power plant.",
+    "source_ids": ["CC-SRC-030"],
+    "doctrine_ids": ["CC-DEV-054"]
+  },
+  "community_resource_dividend": {
+    "status": "design_agenda",
+    "summary": "A large share of every resource charge should remain where the impact occurs, divided into protected accounts.",
+    "accounts": [
+      {
+        "id": "CC-RES-A01",
+        "title": "Local Household Dividend",
+        "may_reduce": [
+          "household utility bills",
+          "local property-tax dependence",
+          "transportation costs",
+          "broadband costs",
+          "essential-service fees"
+        ]
+      },
+      {
+        "id": "CC-RES-A02",
+        "title": "Community Infrastructure Fund",
+        "for": [
+          "roads",
+          "bridges",
+          "water systems",
+          "schools",
+          "emergency services",
+          "housing",
+          "healthcare",
+          "broadband",
+          "workforce academies"
+        ]
+      },
+      {
+        "id": "CC-RES-A03",
+        "title": "Resource Restoration Fund",
+        "for": [
+          "reclamation",
+          "groundwater protection",
+          "soil repair",
+          "reforestation",
+          "habitat restoration",
+          "pollution cleanup",
+          "long-term monitoring"
+        ]
+      },
+      {
+        "id": "CC-RES-A04",
+        "title": "Future Generations Fund",
+        "summary": "A permanent fund should convert temporary extraction into lasting community wealth so future residents continue receiving benefits after the resource is gone."
+      }
+    ],
+    "illustrative_allocation": {
+      "status": "design_discussion_requires_modeling",
+      "note": "Percentages are conceptual starters, not locked policy.",
+      "shares": [
+        { "percent": 40, "label": "Impacted local community" },
+        { "percent": 20, "label": "Household cost reduction" },
+        { "percent": 15, "label": "Environmental restoration" },
+        { "percent": 15, "label": "Permanent community wealth fund" },
+        { "percent": 10, "label": "Regional or statewide resilience" }
+      ]
+    },
+    "firm_doctrine": "The majority of geographically concentrated impact revenue must return to the affected place.",
+    "doctrine_ids": ["CC-DEV-055"]
+  },
+  "community_equity": {
+    "summary": "Fees can be negotiated away or spent quickly. For exceptionally large projects, the community should receive a continuing ownership interest so it becomes a participant in the project’s success rather than a location rented for extraction.",
+    "possible_structures": [
+      "a percentage of project revenue",
+      "a production royalty",
+      "nonvoting community equity",
+      "profit participation",
+      "shares held by a local public trust",
+      "minimum annual payments",
+      "appreciation rights if the facility is sold"
+    ],
+    "doctrine_ids": ["CC-DEV-055"]
+  },
+  "mineral_extraction_compact": {
+    "summary": "Critical minerals are strategically important, but strategic importance should not erase local rights.",
+    "federal_context_note": "Interior Department materials recognize the need for mining systems that provide reliable mineral supplies while addressing environmental and social responsibility, Tribal interests, climate risks, and modern standards.",
+    "source_ids": ["CC-SRC-031"],
+    "requirements": [
+      "community and Tribal consultation before final siting",
+      "full water-impact analysis",
+      "public baseline testing before operations",
+      "independent air, soil, and groundwater monitoring",
+      "production royalties",
+      "local processing where economically and environmentally responsible",
+      "local hiring and apprenticeship requirements",
+      "reclamation bonding sufficient for worst-case closure",
+      "bankruptcy-proof cleanup funds",
+      "public disclosure of ownership and mineral sales",
+      "recycling and recovery obligations",
+      "a permanent local wealth fund"
+    ],
+    "rate_rule": "The rate should increase as extraction grows or as the resource becomes scarcer.",
+    "bankruptcy_rule": "A company should never be able to extract the valuable resource, declare bankruptcy, and leave the public with the cleanup.",
+    "doctrine_ids": ["CC-DEV-056"]
+  },
+  "data_center_compact": {
+    "summary": "Data centers require a distinct framework because they may create enormous electricity, water, land, and backup-generation demands while employing relatively few people after construction.",
+    "federal_context_note": "EPA provides Clean Air Act-related resources concerning data-center power sources and backup generation, reflecting air-quality and permitting implications of those facilities.",
+    "source_ids": ["CC-SRC-032"],
+    "disclose_before_approval": [
+      "peak and annual electricity demand",
+      "water consumption",
+      "backup-generator emissions",
+      "expected permanent employment",
+      "tax incentives",
+      "utility upgrades",
+      "effect on residential rates",
+      "renewable-energy claims",
+      "waste-heat potential",
+      "land footprint",
+      "expected lifespan"
+    ],
+    "should_pay": [
+      "a progressive grid-capacity charge",
+      "a water-consumption charge",
+      "a backup-emission charge",
+      "the full cost of dedicated infrastructure",
+      "a community dividend",
+      "a clean-energy contribution"
+    ],
+    "residential_protection_rule": "Residential customers should never subsidize the infrastructure or electricity discounts of an extraordinary corporate user.",
+    "generation_addition_rule": "A new data center should demonstrate that it adds generation or efficiency sufficient to prevent residential rates from rising because of its arrival.",
+    "doctrine_ids": ["CC-DEV-056", "CC-DEV-057"]
+  },
+  "warehouse_compact": {
+    "summary": "Large warehouses may create more jobs than data centers, but can also produce heavy truck traffic, road damage, diesel pollution, land consumption, housing/service pressure, and automation-related displacement. The community must receive more than temporary construction jobs and traffic.",
+    "requirements": [
+      "road-use assessments based on vehicle weight and volume",
+      "pollution monitoring",
+      "worker transportation plans",
+      "wage and benefit standards where public incentives are involved",
+      "local hiring",
+      "apprenticeship programs",
+      "limits on public subsidies",
+      "automation-transition contributions",
+      "land-restoration obligations",
+      "stormwater and heat-island mitigation"
+    ],
+    "doctrine_ids": ["CC-DEV-056"]
+  },
+  "resource_and_pollution_ledger": {
+    "status": "design_agenda",
+    "summary": "Price more than carbon. Large facilities already report certain facility-level greenhouse-gas information through EPA’s reporting framework, although federal reporting rules are politically changeable. Constitutional Capitalism should establish a durable public Resource and Pollution Ledger.",
+    "source_ids": ["CC-SRC-033"],
+    "records": [
+      "direct emissions",
+      "purchased-energy emissions",
+      "water use",
+      "land use",
+      "waste",
+      "toxic releases",
+      "transportation impact",
+      "mitigation payments",
+      "restoration outcomes"
+    ],
+    "also_prices": [
+      "particulates",
+      "nitrogen oxides",
+      "toxic releases",
+      "water pollution",
+      "noise",
+      "odor",
+      "waste",
+      "land disturbance"
+    ],
+    "progressive_charges": [
+      "low for minimal unavoidable emissions",
+      "higher as emissions increase",
+      "sharply higher beyond sector benchmarks",
+      "punitive for concealed, unlawful, or repeated releases"
+    ],
+    "doctrine_ids": ["CC-DEV-056"]
+  },
+  "local_carbon_restoration_exchange": {
+    "status": "design_agenda",
+    "summary": "High-carbon and high-resource users should finance locally verified carbon removal and ecological restoration. Create a public or cooperative exchange at the county or regional level. High-emitting entities pay in; local farmers, foresters, landowners, and restoration groups compete for contracts.",
+    "compensated_services_examples": [
+      "increasing soil organic carbon",
+      "maintaining year-round soil cover",
+      "reducing erosion",
+      "improving water retention",
+      "reducing nutrient runoff",
+      "planting trees and windbreaks",
+      "restoring wetlands",
+      "managed grazing",
+      "agroforestry",
+      "composting",
+      "biochar where appropriate",
+      "increasing biodiversity"
+    ],
+    "federal_context_note": "USDA/NRCS recognizes climate-smart mitigation and soil-management practices as potential tools with co-benefits for soil health, water quality, erosion, and habitat. USDA has also launched soil-carbon measurement and monitoring efforts, underscoring why credible measurement must be central.",
+    "source_ids": ["CC-SRC-034", "CC-SRC-035"],
+    "payment_depends_on": [
+      "baseline conditions",
+      "verified additional improvement",
+      "duration",
+      "permanence",
+      "leakage risk",
+      "soil type",
+      "water benefits",
+      "biodiversity benefits",
+      "local community value"
+    ],
+    "contract_may_pay": [
+      "an initial transition payment",
+      "annual stewardship payments",
+      "verified performance bonuses",
+      "long-term maintenance payments"
+    ],
+    "doctrine_ids": ["CC-DEV-057"]
+  },
+  "anti_fraud_carbon_hierarchy": {
+    "summary": "A company should not be allowed to continue unlimited pollution simply because it purchased inexpensive credits with questionable value. Local carbon removal should supplement — not excuse — emissions reduction.",
+    "hierarchy": [
+      "Avoid unnecessary consumption",
+      "Increase efficiency",
+      "Reduce direct pollution",
+      "Replace high-carbon energy",
+      "Restore local ecosystems",
+      "Offset only the genuinely difficult remainder"
+    ],
+    "every_project_needs": [
+      "verified baselines",
+      "independent measurement",
+      "public contracts",
+      "permanence requirements",
+      "reversal protection",
+      "prohibition on double counting",
+      "public maps and outcomes"
+    ],
+    "doctrine_ids": ["CC-DEV-057"]
+  },
+  "community_owned_energy": {
+    "summary": "Every community should be encouraged to produce a meaningful share of the electricity it consumes. The goal is not total isolation from the regional grid, but local price stability, resilience, emergency power, reduced transmission loss, community ownership, income retained locally, and less vulnerability to large industrial loads.",
+    "options": [
+      "community solar",
+      "rooftop solar",
+      "agricultural solar",
+      "small hydro where appropriate",
+      "wind where appropriate",
+      "biogas",
+      "geothermal",
+      "battery storage",
+      "waste-heat recovery",
+      "efficiency programs",
+      "community microgrids"
+    ],
+    "ownership_vehicles": [
+      "municipal utilities",
+      "rural electric cooperatives",
+      "community trusts",
+      "neighborhood energy cooperatives",
+      "public-private partnerships",
+      "school and hospital energy districts"
+    ],
+    "revenue_should": [
+      "reduce household bills",
+      "fund system maintenance",
+      "finance additional generation",
+      "support low-income weatherization",
+      "build emergency reserves",
+      "create community dividends"
+    ],
+    "community_solar_note": "DOE defines community solar as a geographically based project or purchasing program whose benefits flow to multiple customers such as individuals, businesses, nonprofits, and other groups.",
+    "source_ids": ["CC-SRC-036"],
+    "doctrine_ids": ["CC-DEV-057"]
+  },
+  "household_energy_floor": {
+    "summary": "Every household should receive a protected block of essential electricity at the lowest sustainable price covering basic lighting, refrigeration, heating or cooling, cooking, communication, and medical devices. Usage beyond the protected household level could rise gradually. Large industrial consumption would face a steeper curve unless the company adds new generation, storage, or efficiency.",
+    "doctrine_ids": ["CC-DEV-057", "CC-DEV-054"]
+  },
+  "community_carrying_capacity_test": {
+    "title": "Community Carrying-Capacity Test",
+    "purpose": "Screen every major facility before approval.",
+    "questions": [
+      { "question_id": "CC-RTEST-01", "number": 1, "text": "How much water will it use?" },
+      { "question_id": "CC-RTEST-02", "number": 2, "text": "How much power will it require?" },
+      { "question_id": "CC-RTEST-03", "number": 3, "text": "What portion of local grid capacity will it consume?" },
+      { "question_id": "CC-RTEST-04", "number": 4, "text": "What land will be permanently changed?" },
+      { "question_id": "CC-RTEST-05", "number": 5, "text": "What pollution will it generate?" },
+      { "question_id": "CC-RTEST-06", "number": 6, "text": "What roads and public systems will it burden?" },
+      { "question_id": "CC-RTEST-07", "number": 7, "text": "What lasting jobs and ownership will it create?" },
+      { "question_id": "CC-RTEST-08", "number": 8, "text": "Will households pay higher prices because of it?" },
+      { "question_id": "CC-RTEST-09", "number": 9, "text": "What happens when the facility closes?" },
+      { "question_id": "CC-RTEST-10", "number": 10, "text": "What permanent wealth remains in the community?" },
+      { "question_id": "CC-RTEST-11", "number": 11, "text": "Can the community reject or renegotiate the project?" },
+      { "question_id": "CC-RTEST-12", "number": 12, "text": "Is the project still beneficial after all public costs are counted?" }
+    ],
+    "doctrine_ids": ["CC-DEV-054"]
+  },
+  "website_branches": [
+    { "branch_id": "CC-RES-B01", "title": "Community Resource Compact" },
+    { "branch_id": "CC-RES-B02", "title": "Progressive resource pricing" },
+    { "branch_id": "CC-RES-B03", "title": "Total footprint accounting" },
+    { "branch_id": "CC-RES-B04", "title": "Community Resource Dividend" },
+    { "branch_id": "CC-RES-B05", "title": "Community equity and royalties" },
+    { "branch_id": "CC-RES-B06", "title": "Mineral extraction" },
+    { "branch_id": "CC-RES-B07", "title": "Data centers" },
+    { "branch_id": "CC-RES-B08", "title": "Warehouses and logistics" },
+    { "branch_id": "CC-RES-B09", "title": "Resource and Pollution Ledger" },
+    { "branch_id": "CC-RES-B10", "title": "Local Carbon Restoration Exchange" },
+    { "branch_id": "CC-RES-B11", "title": "Anti-fraud carbon hierarchy" },
+    { "branch_id": "CC-RES-B12", "title": "Community-owned energy" },
+    { "branch_id": "CC-RES-B13", "title": "Household energy floor" },
+    { "branch_id": "CC-RES-B14", "title": "Future Generations Fund" },
+    { "branch_id": "CC-RES-B15", "title": "Carrying-Capacity Test" },
+    { "branch_id": "CC-RES-B16", "title": "Water and groundwater" },
+    { "branch_id": "CC-RES-B17", "title": "Soil and regenerative agriculture" },
+    { "branch_id": "CC-RES-B18", "title": "Tribal consultation and rights" }
+  ],
+  "research_status": {
+    "phase": "phase-2_domain_architecture",
+    "policy_drafting": "blocked_until_sourced_diagnosis",
+    "next": "Phase 2.1: deepen EPA/USDA/DOE/DOI modules; model dividend allocations without locking illustrative percentages; attach baseline indicators; keep Compacts/Exchange/Ledger as design agendas"
+  }
+}

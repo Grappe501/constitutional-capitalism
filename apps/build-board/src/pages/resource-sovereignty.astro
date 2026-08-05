@@ -1,0 +1,140 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine, claims, baselineStatus } from "../lib/data";
+import rs from "../../../../data/project/resource_sovereignty_framework.json";
+
+const doctrineIds = [
+  "CC-DEV-053",
+  "CC-DEV-054",
+  "CC-DEV-055",
+  "CC-DEV-056",
+  "CC-DEV-057",
+];
+const claimIds = [
+  "CC-CLAIM-058",
+  "CC-CLAIM-059",
+  "CC-CLAIM-060",
+  "CC-CLAIM-061",
+  "CC-CLAIM-062",
+  "CC-CLAIM-063",
+];
+const doctrine = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const rsClaims = (claims.claims || []).filter((c: any) =>
+  claimIds.includes(c.claim_id)
+);
+---
+
+<BoardLayout title="Resource Sovereignty" path="/resource-sovereignty/">
+  <h1 class="page-title">{rs.domain_title}</h1>
+  <p class="page-lede">
+    Central developing doctrine — Compacts, Ledger, and Exchange are design agendas.
+    Framework: <code>data/project/resource_sovereignty_framework.json</code> v{rs.version}.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Doctrine items</div>
+      <div class="stat__value">{doctrine.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Pricing tiers</div>
+      <div class="stat__value">{rs.progressive_resource_pricing?.tiers?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Carrying-Capacity Qs</div>
+      <div class="stat__value">{rs.community_carrying_capacity_test?.questions?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Branches</div>
+      <div class="stat__value">{rs.website_branches?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Claims</div>
+      <div class="stat__value">{rsClaims.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Baseline (all)</div>
+      <div class="stat__value" style="font-size:1.1rem;">
+        {baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Central doctrine</h2>
+    <p>{rs.central_doctrine?.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Operational rule</h2>
+    <p>{rs.operational_rule?.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Community Resource Compact</h2>
+    <p class="muted">Status: {rs.community_resource_compact?.status}</p>
+    <p>{rs.community_resource_compact?.summary}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Firm dividend doctrine</h2>
+    <p>{rs.community_resource_dividend?.firm_doctrine}</p>
+    <p class="muted">
+      Illustrative allocation status:{" "}
+      {rs.community_resource_dividend?.illustrative_allocation?.status}
+    </p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Residential protection (data centers)</h2>
+    <p>{rs.data_center_compact?.residential_protection_rule}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Developing doctrine</h2>
+    <ul class="list-plain">
+      {
+        doctrine.map((d: any) => (
+          <li>
+            <code>{d.doctrine_id}</code> — {d.statement}{" "}
+            <span class="pill">{d.maturity}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Claims</h2>
+    <ul class="list-plain">
+      {
+        rsClaims.map((c: any) => (
+          <li>
+            <code>{c.claim_id}</code> — {c.public_wording || c.claim_text}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Carrying-Capacity Test</h2>
+    <ol>
+      {(rs.community_carrying_capacity_test?.questions || []).map((q: any) => (
+        <li>
+          <code>{q.question_id}</code> — {q.text}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Research status</h2>
+    <p>
+      Phase: {rs.research_status?.phase}. Policy drafting:{" "}
+      {rs.research_status?.policy_drafting}. Next: {rs.research_status?.next}
+    </p>
+  </section>
+</BoardLayout>
