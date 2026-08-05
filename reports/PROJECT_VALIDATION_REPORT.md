@@ -1,6 +1,6 @@
 # Project Validation Report
 
-Generated: 2026-08-05T02:33:24.458Z
+Generated: 2026-08-05T02:45:05.881Z
 
 ## Identity
 
@@ -25,26 +25,25 @@ Run `pnpm env:verify` for the authoritative check. This report does not claim OS
 ## Repository State
 
 - Branch: `main`
-- HEAD: `6e97fb6`
+- HEAD: `598953b`
 - Git status:
 ```
 M START_HERE_FOR_AI.md
- M content/research/national-diagnosis/00-overview.md
+ M apps/book-site/src/layouts/BaseLayout.astro
+ M apps/build-board/src/layouts/BoardLayout.astro
  M data/decisions/decisions.json
  M data/generated/progress_snapshot_latest.json
  M data/metrics/progress_snapshot.json
+ M data/project/civilizational_core.json
  M data/project/current_build_state.json
  M data/project/developing_doctrine.json
  M data/project/latest_cursor_return.json
- M data/project/phases.json
- M data/project/slice_queue.json
+ M data/project/principles.json
  M data/project/updates.json
- M docs/handoffs/CURRENT_THREAD_HANDOFF.md
- M reports/CC_PHASE_2_DIAGNOSIS_RESEARCH_FOUNDATION_1_0_RETURN.md
- M schemas/developing_doctrine.schema.json
- M scripts/bootstrap-phase2-diagnosis.mjs
+ M data/project/website_information_architecture.json
+ M data/research/claim_ledger.json
+ M data/research/system_interdependencies.json
  M scripts/validate-project-data.mjs
- M scripts/validate-research-data.mjs
 ```
 
 ## Schema / Data Validation

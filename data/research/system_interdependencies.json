@@ -188,6 +188,31 @@
       ],
       "related_doctrine_ids": ["CC-DEV-042", "CC-DEV-043", "CC-DEV-044", "CC-DEV-045"],
       "double_count_warning": "Illustrative town-growth arithmetic is design discussion only — not case evidence."
+    },
+    {
+      "chain_id": "CC-INT-008",
+      "title": "Equal standing to civic trust",
+      "nodes": [
+        "equal standing before the Constitution",
+        "conduct-before-status inquiry",
+        "equal access to justice",
+        "uniform enforcement",
+        "reduced privilege capture",
+        "civic trust",
+        "shared civic identity"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "equal standing before the Constitution", "to": "conduct-before-status inquiry", "class": "plausible", "note": "Blind Stage Principle — philosophy, not literal universal courtroom protocol" },
+        { "from": "equal standing before the Constitution", "to": "equal access to justice", "class": "plausible", "note": "Paper rights without access remain incomplete" },
+        { "from": "equal access to justice", "to": "uniform enforcement", "class": "disputed", "note": "Access does not automatically produce uniform outcomes" },
+        { "from": "uniform enforcement", "to": "reduced privilege capture", "class": "plausible" },
+        { "from": "conduct-before-status inquiry", "to": "reduced privilege capture", "class": "plausible" },
+        { "from": "reduced privilege capture", "to": "civic trust", "class": "plausible" },
+        { "from": "civic trust", "to": "shared civic identity", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
+      "double_count_warning": "Do not count equal-standing rhetoric, access programs, and trust gains as independent additive benefits without shared-pathway discipline."
     }
   ]
 }

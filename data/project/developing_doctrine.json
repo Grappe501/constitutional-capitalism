@@ -1,8 +1,8 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "last_updated": "2026-08-04",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Equal Standing / Blind Stage (foundational principle CC-PRIN-29), Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -219,6 +219,26 @@
       "phase_destination": "phase-3_and_phase-9",
       "related_doctrine_ids": ["CC-DEV-045", "CC-DEV-020"],
       "note": "Anchored also in civilizational_core duty_of_improvement (CC-DEC-040)."
+    },
+    {
+      "cluster_id": "CC-DCC-16",
+      "title": "Equal standing, blind-stage justice, and equal access",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture",
+      "affected_domains": ["equal_standing", "justice", "democracy", "civic_culture", "access_to_justice"],
+      "constitutional_questions": [
+        "How does equal standing coexist with constitutionally relevant distinctions?",
+        "What access minimums make equality real rather than paper-only?"
+      ],
+      "implementation_level": ["local", "state", "federal_constitutional_floor"],
+      "risks": [
+        "confusing equal standing with equality of outcome",
+        "literal blind-proceedings claims that ignore legally relevant identity",
+        "invented access-to-justice statistics"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
+      "note": "Foundational principle CC-PRIN-29; complements Declaration On equality."
     }
   ],
   "items": [
@@ -1595,6 +1615,142 @@
       "declaration_revision_candidate": false,
       "status": "open",
       "related_decision_ids": ["CC-DEC-062"]
+    },
+    {
+      "doctrine_id": "CC-DEV-062",
+      "statement": "Every person stands equal before the Constitution. Neither wealth, office, race, religion, political affiliation, social status, birthplace, celebrity, nor institutional influence shall increase or diminish the protection of the law or the accountability imposed by the law. Equal standing is not identical treatment of every situation: relevant legal differences (such as age or conviction after due process) may matter; status must not determine justice.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-29",
+        "Equal Standing Test",
+        "complement to Declaration On equality (rejects outcome equality)"
+      ],
+      "conflicts": [
+        "privilege by wealth, office, or influence",
+        "engineered equality of outcome as constitutional mandate",
+        "treating every situation identically regardless of relevant legal differences"
+      ],
+      "research_required": [
+        "equal-protection doctrine comparative modules",
+        "selective-enforcement evidence modules without invented rates"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "evidence_status": "normative_architecture",
+      "affected_domains": ["equal_standing", "justice", "constitutional_order"],
+      "constitutional_questions": [
+        "What distinctions are constitutionally relevant versus status privilege?"
+      ],
+      "implementation_level": ["federal_constitutional_floor", "state", "local"],
+      "risks": ["outcome-equality conflation", "identity-blind literalism"],
+      "phase_destination": "phase-3"
+    },
+    {
+      "doctrine_id": "CC-DEV-063",
+      "statement": "Blind Stage Principle: Justice should evaluate conduct before identity whenever constitutionally and practically possible — asking what happened, what evidence exists, what law applies, and what harm occurred before asking who the person is, how much money they have, what party they belong to, what neighborhood they are from, or who they know. Guiding phrase: The Constitution should hear the evidence before it sees the person.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed",
+      "implications": [
+        "ordering of inquiry in justice and enforcement design",
+        "civic philosophy distinct from literal courtroom blindness in every case"
+      ],
+      "conflicts": [
+        "status-first justice",
+        "selective enforcement by identity or influence"
+      ],
+      "research_required": [
+        "procedural designs that reduce irrelevant status cues",
+        "limits where identity is legally essential"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "evidence_status": "normative_architecture",
+      "affected_domains": ["justice", "equal_standing", "civic_culture"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-064",
+      "statement": "Equality of Opportunity and Equality of Accountability: every citizen receives equal constitutional rights, equal legal protection, equal access to justice, equal opportunity to participate, and equal dignity; every citizen also accepts equal accountability, equal civic obligations, and equal responsibility under the law. No one is above the law. No one is beneath its protection.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed",
+      "implications": [
+        "paired rights and duties",
+        "anti-impunity and anti-abandonment"
+      ],
+      "conflicts": [
+        "immunity castes",
+        "unprotected castes"
+      ],
+      "research_required": [
+        "access and accountability measurement agendas with null baselines until sourced"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "phase_destination": "phase-3"
+    },
+    {
+      "doctrine_id": "CC-DEV-065",
+      "statement": "Reject privilege in every direction: corporate, political, bureaucratic, and inherited governmental privilege; special treatment by wealth or political influence; selective enforcement, prosecution, and immunity — and also reject arbitrary discrimination against people because they belong to any particular group. The Constitution is the common standard.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed",
+      "implications": [
+        "symmetric anti-privilege screen",
+        "Equal Standing Test questions on privileged and disadvantaged classes"
+      ],
+      "conflicts": [
+        "one-directional privilege critique that ignores other capture forms"
+      ],
+      "research_required": [
+        "institutional privilege case studies labeled as design research, not invented prevalence rates"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-066",
+      "statement": "Equal justice requires equal access: meaningful access to competent legal representation, understandable laws, public records, government services, appeals, and due process — otherwise equality exists only on paper.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed",
+      "implications": [
+        "access architecture as design agenda",
+        "links to transparency and public-service spines"
+      ],
+      "conflicts": [
+        "paper rights without usable pathways"
+      ],
+      "research_required": [
+        "access-to-justice modules without invented representation or delay statistics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "phase_destination": "phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-067",
+      "statement": "Shared civic identity: We may differ in our beliefs, backgrounds, occupations, and experiences, but before the Constitution we are fellow citizens first. Our diversity is real; our equality under the law is non-negotiable.",
+      "origin": "steve_direction_equal_standing_blind_stage",
+      "maturity": "proposed",
+      "implications": [
+        "civic culture against identity-group primacy as the sole political lens",
+        "fellow-citizens-first framing"
+      ],
+      "conflicts": [
+        "reducing citizenship to competing identity blocs"
+      ],
+      "research_required": [
+        "civic-culture and social-trust modules labeled carefully; no invented polarization cures"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-065"],
+      "phase_destination": "phase-3_and_phase-9"
     }
   ]
 }

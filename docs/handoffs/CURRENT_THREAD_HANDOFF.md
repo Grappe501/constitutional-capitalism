@@ -1,17 +1,17 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-05T02:33:24.946Z
+Generated: 2026-08-05T02:45:06.346Z
 
 ## For the next AI / human operator
 
 Read these first:
 
 1. `START_HERE_FOR_AI.md`
-2. `docs/handoffs/BURT_PHASE_2_MISSION_LOCK.md`
-3. `data/project/phase2_mission_lock.json`
+2. `PROJECT_MASTER_MAP.md`
+3. `data/project/book_identity.json`
 4. `data/project/current_build_state.json`
 5. `data/project/latest_cursor_return.json`
-6. `PROJECT_MASTER_MAP.md`
+6. `reports/CC_PHASE_0_MASTER_PROJECT_FOUNDATION_1_0_RETURN.md` (if present)
 
 ## Project
 
@@ -20,15 +20,15 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `6e97fb6`
+- **HEAD:** `598953b`
 
 ## Current state
 
 - Mission / slice: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
 - Phase: `phase-2`
 - Status: `phase_2_partial_complete`
-- Writing focus: Proof: national diagnosis with three-layer briefs; baseline metrics; evidence companion — scaffolding is not completion
-- Next action: Burt executes Phase 2 under mission lock; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
+- Writing focus: Proof: national diagnosis with three-layer briefs; Equal Standing foundational principle; baseline metrics; evidence companion — scaffolding is not completion
+- Next action: Burt executes Phase 2 under mission lock; deepen Equal Standing with sourced modules in 2.1 if needed; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
 - Overall progress: **36%**
 
 ## Active slice

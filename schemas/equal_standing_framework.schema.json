@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/equal_standing_framework.schema.json",
+  "title": "EqualStandingFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "foundational_principle",
+    "blind_stage_principle",
+    "equal_standing_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_ids": { "type": "array", "items": { "type": "string" } },
+    "domain_title": { "type": "string" },
+    "research_domain_title": { "type": "string" },
+    "website_node_id": { "type": "string" },
+    "principle_id": { "type": "string" },
+    "note": { "type": "string" },
+    "role_in_philosophy": { "type": "string" },
+    "foundational_principle": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } },
+        "principle_id": { "type": "string" }
+      }
+    },
+    "relevant_distinctions_rule": { "type": "object" },
+    "blind_stage_principle": {
+      "type": "object",
+      "required": ["text", "iconic_phrase"],
+      "properties": {
+        "name": { "type": "string" },
+        "analogy_note": { "type": "string" },
+        "text": { "type": "string", "minLength": 20 },
+        "iconic_phrase": { "type": "string" },
+        "iconic_phrase_caveat": { "type": "string" },
+        "ask_first": { "type": "array", "items": { "type": "string" } },
+        "do_not_ask_first": { "type": "array", "items": { "type": "string" } },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "equality_of_opportunity_and_accountability": { "type": "object" },
+    "reject_privilege_in_every_direction": { "type": "object" },
+    "equal_access_requirements": { "type": "object" },
+    "civic_culture": { "type": "object" },
+    "equal_standing_test": {
+      "type": "object",
+      "required": ["title", "purpose", "questions"],
+      "properties": {
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "minItems": 7,
+          "items": {
+            "type": "object",
+            "required": ["question_id", "number", "text"],
+            "properties": {
+              "question_id": { "type": "string" },
+              "number": { "type": "integer" },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "relationship_to_declaration": { "type": "object" },
+    "links_to_other_spines": { "type": "array", "items": { "type": "string" } },
+    "website_branches": { "type": "array", "minItems": 1 },
+    "research_status": { "type": "object" }
+  }
+}
