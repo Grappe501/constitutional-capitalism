@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "last_updated": "2026-08-05",
   "status": "research_category_deferred_scaffold",
   "anchored_at_decision_ids": [
@@ -7,7 +7,7 @@
     "CC-DEC-101",
     "CC-DEC-097"
   ],
-  "recorded_as_update": "UPD-065",
+  "recorded_as_update": "UPD-066",
   "title": "Living Community Laboratories",
   "kind": "research_program_category_not_architecture",
   "not_a_new_principle": true,
@@ -214,7 +214,8 @@
     "UPD-062",
     "UPD-063",
     "UPD-064",
-    "UPD-065"
+    "UPD-065",
+    "UPD-066"
   ],
   "paired_pathways": {
     "update_id": "UPD-063",
@@ -361,5 +362,89 @@
   "maturation_note": {
     "update_id": "UPD-065",
     "text": "Ideas that once might have become doctrine now enter as research hypotheses, Living Community Laboratories, explicit questions, and predetermined Supports/Qualifies/Contradicts verdicts."
+  },
+  "field_research_identity": {
+    "update_id": "UPD-066",
+    "rule": "Living Community Laboratories are field research sites — not demonstrations.",
+    "demonstration": "Begins with an expected answer",
+    "field_study": "Begins with a question",
+    "methodology_requires": "field study"
+  },
+  "evidence_hierarchy": {
+    "update_id": "UPD-066",
+    "decision_anchor": "CC-DEC-102",
+    "levels": [
+      {
+        "level": 1,
+        "id": "proof_packets",
+        "title": "Proof Packets",
+        "question": "Is this individual doctrine supported by the evidence?",
+        "examples": [
+          "Family Farm Prosperity",
+          "Community Prosperity Accounts",
+          "Local Ownership"
+        ],
+        "verdicts": [
+          "Supports",
+          "Qualifies",
+          "Contradicts"
+        ]
+      },
+      {
+        "level": 2,
+        "id": "living_community_laboratories",
+        "title": "Living Community Laboratories",
+        "question": "How do multiple doctrines interact within a real community?",
+        "examples": [
+          "Lewisville",
+          "Rose Bud"
+        ],
+        "asks": [
+          "Which combinations reinforce one another?",
+          "Which assumptions fail?",
+          "Which local conditions matter most?"
+        ],
+        "kind": "field_research_sites",
+        "not": "demonstrations of Constitutional Capitalism"
+      },
+      {
+        "level": 3,
+        "id": "comparative_community_research",
+        "title": "Comparative Community Research",
+        "question": "What patterns emerge across many different communities?",
+        "asks": [
+          "Why did two similar hubs produce different outcomes?",
+          "What institutional differences mattered?",
+          "What local conditions mattered?",
+          "What should the framework learn?"
+        ],
+        "protects_against": "Overgeneralizing from a single success"
+      },
+      {
+        "level": 4,
+        "id": "systems_intelligence",
+        "title": "Systems Intelligence",
+        "phase": 9,
+        "rule": "Only after Levels 1–3 mature does Phase 9 become truly valuable — reasoning over scholarly evidence, proof packets, real communities, comparative findings, and institutional relationships — not abstract simulations alone."
+      }
+    ],
+    "single_success_rule": "Even if one laboratory performs extremely well, ask which features appear transferable and which depend on unique geography, leadership, economy, or culture — do not conclude every community should replicate it."
+  },
+  "conceptual_planning": {
+    "status": "complete",
+    "closed_by_update": "UPD-066",
+    "prior_updates": [
+      "UPD-061",
+      "UPD-062",
+      "UPD-063",
+      "UPD-064",
+      "UPD-065"
+    ],
+    "remaining": "execution — PP-FF-01, remaining proof packets, evidence dossiers; community studies only when time comes",
+    "transition": "Stop asking 'What do we think?' and increasingly ask 'What have we learned?'"
+  },
+  "research_legacy_aspiration": {
+    "update_id": "UPD-066",
+    "text": "The enduring contribution may be a repeatable methodology for evaluating community development — a method that outlives the initial architecture and can test ideas not yet imagined."
   }
 }
