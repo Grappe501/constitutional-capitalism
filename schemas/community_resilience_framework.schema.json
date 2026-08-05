@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/community_resilience_framework.schema.json",
+  "title": "CommunityResilienceFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "principle",
+    "compact_language",
+    "mission",
+    "integrated_system",
+    "safeguards_note",
+    "design_pillars",
+    "community_resilience_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "principle": { "type": "object", "required": ["text"] },
+    "compact_language": { "type": "object", "required": ["text"] },
+    "mission": { "type": "object", "required": ["text"] },
+    "integrated_system": {
+      "type": "object",
+      "required": ["components"],
+      "properties": {
+        "components": { "type": "array", "minItems": 8 }
+      }
+    },
+    "design_pillars": {
+      "type": "object",
+      "required": ["pillars"],
+      "properties": {
+        "pillars": { "type": "array", "minItems": 10 }
+      }
+    },
+    "community_resilience_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 },
+    "safeguards_note": { "type": "string" }
+  }
+}
