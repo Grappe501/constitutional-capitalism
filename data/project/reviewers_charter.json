@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "last_updated": "2026-08-05",
   "status": "deferred_charter_for_first_collaborators",
   "anchored_at_decision_ids": [
@@ -78,7 +78,7 @@
     "data/project/proof_burden_registry.json",
     "content/research/REVIEWERS_CHARTER.md"
   ],
-  "refined_as_update": "UPD-060",
+  "refined_as_update": "UPD-061",
   "culture": {
     "invitation_is": "Help us make this stronger.",
     "invitation_is_not": "Help us prove we're right.",
@@ -284,5 +284,40 @@
       }
     ],
     "aligns_with": "evidence, transparency, and disciplined inquiry — not consensus-building"
+  },
+  "meta_governance_complete": true,
+  "three_kinds_of_truth": {
+    "update_id": "UPD-061",
+    "rule": "Keep empirical, normative, and design disagreements separate in every proof packet and review.",
+    "kinds": [
+      {
+        "id": "empirical_truth",
+        "title": "Empirical truth",
+        "question": "What does the evidence show?",
+        "belongs_to": "proof packets"
+      },
+      {
+        "id": "normative_judgment",
+        "title": "Normative judgment",
+        "question": "What ought society to value?",
+        "belongs_to": "philosophy and constitutional principles"
+      },
+      {
+        "id": "design_judgment",
+        "title": "Design judgment",
+        "question": "Assuming our values are accepted, what institutional design best advances them?",
+        "belongs_to": "doctrine, modeling, and implementation work"
+      }
+    ],
+    "example": {
+      "empirical": "Community ownership can increase local capital formation (evidence question)",
+      "normative": "Whether it should receive preferential incentives (values question)",
+      "design": "Which implementation mechanism to use (institutional design question)"
+    }
+  },
+  "review_culture": {
+    "is": "A community of independent scholarly reviewers",
+    "is_not": "An advisory board that guides the organization",
+    "distinction": "An advisory board tends to help guide the organization. An independent scholarly community helps evaluate the work itself. Independence carefully preserved becomes a strength."
   }
 }

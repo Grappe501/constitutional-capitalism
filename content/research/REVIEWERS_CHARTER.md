@@ -1,7 +1,15 @@
 # Reviewer's Charter
 
-**Status:** Deferred guidance (UPD-058 · UPD-059 · UPD-060)  
-**Not:** Phase 8 platform activation · Advocacy recruitment · Political-identity registration · Consensus panel  
+**Status:** Deferred guidance (UPD-058–061) · Meta-governance planning complete  
+**Not:** Phase 8 platform activation · Advocacy recruitment · Political-identity registration · Consensus panel · Advisory board  
+
+## Three kinds of truth (keep separate)
+
+1. **Empirical** — What does the evidence show? → proof packets  
+2. **Normative** — What ought society to value? → philosophy / principles  
+3. **Design** — Given those values, what institutions best advance them? → doctrine / modeling / implementation  
+
+Agreeing on evidence while disagreeing on values (or sharing values while disagreeing on design) is expected and productive.  
 
 ## Culture
 

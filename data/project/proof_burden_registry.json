@@ -295,7 +295,10 @@
       "explainable decisions",
       "governance that requires evidence to earn authority"
     ],
-    "stands_under": ["Phase 8 Review", "Phase 9 Systems Intelligence Engine"],
+    "stands_under": [
+      "Phase 8 Review",
+      "Phase 9 Systems Intelligence Engine"
+    ],
     "architectural_chapter": "closed — devote energy to making the methodology as rigorous and reproducible as the architecture"
   },
   "chapter_closing_note": {
@@ -392,5 +395,39 @@
     "Architecture Candidate / Hypothesis Card principles are not publishable until Proof Packets graduate",
     "Packets seek contrary evidence and non-adoption conditions, not confirmation alone",
     "Architecture revision recommended by evidence is governance success, not project failure"
-  ]
+  ],
+  "three_kinds_of_truth": {
+    "update_id": "UPD-061",
+    "rule": "Keep empirical, normative, and design disagreements separate in every proof packet and review.",
+    "kinds": [
+      {
+        "id": "empirical_truth",
+        "title": "Empirical truth",
+        "question": "What does the evidence show?",
+        "belongs_to": "proof packets"
+      },
+      {
+        "id": "normative_judgment",
+        "title": "Normative judgment",
+        "question": "What ought society to value?",
+        "belongs_to": "philosophy and constitutional principles"
+      },
+      {
+        "id": "design_judgment",
+        "title": "Design judgment",
+        "question": "Assuming our values are accepted, what institutional design best advances them?",
+        "belongs_to": "doctrine, modeling, and implementation work"
+      }
+    ],
+    "example": {
+      "empirical": "Community ownership can increase local capital formation (evidence question)",
+      "normative": "Whether it should receive preferential incentives (values question)",
+      "design": "Which implementation mechanism to use (institutional design question)"
+    }
+  },
+  "meta_governance_complete": {
+    "update_id": "UPD-061",
+    "status": "complete",
+    "next": "PP-FF-01 scholarly execution"
+  }
 }

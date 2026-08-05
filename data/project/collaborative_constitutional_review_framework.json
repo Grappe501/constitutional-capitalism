@@ -785,5 +785,34 @@
   "future_endorsement_ideal": {
     "text": "I disagree with several conclusions, but the work accurately represents my field, engages the strongest counterarguments, and treats the evidence honestly.",
     "value": "Speaks to integrity of process rather than agreement with outcome"
+  },
+  "meta_governance_complete": {
+    "update_id": "UPD-061",
+    "status": "complete",
+    "review_culture": {
+      "is": "A community of independent scholarly reviewers",
+      "is_not": "An advisory board that guides the organization",
+      "distinction": "An advisory board tends to help guide the organization. An independent scholarly community helps evaluate the work itself. Independence carefully preserved becomes a strength."
+    },
+    "three_kinds_of_truth": [
+      {
+        "id": "empirical_truth",
+        "title": "Empirical truth",
+        "question": "What does the evidence show?",
+        "belongs_to": "proof packets"
+      },
+      {
+        "id": "normative_judgment",
+        "title": "Normative judgment",
+        "question": "What ought society to value?",
+        "belongs_to": "philosophy and constitutional principles"
+      },
+      {
+        "id": "design_judgment",
+        "title": "Design judgment",
+        "question": "Assuming our values are accepted, what institutional design best advances them?",
+        "belongs_to": "doctrine, modeling, and implementation work"
+      }
+    ]
   }
 }

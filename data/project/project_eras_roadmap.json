@@ -17,12 +17,16 @@
   "stability_rule": "Architecture frozen at CC-DEC-100/101 (stewardship). Chapter closed at UPD-056 under CC-DEC-102. Future changes require threshold gate. Momentum = execution of proof packets.",
   "architecture_chapter_closed": {
     "status": "formally_complete",
-    "closing_updates": ["UPD-056", "UPD-057"],
+    "closing_updates": [
+      "UPD-056",
+      "UPD-057"
+    ],
     "anchored_at_decision_id": "CC-DEC-102",
     "closing_note": "The credibility of Constitutional Capitalism will ultimately rest less on the originality of its ideas than on the transparency of how those ideas survive scrutiny.",
     "historian_closing_paragraph": "The Architecture Chapter established the structure of Constitutional Capitalism. The Research Chapter begins the process of determining whether that structure is true, qualified, or should be revised. From this point forward, progress is measured not by the number of ideas created, but by the number of hypotheses honestly tested. The framework will earn credibility through transparent inquiry rather than assertion.",
     "next_chapter": "Research Chapter — earn confidence one proof packet at a time",
-    "next": "PP-FF-01 execution"
+    "next": "PP-FF-01 execution",
+    "meta_governance_closing_update": "UPD-061"
   },
   "identity_vs_hypothesis": {
     "recorded_as_update": "UPD-057",
@@ -258,5 +262,74 @@
       "Build the proof packets",
       "Strengthen the evidence chain"
     ]
+  },
+  "meta_governance_complete": {
+    "update_id": "UPD-061",
+    "status": "complete",
+    "anchored_at_decision_id": "CC-DEC-102",
+    "progression_upd_054_through_061": [
+      {
+        "id": "UPD-054",
+        "text": "The project becomes a research program."
+      },
+      {
+        "id": "UPD-055",
+        "text": "Every hypothesis must survive an honest test."
+      },
+      {
+        "id": "UPD-056",
+        "text": "Credibility comes from transparent scrutiny."
+      },
+      {
+        "id": "UPD-057",
+        "text": "Architecture is complete."
+      },
+      {
+        "id": "UPD-058–060",
+        "text": "The future scholarly community is defined (charter, disciplinary profiles, Domain Stewards)."
+      },
+      {
+        "id": "UPD-061",
+        "text": "Meta-governance design complete; three kinds of truth separated; execution begins."
+      }
+    ],
+    "coherent_philosophy": "One governance philosophy: research program → honest tests → transparent scrutiny → architecture complete → scholarly community defined → meta-governance closed → execution.",
+    "three_kinds_of_truth": {
+      "rule": "Keep empirical truth, normative judgment, and design judgment separate. Experts may agree on evidence while disagreeing on values, or share values while disagreeing on design.",
+      "kinds": [
+        {
+          "id": "empirical_truth",
+          "title": "Empirical truth",
+          "question": "What does the evidence show?",
+          "belongs_to": "proof packets"
+        },
+        {
+          "id": "normative_judgment",
+          "title": "Normative judgment",
+          "question": "What ought society to value?",
+          "belongs_to": "philosophy and constitutional principles"
+        },
+        {
+          "id": "design_judgment",
+          "title": "Design judgment",
+          "question": "Assuming our values are accepted, what institutional design best advances them?",
+          "belongs_to": "doctrine, modeling, and implementation work"
+        }
+      ],
+      "productivity": "Separation prevents unnecessarily polarized debates by identifying where disagreement actually lies."
+    },
+    "review_culture": {
+      "is": "A community of independent scholarly reviewers",
+      "is_not": "An advisory board that guides the organization",
+      "distinction": "An advisory board tends to help guide the organization. An independent scholarly community helps evaluate the work itself. Independence carefully preserved becomes a strength."
+    },
+    "what_is_complete": [
+      "Architecture has an identity",
+      "Research has a methodology",
+      "Future review community has a charter",
+      "AI has a defined constitutional role"
+    ],
+    "remaining_challenge": "scholarly execution — not conceptual design",
+    "next_milestone": "PP-FF-01"
   }
 }
