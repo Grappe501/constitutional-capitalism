@@ -165,7 +165,7 @@
   "essential_systems": {
     "decision_id": "CC-DEC-052",
     "status": "proposed",
-    "role": "Major system-design domain for banking, insurance, healthcare, pharmaceuticals, community health, and prevention — incentives and outcomes, not inherent-corruption conclusions.",
+    "role": "Major system-design domain for banking, insurance, pharmaceuticals, community health, and prevention — incentives and outcomes, not inherent-corruption conclusions. Dedicated healthcare architecture lives in health_human_capacity_spine (CC-PRIN-42).",
     "constitutional_question": "How should a society design essential systems so that private innovation and investment are rewarded while the public interest remains protected?",
     "financial_principle": "The financial system should primarily reward the creation of productive value rather than the extraction of value.",
     "health_principle": "A constitutional republic should measure success not only by how well it treats illness, but by how well it helps people remain healthy.",
@@ -226,14 +226,23 @@
     ],
     "note": "Architecture and developing doctrine only — Arkansas inventory/credential are design agendas; research precedes detailed administrative policy.",
     "related_citizen_public_service": {
-      "decision_ids": ["CC-DEC-082", "CC-DEC-083"],
-      "principle_ids": ["CC-PRIN-37", "CC-PRIN-38"],
+      "decision_ids": [
+        "CC-DEC-082",
+        "CC-DEC-083"
+      ],
+      "principle_ids": [
+        "CC-PRIN-37",
+        "CC-PRIN-38"
+      ],
       "framework_file": "data/project/citizen_public_service_framework.json",
       "role": "Anti-aristocracy plus accessible Citizen-Service Government: office confers responsibility, not privilege; ordinary citizens can serve without sacrifice and return without penalty."
     }
   },
   "citizen_public_service_spine": {
-    "decision_ids": ["CC-DEC-082", "CC-DEC-083"],
+    "decision_ids": [
+      "CC-DEC-082",
+      "CC-DEC-083"
+    ],
     "status": "proposed",
     "role": "Major Public Service Doctrine: end political aristocracy and build Citizen-Service Government so ordinary working people can serve.",
     "central_theme": "Public office is an act of constitutional service, not a pathway to a privileged class.",
@@ -241,7 +250,10 @@
     "accessibility_doctrine": "No citizen should have to sacrifice their livelihood, business, career, family security, or retirement in order to serve their community in public office.",
     "operational_principle": "Serve without sacrifice. Govern without privilege. Return without penalty.",
     "critical_distinction": "Eliminate special privileges tied to office; do not strip benefits earned under the same rules as everyone else. Make service accessible without making abuse easy.",
-    "principle_ids": ["CC-PRIN-37", "CC-PRIN-38"],
+    "principle_ids": [
+      "CC-PRIN-37",
+      "CC-PRIN-38"
+    ],
     "website_domain": "CC-WEB-CITIZEN-SERVICE",
     "framework_file": "data/project/citizen_public_service_framework.json",
     "doctrine_ids": [
@@ -756,5 +768,58 @@
       "community_food_security"
     ],
     "note": "Architecture only — Prosperity Fund percentages are illustrative design parameters; EIA/DOE baselines sourced; legal/fund modeling remain 0%. Architecture ≠ evidence that public-return institutions already exist."
+  },
+  "health_human_capacity_spine": {
+    "decision_id": "CC-DEC-087",
+    "status": "proposed",
+    "role": "Major national and Arkansas-ready pillar: healthcare as human-capital infrastructure — portable essential foundation, rural readiness financing, prevention floors, and fair outcomes.",
+    "governing_principle": "Every person must have reliable access to essential healthcare because a healthy population is foundational to liberty, productivity, family stability, community prosperity, and national strength. The system should reward keeping people healthy, restoring them quickly when sick, and delivering care as close to home as safely possible.",
+    "public_promise": "No Arkansan should be condemned to poorer health because of their ZIP code, income, employment status, or distance from a major hospital. We will fund the capacity to keep communities healthy—not merely the transactions generated after people become sick.",
+    "guiding_rule": "Basic health security follows the person. Supplemental choice may follow the market.",
+    "principle_id": "CC-PRIN-42",
+    "website_domain": "CC-WEB-HEALTHCARE",
+    "framework_file": "data/project/health_human_capacity_framework.json",
+    "doctrine_ids": [
+      "CC-DEV-229",
+      "CC-DEV-230",
+      "CC-DEV-231",
+      "CC-DEV-232",
+      "CC-DEV-233",
+      "CC-DEV-234",
+      "CC-DEV-235",
+      "CC-DEV-236",
+      "CC-DEV-237",
+      "CC-DEV-238",
+      "CC-DEV-239",
+      "CC-DEV-240",
+      "CC-DEV-241",
+      "CC-DEV-242",
+      "CC-DEV-243",
+      "CC-DEV-244",
+      "CC-DEV-245",
+      "CC-DEV-246",
+      "CC-DEV-247",
+      "CC-DEV-248"
+    ],
+    "sourced_claim_ids": [
+      "CC-CLAIM-113",
+      "CC-CLAIM-114",
+      "CC-CLAIM-115",
+      "CC-CLAIM-116",
+      "CC-CLAIM-117",
+      "CC-CLAIM-118"
+    ],
+    "links_to": [
+      "essential_systems",
+      "human_capital_doctrine",
+      "assistance_spine",
+      "family_spine",
+      "community_food_security",
+      "energy_sovereignty_spine",
+      "resource_sovereignty",
+      "transparency_framework",
+      "federalism_spine"
+    ],
+    "note": "Architecture only — financing formulas, readiness budgets, and Primary Care Floor percentages require modeling; CMS/HRSA/CDC/ACHI baselines sourced; legal 0%. Architecture ≠ evidence that Constitutional Health System institutions already exist."
   }
 }

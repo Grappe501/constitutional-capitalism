@@ -365,7 +365,8 @@
       "status": "seeded",
       "decision_id": "CC-DEC-053",
       "related_decision_ids": [
-        "CC-DEC-052"
+        "CC-DEC-052",
+        "CC-DEC-087"
       ],
       "central_promise": "Design essential systems so private innovation and investment are rewarded while the public interest remains protected — evaluate banking, insurance, healthcare, and pharmaceuticals through incentives and outcomes, not inherent-corruption conclusions.",
       "chapter_method": [
@@ -389,16 +390,38 @@
         "Outcome measurement"
       ],
       "framework_file": "data/project/essential_systems_framework.json",
-      "research_domain_title": "Essential Systems: Banking, Insurance, Healthcare, and Preventive Design",
-      "supersedes_nodes": [
-        "CC-WEB-HEALTHCARE"
-      ]
+      "research_domain_title": "Essential Systems: Banking, Insurance, Healthcare, and Preventive Design"
     },
     {
       "node_id": "CC-WEB-HEALTHCARE",
-      "title": "Healthcare",
-      "status": "redirected",
-      "note": "Healthcare content is seeded under Essential Systems (CC-WEB-ESSENTIAL); keep this node for navigation compatibility until branch pages mature."
+      "title": "Health, Human Capacity, and Community Care",
+      "status": "seeded",
+      "decision_id": "CC-DEC-087",
+      "related_decision_ids": [
+        "CC-DEC-053",
+        "CC-DEC-052"
+      ],
+      "path": "/health/",
+      "central_promise": "No Arkansan should be condemned to poorer health because of their ZIP code, income, employment status, or distance from a major hospital. We will fund the capacity to keep communities healthy—not merely the transactions generated after people become sick.",
+      "iconic_phrase": "Basic health security follows the person. Supplemental choice may follow the market.",
+      "branches": [
+        "Healthcare as human-capital infrastructure",
+        "Universal essential-health foundation",
+        "Health and Human Capacity Contribution",
+        "Community Health Readiness Budgets",
+        "Rural Health Equity Formula",
+        "Primary and Preventive Care Floor",
+        "Risk-adjusted outcomes",
+        "Community Health Network",
+        "Rural workforce pipeline",
+        "Pharmaceutical reform",
+        "Insurance as risk pooling",
+        "State Health Prosperity Fund",
+        "Prevention Dividend",
+        "Public health dashboards"
+      ],
+      "framework_file": "data/project/health_human_capacity_framework.json",
+      "research_domain_title": "Constitutional Health System, Rural Capacity Financing, and Prevention Dividends"
     },
     {
       "node_id": "CC-WEB-HOUSING",

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/health_human_capacity_framework.schema.json",
+  "title": "HealthHumanCapacityFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "governing_principle",
+    "public_promise",
+    "doctrine_statement",
+    "guiding_rule",
+    "five_financial_layers",
+    "rural_health_equity_formula",
+    "community_health_network",
+    "health_system_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "governing_principle": { "type": "object", "required": ["text"] },
+    "public_promise": { "type": "object", "required": ["text"] },
+    "doctrine_statement": { "type": "object", "required": ["text"] },
+    "guiding_rule": { "type": "object", "required": ["text"] },
+    "five_financial_layers": {
+      "type": "object",
+      "required": ["layers"],
+      "properties": {
+        "layers": { "type": "array", "minItems": 5 }
+      }
+    },
+    "rural_health_equity_formula": {
+      "type": "object",
+      "required": ["summary", "weighted_factors", "funding_principle"]
+    },
+    "community_health_network": {
+      "type": "object",
+      "required": ["stack"]
+    },
+    "health_system_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}

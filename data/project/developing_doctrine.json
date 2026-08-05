@@ -2,7 +2,7 @@
   "version": "0.2.4",
   "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Energy Sovereignty / People’s Energy Dividend (CC-PRIN-41), Civic Wealth / Constitutional Service Investment (CC-PRIN-40), Constitutional Defense / National Resilience (CC-PRIN-39), Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Health / Human Capacity / Community Care (CC-PRIN-42), Energy Sovereignty / People’s Energy Dividend (CC-PRIN-41), Civic Wealth / Constitutional Service Investment (CC-PRIN-40), Constitutional Defense / National Resilience (CC-PRIN-39), Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -1019,6 +1019,64 @@
         "CC-DEV-228"
       ],
       "note": "Principle CC-PRIN-41; EIA/DOE baselines sourced; fund modeling 0%; legal 0%."
+    },
+    {
+      "cluster_id": "CC-DCC-27",
+      "title": "Health, Human Capacity, and Community Care",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture_with_sourced_cms_hrsa_cdc_achi_baselines",
+      "affected_domains": [
+        "healthcare",
+        "rural_health",
+        "primary_care",
+        "prevention",
+        "insurance",
+        "pharmaceuticals",
+        "human_capital",
+        "community_capacity"
+      ],
+      "constitutional_questions": [
+        "How does a republic guarantee essential health security that follows the person without nationalizing every clinic?",
+        "How should rural readiness capacity be financed when billing volume cannot sustain it?",
+        "How can value-based payment reward improvement without abandoning poorer, older, or sicker communities?"
+      ],
+      "implementation_level": [
+        "constitutional_design",
+        "federal",
+        "state",
+        "local",
+        "regional"
+      ],
+      "risks": [
+        "treating contribution formulas or care-floor percentages as locked law before modeling",
+        "conflating CMS/HRSA/CDC/ACHI baselines with proof that the Constitutional Health System already exists",
+        "political capture of State Health Prosperity Fund distributions",
+        "outcome metrics that punish providers for inherited community disadvantage"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": [
+        "CC-DEV-229",
+        "CC-DEV-230",
+        "CC-DEV-231",
+        "CC-DEV-232",
+        "CC-DEV-233",
+        "CC-DEV-234",
+        "CC-DEV-235",
+        "CC-DEV-236",
+        "CC-DEV-237",
+        "CC-DEV-238",
+        "CC-DEV-239",
+        "CC-DEV-240",
+        "CC-DEV-241",
+        "CC-DEV-242",
+        "CC-DEV-243",
+        "CC-DEV-244",
+        "CC-DEV-245",
+        "CC-DEV-246",
+        "CC-DEV-247",
+        "CC-DEV-248"
+      ],
+      "note": "Principle CC-PRIN-42; CMS/HRSA/CDC/ACHI baselines sourced; financing formulas require modeling; legal 0%."
     }
   ],
   "items": [
@@ -6623,6 +6681,586 @@
       "status": "open",
       "related_decision_ids": [
         "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-229",
+      "statement": "Health, Human Capacity, and Community Care: Every person must have reliable access to essential healthcare because a healthy population is foundational to liberty, productivity, family stability, community prosperity, and national strength. The system should reward keeping people healthy, restoring them quickly when sick, and delivering care as close to home as safely possible.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-42"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-230",
+      "statement": "Problem diagnosis: the present structure often pays most reliably for billable illness transactions, while rural communities need financing for permanent capacity. Volume-based incentives are especially damaging where population cannot generate urban-level admissions. The system finances transactions; rural communities need capacity.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-231",
+      "statement": "Universal essential-health foundation: a clearly defined essential package follows the person — not lost because of job change, entrepreneurship, moves, temporary unemployment, reduced hours, leaving military service, retirement, or return from incarceration. Guiding rule: Basic health security follows the person. Supplemental choice may follow the market. Private insurance may remain for networks, amenities, electives, and supplements.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-232",
+      "statement": "Shared Health and Human Capacity Contribution: finance the essential system through broad, progressive, portable, transparent sources independent of a single employer — not premiums that punish hiring or wages. Exact formula requires economic modeling. Individuals may still pay reasonable income-adjusted contributions or cost sharing for some services.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-233",
+      "statement": "Community Health Readiness Budgets: pay rural health regions for the capacity they must maintain — 24-hour emergency readiness, EMS, stabilization, maternal care where needed, lab/imaging, pharmacy, telehealth, mental-health crisis response, disaster preparedness, rotating specialists, and community health workers — like funding a fire department rather than billing only for fires. Expand beyond CAH/REH into a complete rural-capacity model.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-234",
+      "statement": "Rural Health Equity Formula: distribute funds by need (population, age, poverty, chronic-disease burden, travel time, shortages, maternal access, emergency response, uninsured/underinsured, hospital vulnerability, disability, transportation, isolation) with a minimum community capacity payment. Equal citizenship does not always require identical spending; it requires enough capacity for a comparable basic standard of care.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-235",
+      "statement": "Primary and Preventive Care Floor: redirect a larger share of funding to family medicine, pediatrics, maternal care, dental, behavioral health, nutrition, community health workers, home visits, and chronic-disease management. Arkansas should protect a defined portion of Medicaid, public-employee, and regulated commercial spending for primary care and prevention — percentage requires modeling. Every resident should have a primary-care home and preventive support.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-236",
+      "statement": "Pay for outcomes without abandoning difficult communities: value-based payments must risk-adjust for poverty, rurality, housing instability, transportation, food access, disability, and provider scarcity. Reward improvements in chronic control, avoidable hospitalizations, maternal outcomes, addiction recovery, and childhood health — without punishing providers merely for serving inherited disadvantage.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-237",
+      "statement": "Community Health Network: every person needs a reliable network even if every town lacks a full traditional hospital — local health station → primary-care hub → mobile clinics/home visits → telehealth and rotating specialists → regional emergency/diagnostic center → full-service referral hospital. Transportation between levels is part of the healthcare system.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-238",
+      "statement": "Build the rural workforce locally: academy pathways beginning in local schools for nurses, physicians, paramedics, therapists, dental and behavioral-health professionals, pharmacists, technicians, community health workers, and administrators. Publicly funded professional education may be debt-free in exchange for defined underserved service — a coordinated pipeline, not scattered small programs.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-239",
+      "statement": "Healthcare as a local economic engine: a stable health network creates skilled jobs, purchasing power, workforce reliability, healthier children, support for aging residents, business recruitment, and emergency readiness — a central anchor for small-town implementation plans.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-240",
+      "statement": "Pharmaceutical reform: preserve innovation while requiring cost disclosure, recognition of taxpayer-funded research, negotiated public purchasing, limits on anti-competitive patent extensions, faster lawful generic/biosimilar competition, outcome-based pricing for very expensive treatments, public or nonprofit production where essential generic markets fail, and a national essential-medicines reserve. Where public research materially creates a drug, the public should receive reasonable pricing, licensing rights, royalties, equity, or guaranteed access.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-241",
+      "statement": "Insurance reform: return insurance to pooling unpredictable risk. Require standardized plain-language plans, transparent denial rates, rapid independent appeals, public administrative-cost ratios, continuity during serious treatment, restrictions on excessive vertical integration, and public reporting by county and income. No insurer should earn more simply because patients cannot navigate the system.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-242",
+      "statement": "State Health Prosperity Fund: a protected Arkansas fund for rural and underserved health capacity, financed from healthcare funds, sector assessments, settlements, resource-impact and health-impact charges, energy-export public revenue, recovered fraud, and administrative savings. Distribution follows the published rural-equity formula and appears in the People’s Ledger — not political favors.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-243",
+      "statement": "Prevention Dividend: when a region reduces avoidable costs while maintaining quality, part of verified savings returns to that region for parks, trails, healthy food, school nutrition, home repairs, maternal support, addiction recovery, fitness, and senior wellness. Communities should share financially when they become healthier.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-244",
+      "statement": "Public health accountability: every county and health region publishes a dashboard covering life expectancy, maternal/infant outcomes, primary-care access, vacancies, emergency response, hospital stability, preventable admissions, behavioral health and addiction outcomes, uninsured rates, healthcare debt, spending, insurer performance, and satisfaction. Private patient information remains protected; system performance does not.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-245",
+      "statement": "Constitutional division of health responsibility: local/regional governments handle community planning, prevention, facilities, transportation, food/environmental health, accountability, and workforce partnerships; states handle equitable funding, licensing, Medicaid, rural workforce strategy, insurance regulation, data, and network planning; the federal government handles universal baseline financing, Medicare, interstate insurance and pharmaceutical regulation, drug negotiation/competition, research, civil-rights protections, epidemic response, and support for regions unable to maintain essential capacity alone.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-246",
+      "statement": "Governing doctrine: Healthcare is a shared foundation of freedom and prosperity. The republic shall guarantee access to essential care, finance rural readiness rather than illness volume alone, reward prevention and restoration, protect medical choice and innovation, and distribute resources according to human need rather than geographic profitability.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-247",
+      "statement": "Public promise: No Arkansan should be condemned to poorer health because of their ZIP code, income, employment status, or distance from a major hospital. We will fund the capacity to keep communities healthy—not merely the transactions generated after people become sick.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-248",
+      "statement": "Implementation rule: test the Constitutional Health System regionally before statewide restructuring, with clearly defined costs, outcomes, failure triggers, and independent evaluation. Financing formulas and floor percentages remain design parameters until modeled.",
+      "origin": "project_direction_health_human_capacity_community_care",
+      "maturity": "proposed",
+      "implications": [
+        "health_human_capacity"
+      ],
+      "conflicts": [
+        "employer-tied essential coverage as the only foundation",
+        "volume-only rural hospital survival",
+        "value-based penalties that abandon hard communities",
+        "political favor distribution of rural health funds",
+        "treating financing formulas as locked without modeling"
+      ],
+      "research_required": [
+        "Health and Human Capacity Contribution fiscal modeling",
+        "Community Health Readiness Budget cost modeling by region",
+        "Primary and Preventive Care Floor percentage design",
+        "Rural Health Equity Formula weights and minimum capacity payments",
+        "legal drafting for universal foundation and insurance/pharma rules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-087"
       ],
       "phase_destination": "phase-3_and_phase-4"
     }
