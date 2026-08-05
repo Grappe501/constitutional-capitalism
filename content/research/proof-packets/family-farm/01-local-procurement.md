@@ -6,6 +6,12 @@
 **Proof Burden categories served:** Historical precedent · Economic literature · Pilot programs  
 **Scholarship rule:** CC-DEC-102 — this packet must be capable of **disproving** the doctrine it examines.
 
+## Investigator objective
+
+> The objective is not to defend the architecture. The objective is to discover the truth about the architecture.
+
+This packet is investigation, not advocacy. Verdicts: **Supports** (confidence rises) · **Qualifies** (doctrine sharpens) · **Contradicts** (revise architecture or explain the contradiction). No “protect the doctrine” outcome.
+
 ## Falsifiability standard
 
 Purpose is not to prove Local Food / Family Farm Prosperity correct. Purpose is to answer whether evidence **supports, qualifies, or contradicts** the architectural hypothesis.
