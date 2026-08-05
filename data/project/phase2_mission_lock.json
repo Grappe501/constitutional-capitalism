@@ -127,10 +127,12 @@
   "supporting_slices": {
     "public_statistics_bridge": {
       "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "supporting_mission": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
       "decision_id": "CC-DEC-076",
-      "related_decision_ids": ["CC-DEC-077", "CC-DEC-078"],
+      "related_decision_ids": ["CC-DEC-077", "CC-DEC-078", "CC-DEC-079"],
       "rcip_spine": "data/project/rcip_civic_data_spine.json",
-      "rule": "RedDirt is the shared civic-data spine (RCIP): ingest/normalize/verify once; multi-source validation; four layers; isolated schemas. CC is first external proof consumer via validated snapshots. Never inherit campaign identity or private records. Baseline rises only when mapped observations validate."
+      "status": "spine_partial_awaiting_keys",
+      "rule": "RedDirt is the shared civic-data spine (RCIP): ingest/normalize/verify once; multi-source validation; four layers; isolated schemas. CC is first external proof consumer via validated snapshots. Never inherit campaign identity or private records. Baseline rises only when mapped observations validate. Infrastructure alone must not inflate progress."
     }
   },
   "working_rule": "Do not build the constitution of the new system until the diagnosis of the current system can withstand an informed critic.",

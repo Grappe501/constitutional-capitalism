@@ -1,8 +1,8 @@
 {
-  "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+  "mission_id": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
   "status": "PARTIAL",
   "updated_at": "2026-08-05",
-  "summary": "RCIP shared civic-data spine formalized (CC-DEC-078): four layers, multi-source validation, isolated schemas, rich CC statistic display contract; CC is first external proof consumer. Still architecture-only; baseline 2/86 unchanged.",
+  "summary": "RedDirt RCIP spine scaffolded (audit, docs, connectors, file warehouse, export contract, privacy scan, publicdata:*). Live Census/BLS ingestion fail-closed (invalid/placeholder keys). No export imported. CC consumer commands publicstats:* plus CC-DEC-079 / UPD-030. Baseline remains 2/86; progress not inflated by infrastructure.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
   "starting_commit": "pending",
@@ -14,17 +14,14 @@
   "phase_2_status": "PARTIAL",
   "recommended_next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
   "decision_ids": [
+    "CC-DEC-079",
     "CC-DEC-078",
     "CC-DEC-077",
     "CC-DEC-076"
   ],
-  "update_id": "UPD-029",
-  "public_paths": [
-    "/assistance/"
-  ],
-  "board_paths": [
-    "/phase-2-gate/"
-  ],
-  "integrity_note": "No CC-side agency connectors; no keys; architecture ≠ baseline proof",
-  "next_command": "In RedDirt: implement four-layer RCIP warehouse starting with public_statistics + multi-source employment pilot; in CC: keep snapshot consumer contract"
+  "update_id": "UPD-030",
+  "public_paths": [],
+  "board_paths": [],
+  "integrity_note": "No CC-side agency connectors; no keys; architecture ≠ baseline proof; sourced baseline still 2/86",
+  "next_command": "In RedDirt: install valid CENSUS_API_KEY and BLS_API_KEY, then npm run publicdata:all; in CC: pnpm publicstats:import --from H:\\SOSWebsite\\RedDirt\\exports\\constitutional-capitalism\\latest"
 }

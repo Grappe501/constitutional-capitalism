@@ -1243,6 +1243,23 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-05",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-079",
+      "title": "RCIP Phase 1 public-statistics spine — controlled two-repo integration",
+      "question": "Should Constitutional Capitalism treat RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0 as the supporting Phase 2 infrastructure slice where RedDirt remains the canonical public-data engine, CC remains the first external research consumer via versioned snapshot exports only, and baseline/progress may increase only after real metrics are imported, validated, sourced, and mapped — never because infrastructure scaffolding exists?",
+      "status": "approved",
+      "rationale": "Architecture must not inflate evidence. The forensic audit verdict (architecture ahead of evidence) requires an honest PARTIAL posture until Census/BLS keys are usable and one full provenance chain lands in the baseline.",
+      "impact": [
+        "publicstats:import / validate / report commands",
+        "data/imports/reddirt-public-statistics/",
+        "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0 remains subordinate",
+        "baseline stays 2/86 until mapped observations"
+      ],
+      "recommendation": "Keep CC on validated exports; do not connect to RedDirt DB; do not copy API keys; update public pages only after validated mapped import; record PARTIAL return until observations populate.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
     }
   ]
 }
