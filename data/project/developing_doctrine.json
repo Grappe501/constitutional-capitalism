@@ -1,8 +1,8 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "last_updated": "2026-08-04",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Justice doctrine added as principal domain architecture before policy drafting.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Includes justice, democracy, and public-service modernization spines before policy drafting.",
   "items": [
     {
       "doctrine_id": "CC-DEV-001",
@@ -388,6 +388,119 @@
       "declaration_revision_candidate": false,
       "status": "open",
       "related_decision_ids": ["CC-DEC-045"]
+    },
+    {
+      "doctrine_id": "CC-DEV-020",
+      "statement": "Government work should be among the highest forms of civic service; public institutions should use technology to eliminate unnecessary administrative labor so human talent concentrates in judgment, problem-solving, public engagement, oversight, and service.",
+      "origin": "steve_direction_public_service_modernization",
+      "maturity": "proposed",
+      "implications": [
+        "government_capacity_framework",
+        "Public Service and the 21st-Century State website domain",
+        "Government Capacity Test",
+        "noble public service culture"
+      ],
+      "conflicts": [
+        "bureaucracy for its own sake",
+        "shrink-until-broken minimalism"
+      ],
+      "research_required": [
+        "digital government evaluations",
+        "civil-service capacity evidence",
+        "administrative burden studies"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-047", "CC-DEC-048"]
+    },
+    {
+      "doctrine_id": "CC-DEV-021",
+      "statement": "Automate the routine and elevate the human; technology must never become an excuse to remove access for elderly, disabled, rural, poor, offline, or digitally uncomfortable citizens — every digital service needs a real human pathway.",
+      "origin": "steve_direction_public_service_modernization",
+      "maturity": "proposed",
+      "implications": [
+        "citizen-centered services",
+        "rural access",
+        "human-centered service design",
+        "administrative simplification"
+      ],
+      "conflicts": [
+        "digital-only service mandates"
+      ],
+      "research_required": [
+        "digital exclusion literature",
+        "omnichannel service evaluations"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-047"]
+    },
+    {
+      "doctrine_id": "CC-DEV-022",
+      "statement": "Preserve professional public-administration expertise while keeping civic leadership and oversight connected to ordinary civic life so career bureaucracy does not become isolated from the public it serves.",
+      "origin": "steve_direction_public_service_modernization",
+      "maturity": "proposed",
+      "implications": [
+        "civil service",
+        "boards and commissions",
+        "civic leadership pipelines",
+        "open appointments"
+      ],
+      "conflicts": [
+        "closed appointment networks",
+        "anti-expertise populism that destroys capacity"
+      ],
+      "research_required": [
+        "appointment network studies",
+        "civil-service performance evidence"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-047"]
+    },
+    {
+      "doctrine_id": "CC-DEV-023",
+      "statement": "Every board, commission, agency program, and major administrative rule should face periodic review with publicly justified outcomes to renew, reform, consolidate, or end — no public body should exist indefinitely merely because no one remembers why it was created.",
+      "origin": "steve_direction_public_service_modernization",
+      "maturity": "proposed",
+      "implications": [
+        "sunset review",
+        "Public Authority Inventory",
+        "agency transparency"
+      ],
+      "conflicts": [
+        "automatic sunset that destroys useful capacity without review"
+      ],
+      "research_required": [
+        "state sunset-commission evaluations",
+        "board inventory methodologies"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-047"]
+    },
+    {
+      "doctrine_id": "CC-DEV-024",
+      "statement": "Government services should be organized around the citizen, not agency silos; citizens should not have to understand the organizational chart of government to receive a service, and major agencies should publish honest performance including failures.",
+      "origin": "steve_direction_public_service_modernization",
+      "maturity": "proposed",
+      "implications": [
+        "citizen-facing government account",
+        "agency accountability dashboards",
+        "government data",
+        "public records"
+      ],
+      "conflicts": [
+        "PR-only dashboards",
+        "agency-silo IT that fragments the citizen experience"
+      ],
+      "research_required": [
+        "integrated portal evaluations",
+        "performance transparency effects"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-047"]
     }
   ]
 }

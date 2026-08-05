@@ -27,6 +27,8 @@ Map every major system in the Constitutional Capitalism repository.
 | Justice research | `content/research/justice/` + diagnosis `21-justice-safety-and-restoration.md` | Phase 2 research domain before justice policy |
 | Democracy framework | `docs/architecture/DEMOCRACY_REPRESENTATION_AND_DISTRIBUTED_GOVERNMENT.md` + `data/project/democracy_framework.json` | Second constitutional spine: trust/anti-entrenchment, Democracy Test, Bill Test (`CC-DEC-045`/`046`) |
 | Democracy research | `content/research/democracy/` + diagnosis `22-democracy-representation-and-distributed-government.md` | Phase 2 research domain before election/redistricting policy |
+| Public service framework | `docs/architecture/PUBLIC_SERVICE_AND_21ST_CENTURY_STATE.md` + `data/project/government_capacity_framework.json` | Institutional modernization: noble service, tech doctrine, capacity test (`CC-DEC-047`/`048`) |
+| Government capacity research | `content/research/government-capacity/` + diagnosis `23-government-capacity-public-service.md` | Phase 2 research domain before civil-service/IT/board policy |
 | Transition timeline | `data/project/transition_timeline.json` + `docs/architecture/TRANSITION_AND_IMPLEMENTATION_TIMELINE_FRAMEWORK.md` | Implementation timeline framework |
 | Testing / pilots | `data/testing/` + `docs/research/TESTING_AND_PILOT_STANDARD.md` | Pilot/testing standard (no fake pilots) |
 | Constitutional Capitalism Test | `docs/governance/CONSTITUTIONAL_CAPITALISM_TEST.md` + `data/project/constitutional_capitalism_test.json` | Ten-question policy screen (`CC-DEC-031`) |

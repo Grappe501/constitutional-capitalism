@@ -108,6 +108,18 @@ Anti-entrenchment (`CC-DEV-016`): temporary majorities may not use public power 
 
 Full architecture: `docs/architecture/DEMOCRACY_REPRESENTATION_AND_DISTRIBUTED_GOVERNMENT.md` and `data/project/democracy_framework.json`. Website domain: **Democracy, Representation, and Distributed Government** (`CC-WEB-DEMOCRACY`). Research precedes detailed political-structure policy (`CC-DEC-045`, `CC-DEC-046`).
 
+## Public service spine (developing)
+
+Neither shrink-until-broken nor bureaucracy-for-its-own-sake.
+
+Foundational principle (`CC-DEV-020`):
+
+> Government work should be among the highest forms of civic service. Public institutions should use technology to eliminate unnecessary administrative labor so human talent can be concentrated in judgment, problem-solving, public engagement, oversight, and service.
+
+Technology doctrine (`CC-DEV-021`): **Automate the routine. Elevate the human** — with human access pathways required.
+
+Full architecture: `docs/architecture/PUBLIC_SERVICE_AND_21ST_CENTURY_STATE.md` and `data/project/government_capacity_framework.json`. Website domain: **Public Service and the 21st-Century State** (`CC-WEB-GOVERNMENT`). Research precedes detailed administrative policy (`CC-DEC-047`, `CC-DEC-048`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

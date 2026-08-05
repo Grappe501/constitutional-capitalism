@@ -20,6 +20,8 @@ Priority domains now have sourced first-pass briefs: wealth/ownership, wages/pro
 
 **Democracy, Representation, and Distributed Government** is the **second constitutional spine** (`CC-DEV-015`–`019`). Architecture, Democracy Test, Bill Transparency Test, and initial legal/institutional sources (*Rucho*, NCSL) are seeded; fuller empirical diagnosis is Phase 2.1.
 
+**Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`024`) is the **public-service and institutional-modernization doctrine**. Architecture and Government Capacity Test are seeded; Arkansas Public Authority Inventory and Civic Service Credential are design agendas — no invented board counts.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.

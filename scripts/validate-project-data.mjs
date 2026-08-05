@@ -38,7 +38,8 @@ const validations = [
   ['data/project/transition_timeline.json','schemas/transition_timeline.schema.json'],
   ['data/baseline/national_baseline_metrics.json','schemas/national_baseline_metrics.schema.json'],
   ['data/project/justice_framework.json','schemas/justice_framework.schema.json'],
-  ['data/project/democracy_framework.json','schemas/democracy_framework.schema.json']
+  ['data/project/democracy_framework.json','schemas/democracy_framework.schema.json'],
+  ['data/project/government_capacity_framework.json','schemas/government_capacity_framework.schema.json']
 ];
 for (const [dataRel, schemaRel] of validations) {
   if (!fs.existsSync(r(dataRel))) { fail(`Missing data file: ${dataRel}`); continue; }

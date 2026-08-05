@@ -1,0 +1,98 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine, claims, baselineStatus } from "../lib/data";
+import gov from "../../../../data/project/government_capacity_framework.json";
+
+const govDoctrine = (developingDoctrine.items || []).filter((d: any) =>
+  ["CC-DEV-020", "CC-DEV-021", "CC-DEV-022", "CC-DEV-023", "CC-DEV-024"].includes(d.doctrine_id)
+);
+const govClaims = (claims.claims || []).filter((c: any) =>
+  ["CC-CLAIM-027", "CC-CLAIM-028", "CC-CLAIM-029"].includes(c.claim_id)
+);
+---
+
+<BoardLayout title="Public Service" path="/public-service/">
+  <h1 class="page-title">Public Service and the 21st-Century State</h1>
+  <p class="page-lede">
+    Research title: {gov.research_domain_title}. Framework:
+    <code>data/project/government_capacity_framework.json</code>.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Doctrine items</div>
+      <div class="stat__value">{govDoctrine.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Capacity Test</div>
+      <div class="stat__value">{gov.government_capacity_test?.questions?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Website branches</div>
+      <div class="stat__value">{gov.website_branches?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Claims</div>
+      <div class="stat__value">{govClaims.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Baseline (all)</div>
+      <div class="stat__value" style="font-size:1.1rem;">
+        {baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Foundational principle</h2>
+    <p>{gov.foundational_principle.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Developing doctrine</h2>
+    <ul class="list-plain">
+      {
+        govDoctrine.map((d: any) => (
+          <li>
+            <code>{d.doctrine_id}</code> — {d.statement}{" "}
+            <span class="pill">{d.maturity}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Arkansas design agendas</h2>
+    <ul class="list-plain">
+      <li>
+        <strong>{gov.public_authority_inventory.name}</strong> — {gov.public_authority_inventory.note}
+      </li>
+      <li>
+        <strong>{gov.civic_service_credential.name}</strong> — {gov.civic_service_credential.note}
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Claims</h2>
+    <ul class="list-plain">
+      {
+        govClaims.map((c: any) => (
+          <li>
+            <code>{c.claim_id}</code> — {c.claim_text}{" "}
+            <span class="pill">{c.support_level}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Research status</h2>
+    <p>
+      Phase: {gov.research_status?.phase}. Policy drafting: {gov.research_status?.policy_drafting}.
+      Next: {gov.research_status?.next}
+    </p>
+  </section>
+</BoardLayout>

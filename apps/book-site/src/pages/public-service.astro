@@ -1,0 +1,109 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import gov from "../../../../data/project/government_capacity_framework.json";
+
+const testQs = gov.government_capacity_test?.questions || [];
+const branches = gov.website_branches || [];
+const pipeline = gov.civic_leadership_pipeline || [];
+const reviewQs = gov.public_authority_inventory?.review_questions || [];
+---
+
+<BaseLayout
+  title="Public Service and the 21st-Century State"
+  path="/public-service/"
+  description="Developing doctrine: noble public service, automate the routine, elevate the human."
+>
+  <article class="prose">
+    <h1>{gov.domain_title}</h1>
+    <p class="status-note">
+      Public-service and institutional-modernization doctrine — architecture before detailed administrative law.
+      Arkansas inventory and Civic Service Credential are design agendas, not completed programs. No invented statistics.
+    </p>
+    <p class="lede">{gov.role_in_philosophy}</p>
+
+    <h2>Foundational principle</h2>
+    <blockquote>
+      <p>{gov.foundational_principle.text}</p>
+    </blockquote>
+
+    <h2>Operational rule</h2>
+    <blockquote>
+      <p>{gov.operational_rule.text}</p>
+    </blockquote>
+
+    <h2>Technology doctrine</h2>
+    <blockquote>
+      <p>{gov.technology_doctrine.text}</p>
+    </blockquote>
+    <p>{gov.technology_doctrine.guardrail}</p>
+
+    <h2>Arkansas objective</h2>
+    <blockquote>
+      <p>{gov.arkansas_objective.text}</p>
+    </blockquote>
+
+    <h2>Noble public service</h2>
+    <p>
+      <strong>Professional public administration</strong> —
+      {gov.career_distinction.professional_public_administration.summary}
+    </p>
+    <p>
+      <strong>Civic leadership</strong> — {gov.career_distinction.civic_leadership.summary}
+    </p>
+    <p>{gov.career_distinction.objective}</p>
+
+    <h2>Civic leadership pipeline</h2>
+    <ol>
+      {pipeline.map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+    <p>{gov.appointment_rule}</p>
+
+    <h2>Visible boards and commissions</h2>
+    <p>A citizen should be able to answer:</p>
+    <blockquote>
+      <p>{gov.citizen_visibility_question}</p>
+    </blockquote>
+
+    <h2>Public Authority Inventory (design agenda)</h2>
+    <p>
+      {gov.public_authority_inventory.name} — initial focus: {gov.public_authority_inventory.initial_focus}.
+      {gov.public_authority_inventory.note}
+    </p>
+    <ol>
+      {reviewQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Sunset and renewal</h2>
+    <p>{gov.sunset_and_renewal.rule}</p>
+    <p>Outcomes: {(gov.sunset_and_renewal.outcomes || []).join("; ")}.</p>
+
+    <h2>Arkansas Civic Service Credential (design agenda)</h2>
+    <p>
+      {gov.civic_service_credential.name} — {gov.civic_service_credential.note}
+    </p>
+
+    <h2>Government Capacity Test</h2>
+    <p>{gov.government_capacity_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>{b.title}</li>
+      ))}
+    </ul>
+
+    <p>
+      See also <a href="/justice/">Justice</a>, <a href="/democracy/">Democracy</a>, and
+      <a href="/where-we-are/">Where we are</a>.
+    </p>
+  </article>
+</BaseLayout>

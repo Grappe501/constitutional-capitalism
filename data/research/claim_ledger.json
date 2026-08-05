@@ -1,7 +1,7 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "last_updated": "2026-08-04",
-  "note": "Phase 2 claims including justice (021–023) and democracy spine (024–026). Normative and prediction claims labeled. No fabricated support.",
+  "note": "Phase 2 claims including justice (021–023), democracy (024–026), and public-service modernization (027–029). Normative claims labeled. No fabricated support.",
   "claims": [
     {
       "claim_id": "CC-CLAIM-001",
@@ -629,6 +629,77 @@
       "temporal_scope": "contemporary",
       "doctrine_ids": ["CC-DEV-015"],
       "public_wording": "NCSL and related experience show term limits are used in a minority of states and are not a complete anti-capture design; complementary transparency and staffing rules matter."
+    },
+    {
+      "claim_id": "CC-CLAIM-027",
+      "claim_text": "Government work should be among the highest forms of civic service; technology should automate routine administration so human talent concentrates in judgment, service, oversight, and engagement.",
+      "chapter_ids": [],
+      "claim_type": "government_capacity",
+      "claim_class": "normative_doctrine_requires_empirical_modules",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Automation can be used primarily for headcount cuts rather than service elevation.",
+        "Some routine administrative work still requires human judgment."
+      ],
+      "uncertainty": "CC-DEV-020/021; needs digital-government and administrative-burden sourcing.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-020", "CC-DEV-021"],
+      "public_wording": "Developing doctrine: automate the routine, elevate the human — evidence modules pending; digital-only exclusion forbidden."
+    },
+    {
+      "claim_id": "CC-CLAIM-028",
+      "claim_text": "Every public board, commission, and similar authority should be publicly visible and periodically reviewable for renewal, reform, consolidation, or ending.",
+      "chapter_ids": [],
+      "claim_type": "government_capacity",
+      "claim_class": "normative_institutional_design",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Some advisory bodies may be temporary by design; overbroad sunset can destroy useful capacity.",
+        "Full visibility requirements have administrative costs."
+      ],
+      "uncertainty": "CC-DEV-023; Arkansas Public Authority Inventory is a design agenda, not a completed count.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US_states_local",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-023"],
+      "public_wording": "Developing doctrine: invisible boards enable capture — inventory and sunset/renewal architecture pending sourced execution."
+    },
+    {
+      "claim_id": "CC-CLAIM-029",
+      "claim_text": "Digital government services must retain real human access pathways for citizens who are elderly, disabled, rural, poor, offline, or uncomfortable with digital systems.",
+      "chapter_ids": [],
+      "claim_type": "government_capacity",
+      "claim_class": "normative_access_guardrail",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine_with_access_literature_queue",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Maintaining parallel channels has cost; poorly designed human pathways can recreate queues and inequity."
+      ],
+      "uncertainty": "Needs digital-exclusion and omnichannel service evaluations.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-021", "CC-DEV-024"],
+      "public_wording": "Developing doctrine: automate routine work without abandoning people who cannot or should not be forced online-only."
     }
   ]
 }

@@ -33,7 +33,7 @@ Constitutional Capitalism
 - Human Flourishing  
 - Economics  
 - **Justice, Safety, and Restoration** (principal domain; branches in `justice_framework.json`)  
-- Government  
+- **Public Service and the 21st-Century State** (institutional modernization; branches in `government_capacity_framework.json`)  
 - Communities  
 - Families  
 - Education  
