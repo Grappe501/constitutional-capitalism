@@ -1,13 +1,50 @@
 # Reviewer's Charter
 
-**Status:** Deferred guidance for first collaborators (UPD-058 · refined UPD-059)  
-**Not:** Phase 8 platform activation · Advocacy recruitment · Political-identity registration  
+**Status:** Deferred guidance (UPD-058 · UPD-059 · UPD-060)  
+**Not:** Phase 8 platform activation · Advocacy recruitment · Political-identity registration · Consensus panel  
 
 ## Culture
 
 > Help us make this stronger.
 
-Not: *Help us prove we're right.*
+Not: *Help us prove we're right.*  
+Not: *Help us endorse a conclusion.* — improve the quality of the scholarship.
+
+## Panel purpose
+
+Stress-test the framework from **complementary domains of expertise** — not assemble a panel to reach consensus.
+
+Economics · Grassroots organizing · Engineering/systems · Urban planning · Government leadership (and other disciplines) examine different dimensions of the same doctrine.
+
+## Domain Stewards
+
+Long-term subject-matter reviewers. Core question:
+
+> Has this domain been treated fairly, rigorously, and accurately?
+
+They are **not** expected to agree with the framework or certify that proposals are optimal.
+
+### Independence
+
+Do **not** ask: *Will you support Constitutional Capitalism?*  
+
+Ask: *Will you independently review this work within your area of expertise and tell us where it is strong, where it is weak, and where it requires further research?*
+
+Ideal later endorsement:
+
+> *"I disagree with several conclusions, but the work accurately represents my field, engages the strongest counterarguments, and treats the evidence honestly."*
+
+## Review ecosystem (deferred)
+
+| Role | Purpose |
+| --- | --- |
+| Domain Steward | Long-term subject-matter review of a discipline |
+| Contributing Reviewer | Reviews specific proof packets |
+| Methodology Reviewer | Evaluates the research process |
+| Implementation Reviewer | Assesses operational feasibility |
+| Cross-Domain Reviewer | Spans fields; finds interactions |
+
+**Founding Steward** (Beta) is distinct: end-to-end exercise of the whole governance system before external Domain Stewards.
 
 ## Objective
 

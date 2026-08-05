@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "last_updated": "2026-08-05",
   "status": "deferred_charter_for_first_collaborators",
   "anchored_at_decision_ids": [
@@ -78,11 +78,12 @@
     "data/project/proof_burden_registry.json",
     "content/research/REVIEWERS_CHARTER.md"
   ],
-  "refined_as_update": "UPD-059",
+  "refined_as_update": "UPD-060",
   "culture": {
     "invitation_is": "Help us make this stronger.",
     "invitation_is_not": "Help us prove we're right.",
-    "note": "Serious scholars appreciate being invited to improve a framework rather than endorse it."
+    "note": "Serious scholars appreciate being invited to improve a framework rather than endorse it.",
+    "reinforcement": "The project is not asking experts to endorse a conclusion. It is asking them to improve the quality of the scholarship."
   },
   "registration_model": {
     "rule": "Register by disciplinary perspective and optionally by analytical framework — not by political identity labels (e.g., libertarian, conservative, progressive as registration categories).",
@@ -108,7 +109,8 @@
       "Behavioral Psychology",
       "Systems Engineering",
       "History",
-      "Retirement Systems"
+      "Retirement Systems",
+      "Urban Planning"
     ],
     "professional_background": [
       "Academic",
@@ -160,5 +162,127 @@
       "Confidence"
     ],
     "note": "Ensure major disciplines have meaningfully engaged relevant parts of the framework — not unanimous agreement."
+  },
+  "refined_as_updates": [
+    "UPD-059",
+    "UPD-060"
+  ],
+  "panel_purpose": {
+    "text": "Assemble a panel to stress-test the framework from fundamentally different domains of expertise — not to reach consensus.",
+    "complementary_not_overlapping": true,
+    "example_dimensions": [
+      {
+        "domain": "Economics",
+        "examines": [
+          "incentives",
+          "capital formation",
+          "markets",
+          "public finance",
+          "opportunity costs"
+        ]
+      },
+      {
+        "domain": "Grassroots organizing",
+        "examines": [
+          "implementation in real communities",
+          "civic participation",
+          "coalition-building",
+          "human behavior"
+        ]
+      },
+      {
+        "domain": "Engineering and systems thinking",
+        "examines": [
+          "robustness",
+          "dependencies",
+          "failure modes",
+          "optimization",
+          "scalability"
+        ]
+      },
+      {
+        "domain": "Urban planning",
+        "examines": [
+          "land use",
+          "transportation",
+          "housing",
+          "regional development",
+          "municipal systems"
+        ]
+      },
+      {
+        "domain": "Government leadership",
+        "examines": [
+          "political feasibility",
+          "administration",
+          "institutional design",
+          "constitutional authority"
+        ]
+      }
+    ]
+  },
+  "domain_steward": {
+    "title": "Domain Steward",
+    "rule": "Once the project reaches that stage, think of long-term subject-matter reviewers as Domain Stewards — not primarily as collaborators seeking agreement.",
+    "core_question": "Has this domain been treated fairly, rigorously, and accurately?",
+    "economist_certifies": [
+      "economic reasoning is coherent",
+      "assumptions are explicit",
+      "tradeoffs are acknowledged",
+      "literature is represented fairly",
+      "uncertainties are honestly stated"
+    ],
+    "engineer_helps_determine": [
+      "whether the system behaves coherently under stress",
+      "whether hidden dependencies or failure modes have been overlooked"
+    ],
+    "not": [
+      "endorse policy",
+      "certify every proposal is optimal",
+      "agree with every conclusion"
+    ]
+  },
+  "independence": {
+    "title": "Preserve independence",
+    "do_not_ask": "Will you support Constitutional Capitalism?",
+    "ask": "Will you independently review this work within your area of expertise and tell us where it is strong, where it is weak, and where it requires further research?",
+    "why": "If reviewers become advocates, readers may question objectivity. Independent experts carry more weight—even when they disagree."
+  },
+  "future_endorsement_ideal": {
+    "text": "I disagree with several conclusions, but the work accurately represents my field, engages the strongest counterarguments, and treats the evidence honestly.",
+    "value": "Speaks to integrity of process rather than agreement with outcome"
+  },
+  "review_ecosystem": {
+    "title": "Review ecosystem (deferred)",
+    "roles": [
+      {
+        "id": "domain_steward",
+        "title": "Domain Steward",
+        "role": "Long-term subject-matter reviewer",
+        "core_question": "Has this domain been treated fairly, rigorously, and accurately?",
+        "not": "Expected to agree with the framework or certify that proposals are optimal"
+      },
+      {
+        "id": "contributing_reviewer",
+        "title": "Contributing Reviewer",
+        "role": "Specialist who reviews specific proof packets"
+      },
+      {
+        "id": "methodology_reviewer",
+        "title": "Methodology Reviewer",
+        "role": "Expert who evaluates the research process itself"
+      },
+      {
+        "id": "implementation_reviewer",
+        "title": "Implementation Reviewer",
+        "role": "Practitioner who assesses operational feasibility"
+      },
+      {
+        "id": "cross_domain_reviewer",
+        "title": "Cross-Domain Reviewer",
+        "role": "Spans multiple disciplines; identifies interactions between fields"
+      }
+    ],
+    "aligns_with": "evidence, transparency, and disciplined inquiry — not consensus-building"
   }
 }

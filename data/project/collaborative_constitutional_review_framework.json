@@ -351,7 +351,8 @@
       "Behavioral Psychology",
       "Systems Engineering",
       "History",
-      "Retirement Systems"
+      "Retirement Systems",
+      "Urban Planning"
     ]
   },
   "review_types": [
@@ -525,7 +526,7 @@
     "file": "data/project/reviewers_charter.json",
     "public_text": "content/research/REVIEWERS_CHARTER.md",
     "rule": "Deferred charter for first scholarly collaborators. Objective: intellectual seriousness, not conviction. Does not activate Phase 8.",
-    "refined_as_update": "UPD-059",
+    "refined_as_update": "UPD-060",
     "culture": {
       "invitation_is": "Help us make this stronger.",
       "invitation_is_not": "Help us prove we're right.",
@@ -664,6 +665,125 @@
         "Implementation practitioner"
       ],
       "precursor_to": "Phase 9 Red Team Mode (manual precursor)"
-    }
+    },
+    "distinction": "Founding Steward (Steve, Beta) exercises the whole system. Domain Stewards are long-term independent subject-matter reviewers for specific disciplines — not the same role."
+  },
+  "panel_purpose": {
+    "text": "Assemble a panel to stress-test the framework from fundamentally different domains of expertise — not to reach consensus.",
+    "complementary_not_overlapping": true,
+    "example_dimensions": [
+      {
+        "domain": "Economics",
+        "examines": [
+          "incentives",
+          "capital formation",
+          "markets",
+          "public finance",
+          "opportunity costs"
+        ]
+      },
+      {
+        "domain": "Grassroots organizing",
+        "examines": [
+          "implementation in real communities",
+          "civic participation",
+          "coalition-building",
+          "human behavior"
+        ]
+      },
+      {
+        "domain": "Engineering and systems thinking",
+        "examines": [
+          "robustness",
+          "dependencies",
+          "failure modes",
+          "optimization",
+          "scalability"
+        ]
+      },
+      {
+        "domain": "Urban planning",
+        "examines": [
+          "land use",
+          "transportation",
+          "housing",
+          "regional development",
+          "municipal systems"
+        ]
+      },
+      {
+        "domain": "Government leadership",
+        "examines": [
+          "political feasibility",
+          "administration",
+          "institutional design",
+          "constitutional authority"
+        ]
+      }
+    ]
+  },
+  "domain_steward": {
+    "title": "Domain Steward",
+    "rule": "Once the project reaches that stage, think of long-term subject-matter reviewers as Domain Stewards — not primarily as collaborators seeking agreement.",
+    "core_question": "Has this domain been treated fairly, rigorously, and accurately?",
+    "economist_certifies": [
+      "economic reasoning is coherent",
+      "assumptions are explicit",
+      "tradeoffs are acknowledged",
+      "literature is represented fairly",
+      "uncertainties are honestly stated"
+    ],
+    "engineer_helps_determine": [
+      "whether the system behaves coherently under stress",
+      "whether hidden dependencies or failure modes have been overlooked"
+    ],
+    "not": [
+      "endorse policy",
+      "certify every proposal is optimal",
+      "agree with every conclusion"
+    ]
+  },
+  "independence": {
+    "title": "Preserve independence",
+    "do_not_ask": "Will you support Constitutional Capitalism?",
+    "ask": "Will you independently review this work within your area of expertise and tell us where it is strong, where it is weak, and where it requires further research?",
+    "why": "If reviewers become advocates, readers may question objectivity. Independent experts carry more weight—even when they disagree."
+  },
+  "review_ecosystem": {
+    "title": "Review ecosystem (deferred)",
+    "roles": [
+      {
+        "id": "domain_steward",
+        "title": "Domain Steward",
+        "role": "Long-term subject-matter reviewer",
+        "core_question": "Has this domain been treated fairly, rigorously, and accurately?",
+        "not": "Expected to agree with the framework or certify that proposals are optimal"
+      },
+      {
+        "id": "contributing_reviewer",
+        "title": "Contributing Reviewer",
+        "role": "Specialist who reviews specific proof packets"
+      },
+      {
+        "id": "methodology_reviewer",
+        "title": "Methodology Reviewer",
+        "role": "Expert who evaluates the research process itself"
+      },
+      {
+        "id": "implementation_reviewer",
+        "title": "Implementation Reviewer",
+        "role": "Practitioner who assesses operational feasibility"
+      },
+      {
+        "id": "cross_domain_reviewer",
+        "title": "Cross-Domain Reviewer",
+        "role": "Spans multiple disciplines; identifies interactions between fields"
+      }
+    ],
+    "aligns_with": "evidence, transparency, and disciplined inquiry — not consensus-building"
+  },
+  "future_endorsement_ideal": {
+    "text": "I disagree with several conclusions, but the work accurately represents my field, engages the strongest counterarguments, and treats the evidence honestly.",
+    "value": "Speaks to integrity of process rather than agreement with outcome"
   }
 }
