@@ -75,6 +75,7 @@ const validations = [
   ['data/project/systems_intelligence_engine_framework.json','schemas/systems_intelligence_engine_framework.schema.json'],
   ['data/project/project_eras_roadmap.json','schemas/project_eras_roadmap.schema.json'],
   ['data/project/reviewers_charter.json','schemas/reviewers_charter.schema.json'],
+  ['data/project/living_community_laboratories.json','schemas/living_community_laboratories.schema.json'],
   ['data/project/public_statistics_bridge.json','schemas/public_statistics_bridge.schema.json'],
   ['data/project/rcip_civic_data_spine.json','schemas/rcip_civic_data_spine.schema.json']
 ];
