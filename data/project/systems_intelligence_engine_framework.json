@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-097",
   "related_decision_ids": [
@@ -10,7 +10,8 @@
     "CC-DEC-078",
     "CC-DEC-076",
     "CC-DEC-075",
-    "CC-DEC-098"
+    "CC-DEC-098",
+    "CC-DEC-099"
   ],
   "status": "architecture_candidate_deferred_true_capstone",
   "title": "Constitutional Capitalism Systems Intelligence Engine",
@@ -73,7 +74,8 @@
       "hide uncertainty",
       "treat simulations as predictions",
       "publicly identify anonymous contributors",
-      "recommend policy without showing tradeoffs"
+      "recommend policy without showing tradeoffs",
+      "produce opaque black-box conclusions without traceable assumptions, evidence, principles, and causal reasoning"
     ]
   },
   "connected_node_types": [
@@ -339,5 +341,45 @@
       "Confidence in the assessment"
     ],
     "authority": "Contributor proposes → AI analyzes → reviewers examine → simulations are tested → authorized humans decide → decision ledger records the result."
+  },
+  "eras_roadmap_file": "data/project/project_eras_roadmap.json",
+  "doctrine_ai_relationship": "Doctrine becomes the source of AI reasoning. AI never becomes the source of doctrine.",
+  "governing_rules": [
+    {
+      "id": "explainable_systems_intelligence",
+      "title": "Principle of Explainable Systems Intelligence",
+      "kind": "governing_engine_rule",
+      "not_a_doctrine_principle": true,
+      "note": "Captured as Phase 9 engine governance — does not mint CC-PRIN-*. Doctrine freeze preserved.",
+      "text": "Every conclusion produced by the Systems Intelligence Engine must be traceable to its assumptions, evidence, governing principles, and causal reasoning. The engine must show why it reached a conclusion, not merely what it concluded.",
+      "must_expose": [
+        "assumptions used",
+        "variables changed",
+        "evidence relied upon",
+        "confidence level",
+        "unresolved uncertainties",
+        "competing interpretations",
+        "which Constitutional Capitalism principles influenced the analysis"
+      ],
+      "forbids": [
+        "opaque black-box conclusions",
+        "answers without provenance when project evidence exists",
+        "hiding uncertainty or competing interpretations"
+      ]
+    }
+  ],
+  "policy_diff_analysis": {
+    "title": "Policy Diff Analysis",
+    "decision_id": "CC-DEC-099",
+    "hypothesis_id": "HYP-120",
+    "id": "C12",
+    "summary": "Git-diff for the constitutional-economic framework: given a proposed manuscript or doctrine change, report affected doctrine items, principles, evidence packets, legal analyses, educational modules, and simulations — surfacing unintended consequences before acceptance.",
+    "example": "This modification affects 14 doctrine items, 6 principles, 3 evidence packets, 2 legal analyses, 4 educational modules, and changes the projected outcomes of three existing simulations.",
+    "status": "architecture_candidate_deferred",
+    "rule": "Make unintended consequences visible before changes are accepted."
+  },
+  "architecture_freeze": {
+    "decision_id": "CC-DEC-099",
+    "rule": "High-level Phase 8/9 roadmap is stable. Resist further architecture expansion. Value now comes from doctrine, evidence, and models."
   }
 }

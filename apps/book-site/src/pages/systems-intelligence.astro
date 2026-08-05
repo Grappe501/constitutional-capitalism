@@ -5,7 +5,12 @@ import f from "../../../../data/project/systems_intelligence_engine_framework.js
 const caps = f.capabilities || [];
 const order = f.phase_placement?.build_order || [];
 const impactFields = f.impact_requests?.ai_response_fields || [];
+const explain = (f.governing_rules || []).find(
+  (r: any) => r.id === "explainable_systems_intelligence"
+);
+const policyDiff = f.policy_diff_analysis;
 ---
+
 
 
 <BaseLayout
@@ -40,6 +45,24 @@ const impactFields = f.impact_requests?.ai_response_fields || [];
 
     <h2>Authority</h2>
     <p>{f.authority_chain.text}</p>
+
+    <h2>Explainable Systems Intelligence</h2>
+    {explain ? (
+      <>
+        <blockquote>
+          <p>{explain.text}</p>
+        </blockquote>
+        <p class="muted">Engine governing rule — not a new doctrine principle ID.</p>
+      </>
+    ) : null}
+
+    <h2>Policy Diff Analysis</h2>
+    {policyDiff ? (
+      <>
+        <p>{policyDiff.summary}</p>
+        <p class="muted">Example: {policyDiff.example}</p>
+      </>
+    ) : null}
 
     <h2>Impact Requests</h2>
     <p>

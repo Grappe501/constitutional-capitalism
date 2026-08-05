@@ -9,7 +9,8 @@
     "CC-DEC-095",
     "CC-DEC-096",
     "CC-DEC-097",
-    "CC-DEC-098"
+    "CC-DEC-098",
+    "CC-DEC-099"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -356,6 +357,29 @@
       ],
       "proof_packet_status": "not_started",
       "note": "Bridge capability. Requires Phase 8 review platform + Phase 9 engine. Not built in Phase 2."
+    },
+    {
+      "hypothesis_id": "HYP-120",
+      "title": "Policy Diff Analysis",
+      "proposition": "A proposed manuscript or doctrine change can be analyzed as a framework-wide diff — counting and explaining affected doctrine items, principles, evidence packets, legal analyses, educational modules, and simulations — so unintended consequences are visible before acceptance.",
+      "status": "Architectural hypothesis — deferred Phase 9 capability",
+      "publishable": false,
+      "confidence_percent": 10,
+      "related_principle_ids": [],
+      "related_decision_ids": [
+        "CC-DEC-099",
+        "CC-DEC-097"
+      ],
+      "related_framework": "data/project/systems_intelligence_engine_framework.json",
+      "public_path": "/systems-intelligence/",
+      "evidence_needed": [
+        "Graph edge completeness for doctrine↔claim↔source↔chapter links",
+        "Diff presentation UX without false precision",
+        "Human review gate before any accepted change",
+        "Explainability fields on every diff conclusion"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "Phase 9 capability under roadmap freeze. Do not build in Phase 2."
     }
   ],
   "website_node": {
@@ -374,5 +398,10 @@
   },
   "proof_burden_registry": "data/project/proof_burden_registry.json",
   "foundational_axioms_file": "data/project/foundational_axioms.json",
-  "derivation_test": "New ideas must derive from the First Principle and Ten Foundational Axioms (CC-DEC-095) or remain Hypothesis Cards."
+  "derivation_test": "New ideas must derive from the First Principle and Ten Foundational Axioms (CC-DEC-095) or remain Hypothesis Cards.",
+  "architecture_roadmap_freeze": {
+    "decision_id": "CC-DEC-099",
+    "rule": "High-level Phase 8/9 roadmap stable. Default: no further architecture expansion; strengthen proof foundations.",
+    "eras_file": "data/project/project_eras_roadmap.json"
+  }
 }

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project_eras_roadmap.schema.json",
+  "type": "object",
+  "required": [
+    "version",
+    "decision_id",
+    "status",
+    "eras",
+    "lifecycle"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "eras": {
+      "type": "array"
+    },
+    "lifecycle": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

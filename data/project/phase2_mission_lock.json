@@ -9,7 +9,8 @@
     "CC-DEC-095",
     "CC-DEC-096",
     "CC-DEC-097",
-    "CC-DEC-098"
+    "CC-DEC-098",
+    "CC-DEC-099"
   ],
   "status": "locked",
   "governing_artifacts": {
@@ -204,6 +205,15 @@
     "decision_id": "CC-DEC-097",
     "status": "deferred_true_capstone_not_active",
     "framework_file": "data/project/systems_intelligence_engine_framework.json",
-    "rule": "Do not implement AI/simulation backends in Phase 2. Do not inflate modeling progress."
+    "rule": "Do not implement AI/simulation backends in Phase 2. Do not inflate modeling progress.",
+    "explainability_rule_id": "explainable_systems_intelligence",
+    "policy_diff_hypothesis_id": "HYP-120",
+    "architecture_freeze_decision_id": "CC-DEC-099"
+  },
+  "eras_roadmap": {
+    "decision_id": "CC-DEC-099",
+    "file": "data/project/project_eras_roadmap.json",
+    "status": "stable",
+    "rule": "Era I Creation (now). Do not build Era II Review or Era III Intelligence. Return to Burt Step 2."
   }
 }

@@ -2,13 +2,20 @@
 import BoardLayout from "../layouts/BoardLayout.astro";
 import f from "../../../../data/project/systems_intelligence_engine_framework.json";
 
+import eras from "../../../../data/project/project_eras_roadmap.json";
+
 const caps = f.capabilities || [];
 const gates = f.activation_gates?.all_required || [];
 const order = f.phase_placement?.build_order || [];
 const never = f.authority_chain?.ai_never || [];
 const dims = f.system_health_dashboard?.dimensions || [];
 const impactFields = f.impact_requests?.ai_response_fields || [];
+const explain = (f.governing_rules || []).find(
+  (r: any) => r.id === "explainable_systems_intelligence"
+);
+const policyDiff = f.policy_diff_analysis;
 ---
+
 
 
 <BoardLayout title="Systems Intelligence" path="/systems-intelligence/">
@@ -51,6 +58,45 @@ const impactFields = f.impact_requests?.ai_response_fields || [];
         <li>{x}</li>
       ))}
     </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Three eras (roadmap stable)</h2>
+    <p class="muted">{eras.stability_rule}</p>
+    <ol>
+      {eras.eras.map((e: any) => (
+        <li>
+          <strong>{e.title}</strong> — {e.objective}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Explainable Systems Intelligence</h2>
+    {explain ? (
+      <>
+        <blockquote>
+          <p>{explain.text}</p>
+        </blockquote>
+        <p>Must expose:</p>
+        <ul>
+          {explain.must_expose.map((x: string) => (
+            <li>{x}</li>
+          ))}
+        </ul>
+      </>
+    ) : null}
+  </section>
+
+  <section class="panel">
+    <h2>Policy Diff Analysis</h2>
+    {policyDiff ? (
+      <>
+        <p>{policyDiff.summary}</p>
+        <p class="muted">Example: {policyDiff.example}</p>
+      </>
+    ) : null}
   </section>
 
   <section class="panel">
