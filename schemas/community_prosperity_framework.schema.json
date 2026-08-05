@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/community_prosperity_framework.schema.json",
+  "title": "CommunityProsperityFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "core_question",
+    "compact_language",
+    "two_retirement_components",
+    "community_investment_units",
+    "safeguards",
+    "design_pillars",
+    "community_prosperity_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "core_question": { "type": "object", "required": ["text"] },
+    "compact_language": { "type": "object", "required": ["text"] },
+    "two_retirement_components": { "type": "object" },
+    "community_investment_units": { "type": "object", "required": ["summary"] },
+    "safeguards": {
+      "type": "object",
+      "required": ["rules"],
+      "properties": {
+        "rules": { "type": "array", "minItems": 6 }
+      }
+    },
+    "design_pillars": {
+      "type": "object",
+      "required": ["pillars"],
+      "properties": {
+        "pillars": { "type": "array", "minItems": 10 }
+      }
+    },
+    "community_prosperity_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}
