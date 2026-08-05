@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/prosperous_aging_framework.schema.json",
+  "title": "ProsperousAgingFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "public_promise",
+    "doctrine_statement",
+    "memorable_framing",
+    "four_retirement_layers",
+    "retirement_security_covenant",
+    "thirty_year_transition",
+    "prosperous_aging_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "public_promise": { "type": "object", "required": ["text"] },
+    "doctrine_statement": { "type": "object", "required": ["text"] },
+    "memorable_framing": {
+      "type": "object",
+      "required": ["protect_not_replace", "vision"]
+    },
+    "four_retirement_layers": {
+      "type": "object",
+      "required": ["layers"],
+      "properties": {
+        "layers": { "type": "array", "minItems": 4 }
+      }
+    },
+    "retirement_security_covenant": {
+      "type": "object",
+      "required": ["rules"]
+    },
+    "thirty_year_transition": {
+      "type": "object",
+      "required": ["eras"]
+    },
+    "prosperous_aging_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}

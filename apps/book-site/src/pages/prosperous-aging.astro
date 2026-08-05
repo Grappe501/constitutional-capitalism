@@ -1,0 +1,220 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import a from "../../../../data/project/prosperous_aging_framework.json";
+
+const layers = a.four_retirement_layers?.layers || [];
+const eras = a.thirty_year_transition?.eras || [];
+const covenant = a.retirement_security_covenant?.rules || [];
+const baselines = a.sourced_context_baselines?.items || [];
+const care = a.local_aging_and_family_care?.coordinates || [];
+const caregiver = a.local_aging_and_family_care?.caregiver_recognition || [];
+const corpFactors = a.corporate_responsibility?.formula_factors_examples || [];
+const corpDiv = a.corporate_responsibility?.contribution_divided_among || [];
+const testQs = a.prosperous_aging_test?.questions || [];
+const branches = a.website_branches || [];
+const essentials = a.four_retirement_layers?.layers?.find((l: any) => l.id === "L4")?.essentials;
+---
+
+<BaseLayout
+  title="Prosperous Aging"
+  path="/prosperous-aging/"
+  description="Protect Social Security as the permanent floor. Build ownership, community dividends, and retirement essentials above it."
+>
+  <article class="prose">
+    <h1>{a.domain_title}</h1>
+
+    <h2>Public promise</h2>
+    <blockquote>
+      <p>{a.public_promise.text}</p>
+    </blockquote>
+
+    <h2>Doctrine</h2>
+    <blockquote>
+      <p>{a.doctrine_statement.text}</p>
+    </blockquote>
+
+    <h2>How we talk about it</h2>
+    <ul>
+      <li>{a.memorable_framing.protect_not_replace}</li>
+      <li>{a.memorable_framing.ownership_not_takeover}</li>
+      <li>{a.memorable_framing.community_not_welfare}</li>
+    </ul>
+    <blockquote>
+      <p>{a.memorable_framing.vision}</p>
+    </blockquote>
+
+    <h2>Sourced context baselines</h2>
+    <ul>
+      {baselines.map((b: any) => (
+        <li>
+          <code>{b.id}</code> — {b.text}
+        </li>
+      ))}
+    </ul>
+
+    <h2>Four retirement layers</h2>
+    {
+      layers.map((layer: any) => (
+        <section style="margin-bottom:1.5rem;">
+          <h3>
+            {layer.id}. {layer.title}
+          </h3>
+          <p>{layer.summary}</p>
+          {layer.provides && (
+            <>
+              <p>Provides:</p>
+              <ul>
+                {layer.provides.map((x: string) => (
+                  <li>{x}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {layer.inflows && (
+            <>
+              <p>Money may enter through:</p>
+              <ul>
+                {layer.inflows.map((x: string) => (
+                  <li>{x}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {layer.community_principle && (
+            <blockquote>
+              <p>{layer.community_principle}</p>
+            </blockquote>
+          )}
+          {layer.eligibility_builds_through && (
+            <>
+              <p>Eligibility builds through:</p>
+              <ul>
+                {layer.eligibility_builds_through.map((x: string) => (
+                  <li>{x}</li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      ))
+    }
+
+    {
+      essentials && (
+        <>
+          <h2>Retirement essentials in detail</h2>
+          <ul>
+            <li>
+              <strong>Healthcare</strong> — {essentials.healthcare}
+            </li>
+            <li>
+              <strong>Housing</strong> — {essentials.housing}
+            </li>
+            <li>
+              <strong>Transportation</strong> — {essentials.transportation}
+            </li>
+            <li>
+              <strong>Medicine</strong> — {essentials.medicine}
+            </li>
+            <li>
+              <strong>Energy</strong> — {essentials.energy}
+            </li>
+            <li>
+              <strong>Food and daily services</strong> — {essentials.food_and_daily_services}
+            </li>
+          </ul>
+        </>
+      )
+    }
+
+    <h2>Local Aging and Family Care Networks</h2>
+    <p>{a.local_aging_and_family_care.summary}</p>
+    <blockquote>
+      <p>{a.local_aging_and_family_care.default_rule}</p>
+    </blockquote>
+    <ul>
+      {care.map((c: string) => (
+        <li>{c}</li>
+      ))}
+    </ul>
+    <p>Caregiver recognition may include:</p>
+    <ul>
+      {caregiver.map((c: string) => (
+        <li>{c}</li>
+      ))}
+    </ul>
+
+    <h2>Corporate responsibility</h2>
+    <p>{a.corporate_responsibility.summary}</p>
+    <p>Formula factors (examples):</p>
+    <ul>
+      {corpFactors.map((f: string) => (
+        <li>{f}</li>
+      ))}
+    </ul>
+    <p>Contribution divided among:</p>
+    <ul>
+      {corpDiv.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+
+    <h2>Thirty-year transition</h2>
+    <p>{a.thirty_year_transition.summary}</p>
+    {
+      eras.map((era: any) => (
+        <section style="margin-bottom:1.25rem;">
+          <h3>
+            {era.title} ({era.years})
+          </h3>
+          {era.actions && (
+            <ul>
+              {era.actions.map((x: string) => (
+                <li>{x}</li>
+              ))}
+            </ul>
+          )}
+          {era.typical_retiree_stack && (
+            <ul>
+              {era.typical_retiree_stack.map((x: string) => (
+                <li>{x}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))
+    }
+
+    <h2>Retirement Security Covenant</h2>
+    <p>{a.retirement_security_covenant.summary}</p>
+    <ol>
+      {covenant.map((r: string) => (
+        <li>{r}</li>
+      ))}
+    </ol>
+
+    <h2>Prosperous aging test</h2>
+    <p>{a.prosperous_aging_test.purpose}</p>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Website branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p class="muted">
+      See also <a href="/health/">Health</a>, <a href="/energy-sovereignty/">Energy Sovereignty</a>,{" "}
+      <a href="/civic-wealth/">Civic Wealth</a>,{" "}
+      <a href="/resource-sovereignty/">Resource Sovereignty</a>,{" "}
+      <a href="/assistance/">Assistance</a>, and <a href="/family/">Family</a>.
+    </p>
+  </article>
+</BaseLayout>

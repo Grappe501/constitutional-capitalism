@@ -58,6 +58,7 @@ const validations = [
   ['data/project/civic_wealth_framework.json','schemas/civic_wealth_framework.schema.json'],
   ['data/project/energy_sovereignty_framework.json','schemas/energy_sovereignty_framework.schema.json'],
   ['data/project/health_human_capacity_framework.json','schemas/health_human_capacity_framework.schema.json'],
+  ['data/project/prosperous_aging_framework.json','schemas/prosperous_aging_framework.schema.json'],
   ['data/project/systems_map.json','schemas/systems_map.schema.json'],
   ['data/project/human_flourishing_index.json','schemas/human_flourishing_index.schema.json'],
   ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json'],
