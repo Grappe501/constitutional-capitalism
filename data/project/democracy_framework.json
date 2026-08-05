@@ -1,0 +1,244 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "developing_doctrine_architecture",
+  "decision_ids": ["CC-DEC-045", "CC-DEC-046"],
+  "domain_title": "Democracy, Representation, and Distributed Government",
+  "website_node_id": "CC-WEB-DEMOCRACY",
+  "note": "Second constitutional spine. Architecture and developing doctrine only — not detailed election or redistricting legislation. No invented statistics. Research precedes policy drafting.",
+  "role_in_philosophy": "Constitutional Capitalism cannot return economic power to the people while leaving political power concentrated in legislatures, parties, donors, governors, and courts.",
+  "foundational_principle": {
+    "text": "No branch, party, officeholder, donor class, or temporary majority should be able to convert electoral victory into permanent control of the republic.",
+    "doctrine_ids": ["CC-DEV-015"]
+  },
+  "trust_doctrine": {
+    "text": "Political authority is held in trust, never owned. No officeholder, legislature, party, court, executive, donor, or institution may lawfully convert temporary public authority into permanent control. Power must remain divided, visible, reviewable, locally rooted where possible, and continuously returnable to the people.",
+    "doctrine_ids": ["CC-DEV-015"]
+  },
+  "anti_entrenchment_doctrine": {
+    "text": "No temporary majority may use public power principally to make itself harder to remove, harder to investigate, or less accountable to the electorate.",
+    "doctrine_ids": ["CC-DEV-016"]
+  },
+  "party_principle": {
+    "text": "A political party may support a candidate, but it should not own the office, the district, or the voter.",
+    "doctrine_ids": ["CC-DEV-017"]
+  },
+  "distributed_government_objective": {
+    "text": "Strong enough to protect rights and perform necessary public functions, but too divided, transparent, and accountable for any temporary faction to capture permanently."
+  },
+  "power_hierarchy": [
+    { "level": 1, "name": "Citizen" },
+    { "level": 2, "name": "Neighborhood and community" },
+    { "level": 3, "name": "Local government" },
+    { "level": 4, "name": "County or regional institutions" },
+    { "level": 5, "name": "State government" },
+    { "level": 6, "name": "Federal government" }
+  ],
+  "hierarchy_rule": "Each level receives only the power necessary to perform functions that lower levels cannot perform effectively or constitutionally. Constitutional rights remain the floor beneath every level.",
+  "problem_machinery": [
+    "legislators drawing their own districts",
+    "party leaders choosing candidates before voters do",
+    "safe districts eliminating competition",
+    "officeholders using public visibility to build private wealth",
+    "governors and legislative supermajorities reshaping courts and election rules",
+    "legislatures stripping authority from local governments",
+    "donors and lobbyists gaining more access than ordinary citizens",
+    "procedural rules preventing bills from receiving open debate",
+    "unified party control eroding meaningful separation of powers"
+  ],
+  "pillars": [
+    {
+      "id": "CC-DEM-P01",
+      "title": "Community-rooted representation",
+      "summary": "Candidates must build support inside the community they will represent; parties organize ideas but should not be private gatekeepers controlling public offices.",
+      "principles": [
+        "nonpartisan or broadly accessible preliminary elections",
+        "fair ballot access",
+        "equal candidate-information systems",
+        "public debates",
+        "small-donor financing",
+        "neutral voter guides",
+        "community nomination pathways",
+        "limits on formal party control over ballot access",
+        "election methods that reward broader community support"
+      ]
+    },
+    {
+      "id": "CC-DEM-P02",
+      "title": "End self-interested redistricting",
+      "summary": "Districts should reflect people and communities rather than predetermined electoral outcomes. Goal is not manufactured equal seat shares for parties.",
+      "standards": [
+        "redistricting body institutionally separated from current legislators",
+        "transparent data and mapping software",
+        "public draft maps",
+        "public explanations for every boundary",
+        "compact and contiguous districts",
+        "respect for genuine communities of interest",
+        "protection against racial vote dilution",
+        "limits on splitting cities, counties, and neighborhoods",
+        "partisan-fairness testing",
+        "competitiveness analysis",
+        "judicial review under clear state or federal standards",
+        "prohibition on using incumbent addresses or election forecasts when constructing initial maps"
+      ],
+      "legal_context_source_ids": ["CC-SRC-014", "CC-SRC-015"]
+    },
+    {
+      "id": "CC-DEM-P03",
+      "title": "Prevent legislative supremacy",
+      "summary": "A legislature is one institution temporarily entrusted with legislative power — not the people themselves.",
+      "prohibited_patterns": [
+        "seize routine authority from municipalities after disliking a local decision",
+        "alter election rules solely to entrench its majority",
+        "abolish independent oversight bodies investigating lawmakers",
+        "weaken courts in retaliation for adverse decisions",
+        "delegate excessive emergency power and then selectively reclaim it",
+        "prevent voter-approved laws from taking effect without an extraordinary process",
+        "manipulate legislative procedure to prevent recorded votes",
+        "control its own ethics enforcement",
+        "use appropriations to punish constitutionally independent institutions"
+      ]
+    },
+    {
+      "id": "CC-DEM-P04",
+      "title": "Structural independence under unified party control",
+      "summary": "Checks must not depend only on party competition. No political coalition should control legislation, enforcement, adjudication, election administration, ethics enforcement, and district design through the same uninterrupted chain of loyalty.",
+      "safeguards": [
+        "staggered terms for important oversight bodies",
+        "independent inspectors general",
+        "professional civil-service protections",
+        "transparent judicial-selection criteria",
+        "fixed procedures for filling judicial vacancies",
+        "supermajority requirements for altering election administration",
+        "bipartisan or multipartisan approval for certain watchdog appointments",
+        "independent ethics commissions",
+        "guaranteed minority-party subpoena and hearing rights",
+        "judicial review protected from retaliatory budget manipulation",
+        "public standing to challenge violations of structural constitutional rules",
+        "mandatory sunset review of emergency powers"
+      ],
+      "doctrine_ids": ["CC-DEV-018"]
+    },
+    {
+      "id": "CC-DEM-P05",
+      "title": "Legislative procedure belongs to the public",
+      "summary": "Political power hidden in procedure must become visible, reviewable, and accountable."
+    },
+    {
+      "id": "CC-DEM-P06",
+      "title": "Public office is not a private wealth engine",
+      "summary": "Holding office should be public service — not privileged access to investment information, contracts, lobbying relationships, or future employment. Term limits alone are insufficient; transparency and anti-monetization rules are essential.",
+      "context_source_ids": ["CC-SRC-016"]
+    },
+    {
+      "id": "CC-DEM-P07",
+      "title": "Community representation in legislative institutions",
+      "summary": "A citizen should know who represents the community, be able to reach that representative, understand how that representative voted, and have a realistic opportunity to replace that representative. No single mechanism declared universally superior before testing."
+    },
+    {
+      "id": "CC-DEM-P08",
+      "title": "Local home rule with constitutional floors",
+      "summary": "Presumption of local authority over genuinely local matters; state preemption requires publicly stated statewide necessity. Local majorities may not violate individual rights.",
+      "doctrine_ids": ["CC-DEV-009", "CC-DEV-019"]
+    },
+    {
+      "id": "CC-DEM-P09",
+      "title": "Citizen constitutional backstop",
+      "summary": "Representative government remains primary; citizens retain peaceful corrective mechanisms with safeguards against billionaire domination and deceptive ballot language."
+    },
+    {
+      "id": "CC-DEM-P10",
+      "title": "Courts independent without judicial supremacy",
+      "summary": "Legislatures write laws; executives implement; courts interpret constitutional boundaries; citizens remain ultimate sovereign through lawful constitutional processes."
+    }
+  ],
+  "bill_transparency_test": {
+    "title": "Legislative Bill Transparency Test",
+    "questions": [
+      { "question_id": "CC-BTEST-01", "number": 1, "text": "Who asked for it?" },
+      { "question_id": "CC-BTEST-02", "number": 2, "text": "Who wrote it?" },
+      { "question_id": "CC-BTEST-03", "number": 3, "text": "Who benefits?" },
+      { "question_id": "CC-BTEST-04", "number": 4, "text": "Who pays?" },
+      { "question_id": "CC-BTEST-05", "number": 5, "text": "Which level of government gains power?" },
+      { "question_id": "CC-BTEST-06", "number": 6, "text": "Which level loses power?" },
+      { "question_id": "CC-BTEST-07", "number": 7, "text": "What rights are affected?" },
+      { "question_id": "CC-BTEST-08", "number": 8, "text": "How will success be measured?" },
+      { "question_id": "CC-BTEST-09", "number": 9, "text": "When will the law be reviewed?" },
+      { "question_id": "CC-BTEST-10", "number": 10, "text": "How can it be repealed or corrected?" }
+    ]
+  },
+  "democracy_test": {
+    "title": "Constitutional Capitalism Democracy Test",
+    "purpose": "Screen political-structure reforms before acceptance into the framework.",
+    "questions": [
+      { "question_id": "CC-DTEST-01", "number": 1, "text": "Does it make political power more returnable to the people?" },
+      { "question_id": "CC-DTEST-02", "number": 2, "text": "Does it reduce the ability of a temporary majority to entrench itself?" },
+      { "question_id": "CC-DTEST-03", "number": 3, "text": "Does it keep parties as associations serving voters rather than owners of offices?" },
+      { "question_id": "CC-DTEST-04", "number": 4, "text": "Does redistricting reflect communities rather than predetermined outcomes?" },
+      { "question_id": "CC-DTEST-05", "number": 5, "text": "Does it preserve meaningful separation of powers under unified party control?" },
+      { "question_id": "CC-DTEST-06", "number": 6, "text": "Does legislative procedure remain visible and publicly reviewable?" },
+      { "question_id": "CC-DTEST-07", "number": 7, "text": "Does it prevent public office from becoming a private wealth engine?" },
+      { "question_id": "CC-DTEST-08", "number": 8, "text": "Does it protect local home rule while keeping constitutional rights as a floor?" },
+      { "question_id": "CC-DTEST-09", "number": 9, "text": "Does it preserve independent courts without judicial supremacy?" },
+      { "question_id": "CC-DTEST-10", "number": 10, "text": "Does it increase ordinary citizens’ realistic ability to contest, understand, and correct government?" }
+    ]
+  },
+  "legislative_procedure_requirements": [
+    "bills published for a minimum public-review period",
+    "plain-language summaries",
+    "identification of sponsors and material authors",
+    "disclosure of lobbyist-provided language",
+    "publicly available fiscal and local-impact statements",
+    "constitutional-impact statements",
+    "recorded committee and floor votes",
+    "public notice of amendments",
+    "single-subject requirements",
+    "restrictions on unrelated riders",
+    "accessible public testimony",
+    "minority reports",
+    "searchable legislative histories",
+    "emergency procedures limited to actual emergencies"
+  ],
+  "success_measures": [
+    "more races are meaningfully contested",
+    "districts reflect communities",
+    "voter participation rises",
+    "campaign funding becomes less concentrated",
+    "citizens can identify and contact their representatives",
+    "legislative actions are understandable",
+    "corruption and conflicts decline",
+    "local authority increases appropriately",
+    "courts remain independent",
+    "unified government does not eliminate oversight",
+    "voter-approved reforms are respected",
+    "public trust improves",
+    "ordinary citizens can realistically run and win"
+  ],
+  "website_branches": [
+    { "branch_id": "CC-DEM-B01", "title": "Community-rooted representation" },
+    { "branch_id": "CC-DEM-B02", "title": "Political parties" },
+    { "branch_id": "CC-DEM-B03", "title": "Redistricting" },
+    { "branch_id": "CC-DEM-B04", "title": "Legislative procedure" },
+    { "branch_id": "CC-DEM-B05", "title": "Separation of powers" },
+    { "branch_id": "CC-DEM-B06", "title": "Executive power" },
+    { "branch_id": "CC-DEM-B07", "title": "Judicial independence and accountability" },
+    { "branch_id": "CC-DEM-B08", "title": "Local home rule" },
+    { "branch_id": "CC-DEM-B09", "title": "Campaign finance" },
+    { "branch_id": "CC-DEM-B10", "title": "Lobbying" },
+    { "branch_id": "CC-DEM-B11", "title": "Public corruption" },
+    { "branch_id": "CC-DEM-B12", "title": "Officeholder wealth" },
+    { "branch_id": "CC-DEM-B13", "title": "Ethics" },
+    { "branch_id": "CC-DEM-B14", "title": "Direct democracy" },
+    { "branch_id": "CC-DEM-B15", "title": "Citizen assemblies" },
+    { "branch_id": "CC-DEM-B16", "title": "Election administration" },
+    { "branch_id": "CC-DEM-B17", "title": "Constitutional amendments" },
+    { "branch_id": "CC-DEM-B18", "title": "Emergency powers" },
+    { "branch_id": "CC-DEM-B19", "title": "Transparency and public records" },
+    { "branch_id": "CC-DEM-B20", "title": "Testing and measurement" }
+  ],
+  "research_status": {
+    "phase": "phase-2_domain_architecture",
+    "policy_drafting": "blocked_until_sourced_diagnosis",
+    "next": "Phase 2.1 democracy diagnosis: register primary sources beyond initial legal/NCSL spine; attach baseline indicators; upgrade claims without inventing statistics"
+  }
+}

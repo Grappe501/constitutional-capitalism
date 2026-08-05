@@ -1,0 +1,106 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine, claims, sources, baselineStatus } from "../lib/data";
+import democracy from "../../../../data/project/democracy_framework.json";
+
+const demDoctrine = (developingDoctrine.items || []).filter((d: any) =>
+  ["CC-DEV-015", "CC-DEV-016", "CC-DEV-017", "CC-DEV-018", "CC-DEV-019"].includes(d.doctrine_id)
+);
+const demClaims = (claims.claims || []).filter((c: any) =>
+  ["CC-CLAIM-024", "CC-CLAIM-025", "CC-CLAIM-026"].includes(c.claim_id)
+);
+const demSources = (sources.sources || []).filter((s: any) =>
+  ["CC-SRC-014", "CC-SRC-015", "CC-SRC-016"].includes(s.source_id)
+);
+---
+
+<BoardLayout title="Democracy" path="/democracy/">
+  <h1 class="page-title">Democracy, Representation, and Distributed Government</h1>
+  <p class="page-lede">
+    Second constitutional spine. Framework:
+    <code>data/project/democracy_framework.json</code>.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Doctrine items</div>
+      <div class="stat__value">{demDoctrine.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Design pillars</div>
+      <div class="stat__value">{democracy.pillars?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Democracy Test</div>
+      <div class="stat__value">{democracy.democracy_test?.questions?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Bill Test</div>
+      <div class="stat__value">{democracy.bill_transparency_test?.questions?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Seeded sources</div>
+      <div class="stat__value">{demSources.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Baseline (all)</div>
+      <div class="stat__value" style="font-size:1.1rem;">
+        {baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Foundational principle</h2>
+    <p>{democracy.foundational_principle.text}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Developing doctrine</h2>
+    <ul class="list-plain">
+      {
+        demDoctrine.map((d: any) => (
+          <li>
+            <code>{d.doctrine_id}</code> — {d.statement}{" "}
+            <span class="pill">{d.maturity}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Claims</h2>
+    <ul class="list-plain">
+      {
+        demClaims.map((c: any) => (
+          <li>
+            <code>{c.claim_id}</code> — {c.claim_text}{" "}
+            <span class="pill">{c.support_level}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Seeded sources</h2>
+    <ul class="list-plain">
+      {
+        demSources.map((s: any) => (
+          <li>
+            <code>{s.source_id}</code> — {s.title}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Research status</h2>
+    <p>
+      Phase: {democracy.research_status?.phase}. Policy drafting:{" "}
+      {democracy.research_status?.policy_drafting}. Next: {democracy.research_status?.next}
+    </p>
+  </section>
+</BoardLayout>

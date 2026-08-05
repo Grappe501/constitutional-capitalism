@@ -21,7 +21,11 @@
         "properties": {
           "node_id": { "type": "string" },
           "title": { "type": "string" },
-          "status": { "type": "string" }
+          "status": { "type": "string" },
+          "decision_id": { "type": "string" },
+          "central_promise": { "type": "string" },
+          "branches": { "type": "array", "items": { "type": "string" } },
+          "framework_file": { "type": "string" }
         }
       }
     },

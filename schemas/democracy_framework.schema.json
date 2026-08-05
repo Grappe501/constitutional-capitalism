@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/democracy_framework.schema.json",
+  "title": "DemocracyFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "foundational_principle",
+    "anti_entrenchment_doctrine",
+    "power_hierarchy",
+    "democracy_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_ids": { "type": "array", "items": { "type": "string" } },
+    "domain_title": { "type": "string" },
+    "website_node_id": { "type": "string" },
+    "note": { "type": "string" },
+    "role_in_philosophy": { "type": "string" },
+    "foundational_principle": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "trust_doctrine": { "type": "object" },
+    "anti_entrenchment_doctrine": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "party_principle": { "type": "object" },
+    "distributed_government_objective": { "type": "object" },
+    "power_hierarchy": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["level", "name"],
+        "properties": {
+          "level": { "type": "integer" },
+          "name": { "type": "string" }
+        }
+      }
+    },
+    "hierarchy_rule": { "type": "string" },
+    "problem_machinery": { "type": "array", "items": { "type": "string" } },
+    "pillars": { "type": "array" },
+    "bill_transparency_test": { "type": "object" },
+    "democracy_test": {
+      "type": "object",
+      "required": ["title", "questions"],
+      "properties": {
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "minItems": 10,
+          "items": {
+            "type": "object",
+            "required": ["question_id", "number", "text"]
+          }
+        }
+      }
+    },
+    "legislative_procedure_requirements": { "type": "array", "items": { "type": "string" } },
+    "success_measures": { "type": "array", "items": { "type": "string" } },
+    "website_branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["branch_id", "title"]
+      }
+    },
+    "research_status": { "type": "object" }
+  }
+}

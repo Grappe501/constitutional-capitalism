@@ -32,6 +32,7 @@ Constitutional Capitalism
 - The Constitution  
 - Human Flourishing  
 - Economics  
+- **Justice, Safety, and Restoration** (principal domain; branches in `justice_framework.json`)  
 - Government  
 - Communities  
 - Families  
@@ -41,7 +42,7 @@ Constitutional Capitalism
 - Agriculture  
 - Technology & AI  
 - Environment  
-- Democracy  
+- **Democracy, Representation, and Distributed Government** (second constitutional spine; branches in `democracy_framework.json`)  
 - National Security  
 - Global Adaptation  
 - Research Library  

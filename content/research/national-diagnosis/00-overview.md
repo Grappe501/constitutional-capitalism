@@ -16,6 +16,10 @@ Phase 1 stated belief. Phase 2 assembles proof architecture and a first-pass evi
 
 Priority domains now have sourced first-pass briefs: wealth/ownership, wages/productivity, taxation (CBO distribution), corporate power/concentration, worker ownership, local/rural economies, internet commerce (architecture + research queue), and political/economic power (linked to concentration evidence; causal democracy links still open).
 
+**Justice, Safety, and Restoration** is a principal Phase 2 research domain and developing doctrine (`CC-DEV-011`–`014`). Architecture and Justice Test are in place; **sourced quantitative diagnosis is queued for Phase 2.1** — no invented justice statistics.
+
+**Democracy, Representation, and Distributed Government** is the **second constitutional spine** (`CC-DEV-015`–`019`). Architecture, Democracy Test, Bill Transparency Test, and initial legal/institutional sources (*Rucho*, NCSL) are seeded; fuller empirical diagnosis is Phase 2.1.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.

@@ -1,0 +1,89 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import justice from "../../../../data/project/justice_framework.json";
+
+const stages = justice.stages || [];
+const testQs = justice.justice_test?.questions || [];
+const branches = justice.website_branches || [];
+const commitments = justice.core_commitments || [];
+---
+
+<BaseLayout
+  title="Justice, Safety, and Restoration"
+  path="/justice/"
+  description="Developing doctrine: justice as the mechanism that makes liberty and ownership real."
+>
+  <article class="prose">
+    <h1>{justice.domain_title}</h1>
+    <p class="status-note">
+      Developing doctrine and research architecture — not finished justice policy. Legal review 0%.
+      No invented statistics on this page.
+    </p>
+    <p class="lede">{justice.role_in_philosophy}</p>
+
+    <h2>Foundational principle</h2>
+    <blockquote>
+      <p>{justice.foundational_principle.text}</p>
+    </blockquote>
+
+    <h2>Central promise</h2>
+    <blockquote>
+      <p>{justice.central_promise.text}</p>
+    </blockquote>
+
+    <h2>Questions justice must ask</h2>
+    <p>
+      Not only: <em>{justice.central_questions.insufficient_alone}</em>
+    </p>
+    <p>
+      Also: <em>{justice.central_questions.required_also}</em>
+    </p>
+
+    <h2>Five stages</h2>
+    <ol>
+      {
+        stages.map((s: any) => (
+          <li>
+            <strong>{s.name}</strong> — {s.summary}
+          </li>
+        ))
+      }
+    </ol>
+
+    <h2>Core commitments</h2>
+    <ul>
+      {
+        commitments.map((c: any) => (
+          <li>
+            <strong>{c.title}</strong> — {c.summary}
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Justice Test</h2>
+    <p>{justice.justice_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <p>
+      Living-website branches (seeded; detailed pages publish as research matures):
+    </p>
+    <ul>
+      {branches.map((b: any) => (
+        <li>{b.title}</li>
+      ))}
+    </ul>
+
+    <h2>Research before policy</h2>
+    <p>
+      Detailed justice legislation is blocked until Phase 2/2.1 diagnosis sources are registered.
+      See <a href="/where-we-are/">Where we are</a>, <a href="/evidence/">Evidence</a>, and the
+      research domain under <code>content/research/justice/</code>.
+    </p>
+  </article>
+</BaseLayout>

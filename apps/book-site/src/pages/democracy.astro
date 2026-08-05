@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import democracy from "../../../../data/project/democracy_framework.json";
+
+const pillars = democracy.pillars || [];
+const hierarchy = democracy.power_hierarchy || [];
+const dtest = democracy.democracy_test?.questions || [];
+const btest = democracy.bill_transparency_test?.questions || [];
+const branches = democracy.website_branches || [];
+---
+
+<BaseLayout
+  title="Democracy, Representation, and Distributed Government"
+  path="/democracy/"
+  description="Developing doctrine: political authority held in trust — second constitutional spine."
+>
+  <article class="prose">
+    <h1>{democracy.domain_title}</h1>
+    <p class="status-note">
+      Second constitutional spine — developing doctrine and research architecture, not finished election law.
+      Legal review remains incomplete. No invented competition or trust statistics on this page.
+    </p>
+    <p class="lede">{democracy.role_in_philosophy}</p>
+
+    <h2>Foundational principle</h2>
+    <blockquote>
+      <p>{democracy.foundational_principle.text}</p>
+    </blockquote>
+
+    <h2>Trust doctrine</h2>
+    <blockquote>
+      <p>{democracy.trust_doctrine.text}</p>
+    </blockquote>
+
+    <h2>Anti-entrenchment</h2>
+    <blockquote>
+      <p>{democracy.anti_entrenchment_doctrine.text}</p>
+    </blockquote>
+
+    <h2>Party principle</h2>
+    <blockquote>
+      <p>{democracy.party_principle.text}</p>
+    </blockquote>
+
+    <h2>Distributed government</h2>
+    <p>{democracy.distributed_government_objective.text}</p>
+
+    <h2>Political power hierarchy</h2>
+    <ol>
+      {hierarchy.map((h: any) => (
+        <li>{h.name}</li>
+      ))}
+    </ol>
+    <p>{democracy.hierarchy_rule}</p>
+
+    <h2>Design pillars</h2>
+    <ul>
+      {
+        pillars.map((p: any) => (
+          <li>
+            <strong>{p.title}</strong> — {p.summary}
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Democracy Test</h2>
+    <p>{democracy.democracy_test.purpose}</p>
+    <ol>
+      {dtest.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Bill Transparency Test</h2>
+    <p>Every bill should answer:</p>
+    <ol>
+      {btest.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>{b.title}</li>
+      ))}
+    </ul>
+
+    <h2>Research before policy</h2>
+    <p>
+      Detailed redistricting, campaign-finance, and legislative-procedure legislation remain blocked until
+      Phase 2.1 diagnosis sources expand. See <a href="/where-we-are/">Where we are</a>,
+      <a href="/justice/">Justice</a>, and <a href="/evidence/">Evidence</a>.
+    </p>
+  </article>
+</BaseLayout>

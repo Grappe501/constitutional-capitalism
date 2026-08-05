@@ -1,0 +1,229 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "developing_doctrine_architecture",
+  "decision_ids": ["CC-DEC-043", "CC-DEC-044"],
+  "domain_title": "Justice, Safety, and Restoration",
+  "website_node_id": "CC-WEB-JUSTICE",
+  "note": "Architecture and developing doctrine only. Not detailed justice legislation. No invented statistics. Research domain precedes policy drafting.",
+  "role_in_philosophy": "Justice is the mechanism that determines whether liberty, ownership, opportunity, and accountability are real—or merely promised.",
+  "foundational_principle": {
+    "text": "Justice must protect the public, restrain wrongdoing, repair harm where possible, and return people to productive citizenship whenever safely achievable. It must never become a profit center, a political weapon, or a permanent system of social exclusion.",
+    "doctrine_ids": ["CC-DEV-011"]
+  },
+  "central_promise": {
+    "text": "A just society protects people from harm without surrendering the humanity of those who have caused harm. It holds wrongdoing accountable, repairs what can be repaired, and never converts punishment into permanent power over a person’s life."
+  },
+  "central_questions": {
+    "insufficient_alone": "What punishment does this person deserve?",
+    "required_also": "What happened, who was harmed, what must be repaired, what protects the public, and what pathway returns the offender to responsible participation in society?"
+  },
+  "core_commitments": [
+    {
+      "id": "CC-JUST-C01",
+      "title": "Equal justice cannot depend on wealth",
+      "summary": "Freedom and fundamental justice quality must not turn primarily on ability to pay bail, counsel, experts, fees, treatment, or court access.",
+      "examination_areas": [
+        "cash bail",
+        "public-defense funding",
+        "court-appointed experts",
+        "fines and fees",
+        "debt-based license suspensions",
+        "private probation",
+        "excessive plea pressure",
+        "access to appeals"
+      ],
+      "doctrine_ids": ["CC-DEV-012"]
+    },
+    {
+      "id": "CC-JUST-C02",
+      "title": "Public safety remains essential",
+      "summary": "Reform must not treat violence, exploitation, fraud, abuse, organized crime, or predatory conduct as harmless. Dangerous individuals may require secure confinement; victims deserve protection and voice; rehabilitation cannot sacrifice immediate public safety.",
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C03",
+      "title": "Punishment must be proportionate",
+      "summary": "Punishment should not be grossly disconnected from harm, intent, role, future danger, and restoration possibility, nor exceed what is necessary to protect society, establish accountability, deter misconduct, and repair harm.",
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C04",
+      "title": "Justice should repair damage",
+      "summary": "Restorative pathways (especially for nonviolent offenses with voluntary victim participation) expand the means of justice beyond imprisonment alone without replacing prosecution in every case.",
+      "repair_modes": [
+        "restitution",
+        "treatment",
+        "community service",
+        "education",
+        "employment",
+        "mediated accountability",
+        "rebuilding damaged property",
+        "direct repayment",
+        "long-term behavioral requirements"
+      ],
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C05",
+      "title": "Distinguish danger from dysfunction",
+      "summary": "Addiction, mental illness, poverty, homelessness, trauma, and predatory disposition are not equivalent conditions; responses should match underlying cause while protecting the public.",
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C06",
+      "title": "No institutional profit from punishment",
+      "summary": "No justice institution should have a financial incentive to arrest, charge, detain, supervise, fine, or incarcerate more people. Justice should be funded openly by the public.",
+      "examination_areas": [
+        "private prisons",
+        "private probation",
+        "detention contracts",
+        "telephone and commissary pricing",
+        "court-fee dependence",
+        "civil asset forfeiture",
+        "revenue-driven municipal enforcement"
+      ],
+      "doctrine_ids": ["CC-DEV-013"]
+    },
+    {
+      "id": "CC-JUST-C07",
+      "title": "Victims must not be forgotten",
+      "summary": "Meaningful victim support includes safety, counseling, medical and economic recovery, restitution enforcement, notice, participation without controlling prosecution, and protection from retaliation.",
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C08",
+      "title": "White-collar and institutional wrongdoing with equal seriousness",
+      "summary": "Accountability should reflect actual harm, including large-scale fraud, wage theft, environmental damage, corruption, and abuse of public trust.",
+      "doctrine_ids": ["CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C09",
+      "title": "Local authority with constitutional floors",
+      "summary": "Communities should shape policing priorities, prevention, diversion, reentry, oversight, and public-safety budgeting; constitutional rights and minimum standards remain enforceable beyond local popularity.",
+      "doctrine_ids": ["CC-DEV-009", "CC-DEV-011"]
+    },
+    {
+      "id": "CC-JUST-C10",
+      "title": "Full reentry into citizenship",
+      "summary": "After lawful sentence completion, punishment should not continue indefinitely through automatic lifetime exclusion; residual restrictions must be specific, relevant, reviewable, and limited.",
+      "doctrine_ids": ["CC-DEV-014"]
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "CC-JUST-S01",
+      "number": 1,
+      "name": "Prevention",
+      "summary": "Prevent harm before it occurs through human development, families, education, mental healthcare, addiction treatment, employment, transportation, housing, community institutions, and youth opportunity.",
+      "links_to": ["human_flourishing", "education", "healthcare", "housing", "communities", "employment"]
+    },
+    {
+      "stage_id": "CC-JUST-S02",
+      "number": 2,
+      "name": "Fair investigation and adjudication",
+      "summary": "Due process, timely proceedings, competent representation, evidence access, understandable charges, neutral decision-makers, protection from coercion, and independent review of police, prosecutors, defense, courts, labs, and corrections."
+    },
+    {
+      "stage_id": "CC-JUST-S03",
+      "number": 3,
+      "name": "Proportionate accountability",
+      "summary": "Sentencing considers harm, intent, prior conduct, danger, coercion, age, mental condition, rehabilitation potential, victim needs, and community safety; mandatory rules that erase meaningful differences receive close scrutiny."
+    },
+    {
+      "stage_id": "CC-JUST-S04",
+      "number": 4,
+      "name": "Rehabilitation and restoration",
+      "summary": "Sentences that can safely include return pathways should provide literacy, education, vocational training, behavioral healthcare, addiction treatment, financial education, family support, identification, employment preparation, and housing transition."
+    },
+    {
+      "stage_id": "CC-JUST-S05",
+      "number": 5,
+      "name": "Full reentry into citizenship",
+      "summary": "Clear rules for record sealing, licensing, employment, housing, voting, benefits, education, family rights, and credit access—with risk-specific exceptions that remain reviewable.",
+      "doctrine_ids": ["CC-DEV-014"]
+    }
+  ],
+  "justice_test": {
+    "title": "Constitutional Capitalism Justice Test",
+    "purpose": "Screen every justice policy before acceptance into the framework.",
+    "questions": [
+      {
+        "question_id": "CC-JTEST-01",
+        "number": 1,
+        "text": "Does it protect the public?"
+      },
+      {
+        "question_id": "CC-JTEST-02",
+        "number": 2,
+        "text": "Does it respect due process?"
+      },
+      {
+        "question_id": "CC-JTEST-03",
+        "number": 3,
+        "text": "Is the response proportionate to the harm?"
+      },
+      {
+        "question_id": "CC-JTEST-04",
+        "number": 4,
+        "text": "Does wealth improperly determine the outcome?"
+      },
+      {
+        "question_id": "CC-JTEST-05",
+        "number": 5,
+        "text": "Does any institution profit from punishment?"
+      },
+      {
+        "question_id": "CC-JTEST-06",
+        "number": 6,
+        "text": "Is the victim meaningfully supported?"
+      },
+      {
+        "question_id": "CC-JTEST-07",
+        "number": 7,
+        "text": "Is rehabilitation possible?"
+      },
+      {
+        "question_id": "CC-JTEST-08",
+        "number": 8,
+        "text": "Is there a measurable path back to citizenship?"
+      },
+      {
+        "question_id": "CC-JTEST-09",
+        "number": 9,
+        "text": "Are officials accountable for misconduct?"
+      },
+      {
+        "question_id": "CC-JTEST-10",
+        "number": 10,
+        "text": "Does the policy increase or reduce the long-term power of ordinary people?"
+      }
+    ]
+  },
+  "website_branches": [
+    { "branch_id": "CC-JUST-B01", "title": "Constitutional rights" },
+    { "branch_id": "CC-JUST-B02", "title": "Policing and public safety" },
+    { "branch_id": "CC-JUST-B03", "title": "Courts and due process" },
+    { "branch_id": "CC-JUST-B04", "title": "Prosecution" },
+    { "branch_id": "CC-JUST-B05", "title": "Public defense" },
+    { "branch_id": "CC-JUST-B06", "title": "Sentencing" },
+    { "branch_id": "CC-JUST-B07", "title": "Victims" },
+    { "branch_id": "CC-JUST-B08", "title": "Incarceration" },
+    { "branch_id": "CC-JUST-B09", "title": "Mental health and addiction" },
+    { "branch_id": "CC-JUST-B10", "title": "Youth justice" },
+    { "branch_id": "CC-JUST-B11", "title": "Restorative justice" },
+    { "branch_id": "CC-JUST-B12", "title": "Reentry" },
+    { "branch_id": "CC-JUST-B13", "title": "Civil justice" },
+    { "branch_id": "CC-JUST-B14", "title": "Family courts" },
+    { "branch_id": "CC-JUST-B15", "title": "White-collar crime" },
+    { "branch_id": "CC-JUST-B16", "title": "Corporate wrongdoing" },
+    { "branch_id": "CC-JUST-B17", "title": "Government misconduct" },
+    { "branch_id": "CC-JUST-B18", "title": "Fines, fees, and forfeiture" },
+    { "branch_id": "CC-JUST-B19", "title": "Data, testing, and public accountability" }
+  ],
+  "research_status": {
+    "phase": "phase-2_domain_architecture",
+    "policy_drafting": "blocked_until_sourced_diagnosis",
+    "next": "Phase 2.1 justice diagnosis: register primary sources; attach baseline indicators; upgrade claims without inventing statistics"
+  }
+}

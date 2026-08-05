@@ -11,6 +11,8 @@ const priorityDomains = [
   { id: "rural", title: "Local and rural economies", claim: "CC-CLAIM-019", note: "ERS/FDIC: widespread county stress indicators alongside uneven recent gains." },
   { id: "commerce", title: "Internet commerce", claim: "CC-CLAIM-016", note: "Architecture ready; national leakage magnitudes not yet sourced." },
   { id: "power", title: "Political and economic power", claim: "CC-CLAIM-003", note: "Concentration measurable; democratic-accountability causation still open." },
+  { id: "justice", title: "Justice, safety, and restoration", claim: "CC-CLAIM-021", note: "Developing doctrine seeded; sourced diagnosis queued for Phase 2.1 — no invented justice statistics." },
+  { id: "democracy", title: "Democracy and distributed government", claim: "CC-CLAIM-025", note: "Second constitutional spine: Rucho holding sourced; anti-entrenchment doctrine seeded; quantitative competition metrics pending." },
 ];
 
 const byId = Object.fromEntries((claims.claims || []).map((c: any) => [c.claim_id, c]));
@@ -62,7 +64,8 @@ const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || 
       <li>Not a partisan scorecard. Contrary evidence is preserved in the claim ledger.</li>
     </ul>
     <p>
-      See <a href="/evidence/">Evidence</a> for claim support levels and
+      See <a href="/justice/">Justice</a> and <a href="/democracy/">Democracy</a> for developing doctrine spines,
+      <a href="/evidence/">Evidence</a> for claim support levels, and
       <a href="/metrics/">Metrics</a> for baseline completeness.
     </p>
   </article>

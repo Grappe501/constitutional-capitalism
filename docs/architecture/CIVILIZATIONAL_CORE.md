@@ -86,6 +86,28 @@ The nation remains essential for functions such as defense, interstate commerce,
 | Prosperity | Broadly shared opportunity |
 | Stewardship | Improve and pass on land, institutions, knowledge, trust |
 
+## Justice as mechanism (developing)
+
+Justice is not a side chapter. It is the mechanism that determines whether liberty, ownership, opportunity, and accountability are **real—or merely promised**.
+
+Foundational principle (`CC-DEV-011`):
+
+> Justice must protect the public, restrain wrongdoing, repair harm where possible, and return people to productive citizenship whenever safely achievable. It must never become a profit center, a political weapon, or a permanent system of social exclusion.
+
+Full architecture: `docs/architecture/JUSTICE_SAFETY_AND_RESTORATION.md` and `data/project/justice_framework.json`. Website domain: **Justice, Safety, and Restoration** (`CC-WEB-JUSTICE`). Research precedes detailed justice policy (`CC-DEC-043`, `CC-DEC-044`).
+
+## Political power spine (developing)
+
+Economic power returned to the people is incomplete if political power remains self-protecting.
+
+Foundational principle (`CC-DEV-015`):
+
+> No branch, party, officeholder, donor class, or temporary majority should be able to convert electoral victory into permanent control of the republic.
+
+Anti-entrenchment (`CC-DEV-016`): temporary majorities may not use public power principally to make themselves harder to remove, investigate, or hold accountable.
+
+Full architecture: `docs/architecture/DEMOCRACY_REPRESENTATION_AND_DISTRIBUTED_GOVERNMENT.md` and `data/project/democracy_framework.json`. Website domain: **Democracy, Representation, and Distributed Government** (`CC-WEB-DEMOCRACY`). Research precedes detailed political-structure policy (`CC-DEC-045`, `CC-DEC-046`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

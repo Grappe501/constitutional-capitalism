@@ -74,3 +74,5 @@ Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `do
 - Do **not** rewrite the Declaration; developing doctrine lives in `data/project/developing_doctrine.json`
 - Do not invent sources or baseline values; do not inflate modeling/legal/source-verification progress
 - Phase 2 expected **partial / Phase 2.1** until remaining domains are fully sourced
+- **Justice, Safety, and Restoration** is principal developing doctrine (`CC-DEV-011`–`014`) and a full Phase 2 research domain — research before detailed justice policy (`CC-DEC-043`/`044`)
+- **Democracy, Representation, and Distributed Government** is the second constitutional spine (`CC-DEV-015`–`019`) — research before detailed political-structure policy (`CC-DEC-045`/`046`)

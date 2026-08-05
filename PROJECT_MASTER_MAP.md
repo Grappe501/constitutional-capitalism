@@ -23,6 +23,10 @@ Map every major system in the Constitutional Capitalism repository.
 | National Baseline | `docs/architecture/NATIONAL_BASELINE_AND_DASHBOARD.md` + `data/project/national_baseline.json` + `data/baseline/` | Success-measure slots + sourced metrics subset (`CC-DEC-033`) |
 | National Diagnosis | `content/research/national-diagnosis/` | Domain briefs (priority first-pass + foundational) |
 | Developing doctrine | `data/project/developing_doctrine.json` | Post–Phase-1 concepts — not Declaration rewrite |
+| Justice framework | `docs/architecture/JUSTICE_SAFETY_AND_RESTORATION.md` + `data/project/justice_framework.json` | Principal domain: doctrine, stages, Justice Test, website branches (`CC-DEC-043`/`044`) |
+| Justice research | `content/research/justice/` + diagnosis `21-justice-safety-and-restoration.md` | Phase 2 research domain before justice policy |
+| Democracy framework | `docs/architecture/DEMOCRACY_REPRESENTATION_AND_DISTRIBUTED_GOVERNMENT.md` + `data/project/democracy_framework.json` | Second constitutional spine: trust/anti-entrenchment, Democracy Test, Bill Test (`CC-DEC-045`/`046`) |
+| Democracy research | `content/research/democracy/` + diagnosis `22-democracy-representation-and-distributed-government.md` | Phase 2 research domain before election/redistricting policy |
 | Transition timeline | `data/project/transition_timeline.json` + `docs/architecture/TRANSITION_AND_IMPLEMENTATION_TIMELINE_FRAMEWORK.md` | Implementation timeline framework |
 | Testing / pilots | `data/testing/` + `docs/research/TESTING_AND_PILOT_STANDARD.md` | Pilot/testing standard (no fake pilots) |
 | Constitutional Capitalism Test | `docs/governance/CONSTITUTIONAL_CAPITALISM_TEST.md` + `data/project/constitutional_capitalism_test.json` | Ten-question policy screen (`CC-DEC-031`) |

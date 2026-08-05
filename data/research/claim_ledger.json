@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.2",
   "last_updated": "2026-08-04",
-  "note": "Phase 2 priority claims. Normative and prediction claims labeled. No fabricated support.",
+  "note": "Phase 2 claims including justice (021–023) and democracy spine (024–026). Normative and prediction claims labeled. No fabricated support.",
   "claims": [
     {
       "claim_id": "CC-CLAIM-001",
@@ -489,6 +489,146 @@
       "geographic_scope": "US",
       "temporal_scope": "postwar",
       "public_wording": "Queued for sourced innovation research."
+    },
+    {
+      "claim_id": "CC-CLAIM-021",
+      "claim_text": "Equal justice under Constitutional Capitalism cannot depend primarily on wealth.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_doctrine_requires_empirical_modules",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Some argue market-paid counsel is a liberty interest; reform designs vary and public-safety tradeoffs exist in bail systems."
+      ],
+      "uncertainty": "Normative principle recorded as CC-DEV-012; empirical modules on bail, defense, and fees required before policy drafting.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-012"],
+      "public_wording": "Developing doctrine: fundamental justice quality should not turn primarily on ability to pay — evidence modules pending."
+    },
+    {
+      "claim_id": "CC-CLAIM-022",
+      "claim_text": "Justice institutions should not have financial incentives to arrest, charge, detain, supervise, fine, or incarcerate more people.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_institutional_design",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": [],
+      "opposing_evidence": [
+        "User fees can be framed as cost recovery; empirical magnitude of incentive distortion varies by jurisdiction."
+      ],
+      "uncertainty": "CC-DEV-013; needs forfeiture/fee/private-corrections sourcing before quantitative claims.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-013"],
+      "public_wording": "Developing doctrine: justice should be publicly funded, not financed through the vulnerability of people inside the system — sourced examination pending."
+    },
+    {
+      "claim_id": "CC-CLAIM-023",
+      "claim_text": "Economic justice and criminal justice are inseparable because fees, fines, forfeiture, incarceration costs, and collateral consequences transfer power away from individuals and families.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "descriptive_and_theoretical_agenda",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "plausible_needs_sourced_modules",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Some costs are restitution to victims or legitimate court administration; not all financial consequences are predatory."
+      ],
+      "uncertainty": "Needs linked wealth/ownership and justice baseline modules.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-011", "CC-DEV-013"],
+      "public_wording": "Architecture claim: criminal-justice money extraction and exclusion belong inside the national diagnosis — quantification pending."
+    },
+    {
+      "claim_id": "CC-CLAIM-024",
+      "claim_text": "No branch, party, officeholder, donor class, or temporary majority should convert electoral victory into permanent control of the republic.",
+      "chapter_ids": [],
+      "claim_type": "democracy",
+      "claim_class": "normative_doctrine_requires_empirical_modules",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": ["CC-SRC-014", "CC-SRC-015"],
+      "opposing_evidence": [
+        "Stable majorities can claim electoral mandates; anti-entrenchment rules can be abused to block legitimate reform.",
+        "Strong parties can also organize accountability and opposition."
+      ],
+      "uncertainty": "Normative spine CC-DEV-015/016; empirical modules on entrenchment practices pending.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-015", "CC-DEV-016"],
+      "public_wording": "Developing doctrine: political authority is held in trust and must remain returnable — detailed entrenchment evidence modules pending."
+    },
+    {
+      "claim_id": "CC-CLAIM-025",
+      "claim_text": "After Rucho v. Common Cause (2019), partisan-gerrymandering claims are generally nonjusticiable in federal courts as political questions, leaving most partisan-map remedies to Congress, states, commissions, and voters.",
+      "chapter_ids": [],
+      "claim_type": "democracy",
+      "claim_class": "descriptive_legal",
+      "importance": "critical",
+      "support_level": "supported",
+      "evidence_strength": "strong",
+      "consensus_status": "established_holding_with_dissent",
+      "source_ids": ["CC-SRC-014"],
+      "opposing_evidence": [
+        "Dissenting opinions argued federal courts should police extreme partisan gerrymanders.",
+        "Racial vote-dilution and one-person-one-vote doctrines remain justiciable and distinct."
+      ],
+      "uncertainty": "State constitutional claims and future congressional action can change the practical landscape without overturning the federal holding.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": true,
+      "geographic_scope": "US_federal",
+      "temporal_scope": "2019_present",
+      "public_wording": "The Supreme Court in Rucho held partisan-gerrymandering claims present political questions beyond federal judicial resolution; reform pathways remain largely political and state-constitutional."
+    },
+    {
+      "claim_id": "CC-CLAIM-026",
+      "claim_text": "Legislative term limits alone are insufficient to prevent political capture and can shift influence toward lobbyists, staff, agencies, and party organizations.",
+      "chapter_ids": [],
+      "claim_type": "democracy",
+      "claim_class": "descriptive_institutional",
+      "importance": "high",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "documented_tradeoffs_in_institutional_overviews",
+      "source_ids": ["CC-SRC-016"],
+      "opposing_evidence": [
+        "Term limits can increase rotation and reduce career entrenchment in some legislatures.",
+        "Effects depend on design (consecutive vs lifetime) and complementary transparency rules."
+      ],
+      "uncertainty": "Exact state counts and effect sizes require refreshed primary tables and evaluation literature.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US_states",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-015"],
+      "public_wording": "NCSL and related experience show term limits are used in a minority of states and are not a complete anti-capture design; complementary transparency and staffing rules matter."
     }
   ]
 }

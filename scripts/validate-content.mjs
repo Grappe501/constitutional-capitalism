@@ -69,6 +69,8 @@ const domains = [
   "international-models",
   "history",
   "community-economics",
+  "justice",
+  "democracy",
 ];
 for (const d of domains) {
   const p = r("content/research", d);
