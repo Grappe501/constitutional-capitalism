@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "last_updated": "2026-08-04",
   "note": "Do not invent production URLs. Update only with confirmed information.",
   "applications": [
@@ -7,34 +7,37 @@
       "id": "book-site",
       "name": "Constitutional Capitalism Book Site",
       "suggested_netlify_name": "constitutional-capitalism",
+      "netlify_site_id": "aed2b26e-dfd0-4b35-9060-f58afaf6a53f",
       "path": "apps/book-site",
-      "status": "not_deployed",
-      "production_url": null,
-      "last_build_status": null,
-      "last_known_commit": null,
+      "status": "deployed",
+      "production_url": "https://constitutional-capitalism.netlify.app",
+      "admin_url": "https://app.netlify.com/projects/constitutional-capitalism",
+      "last_build_status": "ready",
+      "last_deploy_id": "6a72859341feaef3ced207eb",
+      "last_known_commit": "114e217",
+      "deploy_method": "netlify_cli_manual_prod",
       "build_command": "pnpm build",
       "publish_directory": "dist",
       "base_directory": "apps/book-site",
       "netlify_config": "netlify.book.toml",
       "access": "public",
       "manual_setup_required": [
-        "Import GitHub repo in Netlify",
-        "Set base directory apps/book-site",
-        "Set build command pnpm build (with pnpm install at root or package-dir strategy)",
-        "Set publish directory dist",
-        "Confirm production branch main",
-        "Record production URL after first deploy"
+        "Optionally connect GitHub continuous deploy for apps/book-site using netlify.book.toml settings"
       ]
     },
     {
       "id": "build-board",
       "name": "Constitutional Capitalism Build Board",
       "suggested_netlify_name": "constitutional-capitalism-board",
+      "netlify_site_id": "ce9a850d-1993-4b81-bd81-541eb273b612",
       "path": "apps/build-board",
-      "status": "not_deployed",
-      "production_url": null,
-      "last_build_status": null,
-      "last_known_commit": null,
+      "status": "deployed",
+      "production_url": "https://constitutional-capitalism-board.netlify.app",
+      "admin_url": "https://app.netlify.com/projects/constitutional-capitalism-board",
+      "last_build_status": "ready",
+      "last_deploy_id": "6a7285b08759e5042e672cc8",
+      "last_known_commit": "114e217",
+      "deploy_method": "netlify_cli_manual_prod",
       "build_command": "pnpm build",
       "publish_directory": "dist",
       "base_directory": "apps/build-board",
@@ -42,13 +45,8 @@
       "access": "public_url_unprotected",
       "access_note": "Board is NOT private until Netlify site-level access protection or another approved auth layer is configured. Do not place sensitive planning information until protected.",
       "manual_setup_required": [
-        "Import same GitHub repo as second Netlify site",
-        "Set base directory apps/build-board",
-        "Set build command pnpm build",
-        "Set publish directory dist",
-        "Confirm production branch main",
-        "Enable access protection before sensitive content",
-        "Record production URL after first deploy"
+        "Enable Netlify site-level access protection before placing sensitive planning content",
+        "Optionally connect GitHub continuous deploy for apps/build-board using netlify.board.toml settings"
       ]
     }
   ]
