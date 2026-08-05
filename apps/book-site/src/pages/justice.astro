@@ -6,38 +6,138 @@ const stages = justice.stages || [];
 const testQs = justice.justice_test?.questions || [];
 const branches = justice.website_branches || [];
 const commitments = justice.core_commitments || [];
+const corps = justice.community_safety_corps?.components || [];
+const paths = justice.decision_pathways?.paths || [];
+const systemMap = justice.system_map || [];
+const leaveWith = justice.reentry_from_day_one?.leave_with || [];
 ---
 
 <BaseLayout
-  title="Justice, Safety, and Restoration"
+  title="Community Safety, Justice, and Restoration"
   path="/justice/"
-  description="Developing doctrine: justice as the mechanism that makes liberty and ownership real."
+  description="Complete Community Safety and Restoration System — prevent, protect, treat, secure, restore, return."
 >
   <article class="prose">
     <h1>{justice.domain_title}</h1>
     <p class="status-note">
       Developing doctrine and research architecture — not finished justice policy. Legal review 0%.
-      No invented statistics on this page.
+      Community Safety Corps and Restoration Councils are design agendas. No invented crime or recidivism statistics.
     </p>
     <p class="lede">{justice.role_in_philosophy}</p>
+
+    <h2>System objective</h2>
+    <blockquote>
+      <p>{justice.system_objective.text}</p>
+    </blockquote>
+    <p>{justice.system_objective.not_merely}</p>
+    <p>{justice.system_objective.presence_rule}</p>
+
+    <h2>Community safety doctrine</h2>
+    <blockquote>
+      <p>{justice.community_safety_doctrine.text}</p>
+    </blockquote>
+
+    <h2>Public-safety promise</h2>
+    <blockquote>
+      <p>{justice.public_safety_promise.text}</p>
+    </blockquote>
+
+    <h2>System map</h2>
+    <ol>
+      {systemMap.map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+    <p>
+      That is the better way: <strong>not more incarceration, not less accountability — more safety, more restoration, and far less human potential permanently discarded.</strong>
+    </p>
+
+    <h2>Community Safety Corps</h2>
+    <p class="status-note">Status: {justice.community_safety_corps.status}</p>
+    <p>{justice.community_safety_corps.summary}</p>
+    {
+      corps.map((c: any) => (
+        <section style="margin-bottom:1rem;">
+          <h3 style="margin-bottom:0.35rem;">{c.title}</h3>
+          {c.summary && <p>{c.summary}</p>}
+          {(c.responsibilities || c.handles || c.provides) && (
+            <ul>
+              {(c.responsibilities || c.handles || c.provides).map((item: string) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))
+    }
+    <h3>Separate community service from coercive authority</h3>
+    <p>
+      Appropriate duties move to trained civilian professionals so sworn officers concentrate on work that requires lawful coercive authority:
+    </p>
+    <ul>
+      {(justice.community_safety_corps.civilian_transfer_examples || []).map((e: string) => (
+        <li>{e}</li>
+      ))}
+    </ul>
+
+    <h2>Relationships, not quotas</h2>
+    <p>{justice.relationship_policing.meaning}</p>
+    <p>{justice.relationship_policing.assigned_areas}</p>
+    <p>{justice.relationship_policing.quota_ban}</p>
+
+    <h2>Public professional corrections</h2>
+    <blockquote>
+      <p>{justice.public_corrections_rule.text}</p>
+    </blockquote>
+    <p>{justice.public_corrections_rule.ban}</p>
+    <p class="status-note">{justice.public_corrections_rule.federal_policy_instability_note}</p>
+
+    <h2>Decision pathways</h2>
+    <p>{justice.decision_pathways.summary}</p>
+    {
+      paths.map((p: any) => (
+        <section style="margin-bottom:1rem;">
+          <h3 style="margin-bottom:0.35rem;">
+            {p.path_id}: {p.title}
+          </h3>
+          {p.rule && <p>{p.rule}</p>}
+          {p.evidence_note && <p class="status-note">{p.evidence_note}</p>}
+          {p.responses && (
+            <ul>
+              {p.responses.map((r: string) => (
+                <li>{r}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))
+    }
+
+    <h2>Secure restoration campuses</h2>
+    <p>{justice.secure_restoration_campuses.summary}</p>
+    <p class="status-note">{justice.secure_restoration_campuses.recidivism_note}</p>
+
+    <h2>Reentry from day one</h2>
+    <p>{justice.reentry_from_day_one.summary}</p>
+    <p>Every returning citizen should leave with:</p>
+    <ul>
+      {leaveWith.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+    <p class="status-note">{justice.reentry_from_day_one.evidence_caution}</p>
+
+    <h2>Productive citizenship</h2>
+    <p>{justice.productive_citizenship_destination.summary}</p>
+
+    <h2>Restoration Councils</h2>
+    <p class="status-note">Status: {justice.restoration_councils.status}</p>
+    <p>{justice.restoration_councils.summary}</p>
 
     <h2>Foundational principle</h2>
     <blockquote>
       <p>{justice.foundational_principle.text}</p>
     </blockquote>
-
-    <h2>Central promise</h2>
-    <blockquote>
-      <p>{justice.central_promise.text}</p>
-    </blockquote>
-
-    <h2>Questions justice must ask</h2>
-    <p>
-      Not only: <em>{justice.central_questions.insufficient_alone}</em>
-    </p>
-    <p>
-      Also: <em>{justice.central_questions.required_also}</em>
-    </p>
 
     <h2>Five stages</h2>
     <ol>
@@ -70,9 +170,7 @@ const commitments = justice.core_commitments || [];
     </ol>
 
     <h2>Domain branches</h2>
-    <p>
-      Living-website branches (seeded; detailed pages publish as research matures):
-    </p>
+    <p>Living-website branches (seeded; detailed pages publish as research matures):</p>
     <ul>
       {branches.map((b: any) => (
         <li>{b.title}</li>

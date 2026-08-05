@@ -523,18 +523,19 @@
       "support_level": "requires_additional_research",
       "evidence_strength": "incomplete",
       "consensus_status": "developing_doctrine",
-      "source_ids": [],
+      "source_ids": ["CC-SRC-018", "CC-SRC-019"],
       "opposing_evidence": [
-        "User fees can be framed as cost recovery; empirical magnitude of incentive distortion varies by jurisdiction."
+        "User fees can be framed as cost recovery; empirical magnitude of incentive distortion varies by jurisdiction.",
+        "Federal private-prison memos address BOP contracting posture, not a complete empirical map of all fee/forfeiture incentives."
       ],
-      "uncertainty": "CC-DEV-013; needs forfeiture/fee/private-corrections sourcing before quantitative claims.",
+      "uncertainty": "CC-DEV-013/048; CC-SRC-018/019 document federal private-prison policy instability, not national fee/forfeiture magnitudes. Broader sourcing still required before quantitative claims.",
       "fact_check_status": "needs_research",
       "publication_readiness": "not_ready",
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "doctrine_ids": ["CC-DEV-013"],
-      "public_wording": "Developing doctrine: justice should be publicly funded, not financed through the vulnerability of people inside the system — sourced examination pending."
+      "doctrine_ids": ["CC-DEV-013", "CC-DEV-048"],
+      "public_wording": "Developing doctrine: justice should be publicly funded, not financed through the vulnerability of people inside the system — federal private-prison policy history registered; broader sourced examination pending."
     },
     {
       "claim_id": "CC-CLAIM-023",
@@ -1180,6 +1181,103 @@
       "temporal_scope": "contemporary",
       "doctrine_ids": ["CC-DEV-045"],
       "public_wording": "Permanent rule: pathway, outcomes, costs, tradeoffs, evaluation — or the proposal is incomplete."
+    },
+    {
+      "claim_id": "CC-CLAIM-050",
+      "claim_text": "Public safety belongs to the community, and a complete Community Safety and Restoration System should prevent harm, respond quickly, protect victims, treat addiction and mental illness, hold dangerous people securely, restore everyone who can be restored, and return as many people as safely possible to productive citizenship — not merely be softer or tougher on crime.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_doctrine_requires_empirical_modules",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Some argue specialized police agencies alone are sufficient without a broader corps model.",
+        "Public-safety and incapacitation literatures warn that restoration framing can underweight violence risk if poorly designed."
+      ],
+      "uncertainty": "CC-DEV-046; system architecture before offense-specific statutes; no invented crime rates.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-046", "CC-DEV-011"],
+      "public_wording": "Developing doctrine: community safety is a complete system — prevent, protect, treat, secure, restore, return."
+    },
+    {
+      "claim_id": "CC-CLAIM-051",
+      "claim_text": "Local public safety should be organized as a Community Safety Corps coordinating sworn officers with community officers, behavioral-health responders, restoration officers, and victim-service officers, building on community-policing elements of partnerships, problem-solving, and organizational transformation while separating noncoercive community service from armed enforcement.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_institutional_design",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": ["CC-SRC-017"],
+      "opposing_evidence": [
+        "Civilianization and co-responder models vary widely in effectiveness by design, funding, and crisis type.",
+        "Some rural jurisdictions may lack clinician supply for dedicated behavioral-health teams without regionalization."
+      ],
+      "uncertainty": "CC-DEV-047; COPS definition supports three community-policing elements; Corps staffing model remains a design agenda pending local capacity research.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US_local",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-047"],
+      "public_wording": "Developing doctrine: Community Safety Corps — more presence, right profession for the task; arrest quotas banned."
+    },
+    {
+      "claim_id": "CC-CLAIM-052",
+      "claim_text": "The state may not create a private financial interest in keeping human beings incarcerated; private prisons, jails, or probation firms should not be paid by occupied beds, confinement length, supervision volume, or collected fees, while supporting vendor services may remain private under public custody and release authority.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_institutional_design",
+      "importance": "critical",
+      "support_level": "partially_supported",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": ["CC-SRC-018", "CC-SRC-019"],
+      "opposing_evidence": [
+        "Some argue private operators can expand capacity faster or at lower short-term cost; comparative quality evidence is contested.",
+        "Federal memos do not by themselves prove optimal state/local contracting rules."
+      ],
+      "uncertainty": "CC-DEV-048; CC-SRC-018/019 show 2016 Yates phase-down and 2017 Sessions rescission (not a 2023 rescission). Later EO/policy churn may continue; principle should be settled in law. No invented privatization market-share stats.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-048", "CC-DEV-013"],
+      "public_wording": "Developing doctrine: no private financial interest in human confinement; settle the principle in law."
+    },
+    {
+      "claim_id": "CC-CLAIM-053",
+      "claim_text": "Justice intake should route people onto proportionate pathways (serious danger; nonviolent accountability; addiction-driven conduct; mental-health crisis; poverty-related technical violations), with prisons as secure restoration campuses, reentry beginning during confinement, and productive citizenship as the destination after sentence completion — evaluated rigorously because reentry-program effects are often modest and mixed.",
+      "chapter_ids": [],
+      "claim_type": "justice",
+      "claim_class": "normative_doctrine_requires_empirical_modules",
+      "importance": "critical",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "developing_doctrine",
+      "source_ids": ["CC-SRC-020", "CC-SRC-021", "CC-SRC-022", "CC-SRC-023", "CC-SRC-024"],
+      "opposing_evidence": [
+        "Treatment and mental-health courts are not appropriate for every defendant; net-widening risks exist.",
+        "Some evaluations find only modest short-term reentry gains; programs are not magical.",
+        "Secure confinement remains necessary for demonstrated substantial threats."
+      ],
+      "uncertainty": "CC-DEV-049; BJA/NIJ sources support model elements and measurement caution, not a single national pathway statute. Distinguish inability from refusal without inventing jail-for-debt prevalence figures.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "doctrine_ids": ["CC-DEV-049", "CC-DEV-014"],
+      "public_wording": "Developing doctrine: right pathway, restoration campuses, reentry from day one, citizenship destination — evaluate honestly."
     }
   ]
 }
