@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "decisions": [
     {
       "decision_id": "CC-DEC-001",
@@ -1611,6 +1611,24 @@
         "NO implementation / modeling stays 0% until real models"
       ],
       "recommendation": "Approve corrected order and capture architecture only. Do not build chatbot, sliders, or twins now. Keep campaign data out of CC. Preserve doctrine freeze and Burt proof spine.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-098",
+      "title": "Peer-Review Journal Model and Impact Requests",
+      "question": "Should Collaborative Constitutional Review (Phase 8) operate as an academic peer-review journal — reviewers with declared expertise and typed reviews — and include deferred Impact Requests that the Phase 9 Systems Intelligence Engine answers with structured System Impact Reviews, while preserving governance-vs-construction separation and the Discover→Prove→Write→Review→Understand progression?",
+      "status": "approved",
+      "rationale": "Generic commenting is premature during construction and weak as a review instrument. Expertise-tagged, typed peer review improves mature architecture. Impact Requests turn collaboration into systems analysis under human authority. No new principle ID; not built in Phase 2.",
+      "impact": [
+        "collaborative_constitutional_review_framework.json v0.2",
+        "systems_intelligence_engine_framework.json Impact Requests bridge",
+        "HYP-119 incubator card",
+        "UPD-049",
+        "NO implementation / NO new CC-PRIN-*"
+      ],
+      "recommendation": "Approve as architecture refinement only. Keep Phase 8 Review before Phase 9 Understand. Do not build review backends or AI impact pipelines now.",
       "approved_by": "Steve",
       "decided_at": "2026-08-05",
       "supersedes": null

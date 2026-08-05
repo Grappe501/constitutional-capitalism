@@ -4,7 +4,9 @@ import f from "../../../../data/project/systems_intelligence_engine_framework.js
 
 const caps = f.capabilities || [];
 const order = f.phase_placement?.build_order || [];
+const impactFields = f.impact_requests?.ai_response_fields || [];
 ---
+
 
 <BaseLayout
   title="Systems Intelligence Engine"
@@ -38,6 +40,17 @@ const order = f.phase_placement?.build_order || [];
 
     <h2>Authority</h2>
     <p>{f.authority_chain.text}</p>
+
+    <h2>Impact Requests</h2>
+    <p>
+      Phase 8 reviewers may submit structured Impact Requests. This engine returns a System
+      Impact Review — analysis, not acceptance or rejection.
+    </p>
+    <ul>
+      {impactFields.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
 
     <h2>Capability modules</h2>
     <ol>

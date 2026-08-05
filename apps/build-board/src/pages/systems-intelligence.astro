@@ -7,7 +7,9 @@ const gates = f.activation_gates?.all_required || [];
 const order = f.phase_placement?.build_order || [];
 const never = f.authority_chain?.ai_never || [];
 const dims = f.system_health_dashboard?.dimensions || [];
+const impactFields = f.impact_requests?.ai_response_fields || [];
 ---
+
 
 <BoardLayout title="Systems Intelligence" path="/systems-intelligence/">
   <h1 class="page-title">{f.title}</h1>
@@ -46,6 +48,19 @@ const dims = f.system_health_dashboard?.dimensions || [];
     <h2>Corrected build order</h2>
     <ol>
       {order.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Impact Requests (from Phase 8)</h2>
+    <p>
+      Decision: <code>CC-DEC-098</code>. Reviewers submit structured change proposals; this
+      engine returns a System Impact Review — not accept/reject.
+    </p>
+    <ol>
+      {impactFields.map((x: string) => (
         <li>{x}</li>
       ))}
     </ol>

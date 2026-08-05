@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-096",
   "related_decision_ids": [
@@ -7,11 +7,12 @@
     "CC-DEC-095",
     "CC-DEC-075",
     "CC-DEC-064",
-    "CC-DEC-097"
+    "CC-DEC-097",
+    "CC-DEC-098"
   ],
   "status": "architecture_candidate_deferred_penultimate",
   "title": "Collaborative Constitutional Review",
-  "subtitle": "Penultimate layer — final human-governance scholarly review (Phase 8); true capstone is Systems Intelligence Engine (Phase 9)",
+  "subtitle": "Phase 8 penultimate human-governance layer — academic peer-review journal model; Impact Requests bridge to Phase 9 Systems Intelligence",
   "phase_placement": {
     "chronological_phase_id": "phase-8",
     "chronological_phase_number": 8,
@@ -23,7 +24,7 @@
     "true_capstone_decision_id": "CC-DEC-097"
   },
   "principle": {
-    "text": "People should not merely comment. They should help improve the document.",
+    "text": "People should not merely comment. They should help improve the document as scholarly reviewers.",
     "psychology_shift": {
       "from": "I disagree.",
       "to": "I believe this section could be stronger because..."
@@ -39,14 +40,20 @@
     "Open rewrite privileges",
     "Generic comment widgets under paragraphs",
     "Activation during Phase 2 proof work",
-    "Public feedback backend on an unprotected Build Board"
+    "Public feedback backend on an unprotected Build Board",
+    "Generic online commenting platform",
+    "Opinion threads without expertise or review-type metadata"
   ],
   "is": [
     "Structured scholarly review",
     "Review artifacts with lifecycles",
     "Anonymous-but-accountable contribution",
     "Version-aware manuscript tree discussions",
-    "Evidence-first collaboration aligned with Proof Burden discipline"
+    "Evidence-first collaboration aligned with Proof Burden discipline",
+    "Academic peer-review journal model",
+    "Expertise-tagged scholarly reviews",
+    "Typed review artifacts (not generic comments)",
+    "Impact Requests that feed the Systems Intelligence Engine"
   ],
   "identity_model": {
     "title": "Anonymous — but Accountable",
@@ -80,65 +87,100 @@
   },
   "comment_types": [
     {
-      "id": "evidence",
+      "id": "evidence_review",
       "labels": [
         "Needs citation",
         "Weak source",
         "Better source",
         "Contradictory evidence"
-      ]
+      ],
+      "superseded_by": "review_types",
+      "title": "Evidence Review"
     },
     {
-      "id": "logic",
+      "id": "logical_review",
       "labels": [
         "Doesn't follow",
         "Circular reasoning",
         "Needs clarification",
         "Missing assumption"
-      ]
+      ],
+      "superseded_by": "review_types",
+      "title": "Logical Review"
     },
     {
-      "id": "constitutional",
+      "id": "legal_review",
       "labels": [
         "Potential legal conflict",
         "Court precedent",
         "Federalism issue",
         "Delegation issue"
-      ]
+      ],
+      "superseded_by": "review_types",
+      "title": "Legal Review"
     },
     {
-      "id": "economic",
+      "id": "economic_review",
       "labels": [
         "Needs modeling",
         "Questionable incentive",
         "Unintended consequence",
         "Market distortion"
-      ]
+      ],
+      "superseded_by": "review_types",
+      "title": "Economic Review"
     },
     {
-      "id": "editorial",
+      "id": "implementation_review",
+      "labels": [
+        "Administrative feasibility",
+        "Capacity gap",
+        "Sequencing risk",
+        "Local variation"
+      ],
+      "superseded_by": "review_types",
+      "title": "Implementation Review"
+    },
+    {
+      "id": "editorial_review",
       "labels": [
         "Grammar",
         "Style",
         "Organization",
         "Readability"
-      ]
-    },
-    {
-      "id": "question",
-      "labels": [
-        "I don't understand..."
       ],
-      "note": "High volume of confusion on one paragraph means the paragraph is the problem."
+      "superseded_by": "review_types",
+      "title": "Editorial Review"
     },
     {
-      "id": "proposal",
+      "id": "counterargument",
+      "labels": [
+        "Strongest good-faith objection",
+        "Competing principle tension",
+        "Tradeoff underweighted"
+      ],
+      "superseded_by": "review_types",
+      "title": "Counterargument"
+    },
+    {
+      "id": "alternative_design",
       "labels": [
         "Suggested rewrite",
         "Alternative mechanism",
         "New example",
         "Additional research"
-      ]
+      ],
+      "superseded_by": "review_types",
+      "title": "Alternative Design"
+    },
+    {
+      "id": "clarifying_question",
+      "labels": [
+        "I don't understand..."
+      ],
+      "note": "High volume of confusion on one paragraph means the paragraph is the problem.",
+      "superseded_by": "review_types",
+      "title": "Clarifying Question"
     }
   ],
   "margin_system": {
@@ -233,7 +275,7 @@
     ]
   },
   "review_artifacts": {
-    "title": "Comments as Review Artifacts",
+    "title": "Reviews as scholarly artifacts",
     "lifecycle": [
       "Open",
       "Under Review",
@@ -241,7 +283,13 @@
       "Declined",
       "Resolved"
     ],
-    "rule": "Every comment should be capable of becoming a tracked issue with a permanent audit trail — scholarly, not merely conversational."
+    "rule": "Every submission should be capable of becoming a tracked review artifact with expertise, type, and permanent audit trail — journal peer review, not a comment widget.",
+    "required_metadata": [
+      "Declared expertise domain(s)",
+      "Review type",
+      "Manuscript node / version",
+      "Optional Impact Request flag"
+    ]
   },
   "activation_gates": {
     "all_required": [
@@ -257,7 +305,7 @@
     "related_existing_slice": {
       "slice_id": "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0",
       "status": "APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION",
-      "rule": "No public feedback backend on unprotected Build Board. CCR supersedes vague 'public feedback' as the capstone design."
+      "rule": "No public feedback backend on unprotected Build Board. CCR is the Phase 8 peer-review design; Impact Requests connect to Phase 9 Systems Intelligence when activated."
     }
   },
   "implementation_status": {
@@ -265,5 +313,195 @@
     "publishable": false,
     "phase_2_action": "Capture architecture only. Do not implement commenting, registration, or public review backends.",
     "hypothesis_id": "HYP-117"
+  },
+  "governance_vs_construction": {
+    "title": "Governance separated from construction",
+    "rule": "While Constitutional Capitalism is still being constructed, collaboration is premature — reviewers would debate ideas not yet fully researched, modeled, or legally analyzed.",
+    "opens_when": "Architecture is mature enough that outside expertise can improve it rather than define it.",
+    "participants": "reviewers",
+    "not_participants": "generic commenters"
+  },
+  "operating_model": {
+    "title": "Academic peer-review journal — not an online commenting platform",
+    "principle": "People should not merely comment. They should help improve the document as reviewers.",
+    "psychology_shift": {
+      "from": "I disagree.",
+      "to": "I believe this section could be stronger because..."
+    }
+  },
+  "expertise_domains": {
+    "title": "Declared areas of expertise",
+    "rule": "Every review records the reviewer's declared expertise domain(s) and the review type.",
+    "domains": [
+      "Constitutional law",
+      "Economics",
+      "Municipal finance",
+      "Agriculture",
+      "Healthcare",
+      "Energy",
+      "Public administration",
+      "Education",
+      "Emergency management",
+      "Tax policy",
+      "Retirement systems",
+      "Environmental science",
+      "History"
+    ]
+  },
+  "review_types": [
+    {
+      "id": "evidence_review",
+      "title": "Evidence Review",
+      "labels": [
+        "Needs citation",
+        "Weak source",
+        "Better source",
+        "Contradictory evidence"
+      ]
+    },
+    {
+      "id": "logical_review",
+      "title": "Logical Review",
+      "labels": [
+        "Doesn't follow",
+        "Circular reasoning",
+        "Needs clarification",
+        "Missing assumption"
+      ]
+    },
+    {
+      "id": "legal_review",
+      "title": "Legal Review",
+      "labels": [
+        "Potential legal conflict",
+        "Court precedent",
+        "Federalism issue",
+        "Delegation issue"
+      ]
+    },
+    {
+      "id": "economic_review",
+      "title": "Economic Review",
+      "labels": [
+        "Needs modeling",
+        "Questionable incentive",
+        "Unintended consequence",
+        "Market distortion"
+      ]
+    },
+    {
+      "id": "implementation_review",
+      "title": "Implementation Review",
+      "labels": [
+        "Administrative feasibility",
+        "Capacity gap",
+        "Sequencing risk",
+        "Local variation"
+      ]
+    },
+    {
+      "id": "editorial_review",
+      "title": "Editorial Review",
+      "labels": [
+        "Grammar",
+        "Style",
+        "Organization",
+        "Readability"
+      ]
+    },
+    {
+      "id": "counterargument",
+      "title": "Counterargument",
+      "labels": [
+        "Strongest good-faith objection",
+        "Competing principle tension",
+        "Tradeoff underweighted"
+      ]
+    },
+    {
+      "id": "alternative_design",
+      "title": "Alternative Design",
+      "labels": [
+        "Suggested rewrite",
+        "Alternative mechanism",
+        "New example",
+        "Additional research"
+      ]
+    },
+    {
+      "id": "clarifying_question",
+      "title": "Clarifying Question",
+      "labels": [
+        "I don't understand..."
+      ],
+      "note": "High volume of confusion on one paragraph means the paragraph is the problem."
+    }
+  ],
+  "impact_requests": {
+    "title": "Impact Requests",
+    "status": "architecture_candidate_deferred",
+    "decision_id": "CC-DEC-098",
+    "hypothesis_id": "HYP-119",
+    "rule": "Instead of opinion-only comments, a reviewer may submit a structured Impact Request for system-level analysis.",
+    "example_submission": "I think we should increase local investment from 10% to 15%.",
+    "transforms": "Collaboration from opinion into structured systems analysis.",
+    "bridges_to": {
+      "phase": 9,
+      "engine": "Constitutional Capitalism Systems Intelligence Engine",
+      "framework_file": "data/project/systems_intelligence_engine_framework.json",
+      "response_artifact": "System Impact Review"
+    },
+    "ai_response_fields": [
+      "Principles affected",
+      "Claims affected",
+      "Evidence packets requiring review",
+      "Legal questions introduced",
+      "Economic variables affected",
+      "Other chapters requiring revision",
+      "Potential conflicts with existing doctrine",
+      "Recommended simulation scenarios",
+      "Confidence in the assessment"
+    ],
+    "authority": "AI analyzes Impact Requests; humans review; authorized humans decide; decision ledger records the outcome. AI never auto-modifies doctrine."
+  },
+  "five_stage_progression": {
+    "title": "Natural evolution of the build",
+    "stages": [
+      {
+        "id": "discover",
+        "title": "Discover",
+        "summary": "Philosophy and architecture",
+        "phases": "Phase 1–early Phase 2 doctrine/architecture"
+      },
+      {
+        "id": "prove",
+        "title": "Prove",
+        "summary": "Evidence, legal analysis, and modeling",
+        "phases": "Phase 2 proof burden, legal, modeling"
+      },
+      {
+        "id": "write",
+        "title": "Write",
+        "summary": "Manuscript and educational materials",
+        "phases": "Phase 6 manuscript; Phase 7 education/publication"
+      },
+      {
+        "id": "review",
+        "title": "Review",
+        "summary": "Structured scholarly collaboration (peer-review journal model)",
+        "phases": "Phase 8 Collaborative Constitutional Review",
+        "decision_id": "CC-DEC-096",
+        "refinement_decision_id": "CC-DEC-098"
+      },
+      {
+        "id": "understand",
+        "title": "Understand",
+        "summary": "AI systems intelligence, simulation, and impact analysis",
+        "phases": "Phase 9 Systems Intelligence Engine",
+        "decision_id": "CC-DEC-097",
+        "note": "AI helps everyone understand consequences of changing the work — not write it."
+      }
+    ],
+    "note": "Review (Phase 8) precedes Understand (Phase 9). The AI does not become the author; it becomes the instrument for understanding consequences of change."
   }
 }

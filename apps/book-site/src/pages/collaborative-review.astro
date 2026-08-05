@@ -3,29 +3,44 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import f from "../../../../data/project/collaborative_constitutional_review_framework.json";
 
 const nodes = f.manuscript_tree?.nodes || [];
-const types = f.comment_types || [];
+const types = f.review_types || f.comment_types || [];
+const domains = f.expertise_domains?.domains || [];
+const stages = f.five_stage_progression?.stages || [];
+const impactFields = f.impact_requests?.ai_response_fields || [];
 const lifecycle = f.review_artifacts?.lifecycle || [];
 ---
 
 <BaseLayout
   title="Collaborative Constitutional Review"
   path="/collaborative-review/"
-  description="Deferred capstone: structured scholarly review after the document is mature — not crowdsourcing."
+  description="Deferred Phase 8 peer-review journal layer — reviewers improve mature architecture; Impact Requests bridge to systems intelligence."
 >
   <article class="prose">
     <h1>{f.title}</h1>
     <p class="muted">
-      Architecture Candidate — Phase 8 penultimate human-governance layer. Not built. Not open
-      for public commenting. True capstone is the Systems Intelligence Engine (Phase 9).
-      Manuscript remains Phase 6.
+      Architecture Candidate — Phase 8 penultimate human-governance layer. Operates like an
+      academic peer-review journal, not a comment platform. Not built. Not open for public
+      review. True capstone is the Systems Intelligence Engine (Phase 9).
     </p>
+
+    <h2>Governance vs construction</h2>
+    <p>{f.governance_vs_construction.rule}</p>
+    <p>{f.governance_vs_construction.opens_when}</p>
 
     <h2>Principle</h2>
     <blockquote>
       <p>{f.principle.text}</p>
     </blockquote>
     <p>{f.why_last.text}</p>
-    <p>{f.why_last.embodiment}</p>
+
+    <h2>Five-stage progression</h2>
+    <ol>
+      {stages.map((s: any) => (
+        <li>
+          <strong>{s.title}</strong> — {s.summary}
+        </li>
+      ))}
+    </ol>
 
     <h2>What this is — and is not</h2>
     <p>Is:</p>
@@ -41,10 +56,37 @@ const lifecycle = f.review_artifacts?.lifecycle || [];
       ))}
     </ul>
 
-    <h2>Anonymous — but accountable</h2>
+    <h2>Reviewers — not commenters</h2>
     <p>
       {f.identity_model.registration}. Public display: {f.identity_model.public_display}.
     </p>
+    <p>{f.expertise_domains.rule}</p>
+    <ul>
+      {domains.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+
+    <h2>Types of review</h2>
+    <ul>
+      {types.map((t: any) => (
+        <li>
+          <strong>{t.title || t.id}</strong>
+          {(t.labels || []).length ? ` — ${(t.labels || []).join("; ")}` : ""}
+        </li>
+      ))}
+    </ul>
+
+    <h2>Impact Requests</h2>
+    <p>{f.impact_requests.rule}</p>
+    <p class="muted">Example: {f.impact_requests.example_submission}</p>
+    <p>AI response fields (via Phase 9 Systems Intelligence):</p>
+    <ul>
+      {impactFields.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+    <p class="muted">{f.impact_requests.authority}</p>
 
     <h2>Manuscript tree</h2>
     <p>{f.manuscript_tree.interaction}</p>
@@ -54,26 +96,14 @@ const lifecycle = f.review_artifacts?.lifecycle || [];
       ))}
     </ul>
 
-    <h2>Types of review</h2>
-    <ul>
-      {types.map((t: any) => (
-        <li>
-          <strong>{t.id}</strong> — {(t.labels || []).join("; ")}
-        </li>
-      ))}
-    </ul>
-
     <h2>Review artifacts</h2>
     <p>{f.review_artifacts.rule}</p>
     <p>Lifecycle: {lifecycle.join(" → ")}</p>
 
-    <h2>Version awareness</h2>
-    <p>{f.version_awareness.rule}</p>
-
     <p class="muted">
-      See also <a href="/foundational-axioms/">Foundational Axioms</a> and{" "}
-      <a href="/declaration/">Declaration</a>. Collaboration opens only when the document can
-      withstand the project’s own proof standards.
+      See also <a href="/systems-intelligence/">Systems Intelligence Engine</a> and{" "}
+      <a href="/foundational-axioms/">Foundational Axioms</a>. Review opens only when the
+      document can withstand the project’s own proof standards.
     </p>
   </article>
 </BaseLayout>

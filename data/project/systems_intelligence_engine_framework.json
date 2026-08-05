@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-097",
   "related_decision_ids": [
@@ -9,7 +9,8 @@
     "CC-DEC-094",
     "CC-DEC-078",
     "CC-DEC-076",
-    "CC-DEC-075"
+    "CC-DEC-075",
+    "CC-DEC-098"
   ],
   "status": "architecture_candidate_deferred_true_capstone",
   "title": "Constitutional Capitalism Systems Intelligence Engine",
@@ -25,9 +26,11 @@
       "decision_id": "CC-DEC-096"
     },
     "build_order": [
-      "Philosophy, doctrine, evidence, legal analysis, modeling, manuscript, education, publication packages",
-      "Phase 8 — registered anonymous line-level scholarly collaboration",
-      "Phase 9 — AI intelligence, simulation, digital twin, whole-system impact analysis"
+      "Discover — philosophy and architecture",
+      "Prove — evidence, legal analysis, and modeling",
+      "Write — manuscript and educational materials",
+      "Review — Phase 8 peer-review scholarly collaboration (Impact Requests optional)",
+      "Understand — Phase 9 Systems Intelligence Engine (impact analysis, simulation, learning)"
     ],
     "do_not_activate_early": true
   },
@@ -229,7 +232,14 @@
       "Legal questions",
       "Evidence status",
       "System conflicts",
+      "Recommended simulation scenarios",
+      "Confidence in the assessment",
       "Recommendation for consideration (test ranges — not accept/reject)"
+    ],
+    "triggered_by": [
+      "Impact Requests (Phase 8)",
+      "Internal design proposals",
+      "Hypothesis Cards under review"
     ]
   },
   "system_health_dashboard": {
@@ -269,5 +279,65 @@
     "phase_2_action": "Capture architecture only. Do not build chatbot, sliders, or twin backends in Phase 2.",
     "hypothesis_id": "HYP-118",
     "modeling_honesty": "Modeling remains 0% until real models exist — this framework does not inflate modeling progress."
+  },
+  "five_stage_progression": {
+    "title": "Natural evolution of the build",
+    "stages": [
+      {
+        "id": "discover",
+        "title": "Discover",
+        "summary": "Philosophy and architecture",
+        "phases": "Phase 1–early Phase 2 doctrine/architecture"
+      },
+      {
+        "id": "prove",
+        "title": "Prove",
+        "summary": "Evidence, legal analysis, and modeling",
+        "phases": "Phase 2 proof burden, legal, modeling"
+      },
+      {
+        "id": "write",
+        "title": "Write",
+        "summary": "Manuscript and educational materials",
+        "phases": "Phase 6 manuscript; Phase 7 education/publication"
+      },
+      {
+        "id": "review",
+        "title": "Review",
+        "summary": "Structured scholarly collaboration (peer-review journal model)",
+        "phases": "Phase 8 Collaborative Constitutional Review",
+        "decision_id": "CC-DEC-096",
+        "refinement_decision_id": "CC-DEC-098"
+      },
+      {
+        "id": "understand",
+        "title": "Understand",
+        "summary": "AI systems intelligence, simulation, and impact analysis",
+        "phases": "Phase 9 Systems Intelligence Engine",
+        "decision_id": "CC-DEC-097",
+        "note": "AI helps everyone understand consequences of changing the work — not write it."
+      }
+    ],
+    "capstone_role": "Understand — AI helps collaborators, policymakers, and citizens understand consequences of changing Constitutional Capitalism, not write it."
+  },
+  "impact_requests": {
+    "title": "Impact Requests (from Collaborative Review)",
+    "decision_id": "CC-DEC-098",
+    "source_phase": 8,
+    "source_framework": "data/project/collaborative_constitutional_review_framework.json",
+    "consumes": "Structured reviewer Impact Requests",
+    "produces": "System Impact Review + optional simulation scenario recommendations",
+    "ai_response_fields": [
+      "Principles affected",
+      "Claims affected",
+      "Evidence packets requiring review",
+      "Legal questions introduced",
+      "Economic variables affected",
+      "Other chapters requiring revision",
+      "Potential conflicts with existing doctrine",
+      "Recommended simulation scenarios",
+      "Confidence in the assessment"
+    ],
+    "authority": "Contributor proposes → AI analyzes → reviewers examine → simulations are tested → authorized humans decide → decision ledger records the result."
   }
 }

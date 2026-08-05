@@ -8,7 +8,8 @@
     "CC-DEC-094",
     "CC-DEC-095",
     "CC-DEC-096",
-    "CC-DEC-097"
+    "CC-DEC-097",
+    "CC-DEC-098"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -282,13 +283,14 @@
     {
       "hypothesis_id": "HYP-117",
       "title": "Collaborative Constitutional Review",
-      "proposition": "After proof, legal, modeling, manuscript, and education maturity, a structured scholarly review system with anonymous-but-accountable contributors and review-artifact lifecycles can strengthen the document without crowdsourcing or social-media dynamics.",
+      "proposition": "After proof, legal, modeling, manuscript, and education maturity, a peer-review journal–style scholarly system (expertise-tagged reviewers, typed reviews, Impact Requests) can strengthen the document without crowdsourcing or social-media dynamics.",
       "status": "Architectural hypothesis — deferred penultimate",
       "publishable": false,
       "confidence_percent": 15,
       "related_principle_ids": [],
       "related_decision_ids": [
-        "CC-DEC-096"
+        "CC-DEC-096",
+        "CC-DEC-098"
       ],
       "related_framework": "data/project/collaborative_constitutional_review_framework.json",
       "public_path": "/collaborative-review/",
@@ -302,7 +304,7 @@
         "Build Board / platform protection confirmation"
       ],
       "proof_packet_status": "not_started",
-      "note": "PENULTIMATE LAYER (Phase 8 under CC-DEC-097). Do not build in Phase 2. True capstone is HYP-118 Systems Intelligence Engine (Phase 9)."
+      "note": "PENULTIMATE LAYER (Phase 8). Peer-review journal model + Impact Requests under CC-DEC-098. Do not build in Phase 2. True capstone is HYP-118 Understand layer (Phase 9)."
     },
     {
       "hypothesis_id": "HYP-118",
@@ -329,6 +331,31 @@
       ],
       "proof_packet_status": "not_started",
       "note": "TRUE CAPSTONE Phase 9. Architecture only. Does not raise modeling % until real models exist."
+    },
+    {
+      "hypothesis_id": "HYP-119",
+      "title": "Impact Requests → System Impact Review",
+      "proposition": "When a Phase 8 reviewer submits an Impact Request (e.g., change a policy variable), the Phase 9 Systems Intelligence Engine can return a structured System Impact Review — principles, claims, evidence packets, legal questions, variables, conflicts, simulation scenarios, and confidence — without accepting or rejecting the change.",
+      "status": "Architectural hypothesis — deferred bridge",
+      "publishable": false,
+      "confidence_percent": 12,
+      "related_principle_ids": [],
+      "related_decision_ids": [
+        "CC-DEC-098",
+        "CC-DEC-096",
+        "CC-DEC-097"
+      ],
+      "related_framework": "data/project/collaborative_constitutional_review_framework.json",
+      "public_path": "/collaborative-review/",
+      "evidence_needed": [
+        "Impact Request schema and validation",
+        "Knowledge-graph coverage for requested variables",
+        "System Impact Review template evaluation",
+        "Human-in-the-loop approval before any doctrine change",
+        "Refusal rules when evidence is insufficient"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "Bridge capability. Requires Phase 8 review platform + Phase 9 engine. Not built in Phase 2."
     }
   ],
   "website_node": {

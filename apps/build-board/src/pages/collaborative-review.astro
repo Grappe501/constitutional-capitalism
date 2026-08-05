@@ -2,7 +2,10 @@
 import BoardLayout from "../layouts/BoardLayout.astro";
 import f from "../../../../data/project/collaborative_constitutional_review_framework.json";
 
-const types = f.comment_types || [];
+const types = f.review_types || f.comment_types || [];
+const domains = f.expertise_domains?.domains || [];
+const stages = f.five_stage_progression?.stages || [];
+const impactFields = f.impact_requests?.ai_response_fields || [];
 const ladder = f.contributor_reputation?.ladder || [];
 const gates = f.activation_gates?.all_required || [];
 const lifecycle = f.review_artifacts?.lifecycle || [];
@@ -13,42 +16,86 @@ const views = f.scholarly_modes?.views || [];
 <BoardLayout title="Collaborative Review" path="/collaborative-review/">
   <h1 class="page-title">{f.title}</h1>
   <p class="page-lede">
-    Decision: <code>{f.decision_id}</code>. Status: <code>{f.status}</code>.{" "}
-    <strong>Not built. Not active.</strong> Phase{" "}
-    {f.phase_placement.chronological_phase_number} penultimate layer. True capstone = Phase 9
-    Systems Intelligence. Manuscript remains Phase 6.
+    Decisions: <code>{f.decision_id}</code>, <code>CC-DEC-098</code>. Status:{" "}
+    <code>{f.status}</code>. <strong>Not built. Not active.</strong> Phase{" "}
+    {f.phase_placement.chronological_phase_number} peer-review journal layer. Impact Requests
+    bridge to Phase 9 Systems Intelligence.
   </p>
 
   <div class="grid grid--stats">
     <div class="stat">
-      <div class="stat__value">9</div>
-      <div class="stat__label">Capstone phase</div>
+      <div class="stat__value">8</div>
+      <div class="stat__label">Review phase</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{domains.length}</div>
+      <div class="stat__label">Expertise domains</div>
     </div>
     <div class="stat">
       <div class="stat__value">{f.implementation_status.build_now ? "Yes" : "No"}</div>
       <div class="stat__label">Build now?</div>
     </div>
-    <div class="stat">
-      <div class="stat__value">{lifecycle.length}</div>
-      <div class="stat__label">Review-artifact states</div>
-    </div>
   </div>
 
   <section class="panel">
-    <h2>Principle</h2>
-    <blockquote>
-      <p>{f.principle.text}</p>
-    </blockquote>
-    <p class="muted">
-      From <em>{f.principle.psychology_shift.from}</em> →{" "}
-      <em>{f.principle.psychology_shift.to}</em>
-    </p>
-    <p>{f.why_last.text}</p>
+    <h2>Governance vs construction</h2>
+    <p>{f.governance_vs_construction.rule}</p>
+    <p class="muted">{f.governance_vs_construction.opens_when}</p>
   </section>
 
   <section class="panel">
-    <h2>Phase placement</h2>
-    <p>{f.phase_placement.steve_intent_note}</p>
+    <h2>Operating model</h2>
+    <blockquote>
+      <p>{f.operating_model.title}</p>
+    </blockquote>
+    <p>{f.principle.text}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Five-stage progression</h2>
+    <ol>
+      {stages.map((s: any) => (
+        <li>
+          <strong>{s.title}</strong> — {s.summary}{" "}
+          <span class="muted">({s.phases})</span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Expertise domains</h2>
+    <p>{f.expertise_domains.rule}</p>
+    <ul>
+      {domains.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Review types</h2>
+    <ul>
+      {types.map((t: any) => (
+        <li>
+          <strong>{t.title || t.id}</strong>
+          {(t.labels || []).length ? `: ${(t.labels || []).join("; ")}` : ""}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Impact Requests</h2>
+    <p>{f.impact_requests.rule}</p>
+    <p class="muted">Example: {f.impact_requests.example_submission}</p>
+    <p>AI response fields:</p>
+    <ol>
+      {impactFields.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+    <p class="muted">{f.impact_requests.authority}</p>
   </section>
 
   <section class="panel">
@@ -59,17 +106,6 @@ const views = f.scholarly_modes?.views || [];
         <li>{n}</li>
       ))}
     </ol>
-  </section>
-
-  <section class="panel">
-    <h2>Comment types</h2>
-    <ul>
-      {types.map((t: any) => (
-        <li>
-          <strong>{t.id}</strong>: {(t.labels || []).join("; ")}
-        </li>
-      ))}
-    </ul>
   </section>
 
   <section class="panel">
@@ -109,6 +145,7 @@ const views = f.scholarly_modes?.views || [];
   <section class="panel">
     <h2>Related</h2>
     <p>
+      <a href="/systems-intelligence/">Systems Intelligence</a>,{" "}
       <a href="/proof-incubator/">Proof Incubator</a>,{" "}
       <a href="/phase-2-gate/">Phase 2 Gate</a>,{" "}
       <a href="/foundational-axioms/">Foundational Axioms</a>.
