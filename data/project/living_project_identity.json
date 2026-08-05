@@ -1,13 +1,15 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-072",
   "status": "proposed_architecture",
   "title": "Constitutional Capitalism — A Living Constitutional Philosophy",
   "scope_shift": {
     "earlier_framing": "Let's write a book.",
     "current_framing": "A living constitutional philosophy supported by durable public systems — more durable than a book alone.",
-    "book_role": "Introduction and portable expression of the philosophy; not the whole operating system."
+    "book_role": "Introduction and portable expression of the philosophy; not the whole operating system.",
+    "evolution_framing": "The project defines not only what Constitutional Capitalism is, but how Constitutional Capitalism itself should evolve.",
+    "eras_file": "data/project/project_eras_roadmap.json"
   },
   "supporting_systems": [
     "Research Institute",
@@ -23,7 +25,9 @@
     "Do not inflate progress",
     "Do not call architecture research",
     "Do not call placeholders evidence",
-    "Do not move modeling or legal review forward without doing the work"
+    "Do not move modeling or legal review forward without doing the work",
+    "Stop designing the future platform while Phase 2 proof remains open",
+    "Phase 9 depends on Phase 2 evidence quality"
   ],
   "canonical_honesty_state": {
     "phase_1": "COMPLETE / LOCKED",
@@ -71,5 +75,45 @@
     "name": "Human Flourishing Index",
     "question": "Did human life improve?",
     "policy_question": "Does this measurably increase human flourishing?"
-  }
+  },
+  "related_decision_ids": [
+    "CC-DEC-100",
+    "CC-DEC-099"
+  ],
+  "architectural_doctrines": [
+    {
+      "id": "constitutional_symmetry",
+      "title": "Constitutional Symmetry (architectural doctrine)",
+      "kind": "architectural_doctrine",
+      "not_a_doctrine_principle": true,
+      "note": "Not a new CC-PRIN-*. Captures how the project governs itself.",
+      "text": "The framework itself should operate according to the same values it advocates for society.",
+      "mappings": [
+        {
+          "value": "Transparency",
+          "project_practice": "every decision has a ledger"
+        },
+        {
+          "value": "Accountability",
+          "project_practice": "every accepted change has a rationale"
+        },
+        {
+          "value": "Distributed knowledge",
+          "project_practice": "expertise is welcomed through structured review"
+        },
+        {
+          "value": "Evidence before authority",
+          "project_practice": "claims advance through proof, not popularity"
+        },
+        {
+          "value": "Checks and balances",
+          "project_practice": "AI analyzes, reviewers critique, humans decide"
+        },
+        {
+          "value": "Stewardship",
+          "project_practice": "every revision strengthens rather than destabilizes the system"
+        }
+      ]
+    }
+  ]
 }

@@ -10,7 +10,8 @@
     "CC-DEC-096",
     "CC-DEC-097",
     "CC-DEC-098",
-    "CC-DEC-099"
+    "CC-DEC-099",
+    "CC-DEC-100"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -401,7 +402,11 @@
   "derivation_test": "New ideas must derive from the First Principle and Ten Foundational Axioms (CC-DEC-095) or remain Hypothesis Cards.",
   "architecture_roadmap_freeze": {
     "decision_id": "CC-DEC-099",
-    "rule": "High-level Phase 8/9 roadmap stable. Default: no further architecture expansion; strengthen proof foundations.",
-    "eras_file": "data/project/project_eras_roadmap.json"
+    "rule": "Architecture chapter closed. Default next work is proof packets, not new platform design.",
+    "eras_file": "data/project/project_eras_roadmap.json",
+    "closed_by_decision_ids": [
+      "CC-DEC-099",
+      "CC-DEC-100"
+    ]
   }
 }

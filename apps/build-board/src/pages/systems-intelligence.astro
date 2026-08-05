@@ -73,6 +73,53 @@ const policyDiff = f.policy_diff_analysis;
   </section>
 
   <section class="panel">
+    <h2>Constitutional process of the framework</h2>
+    <p class="muted">{eras.constitutional_process?.rule}</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Purpose</th>
+          <th>Authority</th>
+        </tr>
+      </thead>
+      <tbody>
+        {(eras.constitutional_process?.stages || []).map((s: any) => (
+          <tr>
+            <td>{s.stage}</td>
+            <td>{s.purpose}</td>
+            <td>{s.authority}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Constitutional Symmetry</h2>
+    {(() => {
+      const sym = (eras.architectural_doctrines || []).find(
+        (d: any) => d.id === "constitutional_symmetry"
+      );
+      return sym ? (
+        <>
+          <blockquote>
+            <p>{sym.text}</p>
+          </blockquote>
+          <p class="muted">Architectural doctrine — not a new CC-PRIN-*.</p>
+          <ul>
+            {sym.mappings.map((m: any) => (
+              <li>
+                <strong>{m.value}</strong> → {m.project_practice}
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : null;
+    })()}
+  </section>
+
+  <section class="panel">
     <h2>Explainable Systems Intelligence</h2>
     {explain ? (
       <>

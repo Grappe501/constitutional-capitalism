@@ -1,16 +1,18 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-099",
   "related_decision_ids": [
     "CC-DEC-093",
     "CC-DEC-096",
     "CC-DEC-097",
-    "CC-DEC-098"
+    "CC-DEC-098",
+    "CC-DEC-100",
+    "CC-DEC-099"
   ],
   "status": "stable",
   "title": "Constitutional Capitalism — Three Eras Roadmap",
-  "stability_rule": "High-level roadmap is stable. Resist further architecture expansion of Phase 8/9. Return value to proof, legal analysis, modeling, and manuscript quality.",
+  "stability_rule": "High-level roadmap is stable (CC-DEC-099/100). No further Phase 8/9 architecture expansion. Return to proof.",
   "lifecycle": [
     "Build",
     "Prove",
@@ -65,5 +67,87 @@
   "current_instruction": {
     "to_burt": "Return to Step 2. Build proof. Do not build Phase 8 or Phase 9.",
     "to_architecture": "Phase 8/9 sufficiently defined. Further capability capture only if it closes a proof or governance gap; default is freeze."
+  },
+  "what_the_project_defines": {
+    "substance": "What Constitutional Capitalism is",
+    "process": "How Constitutional Capitalism itself should evolve",
+    "note": "The five stages are a constitutional process for the framework, not merely a development plan."
+  },
+  "constitutional_process": {
+    "title": "Five-stage constitutional process of the framework",
+    "rule": "Every stage has a different purpose and a different authority — preventing one function from dominating the others.",
+    "stages": [
+      {
+        "stage": "Discover",
+        "purpose": "Generate ideas and architecture",
+        "authority": "Core authors"
+      },
+      {
+        "stage": "Prove",
+        "purpose": "Build evidence, legal analysis, and models",
+        "authority": "Scholarship and research"
+      },
+      {
+        "stage": "Write",
+        "purpose": "Produce the canonical manuscript",
+        "authority": "Editorial authority"
+      },
+      {
+        "stage": "Review",
+        "purpose": "Structured peer review and critique",
+        "authority": "Verified reviewers"
+      },
+      {
+        "stage": "Understand",
+        "purpose": "Analyze consequences and explore alternatives",
+        "authority": "Systems Intelligence Engine (under human decision authority)"
+      }
+    ]
+  },
+  "architectural_doctrines": [
+    {
+      "id": "constitutional_symmetry",
+      "title": "Constitutional Symmetry (architectural doctrine)",
+      "kind": "architectural_doctrine",
+      "not_a_doctrine_principle": true,
+      "note": "Not a new CC-PRIN-*. Captures how the project governs itself.",
+      "text": "The framework itself should operate according to the same values it advocates for society.",
+      "mappings": [
+        {
+          "value": "Transparency",
+          "project_practice": "every decision has a ledger"
+        },
+        {
+          "value": "Accountability",
+          "project_practice": "every accepted change has a rationale"
+        },
+        {
+          "value": "Distributed knowledge",
+          "project_practice": "expertise is welcomed through structured review"
+        },
+        {
+          "value": "Evidence before authority",
+          "project_practice": "claims advance through proof, not popularity"
+        },
+        {
+          "value": "Checks and balances",
+          "project_practice": "AI analyzes, reviewers critique, humans decide"
+        },
+        {
+          "value": "Stewardship",
+          "project_practice": "every revision strengthens rather than destabilizes the system"
+        }
+      ]
+    }
+  ],
+  "scholarship_return": {
+    "decision_id": "CC-DEC-100",
+    "rule": "Stop designing the future platform. Return to scholarship.",
+    "highest_leverage_now": [
+      "Burt Step 2",
+      "PP-FF-01 and remaining proof packets",
+      "Evidence, legal analysis, and modeling foundations"
+    ],
+    "rationale": "Phase 9 quality depends almost entirely on Phase 2 rigor. The best Systems Intelligence Engine cannot compensate for weak evidence."
   }
 }
