@@ -9,6 +9,15 @@
 
 Understand how Constitutional Capitalism doctrines would **interact** with one real community — not prove the framework works.
 
+## Comparative methodology (UPD-065)
+
+Paired with Rose Bud as the start of comparative Living Community Laboratories:
+
+- **Lewisville engine:** How does a community translate emerging natural-resource opportunity into durable local prosperity?
+- **Rose Bud engine:** How does a community translate education and human capital into durable local prosperity?
+
+Not “every community should become Lewisville.” Ask what prosperity engine is authentic here.
+
 ## Why this site (working rationale — unverified)
 
 Candidate dimensions for investigation (must be sourced before use in baseline):

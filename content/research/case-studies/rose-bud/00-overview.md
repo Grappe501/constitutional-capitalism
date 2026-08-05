@@ -5,6 +5,12 @@
 **Update:** UPD-063 · Hypothesis: HYP-122  
 **Scholarship rule:** CC-DEC-102 — learn from the community; do not demonstrate that the framework is already correct.
 
+## Comparative methodology (UPD-065)
+
+Lewisville and Rose Bud begin a **comparative** Living Community Laboratory method — different engines of development (resource opportunity vs education/human capital), not a single prescribed community model.
+
+Guiding question: *What engine of prosperity is most authentic to this community, and how can institutions help that engine create broad, durable local wealth?*
+
 ## Complement to Lewisville
 
 | Case | Pathway under examination |

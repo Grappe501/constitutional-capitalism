@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "last_updated": "2026-08-05",
   "status": "research_category_deferred_scaffold",
   "anchored_at_decision_ids": [
@@ -7,7 +7,7 @@
     "CC-DEC-101",
     "CC-DEC-097"
   ],
-  "recorded_as_update": "UPD-064",
+  "recorded_as_update": "UPD-065",
   "title": "Living Community Laboratories",
   "kind": "research_program_category_not_architecture",
   "not_a_new_principle": true,
@@ -213,7 +213,8 @@
   "recorded_as_updates": [
     "UPD-062",
     "UPD-063",
-    "UPD-064"
+    "UPD-064",
+    "UPD-065"
   ],
   "paired_pathways": {
     "update_id": "UPD-063",
@@ -292,5 +293,73 @@
         "CC-CASE-LEWISVILLE-001"
       ]
     }
-  ]
+  ],
+  "comparative_methodology": {
+    "update_id": "UPD-065",
+    "decision_anchor": "CC-DEC-102",
+    "closes_with": "UPD-064",
+    "rule": "Lewisville and Rose Bud are not two independent curiosities — they begin a comparative research methodology across different engines of community development.",
+    "not_prescriptive": "Constitutional Capitalism does not say every community should become Rose Bud (or Lewisville). It asks what engine of prosperity is most authentic to this community, and how institutions can help that engine create broad, durable local wealth.",
+    "guiding_question": "What engine of prosperity is most authentic to this community, and how can institutions be designed to help that engine create broad, durable local wealth?",
+    "paired_engines": {
+      "lewisville": "How does a community translate emerging natural-resource opportunity into durable local prosperity?",
+      "rose_bud": "How does a community translate education and human capital into durable local prosperity?"
+    },
+    "development_engines": [
+      {
+        "id": "natural_resource_opportunity",
+        "exemplar_case": "CC-CASE-LEWISVILLE-001",
+        "question": "How does a community translate emerging natural-resource opportunity into durable local prosperity?"
+      },
+      {
+        "id": "education_human_capital",
+        "exemplar_case": "CC-CASE-ROSEBUD-001",
+        "related_hypothesis": "HYP-123",
+        "question": "How does a community translate education and human capital into durable local prosperity?"
+      },
+      {
+        "id": "tourism_cultural_economy",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "healthcare_regional_development",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "advanced_manufacturing",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "forestry_wood_products",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "outdoor_recreation",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "logistics_transportation",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "technology_remote_work",
+        "question": "Future laboratory candidate"
+      },
+      {
+        "id": "historic_downtown_revitalization",
+        "question": "Future laboratory candidate"
+      }
+    ],
+    "future_sie_synthesis": {
+      "deferred_to": "Phase 9 Systems Intelligence Engine",
+      "not_ask": "Which community is best?",
+      "ask": "Under what conditions did each development strategy succeed?",
+      "expected_insight": "Some institutional designs may work across nearly all community types; others are highly context-dependent."
+    },
+    "verdict_discipline": "Reality—not preference—determines Supports / Qualifies / Contradicts for each hypothesis."
+  },
+  "maturation_note": {
+    "update_id": "UPD-065",
+    "text": "Ideas that once might have become doctrine now enter as research hypotheses, Living Community Laboratories, explicit questions, and predetermined Supports/Qualifies/Contradicts verdicts."
+  }
 }

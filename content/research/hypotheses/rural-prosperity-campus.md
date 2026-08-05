@@ -45,6 +45,10 @@ A **regional rural prosperity campus**: the high school as anchor institution wi
 - Effects on neighboring communities (strengthen vs weaken)?
 - Success/failure conditions?
 
+## Comparative placement (UPD-065)
+
+Part of a family of development-engine laboratories. Not “every community should become Rose Bud.” Authenticity of the local prosperity engine comes first; institutional design follows.
+
 ## Honesty
 
 - Architecture scaffold / research stream only  
