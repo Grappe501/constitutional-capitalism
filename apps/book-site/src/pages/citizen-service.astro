@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import cps from "../../../../data/project/citizen_public_service_framework.json";
+
+const systems = cps.equal_systems?.systems || [];
+const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
+const preserves = cps.earned_vs_privilege_distinction?.preserves || [];
+const examples = cps.citizen_legislature?.examples || [];
+const payStandards = cps.compensation?.standards || [];
+const cooling = cps.cooling_off?.may_restrict || [];
+const disclosures = cps.transparency?.public_disclosures || [];
+const honors = cps.civic_honor?.examples || [];
+const testQs = cps.citizen_public_service_test?.questions || [];
+const branches = cps.website_branches || [];
+const incentives = cps.office_not_career_plan?.incentive || [];
+---
+
+<BaseLayout
+  title="Citizen Public Service"
+  path="/citizen-service/"
+  description="Public office confers responsibility, not privilege. Officials remain citizens first under the same systems as the people."
+>
+  <article class="prose">
+    <h1>{cps.domain_title}</h1>
+    <p class="status-note">
+      Major complementary Public Service Doctrine — architecture before statutes. Complements{" "}
+      <a href="/public-service/">Public Service and the 21st-Century State</a>. No invented statistics
+      about current office benefit packages. Legal drafting remains 0%.
+    </p>
+    <p class="lede">{cps.central_theme}</p>
+
+    <h2>Governing principle</h2>
+    <blockquote>
+      <p>{cps.governing_principle.text}</p>
+    </blockquote>
+
+    <h2>Constitutional principle</h2>
+    <blockquote>
+      <p>{cps.constitutional_principle.text}</p>
+    </blockquote>
+    <p>{cps.constitutional_principle.alignment_theme}</p>
+
+    <h2>Critical distinction</h2>
+    <p>
+      <strong>Framing:</strong> {cps.earned_vs_privilege_distinction.framing}
+    </p>
+    <p>
+      <strong>Same rules:</strong> {cps.earned_vs_privilege_distinction.same_rules}
+    </p>
+    <p>Rejects:</p>
+    <ul>
+      {rejects.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+    <p>Preserves:</p>
+    <ul>
+      {preserves.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+
+    <h2>Equal systems</h2>
+    <blockquote>
+      <p>{cps.equal_systems.rule}</p>
+    </blockquote>
+    <p>{cps.equal_systems.incentive}</p>
+    <ul>
+      {systems.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ul>
+
+    <h2>Office is not a career plan</h2>
+    <blockquote>
+      <p>{cps.office_not_career_plan.rule}</p>
+    </blockquote>
+    <ul>
+      {incentives.map((i: string) => (
+        <li>{i}</li>
+      ))}
+    </ul>
+    <p>{cps.office_not_career_plan.reinforces}</p>
+
+    <h2>A citizen legislature</h2>
+    <p>{cps.citizen_legislature.summary}</p>
+    <ul>
+      {examples.map((e: string) => (
+        <li>{e}</li>
+      ))}
+    </ul>
+
+    <h2>Compensation</h2>
+    <p>
+      Not: <em>{cps.compensation.not}</em>
+    </p>
+    <p>{cps.compensation.goal}</p>
+    <ul>
+      {payStandards.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ul>
+
+    <h2>Cooling-off periods</h2>
+    <p>{cps.cooling_off.summary}</p>
+    <ul>
+      {cooling.map((c: string) => (
+        <li>{c}</li>
+      ))}
+    </ul>
+    <p>{cps.cooling_off.tailoring_rule}</p>
+    <p class="status-note">{cps.cooling_off.legal_note}</p>
+
+    <h2>Transparency</h2>
+    <p>{cps.transparency.rule}</p>
+    <ul>
+      {disclosures.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+
+    <h2>Civic honor system</h2>
+    <p>{cps.civic_honor.summary}</p>
+    <ul>
+      {honors.map((h: string) => (
+        <li>{h}</li>
+      ))}
+    </ul>
+
+    <h2>Citizen public service test</h2>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Website branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p class="status-note">
+      See also <a href="/public-service/">Public Service</a>,{" "}
+      <a href="/peoples-branch/">People’s Branch</a>, <a href="/equal-standing/">Equal Standing</a>,
+      and <a href="/transparency/">Transparency</a>.
+    </p>
+  </article>
+</BaseLayout>

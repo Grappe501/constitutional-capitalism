@@ -2,7 +2,7 @@
   "version": "0.2.4",
   "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -794,6 +794,51 @@
         "CC-DEV-141"
       ],
       "note": "Principle CC-PRIN-36; sourced structural baselines; federal redesign requires amendment; no ordinary SCOTUS recall."
+    },
+    {
+      "cluster_id": "CC-DCC-23",
+      "title": "Citizen public service — responsibility, not privilege",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture",
+      "affected_domains": [
+        "public_service",
+        "ethics",
+        "legislature",
+        "transparency",
+        "democracy"
+      ],
+      "constitutional_questions": [
+        "How does a republic prevent public office from creating a permanent political class?",
+        "How do officials remain citizens first under the systems they create?"
+      ],
+      "implementation_level": [
+        "constitutional_design",
+        "federal",
+        "state",
+        "local"
+      ],
+      "risks": [
+        "confusing earned equal-rule benefits with office-tied privilege",
+        "underpaying service so only the wealthy can serve",
+        "overbroad cooling-off that bars livelihood",
+        "invented statistics about current benefit packages"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": [
+        "CC-DEV-142",
+        "CC-DEV-143",
+        "CC-DEV-144",
+        "CC-DEV-145",
+        "CC-DEV-146",
+        "CC-DEV-147",
+        "CC-DEV-148",
+        "CC-DEV-149",
+        "CC-DEV-150",
+        "CC-DEV-151",
+        "CC-DEV-152",
+        "CC-DEV-153"
+      ],
+      "note": "Principle CC-PRIN-37; complements modernization public-service spine; architecture only."
     }
   ],
   "items": [
@@ -4148,6 +4193,306 @@
       "status": "open",
       "related_decision_ids": [
         "CC-DEC-081"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-142",
+      "statement": "No elected office shall create a permanent political class. Those entrusted with public office remain citizens first and shall participate in the same fundamental retirement, healthcare, and social systems available to the people they serve. Public office confers responsibility, not privilege.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-37"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-143",
+      "statement": "End political aristocracy: reject lifetime healthcare solely for holding office, special retirement formulas unavailable to ordinary citizens, permanent taxpayer-funded privileges tied only to elected office, and golden parachutes for political careers.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-144",
+      "statement": "Equal systems: government officials should live under the systems they create — healthcare, retirement, education, transportation, public safety, broadband, applicable veterans’ services under the same eligibility rules, and the tax system — so they have a direct stake in making those systems work well.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-145",
+      "statement": "Public office exists to contribute to the republic, not to establish permanent employment within government. Incentive: serve well, return home, continue contributing to community — citizen-led government rather than a permanent governing class.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-146",
+      "statement": "Citizen legislature: compose legislatures of people with community roots — teachers, farmers, engineers, nurses, mechanics, business owners, factory workers, veterans, organizers, tradespeople, scientists — rather than career politicians whose entire adult lives are spent inside government institutions.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-147",
+      "statement": "Compensation should not underpay service. It should be transparent, publicly reported, independently reviewed, tied to objective standards, and sufficient that ordinary citizens can afford to serve — removing corruption incentives without creating a privileged governing class.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-148",
+      "statement": "Cooling-off periods after leaving office may restrict lobbying former institutions, representing private interests before recently overseen agencies, negotiating certain government contracts, or immediately joining companies directly regulated — carefully tailored to reduce conflicts without unnecessarily preventing livelihood. Durations require legal drafting.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-149",
+      "statement": "Every elected official should have publicly available disclosures covering compensation, reimbursements, outside income where permitted, gifts, financial interests, campaign finances, conflicts, attendance, and voting record. Government service should be among the most transparent professions.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-150",
+      "statement": "Civic honor system: reward exemplary service through recognition such as a National Public Service Medal, Constitutional Service Award, Community Builder Citation, and Distinguished Civic Leadership Registry — honor as the reward, not lifelong privilege.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-151",
+      "statement": "Those who govern should experience the consequences — good or bad — of the systems they create. Alignment of personal stake with public systems builds accountability for institutions every citizen depends on.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "CC-PRIN-37"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-152",
+      "statement": "Critical distinction: eliminate special privileges tied to office; do not strip benefits earned through prior service or contributions under the same rules as everyone else. Same rules, same benefits — no more, no less.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-153",
+      "statement": "Complement — do not replace — the Public Service and 21st-Century State modernization spine: friction reduction and noble public service culture remain; anti-aristocracy ensures service does not become a privileged caste.",
+      "origin": "steve_direction_citizen_public_service_anti_aristocracy",
+      "maturity": "proposed",
+      "implications": [
+        "citizen_public_service"
+      ],
+      "conflicts": [
+        "office-tied lifelong privilege",
+        "permanent political class",
+        "confusing earned equal-rule benefits with privilege"
+      ],
+      "research_required": [
+        "inventory of office-tied vs generally applicable benefits",
+        "cooling-off constitutional design",
+        "independent compensation review models"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-082"
       ],
       "phase_destination": "phase-3_and_phase-4"
     }

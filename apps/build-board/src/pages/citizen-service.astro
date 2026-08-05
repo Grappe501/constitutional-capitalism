@@ -1,0 +1,89 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine } from "../lib/data";
+import cps from "../../../../data/project/citizen_public_service_framework.json";
+
+const doctrineIds = Array.from({ length: 12 }, (_, i) => `CC-DEV-${142 + i}`);
+const items = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const testQs = cps.citizen_public_service_test?.questions || [];
+const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
+---
+
+<BoardLayout title="Citizen Service" path="/citizen-service/">
+  <h1 class="page-title">{cps.domain_title}</h1>
+  <p class="page-lede">
+    Framework: <code>data/project/citizen_public_service_framework.json</code> v{cps.version}.
+    Principle: <code>{cps.principle_id}</code>. Decision: <code>CC-DEC-082</code>. Complements
+    modernization public-service spine — architecture only.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{items.length}</div>
+      <div class="stat__label">Developing doctrine items</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{rejects.length}</div>
+      <div class="stat__label">Rejected office privileges</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{(cps.website_branches || []).length}</div>
+      <div class="stat__label">Website branches</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Central theme</h2>
+    <p>{cps.central_theme}</p>
+    <blockquote>
+      <p>{cps.governing_principle.text}</p>
+    </blockquote>
+    <blockquote>
+      <p>{cps.constitutional_principle.text}</p>
+    </blockquote>
+  </section>
+
+  <section class="panel">
+    <h2>Critical distinction</h2>
+    <p>{cps.earned_vs_privilege_distinction.framing}</p>
+    <p>
+      <strong>Same rules:</strong> {cps.earned_vs_privilege_distinction.same_rules}
+    </p>
+    <ul>
+      {rejects.map((r: string) => (
+        <li>{r}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Citizen public service test</h2>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Developing doctrine ({items.length})</h2>
+    <ul>
+      {items.map((d: any) => (
+        <li>
+          <code>{d.doctrine_id}</code> — {d.statement.slice(0, 160)}…
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Integrity</h2>
+    <p>{cps.note}</p>
+    <p>
+      Related: <a href="/public-service/">Public Service</a>,{" "}
+      <a href="/peoples-branch/">People’s Branch</a>, <a href="/phase-2-gate/">Phase 2 Gate</a>.
+    </p>
+  </section>
+</BoardLayout>
