@@ -24,7 +24,16 @@ const validations = [
   ['data/project/principles.json','schemas/principles.schema.json'],
   ['data/project/objections.json','schemas/objections.schema.json'],
   ['data/project/terms_to_define.json','schemas/terms_to_define.schema.json'],
-  ['data/project/economic_system_comparison.json','schemas/economic_system_comparison.schema.json']
+  ['data/project/economic_system_comparison.json','schemas/economic_system_comparison.schema.json'],
+  ['data/project/prediction_ledger.json','schemas/prediction_ledger.schema.json'],
+  ['data/project/transition_scenarios.json','schemas/transition_scenarios.schema.json'],
+  ['data/project/national_impact_assessments.json','schemas/national_impact_assessments.schema.json'],
+  ['data/project/three_book_architecture.json','schemas/three_book_architecture.schema.json'],
+  ['data/project/national_baseline.json','schemas/national_baseline.schema.json'],
+  ['data/project/constitutional_capitalism_test.json','schemas/constitutional_capitalism_test.schema.json'],
+  ['data/project/chapter_evaluation_template.json','schemas/chapter_evaluation_template.schema.json'],
+  ['data/project/civilizational_core.json','schemas/civilizational_core.schema.json'],
+  ['data/project/website_information_architecture.json','schemas/website_information_architecture.schema.json']
 ];
 for (const [dataRel, schemaRel] of validations) {
   if (!fs.existsSync(r(dataRel))) { fail(`Missing data file: ${dataRel}`); continue; }

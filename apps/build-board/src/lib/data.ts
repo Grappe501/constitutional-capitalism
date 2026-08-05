@@ -25,6 +25,15 @@ import objectionsRaw from "../../../../data/project/objections.json";
 import config from "../../../../data/project/project_config.json";
 import comparisonRaw from "../../../../data/project/economic_system_comparison.json";
 import termsRaw from "../../../../data/project/terms_to_define.json";
+import transitionScenarios from "../../../../data/project/transition_scenarios.json";
+import predictions from "../../../../data/project/prediction_ledger.json";
+import impactAssessments from "../../../../data/project/national_impact_assessments.json";
+import threeBooks from "../../../../data/project/three_book_architecture.json";
+import nationalBaseline from "../../../../data/project/national_baseline.json";
+import ccTest from "../../../../data/project/constitutional_capitalism_test.json";
+import chapterEvaluationTemplate from "../../../../data/project/chapter_evaluation_template.json";
+import civilizationalCore from "../../../../data/project/civilizational_core.json";
+import websiteIa from "../../../../data/project/website_information_architecture.json";
 
 function asList<T>(value: unknown, key?: string): T[] {
   if (Array.isArray(value)) return value as T[];
@@ -72,6 +81,15 @@ export {
   milestones,
   buildHistory,
   config,
+  transitionScenarios,
+  predictions,
+  impactAssessments,
+  threeBooks,
+  nationalBaseline,
+  ccTest,
+  chapterEvaluationTemplate,
+  civilizationalCore,
+  websiteIa,
 };
 
 export function daysSince(dateStr: string | null | undefined) {

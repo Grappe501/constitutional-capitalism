@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/national_impact_assessments.schema.json",
+  "title": "NationalImpactAssessments",
+  "type": "object",
+  "required": ["version", "assessments", "disclaimer"],
+  "properties": {
+    "version": { "type": "string" },
+    "disclaimer": { "type": "string", "minLength": 20 },
+    "assessments": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "questions", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "domain": { "type": "string" },
+          "questions": { "type": "array", "minItems": 1 },
+          "status": { "type": "string" },
+          "related_chapters": { "type": "array" }
+        }
+      }
+    }
+  }
+}

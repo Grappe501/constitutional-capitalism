@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/three_book_architecture.schema.json",
+  "title": "ThreeBookArchitecture",
+  "type": "object",
+  "required": ["version", "books"],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_id": { "type": "string" },
+    "note": { "type": "string" },
+    "books": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["book_id", "title", "role", "content_root"],
+        "properties": {
+          "book_id": { "type": "string", "pattern": "^CC-BOOK-\\d{2}$" },
+          "title": { "type": "string", "minLength": 5 },
+          "subtitle": { "type": ["string", "null"] },
+          "role": { "type": "string" },
+          "audience": { "type": "string" },
+          "tone": { "type": "array", "items": { "type": "string" } },
+          "content_root": { "type": "string" },
+          "primary_surfaces": { "type": "array", "items": { "type": "string" } },
+          "entry_fields": { "type": "array", "items": { "type": "string" } },
+          "includes": { "type": "array", "items": { "type": "string" } },
+          "maturity_note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

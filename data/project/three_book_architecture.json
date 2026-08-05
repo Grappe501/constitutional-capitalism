@@ -1,0 +1,83 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "proposed",
+  "decision_id": "CC-DEC-030",
+  "note": "Three parallel books developing together. Book One is the public manuscript; Books Two and Three hold rigor and implementation without overloading the public text.",
+  "books": [
+    {
+      "book_id": "CC-BOOK-01",
+      "title": "Constitutional Capitalism",
+      "subtitle": "Restoring Prosperity Through Constitutional Principles",
+      "role": "public_book",
+      "audience": "general_public",
+      "tone": [
+        "readable",
+        "inspirational",
+        "philosophical"
+      ],
+      "content_root": "content/manuscript/",
+      "primary_surfaces": [
+        "apps/book-site"
+      ],
+      "maturity_note": "Foundational philosophy advanced; drafting incomplete."
+    },
+    {
+      "book_id": "CC-BOOK-02",
+      "title": "The Constitutional Capitalism Evidence Companion",
+      "subtitle": null,
+      "role": "evidence_companion",
+      "audience": "policymakers_researchers_critics",
+      "tone": [
+        "rigorous",
+        "balanced",
+        "uncertainty_aware"
+      ],
+      "content_root": "content/evidence-companion/",
+      "primary_surfaces": [
+        "data/research/claim_ledger.json",
+        "data/research/source_registry.json"
+      ],
+      "entry_fields": [
+        "supporting_research",
+        "opposing_research",
+        "limitations",
+        "confidence_level",
+        "questions_remaining",
+        "data_sources"
+      ],
+      "maturity_note": "Source verification near zero; structure established before mass ingestion."
+    },
+    {
+      "book_id": "CC-BOOK-03",
+      "title": "The Constitutional Capitalism Implementation Manual",
+      "subtitle": null,
+      "role": "implementation_manual",
+      "audience": "implementers_legislators_agencies",
+      "tone": [
+        "practical",
+        "sequential",
+        "measurable"
+      ],
+      "content_root": "content/implementation-manual/",
+      "primary_surfaces": [
+        "data/project/transition_scenarios.json",
+        "data/project/national_baseline.json",
+        "data/project/policy_proposals.json"
+      ],
+      "includes": [
+        "year_1",
+        "year_2",
+        "year_5",
+        "testing",
+        "metrics",
+        "pilot_programs",
+        "economic_models",
+        "legislation",
+        "transition_plans"
+      ],
+      "maturity_note": "Economic modeling and legal review at 0%; architecture and Part VI briefs seeded."
+    }
+  ],
+  "medium_note": "Books are content streams inside the living Constitutional Capitalism Project website (CC-DEC-035). Book One functions as the public Introduction."
+}

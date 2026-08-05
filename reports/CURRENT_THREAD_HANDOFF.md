@@ -1,6 +1,6 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-04T19:30:20.606Z
+Generated: 2026-08-05T00:31:29.892Z
 
 ## For the next AI / human operator
 
@@ -20,15 +20,15 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `71cce43`
+- **HEAD:** `4fbaacd`
 
 ## Current state
 
 - Mission / slice: `CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0`
 - Phase: `phase-1`
-- Status: `phase_1_complete_pending_push`
-- Writing focus: Declaration of Constitutional Capitalism and foundational principles
-- Next action: Push Phase 1; begin CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0
+- Status: `phase_1_complete_with_civilizational_core_proposal`
+- Writing focus: Civilizational core: constitutional power, living website school of thought, human flourishing across domains
+- Next action: Resolve CC-DEC-034–042 when ready; begin Phase 2 evidence/baseline inside this civilizational frame
 - Overall progress: **34%**
 
 ## Active slice
@@ -39,8 +39,8 @@ Read these first:
 
 ## Recommended next slice
 
-- ID: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
-- Title: Diagnosis Research Foundation
+- ID: `CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0`
+- Title: Evidence and National Baseline
 - Do **not** mark Phase 1 active until Phase 0 validation succeeds.
 
 ## Open decisions (sample)

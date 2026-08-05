@@ -3,12 +3,12 @@ chapter_id: CC-CH-082
 title: "How Constitutional Capitalism Can Fail"
 part_id: CC-PART-06
 chapter_number: 75
-status: concept
+status: outline
 public_status: hidden
-summary: ""
-central_question: ""
-core_claims: []
-research_requirements: []
+summary: "Steelman failure modes: investment decline, capital flight, price increases, ownership stagnation, bureaucratic burden, and shifted capture. Define detection metrics and adjustment paths. Title spirit: If We Are Wrong."
+central_question: "How could Constitutional Capitalism fail, and how would we know?"
+core_claims: ["CC-PRED-001","CC-PRED-009","CC-PRED-010"]
+research_requirements: ["Historical reform failures","Capital mobility responses","Regulatory burden studies"]
 source_ids: []
 word_count_target: 2500
 current_word_count: 0
@@ -18,31 +18,50 @@ last_updated: 2026-08-04
 
 # How Constitutional Capitalism Can Fail
 
-> **Status:** Concept placeholder — not a finished chapter.  
-> **Stable ID:** `CC-CH-082` (reorder-safe)
+> **Status:** Outline brief — predictions and transition architecture only. Not empirical proof.  
+> **Stable ID:** `CC-CH-082`
 
-## Purpose
+## Central Question
 
-This chapter exists in the master architecture as a planned unit of the book. Its title and placement are initial and may change without breaking the stable chapter ID.
+How could Constitutional Capitalism fail, and how would we know?
 
-## Opening Note
+## Intended Argument
 
-*Constitutional Capitalism* is being built as an auditable public project. This file is a structural placeholder created during Phase 0 foundation work. Substantive drafting belongs to later phases after definition, principles, research, and claim discipline are established.
+Steelman failure modes: investment decline, capital flight, price increases, ownership stagnation, bureaucratic burden, and shifted capture. Define detection metrics and adjustment paths. Title spirit: If We Are Wrong.
 
-## Questions This Chapter Must Eventually Answer
+## Argument Layers
 
-1. What is the central claim of this chapter?
-2. What evidence would make that claim credible?
-3. What honest objections must be answered?
-4. How does this chapter advance the book’s central belief: that the purpose of an economy is to create a prosperous, free, and self-governing people?
+Follow `docs/writing/ARGUMENT_LAYERS_STANDARD.md`:
+
+1. Principles
+2. Proposals
+3. Predictions
+4. Evidence
+
+## Supporting Principles
+
+- `CC-PRIN-17`
+- `CC-PRIN-10`
+
+## Linked Predictions
+
+- `CC-PRED-001` (see `data/project/prediction_ledger.json`)
+- `CC-PRED-009` (see `data/project/prediction_ledger.json`)
+- `CC-PRED-010` (see `data/project/prediction_ledger.json`)
 
 ## Research Requirements
 
-- [ ] Identify primary claims that will require sources
-- [ ] Distinguish established facts from working hypotheses
-- [ ] Note constitutional, legal, and economic open questions
-- [ ] Record related chapters for continuity
+- [ ] Historical reform failures
+- [ ] Capital mobility responses
+- [ ] Regulatory burden studies
 
-## Editorial Note
+## Dependencies
 
-Do not present this page publicly as finished content. Public status remains `hidden` until substantive drafting and review standards are met.
+- `docs/architecture/TRANSITION_AND_TESTING_ARCHITECTURE.md`
+- `data/project/transition_scenarios.json`
+- `data/project/national_impact_assessments.json`
+- Declaration: `content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md`
+
+## Target Reader Outcome
+
+Reader sees intellectual honesty as a constitutional virtue.

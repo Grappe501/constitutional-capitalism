@@ -62,3 +62,14 @@ Steve (owner) · ChatGPT (mission design / review) · Cursor (implementation)
 
 Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `docs/handoffs/`.
 
+## Current direction (post–Phase 1)
+
+- Phase 1 declaration complete; next slice: `CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0`
+- **Organizing frame:** where power should reside in a constitutional republic (economics is the first arena)
+- Proposed sacred sentence / first principle / subsidiarity / Stewardship pillar: see `docs/architecture/CIVILIZATIONAL_CORE.md` (`CC-DEC-034`–`042`)
+- Living website is the intended primary medium; book is the Introduction (`CC-DEC-035`)
+- Three parallel books remain content streams (`CC-DEC-030`)
+- Phase 2 builds **evidence + National Baseline**, not research notes alone
+- Canonical definition/title/subtitle unchanged unless Steve explicitly amends
+- Do not invent sources or baseline values; do not lock tax/ownership redesign as finished policy; do not inflate modeling/legal/source-verification progress
+

@@ -68,33 +68,40 @@
         "pnpm gate passed"
       ],
       "status": "completed",
-      "next_recommended_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
+      "next_recommended_slice": "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0"
     },
     {
-      "slice_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
-      "title": "Diagnosis Research Foundation",
-      "purpose": "Begin source-backed diagnosis of wages/productivity, concentration, financialization, monopoly, local decline, corporate power, internet commerce, globalization, and taxation of labor and capital.",
+      "slice_id": "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0",
+      "title": "Evidence and National Baseline",
+      "purpose": "Begin building evidence (not merely collecting research notes): populate National Baseline indicator sources, upgrade claim-ledger support with supporting and opposing research, seed Evidence Companion dossiers, and connect chapter success metrics to dashboard indicators. Diagnosis domains (wages/productivity, concentration, financialization, monopoly, local decline, corporate power, internet commerce, globalization, labor/capital taxation) proceed inside this measurability frame.",
       "prerequisites": [
         "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0"
       ],
       "allowed_paths": [
         "content/research/**",
+        "content/evidence-companion/**",
+        "content/implementation-manual/**",
         "data/research/**",
         "data/project/**",
+        "data/metrics/**",
         "apps/**",
         "reports/**",
-        "docs/**"
+        "docs/**",
+        "schemas/**"
       ],
       "forbidden_paths": [],
       "required_outputs": [
-        "sourced research registers",
-        "claim support upgrades"
+        "national_baseline indicators with real source IDs (subset)",
+        "claim support upgrades with opposing evidence noted",
+        "Evidence Companion dossiers for priority claims",
+        "chapter evaluation stubs linked to baseline indicators"
       ],
       "validation_commands": [
         "pnpm gate"
       ],
       "completion_evidence": [],
       "status": "queued",
+      "supersedes_slice_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
       "next_recommended_slice": null
     }
   ]

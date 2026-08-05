@@ -1,7 +1,26 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
 import ProgressBar from "../components/ProgressBar.astro";
-import { articles, principles, snapshot, openQuestions } from "../lib/data";
+import {
+  articles,
+  principles,
+  snapshot,
+  openQuestions,
+  transitionScenarios,
+  predictions,
+  impactAssessments,
+  threeBooks,
+  nationalBaseline,
+  ccTest,
+  chapterEvaluationTemplate,
+  civilizationalCore,
+  websiteIa,
+} from "../lib/data";
+
+const baselineIndicatorCount = (nationalBaseline.domains || []).reduce(
+  (sum: number, d: any) => sum + (d.indicators?.length ?? 0),
+  0
+);
 
 const constitutionalQs = openQuestions.questions.filter(
   (q: any) =>
@@ -15,6 +34,33 @@ const constitutionalQs = openQuestions.questions.filter(
   <p class="page-lede">
     Philosophy precedes enforceable law. The Declaration is the spine; Articles remain emerging architecture.
   </p>
+
+  <section class="panel" style="margin-bottom:1rem;">
+    <h2>Civilizational core (proposed)</h2>
+    <p class="notice">
+      Organizing frame: constitutional power — economics is the first arena. Canonical definition
+      unchanged until Steve approves amendment.
+    </p>
+    <blockquote style="margin:0.75rem 0; font-size:1.1rem;">
+      {civilizationalCore.sacred_sentence?.text}
+    </blockquote>
+    <ul class="list-plain">
+      <li>First principle: {civilizationalCore.first_principle?.text}</li>
+      <li>Dignity guardrail: {civilizationalCore.first_principle?.dignity_guardrail}</li>
+      <li>Organizing principle: {civilizationalCore.organizing_principle?.text}</li>
+      <li>
+        Pillars: {(civilizationalCore.pillars || []).map((p: any) => p.name).join(" · ")}
+      </li>
+      <li>Emotional center: {civilizationalCore.emotional_center}</li>
+      <li>
+        Living medium: {websiteIa.project_name} — book role: {websiteIa.book_role?.title}
+      </li>
+      <li>
+        Domain nodes: {websiteIa.domain_tree?.length ?? 0} · Life paths:{" "}
+        {websiteIa.life_path_tree?.length ?? 0}
+      </li>
+    </ul>
+  </section>
 
   <section class="panel" style="margin-bottom:1rem;">
     <h2>Declaration status</h2>
@@ -58,6 +104,67 @@ const constitutionalQs = openQuestions.questions.filter(
       ))
     }
   </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Three-book architecture</h2>
+    <p class="notice">
+      Public argument, evidence companion, and implementation manual develop in parallel (CC-DEC-030).
+    </p>
+    <ul class="list-plain">
+      {
+        (threeBooks.books || []).map((b: any) => (
+          <li>
+            <code>{b.book_id}</code> — {b.title}
+            {b.subtitle ? ` — ${b.subtitle}` : ""}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Constitutional Capitalism Test</h2>
+    <p class="notice">
+      Proposed policy screen ({ccTest.questions?.length ?? 0} questions). Not ratified law. Open decision CC-DEC-031.
+    </p>
+    <ol>
+      {
+        (ccTest.questions || []).map((q: any) => (
+          <li>
+            <code>{q.question_id}</code> — {q.text}
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>National Baseline / Dashboard</h2>
+    <p class="notice">
+      Structure only — no fabricated values. Guiding question drives Phase 2 evidence work (CC-DEC-033).
+    </p>
+    <p>{nationalBaseline.guiding_question}</p>
+    <ul class="list-plain">
+      <li>Domains: {nationalBaseline.domains?.length ?? 0}</li>
+      <li>Indicators (slots): {baselineIndicatorCount}</li>
+      <li>Status: {nationalBaseline.status}</li>
+      <li>Chapter evaluation sections: {chapterEvaluationTemplate.sections?.length ?? 0} (CC-DEC-032)</li>
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Transition & testing architecture</h2>
+    <p class="notice">
+      Predictions are not evidence. See argument-layer standard and transition architecture docs.
+    </p>
+    <ul class="list-plain">
+      <li>Scenarios: {transitionScenarios.scenarios?.length ?? 0}</li>
+      <li>Predictions logged: {predictions.predictions?.length ?? 0}</li>
+      <li>National impact assessment domains: {impactAssessments.assessments?.length ?? 0}</li>
+      <li>Organizing hypothesis: ownership-based middle class (open decision CC-DEC-026)</li>
+      <li>Institute proposal: open decision CC-DEC-028</li>
+    </ul>
+  </section>
 
   <section class="panel" style="margin-top:1rem;">
     <h2>Unresolved constitutional questions</h2>

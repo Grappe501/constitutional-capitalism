@@ -1,0 +1,89 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "proposed",
+  "decision_id": "CC-DEC-031",
+  "title": "Constitutional Capitalism Test",
+  "purpose": "Standard screen applied before accepting any proposed law, regulation, tax, subsidy, or reform into the framework.",
+  "applies_to": [
+    "law",
+    "regulation",
+    "tax",
+    "subsidy",
+    "reform",
+    "policy_proposal"
+  ],
+  "questions": [
+    {
+      "question_id": "CC-TEST-01",
+      "number": 1,
+      "text": "Does it expand or reduce individual liberty?",
+      "axis": "liberty",
+      "preferred_direction": "expand"
+    },
+    {
+      "question_id": "CC-TEST-02",
+      "number": 2,
+      "text": "Does it broaden or concentrate ownership?",
+      "axis": "ownership",
+      "preferred_direction": "broaden"
+    },
+    {
+      "question_id": "CC-TEST-03",
+      "number": 3,
+      "text": "Does it increase or reduce competition?",
+      "axis": "competition",
+      "preferred_direction": "increase"
+    },
+    {
+      "question_id": "CC-TEST-04",
+      "number": 4,
+      "text": "Does it strengthen or weaken communities?",
+      "axis": "communities",
+      "preferred_direction": "strengthen"
+    },
+    {
+      "question_id": "CC-TEST-05",
+      "number": 5,
+      "text": "Does it reward productive value creation?",
+      "axis": "productive_value",
+      "preferred_direction": "reward"
+    },
+    {
+      "question_id": "CC-TEST-06",
+      "number": 6,
+      "text": "Does it increase or reduce dependency?",
+      "axis": "dependency",
+      "preferred_direction": "reduce"
+    },
+    {
+      "question_id": "CC-TEST-07",
+      "number": 7,
+      "text": "Does it make the next generation more prosperous?",
+      "axis": "next_generation",
+      "preferred_direction": "more_prosperous"
+    },
+    {
+      "question_id": "CC-TEST-08",
+      "number": 8,
+      "text": "Does it preserve constitutional limits on power?",
+      "axis": "constitutional_limits",
+      "preferred_direction": "preserve"
+    },
+    {
+      "question_id": "CC-TEST-09",
+      "number": 9,
+      "text": "Does it improve transparency and accountability?",
+      "axis": "transparency_accountability",
+      "preferred_direction": "improve"
+    },
+    {
+      "question_id": "CC-TEST-10",
+      "number": 10,
+      "text": "Is there a measurable way to determine whether it worked?",
+      "axis": "measurability",
+      "preferred_direction": "measurable",
+      "links_to": ["national_baseline", "pilot_metrics"]
+    }
+  ]
+}
