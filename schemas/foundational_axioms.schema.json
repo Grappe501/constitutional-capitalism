@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/foundational_axioms.schema.json",
+  "title": "FoundationalAxioms",
+  "type": "object",
+  "required": [
+    "version",
+    "decision_id",
+    "status",
+    "title",
+    "first_principle",
+    "axioms",
+    "derivation_rule",
+    "declaration_rule"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "decision_id": { "type": "string" },
+    "status": { "type": "string" },
+    "title": { "type": "string" },
+    "first_principle": {
+      "type": "object",
+      "required": ["text"]
+    },
+    "axioms": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "derivation_rule": { "type": "object", "required": ["text"] },
+    "declaration_rule": { "type": "object", "required": ["text"] }
+  }
+}

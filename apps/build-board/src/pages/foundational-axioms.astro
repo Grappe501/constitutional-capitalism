@@ -1,0 +1,82 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import ax from "../../../../data/project/foundational_axioms.json";
+
+const axioms = ax.axioms || [];
+const components = ax.component_maturity_estimate?.components || [];
+---
+
+<BoardLayout title="Foundational Axioms" path="/foundational-axioms/">
+  <h1 class="page-title">{ax.title}</h1>
+  <p class="page-lede">
+    Decision: <code>{ax.decision_id}</code>. Status: <code>{ax.status}</code>. Distillation only —
+    no new CC-PRIN-* ID. Does not rewrite the Declaration.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{axioms.length}</div>
+      <div class="stat__label">Foundational axioms</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{ax.first_principle.maturity_estimate_percent}%</div>
+      <div class="stat__label">First Principle maturity (est.)</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">No</div>
+      <div class="stat__label">New principle minted?</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Diagnosis</h2>
+    <p>{ax.foundational_philosophy_diagnosis.layer_percent_note}</p>
+    <blockquote>
+      <p>{ax.first_principle.text}</p>
+    </blockquote>
+    <p>{ax.derivation_rule.text}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Ten axioms</h2>
+    <ol>
+      {axioms.map((a: any) => (
+        <li>
+          <strong>{a.title}</strong> — {a.text}
+          <span class="muted"> (est. {a.maturity_estimate_percent}%)</span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Component maturity estimates</h2>
+    <p class="muted">{ax.component_maturity_estimate.note}</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Completion</th>
+        </tr>
+      </thead>
+      <tbody>
+        {components.map((c: any) => (
+          <tr>
+            <td>{c.component}</td>
+            <td>{c.completion_percent}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p>{ax.component_maturity_estimate.synthesis}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Related</h2>
+    <p>
+      <a href="/proof-incubator/">Proof Incubator</a>, <a href="/phase-2-gate/">Phase 2 Gate</a>,{" "}
+      <a href="/declaration/">Declaration</a> (book).
+    </p>
+    <p class="muted">{ax.declaration_rule.text}</p>
+  </section>
+</BoardLayout>

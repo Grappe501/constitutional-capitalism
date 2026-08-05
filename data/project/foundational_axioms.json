@@ -1,0 +1,213 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-095",
+  "related_decision_ids": ["CC-DEC-093", "CC-DEC-094", "CC-DEC-039", "CC-DEC-034"],
+  "status": "proposed_distillation",
+  "title": "The Ten Foundational Axioms of Constitutional Capitalism",
+  "purpose": "Distill a conceptually rich philosophy into a coherent operating doctrine. Every principle, policy, and constitutional proposal should be traceable to one or more axioms. This is philosophy integration — not another policy domain and not a new CC-PRIN-* ID.",
+  "foundational_philosophy_diagnosis": {
+    "layer_percent_note": "Progress snapshots currently report Foundational Philosophy around 82% (capped). That remaining share is not a call for more domain ideas — it is a call to integrate, bound, and operationalize the philosophy already built.",
+    "remaining_work_is": [
+      "integration",
+      "bounding",
+      "operationalization",
+      "traceability from applications back to axioms"
+    ],
+    "remaining_work_is_not": [
+      "more agriculture/healthcare/energy/retirement/transportation/housing domains",
+      "minting CC-PRIN-48+ for architectural appeal"
+    ]
+  },
+  "derivation_rule": {
+    "text": "If a doctrine item cannot be derived from the First Principle and one or more Foundational Axioms, it should be questioned — and routed to the Architecture Incubator rather than treated as settled philosophy.",
+    "freeze_compliance": "No new principle ID. Axioms organize existing philosophy under CC-DEC-093/094 discipline."
+  },
+  "first_principle": {
+    "id": "CC-AXIOM-00",
+    "title": "First Principle",
+    "text": "The purpose of a free society is to maximize the ability of every person and every community to build, share, and sustain prosperity through liberty, responsibility, opportunity, and voluntary cooperation.",
+    "related_existing": [
+      {
+        "id": "book_identity.central_belief",
+        "text": "The purpose of an economy is not merely to create wealth, but to create a prosperous, free, and self-governing people."
+      },
+      {
+        "id": "civilizational_core.first_principle",
+        "text": "The people are the nation's greatest source of productive capacity, creativity, innovation, and self-government."
+      },
+      {
+        "id": "civilizational_core.sacred_sentence",
+        "text": "Power should always flow toward the people, never permanently away from them."
+      }
+    ],
+    "rule": "Everything else — education, healthcare, retirement, farming, local ownership, civic service — should be traceable back to this First Principle. Existing Declaration and civilizational texts are not rewritten by this distillation; they are organized under it.",
+    "maturity_estimate_percent": 60
+  },
+  "axioms": [
+    {
+      "id": "CC-AXIOM-01",
+      "title": "Definition of Prosperity",
+      "text": "Prosperity is the durable capacity of persons and communities to live with financial security, health of body and mind, strong families, educational opportunity, community trust, property and enterprise ownership, civic participation, environmental stewardship, freedom and dignity, and generational mobility.",
+      "includes": [
+        "Financial security",
+        "Physical health",
+        "Mental well-being",
+        "Strong families",
+        "Educational opportunity",
+        "Community trust",
+        "Property ownership",
+        "Entrepreneurship",
+        "Civic participation",
+        "Environmental stewardship",
+        "Freedom and dignity",
+        "Generational mobility"
+      ],
+      "is_not": [
+        "Consumption alone",
+        "GDP alone",
+        "Government spending alone",
+        "Wealth concentration alone"
+      ],
+      "why": "Without a formal definition, later policies risk pulling in different directions.",
+      "maturity_estimate_percent": 70
+    },
+    {
+      "id": "CC-AXIOM-02",
+      "title": "Role of Government",
+      "text": "Government exists to establish the rules, infrastructure, and institutions that allow free people and free communities to flourish while protecting liberty, justice, and fair competition.",
+      "is_not": [
+        "Big government as an end",
+        "Small government as an end"
+      ],
+      "why": "Provides a consistent lens for evaluating proposals without ideology of size alone.",
+      "maturity_estimate_percent": 80
+    },
+    {
+      "id": "CC-AXIOM-03",
+      "title": "Role of Markets",
+      "text": "Competitive markets are the preferred mechanism for allocating most goods and services, provided they operate under transparent rules, protect competition, and do not permit the concentration of power that undermines liberty or equal opportunity.",
+      "framing": "Markets are neither inherently virtuous nor inherently harmful. They are tools.",
+      "why": "Connects market preference to constitutional principles rather than ideology.",
+      "maturity_estimate_percent": 85
+    },
+    {
+      "id": "CC-AXIOM-04",
+      "title": "Theory of Ownership",
+      "text": "Ownership — personal, family, employee, cooperative, community, and public where appropriate — creates responsibility, accountability, and long-term investment in the success of people and places.",
+      "forms": [
+        "Personal ownership",
+        "Family ownership",
+        "Employee ownership",
+        "Cooperative ownership",
+        "Community ownership",
+        "Public ownership (where appropriate)"
+      ],
+      "why": "Unifies farms, cooperatives, community investment, and retirement under one philosophical account of why ownership matters.",
+      "maturity_estimate_percent": 75
+    },
+    {
+      "id": "CC-AXIOM-05",
+      "title": "Intergenerational Responsibility",
+      "text": "Every generation should leave its communities, institutions, natural resources, and public finances stronger than it inherited them.",
+      "grounds": [
+        "infrastructure",
+        "debt discipline",
+        "environmental stewardship",
+        "education",
+        "succession planning"
+      ],
+      "maturity_estimate_percent": 70
+    },
+    {
+      "id": "CC-AXIOM-06",
+      "title": "Philosophy of Community",
+      "text": "Communities are the primary institutions through which people develop trust, relationships, mutual aid, identity, and shared prosperity.",
+      "grounds": [
+        "local governance",
+        "volunteerism",
+        "civic wealth",
+        "place-based investment"
+      ],
+      "maturity_estimate_percent": 80
+    },
+    {
+      "id": "CC-AXIOM-07",
+      "title": "Liberty and Shared Responsibility",
+      "text": "Liberty is essential; responsibility gives liberty meaning; communities thrive when people voluntarily contribute to institutions that benefit everyone.",
+      "balance": {
+        "liberty": "essential",
+        "responsibility": "gives liberty meaning",
+        "voluntary_contribution": "encouraged without making civic service or local investment compulsory"
+      },
+      "maturity_estimate_percent": 85
+    },
+    {
+      "id": "CC-AXIOM-08",
+      "title": "Philosophy of Human Capital",
+      "text": "People are the nation's greatest productive asset. Investment in people is not consumption; it is productive capital formation.",
+      "grounds": [
+        "education",
+        "workforce development",
+        "health",
+        "civic engagement",
+        "military and public service",
+        "farming and entrepreneurship",
+        "teaching"
+      ],
+      "related_existing": "civilizational_core.first_principle and human_capital_framework",
+      "dignity_guardrail": "A person is never merely a resource. People are citizens with inherent dignity and rights.",
+      "maturity_estimate_percent": 80
+    },
+    {
+      "id": "CC-AXIOM-09",
+      "title": "Ethical Guardrails",
+      "text": "Constitutional Capitalism will not compromise equal dignity, the rule of law, due process, freedom of speech and conscience, private property, democratic accountability, transparency, anti-corruption, or competition over favoritism.",
+      "never_compromise": [
+        "Equal dignity of every person",
+        "Rule of law",
+        "Due process",
+        "Freedom of speech",
+        "Freedom of conscience",
+        "Private property",
+        "Democratic accountability",
+        "Transparency",
+        "Anti-corruption",
+        "Competition over favoritism"
+      ],
+      "why": "These are not policies — they are guardrails that constrain every future proposal.",
+      "maturity_estimate_percent": 75
+    },
+    {
+      "id": "CC-AXIOM-10",
+      "title": "Traceability and Operational Coherence",
+      "text": "Applications of Constitutional Capitalism — education, healthcare, energy, retirement, farming, ownership, resilience — must remain derivable from the First Principle and Axioms 1–9. Philosophy becomes simpler and more coherent by distillation, not by adding domains.",
+      "why": "Makes the remaining foundational-philosophy work about integration rather than expansion.",
+      "maturity_estimate_percent": 55
+    }
+  ],
+  "component_maturity_estimate": {
+    "note": "Honest working estimates of distillation maturity — not Phase 2 proof scores and not a claim that Foundational Philosophy is finished.",
+    "components": [
+      { "component": "First Principle", "completion_percent": 60 },
+      { "component": "Definition of Prosperity", "completion_percent": 70 },
+      { "component": "Role of Government", "completion_percent": 80 },
+      { "component": "Role of Markets", "completion_percent": 85 },
+      { "component": "Theory of Ownership", "completion_percent": 75 },
+      { "component": "Community Philosophy", "completion_percent": 80 },
+      { "component": "Intergenerational Responsibility", "completion_percent": 70 },
+      { "component": "Liberty & Responsibility", "completion_percent": 85 },
+      { "component": "Human Capital Philosophy", "completion_percent": 80 },
+      { "component": "Ethical Guardrails", "completion_percent": 75 }
+    ],
+    "synthesis": "Conceptually rich but not yet fully distilled into a coherent operating doctrine."
+  },
+  "declaration_rule": {
+    "text": "Do not silently rewrite the Declaration. Axioms organize and bound philosophy for operational use; any Declaration amendment requires explicit Steve approval."
+  },
+  "website_node_id": "CC-WEB-FOUNDATIONAL-AXIOMS",
+  "paths": {
+    "book": "/foundational-axioms/",
+    "board": "/foundational-axioms/"
+  }
+}
