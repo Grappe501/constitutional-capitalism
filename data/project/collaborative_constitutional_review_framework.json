@@ -332,22 +332,26 @@
     }
   },
   "expertise_domains": {
-    "title": "Declared areas of expertise",
-    "rule": "Every review records the reviewer's declared expertise domain(s) and the review type.",
+    "title": "Primary Expertise (disciplinary — not political identity)",
+    "rule": "Reviewers register by discipline and professional background; optional analytical frameworks. Not partisan labels.",
     "domains": [
-      "Constitutional law",
       "Economics",
-      "Municipal finance",
+      "Constitutional Law",
+      "Political Science",
+      "Public Administration",
+      "Grassroots Organizing",
       "Agriculture",
       "Healthcare",
-      "Energy",
-      "Public administration",
+      "Municipal Finance",
       "Education",
-      "Emergency management",
-      "Tax policy",
-      "Retirement systems",
-      "Environmental science",
-      "History"
+      "Emergency Management",
+      "Energy",
+      "Environmental Science",
+      "Tax Policy",
+      "Behavioral Psychology",
+      "Systems Engineering",
+      "History",
+      "Retirement Systems"
     ]
   },
   "review_types": [
@@ -520,6 +524,146 @@
     "update_id": "UPD-058",
     "file": "data/project/reviewers_charter.json",
     "public_text": "content/research/REVIEWERS_CHARTER.md",
-    "rule": "Deferred charter for first scholarly collaborators. Objective: intellectual seriousness, not conviction. Does not activate Phase 8."
+    "rule": "Deferred charter for first scholarly collaborators. Objective: intellectual seriousness, not conviction. Does not activate Phase 8.",
+    "refined_as_update": "UPD-059",
+    "culture": {
+      "invitation_is": "Help us make this stronger.",
+      "invitation_is_not": "Help us prove we're right.",
+      "note": "Serious scholars appreciate being invited to improve a framework rather than endorse it."
+    }
+  },
+  "professional_backgrounds": [
+    "Academic",
+    "Practitioner",
+    "Public Official",
+    "Business Leader",
+    "Nonprofit Leader",
+    "Community Organizer",
+    "Researcher",
+    "Attorney",
+    "Student"
+  ],
+  "analytical_perspectives_optional": [
+    "Austrian economics",
+    "Keynesian economics",
+    "Public choice economics",
+    "Institutional economics",
+    "Cooperative economics",
+    "Libertarian philosophy",
+    "Progressive public policy",
+    "Conservative constitutionalism",
+    "Systems thinking",
+    "Behavioral economics"
+  ],
+  "registration_model": {
+    "rule": "Register by disciplinary perspective and optionally by analytical framework — not by political identity labels (e.g., libertarian, conservative, progressive as registration categories).",
+    "forbids": [
+      "political identity as primary registration",
+      "partisan labels as required profile fields",
+      "reducing reviewers to ideology tags"
+    ],
+    "primary_expertise": [
+      "Economics",
+      "Constitutional Law",
+      "Political Science",
+      "Public Administration",
+      "Grassroots Organizing",
+      "Agriculture",
+      "Healthcare",
+      "Municipal Finance",
+      "Education",
+      "Emergency Management",
+      "Energy",
+      "Environmental Science",
+      "Tax Policy",
+      "Behavioral Psychology",
+      "Systems Engineering",
+      "History",
+      "Retirement Systems"
+    ],
+    "professional_background": [
+      "Academic",
+      "Practitioner",
+      "Public Official",
+      "Business Leader",
+      "Nonprofit Leader",
+      "Community Organizer",
+      "Researcher",
+      "Attorney",
+      "Student"
+    ],
+    "analytical_perspectives_optional": {
+      "title": "Analytical Perspectives (optional)",
+      "purpose": "Allow AI and future readers to understand the lens of a review without reducing reviewers to partisan labels.",
+      "options": [
+        "Austrian economics",
+        "Keynesian economics",
+        "Public choice economics",
+        "Institutional economics",
+        "Cooperative economics",
+        "Libertarian philosophy",
+        "Progressive public policy",
+        "Conservative constitutionalism",
+        "Systems thinking",
+        "Behavioral economics"
+      ]
+    }
+  },
+  "multi_perspective_review": {
+    "title": "Multi-perspective review",
+    "rule": "Far more valuable than 100 general comments: the same doctrine reviewed by distinct professional perspectives.",
+    "example_panel": [
+      "economist",
+      "constitutional lawyer",
+      "grassroots organizer",
+      "mayor",
+      "farmer",
+      "municipal finance expert",
+      "implementation practitioner"
+    ]
+  },
+  "coverage_dashboard": {
+    "title": "Reviewer coverage dashboards (much later)",
+    "objective": "Show coverage, not agreement.",
+    "example_columns": [
+      "Discipline",
+      "Reviewed %",
+      "Confidence"
+    ],
+    "note": "Ensure major disciplines have meaningfully engaged relevant parts of the framework — not unanimous agreement."
+  },
+  "founding_steward": {
+    "update_id": "UPD-059",
+    "role_title": "Founding Steward",
+    "not": "author as sole identity during Beta",
+    "holder": "Steve",
+    "beta_rule": "Founding Steward is the BETA collaborator and goes through the entire build before anyone else.",
+    "responsibilities": [
+      "testing every workflow",
+      "reviewing every proof packet",
+      "checking every review artifact",
+      "exercising every governance path",
+      "validating every decision ledger",
+      "finding ambiguity",
+      "identifying missing connections",
+      "ensuring the system behaves as designed"
+    ],
+    "software_analogy": "First end-to-end user of the governance system",
+    "beta_simulation": {
+      "rule": "During Beta, do not review only as yourself. Intentionally adopt different roles and ask: What would this reviewer object to?",
+      "roles": [
+        "Economist",
+        "Constitutional lawyer",
+        "Skeptical legislator",
+        "Grassroots organizer",
+        "County judge",
+        "Farmer",
+        "Community college instructor",
+        "Mayor",
+        "Municipal finance expert",
+        "Implementation practitioner"
+      ],
+      "precursor_to": "Phase 9 Red Team Mode (manual precursor)"
+    }
   }
 }
