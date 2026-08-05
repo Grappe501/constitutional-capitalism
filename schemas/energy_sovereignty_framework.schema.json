@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/energy_sovereignty_framework.schema.json",
+  "title": "EnergySovereigntyFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "governing_principle",
+    "memorable_principle",
+    "priority_sequence",
+    "sovereignty_not_autarky",
+    "american_energy_and_resilience_corporation",
+    "national_energy_prosperity_fund",
+    "domestic_prosperity_test",
+    "guardrails",
+    "energy_sovereignty_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "governing_principle": { "type": "object", "required": ["text"] },
+    "memorable_principle": { "type": "object", "required": ["text"] },
+    "priority_sequence": {
+      "type": "object",
+      "required": ["order", "principle"]
+    },
+    "sovereignty_not_autarky": {
+      "type": "object",
+      "required": ["definition"]
+    },
+    "american_energy_and_resilience_corporation": {
+      "type": "object",
+      "required": ["summary"]
+    },
+    "national_energy_prosperity_fund": {
+      "type": "object",
+      "required": ["summary", "revenue_sources"]
+    },
+    "domestic_prosperity_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "guardrails": {
+      "type": "object",
+      "required": ["require"]
+    },
+    "energy_sovereignty_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}

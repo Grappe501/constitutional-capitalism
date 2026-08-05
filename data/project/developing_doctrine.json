@@ -2,7 +2,7 @@
   "version": "0.2.4",
   "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Civic Wealth / Constitutional Service Investment (CC-PRIN-40), Constitutional Defense / National Resilience (CC-PRIN-39), Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Energy Sovereignty / People’s Energy Dividend (CC-PRIN-41), Civic Wealth / Constitutional Service Investment (CC-PRIN-40), Constitutional Defense / National Resilience (CC-PRIN-39), Citizen-Service Government (CC-PRIN-37/38), Citizen Public Service / anti-aristocracy (CC-PRIN-37), Popular Sovereignty / People’s Branch (CC-PRIN-36), Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -964,6 +964,61 @@
         "CC-DEV-208"
       ],
       "note": "Principle CC-PRIN-40; signature investment framing; architecture only; modeling 0%."
+    },
+    {
+      "cluster_id": "CC-DCC-26",
+      "title": "Energy Sovereignty and the People’s Energy Dividend",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture_with_sourced_eia_baselines",
+      "affected_domains": [
+        "energy",
+        "sovereign_wealth",
+        "community_dividends",
+        "national_debt",
+        "resource_sovereignty",
+        "exports"
+      ],
+      "constitutional_questions": [
+        "How does a republic secure energy against foreign coercion without autarky?",
+        "How do the people receive durable returns from strategic energy assets without nationalizing the whole industry?",
+        "How are export profits protected from election-year political raids?"
+      ],
+      "implementation_level": [
+        "constitutional_design",
+        "federal",
+        "state",
+        "local"
+      ],
+      "risks": [
+        "export-driven domestic scarcity or price spikes",
+        "political raiding of energy funds",
+        "treating illustrative allocation percentages as locked law",
+        "conflating EIA production facts with proof that public-return institutions already exist"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": [
+        "CC-DEV-209",
+        "CC-DEV-210",
+        "CC-DEV-211",
+        "CC-DEV-212",
+        "CC-DEV-213",
+        "CC-DEV-214",
+        "CC-DEV-215",
+        "CC-DEV-216",
+        "CC-DEV-217",
+        "CC-DEV-218",
+        "CC-DEV-219",
+        "CC-DEV-220",
+        "CC-DEV-221",
+        "CC-DEV-222",
+        "CC-DEV-223",
+        "CC-DEV-224",
+        "CC-DEV-225",
+        "CC-DEV-226",
+        "CC-DEV-227",
+        "CC-DEV-228"
+      ],
+      "note": "Principle CC-PRIN-41; EIA/DOE baselines sourced; fund modeling 0%; legal 0%."
     }
   ],
   "items": [
@@ -6048,6 +6103,526 @@
       "status": "open",
       "related_decision_ids": [
         "CC-DEC-085"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-209",
+      "statement": "Energy Sovereignty Doctrine: The nation should produce enough reliable, affordable energy to meet essential needs, protect itself from foreign coercion, strengthen every community, and export genuine surplus so part of the resulting wealth flows permanently into public and community ownership. Energy is both an essential public foundation and a strategic national asset.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-41"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-210",
+      "statement": "Energy priority sequence: (1) essential household energy; (2) community and public-service reliability; (3) domestic industrial and national-security needs; (4) strategic reserves and emergency capacity; (5) affordable surplus for growth; (6) exports of genuine surplus. Principle: Serve the people first. Strengthen the nation second. Export the surplus third.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-211",
+      "statement": "Sovereignty, not autarky: America may still import certain crude grades, fuels, equipment, uranium, batteries, and critical minerals. True independence means diverse domestic production, reserves, manufacturing, transmission, and technical capacity such that no foreign power can seriously threaten essential energy supply or dictate national policy.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-212",
+      "statement": "Diversified national energy system — oil and gas in managed transition, nuclear, solar, wind, hydro, geothermal, sustainable biomass/RNG, storage, microgrids, efficiency, advanced transmission, and proven hydrogen/synthetics. Not fossil-vs-renewable ideology; engineering for reliability, full cost, domestic supply chain, and public benefit.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-213",
+      "statement": "American Energy and Resilience Corporation: constitutionally chartered public institution holding the people’s financial interest in nationally significant energy assets — co-investment, royalties, public equity, community energy finance, reserves, export returns — independently managed, audited, nonpartisan, visible in the People’s Ledger. Does not nationalize the whole industry.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-214",
+      "statement": "National Energy Prosperity Fund: permanent sovereign wealth fund receiving export royalties, public equity dividends, mineral/offshore leases, transmission and export-facility participation, carbon/pollution charges, excess-resource fees, public patents/tech, damage penalties, and public-asset profits. Principal generally remains invested.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-215",
+      "statement": "Illustrative Prosperity Fund distributable allocation (design parameters requiring modeling — not locked law): ~30% national debt reduction; ~25% community energy/infrastructure; ~20% household affordability; ~15% future generations/citizen ownership; ~10% environmental restoration and resilience.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-216",
+      "statement": "Debt first, then community prosperity: during debt-reduction era prioritize deficits, expensive debt retirement, strategic reserves, and energy modernization; as burdens decline, shift toward community wealth funds, household energy dividends, transit, broadband, rural academies, food systems, homeownership, and citizen investment accounts. Promise: use energy abundance first to restore solvency, then convert it into permanent local ownership and human prosperity.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-217",
+      "statement": "Community Energy Dividends: communities hosting pipelines, transmission, mines, refineries, generation, LNG, storage, renewables, nuclear, ports, or substations receive household bill reductions, local equity, community wealth funds, infrastructure, restoration, workforce academies, emergency preparedness, and closure funds — wealth must not almost entirely leave the place that bears the burden.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-218",
+      "statement": "Export multiple energy forms: fuels plus electricity, safeguarded nuclear tech, grid tech, batteries, energy-management systems, engineering, carbon-removal services, advanced manufacturing, clean-energy IP, and training — long-term wealth favors exporting equipment, technology, engineering, and ownership, not commodities alone.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-219",
+      "statement": "Domestic Prosperity Test for every major export expansion: household prices; domestic grid/pipeline capacity; who pays for infrastructure; public return; community burden; industrial competitiveness; emergency behavior; temporary export reduction authority; permanent public wealth; fully funded environmental and closure costs. Exports conditioned on affordable domestic service.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-220",
+      "statement": "Strategic export agreements prioritize allies, countries reducing hostile-supplier dependence, developing nations building reliable infrastructure, transparent lawful buyers, and reciprocal manufacturing/trade — with transparency, anti-corruption, security, labor, environment, public revenue, and domestic emergency clauses. Avoid dependence on unstable authoritarian buyers.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-221",
+      "statement": "Community-owned production stack: household/building efficiency → community generation/storage → regional grids → national transmission/reserves → export infrastructure → National Energy Prosperity Fund → debt reduction and community dividends. Local systems stay grid-connected while reducing price-shock exposure and keeping spending local.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-222",
+      "statement": "Guardrails against extraction politics: independent professional management; beneficial-ownership disclosure; competitive bidding; public contracts; real-time revenue reporting; independent audits; conflict restrictions; prohibition on political withdrawals; constitutional/statutory spending formulas; citizen oversight; environmental bonding; transparent price assumptions. No donor-directed fund investments.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-223",
+      "statement": "Environmental responsibility: every project pays full costs for water, pollution, methane, carbon, land disturbance, roads, decommissioning, waste, public health, and restoration. High-carbon exports help finance regenerative agriculture, carbon removal, reforestation, soil restoration, methane reduction, clean manufacturing, and next-generation energy. Abundance with stewardship.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-224",
+      "statement": "Memorable operational principle: Power America first. Strengthen the free world second. Return the profit to the people.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-41"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-225",
+      "statement": "Preserve private innovation while establishing that the people must receive a durable return from strategic resources, public rights-of-way, publicly supported research, federal waters, mineral access, export permits, and nationally significant infrastructure — current private export value does not automatically create public prosperity.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-226",
+      "statement": "Exports must never create domestic scarcity, destabilize household bills, or force taxpayers to subsidize infrastructure built primarily for foreign sales.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-227",
+      "statement": "Prosperity Fund principal generally remains invested; only a disciplined portion of annual earnings is spent — energy as public fundraising without short-term political spending sprees.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-228",
+      "statement": "Energy Sovereignty Test: screen production, export, fund, and community-return designs for people-first sequencing, anti-coercion capacity, durable public return, non-nationalization corporate design, anti-raid fund rules, debt-then-prosperity allocation, host-community dividends, Domestic Prosperity Test passage, full environmental costs, and preserved private innovation.",
+      "origin": "steve_direction_energy_sovereignty_peoples_energy_dividend",
+      "maturity": "proposed",
+      "implications": [
+        "energy_sovereignty"
+      ],
+      "conflicts": [
+        "export-first commodity politics",
+        "full industry nationalization as the only public-return path",
+        "autarky confused with sovereignty",
+        "political raiding of energy wealth funds"
+      ],
+      "research_required": [
+        "Prosperity Fund fiscal modeling (illustrative % not locked)",
+        "American Energy and Resilience Corporation legal charter design",
+        "Domestic Prosperity Test operational metrics"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-086"
       ],
       "phase_destination": "phase-3_and_phase-4"
     }
