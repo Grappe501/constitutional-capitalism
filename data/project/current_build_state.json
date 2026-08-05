@@ -5,10 +5,10 @@
   "phase": "phase-2",
   "status": "phase_2_partial_complete",
   "mission_lock": "data/project/phase2_mission_lock.json",
-  "decision_id": "CC-DEC-064",
+  "decision_id": "CC-DEC-093",
   "forensic_status_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-05.md",
-  "writing_focus": "Proof under forensic-audit governance: three-layer retrofit; eight priority domains; re-audit first 20 claims; baseline beyond wealth; Burt steps 2–6 and 8–10 first",
-  "next_action": "Execute Burt steps 2–6 then 8–10; continue as CC-PHASE-2.1 if gates remain open; do not begin steps 14–25",
+  "writing_focus": "PROOF FIRST under doctrine freeze (CC-DEC-093): Hypothesis Cards / Proof Packets; three-layer retrofit as workflow; Burt steps 2–6 and 8–10; no new principles unless they close a proof gap",
+  "next_action": "Execute Burt step 2 (three-layer retrofit) then 3/4→5→6→8→9→10; park non-proof ideas in architecture_incubator.json; do not mint CC-PRIN-48+; do not begin steps 14–25",
   "living_identity": "data/project/living_project_identity.json",
   "organizing_artifacts": [
     "data/project/systems_map.json",
@@ -26,5 +26,15 @@
     "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0"
   ],
   "parallel_note": "APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION — no public feedback backend on unprotected Build Board",
-  "blockers": []
+  "blockers": [],
+  "related_decision_ids": [
+    "CC-DEC-075",
+    "CC-DEC-064"
+  ],
+  "doctrine_freeze": {
+    "status": "active",
+    "decision_id": "CC-DEC-093",
+    "frozen_principle_count": 47,
+    "incubator_file": "data/project/architecture_incubator.json"
+  }
 }

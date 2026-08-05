@@ -1,0 +1,254 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-093",
+  "related_decision_ids": ["CC-DEC-075", "CC-DEC-064"],
+  "status": "governing",
+  "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
+  "central_diagnosis": "The design space is expanding faster than the evidentiary foundation.",
+  "controlling_shift": "Priority shifts from inventing to proving.",
+  "four_layers_must_not_advance_at_same_speed": [
+    "Ideas (doctrine architecture)",
+    "Evidence (empirical support)",
+    "Models (economic / legal / constitutional mechanisms)",
+    "Claims (manuscript-ready statements)"
+  ],
+  "doctrine_freeze": {
+    "rule": "No new principles unless they solve a missing proof requirement.",
+    "frozen_principle_count": 47,
+    "next_blocked_id": "CC-PRIN-48",
+    "exception_gate": {
+      "must_answer_at_least_one": [
+        "Which Phase 2 gate does this close?",
+        "Which claim does this strengthen?",
+        "Which evidence dossier requires it?",
+        "Which constitutional mechanism depends on it?"
+      ],
+      "if_none": "Route to Architecture Incubator as a Hypothesis Card — do not mint a new principle, decision cluster, or public doctrine surface as if publishable.",
+      "approval": "Exception requires explicit decision record citing the proof gap; cannot be justified by architectural appeal alone."
+    },
+    "strengthen_instead": "Prefer raising confidence on existing principles and closing Burt proof steps over minting new principle IDs.",
+    "readers_reward": "Confidence, not quantity."
+  },
+  "proof_packet": {
+    "definition": "A Proof Packet answers one proposition and, when finished, closes one gate or materially strengthens one claim/dossier.",
+    "required_sections": [
+      "precise claim / proposition",
+      "literature review",
+      "historical examples",
+      "counterarguments",
+      "limitations",
+      "economic evidence",
+      "legal considerations",
+      "constitutional implications",
+      "confidence rating"
+    ],
+    "three_layer_reviews_required_before_doctrine_graduation": [
+      {
+        "layer": 1,
+        "name": "Historical evidence",
+        "questions": [
+          "Has this actually worked?",
+          "Where?",
+          "When?",
+          "How long?"
+        ]
+      },
+      {
+        "layer": 2,
+        "name": "Economic evidence",
+        "questions": [
+          "Can this be modeled?",
+          "Can it scale?",
+          "Who pays?",
+          "Who benefits?",
+          "Who bears the risk?"
+        ]
+      },
+      {
+        "layer": 3,
+        "name": "Constitutional / legal evidence",
+        "questions": [
+          "Could this exist within the Federal Constitution?",
+          "State constitutions?",
+          "Existing statutes?",
+          "Would amendments be needed?",
+          "Would courts likely uphold it?"
+        ]
+      }
+    ],
+    "graduation_rule": "Only after passing all three independent reviews may a Hypothesis Card graduate into publishable Constitutional Capitalism doctrine.",
+    "workflow_note": "The three-layer retrofit (Burt step 2) is not a side checklist — it is the entire doctrine workflow for graduation."
+  },
+  "architecture_candidate_default_status": {
+    "status": "Architecture Candidate",
+    "evidence": "Not Yet Complete",
+    "legal_review": "Pending",
+    "economic_modeling": "Pending",
+    "constitutional_interaction": "Pending",
+    "publishable": false
+  },
+  "biggest_risk": {
+    "text": "The biggest risk is not merely being wrong — it is building a beautiful internally consistent system that outsiders cannot believe because the evidentiary chain is not visible.",
+    "audit_role": "Forensic audit governance exists to prevent that failure mode."
+  },
+  "hypothesis_cards": [
+    {
+      "hypothesis_id": "HYP-111",
+      "title": "Community Prosperity Retirement Accounts",
+      "proposition": "Citizens can hold a fiduciary-capped local investment slice that aligns personal retirement security with community productive investment without imprudent concentration risk.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 18,
+      "related_principle_ids": ["CC-PRIN-45", "CC-PRIN-43"],
+      "related_decision_ids": ["CC-DEC-090", "CC-DEC-088"],
+      "related_framework": "data/project/community_prosperity_framework.json",
+      "public_path": "/community-prosperity/",
+      "evidence_needed": [
+        "Municipal investment literature",
+        "Public pension governance",
+        "Community wealth funds",
+        "Fiduciary law",
+        "Securities regulation",
+        "International comparisons",
+        "Behavioral economics",
+        "Economic simulations",
+        "Constitutional interaction"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "Architecture surfaces may remain for capture; they are not manuscript-ready doctrine."
+    },
+    {
+      "hypothesis_id": "HYP-112",
+      "title": "Local Equity / Community Investment Units",
+      "proposition": "Resident-purchased or participation-earned Community Investment Units can finance productive local infrastructure with returns to citizen-owners under fiduciary boards.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 16,
+      "related_principle_ids": ["CC-PRIN-45"],
+      "related_decision_ids": ["CC-DEC-090"],
+      "related_framework": "data/project/community_prosperity_framework.json",
+      "public_path": "/community-prosperity/",
+      "evidence_needed": [
+        "Municipal securities alternatives literature",
+        "Community development finance institutions",
+        "Fiduciary and securities law",
+        "Project finance case studies",
+        "Risk/return and liquidity design",
+        "Political capture failure modes",
+        "Economic simulations",
+        "Constitutional / home-rule interaction"
+      ],
+      "proof_packet_status": "not_started"
+    },
+    {
+      "hypothesis_id": "HYP-113",
+      "title": "Family Business Continuity and Local Ownership Incentives",
+      "proposition": "Outcome-based incentives (Local Prosperity Scores, succession tools, patient capital) increase durable local wealth without punishing large firms or outside investment.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 20,
+      "related_principle_ids": ["CC-PRIN-47"],
+      "related_decision_ids": ["CC-DEC-092"],
+      "related_framework": "data/project/local_ownership_framework.json",
+      "public_path": "/local-ownership/",
+      "evidence_needed": [
+        "Local multiplier / recirculation studies",
+        "Family-business succession literature",
+        "Tax incentive evaluation studies",
+        "Procurement local-preference evidence and tradeoffs",
+        "Counterexamples where local ownership failed",
+        "Economic modeling of score weights",
+        "Legal review of incentive design",
+        "Constitutional equal-protection / commerce-clause interaction"
+      ],
+      "proof_packet_status": "not_started"
+    },
+    {
+      "hypothesis_id": "HYP-114",
+      "title": "Cooperative Capital and Cooperative Development Centers",
+      "proposition": "Practical cooperative development infrastructure raises worker/member ownership as a scalable option that recirculates value under transparent governance.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 22,
+      "related_principle_ids": ["CC-PRIN-47", "CC-PRIN-44"],
+      "related_decision_ids": ["CC-DEC-092", "CC-DEC-089"],
+      "related_framework": "data/project/local_ownership_framework.json",
+      "public_path": "/local-ownership/",
+      "evidence_needed": [
+        "ESOP / cooperative performance literature",
+        "USDA and international cooperative comparisons",
+        "Conversion financing case studies",
+        "Governance failure modes",
+        "Capital-access constraints evidence",
+        "Economic modeling",
+        "Legal entity and securities considerations",
+        "Constitutional / statutory fit"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "NCEO ESOP and USDA ag-coop baselines are diagnosis context only — not a finished Proof Packet."
+    },
+    {
+      "hypothesis_id": "HYP-115",
+      "title": "Emergency Infrastructure as Prosperity Asset",
+      "proposition": "Treating fire/EMS/public health preparedness as prosperity infrastructure and rewarding measured resilience outcomes improves investment climate and household security.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 24,
+      "related_principle_ids": ["CC-PRIN-46"],
+      "related_decision_ids": ["CC-DEC-091"],
+      "related_framework": "data/project/community_resilience_framework.json",
+      "public_path": "/community-resilience/",
+      "evidence_needed": [
+        "Insurance / PPC premium effect studies",
+        "EMS response and outcome literature",
+        "Disaster mitigation cost-benefit studies",
+        "Volunteer firefighter recruitment interventions",
+        "Rural hospital / EMS continuum evidence",
+        "Safety Dividend fiscal modeling",
+        "Legal authorities for reserves and mutual aid",
+        "Constitutional / federalism interaction"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "ISO PPC and NFPA volunteer baselines are diagnosis context only — not a finished Proof Packet."
+    },
+    {
+      "hypothesis_id": "HYP-116",
+      "title": "Local Food and Family Farm Wealth Engines",
+      "proposition": "Guaranteed institutional local markets, shared Food Utility infrastructure, and stewardship pay can make family farms engines of community wealth without micromanaging production.",
+      "status": "Architectural hypothesis",
+      "publishable": false,
+      "confidence_percent": 19,
+      "related_principle_ids": ["CC-PRIN-44"],
+      "related_decision_ids": ["CC-DEC-089"],
+      "related_framework": "data/project/family_farm_prosperity_framework.json",
+      "public_path": "/family-farm-prosperity/",
+      "evidence_needed": [
+        "Farm-to-institution procurement evaluations",
+        "Food hub / mid-tier processing case studies",
+        "Stewardship payment program evidence",
+        "Land access and succession studies",
+        "Counterarguments on cost, scale, and trade",
+        "Purchase-floor and fund fiscal modeling",
+        "Legal / antitrust and procurement law",
+        "Constitutional / federalism interaction"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "USDA ERS/FNS baselines are diagnosis context only — illustrative purchase floors remain unlocked."
+    }
+  ],
+  "website_node": {
+    "board_path": "/proof-incubator/",
+    "role": "Governing capture surface for Hypothesis Cards — not a public doctrine marketing page"
+  },
+  "operating_commands": {
+    "default_next_work": "Burt steps 2→3/4→5→6→8→9→10 under forensic gate",
+    "do_not": [
+      "Mint CC-PRIN-48+ for architectural appeal",
+      "Treat Architecture Candidate pages as publishable doctrine",
+      "Begin Burt steps 14–25",
+      "Claim modeling or legal progress without actual work",
+      "Inflate overall % as Phase 2 completion"
+    ]
+  }
+}

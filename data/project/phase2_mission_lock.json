@@ -2,7 +2,10 @@
   "version": "0.2.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-075",
-  "related_decision_ids": ["CC-DEC-064"],
+  "related_decision_ids": [
+    "CC-DEC-064",
+    "CC-DEC-093"
+  ],
   "status": "locked",
   "governing_artifacts": {
     "forensic_audit_governance": "data/project/forensic_audit_governance.json",
@@ -50,7 +53,9 @@
     "Do not inflate overall progress",
     "Baseline denominator is 86 — never revive 38-metric narratives",
     "Show 2 of 86 sourced until the actual count changes",
-    "No page may imply Phase 2 completion unless the canonical checklist passes"
+    "No page may imply Phase 2 completion unless the canonical checklist passes",
+    "No new principles unless they solve a missing proof requirement",
+    "Architecture Candidate pages are not publishable doctrine until Proof Packet graduation"
   ],
   "diagnosis_brief_three_layer_rule": {
     "text": "Every diagnosis brief must distinguish three layers: what the data directly establishes, what may reasonably be inferred, and what Constitutional Capitalism normatively concludes.",
@@ -122,14 +127,23 @@
   "system_interdependencies": {
     "file": "data/research/system_interdependencies.json",
     "purpose": "Map cross-domain relationships so research does not invent unsupported causal chains or double-count benefits.",
-    "relationship_classes": ["documented", "plausible", "disputed", "untested"]
+    "relationship_classes": [
+      "documented",
+      "plausible",
+      "disputed",
+      "untested"
+    ]
   },
   "supporting_slices": {
     "public_statistics_bridge": {
       "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
       "supporting_mission": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
       "decision_id": "CC-DEC-076",
-      "related_decision_ids": ["CC-DEC-077", "CC-DEC-078", "CC-DEC-079"],
+      "related_decision_ids": [
+        "CC-DEC-077",
+        "CC-DEC-078",
+        "CC-DEC-079"
+      ],
       "rcip_spine": "data/project/rcip_civic_data_spine.json",
       "status": "spine_partial_awaiting_keys",
       "rule": "RedDirt is the shared civic-data spine (RCIP): ingest/normalize/verify once; multi-source validation; four layers; isolated schemas. CC is first external proof consumer via validated snapshots. Never inherit campaign identity or private records. Baseline rises only when mapped observations validate. Infrastructure alone must not inflate progress."
@@ -149,5 +163,17 @@
     "phase_2_status": "PARTIAL",
     "next_slice_if_partial": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
     "current_risk": "polished surfaces may overstate evidentiary maturity"
+  },
+  "doctrine_freeze": {
+    "decision_id": "CC-DEC-093",
+    "rule": "No new principles unless they solve a missing proof requirement.",
+    "frozen_principle_count": 47,
+    "incubator_file": "data/project/architecture_incubator.json",
+    "architecture_candidates_not_publishable": [
+      "CC-PRIN-44",
+      "CC-PRIN-45",
+      "CC-PRIN-46",
+      "CC-PRIN-47"
+    ]
   }
 }

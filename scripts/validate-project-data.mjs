@@ -68,6 +68,7 @@ const validations = [
   ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json'],
   ['data/project/phase2_acceptance_checklist.json','schemas/phase2_acceptance_checklist.schema.json'],
   ['data/project/forensic_audit_governance.json','schemas/forensic_audit_governance.schema.json'],
+  ['data/project/architecture_incubator.json','schemas/architecture_incubator.schema.json'],
   ['data/project/public_statistics_bridge.json','schemas/public_statistics_bridge.schema.json'],
   ['data/project/rcip_civic_data_spine.json','schemas/rcip_civic_data_spine.schema.json']
 ];

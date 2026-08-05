@@ -1,0 +1,146 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import inc from "../../../../data/project/architecture_incubator.json";
+
+const cards = inc.hypothesis_cards || [];
+const freeze = inc.doctrine_freeze || {};
+const layers = inc.proof_packet?.three_layer_reviews_required_before_doctrine_graduation || [];
+const sections = inc.proof_packet?.required_sections || [];
+const doNot = inc.operating_commands?.do_not || [];
+const defaults = inc.architecture_candidate_default_status || {};
+---
+
+<BoardLayout title="Proof Incubator" path="/proof-incubator/">
+  <h1 class="page-title">{inc.title}</h1>
+  <p class="page-lede">
+    Decision: <code>{inc.decision_id}</code>. {inc.central_diagnosis} {inc.controlling_shift}
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{freeze.frozen_principle_count}</div>
+      <div class="stat__label">Frozen principle count</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{cards.length}</div>
+      <div class="stat__label">Hypothesis cards (recent surge)</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{defaults.publishable ? "Yes" : "No"}</div>
+      <div class="stat__label">Architecture candidates publishable?</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Doctrine freeze</h2>
+    <blockquote>
+      <p>{freeze.rule}</p>
+    </blockquote>
+    <p>{freeze.strengthen_instead}</p>
+    <p class="muted">Readers reward: {freeze.readers_reward}</p>
+    <p>Exception questions (must answer at least one):</p>
+    <ul>
+      {(freeze.exception_gate?.must_answer_at_least_one || []).map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ul>
+    <p class="muted">{freeze.exception_gate?.if_none}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Default Architecture Candidate status</h2>
+    <ul>
+      <li>Status: {defaults.status}</li>
+      <li>Evidence: {defaults.evidence}</li>
+      <li>Legal review: {defaults.legal_review}</li>
+      <li>Economic modeling: {defaults.economic_modeling}</li>
+      <li>Constitutional interaction: {defaults.constitutional_interaction}</li>
+      <li>Publishable: {String(defaults.publishable)}</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Proof Packet requirements</h2>
+    <p>{inc.proof_packet?.definition}</p>
+    <p><strong>Graduation rule:</strong> {inc.proof_packet?.graduation_rule}</p>
+    <h3>Required sections</h3>
+    <ol>
+      {sections.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ol>
+    <h3>Three-layer reviews</h3>
+    {
+      layers.map((L: any) => (
+        <div style="margin-bottom:1rem;">
+          <h4>
+            Layer {L.layer}: {L.name}
+          </h4>
+          <ul>
+            {(L.questions || []).map((q: string) => (
+              <li>{q}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </section>
+
+  <section class="panel">
+    <h2>Hypothesis cards</h2>
+    {
+      cards.map((c: any) => (
+        <div style="margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border, #ccc);">
+          <h3>
+            <code>{c.hypothesis_id}</code> — {c.title}
+          </h3>
+          <p>
+            <em>{c.proposition}</em>
+          </p>
+          <p>
+            Status: {c.status} · Confidence: {c.confidence_percent}% · Publishable:{" "}
+            {String(c.publishable)} · Proof packet: {c.proof_packet_status}
+          </p>
+          <p class="muted">
+            Principles: {(c.related_principle_ids || []).join(", ")}
+            {c.public_path ? (
+              <>
+                {" "}
+                · <a href={c.public_path}>{c.public_path}</a>
+              </>
+            ) : null}
+          </p>
+          <p>Evidence needed:</p>
+          <ul>
+            {(c.evidence_needed || []).map((e: string) => (
+              <li>□ {e}</li>
+            ))}
+          </ul>
+          {c.note ? <p class="muted">{c.note}</p> : null}
+        </div>
+      ))
+    }
+  </section>
+
+  <section class="panel">
+    <h2>Biggest risk</h2>
+    <p>{inc.biggest_risk?.text}</p>
+    <p class="muted">{inc.biggest_risk?.audit_role}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Do not</h2>
+    <ul>
+      {doNot.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+    <p>
+      Default next: <code>{inc.operating_commands?.default_next_work}</code>
+    </p>
+    <p>
+      Related: <a href="/phase-2-gate/">Phase 2 Gate</a>,{" "}
+      <a href="/diagnosis/">Diagnosis</a>, <a href="/baseline/">Baseline</a>.
+    </p>
+  </section>
+</BoardLayout>

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/architecture_incubator.schema.json",
+  "title": "ArchitectureIncubator",
+  "type": "object",
+  "required": [
+    "version",
+    "decision_id",
+    "status",
+    "doctrine_freeze",
+    "proof_packet",
+    "hypothesis_cards",
+    "architecture_candidate_default_status"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "decision_id": { "type": "string" },
+    "status": { "type": "string" },
+    "doctrine_freeze": {
+      "type": "object",
+      "required": ["rule", "frozen_principle_count", "exception_gate"]
+    },
+    "proof_packet": {
+      "type": "object",
+      "required": [
+        "required_sections",
+        "three_layer_reviews_required_before_doctrine_graduation",
+        "graduation_rule"
+      ]
+    },
+    "hypothesis_cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "hypothesis_id",
+          "title",
+          "proposition",
+          "status",
+          "publishable",
+          "evidence_needed"
+        ]
+      }
+    },
+    "architecture_candidate_default_status": {
+      "type": "object",
+      "required": ["status", "publishable"]
+    }
+  }
+}
