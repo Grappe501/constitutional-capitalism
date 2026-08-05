@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/federalism_framework.schema.json",
+  "title": "FederalismFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "central_statement",
+    "governing_rule",
+    "core_responsibilities",
+    "not_routinely",
+    "competency_ladder",
+    "upward_transfer_test",
+    "federalism_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "central_statement": { "type": "object", "required": ["text"] },
+    "governing_rule": { "type": "object", "required": ["text"] },
+    "core_responsibilities": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "summary"]
+      }
+    },
+    "not_routinely": { "type": "array", "minItems": 6 },
+    "competency_ladder": { "type": "array", "minItems": 6 },
+    "upward_transfer_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "federalism_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}

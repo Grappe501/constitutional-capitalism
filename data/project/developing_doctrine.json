@@ -2,7 +2,7 @@
   "version": "0.2.4",
   "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Federalism Doctrine (CC-PRIN-35), Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -684,6 +684,59 @@
         "CC-DEV-103"
       ],
       "note": "Principle CC-PRIN-34; SNAP FY2024 scale sourced; modeling required for cliffs; reject UBI as organizing alternative."
+    },
+    {
+      "cluster_id": "CC-DCC-21",
+      "title": "Federalism, subsidiarity, and the limited national government",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture",
+      "affected_domains": [
+        "federalism",
+        "constitutional_rights",
+        "defense",
+        "commerce",
+        "antitrust",
+        "infrastructure",
+        "public_data",
+        "local_government"
+      ],
+      "constitutional_questions": [
+        "Which functions require national coordination, uniformity, or rights protection?",
+        "How does a republic stay strong without swallowing local self-government?"
+      ],
+      "implementation_level": [
+        "federal",
+        "state",
+        "local",
+        "constitutional_design"
+      ],
+      "risks": [
+        "weak-state rhetoric that abandons rights floors",
+        "centralization through grant conditions",
+        "permanent emergency powers",
+        "agency sprawl without review",
+        "invented agency/fiscal statistics"
+      ],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": [
+        "CC-DEV-104",
+        "CC-DEV-105",
+        "CC-DEV-106",
+        "CC-DEV-107",
+        "CC-DEV-108",
+        "CC-DEV-109",
+        "CC-DEV-110",
+        "CC-DEV-111",
+        "CC-DEV-112",
+        "CC-DEV-113",
+        "CC-DEV-114",
+        "CC-DEV-115",
+        "CC-DEV-116",
+        "CC-DEV-117",
+        "CC-DEV-118",
+        "CC-DEV-119"
+      ],
+      "note": "Principle CC-PRIN-35; federal government limited, capable, transparent, focused — not weak; architecture only."
     }
   ],
   "items": [
@@ -3164,6 +3217,214 @@
       "related_decision_ids": [
         "CC-DEC-073"
       ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-104",
+      "statement": "The federal government is limited, capable, transparent, and focused — not weak. It exists to protect constitutional liberty, defend the nation, preserve a fair national system, coordinate what communities and states cannot accomplish alone, and restrain powers that exceed local control. Power remains local unless its exercise requires national coordination, national uniformity, or protection of constitutional rights.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed_foundational_principle",
+      "implications": ["CC-PRIN-35", "governing rule"],
+      "conflicts": ["weak-federalism as abandonment", "unlimited centralization"],
+      "research_required": ["comparative federal competence inventories"],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-105",
+      "statement": "The federal government must guarantee constitutional rights across jurisdictions: due process, equal protection, voting rights, speech, religion, association, property rights, equal justice, and protection against arbitrary power. Local authority ends where constitutional rights begin.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["rights floor", "Equal Standing link"],
+      "conflicts": ["local majorities overriding rights"],
+      "research_required": ["rights-enforcement institutional designs"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-106",
+      "statement": "National defense and foreign affairs — defense, diplomacy, treaties, border security, immigration administration, international trade, national intelligence, and strategic infrastructure protection — remain federal because they cannot be effectively divided among thousands of local governments.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["defense", "immigration administration"],
+      "conflicts": ["fragmented border and treaty regimes"],
+      "research_required": ["immigration administration competence boundaries"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-107",
+      "statement": "The federal government manages currency, federal borrowing, national debt, monetary institutions, national fiscal stability, interstate payment systems, and systemic financial risk, and should be constitutionally required to publish complete, understandable, real-time fiscal records through the People’s Ledger.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": ["People’s Ledger", "fiscal transparency"],
+      "conflicts": ["opaque national debt and spending"],
+      "research_required": ["ledger architecture without inventing false real-time claims"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-108",
+      "statement": "The federal government ensures interstate commerce remains a fair national marketplace: no destructive internal trade barriers, no manipulation against neighboring states, no incompatible national systems, and no evasion of obligations by moving across state lines — without regulating every ordinary local transaction.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["interstate commerce floor"],
+      "conflicts": ["internal trade wars", "micromanaging local exchange"],
+      "research_required": ["commerce-clause boundary case studies"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-109",
+      "statement": "The federal government prevents corporations, financial institutions, technology platforms, political organizations, or other national actors from accumulating power beyond meaningful accountability through antitrust, monopoly control, interstate labor-market protection, securities oversight, national financial regulation, marketplace transparency, and prevention of regulatory capture.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["antitrust", "concentrated power restraint"],
+      "conflicts": ["state-only regulation of supra-state firms"],
+      "research_required": ["antitrust and platform accountability research"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-110",
+      "statement": "The federal government establishes and helps finance national infrastructure standards and connecting systems while local and state institutions build and operate much of the system. Federal role: coordination, standards, interoperability, and equal national access.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["infrastructure standards"],
+      "conflicts": ["federal operation of every local asset"],
+      "research_required": ["interop and equal-access funding designs"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-111",
+      "statement": "The federal government maintains authoritative, publicly accessible national information systems. Government records created with public resources are open by default, subject to limited privacy, safety, law-enforcement, and national-security protections.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["public-data infrastructure", "RCIP link"],
+      "conflicts": ["secret-by-default public records"],
+      "research_required": ["open-records and privacy boundary inventories"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-112",
+      "statement": "The federal government establishes constitutional floors beneath which states cannot fall, while states and communities remain free to exceed those standards or design different delivery models.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["national minimum standards"],
+      "conflicts": ["race-to-the-bottom floors", "one operational model for all"],
+      "research_required": ["floor vs delivery-model case studies"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-113",
+      "statement": "Emergency federal coordination for war, pandemics, disasters, financial collapse, major cyberattacks, interstate resource emergencies, and supply-chain failures must be temporary, publicly justified, automatically expiring, subject to legislative and judicial review, and never a permanent expansion of federal control.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["emergency powers constraints"],
+      "conflicts": ["permanent emergency governance"],
+      "research_required": ["emergency sunset and review designs"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-114",
+      "statement": "The federal government may redistribute national revenue so every community has reasonable access to essential infrastructure and services, but funding should strengthen local capacity rather than create permanent federal control over local administration.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["regional redistribution without domination"],
+      "conflicts": ["funding as permanent federal administration"],
+      "research_required": ["capacity-building grant designs"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-115",
+      "statement": "Before power moves up the competency ladder (individual → family → neighborhood → community → municipality → county/region → state → federal), the higher level must justify why the lower level cannot perform the function, what right or national interest is involved, the narrowest necessary role, how local flexibility is protected, when review occurs, and whether authority can return downward.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["upward-transfer test", "subsidiarity ladder"],
+      "conflicts": ["automatic centralization"],
+      "research_required": ["competence-threshold diagnostics"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-116",
+      "statement": "Every major federal funding program must distinguish national outcome, minimum standard, local discretion, reporting requirement, duration, and exit pathway. The federal government may require outcomes (for example reliable broadband access) without automatically dictating identical institutions, vendors, and administrative structures.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["federal funding without domination"],
+      "conflicts": ["grants as soft commandeering"],
+      "research_required": ["grant-condition redesign pilots"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-117",
+      "statement": "Lean federal administration: streamline around functions; every agency faces periodic review — is the function constitutionally federal, duplicated, removable by technology, transferable to states, measurable, and should it be renewed, consolidated, transferred, or ended? Goal: strong enough to protect the republic, restrained enough to respect local self-government, transparent enough that the people can see every power it exercises.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": ["agency review", "lean administration"],
+      "conflicts": ["agency immortality", "fragmented duplication"],
+      "research_required": ["agency function inventory methodology"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-118",
+      "statement": "Federal authority assumed for necessity should include pathways for return of authority to states and communities when competence and constitutional rights protection allow.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["return of authority"],
+      "conflicts": ["one-way ratchet of centralization"],
+      "research_required": ["devolution trigger designs"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-119",
+      "statement": "State sovereignty and local home rule remain the default for ordinary public life — schools, land use, culture, ordinary policing administration, local food systems, and routine municipal decisions — subject to constitutional rights and national floors. The federal government should not routinely perform these functions.",
+      "origin": "steve_direction_federalism_doctrine",
+      "maturity": "proposed",
+      "implications": ["state sovereignty", "local home rule"],
+      "conflicts": ["routine federal micromanagement of local life"],
+      "research_required": ["home-rule and preemption boundary studies"],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-080"],
       "phase_destination": "phase-3_and_phase-4"
     }
   ]

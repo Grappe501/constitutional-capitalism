@@ -51,6 +51,7 @@ const validations = [
   ['data/project/constitutional_citizenship_framework.json','schemas/constitutional_citizenship_framework.schema.json'],
   ['data/project/family_framework.json','schemas/family_framework.schema.json'],
   ['data/project/assistance_framework.json','schemas/assistance_framework.schema.json'],
+  ['data/project/federalism_framework.json','schemas/federalism_framework.schema.json'],
   ['data/project/systems_map.json','schemas/systems_map.schema.json'],
   ['data/project/human_flourishing_index.json','schemas/human_flourishing_index.schema.json'],
   ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json'],

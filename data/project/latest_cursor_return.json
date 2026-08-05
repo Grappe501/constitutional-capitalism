@@ -1,27 +1,35 @@
 {
-  "mission_id": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
+  "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "status": "PARTIAL",
   "updated_at": "2026-08-05",
-  "summary": "RedDirt RCIP spine scaffolded (audit, docs, connectors, file warehouse, export contract, privacy scan, publicdata:*). Live Census/BLS ingestion fail-closed (invalid/placeholder keys). No export imported. CC consumer commands publicstats:* plus CC-DEC-079 / UPD-030. Baseline remains 2/86; progress not inflated by infrastructure.",
+  "summary": "Federalism Doctrine adopted as major pillar (CC-PRIN-35, CC-DEC-080, CC-DEV-104–119, CC-DCC-21): limited, capable, transparent, focused federal government — not weak. Book/board /federalism/ surfaces. Forensic-audit governance and Assistance Doctrine already preserved on main since 4a2b1dc. Phase 2 remains PARTIAL; baseline 2/86; legal/modeling 0%.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "starting_commit": "4a2b1dc",
-  "ending_commit": "feb8496",
-  "github_push": "pushed",
+  "starting_commit": "3edda63",
+  "ending_commit": "pending",
+  "github_push": "pending",
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 40,
   "forensic_audit_overall_snapshot": 36,
   "phase_2_status": "PARTIAL",
   "recommended_next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
   "decision_ids": [
-    "CC-DEC-079",
-    "CC-DEC-078",
-    "CC-DEC-077",
-    "CC-DEC-076"
+    "CC-DEC-080",
+    "CC-DEC-075",
+    "CC-DEC-074",
+    "CC-DEC-073"
   ],
-  "update_id": "UPD-030",
-  "public_paths": [],
-  "board_paths": [],
-  "integrity_note": "No CC-side agency connectors; no keys; architecture ≠ baseline proof; sourced baseline still 2/86",
-  "next_command": "In RedDirt: install valid CENSUS_API_KEY and BLS_API_KEY, then npm run publicdata:all; in CC: pnpm publicstats:import --from H:\\SOSWebsite\\RedDirt\\exports\\constitutional-capitalism\\latest"
+  "update_id": "UPD-031",
+  "public_paths": [
+    "/federalism/",
+    "/assistance/",
+    "/phase-2-gate/"
+  ],
+  "board_paths": [
+    "/federalism/",
+    "/assistance/",
+    "/phase-2-gate/"
+  ],
+  "integrity_note": "Architecture ≠ evidence. Federalism is normative design; no invented agency or fiscal statistics. Forensic audit and Assistance Doctrine were already shipped at 4a2b1dc.",
+  "next_command": "Burt three-layer retrofit on priority briefs under forensic Phase 2 gate; keep modeling/legal at 0% until real work exists"
 }
