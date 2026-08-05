@@ -1,0 +1,206 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-096",
+  "related_decision_ids": ["CC-DEC-093", "CC-DEC-095", "CC-DEC-075", "CC-DEC-064"],
+  "status": "architecture_candidate_deferred_capstone",
+  "title": "Collaborative Constitutional Review",
+  "subtitle": "The last major feature — structured scholarly review, not crowdsourcing",
+  "phase_placement": {
+    "chronological_phase_id": "phase-9",
+    "chronological_phase_number": 9,
+    "role": "capstone_last_major_feature",
+    "steve_intent_note": "Described as the final collaborative phase after the document is built. In the current 0–9 ladder, Full Manuscript remains Phase 6; Collaborative Constitutional Review is Phase 9 — activation only after architecture, evidence, legal review, modeling, manuscript, and education layers are mature.",
+    "everything_before_builds_the_document": true,
+    "do_not_activate_early": true
+  },
+  "principle": {
+    "text": "People should not merely comment. They should help improve the document.",
+    "psychology_shift": {
+      "from": "I disagree.",
+      "to": "I believe this section could be stronger because..."
+    }
+  },
+  "why_last": {
+    "text": "Only after architecture, evidence, legal review, modeling, manuscript, and education layers are mature should the public be invited into the drafting process. Otherwise collaborators comment on ideas that have not passed project proof standards.",
+    "embodiment": "Prosperity grows through participation — the manuscript should embody transparency, accountability, distributed knowledge, and shared stewardship without allowing anyone to rewrite it casually."
+  },
+  "is_not": [
+    "Crowdsourcing",
+    "Social media",
+    "Open rewrite privileges",
+    "Generic comment widgets under paragraphs",
+    "Activation during Phase 2 proof work",
+    "Public feedback backend on an unprotected Build Board"
+  ],
+  "is": [
+    "Structured scholarly review",
+    "Review artifacts with lifecycles",
+    "Anonymous-but-accountable contribution",
+    "Version-aware manuscript tree discussions",
+    "Evidence-first collaboration aligned with Proof Burden discipline"
+  ],
+  "identity_model": {
+    "title": "Anonymous — but Accountable",
+    "registration": "Establishes identity for moderation and internal reputation",
+    "public_display": "Verified Contributor #N (not real names)",
+    "reduces": ["ego", "status contests", "politics", "personal attacks"],
+    "preserves": ["moderation", "accountability", "quality signals"]
+  },
+  "manuscript_tree": {
+    "title": "Every Level Can Be Commented On",
+    "nodes": [
+      "Book",
+      "Chapter",
+      "Section",
+      "Subsection",
+      "Paragraph",
+      "Sentence",
+      "Phrase",
+      "Word"
+    ],
+    "interaction": "Highlight a unit → Comment → discussion attaches only to that node (Google-Docs-like permanence and structure)."
+  },
+  "comment_types": [
+    {
+      "id": "evidence",
+      "labels": ["Needs citation", "Weak source", "Better source", "Contradictory evidence"]
+    },
+    {
+      "id": "logic",
+      "labels": ["Doesn't follow", "Circular reasoning", "Needs clarification", "Missing assumption"]
+    },
+    {
+      "id": "constitutional",
+      "labels": ["Potential legal conflict", "Court precedent", "Federalism issue", "Delegation issue"]
+    },
+    {
+      "id": "economic",
+      "labels": ["Needs modeling", "Questionable incentive", "Unintended consequence", "Market distortion"]
+    },
+    {
+      "id": "editorial",
+      "labels": ["Grammar", "Style", "Organization", "Readability"]
+    },
+    {
+      "id": "question",
+      "labels": ["I don't understand..."],
+      "note": "High volume of confusion on one paragraph means the paragraph is the problem."
+    },
+    {
+      "id": "proposal",
+      "labels": ["Suggested rewrite", "Alternative mechanism", "New example", "Additional research"]
+    }
+  ],
+  "margin_system": {
+    "title": "Margin Conversations",
+    "text": "True margin annotation — legal annotation / academic peer review / convention notes — not comments stacked underneath the text. Click expands margin discussion."
+  },
+  "version_awareness": {
+    "title": "Version Awareness",
+    "rule": "Every comment belongs to a manuscript version. When text changes, prior comments collapse automatically.",
+    "states": ["Archived", "Resolved", "Needs Review", "Superseded"]
+  },
+  "quality_signals": {
+    "title": "Upvoting Quality — not social likes",
+    "signals": ["Helpful", "Evidence Added", "Needs Response", "Resolved", "Integrated"]
+  },
+  "ai_assistant": {
+    "title": "Discussion Summaries",
+    "produces": [
+      "Main themes",
+      "Areas of agreement",
+      "Outstanding disagreements",
+      "Suggested edits",
+      "Evidence cited"
+    ],
+    "note": "AI summarizes; humans decide. Does not replace scholarly judgment."
+  },
+  "contributor_reputation": {
+    "title": "Internal Reputation Ladder",
+    "public": false,
+    "ladder": [
+      "Reader",
+      "Verified Reader",
+      "Research Contributor",
+      "Evidence Reviewer",
+      "Subject Reviewer",
+      "Editorial Reviewer",
+      "Constitutional Reviewer",
+      "Domain Steward",
+      "Core Review Council"
+    ],
+    "rule": "Authority is earned through quality of contributions, not popularity."
+  },
+  "claim_status_panel": {
+    "title": "Every Claim Shows Its Status",
+    "example_fields": [
+      "Claim ID",
+      "Confidence",
+      "Historical Evidence",
+      "Economic Evidence",
+      "Legal Review",
+      "Counterarguments count",
+      "Sources count",
+      "Outstanding Questions"
+    ],
+    "links_to": ["proof_burden_registry", "claim_ledger"]
+  },
+  "decision_ledger": {
+    "title": "Nothing Disappears",
+    "records": [
+      "Who proposed (internal identity)",
+      "Why accepted or declined",
+      "Evidence added",
+      "Decision date",
+      "Linked commit"
+    ],
+    "purpose": "Transparent legislative history for the project"
+  },
+  "scholarly_modes": {
+    "title": "Scholarly Mode — one manuscript, multiple lenses",
+    "views": [
+      "Normal Reader",
+      "Evidence View",
+      "Claim View",
+      "Source View",
+      "Doctrine View",
+      "Constitution View",
+      "Build History"
+    ]
+  },
+  "review_artifacts": {
+    "title": "Comments as Review Artifacts",
+    "lifecycle": [
+      "Open",
+      "Under Review",
+      "Accepted",
+      "Declined",
+      "Resolved"
+    ],
+    "rule": "Every comment should be capable of becoming a tracked issue with a permanent audit trail — scholarly, not merely conversational."
+  },
+  "activation_gates": {
+    "all_required": [
+      "Phase 2 proof standards materially satisfied (or honest Phase 2.1 completion path)",
+      "Legal review no longer 0% for reviewed claims",
+      "Economic modeling no longer 0% for modeled claims",
+      "Manuscript sufficiently mature for sentence-level review",
+      "Public Education Edition available so citizens can understand context",
+      "Build Board / review platform protection confirmed",
+      "Moderation, identity, and reputation systems designed and tested",
+      "Version-aware comment attachment implemented before public launch"
+    ],
+    "related_existing_slice": {
+      "slice_id": "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0",
+      "status": "APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION",
+      "rule": "No public feedback backend on unprotected Build Board. CCR supersedes vague 'public feedback' as the capstone design."
+    }
+  },
+  "implementation_status": {
+    "build_now": false,
+    "publishable": false,
+    "phase_2_action": "Capture architecture only. Do not implement commenting, registration, or public review backends.",
+    "hypothesis_id": "HYP-117"
+  }
+}

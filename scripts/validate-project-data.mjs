@@ -71,6 +71,7 @@ const validations = [
   ['data/project/architecture_incubator.json','schemas/architecture_incubator.schema.json'],
   ['data/project/proof_burden_registry.json','schemas/proof_burden_registry.schema.json'],
   ['data/project/foundational_axioms.json','schemas/foundational_axioms.schema.json'],
+  ['data/project/collaborative_constitutional_review_framework.json','schemas/collaborative_constitutional_review_framework.schema.json'],
   ['data/project/public_statistics_bridge.json','schemas/public_statistics_bridge.schema.json'],
   ['data/project/rcip_civic_data_spine.json','schemas/rcip_civic_data_spine.schema.json']
 ];

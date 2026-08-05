@@ -6,7 +6,8 @@
     "CC-DEC-075",
     "CC-DEC-064",
     "CC-DEC-094",
-    "CC-DEC-095"
+    "CC-DEC-095",
+    "CC-DEC-096"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -276,6 +277,31 @@
         "PP-FF-04",
         "PP-FF-05"
       ]
+    },
+    {
+      "hypothesis_id": "HYP-117",
+      "title": "Collaborative Constitutional Review",
+      "proposition": "After proof, legal, modeling, manuscript, and education maturity, a structured scholarly review system with anonymous-but-accountable contributors and review-artifact lifecycles can strengthen the document without crowdsourcing or social-media dynamics.",
+      "status": "Architectural hypothesis — deferred capstone",
+      "publishable": false,
+      "confidence_percent": 15,
+      "related_principle_ids": [],
+      "related_decision_ids": [
+        "CC-DEC-096"
+      ],
+      "related_framework": "data/project/collaborative_constitutional_review_framework.json",
+      "public_path": "/collaborative-review/",
+      "evidence_needed": [
+        "Annotation / peer-review platform case studies",
+        "Moderation and identity design",
+        "Version-aware comment attachment methods",
+        "Reputation systems without popularity capture",
+        "Privacy / security for contributor identity",
+        "Legal review of public comment liability",
+        "Build Board / platform protection confirmation"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "LAST MAJOR FEATURE. Do not build in Phase 2. Chronological Phase 9; manuscript remains Phase 6."
     }
   ],
   "website_node": {

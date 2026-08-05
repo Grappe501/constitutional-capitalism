@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/collaborative_constitutional_review_framework.schema.json",
+  "title": "CollaborativeConstitutionalReviewFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "decision_id",
+    "status",
+    "title",
+    "phase_placement",
+    "principle",
+    "activation_gates",
+    "implementation_status",
+    "review_artifacts"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "decision_id": { "type": "string" },
+    "status": { "type": "string" },
+    "title": { "type": "string" },
+    "phase_placement": { "type": "object" },
+    "principle": { "type": "object", "required": ["text"] },
+    "activation_gates": { "type": "object", "required": ["all_required"] },
+    "implementation_status": {
+      "type": "object",
+      "required": ["build_now", "publishable"]
+    },
+    "review_artifacts": { "type": "object", "required": ["lifecycle"] }
+  }
+}

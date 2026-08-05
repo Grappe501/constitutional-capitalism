@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "current_phase": "phase-2",
   "phases": [
     {
@@ -122,7 +122,8 @@
         "continuity review",
         "voice review",
         "duplication reduction"
-      ]
+      ],
+      "note": "Builds the document. Collaborative Constitutional Review (Phase 9) comes only after manuscript, education, and proof maturity."
     },
     {
       "id": "phase-7",
@@ -155,17 +156,32 @@
     },
     {
       "id": "phase-9",
-      "title": "Public Launch and Continuing Work",
+      "title": "Collaborative Constitutional Review",
       "number": 9,
-      "status": "planned",
+      "status": "planned_deferred_capstone",
       "deliverables": [
-        "launch",
-        "public feedback",
-        "corrections",
-        "versioned editions",
-        "international adaptation",
-        "continuing research"
-      ]
+        "anonymous-but-accountable registration",
+        "manuscript-tree margin review (book→word)",
+        "typed review artifacts with lifecycles",
+        "version-aware comment attachment",
+        "quality signals (not social likes)",
+        "AI discussion summaries",
+        "internal contributor reputation ladder",
+        "claim-status side panels",
+        "decision ledger / legislative history",
+        "scholarly multi-lens views",
+        "moderation and platform protection"
+      ],
+      "decision_id": "CC-DEC-096",
+      "framework_file": "data/project/collaborative_constitutional_review_framework.json",
+      "meaning": "Last major feature. Structured scholarly review after the document is mature — not crowdsourcing, not Phase 2 work.",
+      "activation_requires": [
+        "mature proof / legal / modeling layers",
+        "mature manuscript",
+        "Public Education Edition",
+        "protected review platform"
+      ],
+      "note": "Replaces vague 'public feedback' as the capstone design. Full Manuscript remains Phase 6. Do not activate early."
     }
   ]
 }

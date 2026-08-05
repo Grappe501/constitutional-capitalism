@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import f from "../../../../data/project/collaborative_constitutional_review_framework.json";
+
+const nodes = f.manuscript_tree?.nodes || [];
+const types = f.comment_types || [];
+const lifecycle = f.review_artifacts?.lifecycle || [];
+---
+
+<BaseLayout
+  title="Collaborative Constitutional Review"
+  path="/collaborative-review/"
+  description="Deferred capstone: structured scholarly review after the document is mature — not crowdsourcing."
+>
+  <article class="prose">
+    <h1>{f.title}</h1>
+    <p class="muted">
+      Architecture Candidate — last major feature (Phase 9). Not built. Not open for public
+      commenting. Manuscript drafting remains Phase 6. Activation only after proof, legal,
+      modeling, manuscript, and education maturity.
+    </p>
+
+    <h2>Principle</h2>
+    <blockquote>
+      <p>{f.principle.text}</p>
+    </blockquote>
+    <p>{f.why_last.text}</p>
+    <p>{f.why_last.embodiment}</p>
+
+    <h2>What this is — and is not</h2>
+    <p>Is:</p>
+    <ul>
+      {f.is.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+    <p>Is not:</p>
+    <ul>
+      {f.is_not.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>Anonymous — but accountable</h2>
+    <p>
+      {f.identity_model.registration}. Public display: {f.identity_model.public_display}.
+    </p>
+
+    <h2>Manuscript tree</h2>
+    <p>{f.manuscript_tree.interaction}</p>
+    <ul>
+      {nodes.map((n: string) => (
+        <li>{n}</li>
+      ))}
+    </ul>
+
+    <h2>Types of review</h2>
+    <ul>
+      {types.map((t: any) => (
+        <li>
+          <strong>{t.id}</strong> — {(t.labels || []).join("; ")}
+        </li>
+      ))}
+    </ul>
+
+    <h2>Review artifacts</h2>
+    <p>{f.review_artifacts.rule}</p>
+    <p>Lifecycle: {lifecycle.join(" → ")}</p>
+
+    <h2>Version awareness</h2>
+    <p>{f.version_awareness.rule}</p>
+
+    <p class="muted">
+      See also <a href="/foundational-axioms/">Foundational Axioms</a> and{" "}
+      <a href="/declaration/">Declaration</a>. Collaboration opens only when the document can
+      withstand the project’s own proof standards.
+    </p>
+  </article>
+</BaseLayout>

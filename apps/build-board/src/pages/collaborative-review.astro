@@ -1,0 +1,116 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import f from "../../../../data/project/collaborative_constitutional_review_framework.json";
+
+const types = f.comment_types || [];
+const ladder = f.contributor_reputation?.ladder || [];
+const gates = f.activation_gates?.all_required || [];
+const lifecycle = f.review_artifacts?.lifecycle || [];
+const nodes = f.manuscript_tree?.nodes || [];
+const views = f.scholarly_modes?.views || [];
+---
+
+<BoardLayout title="Collaborative Review" path="/collaborative-review/">
+  <h1 class="page-title">{f.title}</h1>
+  <p class="page-lede">
+    Decision: <code>{f.decision_id}</code>. Status: <code>{f.status}</code>.{" "}
+    <strong>Not built. Not active.</strong> Last major feature — chronological{" "}
+    {f.phase_placement.chronological_phase_id}. Manuscript remains Phase 6.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">9</div>
+      <div class="stat__label">Capstone phase</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{f.implementation_status.build_now ? "Yes" : "No"}</div>
+      <div class="stat__label">Build now?</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{lifecycle.length}</div>
+      <div class="stat__label">Review-artifact states</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Principle</h2>
+    <blockquote>
+      <p>{f.principle.text}</p>
+    </blockquote>
+    <p class="muted">
+      From <em>{f.principle.psychology_shift.from}</em> →{" "}
+      <em>{f.principle.psychology_shift.to}</em>
+    </p>
+    <p>{f.why_last.text}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Phase placement</h2>
+    <p>{f.phase_placement.steve_intent_note}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Manuscript tree</h2>
+    <p>{f.manuscript_tree.interaction}</p>
+    <ol>
+      {nodes.map((n: string) => (
+        <li>{n}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Comment types</h2>
+    <ul>
+      {types.map((t: any) => (
+        <li>
+          <strong>{t.id}</strong>: {(t.labels || []).join("; ")}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Review artifacts</h2>
+    <p>{f.review_artifacts.rule}</p>
+    <p>Lifecycle: {lifecycle.join(" → ")}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Reputation ladder (internal)</h2>
+    <ol>
+      {ladder.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Scholarly modes</h2>
+    <ul>
+      {views.map((v: string) => (
+        <li>{v}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Activation gates (all required)</h2>
+    <ul>
+      {gates.map((g: string) => (
+        <li>{g}</li>
+      ))}
+    </ul>
+    <p class="muted">{f.activation_gates.related_existing_slice.rule}</p>
+  </section>
+
+  <section class="panel">
+    <h2>Related</h2>
+    <p>
+      <a href="/proof-incubator/">Proof Incubator</a>,{" "}
+      <a href="/phase-2-gate/">Phase 2 Gate</a>,{" "}
+      <a href="/foundational-axioms/">Foundational Axioms</a>.
+    </p>
+  </section>
+</BoardLayout>
