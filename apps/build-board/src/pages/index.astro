@@ -14,6 +14,9 @@ import {
   objections,
   terms,
   daysSince,
+  sources,
+  claims,
+  baselineStatus,
 } from "../lib/data";
 
 const statusCounts = snapshot.manuscript?.status_counts || {};
@@ -25,7 +28,11 @@ const days = daysSince(snapshot.generated_at || buildState.last_updated);
 const activeSlice = slices.slices.find((s: any) => s.slice_id === slices.active_slice);
 const phase0 = slices.slices.find((s: any) => s.slice_id === "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0");
 const phase1 = slices.slices.find((s: any) => s.slice_id === "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0");
+const phase2 = slices.slices.find((s: any) => s.slice_id === "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0");
 const bookDeploy = deployments.applications.find((a: any) => a.id === "book-site");
+const claimsSupported = (claims.claims || []).filter((c: any) =>
+  ["supported", "partially_supported"].includes(c.support_level)
+).length;
 ---
 
 <BoardLayout title="Executive Overview" path="/">
@@ -45,9 +52,21 @@ const bookDeploy = deployments.applications.find((a: any) => a.id === "book-site
       <div class="stat__note">Accepted at 71cce43</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Phase 1 / active slice</div>
-      <div class="stat__value" style="font-size:1.05rem;">{phase1?.status || activeSlice?.status}</div>
+      <div class="stat__label">Phase 1</div>
+      <div class="stat__value" style="font-size:1.05rem;">{phase1?.status || "accepted"}</div>
+      <div class="stat__note">Closed — philosophy ~70%</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Phase 2 / active</div>
+      <div class="stat__value" style="font-size:1.05rem;">{phase2?.status || activeSlice?.status}</div>
       <div class="stat__note">{activeSlice?.slice_id}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Sources / priority claims done</div>
+      <div class="stat__value" style="font-size:1.2rem;">
+        {sources.sources?.length ?? 0}/{claimsSupported}
+      </div>
+      <div class="stat__note">Baseline sourced {baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}</div>
     </div>
     <div class="stat">
       <div class="stat__label">Declaration</div>

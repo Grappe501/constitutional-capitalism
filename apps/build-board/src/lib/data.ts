@@ -34,6 +34,10 @@ import ccTest from "../../../../data/project/constitutional_capitalism_test.json
 import chapterEvaluationTemplate from "../../../../data/project/chapter_evaluation_template.json";
 import civilizationalCore from "../../../../data/project/civilizational_core.json";
 import websiteIa from "../../../../data/project/website_information_architecture.json";
+import baselineMetrics from "../../../../data/baseline/national_baseline_metrics.json";
+import baselineStatus from "../../../../data/baseline/baseline_status.json";
+import developingDoctrine from "../../../../data/project/developing_doctrine.json";
+import transitionTimeline from "../../../../data/project/transition_timeline.json";
 
 function asList<T>(value: unknown, key?: string): T[] {
   if (Array.isArray(value)) return value as T[];
@@ -90,6 +94,10 @@ export {
   chapterEvaluationTemplate,
   civilizationalCore,
   websiteIa,
+  baselineMetrics,
+  baselineStatus,
+  developingDoctrine,
+  transitionTimeline,
 };
 
 export function daysSince(dateStr: string | null | undefined) {

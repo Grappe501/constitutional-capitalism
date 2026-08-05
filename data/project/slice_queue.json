@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "last_updated": "2026-08-04",
-  "active_slice": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0",
+  "active_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -68,7 +68,7 @@
         "pnpm gate passed"
       ],
       "status": "completed",
-      "next_recommended_slice": "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0"
+      "next_recommended_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
     },
     {
       "slice_id": "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0",
@@ -100,8 +100,86 @@
         "pnpm gate"
       ],
       "completion_evidence": [],
-      "status": "queued",
+      "status": "absorbed",
       "supersedes_slice_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+      "next_recommended_slice": null,
+      "note": "Absorbed into CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0; deliverables retained inside Diagnosis mission."
+    },
+    {
+      "slice_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+      "title": "Diagnosis Research Foundation",
+      "purpose": "Establish source-backed National Diagnosis, National Baseline, and Evidence Companion; upgrade priority claims with supporting and opposing evidence.",
+      "prerequisites": [
+        "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/**",
+        "data/**",
+        "docs/**",
+        "schemas/**",
+        "scripts/**",
+        "apps/**",
+        "reports/**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "content/research/national-diagnosis/*",
+        "data/baseline/*",
+        "evidence companion overview + priority dossiers",
+        "sourced priority claims",
+        "public /where-we-are and /evidence surfaces",
+        "return report"
+      ],
+      "validation_commands": [
+        "pnpm gate",
+        "pnpm research:validate",
+        "pnpm baseline:validate"
+      ],
+      "completion_evidence": [
+        "13 verified sources in source_registry",
+        "20 priority claims with honest support levels",
+        "8 Evidence Companion dossiers seeded",
+        "priority diagnosis briefs first-pass; remainder foundational",
+        "2/38 baseline metrics sourced (SCF/DFA)",
+        "public /where-we-are /evidence /metrics",
+        "board /diagnosis /baseline /evidence",
+        "pnpm research:validate + baseline:validate + gate"
+      ],
+      "status": "partial_complete",
+      "absorbs_slice_ids": [
+        "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0",
+      "note": "Partial / Phase 2.1 recommended — remaining domains foundational only; most baseline metrics pending; legal/modeling 0%."
+    },
+    {
+      "slice_id": "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0",
+      "title": "Civic Deliberation Feedback System",
+      "purpose": "Parallel infrastructure: publicly anonymous, privately verified civic input. Does not block Phase 2.",
+      "prerequisites": [
+        "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0"
+      ],
+      "allowed_paths": [
+        "apps/**",
+        "docs/**",
+        "data/**",
+        "netlify*",
+        "schemas/**",
+        "scripts/**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "secure backend",
+        "protected admin boundary",
+        "email verification",
+        "moderation standards"
+      ],
+      "validation_commands": [
+        "pnpm gate"
+      ],
+      "completion_evidence": [],
+      "status": "queued_parallel",
+      "dependency_note": "Requires secure backend and protected administration (apps/admin-board preferred). Open CC-DEC-011.",
       "next_recommended_slice": null
     }
   ]

@@ -1,0 +1,101 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { sources, claims, baselineStatus, developingDoctrine } from "../lib/data";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const diagnosisDir = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../../../../content/research/national-diagnosis"
+);
+let briefs: { file: string; status: string; title: string }[] = [];
+if (fs.existsSync(diagnosisDir)) {
+  briefs = fs
+    .readdirSync(diagnosisDir)
+    .filter((f) => f.endsWith(".md"))
+    .sort()
+    .map((file) => {
+      const body = fs.readFileSync(path.join(diagnosisDir, file), "utf8");
+      const status = /\*\*Domain status:\*\*\s*(\S+)/.exec(body)?.[1] || "unknown";
+      const title = /^#\s+(.+)$/m.exec(body)?.[1] || file;
+      return { file, status, title };
+    });
+}
+
+const priority = briefs.filter((b) => b.status.includes("priority"));
+const foundational = briefs.filter((b) => b.status.includes("foundational"));
+const supportedish = (claims.claims || []).filter((c: any) =>
+  ["supported", "partially_supported"].includes(c.support_level)
+);
+---
+
+<BoardLayout title="Diagnosis" path="/diagnosis/">
+  <h1 class="page-title">National Diagnosis</h1>
+  <p class="page-lede">
+    Phase 2 operating view. Priority first-pass domains vs foundational Phase 2.1 shells.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Diagnosis briefs</div>
+      <div class="stat__value">{briefs.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Priority first-pass</div>
+      <div class="stat__value">{priority.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Sources</div>
+      <div class="stat__value">{sources.sources?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Supported / partial claims</div>
+      <div class="stat__value">{supportedish.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Baseline sourced</div>
+      <div class="stat__value">{baselineStatus.sourced_metrics}/{baselineStatus.total_metrics}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Legal / modeling</div>
+      <div class="stat__value" style="font-size:1.1rem;">0% / 0%</div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Priority briefs</h2>
+    <ul class="list-plain">
+      {priority.map((b) => (
+        <li>
+          <code>{b.file}</code> — {b.title} <span class="pill">{b.status}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Foundational (Phase 2.1)</h2>
+    <ul class="list-plain">
+      {foundational.map((b) => (
+        <li>
+          <code>{b.file}</code> — {b.title}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Developing doctrine (not Declaration rewrite)</h2>
+    <ul class="list-plain">
+      {
+        (developingDoctrine.items || []).map((d: any) => (
+          <li>
+            <code>{d.doctrine_id}</code> — {d.statement}{" "}
+            <span class="pill">{d.maturity || d.status}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BoardLayout>

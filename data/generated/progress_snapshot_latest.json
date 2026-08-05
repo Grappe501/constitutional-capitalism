@@ -1,9 +1,9 @@
 {
   "version": "0.2.0",
-  "generated_at": "2026-08-05T00:31:18.449Z",
-  "overall_percent": 34,
-  "current_phase": "phase-1",
-  "active_slice": "CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0",
+  "generated_at": "2026-08-05T01:06:08.065Z",
+  "overall_percent": 36,
+  "current_phase": "phase-2",
+  "active_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "declaration": {
     "exists": true,
     "words": 5005,
@@ -24,8 +24,8 @@
   },
   "research": {
     "open_questions": 25,
-    "claims": 10,
-    "sources": 0
+    "claims": 20,
+    "sources": 13
   },
   "decisions": {
     "open": 42,
@@ -60,13 +60,13 @@
   "deployments": [
     {
       "id": "book-site",
-      "status": "not_deployed",
-      "production_url": null
+      "status": "deployed",
+      "production_url": "https://constitutional-capitalism.netlify.app"
     },
     {
       "id": "build-board",
-      "status": "not_deployed",
-      "production_url": null
+      "status": "deployed",
+      "production_url": "https://constitutional-capitalism-board.netlify.app"
     }
   ],
   "identity_version": "0.2.0-phase1",
@@ -126,8 +126,8 @@
     {
       "id": "research_foundation",
       "label": "Research Foundation",
-      "percent": 28,
-      "status": "early",
+      "percent": 40,
+      "status": "underway",
       "basis": [
         "phase_0_scaffold",
         "generated_from_canonical_records"
@@ -139,7 +139,7 @@
     {
       "id": "source_verification",
       "label": "Source Verification",
-      "percent": 2,
+      "percent": 18,
       "status": "early",
       "basis": [
         "phase_0_scaffold",
@@ -217,7 +217,7 @@
     {
       "id": "public_book_website",
       "label": "Public Book Website",
-      "percent": 65,
+      "percent": 70,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -230,7 +230,7 @@
     {
       "id": "build_board",
       "label": "Build Board",
-      "percent": 70,
+      "percent": 75,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -295,7 +295,7 @@
     {
       "id": "public_launch_readiness",
       "label": "Public Launch Readiness",
-      "percent": 18,
+      "percent": 20,
       "status": "early",
       "basis": [
         "phase_0_scaffold",

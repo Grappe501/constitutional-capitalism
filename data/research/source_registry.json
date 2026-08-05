@@ -1,6 +1,336 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "last_updated": "2026-08-04",
-  "note": "No invented citations. Registry is empty of claimed sources in Phase 0.",
-  "sources": []
+  "note": "Phase 2 priority sources. No fabricated findings. Secondary sources labeled.",
+  "sources": [
+    {
+      "source_id": "CC-SRC-001",
+      "title": "Changes in U.S. Family Finances from 2019 to 2022: Evidence from the Survey of Consumer Finances",
+      "authors": [
+        "Board of Governors of the Federal Reserve System"
+      ],
+      "year": 2023,
+      "url": "https://www.federalreserve.gov/publications/october-2023-changes-in-us-family-finances-from-2019-to-2022.htm",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "wealth_ownership",
+      "publication_date": "2023-10",
+      "retrieval_date": "2026-08-04",
+      "summary": "Triennial SCF results: real median net worth rose 37% to $192,900 (2022); real mean net worth rose 23% to $1,063,700. Patterns imply some narrowing of the wealth distribution between 2019 and 2022 while levels remain highly unequal (mean far above median).",
+      "key_findings": [
+        "Median net worth $192,900 in 2022 (2022 dollars)",
+        "Mean net worth $1,063,700 in 2022",
+        "Largest three-year median net-worth increase in modern SCF history"
+      ],
+      "limitations": "Survey-based; top-coded extremes; snapshot years; does not by itself establish causes of concentration.",
+      "ideological_or_institutional_considerations": "Official Federal Reserve statistical publication.",
+      "verification_status": "url_verified",
+      "notes": "Preferred primary source for household balance-sheet levels."
+    },
+    {
+      "source_id": "CC-SRC-002",
+      "title": "Distributional Financial Accounts — Distribution of Household Wealth in the U.S. since 1989",
+      "authors": [
+        "Board of Governors of the Federal Reserve System"
+      ],
+      "year": 2026,
+      "url": "https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/table/",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "wealth_ownership",
+      "publication_date": "2026-06-18",
+      "retrieval_date": "2026-08-04",
+      "summary": "Quarterly Distributional Financial Accounts integrate SCF microdata with Financial Accounts aggregates. Wealth remains highly concentrated; bottom half of the wealth distribution holds a small share of total wealth.",
+      "key_findings": [
+        "FRED DFA share tables (Q1 2026): top 1% ≈ 28.8% of wealth; 90th–99th ≈ 34.7%; bottom 50% ≈ 5.3%",
+        "Implies top decile near ~63.5% of household wealth in that quarter"
+      ],
+      "limitations": "Model-based quarterly estimates; methodology differs from SCF point estimates; shares vary by quarter and asset definition.",
+      "ideological_or_institutional_considerations": "Official Federal Reserve statistical product.",
+      "verification_status": "url_verified",
+      "notes": "Use for concentration shares; cross-check with SCF for levels."
+    },
+    {
+      "source_id": "CC-SRC-003",
+      "title": "Understanding the labor productivity and compensation gap",
+      "authors": [
+        "Michael Brill",
+        "Corey Holman",
+        "Chris Morris",
+        "Ronjoy Raichoudhary",
+        "Noah Yosif"
+      ],
+      "year": 2017,
+      "url": "https://www.bls.gov/opub/btn/volume-6/pdf/understanding-the-labor-productivity-and-compensation-gap.pdf",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "wages_productivity",
+      "publication_date": "2017",
+      "retrieval_date": "2026-08-04",
+      "summary": "BLS Beyond the Numbers analysis: productivity and compensation rose together for decades after the 1940s, then diverged since the 1970s at aggregate and many industry levels.",
+      "key_findings": [
+        "Documents a productivity–compensation gap since the 1970s",
+        "Industry detail shows compensation lagging productivity in most studied industries (1987–2015)"
+      ],
+      "limitations": "Measurement choices (deflators, sectors, compensation vs typical-worker pay) affect gap size; article is older than current BLS releases.",
+      "ideological_or_institutional_considerations": "Official BLS staff analysis.",
+      "verification_status": "url_verified",
+      "notes": "Primary federal acknowledgment of divergence phenomenon."
+    },
+    {
+      "source_id": "CC-SRC-004",
+      "title": "The Productivity–Pay Gap",
+      "authors": [
+        "Economic Policy Institute"
+      ],
+      "year": 2025,
+      "url": "https://www.epi.org/productivity-pay-gap/",
+      "source_type": "nonprofit_research",
+      "reliability": "reputable_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "wages_productivity",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "EPI constructs a net-productivity vs typical-worker hourly compensation series from BLS and BEA inputs. Reports large cumulative divergence since 1979 (e.g., net productivity up far more than typical-worker pay).",
+      "key_findings": [
+        "From 1979 to 2020, EPI reports net productivity +61.8% vs typical-worker hourly pay +17.5% (inflation-adjusted), per their methodology page"
+      ],
+      "limitations": "Advocacy-affiliated research institute; series construction choices (typical worker definition, net productivity) are contested; not a federal official series.",
+      "ideological_or_institutional_considerations": "Progressive labor-oriented think tank — use alongside BLS primary series, not alone.",
+      "verification_status": "url_verified",
+      "notes": "Secondary synthesis; preserve as one perspective on the gap."
+    },
+    {
+      "source_id": "CC-SRC-005",
+      "title": "Economic Census 2022 — Concentration of Largest Firms (EC2200SIZECONCEN)",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2022,
+      "url": "https://data.census.gov/table/ECNSIZE2022.EC2200SIZECONCEN",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "competition_concentration",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-04",
+      "summary": "Official Economic Census establishment/firm-size concentration ratios (CR4/CR8/CR20/CR50 and related measures) for U.S. industries.",
+      "key_findings": [
+        "Provides industry-level concentration ratios for 2022 Economic Census",
+        "Enables tracking of largest-firm shares of sales/shipments/revenue"
+      ],
+      "limitations": "Industry definitions and national aggregation; concentration ≠ proven market power; not a single economy-wide monopoly index.",
+      "ideological_or_institutional_considerations": "Official Census Bureau Economic Census product.",
+      "verification_status": "url_verified",
+      "notes": "Primary source for competition domain architecture."
+    },
+    {
+      "source_id": "CC-SRC-006",
+      "title": "Does employee ownership improve performance?",
+      "authors": [
+        "Douglas Kruse"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.15185/izawol.311",
+      "source_type": "peer_reviewed_or_research_synthesis",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "international_with_US",
+      "research_domain": "worker_ownership",
+      "publication_date": "2016-12",
+      "retrieval_date": "2026-08-04",
+      "summary": "IZA World of Labor synthesis: over 100 studies generally link employee ownership to better productivity, pay, job stability, and survival on average; effects are dispersed and causation is difficult to establish firmly. Meta-analysis finds small positive average performance association.",
+      "key_findings": [
+        "Small but significant average positive association with firm performance in meta-analysis (r̄≈0.04 cited)",
+        "Free-rider problems may be mitigated by complementary workplace practices"
+      ],
+      "limitations": "Selection into ESOPs; heterogeneous designs; publication bias risk; not proof that all ownership forms always improve outcomes.",
+      "ideological_or_institutional_considerations": "Academic synthesis; author is a leading EO researcher.",
+      "verification_status": "url_verified",
+      "notes": "Supports 'can improve' not 'always improves'."
+    },
+    {
+      "source_id": "CC-SRC-007",
+      "title": "Research findings on employee ownership",
+      "authors": [
+        "National Center for Employee Ownership"
+      ],
+      "year": 2022,
+      "url": "https://www.nceo.org/research/research-findings-on-employee-ownership",
+      "source_type": "nonprofit_research",
+      "reliability": "reputable_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "worker_ownership",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-04",
+      "summary": "NCEO research digest summarizing studies associating ESOPs with productivity, retention, and crisis resilience in some samples, including food-industry COVID comparisons.",
+      "key_findings": [
+        "Cites meta-analysis of 102 studies with small positive performance link",
+        "Reports ESOP adoption associated with labor-productivity increases in some establishment studies"
+      ],
+      "limitations": "Advocacy/membership organization for employee ownership; selection effects; results vary by governance quality.",
+      "ideological_or_institutional_considerations": "Pro-employee-ownership nonprofit — pair with independent academic reviews.",
+      "verification_status": "url_verified",
+      "notes": "Secondary; opposing caveat is selection and small average effects."
+    },
+    {
+      "source_id": "CC-SRC-008",
+      "title": "Rural America at a Glance, 2025 Edition",
+      "authors": [
+        "USDA Economic Research Service"
+      ],
+      "year": 2025,
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/113657/EIB-295.pdf",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "local_rural",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-04",
+      "summary": "ERS annual nonmetro overview: ~46.2 million nonmetro residents (13.6% of U.S.) in July 2024; nonmetro growth slower than metro; 51% of nonmetro counties declined 2020–2024 despite aggregate nonmetro gains from migration.",
+      "key_findings": [
+        "Nonmetro population 46.2 million (July 2024), 13.6% of U.S.",
+        "51% of nonmetro counties lost population July 2020–June 2024"
+      ],
+      "limitations": "County typology and metro adjacency matter; aggregate nonmetro gains mask widespread county decline.",
+      "ideological_or_institutional_considerations": "Official USDA ERS.",
+      "verification_status": "url_verified",
+      "notes": "Primary rural demography source."
+    },
+    {
+      "source_id": "CC-SRC-009",
+      "title": "146 rural hospitals closed or stopped providing inpatient services from 2005 to 2023",
+      "authors": [
+        "USDA Economic Research Service"
+      ],
+      "year": 2025,
+      "url": "https://www.ers.usda.gov/data-products/charts-of-note/chart-detail?chartId=110927",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "local_rural",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-04",
+      "summary": "ERS chart note: 146 rural-county hospitals closed or converted from acute inpatient care (2005–2023); 81 shut down completely; financial stress is primary driver.",
+      "key_findings": [
+        "146 closures/conversions 2005–2023",
+        "81 complete shutdowns"
+      ],
+      "limitations": "Does not measure access minutes for all communities; conversion still leaves some services.",
+      "ideological_or_institutional_considerations": "Official USDA ERS.",
+      "verification_status": "url_verified",
+      "notes": "Healthcare access proxy for rural resilience."
+    },
+    {
+      "source_id": "CC-SRC-010",
+      "title": "Long-Term Trends in Rural Depopulation and Their Implications for Community Banks",
+      "authors": [
+        "FDIC"
+      ],
+      "year": 2014,
+      "url": "https://www.fdic.gov/analysis/quarterly-banking-profile/fdic-quarterly/2014-vol8-2/article2.pdf",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "banking_rural",
+      "publication_date": "2014",
+      "retrieval_date": "2026-08-04",
+      "summary": "FDIC analysis: more than half of rural counties lost population 1980–2010; community bank charters in depopulating rural areas declined sharply with industry consolidation.",
+      "key_findings": [
+        "Over half of rural counties lost population 1980–2010",
+        "Community bank charters in depopulating rural areas fell substantially 1984–2012"
+      ],
+      "limitations": "Older article; banking structure has continued to change; does not prove causation from depopulation alone.",
+      "ideological_or_institutional_considerations": "Official FDIC research article.",
+      "verification_status": "url_verified",
+      "notes": "Historical structural context for local capital access."
+    },
+    {
+      "source_id": "CC-SRC-011",
+      "title": "Earnings, Income, and Wealth Inequality in America: New Evidence from the 2022 Survey of Consumer Finances (NBER WP 33823)",
+      "authors": [
+        "NBER working paper authors (see paper)"
+      ],
+      "year": 2025,
+      "url": "https://www.nber.org/system/files/working_papers/w33823/w33823.pdf",
+      "source_type": "working_paper",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "wealth_ownership",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-04",
+      "summary": "NBER working paper on 2022 SCF: wealth remains highly concentrated; reports top 1% holding about 35% of wealth in 2022, down from a 2016 peak near 39%, with housing gains benefiting middle-class households.",
+      "key_findings": [
+        "Top 1% wealth share ≈35% in 2022 SCF analysis (paper)",
+        "Concentration declined modestly from mid-2010s peak while remaining high"
+      ],
+      "limitations": "Working paper (not peer-reviewed final); estimates depend on SCF processing choices; differs from DFA quarterly shares.",
+      "ideological_or_institutional_considerations": "Academic working paper — secondary to Fed SCF bulletin.",
+      "verification_status": "url_verified",
+      "notes": "Use as secondary corroboration; prefer Fed SCF/DFA for official citation."
+    },
+    {
+      "source_id": "CC-SRC-012",
+      "title": "FRED — Shares of Wealth by Wealth Percentile Groups (Distributional Financial Accounts)",
+      "authors": [
+        "Federal Reserve Bank of St. Louis / Board of Governors"
+      ],
+      "year": 2026,
+      "url": "https://fred.stlouisfed.org/release/tables?eid=813804&rid=453",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "wealth_ownership",
+      "publication_date": "2026-Q1",
+      "retrieval_date": "2026-08-04",
+      "summary": "FRED release tables for DFA wealth shares by percentile groups.",
+      "key_findings": [
+        "Q1 2026: Top 1% 28.8%; 90–99th 34.7%; 50–90th 31.1%; Bottom 50% 5.3%"
+      ],
+      "limitations": "Quarterly model-based shares; subject to revision.",
+      "ideological_or_institutional_considerations": "Official Fed data via FRED.",
+      "verification_status": "url_verified",
+      "notes": "Canonical share figures for baseline metrics."
+    },
+    {
+      "source_id": "CC-SRC-013",
+      "title": "The Distribution of Household Income in 2021",
+      "authors": [
+        "Congressional Budget Office"
+      ],
+      "year": 2024,
+      "url": "https://www.cbo.gov/publication/60341",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "taxation_income",
+      "publication_date": "2024-09",
+      "retrieval_date": "2026-08-04",
+      "summary": "CBO distributional analysis of household income, means-tested transfers, and federal taxes for 2021. Highest-quintile average income before transfers/taxes roughly 19× lowest quintile; after transfers and taxes about 7×. Federal taxes and transfers reduce measured inequality but do not eliminate concentration of income and tax payments at the top.",
+      "key_findings": [
+        "Highest-quintile average income before transfers/taxes ≈19× lowest quintile in 2021",
+        "After transfers and taxes, highest/lowest ratio ≈7×",
+        "Pandemic-era transfers and credits raised lower-income incomes while capital gains raised top incomes"
+      ],
+      "limitations": "CBO income/tax concepts differ from IRS AGI or SCF wealth; 2021 includes temporary pandemic policies; incidence assumptions are model-based.",
+      "ideological_or_institutional_considerations": "Nonpartisan congressional scorekeeping agency.",
+      "verification_status": "url_verified",
+      "notes": "Primary federal source for income/tax distribution architecture."
+    }
+  ]
 }

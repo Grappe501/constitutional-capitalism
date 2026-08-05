@@ -1,6 +1,6 @@
 # Project Master Map
 
-Last updated: 2026-08-04
+Last updated: 2026-08-04 (Phase 2 diagnosis foundation)
 
 ## Purpose
 
@@ -20,7 +20,11 @@ Map every major system in the Constitutional Capitalism repository.
 | Three-book architecture | `docs/architecture/THREE_BOOK_ARCHITECTURE.md` + `data/project/three_book_architecture.json` | Public book / Evidence Companion / Implementation Manual (`CC-DEC-030`) |
 | Evidence Companion | `content/evidence-companion/` | Book Two dossiers linked to claim ledger |
 | Implementation Manual | `content/implementation-manual/` | Book Three practical pathways |
-| National Baseline | `docs/architecture/NATIONAL_BASELINE_AND_DASHBOARD.md` + `data/project/national_baseline.json` | Success-measure slots before conclusions (`CC-DEC-033`) |
+| National Baseline | `docs/architecture/NATIONAL_BASELINE_AND_DASHBOARD.md` + `data/project/national_baseline.json` + `data/baseline/` | Success-measure slots + sourced metrics subset (`CC-DEC-033`) |
+| National Diagnosis | `content/research/national-diagnosis/` | Domain briefs (priority first-pass + foundational) |
+| Developing doctrine | `data/project/developing_doctrine.json` | Post–Phase-1 concepts — not Declaration rewrite |
+| Transition timeline | `data/project/transition_timeline.json` + `docs/architecture/TRANSITION_AND_IMPLEMENTATION_TIMELINE_FRAMEWORK.md` | Implementation timeline framework |
+| Testing / pilots | `data/testing/` + `docs/research/TESTING_AND_PILOT_STANDARD.md` | Pilot/testing standard (no fake pilots) |
 | Constitutional Capitalism Test | `docs/governance/CONSTITUTIONAL_CAPITALISM_TEST.md` + `data/project/constitutional_capitalism_test.json` | Ten-question policy screen (`CC-DEC-031`) |
 | Chapter evaluation template | `docs/writing/CHAPTER_EVALUATION_TEMPLATE.md` + `data/project/chapter_evaluation_template.json` | Closing block for developed chapters (`CC-DEC-032`) |
 | Transition architecture | `docs/architecture/TRANSITION_AND_TESTING_ARCHITECTURE.md` | 10–20 year testing & transformation design |
@@ -53,4 +57,4 @@ Map every major system in the Constitutional Capitalism repository.
 
 ## Current phase
 
-Phase 1 complete (declaration). Civilizational core + living-website architecture proposed. Next queued slice: `CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0` — build evidence and National Baseline inside the power-distribution frame.
+Phase 1 **ACCEPTED / CLOSED**. Active: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (absorbs Evidence + National Baseline). Parallel: civic deliberation feedback system (queued; does not block). Phase 2 is expected partial until Phase 2.1 finishes remaining domains.

@@ -43,6 +43,8 @@ pnpm env:verify
 ```powershell
 pnpm content:validate
 pnpm project:validate
+pnpm research:validate
+pnpm baseline:validate
 pnpm progress:generate
 pnpm book:dev
 pnpm board:dev
@@ -62,14 +64,13 @@ Steve (owner) · ChatGPT (mission design / review) · Cursor (implementation)
 
 Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `docs/handoffs/`.
 
-## Current direction (post–Phase 1)
+## Current direction (Phase 2)
 
-- Phase 1 declaration complete; next slice: `CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0`
-- **Organizing frame:** where power should reside in a constitutional republic (economics is the first arena)
-- Proposed sacred sentence / first principle / subsidiarity / Stewardship pillar: see `docs/architecture/CIVILIZATIONAL_CORE.md` (`CC-DEC-034`–`042`)
-- Living website is the intended primary medium; book is the Introduction (`CC-DEC-035`)
-- Three parallel books remain content streams (`CC-DEC-030`)
-- Phase 2 builds **evidence + National Baseline**, not research notes alone
-- Canonical definition/title/subtitle unchanged unless Steve explicitly amends
-- Do not invent sources or baseline values; do not lock tax/ownership redesign as finished policy; do not inflate modeling/legal/source-verification progress
-
+- Phase 1 **ACCEPTED / CLOSED** (build `0f24a8b`, closeout `4fbaacd`); Foundational Philosophy ~70%
+- Active mission: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (Evidence + Baseline absorbed as deliverables)
+- Parallel (does not block): `CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0` — needs secure backend + protected admin; open `CC-DEC-011`
+- Public surfaces: `/where-we-are/`, `/evidence/`, `/metrics/`
+- Board surfaces: `/diagnosis/`, `/baseline/`, `/evidence/`
+- Do **not** rewrite the Declaration; developing doctrine lives in `data/project/developing_doctrine.json`
+- Do not invent sources or baseline values; do not inflate modeling/legal/source-verification progress
+- Phase 2 expected **partial / Phase 2.1** until remaining domains are fully sourced

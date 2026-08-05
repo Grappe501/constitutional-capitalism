@@ -6,6 +6,11 @@ import updates from "../../../../data/project/updates.json";
 import layers from "../../../../data/metrics/progress_layers.json";
 import comparisonRaw from "../../../../data/project/economic_system_comparison.json";
 import declarationSource from "../../../../content/declarations/DECLARATION_OF_CONSTITUTIONAL_CAPITALISM.md?raw";
+import claims from "../../../../data/research/claim_ledger.json";
+import sources from "../../../../data/research/source_registry.json";
+import baselineMetrics from "../../../../data/baseline/national_baseline_metrics.json";
+import baselineStatus from "../../../../data/baseline/baseline_status.json";
+import baselineMethodology from "../../../../data/baseline/baseline_methodology.json";
 
 type Principle = {
   id: string;
@@ -30,7 +35,19 @@ function asList<T>(value: unknown): T[] {
 
 export const principles = { principles: asList<Principle>(principlesRaw) };
 export const comparison = { systems: asList<Record<string, unknown>>(comparisonRaw) };
-export { identity, structure, snapshot, updates, layers, declarationSource };
+export {
+  identity,
+  structure,
+  snapshot,
+  updates,
+  layers,
+  declarationSource,
+  claims,
+  sources,
+  baselineMetrics,
+  baselineStatus,
+  baselineMethodology,
+};
 
 type Layer = { id: string; label: string; percent: number; status: string };
 

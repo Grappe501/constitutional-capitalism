@@ -64,29 +64,56 @@ const philosophyPercent = declarationExists
   ? Math.min(70, 35 + Math.round(declarationWords / 250) + Math.min(principles.length, 20))
   : 25;
 
+const sourceList =
+  JSON.parse(fs.readFileSync(r("data/research/source_registry.json"), "utf8")).sources || [];
+const verifiedSources = sourceList.filter(
+  (s) => s.verification_status === "url_verified" || s.verification_status === "verified"
+);
+const claimsWithSources = claimList.filter((c) => (c.source_ids || []).length > 0);
+const claimsSupportedish = claimList.filter((c) =>
+  ["supported", "partially_supported"].includes(c.support_level)
+);
+const diagnosisDir = r("content/research/national-diagnosis");
+const diagnosisFiles = fs.existsSync(diagnosisDir)
+  ? fs.readdirSync(diagnosisDir).filter((f) => f.endsWith(".md"))
+  : [];
+const priorityBriefHits = diagnosisFiles.filter((f) => {
+  const body = fs.readFileSync(`${diagnosisDir}/${f}`, "utf8");
+  return body.includes("priority_first_pass");
+}).length;
+
+// Honest Phase 2 progress: reward registered sources + claim upgrades + briefs, not scaffolding alone.
+const researchFoundation = Math.min(
+  42,
+  16 +
+    Math.round(verifiedSources.length * 0.7) +
+    Math.round(claimsSupportedish.length * 1.1) +
+    Math.min(8, Math.round(priorityBriefHits * 0.5))
+);
+const sourceVerification = Math.min(
+  20,
+  Math.round(verifiedSources.length * 1.1) + Math.round(claimsWithSources.length * 0.35)
+);
+
 const derived = {
   project_governance: 90,
   book_architecture: chapters.length >= 90 ? 90 : Math.round((chapters.length / 90) * 90),
   foundational_philosophy: philosophyPercent,
   manuscript: manuscriptPercent,
-  research_foundation: Math.min(40, 15 + Math.round(researchQuestions.length / 2)),
-  source_verification: claimList.some((c) => (c.source_ids || []).length > 0)
-    ? 10
-    : claimList.length
-      ? 2
-      : 0,
+  research_foundation: researchFoundation,
+  source_verification: sourceVerification,
   policy_development: 15,
   economic_modeling: 0,
   constitutional_analysis: declarationExists ? 25 : 5,
   legal_review: 0,
   editorial_review: declarationExists ? 10 : 0,
-  public_book_website: declarationExists ? 65 : 40,
-  build_board: 70,
+  public_book_website: declarationExists ? 70 : 40,
+  build_board: 75,
   accessibility: 40,
   publishing_formats: 8,
   free_distribution: 20,
   deployment_readiness: deployments.applications.every((a) => a.netlify_config) ? 55 : 20,
-  public_launch_readiness: declarationExists ? 18 : 5,
+  public_launch_readiness: declarationExists ? 20 : 5,
 };
 
 const layers = (layersDoc.layers || []).map((layer) => {

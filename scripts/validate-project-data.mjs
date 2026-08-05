@@ -33,7 +33,10 @@ const validations = [
   ['data/project/constitutional_capitalism_test.json','schemas/constitutional_capitalism_test.schema.json'],
   ['data/project/chapter_evaluation_template.json','schemas/chapter_evaluation_template.schema.json'],
   ['data/project/civilizational_core.json','schemas/civilizational_core.schema.json'],
-  ['data/project/website_information_architecture.json','schemas/website_information_architecture.schema.json']
+  ['data/project/website_information_architecture.json','schemas/website_information_architecture.schema.json'],
+  ['data/project/developing_doctrine.json','schemas/developing_doctrine.schema.json'],
+  ['data/project/transition_timeline.json','schemas/transition_timeline.schema.json'],
+  ['data/baseline/national_baseline_metrics.json','schemas/national_baseline_metrics.schema.json']
 ];
 for (const [dataRel, schemaRel] of validations) {
   if (!fs.existsSync(r(dataRel))) { fail(`Missing data file: ${dataRel}`); continue; }

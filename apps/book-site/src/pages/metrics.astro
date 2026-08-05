@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { baselineMetrics, baselineStatus } from "../lib/data";
+
+const metrics = baselineMetrics.metrics || [];
+const sourced = metrics.filter((m: any) => m.status === "sourced" || m.current_value != null);
+const pending = metrics.filter((m: any) => m.current_value == null);
+---
+
+<BaseLayout
+  title="Metrics"
+  path="/metrics/"
+  description="National Baseline completeness — sourced values only, no invented targets."
+>
+  <article class="prose">
+    <h1>National Baseline metrics</h1>
+    <p class="lede">
+      Completeness dashboard for measurement slots. Targets are not invented in Phase 2.
+    </p>
+    <p class="status-note">
+      Status: {baselineStatus.status}. Sourced {baselineStatus.sourced_metrics} of{" "}
+      {baselineStatus.total_metrics} metrics. Pending: {baselineStatus.pending_metrics}.
+    </p>
+
+    <h2>Sourced metrics</h2>
+    {
+      sourced.length === 0 ? (
+        <p>No sourced metrics yet.</p>
+      ) : (
+        <ul>
+          {sourced.map((m: any) => (
+            <li>
+              <code>{m.metric_id}</code> — {m.title}
+              <br />
+              Value: <code>{typeof m.current_value === "object" ? JSON.stringify(m.current_value) : m.current_value}</code>
+              {" "}({m.reference_year}) · sources: {(m.source_ids || []).join(", ")}
+              {m.limitations ? (
+                <>
+                  <br />
+                  <span style="font-size:0.92rem;color:var(--ink-soft);">Limitations: {m.limitations}</span>
+                </>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <h2>Pending metrics ({pending.length})</h2>
+    <p>Structure reserved; values appear only when sources are registered.</p>
+    <ul>
+      {
+        pending.slice(0, 20).map((m: any) => (
+          <li>
+            <code>{m.metric_id}</code> — {m.title} ({m.domain_name || m.domain_id || "domain pending"})
+          </li>
+        ))
+      }
+      {pending.length > 20 ? <li>…and {pending.length - 20} more in the baseline registry.</li> : null}
+    </ul>
+  </article>
+</BaseLayout>

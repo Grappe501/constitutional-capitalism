@@ -1,6 +1,6 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-05T00:31:29.892Z
+Generated: 2026-08-05T01:06:20.045Z
 
 ## For the next AI / human operator
 
@@ -20,27 +20,27 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `4fbaacd`
+- **HEAD:** `7184b70`
 
 ## Current state
 
-- Mission / slice: `CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0`
-- Phase: `phase-1`
-- Status: `phase_1_complete_with_civilizational_core_proposal`
-- Writing focus: Civilizational core: constitutional power, living website school of thought, human flourishing across domains
-- Next action: Resolve CC-DEC-034–042 when ready; begin Phase 2 evidence/baseline inside this civilizational frame
-- Overall progress: **34%**
+- Mission / slice: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
+- Phase: `phase-2`
+- Status: `phase_2_partial_complete`
+- Writing focus: National diagnosis, baseline metrics, evidence companion — evidence before policy
+- Next action: Phase 2.1: source remaining diagnosis domains; expand baseline beyond wealth; deepen political-power and internet-commerce modules
+- Overall progress: **36%**
 
 ## Active slice
 
-- ID: `CC-PHASE-1-FOUNDATIONAL-DECLARATION-1.0`
-- Title: Foundational Declaration
-- Status: `completed`
+- ID: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
+- Title: Diagnosis Research Foundation
+- Status: `partial_complete`
 
 ## Recommended next slice
 
-- ID: `CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0`
-- Title: Evidence and National Baseline
+- ID: `TBD`
+- Title: TBD
 - Do **not** mark Phase 1 active until Phase 0 validation succeeds.
 
 ## Open decisions (sample)

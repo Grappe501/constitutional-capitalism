@@ -1,119 +1,203 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-04",
-  "note": "Claims will be added as drafting proceeds. No fabricated support levels.",
+  "note": "Phase 2 priority claims. Normative and prediction claims labeled. No fabricated support.",
   "claims": [
     {
       "claim_id": "CC-CLAIM-001",
       "claim_text": "Capitalism has produced broad prosperity across historical contexts.",
       "chapter_ids": [],
-      "claim_type": "historical economics",
+      "claim_type": "historical_economics",
+      "claim_class": "descriptive_historical",
       "importance": "high",
-      "support_level": "unsupported",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "contested_across_literatures",
       "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
+      "opposing_evidence": [
+        "Cross-country and within-country experiences vary widely; distributional outcomes differ."
+      ],
+      "uncertainty": "Too broad for a single Phase 2 quantitative claim; needs scoped historical modules.",
       "fact_check_status": "needs_research",
       "publication_readiness": "not_ready",
-      "legal_review_requirement": true
+      "legal_review_requirement": true,
+      "geographic_scope": "multi_country",
+      "temporal_scope": "long_run",
+      "public_wording": "Market systems have been associated with large gains in material living standards in many contexts, with important exceptions and distributional conflicts."
     },
     {
       "claim_id": "CC-CLAIM-002",
-      "claim_text": "Wage growth has diverged from productivity growth in important recent periods.",
+      "claim_text": "Wage growth and productivity growth have diverged over long periods for typical U.S. workers.",
       "chapter_ids": [],
-      "claim_type": "labor economics",
+      "claim_type": "labor_economics",
+      "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
-      "legal_review_requirement": false
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "widely_documented_with_measurement_debates",
+      "source_ids": [
+        "CC-SRC-003",
+        "CC-SRC-004"
+      ],
+      "opposing_evidence": [
+        "Gap size depends on whether average compensation, median wages, or production/nonsupervisory pay is used, and on price deflators.",
+        "Some analyses emphasize benefits growth and composition effects."
+      ],
+      "uncertainty": "Causal attribution (market power, technology, globalization, institutions) remains debated.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "post_1970s",
+      "public_wording": "Federal and secondary analyses document a productivity–compensation gap since the 1970s; exact magnitudes depend on measurement choices."
     },
     {
       "claim_id": "CC-CLAIM-003",
-      "claim_text": "Economic concentration weakens democratic accountability.",
+      "claim_text": "Economic concentration can weaken democratic accountability.",
       "chapter_ids": [],
-      "claim_type": "political economy",
+      "claim_type": "political_economy",
+      "claim_class": "causal_theoretical_and_empirical_mixed",
       "importance": "high",
-      "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "low_to_moderate",
+      "consensus_status": "contested",
+      "source_ids": [
+        "CC-SRC-005"
+      ],
+      "opposing_evidence": [
+        "Concentration measures do not automatically prove political capture.",
+        "Countervailing institutions, media, and electoral competition vary."
+      ],
+      "uncertainty": "Needs campaign-finance, lobbying, and media-concentration modules with careful identification.",
       "fact_check_status": "needs_research",
       "publication_readiness": "not_ready",
-      "legal_review_requirement": true
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "public_wording": "Market concentration is measurable; links from concentration to democratic accountability require additional sourced political-economy research."
     },
     {
       "claim_id": "CC-CLAIM-004",
-      "claim_text": "Employee ownership can improve firm performance and worker outcomes.",
+      "claim_text": "Employee ownership can improve firm performance and worker outcomes under some conditions.",
       "chapter_ids": [],
-      "claim_type": "ownership research",
+      "claim_type": "ownership_research",
+      "claim_class": "causal_empirical_mixed",
       "importance": "high",
-      "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
-      "legal_review_requirement": false
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "generally_positive_average_effects_with_heterogeneity",
+      "source_ids": [
+        "CC-SRC-006",
+        "CC-SRC-007"
+      ],
+      "opposing_evidence": [
+        "Average performance association is small; many null results exist.",
+        "Selection into ESOPs and complementary HR practices confound causal claims.",
+        "Employee stock can concentrate retirement risk in one employer."
+      ],
+      "uncertainty": "Design quality (participation, information, diversification) likely mediates outcomes.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US_and_international",
+      "temporal_scope": "late_20th_early_21st",
+      "public_wording": "Research syntheses find employee ownership is often associated with modestly better average performance and stability, not universal improvement."
     },
     {
       "claim_id": "CC-CLAIM-005",
-      "claim_text": "Monopoly can reduce economic liberty by limiting practical alternatives.",
+      "claim_text": "Market concentration can weaken competition in U.S. industries.",
       "chapter_ids": [],
       "claim_type": "antitrust",
+      "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
-      "legal_review_requirement": true
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "data_available_interpretation_debated",
+      "source_ids": [
+        "CC-SRC-005"
+      ],
+      "opposing_evidence": [
+        "Rising concentration can reflect efficiency and scale.",
+        "National concentration may overstate local rivalry or understate digital competition."
+      ],
+      "uncertainty": "Effects on prices, wages, and entry are industry-specific.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "Economic_Census_cycles",
+      "public_wording": "The Economic Census publishes concentration ratios showing large-firm shares in many industries; competitive effects must be assessed case by case."
     },
     {
       "claim_id": "CC-CLAIM-006",
-      "claim_text": "Corporate relocation can drain community capacity and local tax bases.",
+      "claim_text": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
       "chapter_ids": [],
-      "claim_type": "regional economics",
+      "claim_type": "regional_economics",
+      "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
-      "legal_review_requirement": false
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "well_documented_for_selected_indicators",
+      "source_ids": [
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-010"
+      ],
+      "opposing_evidence": [
+        "Some nonmetro areas have gained population via migration since 2020.",
+        "Not all rural counties follow the same path; recreation-adjacent counties differ."
+      ],
+      "uncertainty": "Plant-level relocation causal estimates need separate case/econometric modules.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US_nonmetro",
+      "temporal_scope": "1980_present",
+      "public_wording": "Federal sources document widespread rural county population loss historically, rural hospital closures/conversions, and community-bank charter decline in depopulating areas—alongside recent uneven nonmetro migration gains."
     },
     {
       "claim_id": "CC-CLAIM-007",
-      "claim_text": "AI displacement can create concentrated adjustment costs for workers and communities.",
+      "claim_text": "AI and automation may increase returns to capital relative to labor and create concentrated adjustment costs.",
       "chapter_ids": [],
-      "claim_type": "technology policy",
+      "claim_type": "technology_policy",
+      "claim_class": "speculative_and_emerging_empirical",
       "importance": "high",
-      "support_level": "unsupported",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "low",
+      "consensus_status": "emerging_contested",
       "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
+      "opposing_evidence": [
+        "Technology can complement labor and create new tasks; historical automation episodes vary."
+      ],
+      "uncertainty": "Phase 2.1 technology domain; avoid overclaiming.",
       "fact_check_status": "needs_research",
       "publication_readiness": "not_ready",
-      "legal_review_requirement": false
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "emerging",
+      "public_wording": "AI’s distributional effects are an open research frontier."
     },
     {
       "claim_id": "CC-CLAIM-008",
       "claim_text": "Destination-based taxation can better align tax obligations with market access.",
       "chapter_ids": [],
-      "claim_type": "tax policy",
+      "claim_type": "tax_policy",
+      "claim_class": "normative_proposal_not_empirical_fact",
       "importance": "high",
-      "support_level": "unsupported",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "n_a_normative",
+      "consensus_status": "policy_debate",
       "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Phase 1 seed claim requiring future sourcing.",
+      "opposing_evidence": [
+        "Administrative complexity; trade and WTO considerations; incidence uncertain."
+      ],
+      "uncertainty": "Normative/policy claim — must not be presented as established fact.",
       "fact_check_status": "needs_research",
       "publication_readiness": "not_ready",
-      "legal_review_requirement": true
+      "legal_review_requirement": true,
+      "geographic_scope": "US_international",
+      "temporal_scope": "proposal",
+      "public_wording": "A proposed tax-design approach requiring legal and incidence analysis — not an empirical finding."
     },
     {
       "claim_id": "CC-CLAIM-009",
@@ -123,15 +207,23 @@
         "CC-CH-082"
       ],
       "claim_type": "prediction",
+      "claim_class": "prediction",
       "importance": "high",
       "support_level": "unsupported",
+      "evidence_strength": "none",
+      "consensus_status": "untested",
       "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Requires modeling; behavioral and legal responses unknown.",
+      "opposing_evidence": [
+        "No model results yet; behavioral responses unknown."
+      ],
+      "uncertainty": "Requires modeling; labeled prediction not evidence.",
       "fact_check_status": "needs_research",
       "legal_review_requirement": false,
       "publication_readiness": "not_ready",
-      "prediction_id": "CC-PRED-001"
+      "prediction_id": "CC-PRED-001",
+      "geographic_scope": "US",
+      "temporal_scope": "10_20_years",
+      "public_wording": "A hypothesis for future modeling — not established."
     },
     {
       "claim_id": "CC-CLAIM-010",
@@ -141,15 +233,262 @@
         "CC-CH-076"
       ],
       "claim_type": "prediction",
+      "claim_class": "prediction",
       "importance": "critical",
       "support_level": "unsupported",
-      "source_ids": [],
-      "opposing_evidence": [],
-      "uncertainty": "Depends on adoption rates, asset returns, and transition design.",
+      "evidence_strength": "none",
+      "consensus_status": "untested",
+      "source_ids": [
+        "CC-SRC-001",
+        "CC-SRC-002"
+      ],
+      "opposing_evidence": [
+        "Current SCF/DFA show limited bottom-half wealth shares; transition paths unproven."
+      ],
+      "uncertainty": "Depends on adoption, returns, and design.",
       "fact_check_status": "needs_research",
       "legal_review_requirement": false,
       "publication_readiness": "not_ready",
-      "prediction_id": "CC-PRED-006"
+      "prediction_id": "CC-PRED-006",
+      "geographic_scope": "US",
+      "temporal_scope": "future",
+      "public_wording": "A transition hypothesis; current data show limited bottom-half wealth shares."
+    },
+    {
+      "claim_id": "CC-CLAIM-011",
+      "claim_text": "U.S. household wealth is highly concentrated at the top of the distribution.",
+      "chapter_ids": [],
+      "claim_type": "wealth",
+      "claim_class": "descriptive_empirical",
+      "importance": "critical",
+      "support_level": "supported",
+      "evidence_strength": "strong",
+      "consensus_status": "broadly_established_levels_and_shares",
+      "source_ids": [
+        "CC-SRC-001",
+        "CC-SRC-002",
+        "CC-SRC-012",
+        "CC-SRC-011"
+      ],
+      "opposing_evidence": [
+        "2019–2022 SCF showed some narrowing as median rose faster than mean.",
+        "DFA top-1% share can move quarter to quarter."
+      ],
+      "uncertainty": "Levels (SCF) and quarterly shares (DFA) are complementary, not identical.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "1989_present",
+      "public_wording": "Federal data show wealth remains highly concentrated: e.g., DFA Q1 2026 top 1% ≈28.8% and bottom 50% ≈5.3% of wealth; SCF 2022 median net worth $192,900 vs mean $1,063,700."
+    },
+    {
+      "claim_id": "CC-CLAIM-012",
+      "claim_text": "Ordinary households hold a limited share of total household wealth relative to the top decile.",
+      "chapter_ids": [],
+      "claim_type": "wealth",
+      "claim_class": "descriptive_empirical",
+      "importance": "critical",
+      "support_level": "supported",
+      "evidence_strength": "strong",
+      "consensus_status": "broadly_established",
+      "source_ids": [
+        "CC-SRC-012",
+        "CC-SRC-002"
+      ],
+      "opposing_evidence": [
+        "Middle 40% (50–90th) still holds a substantial minority share (~31% in Q1 2026 DFA)."
+      ],
+      "uncertainty": "Asset composition differs by percentile.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "public_wording": "In DFA Q1 2026 shares, the top decile holds roughly three-fifths of household wealth while the bottom half holds about one-twentieth."
+    },
+    {
+      "claim_id": "CC-CLAIM-013",
+      "claim_text": "Payroll and individual income taxes are major components of the tax burden on labor income.",
+      "chapter_ids": [],
+      "claim_type": "taxation",
+      "claim_class": "descriptive_institutional",
+      "importance": "high",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "institutionally_true_but_incidence_debated",
+      "source_ids": [
+        "CC-SRC-013"
+      ],
+      "opposing_evidence": [
+        "Economic incidence of payroll taxes may be shared with employers; consumption taxes also burden workers.",
+        "Average tax rates and shares depend on CBO’s income definition and how refundable credits are classified."
+      ],
+      "uncertainty": "Needs CBO/Treasury/IRS SOI incidence modules in Phase 2.1.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "public_wording": "CBO’s 2021 household income/tax distribution shows federal taxes and transfers are major redistributive instruments; labor and capital income composition differs sharply by quintile. Exact payroll vs income-tax incidence modules remain Phase 2.1 work."
+    },
+    {
+      "claim_id": "CC-CLAIM-014",
+      "claim_text": "Statutory corporate taxes may be borne partly by workers and consumers.",
+      "chapter_ids": [],
+      "claim_type": "taxation",
+      "claim_class": "causal_empirical_literature",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "contested_in_public_finance",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Incidence estimates vary widely across open-economy models and studies."
+      ],
+      "uncertainty": "Phase 2.1 taxation domain.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "literature",
+      "public_wording": "An open public-finance question — not asserted as settled here."
+    },
+    {
+      "claim_id": "CC-CLAIM-015",
+      "claim_text": "Employer concentration can suppress wages in some labor markets.",
+      "chapter_ids": [],
+      "claim_type": "labor_monopsony",
+      "claim_class": "causal_empirical_literature",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "active_research_area",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Effects heterogeneous; measurement of labor-market boundaries contested."
+      ],
+      "uncertainty": "Needs DOJ/FTC/academic monopsony module.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "public_wording": "Plausible in some markets; not yet sourced as a Phase 2 settled claim."
+    },
+    {
+      "claim_id": "CC-CLAIM-016",
+      "claim_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+      "chapter_ids": [],
+      "claim_type": "internet_commerce",
+      "claim_class": "descriptive_and_theoretical",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "partially_documented_anecdotally_and_sectorally",
+      "source_ids": [],
+      "opposing_evidence": [
+        "E-commerce expands consumer choice and can support some local sellers; tax collection rules have changed."
+      ],
+      "uncertainty": "Needs Census e-commerce, platform market-share, and local leakage studies.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "2000_present",
+      "public_wording": "A priority research question — architecture ready, quantification pending."
+    },
+    {
+      "claim_id": "CC-CLAIM-017",
+      "claim_text": "Property taxation can threaten ownership security for some households.",
+      "chapter_ids": [],
+      "claim_type": "housing",
+      "claim_class": "descriptive_institutional",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "design_agenda",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Property tax funds local schools/services; alternatives have their own incidence."
+      ],
+      "uncertainty": "Developing doctrine CC-DEV-003; needs state/local finance evidence.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": true,
+      "geographic_scope": "US_states",
+      "temporal_scope": "contemporary",
+      "public_wording": "A design concern under research — not a completed empirical proof."
+    },
+    {
+      "claim_id": "CC-CLAIM-018",
+      "claim_text": "Education costs are frequently borne by workers while employers benefit from acquired skills.",
+      "chapter_ids": [],
+      "claim_type": "education",
+      "claim_class": "descriptive_and_theoretical",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "open",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Workers also capture private returns to education; subsidies already share some costs."
+      ],
+      "uncertainty": "Phase 2.1 education domain.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "contemporary",
+      "public_wording": "Open research question tied to developing doctrine on human capital."
+    },
+    {
+      "claim_id": "CC-CLAIM-019",
+      "claim_text": "Rural communities face structural barriers to retaining talent, capital, and essential services.",
+      "chapter_ids": [],
+      "claim_type": "rural",
+      "claim_class": "descriptive_empirical",
+      "importance": "high",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
+      "consensus_status": "supported_for_key_indicators_with_heterogeneity",
+      "source_ids": [
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-010"
+      ],
+      "opposing_evidence": [
+        "Post-2020 migration boosted some nonmetro counties; outcomes diverge sharply by county type."
+      ],
+      "uncertainty": "Aggregate nonmetro gains coexist with majority-county declines.",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
+      "legal_review_requirement": false,
+      "geographic_scope": "US_nonmetro",
+      "temporal_scope": "1980_present",
+      "public_wording": "Federal rural data show persistent structural stress (county population loss in many places, hospital closures, community-bank pressures) alongside uneven recent migration gains."
+    },
+    {
+      "claim_id": "CC-CLAIM-020",
+      "claim_text": "Public research contributes to private innovation.",
+      "chapter_ids": [],
+      "claim_type": "innovation",
+      "claim_class": "descriptive_historical_empirical",
+      "importance": "high",
+      "support_level": "requires_additional_research",
+      "evidence_strength": "incomplete",
+      "consensus_status": "broadly_plausible_needs_citations",
+      "source_ids": [],
+      "opposing_evidence": [
+        "Private R&D is also central; attribution of specific products is contested."
+      ],
+      "uncertainty": "Needs NSF/NIH/DOE innovation-linkage module.",
+      "fact_check_status": "needs_research",
+      "publication_readiness": "not_ready",
+      "legal_review_requirement": false,
+      "geographic_scope": "US",
+      "temporal_scope": "postwar",
+      "public_wording": "Queued for sourced innovation research."
     }
   ]
 }

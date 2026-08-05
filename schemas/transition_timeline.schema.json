@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/transition_timeline.schema.json",
+  "title": "TransitionTimeline",
+  "type": "object",
+  "required": ["version", "eras"],
+  "properties": {
+    "version": { "type": "string" },
+    "eras": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["era_id", "name", "years"],
+        "properties": {
+          "era_id": { "type": "string" },
+          "name": { "type": "string" },
+          "years": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -25,8 +25,13 @@
     "report:generate": "node scripts/generate-project-report.mjs",
     "handoff:generate": "node scripts/generate-thread-handoff.mjs",
     "build:all": "pnpm env:verify && pnpm content:validate && pnpm project:validate && pnpm progress:generate && pnpm progress:validate && pnpm book:build && pnpm board:build",
-    "check:all": "pnpm env:verify && pnpm content:validate && pnpm project:validate && pnpm book:check && pnpm board:check",
-    "gate": "pnpm check:all && pnpm build:all && pnpm report:generate && pnpm handoff:generate"
+    "check:all": "pnpm env:verify && pnpm content:validate && pnpm project:validate && pnpm research:validate && pnpm baseline:validate && pnpm book:check && pnpm board:check",
+    "gate": "pnpm check:all && pnpm build:all && pnpm report:generate && pnpm handoff:generate",
+    "research:validate": "node scripts/validate-research-data.mjs",
+    "claims:validate": "node scripts/validate-research-data.mjs",
+    "baseline:validate": "node scripts/validate-baseline-data.mjs",
+    "testing:validate": "node scripts/validate-baseline-data.mjs",
+    "timeline:validate": "node scripts/validate-research-data.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1"

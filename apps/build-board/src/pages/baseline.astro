@@ -1,0 +1,63 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { baselineMetrics, baselineStatus, nationalBaseline } from "../lib/data";
+
+const metrics = baselineMetrics.metrics || [];
+const sourced = metrics.filter((m: any) => m.current_value != null && (m.source_ids || []).length);
+---
+
+<BoardLayout title="Baseline" path="/baseline/">
+  <h1 class="page-title">National Baseline</h1>
+  <p class="page-lede">
+    Sourced subset only. No invented targets. Legacy structure:
+    <code>data/project/national_baseline.json</code> ({nationalBaseline.domains?.length ?? "—"} domains).
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Total metrics</div>
+      <div class="stat__value">{baselineStatus.total_metrics}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Sourced</div>
+      <div class="stat__value">{baselineStatus.sourced_metrics}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Pending</div>
+      <div class="stat__value">{baselineStatus.pending_metrics}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Status</div>
+      <div class="stat__value" style="font-size:1rem;">{baselineStatus.status}</div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Sourced values</h2>
+    <ul class="list-plain">
+      {
+        sourced.map((m: any) => (
+          <li>
+            <code>{m.metric_id}</code> — {m.title}:{" "}
+            <code>{typeof m.current_value === "object" ? JSON.stringify(m.current_value) : m.current_value}</code>{" "}
+            ({m.reference_year}) · {(m.source_ids || []).join(", ")}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>All metrics</h2>
+    <ul class="list-plain">
+      {
+        metrics.map((m: any) => (
+          <li>
+            <code>{m.metric_id}</code> — {m.title}{" "}
+            <span class="pill">{m.status}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BoardLayout>
