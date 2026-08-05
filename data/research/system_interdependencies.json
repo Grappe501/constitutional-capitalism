@@ -213,6 +213,31 @@
       ],
       "related_doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
       "double_count_warning": "Do not count equal-standing rhetoric, access programs, and trust gains as independent additive benefits without shared-pathway discipline."
+    },
+    {
+      "chain_id": "CC-INT-009",
+      "title": "Civic preparation to responsible participation",
+      "nodes": [
+        "participatory civic education",
+        "developmental pathway",
+        "youth councils and service",
+        "civic graduation portfolio",
+        "informed judgment",
+        "lifelong participation",
+        "institutional trust"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "participatory civic education", "to": "developmental pathway", "class": "plausible" },
+        { "from": "developmental pathway", "to": "youth councils and service", "class": "plausible" },
+        { "from": "youth councils and service", "to": "civic graduation portfolio", "class": "plausible" },
+        { "from": "civic graduation portfolio", "to": "informed judgment", "class": "plausible", "note": "Authenticity safeguards required; checkbox compliance risk" },
+        { "from": "informed judgment", "to": "lifelong participation", "class": "disputed", "note": "Civic-education effects on adult turnout/participation are heterogeneous" },
+        { "from": "lifelong participation", "to": "institutional trust", "class": "disputed" },
+        { "from": "informed judgment", "to": "institutional trust", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073", "CC-DEV-038"],
+      "double_count_warning": "Do not sum education, youth-council, portfolio, and voting-pilot benefits as independent additive gains; keep voting-age pilots scoped and measured separately."
     }
   ]
 }

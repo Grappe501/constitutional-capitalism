@@ -1,8 +1,8 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "last_updated": "2026-08-04",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Equal Standing / Blind Stage (foundational principle CC-PRIN-29), Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Equal Standing / Blind Stage (CC-PRIN-29), Constitutional Citizenship (CC-PRIN-30), Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -239,6 +239,27 @@
       "phase_destination": "phase-3_and_phase-4",
       "related_doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
       "note": "Foundational principle CC-PRIN-29; complements Declaration On equality."
+    },
+    {
+      "cluster_id": "CC-DCC-17",
+      "title": "Constitutional citizenship and civic preparation",
+      "maturity": "proposed_architecture",
+      "evidence_status": "normative_architecture",
+      "affected_domains": ["citizenship", "education", "democracy", "human_capital", "community"],
+      "constitutional_questions": [
+        "How does a republic prepare every generation for responsible self-government?",
+        "Under what conditions could earlier civic participation strengthen representation?"
+      ],
+      "implementation_level": ["local", "school", "state"],
+      "risks": [
+        "locking voting age without evidence",
+        "symbolic youth councils",
+        "invented civics-outcome statistics",
+        "service framed as punishment"
+      ],
+      "phase_destination": "phase-3_and_phase-4_and_phase-5_pilots",
+      "related_doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073"],
+      "note": "Principle CC-PRIN-30; links Human Capital, Equal Standing, Democracy, Community OS."
     }
   ],
   "items": [
@@ -1751,6 +1772,141 @@
       "status": "open",
       "related_decision_ids": ["CC-DEC-065"],
       "phase_destination": "phase-3_and_phase-9"
+    },
+    {
+      "doctrine_id": "CC-DEV-068",
+      "statement": "Self-government requires education. A constitutional republic has a duty to prepare every generation to understand its rights, its responsibilities, its institutions, and its ability to improve society through peaceful civic participation. Citizenship is learned through experience: continuous civic education, practical service, and meaningful opportunities to contribute to community decision-making. The primary question is how to graduate every citizen prepared for responsible self-government — not merely at what age someone may vote.",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed_core_doctrine",
+      "implications": [
+        "CC-PRIN-30",
+        "democracy as skill",
+        "Constitutional Citizenship Test",
+        "links to Human Capital investment in people"
+      ],
+      "conflicts": [
+        "birthday-automatic readiness assumption",
+        "rights expansion without capacity building"
+      ],
+      "research_required": [
+        "civic-education effectiveness modules without invented outcomes",
+        "comparative preparation models"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-3"
+    },
+    {
+      "doctrine_id": "CC-DEV-069",
+      "statement": "Civic education should begin in elementary school through participation, not memorization alone — debate, voting practice, budgeting, school problem-solving, community projects, and presentations to officials — along a developmental pathway from community (ages 5–8) to local government (9–11), state government and evidence literacy (12–14), and applied citizenship (15–18).",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed",
+      "implications": [
+        "developmental civic pathway design agenda",
+        "practice-based civics"
+      ],
+      "conflicts": [
+        "textbook-only civics",
+        "locked national curriculum before pilots"
+      ],
+      "research_required": [
+        "age-appropriate civic pedagogy evaluations",
+        "school-based participation case studies"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-4_and_phase-5_pilots"
+    },
+    {
+      "doctrine_id": "CC-DEV-070",
+      "statement": "Every community should create a real Youth Leadership Council — not symbolic — through which students advise city council and school board, review parks, propose ordinances, recommend budgets, conduct surveys, and organize projects, while adults remain legally responsible.",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "practical youth experience",
+        "Community OS and democracy linkages"
+      ],
+      "conflicts": [
+        "token youth advisory bodies",
+        "transferring legal authority to minors"
+      ],
+      "research_required": [
+        "youth council effectiveness and guardrail designs"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-4_and_phase-5_pilots"
+    },
+    {
+      "doctrine_id": "CC-DEV-071",
+      "statement": "Constitutional Capitalism does not simply declare that voting begins at 16. It asks under what conditions earlier civic participation could strengthen representative government. One exploratory model: certified civic-education completers eligible for school board, municipal, and local ballot voting, with federal and statewide elections unchanged unless future evidence supports broader reform — to be piloted, measured, and evaluated before broader adoption.",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed_pilot_research_agenda",
+      "implications": [
+        "preparation-conditioned local participation pilots",
+        "explicit research questions on lifelong voting, informed judgment, trust, school effects, unintended consequences"
+      ],
+      "conflicts": [
+        "settled national voting-age expansion without evidence",
+        "age-only framing without civic preparation"
+      ],
+      "research_required": [
+        "youth local-voting and civic-curriculum evaluation literature",
+        "unintended-consequence analysis"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-5_pilots",
+      "note": "Reasonable people disagree; architecture records exploration, not settled policy."
+    },
+    {
+      "doctrine_id": "CC-DEV-072",
+      "statement": "Students should graduate civically as well as academically through a Constitutional Citizenship Portfolio demonstrating community service, constitutional knowledge, budgeting, public speaking, teamwork, media literacy, problem solving, a civic project, and leadership experience.",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "Civic Graduation",
+        "adulthood preparation signal"
+      ],
+      "conflicts": [
+        "purely academic graduation with zero civic practice"
+      ],
+      "research_required": [
+        "portfolio design and authenticity safeguards",
+        "employer/college signaling effects without invented claims"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-073",
+      "statement": "Schools should become community laboratories of civic life — hosting forums, citizen academies, budgeting workshops, planning meetings, youth councils, debates, and entrepreneurship programs — while teenagers complete meaningful civic service as contribution (not punishment) and track experiential civic scorecards (meetings attended, ideas presented, volunteering, organizing, budgeting, Constitution literacy, meeting officials, building for community) rather than letter-grade theater.",
+      "origin": "steve_direction_constitutional_citizenship",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "schools as civic centers",
+        "belonging: I belong to this place",
+        "experience scorecards as design agenda"
+      ],
+      "conflicts": [
+        "schools isolated from community decision-making",
+        "service-as-punishment framing",
+        "surveillance-style ranking products"
+      ],
+      "research_required": [
+        "community-school civic models",
+        "service-learning outcome modules without invented rates"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-067"],
+      "phase_destination": "phase-4_and_phase-5"
     }
   ]
 }
