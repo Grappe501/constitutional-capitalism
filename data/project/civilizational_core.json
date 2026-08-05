@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "status": "proposed",
   "note": "Civilizational core framing. Does not replace canonical definition in book_identity.json until Steve approves any amendment.",
   "sacred_sentence": {
@@ -25,23 +25,80 @@
     "status": "proposed"
   },
   "power_hierarchy": [
-    { "level": 1, "name": "Individual", "emphasis": "Maximum freedom, opportunity, and ownership" },
-    { "level": 2, "name": "Family", "emphasis": "First economic institution" },
-    { "level": 3, "name": "Neighborhood", "emphasis": null },
-    { "level": 4, "name": "Community", "emphasis": null },
-    { "level": 5, "name": "County", "emphasis": null },
-    { "level": 6, "name": "Region", "emphasis": null },
-    { "level": 7, "name": "State", "emphasis": null },
-    { "level": 8, "name": "Nation", "emphasis": "Essential for defense, interstate commerce, constitutional rights, monetary policy, and similar functions" },
-    { "level": 9, "name": "International", "emphasis": null }
+    {
+      "level": 1,
+      "name": "Individual",
+      "emphasis": "Maximum freedom, opportunity, and ownership"
+    },
+    {
+      "level": 2,
+      "name": "Family",
+      "emphasis": "First economic institution"
+    },
+    {
+      "level": 3,
+      "name": "Neighborhood",
+      "emphasis": null
+    },
+    {
+      "level": 4,
+      "name": "Community",
+      "emphasis": null
+    },
+    {
+      "level": 5,
+      "name": "County",
+      "emphasis": null
+    },
+    {
+      "level": 6,
+      "name": "Region",
+      "emphasis": null
+    },
+    {
+      "level": 7,
+      "name": "State",
+      "emphasis": null
+    },
+    {
+      "level": 8,
+      "name": "Nation",
+      "emphasis": "Essential for defense, interstate commerce, constitutional rights, monetary policy, and similar functions"
+    },
+    {
+      "level": 9,
+      "name": "International",
+      "emphasis": null
+    }
   ],
   "power_movement_rule": "Power moves upward only when the lower level cannot reasonably accomplish the task alone.",
   "pillars": [
-    { "pillar_id": "CC-CIV-PILLAR-01", "name": "Liberty", "focus": "Freedom" },
-    { "pillar_id": "CC-CIV-PILLAR-02", "name": "Ownership", "focus": "Economic independence" },
-    { "pillar_id": "CC-CIV-PILLAR-03", "name": "Accountability", "focus": "No institution above constitutional limits" },
-    { "pillar_id": "CC-CIV-PILLAR-04", "name": "Prosperity", "focus": "Broadly shared opportunity" },
-    { "pillar_id": "CC-CIV-PILLAR-05", "name": "Stewardship", "focus": "Improve and pass on inheritance to the next generation", "decision_id": "CC-DEC-037" }
+    {
+      "pillar_id": "CC-CIV-PILLAR-01",
+      "name": "Liberty",
+      "focus": "Freedom"
+    },
+    {
+      "pillar_id": "CC-CIV-PILLAR-02",
+      "name": "Ownership",
+      "focus": "Economic independence"
+    },
+    {
+      "pillar_id": "CC-CIV-PILLAR-03",
+      "name": "Accountability",
+      "focus": "No institution above constitutional limits"
+    },
+    {
+      "pillar_id": "CC-CIV-PILLAR-04",
+      "name": "Prosperity",
+      "focus": "Broadly shared opportunity"
+    },
+    {
+      "pillar_id": "CC-CIV-PILLAR-05",
+      "name": "Stewardship",
+      "focus": "Improve and pass on inheritance to the next generation",
+      "decision_id": "CC-DEC-037"
+    }
   ],
   "corporation_framing": {
     "primary_function": "Produce goods and services efficiently and sustainably.",
@@ -80,7 +137,12 @@
     "implementation_completeness_rule": "No proposal is complete without an implementation pathway, measurable outcomes, estimated costs, anticipated tradeoffs, and evaluation/revision.",
     "website_domain": "CC-WEB-BUILD",
     "framework_file": "data/project/community_operating_system_framework.json",
-    "doctrine_ids": ["CC-DEV-042", "CC-DEV-043", "CC-DEV-044", "CC-DEV-045"],
+    "doctrine_ids": [
+      "CC-DEV-042",
+      "CC-DEV-043",
+      "CC-DEV-044",
+      "CC-DEV-045"
+    ],
     "note": "Design agenda — Community OS is not an operating product; no invented town outcomes."
   },
   "human_capital_doctrine": {
@@ -92,7 +154,12 @@
     "named_pilot_model": "Arkansas regional civic and innovation academies (name undecided; design agenda)",
     "website_domain": "CC-WEB-HUMANCAPITAL",
     "framework_file": "data/project/human_capital_framework.json",
-    "doctrine_ids": ["CC-DEV-038", "CC-DEV-039", "CC-DEV-040", "CC-DEV-041"],
+    "doctrine_ids": [
+      "CC-DEV-038",
+      "CC-DEV-039",
+      "CC-DEV-040",
+      "CC-DEV-041"
+    ],
     "note": "Architecture and developing doctrine only — academies are pilot candidates; research precedes statewide statute."
   },
   "essential_systems": {
@@ -106,7 +173,13 @@
     "named_instrument": "Community Health Index",
     "website_domain": "CC-WEB-ESSENTIAL",
     "framework_file": "data/project/essential_systems_framework.json",
-    "doctrine_ids": ["CC-DEV-033", "CC-DEV-034", "CC-DEV-035", "CC-DEV-036", "CC-DEV-037"],
+    "doctrine_ids": [
+      "CC-DEV-033",
+      "CC-DEV-034",
+      "CC-DEV-035",
+      "CC-DEV-036",
+      "CC-DEV-037"
+    ],
     "note": "Architecture and developing doctrine only — Community Health Index is a design agenda; research precedes detailed sector legislation."
   },
   "transparency_spine": {
@@ -118,7 +191,12 @@
     "named_instrument": "The People's Ledger",
     "website_domain": "CC-WEB-TRANSPARENCY",
     "framework_file": "data/project/transparency_framework.json",
-    "doctrine_ids": ["CC-DEV-029", "CC-DEV-030", "CC-DEV-031", "CC-DEV-032"],
+    "doctrine_ids": [
+      "CC-DEV-029",
+      "CC-DEV-030",
+      "CC-DEV-031",
+      "CC-DEV-032"
+    ],
     "note": "Architecture and developing doctrine only — People's Ledger is a design agenda; research precedes detailed open-records legislation."
   },
   "public_service_spine": {
@@ -158,12 +236,20 @@
     "distributed_government_objective": "Strong enough to protect rights and perform necessary public functions, but too divided, transparent, and accountable for any temporary faction to capture permanently.",
     "website_domain": "CC-WEB-DEMOCRACY",
     "framework_file": "data/project/democracy_framework.json",
-    "doctrine_ids": ["CC-DEV-015", "CC-DEV-016", "CC-DEV-017", "CC-DEV-018", "CC-DEV-019"],
+    "doctrine_ids": [
+      "CC-DEV-015",
+      "CC-DEV-016",
+      "CC-DEV-017",
+      "CC-DEV-018",
+      "CC-DEV-019"
+    ],
     "note": "Second constitutional spine. Architecture and developing doctrine only — research precedes detailed political-structure policy."
   },
   "family_spine": {
     "decision_id": "CC-DEC-070",
-    "related_decision_ids": ["CC-DEC-071"],
+    "related_decision_ids": [
+      "CC-DEC-071"
+    ],
     "status": "proposed",
     "role": "Major pillar: family-first republic — children as the greatest long-term asset, with inherent dignity independent of economic output.",
     "organizing_principle": "A nation's greatest long-term asset is not its money, its corporations, or its natural resources. It is the children it raises.",
@@ -172,8 +258,21 @@
     "principle_id": "CC-PRIN-32",
     "website_domain": "CC-WEB-FAMILY",
     "framework_file": "data/project/family_framework.json",
-    "doctrine_ids": ["CC-DEV-078", "CC-DEV-079", "CC-DEV-080", "CC-DEV-081", "CC-DEV-082", "CC-DEV-083", "CC-DEV-084"],
-    "links_to": ["human_capital_doctrine", "constitutional_citizenship_spine", "equal_standing_spine", "community_food_security"],
+    "doctrine_ids": [
+      "CC-DEV-078",
+      "CC-DEV-079",
+      "CC-DEV-080",
+      "CC-DEV-081",
+      "CC-DEV-082",
+      "CC-DEV-083",
+      "CC-DEV-084"
+    ],
+    "links_to": [
+      "human_capital_doctrine",
+      "constitutional_citizenship_spine",
+      "equal_standing_spine",
+      "community_food_security"
+    ],
     "note": "Architecture only — reject 'productive' as a worth test; child-flourishing indicators null until sourced."
   },
   "human_flourishing_benchmark": {
@@ -192,7 +291,10 @@
   },
   "constitutional_citizenship_spine": {
     "decision_id": "CC-DEC-067",
-    "related_decision_ids": ["CC-DEC-068", "CC-DEC-069"],
+    "related_decision_ids": [
+      "CC-DEC-068",
+      "CC-DEC-069"
+    ],
     "status": "proposed",
     "role": "Core doctrine: build civic capacity rather than merely expand rights — democracy as a skill learned through experience, preparation, viewpoint-neutral service, and meaningful youth contribution.",
     "foundational_doctrine": "Self-government requires education. A constitutional republic has a duty to prepare every generation to understand its rights, its responsibilities, its institutions, and its ability to improve society through peaceful civic participation.",
@@ -202,16 +304,36 @@
     "viewpoint_neutrality_rule": "Schools may recognize civic participation regardless of viewpoint, but may not require students to support or oppose any candidate, party, or policy position as a condition of graduation.",
     "voting_age_discipline": "Do not simply declare voting begins at 16; explore preparation-conditioned local pilots with measurement before broader adoption.",
     "principle_id": "CC-PRIN-30",
-    "related_principle_ids": ["CC-PRIN-31"],
+    "related_principle_ids": [
+      "CC-PRIN-31"
+    ],
     "website_domain": "CC-WEB-CITIZENSHIP",
     "framework_file": "data/project/constitutional_citizenship_framework.json",
-    "doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073", "CC-DEV-074", "CC-DEV-075", "CC-DEV-076", "CC-DEV-077"],
-    "links_to": ["human_capital_doctrine", "equal_standing_spine", "political_power_spine", "community_operating_system"],
+    "doctrine_ids": [
+      "CC-DEV-068",
+      "CC-DEV-069",
+      "CC-DEV-070",
+      "CC-DEV-071",
+      "CC-DEV-072",
+      "CC-DEV-073",
+      "CC-DEV-074",
+      "CC-DEV-075",
+      "CC-DEV-076",
+      "CC-DEV-077"
+    ],
+    "links_to": [
+      "human_capital_doctrine",
+      "equal_standing_spine",
+      "political_power_spine",
+      "community_operating_system"
+    ],
     "note": "Architecture and developing doctrine only — Youth Councils, Civic Service Portfolio, Civic Achievement Transcript, and earlier local voting models are design/pilot agendas; civic credit must remain viewpoint-neutral; no invented civics-outcome statistics."
   },
   "equal_standing_spine": {
     "decision_id": "CC-DEC-065",
-    "related_decision_ids": ["CC-DEC-066"],
+    "related_decision_ids": [
+      "CC-DEC-066"
+    ],
     "status": "proposed",
     "role": "Foundational constitutional principle: equal standing before the Constitution — equal protection and equal accountability without engineered equality of outcome.",
     "foundational_principle": "Every person stands equal before the Constitution. Neither wealth, office, race, religion, political affiliation, social status, birthplace, celebrity, nor institutional influence shall increase or diminish the protection of the law or the accountability imposed by the law.",
@@ -221,12 +343,23 @@
     "principle_id": "CC-PRIN-29",
     "website_domain": "CC-WEB-EQUALITY",
     "framework_file": "data/project/equal_standing_framework.json",
-    "doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
+    "doctrine_ids": [
+      "CC-DEV-062",
+      "CC-DEV-063",
+      "CC-DEV-064",
+      "CC-DEV-065",
+      "CC-DEV-066",
+      "CC-DEV-067"
+    ],
     "note": "Architecture and developing doctrine only — complements Declaration On equality; does not rewrite the Declaration; no invented access-to-justice statistics."
   },
   "justice_mechanism": {
     "decision_id": "CC-DEC-043",
-    "related_decision_ids": ["CC-DEC-044", "CC-DEC-058", "CC-DEC-059"],
+    "related_decision_ids": [
+      "CC-DEC-044",
+      "CC-DEC-058",
+      "CC-DEC-059"
+    ],
     "status": "proposed",
     "role": "Justice is the mechanism that determines whether liberty, ownership, opportunity, and accountability are real—or merely promised. Community safety is a complete system — prevent, protect, treat, secure, restore, return — not isolated police or prison reforms. Continuing extreme danger is answered by humane permanent incapacitation with continuing review — never by declaring people unworthy of reentry.",
     "foundational_principle": "Justice must protect the public, restrain wrongdoing, repair harm where possible, and return people to productive citizenship whenever safely achievable. It must never become a profit center, a political weapon, or a permanent system of social exclusion.",
@@ -236,12 +369,26 @@
     "permanent_public_safety_standard": "No person loses human dignity, even when they lose liberty. Secure confinement may be necessary to protect society, but it must remain public, humane, productive, reviewable, and limited to the least restrictive conditions capable of maintaining safety.",
     "website_domain": "CC-WEB-JUSTICE",
     "framework_file": "data/project/justice_framework.json",
-    "doctrine_ids": ["CC-DEV-011", "CC-DEV-012", "CC-DEV-013", "CC-DEV-014", "CC-DEV-046", "CC-DEV-047", "CC-DEV-048", "CC-DEV-049", "CC-DEV-050", "CC-DEV-051", "CC-DEV-052"],
+    "doctrine_ids": [
+      "CC-DEV-011",
+      "CC-DEV-012",
+      "CC-DEV-013",
+      "CC-DEV-014",
+      "CC-DEV-046",
+      "CC-DEV-047",
+      "CC-DEV-048",
+      "CC-DEV-049",
+      "CC-DEV-050",
+      "CC-DEV-051",
+      "CC-DEV-052"
+    ],
     "note": "Complete Community Safety and Restoration System architecture — not Declaration rewrite; Corps/Restoration Councils/Secure Public Safety Campuses are design agendas; research precedes detailed justice policy."
   },
   "resource_sovereignty": {
     "decision_id": "CC-DEC-060",
-    "related_decision_ids": ["CC-DEC-061"],
+    "related_decision_ids": [
+      "CC-DEC-061"
+    ],
     "status": "proposed",
     "role": "Central doctrine: place-based resource rights, progressive pricing of extraordinary consumption, community return, restoration, and energy resilience — connecting stewardship, ownership, affordability, and corporate accountability.",
     "central_doctrine": "Natural resources belong first to the place that bears the extraction, consumption, congestion, pollution, and long-term risk. Private enterprise may profit from using those resources, but the affected community must receive a direct, permanent, and measurable return.",
@@ -249,12 +396,20 @@
     "governing_statement": "Land, water, minerals, energy capacity, clean air, soil, infrastructure, and ecological resilience are part of a community’s inherited wealth. Those who consume them for private gain must pay their full public cost, restore what they damage, and return a fair share of the resulting prosperity to the people and place that made the activity possible.",
     "website_domain": "CC-WEB-ENVIRONMENT",
     "framework_file": "data/project/resource_sovereignty_framework.json",
-    "doctrine_ids": ["CC-DEV-053", "CC-DEV-054", "CC-DEV-055", "CC-DEV-056", "CC-DEV-057"],
+    "doctrine_ids": [
+      "CC-DEV-053",
+      "CC-DEV-054",
+      "CC-DEV-055",
+      "CC-DEV-056",
+      "CC-DEV-057"
+    ],
     "note": "Architecture and developing doctrine only — Compacts, Ledger, and Exchange are design agendas; illustrative dividend percentages require modeling; research precedes detailed resource statutes."
   },
   "community_food_security": {
     "decision_id": "CC-DEC-062",
-    "related_decision_ids": ["CC-DEC-063"],
+    "related_decision_ids": [
+      "CC-DEC-063"
+    ],
     "status": "proposed",
     "role": "Food as critical infrastructure and a strategic community asset — a broad Community Food Security System for testing models, not a single locked food-network structure.",
     "central_principle": "Every community should have the capacity to provide a meaningful share of its essential food needs while remaining connected to broader markets that increase resilience and economic opportunity.",
@@ -262,9 +417,58 @@
     "governing_doctrine": "Food is a strategic community asset. A prosperous constitutional republic strengthens local food production, supports efficient regional distribution, rewards stewardship of the land, reduces waste, and ensures that every community has reliable access to affordable, nutritious food while remaining connected to wider markets that provide resilience and economic opportunity.",
     "website_domain": "CC-WEB-AGRICULTURE",
     "framework_file": "data/project/community_food_security_framework.json",
-    "doctrine_ids": ["CC-DEV-058", "CC-DEV-059", "CC-DEV-060", "CC-DEV-061"],
-    "links_to": ["resource_sovereignty", "human_capital_doctrine", "community_economic_sovereignty"],
+    "doctrine_ids": [
+      "CC-DEV-058",
+      "CC-DEV-059",
+      "CC-DEV-060",
+      "CC-DEV-061"
+    ],
+    "links_to": [
+      "resource_sovereignty",
+      "human_capital_doctrine",
+      "community_economic_sovereignty"
+    ],
     "note": "Architecture and developing doctrine only — Network/Exchange/Dashboard/Reserves are design agendas; research precedes detailed food statutes."
   },
-  "promise_discipline": "State principles, mechanisms, evidence, unknowns, success metrics, and correction paths — do not guarantee outcomes that cannot honestly be promised."
+  "promise_discipline": "State principles, mechanisms, evidence, unknowns, success metrics, and correction paths — do not guarantee outcomes that cannot honestly be promised.",
+  "assistance_spine": {
+    "decision_id": "CC-DEC-073",
+    "related_decision_ids": [
+      "CC-DEC-074"
+    ],
+    "status": "proposed",
+    "role": "Major pillar: assistance as human development — security without dependency traps; pathways to income, ownership, and participation.",
+    "organizing_principle": "No person should be abandoned when unable to meet essential needs. No institution should trap a capable person in dependency.",
+    "foundational_doctrine": "Guarantee security while dismantling dependency. Place every recipient on the correct pathway. Every additional hour of productive work should leave a household better off.",
+    "ubi_posture": "Reject universal basic income as the organizing alternative; advance Community Work Guarantee.",
+    "principle_id": "CC-PRIN-34",
+    "website_domain": "CC-WEB-ASSISTANCE",
+    "framework_file": "data/project/assistance_framework.json",
+    "doctrine_ids": [
+      "CC-DEV-089",
+      "CC-DEV-090",
+      "CC-DEV-091",
+      "CC-DEV-092",
+      "CC-DEV-093",
+      "CC-DEV-094",
+      "CC-DEV-095",
+      "CC-DEV-096",
+      "CC-DEV-097",
+      "CC-DEV-098",
+      "CC-DEV-099",
+      "CC-DEV-100",
+      "CC-DEV-101",
+      "CC-DEV-102",
+      "CC-DEV-103"
+    ],
+    "links_to": [
+      "family_spine",
+      "community_food_security",
+      "human_capital_doctrine",
+      "public_service_spine",
+      "equal_standing_spine",
+      "human_flourishing_benchmark"
+    ],
+    "note": "Architecture — SNAP FY2024 scale sourced; phaseout rates and work-guarantee fiscal design require modeling/pilots; modeling remains 0%."
+  }
 }

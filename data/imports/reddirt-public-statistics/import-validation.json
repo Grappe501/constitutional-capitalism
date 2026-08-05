@@ -1,0 +1,27 @@
+{
+  "export_id": "CC-RD-PUBLIC-STATS-STUB-000",
+  "status": "architecture_stub",
+  "checks": [
+    {
+      "id": "no_api_keys",
+      "passed": true,
+      "detail": "Stub contains no credentials"
+    },
+    {
+      "id": "no_campaign_fields",
+      "passed": true,
+      "detail": "Stub contains no campaign/personal fields"
+    },
+    {
+      "id": "observations_present",
+      "passed": false,
+      "detail": "No observations yet — expected until first real export"
+    },
+    {
+      "id": "baseline_lineage",
+      "passed": false,
+      "detail": "No metric_mappings applied — baseline remains 2/86"
+    }
+  ],
+  "note": "Import validation scaffold. Real exports must flip observations_present and baseline_lineage only after validated mappings."
+}

@@ -1,0 +1,124 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-075",
+  "status": "governing",
+  "title": "Forensic Audit Operating Governance",
+  "central_diagnosis": "The architecture is ahead of the evidence.",
+  "central_diagnosis_note": "That is not failure. The next work must convert structure into proof before constitutional design or policy.",
+  "controlling_objective": "Make Phase 2 true in substance, not merely complete in structure.",
+  "working_rule": "Do not build the constitution of the new system until the diagnosis of the current system can withstand an informed critic.",
+  "acceptance_checklist_file": "data/project/phase2_acceptance_checklist.json",
+  "mission_lock_file": "data/project/phase2_mission_lock.json",
+  "canvas_reference": "canvases/forensic-audit-next-25.canvas.tsx",
+  "supporting_slices": [
+    {
+      "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "decision_id": "CC-DEC-076",
+      "related_decision_ids": ["CC-DEC-077", "CC-DEC-078"],
+      "role": "RCIP shared civic-data spine consumer path: RedDirt four-layer warehouse → multi-source validation → approved exports → CC snapshots. Supports Burt steps 5/7/8. Must not import campaign data or raise baseline without validated mappings.",
+      "status": "queued_architecture",
+      "spine_file": "data/project/rcip_civic_data_spine.json"
+    }
+  ],
+  "burt_active_authority": {
+    "steps": "1-13",
+    "rule": "Burt should work only through steps 1–13 until Phase 2 is COMPLETE or honestly returned PARTIAL into Phase 2.1.",
+    "active_steps": [
+      {
+        "step": 1,
+        "title": "Reconcile acceptance criteria",
+        "summary": "One canonical checklist governs mission lock, phases, slice queue, returns, Build Board, forensic audit, and Phase 2 acceptance language."
+      },
+      {
+        "step": 2,
+        "title": "Retrofit the three-layer rule",
+        "summary": "Every substantive diagnosis brief must separate evidence, inference, and normative conclusion — in the briefs themselves, enforced by validation where practical."
+      },
+      {
+        "step": 3,
+        "title": "Complete the eight priority sourced passes",
+        "summary": "Wealth/ownership; wages/productivity; taxation; corporate power/financialization/concentration; worker ownership; local/rural; internet commerce; political and economic power."
+      },
+      {
+        "step": 4,
+        "title": "Audit the claims",
+        "summary": "Classify priority claims honestly; public wording must not exceed evidence."
+      },
+      {
+        "step": 5,
+        "title": "Repair the baseline",
+        "summary": "Reconcile all narratives to 86 metrics; show sourced/partial/empty; keep 2 of 86 visible until the count changes."
+      },
+      {
+        "step": 6,
+        "title": "Build meaningful evidence dossiers",
+        "summary": "Claim wording, technical wording, strongest support, strongest contrary evidence, limitations, scope, confidence, publication readiness."
+      },
+      {
+        "step": 7,
+        "title": "Continue Phase 2.1 domains",
+        "summary": "Only after the priority eight are materially sound; do not spread shallow research to decorate the map."
+      },
+      {
+        "step": 8,
+        "title": "Run a source-and-claim forensic audit",
+        "summary": "Duplicates, broken URLs, missing dates/years, unsupported numbers, single-source dependency, advocacy-as-neutral, missing contrary evidence, normative mislabeled as empirical."
+      },
+      {
+        "step": 9,
+        "title": "Reconcile deployment truth",
+        "summary": "Verify production apps; record deployed commit, timestamp, build status, URL, HTTP result, content-version confirmation. Do not assume HEAD is live because it is pushed."
+      },
+      {
+        "step": 10,
+        "title": "Protect the Build Board",
+        "summary": "Until protection confirmed: no private feedback data, contributor identities, moderation records, sensitive committee planning, or protected research notes. Civic deliberation remains gated."
+      },
+      {
+        "step": 11,
+        "title": "Expand the knowledge graph carefully",
+        "summary": "Distinguish documented / plausible / disputed / untested. Do not turn assumptions into apparent causation."
+      },
+      {
+        "step": 12,
+        "title": "Source the first HFI measures",
+        "summary": "Small number of high-quality indicators with definition, source, year, unit, update cycle, limitations, inclusion reason — no broad inspirational list as measurement."
+      },
+      {
+        "step": 13,
+        "title": "Source the first child-flourishing measures",
+        "summary": "Defensible indicators first; no composite score until weighting and methodology are justified."
+      }
+    ],
+    "deferred_steps": {
+      "range": "14-25",
+      "rule": "Burt should not begin steps 14–25 yet.",
+      "includes_no": [
+        "Phase 3 constitutional build",
+        "Phase 4 detailed policy architecture",
+        "Phase 5 economic claims disguised as modeling",
+        "legal conclusions without review",
+        "major manuscript expansion",
+        "full civic-feedback activation",
+        "HFI-based launch claims"
+      ]
+    }
+  },
+  "honest_outcomes": {
+    "A": {
+      "phase_2_status": "COMPLETE",
+      "when": "All acceptance criteria materially satisfied"
+    },
+    "B": {
+      "phase_2_status": "PARTIAL",
+      "next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0"
+    }
+  },
+  "integrity_dials": {
+    "modeling": 0,
+    "legal_review": 0,
+    "baseline_sourced_of_total": "2/86",
+    "hfi_note": "Architecture is not measurement; source first indicators before composites"
+  }
+}

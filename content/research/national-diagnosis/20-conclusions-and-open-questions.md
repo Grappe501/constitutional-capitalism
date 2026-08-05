@@ -33,7 +33,7 @@ A diagnosis foundation that overclaims would corrupt later constitution/policy w
 ## Uncertainties
 
 - Causal identification across domains.
-- Baseline completeness (2/38 sourced).
+- Baseline completeness (2/86 sourced).
 
 ## Data gaps
 

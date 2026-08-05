@@ -1131,6 +1131,118 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-04",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-073",
+      "title": "Constitutional Capitalism Assistance Doctrine — security, pathways, and independence",
+      "question": "Should Constitutional Capitalism adopt Assistance Doctrine as a major pillar (CC-PRIN-34, CC-DEV-089–103) — reject one-size-fits-all assistance; distinguish security from dependency; six pathways; eliminate benefit cliffs so every additional hour of productive work leaves households better off; Human Prosperity Account and Prosperity Navigators; foundations of participation before requirements; multiple forms of contribution; Community Work Guarantee as explicit alternative to UBI; employer responsibility; asset-building; fair reciprocity; fraud without humiliation; honest exit measurement; and Prosperity and Participation Centers?",
+      "status": "approved",
+      "rationale": "Assistance must protect people who cannot provide for themselves and create believable paths to income, ownership, and participation — not manage a dependent population or warehouse people in fragmented bureaucracy. SNAP FY2024 scale illustrates magnitude without implying permanent work-disconnection. Exact phaseout rates require modeling; architecture must not invent those rates.",
+      "impact": [
+        "CC-PRIN-34",
+        "developing_doctrine CC-DEV-089–103",
+        "capture_cluster CC-DCC-20",
+        "assistance_framework",
+        "civilizational_core assistance_spine",
+        "claims CC-CLAIM-091–100",
+        "sources CC-SRC-041–046",
+        "Constitutional Assistance Test"
+      ],
+      "recommendation": "Adopt as major pillar architecture; keep phaseout rates and work-guarantee fiscal design as modeling/pilot agendas; do not invent assistance outcome statistics; preserve Family hunger and Food Security links; reject UBI as organizing alternative.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-074",
+      "title": "Assistance Doctrine website domain",
+      "question": "Should the living website seed Assistance Doctrine as a public domain (CC-WEB-ASSISTANCE) at /assistance/?",
+      "status": "approved",
+      "rationale": "Gives visitors a coherent entry for security-vs-dependency, six pathways, anti-cliff design, Community Work Guarantee, and local Prosperity Centers without pretending finished statutes or modeled phaseout rates exist.",
+      "impact": [
+        "website_information_architecture",
+        "book-site /assistance/ surface",
+        "board assistance surface"
+      ],
+      "recommendation": "Seed doctrine page; link Family, Food Security, Human Capital, Public Service / government capacity, Equal Standing, and Flourishing.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-075",
+      "title": "Forensic audit governs Phase 2 — Burt steps 1–13 only",
+      "question": "Should the forensic audit become the governing operating authority for Phase 2 — with a canonical acceptance checklist owning conflicts among mission lock, phases, slice queue, returns, Build Board, and acceptance language; Burt limited to steps 1–13; steps 14–25 deferred; Phase 2 remaining PARTIAL until the checklist passes; and the working rule that the constitution of the new system must not be built until the diagnosis of the current system can withstand an informed critic?",
+      "status": "approved",
+      "rationale": "Architecture is ahead of the evidence. Polished surfaces risk overstating evidentiary maturity. Phase 2 must become true in substance before constitutional design, policy architecture, modeling theater, or legal conclusions.",
+      "impact": [
+        "forensic_audit_governance",
+        "phase2_acceptance_checklist",
+        "phase2_mission_lock v0.2",
+        "pnpm phase2:validate",
+        "board /phase-2-gate/",
+        "Burt authority 1-13",
+        "baseline 38→86 narrative repair"
+      ],
+      "recommendation": "Adopt forensic audit governance; keep Phase 2 PARTIAL; show 2/86 until count changes; do not begin steps 14–25; regenerate progress from evidence; do not invent modeling/legal progress.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-076",
+      "title": "Public statistics bridge — RedDirt ingestion host, CC validated snapshots",
+      "question": "Should Constitutional Capitalism treat RedDirt as the Census/BLS (and later agency-neutral) data-ingestion host, consume only approved public statistical exports through an isolated public_statistics boundary, forbid API keys and campaign/operational data from entering this repository or its static sites, prefer Phase 2 validated snapshots under data/imports/reddirt-public-statistics/, and queue supporting slice CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0 subordinate to Phase 2.1 / forensic audit governance — raising baseline progress only when mapped observations validate?",
+      "status": "approved",
+      "rationale": "Rebuilding Census/BLS connections inside the static CC apps would waste mature RedDirt ingestion and risk credential leakage. Separation preserves campaign privacy while enabling reproducible baseline proof. Architecture must not be mistaken for sourced baseline progress.",
+      "impact": [
+        "public_statistics_bridge",
+        "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+        "data/imports/reddirt-public-statistics stubs",
+        "pnpm imports:validate",
+        "forensic_audit supporting_slices",
+        "Burt handoff BURT_PUBLIC_STATISTICS_BRIDGE"
+      ],
+      "recommendation": "Adopt bridge architecture; keep keys in RedDirt; Phase 2 uses validated snapshots; first wave 10–15 Census/BLS-supportable metrics; do not raise 2/86 until validated imports land; remain subordinate to diagnosis continuation.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-077",
+      "title": "RedDirt Civic Intelligence Platform — shared Public Data Engine",
+      "question": "Should RedDirt at H:\\\\SOSWebsite\\\\RedDirt be formalized as the shared Public Data Engine / RedDirt Civic Intelligence Platform (RCIP) for Constitutional Capitalism and future civic applications — with agency connectors living only in RedDirt, CC consuming named validated public measures plus provenance, and campaign / public-statistics / research data kept logically separated — without duplicating Census/BLS functionality into the Constitutional Capitalism repository?",
+      "status": "approved",
+      "rationale": "One ingestion system avoids six Census integrations. CC stays focused on rigorously supported civic philosophy. RedDirt already holds mature API infrastructure and should evolve into reusable civic intelligence infrastructure while keeping campaign data isolated.",
+      "impact": [
+        "RCIP vision doc",
+        "public_statistics_bridge v0.2",
+        "consumer contract (named measures, not APIs)",
+        "provenance chain requirement",
+        "explicit ban on CC-side agency connectors"
+      ],
+      "recommendation": "Adopt RCIP vision; implement connectors only in RedDirt; Phase 2 continues with validated snapshots; provenance required for every public number; do not raise baseline without validated imports.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-078",
+      "title": "RCIP shared civic-data spine — four layers and multi-source validation",
+      "question": "Should the RedDirt Civic Intelligence Platform be formalized as the shared civic-data spine with four layers (raw source, canonical public-data, evidence/confidence, product projection), multi-source validation as the strongest feature, isolated schemas (public_statistics, campaign_private, people_private, research_evidence, education_public, county_profiles), and Constitutional Capitalism as the first external proof consumer receiving rich provenance displays rather than bare numbers?",
+      "status": "approved",
+      "rationale": "One ingestion/normalization/verification pipeline prevents duplicate agency integrations and interchangeable-statistic mistakes. Isolated schemas keep a shared engine from becoming a dangerous cross-project data pool. CC needs evidence-grade provenance for Phase 2 proof work.",
+      "impact": [
+        "rcip_civic_data_spine.json",
+        "RCIP architecture doc refresh",
+        "public statistic display contract",
+        "multi-source validation standard",
+        "CC as first proof consumer"
+      ],
+      "recommendation": "Adopt spine architecture in CC governance; implement warehouse/layers in RedDirt; keep CC on validated snapshots; do not raise baseline without mapped observations; never mix campaign_private into public exports.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-05",
+      "supersedes": null
     }
   ]
 }

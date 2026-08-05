@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/phase2_acceptance_checklist.schema.json",
+  "title": "Phase2AcceptanceChecklist",
+  "type": "object",
+  "required": [
+    "version",
+    "status",
+    "phase_2_declared_complete",
+    "phase_2_status",
+    "gate_items",
+    "priority_domains",
+    "canonical_operating_state"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "phase_2_declared_complete": { "type": "boolean" },
+    "phase_2_status": { "type": "string" },
+    "gate_items": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "required", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string" },
+          "required": { "type": "boolean" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "priority_domains": { "type": "array", "minItems": 8 },
+    "canonical_operating_state": { "type": "object" }
+  }
+}

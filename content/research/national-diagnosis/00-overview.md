@@ -69,7 +69,7 @@ This overview does **not** claim a finished national diagnosis. Remaining domain
 ## Data gaps
 
 - Housing, education, healthcare detail, transport/broadband, food, banking depth, trade, tech/AI, constitutional/legal, international, flourishing — foundational only.
-- 36 of 38 baseline metrics still pending sourced values.
+- 84 of 86 baseline metrics still pending sourced values.
 - Legal review and economic modeling remain 0%.
 
 ## Constitutional implications

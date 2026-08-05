@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "status": "proposed",
   "decision_id": "CC-DEC-035",
   "primary_medium": "living_website",
@@ -10,8 +10,16 @@
     "note": "The public book remains the readable entry. The website is the living school of thought."
   },
   "domain_tree": [
-    { "node_id": "CC-WEB-PHILOSOPHY", "title": "The Philosophy", "status": "seeded" },
-    { "node_id": "CC-WEB-CONSTITUTION", "title": "The Constitution", "status": "seeded" },
+    {
+      "node_id": "CC-WEB-PHILOSOPHY",
+      "title": "The Philosophy",
+      "status": "seeded"
+    },
+    {
+      "node_id": "CC-WEB-CONSTITUTION",
+      "title": "The Constitution",
+      "status": "seeded"
+    },
     {
       "node_id": "CC-WEB-FLOURISHING",
       "title": "Human Flourishing Index",
@@ -34,7 +42,9 @@
       "title": "Constitutional Family Doctrine",
       "status": "seeded",
       "decision_id": "CC-DEC-071",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "central_promise": "Strong families create strong communities. Children are the republic's greatest long-term asset — with inherent dignity — and public institutions strengthen families rather than replace them whenever possible.",
       "branches": [
         "Children as greatest long-term asset",
@@ -49,13 +59,44 @@
       "framework_file": "data/project/family_framework.json",
       "research_domain_title": "Family, Childhood Flourishing, and Intergenerational Prosperity"
     },
-    { "node_id": "CC-WEB-ECONOMICS", "title": "Economics", "status": "seeded" },
+    {
+      "node_id": "CC-WEB-ECONOMICS",
+      "title": "Economics",
+      "status": "seeded"
+    },
+    {
+      "node_id": "CC-WEB-ASSISTANCE",
+      "title": "Assistance Doctrine",
+      "status": "seeded",
+      "decision_id": "CC-DEC-074",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "central_promise": "Guarantee security while dismantling dependency. Different pathways for different circumstances. Every additional hour of productive work should leave a household better off. Destination: income, ownership, and full community participation — not warehousing and not abandonment.",
+      "iconic_phrase": "Automate the routine. Elevate the human.",
+      "branches": [
+        "Security vs dependency",
+        "Six pathways",
+        "Eliminate the benefit cliff",
+        "Human Prosperity Account",
+        "Prosperity Navigators",
+        "Foundations of participation",
+        "Community Work Guarantee",
+        "Employer responsibility and asset-building",
+        "Fair reciprocity and honest exits",
+        "Prosperity and Participation Centers"
+      ],
+      "framework_file": "data/project/assistance_framework.json",
+      "research_domain_title": "Assistance, Security, Participation, and Pathways to Independence"
+    },
     {
       "node_id": "CC-WEB-EQUALITY",
       "title": "Equal Standing Before the Constitution",
       "status": "seeded",
       "decision_id": "CC-DEC-066",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "central_promise": "Every person stands equal before the Constitution — equal protection and equal accountability. Conduct before status whenever constitutionally and practically possible. No one above the law; no one beneath its protection.",
       "iconic_phrase": "The Constitution should hear the evidence before it sees the person.",
       "branches": [
@@ -76,7 +117,10 @@
       "title": "Constitutional Citizenship Doctrine",
       "status": "seeded",
       "decision_id": "CC-DEC-068",
-      "related_decision_ids": ["CC-DEC-067", "CC-DEC-069"],
+      "related_decision_ids": [
+        "CC-DEC-067",
+        "CC-DEC-069"
+      ],
       "central_promise": "Self-government requires education. Graduate every citizen prepared for responsible participation — democracy as a skill learned through experience, not merely a right activated by birthday. Civic service strengthens participation while remaining viewpoint-neutral.",
       "branches": [
         "Self-government requires education",
@@ -101,7 +145,10 @@
       "title": "Community Safety, Justice, and Restoration",
       "status": "seeded",
       "decision_id": "CC-DEC-044",
-      "related_decision_ids": ["CC-DEC-058", "CC-DEC-059"],
+      "related_decision_ids": [
+        "CC-DEC-058",
+        "CC-DEC-059"
+      ],
       "central_promise": "Not more incarceration, not less accountability — more safety, more restoration, and far less human potential permanently discarded. Never classify people as unworthy of reentry; when continuing extreme danger requires custody, use public, humane, reviewable secure campuses — not exile or private profit from confinement.",
       "branches": [
         "Constitutional rights",
@@ -136,7 +183,9 @@
       "title": "Public Service and the 21st-Century State",
       "status": "seeded",
       "decision_id": "CC-DEC-048",
-      "related_decision_ids": ["CC-DEC-049"],
+      "related_decision_ids": [
+        "CC-DEC-049"
+      ],
       "central_promise": "Government should become invisible—but never unaccountable. Continuously reduce administrative friction while improving public service; automate the routine, elevate the human; organize around life events, not agency charts.",
       "iconic_phrase": "Government should become invisible—but never unaccountable.",
       "branches": [
@@ -165,14 +214,24 @@
       "framework_file": "data/project/government_capacity_framework.json",
       "research_domain_title": "Government Capacity, Public Service, and Institutional Modernization"
     },
-    { "node_id": "CC-WEB-COMMUNITIES", "title": "Communities", "status": "proposed" },
-    { "node_id": "CC-WEB-FAMILIES", "title": "Families", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-COMMUNITIES",
+      "title": "Communities",
+      "status": "proposed"
+    },
+    {
+      "node_id": "CC-WEB-FAMILIES",
+      "title": "Families",
+      "status": "proposed"
+    },
     {
       "node_id": "CC-WEB-HUMANCAPITAL",
       "title": "Human Capital Doctrine",
       "status": "seeded",
       "decision_id": "CC-DEC-055",
-      "related_decision_ids": ["CC-DEC-054"],
+      "related_decision_ids": [
+        "CC-DEC-054"
+      ],
       "central_promise": "Every child deserves a meaningful pathway to productive adulthood. Build human capital infrastructure — multiple respected pathways of equal dignity — and pilot regional academies that make home stronger.",
       "branches": [
         "Human capital infrastructure",
@@ -190,7 +249,9 @@
       ],
       "framework_file": "data/project/human_capital_framework.json",
       "research_domain_title": "Human Capital Infrastructure, Pathways, and Regional Academies",
-      "supersedes_nodes": ["CC-WEB-EDUCATION"]
+      "supersedes_nodes": [
+        "CC-WEB-EDUCATION"
+      ]
     },
     {
       "node_id": "CC-WEB-EDUCATION",
@@ -203,7 +264,9 @@
       "title": "Essential Systems",
       "status": "seeded",
       "decision_id": "CC-DEC-053",
-      "related_decision_ids": ["CC-DEC-052"],
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ],
       "central_promise": "Design essential systems so private innovation and investment are rewarded while the public interest remains protected — evaluate banking, insurance, healthcare, and pharmaceuticals through incentives and outcomes, not inherent-corruption conclusions.",
       "chapter_method": [
         "What is this system supposed to accomplish?",
@@ -227,7 +290,9 @@
       ],
       "framework_file": "data/project/essential_systems_framework.json",
       "research_domain_title": "Essential Systems: Banking, Insurance, Healthcare, and Preventive Design",
-      "supersedes_nodes": ["CC-WEB-HEALTHCARE"]
+      "supersedes_nodes": [
+        "CC-WEB-HEALTHCARE"
+      ]
     },
     {
       "node_id": "CC-WEB-HEALTHCARE",
@@ -235,13 +300,19 @@
       "status": "redirected",
       "note": "Healthcare content is seeded under Essential Systems (CC-WEB-ESSENTIAL); keep this node for navigation compatibility until branch pages mature."
     },
-    { "node_id": "CC-WEB-HOUSING", "title": "Housing", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-HOUSING",
+      "title": "Housing",
+      "status": "proposed"
+    },
     {
       "node_id": "CC-WEB-AGRICULTURE",
       "title": "Community Food Security System",
       "status": "seeded",
       "decision_id": "CC-DEC-063",
-      "related_decision_ids": ["CC-DEC-062"],
+      "related_decision_ids": [
+        "CC-DEC-062"
+      ],
       "path": "/food-security/",
       "central_promise": "Every community should have the capacity to provide a meaningful share of its essential food needs while remaining connected to broader markets that increase resilience and economic opportunity. Food is critical infrastructure — local resilience first, trade as complementary strength, never export-only staples.",
       "branches": [
@@ -262,13 +333,19 @@
       ],
       "framework_file": "data/project/community_food_security_framework.json"
     },
-    { "node_id": "CC-WEB-TECH_AI", "title": "Technology & AI", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-TECH_AI",
+      "title": "Technology & AI",
+      "status": "proposed"
+    },
     {
       "node_id": "CC-WEB-ENVIRONMENT",
       "title": "Resource Sovereignty and Community Stewardship",
       "status": "seeded",
       "decision_id": "CC-DEC-061",
-      "related_decision_ids": ["CC-DEC-060"],
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ],
       "path": "/resource-sovereignty/",
       "central_promise": "Natural resources belong first to the place that bears the extraction, consumption, congestion, pollution, and long-term risk. Private enterprise may profit — the affected community must receive a direct, permanent, measurable return. The greater the consumption, scarcity, risk, or damage, the greater the obligation to the affected community.",
       "branches": [
@@ -328,7 +405,9 @@
       "title": "Constitutional Transparency and the People's Ledger",
       "status": "seeded",
       "decision_id": "CC-DEC-051",
-      "related_decision_ids": ["CC-DEC-050"],
+      "related_decision_ids": [
+        "CC-DEC-050"
+      ],
       "central_promise": "Government holds public information in trust: presumed open unless a constitutionally or legally justified reason protects it — every public dollar and major action leaves a reviewable trail.",
       "named_instrument": "The People's Ledger",
       "branches": [
@@ -351,15 +430,29 @@
       "framework_file": "data/project/transparency_framework.json",
       "research_domain_title": "Constitutional Transparency, Public Records, and Accountability Systems"
     },
-    { "node_id": "CC-WEB-SECURITY", "title": "National Security", "status": "proposed" },
-    { "node_id": "CC-WEB-GLOBAL", "title": "Global Adaptation", "status": "proposed" },
-    { "node_id": "CC-WEB-RESEARCH", "title": "Research Library", "status": "seeded" },
+    {
+      "node_id": "CC-WEB-SECURITY",
+      "title": "National Security",
+      "status": "proposed"
+    },
+    {
+      "node_id": "CC-WEB-GLOBAL",
+      "title": "Global Adaptation",
+      "status": "proposed"
+    },
+    {
+      "node_id": "CC-WEB-RESEARCH",
+      "title": "Research Library",
+      "status": "seeded"
+    },
     {
       "node_id": "CC-WEB-BUILD",
       "title": "Build Your Community",
       "status": "seeded",
       "decision_id": "CC-DEC-057",
-      "related_decision_ids": ["CC-DEC-056"],
+      "related_decision_ids": [
+        "CC-DEC-056"
+      ],
       "central_promise": "Same principles. Different playbooks. Start from assets and people; attract, keep, and expand ownership; measure progress — Community OS is a design agenda, not an operating product yet.",
       "branches": [
         "Playbooks",
@@ -378,23 +471,83 @@
       "framework_file": "data/project/community_operating_system_framework.json",
       "research_domain_title": "Community Operating System, Playbooks, and Implementation Pathways"
     },
-    { "node_id": "CC-WEB-POLICY_LAB", "title": "Policy Laboratory", "status": "proposed" },
-    { "node_id": "CC-WEB-PILOTS", "title": "Pilot Communities", "status": "proposed" },
-    { "node_id": "CC-WEB-EVIDENCE", "title": "Evidence Dashboard", "status": "seeded" },
-    { "node_id": "CC-WEB-AMENDMENTS", "title": "Living Amendments", "status": "proposed" }
+    {
+      "node_id": "CC-WEB-POLICY_LAB",
+      "title": "Policy Laboratory",
+      "status": "proposed"
+    },
+    {
+      "node_id": "CC-WEB-PILOTS",
+      "title": "Pilot Communities",
+      "status": "proposed"
+    },
+    {
+      "node_id": "CC-WEB-EVIDENCE",
+      "title": "Evidence Dashboard",
+      "status": "seeded"
+    },
+    {
+      "node_id": "CC-WEB-AMENDMENTS",
+      "title": "Living Amendments",
+      "status": "proposed"
+    }
   ],
   "life_path_tree": [
-    { "node_id": "CC-LIFE-CHILD", "title": "A Child", "prompt": "What does Constitutional Capitalism mean for someone born today?" },
-    { "node_id": "CC-LIFE-STUDENT", "title": "A Student", "prompt": null },
-    { "node_id": "CC-LIFE-WORKER", "title": "A Worker", "prompt": null },
-    { "node_id": "CC-LIFE-ENTREPRENEUR", "title": "An Entrepreneur", "prompt": null },
-    { "node_id": "CC-LIFE-PARENT", "title": "A Parent", "prompt": null },
-    { "node_id": "CC-LIFE-FARMER", "title": "A Farmer", "prompt": null },
-    { "node_id": "CC-LIFE-MANUFACTURER", "title": "A Manufacturer", "prompt": null },
-    { "node_id": "CC-LIFE-SMALL_TOWN", "title": "A Small-Town Resident", "prompt": null },
-    { "node_id": "CC-LIFE-RETIREE", "title": "A Retiree", "prompt": null },
-    { "node_id": "CC-LIFE-COMMUNITY", "title": "A Community", "prompt": null },
-    { "node_id": "CC-LIFE-NATION", "title": "A Nation", "prompt": null }
+    {
+      "node_id": "CC-LIFE-CHILD",
+      "title": "A Child",
+      "prompt": "What does Constitutional Capitalism mean for someone born today?"
+    },
+    {
+      "node_id": "CC-LIFE-STUDENT",
+      "title": "A Student",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-WORKER",
+      "title": "A Worker",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-ENTREPRENEUR",
+      "title": "An Entrepreneur",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-PARENT",
+      "title": "A Parent",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-FARMER",
+      "title": "A Farmer",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-MANUFACTURER",
+      "title": "A Manufacturer",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-SMALL_TOWN",
+      "title": "A Small-Town Resident",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-RETIREE",
+      "title": "A Retiree",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-COMMUNITY",
+      "title": "A Community",
+      "prompt": null
+    },
+    {
+      "node_id": "CC-LIFE-NATION",
+      "title": "A Nation",
+      "prompt": null
+    }
   ],
   "arteries": [
     "transportation",

@@ -60,8 +60,12 @@ const manuscriptPercent = Math.min(
   )
 );
 
+// Philosophy credits Declaration depth + registered principles. Cap leaves room for locked/mature doctrine.
 const philosophyPercent = declarationExists
-  ? Math.min(70, 35 + Math.round(declarationWords / 250) + Math.min(principles.length, 20))
+  ? Math.min(
+      80,
+      35 + Math.round(declarationWords / 250) + Math.min(principles.length, 30)
+    )
   : 25;
 
 const sourceList =
@@ -82,17 +86,34 @@ const priorityBriefHits = diagnosisFiles.filter((f) => {
   return body.includes("priority_first_pass");
 }).length;
 
+const doctrineDoc = JSON.parse(
+  fs.readFileSync(r("data/project/developing_doctrine.json"), "utf8")
+);
+const doctrineItems = doctrineDoc.items || [];
+const doctrineClusters = doctrineDoc.capture_clusters || [];
+const systemsMapExists = fs.existsSync(r("data/project/systems_map.json"));
+
 // Honest Phase 2 progress: reward registered sources + claim upgrades + briefs, not scaffolding alone.
+// Caps leave headroom for baseline completion, three-layer briefs, and HFI sourcing — not a freeze.
 const researchFoundation = Math.min(
-  42,
+  55,
   16 +
     Math.round(verifiedSources.length * 0.7) +
     Math.round(claimsSupportedish.length * 1.1) +
     Math.min(8, Math.round(priorityBriefHits * 0.5))
 );
 const sourceVerification = Math.min(
-  20,
+  32,
   Math.round(verifiedSources.length * 1.1) + Math.round(claimsWithSources.length * 0.35)
+);
+
+// Policy tracks developing doctrine volume; maturity is still early (items remain open/proposed).
+const policyDevelopment = Math.min(
+  38,
+  8 +
+    Math.round(doctrineItems.length * 0.18) +
+    Math.round(doctrineClusters.length * 0.35) +
+    Math.min(6, Math.round(principles.length * 0.15))
 );
 
 const derived = {
@@ -102,9 +123,9 @@ const derived = {
   manuscript: manuscriptPercent,
   research_foundation: researchFoundation,
   source_verification: sourceVerification,
-  policy_development: 15,
+  policy_development: policyDevelopment,
   economic_modeling: 0,
-  constitutional_analysis: declarationExists ? 25 : 5,
+  constitutional_analysis: declarationExists ? (systemsMapExists ? 30 : 25) : 5,
   legal_review: 0,
   editorial_review: declarationExists ? 10 : 0,
   public_book_website: declarationExists ? 70 : 40,
@@ -133,6 +154,8 @@ const layers = (layersDoc.layers || []).map((layer) => {
 
 layersDoc.layers = layers;
 layersDoc.last_updated = new Date().toISOString().slice(0, 10);
+layersDoc.note =
+  "Layer percents are derived from canonical records. Research/policy/philosophy can move with real inventory; manuscript/modeling/legal stay low until substantive work exists.";
 fs.writeFileSync(r("data/metrics/progress_layers.json"), JSON.stringify(layersDoc, null, 2) + "\n");
 
 const overall = Math.round(layers.reduce((s, l) => s + l.percent, 0) / layers.length);

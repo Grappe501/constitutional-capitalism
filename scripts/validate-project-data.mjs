@@ -50,9 +50,14 @@ const validations = [
   ['data/project/equal_standing_framework.json','schemas/equal_standing_framework.schema.json'],
   ['data/project/constitutional_citizenship_framework.json','schemas/constitutional_citizenship_framework.schema.json'],
   ['data/project/family_framework.json','schemas/family_framework.schema.json'],
+  ['data/project/assistance_framework.json','schemas/assistance_framework.schema.json'],
   ['data/project/systems_map.json','schemas/systems_map.schema.json'],
   ['data/project/human_flourishing_index.json','schemas/human_flourishing_index.schema.json'],
-  ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json']
+  ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json'],
+  ['data/project/phase2_acceptance_checklist.json','schemas/phase2_acceptance_checklist.schema.json'],
+  ['data/project/forensic_audit_governance.json','schemas/forensic_audit_governance.schema.json'],
+  ['data/project/public_statistics_bridge.json','schemas/public_statistics_bridge.schema.json'],
+  ['data/project/rcip_civic_data_spine.json','schemas/rcip_civic_data_spine.schema.json']
 ];
 for (const [dataRel, schemaRel] of validations) {
   if (!fs.existsSync(r(dataRel))) { fail(`Missing data file: ${dataRel}`); continue; }

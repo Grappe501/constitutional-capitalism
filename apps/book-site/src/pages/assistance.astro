@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import af from "../../../../data/project/assistance_framework.json";
+
+const pathways = af.pathways || [];
+const testQs = af.assistance_test?.questions || [];
+const branches = af.website_branches || [];
+const activities = af.forms_of_contribution?.qualifying_activities || [];
+const flow = af.local_implementation?.flow || [];
+const council = af.local_implementation?.governing_council_includes || [];
+const assignments = af.community_work_guarantee?.example_assignments || [];
+const scoreboard = af.exit_measurement?.scoreboard || [];
+---
+
+<BaseLayout
+  title="Assistance Doctrine"
+  path="/assistance/"
+  description="Guarantee security while dismantling dependency. Different pathways for different circumstances — toward income, ownership, and participation."
+>
+  <article class="prose">
+    <h1>{af.domain_title}</h1>
+    <p class="status-note">
+      Major pillar — architecture before statutes. SNAP FY2024 scale sourced; phaseout rates not
+      invented. Modeling remains 0%.
+    </p>
+    <p class="lede">{af.role_in_philosophy}</p>
+
+    <h2>Rejected framing</h2>
+    <p class="status-note">
+      <em>{af.rejected_framing.text}</em> — {af.rejected_framing.reason}
+    </p>
+
+    <h2>Organizing principle</h2>
+    <blockquote>
+      <p>{af.organizing_principle.text}</p>
+    </blockquote>
+
+    <h2>Security vs dependency</h2>
+    <p>
+      <strong>Security:</strong> {af.security_vs_dependency.security}
+    </p>
+    <p>
+      <strong>Dependency:</strong> {af.security_vs_dependency.dependency}
+    </p>
+    <p>
+      <strong>Goal:</strong> {af.security_vs_dependency.goal}
+    </p>
+
+    <h2>Scale context</h2>
+    <p>{af.scale_context.summary}</p>
+    <p class="status-note">{af.scale_context.note}</p>
+
+    <h2>Six pathways</h2>
+    <ol>
+      {pathways.map((p: any) => (
+        <li>
+          <strong>
+            Pathway {p.pathway_id}: {p.title}
+          </strong>{" "}
+          — {p.summary}
+        </li>
+      ))}
+    </ol>
+
+    <h2>Eliminate the benefit cliff</h2>
+    <blockquote>
+      <p>{af.benefit_cliff.rule}</p>
+    </blockquote>
+    <p>{af.benefit_cliff.definition_note}</p>
+    <p>{af.benefit_cliff.design}</p>
+    <p>{af.benefit_cliff.transparency}</p>
+    <p class="status-note">{af.benefit_cliff.modeling_note}</p>
+
+    <h2>Human Prosperity Account</h2>
+    <p>{af.human_prosperity_account.summary}</p>
+    <p>{af.human_prosperity_account.privacy_rule}</p>
+
+    <h2>Prosperity Navigators</h2>
+    <p>{af.prosperity_navigators.summary}</p>
+    <blockquote>
+      <p>{af.prosperity_navigators.iconic_phrase}</p>
+    </blockquote>
+
+    <h2>Foundations of participation</h2>
+    <p>{af.foundations_of_participation.summary}</p>
+    <p>{af.foundations_of_participation.sanction_limits}</p>
+    <p class="status-note">{af.foundations_of_participation.evaluation_note}</p>
+
+    <h2>Multiple forms of contribution</h2>
+    <p>
+      Standard: <em>{af.forms_of_contribution.standard}</em> — not merely{" "}
+      <em>{af.forms_of_contribution.not_only}</em>
+    </p>
+    <ul>
+      {activities.map((a: string) => (
+        <li>{a}</li>
+      ))}
+    </ul>
+
+    <h2>Community Work Guarantee — not UBI</h2>
+    <p>{af.community_work_guarantee.summary}</p>
+    <p>
+      <strong>Rejects:</strong> {af.community_work_guarantee.rejects}
+    </p>
+    <blockquote>
+      <p>{af.community_work_guarantee.message}</p>
+    </blockquote>
+    <ul>
+      {assignments.map((a: string) => (
+        <li>{a}</li>
+      ))}
+    </ul>
+
+    <h2>Employer responsibility</h2>
+    <p>{af.employer_responsibility.summary}</p>
+    <p>{af.employer_responsibility.anti_discrimination_guardrail}</p>
+
+    <h2>Assistance builds assets</h2>
+    <p>{af.asset_building.summary}</p>
+    <p>{af.asset_building.destination}</p>
+
+    <h2>Barriers requiring action</h2>
+    <p>{af.barriers_requiring_action.summary}</p>
+    <p>{af.barriers_requiring_action.compulsion_rule}</p>
+
+    <h2>Fair reciprocity</h2>
+    <p>{af.reciprocity.summary}</p>
+
+    <h2>Fraud without humiliation</h2>
+    <p>{af.fraud_and_burden.summary}</p>
+    <p class="status-note">{af.fraud_and_burden.burden_note}</p>
+
+    <h2>Measure exits correctly</h2>
+    <blockquote>
+      <p>{af.exit_measurement.success_question}</p>
+    </blockquote>
+    <p>
+      Not success alone: <em>{af.exit_measurement.not_success_alone}</em>
+    </p>
+    <ul>
+      {scoreboard.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ul>
+
+    <h2>{af.local_implementation.name}</h2>
+    <ol>
+      {flow.map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+    <p>Governing council includes:</p>
+    <ul>
+      {council.map((c: string) => (
+        <li>{c}</li>
+      ))}
+    </ul>
+
+    <h2>Governing promise</h2>
+    <blockquote>
+      <p>{af.governing_promise.text}</p>
+    </blockquote>
+    <p>{af.governing_promise.destination}</p>
+
+    <h2>Constitutional Assistance Test</h2>
+    <p>{af.assistance_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p>
+      See also <a href="/family/">Family</a>, <a href="/food-security/">Food Security</a>,{" "}
+      <a href="/human-capital/">Human Capital</a>,{" "}
+      <a href="/equal-standing/">Equal Standing</a>, and{" "}
+      <a href="/flourishing/">Human Flourishing</a>.
+    </p>
+  </article>
+</BaseLayout>

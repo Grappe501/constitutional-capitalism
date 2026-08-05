@@ -1,18 +1,26 @@
 {
-  "version": "0.1.0",
-  "last_updated": "2026-08-04",
-  "decision_id": "CC-DEC-064",
+  "version": "0.2.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-075",
+  "related_decision_ids": ["CC-DEC-064"],
   "status": "locked",
+  "governing_artifacts": {
+    "forensic_audit_governance": "data/project/forensic_audit_governance.json",
+    "acceptance_checklist": "data/project/phase2_acceptance_checklist.json",
+    "rule": "The forensic audit now governs the project. The acceptance checklist owns conflicts among mission lock, phases, slice queue, returns, Build Board, and Phase 2 acceptance language."
+  },
   "phase_1": {
-    "status": "ACCEPTED / CLOSED",
+    "status": "LOCKED / CLOSED",
     "meaning": "Phase 1 = belief (Declaration and foundational philosophy).",
     "accepted_build_commit": "0f24a8b",
     "accepted_closeout_commit": "4fbaacd"
   },
   "active_mission": {
     "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
-    "meaning": "Phase 2 = proof. Diagnosis is the active mission.",
+    "meaning": "Phase 2 = proof. Diagnosis is the active mission until COMPLETE or honest PARTIAL → 2.1.",
     "primary_question": "What can we prove?",
+    "controlling_objective": "Make Phase 2 true in substance, not merely complete in structure.",
+    "central_diagnosis": "The architecture is ahead of the evidence.",
     "evidence_baseline_slice": "ABSORBED ALIAS",
     "absorbed_slice_id": "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0",
     "civic_deliberation": {
@@ -21,12 +29,28 @@
       "rule": "No public feedback backend touches the unprotected Build Board."
     }
   },
+  "burt_authority": {
+    "active_steps": "1-13",
+    "deferred_steps": "14-25",
+    "deferred_includes_no": [
+      "Phase 3 constitutional build",
+      "Phase 4 detailed policy architecture",
+      "Phase 5 economic claims disguised as modeling",
+      "legal conclusions without review",
+      "major manuscript expansion",
+      "full civic-feedback activation",
+      "HFI-based launch claims"
+    ]
+  },
   "honest_progress_rules": [
     "Do not confuse scaffolding with proof",
     "Modeling remains 0% until real models exist",
     "Legal review remains 0% until real legal review exists",
     "Do not invent sources, baseline values, or claim support",
-    "Do not inflate overall progress"
+    "Do not inflate overall progress",
+    "Baseline denominator is 86 — never revive 38-metric narratives",
+    "Show 2 of 86 sourced until the actual count changes",
+    "No page may imply Phase 2 completion unless the canonical checklist passes"
   ],
   "diagnosis_brief_three_layer_rule": {
     "text": "Every diagnosis brief must distinguish three layers: what the data directly establishes, what may reasonably be inferred, and what Constitutional Capitalism normatively concludes.",
@@ -37,22 +61,29 @@
       "What Constitutional Capitalism normatively concludes"
     ],
     "applies_to": "content/research/national-diagnosis/*",
-    "effective": "immediate for new and revised briefs"
+    "effective": "immediate for new and revised briefs; retrofit required for priority domains",
+    "enforcement": "scripts/validate-phase2-acceptance.mjs reports gaps and blocks false Phase 2 completion"
   },
   "acceptance_criteria": {
+    "canonical_checklist": "data/project/phase2_acceptance_checklist.json",
     "note": "Burt should not call this phase complete merely because architecture, routes, and files exist.",
     "minimum_completion_requires": [
-      "all 21 diagnosis briefs created",
-      "the eight priority domains receiving substantive sourced first passes",
-      "the 20 priority claims classified",
-      "contrary evidence recorded where it exists",
-      "a meaningful subset of baseline metrics populated with verified data",
-      "the public evidence surfaces rendering source-backed content",
-      "the Build Board accurately reporting gaps",
-      "all new schemas and validators passing",
-      "a full source and claim audit",
-      "no inflated progress",
-      "green gate, commit, push, and verified deployments"
+      "Canonical acceptance checklist passes",
+      "Eight priority diagnosis domains are substantively sourced",
+      "Three-layer analysis appears in substantive briefs",
+      "Twenty priority claims are audited and classified",
+      "Contrary evidence is documented",
+      "Baseline count and narratives agree at 86",
+      "A meaningful baseline subset is verified",
+      "Evidence dossiers meet the research standard",
+      "Public surfaces accurately label incompleteness",
+      "Build Board accurately reports proof gaps",
+      "Source and claim audit passes",
+      "Production deployments are verified",
+      "Build Board protection is confirmed or risk remains visibly open",
+      "Modeling remains 0% unless actual modeling occurs",
+      "Legal review remains 0% unless actual legal review occurs",
+      "Overall progress is regenerated from evidence"
     ],
     "if_not_met_return": {
       "phase_2_status": "PARTIAL",
@@ -61,8 +92,18 @@
   },
   "priority_domains": {
     "count": 8,
-    "rule": "Eight priority domains receive real sourcing in this mission; remaining domains may honestly roll into Phase 2.1",
-    "note": "Priority set established in earlier Phase 2 foundation work; architecture expansions after Phase 1 are developing doctrine and research agenda until sourced"
+    "rule": "Eight priority domains receive real sourcing in this mission; remaining domains may honestly roll into Phase 2.1 after the priority eight are materially sound",
+    "domains": [
+      "wealth and ownership",
+      "wages and productivity",
+      "taxation",
+      "corporate power, financialization, and concentration",
+      "worker ownership",
+      "local and rural economies",
+      "internet commerce",
+      "political and economic power"
+    ],
+    "note": "Do not spread shallow research across every topic merely to make the map appear complete."
   },
   "doctrine_capture_requirement": {
     "ledger": "data/project/developing_doctrine.json",
@@ -83,15 +124,28 @@
     "purpose": "Map cross-domain relationships so research does not invent unsupported causal chains or double-count benefits.",
     "relationship_classes": ["documented", "plausible", "disputed", "untested"]
   },
+  "supporting_slices": {
+    "public_statistics_bridge": {
+      "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "decision_id": "CC-DEC-076",
+      "related_decision_ids": ["CC-DEC-077", "CC-DEC-078"],
+      "rcip_spine": "data/project/rcip_civic_data_spine.json",
+      "rule": "RedDirt is the shared civic-data spine (RCIP): ingest/normalize/verify once; multi-source validation; four layers; isolated schemas. CC is first external proof consumer via validated snapshots. Never inherit campaign identity or private records. Baseline rises only when mapped observations validate."
+    }
+  },
+  "working_rule": "Do not build the constitution of the new system until the diagnosis of the current system can withstand an informed critic.",
   "official_active_state": {
-    "phase_1": "ACCEPTED / CLOSED",
+    "phase_1": "LOCKED / CLOSED",
     "current_mission": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
     "evidence_baseline_slice": "ABSORBED ALIAS",
     "civic_deliberation": "APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION",
     "authorization_head_note": "Original Phase 2 authorization referenced HEAD 7184b70; current repository HEAD advances with each ship and must be read from git, not frozen in this lock.",
-    "overall_baseline_note": "Overall progress is generated by progress snapshot (honest; currently mid-30s%). Do not hardcode a stale percentage as completion.",
+    "forensic_audit_overall_snapshot": 36,
+    "overall_percent_source": "data/metrics/progress_snapshot.json",
+    "overall_baseline_note": "Forensic audit snapshot recorded 36%. Regenerated overall comes from progress_snapshot and is not Phase 2 completion. Baseline remains 2/86; modeling/legal 0%.",
     "primary_question": "What can we prove?",
     "phase_2_status": "PARTIAL",
-    "next_slice_if_partial": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0"
+    "next_slice_if_partial": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+    "current_risk": "polished surfaces may overstate evidentiary maturity"
   }
 }

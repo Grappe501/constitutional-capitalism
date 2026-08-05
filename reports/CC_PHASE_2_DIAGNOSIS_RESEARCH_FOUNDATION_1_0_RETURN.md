@@ -34,7 +34,7 @@ First-pass sourced answers exist for priority domains. Causal political-accounta
 
 - `content/research/national-diagnosis/` — 22 briefs (priority first-pass + foundational Phase 2.1 + worker-ownership)
 - `content/evidence-companion/` — overview, template, 8 seeded dossiers
-- `data/baseline/` — metrics, source map, methodology, status (2/38 sourced)
+- `data/baseline/` — metrics, source map, methodology, status (2/86 sourced)
 - `data/project/developing_doctrine.json`
 - `data/project/transition_timeline.json`
 - `data/testing/` + testing/pilot docs

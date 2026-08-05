@@ -1,123 +1,274 @@
 {
   "version": "0.2.4",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Assistance Doctrine (CC-PRIN-34), Family Doctrine (CC-PRIN-32), Human Flourishing Index (CC-PRIN-33), Equal Standing, Constitutional Citizenship, justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Food Security spines. Systems Map and Knowledge Graph organize idea sprawl without counting as Phase 2 proof.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
       "title": "Justice, safety, and restoration",
       "maturity": "proposed_architecture",
       "evidence_status": "partially_sourced_institutional_context",
-      "affected_domains": ["justice", "public_safety", "corrections", "reentry"],
+      "affected_domains": [
+        "justice",
+        "public_safety",
+        "corrections",
+        "reentry"
+      ],
       "constitutional_questions": [
         "When may the state restrict liberty?",
         "How is dignity preserved under continuing custody?"
       ],
-      "implementation_level": ["local", "state", "federal_constitutional_floor"],
-      "risks": ["unsafe release pressure", "favoritism", "score-only custody", "private confinement profit"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal_constitutional_floor"
+      ],
+      "risks": [
+        "unsafe release pressure",
+        "favoritism",
+        "score-only custody",
+        "private confinement profit"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-011", "CC-DEV-012", "CC-DEV-013", "CC-DEV-014", "CC-DEV-046", "CC-DEV-047", "CC-DEV-048", "CC-DEV-049", "CC-DEV-050", "CC-DEV-051", "CC-DEV-052"]
+      "related_doctrine_ids": [
+        "CC-DEV-011",
+        "CC-DEV-012",
+        "CC-DEV-013",
+        "CC-DEV-014",
+        "CC-DEV-046",
+        "CC-DEV-047",
+        "CC-DEV-048",
+        "CC-DEV-049",
+        "CC-DEV-050",
+        "CC-DEV-051",
+        "CC-DEV-052"
+      ]
     },
     {
       "cluster_id": "CC-DCC-02",
       "title": "Distributed political power",
       "maturity": "proposed_architecture",
       "evidence_status": "partially_sourced_legal_institutional",
-      "affected_domains": ["democracy", "representation", "parties", "redistricting"],
+      "affected_domains": [
+        "democracy",
+        "representation",
+        "parties",
+        "redistricting"
+      ],
       "constitutional_questions": [
         "How does political authority remain held in trust?",
         "How is entrenchment prevented?"
       ],
-      "implementation_level": ["state", "federal"],
-      "risks": ["anti-party overreach", "local capture", "procedural weaponization"],
+      "implementation_level": [
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "anti-party overreach",
+        "local capture",
+        "procedural weaponization"
+      ],
       "phase_destination": "phase-3",
-      "related_doctrine_ids": ["CC-DEV-015", "CC-DEV-016", "CC-DEV-017", "CC-DEV-018", "CC-DEV-019"]
+      "related_doctrine_ids": [
+        "CC-DEV-015",
+        "CC-DEV-016",
+        "CC-DEV-017",
+        "CC-DEV-018",
+        "CC-DEV-019"
+      ]
     },
     {
       "cluster_id": "CC-DCC-03",
       "title": "Legislative and institutional overhaul",
       "maturity": "proposed_architecture",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["democracy", "legislature", "procedure", "appointments"],
+      "affected_domains": [
+        "democracy",
+        "legislature",
+        "procedure",
+        "appointments"
+      ],
       "constitutional_questions": [
         "Which reforms restore deliberation without one-party lock-in?"
       ],
-      "implementation_level": ["state", "federal"],
-      "risks": ["reform theater", "unintended concentration of staff/party power"],
+      "implementation_level": [
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "reform theater",
+        "unintended concentration of staff/party power"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-017", "CC-DEV-018", "CC-DEV-019"]
+      "related_doctrine_ids": [
+        "CC-DEV-017",
+        "CC-DEV-018",
+        "CC-DEV-019"
+      ]
     },
     {
       "cluster_id": "CC-DCC-04",
       "title": "Noble public service and government modernization",
       "maturity": "proposed_architecture",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["government_capacity", "public_service", "administrative_friction"],
+      "affected_domains": [
+        "government_capacity",
+        "public_service",
+        "administrative_friction"
+      ],
       "constitutional_questions": [
         "How can government become less frictionful without becoming less accountable?"
       ],
-      "implementation_level": ["local", "state", "federal"],
-      "risks": ["automation without judgment", "invented efficiency stats", "unprotected board exposure of sensitive plans"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "automation without judgment",
+        "invented efficiency stats",
+        "unprotected board exposure of sensitive plans"
+      ],
       "phase_destination": "phase-4",
-      "related_doctrine_ids": ["CC-DEV-020", "CC-DEV-021", "CC-DEV-022", "CC-DEV-023", "CC-DEV-024", "CC-DEV-025", "CC-DEV-026", "CC-DEV-027", "CC-DEV-028"]
+      "related_doctrine_ids": [
+        "CC-DEV-020",
+        "CC-DEV-021",
+        "CC-DEV-022",
+        "CC-DEV-023",
+        "CC-DEV-024",
+        "CC-DEV-025",
+        "CC-DEV-026",
+        "CC-DEV-027",
+        "CC-DEV-028"
+      ]
     },
     {
       "cluster_id": "CC-DCC-05",
       "title": "Public transparency and the People’s Ledger",
       "maturity": "proposed_architecture",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["transparency", "public_records", "accountability"],
+      "affected_domains": [
+        "transparency",
+        "public_records",
+        "accountability"
+      ],
       "constitutional_questions": [
         "What information is held in trust?",
         "When are exceptions to openness justified?"
       ],
-      "implementation_level": ["local", "state", "federal"],
-      "risks": ["privacy harms", "security exposure", "transparency without enforcement"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "privacy harms",
+        "security exposure",
+        "transparency without enforcement"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-029", "CC-DEV-030", "CC-DEV-031", "CC-DEV-032"]
+      "related_doctrine_ids": [
+        "CC-DEV-029",
+        "CC-DEV-030",
+        "CC-DEV-031",
+        "CC-DEV-032"
+      ]
     },
     {
       "cluster_id": "CC-DCC-06",
       "title": "Banking, insurance, pharmaceuticals, and community health",
       "maturity": "proposed_architecture",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["essential_systems", "banking", "insurance", "healthcare", "pharma"],
+      "affected_domains": [
+        "essential_systems",
+        "banking",
+        "insurance",
+        "healthcare",
+        "pharma"
+      ],
       "constitutional_questions": [
         "How should essential systems serve productive value and community health without predetermined corruption conclusions?"
       ],
-      "implementation_level": ["state", "federal", "market_design"],
-      "risks": ["unsupported systemic-intent claims", "sector-stat invention"],
+      "implementation_level": [
+        "state",
+        "federal",
+        "market_design"
+      ],
+      "risks": [
+        "unsupported systemic-intent claims",
+        "sector-stat invention"
+      ],
       "phase_destination": "phase-4",
-      "related_doctrine_ids": ["CC-DEV-033", "CC-DEV-034", "CC-DEV-035", "CC-DEV-036", "CC-DEV-037"]
+      "related_doctrine_ids": [
+        "CC-DEV-033",
+        "CC-DEV-034",
+        "CC-DEV-035",
+        "CC-DEV-036",
+        "CC-DEV-037"
+      ]
     },
     {
       "cluster_id": "CC-DCC-07",
       "title": "Rural academies and human-capital infrastructure",
       "maturity": "proposed_pilot_design_agenda",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["human_capital", "education", "rural_development"],
+      "affected_domains": [
+        "human_capital",
+        "education",
+        "rural_development"
+      ],
       "constitutional_questions": [
         "How does a republic deliberately build human infrastructure with equal-dignity pathways?"
       ],
-      "implementation_level": ["local", "regional", "state"],
-      "risks": ["locked statewide design before pilots", "invented academy outcomes"],
+      "implementation_level": [
+        "local",
+        "regional",
+        "state"
+      ],
+      "risks": [
+        "locked statewide design before pilots",
+        "invented academy outcomes"
+      ],
       "phase_destination": "phase-4_and_phase-5_pilots",
-      "related_doctrine_ids": ["CC-DEV-038", "CC-DEV-039", "CC-DEV-040", "CC-DEV-041"]
+      "related_doctrine_ids": [
+        "CC-DEV-038",
+        "CC-DEV-039",
+        "CC-DEV-040",
+        "CC-DEV-041"
+      ]
     },
     {
       "cluster_id": "CC-DCC-08",
       "title": "Democratic worker and community representation",
       "maturity": "proposed",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["ownership", "labor", "communities", "democracy"],
+      "affected_domains": [
+        "ownership",
+        "labor",
+        "communities",
+        "democracy"
+      ],
       "constitutional_questions": [
         "How do workers and communities gain durable voice without destroying enterprise competence?"
       ],
-      "implementation_level": ["firm", "local", "state"],
-      "risks": ["token representation", "competitiveness loss", "capture by factions"],
+      "implementation_level": [
+        "firm",
+        "local",
+        "state"
+      ],
+      "risks": [
+        "token representation",
+        "competitiveness loss",
+        "capture by factions"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-001", "CC-DEV-002", "CC-DEV-015", "CC-DEV-044"],
+      "related_doctrine_ids": [
+        "CC-DEV-001",
+        "CC-DEV-002",
+        "CC-DEV-015",
+        "CC-DEV-044"
+      ],
       "note": "Cluster spans ownership/community doctrine and democracy spine; dedicated worker-representation statutes remain Phase 2.1+ research."
     },
     {
@@ -125,70 +276,155 @@
       "title": "Scalable community implementation playbooks",
       "maturity": "proposed_design_agenda",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["community_os", "implementation", "rural_prosperity"],
+      "affected_domains": [
+        "community_os",
+        "implementation",
+        "rural_prosperity"
+      ],
       "constitutional_questions": [
         "How do the same principles adapt to different places without one-size templates?"
       ],
-      "implementation_level": ["local", "regional"],
-      "risks": ["invented town-growth outcomes", "playbooks without evaluation"],
+      "implementation_level": [
+        "local",
+        "regional"
+      ],
+      "risks": [
+        "invented town-growth outcomes",
+        "playbooks without evaluation"
+      ],
       "phase_destination": "phase-4_and_phase-5",
-      "related_doctrine_ids": ["CC-DEV-042", "CC-DEV-043", "CC-DEV-044", "CC-DEV-045"]
+      "related_doctrine_ids": [
+        "CC-DEV-042",
+        "CC-DEV-043",
+        "CC-DEV-044",
+        "CC-DEV-045"
+      ]
     },
     {
       "cluster_id": "CC-DCC-10",
       "title": "Resource sovereignty and community return",
       "maturity": "proposed_architecture",
       "evidence_status": "partially_sourced_institutional_context",
-      "affected_domains": ["resources", "energy", "environment", "local_wealth"],
+      "affected_domains": [
+        "resources",
+        "energy",
+        "environment",
+        "local_wealth"
+      ],
       "constitutional_questions": [
         "Who owns the return from place-based resource burdens?"
       ],
-      "implementation_level": ["local", "state", "federal_floor"],
-      "risks": ["investment deterrence", "allocation-model overconfidence", "GHGRP political changeability"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal_floor"
+      ],
+      "risks": [
+        "investment deterrence",
+        "allocation-model overconfidence",
+        "GHGRP political changeability"
+      ],
       "phase_destination": "phase-4",
-      "related_doctrine_ids": ["CC-DEV-053", "CC-DEV-054", "CC-DEV-055", "CC-DEV-056", "CC-DEV-057"]
+      "related_doctrine_ids": [
+        "CC-DEV-053",
+        "CC-DEV-054",
+        "CC-DEV-055",
+        "CC-DEV-056",
+        "CC-DEV-057"
+      ]
     },
     {
       "cluster_id": "CC-DCC-11",
       "title": "Regenerative agriculture and local energy",
       "maturity": "proposed_design_agenda",
       "evidence_status": "partially_sourced_institutional_context",
-      "affected_domains": ["agriculture", "energy", "climate", "rural_economies"],
+      "affected_domains": [
+        "agriculture",
+        "energy",
+        "climate",
+        "rural_economies"
+      ],
       "constitutional_questions": [
         "How are verified stewardship and local energy ownership rewarded without fraudulent offsets?"
       ],
-      "implementation_level": ["local", "regional", "state"],
-      "risks": ["unverifiable carbon claims", "offset-as-license-to-pollute"],
+      "implementation_level": [
+        "local",
+        "regional",
+        "state"
+      ],
+      "risks": [
+        "unverifiable carbon claims",
+        "offset-as-license-to-pollute"
+      ],
       "phase_destination": "phase-4_and_phase-5",
-      "related_doctrine_ids": ["CC-DEV-057", "CC-DEV-060"]
+      "related_doctrine_ids": [
+        "CC-DEV-057",
+        "CC-DEV-060"
+      ]
     },
     {
       "cluster_id": "CC-DCC-12",
       "title": "Community food security",
       "maturity": "proposed_architecture",
       "evidence_status": "partially_sourced_institutional_context",
-      "affected_domains": ["food", "agriculture", "nutrition", "resilience"],
+      "affected_domains": [
+        "food",
+        "agriculture",
+        "nutrition",
+        "resilience"
+      ],
       "constitutional_questions": [
         "How does local food capacity coexist with trade-based resilience?"
       ],
-      "implementation_level": ["local", "regional", "state"],
-      "risks": ["isolationism", "export-only staple rules", "invented sourcing rates"],
+      "implementation_level": [
+        "local",
+        "regional",
+        "state"
+      ],
+      "risks": [
+        "isolationism",
+        "export-only staple rules",
+        "invented sourcing rates"
+      ],
       "phase_destination": "phase-4",
-      "related_doctrine_ids": ["CC-DEV-058", "CC-DEV-059", "CC-DEV-060", "CC-DEV-061"]
+      "related_doctrine_ids": [
+        "CC-DEV-058",
+        "CC-DEV-059",
+        "CC-DEV-060",
+        "CC-DEV-061"
+      ]
     },
     {
       "cluster_id": "CC-DCC-13",
       "title": "Essential public infrastructure",
       "maturity": "proposed",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["infrastructure", "broadband", "water", "energy", "access"],
+      "affected_domains": [
+        "infrastructure",
+        "broadband",
+        "water",
+        "energy",
+        "access"
+      ],
       "constitutional_questions": [
         "Which infrastructures must remain broadly accessible for participation in modern economic life?"
       ],
-      "implementation_level": ["local", "state", "federal"],
-      "risks": ["model lock-in before evidence", "access without stewardship"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "model lock-in before evidence",
+        "access without stewardship"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-033", "CC-DEV-053", "CC-DEV-057", "CC-DEV-058"],
+      "related_doctrine_ids": [
+        "CC-DEV-033",
+        "CC-DEV-053",
+        "CC-DEV-057",
+        "CC-DEV-058"
+      ],
       "note": "Also linked to CC-DEC-042 essential infrastructure principle in website IA."
     },
     {
@@ -196,28 +432,58 @@
       "title": "Permanent ownership and reduced taxation of labor",
       "maturity": "proposed",
       "evidence_status": "partially_sourced_priority_tax_modules",
-      "affected_domains": ["ownership", "taxation", "wages", "capital"],
+      "affected_domains": [
+        "ownership",
+        "taxation",
+        "wages",
+        "capital"
+      ],
       "constitutional_questions": [
         "How should tax and ownership design favor broad permanent ownership without pretending all incidence is settled?"
       ],
-      "implementation_level": ["state", "federal"],
-      "risks": ["oversimplified incidence claims", "ownership without productive capacity"],
+      "implementation_level": [
+        "state",
+        "federal"
+      ],
+      "risks": [
+        "oversimplified incidence claims",
+        "ownership without productive capacity"
+      ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-001", "CC-DEV-002", "CC-DEV-003", "CC-DEV-004"]
+      "related_doctrine_ids": [
+        "CC-DEV-001",
+        "CC-DEV-002",
+        "CC-DEV-003",
+        "CC-DEV-004"
+      ]
     },
     {
       "cluster_id": "CC-DCC-15",
       "title": "Constructive improvement as civic service",
       "maturity": "proposed",
       "evidence_status": "normative_architecture",
-      "affected_domains": ["civic_virtue", "duty_of_improvement", "public_service"],
+      "affected_domains": [
+        "civic_virtue",
+        "duty_of_improvement",
+        "public_service"
+      ],
       "constitutional_questions": [
         "How does each generation improve the system without destroying continuity or rights?"
       ],
-      "implementation_level": ["individual", "civic", "institutional"],
-      "risks": ["improvement as factional capture", "permanent revolution rhetoric"],
+      "implementation_level": [
+        "individual",
+        "civic",
+        "institutional"
+      ],
+      "risks": [
+        "improvement as factional capture",
+        "permanent revolution rhetoric"
+      ],
       "phase_destination": "phase-3_and_phase-9",
-      "related_doctrine_ids": ["CC-DEV-045", "CC-DEV-020"],
+      "related_doctrine_ids": [
+        "CC-DEV-045",
+        "CC-DEV-020"
+      ],
       "note": "Anchored also in civilizational_core duty_of_improvement (CC-DEC-040)."
     },
     {
@@ -225,19 +491,36 @@
       "title": "Equal standing, blind-stage justice, and equal access",
       "maturity": "proposed_architecture",
       "evidence_status": "normative_architecture",
-      "affected_domains": ["equal_standing", "justice", "democracy", "civic_culture", "access_to_justice"],
+      "affected_domains": [
+        "equal_standing",
+        "justice",
+        "democracy",
+        "civic_culture",
+        "access_to_justice"
+      ],
       "constitutional_questions": [
         "How does equal standing coexist with constitutionally relevant distinctions?",
         "What access minimums make equality real rather than paper-only?"
       ],
-      "implementation_level": ["local", "state", "federal_constitutional_floor"],
+      "implementation_level": [
+        "local",
+        "state",
+        "federal_constitutional_floor"
+      ],
       "risks": [
         "confusing equal standing with equality of outcome",
         "literal blind-proceedings claims that ignore legally relevant identity",
         "invented access-to-justice statistics"
       ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-062", "CC-DEV-063", "CC-DEV-064", "CC-DEV-065", "CC-DEV-066", "CC-DEV-067"],
+      "related_doctrine_ids": [
+        "CC-DEV-062",
+        "CC-DEV-063",
+        "CC-DEV-064",
+        "CC-DEV-065",
+        "CC-DEV-066",
+        "CC-DEV-067"
+      ],
       "note": "Foundational principle CC-PRIN-29; complements Declaration On equality."
     },
     {
@@ -245,12 +528,22 @@
       "title": "Constitutional citizenship and civic preparation",
       "maturity": "proposed_architecture",
       "evidence_status": "normative_architecture",
-      "affected_domains": ["citizenship", "education", "democracy", "human_capital", "community"],
+      "affected_domains": [
+        "citizenship",
+        "education",
+        "democracy",
+        "human_capital",
+        "community"
+      ],
       "constitutional_questions": [
         "How does a republic prepare every generation for responsible self-government?",
         "Under what conditions could earlier civic participation strengthen representation?"
       ],
-      "implementation_level": ["local", "school", "state"],
+      "implementation_level": [
+        "local",
+        "school",
+        "state"
+      ],
       "risks": [
         "locking voting age without evidence",
         "symbolic youth councils",
@@ -258,7 +551,18 @@
         "service framed as punishment"
       ],
       "phase_destination": "phase-3_and_phase-4_and_phase-5_pilots",
-      "related_doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073", "CC-DEV-074", "CC-DEV-075", "CC-DEV-076", "CC-DEV-077"],
+      "related_doctrine_ids": [
+        "CC-DEV-068",
+        "CC-DEV-069",
+        "CC-DEV-070",
+        "CC-DEV-071",
+        "CC-DEV-072",
+        "CC-DEV-073",
+        "CC-DEV-074",
+        "CC-DEV-075",
+        "CC-DEV-076",
+        "CC-DEV-077"
+      ],
       "note": "Principles CC-PRIN-30/31; links Human Capital, Equal Standing, Democracy, Community OS; viewpoint-neutral civic service required."
     },
     {
@@ -266,38 +570,120 @@
       "title": "Constitutional family and childhood flourishing",
       "maturity": "proposed_architecture",
       "evidence_status": "normative_architecture",
-      "affected_domains": ["family", "childhood", "nutrition", "human_capital", "ownership"],
+      "affected_domains": [
+        "family",
+        "childhood",
+        "nutrition",
+        "human_capital",
+        "ownership"
+      ],
       "constitutional_questions": [
         "How does a republic strengthen families without replacing them?",
         "How is childhood dignity preserved independent of economic output?"
       ],
-      "implementation_level": ["family", "local", "state", "federal_floor"],
+      "implementation_level": [
+        "family",
+        "local",
+        "state",
+        "federal_floor"
+      ],
       "risks": [
         "productive-as-worth language",
         "state-first family replacement",
         "invented childhood statistics"
       ],
       "phase_destination": "phase-3_and_phase-4",
-      "related_doctrine_ids": ["CC-DEV-078", "CC-DEV-079", "CC-DEV-080", "CC-DEV-081", "CC-DEV-082", "CC-DEV-083", "CC-DEV-084"]
+      "related_doctrine_ids": [
+        "CC-DEV-078",
+        "CC-DEV-079",
+        "CC-DEV-080",
+        "CC-DEV-081",
+        "CC-DEV-082",
+        "CC-DEV-083",
+        "CC-DEV-084"
+      ]
     },
     {
       "cluster_id": "CC-DCC-19",
       "title": "Systems map, knowledge graph, and human flourishing benchmark",
       "maturity": "proposed_design_agenda",
       "evidence_status": "architecture_requires_research",
-      "affected_domains": ["measurement", "research_ops", "systems_architecture"],
+      "affected_domains": [
+        "measurement",
+        "research_ops",
+        "systems_architecture"
+      ],
       "constitutional_questions": [
         "Did human life improve?",
         "How do doctrines connect without unsupported causal chains?"
       ],
-      "implementation_level": ["project_infrastructure", "research"],
+      "implementation_level": [
+        "project_infrastructure",
+        "research"
+      ],
       "risks": [
         "treating architecture as evidence",
         "invented HFI composites",
         "knowledge-graph edges mistaken for proof"
       ],
       "phase_destination": "phase-2.1_and_phase-5",
-      "related_doctrine_ids": ["CC-DEV-085", "CC-DEV-086", "CC-DEV-087", "CC-DEV-088"]
+      "related_doctrine_ids": [
+        "CC-DEV-085",
+        "CC-DEV-086",
+        "CC-DEV-087",
+        "CC-DEV-088"
+      ]
+    },
+    {
+      "cluster_id": "CC-DCC-20",
+      "title": "Assistance, security, participation, and pathways to independence",
+      "maturity": "proposed_architecture",
+      "evidence_status": "mixed_sourced_scale_normative_architecture",
+      "affected_domains": [
+        "assistance",
+        "labor",
+        "family",
+        "health",
+        "ownership",
+        "local_government"
+      ],
+      "constitutional_questions": [
+        "How does a republic guarantee security without trapping capable people in dependency?",
+        "What pathways and work alternatives replace both abandonment and warehousing?"
+      ],
+      "implementation_level": [
+        "local",
+        "county",
+        "state",
+        "federal_floor"
+      ],
+      "risks": [
+        "one-size-fits-all caseload management",
+        "benefit cliffs",
+        "invented phaseout rates",
+        "UBI substitution without contribution pathways",
+        "sanctions without supports",
+        "surveillance via integrated accounts"
+      ],
+      "phase_destination": "phase-3_and_phase-4_and_phase-5_pilots",
+      "related_doctrine_ids": [
+        "CC-DEV-089",
+        "CC-DEV-090",
+        "CC-DEV-091",
+        "CC-DEV-092",
+        "CC-DEV-093",
+        "CC-DEV-094",
+        "CC-DEV-095",
+        "CC-DEV-096",
+        "CC-DEV-097",
+        "CC-DEV-098",
+        "CC-DEV-099",
+        "CC-DEV-100",
+        "CC-DEV-101",
+        "CC-DEV-102",
+        "CC-DEV-103"
+      ],
+      "note": "Principle CC-PRIN-34; SNAP FY2024 scale sourced; modeling required for cliffs; reject UBI as organizing alternative."
     }
   ],
   "items": [
@@ -496,7 +882,10 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-043", "CC-DEC-044"]
+      "related_decision_ids": [
+        "CC-DEC-043",
+        "CC-DEC-044"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-012",
@@ -519,7 +908,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-043"]
+      "related_decision_ids": [
+        "CC-DEC-043"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-013",
@@ -544,7 +935,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-043"]
+      "related_decision_ids": [
+        "CC-DEC-043"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-014",
@@ -568,7 +961,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-043"]
+      "related_decision_ids": [
+        "CC-DEC-043"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-015",
@@ -594,7 +989,10 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-045", "CC-DEC-046"]
+      "related_decision_ids": [
+        "CC-DEC-045",
+        "CC-DEC-046"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-016",
@@ -614,7 +1012,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-045"]
+      "related_decision_ids": [
+        "CC-DEC-045"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-017",
@@ -637,7 +1037,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-045"]
+      "related_decision_ids": [
+        "CC-DEC-045"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-018",
@@ -660,7 +1062,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-045"]
+      "related_decision_ids": [
+        "CC-DEC-045"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-019",
@@ -684,7 +1088,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-045"]
+      "related_decision_ids": [
+        "CC-DEC-045"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-020",
@@ -708,7 +1114,10 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-047", "CC-DEC-048"]
+      "related_decision_ids": [
+        "CC-DEC-047",
+        "CC-DEC-048"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-021",
@@ -730,7 +1139,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-047"]
+      "related_decision_ids": [
+        "CC-DEC-047"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-022",
@@ -753,7 +1164,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-047"]
+      "related_decision_ids": [
+        "CC-DEC-047"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-023",
@@ -774,7 +1187,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-047"]
+      "related_decision_ids": [
+        "CC-DEC-047"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-024",
@@ -797,7 +1212,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-047"]
+      "related_decision_ids": [
+        "CC-DEC-047"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-025",
@@ -823,7 +1240,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-049"]
+      "related_decision_ids": [
+        "CC-DEC-049"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-026",
@@ -845,7 +1264,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-049"]
+      "related_decision_ids": [
+        "CC-DEC-049"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-027",
@@ -870,7 +1291,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-049"]
+      "related_decision_ids": [
+        "CC-DEC-049"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-028",
@@ -892,7 +1315,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-049"]
+      "related_decision_ids": [
+        "CC-DEC-049"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-029",
@@ -915,7 +1340,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-050"]
+      "related_decision_ids": [
+        "CC-DEC-050"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-030",
@@ -937,7 +1364,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-050"]
+      "related_decision_ids": [
+        "CC-DEC-050"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-031",
@@ -962,7 +1391,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-050"]
+      "related_decision_ids": [
+        "CC-DEC-050"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-032",
@@ -986,7 +1417,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-050"]
+      "related_decision_ids": [
+        "CC-DEC-050"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-033",
@@ -1009,7 +1442,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-052"]
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-034",
@@ -1032,7 +1467,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-052"]
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-035",
@@ -1055,7 +1492,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-052"]
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-036",
@@ -1077,7 +1516,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-052"]
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-037",
@@ -1096,7 +1537,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-052"]
+      "related_decision_ids": [
+        "CC-DEC-052"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-038",
@@ -1119,7 +1562,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-054"]
+      "related_decision_ids": [
+        "CC-DEC-054"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-039",
@@ -1141,7 +1586,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-054"]
+      "related_decision_ids": [
+        "CC-DEC-054"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-040",
@@ -1165,7 +1612,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-054"]
+      "related_decision_ids": [
+        "CC-DEC-054"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-041",
@@ -1189,7 +1638,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-054"]
+      "related_decision_ids": [
+        "CC-DEC-054"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-042",
@@ -1211,7 +1662,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-056"]
+      "related_decision_ids": [
+        "CC-DEC-056"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-043",
@@ -1233,7 +1686,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-056"]
+      "related_decision_ids": [
+        "CC-DEC-056"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-044",
@@ -1259,7 +1714,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-056"]
+      "related_decision_ids": [
+        "CC-DEC-056"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-045",
@@ -1281,7 +1738,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-056"]
+      "related_decision_ids": [
+        "CC-DEC-056"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-046",
@@ -1305,7 +1764,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-058"]
+      "related_decision_ids": [
+        "CC-DEC-058"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-047",
@@ -1331,7 +1792,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-058"]
+      "related_decision_ids": [
+        "CC-DEC-058"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-048",
@@ -1354,7 +1817,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-058"]
+      "related_decision_ids": [
+        "CC-DEC-058"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-049",
@@ -1382,7 +1847,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-058"]
+      "related_decision_ids": [
+        "CC-DEC-058"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-050",
@@ -1405,7 +1872,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-059"]
+      "related_decision_ids": [
+        "CC-DEC-059"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-051",
@@ -1431,7 +1900,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-059"]
+      "related_decision_ids": [
+        "CC-DEC-059"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-052",
@@ -1456,7 +1927,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-059"]
+      "related_decision_ids": [
+        "CC-DEC-059"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-053",
@@ -1479,7 +1952,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-060"]
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-054",
@@ -1504,7 +1979,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-060"]
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-055",
@@ -1529,7 +2006,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-060"]
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-056",
@@ -1553,7 +2032,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-060"]
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-057",
@@ -1578,7 +2059,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-060"]
+      "related_decision_ids": [
+        "CC-DEC-060"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-058",
@@ -1602,7 +2085,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-062"]
+      "related_decision_ids": [
+        "CC-DEC-062"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-059",
@@ -1627,7 +2112,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-062"]
+      "related_decision_ids": [
+        "CC-DEC-062"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-060",
@@ -1651,7 +2138,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-062"]
+      "related_decision_ids": [
+        "CC-DEC-062"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-061",
@@ -1673,7 +2162,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-062"]
+      "related_decision_ids": [
+        "CC-DEC-062"
+      ]
     },
     {
       "doctrine_id": "CC-DEV-062",
@@ -1696,14 +2187,27 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "evidence_status": "normative_architecture",
-      "affected_domains": ["equal_standing", "justice", "constitutional_order"],
+      "affected_domains": [
+        "equal_standing",
+        "justice",
+        "constitutional_order"
+      ],
       "constitutional_questions": [
         "What distinctions are constitutionally relevant versus status privilege?"
       ],
-      "implementation_level": ["federal_constitutional_floor", "state", "local"],
-      "risks": ["outcome-equality conflation", "identity-blind literalism"],
+      "implementation_level": [
+        "federal_constitutional_floor",
+        "state",
+        "local"
+      ],
+      "risks": [
+        "outcome-equality conflation",
+        "identity-blind literalism"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -1725,9 +2229,15 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "evidence_status": "normative_architecture",
-      "affected_domains": ["justice", "equal_standing", "civic_culture"],
+      "affected_domains": [
+        "justice",
+        "equal_standing",
+        "civic_culture"
+      ],
       "phase_destination": "phase-3_and_phase-4"
     },
     {
@@ -1748,7 +2258,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -1768,7 +2280,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "phase_destination": "phase-3_and_phase-4"
     },
     {
@@ -1788,7 +2302,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "phase_destination": "phase-4"
     },
     {
@@ -1808,7 +2324,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-065"],
+      "related_decision_ids": [
+        "CC-DEC-065"
+      ],
       "phase_destination": "phase-3_and_phase-9"
     },
     {
@@ -1832,7 +2350,9 @@
       ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -1854,7 +2374,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-4_and_phase-5_pilots"
     },
     {
@@ -1875,7 +2397,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-4_and_phase-5_pilots"
     },
     {
@@ -1897,7 +2421,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-5_pilots",
       "note": "Reasonable people disagree; architecture records exploration, not settled policy."
     },
@@ -1919,7 +2445,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-4"
     },
     {
@@ -1943,7 +2471,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-067"],
+      "related_decision_ids": [
+        "CC-DEC-067"
+      ],
       "phase_destination": "phase-4_and_phase-5"
     },
     {
@@ -1967,7 +2497,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-069"],
+      "related_decision_ids": [
+        "CC-DEC-069"
+      ],
       "phase_destination": "phase-3_and_phase-4"
     },
     {
@@ -1989,7 +2521,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-069"],
+      "related_decision_ids": [
+        "CC-DEC-069"
+      ],
       "phase_destination": "phase-4_and_phase-5_pilots"
     },
     {
@@ -2012,7 +2546,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-069"],
+      "related_decision_ids": [
+        "CC-DEC-069"
+      ],
       "phase_destination": "phase-4",
       "note": "Preserves public trust and constitutional neutrality."
     },
@@ -2036,7 +2572,9 @@
       ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-069"],
+      "related_decision_ids": [
+        "CC-DEC-069"
+      ],
       "phase_destination": "phase-4"
     },
     {
@@ -2044,12 +2582,23 @@
       "statement": "A nation's greatest long-term asset is not its money, its corporations, or its natural resources. It is the children it raises. Children are the shared responsibility of their families, their communities, and ultimately the constitutional republic until they are prepared to become healthy, capable, independent participants in society — not until they are 'productive.' Worth does not depend on economic output.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed_foundational_principle",
-      "implications": ["CC-PRIN-32", "dignity-safe language", "parents as primary caregivers"],
-      "conflicts": ["productive-as-worth framing", "abandonment of supporting responsibilities"],
-      "research_required": ["childhood well-being modules without invented stats"],
+      "implications": [
+        "CC-PRIN-32",
+        "dignity-safe language",
+        "parents as primary caregivers"
+      ],
+      "conflicts": [
+        "productive-as-worth framing",
+        "abandonment of supporting responsibilities"
+      ],
+      "research_required": [
+        "childhood well-being modules without invented stats"
+      ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -2057,12 +2606,20 @@
       "statement": "Strong families create strong communities. Strong communities create a strong republic. Public institutions should strengthen families rather than replace them whenever possible — family-first, not state-first.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed",
-      "implications": ["family strengthening screen for policy"],
-      "conflicts": ["default state substitution for family"],
-      "research_required": ["family-support program evaluations labeled carefully"],
+      "implications": [
+        "family strengthening screen for policy"
+      ],
+      "conflicts": [
+        "default state substitution for family"
+      ],
+      "research_required": [
+        "family-support program evaluations labeled carefully"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -2070,12 +2627,21 @@
       "statement": "Care and support should climb a subsidiarity ladder — Child → Family → Extended family → Neighborhood → Community → County → State → Nation — with each level stepping in when the previous one genuinely cannot meet the need.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed",
-      "implications": ["care ladder design", "links to general subsidiarity"],
-      "conflicts": ["skipping nearer supports by default"],
-      "research_required": ["local capacity thresholds without invented coverage stats"],
+      "implications": [
+        "care ladder design",
+        "links to general subsidiarity"
+      ],
+      "conflicts": [
+        "skipping nearer supports by default"
+      ],
+      "research_required": [
+        "local capacity thresholds without invented coverage stats"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-3_and_phase-4"
     },
     {
@@ -2083,12 +2649,22 @@
       "statement": "Intergenerational prosperity means removing unnecessary barriers so generations can remain connected when they choose — attainable homeownership, family businesses, multigenerational housing options, inheritance systems that preserve productive assets, caregiving support, flexible zoning where appropriate, local employment, and connectivity — without forcing families to live together. A Family Wealth System includes homes, farms, small businesses, savings, education, skills, and community relationships, plus knowledge, trust, and local institutions.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed",
-      "implications": ["Family Wealth System", "ownership and rural links"],
-      "conflicts": ["forced co-residence", "barriers that quietly sever voluntary family continuity"],
-      "research_required": ["housing/zoning/inheritance modules"],
+      "implications": [
+        "Family Wealth System",
+        "ownership and rural links"
+      ],
+      "conflicts": [
+        "forced co-residence",
+        "barriers that quietly sever voluntary family continuity"
+      ],
+      "research_required": [
+        "housing/zoning/inheritance modules"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-4"
     },
     {
@@ -2096,12 +2672,22 @@
       "statement": "In a prosperous constitutional republic, no child should lack adequate nutrition because of circumstances beyond the child's control. Implementation begins with parents, extended family, neighbors, schools, faith communities, food banks, local charities, and county resources; the state is guarantor of last resort, not first responder in every circumstance.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed",
-      "implications": ["links to Community Food Security", "care-ladder nutrition path"],
-      "conflicts": ["abandonment if local support fails", "state-first default that erases community responsibility"],
-      "research_required": ["child nutrition modules without invented hunger rates"],
+      "implications": [
+        "links to Community Food Security",
+        "care-ladder nutrition path"
+      ],
+      "conflicts": [
+        "abandonment if local support fails",
+        "state-first default that erases community responsibility"
+      ],
+      "research_required": [
+        "child nutrition modules without invented hunger rates"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-4"
     },
     {
@@ -2109,12 +2695,23 @@
       "statement": "Investing in maternal health, early childhood development, nutrition, education, mental health, safe housing, literacy, civic education, and apprenticeships is long-term national investment in the republic's future capacity — not merely social spending. Communities should measure child flourishing (nutrition, literacy, health, family stability, civic participation, youth work pathways, adulthood transition) and ask whether children are better prepared than the generation before them — with indicator values null until sourced.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed_design_agenda",
-      "implications": ["children as infrastructure", "child flourishing slots", "Human Capital link"],
-      "conflicts": ["output-only childhood success metrics", "invented indicator values"],
-      "research_required": ["sourced childhood indicator modules"],
+      "implications": [
+        "children as infrastructure",
+        "child flourishing slots",
+        "Human Capital link"
+      ],
+      "conflicts": [
+        "output-only childhood success metrics",
+        "invented indicator values"
+      ],
+      "research_required": [
+        "sourced childhood indicator modules"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-2.1_and_phase-4"
     },
     {
@@ -2122,12 +2719,22 @@
       "statement": "Every child enters the republic with equal human dignity and equal constitutional worth. The measure of a constitutional society is whether that child has a genuine opportunity to grow into a healthy, educated, capable, and free adult — not because success is guaranteed, but because the community, the state, and the nation refused to neglect the foundations of that opportunity.",
       "origin": "steve_direction_constitutional_family_doctrine",
       "maturity": "proposed",
-      "implications": ["constitutional promise", "Equal Standing and Human Capital alignment"],
-      "conflicts": ["neglect of foundational opportunity", "guaranteed-outcome promises"],
-      "research_required": ["opportunity-foundation measurement without false guarantees"],
+      "implications": [
+        "constitutional promise",
+        "Equal Standing and Human Capital alignment"
+      ],
+      "conflicts": [
+        "neglect of foundational opportunity",
+        "guaranteed-outcome promises"
+      ],
+      "research_required": [
+        "opportunity-foundation measurement without false guarantees"
+      ],
       "declaration_revision_candidate": true,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-070"],
+      "related_decision_ids": [
+        "CC-DEC-070"
+      ],
       "phase_destination": "phase-3"
     },
     {
@@ -2135,12 +2742,22 @@
       "statement": "Constitutional Capitalism is a living constitutional philosophy — supported by research, evidence, policy laboratory, modeling lab, community implementation, civic feedback, public debate, and pilot networks — more durable than a book alone. The book remains an introduction; architecture sprawl must not be mistaken for proof.",
       "origin": "steve_direction_living_philosophy_and_systems_map",
       "maturity": "proposed_architecture",
-      "implications": ["living_project_identity", "integrity rules"],
-      "conflicts": ["book-only framing that hides operating systems", "architecture counted as completion"],
-      "research_required": ["program-layer mapping to official phases without renumbering"],
+      "implications": [
+        "living_project_identity",
+        "integrity rules"
+      ],
+      "conflicts": [
+        "book-only framing that hides operating systems",
+        "architecture counted as completion"
+      ],
+      "research_required": [
+        "program-layer mapping to official phases without renumbering"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-072"],
+      "related_decision_ids": [
+        "CC-DEC-072"
+      ],
       "phase_destination": "phase-2_and_later"
     },
     {
@@ -2148,12 +2765,21 @@
       "statement": "A Constitutional Capitalism Systems Map should organize major human, community, economy, government, justice, infrastructure, national, and continuous-improvement systems as master architecture — not implementation and not evidence.",
       "origin": "steve_direction_living_philosophy_and_systems_map",
       "maturity": "proposed_design_agenda",
-      "implications": ["systems_map.json", "anti-sprawl organization"],
-      "conflicts": ["unordered idea accumulation"],
-      "research_required": ["map-to-framework linkage completeness"],
+      "implications": [
+        "systems_map.json",
+        "anti-sprawl organization"
+      ],
+      "conflicts": [
+        "unordered idea accumulation"
+      ],
+      "research_required": [
+        "map-to-framework linkage completeness"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-072"],
+      "related_decision_ids": [
+        "CC-DEC-072"
+      ],
       "phase_destination": "phase-2.1"
     },
     {
@@ -2161,12 +2787,21 @@
       "statement": "A Knowledge Graph should connect ideas as nodes and typed relationships (with documented/plausible/disputed/untested classes) so the philosophy becomes AI-searchable without treating graph edges as empirical proof.",
       "origin": "steve_direction_living_philosophy_and_systems_map",
       "maturity": "proposed_design_agenda",
-      "implications": ["knowledge_graph.json scaffold", "Burt expansion agenda"],
-      "conflicts": ["causal chains presented as settled fact without sources"],
-      "research_required": ["ingest capture_clusters and frameworks into nodes"],
+      "implications": [
+        "knowledge_graph.json scaffold",
+        "Burt expansion agenda"
+      ],
+      "conflicts": [
+        "causal chains presented as settled fact without sources"
+      ],
+      "research_required": [
+        "ingest capture_clusters and frameworks into nodes"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-072"],
+      "related_decision_ids": [
+        "CC-DEC-072"
+      ],
       "phase_destination": "phase-2.1"
     },
     {
@@ -2174,13 +2809,362 @@
       "statement": "Constitutional Capitalism should evaluate itself with a Human Flourishing Index answering whether human life improved and whether proposals measurably increase flourishing across health, family, childhood, education, civic life, ownership, resilience, environment, trust, safety, opportunity, time, volunteerism, culture, and life satisfaction — never GDP alone, and never with invented composites.",
       "origin": "steve_direction_living_philosophy_and_systems_map",
       "maturity": "proposed_design_agenda",
-      "implications": ["CC-PRIN-33", "HFI domain slots pending sources"],
-      "conflicts": ["GDP-only success", "architecture-as-measurement"],
-      "research_required": ["source first HFI domains with registered evidence"],
+      "implications": [
+        "CC-PRIN-33",
+        "HFI domain slots pending sources"
+      ],
+      "conflicts": [
+        "GDP-only success",
+        "architecture-as-measurement"
+      ],
+      "research_required": [
+        "source first HFI domains with registered evidence"
+      ],
       "declaration_revision_candidate": false,
       "status": "open",
-      "related_decision_ids": ["CC-DEC-072"],
+      "related_decision_ids": [
+        "CC-DEC-072"
+      ],
       "phase_destination": "phase-2.1_and_phase-5"
+    },
+    {
+      "doctrine_id": "CC-DEV-089",
+      "statement": "No person should be abandoned when unable to meet essential needs. No institution should trap a capable person in dependency. Assistance should protect dignity, strengthen capacity, reward productive advancement, and lead toward the greatest independence reasonably possible. Distinguish security (essential needs shocks will not destroy life) from dependency (rules that punish work, marriage, saving, promotion, entrepreneurship, or property). Objective: protect, stabilize, remove barriers, and build a believable path to income, ownership, and participation — not manage a dependent population.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed_foundational_principle",
+      "implications": [
+        "CC-PRIN-34",
+        "security vs dependency"
+      ],
+      "conflicts": [
+        "one-size-fits-all assistance",
+        "dependency as objective"
+      ],
+      "research_required": [
+        "pathway operations research",
+        "stacked-program interaction studies"
+      ],
+      "declaration_revision_candidate": true,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-090",
+      "statement": "Place every recipient on the correct pathway: (A) permanent protection; (B) childhood and dependent care; (C) caregiving as productive participation; (D) temporary stabilization; (E) working but economically insecure; (F) capable but disconnected with reciprocal engagement after barrier removal. Different circumstances require different responses.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "six pathways",
+        "Family Pathway B link"
+      ],
+      "conflicts": [
+        "uniform work rules for permanent incapacity",
+        "treating children as moral welfare recipients"
+      ],
+      "research_required": [
+        "pathway classification pilots",
+        "caregiver verification designs"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-091",
+      "statement": "Eliminate benefit cliffs. Every additional hour of productive work should leave a household better off. Benefits should phase down gradually so total household resources always rise with earned income; recipients should see earnings, taxes, reduced assistance, and net household income before accepting raises. Exact rates require modeling. Universal benefit-impact calculators should integrate into recipient accounts.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "anti-cliff rule",
+        "calculator transparency"
+      ],
+      "conflicts": [
+        "cliffs that punish advancement"
+      ],
+      "research_required": [
+        "phaseout modeling",
+        "stacked program EMTRs"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-4_and_phase-5_modeling_pilots"
+    },
+    {
+      "doctrine_id": "CC-DEV-092",
+      "statement": "Create one Human Prosperity Account coordinating food, health, childcare, housing, unemployment, disability, workforce, transportation, and energy assistance — showing benefits, eligibility, income, training, phaseouts, appointments, goals, local opportunities, independence progress, and appeal rights — with one accountable local navigator. Coordinate programs; do not build a surveillance system.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "Human Prosperity Account",
+        "privacy governance"
+      ],
+      "conflicts": [
+        "fragmented agency runaround",
+        "surveillance by default"
+      ],
+      "research_required": [
+        "privacy architecture",
+        "interop standards"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-093",
+      "statement": "Replace case processing with prosperity planning. Technology handles eligibility calculations, reminders, coordination, duplicate detection, income updates, and routine renewals. Human workers become Prosperity Navigators who identify barriers, capacities, local economy needs, durable routes forward, service step-down, and ownership accumulation. Automate the routine. Elevate the human.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "Prosperity Navigators",
+        "public service spine link"
+      ],
+      "conflicts": [
+        "checkbox case processing as primary human role"
+      ],
+      "research_required": [
+        "navigator workforce redesign"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-094",
+      "statement": "Guarantee foundations of participation before imposing requirements: childcare, transportation, identification, literacy, healthcare, mental health, addiction treatment, housing stability, internet access, criminal-record barriers, disability accommodation, and local job availability. Do not sanction people for jobs that do not exist, cannot be reached, pay less than childcare, jeopardize necessary medical coverage, or cannot accommodate disability. Pair requirements with supports and independent evaluation.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "barrier removal first"
+      ],
+      "conflicts": [
+        "requirements without supports"
+      ],
+      "research_required": [
+        "CBO-informed evaluation designs"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-095",
+      "statement": "Recognize multiple forms of contribution toward independence: employment, apprenticeship, education, addiction recovery, mental-health treatment, caregiving, community service, disaster recovery, public infrastructure work, entrepreneurship preparation, supervised job search, rehabilitation, and civic service. The standard is active movement toward the greatest independence and contribution available — not paycheck alone.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "contribution taxonomy"
+      ],
+      "conflicts": [
+        "paycheck-only participation tests"
+      ],
+      "research_required": [
+        "activity verification without humiliation"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-096",
+      "statement": "Build a Community Work Guarantee — not universal basic income — as the organizing alternative for capable adults who cannot find suitable private employment: paid local public/community transitional jobs with wages, expectations, supervision, training, worker protections, and pathways into private employment or public service. Must not replace existing employees or become punitive work camps.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "Community Work Guarantee",
+        "explicit UBI rejection"
+      ],
+      "conflicts": [
+        "UBI as substitute for contribution pathways",
+        "punitive work camps"
+      ],
+      "research_required": [
+        "pilot designs",
+        "displacement safeguards",
+        "fiscal modeling later"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-4_and_phase-5_modeling_pilots"
+    },
+    {
+      "doctrine_id": "CC-DEV-097",
+      "statement": "Require employers to carry their share. Measure large employers with substantial numbers of full-time workers depending on public benefits. Responses may include wage transparency, predictable scheduling, healthcare or social contributions, childcare partnerships, apprenticeships, profit sharing, worker ownership, and company-wide low-wage employer assessments — never assessments tied to named workers' benefit status that would discourage hiring vulnerable people.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "employer responsibility"
+      ],
+      "conflicts": [
+        "permanent public wage subsidy for profitable firms",
+        "hiring discrimination via named-worker benefit flags"
+      ],
+      "research_required": [
+        "employer measurement methods without targeting named recipients"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-098",
+      "statement": "Make assistance build assets. Reverse rules that punish saving, reliable vehicles, emergency reserves, business starts, or productive equipment. Encourage emergency savings, retirement assets, education accounts, business capital, home equity, tools, transportation, and cooperative ownership, including matched Prosperity Accounts. Destination is durable independence through income and ownership — not mere roll exit.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "asset building",
+        "Prosperity Accounts"
+      ],
+      "conflicts": [
+        "asset tests that punish prudence"
+      ],
+      "research_required": [
+        "asset-limit reform research"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-099",
+      "statement": "Treat addiction, illness, and homelessness as barriers requiring coordinated action — crisis stabilization, treatment, transitional housing, supervised recovery, identification, employment, transportation, and mentors — not abandonment until serious offense. Compulsion only in narrowly defined danger, repeated criminal behavior, or incapacity cases with due process. Support without expectations can become abandonment; punishment without treatment can become a revolving door.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "intervention teams"
+      ],
+      "conflicts": [
+        "abandonment",
+        "punishment without treatment"
+      ],
+      "research_required": [
+        "civil liberties and treatment capacity research"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-100",
+      "statement": "Enforce reciprocity fairly. After a realistic pathway is offered, able adults who repeatedly refuse every reasonable opportunity should not receive the same unrestricted support indefinitely. Consequences must be gradual, individualized, appealable, proportionate, never imposed on dependent children, and never eliminate emergency food, shelter, or lifesaving care. Distinguish cannot / temporarily unable / imperfectly participating / refusing.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "fair reciprocity"
+      ],
+      "conflicts": [
+        "indefinite unrestricted support after refusal",
+        "child-punishing sanctions"
+      ],
+      "research_required": [
+        "due-process sanction design"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-101",
+      "statement": "Eliminate fraud without treating everyone as fraudulent. Use verified identity, integrated income reporting, duplicate detection, employer reporting, audit sampling, cross-program consistency, due process, and meaningful penalties for organized fraud. Prioritize organized provider/employer fraud, identity theft, sham contractors, corrupt administrators, and improper billing — not constant humiliation of lawful recipients. Reduce destabilizing administrative burden.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed",
+      "implications": [
+        "integrity without humiliation"
+      ],
+      "conflicts": [
+        "universal suspicion cultures",
+        "ignoring organized fraud"
+      ],
+      "research_required": [
+        "burden-reduction evaluations"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-102",
+      "statement": "Measure exits correctly. Leaving a benefit roll is not automatic success — people may have found work, lost eligibility through paperwork error, become homeless, moved, gone without food, entered jail, or lost healthcare. Scoreboard: income, employment stability, housing, health, food security, savings, ownership, family stability, repeat enrollment, civic participation, and child well-being. Success question: Did the person become more capable, secure, independent, and connected?",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "honest exit measurement",
+        "HFI link"
+      ],
+      "conflicts": [
+        "caseload reduction as sole success metric"
+      ],
+      "research_required": [
+        "longitudinal outcome modules"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-103",
+      "statement": "Operate county/regional Prosperity and Participation Centers connecting assistance → assessment → barrier removal → treatment/education/caregiving/work → rising income → gradual benefit reduction → savings and ownership → independent participation → mentoring others. Governing councils include recipients, employers, educators, healthcare, disability and recovery advocates, workforce orgs, local government, community organizations, and public employees. Governing promise: feed the hungry, protect children, care for the disabled, honor caregivers, stabilize crisis, refuse to abandon illness/addiction; offer capable people pathways to work, service, learning, recovery, ownership, and citizenship; never punish advancement; never design assistance as a permanent substitute for human potential.",
+      "origin": "steve_direction_assistance_doctrine",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "Prosperity and Participation Centers",
+        "governing promise"
+      ],
+      "conflicts": [
+        "fragmented warehousing bureaucracy",
+        "indiscriminate cutoff politics"
+      ],
+      "research_required": [
+        "local pilot governance designs"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": [
+        "CC-DEC-073"
+      ],
+      "phase_destination": "phase-3_and_phase-4"
     }
   ]
 }

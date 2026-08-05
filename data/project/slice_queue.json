@@ -140,7 +140,7 @@
         "20 priority claims with honest support levels",
         "8 Evidence Companion dossiers seeded",
         "priority diagnosis briefs first-pass; remainder foundational",
-        "2/38 baseline metrics sourced (SCF/DFA)",
+        "2/86 baseline metrics sourced (SCF/DFA)",
         "public /where-we-are /evidence /metrics",
         "board /diagnosis /baseline /evidence",
         "pnpm research:validate + baseline:validate + gate"
@@ -169,7 +169,61 @@
       },
       "diagnosis_brief_three_layer_rule": "Every diagnosis brief must distinguish three layers: what the data directly establishes, what may reasonably be inferred, and what Constitutional Capitalism normatively concludes.",
       "next_recommended_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
-      "note": "PARTIAL. Scaffolding ≠ proof. Remaining domains may roll to Phase 2.1; most baseline metrics pending; legal/modeling 0%. Civic deliberation approved parallel / not active in this mission."
+      "acceptance_checklist": "data/project/phase2_acceptance_checklist.json",
+      "forensic_audit_governance": "data/project/forensic_audit_governance.json",
+      "burt_authority": "steps 1-13 only; steps 14-25 deferred",
+      "note": "PARTIAL under forensic-audit governance (CC-DEC-075). Scaffolding ≠ proof. Baseline 2/86. Remaining domains may roll to Phase 2.1 after priority eight are materially sound; legal/modeling 0%. Civic deliberation approved parallel / not active in this mission."
+    },
+    {
+      "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "title": "Public Statistics Bridge (RedDirt → Constitutional Capitalism)",
+      "purpose": "Treat RedDirt as the Census/BLS ingestion host and create a clean, governed bridge so Constitutional Capitalism consumes only approved public statistical exports — never campaign identity, operational data, private records, or API keys. Prove lineage for 10–15 baseline indicators before expanding.",
+      "prerequisites": [
+        "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
+      ],
+      "subordinate_to": [
+        "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "data/project/forensic_audit_governance.json"
+      ],
+      "allowed_paths": [
+        "data/imports/**",
+        "data/project/public_statistics_bridge.json",
+        "data/baseline/**",
+        "data/research/source_registry.json",
+        "docs/architecture/PUBLIC_STATISTICS_BRIDGE.md",
+        "docs/handoffs/BURT_PUBLIC_STATISTICS_BRIDGE.md",
+        "schemas/public_statistics_*",
+        "scripts/validate-public-statistics-import.mjs",
+        "apps/build-board/**",
+        "reports/**"
+      ],
+      "forbidden_paths": [],
+      "forbidden_actions": [
+        "store Census or BLS API keys in this repository",
+        "connect Astro clients to credentialed APIs",
+        "import campaign, donor, volunteer, constituent, or voter-ops data",
+        "raise baseline sourced counts without validated mapped observations",
+        "begin Burt steps 14–25 or Phase 3 constitutional build"
+      ],
+      "required_outputs": [
+        "isolated public_statistics schema design recorded",
+        "boundary attestation and import validator green",
+        "validated export stubs then first real export under data/imports/reddirt-public-statistics/",
+        "metric_mappings for 10–15 Census/BLS-supportable baseline indicators",
+        "proof that no campaign/personal/keys crossed the boundary",
+        "rollback and access-control notes"
+      ],
+      "validation_commands": [
+        "pnpm imports:validate",
+        "pnpm baseline:validate",
+        "pnpm phase2:validate"
+      ],
+      "completion_evidence": [],
+      "status": "queued",
+      "decision_id": "CC-DEC-076",
+      "architecture_file": "data/project/public_statistics_bridge.json",
+      "next_recommended_slice": null,
+      "note": "Supporting Phase 2 slice. Architecture stub shipped; observations empty; baseline remains 2/86 until validated imports land. Agency-neutral design — Census/BLS first, not exclusive."
     },
     {
       "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",

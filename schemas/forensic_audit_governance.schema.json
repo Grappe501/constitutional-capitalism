@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/forensic_audit_governance.schema.json",
+  "title": "ForensicAuditGovernance",
+  "type": "object",
+  "required": [
+    "version",
+    "status",
+    "central_diagnosis",
+    "controlling_objective",
+    "working_rule",
+    "burt_active_authority",
+    "acceptance_checklist_file"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "central_diagnosis": { "type": "string" },
+    "controlling_objective": { "type": "string" },
+    "working_rule": { "type": "string" },
+    "burt_active_authority": {
+      "type": "object",
+      "required": ["steps", "active_steps", "deferred_steps"]
+    },
+    "acceptance_checklist_file": { "type": "string" }
+  }
+}

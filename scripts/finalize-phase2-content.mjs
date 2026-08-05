@@ -180,7 +180,7 @@ This overview does **not** claim a finished national diagnosis. Remaining domain
     ],
     gaps: [
       "Housing, education, healthcare detail, transport/broadband, food, banking depth, trade, tech/AI, constitutional/legal, international, flourishing — foundational only.",
-      "36 of 38 baseline metrics still pending sourced values.",
+      "84 of 86 baseline metrics still pending sourced values.",
       "Legal review and economic modeling remain 0%.",
     ],
     constitutional:
@@ -622,7 +622,7 @@ write(
 **Phase 2 status recommendation:** partial / Phase 2.1 required for remaining domains and deeper quantification.`,
     supporting: ["Priority source registry + claim support upgrades listed in overview."],
     contrary: ["Every supported claim retains opposing evidence fields in the ledger."],
-    uncertainties: ["Causal identification across domains.", "Baseline completeness (2/38 sourced)."],
+    uncertainties: ["Causal identification across domains.", "Baseline completeness (2/86 sourced)."],
     gaps: ["12 foundational domains.", "Legal review 0%.", "Modeling 0%."],
     constitutional: "Evidence foundation is necessary but not sufficient for constitutional redesign.",
     policy: "Proceed to deeper research before national policy drafting.",
@@ -951,7 +951,7 @@ Book Two of the three-book architecture: claim-linked dossiers with supporting e
 const bStatus = JSON.parse(fs.readFileSync(r("data/baseline/baseline_status.json"), "utf8"));
 bStatus.last_updated = today;
 bStatus.note =
-  "Phase 2 partial: 2/38 metrics sourced (wealth). Remaining pending — no invented targets.";
+  "Phase 2 partial: 2/86 metrics sourced (wealth). Remaining pending — no invented targets.";
 fs.writeFileSync(r("data/baseline/baseline_status.json"), JSON.stringify(bStatus, null, 2) + "\n");
 
 console.log("[OK] Phase 2 content finalize complete");

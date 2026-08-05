@@ -1,0 +1,220 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-05",
+  "decision_id": "CC-DEC-075",
+  "status": "governing",
+  "title": "Canonical Phase 2 Acceptance Checklist",
+  "governing_rule": "Do not build the constitution of the new system until the diagnosis of the current system can withstand an informed critic.",
+  "central_diagnosis": "The architecture is ahead of the evidence.",
+  "phase_2_declared_complete": false,
+  "phase_2_status": "PARTIAL",
+  "if_incomplete": {
+    "phase_2_status": "PARTIAL",
+    "next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0"
+  },
+  "if_complete": {
+    "phase_2_status": "COMPLETE",
+    "note": "Only when every required gate item below is materially satisfied."
+  },
+  "reconciles": [
+    "data/project/phase2_mission_lock.json",
+    "data/project/phases.json",
+    "data/project/slice_queue.json",
+    "data/project/forensic_audit_governance.json",
+    "reports/CC_PHASE_2_DIAGNOSIS_RESEARCH_FOUNDATION_1_0_RETURN.md",
+    "apps/build-board",
+    "apps/book-site",
+    "canvases/forensic-audit-next-25.canvas.tsx"
+  ],
+  "canonical_operating_state": {
+    "phase_1": "LOCKED / CLOSED",
+    "phase_2": "PARTIAL",
+    "forensic_audit_overall_snapshot": 36,
+    "overall_percent_source": "data/metrics/progress_snapshot.json",
+    "overall_percent_note": "Forensic audit snapshot recorded 36% before progress-formula ceiling reconciliation. Regenerated overall must be read from progress_snapshot and must never be treated as Phase 2 completion. Modeling/legal remain 0%; baseline remains 2/86 until the count changes.",
+    "economic_modeling_percent": 0,
+    "legal_review_percent": 0,
+    "baseline": {
+      "total_metrics": 86,
+      "sourced_metrics": 2,
+      "display_rule": "Show 2 of 86 until the actual sourced count changes. Never revive 38-metric narratives."
+    },
+    "current_risk": "polished surfaces may overstate evidentiary maturity"
+  },
+  "priority_domains": [
+    {
+      "id": "wealth_and_ownership",
+      "title": "Wealth and ownership",
+      "brief_files": [
+        "01-wealth-and-ownership.md"
+      ]
+    },
+    {
+      "id": "wages_and_productivity",
+      "title": "Wages and productivity",
+      "brief_files": [
+        "02-work-wages-and-productivity.md"
+      ]
+    },
+    {
+      "id": "taxation",
+      "title": "Taxation",
+      "brief_files": [
+        "03-taxation.md"
+      ]
+    },
+    {
+      "id": "corporate_power_financialization_concentration",
+      "title": "Corporate power, financialization, and concentration",
+      "brief_files": [
+        "04-corporate-power-and-financialization.md",
+        "05-competition-and-concentration.md"
+      ]
+    },
+    {
+      "id": "worker_ownership",
+      "title": "Worker ownership",
+      "brief_files": [
+        "05b-worker-ownership.md"
+      ]
+    },
+    {
+      "id": "local_and_rural_economies",
+      "title": "Local and rural economies",
+      "brief_files": [
+        "06-local-and-rural-economies.md"
+      ]
+    },
+    {
+      "id": "internet_commerce",
+      "title": "Internet commerce",
+      "brief_files": [
+        "07-internet-commerce.md"
+      ]
+    },
+    {
+      "id": "political_and_economic_power",
+      "title": "Political and economic power",
+      "brief_files": [
+        "16-political-and-economic-power.md"
+      ]
+    }
+  ],
+  "gate_items": [
+    {
+      "id": "CC-P2-GATE-01",
+      "text": "Canonical acceptance checklist passes",
+      "required": true,
+      "status": "passed",
+      "burt_step": 1
+    },
+    {
+      "id": "CC-P2-GATE-02",
+      "text": "Eight priority diagnosis domains are substantively sourced",
+      "required": true,
+      "status": "open",
+      "burt_step": 3
+    },
+    {
+      "id": "CC-P2-GATE-03",
+      "text": "Three-layer analysis appears in substantive briefs",
+      "required": true,
+      "status": "open",
+      "burt_step": 2,
+      "enforcement": "validate_report_and_block_false_completion"
+    },
+    {
+      "id": "CC-P2-GATE-04",
+      "text": "Twenty priority claims are audited and classified",
+      "required": true,
+      "status": "open",
+      "burt_step": 4
+    },
+    {
+      "id": "CC-P2-GATE-05",
+      "text": "Contrary evidence is documented",
+      "required": true,
+      "status": "open",
+      "burt_step": 4
+    },
+    {
+      "id": "CC-P2-GATE-06",
+      "text": "Baseline count and narratives agree at 86",
+      "required": true,
+      "status": "passed",
+      "burt_step": 5
+    },
+    {
+      "id": "CC-P2-GATE-07",
+      "text": "A meaningful baseline subset is verified",
+      "required": true,
+      "status": "open",
+      "burt_step": 5
+    },
+    {
+      "id": "CC-P2-GATE-08",
+      "text": "Evidence dossiers meet the research standard",
+      "required": true,
+      "status": "open",
+      "burt_step": 6
+    },
+    {
+      "id": "CC-P2-GATE-09",
+      "text": "Public surfaces accurately label incompleteness",
+      "required": true,
+      "status": "open",
+      "burt_step": 1
+    },
+    {
+      "id": "CC-P2-GATE-10",
+      "text": "Build Board accurately reports proof gaps",
+      "required": true,
+      "status": "open",
+      "burt_step": 1
+    },
+    {
+      "id": "CC-P2-GATE-11",
+      "text": "Source and claim audit passes",
+      "required": true,
+      "status": "open",
+      "burt_step": 8
+    },
+    {
+      "id": "CC-P2-GATE-12",
+      "text": "Production deployments are verified",
+      "required": true,
+      "status": "open",
+      "burt_step": 9
+    },
+    {
+      "id": "CC-P2-GATE-13",
+      "text": "Build Board protection is confirmed or risk remains visibly open",
+      "required": true,
+      "status": "open",
+      "burt_step": 10
+    },
+    {
+      "id": "CC-P2-GATE-14",
+      "text": "Modeling remains 0% unless actual modeling occurs",
+      "required": true,
+      "status": "passed",
+      "burt_step": null
+    },
+    {
+      "id": "CC-P2-GATE-15",
+      "text": "Legal review remains 0% unless actual legal review occurs",
+      "required": true,
+      "status": "passed",
+      "burt_step": null
+    },
+    {
+      "id": "CC-P2-GATE-16",
+      "text": "Overall progress is regenerated from evidence",
+      "required": true,
+      "status": "passed",
+      "burt_step": null
+    }
+  ],
+  "public_display_rule": "No page, dashboard, or report may imply Phase 2 completion unless every required gate item passes and phase_2_declared_complete is true.",
+  "note": "Checklist owns conflicts among mission lock, phases, slice queue, returns, Build Board, forensic audit, and acceptance language."
+}

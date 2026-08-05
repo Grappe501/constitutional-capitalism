@@ -1,0 +1,430 @@
+{
+  "version": "0.3.0",
+  "last_updated": "2026-08-05",
+  "status": "architecture_only",
+  "decision_id": "CC-DEC-076",
+  "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+  "title": "RedDirt Public Data Engine → Constitutional Capitalism (RCIP consumer contract)",
+  "central_diagnosis_alignment": "Architecture ahead of evidence — this bridge exists to convert official statistical infrastructure into reproducible baseline proof without importing campaign systems.",
+  "governing_rule": "RedDirt may provide Constitutional Capitalism with approved public statistical infrastructure, but Constitutional Capitalism may never inherit RedDirt’s campaign identity, operational data, political targeting, private records, or application dependencies.",
+  "phase_2_preference": "validated_snapshots",
+  "subordinate_to": [
+    "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+    "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+    "data/project/forensic_audit_governance.json",
+    "data/project/phase2_acceptance_checklist.json"
+  ],
+  "burt_step_alignment": [
+    5,
+    7,
+    8
+  ],
+  "architecture": {
+    "diagram": [
+      "Agency APIs (Census, BLS, future...)",
+      "        ↓",
+      "RedDirt Public Data Engine (H:\\\\SOSWebsite\\\\RedDirt)",
+      "  connectors → warehouse → export pipeline",
+      "        ↓",
+      "Validated public-statistics snapshots",
+      "   ↙    ↓    ↘",
+      " CC   ACU   County Workbench / other civic apps"
+    ],
+    "reddirt_retains": [
+      "API credentials",
+      "scheduled Census and BLS ingestion",
+      "retry handling",
+      "source metadata",
+      "historical series",
+      "geographic normalization",
+      "update timestamps",
+      "ingestion errors"
+    ],
+    "constitutional_capitalism_receives": [
+      "normalized public data",
+      "source citations",
+      "release dates",
+      "definitions",
+      "geographic identifiers",
+      "methodology notes",
+      "revision history"
+    ],
+    "constitutional_capitalism_must_never_receive": [
+      "campaign contacts",
+      "volunteers",
+      "donor information",
+      "campaign intelligence",
+      "private notes",
+      "constituent records",
+      "voter-related operational records",
+      "Gmail or Calendar metadata",
+      "administrator accounts",
+      "private campaign analytics",
+      "RedDirt environment variables or API keys",
+      "broad database credentials over operational tables"
+    ]
+  },
+  "credential_rules": {
+    "census_and_bls_keys_remain": "server-side in RedDirt environment only",
+    "forbidden_in_constitutional_capitalism": [
+      "copy keys into static Astro application",
+      "place keys in GitHub",
+      "browser-side calls containing credentials",
+      "receive access to all RedDirt environment variables",
+      "query RedDirt’s entire database with broad credentials",
+      "direct database credentials during Phase 2"
+    ],
+    "public_site_may_query": [
+      "generated, source-backed JSON snapshots committed after validation",
+      "a narrow server-side public-data endpoint (later phases only if needed)"
+    ]
+  },
+  "reddirt_schema_design": {
+    "recommended_schema_names": [
+      "public_statistics",
+      "constitutional_capitalism_data"
+    ],
+    "isolation_rule": "Do not mix records with campaign tables.",
+    "foundational_tables": [
+      "sources",
+      "datasets",
+      "series",
+      "observations",
+      "geographies",
+      "releases",
+      "ingestion_runs",
+      "revisions",
+      "metric_mappings"
+    ],
+    "read_only_role": "cc_public_statistics_reader",
+    "approved_views_only": [
+      "public_statistics.cc_baseline_observations",
+      "public_statistics.cc_geographic_profiles",
+      "public_statistics.cc_source_metadata",
+      "public_statistics.cc_release_status"
+    ],
+    "phase_2_preference": "RedDirt generates approved exports; Constitutional Capitalism does not hold live DB credentials."
+  },
+  "phase_2_workflow": [
+    "RedDirt fetches official Census/BLS (and later agency-neutral) data",
+    "Raw responses are retained or hashed for audit",
+    "Data is normalized in public_statistics",
+    "Validation checks definitions, periods, geography, and units",
+    "An approved export is generated",
+    "Constitutional Capitalism imports the export into data/imports/reddirt-public-statistics/",
+    "Baseline and claim validators run",
+    "Public pages build from the validated snapshot"
+  ],
+  "import_path": "data/imports/reddirt-public-statistics/",
+  "import_files": [
+    "manifest.json",
+    "national-baseline.json",
+    "arkansas-baseline.json",
+    "county-baselines.json",
+    "series-metadata.json",
+    "source-citations.json",
+    "import-validation.json"
+  ],
+  "agency_neutrality": {
+    "rule": "Architecture is agency-neutral; Census and BLS are the first ingestion hosts, not the only allowed agencies.",
+    "census_bls_can_support_portion_of": [
+      "population",
+      "income",
+      "employment",
+      "wages",
+      "occupations",
+      "housing",
+      "commuting",
+      "poverty",
+      "education",
+      "demographics",
+      "some business and industry measures"
+    ],
+    "other_agencies_required_later": [
+      "BEA",
+      "Federal Reserve",
+      "USDA",
+      "FCC",
+      "CDC",
+      "CMS",
+      "Department of Education",
+      "Treasury",
+      "IRS",
+      "EIA",
+      "EPA",
+      "DOJ",
+      "state agencies"
+    ],
+    "limitation": "Census and BLS will not fill all 86 baseline indicators."
+  },
+  "geographic_levels": [
+    "national",
+    "state",
+    "congressional_district",
+    "county",
+    "city_or_place",
+    "zip_adjacent_statistical_geography_where_appropriate",
+    "census_tract",
+    "rural_versus_urban_classifications"
+  ],
+  "implementation_ladder": [
+    "Nation",
+    "State",
+    "Region",
+    "County",
+    "Community",
+    "Population-500 local blueprint"
+  ],
+  "first_wave_metric_candidates": {
+    "count_target": "10-15",
+    "rule": "Select indicators Census/BLS can authoritatively support; prove full lineage from government API → RedDirt public_statistics → validated export → CC baseline → public site before expanding.",
+    "raise_baseline_only_when": "actual metrics are populated, validated, and mapped with preserved lineage — never because the bridge architecture exists",
+    "candidates": [
+      {
+        "metric_id": "CC-IND-W04",
+        "title": "Homeownership",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "ACS homeownership rate; definition must be finalized before import."
+      },
+      {
+        "metric_id": "CC-IND-L01",
+        "title": "Wage growth",
+        "preferred_agencies": [
+          "Bureau of Labor Statistics"
+        ],
+        "notes": "CES/ECI or related BLS earnings series; unit and seasonal adjustment must be explicit."
+      },
+      {
+        "metric_id": "CC-IND-L02",
+        "title": "Productivity",
+        "preferred_agencies": [
+          "Bureau of Labor Statistics"
+        ],
+        "notes": "Major-sector productivity indexes; align with claim CC-CLAIM-002 lineage."
+      },
+      {
+        "metric_id": "CC-IND-CM02",
+        "title": "Rural population",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "Rural/urban classification must be documented."
+      },
+      {
+        "metric_id": "CC-IND-F03",
+        "title": "Child poverty",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "ACS or CPS official poverty; age universe required."
+      },
+      {
+        "metric_id": "CC-IND-B01",
+        "title": "Startup rate",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "Business Dynamics Statistics candidate."
+      },
+      {
+        "metric_id": "CC-IND-B02",
+        "title": "Business survival",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "BDS survival measures; definition lock required."
+      },
+      {
+        "metric_id": "CC-IND-I04",
+        "title": "Manufacturing",
+        "preferred_agencies": [
+          "Bureau of Labor Statistics",
+          "US Census Bureau"
+        ],
+        "notes": "Employment or output share — pick one unit and keep it."
+      },
+      {
+        "metric_id": "CC-IND-C01",
+        "title": "Market concentration",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "Concentration ratios where available; incomplete for many sectors."
+      },
+      {
+        "metric_id": "CC-IND-HC05",
+        "title": "Early-career median earnings by pathway",
+        "preferred_agencies": [
+          "US Census Bureau",
+          "Bureau of Labor Statistics"
+        ],
+        "notes": "Pathway definition still open; do not invent pathway composites."
+      },
+      {
+        "metric_id": "CC-IND-HC06",
+        "title": "Young adult homeownership / ownership formation",
+        "preferred_agencies": [
+          "US Census Bureau"
+        ],
+        "notes": "ACS age-restricted homeownership."
+      },
+      {
+        "metric_id": "CC-IND-F04",
+        "title": "Household savings",
+        "preferred_agencies": [
+          "Bureau of Labor Statistics",
+          "Federal Reserve"
+        ],
+        "notes": "May require BEA/Fed beyond BLS; keep agency-neutral mapping."
+      }
+    ],
+    "supporting_profile_series_not_yet_baseline_slots": [
+      "population",
+      "median_household_income",
+      "unemployment_rate",
+      "labor_force_participation",
+      "employment_population_ratio",
+      "average_hourly_earnings",
+      "consumer_price_index"
+    ]
+  },
+  "boundary_proof_requirements": [
+    "audit RedDirt’s existing Census and BLS infrastructure",
+    "identify the actual database and ingestion implementation",
+    "create the isolated public-statistics schema",
+    "create read-only projections",
+    "generate validated exports",
+    "connect exports to the 86-metric baseline via metric_mappings",
+    "prove no campaign or personal data crosses the boundary",
+    "document rollback and access controls"
+  ],
+  "cc_repo_deliverables_now": [
+    "docs/architecture/PUBLIC_STATISTICS_BRIDGE.md",
+    "data/project/public_statistics_bridge.json",
+    "data/imports/reddirt-public-statistics/* stubs",
+    "schemas for manifest and bridge",
+    "scripts/validate-public-statistics-import.mjs",
+    "slice CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0"
+  ],
+  "explicitly_not_done": [
+    "No live RedDirt database connection from this repo",
+    "No Census/BLS API keys stored here",
+    "No baseline values invented from this architecture",
+    "No campaign or personal data imported",
+    "Baseline remains 2/86 until validated observations land"
+  ],
+  "related_decision_ids": [
+    "CC-DEC-076",
+    "CC-DEC-077",
+    "CC-DEC-078"
+  ],
+  "public_data_engine": {
+    "name": "RedDirt Civic Intelligence Platform (RCIP)",
+    "canonical_workspace": "H:\\\\SOSWebsite\\\\RedDirt",
+    "consumer_workspace": "H:\\\\Constitutional-Capitalism",
+    "role": "Public Data Engine for all future civic projects",
+    "do_not_duplicate_in_cc": true,
+    "rule": "Constitutional Capitalism must never implement Census/BLS/agency connectors; it consumes validated public measures and provenance only."
+  },
+  "workspace_layout": {
+    "reddirt": [
+      "Census API",
+      "BLS API",
+      "Future BEA/USDA/FCC/CDC/etc. connectors",
+      "Public Statistics Warehouse",
+      "Public Data Export Pipeline"
+    ],
+    "constitutional_capitalism": [
+      "Book Site",
+      "Research Library",
+      "Evidence Companion",
+      "Human Flourishing Index",
+      "Imported Public Statistics"
+    ]
+  },
+  "consumer_applications": [
+    "Constitutional Capitalism",
+    "Arkansas Civic University",
+    "Stand Up Arkansas / Kelly SOS",
+    "County Workbench",
+    "Relationship Command Center",
+    "Youth Coalition",
+    "Future civic research"
+  ],
+  "reddirt_connector_layer": {
+    "path_in_reddirt": "src/lib/public-data/",
+    "status": "design_target_in_reddirt_repo_not_cc",
+    "connectors": [
+      "census",
+      "bls",
+      "bea",
+      "fred",
+      "usda",
+      "fcc",
+      "cdc",
+      "epa",
+      "eia",
+      "treasury",
+      "irs"
+    ],
+    "each_connector_does": [
+      "download data",
+      "validate responses",
+      "normalize fields",
+      "record metadata",
+      "version datasets",
+      "write to Public Statistics Warehouse"
+    ]
+  },
+  "consumer_contract": {
+    "rule": "Constitutional Capitalism should never need to know which API produced a measure.",
+    "asks_for_examples": [
+      "National Median Income",
+      "Arkansas Labor Force Participation",
+      "County Poverty Rate",
+      "County Population Change",
+      "Educational Attainment"
+    ],
+    "reddirt_handles": [
+      "agency APIs",
+      "credentials",
+      "retries",
+      "revisions",
+      "geography normalization",
+      "dataset versioning",
+      "export packaging"
+    ]
+  },
+  "provenance_system": {
+    "required": true,
+    "chain": [
+      "displayed_measure",
+      "official_series_or_estimate_type",
+      "source_agency",
+      "dataset_version",
+      "api_query_or_retrieval_reference_in_reddirt",
+      "import_timestamp",
+      "validation_run",
+      "git_commit_export_and_import",
+      "website_build"
+    ],
+    "answer_standard": "If anyone asks where a statistic came from, the provenance chain must answer completely.",
+    "cc_preserves_in": [
+      "data/imports/reddirt-public-statistics/manifest.json",
+      "source-citations.json",
+      "baseline source_ids",
+      "claim ledger",
+      "evidence dossiers"
+    ]
+  },
+  "logical_separation": {
+    "campaign_data": "RedDirt campaign schemas/roles only",
+    "public_statistical_data": "public_statistics warehouse + approved exports",
+    "research_philosophy_data": "Constitutional Capitalism data/ and content/",
+    "rule": "Distinct schemas, roles, and access controls across all three."
+  },
+  "rcip_spine_file": "data/project/rcip_civic_data_spine.json",
+  "strongest_feature_ref": "multi_source_validation"
+}
