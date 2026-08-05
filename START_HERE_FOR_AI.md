@@ -76,4 +76,4 @@ Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `do
 - Phase 2 expected **partial / Phase 2.1** until remaining domains are fully sourced
 - **Justice, Safety, and Restoration** is principal developing doctrine (`CC-DEV-011`–`014`) and a full Phase 2 research domain — research before detailed justice policy (`CC-DEC-043`/`044`)
 - **Democracy, Representation, and Distributed Government** is the second constitutional spine (`CC-DEV-015`–`019`) — research before detailed political-structure policy (`CC-DEC-045`/`046`)
-- **Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`024`) — research before detailed administrative policy (`CC-DEC-047`/`048`); Arkansas inventory/credential are design agendas only
+- **Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`028`) — defining design question beyond more/less government; iconic phrase *Government should become invisible—but never unaccountable*; research before detailed administrative policy (`CC-DEC-047`/`048`/`049`); Arkansas inventory/credential are design agendas only; do not invent 80/20 stats or board counts

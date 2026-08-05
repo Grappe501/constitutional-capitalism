@@ -21,6 +21,23 @@
     "website_node_id": { "type": "string" },
     "note": { "type": "string" },
     "role_in_philosophy": { "type": "string" },
+    "defining_design_question": { "type": "object" },
+    "iconic_phrase": { "type": "object" },
+    "friction_reduction_principle": { "type": "object" },
+    "lean_government_formula": { "type": "object" },
+    "government_as_platform": { "type": "object" },
+    "collect_once_principle": { "type": "object" },
+    "value_chain_doctrine": { "type": "object" },
+    "regulation_reason_test": { "type": "object" },
+    "regulatory_workflow_rule": { "type": "object" },
+    "agency_self_measurement_chain": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "agency_value_rule": { "type": "string" },
+    "ai_in_government": { "type": "object" },
+    "citizen_experience_metric": { "type": "object" },
+    "administrative_burden_innovation_requirement": { "type": "object" },
     "foundational_principle": {
       "type": "object",
       "required": ["text"],

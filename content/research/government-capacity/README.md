@@ -8,14 +8,14 @@
 
 ## Purpose
 
-Evidence spine for noble public service, government technology, visible boards/commissions, open appointments, sunset review, and citizen-centered services — **before** detailed administrative legislation.
+Evidence spine for noble public service, friction reduction, government-as-platform, visible boards/commissions, open appointments, sunset review, citizen-experience metrics, and assistive AI with human judgment — **before** detailed administrative legislation.
 
 ## Rules
 
-- Do not invent citations, board counts, wait times, or satisfaction scores.
+- Do not invent citations, board counts, wait times, satisfaction scores, or 80/20 “facts.”
 - Separate design agendas (Arkansas inventory, Civic Service Credential) from completed programs.
 - Prefer primary sources (state statutes, agency reports, GAO, state auditors, Census of Governments, digital-service evaluations).
-- Preserve contrary evidence (civil-service rigidity vs patronage; digital exclusion; sunset capture; credential gatekeeping).
+- Preserve contrary evidence (civil-service rigidity vs patronage; digital exclusion; privacy risks of data reuse; sunset capture; credential gatekeeping; AI rubber-stamping).
 - Legal review remains 0% until real legal review occurs.
 
 ## Immediate next actions (Phase 2.1)

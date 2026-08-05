@@ -110,15 +110,25 @@ Full architecture: `docs/architecture/DEMOCRACY_REPRESENTATION_AND_DISTRIBUTED_G
 
 ## Public service spine (developing)
 
-Neither shrink-until-broken nor bureaucracy-for-its-own-sake.
+A defining institutional design idea — not merely more vs less government.
+
+Design question (`CC-DEV-025`):
+
+> How do we build a government that delivers better outcomes with fewer layers, less friction, and greater accountability?
+
+Iconic phrase (`CC-DEV-026`):
+
+> **Government should become invisible—but never unaccountable.**
+
+Friction-reduction principle: continuously reduce administrative friction while continuously improving public service.
 
 Foundational principle (`CC-DEV-020`):
 
 > Government work should be among the highest forms of civic service. Public institutions should use technology to eliminate unnecessary administrative labor so human talent can be concentrated in judgment, problem-solving, public engagement, oversight, and service.
 
-Technology doctrine (`CC-DEV-021`): **Automate the routine. Elevate the human** — with human access pathways required.
+Technology doctrine (`CC-DEV-021`): **Automate the routine. Elevate the human** — with human access pathways required. Collect once; reuse securely with legal authorization (`CC-DEV-027`). AI assists; humans decide rights and significant benefits (`CC-DEV-028`).
 
-Full architecture: `docs/architecture/PUBLIC_SERVICE_AND_21ST_CENTURY_STATE.md` and `data/project/government_capacity_framework.json`. Website domain: **Public Service and the 21st-Century State** (`CC-WEB-GOVERNMENT`). Research precedes detailed administrative policy (`CC-DEC-047`, `CC-DEC-048`).
+Full architecture: `docs/architecture/PUBLIC_SERVICE_AND_21ST_CENTURY_STATE.md` and `data/project/government_capacity_framework.json`. Website domain: **Public Service and the 21st-Century State** (`CC-WEB-GOVERNMENT`). Research precedes detailed administrative policy (`CC-DEC-047`, `CC-DEC-048`, `CC-DEC-049`).
 
 ## Corporations as constitutional partners
 
