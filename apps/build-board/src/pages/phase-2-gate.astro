@@ -100,6 +100,24 @@ const layers = Object.fromEntries((snapshot.layers || []).map((l: any) => [l.id,
     <p class="muted">
       Deferred {deferred?.range}: {deferred?.rule} No {deferred?.includes_no?.join("; ")}.
     </p>
+    {
+      Array.isArray((deferred as any)?.steps) && (deferred as any).steps.length > 0 ? (
+        <ol>
+          {(deferred as any).steps.map((s: any) => (
+            <li>
+              <strong>
+                {s.step}. {s.title}
+              </strong>{" "}
+              — {s.summary}
+            </li>
+          ))}
+        </ol>
+      ) : null
+    }
+    <p class="muted">
+      Full forensic status:{" "}
+      <code>reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-05.md</code>
+    </p>
   </section>
 
   <section class="panel" style="margin-top:1rem;">

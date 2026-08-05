@@ -2,33 +2,22 @@
   "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "status": "PARTIAL",
   "updated_at": "2026-08-05",
-  "summary": "Status page deep-dive audit and rebuild: honesty dials, inventory (123 claims / 72 sources / 43 principles / 268 doctrine items), seeded domains, recent updates; progress generator now counts search-excerpt verifications and raises artificial research/source/policy ceilings. Overall regenerated to 42% — not Phase 2 completion. Modeling/legal 0%; baseline 2/86.",
+  "summary": "Full forensic audit status report: architecture still ahead of evidence (gap widened by doctrine surge). Phase 2 PARTIAL; 5/16 gates passed, 11 open; baseline 2/86; modeling/legal 0%; overall 42% ≠ completion. Burt step 1 done; steps 2–13 active (2/3/4/5/6/8/9/10 next); steps 14–25 deferred. Forward plan: proof retrofit before constitution/policy/modeling.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "starting_commit": "ad178ae",
-  "ending_commit": "835e113",
-  "github_push": "pushed",
+  "starting_commit": "06599a7",
+  "ending_commit": "pending",
+  "github_push": "pending",
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 42,
   "forensic_audit_overall_snapshot": 36,
   "phase_2_status": "PARTIAL",
   "recommended_next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
-  "decision_ids": [
-    "CC-DEC-088",
-    "CC-DEC-087",
-    "CC-DEC-086"
-  ],
+  "decision_ids": ["CC-DEC-075", "CC-DEC-088", "CC-DEC-087"],
   "update_id": "UPD-039",
-  "public_paths": [
-    "/status/",
-    "/prosperous-aging/",
-    "/health/"
-  ],
-  "board_paths": [
-    "/phase-2-gate/",
-    "/prosperous-aging/",
-    "/health/"
-  ],
-  "integrity_note": "Overall 42% reflects inventory growth after correcting verification undercount and artificial caps. Phase 2 remains PARTIAL. Baseline 2/86. Modeling/legal 0%. Architecture ≠ evidence.",
-  "next_command": "Redeploy book-site so Netlify /status/ reflects rebuilt page; continue Phase 2 evidence work under forensic gate"
+  "public_paths": ["/status/", "/where-we-are/", "/phase-2-gate/"],
+  "board_paths": ["/phase-2-gate/", "/diagnosis/", "/baseline/"],
+  "integrity_note": "Do not treat regenerated 42% or doctrine volume as Phase 2 completion. Three-layer retrofit 0/9. Deploy registry still stale. Build Board unprotected.",
+  "next_command": "Burt steps 2→3/4→5→6→8→9→10 under forensic gate; pnpm phase2:validate; do not begin steps 14–25",
+  "report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-05.md"
 }
