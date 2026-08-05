@@ -63,15 +63,22 @@ const manuscriptPercent = Math.min(
 // Philosophy credits Declaration depth + registered principles. Cap leaves room for locked/mature doctrine.
 const philosophyPercent = declarationExists
   ? Math.min(
-      80,
-      35 + Math.round(declarationWords / 250) + Math.min(principles.length, 30)
+      82,
+      35 + Math.round(declarationWords / 250) + Math.min(principles.length, 35)
     )
   : 25;
 
 const sourceList =
   JSON.parse(fs.readFileSync(r("data/research/source_registry.json"), "utf8")).sources || [];
-const verifiedSources = sourceList.filter(
-  (s) => s.verification_status === "url_verified" || s.verification_status === "verified"
+const verifiedStatuses = new Set([
+  "url_verified",
+  "verified",
+  "url_verified_via_search_excerpt",
+  "verified_against_primary_page",
+  "verified_via_search_excerpt_primary_page",
+]);
+const verifiedSources = sourceList.filter((s) =>
+  verifiedStatuses.has(s.verification_status)
 );
 const claimsWithSources = claimList.filter((c) => (c.source_ids || []).length > 0);
 const claimsSupportedish = claimList.filter((c) =>
@@ -92,29 +99,38 @@ const doctrineDoc = JSON.parse(
 const doctrineItems = doctrineDoc.items || [];
 const doctrineClusters = doctrineDoc.capture_clusters || [];
 const systemsMapExists = fs.existsSync(r("data/project/systems_map.json"));
+const iaDoc = JSON.parse(
+  fs.readFileSync(r("data/project/website_information_architecture.json"), "utf8")
+);
+const seededWebsiteNodes = (iaDoc.domain_tree || []).filter((n) => n.status === "seeded").length;
 
 // Honest Phase 2 progress: reward registered sources + claim upgrades + briefs, not scaffolding alone.
-// Caps leave headroom for baseline completion, three-layer briefs, and HFI sourcing — not a freeze.
+// Caps raised only enough to stop artificial ceilings after real inventory growth; still leave
+// headroom for baseline completion, three-layer briefs, and HFI sourcing — not a freeze.
 const researchFoundation = Math.min(
-  55,
+  62,
   16 +
-    Math.round(verifiedSources.length * 0.7) +
-    Math.round(claimsSupportedish.length * 1.1) +
+    Math.round(verifiedSources.length * 0.55) +
+    Math.round(claimsSupportedish.length * 0.85) +
     Math.min(8, Math.round(priorityBriefHits * 0.5))
 );
 const sourceVerification = Math.min(
-  32,
-  Math.round(verifiedSources.length * 1.1) + Math.round(claimsWithSources.length * 0.35)
+  48,
+  Math.round(verifiedSources.length * 0.85) + Math.round(claimsWithSources.length * 0.28)
 );
 
 // Policy tracks developing doctrine volume; maturity is still early (items remain open/proposed).
 const policyDevelopment = Math.min(
-  38,
+  50,
   8 +
-    Math.round(doctrineItems.length * 0.18) +
+    Math.round(doctrineItems.length * 0.12) +
     Math.round(doctrineClusters.length * 0.35) +
-    Math.min(6, Math.round(principles.length * 0.15))
+    Math.min(8, Math.round(principles.length * 0.15))
 );
+
+const publicBookWebsite = declarationExists
+  ? Math.min(82, 52 + Math.round(seededWebsiteNodes * 1.05))
+  : 40;
 
 const derived = {
   project_governance: 90,
@@ -128,7 +144,7 @@ const derived = {
   constitutional_analysis: declarationExists ? (systemsMapExists ? 30 : 25) : 5,
   legal_review: 0,
   editorial_review: declarationExists ? 10 : 0,
-  public_book_website: declarationExists ? 70 : 40,
+  public_book_website: publicBookWebsite,
   build_board: 75,
   accessibility: 40,
   publishing_formats: 8,
@@ -184,8 +200,18 @@ const snapshot = {
   research: {
     open_questions: researchQuestions.length,
     claims: claimList.length,
-    sources: JSON.parse(fs.readFileSync(r("data/research/source_registry.json"), "utf8")).sources
-      .length,
+    sources: sourceList.length,
+    verified_sources: verifiedSources.length,
+    claims_with_sources: claimsWithSources.length,
+    supported_claims: claimsSupportedish.length,
+  },
+  doctrine: {
+    items: doctrineItems.length,
+    clusters: doctrineClusters.length,
+    principles: principles.length,
+  },
+  website: {
+    seeded_nodes: seededWebsiteNodes,
   },
   decisions: {
     open: (decisions.decisions || []).filter((d) => d.status === "open").length,

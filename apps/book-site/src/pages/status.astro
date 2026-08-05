@@ -1,23 +1,91 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { snapshot, publicProgressLayers } from "../lib/data";
+import {
+  snapshot,
+  publicProgressLayers,
+  updates,
+  baselineStatus,
+  principles,
+} from "../lib/data";
+import phase2Lock from "../../../../data/project/phase2_mission_lock.json";
+import ia from "../../../../data/project/website_information_architecture.json";
+import latestReturn from "../../../../data/project/latest_cursor_return.json";
 
 const publicLayers = publicProgressLayers();
+const publicUpdates = (updates.updates || [])
+  .filter((u: any) => u.public)
+  .slice(-8)
+  .reverse();
+const seededDomains = (ia.domain_tree || []).filter((n: any) => n.status === "seeded");
+const majorDomains = seededDomains.filter((n: any) => n.path || n.framework_file);
+const principleCount = principles.principles?.length ?? snapshot.principles_count ?? 0;
+const research = snapshot.research || {};
+const doctrine = snapshot.doctrine || {};
+const generatedLabel = snapshot.generated_at
+  ? new Date(snapshot.generated_at).toLocaleString("en-US", {
+      timeZone: "UTC",
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }) + " UTC"
+  : "—";
 ---
 
 <BaseLayout
   title="Status"
   path="/status/"
-  description="Public-facing progress summary for Constitutional Capitalism."
+  description="Public project status for Constitutional Capitalism — inventory, honesty dials, and progress layers."
 >
-  <article>
-    <h1 style="font-family:var(--serif);margin-top:0;">Project status</h1>
-    
+  <article class="prose">
+    <h1>Project status</h1>
+    <p class="lede">
+      Living public book and civilizational architecture project. Progress below is derived from
+      canonical records — not a claim that Phase 2 proof work is finished.
+    </p>
+    <p class="muted">
+      Snapshot {generatedLabel}. Overall completion estimate reflects scaffolding and inventory
+      across many layers; it is <strong>not</strong> Phase 2 completion.
+    </p>
+
+    <h2>Honesty dials</h2>
+    <ul>
+      <li>
+        Phase 1: <span class="chip">{phase2Lock.phase_1?.status || "LOCKED / CLOSED"}</span>
+      </li>
+      <li>
+        Phase 2: <span class="chip">{latestReturn.phase_2_status || "PARTIAL"}</span> — architecture
+        ahead of evidence
+      </li>
+      <li>
+        National baseline:{" "}
+        <span class="chip">
+          {baselineStatus.sourced_metrics ?? 0}/{baselineStatus.total_metrics ?? 86} sourced
+        </span>
+      </li>
+      <li>
+        Economic modeling: <span class="chip">0%</span>
+      </li>
+      <li>
+        Legal review: <span class="chip">0%</span>
+      </li>
+      <li>
+        Active mission: <code>{phase2Lock.active_mission?.mission_id || "—"}</code>
+      </li>
+    </ul>
+
+    <h2>Overall estimate</h2>
     <p class="lede">
       Overall completion estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>
-      {snapshot.generated_at ? ` (snapshot ${snapshot.generated_at})` : ""}
     </p>
-    <div class="progress-list" style="margin-top:1.5rem;">
+    <p class="muted">
+      Forensic audit snapshot was 36% earlier in Phase 2. Regenerated overall moves only when
+      canonical inventory changes. Modeling and legal remain hard-zero until real work exists.
+    </p>
+
+    <div class="progress-list" style="margin-top:1.25rem;">
       {
         publicLayers.map((layer) => (
           <div class="progress-item">
@@ -39,9 +107,87 @@ const publicLayers = publicProgressLayers();
         ))
       }
     </div>
-    <p class="lede" style="margin-top:1.5rem;">
-      Manuscript units: {snapshot.manuscript?.units ?? "—"}. Claims registered:
-      {snapshot.research?.claims ?? 0}. Sources registered: {snapshot.research?.sources ?? 0}.
+
+    <h2>Current inventory</h2>
+    <ul>
+      <li>
+        Principles registered: <strong>{principleCount}</strong>
+      </li>
+      <li>
+        Developing doctrine items: <strong>{doctrine.items ?? "—"}</strong>
+      </li>
+      <li>
+        Capture clusters: <strong>{doctrine.clusters ?? "—"}</strong>
+      </li>
+      <li>
+        Claims registered: <strong>{research.claims ?? 0}</strong>
+        {research.supported_claims != null ? ` (${research.supported_claims} supported/partial)` : ""}
+      </li>
+      <li>
+        Sources registered: <strong>{research.sources ?? 0}</strong>
+        {research.verified_sources != null ? ` (${research.verified_sources} verification-confirmed)` : ""}
+      </li>
+      <li>
+        Claims with source links: <strong>{research.claims_with_sources ?? "—"}</strong>
+      </li>
+      <li>
+        Book-structure chapter units: <strong>{snapshot.manuscript?.units ?? "—"}</strong>
+        {" "}({snapshot.manuscript?.outlined_units ?? 0} outlined · manuscript drafting still early)
+      </li>
+      <li>
+        Decisions approved / open:{" "}
+        <strong>
+          {snapshot.decisions?.approved ?? 0} / {snapshot.decisions?.open ?? 0}
+        </strong>
+      </li>
+      <li>
+        Seeded website domains: <strong>{snapshot.website?.seeded_nodes ?? majorDomains.length}</strong>
+      </li>
+    </ul>
+
+    <h2>Major seeded domains</h2>
+    <p class="muted">
+      Architecture pages for public reading. Architecture ≠ proof that institutions already exist.
     </p>
+    <ul>
+      {
+        majorDomains.map((n: any) => (
+          <li>
+            {n.path ? <a href={n.path}>{n.title}</a> : n.title}
+            {n.decision_id ? (
+              <>
+                {" "}
+                · <code>{n.decision_id}</code>
+              </>
+            ) : null}
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Recent public updates</h2>
+    <ul>
+      {
+        publicUpdates.map((u: any) => (
+          <li>
+            <strong>{u.id}</strong> — {u.title}
+            <br />
+            <span class="muted" style="margin:0;">{u.summary}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      <a href="/updates/">All updates</a> · <a href="/where-we-are/">Where we are</a> ·{" "}
+      <a href="/evidence/">Evidence</a> · <a href="/metrics/">Baseline metrics</a>
+    </p>
+
+    <h2>What this page does not claim</h2>
+    <ul>
+      <li>Not Phase 2 completion.</li>
+      <li>Not that modeling or legal review has begun.</li>
+      <li>Not that National Baseline is filled in (still {baselineStatus.sourced_metrics ?? 2}/{baselineStatus.total_metrics ?? 86}).</li>
+      <li>Not that doctrine architecture equals empirical proof.</li>
+    </ul>
   </article>
 </BaseLayout>

@@ -52,12 +52,17 @@ export {
 type Layer = { id: string; label: string; percent: number; status: string };
 
 export function publicProgressLayers(): Layer[] {
+  // Public status shows inventory + honesty dials (modeling/legal stay visible at 0%).
   const safeIds = [
     "project_governance",
     "book_architecture",
     "foundational_philosophy",
     "manuscript",
     "research_foundation",
+    "source_verification",
+    "policy_development",
+    "economic_modeling",
+    "legal_review",
     "public_book_website",
     "publishing_formats",
     "free_distribution",

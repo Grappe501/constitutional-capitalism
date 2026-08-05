@@ -1,7 +1,7 @@
 {
   "version": "0.2.0",
-  "generated_at": "2026-08-05T05:24:19.079Z",
-  "overall_percent": 40,
+  "generated_at": "2026-08-05T05:27:56.827Z",
+  "overall_percent": 42,
   "current_phase": "phase-2",
   "active_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "declaration": {
@@ -25,7 +25,18 @@
   "research": {
     "open_questions": 63,
     "claims": 123,
-    "sources": 72
+    "sources": 72,
+    "verified_sources": 66,
+    "claims_with_sources": 57,
+    "supported_claims": 49
+  },
+  "doctrine": {
+    "items": 268,
+    "clusters": 28,
+    "principles": 43
+  },
+  "website": {
+    "seeded_nodes": 27
   },
   "decisions": {
     "open": 42,
@@ -100,7 +111,7 @@
     {
       "id": "foundational_philosophy",
       "label": "Foundational Philosophy",
-      "percent": 80,
+      "percent": 82,
       "status": "strong",
       "basis": [
         "phase_0_scaffold",
@@ -126,7 +137,7 @@
     {
       "id": "research_foundation",
       "label": "Research Foundation",
-      "percent": 55,
+      "percent": 62,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -139,7 +150,7 @@
     {
       "id": "source_verification",
       "label": "Source Verification",
-      "percent": 32,
+      "percent": 48,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -152,7 +163,7 @@
     {
       "id": "policy_development",
       "label": "Policy Development",
-      "percent": 38,
+      "percent": 50,
       "status": "underway",
       "basis": [
         "phase_0_scaffold",
@@ -217,8 +228,8 @@
     {
       "id": "public_book_website",
       "label": "Public Book Website",
-      "percent": 70,
-      "status": "underway",
+      "percent": 80,
+      "status": "strong",
       "basis": [
         "phase_0_scaffold",
         "generated_from_canonical_records"
