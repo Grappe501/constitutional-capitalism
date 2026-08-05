@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ListenBar from "../components/ListenBar.astro";
 import { identity } from "../lib/data";
 
 interface Props {
@@ -111,9 +112,10 @@ const nav = [
         }
       </nav>
     </header>
-    <main id="main" class="shell">
+    <main id="main" class="shell" data-listen-root>
       <slot />
     </main>
+    <ListenBar />
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>

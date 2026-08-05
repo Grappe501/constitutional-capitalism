@@ -550,3 +550,117 @@ main {
     overflow: auto;
   }
 }
+
+/* Page listen — browser speechSynthesis (Chrome works best) */
+.listen-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 45;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1rem calc(0.85rem + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--line);
+  background: rgba(243, 246, 248, 0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -10px 28px rgba(16, 35, 58, 0.08);
+}
+
+.listen-bar__inner {
+  width: min(var(--max), 100%);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.listen-bar__title {
+  margin: 0;
+  min-width: 9rem;
+  display: grid;
+  gap: 0.1rem;
+}
+
+.listen-bar__heading {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.listen-bar__status {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.listen-bar__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.listen-btn {
+  min-height: 2.75rem;
+  min-width: 4.5rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.listen-btn:hover:not(:disabled) {
+  border-color: rgba(13, 28, 46, 0.35);
+}
+
+.listen-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.listen-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent-deep);
+  color: #f4f7f5;
+}
+
+.listen-bar__rate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.listen-bar__rate select {
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  padding: 0.35rem 0.55rem;
+}
+
+.listen-bar__note {
+  width: min(var(--max), 100%);
+  margin: 0.55rem auto 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .listen-bar__inner {
+    gap: 0.65rem;
+  }
+
+  .listen-bar__controls {
+    width: 100%;
+  }
+
+  .listen-btn {
+    flex: 1 1 auto;
+  }
+}
