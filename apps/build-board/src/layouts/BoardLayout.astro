@@ -77,14 +77,27 @@ const nav = [
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="frame">
-      <aside class="sidebar">
-        <a class="sidebar__brand" href="/">Build Board</a>
-        <p class="sidebar__tag">{identity.title}</p>
+    <div class="frame" data-board-frame>
+      <aside class="sidebar" data-board-sidebar>
+        <div class="sidebar__top">
+          <div class="sidebar__identity">
+            <a class="sidebar__brand" href="/">Build Board</a>
+            <p class="sidebar__tag">{identity.title}</p>
+          </div>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="board-nav"
+          >
+            <span data-nav-toggle-label>Menu</span>
+          </button>
+        </div>
         <p class="sidebar__meta">
           Internal build board for contributors. Protect this URL before sharing broadly.
         </p>
-        <nav class="side-nav" aria-label="Board">
+        <nav class="side-nav" id="board-nav" data-board-nav aria-label="Board">
           {
             nav.map((item) => (
               <a
@@ -103,5 +116,33 @@ const nav = [
         </main>
       </div>
     </div>
+    <script>
+      const frame = document.querySelector("[data-board-frame]");
+      const toggle = document.querySelector("[data-nav-toggle]");
+      const nav = document.querySelector("[data-board-nav]");
+      const label = document.querySelector("[data-nav-toggle-label]");
+      if (frame && toggle && nav && label) {
+        const setOpen = (open: boolean) => {
+          frame.classList.toggle("is-nav-open", open);
+          document.body.classList.toggle("nav-lock", open);
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          label.textContent = open ? "Close" : "Menu";
+        };
+        toggle.addEventListener("click", () => {
+          setOpen(!frame.classList.contains("is-nav-open"));
+        });
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => setOpen(false));
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setOpen(false);
+        });
+        const mq = window.matchMedia("(min-width: 901px)");
+        const syncDesktop = () => {
+          if (mq.matches) setOpen(false);
+        };
+        mq.addEventListener("change", syncDesktop);
+      }
+    </script>
   </body>
 </html>

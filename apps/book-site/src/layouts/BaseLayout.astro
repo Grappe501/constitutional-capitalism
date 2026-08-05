@@ -82,22 +82,34 @@ const nav = [
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="brand" href="/">{identity.title}</a>
-        <nav class="nav" aria-label="Primary">
-          {
-            nav.map((item) => (
-              <a
-                href={item.href}
-                aria-current={path === item.href ? "page" : undefined}
-              >
-                {item.label}
-              </a>
-            ))
-          }
-        </nav>
+    <header class="site-header" data-site-header>
+      <div class="site-header__bar">
+        <a class="brand" href="/">
+          <span class="brand__full">{identity.title}</span>
+          <span class="brand__short" aria-hidden="true">CC</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle__label" data-nav-toggle-label>Menu</span>
+        </button>
       </div>
+      <nav class="nav" id="primary-nav" data-primary-nav aria-label="Primary">
+        {
+          nav.map((item) => (
+            <a
+              href={item.href}
+              aria-current={path === item.href ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
     </header>
     <main id="main" class="shell">
       <slot />
@@ -118,5 +130,33 @@ const nav = [
         </p>
       </div>
     </footer>
+    <script>
+      const header = document.querySelector("[data-site-header]");
+      const toggle = document.querySelector("[data-nav-toggle]");
+      const nav = document.querySelector("[data-primary-nav]");
+      const label = document.querySelector("[data-nav-toggle-label]");
+      if (header && toggle && nav && label) {
+        const setOpen = (open: boolean) => {
+          header.classList.toggle("is-nav-open", open);
+          document.body.classList.toggle("nav-lock", open);
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          label.textContent = open ? "Close" : "Menu";
+        };
+        toggle.addEventListener("click", () => {
+          setOpen(!header.classList.contains("is-nav-open"));
+        });
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => setOpen(false));
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setOpen(false);
+        });
+        const mq = window.matchMedia("(min-width: 901px)");
+        const syncDesktop = () => {
+          if (mq.matches) setOpen(false);
+        };
+        mq.addEventListener("change", syncDesktop);
+      }
+    </script>
   </body>
 </html>
