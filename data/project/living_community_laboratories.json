@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "last_updated": "2026-08-05",
   "status": "research_category_deferred_scaffold",
   "anchored_at_decision_ids": [
@@ -7,7 +7,7 @@
     "CC-DEC-101",
     "CC-DEC-097"
   ],
-  "recorded_as_update": "UPD-063",
+  "recorded_as_update": "UPD-064",
   "title": "Living Community Laboratories",
   "kind": "research_program_category_not_architecture",
   "not_a_new_principle": true,
@@ -199,7 +199,12 @@
         "Do not treat as pilot or claim existing funding will support the concept",
         "Do not interrupt PP-FF-01",
         "Baseline and legal claims require registered sources only"
-      ]
+      ],
+      "related_research_streams": [
+        "LCL-STREAM-RURAL-PROSPERITY-CAMPUS",
+        "LCL-STREAM-DISTRIBUTED-PROSPERITY-NETWORK"
+      ],
+      "rural_prosperity_campus_hypothesis_id": "HYP-123"
     }
   ],
   "priority_relative_to_proof_packets": {
@@ -207,7 +212,8 @@
   },
   "recorded_as_updates": [
     "UPD-062",
-    "UPD-063"
+    "UPD-063",
+    "UPD-064"
   ],
   "paired_pathways": {
     "update_id": "UPD-063",
@@ -216,5 +222,75 @@
       "CC-CASE-LEWISVILLE-001",
       "CC-CASE-ROSEBUD-001"
     ]
-  }
+  },
+  "research_streams": [
+    {
+      "stream_id": "LCL-STREAM-RURAL-PROSPERITY-CAMPUS",
+      "title": "Living Community Laboratory: Rural Prosperity Campus Model",
+      "status": "major_research_hypothesis_not_doctrine",
+      "hypothesis_id": "HYP-123",
+      "update_id": "UPD-064",
+      "decision_anchor": "CC-DEC-102",
+      "not": [
+        "doctrine",
+        "pilot",
+        "new_principle",
+        "funded_program"
+      ],
+      "central_hypothesis": "Can a rural public education system become the coordinating institution for rebuilding a regional food economy while simultaneously improving education, workforce development, family farm profitability, and community prosperity?",
+      "defining_questions": [
+        "Can education itself become productive economic infrastructure?",
+        "Can a rural school district function as the coordinating institution for regional economic development without compromising its primary educational mission?"
+      ],
+      "layers": [
+        "Education (inside functioning businesses)",
+        "Family Farm Network (partner, do not replace)",
+        "Natural Resource Partnerships (eligibility-aware; no presumed funding)",
+        "Food System (full value chain)",
+        "Regional Business Cluster",
+        "Cooperative Development (ownership pathways)",
+        "Food Security (local priorities + sustainable external markets)",
+        "Student Enterprises (experiential learning)",
+        "Graduate Transition (relationship continues after diploma)"
+      ],
+      "empirical_questions": [
+        "Does the model improve educational outcomes?",
+        "Does it strengthen family farm profitability?",
+        "Does it improve workforce readiness?",
+        "Does it increase entrepreneurship?",
+        "Does it improve local food security?",
+        "Does it attract new families?",
+        "Does it become financially sustainable?",
+        "Does it strengthen rather than weaken neighboring communities?",
+        "Under what conditions does it succeed or fail?"
+      ],
+      "linked_case_id": "CC-CASE-ROSEBUD-001",
+      "related_network_hypothesis_id": "HYP-124",
+      "dossier_path": "content/research/hypotheses/rural-prosperity-campus.md",
+      "verdict_discipline": [
+        "Supports",
+        "Qualifies",
+        "Contradicts"
+      ]
+    },
+    {
+      "stream_id": "LCL-STREAM-DISTRIBUTED-PROSPERITY-NETWORK",
+      "title": "Distributed Arkansas Prosperity Network (research concept)",
+      "status": "major_research_hypothesis_not_doctrine",
+      "hypothesis_id": "HYP-124",
+      "update_id": "UPD-064",
+      "decision_anchor": "CC-DEC-102",
+      "not": [
+        "doctrine",
+        "statewide_mandate",
+        "identical_campuses"
+      ],
+      "proposition": "Regional living laboratories can specialize (e.g., Rose Bud — agriculture/food; Lewisville — resource development/community wealth; others — forestry, aquaculture, manufacturing, healthcare, transportation) while sharing curriculum, research, and operational lessons as a connected, non-identical statewide knowledge network.",
+      "rule": "Not centralized. Not identical. Connected. Each hub contributes unique specialty expertise.",
+      "linked_case_ids": [
+        "CC-CASE-ROSEBUD-001",
+        "CC-CASE-LEWISVILLE-001"
+      ]
+    }
+  ]
 }
