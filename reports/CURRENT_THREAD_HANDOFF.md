@@ -1,6 +1,6 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-05T02:49:10.619Z
+Generated: 2026-08-05T02:52:44.041Z
 
 ## For the next AI / human operator
 
@@ -20,7 +20,7 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `6ba1d55`
+- **HEAD:** `dcf1936`
 
 ## Current state
 

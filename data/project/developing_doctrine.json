@@ -1,8 +1,8 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "last_updated": "2026-08-04",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Equal Standing / Blind Stage (CC-PRIN-29), Constitutional Citizenship (CC-PRIN-30), Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Equal Standing / Blind Stage (CC-PRIN-29), Constitutional Citizenship (CC-PRIN-30/31) with viewpoint-neutral civic service, Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
   "capture_clusters": [
     {
       "cluster_id": "CC-DCC-01",
@@ -258,8 +258,8 @@
         "service framed as punishment"
       ],
       "phase_destination": "phase-3_and_phase-4_and_phase-5_pilots",
-      "related_doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073"],
-      "note": "Principle CC-PRIN-30; links Human Capital, Equal Standing, Democracy, Community OS."
+      "related_doctrine_ids": ["CC-DEV-068", "CC-DEV-069", "CC-DEV-070", "CC-DEV-071", "CC-DEV-072", "CC-DEV-073", "CC-DEV-074", "CC-DEV-075", "CC-DEV-076", "CC-DEV-077"],
+      "note": "Principles CC-PRIN-30/31; links Human Capital, Equal Standing, Democracy, Community OS; viewpoint-neutral civic service required."
     }
   ],
   "items": [
@@ -1907,6 +1907,99 @@
       "status": "open",
       "related_decision_ids": ["CC-DEC-067"],
       "phase_destination": "phase-4_and_phase-5"
+    },
+    {
+      "doctrine_id": "CC-DEV-074",
+      "statement": "Every student should graduate having contributed meaningfully to the civic life of their community. Public education should cultivate informed, engaged citizens through structured opportunities for service, public participation, and democratic practice, while remaining neutral toward political parties, candidates, and viewpoints. Every student should complete meaningful civic service that strengthens democratic participation while preserving complete freedom to choose the causes and viewpoints they support. Government should encourage participation, not ideology.",
+      "origin": "steve_direction_viewpoint_neutral_civic_service",
+      "maturity": "proposed",
+      "implications": [
+        "CC-PRIN-31",
+        "civic participation goal, not partisan participation",
+        "Constitutional Citizenship Test neutrality questions"
+      ],
+      "conflicts": [
+        "graduation credit that requires partisan agreement",
+        "school programs favoring one political viewpoint",
+        "rewarding ideological conformity"
+      ],
+      "research_required": [
+        "viewpoint-neutrality compliance patterns for civic credit",
+        "complaint and audit designs without invented prevalence claims"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-069"],
+      "phase_destination": "phase-3_and_phase-4"
+    },
+    {
+      "doctrine_id": "CC-DEV-075",
+      "statement": "Rather than traditional volunteer hours alone, students should complete a Civic Service Portfolio throughout middle and high school, earning Civic Service Credits through government participation, community improvement, and civic engagement pathways (meetings, youth councils, parks, food security, forums, lawful nonpartisan election support where permitted, and related activities).",
+      "origin": "steve_direction_viewpoint_neutral_civic_service",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "multi-pathway Civic Service Credits",
+        "links to food security, Community OS, Youth Councils"
+      ],
+      "conflicts": [
+        "hours-only volunteerism without civic learning",
+        "locked statewide credit schedules before pilots"
+      ],
+      "research_required": [
+        "portfolio authenticity and equity safeguards",
+        "local pathway feasibility studies"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-069"],
+      "phase_destination": "phase-4_and_phase-5_pilots"
+    },
+    {
+      "doctrine_id": "CC-DEV-076",
+      "statement": "Optional political participation — campaigns, parties, ballot initiatives, advocacy, or issue campaigns — may be recognized for civic credit only under viewpoint-neutral rules: schools may recognize civic participation regardless of viewpoint, but may not require students to support or oppose any candidate, party, or policy position as a condition of graduation. Students may satisfy the same requirement through nonpartisan civic alternatives under equal standards. Public schools must not award campaign credit in a way that favors one viewpoint or pressures students into partisan work.",
+      "origin": "steve_direction_viewpoint_neutral_civic_service",
+      "maturity": "proposed",
+      "implications": [
+        "optional safeguarded political pathway",
+        "equal standards for all lawful viewpoints",
+        "campaign work never a required graduation pathway"
+      ],
+      "conflicts": [
+        "required campaign work for graduation",
+        "unequal recognition across viewpoints"
+      ],
+      "research_required": [
+        "legal boundaries for school recognition of campaign activity",
+        "equal-standards documentation practices"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-069"],
+      "phase_destination": "phase-4",
+      "note": "Preserves public trust and constitutional neutrality."
+    },
+    {
+      "doctrine_id": "CC-DEV-077",
+      "statement": "Every civic experience should include reflection on problems addressed, government learning, perspectives encountered, evidence that influenced thinking, and process improvements — emphasizing democratic practice rather than predetermined conclusions. Graduates may receive a Civic Achievement Transcript documenting meetings, projects, volunteer hours, leadership, research, presentations, service-learning, and government or nonprofit internships as an educational portfolio of civic merit, not political conformity.",
+      "origin": "steve_direction_viewpoint_neutral_civic_service",
+      "maturity": "proposed_design_agenda",
+      "implications": [
+        "reflection as learning requirement",
+        "Civic Achievement Transcript design agenda",
+        "experience over conformity scoring"
+      ],
+      "conflicts": [
+        "reflection prompts that demand preferred political conclusions",
+        "transcripts used as ideology scores"
+      ],
+      "research_required": [
+        "reflection rubric designs that remain viewpoint-neutral",
+        "privacy and authenticity safeguards for civic transcripts"
+      ],
+      "declaration_revision_candidate": false,
+      "status": "open",
+      "related_decision_ids": ["CC-DEC-069"],
+      "phase_destination": "phase-4"
     }
   ]
 }

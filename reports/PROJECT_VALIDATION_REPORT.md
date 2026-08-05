@@ -1,6 +1,6 @@
 # Project Validation Report
 
-Generated: 2026-08-05T02:49:10.132Z
+Generated: 2026-08-05T02:52:43.559Z
 
 ## Identity
 
@@ -25,25 +25,24 @@ Run `pnpm env:verify` for the authoritative check. This report does not claim OS
 ## Repository State
 
 - Branch: `main`
-- HEAD: `6ba1d55`
+- HEAD: `dcf1936`
 - Git status:
 ```
 M START_HERE_FOR_AI.md
- M apps/book-site/src/layouts/BaseLayout.astro
- M apps/build-board/src/layouts/BoardLayout.astro
+ M apps/book-site/src/pages/constitutional-citizenship.astro
+ M apps/build-board/src/pages/constitutional-citizenship.astro
  M data/decisions/decisions.json
  M data/generated/progress_snapshot_latest.json
  M data/metrics/progress_snapshot.json
  M data/project/civilizational_core.json
- M data/project/current_build_state.json
+ M data/project/constitutional_citizenship_framework.json
  M data/project/developing_doctrine.json
  M data/project/latest_cursor_return.json
  M data/project/principles.json
  M data/project/updates.json
  M data/project/website_information_architecture.json
  M data/research/claim_ledger.json
- M data/research/system_interdependencies.json
- M scripts/validate-project-data.mjs
+ M schemas/constitutional_citizenship_framework.schema.json
 ```
 
 ## Schema / Data Validation

@@ -12,6 +12,11 @@ const portfolio = civ.civic_graduation?.portfolio_demonstrates || [];
 const hosts = civ.schools_as_community_laboratories?.hosts || [];
 const service = civ.civic_service?.examples || [];
 const scorechecks = civ.civic_scorecards?.example_checks || [];
+const pathways = civ.civic_service_portfolio?.pathways || [];
+const reflectQs = civ.civic_reflection?.questions || [];
+const transcriptDocs = civ.civic_achievement_transcript?.documents || [];
+const rewardFor = civ.viewpoint_neutral_civic_service_doctrine?.reward_for || [];
+const neverReward = civ.viewpoint_neutral_civic_service_doctrine?.never_reward_for || [];
 ---
 
 <BaseLayout
@@ -120,11 +125,79 @@ const scorechecks = civ.civic_scorecards?.example_checks || [];
 
     <h2>Civic service</h2>
     <p>{civ.civic_service.summary}</p>
+    <p>
+      <strong>Goal:</strong> {civ.civic_service.goal}
+    </p>
     <ul>
       {service.map((s: string) => (
         <li>{s}</li>
       ))}
     </ul>
+
+    <h2>Viewpoint neutrality</h2>
+    <blockquote>
+      <p>{civ.viewpoint_neutral_civic_service_doctrine.text}</p>
+    </blockquote>
+    <blockquote>
+      <p>{civ.viewpoint_neutral_civic_service_doctrine.participation_principle}</p>
+    </blockquote>
+    <blockquote>
+      <p>
+        <strong>{civ.viewpoint_neutral_civic_service_doctrine.civic_merit_principle}</strong>
+      </p>
+    </blockquote>
+    <p>Students should be rewarded for:</p>
+    <ul>
+      {rewardFor.map((r: string) => (
+        <li>{r}</li>
+      ))}
+    </ul>
+    <p>Students should never be rewarded for:</p>
+    <ul>
+      {neverReward.map((r: string) => (
+        <li>{r}</li>
+      ))}
+    </ul>
+
+    <h2>Civic Service Portfolio</h2>
+    <p>{civ.civic_service_portfolio.summary}</p>
+    <p class="status-note">{civ.civic_service_portfolio.note}</p>
+    {
+      pathways.map((p: any) => (
+        <section>
+          <h3>{p.title}</h3>
+          <ul>
+            {p.activities.map((a: string) => (
+              <li>{a}</li>
+            ))}
+          </ul>
+          {p.constitutional_safeguard ? (
+            <blockquote>
+              <p>{p.constitutional_safeguard}</p>
+            </blockquote>
+          ) : null}
+          {p.hard_rule ? <p class="status-note">{p.hard_rule}</p> : null}
+          {p.note ? <p class="status-note">{p.note}</p> : null}
+        </section>
+      ))
+    }
+
+    <h2>Reflection and learning</h2>
+    <p>{civ.civic_reflection.summary}</p>
+    <ul>
+      {reflectQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ul>
+
+    <h2>Civic Achievement Transcript</h2>
+    <p>{civ.civic_achievement_transcript.summary}</p>
+    <ul>
+      {transcriptDocs.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+    <p class="status-note">{civ.civic_achievement_transcript.note}</p>
 
     <h2>Civic scorecards</h2>
     <p>{civ.civic_scorecards.summary}</p>

@@ -1,13 +1,14 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-04",
   "status": "developing_doctrine_architecture",
-  "decision_ids": ["CC-DEC-067", "CC-DEC-068"],
+  "decision_ids": ["CC-DEC-067", "CC-DEC-068", "CC-DEC-069"],
   "domain_title": "Constitutional Citizenship Doctrine",
   "research_domain_title": "Civic Preparation, Youth Participation, and Constitutional Citizenship",
   "website_node_id": "CC-WEB-CITIZENSHIP",
   "principle_id": "CC-PRIN-30",
-  "note": "Core doctrine: build civic capacity rather than merely expand rights. Architecture and developing doctrine only — not a finished civics statute and not a locked voting-age change. Earlier local participation models are pilot candidates requiring measurement. No invented civic-education outcome, turnout, or trust statistics.",
+  "related_principle_ids": ["CC-PRIN-31"],
+  "note": "Core doctrine: build civic capacity rather than merely expand rights. Civic service is participation and competence under viewpoint neutrality — not partisan conformity or campaign-credit coercion. Architecture and developing doctrine only — not a finished civics statute and not a locked voting-age change. Earlier local participation models are pilot candidates requiring measurement. No invented civic-education outcome, turnout, or trust statistics.",
   "role_in_philosophy": "Constitutional Capitalism treats democracy as a skill, not merely a right. Most societies assume people automatically know how to govern themselves at 18. This doctrine instead asks how a republic prepares every generation for responsible self-government through continuous civic education, practical service, and meaningful contribution to community decision-making. It aligns with human-capital investment in people as the greatest long-term societal investment.",
   "central_question_shift": {
     "not_primary": "At what age should someone vote?",
@@ -177,7 +178,8 @@
     "doctrine_ids": ["CC-DEV-073"]
   },
   "civic_service": {
-    "summary": "Every teenager completes meaningful civic service — contribution, not punishment — helping parks, elderly neighbors, libraries, food systems, conservation, local government, and nonprofits, so young people begin to understand: I belong to this place.",
+    "summary": "Every teenager completes meaningful civic service — contribution, not punishment — so young people begin to understand: I belong to this place. Service strengthens democratic participation while preserving complete freedom to choose the causes and viewpoints they support.",
+    "goal": "civic participation, not partisan participation",
     "examples": [
       "parks",
       "elderly",
@@ -189,7 +191,119 @@
     ],
     "tone": "Not punishment. Contribution.",
     "belonging_phrase": "I belong to this place.",
-    "doctrine_ids": ["CC-DEV-073"]
+    "doctrine_ids": ["CC-DEV-073", "CC-DEV-074", "CC-DEV-075"]
+  },
+  "viewpoint_neutral_civic_service_doctrine": {
+    "text": "Every student should graduate having contributed meaningfully to the civic life of their community. Public education should cultivate informed, engaged citizens by providing structured opportunities for service, public participation, and democratic practice, while remaining neutral toward political parties, candidates, and viewpoints.",
+    "participation_principle": "Every student should complete meaningful civic service that strengthens democratic participation, while preserving complete freedom to choose the causes and viewpoints they support.",
+    "civic_merit_principle": "Government should encourage participation, not ideology.",
+    "principle_ids": ["CC-PRIN-30", "CC-PRIN-31"],
+    "doctrine_ids": ["CC-DEV-074"],
+    "reward_for": [
+      "participating respectfully",
+      "understanding constitutional principles",
+      "evaluating evidence",
+      "engaging with their community",
+      "contributing constructively"
+    ],
+    "never_reward_for": [
+      "agreeing with the government",
+      "agreeing with a political party",
+      "agreeing with teachers",
+      "supporting or opposing any required candidate, party, or policy position"
+    ]
+  },
+  "civic_service_portfolio": {
+    "name": "Civic Service Portfolio",
+    "status": "design_agenda",
+    "summary": "Rather than traditional volunteer hours alone, students complete a Civic Service Portfolio throughout middle and high school and earn Civic Service Credits across multiple pathways.",
+    "pathways": [
+      {
+        "pathway_id": "CC-CIVSVC-01",
+        "title": "Government participation",
+        "activities": [
+          "Attend city council meetings",
+          "Attend county quorum court meetings",
+          "Observe legislative sessions",
+          "Attend school board meetings",
+          "Participate in youth councils",
+          "Serve on advisory committees where available"
+        ]
+      },
+      {
+        "pathway_id": "CC-CIVSVC-02",
+        "title": "Community improvement",
+        "activities": [
+          "Park restoration",
+          "Food security projects",
+          "Community gardens",
+          "River and trail cleanups",
+          "Senior citizen assistance",
+          "Disaster preparedness",
+          "Community health initiatives"
+        ]
+      },
+      {
+        "pathway_id": "CC-CIVSVC-03",
+        "title": "Civic engagement",
+        "activities": [
+          "Nonpartisan voter registration efforts where legally permitted",
+          "Election administration support where allowed by law",
+          "Civic education events",
+          "Public issue forums",
+          "Ballot-measure education",
+          "Candidate forums",
+          "Community surveys",
+          "Neighborhood planning meetings"
+        ],
+        "note": "Activities must remain lawful and, for school credit, viewpoint-neutral in program design."
+      },
+      {
+        "pathway_id": "CC-CIVSVC-04",
+        "title": "Political participation (optional, safeguarded)",
+        "activities": [
+          "Political campaigns",
+          "Political parties",
+          "Ballot initiatives",
+          "Advocacy organizations",
+          "Issue campaigns"
+        ],
+        "constitutional_safeguard": "Schools may recognize civic participation regardless of viewpoint, but they may not require students to support or oppose any candidate, party, or policy position as a condition of graduation.",
+        "meaning": "A student helping any lawful campaign — or choosing a different civic activity entirely — could satisfy the requirement under the same standards. Schools must not award credit in a way that favors one political viewpoint or pressures students into partisan work.",
+        "hard_rule": "Public schools remain viewpoint-neutral. Campaign work may count only under equal standards for all lawful viewpoints; it is never a required pathway."
+      }
+    ],
+    "doctrine_ids": ["CC-DEV-075", "CC-DEV-076"],
+    "note": "Design agenda — not a locked statewide credit schedule; no invented completion rates."
+  },
+  "civic_reflection": {
+    "summary": "Every civic experience should include reflection. The emphasis is on learning democratic practice, not reaching a predetermined conclusion.",
+    "questions": [
+      "What problem was being addressed?",
+      "What did you learn about government?",
+      "What perspectives did you encounter?",
+      "What evidence influenced your thinking?",
+      "How would you improve the process?"
+    ],
+    "doctrine_ids": ["CC-DEV-077"]
+  },
+  "civic_achievement_transcript": {
+    "name": "Civic Achievement Transcript",
+    "status": "design_agenda",
+    "summary": "In addition to academic records, graduates may receive a Civic Achievement Transcript documenting civic experiences as part of their educational portfolio.",
+    "documents": [
+      "Public meetings attended",
+      "Community projects completed",
+      "Volunteer hours",
+      "Leadership roles",
+      "Civic research",
+      "Public presentations",
+      "Service-learning projects",
+      "Internships with government or nonprofits"
+    ],
+    "relationship_to_scorecards": "Builds on experiential civic scorecards; transcript is the graduation-facing record, not a political conformity score.",
+    "doctrine_ids": ["CC-DEV-077"],
+    "note": "Design agenda — authenticity and privacy safeguards required; not a surveillance product."
   },
   "civic_scorecards": {
     "summary": "Civic scorecards track experience, not letter grades — whether a student has attended a council meeting, presented an idea, volunteered, helped organize, learned budgeting, read the Constitution, met elected officials, or built something for the community.",
@@ -205,7 +319,7 @@
       "Met elected officials?",
       "Built something for the community?"
     ],
-    "doctrine_ids": ["CC-DEV-073"],
+    "doctrine_ids": ["CC-DEV-073", "CC-DEV-077"],
     "note": "Design agenda for experience tracking — not a surveillance or ranking product; no invented completion rates."
   },
   "connections": {
@@ -274,6 +388,26 @@
         "question_id": "CC-CTEST-10",
         "number": 10,
         "text": "Does this strengthen peaceful civic participation and equal dignity of pathways, consistent with Human Capital and Equal Standing doctrines?"
+      },
+      {
+        "question_id": "CC-CTEST-11",
+        "number": 11,
+        "text": "Does the program remain viewpoint-neutral — recognizing participation without requiring support for any candidate, party, or policy position?"
+      },
+      {
+        "question_id": "CC-CTEST-12",
+        "number": 12,
+        "text": "If political or campaign activity can earn credit, can students satisfy the same requirement through nonpartisan civic alternatives under equal standards?"
+      },
+      {
+        "question_id": "CC-CTEST-13",
+        "number": 13,
+        "text": "Does reflection ask what was learned about democratic practice and evidence — not whether the student reached a predetermined conclusion?"
+      },
+      {
+        "question_id": "CC-CTEST-14",
+        "number": 14,
+        "text": "Does recognition reward civic merit (participation, constitutional understanding, evidence evaluation, constructive contribution) rather than political conformity?"
       }
     ]
   },
@@ -311,6 +445,18 @@
       "summary": "Forums, academies, workshops, youth councils, debates"
     },
     {
+      "title": "Viewpoint-neutral civic service",
+      "summary": "Participation and competence — not partisan conformity or required campaign work"
+    },
+    {
+      "title": "Civic Service Portfolio",
+      "summary": "Government participation, community improvement, civic engagement, optional safeguarded political participation"
+    },
+    {
+      "title": "Civic Achievement Transcript",
+      "summary": "Graduation-facing record of meetings, projects, leadership, presentations, internships"
+    },
+    {
       "title": "Civic service and experience scorecards",
       "summary": "Contribution and belonging; experience tracking, not grading theater"
     }
@@ -318,7 +464,7 @@
   "research_status": {
     "phase": "phase-2_architecture",
     "policy_drafting": "not_started",
-    "next": "Phase 2.1+: source civic-education and youth-participation evaluation literature; keep voting-age models as pilots; connect to Human Capital academies and Community OS playbooks",
+    "next": "Phase 2.1+: source civic-education and youth-participation evaluation literature; design viewpoint-neutrality compliance patterns for school credit; keep voting-age models as pilots; connect to Human Capital academies and Community OS playbooks",
     "baseline_note": "No civic-education outcome or youth-turnout baseline values claimed in this architecture ship"
   }
 }
