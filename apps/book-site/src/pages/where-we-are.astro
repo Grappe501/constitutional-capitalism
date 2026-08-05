@@ -16,6 +16,7 @@ const priorityDomains = [
   { id: "public-service", title: "Public service and institutional modernization", claim: "CC-CLAIM-031", note: "Invisible—but never unaccountable; reduce friction while improving service — architecture seeded; no invented board counts." },
   { id: "transparency", title: "Constitutional transparency and the People's Ledger", claim: "CC-CLAIM-034", note: "Presumed open with justified exceptions; People's Ledger is a design agenda — no invented FOIA or portal statistics." },
   { id: "essential-systems", title: "Essential systems (banking, insurance, healthcare)", claim: "CC-CLAIM-038", note: "System-design framing — incentives and outcomes, not inherent corruption; Community Health Index is a design agenda." },
+  { id: "human-capital", title: "Human capital doctrine and regional academies", claim: "CC-CLAIM-042", note: "Multiple pathways of equal dignity; academies are a pilot design agenda — no invented outcomes." },
 ];
 
 const byId = Object.fromEntries((claims.claims || []).map((c: any) => [c.claim_id, c]));
@@ -69,8 +70,9 @@ const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || 
     <p>
       See <a href="/justice/">Justice</a>, <a href="/democracy/">Democracy</a>,
       <a href="/public-service/">Public Service</a>,
-      <a href="/transparency/">Transparency</a>, and
-      <a href="/essential-systems/">Essential Systems</a> for developing doctrine domains,
+      <a href="/transparency/">Transparency</a>,
+      <a href="/essential-systems/">Essential Systems</a>, and
+      <a href="/human-capital/">Human Capital</a> for developing doctrine domains,
       <a href="/evidence/">Evidence</a> for claim support levels, and
       <a href="/metrics/">Metrics</a> for baseline completeness.
     </p>

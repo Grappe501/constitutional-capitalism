@@ -26,6 +26,8 @@ Priority domains now have sourced first-pass briefs: wealth/ownership, wages/pro
 
 **Essential Systems** (`CC-DEV-033`–`037`) is a **major system-design domain** for banking, insurance, healthcare, pharmaceuticals, community health, and prevention — shared constitutional question and four-question chapter method; Community Health Index design agenda — no invented sector statistics or unsupported systemic-intent claims.
 
+**Human Capital Doctrine** (`CC-DEV-038`–`041`) is a **pillar**: build human capital infrastructure; multiple pathways of equal dignity; regional civic/innovation academies as a researchable pilot model that makes home stronger — not a locked statewide design; no invented academy outcomes.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.

@@ -36,6 +36,7 @@ Constitutional Capitalism
 - **Public Service and the 21st-Century State** (defining friction-reduction doctrine; *invisible—but never unaccountable*; branches in `government_capacity_framework.json`)  
 - **Constitutional Transparency and the People's Ledger** (presumption of openness with justified exceptions; branches in `transparency_framework.json`)  
 - **Essential Systems** (banking, insurance, healthcare, pharmaceuticals, prevention; system-design method in `essential_systems_framework.json`)  
+- **Human Capital Doctrine** (human infrastructure, equal-dignity pathways, regional academy pilots; `human_capital_framework.json`)  
 - Communities  
 - Families  
 - Education  

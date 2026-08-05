@@ -6,11 +6,11 @@
 
 ## Central question
 
-Who pays for skill formation, and who captures returns?
+Who pays for skill formation, and who captures returns — and how should a republic deliberately build human capital infrastructure with multiple pathways of equal dignity?
 
 ## Why it matters
 
-Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality.
+Architecture reserved so Phase 2 does not silently omit the domain. Full sourced treatment deferred to Phase 2.1 to protect quality. Parent doctrine: **Human Capital Doctrine** (`26-human-capital-doctrine.md`, `CC-DEV-038`–`041`) — regional academies as pilot design agenda.
 
 ## Current findings
 

@@ -160,6 +160,18 @@ Named instrument: **Community Health Index** (design agenda).
 
 Full architecture: `docs/architecture/ESSENTIAL_SYSTEMS.md` and `data/project/essential_systems_framework.json`. Website domain: **Essential Systems** (`CC-WEB-ESSENTIAL`). Research precedes detailed sector legislation (`CC-DEC-052`, `CC-DEC-053`).
 
+## Human Capital Doctrine (developing)
+
+A pillar: deliberately build **human capital infrastructure**.
+
+First principle (`CC-DEV-038`):
+
+> Every child should graduate with a meaningful pathway to productive adulthood through multiple respected pathways of equal dignity — not a single model of success.
+
+Regional civic and innovation academies (`CC-DEV-040`) are one possible institutional model to research and pilot — mission: make home stronger. Paid work, entrepreneurship, and civic leadership (`CC-DEV-041`) are co-equal formation goals.
+
+Full architecture: `docs/architecture/HUMAN_CAPITAL_DOCTRINE.md` and `data/project/human_capital_framework.json`. Website domain: **Human Capital Doctrine** (`CC-WEB-HUMANCAPITAL`). Research and pilots precede statewide academy statute (`CC-DEC-054`, `CC-DEC-055`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

@@ -79,7 +79,37 @@
     },
     { "node_id": "CC-WEB-COMMUNITIES", "title": "Communities", "status": "proposed" },
     { "node_id": "CC-WEB-FAMILIES", "title": "Families", "status": "proposed" },
-    { "node_id": "CC-WEB-EDUCATION", "title": "Education", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-HUMANCAPITAL",
+      "title": "Human Capital Doctrine",
+      "status": "seeded",
+      "decision_id": "CC-DEC-055",
+      "related_decision_ids": ["CC-DEC-054"],
+      "central_promise": "Every child deserves a meaningful pathway to productive adulthood. Build human capital infrastructure — multiple respected pathways of equal dignity — and pilot regional academies that make home stronger.",
+      "branches": [
+        "Human capital infrastructure",
+        "Multiple pathways of equal dignity",
+        "Regional civic and innovation academies",
+        "Regional economic specialization",
+        "Living-learning campuses",
+        "Paid apprenticeships",
+        "Entrepreneurship education",
+        "Civic leadership formation",
+        "Community partnerships",
+        "Flourishing metrics",
+        "Rural opportunity",
+        "Pilot and evaluation design"
+      ],
+      "framework_file": "data/project/human_capital_framework.json",
+      "research_domain_title": "Human Capital Infrastructure, Pathways, and Regional Academies",
+      "supersedes_nodes": ["CC-WEB-EDUCATION"]
+    },
+    {
+      "node_id": "CC-WEB-EDUCATION",
+      "title": "Education",
+      "status": "redirected",
+      "note": "Education content is seeded under Human Capital Doctrine (CC-WEB-HUMANCAPITAL); keep this node for navigation compatibility until branch pages mature."
+    },
     {
       "node_id": "CC-WEB-ESSENTIAL",
       "title": "Essential Systems",
