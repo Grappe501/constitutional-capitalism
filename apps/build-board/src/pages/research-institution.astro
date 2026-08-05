@@ -1,0 +1,100 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import foundations from "../../../../data/project/research_institution_foundations.json";
+import healthPath from "../../../../research/methodology/methodology_version_history.json";
+import backlog from "../../../../research/methodology/methodology_improvement_backlog.json";
+import missions from "../../../../research_operations/missions/research_mission_registry.json";
+import milestones from "../../../../research_operations/milestones/milestone_registry.json";
+import corpus from "../../../../research/corpus/source_registry.json";
+import watches from "../../../../research_watch/watch_registry.json";
+import graphReg from "../../../../knowledge_graph/registry/knowledge_graph_registry.json";
+
+const accepted = (backlog.items || []).filter((i) => i.status === "Accepted").length;
+const deferred = (backlog.items || []).filter((i) => i.status === "Deferred").length;
+const rejected = (backlog.items || []).filter((i) => i.status === "Rejected").length;
+---
+
+<BoardLayout title="Research Institution" path="/research-institution/">
+  <h1 class="page-title">Research Institution Foundations</h1>
+  <p class="page-lede">
+    CC-DEC-102 research infrastructure (slices 2.3–2.13). No doctrine changes.
+    PP-02 readiness: <strong>{foundations.pp_02_readiness}</strong>.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{foundations.slices?.length ?? 0}</div>
+      <div class="stat__label">Foundation slices</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{healthPath.current_active_version}</div>
+      <div class="stat__label">Methodology version</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{corpus.sources?.length ?? 0}</div>
+      <div class="stat__label">Corpus sources (index)</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{graphReg.total_nodes}</div>
+      <div class="stat__label">Graph seed nodes</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{watches.watches?.length ?? 0}</div>
+      <div class="stat__label">Research watches</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{missions.missions?.length ?? 0}</div>
+      <div class="stat__label">ROCC missions</div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Calibration status</h2>
+    <p>
+      Methodology backlog: <span class="chip">{accepted} Accepted</span>
+      <span class="chip">{deferred} Deferred</span>
+      <span class="chip">{rejected} Rejected</span>
+    </p>
+    <p class="muted">PP-FF-01 Draft Qualifies. Methodology 1.1 proposed from calibration. Conditional GO for PP-02.</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Milestones</h2>
+    <ul class="list-plain">
+      {
+        (milestones.milestones || []).map((m) => (
+          <li>
+            <code>{m.id}</code> — {m.title}
+            <span class="chip">{m.status}</span>
+            <span class="muted"> {m.completion_percent}%</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Foundation roots</h2>
+    <ul class="list-plain">
+      {Object.entries(foundations.roots || {}).map(([k, v]) => (
+        <li>
+          <code>{k}</code> — {v}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Infrastructure freeze rule</h2>
+    <p>{foundations.infrastructure_freeze_rule}</p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Related boards</h2>
+    <p>
+      <a href="/proof-packets/">Proof Packets</a> · <a href="/proof-incubator/">Proof Incubator</a> ·{" "}
+      <a href="/research/">Research</a> · <a href="/systems-intelligence/">Systems AI</a> ·{" "}
+      <a href="/phase-2-gate/">Phase 2 Gate</a>
+    </p>
+  </section>
+</BoardLayout>

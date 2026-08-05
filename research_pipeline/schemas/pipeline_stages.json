@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "stages": [
+    {
+      "id": 1,
+      "name": "Discovery",
+      "store": "metadata_only"
+    },
+    {
+      "id": 2,
+      "name": "Acquisition",
+      "store": "document_record"
+    },
+    {
+      "id": 3,
+      "name": "Metadata Extraction",
+      "store": "metadata/"
+    },
+    {
+      "id": 4,
+      "name": "Claim Extraction",
+      "store": "claim_extraction/",
+      "provisional": true
+    },
+    {
+      "id": 5,
+      "name": "Evidence Classification",
+      "labels": [
+        "Supports",
+        "Qualifies",
+        "Contradicts",
+        "Neutral",
+        "Background",
+        "Unknown"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Citation Builder",
+      "formats": [
+        "APA",
+        "Chicago",
+        "Government",
+        "Court",
+        "Dataset",
+        "Web",
+        "Book"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Duplicate Detection",
+      "store": "dedup/"
+    },
+    {
+      "id": 8,
+      "name": "Contradiction Detection",
+      "output": "Research Conflict"
+    },
+    {
+      "id": 9,
+      "name": "Human Review Queue",
+      "statuses": [
+        "Needs Review",
+        "Accepted",
+        "Rejected",
+        "Needs More Research"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Canonical Corpus",
+      "gate": "human_accepted_only"
+    }
+  ],
+  "ai_may_suggest": [
+    "summary",
+    "claims",
+    "citations",
+    "contradictions",
+    "confidence",
+    "topics"
+  ],
+  "ai_may_not": [
+    "final_verdicts",
+    "doctrine_changes",
+    "automatic_publication"
+  ]
+}

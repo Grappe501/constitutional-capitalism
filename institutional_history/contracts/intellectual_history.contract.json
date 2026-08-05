@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntellectualHistoryEvent",
+  "type": "object",
+  "required": [
+    "history_id",
+    "date",
+    "subject",
+    "event_type",
+    "summary",
+    "trigger",
+    "participants",
+    "supporting_documents",
+    "affected_claims",
+    "affected_packets",
+    "affected_doctrine",
+    "confidence_before",
+    "confidence_after",
+    "review_status"
+  ],
+  "additionalProperties": true
+}

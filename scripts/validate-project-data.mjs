@@ -88,7 +88,7 @@ for (const [dataRel, schemaRel] of validations) {
     (validate.errors ?? []).forEach(error => console.error(`  - ${error.instancePath || '/'} ${error.message}`));
   } else ok(dataRel);
 }
-for (const relative of ['data/project/open_questions.json','data/research/research_questions.json','data/project/updates.json']) {
+for (const relative of ['data/project/open_questions.json','data/research/research_questions.json','data/project/updates.json','data/project/research_institution_foundations.json']) {
   try { JSON.parse(fs.readFileSync(r(relative), 'utf8')); ok(`parse ${relative}`); }
   catch { fail(`Missing or invalid data: ${relative}`); }
 }

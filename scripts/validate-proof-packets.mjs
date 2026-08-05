@@ -195,9 +195,52 @@ for (const packetId of packetDirs) {
   if (contrary.length === 0 && searchLog.length === 0) {
     fail(`${packetId} must include contrary_sources or contrary_search_log`);
   }
+  if (searchLog.length > 0 && searchLog.length < 3) {
+    warn(`${packetId}: contrary_search_log has ${searchLog.length} entries (methodology 1.1 recommends ≥3)`);
+  }
   const hasExternalContrary = contrary.some((s) => String(s).startsWith("CC-SRC-"));
   if (!hasExternalContrary) {
     warn(`${packetId}: no CC-SRC-* contrary sources registered (confidence should stay Low)`);
+  }
+  if (contract.verdict === "Supports" && !hasExternalContrary) {
+    fail(`${packetId}: Supports requires at least one contrary CC-SRC-* (or cannot use Supports)`);
+  }
+  if (contract.review_status === "Complete" && !hasExternalContrary) {
+    fail(`${packetId}: Complete requires ≥1 contrary CC-SRC-* (methodology calibration MIB-001)`);
+  }
+  if (contract.methodology_version !== "1.0" && contract.methodology_version !== "1.1") {
+    fail(`${packetId}: methodology_version must be 1.0 or 1.1`);
+  }
+  const supportCount = (contract.supporting_sources || []).length;
+  const contrarySrcCount = contrary.filter((s) => String(s).startsWith("CC-SRC-")).length;
+  if (supportCount > 0 && contrarySrcCount === 0 && contract.confidence?.overall && !["Very Low", "Low"].includes(contract.confidence.overall)) {
+    fail(`${packetId}: overall confidence cannot exceed Low without contrary CC-SRC sources`);
+  }
+  if (supportCount >= 3 && contrarySrcCount === 0) {
+    warn(`${packetId}: confirmation-bias signal — supporting sources without contrary CC-SRC (ratio infinite)`);
+  }
+
+  // Ledger completeness
+  const ledgerPath = path.join(dir, `${packetId}_RESEARCH_LEDGER.json`);
+  if (fs.existsSync(ledgerPath)) {
+    const ledger = JSON.parse(fs.readFileSync(ledgerPath, "utf8"));
+    if (!Array.isArray(ledger.entries) || ledger.entries.length < 1) {
+      fail(`${packetId} research ledger empty`);
+    } else {
+      for (const entry of ledger.entries) {
+        if (!entry.entry_id || !entry.classification || !entry.search_date) {
+          fail(`${packetId} ledger entry missing required fields`);
+          break;
+        }
+      }
+      ok(`${packetId} research ledger completeness`);
+    }
+  }
+
+  // Reproducibility artifacts for Draft+
+  if (["Draft", "Internal Review", "Methodology Review", "Domain Review", "Complete"].includes(contract.review_status)) {
+    const biasNote = fs.existsSync(r("research/methodology/confirmation_bias_audit.md"));
+    if (!biasNote) warn("methodology confirmation_bias_audit.md missing (calibration artifact)");
   }
 
   const md = fs.readFileSync(mdFile, "utf8");

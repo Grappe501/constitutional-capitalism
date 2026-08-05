@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CommunityModel",
+  "type": "object",
+  "required": [
+    "model_id",
+    "community_id",
+    "scenarios",
+    "status"
+  ],
+  "properties": {
+    "model_id": {
+      "type": "string"
+    },
+    "community_id": {
+      "type": "string"
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "const": "future_use_only"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-08-05",
+  "note": "First layer toward Systems Intelligence knowledge graph. References only — no inference.",
+  "layers": [
+    "Sources",
+    "Evidence Objects",
+    "Claims",
+    "Proof Packets",
+    "Living Community Laboratories",
+    "Comparative Studies",
+    "Systems Intelligence"
+  ],
+  "edges": [
+    {
+      "from": "CC-SRC-073",
+      "to": "EV-FF-001",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-001",
+      "to": "CC-CLAIM-124",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-124",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    },
+    {
+      "from": "CC-SRC-074",
+      "to": "EV-FF-002",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-002",
+      "to": "CC-CLAIM-125",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-125",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    },
+    {
+      "from": "CC-SRC-039",
+      "to": "EV-FF-003",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-003",
+      "to": "CC-CLAIM-126",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-126",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    }
+  ]
+}

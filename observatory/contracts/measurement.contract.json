@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Measurement",
+  "type": "object",
+  "required": [
+    "measurement_id",
+    "metric",
+    "domain",
+    "community",
+    "jurisdiction",
+    "date",
+    "value",
+    "units",
+    "confidence",
+    "source",
+    "method",
+    "limitations",
+    "review_status"
+  ],
+  "additionalProperties": true
+}

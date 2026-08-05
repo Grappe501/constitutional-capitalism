@@ -1,0 +1,128 @@
+{
+  "version": "0.1.0-foundation",
+  "built_at": "2026-08-05",
+  "nodes": [
+    {
+      "node_id": "KG-PP-FF-01",
+      "node_type": "Proof Packet",
+      "title": "PP-FF-01",
+      "summary": "Local Food and Family Farm Prosperity — Qualifies / Low",
+      "status": "Draft",
+      "created": "2026-08-05",
+      "updated": "2026-08-05",
+      "confidence": "Low",
+      "owner": null,
+      "source_reference": "research/proof_packets/PP-FF-01/PP-FF-01.md",
+      "review_status": "Draft"
+    },
+    {
+      "node_id": "KG-HYP-116",
+      "node_type": "Hypothesis",
+      "title": "HYP-116",
+      "summary": "Family farm wealth engines hypothesis",
+      "status": "Architectural hypothesis",
+      "created": "2026-08-05",
+      "updated": "2026-08-05",
+      "confidence": "Low",
+      "owner": null,
+      "source_reference": "data/project/architecture_incubator.json",
+      "review_status": "open"
+    },
+    {
+      "node_id": "KG-CLAIM-124",
+      "node_type": "Claim",
+      "title": "CC-CLAIM-124",
+      "summary": "Family farm structure statistics",
+      "status": "supported_descriptive",
+      "created": "2026-08-05",
+      "updated": "2026-08-05",
+      "confidence": "High",
+      "owner": null,
+      "source_reference": "data/research/claim_ledger.json",
+      "review_status": "accepted"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "KGR-001",
+      "from_node": "KG-CLAIM-124",
+      "to_node": "KG-PP-FF-01",
+      "relationship_type": "evaluated_by",
+      "direction": "claim_to_packet",
+      "confidence": "High",
+      "evidence": [
+        "CC-SRC-073"
+      ],
+      "notes": "Seed",
+      "created": "2026-08-05",
+      "review_status": "accepted"
+    },
+    {
+      "relationship_id": "KGR-002",
+      "from_node": "KG-PP-FF-01",
+      "to_node": "KG-HYP-116",
+      "relationship_type": "qualifies",
+      "direction": "packet_to_hypothesis",
+      "confidence": "Low",
+      "evidence": [
+        "PP-FF-01"
+      ],
+      "notes": "Packet verdict Qualifies hypothesis",
+      "created": "2026-08-05",
+      "review_status": "accepted"
+    }
+  ],
+  "corpus_edges": [
+    {
+      "from": "CC-SRC-073",
+      "to": "EV-FF-001",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-001",
+      "to": "CC-CLAIM-124",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-124",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    },
+    {
+      "from": "CC-SRC-074",
+      "to": "EV-FF-002",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-002",
+      "to": "CC-CLAIM-125",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-125",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    },
+    {
+      "from": "CC-SRC-039",
+      "to": "EV-FF-003",
+      "type": "provides_evidence"
+    },
+    {
+      "from": "EV-FF-003",
+      "to": "CC-CLAIM-126",
+      "type": "supports_claim"
+    },
+    {
+      "from": "CC-CLAIM-126",
+      "to": "PP-FF-01",
+      "type": "evaluated_in_packet"
+    }
+  ],
+  "counts": {
+    "nodes": 3,
+    "relationships": 2,
+    "corpus_edges": 9
+  },
+  "note": "Foundation export only. No AI inference. No automatic edges."
+}

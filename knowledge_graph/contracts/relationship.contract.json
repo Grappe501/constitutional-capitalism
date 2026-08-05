@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeRelationship",
+  "type": "object",
+  "required": [
+    "relationship_id",
+    "from_node",
+    "to_node",
+    "relationship_type",
+    "direction",
+    "confidence",
+    "evidence",
+    "notes",
+    "created",
+    "review_status"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string"
+    },
+    "from_node": {
+      "type": "string"
+    },
+    "to_node": {
+      "type": "string"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "review_status": {
+      "type": "string"
+    }
+  }
+}
