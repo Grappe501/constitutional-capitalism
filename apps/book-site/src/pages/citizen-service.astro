@@ -13,21 +13,37 @@ const honors = cps.civic_honor?.examples || [];
 const testQs = cps.citizen_public_service_test?.questions || [];
 const branches = cps.website_branches || [];
 const incentives = cps.office_not_career_plan?.incentive || [];
+const reforms = cps.citizen_service_reforms || [];
+const cycle = cps.citizen_service_cycle?.steps || [];
+const accountStandards = cps.accountability_balance?.citizen_officials_must_meet || [];
 ---
 
 <BaseLayout
-  title="Citizen Public Service"
+  title="Citizen-Service Government"
   path="/citizen-service/"
-  description="Public office confers responsibility, not privilege. Officials remain citizens first under the same systems as the people."
+  description="Serve without sacrifice. Govern without privilege. Return without penalty. Public office for ordinary working people — not a permanent political class."
 >
   <article class="prose">
     <h1>{cps.domain_title}</h1>
     <p class="status-note">
-      Major complementary Public Service Doctrine — architecture before statutes. Complements{" "}
-      <a href="/public-service/">Public Service and the 21st-Century State</a>. No invented statistics
-      about current office benefit packages. Legal drafting remains 0%.
+      Major Public Service Doctrine plus Citizen-Service Government institutional design —
+      architecture before statutes. Complements{" "}
+      <a href="/public-service/">Public Service and the 21st-Century State</a>. No invented
+      program costs or leave formulas. Legal drafting remains 0%.
     </p>
     <p class="lede">{cps.central_theme}</p>
+
+    <h2>Operational principle</h2>
+    <blockquote>
+      <p>{cps.operational_principle.text}</p>
+    </blockquote>
+
+    <h2>Accessibility doctrine</h2>
+    <blockquote>
+      <p>{cps.accessibility_doctrine.text}</p>
+    </blockquote>
+    <p>{cps.accessibility_doctrine.supporting}</p>
+    <p>{cps.accessibility_doctrine.guiding_doctrine}</p>
 
     <h2>Governing principle</h2>
     <blockquote>
@@ -39,6 +55,28 @@ const incentives = cps.office_not_career_plan?.incentive || [];
       <p>{cps.constitutional_principle.text}</p>
     </blockquote>
     <p>{cps.constitutional_principle.alignment_theme}</p>
+
+    <h2>Citizen-service cycle</h2>
+    <ol>
+      {cycle.map((step: string) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+
+    <h2>Leadership vs administration</h2>
+    <p>
+      <strong>Not the objective:</strong> {cps.leadership_vs_administration.objective_not}
+    </p>
+    <ul>
+      <li>
+        <strong>Temporary democratic leadership:</strong>{" "}
+        {cps.leadership_vs_administration.separate.temporary_democratic_leadership}
+      </li>
+      <li>
+        <strong>Professional public administration:</strong>{" "}
+        {cps.leadership_vs_administration.separate.professional_public_administration}
+      </li>
+    </ul>
 
     <h2>Critical distinction</h2>
     <p>
@@ -57,6 +95,32 @@ const incentives = cps.office_not_career_plan?.incentive || [];
     <ul>
       {preserves.map((item: string) => (
         <li>{item}</li>
+      ))}
+    </ul>
+
+    <h2>Eighteen reforms</h2>
+    <ol>
+      {reforms.map((r: any) => (
+        <li>
+          <strong>
+            {r.id}. {r.title}
+          </strong>{" "}
+          — {r.summary}
+        </li>
+      ))}
+    </ol>
+
+    <h2>Citizen Public Service Commission</h2>
+    <p>{cps.citizen_public_service_commission.summary}</p>
+
+    <h2>Accountability balance</h2>
+    <blockquote>
+      <p>{cps.accountability_balance.rule}</p>
+    </blockquote>
+    <p>{cps.accountability_balance.status}</p>
+    <ul>
+      {accountStandards.map((s: string) => (
+        <li>{s}</li>
       ))}
     </ul>
 

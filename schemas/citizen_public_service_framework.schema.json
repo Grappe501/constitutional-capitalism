@@ -8,6 +8,8 @@
     "domain_title",
     "governing_principle",
     "constitutional_principle",
+    "accessibility_doctrine",
+    "operational_principle",
     "earned_vs_privilege_distinction",
     "equal_systems",
     "citizen_legislature",
@@ -15,6 +17,9 @@
     "cooling_off",
     "transparency",
     "civic_honor",
+    "citizen_service_reforms",
+    "citizen_public_service_commission",
+    "accountability_balance",
     "citizen_public_service_test",
     "website_branches"
   ],
@@ -23,6 +28,8 @@
     "domain_title": { "type": "string" },
     "governing_principle": { "type": "object", "required": ["text"] },
     "constitutional_principle": { "type": "object", "required": ["text"] },
+    "accessibility_doctrine": { "type": "object", "required": ["text", "guiding_doctrine"] },
+    "operational_principle": { "type": "object", "required": ["text"] },
     "earned_vs_privilege_distinction": { "type": "object", "required": ["framing", "same_rules"] },
     "equal_systems": { "type": "object", "required": ["rule", "systems"] },
     "citizen_legislature": { "type": "object" },
@@ -30,6 +37,9 @@
     "cooling_off": { "type": "object" },
     "transparency": { "type": "object" },
     "civic_honor": { "type": "object" },
+    "citizen_service_reforms": { "type": "array", "minItems": 10 },
+    "citizen_public_service_commission": { "type": "object", "required": ["summary"] },
+    "accountability_balance": { "type": "object", "required": ["rule"] },
     "citizen_public_service_test": { "type": "object", "required": ["questions"] },
     "website_branches": { "type": "array", "minItems": 6 }
   }

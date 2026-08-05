@@ -3,19 +3,22 @@ import BoardLayout from "../layouts/BoardLayout.astro";
 import { developingDoctrine } from "../lib/data";
 import cps from "../../../../data/project/citizen_public_service_framework.json";
 
-const doctrineIds = Array.from({ length: 12 }, (_, i) => `CC-DEV-${142 + i}`);
+const doctrineIds = Array.from({ length: 34 }, (_, i) => `CC-DEV-${142 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
   doctrineIds.includes(d.doctrine_id)
 );
 const testQs = cps.citizen_public_service_test?.questions || [];
 const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
+const reforms = cps.citizen_service_reforms || [];
+const principles = (cps.principle_ids || []).join(", ");
+const decisions = (cps.decision_ids || []).join(", ");
 ---
 
 <BoardLayout title="Citizen Service" path="/citizen-service/">
   <h1 class="page-title">{cps.domain_title}</h1>
   <p class="page-lede">
     Framework: <code>data/project/citizen_public_service_framework.json</code> v{cps.version}.
-    Principle: <code>{cps.principle_id}</code>. Decision: <code>CC-DEC-082</code>. Complements
+    Principles: <code>{principles}</code>. Decisions: <code>{decisions}</code>. Complements
     modernization public-service spine — architecture only.
   </p>
 
@@ -25,14 +28,22 @@ const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
       <div class="stat__label">Developing doctrine items</div>
     </div>
     <div class="stat">
-      <div class="stat__value">{rejects.length}</div>
-      <div class="stat__label">Rejected office privileges</div>
+      <div class="stat__value">{reforms.length}</div>
+      <div class="stat__label">Citizen-service reforms</div>
     </div>
     <div class="stat">
       <div class="stat__value">{(cps.website_branches || []).length}</div>
       <div class="stat__label">Website branches</div>
     </div>
   </div>
+
+  <section class="panel">
+    <h2>Operational principle</h2>
+    <blockquote>
+      <p>{cps.operational_principle.text}</p>
+    </blockquote>
+    <p>{cps.accessibility_doctrine.text}</p>
+  </section>
 
   <section class="panel">
     <h2>Central theme</h2>
@@ -46,6 +57,31 @@ const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
   </section>
 
   <section class="panel">
+    <h2>Leadership vs administration</h2>
+    <ul>
+      <li>
+        <strong>Temporary democratic leadership:</strong>{" "}
+        {cps.leadership_vs_administration.separate.temporary_democratic_leadership}
+      </li>
+      <li>
+        <strong>Professional public administration:</strong>{" "}
+        {cps.leadership_vs_administration.separate.professional_public_administration}
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Eighteen reforms</h2>
+    <ol>
+      {reforms.map((r: any) => (
+        <li>
+          <code>{r.id}</code> — {r.title}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
     <h2>Critical distinction</h2>
     <p>{cps.earned_vs_privilege_distinction.framing}</p>
     <p>
@@ -56,6 +92,11 @@ const rejects = cps.earned_vs_privilege_distinction?.rejects || [];
         <li>{r}</li>
       ))}
     </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Citizen Public Service Commission</h2>
+    <p>{cps.citizen_public_service_commission.summary}</p>
   </section>
 
   <section class="panel">
