@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/systems_intelligence_engine_framework.schema.json",
+  "title": "SystemsIntelligenceEngineFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "decision_id",
+    "status",
+    "title",
+    "phase_placement",
+    "core_capability",
+    "authority_chain",
+    "capabilities",
+    "activation_gates",
+    "implementation_status",
+    "reddirt_connection"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "decision_id": { "type": "string" },
+    "status": { "type": "string" },
+    "title": { "type": "string" },
+    "phase_placement": { "type": "object" },
+    "core_capability": { "type": "object", "required": ["text"] },
+    "authority_chain": { "type": "object", "required": ["text"] },
+    "capabilities": { "type": "array", "minItems": 10 },
+    "activation_gates": { "type": "object", "required": ["all_required"] },
+    "implementation_status": {
+      "type": "object",
+      "required": ["build_now", "publishable"]
+    },
+    "reddirt_connection": { "type": "object", "required": ["rule"] }
+  }
+}

@@ -3,7 +3,10 @@
   "last_updated": "2026-08-05",
   "status": "architecture_only",
   "decision_id": "CC-DEC-078",
-  "related_decision_ids": ["CC-DEC-076", "CC-DEC-077"],
+  "related_decision_ids": [
+    "CC-DEC-076",
+    "CC-DEC-077"
+  ],
   "title": "RedDirt Civic Intelligence Platform — Shared Civic-Data Spine",
   "canonical_engine_workspace": "H:\\SOSWebsite\\RedDirt",
   "first_external_proof_consumer": "Constitutional Capitalism (H:\\Constitutional-Capitalism)",
@@ -88,15 +91,25 @@
       "projections": [
         {
           "application": "Constitutional Capitalism",
-          "receives": ["evidence", "baseline metrics", "provenance", "confidence and disagreements"]
+          "receives": [
+            "evidence",
+            "baseline metrics",
+            "provenance",
+            "confidence and disagreements"
+          ]
         },
         {
           "application": "County Workbench",
-          "receives": ["county profiles", "comparisons"]
+          "receives": [
+            "county profiles",
+            "comparisons"
+          ]
         },
         {
           "application": "Arkansas Civic University",
-          "receives": ["instructional datasets"]
+          "receives": [
+            "instructional datasets"
+          ]
         },
         {
           "application": "Campaign systems",
@@ -147,5 +160,10 @@
     "Isolated schemas, roles, and projections — never one unrestricted data pool",
     "Constitutional Capitalism never implements agency connectors",
     "Campaign private data never mixes into public_statistics exports"
-  ]
+  ],
+  "systems_intelligence_engine": {
+    "decision_id": "CC-DEC-097",
+    "role": "Future Phase 9 consumer of validated public-statistics layers and multi-source confidence — never campaign schemas",
+    "framework_file": "data/project/systems_intelligence_engine_framework.json"
+  }
 }

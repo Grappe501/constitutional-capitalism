@@ -1,0 +1,114 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import f from "../../../../data/project/systems_intelligence_engine_framework.json";
+
+const caps = f.capabilities || [];
+const gates = f.activation_gates?.all_required || [];
+const order = f.phase_placement?.build_order || [];
+const never = f.authority_chain?.ai_never || [];
+const dims = f.system_health_dashboard?.dimensions || [];
+---
+
+<BoardLayout title="Systems Intelligence" path="/systems-intelligence/">
+  <h1 class="page-title">{f.title}</h1>
+  <p class="page-lede">
+    Decision: <code>{f.decision_id}</code>. Status: <code>{f.status}</code>.{" "}
+    <strong>True Phase 9 capstone. Not built.</strong> Phase 8 = Collaborative Review.
+    Modeling % is not raised by this architecture.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">9</div>
+      <div class="stat__label">True capstone phase</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{caps.length}</div>
+      <div class="stat__label">Capability modules</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{f.implementation_status.build_now ? "Yes" : "No"}</div>
+      <div class="stat__label">Build now?</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Final product</h2>
+    <blockquote>
+      <p>{f.final_product_statement.text}</p>
+    </blockquote>
+    <p>
+      <strong>Core capability:</strong> {f.core_capability.text}
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Corrected build order</h2>
+    <ol>
+      {order.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Authority chain</h2>
+    <blockquote>
+      <p>{f.authority_chain.text}</p>
+    </blockquote>
+    <p>AI never:</p>
+    <ul>
+      {never.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>RedDirt connection</h2>
+    <p>{f.reddirt_connection.rule}</p>
+    <p class="muted">
+      Spine: <code>{f.reddirt_connection.spine_file}</code> · Workspace:{" "}
+      <code>{f.reddirt_connection.canonical_workspace}</code>
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Capabilities</h2>
+    <ol>
+      {caps.map((c: any) => (
+        <li>
+          <strong>{c.title}</strong> — {c.summary}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>System health dimensions</h2>
+    <p class="muted">{f.system_health_dashboard.rule}</p>
+    <ul>
+      {dims.map((d: string) => (
+        <li>{d}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Activation gates</h2>
+    <ul>
+      {gates.map((g: string) => (
+        <li>{g}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Related</h2>
+    <p>
+      <a href="/collaborative-review/">Collaborative Review</a> (Phase 8),{" "}
+      <a href="/proof-incubator/">Proof Incubator</a>,{" "}
+      <a href="/phase-2-gate/">Phase 2 Gate</a>.
+    </p>
+  </section>
+</BoardLayout>

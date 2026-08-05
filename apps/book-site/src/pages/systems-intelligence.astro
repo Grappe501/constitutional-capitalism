@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import f from "../../../../data/project/systems_intelligence_engine_framework.json";
+
+const caps = f.capabilities || [];
+const order = f.phase_placement?.build_order || [];
+---
+
+<BaseLayout
+  title="Systems Intelligence Engine"
+  path="/systems-intelligence/"
+  description="Deferred true capstone: whole-system impact, simulation, and learning under human authority."
+>
+  <article class="prose">
+    <h1>{f.title}</h1>
+    <p class="muted">
+      Architecture Candidate — true Phase 9 capstone. Not built. Not a chatbot. Collaborative
+      Review is Phase 8. Simulations will be scenario estimates, never forecasts. Modeling
+      progress is not raised by this page.
+    </p>
+
+    <h2>Final product</h2>
+    <blockquote>
+      <p>{f.final_product_statement.text}</p>
+    </blockquote>
+
+    <h2>Core capability</h2>
+    <blockquote>
+      <p>{f.core_capability.text}</p>
+    </blockquote>
+
+    <h2>Build order</h2>
+    <ol>
+      {order.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+
+    <h2>Authority</h2>
+    <p>{f.authority_chain.text}</p>
+
+    <h2>Capability modules</h2>
+    <ol>
+      {caps.map((c: any) => (
+        <li>
+          <strong>{c.title}</strong> — {c.summary}
+        </li>
+      ))}
+    </ol>
+
+    <h2>RedDirt</h2>
+    <p>{f.reddirt_connection.rule}</p>
+
+    <p class="muted">
+      See also <a href="/collaborative-review/">Collaborative Constitutional Review</a> and{" "}
+      <a href="/foundational-axioms/">Foundational Axioms</a>.
+    </p>
+  </article>
+</BaseLayout>

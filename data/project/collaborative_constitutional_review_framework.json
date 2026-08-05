@@ -2,17 +2,25 @@
   "version": "0.1.0",
   "last_updated": "2026-08-05",
   "decision_id": "CC-DEC-096",
-  "related_decision_ids": ["CC-DEC-093", "CC-DEC-095", "CC-DEC-075", "CC-DEC-064"],
-  "status": "architecture_candidate_deferred_capstone",
+  "related_decision_ids": [
+    "CC-DEC-093",
+    "CC-DEC-095",
+    "CC-DEC-075",
+    "CC-DEC-064",
+    "CC-DEC-097"
+  ],
+  "status": "architecture_candidate_deferred_penultimate",
   "title": "Collaborative Constitutional Review",
-  "subtitle": "The last major feature — structured scholarly review, not crowdsourcing",
+  "subtitle": "Penultimate layer — final human-governance scholarly review (Phase 8); true capstone is Systems Intelligence Engine (Phase 9)",
   "phase_placement": {
-    "chronological_phase_id": "phase-9",
-    "chronological_phase_number": 9,
-    "role": "capstone_last_major_feature",
-    "steve_intent_note": "Described as the final collaborative phase after the document is built. In the current 0–9 ladder, Full Manuscript remains Phase 6; Collaborative Constitutional Review is Phase 9 — activation only after architecture, evidence, legal review, modeling, manuscript, and education layers are mature.",
+    "chronological_phase_id": "phase-8",
+    "chronological_phase_number": 8,
+    "role": "penultimate_human_governance_layer",
+    "steve_intent_note": "Corrected order (CC-DEC-097): Collaborative Review is Phase 8; Systems Intelligence Engine is Phase 9 true capstone. Manuscript remains Phase 6; education/publication packages are Phase 7.",
     "everything_before_builds_the_document": true,
-    "do_not_activate_early": true
+    "do_not_activate_early": true,
+    "true_capstone_phase_id": "phase-9",
+    "true_capstone_decision_id": "CC-DEC-097"
   },
   "principle": {
     "text": "People should not merely comment. They should help improve the document.",
@@ -22,8 +30,8 @@
     }
   },
   "why_last": {
-    "text": "Only after architecture, evidence, legal review, modeling, manuscript, and education layers are mature should the public be invited into the drafting process. Otherwise collaborators comment on ideas that have not passed project proof standards.",
-    "embodiment": "Prosperity grows through participation — the manuscript should embody transparency, accountability, distributed knowledge, and shared stewardship without allowing anyone to rewrite it casually."
+    "text": "Only after architecture, evidence, legal review, modeling, manuscript, and education layers are mature should the public be invited into drafting. Collaboration is the final human-governance layer before the intelligence capstone.",
+    "embodiment": "Prosperity grows through participation — scholarly review strengthens the document; the Systems Intelligence Engine then lets people test assumptions across the whole system under human authority."
   },
   "is_not": [
     "Crowdsourcing",
@@ -44,8 +52,17 @@
     "title": "Anonymous — but Accountable",
     "registration": "Establishes identity for moderation and internal reputation",
     "public_display": "Verified Contributor #N (not real names)",
-    "reduces": ["ego", "status contests", "politics", "personal attacks"],
-    "preserves": ["moderation", "accountability", "quality signals"]
+    "reduces": [
+      "ego",
+      "status contests",
+      "politics",
+      "personal attacks"
+    ],
+    "preserves": [
+      "moderation",
+      "accountability",
+      "quality signals"
+    ]
   },
   "manuscript_tree": {
     "title": "Every Level Can Be Commented On",
@@ -64,32 +81,64 @@
   "comment_types": [
     {
       "id": "evidence",
-      "labels": ["Needs citation", "Weak source", "Better source", "Contradictory evidence"]
+      "labels": [
+        "Needs citation",
+        "Weak source",
+        "Better source",
+        "Contradictory evidence"
+      ]
     },
     {
       "id": "logic",
-      "labels": ["Doesn't follow", "Circular reasoning", "Needs clarification", "Missing assumption"]
+      "labels": [
+        "Doesn't follow",
+        "Circular reasoning",
+        "Needs clarification",
+        "Missing assumption"
+      ]
     },
     {
       "id": "constitutional",
-      "labels": ["Potential legal conflict", "Court precedent", "Federalism issue", "Delegation issue"]
+      "labels": [
+        "Potential legal conflict",
+        "Court precedent",
+        "Federalism issue",
+        "Delegation issue"
+      ]
     },
     {
       "id": "economic",
-      "labels": ["Needs modeling", "Questionable incentive", "Unintended consequence", "Market distortion"]
+      "labels": [
+        "Needs modeling",
+        "Questionable incentive",
+        "Unintended consequence",
+        "Market distortion"
+      ]
     },
     {
       "id": "editorial",
-      "labels": ["Grammar", "Style", "Organization", "Readability"]
+      "labels": [
+        "Grammar",
+        "Style",
+        "Organization",
+        "Readability"
+      ]
     },
     {
       "id": "question",
-      "labels": ["I don't understand..."],
+      "labels": [
+        "I don't understand..."
+      ],
       "note": "High volume of confusion on one paragraph means the paragraph is the problem."
     },
     {
       "id": "proposal",
-      "labels": ["Suggested rewrite", "Alternative mechanism", "New example", "Additional research"]
+      "labels": [
+        "Suggested rewrite",
+        "Alternative mechanism",
+        "New example",
+        "Additional research"
+      ]
     }
   ],
   "margin_system": {
@@ -99,11 +148,22 @@
   "version_awareness": {
     "title": "Version Awareness",
     "rule": "Every comment belongs to a manuscript version. When text changes, prior comments collapse automatically.",
-    "states": ["Archived", "Resolved", "Needs Review", "Superseded"]
+    "states": [
+      "Archived",
+      "Resolved",
+      "Needs Review",
+      "Superseded"
+    ]
   },
   "quality_signals": {
     "title": "Upvoting Quality — not social likes",
-    "signals": ["Helpful", "Evidence Added", "Needs Response", "Resolved", "Integrated"]
+    "signals": [
+      "Helpful",
+      "Evidence Added",
+      "Needs Response",
+      "Resolved",
+      "Integrated"
+    ]
   },
   "ai_assistant": {
     "title": "Discussion Summaries",
@@ -144,7 +204,10 @@
       "Sources count",
       "Outstanding Questions"
     ],
-    "links_to": ["proof_burden_registry", "claim_ledger"]
+    "links_to": [
+      "proof_burden_registry",
+      "claim_ledger"
+    ]
   },
   "decision_ledger": {
     "title": "Nothing Disappears",

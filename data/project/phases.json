@@ -123,11 +123,11 @@
         "voice review",
         "duplication reduction"
       ],
-      "note": "Builds the document. Collaborative Constitutional Review (Phase 9) comes only after manuscript, education, and proof maturity."
+      "note": "Builds the document. Phase 8 Collaborative Review and Phase 9 Systems Intelligence Engine come only after manuscript/education/proof maturity."
     },
     {
       "id": "phase-7",
-      "title": "Public Education Edition",
+      "title": "Public Education and Publication Packages",
       "number": 7,
       "status": "planned",
       "deliverables": [
@@ -136,52 +136,76 @@
         "visual explanations",
         "FAQs",
         "glossary",
-        "downloadable materials"
-      ]
-    },
-    {
-      "id": "phase-8",
-      "title": "Publication",
-      "number": 8,
-      "status": "planned",
-      "deliverables": [
+        "downloadable materials",
         "web edition",
         "PDF",
         "EPUB",
         "print-ready edition",
         "accessibility review",
         "licensing",
-        "distribution"
-      ]
+        "distribution preparation"
+      ],
+      "note": "Combines education and publication packages so Phase 8/9 can be collaboration then intelligence capstone."
     },
     {
-      "id": "phase-9",
-      "title": "Collaborative Constitutional Review",
-      "number": 9,
-      "status": "planned_deferred_capstone",
+      "id": "phase-8",
+      "title": "Collaborative Review and Public Stewardship",
+      "number": 8,
+      "status": "planned_deferred_penultimate",
       "deliverables": [
-        "anonymous-but-accountable registration",
-        "manuscript-tree margin review (book→word)",
+        "registered email verification",
+        "anonymous public identity",
+        "line-level / manuscript-tree margin review",
         "typed review artifacts with lifecycles",
         "version-aware comment attachment",
+        "discussion and moderation",
         "quality signals (not social likes)",
-        "AI discussion summaries",
-        "internal contributor reputation ladder",
-        "claim-status side panels",
-        "decision ledger / legislative history",
-        "scholarly multi-lens views",
-        "moderation and platform protection"
+        "decision history / ledger",
+        "platform protection"
       ],
       "decision_id": "CC-DEC-096",
       "framework_file": "data/project/collaborative_constitutional_review_framework.json",
-      "meaning": "Last major feature. Structured scholarly review after the document is mature — not crowdsourcing, not Phase 2 work.",
+      "meaning": "Penultimate layer — final human-governance / scholarly review layer. Not crowdsourcing. Not the true AI capstone.",
       "activation_requires": [
         "mature proof / legal / modeling layers",
         "mature manuscript",
-        "Public Education Edition",
+        "Public Education and Publication Packages",
         "protected review platform"
       ],
-      "note": "Replaces vague 'public feedback' as the capstone design. Full Manuscript remains Phase 6. Do not activate early."
+      "note": "Moved from former Phase 9 placement (CC-DEC-097 corrected order). True capstone is Phase 9 Systems Intelligence Engine."
+    },
+    {
+      "id": "phase-9",
+      "title": "AI Intelligence, Simulation, and Learning",
+      "number": 9,
+      "status": "planned_deferred_true_capstone",
+      "deliverables": [
+        "knowledge graph of axioms/principles/claims/policies/outcomes",
+        "AI research analyst over project evidence",
+        "simulation engine with scenario-estimate labeling",
+        "policy tradeoff laboratory",
+        "learning mode",
+        "community digital twins",
+        "AI-assisted collaborative synthesis",
+        "red team mode",
+        "constitutional/legal analysis assist (not legal advice)",
+        "personalized learning paths",
+        "evidence-grounded answer contracts",
+        "AI governance controls and logging",
+        "whole-system impact / System Impact Reviews",
+        "system health dashboard (multi-dimension, no hidden tradeoffs)"
+      ],
+      "decision_id": "CC-DEC-097",
+      "framework_file": "data/project/systems_intelligence_engine_framework.json",
+      "meaning": "True capstone: Constitutional Capitalism Systems Intelligence Engine — whole-system impact, RedDirt-connected simulation and learning. AI analyzes; humans decide.",
+      "activation_requires": [
+        "Phase 8 review platform protected (or staged isolation)",
+        "validated RedDirt→CC statistics path for twin baselines",
+        "populated knowledge graph / variable contracts",
+        "real modeling for simulated claims",
+        "AI governance gates"
+      ],
+      "note": "Not a chatbot. Modeling remains 0% until real models exist. Architecture capture does not inflate progress."
     }
   ]
 }
