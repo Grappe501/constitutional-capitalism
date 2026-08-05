@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/local_ownership_framework.schema.json",
+  "title": "LocalOwnershipFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "objective",
+    "foundational_principle",
+    "compact_language",
+    "community_enterprise_classification",
+    "local_prosperity_score",
+    "design_pillars",
+    "local_ownership_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "domain_title": { "type": "string" },
+    "objective": { "type": "object", "required": ["text"] },
+    "foundational_principle": { "type": "object", "required": ["text"] },
+    "compact_language": { "type": "object", "required": ["text"] },
+    "community_enterprise_classification": {
+      "type": "object",
+      "required": ["categories"],
+      "properties": {
+        "categories": { "type": "array", "minItems": 5 }
+      }
+    },
+    "local_prosperity_score": {
+      "type": "object",
+      "required": ["factors"],
+      "properties": {
+        "factors": { "type": "array", "minItems": 8 }
+      }
+    },
+    "design_pillars": {
+      "type": "object",
+      "required": ["pillars"],
+      "properties": {
+        "pillars": { "type": "array", "minItems": 10 }
+      }
+    },
+    "local_ownership_test": {
+      "type": "object",
+      "required": ["questions"]
+    },
+    "website_branches": { "type": "array", "minItems": 8 }
+  }
+}

@@ -62,6 +62,7 @@ const validations = [
   ['data/project/family_farm_prosperity_framework.json','schemas/family_farm_prosperity_framework.schema.json'],
   ['data/project/community_prosperity_framework.json','schemas/community_prosperity_framework.schema.json'],
   ['data/project/community_resilience_framework.json','schemas/community_resilience_framework.schema.json'],
+  ['data/project/local_ownership_framework.json','schemas/local_ownership_framework.schema.json'],
   ['data/project/systems_map.json','schemas/systems_map.schema.json'],
   ['data/project/human_flourishing_index.json','schemas/human_flourishing_index.schema.json'],
   ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json'],

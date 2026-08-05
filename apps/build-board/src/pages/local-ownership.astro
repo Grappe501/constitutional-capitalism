@@ -1,0 +1,96 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import { developingDoctrine } from "../lib/data";
+import f from "../../../../data/project/local_ownership_framework.json";
+
+const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${329 + i}`);
+const items = (developingDoctrine.items || []).filter((d: any) =>
+  doctrineIds.includes(d.doctrine_id)
+);
+const testQs = f.local_ownership_test?.questions || [];
+const baselines = f.sourced_context_baselines?.items || [];
+const pillars = f.design_pillars?.pillars || [];
+const categories = f.community_enterprise_classification?.categories || [];
+---
+
+<BoardLayout title="Local Ownership" path="/local-ownership/">
+  <h1 class="page-title">{f.domain_title}</h1>
+  <p class="page-lede">
+    Framework: <code>data/project/local_ownership_framework.json</code> v{f.version}.
+    Principle: <code>{f.principle_id}</code>. Decision: <code>CC-DEC-092</code>. Rewards
+    measured local contribution — not structure alone. Score weights require modeling; legal 0%.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__value">{items.length}</div>
+      <div class="stat__label">Developing doctrine items</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{categories.length}</div>
+      <div class="stat__label">Enterprise categories</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">{baselines.length}</div>
+      <div class="stat__label">Sourced baselines</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Compact</h2>
+    <blockquote>
+      <p>{f.compact_language.text}</p>
+    </blockquote>
+  </section>
+
+  <section class="panel">
+    <h2>Sourced context baselines</h2>
+    <ul>
+      {baselines.map((b: any) => (
+        <li>
+          <code>{b.id}</code> — {b.text}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Ten design pillars</h2>
+    <ol>
+      {pillars.map((p: any) => (
+        <li>
+          <strong>{p.title}</strong> — {p.summary}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Local ownership test</h2>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>Developing doctrine ({items.length})</h2>
+    <ul>
+      {items.map((d: any) => (
+        <li>
+          <code>{d.doctrine_id}</code> — {d.statement.slice(0, 160)}…
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Related</h2>
+    <p>
+      Related: <a href="/community-prosperity/">Community Prosperity</a>,{" "}
+      <a href="/family-farm-prosperity/">Family Farms</a>,{" "}
+      <a href="/civic-wealth/">Civic Wealth</a>, <a href="/phase-2-gate/">Phase 2 Gate</a>.
+    </p>
+  </section>
+</BoardLayout>

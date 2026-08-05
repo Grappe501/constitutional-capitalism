@@ -1,0 +1,180 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import f from "../../../../data/project/local_ownership_framework.json";
+
+const categories = f.community_enterprise_classification?.categories || [];
+const scoreFactors = f.local_prosperity_score?.factors || [];
+const capital = f.capital_access_advantage?.offerings || [];
+const taxExamples = f.tax_incentives?.examples || [];
+const succession = f.succession_protection?.supports || [];
+const retirementAssets = f.retirement_connection?.example_assets || [];
+const coopServices = f.cooperative_development_initiative?.services || [];
+const multipliers = f.local_economic_multipliers?.metrics || [];
+const cycle = f.virtuous_cycle?.flow || [];
+const pillars = f.design_pillars?.pillars || [];
+const baselines = f.sourced_context_baselines?.items || [];
+const testQs = f.local_ownership_test?.questions || [];
+const branches = f.website_branches || [];
+const likely = f.foundational_principle?.likely_effects_when_locally_owned || [];
+---
+
+<BaseLayout
+  title="Local Ownership"
+  path="/local-ownership/"
+  description="Reward enterprises that create lasting local wealth — without punishing growth or outside investment."
+>
+  <article class="prose">
+    <h1>{f.domain_title}</h1>
+
+    <h2>Objective</h2>
+    <p>{f.objective.text}</p>
+
+    <h2>Foundational principle</h2>
+    <blockquote>
+      <p>{f.foundational_principle.text}</p>
+    </blockquote>
+    <p>{f.foundational_principle.design_rule}</p>
+    <p class="muted">{f.foundational_principle.evidence_note}</p>
+    <ul>
+      {likely.map((e: string) => (
+        <li>{e}</li>
+      ))}
+    </ul>
+
+    <h2>Compact</h2>
+    <blockquote>
+      <p>{f.compact_language.text}</p>
+    </blockquote>
+    <p>{f.market_alignment.text}</p>
+
+    <h2>Sourced context baselines</h2>
+    <ul>
+      {baselines.map((b: any) => (
+        <li>
+          <code>{b.id}</code> — {b.text}
+        </li>
+      ))}
+    </ul>
+
+    <h2>{f.community_enterprise_classification.title}</h2>
+    <p>{f.community_enterprise_classification.summary}</p>
+    {
+      categories.map((c: any) => (
+        <section style="margin-bottom:1rem;">
+          <h3>{c.title}</h3>
+          <ul>
+            {c.criteria.map((x: string) => (
+              <li>{x}</li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <h2>{f.local_prosperity_score.title}</h2>
+    <p>{f.local_prosperity_score.summary}</p>
+    <ul>
+      {scoreFactors.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.capital_access_advantage.title}</h2>
+    <p>{f.capital_access_advantage.summary}</p>
+    <ul>
+      {capital.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.tax_incentives.title}</h2>
+    <p>{f.tax_incentives.summary}</p>
+    <ul>
+      {taxExamples.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.succession_protection.title}</h2>
+    <p>{f.succession_protection.summary}</p>
+    <ul>
+      {succession.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.community_investment_priority.title}</h2>
+    <p>{f.community_investment_priority.summary}</p>
+
+    <h2>{f.retirement_connection.title}</h2>
+    <p>{f.retirement_connection.summary}</p>
+    <ul>
+      {retirementAssets.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.community_reinvestment_requirement.title}</h2>
+    <p>{f.community_reinvestment_requirement.summary}</p>
+
+    <h2>{f.cooperative_development_initiative.title}</h2>
+    <p>{f.cooperative_development_initiative.summary}</p>
+    <ul>
+      {coopServices.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.local_economic_multipliers.title}</h2>
+    <p>{f.local_economic_multipliers.summary}</p>
+    <ul>
+      {multipliers.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ul>
+
+    <h2>{f.virtuous_cycle.title}</h2>
+    <ol>
+      {cycle.map((x: string) => (
+        <li>{x}</li>
+      ))}
+    </ol>
+
+    <h2>Ten design pillars</h2>
+    {
+      pillars.map((p: any) => (
+        <section style="margin-bottom:1rem;">
+          <h3>
+            {p.id}. {p.title}
+          </h3>
+          <p>{p.summary}</p>
+        </section>
+      ))
+    }
+
+    <h2>Local ownership test</h2>
+    <p>{f.local_ownership_test.purpose}</p>
+    <ol>
+      {testQs.map((q: string) => (
+        <li>{q}</li>
+      ))}
+    </ol>
+
+    <h2>Website branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p class="muted">
+      See also <a href="/community-prosperity/">Community Prosperity</a>,{" "}
+      <a href="/civic-wealth/">Civic Wealth</a>,{" "}
+      <a href="/family-farm-prosperity/">Family Farm Prosperity</a>,{" "}
+      <a href="/energy-sovereignty/">Energy Sovereignty</a>, and{" "}
+      <a href="/community-resilience/">Community Resilience</a>.
+    </p>
+  </article>
+</BaseLayout>

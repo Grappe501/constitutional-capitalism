@@ -720,7 +720,8 @@
       "family_spine",
       "equal_standing_spine",
       "community_prosperity_spine",
-      "community_resilience_spine"
+      "community_resilience_spine",
+      "local_ownership_spine"
     ],
     "note": "Architecture only — no invented Civic Investment Account balances, loan rates, or land quantities; legal/modeling remain 0%."
   },
@@ -923,7 +924,8 @@
       "prosperous_aging_spine",
       "civic_wealth_spine",
       "assistance_spine",
-      "human_capital_doctrine"
+      "human_capital_doctrine",
+      "local_ownership_spine"
     ],
     "note": "Architecture only — institutional purchase floors and fund formulas require modeling; USDA ERS/FNS baselines sourced; legal 0%. Complements Community Food Security. Architecture ≠ evidence that Prosperity Funds or Food Utilities already exist."
   },
@@ -972,7 +974,8 @@
       "human_capital_doctrine",
       "community_operating_system",
       "assistance_spine",
-      "community_resilience_spine"
+      "community_resilience_spine",
+      "local_ownership_spine"
     ],
     "note": "Architecture only — allocation caps and unit instruments require modeling; ICI/MSRB/GAO baselines sourced; legal 0%. Elaborates Prosperous Aging Layer 3. Architecture ≠ evidence that Community Investment Units already exist."
   },
@@ -1022,5 +1025,52 @@
       "essential_systems_doctrine"
     ],
     "note": "Architecture only — Safety Dividend and reserve formulas require modeling; ISO/NFPA baselines sourced; legal 0%. Architecture ≠ evidence that reserves or dividends already exist."
+  },
+  "local_ownership_spine": {
+    "decision_id": "CC-DEC-092",
+    "status": "proposed",
+    "role": "Major dedicated pillar: reward measurable local prosperity contributions of rooted, family, employee, and cooperative enterprises — without punishing large firms or banning outside investment.",
+    "governing_principle": "Communities prosper when ownership is rooted where value is created; incentives reward lasting local wealth and civic strength across generations.",
+    "central_promise": "Expand opportunities for family, employee, cooperative, and locally controlled enterprises through capital, succession, cooperative development, and outcome-based recognition.",
+    "principle_id": "CC-PRIN-47",
+    "website_domain": "CC-WEB-LOCAL-OWNERSHIP",
+    "framework_file": "data/project/local_ownership_framework.json",
+    "doctrine_ids": [
+      "CC-DEV-329",
+      "CC-DEV-330",
+      "CC-DEV-331",
+      "CC-DEV-332",
+      "CC-DEV-333",
+      "CC-DEV-334",
+      "CC-DEV-335",
+      "CC-DEV-336",
+      "CC-DEV-337",
+      "CC-DEV-338",
+      "CC-DEV-339",
+      "CC-DEV-340",
+      "CC-DEV-341",
+      "CC-DEV-342",
+      "CC-DEV-343",
+      "CC-DEV-344",
+      "CC-DEV-345",
+      "CC-DEV-346",
+      "CC-DEV-347",
+      "CC-DEV-348"
+    ],
+    "sourced_claim_ids": [
+      "CC-CLAIM-131",
+      "CC-CLAIM-132"
+    ],
+    "links_to": [
+      "community_prosperity_spine",
+      "civic_wealth_spine",
+      "family_farm_prosperity_spine",
+      "energy_sovereignty_spine",
+      "assistance_spine",
+      "human_capital_doctrine",
+      "community_resilience_spine",
+      "prosperous_aging_spine"
+    ],
+    "note": "Architecture only — Local Prosperity Score weights and capital terms require modeling; NCEO/USDA baselines sourced; legal 0%. Architecture ≠ evidence that Community Investment Banks already exist."
   }
 }
