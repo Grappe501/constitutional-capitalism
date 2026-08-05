@@ -4,6 +4,8 @@
 **Hypothesis:** HYP-116  
 **Packet status:** `scaffold_only`
 **Scholarship rule:** CC-DEC-102 — packet must be capable of disproving the doctrine it examines (supports / qualifies / contradicts).  
+
+Must answer UPD-055 five questions: claim; strongest support; strongest contrary; failure/qualification conditions; Supports/Qualifies/Contradicts.
 **Proof Burden categories served:** Historical precedent · Rural economic impact · Administrative feasibility  
 
 ## Proposition (working)

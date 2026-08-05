@@ -10,7 +10,15 @@
 
 > The objective is not to defend the architecture. The objective is to discover the truth about the architecture.
 
-This packet is investigation, not advocacy. Verdicts: **Supports** (confidence rises) · **Qualifies** (doctrine sharpens) · **Contradicts** (revise architecture or explain the contradiction). No “protect the doctrine” outcome.
+This packet is investigation, not advocacy. It also **validates the research methodology** every later packet will follow. Verdicts: **Supports** · **Qualifies** · **Contradicts**. No “protect the doctrine” outcome. A healthy mix across packets is success; universal Supports would suggest rigidity, not resilience.
+
+## Five scholarship questions (must answer)
+
+1. What is the architectural claim?
+2. What does the strongest supporting evidence show?
+3. What does the strongest contrary evidence show?
+4. Under what conditions would this doctrine fail or require qualification?
+5. What is the honest verdict: Supports, Qualifies, or Contradicts?
 
 ## Falsifiability standard
 
