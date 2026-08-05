@@ -172,6 +172,20 @@ Regional civic and innovation academies (`CC-DEV-040`) are one possible institut
 
 Full architecture: `docs/architecture/HUMAN_CAPITAL_DOCTRINE.md` and `data/project/human_capital_framework.json`. Website domain: **Human Capital Doctrine** (`CC-WEB-HUMANCAPITAL`). Research and pilots precede statewide academy statute (`CC-DEC-054`, `CC-DEC-055`).
 
+## Community Operating System and playbooks (developing)
+
+Where Constitutional Capitalism becomes practical.
+
+Signature (`CC-DEV-042`): **playbooks** — same principles, different local implementation.
+
+Permanent rule (`CC-DEV-045`):
+
+> No proposal is complete until it includes an implementation pathway, measurable outcomes, estimated costs, anticipated tradeoffs, and a process for evaluation and revision.
+
+Seven-layer architecture (`CC-DEV-043`): Philosophy → Constitution → Research → Implementation → Community OS → National Dashboard → Civic Improvement Network.
+
+Full architecture: `docs/architecture/COMMUNITY_OPERATING_SYSTEM_AND_PLAYBOOKS.md` and `data/project/community_operating_system_framework.json`. Website domain: **Build Your Community** (`CC-WEB-BUILD`). Community OS is a design agenda (`CC-DEC-056`, `CC-DEC-057`).
+
 ## Corporations as constitutional partners
 
 Primary function: produce goods and services efficiently and sustainably.

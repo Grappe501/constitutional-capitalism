@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/community_operating_system_framework.schema.json",
+  "title": "CommunityOperatingSystemFramework",
+  "type": "object",
+  "required": [
+    "version",
+    "domain_title",
+    "signature_of_movement",
+    "four_levels",
+    "seven_layer_architecture",
+    "implementation_completeness_rule",
+    "implementation_completeness_test",
+    "website_branches"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "status": { "type": "string" },
+    "decision_ids": { "type": "array", "items": { "type": "string" } },
+    "domain_title": { "type": "string" },
+    "research_domain_title": { "type": "string" },
+    "website_node_id": { "type": "string" },
+    "note": { "type": "string" },
+    "signature_of_movement": { "type": "object" },
+    "playbook_rule": { "type": "object" },
+    "four_levels": { "type": "object" },
+    "seven_layer_architecture": { "type": "object" },
+    "implementation_completeness_rule": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 40 },
+        "practical_test": { "type": "string" },
+        "doctrine_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "community_blueprint_hierarchy": { "type": "object" },
+    "community_asset_inventory": { "type": "object" },
+    "twenty_five_year_prosperity_plan": { "type": "object" },
+    "community_dashboard_fields": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "local_prosperity_engine": { "type": "object" },
+    "incubator_town_model": { "type": "object" },
+    "people_first_rule": { "type": "object" },
+    "build_your_community_surface": { "type": "object" },
+    "community_operating_system": { "type": "object" },
+    "implementation_completeness_test": {
+      "type": "object",
+      "required": ["title", "questions"],
+      "properties": {
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "minItems": 10,
+          "items": {
+            "type": "object",
+            "required": ["question_id", "number", "text"]
+          }
+        }
+      }
+    },
+    "website_branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["branch_id", "title"]
+      }
+    },
+    "related_artifacts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "research_status": { "type": "object" }
+  }
+}

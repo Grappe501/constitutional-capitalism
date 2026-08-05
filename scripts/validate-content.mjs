@@ -75,6 +75,7 @@ const domains = [
   "transparency",
   "essential-systems",
   "human-capital",
+  "community-implementation",
 ];
 for (const d of domains) {
   const p = r("content/research", d);

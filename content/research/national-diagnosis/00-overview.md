@@ -28,6 +28,8 @@ Priority domains now have sourced first-pass briefs: wealth/ownership, wages/pro
 
 **Human Capital Doctrine** (`CC-DEV-038`–`041`) is a **pillar**: build human capital infrastructure; multiple pathways of equal dignity; regional civic/innovation academies as a researchable pilot model that makes home stronger — not a locked statewide design; no invented academy outcomes.
 
+**Build Your Community / Community Operating System** (`CC-DEV-042`–`045`) is the **practical signature architecture**: adaptive playbooks; seven-layer living project; asset- and people-first blueprints; permanent Implementation Completeness Rule — Community OS is a design agenda, not an operating product; no invented town growth outcomes.
+
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
 This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.
