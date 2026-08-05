@@ -15,7 +15,7 @@ Pending first green export.
 
 ## 3. Constitutional Capitalism import commit
 
-See git log after this return’s commit.
+`480db1f` on `main` (consumer bridge + governance; no observations imported).
 
 ## 4. Contract version
 
