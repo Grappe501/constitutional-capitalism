@@ -12,7 +12,43 @@
   "domain_tree": [
     { "node_id": "CC-WEB-PHILOSOPHY", "title": "The Philosophy", "status": "seeded" },
     { "node_id": "CC-WEB-CONSTITUTION", "title": "The Constitution", "status": "seeded" },
-    { "node_id": "CC-WEB-FLOURISHING", "title": "Human Flourishing", "status": "proposed" },
+    {
+      "node_id": "CC-WEB-FLOURISHING",
+      "title": "Human Flourishing Index",
+      "status": "seeded",
+      "decision_id": "CC-DEC-072",
+      "central_promise": "Did human life improve? Every proposal should answer whether it measurably increases human flourishing — not GDP alone.",
+      "branches": [
+        "Ultimate question",
+        "Policy test",
+        "Index domains",
+        "Construction rules",
+        "Childhood well-being link",
+        "Civic participation link"
+      ],
+      "framework_file": "data/project/human_flourishing_index.json",
+      "research_domain_title": "Human Flourishing Measurement"
+    },
+    {
+      "node_id": "CC-WEB-FAMILY",
+      "title": "Constitutional Family Doctrine",
+      "status": "seeded",
+      "decision_id": "CC-DEC-071",
+      "related_decision_ids": ["CC-DEC-070"],
+      "central_promise": "Strong families create strong communities. Children are the republic's greatest long-term asset — with inherent dignity — and public institutions strengthen families rather than replace them whenever possible.",
+      "branches": [
+        "Children as greatest long-term asset",
+        "Family-first care ladder",
+        "Intergenerational prosperity",
+        "No child should go hungry",
+        "Children as infrastructure",
+        "Child flourishing measurement",
+        "Family Wealth System",
+        "Constitutional promise to every child"
+      ],
+      "framework_file": "data/project/family_framework.json",
+      "research_domain_title": "Family, Childhood Flourishing, and Intergenerational Prosperity"
+    },
     { "node_id": "CC-WEB-ECONOMICS", "title": "Economics", "status": "seeded" },
     {
       "node_id": "CC-WEB-EQUALITY",

@@ -1,0 +1,161 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "design_agenda",
+  "decision_id": "CC-DEC-072",
+  "title": "Constitutional Capitalism Knowledge Graph",
+  "purpose": "Organize the growing set of ideas as nodes and typed relationships so doctrines do not sprawl into an unsearchable pile. Intended to become AI-searchable. Not a completed graph and not evidence by itself.",
+  "note": "Scaffold for Burt / Phase 2.1 continuation. Sample chain included to demonstrate relationship discipline. Expand nodes from developing_doctrine, systems_map, and frameworks without inventing causal proof.",
+  "relationship_types": [
+    "reduces",
+    "improves",
+    "increases",
+    "raises",
+    "funds",
+    "requires",
+    "supports",
+    "conflicts_with",
+    "measured_by",
+    "implemented_by",
+    "belongs_to_system"
+  ],
+  "node_kinds": [
+    "doctrine",
+    "principle",
+    "system",
+    "instrument",
+    "outcome",
+    "metric",
+    "risk",
+    "pilot"
+  ],
+  "nodes": [
+    {
+      "node_id": "CC-KG-001",
+      "label": "Community Energy",
+      "kind": "instrument",
+      "related_doctrine_ids": ["CC-DEV-057"]
+    },
+    {
+      "node_id": "CC-KG-002",
+      "label": "Household Costs",
+      "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-003",
+      "label": "Disposable Income",
+      "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-004",
+      "label": "Local Business Spending",
+      "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-005",
+      "label": "Small Business Growth",
+      "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-006",
+      "label": "Local Tax Base",
+      "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-007",
+      "label": "Schools",
+      "kind": "system"
+    },
+    {
+      "node_id": "CC-KG-008",
+      "label": "Human Flourishing Index",
+      "kind": "metric",
+      "related_framework": "data/project/human_flourishing_index.json"
+    },
+    {
+      "node_id": "CC-KG-009",
+      "label": "Constitutional Family Doctrine",
+      "kind": "doctrine",
+      "related_doctrine_ids": ["CC-DEV-078", "CC-DEV-079"]
+    },
+    {
+      "node_id": "CC-KG-010",
+      "label": "Childhood Well-being",
+      "kind": "outcome"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "CC-KGE-001",
+      "from": "CC-KG-001",
+      "relation": "reduces",
+      "to": "CC-KG-002",
+      "class": "plausible",
+      "note": "Illustrative chain — requires sourced modules before causal claims"
+    },
+    {
+      "edge_id": "CC-KGE-002",
+      "from": "CC-KG-002",
+      "relation": "improves",
+      "to": "CC-KG-003",
+      "class": "plausible"
+    },
+    {
+      "edge_id": "CC-KGE-003",
+      "from": "CC-KG-003",
+      "relation": "increases",
+      "to": "CC-KG-004",
+      "class": "plausible"
+    },
+    {
+      "edge_id": "CC-KGE-004",
+      "from": "CC-KG-004",
+      "relation": "improves",
+      "to": "CC-KG-005",
+      "class": "plausible"
+    },
+    {
+      "edge_id": "CC-KGE-005",
+      "from": "CC-KG-005",
+      "relation": "raises",
+      "to": "CC-KG-006",
+      "class": "plausible"
+    },
+    {
+      "edge_id": "CC-KGE-006",
+      "from": "CC-KG-006",
+      "relation": "funds",
+      "to": "CC-KG-007",
+      "class": "plausible",
+      "note": "Tax-base to school funding is institution-specific; avoid double counting"
+    },
+    {
+      "edge_id": "CC-KGE-007",
+      "from": "CC-KG-009",
+      "relation": "supports",
+      "to": "CC-KG-010",
+      "class": "plausible"
+    },
+    {
+      "edge_id": "CC-KGE-008",
+      "from": "CC-KG-010",
+      "relation": "measured_by",
+      "to": "CC-KG-008",
+      "class": "untested",
+      "note": "HFI childhood domain is design agenda only"
+    }
+  ],
+  "build_rules": [
+    "Every causal edge needs a class: documented, plausible, disputed, or untested",
+    "Do not treat graph presence as empirical proof",
+    "Link nodes to doctrine_ids, claim_ids, or source_ids when available",
+    "Prefer expanding from systems_map and developing_doctrine capture_clusters",
+    "Cross-check with data/research/system_interdependencies.json"
+  ],
+  "next_for_burt": [
+    "Ingest capture_clusters and systems_map into nodes",
+    "Attach doctrine and claim IDs",
+    "Classify edges honestly",
+    "Expose search on Build Board without claiming completion"
+  ]
+}

@@ -1,6 +1,6 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-05T02:52:44.041Z
+Generated: 2026-08-05T02:57:57.110Z
 
 ## For the next AI / human operator
 
@@ -20,15 +20,15 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `dcf1936`
+- **HEAD:** `d955fdb`
 
 ## Current state
 
 - Mission / slice: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
 - Phase: `phase-2`
 - Status: `phase_2_partial_complete`
-- Writing focus: Proof: national diagnosis with three-layer briefs; Equal Standing; Constitutional Citizenship (capacity over age-alone rights); baseline metrics; evidence companion — scaffolding is not completion
-- Next action: Burt executes Phase 2 under mission lock; deepen Equal Standing and Constitutional Citizenship with sourced modules in 2.1; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
+- Writing focus: Proof: national diagnosis with three-layer briefs; Family Doctrine + Human Flourishing Index as architecture; Equal Standing; Citizenship; baseline — scaffolding is not completion
+- Next action: Burt executes Phase 2 under mission lock; expand Knowledge Graph; source HFI/child-flourishing modules without invention; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
 - Overall progress: **36%**
 
 ## Active slice

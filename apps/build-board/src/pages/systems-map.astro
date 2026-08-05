@@ -1,0 +1,82 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import systems from "../../../../data/project/systems_map.json";
+import kg from "../../../../data/research/knowledge_graph.json";
+import hfi from "../../../../data/project/human_flourishing_index.json";
+import identity from "../../../../data/project/living_project_identity.json";
+
+const domains = systems.domains || [];
+---
+
+<BoardLayout title="Systems Map" path="/systems-map/">
+  <h1 class="page-title">{systems.title}</h1>
+  <p class="page-lede">
+    {systems.purpose} Status: <span class="pill">{systems.status}</span>
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">System domains</div>
+      <div class="stat__value">{domains.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">KG nodes</div>
+      <div class="stat__value">{kg.nodes?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">KG edges</div>
+      <div class="stat__value">{kg.edges?.length ?? 0}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">HFI domains sourced</div>
+      <div class="stat__value" style="font-size:1.1rem;">
+        {hfi.research_status?.sourced_domains}/{hfi.research_status?.total_domains}
+      </div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Living project identity</h2>
+    <p>{identity.title}</p>
+    <p class="muted">{identity.scope_shift.current_framing}</p>
+    <p>
+      Phase 1: {identity.canonical_honesty_state.phase_1}. Phase 2:{" "}
+      {identity.canonical_honesty_state.phase_2}. Modeling:{" "}
+      {identity.canonical_honesty_state.modeling}. Legal:{" "}
+      {identity.canonical_honesty_state.legal_review}.
+    </p>
+  </section>
+
+  {
+    domains.map((d: any) => (
+      <section class="panel" style="margin-top:1rem;">
+        <h2>{d.title}</h2>
+        <ul class="list-plain">
+          {d.systems.map((s: string) => (
+            <li>{s}</li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Knowledge Graph scaffold</h2>
+    <p>{kg.purpose}</p>
+    <p class="muted">{kg.note}</p>
+    <p>Next for Burt:</p>
+    <ul>
+      {(kg.next_for_burt || []).map((n: string) => (
+        <li>{n}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Human Flourishing Index</h2>
+    <p>
+      <strong>{hfi.ultimate_question}</strong> — {hfi.policy_test_question}
+    </p>
+    <p class="muted">Design agenda only. No invented composite scores.</p>
+  </section>
+</BoardLayout>

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://constitutional-capitalism.local/schemas/systems_map.schema.json",
+  "title": "SystemsMap",
+  "type": "object",
+  "required": ["version", "title", "domains"],
+  "properties": {
+    "version": { "type": "string" },
+    "title": { "type": "string" },
+    "status": { "type": "string" },
+    "domains": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["domain_id", "title", "systems"],
+        "properties": {
+          "domain_id": { "type": "string" },
+          "title": { "type": "string" },
+          "systems": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        }
+      }
+    }
+  }
+}

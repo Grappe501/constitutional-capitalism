@@ -1,0 +1,138 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import fam from "../../../../data/project/family_framework.json";
+
+const testQs = fam.family_test?.questions || [];
+const branches = fam.website_branches || [];
+const ladder = fam.care_ladder?.order || [];
+const hungerOrder = fam.no_child_should_go_hungry?.implementation_order || [];
+const invest = fam.children_as_infrastructure?.investment_domains || [];
+const indicators = fam.child_flourishing_measurement?.indicator_slots || [];
+const wealth = fam.family_wealth_system?.assets || [];
+const intergen = fam.intergenerational_prosperity?.examples || [];
+---
+
+<BaseLayout
+  title="Constitutional Family Doctrine"
+  path="/family/"
+  description="Strong families create strong communities. Children are the republic's greatest long-term asset — with inherent dignity."
+>
+  <article class="prose">
+    <h1>{fam.domain_title}</h1>
+    <p class="status-note">
+      Major pillar — family-first, not state-first. Architecture before family statutes.
+      No invented childhood or family statistics.
+    </p>
+    <p class="lede">{fam.role_in_philosophy}</p>
+
+    <h2>Organizing principle</h2>
+    <blockquote>
+      <p>{fam.organizing_principle.text}</p>
+    </blockquote>
+
+    <h2>Shared responsibility (dignity-safe language)</h2>
+    <p class="status-note">
+      Rejected phrasing: <em>{fam.shared_responsibility_rule.rejected_phrasing}</em> —{" "}
+      {fam.shared_responsibility_rule.rejection_reason}
+    </p>
+    <blockquote>
+      <p>{fam.shared_responsibility_rule.text}</p>
+    </blockquote>
+    <p>{fam.shared_responsibility_rule.parents_primary}</p>
+
+    <h2>Foundational doctrine</h2>
+    <blockquote>
+      <p>{fam.foundational_doctrine.text}</p>
+    </blockquote>
+    <p>
+      <strong>Posture:</strong> {fam.foundational_doctrine.posture}
+    </p>
+
+    <h2>Care ladder</h2>
+    <p>{fam.care_ladder.summary}</p>
+    <ol>
+      {ladder.map((level: string) => (
+        <li>{level}</li>
+      ))}
+    </ol>
+
+    <h2>Intergenerational prosperity</h2>
+    <p>{fam.intergenerational_prosperity.summary}</p>
+    <ul>
+      {intergen.map((e: string) => (
+        <li>{e}</li>
+      ))}
+    </ul>
+
+    <h2>No child should go hungry</h2>
+    <blockquote>
+      <p>{fam.no_child_should_go_hungry.text}</p>
+    </blockquote>
+    <p>{fam.no_child_should_go_hungry.state_role}</p>
+    <p>Implementation begins locally:</p>
+    <ol>
+      {hungerOrder.map((s: string) => (
+        <li>{s}</li>
+      ))}
+    </ol>
+    <p class="status-note">{fam.no_child_should_go_hungry.note}</p>
+
+    <h2>Investing in children as infrastructure</h2>
+    <p>{fam.children_as_infrastructure.summary}</p>
+    <ul>
+      {invest.map((i: string) => (
+        <li>{i}</li>
+      ))}
+    </ul>
+
+    <h2>Measure child flourishing</h2>
+    <blockquote>
+      <p>{fam.child_flourishing_measurement.guiding_question}</p>
+    </blockquote>
+    <p>{fam.child_flourishing_measurement.rule}</p>
+    <ul>
+      {indicators.map((i: string) => (
+        <li>{i}</li>
+      ))}
+    </ul>
+    <p class="status-note">{fam.child_flourishing_measurement.note}</p>
+
+    <h2>Family Wealth System</h2>
+    <p>{fam.family_wealth_system.summary}</p>
+    <ul>
+      {wealth.map((a: string) => (
+        <li>{a}</li>
+      ))}
+    </ul>
+
+    <h2>Constitutional promise</h2>
+    <blockquote>
+      <p>{fam.constitutional_promise.text}</p>
+    </blockquote>
+
+    <h2>Constitutional Family Test</h2>
+    <p>{fam.family_test.purpose}</p>
+    <ol>
+      {testQs.map((q: any) => (
+        <li>{q.text}</li>
+      ))}
+    </ol>
+
+    <h2>Domain branches</h2>
+    <ul>
+      {branches.map((b: any) => (
+        <li>
+          <strong>{b.title}</strong> — {b.summary}
+        </li>
+      ))}
+    </ul>
+
+    <p>
+      See also <a href="/human-capital/">Human Capital</a>,{" "}
+      <a href="/flourishing/">Human Flourishing</a>,{" "}
+      <a href="/constitutional-citizenship/">Citizenship</a>,{" "}
+      <a href="/food-security/">Food Security</a>, and{" "}
+      <a href="/equal-standing/">Equal Standing</a>.
+    </p>
+  </article>
+</BaseLayout>

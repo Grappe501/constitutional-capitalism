@@ -1,0 +1,215 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "developing_doctrine_architecture",
+  "decision_ids": ["CC-DEC-070", "CC-DEC-071"],
+  "domain_title": "Constitutional Family Doctrine",
+  "research_domain_title": "Family, Childhood Flourishing, and Intergenerational Prosperity",
+  "website_node_id": "CC-WEB-FAMILY",
+  "principle_id": "CC-PRIN-32",
+  "note": "Major pillar architecture. Family-first, not state-first. Children have inherent dignity independent of economic output — do not use 'productive' as a worth test. No invented childhood nutrition, literacy, or family-stability statistics. Child-flourishing indicators are design slots until sourced.",
+  "role_in_philosophy": "Strong families create strong communities; strong communities create a strong republic. Public institutions should strengthen families rather than replace them whenever possible. A nation's greatest long-term asset is the children it raises — measured by preparation for healthy, capable, independent participation and by equal human dignity, not by economic output alone.",
+  "organizing_principle": {
+    "text": "A nation's greatest long-term asset is not its money, its corporations, or its natural resources. It is the children it raises.",
+    "doctrine_ids": ["CC-DEV-078"]
+  },
+  "shared_responsibility_rule": {
+    "rejected_phrasing": "Children are the responsibility of the community until they are productive.",
+    "rejection_reason": "The word 'productive' can unintentionally suggest that a person's worth depends on economic output, conflicting with inherent dignity.",
+    "text": "Children are the shared responsibility of their families, their communities, and ultimately the constitutional republic until they are prepared to become healthy, capable, independent participants in society.",
+    "parents_primary": "Parents and families remain the primary caregivers; communities and government have supporting responsibilities.",
+    "doctrine_ids": ["CC-DEV-078"]
+  },
+  "foundational_doctrine": {
+    "text": "Strong families create strong communities. Strong communities create a strong republic. Public institutions should strengthen families rather than replace them whenever possible.",
+    "posture": "family-first, not state-first",
+    "doctrine_ids": ["CC-DEV-079"]
+  },
+  "care_ladder": {
+    "summary": "Each level steps in when the previous one genuinely cannot meet the need.",
+    "order": [
+      "Child",
+      "Family",
+      "Extended family",
+      "Neighborhood",
+      "Community",
+      "County",
+      "State",
+      "Nation"
+    ],
+    "doctrine_ids": ["CC-DEV-080"]
+  },
+  "intergenerational_prosperity": {
+    "summary": "Encourage long-term family stability by making it easier—not harder—for generations to remain connected when they choose. The objective is not to force families to live together; it is to remove unnecessary barriers for families who want to stay connected.",
+    "examples": [
+      "attainable homeownership",
+      "family-owned businesses",
+      "multigenerational housing options",
+      "inheritance systems that preserve productive assets",
+      "caregiving support",
+      "flexible zoning where appropriate",
+      "local employment opportunities",
+      "broadband and transportation that allow people to remain in smaller communities"
+    ],
+    "doctrine_ids": ["CC-DEV-081"]
+  },
+  "no_child_should_go_hungry": {
+    "text": "In a prosperous constitutional republic, no child should lack adequate nutrition because of circumstances beyond the child's control.",
+    "implementation_order": [
+      "parents",
+      "extended family",
+      "neighbors",
+      "schools",
+      "faith communities",
+      "food banks",
+      "local charities",
+      "county resources",
+      "state programs"
+    ],
+    "state_role": "The state becomes the guarantor of last resort—not the first responder in every circumstance.",
+    "purpose": "Preserves community responsibility while ensuring children are not abandoned if local support fails.",
+    "links_to": ["community_food_security"],
+    "doctrine_ids": ["CC-DEV-082"],
+    "note": "Principle and care-ladder architecture — not a locked national food-program design; no invented hunger statistics."
+  },
+  "children_as_infrastructure": {
+    "summary": "Investing in maternal health, early childhood development, nutrition, education, mental health, safe housing, literacy, civic education, and apprenticeships is long-term national investment in the future capacity of the republic — not merely social spending. Connects directly to the Human Capital Doctrine.",
+    "investment_domains": [
+      "maternal health",
+      "early childhood development",
+      "nutrition",
+      "education",
+      "mental health",
+      "safe housing",
+      "literacy",
+      "civic education",
+      "apprenticeships"
+    ],
+    "links_to": ["human_capital_doctrine", "constitutional_citizenship_spine"],
+    "doctrine_ids": ["CC-DEV-083"]
+  },
+  "child_flourishing_measurement": {
+    "guiding_question": "Are our children better prepared than the generation before them?",
+    "status": "design_agenda",
+    "indicator_slots": [
+      "childhood nutrition",
+      "literacy",
+      "graduation",
+      "physical and mental health",
+      "access to early learning",
+      "family stability",
+      "participation in civic activities",
+      "youth employment and apprenticeships",
+      "transition into adulthood"
+    ],
+    "rule": "Measure child flourishing rather than success only by economic output. Indicator values remain null until sourced.",
+    "doctrine_ids": ["CC-DEV-083"],
+    "note": "No invented childhood indicator values in this architecture ship."
+  },
+  "family_wealth_system": {
+    "summary": "A constitutional economy should make it easier for families to accumulate and pass along homes, farms, small businesses, savings, education, skills, and community relationships. Intergenerational wealth is not only financial capital — it also includes knowledge, trust, and local institutions.",
+    "assets": [
+      "homes",
+      "farms",
+      "small businesses",
+      "savings",
+      "education",
+      "skills",
+      "community relationships"
+    ],
+    "nonfinancial_capital": ["knowledge", "trust", "local institutions"],
+    "links_to": ["ownership_doctrine", "resource_sovereignty", "human_capital_doctrine"],
+    "doctrine_ids": ["CC-DEV-081"]
+  },
+  "constitutional_promise": {
+    "text": "Every child enters the republic with equal human dignity and equal constitutional worth. The measure of a constitutional society is whether that child has a genuine opportunity to grow into a healthy, educated, capable, and free adult—not because success is guaranteed, but because the community, the state, and the nation refused to neglect the foundations of that opportunity.",
+    "doctrine_ids": ["CC-DEV-084"],
+    "links_to": ["equal_standing_spine", "human_capital_doctrine"]
+  },
+  "family_test": {
+    "title": "Constitutional Family Test",
+    "purpose": "Screen family, childhood, and intergenerational proposals for family-first posture, dignity language, care-ladder subsidiarity, and honest child-flourishing measurement.",
+    "questions": [
+      {
+        "question_id": "CC-FTEST-01",
+        "number": 1,
+        "text": "Does this strengthen families rather than replace them whenever possible?"
+      },
+      {
+        "question_id": "CC-FTEST-02",
+        "number": 2,
+        "text": "Does it treat parents as primary caregivers, with community and government in supporting roles?"
+      },
+      {
+        "question_id": "CC-FTEST-03",
+        "number": 3,
+        "text": "Does it respect inherent dignity independent of a child's present or future economic output?"
+      },
+      {
+        "question_id": "CC-FTEST-04",
+        "number": 4,
+        "text": "Does support climb the care ladder only when nearer levels genuinely cannot meet the need?"
+      },
+      {
+        "question_id": "CC-FTEST-05",
+        "number": 5,
+        "text": "For child nutrition and basic needs, is the state guarantor of last resort rather than first responder in every case?"
+      },
+      {
+        "question_id": "CC-FTEST-06",
+        "number": 6,
+        "text": "Does it remove barriers to voluntary intergenerational connection without forcing families to live together?"
+      },
+      {
+        "question_id": "CC-FTEST-07",
+        "number": 7,
+        "text": "Does it treat childhood investment as long-term national capacity, not only short-term program spending?"
+      },
+      {
+        "question_id": "CC-FTEST-08",
+        "number": 8,
+        "text": "Are child-flourishing indicators measured honestly — with nulls until sourced — answering whether children are better prepared than the generation before them?"
+      }
+    ]
+  },
+  "website_branches": [
+    {
+      "title": "Children as the greatest long-term asset",
+      "summary": "Organizing principle with inherent-dignity guardrail"
+    },
+    {
+      "title": "Family-first care ladder",
+      "summary": "Child → family → community → county → state → nation"
+    },
+    {
+      "title": "Intergenerational prosperity",
+      "summary": "Remove barriers to connection; do not force co-residence"
+    },
+    {
+      "title": "No child should go hungry",
+      "summary": "Local first; state as last-resort guarantor"
+    },
+    {
+      "title": "Children as infrastructure",
+      "summary": "Human-capital investment in the next generation"
+    },
+    {
+      "title": "Child flourishing measurement",
+      "summary": "Preparation across generations — not output-only metrics"
+    },
+    {
+      "title": "Family Wealth System",
+      "summary": "Homes, enterprises, skills, trust, and local institutions"
+    },
+    {
+      "title": "Constitutional promise to every child",
+      "summary": "Equal dignity and genuine opportunity foundations"
+    }
+  ],
+  "research_status": {
+    "phase": "phase-2_architecture",
+    "policy_drafting": "not_started",
+    "next": "Phase 2.1+: source childhood nutrition/literacy/family-stability modules; connect Food Security, Human Capital, Citizenship, and Equal Standing; keep indicator values null until verified",
+    "baseline_note": "No childhood or family quantitative baseline values claimed in this architecture ship"
+  }
+}

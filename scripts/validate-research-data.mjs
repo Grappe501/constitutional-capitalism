@@ -15,6 +15,7 @@ const pairs = [
   ["data/project/developing_doctrine.json", "schemas/developing_doctrine.schema.json"],
   ["data/project/transition_timeline.json", "schemas/transition_timeline.schema.json"],
   ["data/research/system_interdependencies.json", "schemas/system_interdependencies.schema.json"],
+  ["data/research/knowledge_graph.json", "schemas/knowledge_graph.schema.json"],
 ];
 
 for (const [dataRel, schemaRel] of pairs) {

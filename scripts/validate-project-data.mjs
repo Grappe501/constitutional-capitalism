@@ -48,7 +48,11 @@ const validations = [
   ['data/project/community_food_security_framework.json','schemas/community_food_security_framework.schema.json'],
   ['data/project/phase2_mission_lock.json','schemas/phase2_mission_lock.schema.json'],
   ['data/project/equal_standing_framework.json','schemas/equal_standing_framework.schema.json'],
-  ['data/project/constitutional_citizenship_framework.json','schemas/constitutional_citizenship_framework.schema.json']
+  ['data/project/constitutional_citizenship_framework.json','schemas/constitutional_citizenship_framework.schema.json'],
+  ['data/project/family_framework.json','schemas/family_framework.schema.json'],
+  ['data/project/systems_map.json','schemas/systems_map.schema.json'],
+  ['data/project/human_flourishing_index.json','schemas/human_flourishing_index.schema.json'],
+  ['data/project/living_project_identity.json','schemas/living_project_identity.schema.json']
 ];
 for (const [dataRel, schemaRel] of validations) {
   if (!fs.existsSync(r(dataRel))) { fail(`Missing data file: ${dataRel}`); continue; }
