@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "last_updated": "2026-08-04",
   "decisions": [
     {
@@ -960,6 +960,25 @@
         "board food-security surface"
       ],
       "recommendation": "Seed doctrine page; ship marketplace software only after product design, security, and sourced modules exist.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-04",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-064",
+      "title": "Phase 2 mission lock — proof, three-layer briefs, doctrine capture, interdependencies",
+      "question": "Should Phase 2 be locked as the active proof mission (diagnosis), with Evidence/Baseline absorbed as aliases, a mandatory three-layer diagnosis-brief rule, explicit acceptance criteria that reject scaffolding-as-completion, developing-doctrine capture clusters for post–Phase 1 ideas, and a system-interdependencies map — while keeping civic deliberation approved-parallel and modeling/legal at 0%?",
+      "status": "approved",
+      "rationale": "Phase 1 = belief; Phase 2 = proof. The project must not confuse architecture with evidence. Diagnosis briefs must separate what data establishes, what may be inferred, and what Constitutional Capitalism normatively concludes — preventing research from quietly becoming advocacy. Post–Phase 1 ideas belong in developing_doctrine capture clusters, tagged and not treated as final. Cross-domain causal chains must be classified (documented/plausible/disputed/untested) to prevent double counting.",
+      "impact": [
+        "data/project/phase2_mission_lock.json",
+        "data/research/system_interdependencies.json",
+        "developing_doctrine capture_clusters CC-DCC-01–15",
+        "phases.json and slice_queue acceptance criteria",
+        "next slice ID CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "diagnosis brief three-layer standard"
+      ],
+      "recommendation": "Lock for Burt. Do not mark Phase 2 complete until acceptance criteria are met; otherwise return PARTIAL with next slice CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0. Do not freeze stale HEAD 7184b70 or a stale overall percentage as current truth.",
       "approved_by": "Steve",
       "decided_at": "2026-08-04",
       "supersedes": null

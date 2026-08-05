@@ -1,6 +1,6 @@
 # Thread Handoff — Constitutional Capitalism
 
-Generated: 2026-08-05T01:06:20.045Z
+Generated: 2026-08-05T02:33:24.946Z
 
 ## For the next AI / human operator
 
@@ -20,15 +20,15 @@ Read these first:
 - **Local root:** `H:\Constitutional-Capitalism`
 - **Remote:** https://github.com/Grappe501/constitutional-capitalism
 - **Branch:** `main`
-- **HEAD:** `7184b70`
+- **HEAD:** `6e97fb6`
 
 ## Current state
 
 - Mission / slice: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0`
 - Phase: `phase-2`
 - Status: `phase_2_partial_complete`
-- Writing focus: National diagnosis, baseline metrics, evidence companion — evidence before policy
-- Next action: Phase 2.1: source remaining diagnosis domains; expand baseline beyond wealth; deepen political-power and internet-commerce modules
+- Writing focus: Proof: national diagnosis with three-layer briefs; baseline metrics; evidence companion — scaffolding is not completion
+- Next action: Burt executes Phase 2 under mission lock; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
 - Overall progress: **36%**
 
 ## Active slice
@@ -39,8 +39,8 @@ Read these first:
 
 ## Recommended next slice
 
-- ID: `TBD`
-- Title: TBD
+- ID: `CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0`
+- Title: Diagnosis Research Continuation
 - Do **not** mark Phase 1 active until Phase 0 validation succeeds.
 
 ## Open decisions (sample)

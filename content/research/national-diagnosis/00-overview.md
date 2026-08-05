@@ -12,6 +12,16 @@ What is the present condition of American economic and civic life, what forces p
 
 Phase 1 stated belief. Phase 2 assembles proof architecture and a first-pass evidence base before constitution/policy drafting.
 
+## Three-layer rule (mandatory)
+
+Every diagnosis brief must distinguish:
+
+1. **What the data directly establishes**
+2. **What may reasonably be inferred**
+3. **What Constitutional Capitalism normatively concludes**
+
+See `DIAGNOSIS_BRIEF_STANDARD.md` and `data/project/phase2_mission_lock.json` (`CC-DEC-064`). This separation prevents research from quietly turning into advocacy.
+
 ## Current findings
 
 Priority domains now have sourced first-pass briefs: wealth/ownership, wages/productivity, taxation (CBO distribution), corporate power/concentration, worker ownership, local/rural economies, internet commerce (architecture + research queue), and political/economic power (linked to concentration evidence; causal democracy links still open).

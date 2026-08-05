@@ -88,7 +88,7 @@ First-pass sourced answers exist for priority domains. Causal political-accounta
 
 ## 10. Recommended next slice
 
-`CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0`
+`CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0` (legacy short ID `CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0` retained as alias only)
 
 - Full sourcing for housing, education, healthcare, transport/broadband, food, banking depth, trade, tech/AI, constitutional/legal, international, flourishing
 - Expand baseline beyond wealth

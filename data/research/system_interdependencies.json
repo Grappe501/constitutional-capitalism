@@ -1,0 +1,193 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-08-04",
+  "status": "design_agenda",
+  "decision_id": "CC-DEC-064",
+  "note": "Cross-domain relationship map. Classifications are research posture, not finished causal proof. Use to prevent double counting benefits and unsupported causal chains. Expand with sourced modules in Phase 2.1.",
+  "relationship_classes": [
+    {
+      "class": "documented",
+      "meaning": "Supported by registered sources for the specific link claimed"
+    },
+    {
+      "class": "plausible",
+      "meaning": "Reasonable inference pending stronger identification"
+    },
+    {
+      "class": "disputed",
+      "meaning": "Credible contrary evidence or contested mechanisms exist"
+    },
+    {
+      "class": "untested",
+      "meaning": "Hypothesis or design assumption not yet researched"
+    }
+  ],
+  "chains": [
+    {
+      "chain_id": "CC-INT-001",
+      "title": "Human capital to community retention",
+      "nodes": [
+        "education",
+        "health",
+        "productivity",
+        "wages",
+        "ownership",
+        "family stability",
+        "community retention"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "education", "to": "health", "class": "plausible", "note": "Correlated in literature; mechanisms and reverse causality need modules" },
+        { "from": "education", "to": "productivity", "class": "plausible", "note": "Human-capital channel; measurement and quality matter" },
+        { "from": "health", "to": "productivity", "class": "plausible" },
+        { "from": "productivity", "to": "wages", "class": "disputed", "note": "Productivity–compensation divergence is a priority diagnosis theme" },
+        { "from": "wages", "to": "ownership", "class": "plausible", "note": "Capacity to save/invest; not automatic" },
+        { "from": "ownership", "to": "family stability", "class": "plausible" },
+        { "from": "family stability", "to": "community retention", "class": "plausible" },
+        { "from": "ownership", "to": "community retention", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-038", "CC-DEV-039", "CC-DEV-044"],
+      "double_count_warning": "Do not sum education, wage, and ownership benefits as independent additive gains without shared-pathway adjustment."
+    },
+    {
+      "chain_id": "CC-INT-002",
+      "title": "Resource extraction to regenerative restoration",
+      "nodes": [
+        "resource extraction",
+        "energy and water demand",
+        "local infrastructure cost",
+        "pollution",
+        "public health",
+        "community compensation",
+        "regenerative restoration"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "resource extraction", "to": "energy and water demand", "class": "documented", "note": "Facility and sector disclosures commonly establish demand magnitudes when sourced" },
+        { "from": "resource extraction", "to": "local infrastructure cost", "class": "plausible" },
+        { "from": "energy and water demand", "to": "local infrastructure cost", "class": "plausible" },
+        { "from": "resource extraction", "to": "pollution", "class": "plausible", "note": "Pathway-specific; requires facility/sector evidence" },
+        { "from": "pollution", "to": "public health", "class": "plausible" },
+        { "from": "local infrastructure cost", "to": "community compensation", "class": "untested", "note": "Community Resource Compact design agenda" },
+        { "from": "pollution", "to": "community compensation", "class": "untested" },
+        { "from": "community compensation", "to": "regenerative restoration", "class": "untested", "note": "Local Carbon Restoration Exchange design agenda" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-053", "CC-DEV-054", "CC-DEV-055", "CC-DEV-056", "CC-DEV-057"],
+      "double_count_warning": "Do not count both avoided pollution damages and restoration payments as separate full benefits without netting."
+    },
+    {
+      "chain_id": "CC-INT-003",
+      "title": "Food security to local prosperity",
+      "nodes": [
+        "local food capacity",
+        "value-added processing",
+        "farmer income",
+        "fresh-food access",
+        "nutrition",
+        "community resilience",
+        "local ownership"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "local food capacity", "to": "fresh-food access", "class": "plausible" },
+        { "from": "value-added processing", "to": "farmer income", "class": "plausible" },
+        { "from": "fresh-food access", "to": "nutrition", "class": "plausible" },
+        { "from": "local food capacity", "to": "community resilience", "class": "plausible", "note": "Complements rather than replaces broader trade" },
+        { "from": "farmer income", "to": "local ownership", "class": "plausible" },
+        { "from": "nutrition", "to": "community resilience", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-058", "CC-DEV-059", "CC-DEV-060", "CC-DEV-061"],
+      "double_count_warning": "Local sourcing share and resilience benefits overlap; keep trade-backup effects explicit."
+    },
+    {
+      "chain_id": "CC-INT-004",
+      "title": "Justice restoration to productive citizenship",
+      "nodes": [
+        "prevention",
+        "proportionate accountability",
+        "treatment and education",
+        "reentry",
+        "employment",
+        "ownership",
+        "reduced recidivism"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "prevention", "to": "proportionate accountability", "class": "plausible" },
+        { "from": "treatment and education", "to": "reentry", "class": "plausible" },
+        { "from": "reentry", "to": "employment", "class": "plausible", "note": "Reentry effects often modest/mixed in evaluations" },
+        { "from": "employment", "to": "ownership", "class": "plausible" },
+        { "from": "reentry", "to": "reduced recidivism", "class": "disputed", "note": "Definition and program quality sensitive" },
+        { "from": "employment", "to": "reduced recidivism", "class": "disputed" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-011", "CC-DEV-014", "CC-DEV-046", "CC-DEV-049", "CC-DEV-051"],
+      "double_count_warning": "Do not treat employment, housing, and recidivism gains as independent without program-evaluation discipline."
+    },
+    {
+      "chain_id": "CC-INT-005",
+      "title": "Public service friction to trust and participation",
+      "nodes": [
+        "administrative friction",
+        "citizen time cost",
+        "service completion",
+        "trust in institutions",
+        "civic participation",
+        "compliance"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "administrative friction", "to": "citizen time cost", "class": "plausible" },
+        { "from": "administrative friction", "to": "service completion", "class": "plausible" },
+        { "from": "service completion", "to": "trust in institutions", "class": "plausible" },
+        { "from": "trust in institutions", "to": "civic participation", "class": "plausible" },
+        { "from": "trust in institutions", "to": "compliance", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-025", "CC-DEV-026", "CC-DEV-027", "CC-DEV-028"],
+      "double_count_warning": "Friction reduction is not proof of better substantive outcomes without measurement."
+    },
+    {
+      "chain_id": "CC-INT-006",
+      "title": "Transparency to anti-capture",
+      "nodes": [
+        "public information",
+        "People's Ledger visibility",
+        "complaint and audit capacity",
+        "reduced hidden capture",
+        "restored trust",
+        "distributed political power"
+      ],
+      "overall_class": "plausible",
+      "links": [
+        { "from": "public information", "to": "People's Ledger visibility", "class": "untested", "note": "Ledger is design agenda" },
+        { "from": "People's Ledger visibility", "to": "complaint and audit capacity", "class": "plausible" },
+        { "from": "complaint and audit capacity", "to": "reduced hidden capture", "class": "plausible" },
+        { "from": "reduced hidden capture", "to": "restored trust", "class": "plausible" },
+        { "from": "reduced hidden capture", "to": "distributed political power", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-029", "CC-DEV-030", "CC-DEV-031", "CC-DEV-015", "CC-DEV-016"],
+      "double_count_warning": "Transparency without enforcement capacity can create illusion of accountability."
+    },
+    {
+      "chain_id": "CC-INT-007",
+      "title": "Playbooks to ownership expansion",
+      "nodes": [
+        "community asset inventory",
+        "talent attraction",
+        "talent retention",
+        "local enterprises",
+        "ownership pathways",
+        "community wealth"
+      ],
+      "overall_class": "untested",
+      "links": [
+        { "from": "community asset inventory", "to": "talent attraction", "class": "untested" },
+        { "from": "talent attraction", "to": "talent retention", "class": "untested" },
+        { "from": "talent retention", "to": "local enterprises", "class": "plausible" },
+        { "from": "local enterprises", "to": "ownership pathways", "class": "plausible" },
+        { "from": "ownership pathways", "to": "community wealth", "class": "plausible" }
+      ],
+      "related_doctrine_ids": ["CC-DEV-042", "CC-DEV-043", "CC-DEV-044", "CC-DEV-045"],
+      "double_count_warning": "Illustrative town-growth arithmetic is design discussion only — not case evidence."
+    }
+  ]
+}

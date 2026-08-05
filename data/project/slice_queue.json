@@ -149,8 +149,64 @@
       "absorbs_slice_ids": [
         "CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0"
       ],
-      "next_recommended_slice": "CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0",
-      "note": "Partial / Phase 2.1 recommended — remaining domains foundational only; most baseline metrics pending; legal/modeling 0%."
+      "mission_lock": "data/project/phase2_mission_lock.json",
+      "acceptance_criteria": [
+        "all 21 diagnosis briefs created",
+        "eight priority domains substantive sourced first passes",
+        "20 priority claims classified",
+        "contrary evidence recorded where it exists",
+        "meaningful subset of baseline metrics populated with verified data",
+        "public evidence surfaces rendering source-backed content",
+        "Build Board accurately reporting gaps",
+        "all new schemas and validators passing",
+        "full source and claim audit",
+        "no inflated progress",
+        "green gate, commit, push, and verified deployments"
+      ],
+      "if_incomplete_return": {
+        "phase_2_status": "PARTIAL",
+        "next_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0"
+      },
+      "diagnosis_brief_three_layer_rule": "Every diagnosis brief must distinguish three layers: what the data directly establishes, what may reasonably be inferred, and what Constitutional Capitalism normatively concludes.",
+      "next_recommended_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+      "note": "PARTIAL. Scaffolding ≠ proof. Remaining domains may roll to Phase 2.1; most baseline metrics pending; legal/modeling 0%. Civic deliberation approved parallel / not active in this mission."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+      "title": "Diagnosis Research Continuation",
+      "purpose": "Continue Phase 2 proof work: source remaining diagnosis domains, expand verified baseline, deepen contrary-evidence recording, and keep architecture from being mistaken for completion.",
+      "prerequisites": [
+        "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/**",
+        "data/**",
+        "docs/**",
+        "schemas/**",
+        "scripts/**",
+        "apps/**",
+        "reports/**"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "remaining diagnosis briefs with three-layer sections",
+        "expanded sourced baseline metrics",
+        "updated claim/source audit",
+        "accurate Build Board gap reporting",
+        "return report with honest PARTIAL or COMPLETE status"
+      ],
+      "validation_commands": [
+        "pnpm gate",
+        "pnpm research:validate",
+        "pnpm baseline:validate"
+      ],
+      "completion_evidence": [],
+      "status": "queued",
+      "aliases": [
+        "CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0"
+      ],
+      "next_recommended_slice": null,
+      "note": "Official continuation ID per CC-DEC-064 / phase2_mission_lock. Legacy short ID retained as alias only."
     },
     {
       "slice_id": "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0",

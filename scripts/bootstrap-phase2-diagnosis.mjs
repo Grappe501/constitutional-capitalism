@@ -90,7 +90,7 @@ if (!existingDiag) {
     completion_evidence: [],
     status: "in_progress",
     absorbs_slice_ids: ["CC-PHASE-2-EVIDENCE-AND-NATIONAL-BASELINE-1.0"],
-    next_recommended_slice: "CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0",
+    next_recommended_slice: "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
   });
 } else {
   existingDiag.status = "in_progress";

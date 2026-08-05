@@ -1,18 +1,23 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "last_updated": "2026-08-04",
   "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
   "phase": "phase-2",
   "status": "phase_2_partial_complete",
-  "writing_focus": "National diagnosis; justice, democracy, and public-service spines; baseline metrics; evidence companion — evidence before policy",
-  "next_action": "Phase 2.1: source justice, democracy, and government-capacity (Census/GAO/state auditors; begin Arkansas Public Authority Inventory structure); expand baseline beyond wealth",
+  "mission_lock": "data/project/phase2_mission_lock.json",
+  "decision_id": "CC-DEC-064",
+  "writing_focus": "Proof: national diagnosis with three-layer briefs; baseline metrics; evidence companion — scaffolding is not completion",
+  "next_action": "Burt executes Phase 2 under mission lock; if acceptance criteria unmet, continue as CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+  "primary_question": "What can we prove?",
   "phase_1_accepted": {
     "build_commit": "0f24a8b",
     "closeout_commit": "4fbaacd",
-    "foundational_philosophy_percent": 70
+    "foundational_philosophy_percent": 70,
+    "status": "ACCEPTED / CLOSED"
   },
   "parallel_slices": [
     "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0"
   ],
+  "parallel_note": "APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION — no public feedback backend on unprotected Build Board",
   "blockers": []
 }

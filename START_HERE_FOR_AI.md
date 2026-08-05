@@ -64,16 +64,35 @@ Steve (owner) · ChatGPT (mission design / review) · Cursor (implementation)
 
 Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `docs/handoffs/`.
 
+## Official active state (CC-DEC-064)
+
+```text
+Phase 1: ACCEPTED / CLOSED
+Current mission: CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0
+Evidence/Baseline slice: ABSORBED ALIAS
+Civic deliberation: APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION
+Current HEAD: read from git (authorization-era note 7184b70 is historical)
+Overall baseline: read from progress snapshot (honest mid-30s%; do not hardcode)
+Primary question: What can we prove?
+Phase 2 status: PARTIAL
+Next slice if incomplete: CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
+```
+
+Lock file: `data/project/phase2_mission_lock.json` · Burt handoff: `docs/handoffs/BURT_PHASE_2_MISSION_LOCK.md`
+
 ## Current direction (Phase 2)
 
-- Phase 1 **ACCEPTED / CLOSED** (build `0f24a8b`, closeout `4fbaacd`); Foundational Philosophy ~70%
-- Active mission: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (Evidence + Baseline absorbed as deliverables)
-- Parallel (does not block): `CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0` — needs secure backend + protected admin; open `CC-DEC-011`
+- **Phase 1 = belief; Phase 2 = proof.** Scaffolding is not completion.
+- Active mission: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (Evidence + Baseline absorbed as deliverables, not competing slices)
+- **Three-layer rule (mandatory):** every diagnosis brief must distinguish (1) what the data directly establishes, (2) what may reasonably be inferred, (3) what Constitutional Capitalism normatively concludes — see `content/research/national-diagnosis/DIAGNOSIS_BRIEF_STANDARD.md`
+- Acceptance criteria live in the mission lock; if unmet, return `Phase 2 status: PARTIAL` / next slice `CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0`
+- Parallel (not active in this mission): `CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0` — no public feedback backend on the unprotected Build Board; open `CC-DEC-011`
 - Public surfaces: `/where-we-are/`, `/evidence/`, `/metrics/`
 - Board surfaces: `/diagnosis/`, `/baseline/`, `/evidence/`
-- Do **not** rewrite the Declaration; developing doctrine lives in `data/project/developing_doctrine.json`
-- Do not invent sources or baseline values; do not inflate modeling/legal/source-verification progress
-- Phase 2 expected **partial / Phase 2.1** until remaining domains are fully sourced
+- Do **not** rewrite the Declaration; developing doctrine + capture clusters live in `data/project/developing_doctrine.json`
+- Cross-domain map: `data/research/system_interdependencies.json` (documented / plausible / disputed / untested)
+- Do not invent sources or baseline values; do not inflate modeling/legal/source-verification progress — modeling and legal stay **0%**
+- Phase 2 remains **PARTIAL** until acceptance criteria are met; remaining domains may honestly roll into Phase 2.1
 - **Community Safety, Justice, and Restoration** is principal developing doctrine (`CC-DEV-011`–`014`, `CC-DEV-046`–`052`) and a full Phase 2 research domain — complete Community Safety and Restoration System plus Permanent Public Safety System (humane permanent incapacitation with continuing review; never “unworthy of reentry”; Secure Public Safety Campuses design agenda) (`CC-DEC-043`/`044`/`058`/`059`); do not invent crime/recidivism stats; private-prison federal timeline is 2016 Yates / 2017 Sessions rescission (not 2023); aging misconduct/rearrest → DOJ OIG 15-05, aging health costs → GAO-17-379
 - **Democracy, Representation, and Distributed Government** is the second constitutional spine (`CC-DEV-015`–`019`) — research before detailed political-structure policy (`CC-DEC-045`/`046`)
 - **Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`028`) — defining design question beyond more/less government; iconic phrase *Government should become invisible—but never unaccountable*; research before detailed administrative policy (`CC-DEC-047`/`048`/`049`); Arkansas inventory/credential are design agendas only; do not invent 80/20 stats or board counts

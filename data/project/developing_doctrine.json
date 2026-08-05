@@ -1,8 +1,226 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.0",
   "last_updated": "2026-08-04",
   "status": "developing",
-  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Includes Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
+  "note": "Not final doctrine. Not silently promoted into the Declaration. Research required before ratification. Capture clusters index post–Phase 1 ideas with maturity/evidence tags; individual items remain proposed until researched. Includes Community Safety/Justice, democracy, public-service, transparency, essential systems, human capital, Community OS, Resource Sovereignty, and Community Food Security spines before policy drafting.",
+  "capture_clusters": [
+    {
+      "cluster_id": "CC-DCC-01",
+      "title": "Justice, safety, and restoration",
+      "maturity": "proposed_architecture",
+      "evidence_status": "partially_sourced_institutional_context",
+      "affected_domains": ["justice", "public_safety", "corrections", "reentry"],
+      "constitutional_questions": [
+        "When may the state restrict liberty?",
+        "How is dignity preserved under continuing custody?"
+      ],
+      "implementation_level": ["local", "state", "federal_constitutional_floor"],
+      "risks": ["unsafe release pressure", "favoritism", "score-only custody", "private confinement profit"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-011", "CC-DEV-012", "CC-DEV-013", "CC-DEV-014", "CC-DEV-046", "CC-DEV-047", "CC-DEV-048", "CC-DEV-049", "CC-DEV-050", "CC-DEV-051", "CC-DEV-052"]
+    },
+    {
+      "cluster_id": "CC-DCC-02",
+      "title": "Distributed political power",
+      "maturity": "proposed_architecture",
+      "evidence_status": "partially_sourced_legal_institutional",
+      "affected_domains": ["democracy", "representation", "parties", "redistricting"],
+      "constitutional_questions": [
+        "How does political authority remain held in trust?",
+        "How is entrenchment prevented?"
+      ],
+      "implementation_level": ["state", "federal"],
+      "risks": ["anti-party overreach", "local capture", "procedural weaponization"],
+      "phase_destination": "phase-3",
+      "related_doctrine_ids": ["CC-DEV-015", "CC-DEV-016", "CC-DEV-017", "CC-DEV-018", "CC-DEV-019"]
+    },
+    {
+      "cluster_id": "CC-DCC-03",
+      "title": "Legislative and institutional overhaul",
+      "maturity": "proposed_architecture",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["democracy", "legislature", "procedure", "appointments"],
+      "constitutional_questions": [
+        "Which reforms restore deliberation without one-party lock-in?"
+      ],
+      "implementation_level": ["state", "federal"],
+      "risks": ["reform theater", "unintended concentration of staff/party power"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-017", "CC-DEV-018", "CC-DEV-019"]
+    },
+    {
+      "cluster_id": "CC-DCC-04",
+      "title": "Noble public service and government modernization",
+      "maturity": "proposed_architecture",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["government_capacity", "public_service", "administrative_friction"],
+      "constitutional_questions": [
+        "How can government become less frictionful without becoming less accountable?"
+      ],
+      "implementation_level": ["local", "state", "federal"],
+      "risks": ["automation without judgment", "invented efficiency stats", "unprotected board exposure of sensitive plans"],
+      "phase_destination": "phase-4",
+      "related_doctrine_ids": ["CC-DEV-020", "CC-DEV-021", "CC-DEV-022", "CC-DEV-023", "CC-DEV-024", "CC-DEV-025", "CC-DEV-026", "CC-DEV-027", "CC-DEV-028"]
+    },
+    {
+      "cluster_id": "CC-DCC-05",
+      "title": "Public transparency and the People’s Ledger",
+      "maturity": "proposed_architecture",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["transparency", "public_records", "accountability"],
+      "constitutional_questions": [
+        "What information is held in trust?",
+        "When are exceptions to openness justified?"
+      ],
+      "implementation_level": ["local", "state", "federal"],
+      "risks": ["privacy harms", "security exposure", "transparency without enforcement"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-029", "CC-DEV-030", "CC-DEV-031", "CC-DEV-032"]
+    },
+    {
+      "cluster_id": "CC-DCC-06",
+      "title": "Banking, insurance, pharmaceuticals, and community health",
+      "maturity": "proposed_architecture",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["essential_systems", "banking", "insurance", "healthcare", "pharma"],
+      "constitutional_questions": [
+        "How should essential systems serve productive value and community health without predetermined corruption conclusions?"
+      ],
+      "implementation_level": ["state", "federal", "market_design"],
+      "risks": ["unsupported systemic-intent claims", "sector-stat invention"],
+      "phase_destination": "phase-4",
+      "related_doctrine_ids": ["CC-DEV-033", "CC-DEV-034", "CC-DEV-035", "CC-DEV-036", "CC-DEV-037"]
+    },
+    {
+      "cluster_id": "CC-DCC-07",
+      "title": "Rural academies and human-capital infrastructure",
+      "maturity": "proposed_pilot_design_agenda",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["human_capital", "education", "rural_development"],
+      "constitutional_questions": [
+        "How does a republic deliberately build human infrastructure with equal-dignity pathways?"
+      ],
+      "implementation_level": ["local", "regional", "state"],
+      "risks": ["locked statewide design before pilots", "invented academy outcomes"],
+      "phase_destination": "phase-4_and_phase-5_pilots",
+      "related_doctrine_ids": ["CC-DEV-038", "CC-DEV-039", "CC-DEV-040", "CC-DEV-041"]
+    },
+    {
+      "cluster_id": "CC-DCC-08",
+      "title": "Democratic worker and community representation",
+      "maturity": "proposed",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["ownership", "labor", "communities", "democracy"],
+      "constitutional_questions": [
+        "How do workers and communities gain durable voice without destroying enterprise competence?"
+      ],
+      "implementation_level": ["firm", "local", "state"],
+      "risks": ["token representation", "competitiveness loss", "capture by factions"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-001", "CC-DEV-002", "CC-DEV-015", "CC-DEV-044"],
+      "note": "Cluster spans ownership/community doctrine and democracy spine; dedicated worker-representation statutes remain Phase 2.1+ research."
+    },
+    {
+      "cluster_id": "CC-DCC-09",
+      "title": "Scalable community implementation playbooks",
+      "maturity": "proposed_design_agenda",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["community_os", "implementation", "rural_prosperity"],
+      "constitutional_questions": [
+        "How do the same principles adapt to different places without one-size templates?"
+      ],
+      "implementation_level": ["local", "regional"],
+      "risks": ["invented town-growth outcomes", "playbooks without evaluation"],
+      "phase_destination": "phase-4_and_phase-5",
+      "related_doctrine_ids": ["CC-DEV-042", "CC-DEV-043", "CC-DEV-044", "CC-DEV-045"]
+    },
+    {
+      "cluster_id": "CC-DCC-10",
+      "title": "Resource sovereignty and community return",
+      "maturity": "proposed_architecture",
+      "evidence_status": "partially_sourced_institutional_context",
+      "affected_domains": ["resources", "energy", "environment", "local_wealth"],
+      "constitutional_questions": [
+        "Who owns the return from place-based resource burdens?"
+      ],
+      "implementation_level": ["local", "state", "federal_floor"],
+      "risks": ["investment deterrence", "allocation-model overconfidence", "GHGRP political changeability"],
+      "phase_destination": "phase-4",
+      "related_doctrine_ids": ["CC-DEV-053", "CC-DEV-054", "CC-DEV-055", "CC-DEV-056", "CC-DEV-057"]
+    },
+    {
+      "cluster_id": "CC-DCC-11",
+      "title": "Regenerative agriculture and local energy",
+      "maturity": "proposed_design_agenda",
+      "evidence_status": "partially_sourced_institutional_context",
+      "affected_domains": ["agriculture", "energy", "climate", "rural_economies"],
+      "constitutional_questions": [
+        "How are verified stewardship and local energy ownership rewarded without fraudulent offsets?"
+      ],
+      "implementation_level": ["local", "regional", "state"],
+      "risks": ["unverifiable carbon claims", "offset-as-license-to-pollute"],
+      "phase_destination": "phase-4_and_phase-5",
+      "related_doctrine_ids": ["CC-DEV-057", "CC-DEV-060"]
+    },
+    {
+      "cluster_id": "CC-DCC-12",
+      "title": "Community food security",
+      "maturity": "proposed_architecture",
+      "evidence_status": "partially_sourced_institutional_context",
+      "affected_domains": ["food", "agriculture", "nutrition", "resilience"],
+      "constitutional_questions": [
+        "How does local food capacity coexist with trade-based resilience?"
+      ],
+      "implementation_level": ["local", "regional", "state"],
+      "risks": ["isolationism", "export-only staple rules", "invented sourcing rates"],
+      "phase_destination": "phase-4",
+      "related_doctrine_ids": ["CC-DEV-058", "CC-DEV-059", "CC-DEV-060", "CC-DEV-061"]
+    },
+    {
+      "cluster_id": "CC-DCC-13",
+      "title": "Essential public infrastructure",
+      "maturity": "proposed",
+      "evidence_status": "architecture_requires_research",
+      "affected_domains": ["infrastructure", "broadband", "water", "energy", "access"],
+      "constitutional_questions": [
+        "Which infrastructures must remain broadly accessible for participation in modern economic life?"
+      ],
+      "implementation_level": ["local", "state", "federal"],
+      "risks": ["model lock-in before evidence", "access without stewardship"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-033", "CC-DEV-053", "CC-DEV-057", "CC-DEV-058"],
+      "note": "Also linked to CC-DEC-042 essential infrastructure principle in website IA."
+    },
+    {
+      "cluster_id": "CC-DCC-14",
+      "title": "Permanent ownership and reduced taxation of labor",
+      "maturity": "proposed",
+      "evidence_status": "partially_sourced_priority_tax_modules",
+      "affected_domains": ["ownership", "taxation", "wages", "capital"],
+      "constitutional_questions": [
+        "How should tax and ownership design favor broad permanent ownership without pretending all incidence is settled?"
+      ],
+      "implementation_level": ["state", "federal"],
+      "risks": ["oversimplified incidence claims", "ownership without productive capacity"],
+      "phase_destination": "phase-3_and_phase-4",
+      "related_doctrine_ids": ["CC-DEV-001", "CC-DEV-002", "CC-DEV-003", "CC-DEV-004"]
+    },
+    {
+      "cluster_id": "CC-DCC-15",
+      "title": "Constructive improvement as civic service",
+      "maturity": "proposed",
+      "evidence_status": "normative_architecture",
+      "affected_domains": ["civic_virtue", "duty_of_improvement", "public_service"],
+      "constitutional_questions": [
+        "How does each generation improve the system without destroying continuity or rights?"
+      ],
+      "implementation_level": ["individual", "civic", "institutional"],
+      "risks": ["improvement as factional capture", "permanent revolution rhetoric"],
+      "phase_destination": "phase-3_and_phase-9",
+      "related_doctrine_ids": ["CC-DEV-045", "CC-DEV-020"],
+      "note": "Anchored also in civilizational_core duty_of_improvement (CC-DEC-040)."
+    }
+  ],
   "items": [
     {
       "doctrine_id": "CC-DEV-001",

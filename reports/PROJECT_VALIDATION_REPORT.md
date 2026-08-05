@@ -1,6 +1,6 @@
 # Project Validation Report
 
-Generated: 2026-08-05T01:06:19.517Z
+Generated: 2026-08-05T02:33:24.458Z
 
 ## Identity
 
@@ -25,31 +25,26 @@ Run `pnpm env:verify` for the authoritative check. This report does not claim OS
 ## Repository State
 
 - Branch: `main`
-- HEAD: `7184b70`
+- HEAD: `6e97fb6`
 - Git status:
 ```
-M PROJECT_MASTER_MAP.md
- M START_HERE_FOR_AI.md
- M apps/book-site/src/layouts/BaseLayout.astro
- M apps/book-site/src/lib/data.ts
- M apps/build-board/src/layouts/BoardLayout.astro
- M apps/build-board/src/lib/data.ts
- M apps/build-board/src/pages/index.astro
- M apps/build-board/src/pages/research.astro
- M content/evidence-companion/CC-CLAIM-004-employee-ownership.md
+M START_HERE_FOR_AI.md
+ M content/research/national-diagnosis/00-overview.md
+ M data/decisions/decisions.json
  M data/generated/progress_snapshot_latest.json
- M data/metrics/progress_layers.json
  M data/metrics/progress_snapshot.json
  M data/project/current_build_state.json
- M data/project/national_baseline.json
+ M data/project/developing_doctrine.json
+ M data/project/latest_cursor_return.json
  M data/project/phases.json
  M data/project/slice_queue.json
  M data/project/updates.json
- M data/research/claim_ledger.json
- M data/research/source_registry.json
- M package.json
- M scripts/generate-progress-snapshot.mjs
+ M docs/handoffs/CURRENT_THREAD_HANDOFF.md
+ M reports/CC_PHASE_2_DIAGNOSIS_RESEARCH_FOUNDATION_1_0_RETURN.md
+ M schemas/developing_doctrine.schema.json
+ M scripts/bootstrap-phase2-diagnosis.mjs
  M scripts/validate-project-data.mjs
+ M scripts/validate-research-data.mjs
 ```
 
 ## Schema / Data Validation
@@ -78,8 +73,8 @@ Structured records under `data/` are validated by `pnpm project:validate` and `p
 | Book Architecture | ██████████████████░░ | 90% | strong |
 | Foundational Philosophy | ██████████████░░░░░░ | 70% | underway |
 | Manuscript | █░░░░░░░░░░░░░░░░░░░ | 3% | early |
-| Research Foundation | ████████░░░░░░░░░░░░ | 40% | underway |
-| Source Verification | ████░░░░░░░░░░░░░░░░ | 18% | early |
+| Research Foundation | ████████░░░░░░░░░░░░ | 42% | underway |
+| Source Verification | ████░░░░░░░░░░░░░░░░ | 20% | early |
 | Policy Development | ███░░░░░░░░░░░░░░░░░ | 15% | early |
 | Economic Modeling | ░░░░░░░░░░░░░░░░░░░░ | 0% | not_started |
 | Constitutional Analysis | █████░░░░░░░░░░░░░░░ | 25% | early |
