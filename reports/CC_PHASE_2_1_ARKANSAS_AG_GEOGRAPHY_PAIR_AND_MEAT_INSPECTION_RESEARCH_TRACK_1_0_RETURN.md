@@ -50,7 +50,7 @@ Complementary agriculture: infrastructure for **each** productive model — reje
 
 ## 9. Commit Hash
 
-PENDING_COMMIT
+7cf788b
 
 ## 10. Exact Next Recommended Slice
 
