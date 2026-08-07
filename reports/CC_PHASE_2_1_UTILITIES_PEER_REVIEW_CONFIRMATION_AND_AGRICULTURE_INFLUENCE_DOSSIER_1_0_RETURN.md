@@ -109,7 +109,7 @@ Utilities confirmation + agriculture dossiers, evidence-level standard, CC-SRC-1
 
 ## 22. Commit Hash
 
-See accompanying git commit on `main` (filled in ship commit message).
+`0ba3f3b`
 
 ## 23. Remaining Gaps
 
