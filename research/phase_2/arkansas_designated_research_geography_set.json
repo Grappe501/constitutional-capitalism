@@ -1,17 +1,17 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
   "generated_at": "2026-08-07",
   "status": "ACTIVE_SELECTION_PREFERENCE",
   "architecture_note": "Sampling preference for geographic research questions — not LCL field launch, not new platform.",
   "rule": "Prefer the designated Arkansas research geography set when one or more locations provide a methodologically appropriate sample. Select by research question, data quality, contrast value, and replicability—not by the result we expect to find. Document why the location was selected and why the other candidates were not necessary.",
-  "paired_comparison_future": "Eventually construct paired comparisons (e.g., high-growth Benton County vs structurally challenged rural/Delta geography) to investigate why the same state-level institutional environment produces radically different local outcomes.",
+  "paired_comparison_future": "Includes Benton vs Delta/rural pairs AND Arkansas County vs Clinton/Van Buren agricultural-system pair once county evidence is assembled.",
   "do_not_redo": {
     "geography": "Faulkner County, Arkansas",
     "reason": "Negative/not-measurable leakage pilot result is valuable intellectual history; do not repeat immediately for lower research value."
   },
   "this_slice_geography_required": false,
-  "this_slice_note": "Sectoral capture/influence dossiers are national/sector literature questions — no Arkansas geography forced.",
+  "this_slice_note": "Geography set expanded with candidate ag pair; no forced field study. County claims remain provisional.",
   "locations": [
     {
       "id": "AR-GEO-JACKSONVILLE",
@@ -75,6 +75,68 @@
       "type": "county",
       "fips": "05093",
       "contrast_role": "agriculture / industry and major industrial investment"
+    },
+    {
+      "id": "AR-GEO-ARKANSAS-COUNTY",
+      "name": "Arkansas County, Arkansas",
+      "type": "county",
+      "fips": "05001",
+      "status": "CANDIDATE",
+      "research_archetype": "Large-scale commodity / export-oriented agriculture",
+      "contrast_role": "candidate large-scale commodity / export agriculture research geography",
+      "research_purpose": "Study the infrastructure, capital, processing, transportation, commodity-market, water, land, technology, labor and trade requirements of high-volume Arkansas agriculture.",
+      "research_posture": "Candidate geography. Specific claims about production/export dominance must be established from county-level USDA/UADA evidence before canonical use.",
+      "paired_with": "AR-GEO-VAN-BUREN-COUNTY",
+      "complementary_question": "How do we keep highly productive, globally competitive agriculture prosperous while improving stewardship and ensuring that more of its value strengthens Arkansas communities?",
+      "sources_context_statewide_only": [
+        "CC-SRC-124",
+        "CC-SRC-125"
+      ],
+      "county_evidence_required_before_canonical": [
+        "Census of Agriculture county profile / Quick Stats for Arkansas County",
+        "Commodity mix, farm-size distribution, land use, processing/transport links"
+      ]
+    },
+    {
+      "id": "AR-GEO-VAN-BUREN-COUNTY",
+      "name": "Clinton / Van Buren County, Arkansas",
+      "type": "county_with_municipality_anchor",
+      "fips": "05141",
+      "municipality_anchor": "Clinton, Arkansas",
+      "status": "CANDIDATE",
+      "research_archetype": "Family-farm / livestock / specialty / organic / regional-processing hub (candidate)",
+      "contrast_role": "candidate distributed family-farm, livestock, specialty/organic and processing-infrastructure geography",
+      "research_purpose": "Study the infrastructure required for smaller livestock and family-farm systems, including slaughter/processing capacity, inspection, cold storage, distribution, cooperative infrastructure, direct markets and regional food systems.",
+      "research_posture": "Candidate geography. Clinton's claimed role as a regional USDA-processing destination and the scale/composition of family and organic agriculture must be independently established before canonical use.",
+      "paired_with": "AR-GEO-ARKANSAS-COUNTY",
+      "complementary_question": "What infrastructure prevents smaller livestock, regenerative, specialty and family farms from reaching viable scale—and which pieces should markets, cooperatives, communities, state government and federal programs provide?",
+      "clinton_processing_hub_claim": {
+        "status": "HYPOTHESIS_ONLY",
+        "hypothesis_id": "CC-HYP-CLINTON-PROCESSING-HUB",
+        "note": "Statewide processing bottleneck is evidenced; Clinton-as-regional-USDA-destination is NOT yet established from authoritative sources."
+      },
+      "sources_context_statewide": [
+        "CC-SRC-120",
+        "CC-SRC-121",
+        "CC-SRC-123"
+      ],
+      "county_evidence_required_before_canonical": [
+        "FSIS MPI Directory establishments in/near Clinton / Van Buren County (species, size, activities)",
+        "Producer usage / travel-shed evidence if available",
+        "Census of Agriculture county profile for Van Buren County farm structure"
+      ]
     }
-  ]
+  ],
+  "last_updated": "2026-08-07",
+  "location_count": 10,
+  "agricultural_paired_comparison": {
+    "status": "CANDIDATE_PAIR",
+    "locations": [
+      "AR-GEO-ARKANSAS-COUNTY",
+      "AR-GEO-VAN-BUREN-COUNTY"
+    ],
+    "purpose": "Test whether Constitutional Capitalism can strengthen both large-scale commodity agriculture and distributed family/specialty livestock systems rather than forcing a false choice between them.",
+    "philosophical_posture_not_doctrine": "Reject family-farms-good / large-farms-bad. Ask what infrastructure and rules allow each productive agricultural model to prosper while internalizing costs, preserving competition, protecting natural resources, strengthening local communities, and giving new/smaller producers a realistic path into agriculture.",
+    "evidence_gate": "County-level USDA/NASS/UADA and FSIS establishment evidence required before treating archetypes as established facts."
+  }
 }

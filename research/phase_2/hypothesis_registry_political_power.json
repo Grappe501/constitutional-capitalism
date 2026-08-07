@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
-  "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+  "version": "0.3.1",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
   "hypotheses": [
     {
       "hypothesis_id": "CC-HYP-003-D",
@@ -60,6 +60,34 @@
       },
       "last_updated": "2026-08-07",
       "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0"
+    },
+    {
+      "hypothesis_id": "CC-HYP-CLINTON-PROCESSING-HUB",
+      "text": "Clinton, Arkansas (Van Buren County) functions as a regional destination where many Arkansas family livestock farms obtain USDA-inspected slaughter/processing services.",
+      "epistemic_class": "HYPOTHESIS",
+      "geography_ids": [
+        "AR-GEO-VAN-BUREN-COUNTY"
+      ],
+      "empirical_status": "UNTESTED. Statewide processing bottleneck evidenced (CC-SRC-120/121); Clinton-specific hub role not established.",
+      "not_empirical_proof": true,
+      "test_plan": [
+        "Query FSIS MPI Directory / demographics for establishments in Clinton / Van Buren County and nearby counties (CC-SRC-123)",
+        "Record species, size class, activities",
+        "Seek producer usage / travel-shed evidence before promoting to empirical claim"
+      ],
+      "sources_context": [
+        "CC-SRC-120",
+        "CC-SRC-121",
+        "CC-SRC-123"
+      ],
+      "governance": {
+        "decision": "KEEP_AS_HYPOTHESIS",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "reason": "Do not canonize anecdotal hub claims; instrument exists to test."
+      },
+      "last_updated": "2026-08-07",
+      "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0"
     }
   ]
 }
