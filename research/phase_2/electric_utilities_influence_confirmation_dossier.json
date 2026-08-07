@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+  "generated_at": "2026-08-07",
+  "sector_id": "SEC-ELECTRIC",
+  "working_paper_under_test": "CC-SRC-108",
+  "working_paper_proposition": {
+    "claim": "Legalizing electric-utility campaign contributions (via 2005 PUHCA repeal in 30 states) caused higher authorized ROEs relative to states that retained corporate-contribution bans.",
+    "methodology": "Difference-in-differences / quasi-experiment around PUHCA repeal",
+    "population": "U.S. investor-owned electric utilities / state PUCs",
+    "period": "Around 2005 PUHCA repeal; multi-year panel as reported in WP",
+    "outcome": "Authorized return on equity (ROE) in rate cases",
+    "epistemic_classification": "QUASI-CAUSAL EFFECT (working paper; not peer-reviewed settled)",
+    "independent_confirmation_rule": "Citations of the working paper do not count as independent confirmation."
+  },
+  "independent_peer_reviewed": {
+    "supporting_association": [
+      "CC-SRC-111",
+      "CC-SRC-113",
+      "CC-SRC-105"
+    ],
+    "institutional_counterweights_contrary_to_one_sided_capture": [
+      "CC-SRC-112"
+    ],
+    "competing_institutional_explanations": [
+      "CC-SRC-114"
+    ],
+    "ownership_structure_descriptive": [
+      "CC-SRC-115"
+    ]
+  },
+  "institutional_alternatives_considered": [
+    "Industry influence via contributions / nonmarket strategy",
+    "Information asymmetry / regulatory dependence on utility information",
+    "Technical complexity and capital intensity",
+    "Reliability and statutory mandates",
+    "Rate-of-return regulation premiums and asymmetric rate-case timing (CC-SRC-114)",
+    "Consumer advocate institutions (CC-SRC-112)",
+    "Commission election vs appointment (literature noted; not newly identified this slice)",
+    "Natural-monopoly economics"
+  ],
+  "ownership_comparison": {
+    "sources": [
+      "CC-SRC-115"
+    ],
+    "finding": "IOUs serve ~72% of customers; munis and co-ops are numerous but smaller on average; governance/rate-setting differ (state PUC vs local boards). No doctrine inference that public/coop ownership performs better.",
+    "influence_inference": "NOT ESTABLISHED by ownership map alone"
+  },
+  "what_survived_scrutiny": [
+    "Peer-reviewed literature independently shows utilities use political strategy and that contested hearings associate with contribution escalation (CC-SRC-111, CC-SRC-113).",
+    "Consumer-advocate institutions associate with lower authorized ROE — institutional structure matters (CC-SRC-112).",
+    "Elevated authorized ROE can arise from rate-of-return regulation design without proving contribution capture (CC-SRC-114)."
+  ],
+  "what_did_not_survive_as_settled": [
+    "Van Orden PUHCA DiD as peer-reviewed settled causal fact — remains working paper (CC-SRC-108).",
+    "National utilities 'capture' wording — Level 5 burden not met.",
+    "Attribution of all ROE premiums to campaign contributions alone."
+  ],
+  "verdict": "PARTIALLY CONFIRMED",
+  "verdict_detail": "Independent peer-reviewed association between utility political strategy / contested regulation and regulatory politics is confirmed. The specific PUHCA-legalization quasi-causal estimate is NOT independently confirmed as peer-reviewed settled fact. Capture NOT MET.",
+  "strongest_defensible_proposition": {
+    "wording": "In U.S. investor-owned electric utility regulation, peer-reviewed evidence associates firm political strategy and institutional design (including consumer representation) with authorized returns and related rate-case outcomes; a working-paper quasi-experiment suggests contribution legalization raised authorized ROE, but that specific causal estimate remains provisional.",
+    "epistemic_type": "EMPIRICAL CLAIM (association) + HYPOTHESIS (PUHCA contribution legalization effect)",
+    "evidence_level_max_earned": 3,
+    "capture_language": "FORBIDDEN"
+  },
+  "prior_sectoral_disposition_update": "PARTIALLY_CONFIRMED_ASSOCIATION_WP_STILL_PROVISIONAL"
+}

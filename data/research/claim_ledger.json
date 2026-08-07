@@ -155,7 +155,7 @@
       "temporal_scope": "contemporary",
       "public_wording": "Market concentration is measurable; links from concentration to democratic accountability require additional sourced political-economy research.",
       "phase21_audit": {
-        "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+        "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
         "audited_at": "2026-08-07",
         "disposition": "NOT ENOUGH EVIDENCE",
         "source_to_claim_fit": "PARTIAL",
@@ -163,7 +163,7 @@
         "geography_class": "United States",
         "confidence": "Low",
         "proposed_replacement": "Measurable economic concentration creates a researchable risk factor for democratic accountability; causal links require sourced political-economy modules before public assertion.",
-        "reasoning": "Sectoral association evidence deepens modules but parent umbrella still overbroad for Supports."
+        "reasoning": "Sectoral association evidence (utilities PARTIALLY CONFIRMED; agriculture first dossier) does not revive the broad historical parent. Remain NEE."
       },
       "phase21_repair": {
         "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
@@ -222,6 +222,15 @@
         "CC-CLAIM-133",
         "CC-CLAIM-134",
         "CC-CLAIM-135"
+      ],
+      "utilities_confirmation": "research/phase_2/electric_utilities_influence_confirmation_dossier.json",
+      "agriculture_dossier": "research/phase_2/agriculture_political_influence_dossier.json",
+      "successor_claims": [
+        "CC-CLAIM-133",
+        "CC-CLAIM-134",
+        "CC-CLAIM-135",
+        "CC-CLAIM-136",
+        "CC-CLAIM-137"
       ]
     },
     {
@@ -4332,7 +4341,12 @@
         "CC-SRC-106",
         "CC-SRC-107",
         "CC-SRC-108",
-        "CC-SRC-109"
+        "CC-SRC-109",
+        "CC-SRC-111",
+        "CC-SRC-112",
+        "CC-SRC-113",
+        "CC-SRC-116",
+        "CC-SRC-117"
       ],
       "opposing_evidence": [
         "Lucca/Seru/Trebbi 2014: banking revolving-door flows inconsistent with simple quid-pro-quo capture (CC-SRC-107).",
@@ -4361,6 +4375,102 @@
         "confidence": "Moderate",
         "evidence_type": "ASSOCIATIONAL",
         "reasoning": "Telecom peer-reviewed association + banking mixed + utilities provisional + explicit contrary; no capture verbs."
+      }
+    },
+    {
+      "claim_id": "CC-CLAIM-136",
+      "claim_text": "In U.S. investor-owned electric utility regulation, peer-reviewed research associates firm political strategy and regulatory-institution design (including consumer-advocate presence) with rate-case outcomes such as authorized returns; such associations are not equivalent to proof that utilities capture or control public utility commissions.",
+      "chapter_ids": [],
+      "claim_type": "political_sectoral_association",
+      "claim_class": "descriptive_empirical",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "importance": "high",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "moderate",
+      "consensus_status": "emerging_peer_reviewed",
+      "source_ids": [
+        "CC-SRC-111",
+        "CC-SRC-112",
+        "CC-SRC-113",
+        "CC-SRC-114",
+        "CC-SRC-108"
+      ],
+      "opposing_evidence": [
+        "Rate-of-return regulation can generate ROE premiums via institutional design without contribution mechanisms (CC-SRC-114).",
+        "Consumer advocates associate with lower ROE — outcomes are contested, not unilaterally industry-determined (CC-SRC-112)."
+      ],
+      "uncertainty": "PUHCA contribution-legalization causal estimate remains working-paper provisional (CC-HYP-UTILITY-PUHCA-ROE).",
+      "fact_check_status": "audited",
+      "publication_readiness": "not_ready",
+      "geographic_scope": "US-state-PUC",
+      "temporal_scope": "1980s–2010s panels vary by study",
+      "parent_claim_id": "CC-CLAIM-003",
+      "related_hypothesis_id": "CC-HYP-003-D",
+      "evidence_level": 3,
+      "governance": {
+        "decision": "APPROVE",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+        "at": "2026-08-07",
+        "note": "Association-only; capture verbs forbidden."
+      },
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "confidence": "Moderate",
+        "evidence_type": "ASSOCIATIONAL",
+        "reasoning": "Independent peer-reviewed utility literature confirms association; WP causal estimate kept as hypothesis."
+      }
+    },
+    {
+      "claim_id": "CC-CLAIM-137",
+      "claim_text": "U.S. agricultural policy processes involve competing economic interests rather than a single 'agriculture' lobby; peer-reviewed evidence finds electoral incentives more important than lobbying in explaining congressional support for agricultural protection, while crop-insurance legislative history documents farm–insurer coalitions that jointly benefited from subsidy expansions at taxpayer cost.",
+      "chapter_ids": [],
+      "claim_type": "political_agriculture_structure",
+      "claim_class": "descriptive_empirical",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "importance": "high",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "moderate",
+      "consensus_status": "contested_across_literatures",
+      "source_ids": [
+        "CC-SRC-116",
+        "CC-SRC-117",
+        "CC-SRC-118",
+        "CC-SRC-073",
+        "CC-SRC-119"
+      ],
+      "opposing_evidence": [
+        "Crop-insurance coalition history shows organized lobbies can obtain joint benefits (CC-SRC-117) — lobbying is not irrelevant, only not primary for farm-protection vote models in Bellemare & Carnes.",
+        "COOL repeal aligned with packer preferences but WTO retaliation is a major competing explanation (CC-SRC-118)."
+      ],
+      "uncertainty": "Does not establish Level-4/5 influence for all Farm Bill titles; Arkansas-specific modules pending.",
+      "fact_check_status": "audited",
+      "publication_readiness": "not_ready",
+      "geographic_scope": "US",
+      "temporal_scope": "varies_by_case",
+      "parent_claim_id": "CC-CLAIM-003",
+      "related_hypothesis_id": "CC-HYP-003-D",
+      "evidence_level": 3,
+      "governance": {
+        "decision": "APPROVE",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+        "at": "2026-08-07",
+        "note": "Competing-interests + electoral-primary + coalition association; no capture wording."
+      },
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "confidence": "Moderate",
+        "evidence_type": "ASSOCIATIONAL / STRUCTURAL",
+        "reasoning": "Disaggregates agriculture; cites contrary and supporting cases."
       }
     }
   ]

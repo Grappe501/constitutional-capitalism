@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+  "version": "0.3.0",
+  "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
   "hypotheses": [
     {
       "hypothesis_id": "CC-HYP-003-D",
@@ -11,26 +11,55 @@
       "theoretical_sources": [
         "CC-SRC-103"
       ],
-      "empirical_status": "Sectoral dossiers registered (telecom association; banking mixed; utilities provisional WP; pharma mechanism-limited; agriculture open). Still NOT a proven national capture claim.",
+      "empirical_status": "Utilities: peer-reviewed association PARTIALLY CONFIRMED; PUHCA WP still provisional. Agriculture: first dossier — competing interests; electoral>lobby for protection votes; crop-insurance coalitions Level-3 candidate. Capture NOT MET nationally or sectorally.",
       "not_empirical_proof": true,
       "sectoral_dossiers": "research/phase_2/sectoral_political_influence_capture_dossiers.json",
       "sources_support": [
         "CC-SRC-105",
         "CC-SRC-106",
         "CC-SRC-108",
-        "CC-SRC-110"
+        "CC-SRC-110",
+        "CC-SRC-111",
+        "CC-SRC-113",
+        "CC-SRC-117"
       ],
       "sources_contrary": [
         "CC-SRC-107",
-        "CC-SRC-109"
+        "CC-SRC-109",
+        "CC-SRC-112",
+        "CC-SRC-114",
+        "CC-SRC-116",
+        "CC-SRC-118"
       ],
       "last_updated": "2026-08-07",
-      "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+      "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
       "governance": {
         "decision": "KEEP_AS_HYPOTHESIS",
         "adjudicator": "ChatGPT",
-        "reason": "Sectoral associations and provisional quasi-experiments deepen the research program without clearing the capture wording bar."
+        "reason": "Additional sectoral association evidence deepens the hypothesis without clearing Level-5 capture burden or proving system-wide parent claim."
       }
+    },
+    {
+      "hypothesis_id": "CC-HYP-UTILITY-PUHCA-ROE",
+      "text": "Legalizing electric-utility campaign contributions after the 2005 PUHCA repeal raised authorized ROEs in treated states relative to states retaining corporate contribution bans.",
+      "epistemic_class": "HYPOTHESIS",
+      "parent_claim_id": "CC-CLAIM-003",
+      "related_sector": "SEC-ELECTRIC",
+      "sources_support": [
+        "CC-SRC-108"
+      ],
+      "sources_contrary": [
+        "CC-SRC-114"
+      ],
+      "empirical_status": "Supported by working paper quasi-experiment only; not independently peer-review confirmed this slice.",
+      "not_empirical_proof": true,
+      "governance": {
+        "decision": "KEEP_AS_HYPOTHESIS",
+        "adjudicator": "ChatGPT",
+        "reason": "Do not promote WP causal estimate to empirical claim without independent confirmation."
+      },
+      "last_updated": "2026-08-07",
+      "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0"
     }
   ]
 }

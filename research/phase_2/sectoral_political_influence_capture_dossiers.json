@@ -54,15 +54,21 @@
       "sector_id": "SEC-ELECTRIC",
       "name": "Electric utilities (authorized ROE / contributions)",
       "best_supporting": [
+        "CC-SRC-111",
+        "CC-SRC-113",
         "CC-SRC-108"
       ],
-      "best_contrary": [],
-      "evidence_type": "QUASI-CAUSAL CANDIDATE (working paper)",
-      "what_established": "A quasi-experimental design around PUHCA repeal suggests easing contribution restrictions associated with higher authorized ROEs in some states.",
-      "what_not_established": "Peer-reviewed settled fact for CC; Arkansas-specific utility capture; 'owns/determines' language.",
-      "capture_bar": "PROVISIONAL — do not promote capture claim from WP alone.",
+      "best_contrary": [
+        "CC-SRC-112",
+        "CC-SRC-114"
+      ],
+      "evidence_type": "ASSOCIATIONAL (peer-reviewed) + PROVISIONAL QUASI-CAUSAL (WP)",
+      "what_established": "Peer-reviewed association between utility political strategy / institutional design and rate-case outcomes; WP PUHCA effect still provisional.",
+      "what_not_established": "Peer-reviewed confirmation of Van Orden DiD as settled; Level-5 capture; ROE premium solely from contributions.",
+      "capture_bar": "NOT MET — PARTIALLY CONFIRMED association only.",
       "arkansas_note": "Future AR PSC modules could use designated set if state regulator questions arise.",
-      "disposition": "PROVISIONAL_QUASI_EXPERIMENTAL"
+      "disposition": "PARTIALLY_CONFIRMED_ASSOCIATION_WP_PROVISIONAL",
+      "confirmation_dossier": "research/phase_2/electric_utilities_influence_confirmation_dossier.json"
     },
     {
       "sector_id": "SEC-PHARMA",
@@ -97,20 +103,29 @@
     {
       "sector_id": "SEC-AGRICULTURE",
       "name": "Agriculture / commodity regulation",
-      "best_supporting": [],
-      "best_contrary": [],
-      "evidence_type": "OPEN",
-      "what_established": "Nothing registered in this slice.",
-      "what_not_established": "Any capture or influence claim for agriculture.",
-      "capture_bar": "NOT ADMISSIBLE yet.",
-      "arkansas_note": "Mississippi County designated set may matter later for agri/industrial contrast — not used here.",
-      "disposition": "CRITICAL_GAP"
+      "best_supporting": [
+        "CC-SRC-117"
+      ],
+      "best_contrary": [
+        "CC-SRC-116",
+        "CC-SRC-118"
+      ],
+      "evidence_type": "MIXED — association (crop insurance coalitions) + contrary (electoral > lobby; COOL trade CF)",
+      "what_established": "Agriculture is not a unitary interest; electoral incentives dominate lobbying for protection votes; crop-insurance history shows coalitions; payment incidence is program/size specific.",
+      "what_not_established": "Sector-wide capture; lobby-primary Farm Bill causation; family-farm benefit from aggregate spending.",
+      "capture_bar": "NOT MET.",
+      "arkansas_note": "Mississippi County available in designated set if future question requires — not used this slice.",
+      "disposition": "FIRST_DOSSIER_REGISTERED_NO_CAPTURE",
+      "dossier": "research/phase_2/agriculture_political_influence_dossier.json"
     }
   ],
   "synthesis": {
-    "cc_hyp_003_d_update": "Hypothesis remains open. Sectoral association evidence exists (telecom; banking literature mixed; utilities provisional). Blanket capture claims still forbidden. Mechanism tests can falsify casual capture labels (pharma Vioxx).",
+    "cc_hyp_003_d_update": "Utilities association deepened with independent peer-reviewed sources; agriculture gap closed with first dossier showing competing interests. National capture claim still not earned.",
     "promote_to_empirical_claim": false,
-    "reason_not_promoted": "No sector yet clears the high wording bar for 'capture/control/buy/owns/determines' as a CC canonical claim; associations must stay labeled as associations.",
-    "recommended_public_language": "In some regulated sectors, political money and lobbying associate with more favorable regulatory outcomes under specific research designs. That is not the same as proving national democratic capture by economic concentration."
-  }
+    "reason_not_promoted": "Graduated model: activity/association in places; Level-5 capture nowhere in this slice.",
+    "recommended_public_language": "We can show political activity, some associations, and institutional counterweights — not that corporations control regulators or that agriculture is a single captured lobby.",
+    "evidence_level_standard": "research/phase_2/political_influence_evidence_level_registry.json"
+  },
+  "slice_id_confirmation": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+  "last_updated": "2026-08-07"
 }
