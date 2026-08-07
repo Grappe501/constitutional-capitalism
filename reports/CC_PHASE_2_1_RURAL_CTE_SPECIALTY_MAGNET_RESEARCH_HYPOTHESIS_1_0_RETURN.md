@@ -42,7 +42,7 @@ Candidate specialty lists for Rose Bud / West Helena / Searcy / Mississippi Coun
 
 ## 8. Commit Hash
 
-PENDING_COMMIT
+b6f0be8
 
 ## 9. Next Slice
 
