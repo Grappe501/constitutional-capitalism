@@ -1,8 +1,8 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "decision_id": "CC-DEC-103",
   "standard": "research/phase_2/public_reasoning_standard.json",
-  "slice_id": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+  "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0",
   "generated_at": "2026-08-07",
   "note": "Citizen-facing systems reasoning — not a glorified corrections page.",
   "records": [
@@ -355,6 +355,35 @@
         "COOL restoration could create trade costs"
       ],
       "what_evidence_could_change_our_mind_again": "Causal studies linking specific firm political activity to agency outcomes after competing explanations; Arkansas designated-set tests if methodologically required."
+    },
+    {
+      "record_id": "CC-PR-013",
+      "claim_id": "CC-CLAIM-138",
+      "change_type": "NEW_QUALIFIED_CLAIM",
+      "decision": "APPROVE",
+      "decision_id": "CC-DEC-103",
+      "adjudicator": "ChatGPT",
+      "decided_at": "2026-08-07",
+      "skeptical_reader_question": "Did USDA laws create a meatpacking monopsony that traps family farmers?",
+      "public_answer": "Not in that crude form. Highly concentrated packers can exercise buyer power — recent USDA research finds stronger evidence of that for cattle after packing capacity tightened. But earlier consolidation also brought scale economies. In Arkansas, scarce small-scale inspected processing adds a second bottleneck if a farmer wants to sell meat rather than live animals. Inspection itself is a food-safety requirement, not the monopsony. When compliant plants are scarce, that requirement can amplify the practical disadvantage. Arkansas already has a state meat inspection program; the open questions are whether it is adequate and whether Cooperative Interstate Shipment would help.",
+      "what_we_originally_said": "Earlier research track asked whether Arkansas should create a state meat inspection program.",
+      "what_made_us_question_it": "FSIS and Arkansas Department of Agriculture records show the program was approved in 2022.",
+      "what_we_learned": "Two layers matter: buyer concentration and processing scarcity. Inspection scarcity amplifies disadvantage; inspection is not the villain.",
+      "where_our_reasoning_was_weak": "Risk of sloganizing 'USDA created monopsony' or treating concentration as always harmful.",
+      "what_we_now_say": "Highly concentrated meatpacking markets have reduced buyer competition for livestock, and recent USDA research finds stronger evidence that packers have exercised market power by paying cattle producers less than they likely would under more competitive conditions. In Arkansas, limited small-scale slaughter and processing capacity creates an additional bottleneck for family and specialty livestock producers. Federal and state inspection requirements are essential food-safety safeguards, but when compliant processing capacity is scarce, those requirements can amplify the practical market-access disadvantage facing small producers.",
+      "why_we_made_that_decision": "Adopt ChatGPT-tightened wording that matches ERS + Arkansas processing evidence and keeps food-safety safeguards intact.",
+      "what_we_still_dont_know": "Arkansas buyer-radius magnitudes; wait times/fees; Clinton hub; CIS readiness; whether capacity expansion raises farm-gate returns.",
+      "what_else_this_could_affect": [
+        "Family Farm Prosperity architecture",
+        "Arkansas County / Clinton paired comparison",
+        "Anti-monopsony design agendas"
+      ],
+      "potential_secondary_effects_or_unintended_consequences": [
+        "New small plants can fail if throughput is insufficient",
+        "CIS adds compliance burden",
+        "Consumer prices may rise if costs are higher at small plants"
+      ],
+      "what_evidence_could_change_our_mind_again": "Arkansas measurement showing competitive local buyers and ample accessible processing; or capacity expansion that fails to improve producer returns."
     }
   ],
   "last_updated": "2026-08-07"

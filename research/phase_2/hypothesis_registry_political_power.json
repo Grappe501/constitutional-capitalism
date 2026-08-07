@@ -1,6 +1,6 @@
 {
-  "version": "0.3.1",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
+  "version": "0.4.0",
+  "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0",
   "hypotheses": [
     {
       "hypothesis_id": "CC-HYP-003-D",
@@ -88,6 +88,35 @@
       },
       "last_updated": "2026-08-07",
       "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0"
+    },
+    {
+      "hypothesis_id": "CC-HYP-AR-LIVESTOCK-COMPOUNDED-ACCESS",
+      "text": "Arkansas family-scale livestock producers face a compounded market-access disadvantage created by concentrated livestock purchasing and scarce inspected slaughter/processing capacity; expanding competitive small and midsize processing infrastructure may increase producer bargaining power and access to higher-value local and regional markets.",
+      "epistemic_class": "HYPOTHESIS",
+      "module_id": "CC-MOD-AR-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS",
+      "geography_ids": [
+        "AR-GEO-VAN-BUREN-COUNTY",
+        "AR-GEO-ARKANSAS-COUNTY"
+      ],
+      "empirical_status": "PARTIALLY MOTIVATED nationally (CC-SRC-126) and by AR processing bottleneck (CC-SRC-120/121); Arkansas buyer-radius and capacity-intervention causal effects UNTESTED.",
+      "not_empirical_proof": true,
+      "deliberate_falsification": true,
+      "sources_support": [
+        "CC-SRC-126",
+        "CC-SRC-120",
+        "CC-SRC-121"
+      ],
+      "sources_qualify": [
+        "CC-SRC-126"
+      ],
+      "governance": {
+        "decision": "KEEP_AS_HYPOTHESIS",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "reason": "Compounded-access claim requires Arkansas measurement before promotion beyond CC-CLAIM-138's carefully limited wording."
+      },
+      "last_updated": "2026-08-07",
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
     }
   ]
 }

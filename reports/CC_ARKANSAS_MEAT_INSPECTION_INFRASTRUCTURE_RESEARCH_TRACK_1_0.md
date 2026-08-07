@@ -1,26 +1,14 @@
-# Arkansas Meat Inspection & Processing Infrastructure Research Track 1.0
+# Arkansas Meat Inspection & Processing Infrastructure Research Track 1.1 (CORRECTED)
 
-**Status:** OPEN — agenda and sources registered; analysis not complete.
+## Correction
 
-## Primary question
+Arkansas **already has** a State Meat Inspection Program (FSIS cooperative agreement, Oct 4, 2022 — CC-SRC-127/128).
 
-> Would an Arkansas meat inspection program, combined with strategically distributed small and midsized processing infrastructure, materially expand market access and profitability for family livestock farms without compromising food safety or imposing unsustainable public costs?
+The obsolete question “Should Arkansas create a state meat inspection program?” is **retired**.
 
-Test **both sides**.
+## Current questions
 
-## What is already evidenced (statewide)
+1. Is the current program large / accessible / strategically deployed enough to expand family-farm processing capacity?
+2. Should Arkansas pursue **CIS** so qualifying state-inspected plants can ship interstate? (Arkansas **not** listed among CIS states as of retrieval — CC-SRC-130)
 
-- Retail beef depends on USDA inspection; limited inspected capacity noted in 2020 UADA survey (CC-SRC-120).
-- Organic/specialty livestock limited by processing bottleneck (CC-SRC-121).
-- Chicken-and-egg: producers ↔ processors (CC-SRC-120).
-- State MPI + CIS is a real federal legal pathway (CC-SRC-122); establishment directory exists (CC-SRC-123).
-
-## What is NOT evidenced
-
-- That Clinton specifically is where many Arkansas family farms bring livestock for USDA processing (**hypothesis**).
-- That a state program would net-benefit producers after costs/workforce/safety tradeoffs.
-- County archetype dominance claims for Arkansas County or Van Buren County.
-
-## Agenda
-
-See `research/phase_2/arkansas_meat_inspection_infrastructure_research_track.json`.
+Must test both sides; food safety and public cost remain constraints.

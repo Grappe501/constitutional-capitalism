@@ -1092,12 +1092,18 @@
     },
     {
       "id": "CC-RQ-P21-037",
-      "question": "Would an Arkansas meat inspection program, combined with strategically distributed small and midsized processing infrastructure, materially expand market access and profitability for family livestock farms without compromising food safety or imposing unsustainable public costs?",
-      "status": "open",
+      "question": "Is Arkansas's current state meat inspection program large enough, accessible enough, and strategically deployed enough to materially expand family-farm processing capacity—and should Arkansas pursue Cooperative Interstate Shipment so qualifying state-inspected small processors can sell across state lines—without compromising food safety or imposing unsustainable public costs?",
+      "status": "open_corrected",
       "domain": "agriculture_processing_infrastructure",
       "related_module": "CC-MOD-AR-MEAT-INSPECTION-INFRASTRUCTURE",
-      "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
-      "must_test_both_sides": true
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0",
+      "must_test_both_sides": true,
+      "correction": "Arkansas already has a state meat inspection program (2022). Question reframed to adequacy + CIS.",
+      "related_sources": [
+        "CC-SRC-127",
+        "CC-SRC-128",
+        "CC-SRC-130"
+      ]
     },
     {
       "id": "CC-RQ-P21-038",
@@ -1124,6 +1130,35 @@
         "CC-SRC-125"
       ],
       "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0"
+    },
+    {
+      "id": "CC-RQ-P21-040",
+      "question": "Where exactly do Arkansas family livestock producers lose bargaining power, and how much of that disadvantage is attributable to buyer concentration versus processing scarcity?",
+      "status": "open",
+      "domain": "agriculture_market_structure",
+      "related_module": "CC-MOD-AR-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS",
+      "related_claim": "CC-CLAIM-138",
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
+    },
+    {
+      "id": "CC-RQ-P21-041",
+      "question": "What infrastructure interventions (state-inspected capacity expansion, CIS, cooperatives, shared cold storage, mobile slaughter where lawful, financing, training) most improve farm-gate returns without sacrificing food safety or imposing unsustainable public costs?",
+      "status": "open",
+      "domain": "agriculture_processing_infrastructure",
+      "related_module": "CC-MOD-AR-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS",
+      "must_test_both_sides": true,
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
+    },
+    {
+      "id": "CC-RQ-P21-042",
+      "question": "Does additional small/midsize packing capacity in or accessible to Arkansas raise cattle/livestock prices or producer margins relative to live-sale into concentrated buyer markets?",
+      "status": "open",
+      "domain": "agriculture_market_structure",
+      "related_hypothesis": "CC-HYP-AR-LIVESTOCK-COMPOUNDED-ACCESS",
+      "related_sources": [
+        "CC-SRC-126"
+      ],
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
     }
   ]
 }

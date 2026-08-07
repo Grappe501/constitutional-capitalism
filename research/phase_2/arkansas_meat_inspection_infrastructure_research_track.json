@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0",
-  "status": "OPEN_RESEARCH_TRACK",
+  "version": "0.2.0",
+  "status": "OPEN_RESEARCH_TRACK_CORRECTED",
   "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
   "generated_at": "2026-08-07",
   "module_id": "CC-MOD-AR-MEAT-INSPECTION-INFRASTRUCTURE",
-  "primary_research_question": "Would an Arkansas meat inspection program, combined with strategically distributed small and midsized processing infrastructure, materially expand market access and profitability for family livestock farms without compromising food safety or imposing unsustainable public costs?",
+  "primary_research_question": "Is Arkansas's current state meat inspection program large enough, accessible enough, and strategically deployed enough to materially expand family-farm processing capacity—and should Arkansas pursue Cooperative Interstate Shipment so qualifying state-inspected small processors can sell across state lines—without compromising food safety or imposing unsustainable public costs?",
   "must_test_both_sides": true,
   "systems_constraint_named": {
     "name": "processing chicken-and-egg",
@@ -19,16 +19,14 @@
     "CC-SRC-123"
   ],
   "research_agenda": [
-    "States already operating MPI programs: structure, costs, outcomes",
-    "Establishment economics and throughput requirements",
-    "Inspector / veterinary workforce requirements",
-    "At-least-equal-to equivalency requirements",
-    "Interstate limitations and Cooperative Interstate Shipment (CIS) options",
-    "Capital costs for small/mid-sized multi-species plants",
-    "Producer wait times and scheduling constraints",
-    "Food-safety outcomes vs federal inspection",
-    "Whether new capacity generates enough producer volume to remain viable",
-    "Distribution of plants relative to Arkansas County vs Van Buren County producer geographies"
+    "Map Arkansas state-inspected vs federally inspected establishments by species/location",
+    "Measure accessibility: wait times, fees, haul distances, scheduling (if discoverable)",
+    "Compare program scale to producer demand / chicken-and-egg constraint",
+    "CIS eligibility and institutional readiness for Arkansas",
+    "Workforce: inspectors, meat cutters, veterinary capacity",
+    "Capital costs and failure rates of small/midsize plants",
+    "Food-safety outcomes under state vs federal inspection",
+    "Whether expanded capacity raises farm-gate returns without consumer-price harm"
   ],
   "not_in_this_slice": [
     "Cost-benefit recommendation",
@@ -45,5 +43,27 @@
     "CC-RQ-P21-037",
     "CC-RQ-P21-038",
     "CC-RQ-P21-039"
-  ]
+  ],
+  "correction": {
+    "at": "2026-08-07",
+    "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0",
+    "previous_error": "Primary RQ asked whether Arkansas should create a state meat inspection program.",
+    "corrected_fact": "Arkansas already operates a State Meat Inspection Program under a 2022 FSIS cooperative agreement (CC-SRC-127, CC-SRC-128).",
+    "sources": [
+      "CC-SRC-127",
+      "CC-SRC-128",
+      "CC-SRC-130"
+    ]
+  },
+  "arkansas_program_status": {
+    "exists": true,
+    "cooperative_agreement_date": "2022-10-04",
+    "commerce_scope": "intrastate unless CIS",
+    "cis_participant": false,
+    "cis_as_of": "2026-08-07",
+    "cis_source": "CC-SRC-130"
+  },
+  "superseded_question": "Would an Arkansas meat inspection program… (OBSOLETE — program already exists)",
+  "related_module": "CC-MOD-AR-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS",
+  "slice_id_correction": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
 }
