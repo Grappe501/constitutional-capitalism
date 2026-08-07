@@ -1,6 +1,6 @@
 # Project Master Map
 
-Last updated: 2026-08-04 (Phase 2 diagnosis foundation)
+Last updated: 2026-08-07 (forensic audit refresh — Phase 2 PARTIAL; institution freeze)
 
 ## Purpose
 
@@ -63,4 +63,4 @@ Map every major system in the Constitutional Capitalism repository.
 
 ## Current phase
 
-Phase 1 **ACCEPTED / CLOSED**. Active: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (absorbs Evidence + National Baseline). Parallel: civic deliberation feedback system (queued; does not block). Phase 2 is expected partial until Phase 2.1 finishes remaining domains.
+Phase 1 **ACCEPTED / CLOSED**. Active: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (absorbs Evidence + National Baseline). Parallel: civic deliberation feedback system (queued; does not block). Phase 2 remains **PARTIAL** (11/16 gates open as of 2026-08-07 forensic audit). Research-institution foundations exist under infrastructure freeze — fill corpus/packets, do not expand shelves. See `reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md`.

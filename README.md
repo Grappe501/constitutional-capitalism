@@ -56,7 +56,9 @@ Two Netlify sites from one GitHub repo:
 
 ## Status
 
-Phase 0 foundation. Manuscript chapters are architectural placeholders. Licensing decision open.
+Phase 0 complete · Phase 1 **LOCKED / CLOSED** · Phase 2 **PARTIAL** (diagnosis / proof foundation).  
+Overall progress is regenerated from canonical data (`pnpm progress:generate`) — currently mid-40s%; do not treat as Phase 2 completion. Manuscript chapters remain architectural placeholders. Modeling and legal review remain 0%. Licensing decision open.
 
+Latest forensic audit: `reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md`  
 AI operators: begin at `START_HERE_FOR_AI.md`.
 

@@ -1,0 +1,106 @@
+{
+  "version": "0.2.0",
+  "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+  "generated_at": "2026-08-07",
+  "parent_claim_id": "CC-CLAIM-003",
+  "parent_claim_text": "Economic concentration can weaken democratic accountability.",
+  "parent_status": "NOT ENOUGH EVIDENCE — preserved historical umbrella",
+  "rule": "Do not mutate CC-CLAIM-003 claim_text in this slice. Create falsifiable modules. Public reasoning explains why the umbrella claim fails.",
+  "concept_registry": "research/phase_2/political_power_concept_registry.json",
+  "modules": [
+    {
+      "module_id": "CC-MOD-003-A",
+      "title": "Economic resource concentration",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "proposed_wording": "U.S. household wealth and selected industry market structures show high concentration at the top of their distributions.",
+      "best_support": [
+        "CC-SRC-001",
+        "CC-SRC-002",
+        "CC-SRC-005",
+        "CC-SRC-012"
+      ],
+      "disposition_if_promoted": "SUPPORTED WITH QUALIFICATION",
+      "fit_if_promoted": "STRONG",
+      "notes": "Already largely covered by CC-CLAIM-011/005 — module exists to stop smuggling concentration into 'accountability'.",
+      "governance_decision": "RECLASSIFY",
+      "admissible_as": "CROSS_REFERENCE_TO_EXISTING_CLAIMS",
+      "evidence_type": "DESCRIPTIVE",
+      "successor_claim_id": null,
+      "hypothesis_id": null
+    },
+    {
+      "module_id": "CC-MOD-003-B",
+      "title": "Unequal policy responsiveness",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "proposed_wording": "Under some research designs, U.S. national policy outcomes associate more strongly with affluent and organized-business preferences than with average-citizen preferences when those preferences diverge; the magnitude and causal interpretation remain contested.",
+      "best_support": [
+        "CC-SRC-094"
+      ],
+      "best_contrary": [
+        "CC-SRC-095"
+      ],
+      "disposition_if_promoted": "SUPPORTED WITH QUALIFICATION",
+      "fit_if_promoted": "PARTIAL",
+      "notes": "Gilens/Page + Branham/Soroka/Wlezien — association/contested causation, not capture.",
+      "governance_decision": "APPROVE_WITH_MODIFY",
+      "admissible_as": "EMPIRICAL_CLAIM",
+      "evidence_type": "ASSOCIATIONAL (contested causal interpretation)",
+      "successor_claim_id": "CC-CLAIM-133",
+      "hypothesis_id": null
+    },
+    {
+      "module_id": "CC-MOD-003-C",
+      "title": "Campaign finance and lobbying disclosure (descriptive)",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "proposed_wording": "Federal campaign-finance and lobbying disclosure systems make large flows of political money and lobbying activity publicly observable; disclosure alone does not establish that economic concentration weakens democratic accountability.",
+      "best_support": [
+        "CC-SRC-092",
+        "CC-SRC-093",
+        "CC-SRC-096"
+      ],
+      "disposition_if_promoted": "SUPPORTED AS WRITTEN",
+      "fit_if_promoted": "DIRECT",
+      "notes": "Descriptive only.",
+      "governance_decision": "APPROVE",
+      "admissible_as": "EMPIRICAL_CLAIM",
+      "evidence_type": "DESCRIPTIVE",
+      "successor_claim_id": "CC-CLAIM-134",
+      "hypothesis_id": null
+    },
+    {
+      "module_id": "CC-MOD-003-D",
+      "title": "Regulatory capture (sectoral)",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "proposed_wording": "In specific regulated sectors, industry actors can systematically shape the agencies that regulate them; such capture must be evidenced sector-by-sector and is not established by national concentration statistics alone.",
+      "best_support": [],
+      "disposition_if_promoted": "NOT ENOUGH EVIDENCE",
+      "fit_if_promoted": "NON-SUPPORTING",
+      "notes": "Requires agency/sector modules — currently open.",
+      "governance_decision": "RECLASSIFY",
+      "admissible_as": "HYPOTHESIS",
+      "evidence_type": "THEORETICAL (+ future sectoral)",
+      "successor_claim_id": null,
+      "hypothesis_id": "CC-HYP-003-D"
+    },
+    {
+      "module_id": "CC-MOD-003-E",
+      "title": "State capture (systemic)",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "proposed_wording": "Private actors can, under some conditions, shape the formation of laws and rules to their advantage on a systemic basis; whether U.S. national politics meets a state-capture standard is not established by current Constitutional Capitalism sources.",
+      "best_support": [],
+      "best_contrary": [
+        "CC-SRC-095"
+      ],
+      "disposition_if_promoted": "NOT ENOUGH EVIDENCE",
+      "fit_if_promoted": "NON-SUPPORTING",
+      "notes": "Do not promote without identification standards.",
+      "governance_decision": "RECLASSIFY",
+      "admissible_as": "RESEARCH_QUESTION",
+      "evidence_type": "THEORETICAL / UNDER-IDENTIFIED",
+      "successor_claim_id": null,
+      "hypothesis_id": null
+    }
+  ],
+  "recommendation_for_parent": "Keep CC-CLAIM-003 as NEE umbrella OR retire/rewrite after ChatGPT governance choosing among modules A–E. Do not upgrade Supports.",
+  "governance": "research/phase_2/claim_003_module_governance.json"
+}

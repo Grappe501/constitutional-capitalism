@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+  "generated_at": "2026-08-07",
+  "checks": [
+    {
+      "id": "no_claim_text_without_approval",
+      "pass": true,
+      "detail": "All mutations tied to CC-DEC-103 / ChatGPT embedded decisions"
+    },
+    {
+      "id": "every_mutation_has_decision_record",
+      "pass": true,
+      "detail": "6 mutations recorded with decision_id CC-DEC-103"
+    },
+    {
+      "id": "old_versions_recoverable",
+      "pass": true,
+      "detail": "claim_text_history present on mutated claims"
+    },
+    {
+      "id": "retired_claim_in_history",
+      "pass": true,
+      "detail": "CC-CLAIM-009 RETIRED; text preserved; not deleted"
+    },
+    {
+      "id": "prediction_not_empirical_proof",
+      "pass": true,
+      "detail": "CC-PRED-009 not_empirical_proof=true; CC-PRED-012 likewise"
+    },
+    {
+      "id": "pending_changes_cleared",
+      "pass": true,
+      "detail": "All six queue items APPLIED"
+    },
+    {
+      "id": "pred009_collision_preserved",
+      "pass": true,
+      "detail": "Prior abrupt-reform PRED-009 text relocated to CC-PRED-011"
+    }
+  ],
+  "all_pass": true
+}

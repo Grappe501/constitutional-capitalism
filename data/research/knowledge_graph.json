@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-04",
-  "status": "design_agenda",
+  "last_updated": "2026-08-07",
+  "status": "partial_seed",
   "decision_id": "CC-DEC-072",
   "title": "Constitutional Capitalism Knowledge Graph",
   "purpose": "Organize the growing set of ideas as nodes and typed relationships so doctrines do not sprawl into an unsearchable pile. Intended to become AI-searchable. Not a completed graph and not evidence by itself.",
-  "note": "Scaffold for Burt / Phase 2.1 continuation. Sample chain included to demonstrate relationship discipline. Expand nodes from developing_doctrine, systems_map, and frameworks without inventing causal proof.",
+  "note": "Scaffold for Burt / Phase 2.1 continuation. Sample chain included to demonstrate relationship discipline. Expand nodes from developing_doctrine, systems_map, and frameworks without inventing causal proof. Expanded lightly by CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0 with claim-audit organizing links; no speculative causal chains.",
   "relationship_types": [
     "reduces",
     "improves",
@@ -17,7 +17,11 @@
     "conflicts_with",
     "measured_by",
     "implemented_by",
-    "belongs_to_system"
+    "belongs_to_system",
+    "qualified_by",
+    "retirement_recommended_by",
+    "rewrite_proposed_by",
+    "research_gap_for"
   ],
   "node_kinds": [
     "doctrine",
@@ -34,7 +38,9 @@
       "node_id": "CC-KG-001",
       "label": "Community Energy",
       "kind": "instrument",
-      "related_doctrine_ids": ["CC-DEV-057"]
+      "related_doctrine_ids": [
+        "CC-DEV-057"
+      ]
     },
     {
       "node_id": "CC-KG-002",
@@ -76,12 +82,174 @@
       "node_id": "CC-KG-009",
       "label": "Constitutional Family Doctrine",
       "kind": "doctrine",
-      "related_doctrine_ids": ["CC-DEV-078", "CC-DEV-079"]
+      "related_doctrine_ids": [
+        "CC-DEV-078",
+        "CC-DEV-079"
+      ]
     },
     {
       "node_id": "CC-KG-010",
       "label": "Childhood Well-being",
       "kind": "outcome"
+    },
+    {
+      "node_id": "CC-KG-011",
+      "label": "First-20 Claim Audit Spine",
+      "kind": "system",
+      "related_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+      "note": "Organizing node for audited claims — not evidence"
+    },
+    {
+      "node_id": "CC-KG-012",
+      "label": "CC-CLAIM-011",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-011"
+    },
+    {
+      "node_id": "CC-KG-013",
+      "label": "CC-CLAIM-015",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-015"
+    },
+    {
+      "node_id": "CC-KG-014",
+      "label": "CC-CLAIM-014",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-014"
+    },
+    {
+      "node_id": "CC-KG-015",
+      "label": "CC-CLAIM-003",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-003"
+    },
+    {
+      "node_id": "CC-KG-016",
+      "label": "Claim Repair Slice P21",
+      "kind": "system",
+      "related_slice": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0"
+    },
+    {
+      "node_id": "CC-KG-017",
+      "label": "CC-CLAIM-009",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-009"
+    },
+    {
+      "node_id": "CC-KG-018",
+      "label": "CC-CLAIM-001",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-001"
+    },
+    {
+      "node_id": "CC-KG-019",
+      "label": "CC-CLAIM-010",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-010"
+    },
+    {
+      "node_id": "CC-KG-020",
+      "label": "CC-CLAIM-016",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-016"
+    },
+    {
+      "node_id": "CC-KG-021",
+      "label": "CC-CLAIM-017",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-017"
+    },
+    {
+      "node_id": "CC-KG-022",
+      "label": "CC-CLAIM-006",
+      "kind": "metric",
+      "claim_id": "CC-CLAIM-006"
+    },
+    {
+      "node_id": "CC-KG-023",
+      "label": "Governed Claim + Domain Deepening P21",
+      "kind": "system",
+      "related_slice": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0"
+    },
+    {
+      "node_id": "CC-KG-024",
+      "label": "CC-SRC-094",
+      "kind": "source",
+      "source_id": "CC-SRC-094"
+    },
+    {
+      "node_id": "CC-KG-025",
+      "label": "CC-SRC-095",
+      "kind": "source",
+      "source_id": "CC-SRC-095"
+    },
+    {
+      "node_id": "CC-KG-026",
+      "label": "CC-SRC-096",
+      "kind": "source",
+      "source_id": "CC-SRC-096"
+    },
+    {
+      "node_id": "CC-KG-027",
+      "label": "CC-SRC-097",
+      "kind": "source",
+      "source_id": "CC-SRC-097"
+    },
+    {
+      "node_id": "CC-KG-028",
+      "label": "CC-SRC-098",
+      "kind": "source",
+      "source_id": "CC-SRC-098"
+    },
+    {
+      "node_id": "CC-KG-029",
+      "label": "ChatGPT Claim Governance Applied",
+      "kind": "system",
+      "related_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "node_id": "CC-KG-030",
+      "label": "CC-PRED-009",
+      "kind": "prediction",
+      "prediction_id": "CC-PRED-009"
+    },
+    {
+      "node_id": "CC-KG-031",
+      "label": "CC-PRED-012",
+      "kind": "prediction",
+      "prediction_id": "CC-PRED-012"
+    },
+    {
+      "node_id": "CC-KG-032",
+      "label": "Public Reasoning Standard",
+      "kind": "system",
+      "related_decision": "CC-DEC-103",
+      "related_slice": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0"
+    },
+    {
+      "node_id": "CC-KG-033",
+      "label": "Faulkner County AR",
+      "kind": "geography",
+      "geography_id": "US-AR-Faulkner-County"
+    },
+    {
+      "node_id": "CC-KG-034",
+      "label": "Local Leakage Pilot Measurement",
+      "kind": "measurement",
+      "related_slice": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0"
+    },
+    {
+      "node_id": "CC-KG-035",
+      "label": "Sectoral Influence/Capture Dossiers",
+      "kind": "system",
+      "related_slice": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0"
+    },
+    {
+      "node_id": "CC-KG-036",
+      "label": "Arkansas Designated Research Geography Set",
+      "kind": "system",
+      "related_artifact": "research/phase_2/arkansas_designated_research_geography_set.json"
     }
   ],
   "edges": [
@@ -143,6 +311,184 @@
       "to": "CC-KG-008",
       "class": "untested",
       "note": "HFI childhood domain is design agenda only"
+    },
+    {
+      "edge_id": "CC-KGE-009",
+      "from": "CC-KG-011",
+      "relation": "supports",
+      "to": "CC-KG-012",
+      "class": "documented",
+      "note": "Linked by CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0; confidence explicit in claim audit — not causal proof.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-010",
+      "from": "CC-KG-011",
+      "relation": "supports",
+      "to": "CC-KG-013",
+      "class": "documented",
+      "note": "Linked by CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0; confidence explicit in claim audit — not causal proof.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-011",
+      "from": "CC-KG-011",
+      "relation": "supports",
+      "to": "CC-KG-014",
+      "class": "documented",
+      "note": "Linked by CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0; confidence explicit in claim audit — not causal proof.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-012",
+      "from": "CC-KG-011",
+      "relation": "supports",
+      "to": "CC-KG-015",
+      "class": "untested",
+      "note": "Linked by CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0; confidence explicit in claim audit — not causal proof.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-013",
+      "from": "CC-KG-016",
+      "relation": "retirement_recommended_by",
+      "to": "CC-KG-017",
+      "class": "documented",
+      "note": "Retirement recommendation PENDING governance approval; claim not deleted.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-014",
+      "from": "CC-KG-016",
+      "relation": "rewrite_proposed_by",
+      "to": "CC-KG-018",
+      "class": "documented",
+      "note": "Rewrite candidate PENDING; canonical text unchanged.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-015",
+      "from": "CC-KG-016",
+      "relation": "rewrite_proposed_by",
+      "to": "CC-KG-019",
+      "class": "documented",
+      "note": "Rewrite candidate PENDING; canonical text unchanged.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-016",
+      "from": "CC-KG-016",
+      "relation": "rewrite_proposed_by",
+      "to": "CC-KG-020",
+      "class": "documented",
+      "note": "Rewrite candidate PENDING; canonical text unchanged.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-017",
+      "from": "CC-KG-016",
+      "relation": "rewrite_proposed_by",
+      "to": "CC-KG-021",
+      "class": "documented",
+      "note": "Rewrite candidate PENDING; canonical text unchanged.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-018",
+      "from": "CC-KG-016",
+      "relation": "rewrite_proposed_by",
+      "to": "CC-KG-022",
+      "class": "documented",
+      "note": "Rewrite candidate PENDING; canonical text unchanged.",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-019",
+      "from": "CC-KG-024",
+      "relation": "partially_informs",
+      "to": "CC-KG-015",
+      "class": "documented",
+      "note": "Unequal responsiveness — not capture proof",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-020",
+      "from": "CC-KG-025",
+      "relation": "contrasts",
+      "to": "CC-KG-015",
+      "class": "documented",
+      "note": "Contrary to strong oligarchy/capture reading",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-021",
+      "from": "CC-KG-026",
+      "relation": "discloses_activity_for",
+      "to": "CC-KG-015",
+      "class": "documented",
+      "note": "LDA lobbying disclosure ≠ capture",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-022",
+      "from": "CC-KG-027",
+      "relation": "partially_informs",
+      "to": "CC-KG-020",
+      "class": "documented",
+      "note": "Local labor effects — not wealth leakage",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-023",
+      "from": "CC-KG-028",
+      "relation": "contrasts",
+      "to": "CC-KG-020",
+      "class": "documented",
+      "note": "Consumer surplus contrary to net-harm leakage narrative",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-024",
+      "from": "CC-KG-023",
+      "relation": "awaiting_governance_on",
+      "to": "CC-KG-018",
+      "class": "documented",
+      "note": "Decision packet pending Steve",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-025",
+      "from": "CC-KG-017",
+      "relation": "retired_to",
+      "to": "CC-KG-030",
+      "class": "documented",
+      "note": "CC-DEC-103; prediction is not empirical proof",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-026",
+      "from": "CC-KG-019",
+      "relation": "splits_prediction_to",
+      "to": "CC-KG-031",
+      "class": "documented",
+      "note": "Empirical concentration claim separated from ownership-expansion prediction",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-027",
+      "from": "CC-KG-033",
+      "relation": "measured_by",
+      "to": "CC-KG-034",
+      "class": "documented",
+      "note": "Measurement map — not causal prosperity link"
+    },
+    {
+      "edge_id": "CC-KGE-028",
+      "from": "CC-KG-034",
+      "relation": "informs",
+      "to": "CC-KG-020",
+      "class": "documented",
+      "note": "Pilot finding NOT MEASURABLE for net leakage; claim retained as Qualifies"
     }
   ],
   "build_rules": [

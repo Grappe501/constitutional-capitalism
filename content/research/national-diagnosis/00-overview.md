@@ -1,8 +1,8 @@
 # Overview
 
 **Domain status:** priority_first_pass  
-**Last updated:** 2026-08-04  
-**Phase:** 2 — Diagnosis Research Foundation
+**Last updated:** 2026-08-07  
+**Phase:** 2 — Diagnosis Research Foundation / 2.1 three-layer retrofit
 
 ## Central question
 
@@ -22,27 +22,34 @@ Every diagnosis brief must distinguish:
 
 See `DIAGNOSIS_BRIEF_STANDARD.md` and `data/project/phase2_mission_lock.json` (`CC-DEC-064`). This separation prevents research from quietly turning into advocacy.
 
+**2026-08-07 execution:** Slice `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0` retrofitted all **nine** priority briefs with the three mandatory layers, Historical/Economic/Constitutional-Legal evidence tracks, Supports/Qualifies/Contradicts/Not Enough Evidence assessments, exposed MISSING EVIDENCE, and queued `CC-RQ-P21-001`–`027`. GATE-03 presence **passed**. GATE-02 substantive sourcing remains **open**. Phase 2 remains **PARTIAL**.
+
 ## Current findings
 
-Priority domains now have sourced first-pass briefs: wealth/ownership, wages/productivity, taxation (CBO distribution), corporate power/concentration, worker ownership, local/rural economies, internet commerce (architecture + research queue), and political/economic power (linked to concentration evidence; causal democracy links still open).
+Priority domains now have sourced first-pass briefs with three-layer retrofit: wealth/ownership, wages/productivity, taxation (CBO distribution), corporate power/concentration, worker ownership, local/rural economies, internet commerce (architecture + research queue), and political/economic power (linked to concentration evidence; causal democracy links still open).
 
 **Justice, Safety, and Restoration** is a principal Phase 2 research domain and developing doctrine (`CC-DEV-011`–`014`). Architecture and Justice Test are in place; **sourced quantitative diagnosis is queued for Phase 2.1** — no invented justice statistics.
 
 **Democracy, Representation, and Distributed Government** is the **second constitutional spine** (`CC-DEV-015`–`019`). Architecture, Democracy Test, Bill Transparency Test, and initial legal/institutional sources (*Rucho*, NCSL) are seeded; fuller empirical diagnosis is Phase 2.1.
 
-**Public Service and the 21st-Century State** / Government Capacity (`CC-DEV-020`–`028`) is a **defining institutional design doctrine**: better outcomes with fewer layers, less friction, greater accountability — *Government should become invisible—but never unaccountable.* Architecture, Regulation Reason Test, and Government Capacity Test are seeded; Arkansas Public Authority Inventory and Civic Service Credential are design agendas — no invented board counts or 80/20 statistics.
-
-**Constitutional Transparency and the People's Ledger** (`CC-DEV-029`–`032`) is the **fourth institutional spine**: public information held in trust; presumed open unless constitutionally or legally justified protections apply; People's Ledger as named accountability design agenda — no invented FOIA or portal statistics.
-
-**Essential Systems** (`CC-DEV-033`–`037`) is a **major system-design domain** for banking, insurance, healthcare, pharmaceuticals, community health, and prevention — shared constitutional question and four-question chapter method; Community Health Index design agenda — no invented sector statistics or unsupported systemic-intent claims.
-
-**Human Capital Doctrine** (`CC-DEV-038`–`041`) is a **pillar**: build human capital infrastructure; multiple pathways of equal dignity; regional civic/innovation academies as a researchable pilot model that makes home stronger — not a locked statewide design; no invented academy outcomes.
-
-**Build Your Community / Community Operating System** (`CC-DEV-042`–`045`) is the **practical signature architecture**: adaptive playbooks; seven-layer living project; asset- and people-first blueprints; permanent Implementation Completeness Rule — Community OS is a design agenda, not an operating product; no invented town growth outcomes.
-
 Verified federal/primary sources registered in `source_registry.json` (Fed SCF/DFA, BLS, Census, USDA ERS, FDIC, CBO) with secondary scholarly/advocacy sources labeled. Two baseline wealth metrics carry sourced values; most baseline indicators remain pending by design.
 
-This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1.
+This overview does **not** claim a finished national diagnosis. Remaining domains are foundational shells queued for Phase 2.1. Operational scoreboard is proof completed → evidence quality → contrary evidence → claims tested → confidence earned — not overall percent.
+
+## What the data directly establishes
+
+- Priority briefs now separate sourced facts from inference and normative conclusions (three-layer presence).
+- Wealth concentration and selected wage/tax/rural/concentration indicators remain the strongest registered factual spine (see domain briefs and `CC-SRC-001`–`013`).
+- Baseline remains **2 of 86** sourced metrics.
+
+## What may reasonably be inferred
+
+- Three-layer presence improves honesty of presentation; it does not by itself make domains substantively sourced (GATE-02 still open).
+- Internet-commerce and political-accountability causal claims remain early.
+
+## What Constitutional Capitalism normatively concludes
+
+Diagnosis must withstand an informed critic before constitutional design. Architecture and institution scaffolding are not proof. Phase 2 stays PARTIAL until acceptance gates close.
 
 ## Strongest supporting evidence
 
@@ -71,6 +78,7 @@ This overview does **not** claim a finished national diagnosis. Remaining domain
 - Housing, education, healthcare detail, transport/broadband, food, banking depth, trade, tech/AI, constitutional/legal, international, flourishing — foundational only.
 - 84 of 86 baseline metrics still pending sourced values.
 - Legal review and economic modeling remain 0%.
+- See research queue `CC-RQ-P21-001`–`027`.
 
 ## Constitutional implications
 
@@ -87,33 +95,15 @@ Phase 2 does not enact national legislation. Findings feed later design under th
 
 ## Source IDs
 
-- `CC-SRC-001`
-- `CC-SRC-002`
-- `CC-SRC-003`
-- `CC-SRC-004`
-- `CC-SRC-005`
-- `CC-SRC-006`
-- `CC-SRC-007`
-- `CC-SRC-008`
-- `CC-SRC-009`
-- `CC-SRC-010`
-- `CC-SRC-011`
-- `CC-SRC-012`
-- `CC-SRC-013`
+- `CC-SRC-001` through `CC-SRC-013` (priority spine)
 
 ## Claim IDs
 
-- `CC-CLAIM-002`
-- `CC-CLAIM-004`
-- `CC-CLAIM-005`
-- `CC-CLAIM-006`
-- `CC-CLAIM-011`
-- `CC-CLAIM-012`
-- `CC-CLAIM-013`
-- `CC-CLAIM-019`
+- `CC-CLAIM-002`, `CC-CLAIM-004`, `CC-CLAIM-005`, `CC-CLAIM-006`, `CC-CLAIM-011`, `CC-CLAIM-012`, `CC-CLAIM-013`, `CC-CLAIM-019`
 
 ## Next research actions
 
-1. Phase 2.1 full sourcing for remaining domains.
-2. Expand sourced baseline beyond wealth indicators.
-3. Deepen political-power and internet-commerce modules without concealing contrary evidence.
+1. Continue Phase 2.1: deepen eight priority domains + re-audit first 20 claims (GATE-02/04/05).
+2. Expand sourced baseline beyond wealth; Public Statistics Bridge as subordinate path.
+3. Build evidence dossiers; run source/claim integrity audit.
+4. Do not write new infrastructure under freeze.

@@ -64,21 +64,27 @@ Steve (owner) · ChatGPT (mission design / review) · Cursor (implementation)
 
 Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `docs/handoffs/`.
 
-## Official active state (CC-DEC-064)
+## Official active state (CC-DEC-064 · 2026-08-07 claim repair)
 
 ```text
 Phase 1: ACCEPTED / CLOSED
-Current mission: CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0
-Evidence/Baseline slice: ABSORBED ALIAS
-Civic deliberation: APPROVED PARALLEL / NOT ACTIVE IN THIS MISSION
-Current HEAD: read from git (authorization-era note 7184b70 is historical)
-Overall baseline: read from progress snapshot (honest mid-30s%; do not hardcode)
+Latest completed slice: CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0
+Next: CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0
+Phase 2: PARTIAL
+GATE-03: PASSED (9/9)
+GATE-02: PARTIAL / REMAINS OPEN — 12/20 below STRONG fit; 5 PENDING rewrites; CC-CLAIM-003 still NEE; baseline 2/86
+P0 questions: 9/9 CLOSED
+Sources: 93
+Weak-fit: 13 → 12
+Canonical claim_text mutations: 0 (governance queue PENDING)
+CC-CLAIM-009: retirement_recommended → CC-PRED-009
+Baseline: 2 / 86
+Infrastructure freeze: ACTIVE
 Primary question: What can we prove?
-Phase 2 status: PARTIAL
-Next slice if incomplete: CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0
+Return: reports/CC_PHASE_2_1_PRIORITY_CLAIM_REWRITE_AND_P0_CLOSEOUT_1_0_RETURN.md
 ```
 
-Lock file: `data/project/phase2_mission_lock.json` · Burt handoff: `docs/handoffs/BURT_PHASE_2_MISSION_LOCK.md`
+Lock file: `data/project/phase2_mission_lock.json` · Governance queue: `research/phase_2/claim_change_governance_queue.json` · Thread handoff: `docs/handoffs/CURRENT_THREAD_HANDOFF.md`
 
 ## Current direction (Phase 2)
 

@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-07",
   "decision_id": "CC-DEC-075",
   "related_decision_ids": [
     "CC-DEC-064",
@@ -171,11 +171,12 @@
     "authorization_head_note": "Original Phase 2 authorization referenced HEAD 7184b70; current repository HEAD advances with each ship and must be read from git, not frozen in this lock.",
     "forensic_audit_overall_snapshot": 36,
     "overall_percent_source": "data/metrics/progress_snapshot.json",
-    "overall_baseline_note": "Forensic audit snapshot recorded 36%. Regenerated overall comes from progress_snapshot and is not Phase 2 completion. Baseline remains 2/86; modeling/legal 0%.",
+    "overall_baseline_note": "Historical forensic freeze 36%. Regenerated overall was 43% on 2026-08-07 (progress_snapshot) and is not Phase 2 completion. Baseline remains 2/86; modeling/legal 0%; three-layer priority briefs 0/9; infrastructure freeze active.",
+    "latest_forensic_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md",
     "primary_question": "What can we prove?",
     "phase_2_status": "PARTIAL",
     "next_slice_if_partial": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
-    "current_risk": "polished surfaces may overstate evidentiary maturity"
+    "current_risk": "polished surfaces and institution scaffolding may overstate evidentiary maturity"
   },
   "doctrine_freeze": {
     "decision_id": "CC-DEC-093",

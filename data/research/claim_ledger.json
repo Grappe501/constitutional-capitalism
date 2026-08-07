@@ -1,21 +1,22 @@
 {
-  "version": "0.2.9",
-  "last_updated": "2026-08-05",
-  "note": "Phase 2 claims including justice, democracy, public-service, assistance, Popular Sovereignty, and Energy Sovereignty EIA/DOE baselines. Normative claims labeled. No fabricated support.",
+  "version": "0.3.1",
+  "last_updated": "2026-08-07",
+  "note": "Phase 2 claims including justice, democracy, public-service, assistance, Popular Sovereignty, and Energy Sovereignty EIA/DOE baselines. Normative claims labeled. No fabricated support. Phase 2.1 continuation (2026-08-07): forensic re-audit of CC-CLAIM-001–020 with dispositions; no automatic rewrites applied.",
   "claims": [
     {
       "claim_id": "CC-CLAIM-001",
-      "claim_text": "Capitalism has produced broad prosperity across historical contexts.",
+      "claim_text": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made.",
       "chapter_ids": [],
       "claim_type": "historical_economics",
-      "claim_class": "descriptive_historical",
+      "claim_class": "historical_claim",
       "importance": "high",
       "support_level": "requires_additional_research",
       "evidence_strength": "incomplete",
       "consensus_status": "contested_across_literatures",
       "source_ids": [],
       "opposing_evidence": [
-        "Cross-country and within-country experiences vary widely; distributional outcomes differ."
+        "Cross-country and within-country experiences vary widely; distributional outcomes differ.",
+        "Cross-country and within-country experiences vary widely; distributional conflicts and failures are first-class (existing opposing_evidence)."
       ],
       "uncertainty": "Too broad for a single Phase 2 quantitative claim; needs scoped historical modules.",
       "fact_check_status": "needs_research",
@@ -23,7 +24,54 @@
       "legal_review_requirement": true,
       "geographic_scope": "multi_country",
       "temporal_scope": "long_run",
-      "public_wording": "Market systems have been associated with large gains in material living standards in many contexts, with important exceptions and distributional conflicts."
+      "public_wording": "Market systems have been associated with large gains in material living standards in many contexts, with important exceptions and distributional conflicts.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "source_to_claim_fit": "PARTIAL",
+        "freshness": "HISTORICAL BY DESIGN",
+        "geography_class": "International",
+        "confidence": "Very Low",
+        "proposed_replacement": "In many countries and periods, market-oriented growth has been associated with large gains in material living standards, with important exceptions, crises, and distributional conflicts that must be scoped before public wording.",
+        "reasoning": "Honest uncertainty wording; still requires historical modules before stronger claims. NOT ENOUGH EVIDENCE / HISTORICAL RESEARCH REQUIRED."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "REWRITE REQUIRED",
+        "fit": "NON-SUPPORTING",
+        "fit_detail": "NON-SUPPORTING (proposed PARTIAL)",
+        "defect": "WORDING TOO BROAD",
+        "confidence": "Very Low",
+        "rewrite_queued": true
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "Capitalism has produced broad prosperity across historical contexts.",
+          "new_text": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made.",
+          "change_reason": "Directionally right but Burt draft still asserted unsourced historical association; do not canonize first and source later.",
+          "evidence_basis": [],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-001",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0"
+        }
+      ],
+      "governed_mutation": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "decision_id": "CC-DEC-103",
+        "change_id": "CC-CHG-P21-001",
+        "decision": "MODIFY",
+        "mutated_at": "2026-08-07",
+        "previous_text": "Capitalism has produced broad prosperity across historical contexts.",
+        "new_text": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made."
+      },
+      "epistemic_class": "HISTORICAL_CLAIM",
+      "public_reasoning_ids": [
+        "CC-PR-001"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-002",
@@ -37,11 +85,13 @@
       "consensus_status": "widely_documented_with_measurement_debates",
       "source_ids": [
         "CC-SRC-003",
-        "CC-SRC-004"
+        "CC-SRC-004",
+        "CC-SRC-090"
       ],
       "opposing_evidence": [
         "Gap size depends on whether average compensation, median wages, or production/nonsupervisory pay is used, and on price deflators.",
-        "Some analyses emphasize benefits growth and composition effects."
+        "Some analyses emphasize benefits growth and composition effects.",
+        "CC-SRC-090 and ledger opposing notes: gap size depends on average vs typical pay and deflators; benefits/composition effects matter."
       ],
       "uncertainty": "Causal attribution (market power, technology, globalization, institutions) remains debated.",
       "fact_check_status": "in_progress",
@@ -49,7 +99,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "post_1970s",
-      "public_wording": "Federal and secondary analyses document a productivity–compensation gap since the 1970s; exact magnitudes depend on measurement choices."
+      "public_wording": "Federal and secondary analyses document a productivity–compensation gap since the 1970s; exact magnitudes depend on measurement choices.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Primary BLS support is real; 'typical worker' and magnitude remain contested. Qualifies — not Supports as if measurement-settled."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-003",
@@ -62,11 +133,19 @@
       "evidence_strength": "low_to_moderate",
       "consensus_status": "contested",
       "source_ids": [
-        "CC-SRC-005"
+        "CC-SRC-005",
+        "CC-SRC-092",
+        "CC-SRC-093",
+        "CC-SRC-094",
+        "CC-SRC-095",
+        "CC-SRC-096"
       ],
       "opposing_evidence": [
         "Concentration measures do not automatically prove political capture.",
-        "Countervailing institutions, media, and electoral competition vary."
+        "Countervailing institutions, media, and electoral competition vary.",
+        "Concentration ≠ capture; countervailing institutions vary (existing opposing_evidence).",
+        "FEC disclosure availability demonstrates transparency infrastructure; disclosure is not evidence of capture or of concentration causing weakened accountability.",
+        "Branham/Soroka/Wlezien 2017: rich do not dominate when preferences diverge (CC-SRC-095)."
       ],
       "uncertainty": "Needs campaign-finance, lobbying, and media-concentration modules with careful identification.",
       "fact_check_status": "needs_research",
@@ -74,7 +153,76 @@
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "public_wording": "Market concentration is measurable; links from concentration to democratic accountability require additional sourced political-economy research."
+      "public_wording": "Market concentration is measurable; links from concentration to democratic accountability require additional sourced political-economy research.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "source_to_claim_fit": "PARTIAL",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Low",
+        "proposed_replacement": "Measurable economic concentration creates a researchable risk factor for democratic accountability; causal links require sourced political-economy modules before public assertion.",
+        "reasoning": "Sectoral association evidence deepens modules but parent umbrella still overbroad for Supports."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "fit": "WEAK",
+        "fit_detail": "WEAK",
+        "defect": "CAUSAL OVERREACH",
+        "confidence": "Low",
+        "rewrite_queued": false
+      },
+      "phase21_domain_deepening": {
+        "slice_id": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+        "audited_at": "2026-08-07",
+        "note": "Evidence posture updated; claim_text unchanged pending governance"
+      },
+      "epistemic_class": "CAUSAL_CLAIM",
+      "research_modules": "research/phase_2/claim_003_research_modules.json",
+      "public_reasoning_ids": [
+        "CC-PR-007"
+      ],
+      "phase21_module_split": {
+        "slice_id": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+        "at": "2026-08-07",
+        "parent_disposition": "NOT ENOUGH EVIDENCE",
+        "modules": [
+          "CC-MOD-003-A",
+          "CC-MOD-003-B",
+          "CC-MOD-003-C",
+          "CC-MOD-003-D",
+          "CC-MOD-003-E"
+        ],
+        "claim_text_mutated": false
+      },
+      "lifecycle_status": "active_historical_umbrella",
+      "decomposition_status": {
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "parent_disposition": "NOT ENOUGH EVIDENCE",
+        "retained": true,
+        "deleted": false,
+        "successors": [
+          "CC-CLAIM-133",
+          "CC-CLAIM-134"
+        ],
+        "hypotheses": [
+          "CC-HYP-003-D"
+        ],
+        "research_questions": [
+          "CC-RQ-P21-031"
+        ],
+        "reclassified_modules": [
+          "CC-MOD-003-A"
+        ]
+      },
+      "sectoral_dossiers": "research/phase_2/sectoral_political_influence_capture_dossiers.json",
+      "related_claim_ids": [
+        "CC-CLAIM-133",
+        "CC-CLAIM-134",
+        "CC-CLAIM-135"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-004",
@@ -93,7 +241,8 @@
       "opposing_evidence": [
         "Average performance association is small; many null results exist.",
         "Selection into ESOPs and complementary HR practices confound causal claims.",
-        "Employee stock can concentrate retirement risk in one employer."
+        "Employee stock can concentrate retirement risk in one employer.",
+        "Null results, selection, free-rider, undiversified stock risk (ledger + CC-SRC-006)."
       ],
       "uncertainty": "Design quality (participation, information, diversification) likely mediates outcomes.",
       "fact_check_status": "in_progress",
@@ -101,7 +250,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US_and_international",
       "temporal_scope": "late_20th_early_21st",
-      "public_wording": "Research syntheses find employee ownership is often associated with modestly better average performance and stability, not universal improvement."
+      "public_wording": "Research syntheses find employee ownership is often associated with modestly better average performance and stability, not universal improvement.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Conditional wording matches evidence. Keep Qualifies."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-005",
@@ -118,7 +288,8 @@
       ],
       "opposing_evidence": [
         "Rising concentration can reflect efficiency and scale.",
-        "National concentration may overstate local rivalry or understate digital competition."
+        "National concentration may overstate local rivalry or understate digital competition.",
+        "Efficiency/scale, imports, product-market definition disputes (ledger)."
       ],
       "uncertainty": "Effects on prices, wages, and entry are industry-specific.",
       "fact_check_status": "in_progress",
@@ -126,16 +297,37 @@
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "Economic_Census_cycles",
-      "public_wording": "The Economic Census publishes concentration ratios showing large-firm shares in many industries; competitive effects must be assessed case by case."
+      "public_wording": "The Economic Census publishes concentration ratios showing large-firm shares in many industries; competitive effects must be assessed case by case.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "'Can weaken competition' is modal and industry-specific. Concentration measured; harm not automatic. Qualifies."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "MEASUREMENT MISMATCH",
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-006",
-      "claim_text": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
+      "claim_text": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation.",
       "chapter_ids": [],
       "claim_type": "regional_economics",
       "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "partially_supported",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "moderate",
       "consensus_status": "well_documented_for_selected_indicators",
       "source_ids": [
@@ -145,7 +337,8 @@
       ],
       "opposing_evidence": [
         "Some nonmetro areas have gained population via migration since 2020.",
-        "Not all rural counties follow the same path; recreation-adjacent counties differ."
+        "Not all rural counties follow the same path; recreation-adjacent counties differ.",
+        "Some nonmetro gains post-2020; amenity counties diverge; FDIC 2014 aging."
       ],
       "uncertainty": "Plant-level relocation causal estimates need separate case/econometric modules.",
       "fact_check_status": "in_progress",
@@ -153,7 +346,58 @@
       "legal_review_requirement": false,
       "geographic_scope": "US_nonmetro",
       "temporal_scope": "1980_present",
-      "public_wording": "Federal sources document widespread rural county population loss historically, rural hospital closures/conversions, and community-bank charter decline in depopulating areas—alongside recent uneven nonmetro migration gains."
+      "public_wording": "Federal sources document widespread rural county population loss historically, rural hospital closures/conversions, and community-bank charter decline in depopulating areas—alongside recent uneven nonmetro migration gains.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": "Rural structural decline can erode community capacity (population, banking, healthcare access); corporate relocation is a plausible contributing mechanism requiring separate causal modules.",
+        "reasoning": "Rural structural decline sourced; corporate relocation labeled as requiring separate causal evaluation."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL (proposed STRONG if rewrite approved)",
+        "defect": "CAUSAL OVERREACH",
+        "confidence": "Moderate",
+        "rewrite_queued": true
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
+          "new_text": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation.",
+          "change_reason": "Disagree with NO CHANGE; existing sentence linguistically links relocation to outcomes sourced only for rural structural decline.",
+          "evidence_basis": [
+            "CC-SRC-008",
+            "CC-SRC-009",
+            "CC-SRC-010"
+          ],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-005",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0"
+        }
+      ],
+      "governed_mutation": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "decision_id": "CC-DEC-103",
+        "change_id": "CC-CHG-P21-005",
+        "decision": "MODIFY",
+        "mutated_at": "2026-08-07",
+        "previous_text": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
+        "new_text": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation."
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "public_reasoning_ids": [
+        "CC-PR-002"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-007",
@@ -163,11 +407,12 @@
       "claim_class": "speculative_and_emerging_empirical",
       "importance": "high",
       "support_level": "requires_additional_research",
-      "evidence_strength": "low",
+      "evidence_strength": "incomplete",
       "consensus_status": "emerging_contested",
       "source_ids": [],
       "opposing_evidence": [
-        "Technology can complement labor and create new tasks; historical automation episodes vary."
+        "Technology can complement labor and create new tasks; historical automation episodes vary.",
+        "Automation can complement labor in some tasks (ledger opposing note)."
       ],
       "uncertainty": "Phase 2.1 technology domain; avoid overclaiming.",
       "fact_check_status": "needs_research",
@@ -175,7 +420,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "emerging",
-      "public_wording": "AI’s distributional effects are an open research frontier."
+      "public_wording": "AI’s distributional effects are an open research frontier.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "source_to_claim_fit": "NON-SUPPORTING",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Very Low",
+        "proposed_replacement": null,
+        "reasoning": "Emerging/predictive claim without registered spine."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "fit": "NON-SUPPORTING",
+        "fit_detail": "NON-SUPPORTING",
+        "defect": "SOURCE GAP",
+        "confidence": "Very Low",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "PREDICTION"
     },
     {
       "claim_id": "CC-CLAIM-008",
@@ -185,11 +451,12 @@
       "claim_class": "normative_proposal_not_empirical_fact",
       "importance": "high",
       "support_level": "requires_additional_research",
-      "evidence_strength": "n_a_normative",
+      "evidence_strength": "incomplete",
       "consensus_status": "policy_debate",
       "source_ids": [],
       "opposing_evidence": [
-        "Administrative complexity; trade and WTO considerations; incidence uncertain."
+        "Administrative complexity; trade and WTO considerations; incidence uncertain.",
+        "Trade-law and administrative complexity (ledger)."
       ],
       "uncertainty": "Normative/policy claim — must not be presented as established fact.",
       "fact_check_status": "needs_research",
@@ -197,7 +464,28 @@
       "legal_review_requirement": true,
       "geographic_scope": "US_international",
       "temporal_scope": "proposal",
-      "public_wording": "A proposed tax-design approach requiring legal and incidence analysis — not an empirical finding."
+      "public_wording": "A proposed tax-design approach requiring legal and incidence analysis — not an empirical finding.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "source_to_claim_fit": "NON-SUPPORTING",
+        "freshness": "HISTORICAL BY DESIGN",
+        "geography_class": "United States",
+        "confidence": "Very Low",
+        "proposed_replacement": null,
+        "reasoning": "Normative/design claim — not diagnosis fact."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "fit": "NON-SUPPORTING",
+        "fit_detail": "NON-SUPPORTING",
+        "defect": "SOURCE GAP",
+        "confidence": "Very Low",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-009",
@@ -209,50 +497,161 @@
       "claim_type": "prediction",
       "claim_class": "prediction",
       "importance": "high",
-      "support_level": "unsupported",
-      "evidence_strength": "none",
+      "support_level": "retired_to_prediction",
+      "evidence_strength": "incomplete",
       "consensus_status": "untested",
       "source_ids": [],
       "opposing_evidence": [
-        "No model results yet; behavioral responses unknown."
+        "No model results yet; behavioral responses unknown.",
+        "Isolated tax changes can have large effects under some models (ledger)."
       ],
       "uncertainty": "Requires modeling; labeled prediction not evidence.",
-      "fact_check_status": "needs_research",
+      "fact_check_status": "retired",
       "legal_review_requirement": false,
       "publication_readiness": "not_ready",
-      "prediction_id": "CC-PRED-001",
+      "prediction_id": "CC-PRED-009",
       "geographic_scope": "US",
       "temporal_scope": "10_20_years",
-      "public_wording": "A hypothesis for future modeling — not established."
+      "public_wording": "A hypothesis for future modeling — not established.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "RETIRED",
+        "source_to_claim_fit": "N/A_RETIRED",
+        "freshness": "HISTORICAL BY DESIGN",
+        "geography_class": "United States",
+        "confidence": "N/A",
+        "proposed_replacement": "Move to prediction ledger: Comparative distributional effects of package reforms vs isolated corporate-tax changes require modeled scenarios before public assertion.",
+        "reasoning": "Retired to CC-PRED-009; not counted as empirical proof."
+      },
+      "lifecycle_status": "RETIRED",
+      "retirement": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "recommended_at": "2026-08-07",
+        "approval_status": "APPROVED",
+        "reason": "Model-dependent prediction masquerading as empirical claim.",
+        "evidence_failure": "No registered sources; predictive claim class; cannot be validated by Phase 2 diagnosis evidence rules.",
+        "supersession_target": "CC-PRED-009",
+        "preserve_historical": true,
+        "delete_forbidden": true,
+        "approved_by": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "retired_at": "2026-08-07"
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "RETIRE",
+        "fit": "N/A_RETIRED",
+        "fit_detail": "N/A — RETIREMENT RECOMMENDED",
+        "defect": "FORECAST WITHOUT MODEL",
+        "confidence": "Very Low",
+        "rewrite_queued": false
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "System-level Constitutional Capitalism over 10–20 years would produce larger distributional effects than isolated corporate tax increases.",
+          "new_text": "System-level Constitutional Capitalism over 10–20 years would produce larger distributional effects than isolated corporate tax increases.",
+          "change_reason": "RETIRED — text preserved; live proposition moved to CC-PRED-009",
+          "evidence_basis": [],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-RET-009",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+          "status_change": "RETIRED"
+        }
+      ],
+      "epistemic_class": "PREDICTION",
+      "public_reasoning_ids": [
+        "CC-PR-003"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-010",
-      "claim_text": "Broader ownership participation would shift many households from wage-only dependence toward multi-source capital ownership.",
+      "claim_text": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households.",
       "chapter_ids": [
         "CC-CH-025",
         "CC-CH-076"
       ],
-      "claim_type": "prediction",
-      "claim_class": "prediction",
+      "claim_type": "wealth",
+      "claim_class": "descriptive_empirical",
       "importance": "critical",
-      "support_level": "unsupported",
-      "evidence_strength": "none",
+      "support_level": "supported",
+      "evidence_strength": "strong",
       "consensus_status": "untested",
       "source_ids": [
         "CC-SRC-001",
-        "CC-SRC-002"
+        "CC-SRC-002",
+        "CC-SRC-012"
       ],
       "opposing_evidence": [
-        "Current SCF/DFA show limited bottom-half wealth shares; transition paths unproven."
+        "Current SCF/DFA show limited bottom-half wealth shares; transition paths unproven.",
+        "Wealth concentration facts do not validate ownership-redesign forecasts."
       ],
       "uncertainty": "Depends on adoption, returns, and design.",
       "fact_check_status": "needs_research",
       "legal_review_requirement": false,
       "publication_readiness": "not_ready",
-      "prediction_id": "CC-PRED-006",
+      "prediction_id": "CC-PRED-012",
       "geographic_scope": "US",
       "temporal_scope": "future",
-      "public_wording": "A transition hypothesis; current data show limited bottom-half wealth shares."
+      "public_wording": "A transition hypothesis; current data show limited bottom-half wealth shares.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "source_to_claim_fit": "DIRECT",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "High",
+        "proposed_replacement": "U.S. household wealth is highly concentrated; whether broader ownership participation would shift households toward multi-source capital income is an untested design prediction requiring modeling and pilots.",
+        "reasoning": "Descriptive concentration only; ownership-expansion effects moved to CC-PRED-012."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "REWRITE REQUIRED",
+        "fit": "NON-SUPPORTING",
+        "fit_detail": "NON-SUPPORTING (proposed PARTIAL)",
+        "defect": "FORECAST WITHOUT MODEL",
+        "confidence": "Very Low",
+        "rewrite_queued": true
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "Broader ownership participation would shift many households from wage-only dependence toward multi-source capital ownership.",
+          "new_text": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households.",
+          "change_reason": "Concentration diagnosis and ownership-system prediction must not occupy the same empirical claim.",
+          "evidence_basis": [
+            "CC-SRC-001",
+            "CC-SRC-002",
+            "CC-SRC-012"
+          ],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-002",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0"
+        }
+      ],
+      "governed_mutation": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "decision_id": "CC-DEC-103",
+        "change_id": "CC-CHG-P21-002",
+        "decision": "MODIFY",
+        "mutated_at": "2026-08-07",
+        "previous_text": "Broader ownership participation would shift many households from wage-only dependence toward multi-source capital ownership.",
+        "new_text": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households."
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "related_prediction_ids": [
+        "CC-PRED-012",
+        "CC-PRED-006"
+      ],
+      "public_reasoning_ids": [
+        "CC-PR-004"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-011",
@@ -272,7 +671,8 @@
       ],
       "opposing_evidence": [
         "2019–2022 SCF showed some narrowing as median rose faster than mean.",
-        "DFA top-1% share can move quarter to quarter."
+        "DFA top-1% share can move quarter to quarter.",
+        "2019–2022 median rose faster than mean (narrowing episode)."
       ],
       "uncertainty": "Levels (SCF) and quarterly shares (DFA) are complementary, not identical.",
       "fact_check_status": "in_progress",
@@ -280,7 +680,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "1989_present",
-      "public_wording": "Federal data show wealth remains highly concentrated: e.g., DFA Q1 2026 top 1% ≈28.8% and bottom 50% ≈5.3% of wealth; SCF 2022 median net worth $192,900 vs mean $1,063,700."
+      "public_wording": "Federal data show wealth remains highly concentrated: e.g., DFA Q1 2026 top 1% ≈28.8% and bottom 50% ≈5.3% of wealth; SCF 2022 median net worth $192,900 vs mean $1,063,700.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "source_to_claim_fit": "DIRECT",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "High",
+        "proposed_replacement": null,
+        "reasoning": "Direct fit. Keep Supports with caveats already in brief."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "fit": "DIRECT",
+        "fit_detail": "DIRECT",
+        "defect": null,
+        "confidence": "High",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-012",
@@ -297,7 +718,8 @@
         "CC-SRC-002"
       ],
       "opposing_evidence": [
-        "Middle 40% (50–90th) still holds a substantial minority share (~31% in Q1 2026 DFA)."
+        "Middle 40% (50–90th) still holds a substantial minority share (~31% in Q1 2026 DFA).",
+        "Middle 40% still holds ~31%."
       ],
       "uncertainty": "Asset composition differs by percentile.",
       "fact_check_status": "in_progress",
@@ -305,7 +727,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "public_wording": "In DFA Q1 2026 shares, the top decile holds roughly three-fifths of household wealth while the bottom half holds about one-twentieth."
+      "public_wording": "In DFA Q1 2026 shares, the top decile holds roughly three-fifths of household wealth while the bottom half holds about one-twentieth.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "source_to_claim_fit": "DIRECT",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "High",
+        "proposed_replacement": null,
+        "reasoning": "Direct DFA share fit."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "fit": "DIRECT",
+        "fit_detail": "DIRECT",
+        "defect": null,
+        "confidence": "High",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-013",
@@ -322,7 +765,8 @@
       ],
       "opposing_evidence": [
         "Economic incidence of payroll taxes may be shared with employers; consumption taxes also burden workers.",
-        "Average tax rates and shares depend on CBO’s income definition and how refundable credits are classified."
+        "Average tax rates and shares depend on CBO’s income definition and how refundable credits are classified.",
+        "Year effects (2021 pandemic credits); incidence ≠ statutory."
       ],
       "uncertainty": "Needs CBO/Treasury/IRS SOI incidence modules in Phase 2.1.",
       "fact_check_status": "in_progress",
@@ -330,7 +774,28 @@
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "public_wording": "CBO’s 2021 household income/tax distribution shows federal taxes and transfers are major redistributive instruments; labor and capital income composition differs sharply by quintile. Exact payroll vs income-tax incidence modules remain Phase 2.1 work."
+      "public_wording": "CBO’s 2021 household income/tax distribution shows federal taxes and transfers are major redistributive instruments; labor and capital income composition differs sharply by quintile. Exact payroll vs income-tax incidence modules remain Phase 2.1 work.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Institutional importance supported; fine-grained incidence incomplete."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "SOURCE GAP",
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-014",
@@ -339,20 +804,45 @@
       "claim_type": "taxation",
       "claim_class": "causal_empirical_literature",
       "importance": "high",
-      "support_level": "requires_additional_research",
-      "evidence_strength": "incomplete",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
       "consensus_status": "contested_in_public_finance",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-083",
+        "CC-SRC-084"
+      ],
       "opposing_evidence": [
-        "Incidence estimates vary widely across open-economy models and studies."
+        "Incidence estimates vary widely across open-economy models and studies.",
+        "Agency tables often assign majority to capital; consumer-price channel contested/excluded in many official models."
       ],
       "uncertainty": "Phase 2.1 taxation domain.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "literature",
-      "public_wording": "An open public-finance question — not asserted as settled here."
+      "public_wording": "An open public-finance question — not asserted as settled here.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Careful modal wording now has official spine. Consumer burden still NEE — do not upgrade beyond Qualifies."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-015",
@@ -361,34 +851,71 @@
       "claim_type": "labor_monopsony",
       "claim_class": "causal_empirical_literature",
       "importance": "high",
-      "support_level": "requires_additional_research",
-      "evidence_strength": "incomplete",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
       "consensus_status": "active_research_area",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-081",
+        "CC-SRC-082",
+        "CC-SRC-088",
+        "CC-SRC-091"
+      ],
       "opposing_evidence": [
-        "Effects heterogeneous; measurement of labor-market boundaries contested."
+        "Effects heterogeneous; measurement of labor-market boundaries contested.",
+        "Identification debates; not all markets; productivity confounds; Arkansas transfer not automatic."
       ],
       "uncertainty": "Needs DOJ/FTC/academic monopsony module.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
       "legal_review_requirement": true,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "public_wording": "Plausible in some markets; not yet sourced as a Phase 2 settled claim."
+      "public_wording": "Plausible in some markets; not yet sourced as a Phase 2 settled claim.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "'Can suppress wages in some labor markets' matches evidence. Not Supports-as-universal."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-016",
-      "claim_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+      "claim_text": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment.",
       "chapter_ids": [],
       "claim_type": "internet_commerce",
-      "claim_class": "descriptive_and_theoretical",
+      "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "requires_additional_research",
-      "evidence_strength": "incomplete",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "low_to_moderate",
       "consensus_status": "partially_documented_anecdotally_and_sectorally",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-085",
+        "CC-SRC-086",
+        "CC-SRC-097",
+        "CC-SRC-098",
+        "CC-SRC-101",
+        "CC-SRC-102",
+        "CC-SRC-104"
+      ],
       "opposing_evidence": [
-        "E-commerce expands consumer choice and can support some local sellers; tax collection rules have changed."
+        "E-commerce expands consumer choice and can support some local sellers; tax collection rules have changed.",
+        "CC-SRC-086 Wayfair: pre-Wayfair untaxed-remote-sales narratives outdated; consumer choice / hybrid sellers (ledger).",
+        "Dolfen et al. 2023: material consumer surplus from e-commerce (CC-SRC-098)."
       ],
       "uncertainty": "Needs Census e-commerce, platform market-share, and local leakage studies.",
       "fact_check_status": "needs_research",
@@ -396,21 +923,85 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "2000_present",
-      "public_wording": "A priority research question — architecture ready, quantification pending."
+      "public_wording": "A priority research question — architecture ready, quantification pending.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "High",
+        "proposed_replacement": "Online commerce is a material share of U.S. retail sales; effects on local spending, platform margins, and community wealth require dedicated leakage/multiplier studies and must not recycle pre-Wayfair tax myths.",
+        "reasoning": "Retail-share fact sourced; leakage/multiplier remain open research; post-Wayfair legal environment acknowledged without argumentative 'myths' language."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "REWRITE REQUIRED",
+        "fit": "WEAK",
+        "fit_detail": "WEAK (proposed STRONG if rewrite approved)",
+        "defect": "CAUSAL OVERREACH",
+        "confidence": "Low",
+        "rewrite_queued": true
+      },
+      "phase21_domain_deepening": {
+        "slice_id": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+        "audited_at": "2026-08-07",
+        "note": "Evidence posture updated; claim_text unchanged pending governance"
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+          "new_text": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment.",
+          "change_reason": "Accept substantive rewrite; replace argumentative 'myths' with neutral post-Wayfair legal-environment language.",
+          "evidence_basis": [
+            "CC-SRC-085",
+            "CC-SRC-086"
+          ],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-003",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0"
+        }
+      ],
+      "governed_mutation": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "decision_id": "CC-DEC-103",
+        "change_id": "CC-CHG-P21-003",
+        "decision": "MODIFY",
+        "mutated_at": "2026-08-07",
+        "previous_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+        "new_text": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment."
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "public_reasoning_ids": [
+        "CC-PR-005"
+      ],
+      "phase21_pilot_reassessment": {
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "note": "Pilot confirms measurement hardness; does not strengthen anti-ecommerce mechanism claim; rewritten wording remains appropriate."
+      }
     },
     {
       "claim_id": "CC-CLAIM-017",
-      "claim_text": "Property taxation can threaten ownership security for some households.",
+      "claim_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
       "chapter_ids": [],
       "claim_type": "housing",
-      "claim_class": "descriptive_institutional",
+      "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "requires_additional_research",
-      "evidence_strength": "incomplete",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "moderate",
       "consensus_status": "design_agenda",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-089"
+      ],
       "opposing_evidence": [
-        "Property tax funds local schools/services; alternatives have their own incidence."
+        "Property tax funds local schools/services; alternatives have their own incidence.",
+        "Lincoln Institute also emphasizes property tax strengths and progressivity relative to many alternatives when relief is targeted."
       ],
       "uncertainty": "Developing doctrine CC-DEV-003; needs state/local finance evidence.",
       "fact_check_status": "needs_research",
@@ -418,7 +1009,56 @@
       "legal_review_requirement": true,
       "geographic_scope": "US_states",
       "temporal_scope": "contemporary",
-      "public_wording": "A design concern under research — not a completed empirical proof."
+      "public_wording": "A design concern under research — not a completed empirical proof.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "AGING",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
+        "reasoning": "Burden/liquidity + institutional revenue role aligned with Lincoln Institute evidence."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "REWRITE REQUIRED",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL (proposed STRONG)",
+        "defect": "WORDING TOO BROAD",
+        "confidence": "Low-to-Moderate",
+        "rewrite_queued": true
+      },
+      "claim_text_history": [
+        {
+          "previous_text": "Property taxation can threaten ownership security for some households.",
+          "new_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
+          "change_reason": "Better empirical precision; preserves fiscal function of property taxation alongside hardship.",
+          "evidence_basis": [
+            "CC-SRC-089"
+          ],
+          "decision_id": "CC-DEC-103",
+          "decision_date": "2026-08-07",
+          "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+          "change_id": "CC-CHG-P21-004",
+          "adjudicator": "ChatGPT",
+          "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0"
+        }
+      ],
+      "governed_mutation": {
+        "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+        "decision_id": "CC-DEC-103",
+        "change_id": "CC-CHG-P21-004",
+        "decision": "APPROVE",
+        "mutated_at": "2026-08-07",
+        "previous_text": "Property taxation can threaten ownership security for some households.",
+        "new_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source."
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "public_reasoning_ids": [
+        "CC-PR-006"
+      ]
     },
     {
       "claim_id": "CC-CLAIM-018",
@@ -432,7 +1072,8 @@
       "consensus_status": "open",
       "source_ids": [],
       "opposing_evidence": [
-        "Workers also capture private returns to education; subsidies already share some costs."
+        "Workers also capture private returns to education; subsidies already share some costs.",
+        "Employers also fund training; skills may raise worker wages (ledger)."
       ],
       "uncertainty": "Phase 2.1 education domain.",
       "fact_check_status": "needs_research",
@@ -440,7 +1081,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "contemporary",
-      "public_wording": "Open research question tied to developing doctrine on human capital."
+      "public_wording": "Open research question tied to developing doctrine on human capital.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "source_to_claim_fit": "NON-SUPPORTING",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Very Low",
+        "proposed_replacement": null,
+        "reasoning": "Unsourced human-capital incidence claim."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "fit": "NON-SUPPORTING",
+        "fit_detail": "NON-SUPPORTING",
+        "defect": "SOURCE GAP",
+        "confidence": "Very Low",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-019",
@@ -458,7 +1120,8 @@
         "CC-SRC-010"
       ],
       "opposing_evidence": [
-        "Post-2020 migration boosted some nonmetro counties; outcomes diverge sharply by county type."
+        "Post-2020 migration boosted some nonmetro counties; outcomes diverge sharply by county type.",
+        "Heterogeneous nonmetro outcomes; some growth counties."
       ],
       "uncertainty": "Aggregate nonmetro gains coexist with majority-county declines.",
       "fact_check_status": "in_progress",
@@ -466,7 +1129,28 @@
       "legal_review_requirement": false,
       "geographic_scope": "US_nonmetro",
       "temporal_scope": "1980_present",
-      "public_wording": "Federal rural data show persistent structural stress (county population loss in many places, hospital closures, community-bank pressures) alongside uneven recent migration gains."
+      "public_wording": "Federal rural data show persistent structural stress (county population loss in many places, hospital closures, community-bank pressures) alongside uneven recent migration gains.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "STRONG",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Structural barriers claim qualifies with heterogeneity."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "EMPIRICAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-020",
@@ -475,20 +1159,44 @@
       "claim_type": "innovation",
       "claim_class": "descriptive_historical_empirical",
       "importance": "high",
-      "support_level": "requires_additional_research",
-      "evidence_strength": "incomplete",
+      "support_level": "partially_supported",
+      "evidence_strength": "moderate",
       "consensus_status": "broadly_plausible_needs_citations",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-087"
+      ],
       "opposing_evidence": [
-        "Private R&D is also central; attribution of specific products is contested."
+        "Private R&D is also central; attribution of specific products is contested.",
+        "Business sector is largest R&D performer; funding ≠ proving counterfactual private innovation dependence."
       ],
       "uncertainty": "Needs NSF/NIH/DOE innovation-linkage module.",
-      "fact_check_status": "needs_research",
-      "publication_readiness": "not_ready",
+      "fact_check_status": "in_progress",
+      "publication_readiness": "draft_ok_with_caveats",
       "legal_review_requirement": false,
       "geographic_scope": "US",
       "temporal_scope": "postwar",
-      "public_wording": "Queued for sourced innovation research."
+      "public_wording": "Queued for sourced innovation research.",
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "freshness": "CURRENT",
+        "geography_class": "United States",
+        "confidence": "Moderate",
+        "proposed_replacement": null,
+        "reasoning": "Mild claim now has official funding spine; keep Qualifies."
+      },
+      "phase21_repair": {
+        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "MEASUREMENT MISMATCH",
+        "confidence": "Moderate",
+        "rewrite_queued": false
+      },
+      "epistemic_class": "CAUSAL_CLAIM"
     },
     {
       "claim_id": "CC-CLAIM-021",
@@ -3524,6 +4232,136 @@
         "CC-DEV-339"
       ],
       "public_wording": "USDA counts 1,620 farmer, rancher, and fishery cooperatives in 2024 with about $275.8 billion in revenues — member ownership remains a major agricultural channel."
+    },
+    {
+      "claim_id": "CC-CLAIM-133",
+      "claim_text": "Under some research designs, U.S. national policy outcomes associate more strongly with affluent and organized-business preferences than with average-citizen preferences when those preferences diverge; the magnitude and causal interpretation remain contested, and association is not the same as capture or control.",
+      "chapter_ids": [],
+      "claim_type": "political_responsiveness",
+      "claim_class": "descriptive_empirical",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "importance": "high",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "moderate",
+      "consensus_status": "contested_across_literatures",
+      "source_ids": [
+        "CC-SRC-094",
+        "CC-SRC-095"
+      ],
+      "opposing_evidence": [
+        "Branham, Soroka & Wlezien 2017: when income groups disagree, the rich do not dominate (CC-SRC-095)."
+      ],
+      "uncertainty": "Association ≠ capture; preference correlation and identification debates remain.",
+      "fact_check_status": "audited",
+      "publication_readiness": "not_ready",
+      "geographic_scope": "US",
+      "temporal_scope": "late_20th_early_21st_century_policy_samples",
+      "parent_claim_id": "CC-CLAIM-003",
+      "successor_of_module": "CC-MOD-003-B",
+      "governance": {
+        "decision": "APPROVE_WITH_MODIFY",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "at": "2026-08-07"
+      },
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "confidence": "Moderate",
+        "evidence_type": "ASSOCIATIONAL",
+        "reasoning": "Gilens/Page association with explicit contrary and no capture language."
+      }
+    },
+    {
+      "claim_id": "CC-CLAIM-134",
+      "claim_text": "Federal campaign-finance and lobbying disclosure systems make large flows of political money and lobbying activity publicly observable; those disclosures do not by themselves establish that economic concentration weakens democratic accountability.",
+      "chapter_ids": [],
+      "claim_type": "political_disclosure",
+      "claim_class": "descriptive_empirical",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "importance": "high",
+      "support_level": "supported",
+      "evidence_strength": "strong",
+      "consensus_status": "established_descriptive",
+      "source_ids": [
+        "CC-SRC-092",
+        "CC-SRC-093",
+        "CC-SRC-096"
+      ],
+      "opposing_evidence": [],
+      "uncertainty": "Disclosure completeness and state/local coverage limits.",
+      "fact_check_status": "audited",
+      "publication_readiness": "not_ready",
+      "geographic_scope": "US-federal",
+      "temporal_scope": "ongoing",
+      "parent_claim_id": "CC-CLAIM-003",
+      "successor_of_module": "CC-MOD-003-C",
+      "governance": {
+        "decision": "APPROVE",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "at": "2026-08-07"
+      },
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED AS WRITTEN",
+        "source_to_claim_fit": "DIRECT",
+        "confidence": "High",
+        "evidence_type": "DESCRIPTIVE",
+        "reasoning": "FEC/LDA disclosure spines; explicit non-inference to accountability."
+      }
+    },
+    {
+      "claim_id": "CC-CLAIM-135",
+      "claim_text": "In some regulated sectors, under specific research designs, campaign contributions or lobbying activity associate with more favorable regulatory outcomes; such associations are sector-dependent, methodologically contested in strength, and do not by themselves establish national democratic capture by economic concentration.",
+      "chapter_ids": [],
+      "claim_type": "political_sectoral_association",
+      "claim_class": "descriptive_empirical",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "importance": "high",
+      "support_level": "supported_with_qualification",
+      "evidence_strength": "moderate",
+      "consensus_status": "contested_across_literatures",
+      "source_ids": [
+        "CC-SRC-105",
+        "CC-SRC-106",
+        "CC-SRC-107",
+        "CC-SRC-108",
+        "CC-SRC-109"
+      ],
+      "opposing_evidence": [
+        "Lucca/Seru/Trebbi 2014: banking revolving-door flows inconsistent with simple quid-pro-quo capture (CC-SRC-107).",
+        "Vioxx process-tracing: limited support for common capture mechanisms in studied case (CC-SRC-109)."
+      ],
+      "uncertainty": "Sector dependence; working-paper provisional results; association ≠ capture wording.",
+      "fact_check_status": "audited",
+      "publication_readiness": "not_ready",
+      "geographic_scope": "US-sectoral",
+      "temporal_scope": "varies_by_study",
+      "parent_claim_id": "CC-CLAIM-003",
+      "related_hypothesis_id": "CC-HYP-003-D",
+      "governance": {
+        "decision": "APPROVE",
+        "adjudicator": "ChatGPT",
+        "decision_id": "CC-DEC-103",
+        "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+        "at": "2026-08-07",
+        "note": "Association claim only — capture hypothesis remains separate."
+      },
+      "phase21_audit": {
+        "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+        "audited_at": "2026-08-07",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "source_to_claim_fit": "PARTIAL",
+        "confidence": "Moderate",
+        "evidence_type": "ASSOCIATIONAL",
+        "reasoning": "Telecom peer-reviewed association + banking mixed + utilities provisional + explicit contrary; no capture verbs."
+      }
     }
   ]
 }

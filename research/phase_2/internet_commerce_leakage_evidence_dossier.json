@@ -1,0 +1,133 @@
+{
+  "version": "0.2.0",
+  "slice_id": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+  "generated_at": "2026-08-07",
+  "domain": "internet commerce",
+  "existing_claims": [
+    "CC-CLAIM-016"
+  ],
+  "focal_claim": "CC-CLAIM-016",
+  "focal_claim_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+  "prior_disposition": "REWRITE REQUIRED",
+  "prior_fit": "WEAK",
+  "research_streams": {
+    "e_commerce_share_of_retail": {
+      "status": "SOURCED",
+      "sources": [
+        "CC-SRC-085"
+      ],
+      "note": "Census retail e-commerce share — scale fact only"
+    },
+    "local_retail_displacement": {
+      "status": "PARTIAL",
+      "sources": [
+        "CC-SRC-097"
+      ],
+      "note": "Labor-market reallocation under Amazon Tax shocks — not wealth leakage"
+    },
+    "sales_tax_sourcing_destination_marketplace": {
+      "status": "SOURCED",
+      "sources": [
+        "CC-SRC-086"
+      ],
+      "note": "Wayfair / destination-based collection — kills pre-Wayfair tax myths"
+    },
+    "local_revenue_effects": {
+      "status": "OPEN",
+      "note": "Need state/local fiscal incidence modules"
+    },
+    "small_business_effects": {
+      "status": "OPEN"
+    },
+    "consumer_welfare_effects": {
+      "status": "SOURCED_CONTRARY_TO_NET_HARM",
+      "sources": [
+        "CC-SRC-098"
+      ],
+      "note": "Material consumer surplus; denser/higher-income counties gain more in U.S. Visa study"
+    },
+    "rural_accessibility_benefits": {
+      "status": "MIXED",
+      "sources": [
+        "CC-SRC-098"
+      ],
+      "note": "U.S. Dolfen et al. find denser counties gain more — complicates simple rural-access benefit story for U.S.; China RCT literature not transferred"
+    },
+    "local_economic_leakage": {
+      "status": "DEFINITION_PROPOSED",
+      "sources": [
+        "CC-SRC-099",
+        "CC-SRC-100"
+      ],
+      "note": "Operational definition + RIMS margin discipline; measurement not complete"
+    },
+    "delivery_logistics_employment": {
+      "status": "PARTIAL",
+      "sources": [
+        "CC-SRC-097"
+      ],
+      "note": "Transport/warehousing complementary employment moves with e-commerce tax regime"
+    }
+  },
+  "cc_claim_016_diagnosis": {
+    "primary_failure_modes": [
+      "definition — 'wealth leakage' undefined",
+      "measurement — no leakage/multiplier series attached",
+      "causal inference — 'can extract via platform concentration' untested in registered corpus",
+      "consumer_substitution — ignored consumer surplus contrary evidence"
+    ],
+    "not_primary_failure": [
+      "tax treatment alone (Wayfair updates tax myth, not leakage)",
+      "time period alone",
+      "geography alone"
+    ],
+    "do_not_rescue_by_keyword": "Finding a source that uses the word 'leakage' without an operational measure does not repair fit."
+  },
+  "best_supporting_evidence": [
+    "CC-SRC-085",
+    "CC-SRC-097"
+  ],
+  "best_contrary_evidence": [
+    "CC-SRC-098",
+    "CC-SRC-086"
+  ],
+  "primary_data": [
+    "CC-SRC-085",
+    "CC-SRC-086"
+  ],
+  "peer_reviewed_evidence": [
+    "CC-SRC-098"
+  ],
+  "government_evidence": [
+    "CC-SRC-085",
+    "CC-SRC-086"
+  ],
+  "measurement_problems": [
+    "Leakage undefined",
+    "Platform CR sample still open (CC-RQ-P21-023)",
+    "Local multiplier studies missing"
+  ],
+  "arkansas_applicability": "National Census share does not equal Arkansas local leakage; need state retail/fiscal modules.",
+  "current_confidence": "High for e-commerce retail share; Moderate for labor-market adjustment literature; Very Low for wealth-leakage mechanism.",
+  "research_gaps": [
+    "Operational leakage/multiplier definition and dataset",
+    "Platform NAICS concentration sample",
+    "Arkansas local retail/fiscal incidence",
+    "Small-business outcome modules"
+  ],
+  "claim_016_verdict_after_research": {
+    "disposition": "REWRITE REQUIRED",
+    "fit": "PARTIAL",
+    "fit_previous": "WEAK",
+    "rationale": "Scale + local labor adjustment + consumer surplus improve domain coverage, but current wording still asserts extraction/leakage via platform concentration without measurement. Disposition remains REWRITE REQUIRED pending Steve approval of proposed wording."
+  },
+  "operational_definition": "research/phase_2/leakage_operational_definition.json",
+  "existing_sources": [
+    "CC-SRC-085",
+    "CC-SRC-097",
+    "CC-SRC-086",
+    "CC-SRC-098",
+    "CC-SRC-099",
+    "CC-SRC-100"
+  ]
+}

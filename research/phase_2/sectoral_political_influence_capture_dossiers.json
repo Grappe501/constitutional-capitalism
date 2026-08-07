@@ -1,0 +1,116 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+  "generated_at": "2026-08-07",
+  "parent_hypothesis": "CC-HYP-003-D",
+  "parent_claim": "CC-CLAIM-003",
+  "geography_forced": false,
+  "forbidden_claim_verbs_unless_earned": [
+    "capture",
+    "control",
+    "buy",
+    "owns",
+    "determines"
+  ],
+  "evidence_type_scale": [
+    "DESCRIPTIVE",
+    "ASSOCIATIONAL",
+    "QUASI-CAUSAL",
+    "CAUSAL",
+    "THEORETICAL"
+  ],
+  "sectors": [
+    {
+      "sector_id": "SEC-TELECOM",
+      "name": "Telecommunications (state PUC regulation)",
+      "best_supporting": [
+        "CC-SRC-105"
+      ],
+      "best_contrary": [],
+      "evidence_type": "ASSOCIATIONAL (robust observational; causal strength debated)",
+      "what_established": "In studied state telecom contexts, campaign contribution patterns associate with measurable PUC regulatory outcomes.",
+      "what_not_established": "That economic concentration nationally weakens democratic accountability; that money 'buys' or 'owns' regulators as universal law.",
+      "capture_bar": "NOT MET for a CC canonical 'capture' claim — association ≠ capture wording.",
+      "arkansas_note": "Not Arkansas-specific; transfer requires state PUC modules later if needed.",
+      "disposition": "SECTORAL_ASSOCIATION_DOCUMENTED"
+    },
+    {
+      "sector_id": "SEC-BANKING",
+      "name": "Banking regulation / lobbying",
+      "best_supporting": [
+        "CC-SRC-106"
+      ],
+      "best_contrary": [
+        "CC-SRC-107"
+      ],
+      "evidence_type": "MIXED — survey consistency with capture-like patterns + contrary revolving-door evidence",
+      "what_established": "Substantial literature links bank lobbying to softer regulatory posture in some designs; revolving-door worker flows do not cleanly support quid-pro-quo capture.",
+      "what_not_established": "A single national banking-capture verdict; revolving door as automatic capture mechanism.",
+      "capture_bar": "NOT MET for blanket claim; hypothesis remains open sector-by-sector.",
+      "arkansas_note": "No AR geography required for this literature slice.",
+      "disposition": "MIXED_EVIDENCE"
+    },
+    {
+      "sector_id": "SEC-ELECTRIC",
+      "name": "Electric utilities (authorized ROE / contributions)",
+      "best_supporting": [
+        "CC-SRC-108"
+      ],
+      "best_contrary": [],
+      "evidence_type": "QUASI-CAUSAL CANDIDATE (working paper)",
+      "what_established": "A quasi-experimental design around PUHCA repeal suggests easing contribution restrictions associated with higher authorized ROEs in some states.",
+      "what_not_established": "Peer-reviewed settled fact for CC; Arkansas-specific utility capture; 'owns/determines' language.",
+      "capture_bar": "PROVISIONAL — do not promote capture claim from WP alone.",
+      "arkansas_note": "Future AR PSC modules could use designated set if state regulator questions arise.",
+      "disposition": "PROVISIONAL_QUASI_EXPERIMENTAL"
+    },
+    {
+      "sector_id": "SEC-PHARMA",
+      "name": "Pharmaceuticals / drug safety regulation",
+      "best_supporting": [],
+      "best_contrary": [
+        "CC-SRC-109"
+      ],
+      "evidence_type": "MECHANISM TEST — limited capture in studied Vioxx case",
+      "what_established": "High-profile scandals labeled 'capture' can fail mechanism tests (revolving door, information overload, culture) under process tracing.",
+      "what_not_established": "That pharma markets are free of industry influence; opposite extreme also unwarranted.",
+      "capture_bar": "Casual capture labeling REJECTED for this case; keep mechanism discipline.",
+      "arkansas_note": "Not geographic.",
+      "disposition": "CONTRARY_TO_CASUAL_CAPTURE_LABEL"
+    },
+    {
+      "sector_id": "SEC-PATENT-REVOLVING",
+      "name": "Patent examination revolving door (contrast sector)",
+      "best_supporting": [
+        "CC-SRC-110"
+      ],
+      "best_contrary": [
+        "CC-SRC-107"
+      ],
+      "evidence_type": "SUGGESTIVE (NBER WP) vs banking contrary",
+      "what_established": "Revolving-door effects appear sector-dependent: suggestive in patent examination WP; not supported as quid-pro-quo in banking peer-reviewed flows.",
+      "what_not_established": "Universal revolving-door capture law.",
+      "capture_bar": "Sector dependence reinforces high bar.",
+      "arkansas_note": "Not geographic.",
+      "disposition": "SECTOR_DEPENDENT_MECHANISM"
+    },
+    {
+      "sector_id": "SEC-AGRICULTURE",
+      "name": "Agriculture / commodity regulation",
+      "best_supporting": [],
+      "best_contrary": [],
+      "evidence_type": "OPEN",
+      "what_established": "Nothing registered in this slice.",
+      "what_not_established": "Any capture or influence claim for agriculture.",
+      "capture_bar": "NOT ADMISSIBLE yet.",
+      "arkansas_note": "Mississippi County designated set may matter later for agri/industrial contrast — not used here.",
+      "disposition": "CRITICAL_GAP"
+    }
+  ],
+  "synthesis": {
+    "cc_hyp_003_d_update": "Hypothesis remains open. Sectoral association evidence exists (telecom; banking literature mixed; utilities provisional). Blanket capture claims still forbidden. Mechanism tests can falsify casual capture labels (pharma Vioxx).",
+    "promote_to_empirical_claim": false,
+    "reason_not_promoted": "No sector yet clears the high wording bar for 'capture/control/buy/owns/determines' as a CC canonical claim; associations must stay labeled as associations.",
+    "recommended_public_language": "In some regulated sectors, political money and lobbying associate with more favorable regulatory outcomes under specific research designs. That is not the same as proving national democratic capture by economic concentration."
+  }
+}

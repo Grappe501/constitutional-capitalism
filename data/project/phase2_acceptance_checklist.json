@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-07",
   "decision_id": "CC-DEC-075",
   "status": "governing",
   "title": "Canonical Phase 2 Acceptance Checklist",
@@ -31,7 +31,8 @@
     "phase_2": "PARTIAL",
     "forensic_audit_overall_snapshot": 36,
     "overall_percent_source": "data/metrics/progress_snapshot.json",
-    "overall_percent_note": "Forensic audit snapshot recorded 36% before progress-formula ceiling reconciliation. Regenerated overall must be read from progress_snapshot and must never be treated as Phase 2 completion. Modeling/legal remain 0%; baseline remains 2/86 until the count changes.",
+    "overall_percent_note": "Historical forensic freeze 36%. Regenerated overall was 43% on 2026-08-07 and must never be treated as Phase 2 completion. Modeling/legal remain 0%; baseline remains 2/86 until the count changes; 11/16 required gates remain open.",
+    "latest_forensic_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md",
     "economic_modeling_percent": 0,
     "legal_review_percent": 0,
     "baseline": {
@@ -113,15 +114,20 @@
       "text": "Eight priority diagnosis domains are substantively sourced",
       "required": true,
       "status": "open",
-      "burt_step": 3
+      "burt_step": 3,
+      "forensic_note": "GATE-02 remains open because:\n- 8/20 first-20 claims remain below STRONG; 11/20 DIRECT/STRONG\n- CC-CLAIM-003 parent remains NEE despite sectoral association dossiers\n- Capture hypothesis open; agriculture sector gap remains\n- Leakage still NOT MEASURABLE at net county level (Faulkner preserved)\n- Baseline 2/86",
+      "last_evaluated": "2026-08-07",
+      "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0"
     },
     {
       "id": "CC-P2-GATE-03",
       "text": "Three-layer analysis appears in substantive briefs",
       "required": true,
-      "status": "open",
+      "status": "passed",
       "burt_step": 2,
-      "enforcement": "validate_report_and_block_false_completion"
+      "enforcement": "validate_report_and_block_false_completion",
+      "passed_by_slice": "CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0",
+      "passed_note": "Presence gate: all 9 priority briefs now contain the three mandatory section headings plus Historical/Economic/Constitutional-Legal evidence tracks. GATE-02 substantive sourcing remains open."
     },
     {
       "id": "CC-P2-GATE-04",

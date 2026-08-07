@@ -1,0 +1,174 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+  "generated_at": "2026-08-07",
+  "note": "ChatGPT decisions applied with lineage. Canonical claim_text mutated under CC-DEC-103.",
+  "changes": [
+    {
+      "change_id": "CC-CHG-P21-001",
+      "claim_id": "CC-CLAIM-001",
+      "change_type": "REWRITE",
+      "current_text": "Capitalism has produced broad prosperity across historical contexts.",
+      "proposed_text": "In many countries and periods, market-oriented growth has been associated with large gains in material living standards, with important exceptions, crises, and distributional conflicts that must be scoped before public wording.",
+      "evidence_basis": [],
+      "reason": "Civilizationally sweeping; no registered sources; unfalsifiable as written.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "content/research/national-diagnosis/*",
+        "content/evidence-companion/*",
+        "apps/build-board"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "MODIFY",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_text": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made."
+    },
+    {
+      "change_id": "CC-CHG-P21-002",
+      "claim_id": "CC-CLAIM-010",
+      "change_type": "REWRITE",
+      "current_text": "Broader ownership participation would shift many households from wage-only dependence toward multi-source capital ownership.",
+      "proposed_text": "U.S. household wealth is highly concentrated; whether broader ownership participation would shift households toward multi-source capital income is an untested design prediction requiring modeling and pilots.",
+      "evidence_basis": [
+        "CC-SRC-001",
+        "CC-SRC-002",
+        "CC-SRC-012"
+      ],
+      "reason": "Uses SCF/DFA concentration sources to support a redesign forecast.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "content/research/national-diagnosis/*",
+        "content/evidence-companion/*",
+        "apps/build-board"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "MODIFY",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_text": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households."
+    },
+    {
+      "change_id": "CC-CHG-P21-003",
+      "claim_id": "CC-CLAIM-016",
+      "change_type": "REWRITE",
+      "current_text": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+      "proposed_text": "Online commerce is a material share of U.S. retail sales; effects on local spending, platform margins, and community wealth require dedicated leakage/multiplier studies and must not recycle pre-Wayfair tax myths.",
+      "evidence_basis": [
+        "CC-SRC-085",
+        "CC-SRC-086"
+      ],
+      "reason": "Leakage/extraction unproven; scale sources do not establish the mechanism claim.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "content/research/national-diagnosis/*",
+        "content/evidence-companion/*",
+        "apps/build-board"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "MODIFY",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_text": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment."
+    },
+    {
+      "change_id": "CC-CHG-P21-004",
+      "claim_id": "CC-CLAIM-017",
+      "change_type": "REWRITE",
+      "current_text": "Property taxation can threaten ownership security for some households.",
+      "proposed_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
+      "evidence_basis": [
+        "CC-SRC-089"
+      ],
+      "reason": "'Threaten ownership security' overclaims relative to burden/relief evidence.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "content/research/national-diagnosis/*",
+        "content/evidence-companion/*",
+        "apps/build-board"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "APPROVE",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source."
+    },
+    {
+      "change_id": "CC-CHG-P21-005",
+      "claim_id": "CC-CLAIM-006",
+      "change_type": "REWRITE",
+      "current_text": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
+      "proposed_text": "Rural structural decline can erode community capacity (population, banking, healthcare access); corporate relocation is a plausible contributing mechanism requiring separate causal modules.",
+      "evidence_basis": [
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-010"
+      ],
+      "reason": "Bundles corporate relocation causality with documented rural structural stress.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "content/research/national-diagnosis/*",
+        "content/evidence-companion/*",
+        "apps/build-board"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "MODIFY",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_text": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation."
+    },
+    {
+      "change_id": "CC-CHG-P21-RET-009",
+      "claim_id": "CC-CLAIM-009",
+      "change_type": "RETIRE",
+      "current_text": "System-level Constitutional Capitalism over 10–20 years would produce larger distributional effects than isolated corporate tax increases.",
+      "proposed_text": null,
+      "evidence_basis": [],
+      "reason": "Unsupported system-level prediction comparing Constitutional Capitalism package reforms to isolated corporate-tax increases. Not a diagnosis claim. Fails source-to-claim fit; requires modeling before any assertion.",
+      "affected_artifacts": [
+        "data/research/claim_ledger.json",
+        "data/project/prediction_ledger.json",
+        "data/research/knowledge_graph.json"
+      ],
+      "review_required": true,
+      "approval_status": "APPLIED",
+      "supersession_target": "CC-PRED-009",
+      "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+      "blocked_until": "Steve records APPROVE|REJECT|MODIFY|DEFER",
+      "adjudicator": "ChatGPT",
+      "decision": "APPROVE",
+      "decision_id": "CC-DEC-103",
+      "applied_at": "2026-08-07",
+      "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "applied_prediction_text": "A sufficiently broad Constitutional Capitalism reform package may produce larger long-run distributional effects than an isolated corporate-tax increase; this is an untested comparative prediction requiring defined policy specifications, distributional modeling, sensitivity analysis, and ultimately empirical evaluation."
+    }
+  ],
+  "governance_status": "DECISIONS_APPLIED",
+  "slice_id_awaiting": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+  "last_updated": "2026-08-07"
+}

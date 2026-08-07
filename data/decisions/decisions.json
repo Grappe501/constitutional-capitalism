@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-07",
   "decisions": [
     {
       "decision_id": "CC-DEC-001",
@@ -1703,6 +1703,73 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-05",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-103",
+      "title": "Claim-governance decisions + Public Reasoning Standard (research integrity)",
+      "question": "Should the six pending CC-CHG-P21-* claim changes be applied using ChatGPT's embedded APPROVE/MODIFY decisions and exact canonical language?",
+      "status": "approved",
+      "rationale": "Routine research-governance (empirical precision, classification, causality, research integrity) adjudicated by ChatGPT under collaboration model: Cursor discovers → ChatGPT adjudicates evidence/design → Steve adjudicates genuine philosophy → Cursor executes. No philosophical reopen required for these six.",
+      "impact": [
+        "claim_ledger.json claim_text mutations with lineage",
+        "CC-CLAIM-009 RETIRED → CC-PRED-009",
+        "CC-PRED-012 ownership-participation prediction split from CC-CLAIM-010",
+        "first_20 re-audit / GATE-02 reassess",
+        "epistemic ontology classification rule (no new platform architecture)",
+        "Public Reasoning Standard 1.0",
+        "public_reasoning registry + backfill for CC-CHG-P21-*"
+      ],
+      "recommendation": "Apply exactly; do not re-open stop gate.",
+      "approved_by": "ChatGPT",
+      "decided_at": "2026-08-07",
+      "supersedes": null,
+      "embedded_decisions": [
+        {
+          "change_id": "CC-CHG-P21-001",
+          "claim_id": "CC-CLAIM-001",
+          "decision": "MODIFY",
+          "reason": "Directionally right but Burt draft still asserted unsourced historical association; do not canonize first and source later."
+        },
+        {
+          "change_id": "CC-CHG-P21-005",
+          "claim_id": "CC-CLAIM-006",
+          "decision": "MODIFY",
+          "reason": "Disagree with NO CHANGE; existing sentence linguistically links relocation to outcomes sourced only for rural structural decline."
+        },
+        {
+          "change_id": "CC-CHG-P21-RET-009",
+          "claim_id": "CC-CLAIM-009",
+          "decision": "APPROVE",
+          "reason": "Model-dependent prediction masquerading as empirical claim."
+        },
+        {
+          "change_id": "CC-CHG-P21-002",
+          "claim_id": "CC-CLAIM-010",
+          "decision": "MODIFY",
+          "reason": "Concentration diagnosis and ownership-system prediction must not occupy the same empirical claim."
+        },
+        {
+          "change_id": "CC-CHG-P21-003",
+          "claim_id": "CC-CLAIM-016",
+          "decision": "MODIFY",
+          "reason": "Accept substantive rewrite; replace argumentative 'myths' with neutral post-Wayfair legal-environment language."
+        },
+        {
+          "change_id": "CC-CHG-P21-004",
+          "claim_id": "CC-CLAIM-017",
+          "decision": "APPROVE",
+          "reason": "Better empirical precision; preserves fiscal function of property taxation alongside hardship."
+        }
+      ],
+      "public_reasoning_standard": {
+        "status": "ACTIVE",
+        "formalized_at": "2026-08-07",
+        "formalized_in_slice": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+        "artifact": "research/phase_2/public_reasoning_standard.json",
+        "report": "reports/CC_PUBLIC_REASONING_STANDARD_1_0.md",
+        "extension_note": "Permanent scholarly rule: every material Supports→Qualifies, rewrite, contradiction, retirement, prediction transfer, or consequential design change must generate a citizen-facing public reasoning record. Not a platform feature."
+      },
+      "last_extended_at": "2026-08-07"
     }
   ]
 }

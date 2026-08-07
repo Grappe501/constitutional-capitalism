@@ -1,0 +1,232 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+  "generated_at": "2026-08-07",
+  "methodology_version": "CC-CLAIM-GOVERNANCE-1.0",
+  "governance_status": "DECISIONS_APPLIED",
+  "operator_decisions_recorded": true,
+  "stop_gate": "Do not mutate canonical claim_text until Steve records APPROVE|REJECT|MODIFY|DEFER for each item in this packet.",
+  "steve_decision_options": [
+    "APPROVE",
+    "REJECT",
+    "MODIFY",
+    "DEFER"
+  ],
+  "pending_actions": [
+    "CC-CLAIM-001 — REWRITE",
+    "CC-CLAIM-006 — OPTIONAL REWRITE",
+    "CC-CLAIM-009 — RETIRE → CC-PRED-009",
+    "CC-CLAIM-010 — REWRITE",
+    "CC-CLAIM-016 — REWRITE",
+    "CC-CLAIM-017 — REWRITE"
+  ],
+  "items": [
+    {
+      "change_id": "CC-CHG-P21-001",
+      "claim_id": "CC-CLAIM-001",
+      "action": "REWRITE",
+      "current_canonical_wording": "Capitalism has produced broad prosperity across historical contexts.",
+      "proposed_wording": "In many countries and periods, market-oriented growth has been associated with large gains in material living standards, with important exceptions, crises, and distributional conflicts that must be scoped before public wording.",
+      "why_current_fails": "Civilizationally sweeping; no registered sources; unfalsifiable as written.",
+      "what_new_removes": [
+        "Universal 'capitalism has produced'",
+        "implied inevitability"
+      ],
+      "what_new_preserves": [
+        "Association of market-oriented growth with living-standard gains in many contexts",
+        "Explicit exceptions and distributional conflict"
+      ],
+      "best_support": "(none registered — historical modules still required)",
+      "best_contrary": "Cross-country and within-country experiences vary widely; crises and failures are first-class.",
+      "source_to_claim_fit": "NON-SUPPORTING → proposed PARTIAL if approved + sourced",
+      "confidence": "Very Low until sourced modules exist",
+      "impact_if_approved": "Claim becomes falsifiable research agenda; still NOT ENOUGH EVIDENCE until modules land.",
+      "impact_if_rejected": "Canonical overclaim remains; GATE-02 weak-fit count stays inflated by unfalsifiable wording.",
+      "burt_recommendation": "APPROVE",
+      "steve_decision": "MODIFY",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "MODIFY",
+      "adjudicator_reason": "Directionally right but Burt draft still asserted unsourced historical association; do not canonize first and source later.",
+      "canonical_text_applied": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made."
+    },
+    {
+      "change_id": "CC-CHG-P21-005",
+      "claim_id": "CC-CLAIM-006",
+      "action": "OPTIONAL REWRITE",
+      "optional_treatment": true,
+      "options_assessment": {
+        "A_existing_defensible": "Yes — rural structural decline (banking, healthcare, population) is sourced (CC-SRC-008–010); claim already uses 'can'.",
+        "B_narrower_improves_fit": "Modestly — separates relocation causality from documented structural stress.",
+        "C_no_meaningful_evidentiary_improvement": "If rewrite is only stylistic packaging of the same sources, improvement is small."
+      },
+      "current_canonical_wording": "Corporate relocation and rural structural decline can drain community capacity, including local banking and healthcare access.",
+      "proposed_wording": "Rural structural decline can erode community capacity (population, banking, healthcare access); corporate relocation is a plausible contributing mechanism requiring separate causal modules.",
+      "why_current_fails": "Bundles corporate-relocation causality with documented rural structural stress.",
+      "what_new_removes": [
+        "Implied joint proven package of relocation + decline"
+      ],
+      "what_new_preserves": [
+        "Rural structural indicators",
+        "Banking/healthcare access concerns",
+        "Relocation as plausible hypothesis"
+      ],
+      "best_support": "CC-SRC-008, CC-SRC-009, CC-SRC-010 (structural rural stress)",
+      "best_contrary": "Heterogeneous nonmetro outcomes; some post-2020 gains.",
+      "source_to_claim_fit": "PARTIAL → proposed STRONG if approved",
+      "confidence": "Moderate",
+      "impact_if_approved": "Cleaner causal separation; small fit gain.",
+      "impact_if_rejected": "Acceptable if Steve judges existing wording already hedged enough (Burt leans NO CHANGE / REJECT optional rewrite).",
+      "burt_recommendation": "REJECT (NO CHANGE) — optional; evidentiary gain is modest, not mandatory",
+      "steve_decision": "MODIFY",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "MODIFY",
+      "adjudicator_reason": "Disagree with NO CHANGE; existing sentence linguistically links relocation to outcomes sourced only for rural structural decline.",
+      "canonical_text_applied": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation."
+    },
+    {
+      "change_id": "CC-CHG-P21-RET-009",
+      "claim_id": "CC-CLAIM-009",
+      "action": "RETIRE → CC-PRED-009",
+      "current_canonical_wording": "System-level Constitutional Capitalism over 10–20 years would produce larger distributional effects than isolated corporate tax increases.",
+      "proposed_wording": null,
+      "proposed_prediction_id": "CC-PRED-009",
+      "why_current_fails": "Unsupported system-level prediction; not an empirical current-state diagnosis claim; zero sources; fails fit.",
+      "what_new_removes": [
+        "Empirical-claim presentation of a forecast"
+      ],
+      "what_new_preserves": [
+        "Full historical claim record",
+        "Prediction ledger entry CC-PRED-009 (already drafted PENDING)",
+        "Graph lineage"
+      ],
+      "best_support": "(none — prediction class)",
+      "best_contrary": "No modeling or pilots compare package reforms vs isolated corporate-tax increases.",
+      "source_to_claim_fit": "N/A_RETIRED (recommended)",
+      "confidence": "Very Low as empirical claim",
+      "impact_if_approved": "Claim status RETIRED; CC-PRED-009 becomes the governed prediction object; not counted as empirical proof.",
+      "impact_if_rejected": "Overclaim remains in first-20 diagnosis set and continues to pollute GATE-02.",
+      "retirement_rationale": {
+        "why_not_empirical_current_state": "Compares future package outcomes to counterfactual tax policy — requires simulation, not diagnosis facts.",
+        "why_prediction_more_accurate": "Forward-looking comparative distributional claim with 10–20 year horizon.",
+        "evidence_limitations": "No registered sources; no model; no pilot results.",
+        "conditions_to_evaluate_later": [
+          "Defined reform package",
+          "Comparable baseline tax scenario",
+          "Distributional metrics and horizon",
+          "Modeling or quasi-experimental evaluation plan"
+        ],
+        "date_horizon": "10–20 years (as stated in original claim)"
+      },
+      "burt_recommendation": "APPROVE",
+      "steve_decision": "APPROVE",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "APPROVE",
+      "adjudicator_reason": "Model-dependent prediction masquerading as empirical claim.",
+      "prediction_text_applied": "A sufficiently broad Constitutional Capitalism reform package may produce larger long-run distributional effects than an isolated corporate-tax increase; this is an untested comparative prediction requiring defined policy specifications, distributional modeling, sensitivity analysis, and ultimately empirical evaluation."
+    },
+    {
+      "change_id": "CC-CHG-P21-002",
+      "claim_id": "CC-CLAIM-010",
+      "action": "REWRITE",
+      "current_canonical_wording": "Broader ownership participation would shift many households from wage-only dependence toward multi-source capital ownership.",
+      "proposed_wording": "U.S. household wealth is highly concentrated; whether broader ownership participation would shift households toward multi-source capital income is an untested design prediction requiring modeling and pilots.",
+      "why_current_fails": "Uses SCF/DFA concentration sources to support a redesign forecast.",
+      "what_new_removes": [
+        "Would shift many households",
+        "implied empirical forecast"
+      ],
+      "what_new_preserves": [
+        "Descriptive concentration fact",
+        "Ownership-participation research agenda labeled as prediction"
+      ],
+      "best_support": "CC-SRC-001, CC-SRC-002, CC-SRC-012 (concentration clause only)",
+      "best_contrary": "Concentration facts do not validate ownership-redesign outcomes.",
+      "source_to_claim_fit": "NON-SUPPORTING → proposed PARTIAL if approved",
+      "confidence": "High for concentration clause; Very Low for prediction clause",
+      "impact_if_approved": "Splits descriptive vs predictive; fit can improve without pretending proof.",
+      "impact_if_rejected": "Forecast remains falsely attached to SCF/DFA evidence.",
+      "burt_recommendation": "APPROVE",
+      "steve_decision": "MODIFY",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "MODIFY",
+      "adjudicator_reason": "Concentration diagnosis and ownership-system prediction must not occupy the same empirical claim.",
+      "canonical_text_applied": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households.",
+      "split_prediction_id": "CC-PRED-012",
+      "split_prediction_text": "Expanding household ownership participation may increase the number of households receiving income or asset appreciation from capital, but the magnitude, distribution, persistence, and household-level effects are untested and require modeling and empirical evaluation."
+    },
+    {
+      "change_id": "CC-CHG-P21-003",
+      "claim_id": "CC-CLAIM-016",
+      "action": "REWRITE",
+      "current_canonical_wording": "Online commerce can extract spending from local economies via platform concentration and wealth leakage.",
+      "proposed_wording": "Online commerce is a material share of U.S. retail sales; effects on local spending, platform margins, and community wealth require dedicated leakage/multiplier studies and must not recycle pre-Wayfair tax myths.",
+      "why_current_fails": "Leakage/extraction unproven; scale sources do not establish the mechanism claim.",
+      "what_new_removes": [
+        "can extract",
+        "wealth leakage as established mechanism"
+      ],
+      "what_new_preserves": [
+        "Material e-commerce retail share",
+        "Open research agenda on local effects",
+        "Wayfair legal update"
+      ],
+      "best_support": "CC-SRC-085, CC-SRC-086 (scale / tax law — not leakage)",
+      "best_contrary": "Consumer surplus gains (Dolfen et al.); hybrid local/online sellers; post-Wayfair collection authority.",
+      "source_to_claim_fit": "WEAK → proposed STRONG if approved (for rewritten scale/agenda claim)",
+      "confidence": "High for retail share; Low for local leakage until measured",
+      "impact_if_approved": "Stops smuggling unmeasured leakage into canonical text.",
+      "impact_if_rejected": "Mechanism overclaim continues to fail fit audits.",
+      "burt_recommendation": "APPROVE",
+      "steve_decision": "MODIFY",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "MODIFY",
+      "adjudicator_reason": "Accept substantive rewrite; replace argumentative 'myths' with neutral post-Wayfair legal-environment language.",
+      "canonical_text_applied": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment."
+    },
+    {
+      "change_id": "CC-CHG-P21-004",
+      "claim_id": "CC-CLAIM-017",
+      "action": "REWRITE",
+      "current_canonical_wording": "Property taxation can threaten ownership security for some households.",
+      "proposed_wording": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
+      "why_current_fails": "'Threaten ownership security' overclaims relative to burden/relief evidence.",
+      "what_new_removes": [
+        "threaten ownership security"
+      ],
+      "what_new_preserves": [
+        "Burden/liquidity concern",
+        "Relief-design motivation",
+        "Institutional role of property tax"
+      ],
+      "best_support": "CC-SRC-089",
+      "best_contrary": "Lincoln Institute emphasizes property-tax strengths and targeted relief over blunt limits.",
+      "source_to_claim_fit": "PARTIAL → proposed STRONG if approved",
+      "confidence": "Moderate",
+      "impact_if_approved": "Aligns wording with burden evidence; improves fit.",
+      "impact_if_rejected": "Security-threat framing remains overclaim.",
+      "burt_recommendation": "APPROVE",
+      "steve_decision": "APPROVE",
+      "steve_notes": null,
+      "adjudicator": "ChatGPT",
+      "adjudicator_decision": "APPROVE",
+      "adjudicator_reason": "Better empirical precision; preserves fiscal function of property taxation alongside hardship.",
+      "canonical_text_applied": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source."
+    }
+  ],
+  "blocked_mutations_if_awaiting": [],
+  "how_steve_records_decisions": [
+    "Set operator_decisions_recorded=true",
+    "For each item set steve_decision to APPROVE|REJECT|MODIFY|DEFER",
+    "If MODIFY, supply steve_modified_text",
+    "Re-run this slice or a dedicated apply-governance slice"
+  ],
+  "adjudicator": "ChatGPT",
+  "decision_id": "CC-DEC-103",
+  "applied_slice": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+  "applied_at": "2026-08-07"
+}

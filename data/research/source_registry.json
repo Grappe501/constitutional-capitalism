@@ -1,7 +1,7 @@
 {
-  "version": "0.2.8",
-  "last_updated": "2026-08-05",
-  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled.",
+  "version": "0.3.0",
+  "last_updated": "2026-08-07",
+  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled. Phase 2.1 continuation (2026-08-07): added CC-SRC-081–090 for first-20 claim audit (monopsony, corporate-tax incidence, e-commerce, Wayfair, NSF R&D, property-tax relief, productivity measurement dispute).",
   "sources": [
     {
       "source_id": "CC-SRC-001",
@@ -2006,6 +2006,780 @@
       "ideological_or_institutional_considerations": "Official USDA Rural Development cooperative statistics.",
       "verification_status": "url_verified_via_search_excerpt",
       "notes": "Supports member-owned cooperative enterprise as a major agricultural ownership channel."
+    },
+    {
+      "source_id": "CC-SRC-081",
+      "title": "The State of Labor Market Competition",
+      "authors": [
+        "U.S. Department of the Treasury"
+      ],
+      "year": 2022,
+      "url": "https://home.treasury.gov/system/files/136/State-of-Labor-Market-Competition-2022.pdf",
+      "source_type": "federal_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "labor_monopsony",
+      "publication_date": "2022-03",
+      "retrieval_date": "2026-08-07",
+      "summary": "Treasury report (with DOJ/DOL/FTC consultation) on employer power in U.S. labor markets: concentration, frictions, and anti-competitive practices associated with wages and conditions below competitive benchmarks; policy recommendations included.",
+      "key_findings": [
+        "Documents employer concentration and practices as sources of labor-market power",
+        "Estimates material wage effects from lack of competition relative to competitive benchmark (report synthesis; not a single local HHI estimate)"
+      ],
+      "limitations": "Administration report synthesizing literature; effect-size figures are contested across studies; not Arkansas-specific; not a substitute for market-level identification.",
+      "ideological_or_institutional_considerations": "Executive-branch policy report under competition agenda.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Supports CC-CLAIM-015 with qualification; also contrary-boundary for overclaiming national uniformity."
+    },
+    {
+      "source_id": "CC-SRC-082",
+      "title": "Labor Market Monopsony: Trends, Consequences, and Policy Responses",
+      "authors": [
+        "Council of Economic Advisers"
+      ],
+      "year": 2016,
+      "url": "https://obamawhitehouse.archives.gov/sites/default/files/page/files/20161025_monopsony_labor_mrkt_cea.pdf",
+      "source_type": "federal_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "labor_monopsony",
+      "publication_date": "2016-10",
+      "retrieval_date": "2026-08-07",
+      "summary": "CEA issue brief on labor-market monopsony: employer concentration and related practices can reduce wages relative to competitive settings; discusses trends and policy responses.",
+      "key_findings": [
+        "Frames monopsony as distinct from product-market monopoly with shared causes",
+        "Links limited employer sets in local markets to wage-setting power"
+      ],
+      "limitations": "2016 brief; literature evolved; aging for current-state claims without refresh.",
+      "ideological_or_institutional_considerations": "White House CEA product (Obama administration archive).",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Historical-by-design government synthesis for CC-CLAIM-015."
+    },
+    {
+      "source_id": "CC-SRC-083",
+      "title": "Corporate Tax Incidence: A Review of Empirical Estimates and Analysis",
+      "authors": [
+        "Congressional Budget Office"
+      ],
+      "year": 2011,
+      "url": "https://www.cbo.gov/sites/default/files/cbofiles/ftpdocs/122xx/doc12239/06-14-2011-corporatetaxincidence.pdf",
+      "source_type": "federal_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "taxation",
+      "publication_date": "2011-06",
+      "retrieval_date": "2026-08-07",
+      "summary": "CBO working paper reviewing empirical studies of corporate income tax incidence across countries and U.S. states; documents that labor may bear a portion of the burden under some estimates while methods and magnitudes are contested.",
+      "key_findings": [
+        "Surveys cross-country and cross-state empirical approaches to wage effects of corporate taxes",
+        "Does not settle a single incidence share; emphasizes methodological limits"
+      ],
+      "limitations": "2011 review; subsequent agency assumptions evolved; not proof of consumer price incidence.",
+      "ideological_or_institutional_considerations": "Official CBO analysis.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Best official review spine for CC-CLAIM-014."
+    },
+    {
+      "source_id": "CC-SRC-084",
+      "title": "An Overview of the Corporate Income Tax System (CRS Report R47519)",
+      "authors": [
+        "Congressional Research Service"
+      ],
+      "year": 2023,
+      "url": "https://www.congress.gov/crs-product/R47519",
+      "source_type": "federal_report",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "taxation",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-07",
+      "summary": "CRS overview of the U.S. corporate income tax, including how CBO/JCT/Treasury allocate corporate-tax burden between capital and labor in distributional tables (illustratively capital majority / labor minority shares).",
+      "key_findings": [
+        "Documents agency incidence assumptions used in distributional analysis (e.g., CBO/JCT capital-majority / labor-minority splits)",
+        "Notes evolution from earlier capital-only assumptions"
+      ],
+      "limitations": "CRS synthesis of agency modeling assumptions — not an independent causal estimate; consumer price channel often excluded in agency tables.",
+      "ideological_or_institutional_considerations": "Congressional Research Service nonpartisan product.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Supports 'may be borne partly by workers' wording; does not prove consumer burden."
+    },
+    {
+      "source_id": "CC-SRC-085",
+      "title": "Quarterly Retail E-Commerce Sales Report",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2026,
+      "url": "https://www.census.gov/retail/ecommerce.html",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "2026-Q1",
+      "retrieval_date": "2026-08-07",
+      "summary": "Census quarterly estimates of U.S. retail e-commerce sales and share of total retail sales. Q1 2026 seasonally adjusted e-commerce share reported at 16.9% of total retail sales.",
+      "key_findings": [
+        "Q1 2026 e-commerce ≈ 16.9% of total retail sales (seasonally adjusted)",
+        "Provides official time series for e-commerce penetration — not local leakage"
+      ],
+      "limitations": "National retail sales concept; does not measure local wealth leakage, platform margins, or community multipliers.",
+      "ideological_or_institutional_considerations": "Official Census statistical product.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Establishes e-commerce scale; NON-SUPPORTING for unquantified leakage claim as written."
+    },
+    {
+      "source_id": "CC-SRC-086",
+      "title": "South Dakota v. Wayfair, Inc., 585 U.S. ___ (2018)",
+      "authors": [
+        "Supreme Court of the United States"
+      ],
+      "year": 2018,
+      "url": "https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf",
+      "source_type": "judicial_opinion",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "2018-06-21",
+      "retrieval_date": "2026-08-07",
+      "summary": "Supreme Court overruled physical-presence rule of Quill/Bellas Hess for state sales-tax collection, allowing states to require collection by remote sellers meeting economic nexus thresholds.",
+      "key_findings": [
+        "Physical-presence rule for sales-tax collection overruled",
+        "Pre-Wayfair 'untaxed remote sales' narratives are legally outdated for collection authority"
+      ],
+      "limitations": "Tax-collection nexus case — not an empirical local-leakage study.",
+      "ideological_or_institutional_considerations": "Binding U.S. Supreme Court opinion.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Contrary/qualifier for obsolete fiscal narratives under CC-CLAIM-016."
+    },
+    {
+      "source_id": "CC-SRC-087",
+      "title": "National Patterns of R&D Resources: 2023–24 Data Update (NSF 26-313)",
+      "authors": [
+        "National Center for Science and Engineering Statistics, NSF"
+      ],
+      "year": 2025,
+      "url": "https://ncses.nsf.gov/pubs/nsf26313",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "innovation",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-07",
+      "summary": "NCSES National Patterns integrates surveys of U.S. R&D funding and performance by sector (business, federal, higher education, nonprofit). Documents federal funding flowing to business and university performers among other patterns.",
+      "key_findings": [
+        "Federal government funds R&D performed across sectors including businesses and universities",
+        "Provides official historical series for national R&D funding/performance"
+      ],
+      "limitations": "Funding/performance accounts do not by themselves prove that specific private innovations would not have occurred without public funding.",
+      "ideological_or_institutional_considerations": "Official NSF/NCSES statistical product.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Supports mild 'public research contributes to private innovation' with qualification."
+    },
+    {
+      "source_id": "CC-SRC-088",
+      "title": "Labor Market Concentration",
+      "authors": [
+        "José Azar",
+        "Ioana Marinescu",
+        "Marshall Steinbaum"
+      ],
+      "year": 2022,
+      "url": "https://jhr.uwpress.org/content/57/s/s167",
+      "source_type": "peer_reviewed_or_research_synthesis",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "labor_monopsony",
+      "publication_date": "2022",
+      "retrieval_date": "2026-08-07",
+      "summary": "Peer-reviewed Journal of Human Resources study: labor-market concentration (HHI) across U.S. geographic-occupational markets associated with lower posted wages; average markets highly concentrated by DOJ-FTC thresholds.",
+      "key_findings": [
+        "Average studied labor markets highly concentrated by merger-guideline thresholds",
+        "Higher concentration associated with lower posted wages (OLS/IV ranges reported)"
+      ],
+      "limitations": "CareerBuilder vacancy data; identification debates; posted wages ≠ all compensation; not Arkansas-specific.",
+      "ideological_or_institutional_considerations": "Peer-reviewed academic study.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Peer-reviewed support for CC-CLAIM-015 conditional wording."
+    },
+    {
+      "source_id": "CC-SRC-089",
+      "title": "Property Tax Relief for Homeowners",
+      "authors": [
+        "Adam H. Langley",
+        "Joan Youngman",
+        "Lincoln Institute of Land Policy"
+      ],
+      "year": 2021,
+      "url": "https://www.lincolninst.edu/publications/policy-focus-reports/property-tax-relief-homeowners/",
+      "source_type": "institutional_secondary",
+      "reliability": "reputable_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US_states",
+      "research_domain": "housing",
+      "publication_date": "2021-11",
+      "retrieval_date": "2026-08-07",
+      "summary": "Lincoln Institute policy focus report on U.S. homeowner property-tax relief: documents affordability pressures and evaluates relief designs; notes property tax strengths while addressing overburden risks for some households.",
+      "key_findings": [
+        "Property tax is central local revenue; some households face high burdens relative to income/liquidity",
+        "Targeted relief (e.g., circuit breakers, deferrals) preferred over blunt limits in authors' evaluation"
+      ],
+      "limitations": "Institutional policy analysis — not proof that property tax generally threatens ownership security; state variation large; advocacy-adjacent institute.",
+      "ideological_or_institutional_considerations": "Nonpartisan land-policy institute; policy recommendations present.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Qualifies CC-CLAIM-017; wording 'threaten ownership security' may overclaim — rewrite candidate."
+    },
+    {
+      "source_id": "CC-SRC-090",
+      "title": "Productivity and Real Wages: Is There a Puzzle?",
+      "authors": [
+        "Barry Bosworth",
+        "George L. Perry"
+      ],
+      "year": 1994,
+      "url": "https://www.brookings.edu/wp-content/uploads/1994/01/1994a_bpea_bosworth_perry_shapiro.pdf",
+      "source_type": "peer_reviewed_or_research_synthesis",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "wages_productivity",
+      "publication_date": "1994",
+      "retrieval_date": "2026-08-07",
+      "summary": "Brookings Papers discussion of productivity vs real wage measurement; illustrates how deflator and series choices alter apparent gaps — used here as contrary/measurement-dispute evidence for typical-worker gap narratives.",
+      "key_findings": [
+        "Measurement and price-deflator choices materially affect productivity–wage comparisons",
+        "Historical scholarly challenge to treating a single gap series as unambiguous"
+      ],
+      "limitations": "1994 paper; historical by design for measurement debate; does not erase later BLS divergence documentation.",
+      "ideological_or_institutional_considerations": "Brookings scholarly forum.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Contrary/measurement-dispute source for CC-CLAIM-002."
+    },
+    {
+      "source_id": "CC-SRC-091",
+      "title": "Measuring labor market concentration using the QCEW",
+      "authors": [
+        "U.S. Bureau of Labor Statistics",
+        "Monthly Labor Review"
+      ],
+      "year": 2024,
+      "url": "https://www.bls.gov/opub/mlr/2024/article/measuring-labor-market-concentration-using-the-qcew.htm",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "labor_monopsony",
+      "publication_date": "2024",
+      "retrieval_date": "2026-08-07",
+      "summary": "BLS Monthly Labor Review article measuring U.S. labor-market concentration with QCEW data (2002–2023). Finds average markets highly concentrated by DOJ/FTC guidelines and a significant negative association between employer concentration and wages; also simulates merger impacts on local labor-market power.",
+      "key_findings": [
+        "Average U.S. labor market highly concentrated by 2010 DOJ/FTC guidelines in the study frame",
+        "Higher employer concentration significantly associated with lower wages in QCEW-based measures"
+      ],
+      "limitations": "Association ≠ universal causal proof in every market; Arkansas transfer not automatic; merger simulations are counterfactual.",
+      "ideological_or_institutional_considerations": "Official BLS statistical research article.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Closes CC-RQ-P21-014 dataset gap with official QCEW-based concentration measurement; supports CC-CLAIM-015 Qualifies."
+    },
+    {
+      "source_id": "CC-SRC-092",
+      "title": "FEC Campaign Finance Data (disclosure portal)",
+      "authors": [
+        "Federal Election Commission"
+      ],
+      "year": 2026,
+      "url": "https://www.fec.gov/data/",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-07",
+      "summary": "Official FEC portal for federal campaign finance disclosures: candidate/committee receipts and disbursements, individual contributions, filings, and bulk data. Primary spine for lobbying/campaign-finance bibliography — does not by itself prove that economic concentration weakens democratic accountability.",
+      "key_findings": [
+        "Federal campaign finance disclosures are publicly available for candidates and committees",
+        "Data enable research on money in politics but require careful identification for causal claims"
+      ],
+      "limitations": "Disclosure ≠ capture. Does not measure lobbying influence or policy outcomes; state/local races largely outside FEC; OpenFEC API access separate.",
+      "ideological_or_institutional_considerations": "Independent federal regulatory commission disclosure system.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Bibliography spine for CC-RQ-P21-025; NON-SUPPORTING for CC-CLAIM-003 as written."
+    },
+    {
+      "source_id": "CC-SRC-093",
+      "title": "FEC Campaign Finance Statistics (summary tables)",
+      "authors": [
+        "Federal Election Commission"
+      ],
+      "year": 2026,
+      "url": "https://www.fec.gov/campaign-finance-data/campaign-finance-statistics/",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-07",
+      "summary": "FEC summary statistics tables for campaign financial activity by election cycle and filer type (candidates, parties, PACs, communications).",
+      "key_findings": [
+        "Provides cycle-level summary tables for federal campaign finance activity",
+        "Useful for descriptive political-economy modules — not causal capture proofs"
+      ],
+      "limitations": "Aggregate tables; causal inference requires research designs beyond the tables.",
+      "ideological_or_institutional_considerations": "Official FEC statistical tables.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Companion to CC-SRC-092 for P0 bibliography closeout."
+    },
+    {
+      "source_id": "CC-SRC-094",
+      "title": "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens",
+      "authors": [
+        "Martin Gilens",
+        "Benjamin I. Page"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1017/S1537592714001595",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "2014",
+      "retrieval_date": "2026-08-07",
+      "summary": "Peer-reviewed multivariate analysis of 1,779 U.S. policy issues arguing economic elites and organized business interests have substantial independent impacts on policy, while average citizens have little or no independent influence when preferences diverge — a key unequal-responsiveness result, not a proof of 'capture' or that economic concentration weakens democratic accountability as a single mechanism.",
+      "key_findings": [
+        "Economic elites and business-oriented groups show independent association with policy outcomes in the study frame",
+        "Average citizens show little independent influence once elite/group preferences are controlled"
+      ],
+      "limitations": "High preference correlation across income groups; causal identification debated; does not measure regulatory/state capture; not a campaign-contribution study; national-policy sample.",
+      "ideological_or_institutional_considerations": "Influential unequal-responsiveness paper; contested methodology.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Best supporting literature for unequal policy responsiveness — PARTIAL adjacent to CC-CLAIM-003; NON-SUPPORTING for 'capture' synonymy."
+    },
+    {
+      "source_id": "CC-SRC-095",
+      "title": "When Do the Rich Win?",
+      "authors": [
+        "J. Alexander Branham",
+        "Stuart N. Soroka",
+        "Christopher Wlezien"
+      ],
+      "year": 2017,
+      "url": "https://doi.org/10.1002/polq.12577",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "2017",
+      "retrieval_date": "2026-08-07",
+      "summary": "Peer-reviewed Political Science Quarterly analysis of congruence when income groups disagree. Finds middle/rich/poor preferences usually align; when middle and rich disagree, the rich win only slightly more often — concluding the rich may matter more than they should but do not dominate policymaking. Direct contrary check on strong oligarchy/capture readings of Gilens/Page-type findings.",
+      "key_findings": [
+        "Income groups almost always agree on policies in the analyzed cases",
+        "When middle and rich disagree, rich win only slightly more often; rich do not dominate"
+      ],
+      "limitations": "Congruence design differs from Gilens/Page multivariate approach; does not settle all responsiveness debates.",
+      "ideological_or_institutional_considerations": "Methodological critique/reanalysis tradition.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Contrary evidence for strong capture/oligarchy claims linked to CC-CLAIM-003."
+    },
+    {
+      "source_id": "CC-SRC-096",
+      "title": "Lobbying Disclosure Act (LDA) Public Reports — LDA.gov",
+      "authors": [
+        "U.S. Senate",
+        "Secretary of the Senate"
+      ],
+      "year": 2026,
+      "url": "https://lda.senate.gov/system/public/",
+      "source_type": "federal_disclosure",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-07",
+      "summary": "Official federal Lobbying Disclosure Act filings (LD-1 registrations, LD-2 quarterly activity, LD-203 contributions). Primary disclosure spine for lobbying activity — distinct from FEC campaign finance and from capture outcomes.",
+      "key_findings": [
+        "Federal lobbying registrations and quarterly activity reports are publicly searchable/downloadable",
+        "Disclosure enables descriptive lobbying research; does not by itself prove capture"
+      ],
+      "limitations": "Disclosure ≠ influence ≠ capture. Thresholds and reporting quality issues; state/local lobbying often outside LDA; does not measure policy outcomes.",
+      "ideological_or_institutional_considerations": "Statutory disclosure system.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Lobbying spine separate from FEC (CC-SRC-092/093) for CC-CLAIM-003 research."
+    },
+    {
+      "source_id": "CC-SRC-097",
+      "title": "Effects of E-commerce on Local Labor Markets",
+      "authors": [
+        "Anahid Bauer",
+        "Sofía Fernández Guerrico"
+      ],
+      "year": 2023,
+      "url": "https://docs.iza.org/dp16345.pdf",
+      "source_type": "working_paper",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "2023-07",
+      "retrieval_date": "2026-08-07",
+      "summary": "IZA discussion paper exploiting state 'Amazon Tax' sales-tax collection mandates on out-of-state online retailers (2010–2016). Finds that removing the online price advantage lowers employment in transportation/warehousing complementary to e-commerce and produces net retail employment declines with brick-and-mortar losses partly offset by warehouse clubs/supercenters — evidence on local labor-market adjustment, not proof of 'wealth leakage' or platform extraction.",
+      "key_findings": [
+        "Sales-tax collection mandates associated with lower transport/warehousing employment",
+        "Net local retail employment declines with within-retail reallocation"
+      ],
+      "limitations": "Working paper; pre/post Amazon Tax design; not a community wealth-multiplier study; does not measure platform concentration or capital ownership leakage.",
+      "ideological_or_institutional_considerations": "IZA DP series (preliminary).",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Supports local labor effects of e-commerce tax shocks — PARTIAL adjacent to CC-CLAIM-016; NON-SUPPORTING for 'wealth leakage' wording."
+    },
+    {
+      "source_id": "CC-SRC-098",
+      "title": "Assessing the Gains from E-Commerce",
+      "authors": [
+        "Paul Dolfen",
+        "Liran Einav",
+        "Peter J. Klenow",
+        "Benjamin Klopack",
+        "Jonathan D. Levin",
+        "Larry Levin",
+        "Wayne Best"
+      ],
+      "year": 2023,
+      "url": "https://www.aeaweb.org/articles?id=10.1257/mac.20210049",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-07",
+      "summary": "AEJ: Macroeconomics study using Visa card transactions (2007–2017) estimating U.S. consumer surplus from e-commerce. Finds roughly 1% consumption-equivalent welfare gain by 2017 (>$1,000/household/year), mostly from access to merchants not available locally; higher-income and denser-county consumers gained more. Direct contrary/countervailing evidence against net-harm-only leakage narratives.",
+      "key_findings": [
+        "Material consumer surplus from e-commerce variety/convenience",
+        "Gains larger for higher-income and denser counties in this U.S. sample"
+      ],
+      "limitations": "Card-network sample; welfare to consumers ≠ local business/fiscal incidence; denser-county pattern complicates simple rural-access U.S. stories; does not measure community wealth leakage.",
+      "ideological_or_institutional_considerations": "Peer-reviewed macro/IO consumer-welfare estimate.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Contrary/countervailing consumer-welfare evidence for CC-CLAIM-016 net-harm framing."
+    },
+    {
+      "source_id": "CC-SRC-099",
+      "title": "BEA Regional Input-Output Modeling System (RIMS II)",
+      "authors": [
+        "U.S. Bureau of Economic Analysis"
+      ],
+      "year": 2026,
+      "url": "https://apps.bea.gov/regional/rims/rimsii/",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "ongoing",
+      "retrieval_date": "2026-08-07",
+      "summary": "Official BEA regional multipliers tool for estimating how final-demand changes ripple through local output, value added, earnings, and employment. Critical methodological constraint for retail: multipliers apply to local retail margins, not gross sales — because goods sold locally are often produced elsewhere. Provides an operational scaffold for local economic-impact analysis, not a ready-made measure of 'wealth leakage' from e-commerce.",
+      "key_findings": [
+        "Local demand shocks can be analyzed with regional multipliers for output, value added, earnings, employment",
+        "Retail requires margin treatment — gross sales must not be fed directly into retail multipliers"
+      ],
+      "limitations": "Static I-O assumptions; does not by itself measure e-commerce diversion, platform concentration, or community wealth ownership effects; purchased multipliers are region-specific; household consumption-pattern shifts are outside core strengths.",
+      "ideological_or_institutional_considerations": "Official BEA regional accounts tool.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Operationalization spine for CC-RQ-P21-028 leakage definition — method, not proof of net harm."
+    },
+    {
+      "source_id": "CC-SRC-100",
+      "title": "RIMS II — Retail Sales / Retail Margin Treatment",
+      "authors": [
+        "U.S. Bureau of Economic Analysis"
+      ],
+      "year": 2024,
+      "url": "https://apps.bea.gov/regional/pdf/rims/RetailSales.pdf",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "undated_bea_guide",
+      "retrieval_date": "2026-08-07",
+      "summary": "BEA guidance showing that only the retail margin (not purchaser value of goods) should be applied to RIMS II retail multipliers. Demonstrates why naive 'sales left town' arithmetic is methodologically invalid for local impact claims.",
+      "key_findings": [
+        "Retail share/margin varies by product category",
+        "Local impact estimates must use margins, not gross sales"
+      ],
+      "limitations": "Illustrative regional examples; not an e-commerce study; does not measure ownership of platform profits.",
+      "ideological_or_institutional_considerations": "Official BEA methodological guidance.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Directly disciplines leakage measurement mistakes for CC-CLAIM-016 research."
+    },
+    {
+      "source_id": "CC-SRC-101",
+      "title": "U.S. Census Bureau QuickFacts: Faulkner County, Arkansas",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2025,
+      "url": "https://www.census.gov/quickfacts/faulknercountyarkansas",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US-AR-Faulkner",
+      "research_domain": "internet_commerce",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-07",
+      "summary": "Official QuickFacts for Faulkner County, AR including population estimates, 2022 Economic Census retail sales ($2,537,534 thousand), retail sales per capita ($19,892), transportation/warehousing receipts, and 2023 County Business Patterns employer establishments (2,990) and employment (37,718).",
+      "key_findings": [
+        "2022 total retail sales about $2.54 billion; per capita about $19,892",
+        "2023 employer employment 37,718 across 2,990 establishments",
+        "2022 transportation and warehousing receipts about $116.2 million"
+      ],
+      "limitations": "Aggregate retail sales are not e-commerce; not ownership-of-profits; not leakage. Economic Census and CBP definitions differ from household consumption maps.",
+      "ideological_or_institutional_considerations": "Official Census QuickFacts compilation.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Primary geography spine for leakage measurement pilot."
+    },
+    {
+      "source_id": "CC-SRC-102",
+      "title": "Remote Sellers and Marketplace Facilitators — Arkansas DFA",
+      "authors": [
+        "Arkansas Department of Finance and Administration"
+      ],
+      "year": 2019,
+      "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/remote-sellers/",
+      "source_type": "state_government",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US-AR",
+      "research_domain": "internet_commerce",
+      "publication_date": "2019-07-01",
+      "retrieval_date": "2026-08-07",
+      "summary": "Arkansas Act 822 (effective July 1, 2019) requires remote sellers and marketplace facilitators exceeding $100,000 in Arkansas sales or 200 transactions to collect and remit state and local sales/use tax — Arkansas implementation of post-Wayfair destination-based collection.",
+      "key_findings": [
+        "Economic nexus thresholds for remote sellers/marketplace facilitators",
+        "State and local sales/use tax remittance obligation into Arkansas"
+      ],
+      "limitations": "Legal framework — not county-level remittance totals attributable to e-commerce; local NAICS distribution reports exist separately and were not scraped into a time series in this pilot.",
+      "ideological_or_institutional_considerations": "State tax administration.",
+      "verification_status": "url_verified_via_fetch",
+      "notes": "Fiscal remittance legal spine for LEAK-COMP-04."
+    },
+    {
+      "source_id": "CC-SRC-103",
+      "title": "The Theory of Economic Regulation",
+      "authors": [
+        "George J. Stigler"
+      ],
+      "year": 1971,
+      "url": "https://doi.org/10.2307/3003160",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "1971",
+      "retrieval_date": "2026-08-07",
+      "summary": "Classic Bell Journal article arguing regulation is often acquired by industry and operated primarily for its benefit — foundational theoretical literature for regulatory-capture research. Does not by itself establish contemporary U.S. national capture from economic concentration.",
+      "key_findings": [
+        "Industry demand for regulation as private benefit",
+        "Theoretical supply-side of political process favoring organized interests"
+      ],
+      "limitations": "Theoretical/illustrative; contested empirical generalizations; not a measurement of modern national democratic accountability; Stigler did not use the phrase 'regulatory capture' in the article itself.",
+      "ideological_or_institutional_considerations": "Foundational Chicago-school regulation theory.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "THEORETICAL spine for Module D — not causal proof for CC-CLAIM-003."
+    },
+    {
+      "source_id": "CC-SRC-104",
+      "title": "County Business Patterns (program page)",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2025,
+      "url": "https://www.census.gov/programs-surveys/cbp.html",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "internet_commerce",
+      "publication_date": "2025",
+      "retrieval_date": "2026-08-07",
+      "summary": "Official CBP program documentation: annual subnational establishment, employment, and payroll statistics by NAICS. API access now requires a Census API key; QuickFacts aggregates used for Faulkner County pilot when keyed API pulls unavailable.",
+      "key_findings": [
+        "CBP provides county industry employment/payroll",
+        "Excludes most self-employed and most government employment"
+      ],
+      "limitations": "Disclosure suppressions; not sales; not e-commerce share; API key gated.",
+      "ideological_or_institutional_considerations": "Official Census program.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Methodology reference for pilot data inventory."
+    },
+    {
+      "source_id": "CC-SRC-105",
+      "title": "Does Private Money Buy Public Policy? Campaign Contributions and Regulatory Outcomes in Telecommunications",
+      "authors": [
+        "Rui J. P. de Figueiredo",
+        "Geoff Edwards"
+      ],
+      "year": 2007,
+      "url": "https://doi.org/10.1111/j.1530-9134.2007.00150.x",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US-state",
+      "research_domain": "political_economic_power",
+      "publication_date": "2007",
+      "retrieval_date": "2026-08-07",
+      "summary": "Journal of Economics & Management Strategy study linking campaign contributions from competing local telecom interests to measurable state public utility commission regulatory outcomes. Finds a significant association between private money mix and regulatory outcomes, robust to multiple specifications; argues omitted-variable bias would need to be extreme to erase the result. Sectoral evidence of political money associating with regulatory outcomes — not national state capture from economic concentration.",
+      "key_findings": [
+        "Campaign contributions associated with measurable telecom PUC regulatory outcomes",
+        "Uses policy outcomes rather than only legislative roll-call votes"
+      ],
+      "limitations": "State telecom PUC context; observational identification debates remain; does not prove nationwide capture or that market concentration causes democratic failure.",
+      "ideological_or_institutional_considerations": "Peer-reviewed industrial organization / political economy.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "TELECOM dossier — ASSOCIATIONAL / contested causal strength; avoid 'buy/owns/determines' overclaim in CC wording."
+    },
+    {
+      "source_id": "CC-SRC-106",
+      "title": "Bank Lobbying: Regulatory Capture and Beyond",
+      "authors": [
+        "Deniz Igan",
+        "Thomas Lambert"
+      ],
+      "year": 2019,
+      "url": "https://doi.org/10.5089/9781484347546.001",
+      "source_type": "working_paper",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "2019-08",
+      "retrieval_date": "2026-08-07",
+      "summary": "IMF working paper surveying motivations and empirical evidence on bank lobbying. Argues findings are consistent with regulatory capture that lessens support for tighter rules/enforcement and can enable riskier practices; also notes motivation identification is hard and does not call for an outright lobbying ban. Sectoral synthesis — not a single causal identification of national capture.",
+      "key_findings": [
+        "LDA-era bank lobbying literature often consistent with capture-like patterns",
+        "Motivation (information vs influence) hard to pin down empirically"
+      ],
+      "limitations": "IMF WP survey/synthesis; not peer-reviewed journal article; capture language in title/abstract must not be imported wholesale into CC claims without sector wording discipline.",
+      "ideological_or_institutional_considerations": "IMF staff working paper.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "BANKING dossier — ASSOCIATIONAL / interpretive capture-consistency; pair with contrary revolving-door evidence."
+    },
+    {
+      "source_id": "CC-SRC-107",
+      "title": "The Revolving Door and Worker Flows in Banking Regulation",
+      "authors": [
+        "David Lucca",
+        "Amit Seru",
+        "Francesco Trebbi"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1016/j.jmoneco.2014.04.006",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "2014",
+      "retrieval_date": "2026-08-07",
+      "summary": "Journal of Monetary Economics analysis of career transitions of U.S. banking regulators. Finds patterns inconsistent with a simple quid-pro-quo revolving-door capture story and more consistent with a 'regulatory schooling' hypothesis; enforcement intensity relates to both inflows and outflows. Direct contrary check against blanket revolving-door = capture claims in banking.",
+      "key_findings": [
+        "Revolving-door flows in banking regulation do not cleanly support quid-pro-quo capture",
+        "Regulatory schooling / expertise interpretation more consistent with observed flows"
+      ],
+      "limitations": "Banking regulators specifically; does not erase all lobbying-outcome associations in finance; different mechanisms possible.",
+      "ideological_or_institutional_considerations": "Peer-reviewed monetary economics / Fed staff research lineage.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "BANKING dossier — CONTRARY to simple revolving-door capture narrative."
+    },
+    {
+"source_id": "CC-SRC-108",
+    "title": "Power Play: Political Contributions and Regulatory Capture in the Electric Utility Industry",
+    "authors": [
+      "Mark Van Orden"
+    ],
+      "year": 2023,
+      "url": "https://www.thecgo.org/wp-content/uploads/2023/10/Power-Play-Political-Contributions_02.pdf",
+      "source_type": "working_paper",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US-state",
+      "research_domain": "political_economic_power",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-07",
+      "summary": "Working paper exploiting 2005 PUHCA repeal that legalized certain electric-utility campaign contributions in some states but not others. Estimates association between eased contribution restrictions and authorized returns on equity, interpreting results as consistent with capture mechanisms. Useful quasi-experimental sectoral design — not yet treated as settled peer-reviewed fact for CC claim upgrades.",
+      "key_findings": [
+        "PUHCA repeal created cross-state variation in utility contribution legality",
+        "Author finds higher authorized ROEs where contribution restrictions eased"
+      ],
+      "limitations": "Working paper / think-tank hosted; peer-review status not established here; ROE authorized ≠ full public-interest failure; Arkansas-specific transfer not automatic.",
+      "ideological_or_institutional_considerations": "CGO-hosted working paper — register with caution.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "ELECTRIC UTILITIES dossier — QUASI-CAUSAL candidate; keep provisional."
+    },
+    {
+      "source_id": "CC-SRC-109",
+      "title": "Mechanisms of regulatory capture: Testing claims of industry influence in the case of Vioxx",
+      "authors": [
+        "Eva Heims",
+        "Sophie Moxon"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.1111/rego.12531",
+      "source_type": "peer_reviewed",
+      "reliability": "scholarly_primary_analysis",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "UK-regulator-case / comparative",
+      "research_domain": "political_economic_power",
+      "publication_date": "2024",
+      "retrieval_date": "2026-08-07",
+      "summary": "Peer-reviewed process-tracing study of the Vioxx scandal often labeled as capture. Tests revolving-door, information-overload, and shared-cultural-framework mechanisms and finds the degree of capture through those mechanisms was limited — warning against misdiagnosing capture. Strong contrary/methodological discipline source for pharma and for capture claims generally.",
+      "key_findings": [
+        "Popular capture diagnosis can overstate mechanism evidence",
+        "Revolving door / information / culture mechanisms limited in the Vioxx UK-regulator case studied"
+      ],
+      "limitations": "UK drug-regulator case; not a full U.S. FDA institutional map; one high-profile case.",
+      "ideological_or_institutional_considerations": "Peer-reviewed regulation scholarship.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "PHARMA dossier — CONTRARY to casual capture labeling; mechanism discipline."
+    },
+    {
+      "source_id": "CC-SRC-110",
+      "title": "From Revolving Doors to Regulatory Capture? Evidence from Patent Examiners",
+      "authors": [
+        "Haris Tabakovic",
+        "Thomas G. Wollmann"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.3386/w24638",
+      "source_type": "working_paper",
+      "reliability": "scholarly_secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "political_economic_power",
+      "publication_date": "2018",
+      "retrieval_date": "2026-08-07",
+      "summary": "NBER working paper finding patent examiners grant more/lenient patents to firms that later hire them, suggestive of revolving-door capture in USPTO examination. Contrasts with banking revolving-door studies that often do not find quid-pro-quo patterns — shows sector dependence.",
+      "key_findings": [
+        "Examiner leniency toward future employers in patent grants",
+        "Sector-specific revolving-door effects possible"
+      ],
+      "limitations": "NBER WP (not automatically peer-reviewed journal); patent office ≠ economic utility regulation; suggestive not universal.",
+      "ideological_or_institutional_considerations": "NBER working paper.",
+      "verification_status": "url_verified_via_search_excerpt",
+      "notes": "Cross-sector revolving-door contrast — PATENT sector SUGGESTIVE; banking contrary."
     }
   ]
 }

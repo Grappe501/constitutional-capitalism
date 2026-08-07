@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+  "generated_at": "2026-08-07",
+  "status": "ACTIVE_SELECTION_PREFERENCE",
+  "architecture_note": "Sampling preference for geographic research questions — not LCL field launch, not new platform.",
+  "rule": "Prefer the designated Arkansas research geography set when one or more locations provide a methodologically appropriate sample. Select by research question, data quality, contrast value, and replicability—not by the result we expect to find. Document why the location was selected and why the other candidates were not necessary.",
+  "paired_comparison_future": "Eventually construct paired comparisons (e.g., high-growth Benton County vs structurally challenged rural/Delta geography) to investigate why the same state-level institutional environment produces radically different local outcomes.",
+  "do_not_redo": {
+    "geography": "Faulkner County, Arkansas",
+    "reason": "Negative/not-measurable leakage pilot result is valuable intellectual history; do not repeat immediately for lower research value."
+  },
+  "this_slice_geography_required": false,
+  "this_slice_note": "Sectoral capture/influence dossiers are national/sector literature questions — no Arkansas geography forced.",
+  "locations": [
+    {
+      "id": "AR-GEO-JACKSONVILLE",
+      "name": "Jacksonville, Arkansas",
+      "type": "municipality",
+      "contrast_role": "suburban / military-linked municipal systems",
+      "counties": [
+        "Pulaski"
+      ]
+    },
+    {
+      "id": "AR-GEO-SEARCY-COUNTY",
+      "name": "Searcy County, Arkansas",
+      "type": "county",
+      "fips": "05129",
+      "contrast_role": "very rural conditions"
+    },
+    {
+      "id": "AR-GEO-LAFAYETTE-COUNTY",
+      "name": "Lafayette County, Arkansas",
+      "type": "county",
+      "fips": "05073",
+      "contrast_role": "very rural conditions"
+    },
+    {
+      "id": "AR-GEO-HOT-SPRINGS-VILLAGE",
+      "name": "Hot Springs Village, Arkansas",
+      "type": "planned_community",
+      "contrast_role": "unusual retirement/community structure crossing county boundaries",
+      "counties": [
+        "Garland",
+        "Saline"
+      ]
+    },
+    {
+      "id": "AR-GEO-WEST-HELENA",
+      "name": "West Helena / Helena-West Helena, Arkansas",
+      "type": "municipality",
+      "contrast_role": "Delta urban/rural economic distress",
+      "counties": [
+        "Phillips"
+      ]
+    },
+    {
+      "id": "AR-GEO-PULASKI-COUNTY",
+      "name": "Pulaski County, Arkansas",
+      "type": "county",
+      "fips": "05119",
+      "contrast_role": "state metropolitan / government center"
+    },
+    {
+      "id": "AR-GEO-BENTON-COUNTY",
+      "name": "Benton County, Arkansas",
+      "type": "county",
+      "fips": "05007",
+      "contrast_role": "high-growth / high-income economic development"
+    },
+    {
+      "id": "AR-GEO-MISSISSIPPI-COUNTY",
+      "name": "Mississippi County, Arkansas",
+      "type": "county",
+      "fips": "05093",
+      "contrast_role": "agriculture / industry and major industrial investment"
+    }
+  ]
+}

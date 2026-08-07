@@ -1,0 +1,68 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+  "generated_at": "2026-08-07",
+  "research_question": "CC-RQ-P21-028",
+  "status": "OPERATIONAL_DEFINITION_PROPOSED — MEASUREMENT NOT YET COMPLETE",
+  "rule": "Do not use 'leakage' in public empirical claims until at least one component below is measured for a defined geography and net of countervailing effects.",
+  "rejected_definitions": [
+    "Any sentence that uses 'leakage' without a measurable numerator/denominator",
+    "Gross online sales treated as local loss dollar-for-dollar",
+    "Platform concentration alone as proof of community wealth extraction"
+  ],
+  "working_definition": "Local economic leakage from e-commerce is a net, geography-specific reduction in local value added, earnings, or fiscal capacity attributable to shifts in retail/service demand toward remote sellers, after accounting for (a) retained local retail margins and hybrid sellers, (b) logistics/fulfillment employment, (c) consumer surplus / accessibility gains, and (d) post-Wayfair tax remittance.",
+  "measurable_components": [
+    {
+      "id": "LEAK-COMP-01",
+      "name": "Local retail margin displacement",
+      "method": "Estimate change in local retail margins (not gross sales) using BEA RIMS II retail-margin treatment",
+      "sources": [
+        "CC-SRC-099",
+        "CC-SRC-100",
+        "CC-SRC-085"
+      ],
+      "status": "METHOD_READY — REGION DATA NOT ATTACHED"
+    },
+    {
+      "id": "LEAK-COMP-02",
+      "name": "Logistics/fulfillment offset",
+      "method": "Net employment/earnings in transportation, warehousing, and related local fulfillment",
+      "sources": [
+        "CC-SRC-097"
+      ],
+      "status": "PARTIAL_LITERATURE"
+    },
+    {
+      "id": "LEAK-COMP-03",
+      "name": "Consumer surplus / accessibility",
+      "method": "Welfare gains from variety/convenience; distribution by income and density",
+      "sources": [
+        "CC-SRC-098"
+      ],
+      "status": "PARTIAL_LITERATURE — OFTEN COUNTERVAILING"
+    },
+    {
+      "id": "LEAK-COMP-04",
+      "name": "Local fiscal remittance",
+      "method": "Sales-tax collections under destination/marketplace-facilitator rules post-Wayfair",
+      "sources": [
+        "CC-SRC-086"
+      ],
+      "status": "LEGAL_FRAMEWORK_SOURCED — ARKANSAS SERIES OPEN"
+    },
+    {
+      "id": "LEAK-COMP-05",
+      "name": "Ownership of remote platform profits",
+      "method": "Share of profits accruing to non-local capital owners (hard; often unavailable)",
+      "sources": [],
+      "status": "CRITICAL GAP"
+    }
+  ],
+  "netting_rule": "A responsible leakage claim must be net of LEAK-COMP-02, 03, and 04 — not a gross sales diversion story.",
+  "arkansas_status": "Not yet measured",
+  "relation_to_cc_claim_016": "Current CC-CLAIM-016 correctly refuses to assert leakage as established; this definition is the research path to eventually support, qualify, or reject leakage language.",
+  "public_reasoning_seed": {
+    "skeptical_reader_question": "What do you even mean by leakage?",
+    "public_answer": "We mean a net local loss of value added, earnings, or fiscal capacity after counting what communities still keep — local retail margins, logistics jobs, consumer benefits, and taxes remitted under current law. Gross 'sales left town' arithmetic is not good enough."
+  }
+}

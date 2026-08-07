@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "last_updated": "2026-08-04",
-  "active_slice": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+  "version": "0.1.1",
+  "last_updated": "2026-08-07",
+  "active_slice": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -239,7 +239,8 @@
         "schemas/**",
         "scripts/**",
         "apps/**",
-        "reports/**"
+        "reports/**",
+        "research/**"
       ],
       "forbidden_paths": [],
       "required_outputs": [
@@ -254,13 +255,109 @@
         "pnpm research:validate",
         "pnpm baseline:validate"
       ],
-      "completion_evidence": [],
-      "status": "queued",
+      "completion_evidence": [
+        "eight-domain research matrix shipped",
+        "first-20 claim forensic audit shipped",
+        "10 new sources CC-SRC-081–090",
+        "GATE-02 remains open with forensic reason",
+        "baseline unchanged 2/86",
+        "validators passed"
+      ],
+      "status": "partial_complete",
+      "completed_at": "2026-08-07",
       "aliases": [
         "CC-PHASE-2.1-DIAGNOSIS-CONTINUATION-1.0"
       ],
-      "next_recommended_slice": null,
-      "note": "Official continuation ID per CC-DEC-064 / phase2_mission_lock. Legacy short ID retained as alias only."
+      "next_recommended_slice": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+      "note": "2026-08-07 execution deepened evidence quality for first-20 claims. GATE-02 PARTIAL/REMAINS OPEN. Not Phase 2 complete. Return: reports/CC_PHASE_2_1_DIAGNOSIS_RESEARCH_CONTINUATION_1_0_RETURN.md"
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+      "title": "Priority Claim Rewrite and P0 Closeout",
+      "purpose": "Close P0 research questions; file governed rewrite/retire proposals without silent canonical mutations; re-test weak fits; reassess GATE-02.",
+      "prerequisites": [
+        "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/**",
+        "data/**",
+        "docs/**",
+        "reports/**",
+        "research/**",
+        "scripts/**",
+        "START_HERE_FOR_AI.md"
+      ],
+      "forbidden_paths": [],
+      "required_outputs": [
+        "p0 closeout ledger",
+        "rewrite candidates",
+        "claim change governance queue",
+        "claim repair matrix",
+        "CC-CLAIM-009 retirement recommendation",
+        "return report"
+      ],
+      "validation_commands": [
+        "pnpm phase2:validate",
+        "pnpm research:validate",
+        "pnpm baseline:validate"
+      ],
+      "completion_evidence": [
+        "9/9 P0 closed",
+        "canonical claim_text unchanged",
+        "CC-PRED-009 migration",
+        "GATE-02 remains open with exact blockers",
+        "validators passed"
+      ],
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "next_recommended_slice": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+      "note": "Claim-integrity slice. Return: reports/CC_PHASE_2_1_PRIORITY_CLAIM_REWRITE_AND_P0_CLOSEOUT_1_0_RETURN.md"
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0",
+      "title": "Three-Layer Proof Retrofit Execution",
+      "purpose": "Take the nine priority diagnosis briefs and populate Historical → Economic → Constitutional/Legal evidence tracks from registered sources only; enforce the mandatory three-layer rule; emit Supports/Qualifies/Contradicts/Not Enough Evidence assessments; expose missing evidence; push unresolved questions into the research queue. Execution — not new infrastructure.",
+      "prerequisites": [
+        "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0"
+      ],
+      "allowed_paths": [
+        "content/research/national-diagnosis/**",
+        "data/research/**",
+        "data/project/**",
+        "data/metrics/**",
+        "docs/handoffs/**",
+        "reports/**",
+        "START_HERE_FOR_AI.md",
+        "PROJECT_MASTER_MAP.md",
+        "README.md"
+      ],
+      "forbidden_paths": [
+        "apps/**/node_modules/**"
+      ],
+      "required_outputs": [
+        "nine priority briefs with three mandatory layer headings",
+        "Historical/Economic/Constitutional-Legal evidence tracks",
+        "claim assessments Supports/Qualifies/Contradicts/Not Enough Evidence",
+        "research queue entries CC-RQ-P21-*",
+        "GATE-03 presence passed without declaring Phase 2 complete",
+        "return report"
+      ],
+      "validation_commands": [
+        "pnpm phase2:validate",
+        "pnpm research:validate",
+        "pnpm progress:generate"
+      ],
+      "completion_evidence": [
+        "9/9 priority briefs contain three-layer headings",
+        "27 CC-RQ-P21 research questions queued",
+        "GATE-03 status passed (presence)",
+        "GATE-02 remains open",
+        "phase2:validate PASSED; Phase 2 remains PARTIAL"
+      ],
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "next_recommended_slice": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
+      "note": "Closes Burt step 2 / GATE-03 presence only. Does not close GATE-02 substantive sourcing, baseline growth, claim audit, or Phase 2. Infrastructure freeze remains."
     },
     {
       "slice_id": "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0",
@@ -291,6 +388,88 @@
       "status": "queued_parallel",
       "dependency_note": "Requires secure backend and protected administration (apps/admin-board preferred). Open CC-DEC-011.",
       "next_recommended_slice": null
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+      "title": "Governed Claim Approval and Substantive Domain Deepening",
+      "purpose": "Adjudicate pending claim changes via Steve decision packet; deepen CRITICAL GAP then THIN domains; reassess GATE-02.",
+      "status": "partial_complete_awaiting_operator",
+      "completed_at": "2026-08-07",
+      "completion_evidence": [
+        "Steve decision packet shipped",
+        "0 unauthorized claim_text mutations",
+        "political capture dossier",
+        "internet leakage dossier",
+        "domain matrix recomputed",
+        "GATE-02 remains open with exact blockers"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-APPLY-STEVE-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "note": "Pass A stop gate held. Pass B research completed without disputed wording mutations."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "title": "Apply ChatGPT Claim Governance Decisions",
+      "purpose": "Apply embedded ChatGPT APPROVE/MODIFY decisions; preserve lineage; ontology-classify; re-audit first-20; reassess GATE-02.",
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "completion_evidence": [
+        "CC-DEC-103 recorded",
+        "six queue items APPLIED",
+        "CC-CLAIM-009 RETIRED",
+        "CC-PRED-012 created",
+        "below-STRONG 12→8",
+        "ontology rule shipped"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+      "note": "Research-governance adjudicated by ChatGPT; Cursor executed."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-THIN-DOMAIN-LEAKAGE-AND-CLAIM-003-MODULE-SPLIT-1.0",
+      "title": "Thin Domain Leakage + Claim-003 Module Split + Public Reasoning",
+      "purpose": "Formalize Public Reasoning Standard under CC-DEC-103; backfill citizen explanations; operationalize leakage; split CC-CLAIM-003 into research modules without false Supports.",
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "completion_evidence": [
+        "Public Reasoning Standard 1.0",
+        "7 public reasoning records",
+        "leakage operational definition",
+        "CC-SRC-099–100",
+        "CC-CLAIM-003 modules A–E",
+        "parent 003 still NEE"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-PILOT-LEAKAGE-MEASUREMENT-1.0",
+      "note": "Research governance standard + substantive THIN-domain work. No new architecture."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+      "title": "Claim-003 Successor Governance + Local Leakage Measurement Pilot",
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "completion_evidence": [
+        "module governance A–E",
+        "CC-CLAIM-133/134",
+        "Faulkner pilot NOT MEASURABLE",
+        "public reasoning CC-PR-008/009",
+        "citizen lessons report"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-SECTORAL-CAPTURE-DOSSIERS-OR-RIMS-ENABLED-SECOND-GEOGRAPHY-1.0",
+      "note": "Ask questions; follow evidence. No manufactured leakage number."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+      "title": "Sectoral Political Influence and Capture Evidence Dossiers",
+      "status": "completed",
+      "completed_at": "2026-08-07",
+      "completion_evidence": [
+        "arkansas designated geography set",
+        "sectoral dossiers JSON + reports",
+        "CC-SRC-105–110",
+        "CC-CLAIM-135",
+        "CC-PR-010",
+        "Faulkner not redone"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
+      "note": "No forced geography. Capture bar held."
     }
   ]
 }

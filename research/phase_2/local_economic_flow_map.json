@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-CLAIM-003-SUCCESSOR-GOVERNANCE-AND-LOCAL-LEAKAGE-MEASUREMENT-PILOT-1.0",
+  "geography": "US-AR-Faulkner-County",
+  "note": "Measurement map — not a causal model. No Economic Flow → Prosperity edges.",
+  "nodes": [
+    "HOUSEHOLDS",
+    "CONSUMPTION",
+    "LOCAL_BUSINESSES",
+    "WAGES",
+    "SUPPLIERS_LOCAL",
+    "SUPPLIERS_NONLOCAL",
+    "PROFITS_LOCAL_OWNERS",
+    "PROFITS_NONLOCAL_OWNERS",
+    "TAXES_LOCAL",
+    "TAXES_STATE",
+    "TAXES_FEDERAL",
+    "REMOTE_SELLERS_PLATFORMS"
+  ],
+  "edges": [
+    {
+      "from": "HOUSEHOLDS",
+      "to": "CONSUMPTION",
+      "relation": "spend"
+    },
+    {
+      "from": "CONSUMPTION",
+      "to": "LOCAL_BUSINESSES",
+      "relation": "local_purchase",
+      "measurable": "partial"
+    },
+    {
+      "from": "CONSUMPTION",
+      "to": "REMOTE_SELLERS_PLATFORMS",
+      "relation": "online_or_remote_purchase",
+      "measurable": "unavailable_at_county"
+    },
+    {
+      "from": "LOCAL_BUSINESSES",
+      "to": "WAGES",
+      "relation": "pay",
+      "measurable": "aggregate_cbp_yes"
+    },
+    {
+      "from": "WAGES",
+      "to": "HOUSEHOLDS",
+      "relation": "income",
+      "measurable": "partial"
+    },
+    {
+      "from": "LOCAL_BUSINESSES",
+      "to": "SUPPLIERS_LOCAL",
+      "relation": "intermediate_purchase",
+      "measurable": "unavailable"
+    },
+    {
+      "from": "LOCAL_BUSINESSES",
+      "to": "SUPPLIERS_NONLOCAL",
+      "relation": "intermediate_purchase",
+      "measurable": "unavailable"
+    },
+    {
+      "from": "LOCAL_BUSINESSES",
+      "to": "PROFITS_LOCAL_OWNERS",
+      "relation": "profit_distribution",
+      "measurable": "unavailable"
+    },
+    {
+      "from": "LOCAL_BUSINESSES",
+      "to": "PROFITS_NONLOCAL_OWNERS",
+      "relation": "profit_distribution",
+      "measurable": "unavailable"
+    },
+    {
+      "from": "CONSUMPTION",
+      "to": "TAXES_LOCAL",
+      "relation": "sales_use_tax",
+      "measurable": "legal_yes_amount_attribution_no"
+    },
+    {
+      "from": "CONSUMPTION",
+      "to": "TAXES_STATE",
+      "relation": "sales_use_tax",
+      "measurable": "legal_yes"
+    },
+    {
+      "from": "WAGES",
+      "to": "TAXES_FEDERAL",
+      "relation": "income_payroll_tax",
+      "measurable": "not_in_pilot"
+    }
+  ],
+  "flow_distinctions": [
+    "Retail purchase outside geography",
+    "Online purchase outside geography",
+    "Local purchase from non-local firm",
+    "Local purchase with non-local supply chain",
+    "Profit distribution outside geography",
+    "Labor income retained locally",
+    "Tax revenue retained locally",
+    "Local intermediate purchasing"
+  ]
+}

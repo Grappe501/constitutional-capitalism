@@ -1,0 +1,392 @@
+{
+  "version": "0.5.1",
+  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
+  "generated_at": "2026-08-07",
+  "prior_slice": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+  "decision_id": "CC-DEC-103",
+  "adjudicator": "ChatGPT",
+  "disposition_counts": {
+    "NOT ENOUGH EVIDENCE": 5,
+    "SUPPORTED WITH QUALIFICATION": 11,
+    "RETIRED": 1,
+    "SUPPORTED AS WRITTEN": 3
+  },
+  "fit_counts": {
+    "PARTIAL": 5,
+    "STRONG": 8,
+    "NON-SUPPORTING": 3,
+    "N/A_RETIRED": 1,
+    "DIRECT": 3
+  },
+  "weak_fit_below_strong": 8,
+  "direct_strong_fit": 11,
+  "rows": [
+    {
+      "claim_id": "CC-CLAIM-001",
+      "claim_text": "Across historical contexts, the relationship between market-oriented economic institutions and material living standards varies by period, institutional structure, crisis exposure, and distribution; the magnitude and conditions of any broad prosperity effect require historical evidence before stronger claims are made.",
+      "support_sources": [],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "NOT ENOUGH EVIDENCE",
+      "confidence": "Very Low",
+      "defect": "SOURCE GAP / HISTORICAL RESEARCH REQUIRED",
+      "epistemic_class": "HISTORICAL_CLAIM",
+      "lifecycle_status": "active",
+      "previous_fit": "NON-SUPPORTING",
+      "previous_disposition": "REWRITE REQUIRED",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "claim_id": "CC-CLAIM-002",
+      "claim_text": "Wage growth and productivity growth have diverged over long periods for typical U.S. workers.",
+      "support_sources": [
+        "CC-SRC-003",
+        "CC-SRC-004",
+        "CC-SRC-090"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-003",
+      "claim_text": "Economic concentration can weaken democratic accountability.",
+      "support_sources": [
+        "CC-SRC-005",
+        "CC-SRC-092",
+        "CC-SRC-093",
+        "CC-SRC-094",
+        "CC-SRC-095",
+        "CC-SRC-096"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL (unequal responsiveness adjacent; capture unproven)",
+      "disposition": "NOT ENOUGH EVIDENCE",
+      "confidence": "Low",
+      "defect": "CAUSAL OVERREACH / CONCEPT COLLAPSE",
+      "previous_fit": "WEAK",
+      "reopened_by": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active",
+      "modules": [
+        "CC-MOD-003-A",
+        "CC-MOD-003-B",
+        "CC-MOD-003-C",
+        "CC-MOD-003-D",
+        "CC-MOD-003-E"
+      ],
+      "public_reasoning": [
+        "CC-PR-007",
+        "CC-PR-008",
+        "CC-PR-010"
+      ],
+      "note": "Sectoral dossiers deepen association evidence; parent still NEE; capture not promoted",
+      "successors": [
+        "CC-CLAIM-133",
+        "CC-CLAIM-134"
+      ],
+      "related_successors": [
+        "CC-CLAIM-133",
+        "CC-CLAIM-134",
+        "CC-CLAIM-135"
+      ],
+      "sectoral_dossiers": true
+    },
+    {
+      "claim_id": "CC-CLAIM-004",
+      "claim_text": "Employee ownership can improve firm performance and worker outcomes under some conditions.",
+      "support_sources": [
+        "CC-SRC-006",
+        "CC-SRC-007"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-005",
+      "claim_text": "Market concentration can weaken competition in U.S. industries.",
+      "support_sources": [
+        "CC-SRC-005"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": "MEASUREMENT MISMATCH",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-006",
+      "claim_text": "Rural structural decline can erode community capacity, including through population loss and reduced access to institutions such as local banking and healthcare. Corporate relocation may contribute to local economic disruption, but its independent causal effects require separate evaluation.",
+      "support_sources": [
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-010"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active",
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "claim_id": "CC-CLAIM-007",
+      "claim_text": "AI and automation may increase returns to capital relative to labor and create concentrated adjustment costs.",
+      "support_sources": [],
+      "fit": "NON-SUPPORTING",
+      "fit_detail": "NON-SUPPORTING",
+      "disposition": "NOT ENOUGH EVIDENCE",
+      "confidence": "Very Low",
+      "defect": "SOURCE GAP",
+      "epistemic_class": "PREDICTION",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-008",
+      "claim_text": "Destination-based taxation can better align tax obligations with market access.",
+      "support_sources": [],
+      "fit": "NON-SUPPORTING",
+      "fit_detail": "NON-SUPPORTING",
+      "disposition": "NOT ENOUGH EVIDENCE",
+      "confidence": "Very Low",
+      "defect": "SOURCE GAP",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-009",
+      "claim_text": "System-level Constitutional Capitalism over 10–20 years would produce larger distributional effects than isolated corporate tax increases.",
+      "support_sources": [],
+      "fit": "N/A_RETIRED",
+      "fit_detail": "N/A_RETIRED",
+      "disposition": "RETIRED",
+      "confidence": "N/A",
+      "defect": null,
+      "epistemic_class": "PREDICTION",
+      "lifecycle_status": "RETIRED",
+      "previous_fit": "N/A_RETIRED",
+      "previous_disposition": "RETIRE",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "claim_id": "CC-CLAIM-010",
+      "claim_text": "U.S. household wealth ownership is highly concentrated, meaning access to capital ownership and the income and appreciation associated with it is distributed unevenly across households.",
+      "support_sources": [
+        "CC-SRC-001",
+        "CC-SRC-002",
+        "CC-SRC-012"
+      ],
+      "fit": "DIRECT",
+      "fit_detail": "DIRECT",
+      "disposition": "SUPPORTED AS WRITTEN",
+      "confidence": "High",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active",
+      "previous_fit": "NON-SUPPORTING",
+      "previous_disposition": "REWRITE REQUIRED",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "claim_id": "CC-CLAIM-011",
+      "claim_text": "U.S. household wealth is highly concentrated at the top of the distribution.",
+      "support_sources": [
+        "CC-SRC-001",
+        "CC-SRC-002",
+        "CC-SRC-012",
+        "CC-SRC-011"
+      ],
+      "fit": "DIRECT",
+      "fit_detail": "DIRECT",
+      "disposition": "SUPPORTED AS WRITTEN",
+      "confidence": "High",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-012",
+      "claim_text": "Ordinary households hold a limited share of total household wealth relative to the top decile.",
+      "support_sources": [
+        "CC-SRC-012",
+        "CC-SRC-002"
+      ],
+      "fit": "DIRECT",
+      "fit_detail": "DIRECT",
+      "disposition": "SUPPORTED AS WRITTEN",
+      "confidence": "High",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-013",
+      "claim_text": "Payroll and individual income taxes are major components of the tax burden on labor income.",
+      "support_sources": [
+        "CC-SRC-013"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": "SOURCE GAP",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-014",
+      "claim_text": "Statutory corporate taxes may be borne partly by workers and consumers.",
+      "support_sources": [
+        "CC-SRC-083",
+        "CC-SRC-084"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-015",
+      "claim_text": "Employer concentration can suppress wages in some labor markets.",
+      "support_sources": [
+        "CC-SRC-081",
+        "CC-SRC-082",
+        "CC-SRC-088",
+        "CC-SRC-091"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-016",
+      "claim_text": "Online commerce is a material share of U.S. retail sales; its effects on local spending, platform margins, and community wealth require dedicated leakage and multiplier analysis, while assessments of local tax effects must account for the post-Wayfair legal and marketplace-facilitator environment.",
+      "support_sources": [
+        "CC-SRC-085",
+        "CC-SRC-086",
+        "CC-SRC-097",
+        "CC-SRC-098",
+        "CC-SRC-099",
+        "CC-SRC-100"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "High",
+      "defect": null,
+      "previous_fit": "PARTIAL",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active",
+      "previous_disposition": "REWRITE REQUIRED",
+      "decision_id": "CC-DEC-103",
+      "note": "Pilot did not earn stronger claim; retained rewritten wording",
+      "pilot_net_finding": "NOT_MEASURABLE",
+      "public_reasoning": [
+        "CC-PR-005",
+        "CC-PR-009"
+      ]
+    },
+    {
+      "claim_id": "CC-CLAIM-017",
+      "claim_text": "Property taxes can impose high burdens relative to income or liquidity for some households, motivating targeted relief design; they are also a central, relatively stable local revenue source.",
+      "support_sources": [
+        "CC-SRC-089"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active",
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "REWRITE REQUIRED",
+      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
+      "decision_id": "CC-DEC-103"
+    },
+    {
+      "claim_id": "CC-CLAIM-018",
+      "claim_text": "Education costs are frequently borne by workers while employers benefit from acquired skills.",
+      "support_sources": [],
+      "fit": "NON-SUPPORTING",
+      "fit_detail": "NON-SUPPORTING",
+      "disposition": "NOT ENOUGH EVIDENCE",
+      "confidence": "Very Low",
+      "defect": "SOURCE GAP",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-019",
+      "claim_text": "Rural communities face structural barriers to retaining talent, capital, and essential services.",
+      "support_sources": [
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-010"
+      ],
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": null,
+      "epistemic_class": "EMPIRICAL_CLAIM",
+      "lifecycle_status": "active"
+    },
+    {
+      "claim_id": "CC-CLAIM-020",
+      "claim_text": "Public research contributes to private innovation.",
+      "support_sources": [
+        "CC-SRC-087"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Moderate",
+      "defect": "MEASUREMENT MISMATCH",
+      "epistemic_class": "CAUSAL_CLAIM",
+      "lifecycle_status": "active"
+    }
+  ],
+  "public_reasoning_standard": "research/phase_2/public_reasoning_standard.json",
+  "successor_claims_outside_first_20": {
+    "CC-CLAIM-133": {
+      "fit": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION"
+    },
+    "CC-CLAIM-134": {
+      "fit": "DIRECT",
+      "disposition": "SUPPORTED AS WRITTEN"
+    },
+    "CC-CLAIM-135": {
+      "fit": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION"
+    }
+  }
+}

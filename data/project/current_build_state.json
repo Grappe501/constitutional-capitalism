@@ -1,114 +1,36 @@
 {
-  "version": "0.3.3",
-  "last_updated": "2026-08-05",
-  "mission_id": "CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0",
+  "version": "0.4.2",
+  "last_updated": "2026-08-07",
+  "mission_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
   "phase": "phase-2",
   "status": "phase_2_partial_complete",
-  "mission_lock": "data/project/phase2_mission_lock.json",
-  "decision_id": "CC-DEC-093",
-  "forensic_status_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-05.md",
-  "writing_focus": "RESEARCH EXECUTION — institution foundations complete (UPD-069–079). Fill corpus and packets; do not expand infrastructure.",
-  "next_action": "CONDITIONAL GO PP-02: register contrary literature; execute next proof packet on methodology 1.0/1.1. Infrastructure freeze until substantial research missions complete.",
-  "living_identity": "data/project/living_project_identity.json",
-  "organizing_artifacts": [
-    "data/project/systems_map.json",
-    "data/research/knowledge_graph.json",
-    "data/project/human_flourishing_index.json",
-    "data/project/research_institution_foundations.json"
-  ],
+  "slice_return": "reports/CC_PHASE_2_1_SECTORAL_POLITICAL_INFLUENCE_AND_CAPTURE_EVIDENCE_DOSSIERS_1_0_RETURN.md",
+  "writing_focus": "Sectoral association evidence registered; capture not promoted; AR geography set active for future geographic questions; Faulkner leakage result preserved.",
+  "next_action": "Peer-review utilities confirmation (CC-RQ-P21-032) and/or agriculture dossier; geographic work only when question requires designated-set selection.",
+  "overall_percent": 43,
+  "phase_2_gates_open": 10,
+  "phase_2_gates_passed": 6,
+  "gate_02": "PARTIAL / REMAINS OPEN",
+  "gate_03": "passed_presence",
+  "baseline": "2/86",
+  "sources_registered": 110,
+  "p0_closed": 9,
+  "p0_open": 0,
+  "weak_fit_claims": 8,
+  "direct_strong_fit": 11,
+  "canonical_claim_text_mutations": 6,
+  "governance_queue": "research/phase_2/claim_change_governance_queue.json",
   "primary_question": "What can we prove?",
-  "phase_1_accepted": {
-    "build_commit": "0f24a8b",
-    "closeout_commit": "4fbaacd",
-    "foundational_philosophy_percent": 70,
-    "status": "ACCEPTED / CLOSED"
-  },
-  "parallel_slices": [
-    "CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0"
-  ],
-  "parallel_note": "Architecture frozen (invention → stewardship). Phase 8/9 approved / not active / not to be expanded without threshold gate.",
-  "blockers": [],
-  "related_decision_ids": [
-    "CC-DEC-075",
-    "CC-DEC-064",
-    "CC-DEC-093",
-    "CC-DEC-094",
-    "CC-DEC-095",
-    "CC-DEC-096",
-    "CC-DEC-097",
-    "CC-DEC-098",
-    "CC-DEC-099",
-    "CC-DEC-100",
-    "CC-DEC-101",
-    "CC-DEC-102"
-  ],
+  "infrastructure_freeze": true,
   "doctrine_freeze": {
     "status": "active",
-    "decision_id": "CC-DEC-093",
-    "frozen_principle_count": 47,
-    "incubator_file": "data/project/architecture_incubator.json"
+    "frozen_principle_count": 47
   },
-  "proof_burden": {
-    "decision_id": "CC-DEC-094",
-    "registry_file": "data/project/proof_burden_registry.json",
-    "exemplar": "CC-PRIN-44"
-  },
-  "foundational_axioms_file": "data/project/foundational_axioms.json",
-  "eras_roadmap_file": "data/project/project_eras_roadmap.json",
-  "research_institution": {
-    "update_ids": ["UPD-069", "UPD-070", "UPD-071", "UPD-072", "UPD-073", "UPD-074", "UPD-075", "UPD-076", "UPD-077", "UPD-078", "UPD-079"],
-    "file": "data/project/research_institution_foundations.json",
-    "pp_02_readiness": "CONDITIONAL_GO",
-    "infrastructure_freeze": true
-  },
-  "proof_packet_os": {
-    "update_id": "UPD-067",
-    "methodology_version": "1.0",
-    "methodology_proposed": "1.1",
-    "root": "research/proof_packets",
-    "validate": "npm run proofpacket:validate"
-  },
-  "pp_ff_01": {
-    "update_id": "UPD-068",
-    "status": "Draft",
-    "verdict": "Qualifies",
-    "confidence": "Low",
-    "path": "research/proof_packets/PP-FF-01/"
-  },
-  "reviewers_charter": {
-    "update_id": "UPD-058",
-    "file": "data/project/reviewers_charter.json",
-    "rule": "Deferred. Advance research missions before public review platform.",
-    "refined_as_update": "UPD-060",
-    "registration": "disciplinary + optional analytical framework — not political identity",
-    "panel_purpose": "stress-test complementary domains — not consensus",
-    "domain_steward_core_question": "Has this domain been treated fairly, rigorously, and accurately?"
-  },
-  "founding_steward": {
-    "update_id": "UPD-059",
-    "role": "Founding Steward",
-    "holder": "Steve",
-    "rule": "Beta end-to-end steward. Execute research missions; infrastructure freeze active."
-  },
-  "meta_governance_complete": {
-    "update_id": "UPD-061",
-    "status": "complete",
-    "next": "Research execution under CONDITIONAL GO"
-  },
-  "living_community_laboratories": {
-    "update_id": "UPD-071",
-    "os_root": "research/living_community_laboratories/",
-    "cases": [
-      "CC-CASE-LEWISVILLE-001",
-      "CC-CASE-ROSEBUD-001"
-    ],
-    "rule": "LCL OS ready. Field work not started. Level-1 packets first.",
-    "research_streams": [
-      "LCL-STREAM-RURAL-PROSPERITY-CAMPUS",
-      "LCL-STREAM-DISTRIBUTED-PROSPERITY-NETWORK"
-    ],
-    "conceptual_planning": "complete",
-    "identity": "field research sites"
-  },
-  "evidence_hierarchy_update": "UPD-066"
+  "governance_status": "DECISIONS_APPLIED",
+  "decision_packet": "data/project/steve_claim_governance_decision_packet.json",
+  "political_domain": "THIN (was CRITICAL GAP)",
+  "decision_id": "CC-DEC-103",
+  "public_reasoning_standard": "ACTIVE",
+  "leakage_pilot": "Faulkner County — NOT MEASURABLE net",
+  "arkansas_geography_set": "ACTIVE"
 }
