@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-CTE-OUTCOMES-FUNDING-AND-RURAL-MAGNET-FEASIBILITY-1.0",
+  "generated_at": "2026-08-07",
+  "description": "Simplified flow for a student attending an Arkansas Secondary Technical Center (STC).",
+  "nodes": [
+    {
+      "step": 1,
+      "actor": "Sending district",
+      "fact": "Student typically remains counted in sending-district enrollment for ADM/foundation purposes",
+      "detail": "UNKNOWN",
+      "sources": [
+        "CC-SRC-139",
+        "CC-SRC-140"
+      ]
+    },
+    {
+      "step": 2,
+      "actor": "Secondary Technical Center",
+      "fact": "Center generates VCA / Vocational Center Aid via FTE or tiered student counts under OSD rules",
+      "detail": "Exact contemporaneous tier dollars NOT HARVESTED as full schedule this slice",
+      "sources": [
+        "CC-SRC-140",
+        "CC-SRC-138"
+      ]
+    },
+    {
+      "step": 3,
+      "actor": "Family / student",
+      "fact": "OSD framing: center programs funded so no cost to families for centers (tuition-style charge not the model)",
+      "detail": "Transportation, fees, dual-credit share, and special cases may still create barriers - many details UNKNOWN",
+      "sources": [
+        "CC-SRC-140",
+        "CC-SRC-137"
+      ]
+    },
+    {
+      "step": 4,
+      "actor": "Special education",
+      "fact": "Cost responsibility and service delivery across district vs center",
+      "detail": "UNKNOWN"
+    }
+  ],
+  "unknowns": [
+    "Exact current VCA tier table dollars",
+    "Transportation cost bearer by geography",
+    "Concurrent credit cost share",
+    "Special education funding/service split",
+    "Sending-district fiscal impact of large magnet outflows"
+  ]
+}
