@@ -1,41 +1,19 @@
-# Arkansas Designated Research Geography Set 1.1
+# Arkansas Designated Research Geography Set 1.2
 
-**Status:** Active sampling preference when a research question requires geography.  
-**Not:** automatic LCL launch · forced sample for every study · result-shopping.
+**Status:** Active sampling preference when geography is required.  
+**Locations:** 11 (includes CANDIDATE ag pair + Rose Bud education candidate).
 
 ## Selection rule
 
-> Prefer the designated Arkansas research geography set when one or more locations provide a methodologically appropriate sample. Select by research question, data quality, contrast value, and replicability—not by the result we expect to find. Document why the location was selected and why the other candidates were not necessary.
+Prefer designated set by research question, data quality, contrast, replicability — not expected results.
 
-## Locations (10)
+## Education research link
 
-| ID | Place | Contrast / archetype | Status |
-|---|---|---|---|
-| AR-GEO-JACKSONVILLE | Jacksonville | suburban / military-linked municipal systems | active |
-| AR-GEO-SEARCY-COUNTY | Searcy County | very rural conditions | active |
-| AR-GEO-LAFAYETTE-COUNTY | Lafayette County | very rural conditions | active |
-| AR-GEO-HOT-SPRINGS-VILLAGE | Hot Springs Village | retirement/community structure crossing counties | active |
-| AR-GEO-WEST-HELENA | West Helena / Helena-West Helena | Delta urban/rural economic distress | active |
-| AR-GEO-PULASKI-COUNTY | Pulaski County | state metropolitan / government center | active |
-| AR-GEO-BENTON-COUNTY | Benton County | high-growth / high-income economic development | active |
-| AR-GEO-MISSISSIPPI-COUNTY | Mississippi County | agriculture / industry and major industrial investment | active |
-| AR-GEO-ARKANSAS-COUNTY | Arkansas County | **candidate** large-scale commodity / export agriculture | **CANDIDATE** |
-| AR-GEO-VAN-BUREN-COUNTY | Clinton / Van Buren County | **candidate** family-farm / livestock / specialty / processing infrastructure | **CANDIDATE** |
+Hypothesis: `CC-HYP-AR-RURAL-CTE-SPECIALTY-MAGNET-NETWORK`
 
-## Agricultural paired comparison (candidate)
+**Placement principle:** Place exceptional educational assets where they expand opportunity and can anchor economic renewal.  
+**Do not** claim magnets are generally defined as low-SES placements (desegregation history is distinct — CC-SRC-136).
 
-**Arkansas County** asks how highly productive commodity agriculture can prosper while improving stewardship and community value retention.  
-**Clinton / Van Buren** asks what infrastructure smaller livestock, specialty, and family farms need to reach viable scale.
+**Specialization rule:** Pathways follow regional opportunity / workforce data — not cookie-cutter curricula.
 
-These are **complementary** questions — not family farms good / large farms bad.
-
-### Evidence gate
-
-- County production/export dominance claims for Arkansas County: **not yet canonical** — need county USDA/UADA evidence.
-- Clinton as regional USDA-processing destination: **hypothesis only** (`CC-HYP-CLINTON-PROCESSING-HUB`) until FSIS directory + usage evidence assembled.
-
-Statewide processing bottleneck evidence exists (CC-SRC-120, CC-SRC-121) without proving the Clinton hub claim.
-
-## Faulkner County
-
-Prior leakage pilot remains in the record. **Do not redo immediately.**
+Candidate specialty notes on West Helena, Searcy County, Mississippi County, and Rose Bud are **hypotheses only**.

@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-PHASE-2.1-RURAL-CTE-SPECIALTY-MAGNET-RESEARCH-HYPOTHESIS-1.0",
   "generated_at": "2026-08-07",
   "status": "ACTIVE_SELECTION_PREFERENCE",
   "architecture_note": "Sampling preference for geographic research questions — not LCL field launch, not new platform.",
@@ -27,7 +27,18 @@
       "name": "Searcy County, Arkansas",
       "type": "county",
       "fips": "05129",
-      "contrast_role": "very rural conditions"
+      "contrast_role": "very rural conditions",
+      "education_specialty_candidate": {
+        "candidate_specialty_pathways_hypothesis_only": [
+          "Forestry",
+          "Construction trades",
+          "Rural utilities",
+          "Heavy equipment",
+          "Conservation / outdoor industries",
+          "Healthcare / emergency services"
+        ],
+        "note": "Hypothesis only."
+      }
     },
     {
       "id": "AR-GEO-LAFAYETTE-COUNTY",
@@ -53,7 +64,17 @@
       "contrast_role": "Delta urban/rural economic distress",
       "counties": [
         "Phillips"
-      ]
+      ],
+      "education_specialty_candidate": {
+        "candidate_specialty_pathways_hypothesis_only": [
+          "Delta agriculture / food systems",
+          "River / logistics",
+          "Diesel technology",
+          "Industrial maintenance",
+          "Healthcare (if demand evidenced)"
+        ],
+        "note": "Hypothesis only — establish from regional workforce/demand data."
+      }
     },
     {
       "id": "AR-GEO-PULASKI-COUNTY",
@@ -74,7 +95,18 @@
       "name": "Mississippi County, Arkansas",
       "type": "county",
       "fips": "05093",
-      "contrast_role": "agriculture / industry and major industrial investment"
+      "contrast_role": "agriculture / industry and major industrial investment",
+      "education_specialty_candidate": {
+        "candidate_specialty_pathways_hypothesis_only": [
+          "Advanced manufacturing / steel",
+          "Mechatronics",
+          "Welding",
+          "Robotics",
+          "Industrial electrical",
+          "Logistics"
+        ],
+        "note": "Hypothesis only — industrial economy suggests candidates; do not assume without data."
+      }
     },
     {
       "id": "AR-GEO-ARKANSAS-COUNTY",
@@ -125,10 +157,32 @@
         "Producer usage / travel-shed evidence if available",
         "Census of Agriculture county profile for Van Buren County farm structure"
       ]
+    },
+    {
+      "id": "AR-GEO-ROSE-BUD",
+      "name": "Rose Bud, Arkansas",
+      "type": "municipality",
+      "counties": [
+        "White"
+      ],
+      "status": "CANDIDATE",
+      "research_archetype": "Agriculture / food systems / animal science / rural entrepreneurship education anchor (candidate)",
+      "contrast_role": "candidate rural specialty CTE / agriculture-education geography",
+      "research_purpose": "Study whether a rigorous agriculture/food-systems specialty campus can expand opportunity and local economic capacity without becoming a train-and-export pipeline.",
+      "research_posture": "Candidate geography. Specialty pathways and economic effects must be established from workforce, enrollment, and outcome evidence before canonical use.",
+      "related_education_hypothesis": "CC-HYP-AR-RURAL-CTE-SPECIALTY-MAGNET-NETWORK",
+      "candidate_specialty_pathways_hypothesis_only": [
+        "Agriculture",
+        "Food production / processing",
+        "Animal science",
+        "Agricultural technology",
+        "Rural entrepreneurship / business development"
+      ],
+      "pathway_rule": "Specialization follows regional economic and human-capital opportunity from workforce data — not cookie-cutter statewide curriculum."
     }
   ],
   "last_updated": "2026-08-07",
-  "location_count": 10,
+  "location_count": 11,
   "agricultural_paired_comparison": {
     "status": "CANDIDATE_PAIR",
     "locations": [
@@ -138,5 +192,11 @@
     "purpose": "Test whether Constitutional Capitalism can strengthen both large-scale commodity agriculture and distributed family/specialty livestock systems rather than forcing a false choice between them.",
     "philosophical_posture_not_doctrine": "Reject family-farms-good / large-farms-bad. Ask what infrastructure and rules allow each productive agricultural model to prosper while internalizing costs, preserving competition, protecting natural resources, strengthening local communities, and giving new/smaller producers a realistic path into agriculture.",
     "evidence_gate": "County-level USDA/NASS/UADA and FSIS establishment evidence required before treating archetypes as established facts."
+  },
+  "education_research_link": {
+    "hypothesis_id": "CC-HYP-AR-RURAL-CTE-SPECIALTY-MAGNET-NETWORK",
+    "module_id": "CC-MOD-AR-RURAL-CTE-SPECIALTY-MAGNETS",
+    "placement_principle": "Place exceptional educational assets in communities where those assets can expand opportunity and become anchors for broader economic renewal — not a false claim that magnets are generally defined by low-SES siting.",
+    "specialization_rule": "Specialization follows the economic and human-capital opportunities of the region, not a statewide cookie-cutter curriculum."
   }
 }
