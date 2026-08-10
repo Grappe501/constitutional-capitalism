@@ -31,14 +31,14 @@
     "phase_2": "PARTIAL",
     "forensic_audit_overall_snapshot": 36,
     "overall_percent_source": "data/metrics/progress_snapshot.json",
-    "overall_percent_note": "Historical forensic freeze 36%. Regenerated overall was 43% on 2026-08-07 and must never be treated as Phase 2 completion. Modeling/legal remain 0%; baseline remains 2/86 until the count changes; 11/16 required gates remain open.",
+    "overall_percent_note": "Historical forensic freeze 36%. Regenerated overall was 43% on 2026-08-07 and must never be treated as Phase 2 completion. Modeling/legal remain 0%; baseline is 14/86 after subset expansion (still far from 86); required gates remain open.",
     "latest_forensic_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md",
     "economic_modeling_percent": 0,
     "legal_review_percent": 0,
     "baseline": {
       "total_metrics": 86,
-      "sourced_metrics": 2,
-      "display_rule": "Show 2 of 86 until the actual sourced count changes. Never revive 38-metric narratives."
+      "sourced_metrics": 14,
+      "display_rule": "Show 14 of 86 until the actual sourced count changes. Never revive 38-metric narratives. Completeness = reproducible retrieval, not a found number."
     },
     "current_risk": "polished surfaces may overstate evidentiary maturity"
   },
@@ -115,7 +115,7 @@
       "required": true,
       "status": "open",
       "burt_step": 3,
-      "forensic_note": "GATE-02 remains open because:\n- 5/20 first-20 claims remain below STRONG; 14/20 DIRECT/STRONG (improved from 8/20 weak and 11/20 DIRECT/STRONG)\n- CC-CLAIM-001 and CC-CLAIM-003 remain NOT ENOUGH EVIDENCE\n- Capture hypothesis open; do not use AR ag access research to close 003\n- Leakage still NOT MEASURABLE at net county level (Faulkner preserved)\n- Baseline 2/86",
+      "forensic_note": "GATE-02 remains open because:\n- 5/20 first-20 claims remain below STRONG; 14/20 DIRECT/STRONG (improved from 8/20 weak and 11/20 DIRECT/STRONG)\n- CC-CLAIM-001 and CC-CLAIM-003 remain NOT ENOUGH EVIDENCE\n- Capture hypothesis open; do not use AR ag access research to close 003\n- Leakage still NOT MEASURABLE at net county level (Faulkner preserved)\n- Baseline 14/86 (subset expansion advanced measurement; claim gates still open)",
       "last_evaluated": "2026-08-10",
       "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0"
     },
@@ -155,7 +155,10 @@
       "text": "A meaningful baseline subset is verified",
       "required": true,
       "status": "open",
-      "burt_step": 5
+      "burt_step": 5,
+      "last_evaluated": "2026-08-10",
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "forensic_note": "Baseline sourced count now 14/86 (was 2). GATE remains open until materially broader coverage. Completeness = reproducible retrieval, not quota."
     },
     {
       "id": "CC-P2-GATE-08",

@@ -1,9 +1,9 @@
 {
-  "version": "0.1.0",
-  "last_updated": "2026-08-04",
+  "version": "0.2.0",
+  "last_updated": "2026-08-10",
   "status": "partially_sourced",
   "guiding_question": "If Constitutional Capitalism were adopted tomorrow, what would we measure so that we could honestly determine whether it succeeded?",
-  "note": "Subset sourced from Federal Reserve SCF/DFA. Justice, democracy, and public-service metrics added as pending structure. No invented targets. Remaining metrics pending.",
+  "note": "Phase 2 partial: sourced metrics include wealth (W01–W05 subset), labor (L01–L02), families (F03–F04), communities (CM02), manufacturing (I04), health access (E05), federal debt (G03), and concentration measurement spine (C01). Slice CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0. No invented targets. Agriculture posture lock preserved.",
   "linked_legacy_file": "data/project/national_baseline.json",
   "metrics": [
     {
@@ -20,14 +20,23 @@
       ],
       "geographic_level": "national_US",
       "population_scope": "US_families_SCF",
-      "historical_series_available": null,
+      "historical_series_available": true,
       "limitations": "Survey-based; family unit; not identical to DFA household sector.",
       "update_frequency": "triennial",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "high",
-      "status": "sourced"
+      "status": "sourced",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Open Fed SCF bulletin / SCF tables; median family net worth (2022 dollars)",
+        "agencies": [
+          "Federal Reserve"
+        ]
+      },
+      "numerator_denominator": "SCF survey estimate — median of family net worth distribution"
     },
     {
       "metric_id": "CC-IND-W02",
@@ -50,119 +59,199 @@
       ],
       "geographic_level": "national_US",
       "population_scope": "US_household_sector_DFA",
-      "historical_series_available": null,
+      "historical_series_available": true,
       "limitations": "Quarterly model-based; revisions possible; not SCF micro shares.",
       "update_frequency": "quarterly",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "high",
-      "status": "sourced"
+      "status": "sourced",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Open FRED/DFA distribute tables for wealth percentile shares; record quarter",
+        "agencies": [
+          "Federal Reserve"
+        ]
+      },
+      "numerator_denominator": "DFA modeled wealth shares by percentile group"
     },
     {
       "metric_id": "CC-IND-W03",
       "title": "Asset ownership",
       "domain_id": "CC-NB-WEALTH",
       "domain_name": "Wealth",
-      "definition": "Asset ownership — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Percent of U.S. families owning any financial asset (transaction accounts, CDs, bonds, stocks, pooled funds, retirement accounts, cash-value life insurance, other managed assets) — SCF.",
+      "unit": "percent_of_families",
+      "current_value": 99,
+      "reference_year": "2022",
+      "source_ids": [
+        "CC-SRC-227",
+        "CC-SRC-001"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "US_families_SCF",
+      "historical_series_available": true,
+      "limitations": "Nearly universal due to transaction accounts; not a measure of productive capital ownership. Direct stock ownership is lower (~21%).",
+      "update_frequency": "triennial",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "families with any financial asset / all families",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "Fed SCF Bulletin tables / interactive SCF table — Percent Holding — Any financial asset",
+        "url": "https://www.federalreserve.gov/publications/october-2023-changes-in-us-family-finances-from-2019-to-2022.htm",
+        "agencies": [
+          "Federal Reserve"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-W04",
       "title": "Homeownership",
       "domain_id": "CC-NB-WEALTH",
       "domain_name": "Wealth",
-      "definition": "Homeownership — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Share of occupied housing units that are owner-occupied (ACS homeownership rate).",
+      "unit": "percent_of_occupied_housing_units",
+      "current_value": 65.2,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-218"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "occupied_housing_units_ACS",
+      "historical_series_available": true,
+      "limitations": "Occupied-unit universe. SCF family homeownership (66.1% in 2022) is a different unit — do not mix without labeling.",
+      "update_frequency": "annual_ACS_1yr",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "owner-occupied units / occupied housing units (85.7M / 131.3M in ACS-61 narrative)",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "data.census.gov → ACS 1-year → table B25003 Tenure for United States; or ACS-61 report",
+        "url": "https://data.census.gov/table/ACSDT1Y2023.B25003",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-W05",
       "title": "Retirement ownership",
       "domain_id": "CC-NB-WEALTH",
       "domain_name": "Wealth",
-      "definition": "Retirement ownership — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Percent of U.S. families holding retirement accounts (IRA/Keogh and certain employer-sponsored accounts such as 401(k)/403(b)/TSP) — SCF.",
+      "unit": "percent_of_families",
+      "current_value": 54.3,
+      "reference_year": "2022",
+      "source_ids": [
+        "CC-SRC-227"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "US_families_SCF",
+      "historical_series_available": true,
+      "limitations": "Ownership ≠ adequacy of balances; conditional medians are separate metrics.",
+      "update_frequency": "triennial",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "families with retirement accounts / all families",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Fed SCF 2022 bulletin — retirement accounts ownership rate",
+        "url": "https://www.federalreserve.gov/publications/files/scf23.pdf",
+        "agencies": [
+          "Federal Reserve"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-L01",
       "title": "Wage growth",
       "domain_id": "CC-NB-LABOR",
       "domain_name": "Labor",
-      "definition": "Wage growth — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "12-month percent change in real average hourly earnings for all employees on private nonfarm payrolls (CES), CPI-U deflated, seasonally adjusted.",
+      "unit": "percent_change_over_year",
+      "current_value": 1.1,
+      "reference_year": "2025-12_vs_2024-12",
+      "source_ids": [
+        "CC-SRC-219"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "private_nonfarm_payroll_jobs_CES",
+      "historical_series_available": true,
+      "limitations": "Mean AHE of jobs, not median worker wages; excludes most government; recent months preliminary.",
+      "update_frequency": "monthly",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_official_series",
+      "numerator_denominator": "index/level change in real AHE over 12 months",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "BLS Real Earnings news release Table A-1 — over-the-year percent change, real AHE all employees",
+        "url": "https://www.bls.gov/news.release/realer.toc.htm",
+        "agencies": [
+          "BLS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-L02",
       "title": "Productivity",
       "domain_id": "CC-NB-LABOR",
       "domain_name": "Labor",
-      "definition": "Productivity — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Annual percent change in labor productivity (output per hour) in the nonfarm business sector — BLS Productivity and Costs.",
+      "unit": "percent_change_annual",
+      "current_value": 2.3,
+      "reference_year": "2024",
+      "source_ids": [
+        "CC-SRC-220"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "nonfarm_business_sector",
+      "historical_series_available": true,
+      "limitations": "Sector coverage excludes general government and several nonbusiness activities; subject to revision.",
+      "update_frequency": "quarterly_with_annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_index",
+      "numerator_denominator": "real output index / hours-worked index (growth rates)",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "BLS Productivity and Costs annual averages — nonfarm business labor productivity",
+        "url": "https://www.bls.gov/productivity/",
+        "agencies": [
+          "BLS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-L03",
@@ -316,21 +405,41 @@
       "title": "Market concentration",
       "domain_id": "CC-NB-COMPETITION",
       "domain_name": "Competition",
-      "definition": "Market concentration — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
-      "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "definition": "Industry-level concentration of largest firms (CR4/CR8/CR20/CR50; HHI where published) from the Economic Census Establishment and Firm Size / concentration tables — not a single national scalar.",
+      "unit": "industry_level_CR_and_HHI_table",
+      "current_value": {
+        "measurement_object": "Economic_Census_industry_concentration_ratios",
+        "table_id": "EC2200SIZECONCEN",
+        "year": 2022,
+        "national_single_scalar": null,
+        "rationale": "A single US-wide concentration percentage would misstate the measure; authoritative objects are industry CR/HHI cells."
+      },
+      "reference_year": "2022",
+      "source_ids": [
+        "CC-SRC-212"
+      ],
+      "geographic_level": "national_US_by_industry",
+      "population_scope": "Economic_Census_industries",
+      "historical_series_available": true,
+      "limitations": "Concentration ≠ competitive harm. Product-market definition matters. Advocacy averages (e.g. mean C4) are secondary and not used as the CC value.",
+      "update_frequency": "quinquennial_Economic_Census",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_official_table",
+      "numerator_denominator": "sales/shipments of largest N firms / industry total (per industry cell)",
+      "source_to_baseline_fit": "DIRECT_FOR_MEASUREMENT_SPINE",
+      "reproducible_retrieval": {
+        "method": "data.census.gov → table EC2200SIZECONCEN (2022) — concentration of largest firms",
+        "url": "https://data.census.gov/table/ECNSIZE2022.EC2200SIZECONCEN",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-C02",
@@ -400,21 +509,35 @@
       "title": "Rural population",
       "domain_id": "CC-NB-COMMUNITIES",
       "domain_name": "Communities",
-      "definition": "Rural population — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Percent of U.S. population living in Census-defined rural territory (areas outside urban areas) — 2020 Census urban/rural classification.",
+      "unit": "percent_of_population",
+      "current_value": 20,
+      "reference_year": "2020",
+      "source_ids": [
+        "CC-SRC-222"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "total_resident_population_2020_Census",
+      "historical_series_available": true,
+      "limitations": "2020 criteria changed vs 2010. Not OMB metro/nonmetro (nonmetro ~13.8% in 2020 per USDA ERS). Absolute rural population 66,300,254.",
+      "update_frequency": "decennial_urban_rural",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_census",
+      "numerator_denominator": "rural population / total population (66,300,254 / 331,449,281)",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Census Urban Areas Facts table — Percent population living within rural areas",
+        "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural/2020-ua-facts.html",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-CM03",
@@ -526,42 +649,70 @@
       "title": "Child poverty",
       "domain_id": "CC-NB-FAMILIES",
       "domain_name": "Families",
-      "definition": "Child poverty — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Official poverty rate for people under age 18 (CPS ASEC official poverty measure).",
+      "unit": "percent_of_children",
+      "current_value": 15.3,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-221"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "persons_under_18_CPS_ASEC",
+      "historical_series_available": true,
+      "limitations": "Official ≠ SPM (SPM child poverty 13.7% in 2023). ACS child poverty differs. Do not mix measures.",
+      "update_frequency": "annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "children below official poverty threshold / all children",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Census P60 poverty report / Table A-1 age detail; confirm Official Poverty Measure, under 18",
+        "url": "https://www.census.gov/library/publications/2024/demo/p60-283.html",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-F04",
       "title": "Household savings",
       "domain_id": "CC-NB-FAMILIES",
       "domain_name": "Families",
-      "definition": "Household savings — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "BEA personal saving as a percentage of disposable personal income (annual national accounts rate).",
+      "unit": "percent_of_DPI",
+      "current_value": 4.6,
+      "reference_year": "2025",
+      "source_ids": [
+        "CC-SRC-223"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "personal_sector_NIPA",
+      "historical_series_available": true,
+      "limitations": "Macro flow rate — not median household bank balances. Title says household; series is personal sector.",
+      "update_frequency": "monthly_with_annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_national_accounts",
+      "numerator_denominator": "personal saving / disposable personal income × 100",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "FRED series A072RC1A156NBEA or BEA Personal Income and Outlays / NIPA Table 2.1 annual",
+        "url": "https://fred.stlouisfed.org/series/A072RC1A156NBEA",
+        "agencies": [
+          "BEA"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-D01",
@@ -694,21 +845,36 @@
       "title": "Debt",
       "domain_id": "CC-NB-GOVERNMENT",
       "domain_name": "Government",
-      "definition": "Debt — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Federal debt held by the public as a percent of GDP at fiscal year-end (CBO baseline).",
+      "unit": "percent_of_GDP",
+      "current_value": 99,
+      "reference_year": "2024",
+      "source_ids": [
+        "CC-SRC-226",
+        "CC-SRC-211"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "federal_government",
+      "historical_series_available": true,
+      "limitations": "FEDERAL debt held by public — not state/local fiscal capacity. Gross debt differs. Baseline vintages revise (later outlooks may show ~100% for 2025).",
+      "update_frequency": "annual_outlook_updates",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_budget_identity",
+      "numerator_denominator": "debt held by the public / GDP",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "CBO Budget and Economic Outlook — debt held by the public as % of GDP for stated fiscal year; record outlook vintage",
+        "url": "https://www.cbo.gov/publication/59710",
+        "agencies": [
+          "CBO"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-G04",
@@ -799,21 +965,35 @@
       "title": "Manufacturing",
       "domain_id": "CC-NB-INNOVATION",
       "domain_name": "Innovation",
-      "definition": "Manufacturing — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Manufacturing employment as a percent of total U.S. employment (BLS Employment Projections industry distribution, 2024).",
+      "unit": "percent_of_total_employment",
+      "current_value": 7.5,
+      "reference_year": "2024",
+      "source_ids": [
+        "CC-SRC-224"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "BLS_employment_projections_total_employment",
+      "historical_series_available": true,
+      "limitations": "Employment share ≠ manufacturing output share of GDP; CES monthly levels differ conceptually.",
+      "update_frequency": "annual_EP_tables",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_official_table",
+      "numerator_denominator": "manufacturing employment / total employment (12,817.2k / 169,956.1k → 7.5%)",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "BLS EMP table 'Employment by major industry sector' — Percent distribution, Manufacturing, 2024",
+        "url": "https://www.bls.gov/emp/tables/employment-by-major-industry-sector.htm",
+        "agencies": [
+          "BLS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-J01",
@@ -1576,21 +1756,36 @@
       "title": "Primary care and mental-health access",
       "domain_id": "CC-NB-ESSENTIAL",
       "domain_name": "Essential Systems",
-      "definition": "Primary care and mental-health access — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Approximate share of U.S. population residing in designated primary care Health Professional Shortage Areas (HPSAs) — HRSA.",
+      "unit": "percent_of_population_in_primary_care_HPSA",
+      "current_value": 22,
+      "reference_year": "2024-06-30",
+      "source_ids": [
+        "CC-SRC-225"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 essential-systems diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "residents_in_designated_primary_care_HPSAs",
+      "historical_series_available": true,
+      "limitations": "Primary-care HPSA population share used as access proxy. Mental-health HPSAs are separate (count available; share not used as the scalar here). Designation ≠ realized care utilization.",
+      "update_frequency": "ongoing_designations",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_administrative_designation",
+      "numerator_denominator": "~75 million residents in primary care HPSAs / U.S. population ≈ 22%",
+      "source_to_baseline_fit": "PARTIAL_TO_STRONG",
+      "reproducible_retrieval": {
+        "method": "HRSA State of the Primary Care Workforce report / shortage-area dashboards — primary care HPSA population",
+        "url": "https://bhw.hrsa.gov/sites/default/files/bureau-health-workforce/state-of-the-primary-care-workforce-report-2024.pdf",
+        "agencies": [
+          "HRSA",
+          "HHS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-E06",

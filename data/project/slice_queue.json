@@ -688,9 +688,29 @@
         "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
       ],
       "note": "Evidence upgrades only. Ag lanes frozen awaiting human calls. No new mills/plants hypotheses."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+      "title": "Baseline Subset Expansion and Public Statistics Bridge",
+      "status": "completed",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "baseline 2→14/86",
+        "reproducible retrieval fields on newly sourced metrics",
+        "public_statistics_bridge agency map updated",
+        "CC-SRC-218–228",
+        "CC-PR-072–074",
+        "ag posture lock preserved"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+        "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
+      ],
+      "note": "No quota theater. Agriculture remains human-gated."
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+  "last_completed_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
   "parallel_blocked": {
     "processing": {
       "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
@@ -699,8 +719,7 @@
     },
     "feed": {
       "slice_id": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
-      "status": "AWAITING_HUMAN_CALLS",
-      "note": "AR mill quotes and IP toll willingness empty until voice records entered"
+      "status": "AWAITING_HUMAN_CALLS"
     }
   },
   "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md"

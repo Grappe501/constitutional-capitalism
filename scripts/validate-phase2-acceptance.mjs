@@ -62,11 +62,11 @@ if (missionLock.official_active_state?.phase_2_status !== "PARTIAL") {
 if (baselineStatus.total_metrics !== 86) {
   fail(`baseline_status.total_metrics must be 86, found ${baselineStatus.total_metrics}`);
 } else ok("baseline denominator is 86");
-if (baselineStatus.sourced_metrics !== 2) {
+if (baselineStatus.sourced_metrics !== 14) {
   warn(
-    `sourced_metrics is ${baselineStatus.sourced_metrics} (canonical operating snapshot expected 2 until count changes)`
+    `sourced_metrics is ${baselineStatus.sourced_metrics} (canonical operating snapshot expected 14 after baseline subset expansion)`
   );
-} else ok("baseline sourced count remains 2/86");
+} else ok("baseline sourced count remains 14/86");
 
 const stale38Paths = [
   "data/project/slice_queue.json",

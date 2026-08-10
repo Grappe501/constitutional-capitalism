@@ -1,10 +1,14 @@
 {
-  "version": "0.4.0",
-  "last_updated": "2026-08-05",
-  "status": "spine_partial_awaiting_keys",
+  "version": "0.5.0",
+  "last_updated": "2026-08-10",
+  "status": "spine_partial_first_wave_populated",
   "decision_id": "CC-DEC-076",
-  "related_decision_ids": ["CC-DEC-077", "CC-DEC-078", "CC-DEC-079"],
-  "slice_id": "CC-PHASE-2-PUBLIC-STATISTICS-BRIDGE-1.0",
+  "related_decision_ids": [
+    "CC-DEC-076",
+    "CC-DEC-077",
+    "CC-DEC-078"
+  ],
+  "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
   "supporting_mission": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
   "title": "RedDirt Public Data Engine → Constitutional Capitalism (RCIP consumer contract)",
   "central_diagnosis_alignment": "Architecture ahead of evidence — this bridge exists to convert official statistical infrastructure into reproducible baseline proof without importing campaign systems.",
@@ -315,12 +319,7 @@
     "No Census/BLS API keys stored here",
     "No baseline values invented from this architecture",
     "No campaign or personal data imported",
-    "Baseline remains 2/86 until validated observations land"
-  ],
-  "related_decision_ids": [
-    "CC-DEC-076",
-    "CC-DEC-077",
-    "CC-DEC-078"
+    "Baseline advanced to 14/86 via first-wave primary publications with reproducible retrieval; RedDirt live connectors still not required for these records"
   ],
   "public_data_engine": {
     "name": "RedDirt Civic Intelligence Platform (RCIP)",
@@ -428,5 +427,76 @@
     "rule": "Distinct schemas, roles, and access controls across all three."
   },
   "rcip_spine_file": "data/project/rcip_civic_data_spine.json",
-  "strongest_feature_ref": "multi_source_validation"
+  "strongest_feature_ref": "multi_source_validation",
+  "agency_to_cc_metric_map": {
+    "US Census Bureau": [
+      "CC-IND-W04",
+      "CC-IND-F03",
+      "CC-IND-CM02",
+      "CC-IND-C01",
+      "CC-IND-B01_pending_api"
+    ],
+    "BLS": [
+      "CC-IND-L01",
+      "CC-IND-L02",
+      "CC-IND-I04"
+    ],
+    "BEA": [
+      "CC-IND-F04"
+    ],
+    "Federal Reserve": [
+      "CC-IND-W01",
+      "CC-IND-W02",
+      "CC-IND-W03",
+      "CC-IND-W05"
+    ],
+    "CBO": [
+      "CC-IND-G03"
+    ],
+    "HRSA": [
+      "CC-IND-E05"
+    ],
+    "USDA NASS": [
+      "supporting_farm_count_not_yet_CC_IND"
+    ],
+    "CDC": [
+      "future_health_outcomes"
+    ],
+    "NCES": [
+      "future_education_pathway_metrics"
+    ],
+    "state agencies": [
+      "future_local_fiscal_and_education"
+    ]
+  },
+  "mapping_rules": {
+    "do_not_copy_definitions_incorrectly": "Lock the agency definition text before assigning a CC-IND. Prefer official table IDs and universes.",
+    "official_measure_conflicts": [
+      "ACS homeownership vs SCF family homeownership",
+      "Official poverty vs SPM vs ACS poverty",
+      "Census rural vs OMB nonmetro",
+      "Debt held by public vs gross federal debt"
+    ],
+    "completeness_standard": "A baseline is not complete because we found a number. It is complete when another researcher can independently retrieve the same statistic and understand exactly what it measures."
+  },
+  "first_wave_execution": {
+    "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+    "before": 2,
+    "after": 14,
+    "completed_ids": [
+      "CC-IND-W03",
+      "CC-IND-W04",
+      "CC-IND-W05",
+      "CC-IND-L01",
+      "CC-IND-L02",
+      "CC-IND-F03",
+      "CC-IND-F04",
+      "CC-IND-CM02",
+      "CC-IND-I04",
+      "CC-IND-E05",
+      "CC-IND-G03",
+      "CC-IND-C01"
+    ],
+    "redDirt_note": "Phase 2 continues to prefer validated snapshots; this pass sources from primary publications with reproducible retrieval paths usable by RedDirt connectors later."
+  }
 }

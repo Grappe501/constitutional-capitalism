@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-10",
   "principles": [
     "Prefer federal statistical agencies and primary official series",
     "Record definition, unit, year, and limitations with every value",
@@ -20,6 +20,25 @@
     "USDA",
     "ED",
     "HHS",
-    "DOT"
+    "DOT",
+    "CDC",
+    "NCES",
+    "HRSA",
+    "USDA NASS",
+    "state statistical agencies"
+  ],
+  "completeness_rule": "A baseline is not complete because we found a number. It is complete when another researcher can independently retrieve the same statistic and understand exactly what it measures.",
+  "required_fields_for_sourced": [
+    "exact_metric_definition",
+    "authoritative_source",
+    "geography",
+    "observation_year",
+    "update_cadence",
+    "numerator_denominator",
+    "historical_series_flag",
+    "limitations",
+    "observation_type_direct_or_derived",
+    "reproducible_retrieval_instructions",
+    "source_to_baseline_fit"
   ]
 }
