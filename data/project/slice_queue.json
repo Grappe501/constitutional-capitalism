@@ -851,11 +851,21 @@
     "sources": 247,
     "overall_percent": 43
   },
-  "baseline_expansion_paused": true,
-  "decision_options_after_atlas": [
-    "API repair in RedDirt (configure CENSUS_API_KEY/BLS_API_KEY; re-run spine; export)",
-    "Database/ingestion consolidation (wire warehouse→export→CC mapping)",
-    "Resume baseline expansion 38/64 with registry-first rule",
+  "baseline_expansion_paused": false,
+  "last_completed_research_slice": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
+  "next_recommended_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
+  "progress_markers": {
+    "overall_percent": 43,
+    "baseline": "42/64",
+    "sources": 264,
+    "modeling": 0,
+    "legal": 0,
+    "regenerated_at": "2026-08-10"
+  },
+  "decision_options_after_content_evidence_audit": [
+    "Pass 1: bind HIGH + DATA ALREADY AVAILABLE opportunities into Evidence Panels (no new ingest)",
+    "Pass 2: retrieve top RCIP_PUBLICATION_DATA_DEMAND_MANIFEST series through RedDirt",
+    "Definition-lock empty baseline slots before curiosity ingest",
     "Other Phase 2 proof gate (non-baseline)"
   ]
 }

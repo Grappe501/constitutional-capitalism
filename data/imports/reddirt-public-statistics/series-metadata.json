@@ -131,6 +131,50 @@
         "Do not mix seasonally adjusted and non-seasonally adjusted series silently",
         "Survey and administrative series are not identical concepts"
       ]
+    },
+    {
+      "series_code": "ESTABS_ENTRY_RATE",
+      "title": "BDS ESTABS_ENTRY_RATE",
+      "dataset": "bds",
+      "unit": "percent",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_ENTRY_RATE",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ]
+    },
+    {
+      "series_code": "ESTABS_EXIT_RATE",
+      "title": "BDS ESTABS_EXIT_RATE",
+      "dataset": "bds",
+      "unit": "percent",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_EXIT_RATE",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ]
+    },
+    {
+      "series_code": "ESTABS_ENTRY",
+      "title": "BDS ESTABS_ENTRY",
+      "dataset": "bds",
+      "unit": "count",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_ENTRY",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ]
+    },
+    {
+      "series_code": "citizen_voted_percent_18_to_24",
+      "title": "CPS 18-24 citizen reported voting rate",
+      "dataset": "cps_voting_p20_587",
+      "unit": "percent",
+      "definition": "CPS Voting and Registration: percent of United States citizens ages 18–24 who reported voting (November 2024)",
+      "limitations": [
+        "Self-reported voting; overstates administrative turnout",
+        "Age band 18-24 citizen population — not total population rate"
+      ]
     }
   ]
 }

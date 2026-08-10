@@ -6499,6 +6499,98 @@
       "limitations": "Ends at 2020; 2024 P20-587 age table still retrieval-pending. Do not treat 2020 as 2024 baseline.",
       "verification_status": "file_downloaded_and_parsed",
       "notes": "CC-IND-HC07 path confirmation; not a 2024 observation"
+    },
+    {
+      "source_id": "CC-SRC-261",
+      "title": "Census Business Dynamics Statistics — ESTABS_ENTRY_RATE (US, 2023) via Census API timeseries/bds",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2023,
+      "url": "https://api.census.gov/data/timeseries/bds",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "business_dynamics",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-10",
+      "summary": "National economy-wide establishment entry rate from BDS 2023 release via Census API.",
+      "key_findings": [
+        "US ESTABS_ENTRY_RATE 2023 = 10.608"
+      ],
+      "limitations": "BDS annual dynamics; not Business Formation Statistics (BFS).",
+      "verification_status": "primary_retrieval_via_reddirt_aligned_seed",
+      "notes": "CC-IND-B01; RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0; reddirt_observation_id=obs_776eaece2a0847f3; export=exp_79f42d2fe71f4b69"
+    },
+    {
+      "source_id": "CC-SRC-262",
+      "title": "Census Business Dynamics Statistics — ESTABS_EXIT_RATE (US, 2023) via Census API timeseries/bds",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2023,
+      "url": "https://api.census.gov/data/timeseries/bds",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "business_dynamics",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-10",
+      "summary": "National economy-wide establishment exit rate from BDS 2023 release via Census API.",
+      "key_findings": [
+        "US ESTABS_EXIT_RATE 2023 = 9.396"
+      ],
+      "limitations": "Exit rate is the published official measure; multi-year cohort survival tables are a different construct.",
+      "verification_status": "primary_retrieval_via_reddirt_aligned_seed",
+      "notes": "CC-IND-B02; RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0; reddirt_observation_id=obs_01c668577cce4129; export=exp_79f42d2fe71f4b69"
+    },
+    {
+      "source_id": "CC-SRC-263",
+      "title": "Census Business Dynamics Statistics — ESTABS_ENTRY (US, 2023) via Census API timeseries/bds",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2023,
+      "url": "https://api.census.gov/data/timeseries/bds",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "business_dynamics",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-10",
+      "summary": "National count of establishment births from BDS 2023 release via Census API.",
+      "key_findings": [
+        "US ESTABS_ENTRY 2023 = 790295"
+      ],
+      "limitations": "Count of establishment births, not firm startups only; not BFS applications.",
+      "verification_status": "primary_retrieval_via_reddirt_aligned_seed",
+      "notes": "CC-IND-C02; RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0; reddirt_observation_id=obs_30ad90977a5349e5; export=exp_79f42d2fe71f4b69"
+    },
+    {
+      "source_id": "CC-SRC-264",
+      "title": "Census CPS Voting and Registration P20-587 Table 1 (vote01_2024.xlsx) — ages 18–24 citizen reported voted percent",
+      "authors": [
+        "U.S. Census Bureau"
+      ],
+      "year": 2024,
+      "url": "https://www2.census.gov/programs-surveys/cps/tables/p20/587/vote01_2024.xlsx",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "civic_participation",
+      "publication_date": "2024",
+      "retrieval_date": "2026-08-10",
+      "summary": "Official 2024 workbook cell: BOTH SEXES, 18 to 24 years, citizen reported voted percent = 47.7.",
+      "key_findings": [
+        "18–24 citizen reported voting rate November 2024 = 47.7%"
+      ],
+      "limitations": "Self-reported; overstates administrative turnout. Distinct from all-age D03 (65.3%).",
+      "verification_status": "primary_retrieval_via_reddirt_aligned_seed",
+      "notes": "CC-IND-HC07; RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0; reddirt_observation_id=obs_df024ceab3464c30; export=exp_79f42d2fe71f4b69"
     }
   ]
 }

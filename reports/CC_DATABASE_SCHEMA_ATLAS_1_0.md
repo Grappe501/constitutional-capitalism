@@ -214,12 +214,14 @@ Future research start rule:
 
 ## Baseline expansion status
 
-**PAUSED** at **38/64**. Human decision locked 2026-08-10:
+**CURRENT scoreboard: 42/64** (atlas dashboard rows above remain the 2026-08-10 audit freeze). Sequence locked 2026-08-10:
 
 1. ~~`REDDIRT-PUBLIC-STATISTICS-CREDENTIAL-REPAIR-AND-LIVE-INGEST-PROOF-1.0`~~ **PASSED**
-2. ~~`CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0`~~ **PASSED** (import + mapping; **0** DIRECT MATCH promotions; scoreboard still **38/64**)
-3. Next: expand RedDirt series that can definition-match empty slots (BDS for B01/B02/C02; CPS voting for HC07) — or other Phase 2 proof gates
+2. ~~`CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0`~~ **PASSED** (bridge proof; first seed 0 DIRECT MATCH)
+3. ~~`RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0`~~ **PASSED** — B01/B02/C02/HC07 DIRECT MATCH; scoreboard **42/64**; export `exp_79f42d2fe71f4b69`
 4. Do **not** migrate CC into SQL because RedDirt has a database
 5. Do **not** create a second Census/BLS client in CC
 
-Blind individual statistic retrieval remains paused unless registry-first retrieval targets a definition-locked empty slot.
+Further empty slots require definition lock before ingest.
+
+6. ~~`CC-EXISTING-CONTENT-DATA-EVIDENCE-DEEP-AUDIT-1.0`~~ **PASSED** — 2,717 opportunities; RCIP demand manifest 417 series; next `CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0`

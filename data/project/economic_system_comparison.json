@@ -1,435 +1,554 @@
 [
   {
+    "id": "CC-SYS-FEUDALISM",
+    "slug": "feudalism",
+    "name": "Feudalism",
+    "family": "Historical",
+    "era": "Medieval Europe (ideal-type; regional variants)",
+    "ownership_model": "Layered land tenure under lords; peasants hold use-rights under obligation",
+    "role_of_markets": "Local and limited; land and labor often non-market or weakly marketized",
+    "role_of_government": "Fragmented lordship and personal jurisdiction more than modern territorial state",
+    "private_property": "Conditional tenure, not modern absolute title",
+    "labor_treatment": "Customary dues, labor services, serfdom or dependent peasantry in many settings",
+    "concentrated_power_approach": "Hierarchy of military-landholding elites",
+    "accountability_source": "Custom, oath, and local force rather than impersonal public law",
+    "strengths": [
+      "Local order under weak central capacity",
+      "Reciprocal (if unequal) protection bargains"
+    ],
+    "risks": [
+      "Arbitrary lordship",
+      "Immobility",
+      "Violence and fragmented justice"
+    ],
+    "relationship_to_cc": "Historical contrast: CC requires impersonal constitutional property and citizenship, not personal dependence",
+    "historical_exemplars": [
+      "High medieval western Europe (ideal-type)",
+      "Regional seigneurial regimes"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-GUILD-MEDIEVAL-ECONOMY",
+      "CC-SYS-TRIBUTARY-PALACE-ECONOMY",
+      "CC-SYS-MERCANTILISM"
+    ],
+    "dossier_path": "content/public-resources/systems/feudalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-GUILD-MEDIEVAL-ECONOMY",
+    "slug": "guild-medieval-economy",
+    "name": "Guild / medieval corporate economy",
+    "family": "Historical",
+    "era": "Late medieval–early modern urban Europe",
+    "ownership_model": "Artisan and merchant corporate ownership within town privileges",
+    "role_of_markets": "Regulated markets; entry, quality, and prices often guild-governed",
+    "role_of_government": "Municipal and corporate privileges bargain with princes and towns",
+    "private_property": "Strong for members within corporate rules; outsiders restricted",
+    "labor_treatment": "Apprenticeship and journeyman hierarchies; mastership as gate",
+    "concentrated_power_approach": "Corporate monopoly privileges by craft and town",
+    "accountability_source": "Guild statutes, municipal courts, custom",
+    "strengths": [
+      "Quality control",
+      "Skill transmission",
+      "Member mutual aid"
+    ],
+    "risks": [
+      "Entry barriers",
+      "Innovation drag",
+      "Insider privilege"
+    ],
+    "relationship_to_cc": "CC may respect associations and skill standards but rejects closed privilege as a constitutional baseline",
+    "historical_exemplars": [
+      "Late medieval Italian and Northern European towns",
+      "Craft guild charters"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-FEUDALISM",
+      "CC-SYS-CORPORATISM",
+      "CC-SYS-MERCANTILISM",
+      "CC-SYS-COOPERATIVE-ECONOMICS"
+    ],
+    "dossier_path": "content/public-resources/systems/guild-medieval-economy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-PHYSIOCRACY",
+    "slug": "physiocracy",
+    "name": "Physiocracy",
+    "family": "Historical",
+    "era": "18th-century France (intellectual system)",
+    "ownership_model": "Private landed property as the productive core",
+    "role_of_markets": "Free grain trade and natural price formation emphasized",
+    "role_of_government": "Legal despotism in physiocratic theory: strong authority to secure natural order",
+    "private_property": "Strong, especially agricultural land",
+    "labor_treatment": "Agriculture privileged as productive class; industry often labeled sterile in theory",
+    "concentrated_power_approach": "Landed surplus and single tax on net product as fiscal redesign",
+    "accountability_source": "Natural law and enlightened administration",
+    "strengths": [
+      "Early systematic political economy",
+      "Critique of mercantilist privilege"
+    ],
+    "risks": [
+      "Agricultural monism",
+      "Authoritarian legal-despotism risk",
+      "Undervaluation of industry"
+    ],
+    "relationship_to_cc": "Shares anti-privilege and property themes; CC rejects physiocratic class metaphysics and legal despotism",
+    "historical_exemplars": [
+      "Quesnay's Tableau économique",
+      "Turgot-era reform debates"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MERCANTILISM",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+      "CC-SYS-GEORGISM"
+    ],
+    "dossier_path": "content/public-resources/systems/physiocracy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-TRIBUTARY-PALACE-ECONOMY",
+    "slug": "tributary-palace-economy",
+    "name": "Ancient tributary / palace economy",
+    "family": "Historical",
+    "era": "Bronze Age and ancient agrarian empires (ideal-type)",
+    "ownership_model": "Palace, temple, or imperial centers claim superior claims on surplus",
+    "role_of_markets": "Markets exist at margins; allocation often administered by redistributive centers",
+    "role_of_government": "Ruler-centered extraction and redistribution; household of the palace as economic hub",
+    "private_property": "Conditional and stratified; elite and institutional holdings dominate",
+    "labor_treatment": "Corvée, dependent labor, slavery, and tribute obligations common in variants",
+    "concentrated_power_approach": "Central ceremonial-political concentration of surplus",
+    "accountability_source": "Divine kingship, temple authority, imperial hierarchy",
+    "strengths": [
+      "Large-scale mobilization",
+      "Grain storage and crisis redistribution capacity"
+    ],
+    "risks": [
+      "Extractive predation",
+      "Information and incentive failures",
+      "Subject vulnerability"
+    ],
+    "relationship_to_cc": "Contrary ideal-type: CC rejects palace-centered domination and requires constitutional limits on extractive power",
+    "historical_exemplars": [
+      "Mycenaean palace records (ideal-type reference)",
+      "Ancient Near Eastern redistributive polities (comparative)"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-FEUDALISM",
+      "CC-SYS-COMMAND-ECONOMIES",
+      "CC-SYS-STATE-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/tributary-palace-economy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-CLASSICAL-REPUBLICAN-MIXED-ECONOMY",
+    "slug": "classical-republican-mixed-economy",
+    "name": "Classical republican mixed economy",
+    "family": "Historical",
+    "era": "Greco-Roman and early-modern republican thought; selective practice",
+    "ownership_model": "Private household property with civic limits against luxury and dependency",
+    "role_of_markets": "Commerce accepted with suspicion of corruption and dependency",
+    "role_of_government": "Mixed constitution; civic virtue and anti-domination as political aims",
+    "private_property": "Strong for citizens; tied to independence and military/civic capacity",
+    "labor_treatment": "Ideal of independent proprietor; historical reliance on slavery or dependents in many republics",
+    "concentrated_power_approach": "Agrarian laws, sumptuary norms, and mixed offices to check oligarchy",
+    "accountability_source": "Civic virtue, mixed institutions, public contestation",
+    "strengths": [
+      "Anti-domination ethic",
+      "Link of property to citizenship",
+      "Suspicion of corrupting concentration"
+    ],
+    "risks": [
+      "Exclusionary citizenship",
+      "Slavery and patriarchy in historical republics",
+      "Anti-commercial romanticism"
+    ],
+    "relationship_to_cc": "Major intellectual neighbor on anti-domination and broad independent ownership; CC must reject historical exclusions while learning the independence-property link",
+    "historical_exemplars": [
+      "Roman republican ideology (idealized)",
+      "Machiavelli and Atlantic republican discourse",
+      "Early American agrarian republican themes"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-DISTRIBUTISM",
+      "CC-SYS-OLIGARCHY",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/classical-republican-mixed-economy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-MERCANTILISM",
+    "slug": "mercantilism",
+    "name": "Mercantilism",
+    "family": "Historical",
+    "era": "Early modern European states; recurrent modern echoes",
+    "ownership_model": "Mixed private ownership under national strategic direction",
+    "role_of_markets": "Trade managed for national advantage; bullion and balance-of-trade focus historically",
+    "role_of_government": "Uses tariffs, monopolies, navigation acts, and charters",
+    "private_property": "Conditional on sovereign strategy and privilege",
+    "labor_treatment": "Labor serves national production and naval/military capacity",
+    "concentrated_power_approach": "Chartered monopolies and favored companies common",
+    "accountability_source": "Sovereign strategy and fiscal-military state",
+    "strengths": [
+      "State capacity building",
+      "Infant-industry and naval power logics"
+    ],
+    "risks": [
+      "Rent seeking",
+      "War and commercial conflict",
+      "Consumer costs of privilege"
+    ],
+    "relationship_to_cc": "CC rejects privilege charters while allowing lawful resilience and competition policy — not mercantile monopoly",
+    "historical_exemplars": [
+      "Colbertist France",
+      "English Navigation Acts era",
+      "Chartered companies"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-PHYSIOCRACY",
+      "CC-SYS-DEVELOPMENTAL-STATE",
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/mercantilism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
     "id": "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+    "slug": "laissez-faire-capitalism",
     "name": "Laissez-faire capitalism",
+    "family": "Market-capitalist",
+    "era": "Classical liberal ideal; 19th-century approximations",
     "ownership_model": "Predominantly private ownership",
     "role_of_markets": "Markets coordinate most activity with minimal intervention",
-    "role_of_government": "Limited to property, contract, and basic order",
+    "role_of_government": "Limited to property, contract, basic order, and narrow public goods",
     "private_property": "Strong",
     "labor_treatment": "Contractual wage labor",
     "concentrated_power_approach": "Relies largely on entry and market correction",
     "accountability_source": "Private contract and market discipline",
     "strengths": [
       "Entrepreneurship",
-      "low intervention"
+      "Price discovery",
+      "Low discretionary intervention"
     ],
     "risks": [
       "Externalities",
-      "concentrated power"
+      "Concentrated private power",
+      "Under-provision of public goods"
     ],
-    "relationship_to_cc": "A partial ancestor; CC adds constitutional accountability",
+    "relationship_to_cc": "Partial ancestor; CC adds constitutional accountability for public and private domination",
+    "historical_exemplars": [
+      "Classical liberal treatises",
+      "Select 19th-century policy regimes (approximate)"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-NEOLIBERALISM",
+      "CC-SYS-ANARCHO-CAPITALISM",
+      "CC-SYS-ORDOLIBERALISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/laissez-faire-capitalism.md",
     "status": "developing_analytical_tool"
   },
   {
     "id": "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM",
+    "slug": "shareholder-primacy-capitalism",
     "name": "Shareholder-primacy capitalism",
-    "ownership_model": "Private corporate ownership oriented to shareholders",
-    "role_of_markets": "Markets allocate capital and corporate control",
-    "role_of_government": "Sets corporate and securities law",
+    "family": "Market-capitalist",
+    "era": "20th–21st century corporate law and finance ideology",
+    "ownership_model": "Private corporate ownership oriented to residual shareholder claims",
+    "role_of_markets": "Capital and control markets discipline managers",
+    "role_of_government": "Sets corporate, securities, and bankruptcy law",
     "private_property": "Strong",
     "labor_treatment": "Labor treated chiefly as contractual input",
-    "concentrated_power_approach": "Addresses concentration through conventional competition law",
-    "accountability_source": "Shareholder value and law",
+    "concentrated_power_approach": "Competition law plus capital-market discipline",
+    "accountability_source": "Shareholder value metrics and fiduciary doctrines (as interpreted)",
     "strengths": [
       "Clear managerial objective",
-      "capital formation"
+      "Capital formation",
+      "Exit discipline via markets"
     ],
     "risks": [
       "Short-termism",
-      "stakeholder externalities"
+      "Stakeholder externalities",
+      "Agency problems despite the slogan"
     ],
-    "relationship_to_cc": "CC rejects shareholder value as the sole constitutional lens",
+    "relationship_to_cc": "CC rejects shareholder value as the sole constitutional lens on corporate power",
+    "historical_exemplars": [
+      "Berle-Means corporation debates",
+      "Late-20th-century agency theory influence"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-STAKEHOLDER-CAPITALISM",
+      "CC-SYS-PUBLIC-BENEFIT-CAPITALISM",
+      "CC-SYS-NEOLIBERALISM",
+      "CC-SYS-WELFARE-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/shareholder-primacy-capitalism.md",
     "status": "developing_analytical_tool"
   },
   {
-    "id": "CC-SYS-CRONY-CAPITALISM",
-    "name": "Crony capitalism",
-    "ownership_model": "Nominally private ownership with privileged access",
-    "role_of_markets": "Markets distorted by political favors",
-    "role_of_government": "Distributes privileges and protection",
-    "private_property": "Formal but selectively applied",
-    "labor_treatment": "Labor subject to privileged firms",
-    "concentrated_power_approach": "Protects favored incumbents",
-    "accountability_source": "Patronage networks",
+    "id": "CC-SYS-NEOLIBERALISM",
+    "slug": "neoliberalism",
+    "name": "Neoliberalism",
+    "family": "Market-capitalist",
+    "era": "Late 20th century onward (contested label)",
+    "ownership_model": "Private ownership expanded via privatization and marketization",
+    "role_of_markets": "Markets actively constructed and extended into new domains",
+    "role_of_government": "Strong state as market-maker: competition rules, monetary regimes, globalization architecture",
+    "private_property": "Strong; intellectual property and finance emphasized",
+    "labor_treatment": "Flexible labor markets; unions often weakened relative to mid-century peaks",
+    "concentrated_power_approach": "Competition policy varies; finance and platform concentration recurring issues",
+    "accountability_source": "Price signals, independent agencies, and international economic rules",
     "strengths": [
-      "Can mobilize investment quickly"
+      "Anti-inflation monetary credibility (claimed)",
+      "Trade integration",
+      "Entrepreneurial dynamism"
     ],
     "risks": [
-      "Corruption",
-      "weak competition"
+      "Financial instability",
+      "Inequality",
+      "Democratic backlash",
+      "Label overuse"
     ],
-    "relationship_to_cc": "Directly contrary to CC",
+    "relationship_to_cc": "Overlaps on markets and property; CC rejects reducing constitutional order to market efficiency alone",
+    "historical_exemplars": [
+      "Post-1970s policy shifts in multiple OECD countries",
+      "Washington Consensus debates"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+      "CC-SYS-ORDOLIBERALISM",
+      "CC-SYS-KEYNESIAN-MANAGED-CAPITALISM",
+      "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/neoliberalism.md",
     "status": "developing_analytical_tool"
   },
   {
-    "id": "CC-SYS-CORPORATISM",
-    "name": "Corporatism",
-    "ownership_model": "Private or mixed ownership organized by functional groups",
-    "role_of_markets": "Markets coordinated through organized interests",
-    "role_of_government": "Bargains with and directs recognized groups",
-    "private_property": "Variable",
-    "labor_treatment": "Labor represented through official bodies",
-    "concentrated_power_approach": "Managed through group bargaining",
-    "accountability_source": "State-recognized associations",
-    "strengths": [
-      "Coordination",
-      "representation"
-    ],
-    "risks": [
-      "Exclusion",
-      "elite bargaining"
-    ],
-    "relationship_to_cc": "CC may learn from coordination but rejects closed privilege",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-OLIGARCHY",
-    "name": "Oligarchy",
-    "ownership_model": "Ownership concentrated among a small elite",
-    "role_of_markets": "Markets subordinate to elite control",
-    "role_of_government": "Government captured or directed by elite",
-    "private_property": "Selective",
-    "labor_treatment": "Labor dependent on elite institutions",
-    "concentrated_power_approach": "Concentration entrenched",
-    "accountability_source": "Elite control",
-    "strengths": [
-      "Fast elite coordination"
-    ],
-    "risks": [
-      "Domination",
-      "weak accountability"
-    ],
-    "relationship_to_cc": "Contrary to CC anti-concentration",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-PLUTOCRACY",
-    "name": "Plutocracy",
-    "ownership_model": "Wealth holders dominate ownership and politics",
-    "role_of_markets": "Markets reinforce wealth influence",
-    "role_of_government": "Government responsive disproportionately to wealth",
-    "private_property": "Strong for elites",
-    "labor_treatment": "Labor has diminished voice",
-    "concentrated_power_approach": "Power translates into political control",
-    "accountability_source": "Wealth",
-    "strengths": [
-      "Investment capacity"
-    ],
-    "risks": [
-      "Political inequality",
-      "capture"
-    ],
-    "relationship_to_cc": "Contrary to CC separation principle",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-MERCANTILISM",
-    "name": "Mercantilism",
-    "ownership_model": "Mixed private ownership under national strategic direction",
-    "role_of_markets": "Trade managed for national advantage",
-    "role_of_government": "Uses tariffs, monopolies, and charters",
-    "private_property": "Conditional",
-    "labor_treatment": "Labor serves national production",
-    "concentrated_power_approach": "Chartered monopolies common",
-    "accountability_source": "Sovereign strategy",
-    "strengths": [
-      "State capacity",
-      "industrial development"
-    ],
-    "risks": [
-      "Rent seeking",
-      "conflict"
-    ],
-    "relationship_to_cc": "CC rejects privilege while allowing lawful resilience",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-STATE-CAPITALISM",
-    "name": "State capitalism",
-    "ownership_model": "State owns or controls key enterprises",
-    "role_of_markets": "Markets may operate under state direction",
-    "role_of_government": "State is owner, regulator, and strategist",
-    "private_property": "Limited or subordinate",
-    "labor_treatment": "Labor often state-directed",
-    "concentrated_power_approach": "State concentration",
-    "accountability_source": "State authority",
-    "strengths": [
-      "Mobilization",
-      "strategic investment"
-    ],
-    "risks": [
-      "Political coercion",
-      "weak independent accountability"
-    ],
-    "relationship_to_cc": "Contrary to CC independent property and limits",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-SOCIAL-DEMOCRACY",
-    "name": "Social democracy",
-    "ownership_model": "Mostly private ownership with strong public welfare",
-    "role_of_markets": "Markets remain central",
-    "role_of_government": "Provides services, redistribution, and labor protections",
+    "id": "CC-SYS-KEYNESIAN-MANAGED-CAPITALISM",
+    "slug": "keynesian-managed-capitalism",
+    "name": "Keynesian / managed capitalism",
+    "family": "Market-capitalist",
+    "era": "Mid-20th century mixed economies; recurrent after crises",
+    "ownership_model": "Mostly private ownership with periodic public enterprise",
+    "role_of_markets": "Markets central; demand management and stabilization overlay",
+    "role_of_government": "Fiscal-monetary stabilization, automatic stabilizers, sometimes incomes policy",
     "private_property": "Strong",
-    "labor_treatment": "Strong labor protections and bargaining",
-    "concentrated_power_approach": "Competition law plus welfare counterweights",
-    "accountability_source": "Democratic institutions",
+    "labor_treatment": "Full employment as a political goal; union bargaining often institutionalized",
+    "concentrated_power_approach": "Competition policy plus macroeconomic management; not primarily ownership socialization",
+    "accountability_source": "Electoral democracy and technocratic economic management",
     "strengths": [
-      "Security",
-      "equality of opportunity"
+      "Stabilization ambition",
+      "Employment focus",
+      "Crisis response toolkit"
     ],
     "risks": [
-      "Fiscal burden",
-      "administrative complexity"
+      "Inflation",
+      "Fiscal stress",
+      "Political business cycles",
+      "Capture of industrial policy"
     ],
-    "relationship_to_cc": "CC overlaps on accountability but remains distinct",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-DEMOCRATIC-SOCIALISM",
-    "name": "Democratic socialism",
-    "ownership_model": "Substantial social or worker ownership",
-    "role_of_markets": "Markets vary by program",
-    "role_of_government": "Democratic direction of economy",
-    "private_property": "Limited for major assets",
-    "labor_treatment": "Labor as co-owner or democratic participant",
-    "concentrated_power_approach": "Public/social ownership curbs concentration",
-    "accountability_source": "Democratic social control",
-    "strengths": [
-      "Equality",
-      "workplace voice"
+    "relationship_to_cc": "Compatible toolkit elements possible; CC is not identical to mid-century managed capitalism",
+    "historical_exemplars": [
+      "Postwar OECD 'golden age' debates",
+      "Keynesian policy manuals"
     ],
-    "risks": [
-      "State or collective control risks"
+    "neighbor_systems": [
+      "CC-SYS-WELFARE-CAPITALISM",
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-MIXED-ECONOMY",
+      "CC-SYS-NEOLIBERALISM"
     ],
-    "relationship_to_cc": "CC protects private property and is not this system",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-SOCIALISM",
-    "name": "Socialism",
-    "ownership_model": "Social, cooperative, or state ownership of major productive assets",
-    "role_of_markets": "Markets range from limited to absent",
-    "role_of_government": "Directs or owns significant production",
-    "private_property": "Restricted for major assets",
-    "labor_treatment": "Labor framed as collective producer",
-    "concentrated_power_approach": "Social ownership is primary remedy",
-    "accountability_source": "Social ownership or planning",
-    "strengths": [
-      "Equality",
-      "coordination"
-    ],
-    "risks": [
-      "Innovation and liberty risks"
-    ],
-    "relationship_to_cc": "CC is not socialism",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-MARXISM",
-    "name": "Marxism",
-    "ownership_model": "Collective ownership after class transformation",
-    "role_of_markets": "Markets seen as historically superseded",
-    "role_of_government": "State often transitional in theory",
-    "private_property": "Abolished for productive capital",
-    "labor_treatment": "Labor emancipated from wage relation",
-    "concentrated_power_approach": "Class abolition",
-    "accountability_source": "Historical materialism and collective rule",
-    "strengths": [
-      "Structural critique of exploitation"
-    ],
-    "risks": [
-      "Authoritarian implementation risks"
-    ],
-    "relationship_to_cc": "CC rejects class-revolutionary premises",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-COMMUNISM",
-    "name": "Communism",
-    "ownership_model": "Common ownership in a classless ideal",
-    "role_of_markets": "Markets abolished in ideal form",
-    "role_of_government": "State withers away in theory",
-    "private_property": "Abolished",
-    "labor_treatment": "Labor allocated by communal principle",
-    "concentrated_power_approach": "Eliminates class ownership",
-    "accountability_source": "Communal self-rule",
-    "strengths": [
-      "Egalitarian ideal"
-    ],
-    "risks": [
-      "Coordination and coercion risks in practice"
-    ],
-    "relationship_to_cc": "CC rejects abolition of property and markets",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-COMMAND-ECONOMIES",
-    "name": "Command economies",
-    "ownership_model": "State ownership or command over production",
-    "role_of_markets": "Planning replaces market allocation",
-    "role_of_government": "Central planners direct output and prices",
-    "private_property": "Restricted",
-    "labor_treatment": "Labor allocated administratively",
-    "concentrated_power_approach": "Central command",
-    "accountability_source": "Planning authority",
-    "strengths": [
-      "Mobilization for defined goals"
-    ],
-    "risks": [
-      "Information failures",
-      "coercion"
-    ],
-    "relationship_to_cc": "Contrary to CC market freedom",
+    "dossier_path": "content/public-resources/systems/keynesian-managed-capitalism.md",
     "status": "developing_analytical_tool"
   },
   {
     "id": "CC-SYS-WELFARE-CAPITALISM",
+    "slug": "welfare-capitalism",
     "name": "Welfare capitalism",
-    "ownership_model": "Private ownership with employer or public benefits",
-    "role_of_markets": "Markets central",
-    "role_of_government": "Supports income and social insurance",
+    "family": "Market-capitalist",
+    "era": "20th century onward",
+    "ownership_model": "Private ownership with employer or public benefits layered on",
+    "role_of_markets": "Markets central for production and jobs",
+    "role_of_government": "Supports income, health, and social insurance—or mandates employer provision",
     "private_property": "Strong",
-    "labor_treatment": "Benefits supplement wages",
-    "concentrated_power_approach": "Conventional competition policy",
-    "accountability_source": "Employers and welfare state",
+    "labor_treatment": "Benefits supplement wages; employment often gateway to security",
+    "concentrated_power_approach": "Conventional competition policy; social insurance as counterweight",
+    "accountability_source": "Employers, insurers, and welfare-state institutions",
     "strengths": [
-      "Security within markets"
+      "Security within markets",
+      "Political stabilization of capitalism"
     ],
     "risks": [
-      "Dependency on employers",
-      "cost pressures"
+      "Employer dependency",
+      "Coverage gaps",
+      "Cost and fiscal pressures"
     ],
-    "relationship_to_cc": "CC may incorporate compatible protections",
+    "relationship_to_cc": "CC may incorporate compatible protections without equating CC to welfare capitalism",
+    "historical_exemplars": [
+      "Company welfare traditions",
+      "Bismarckian and Beveridgean insurance lineages"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-KEYNESIAN-MANAGED-CAPITALISM",
+      "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/welfare-capitalism.md",
     "status": "developing_analytical_tool"
   },
   {
     "id": "CC-SYS-STAKEHOLDER-CAPITALISM",
+    "slug": "stakeholder-capitalism",
     "name": "Stakeholder capitalism",
-    "ownership_model": "Private ownership with multiple stakeholder duties",
+    "family": "Market-capitalist",
+    "era": "Late 20th–21st century governance discourse",
+    "ownership_model": "Private ownership with multiple stakeholder duties claimed",
     "role_of_markets": "Markets central",
-    "role_of_government": "Sets disclosure and fiduciary expectations",
+    "role_of_government": "Sets disclosure, fiduciary expectations, and soft-law codes",
     "private_property": "Strong",
-    "labor_treatment": "Labor recognized as stakeholder",
-    "concentrated_power_approach": "Voluntary or legal stakeholder governance",
-    "accountability_source": "Corporate governance",
+    "labor_treatment": "Labor recognized as stakeholder alongside communities and environment",
+    "concentrated_power_approach": "Voluntary or legal stakeholder governance; enforcement often soft",
+    "accountability_source": "Corporate governance codes, ESG metrics, reputation",
     "strengths": [
-      "Broader impact recognition"
+      "Broader impact recognition",
+      "Managerial ethical language"
     ],
     "risks": [
       "Vagueness",
-      "weak enforcement"
+      "Weak enforcement",
+      "Managerial unaccountability"
     ],
-    "relationship_to_cc": "CC seeks constitutional grounding for accountability",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-DISTRIBUTISM",
-    "name": "Distributism",
-    "ownership_model": "Widely distributed small-scale property",
-    "role_of_markets": "Markets with preference for small owners",
-    "role_of_government": "Supports ownership dispersion and associations",
-    "private_property": "Strong and broad",
-    "labor_treatment": "Family and guild-oriented work",
-    "concentrated_power_approach": "Structural dispersion",
-    "accountability_source": "Household and local association",
-    "strengths": [
-      "Independence",
-      "local ownership"
+    "relationship_to_cc": "CC seeks constitutional grounding for accountability rather than voluntary stakeholder rhetoric alone",
+    "historical_exemplars": [
+      "Business Roundtable 2019 statement debates",
+      "Rhenish governance comparisons"
     ],
-    "risks": [
-      "Scale limitations",
-      "romanticism"
+    "neighbor_systems": [
+      "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM",
+      "CC-SYS-PUBLIC-BENEFIT-CAPITALISM",
+      "CC-SYS-SOCIAL-MARKET-ECONOMICS"
     ],
-    "relationship_to_cc": "CC shares broad ownership but not a fixed form",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-COOPERATIVE-ECONOMICS",
-    "name": "Cooperative economics",
-    "ownership_model": "Member-owned firms and associations",
-    "role_of_markets": "Markets can coordinate cooperatives",
-    "role_of_government": "Enables cooperative legal structures",
-    "private_property": "Strong, often collective",
-    "labor_treatment": "Workers or members govern enterprises",
-    "concentrated_power_approach": "Member ownership counterbalances concentration",
-    "accountability_source": "Member governance",
-    "strengths": [
-      "Participation",
-      "shared returns"
-    ],
-    "risks": [
-      "Capital access",
-      "governance challenges"
-    ],
-    "relationship_to_cc": "CC treats cooperatives as one possible mechanism",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-SOCIAL-MARKET-ECONOMICS",
-    "name": "Social-market economics",
-    "ownership_model": "Private ownership within a social legal order",
-    "role_of_markets": "Markets coordinate under social safeguards",
-    "role_of_government": "Maintains competition and social protection",
-    "private_property": "Strong",
-    "labor_treatment": "Labor protections and social partnership",
-    "concentrated_power_approach": "Strong competition policy",
-    "accountability_source": "Constitutional democratic law",
-    "strengths": [
-      "Competitive dynamism",
-      "social security"
-    ],
-    "risks": [
-      "Complexity",
-      "fiscal demands"
-    ],
-    "relationship_to_cc": "A close comparative reference, not an identity",
-    "status": "developing_analytical_tool"
-  },
-  {
-    "id": "CC-SYS-ORDOLIBERALISM",
-    "name": "Ordoliberalism",
-    "ownership_model": "Private ownership under a competitive order",
-    "role_of_markets": "Markets need an ordering legal framework",
-    "role_of_government": "Strong rule-setting state, limited discretionary direction",
-    "private_property": "Strong",
-    "labor_treatment": "Labor protected within legal order",
-    "concentrated_power_approach": "Prevents monopolies and privileges",
-    "accountability_source": "Rule of law and competition order",
-    "strengths": [
-      "Competition",
-      "anti-monopoly clarity"
-    ],
-    "risks": [
-      "May understate distributional issues"
-    ],
-    "relationship_to_cc": "A major intellectual comparison for CC",
+    "dossier_path": "content/public-resources/systems/stakeholder-capitalism.md",
     "status": "developing_analytical_tool"
   },
   {
     "id": "CC-SYS-PUBLIC-BENEFIT-CAPITALISM",
+    "slug": "public-benefit-capitalism",
     "name": "Public-benefit capitalism",
-    "ownership_model": "Private ownership including mission-locked firms",
+    "family": "Market-capitalist",
+    "era": "21st-century entity-law innovation",
+    "ownership_model": "Private ownership including mission-locked or benefit entities",
     "role_of_markets": "Markets with social-purpose corporate forms",
-    "role_of_government": "Authorizes and regulates benefit entities",
+    "role_of_government": "Authorizes and regulates benefit corporations and similar forms",
     "private_property": "Strong",
-    "labor_treatment": "Labor treated as stakeholder",
-    "concentrated_power_approach": "Voluntary mission governance",
-    "accountability_source": "Charters and reporting",
+    "labor_treatment": "Labor treated as stakeholder within mission governance",
+    "concentrated_power_approach": "Voluntary mission governance; not a full concentration remedy",
+    "accountability_source": "Charters, benefit reports, and limited fiduciary redesign",
     "strengths": [
       "Mission protection",
-      "innovation"
+      "Legal clarity vs pure soft stakeholderism"
     ],
     "risks": [
       "Voluntary uptake",
-      "enforcement"
+      "Enforcement thinness",
+      "Greenwashing risk"
     ],
-    "relationship_to_cc": "Compatible mechanism, not complete CC system",
+    "relationship_to_cc": "Compatible mechanism family, not a complete CC system",
+    "historical_exemplars": [
+      "U.S. benefit corporation statutes",
+      "Community interest company analogues abroad"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-STAKEHOLDER-CAPITALISM",
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/public-benefit-capitalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-ANARCHO-CAPITALISM",
+    "slug": "anarcho-capitalism",
+    "name": "Anarcho-capitalism",
+    "family": "Market-capitalist",
+    "era": "Late 20th-century libertarian theory",
+    "ownership_model": "Fully private ownership including security and law as market goods",
+    "role_of_markets": "Markets replace state provision of nearly all services",
+    "role_of_government": "Abolished or reduced to vanishing point in the ideal",
+    "private_property": "Maximal",
+    "labor_treatment": "Pure contract; no public labor regime",
+    "concentrated_power_approach": "Assumes competition among private defense agencies prevents domination",
+    "accountability_source": "Reputation, contract, and exit among private providers",
+    "strengths": [
+      "Radical anti-coercion ethic (as claimed)",
+      "Consistency about monopoly of force skepticism"
+    ],
+    "risks": [
+      "Warlord and cartel risk",
+      "Public-goods underprovision",
+      "Unequal access to justice"
+    ],
+    "relationship_to_cc": "CC affirms limited capable constitutional government; rejects abolition of the public coercive framework",
+    "historical_exemplars": [
+      "Theoretical literature (Rothbard, Friedman)",
+      "No durable large-scale national exemplar"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+      "CC-SYS-MUTUALISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/anarcho-capitalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-MIXED-ECONOMY",
+    "slug": "mixed-economy",
+    "name": "Mixed economy",
+    "family": "Market-capitalist",
+    "era": "Twentieth century–present (most real economies)",
+    "ownership_model": "Private enterprise dominant with public ownership in selected sectors",
+    "role_of_markets": "Markets allocate most goods; planning or regulation in others",
+    "role_of_government": "Regulator, insurer, sometimes producer; shares vary by country",
+    "private_property": "Strong but bounded by regulation and public domains",
+    "labor_treatment": "Wage labor with public labor law overlays",
+    "concentrated_power_approach": "Competition law, regulation, and occasional public options",
+    "accountability_source": "Democratic politics plus market discipline",
+    "strengths": [
+      "Pragmatic hybridity",
+      "Sector-specific tools",
+      "Empirical commonality"
+    ],
+    "risks": [
+      "Conceptual vagueness",
+      "Inconsistent accountability",
+      "Fiscal and regulatory overload"
+    ],
+    "relationship_to_cc": "Describes many baselines CC would reform; mixed economy is a description, not CC's distinctive constitutional thesis",
+    "historical_exemplars": [
+      "Postwar Western economies",
+      "Contemporary OECD mixes"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-KEYNESIAN-MANAGED-CAPITALISM",
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-STATE-CAPITALISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/mixed-economy.md",
     "status": "developing_analytical_tool"
   },
   {
     "id": "CC-SYS-CONSTITUTIONAL-CAPITALISM",
+    "slug": "constitutional-capitalism",
     "name": "Constitutional Capitalism",
+    "family": "Market-capitalist",
+    "era": "Developing contemporary framework",
     "ownership_model": "Secure private and broadly distributed ownership",
     "role_of_markets": "Free and fair markets under constitutional safeguards",
     "role_of_government": "Limited, capable, democratically accountable rule enforcement",
@@ -439,14 +558,898 @@
     "accountability_source": "Constitutional law, democratic accountability, and contestable markets",
     "strengths": [
       "Liberty",
-      "pluralism",
-      "broad opportunity"
+      "Pluralism",
+      "Broad opportunity",
+      "Anti-domination aim"
     ],
     "risks": [
       "Unresolved mechanisms",
-      "overbreadth risk"
+      "Overbreadth risk",
+      "Implementation incompleteness"
     ],
-    "relationship_to_cc": "The developing framework being defined",
+    "relationship_to_cc": "The developing framework being defined — not settled doctrine completion",
+    "historical_exemplars": [
+      "Project Declaration and principles (in development)",
+      "Comparative lessons from ordoliberal and republican traditions"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-ORDOLIBERALISM",
+      "CC-SYS-SOCIAL-MARKET-ECONOMICS",
+      "CC-SYS-CLASSICAL-REPUBLICAN-MIXED-ECONOMY",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/constitutional-capitalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-SOCIAL-MARKET-ECONOMICS",
+    "slug": "social-market-economics",
+    "name": "Social-market economics",
+    "family": "Coordinated-market",
+    "era": "Postwar West Germany and related European debates",
+    "ownership_model": "Private ownership within a social legal order",
+    "role_of_markets": "Markets coordinate under social safeguards",
+    "role_of_government": "Maintains competition and social protection",
+    "private_property": "Strong",
+    "labor_treatment": "Labor protections and social partnership",
+    "concentrated_power_approach": "Strong competition policy",
+    "accountability_source": "Constitutional democratic law",
+    "strengths": [
+      "Competitive dynamism with social security"
+    ],
+    "risks": [
+      "Complexity",
+      "Fiscal demands",
+      "Corporatist insider risk"
+    ],
+    "relationship_to_cc": "Close comparative reference, not an identity",
+    "historical_exemplars": [
+      "Soziale Marktwirtschaft discourse",
+      "Postwar Federal Republic economic order debates"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-ORDOLIBERALISM",
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-CORPORATISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/social-market-economics.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-ORDOLIBERALISM",
+    "slug": "ordoliberalism",
+    "name": "Ordoliberalism",
+    "family": "Coordinated-market",
+    "era": "Freiburg School; postwar German economic constitution debates",
+    "ownership_model": "Private ownership under a competitive order",
+    "role_of_markets": "Markets require an ordering legal framework to remain free",
+    "role_of_government": "Strong rule-setting state; limited discretionary industrial direction",
+    "private_property": "Strong",
+    "labor_treatment": "Labor protected within legal order",
+    "concentrated_power_approach": "Prevents monopolies and privileges as constitutional-economic duty",
+    "accountability_source": "Rule of law and competition order",
+    "strengths": [
+      "Anti-monopoly clarity",
+      "Order-based liberalism"
+    ],
+    "risks": [
+      "May understate distributional conflict",
+      "Technocratic rigidity risk"
+    ],
+    "relationship_to_cc": "Major intellectual comparison for CC's competition and anti-privilege aims",
+    "historical_exemplars": [
+      "Freiburg School texts",
+      "German competition-law tradition influences"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-SOCIAL-MARKET-ECONOMICS",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+      "CC-SYS-NEOLIBERALISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/ordoliberalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-SOCIAL-DEMOCRACY",
+    "slug": "social-democracy",
+    "name": "Social democracy",
+    "family": "Coordinated-market",
+    "era": "20th–21st century electoral socialism-within-capitalism",
+    "ownership_model": "Mostly private ownership with strong public welfare and regulation",
+    "role_of_markets": "Markets remain central for production",
+    "role_of_government": "Provides services, redistribution, and labor protections",
+    "private_property": "Strong",
+    "labor_treatment": "Strong labor protections and collective bargaining",
+    "concentrated_power_approach": "Competition law plus welfare and labor counterweights",
+    "accountability_source": "Democratic institutions and parties",
+    "strengths": [
+      "Security",
+      "Equality of opportunity ambitions",
+      "Mass legitimacy"
+    ],
+    "risks": [
+      "Fiscal burden",
+      "Administrative complexity",
+      "Globalization constraints"
+    ],
+    "relationship_to_cc": "Overlaps on democratic accountability; CC remains distinct and not identical",
+    "historical_exemplars": [
+      "Nordic model debates",
+      "Postwar European social democratic governments"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-DEMOCRATIC-SOCIALISM",
+      "CC-SYS-WELFARE-CAPITALISM",
+      "CC-SYS-SOCIAL-MARKET-ECONOMICS",
+      "CC-SYS-KEYNESIAN-MANAGED-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/social-democracy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-CORPORATISM",
+    "slug": "corporatism",
+    "name": "Corporatism",
+    "family": "Coordinated-market",
+    "era": "Interwar theory; postwar neocorporatist practice",
+    "ownership_model": "Private or mixed ownership organized by functional groups",
+    "role_of_markets": "Markets coordinated through organized interests",
+    "role_of_government": "Bargains with and directs recognized groups",
+    "private_property": "Variable",
+    "labor_treatment": "Labor represented through official peak associations",
+    "concentrated_power_approach": "Managed through group bargaining",
+    "accountability_source": "State-recognized associations",
+    "strengths": [
+      "Coordination",
+      "Peak-level representation",
+      "Strike reduction potential"
+    ],
+    "risks": [
+      "Exclusion of outsiders",
+      "Elite bargaining opacity",
+      "Authoritarian variants"
+    ],
+    "relationship_to_cc": "CC may learn from coordination but rejects closed privilege and compulsory functional representation as constitutional baseline",
+    "historical_exemplars": [
+      "Postwar Austrian/Scandinavian neocorporatism",
+      "Interwar authoritarian corporatist ideologies (distinct)"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-FASCIST-POLITICAL-ECONOMY",
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-GUILD-MEDIEVAL-ECONOMY",
+      "CC-SYS-SOCIAL-MARKET-ECONOMICS"
+    ],
+    "dossier_path": "content/public-resources/systems/corporatism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-DEVELOPMENTAL-STATE",
+    "slug": "developmental-state",
+    "name": "Developmental state",
+    "family": "Coordinated-market",
+    "era": "Late 20th-century East Asian industrialization literature",
+    "ownership_model": "Private firms guided by selective state industrial policy",
+    "role_of_markets": "Export markets central; domestic markets often steered",
+    "role_of_government": "Pilot agencies, credit steering, performance discipline",
+    "private_property": "Strong but politically conditional in strategic sectors",
+    "labor_treatment": "Varies; often repression or incorporation during high-growth phases",
+    "concentrated_power_approach": "National champions and conglomerates cultivated then sometimes disciplined",
+    "accountability_source": "Performance legitimacy and bureaucratic insulation (contested)",
+    "strengths": [
+      "Rapid industrialization capacity",
+      "Learning-by-doing coordination"
+    ],
+    "risks": [
+      "Authoritarian politics",
+      "Crony degeneration",
+      "Hard mid-income transitions"
+    ],
+    "relationship_to_cc": "CC rejects authoritarian insulation; may study performance discipline without importing unaccountable pilot agencies",
+    "historical_exemplars": [
+      "Japan MITI debates",
+      "South Korea and Taiwan high-growth literatures"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MERCANTILISM",
+      "CC-SYS-STATE-CAPITALISM",
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-AUTHORITARIAN-MARKET-ECONOMY"
+    ],
+    "dossier_path": "content/public-resources/systems/developmental-state.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-DISTRIBUTISM",
+    "slug": "distributism",
+    "name": "Distributism",
+    "family": "Coordinated-market",
+    "era": "Early 20th-century Catholic social thought; ongoing niche",
+    "ownership_model": "Widely distributed small-scale productive property",
+    "role_of_markets": "Markets with preference for small owners and local exchange",
+    "role_of_government": "Supports ownership dispersion and associations; anti-monopoly spirit",
+    "private_property": "Strong and broad",
+    "labor_treatment": "Family and guild-oriented work; skepticism of proletarian wage dependence",
+    "concentrated_power_approach": "Structural dispersion of property",
+    "accountability_source": "Household, parish, and local association",
+    "strengths": [
+      "Independence",
+      "Local ownership",
+      "Anti-servility ethic"
+    ],
+    "risks": [
+      "Scale limitations",
+      "Romanticism",
+      "Under-specified macro institutions"
+    ],
+    "relationship_to_cc": "Shares broad ownership aim; not a fixed CC form or confessional program",
+    "historical_exemplars": [
+      "Chesterton and Belloc writings",
+      "Select cooperative/agrarian experiments"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-CLASSICAL-REPUBLICAN-MIXED-ECONOMY",
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-GEORGISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/distributism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-COOPERATIVE-ECONOMICS",
+    "slug": "cooperative-economics",
+    "name": "Cooperative economics",
+    "family": "Coordinated-market",
+    "era": "19th century–present",
+    "ownership_model": "Member-owned firms and associations",
+    "role_of_markets": "Markets can coordinate cooperatives alongside other firms",
+    "role_of_government": "Enables cooperative legal structures and sometimes preferential policy",
+    "private_property": "Strong, often collective among members",
+    "labor_treatment": "Workers or consumer-members govern enterprises",
+    "concentrated_power_approach": "Member ownership as counter to investor concentration",
+    "accountability_source": "Member governance (one-member-one-vote norms common)",
+    "strengths": [
+      "Participation",
+      "Shared returns",
+      "Local anchoring potential"
+    ],
+    "risks": [
+      "Capital access constraints",
+      "Governance collective-action problems"
+    ],
+    "relationship_to_cc": "CC treats cooperatives as one possible ownership mechanism among others",
+    "historical_exemplars": [
+      "Rochdale principles",
+      "Mondragon (comparative case literature)",
+      "Credit union movements"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MUTUALISM",
+      "CC-SYS-MARKET-SOCIALISM",
+      "CC-SYS-DISTRIBUTISM",
+      "CC-SYS-PUBLIC-BENEFIT-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/cooperative-economics.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-COMMONS-CPR-GOVERNANCE",
+    "slug": "commons-cpr-governance",
+    "name": "Commons / common-pool resource governance",
+    "family": "Coordinated-market",
+    "era": "Long historical practice; late 20th-century institutional analysis",
+    "ownership_model": "Shared resource systems with community rules (not open-access chaos)",
+    "role_of_markets": "May coexist; core allocation often by local rules and norms",
+    "role_of_government": "May recognize, support, or undermine local governance",
+    "private_property": "Nested rights; not simple private vs state binary",
+    "labor_treatment": "Users contribute monitoring and maintenance labor",
+    "concentrated_power_approach": "Local rule design to prevent overuse and elite capture (aspirational)",
+    "accountability_source": "User communities and nested institutions",
+    "strengths": [
+      "Local knowledge",
+      "Sustainable use potential",
+      "Polycentric governance insights"
+    ],
+    "risks": [
+      "Elite capture",
+      "Scale limits",
+      "External pressure breakdown"
+    ],
+    "relationship_to_cc": "Informative for polycentric governance; not a complete national economic system substitute for CC",
+    "historical_exemplars": [
+      "Irrigation communities",
+      "Fisheries and forest commons case studies in Ostrom tradition"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-MUTUALISM",
+      "CC-SYS-FEUDALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/commons-cpr-governance.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-GEORGISM",
+    "slug": "georgism",
+    "name": "Georgism",
+    "family": "Coordinated-market",
+    "era": "Late 19th century–present land-value tax tradition",
+    "ownership_model": "Private improvements; social claim on land rents",
+    "role_of_markets": "Markets for goods and labor; land taxed to capture unearned rent",
+    "role_of_government": "Assesses and taxes land value; otherwise often market-friendly",
+    "private_property": "Strong in produced capital; land rent socialized via tax",
+    "labor_treatment": "Labor and capital keep what they produce; land rent redirected",
+    "concentrated_power_approach": "Attacks land monopoly and speculative rent",
+    "accountability_source": "Fiscal transparency of land assessments",
+    "strengths": [
+      "Clear rent theory",
+      "Anti-speculation logic",
+      "Compatibility with markets"
+    ],
+    "risks": [
+      "Assessment politics",
+      "Transition conflicts",
+      "Incomplete as full system"
+    ],
+    "relationship_to_cc": "Interesting anti-rent instrument set; not identical to CC and not silently adopted as doctrine",
+    "historical_exemplars": [
+      "Henry George's Progress and Poverty movement",
+      "Select land-value tax local experiments"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-PHYSIOCRACY",
+      "CC-SYS-DISTRIBUTISM",
+      "CC-SYS-LAISSEZ-FAIRE-CAPITALISM",
+      "CC-SYS-SOCIAL-DEMOCRACY"
+    ],
+    "dossier_path": "content/public-resources/systems/georgism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-DEMOCRATIC-SOCIALISM",
+    "slug": "democratic-socialism",
+    "name": "Democratic socialism",
+    "family": "Socialist",
+    "era": "20th–21st century (contested usage)",
+    "ownership_model": "Substantial social, public, or worker ownership of major assets",
+    "role_of_markets": "Markets vary by program—from limited to sectoral",
+    "role_of_government": "Democratic direction of investment and ownership forms",
+    "private_property": "Limited for major productive assets",
+    "labor_treatment": "Labor as co-owner or democratic participant",
+    "concentrated_power_approach": "Public/social ownership as primary curb on capital concentration",
+    "accountability_source": "Democratic social control",
+    "strengths": [
+      "Equality ambitions",
+      "Workplace voice",
+      "Public control of investment"
+    ],
+    "risks": [
+      "State or collective control risks",
+      "Capital flight",
+      "Innovation and calculation debates"
+    ],
+    "relationship_to_cc": "CC protects private property as foundational and is not this system",
+    "historical_exemplars": [
+      "Programmatic party platforms",
+      "Select nationalization waves under democratic governments"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-SOCIALISM",
+      "CC-SYS-SOCIAL-DEMOCRACY",
+      "CC-SYS-MARKET-SOCIALISM",
+      "CC-SYS-SYNDICALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/democratic-socialism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-SOCIALISM",
+    "slug": "socialism",
+    "name": "Socialism",
+    "family": "Socialist",
+    "era": "19th century–present (family of systems)",
+    "ownership_model": "Social, cooperative, or state ownership of major productive assets",
+    "role_of_markets": "Markets range from limited to absent across variants",
+    "role_of_government": "Directs or owns significant production",
+    "private_property": "Restricted for major assets",
+    "labor_treatment": "Labor framed as collective producer",
+    "concentrated_power_approach": "Social ownership as primary remedy to capital concentration",
+    "accountability_source": "Social ownership or planning institutions",
+    "strengths": [
+      "Equality aims",
+      "Coordination ambitions",
+      "Decommodification goals"
+    ],
+    "risks": [
+      "Liberty risks",
+      "Innovation and incentive problems",
+      "New elite formation"
+    ],
+    "relationship_to_cc": "CC is not socialism",
+    "historical_exemplars": [
+      "Diverse national experiments and movements",
+      "Second International traditions"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-DEMOCRATIC-SOCIALISM",
+      "CC-SYS-MARXISM",
+      "CC-SYS-MARKET-SOCIALISM",
+      "CC-SYS-COMMAND-ECONOMIES"
+    ],
+    "dossier_path": "content/public-resources/systems/socialism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-MARXISM",
+    "slug": "marxism",
+    "name": "Marxism",
+    "family": "Socialist",
+    "era": "19th century theory; 20th century political movements",
+    "ownership_model": "Collective ownership after class transformation",
+    "role_of_markets": "Markets seen as historically superseded under full communism; socialism as transition debated",
+    "role_of_government": "State often transitional in theory (dictatorship of the proletariat debates)",
+    "private_property": "Abolished for productive capital",
+    "labor_treatment": "Labor emancipated from wage relation in the ideal trajectory",
+    "concentrated_power_approach": "Class abolition through revolutionary transformation",
+    "accountability_source": "Historical materialism and proletarian political rule (theory)",
+    "strengths": [
+      "Structural critique of exploitation and crisis",
+      "Totalizing social analysis"
+    ],
+    "risks": [
+      "Authoritarian implementation risks",
+      "Teleology",
+      "Suppression of pluralism"
+    ],
+    "relationship_to_cc": "CC rejects class-revolutionary premises and abolition of productive private property",
+    "historical_exemplars": [
+      "Marx and Engels theoretical corpus",
+      "Diverse 20th-century Marxist parties and states"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-COMMUNISM",
+      "CC-SYS-SOCIALISM",
+      "CC-SYS-COMMAND-ECONOMIES",
+      "CC-SYS-SYNDICALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/marxism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-COMMUNISM",
+    "slug": "communism",
+    "name": "Communism",
+    "family": "Socialist",
+    "era": "Theoretical end-state; 20th-century party-state claims",
+    "ownership_model": "Common ownership in a classless ideal",
+    "role_of_markets": "Markets abolished in the ideal form",
+    "role_of_government": "State withers away in theory; party-states claimed the name in practice",
+    "private_property": "Abolished for productive assets in the ideal",
+    "labor_treatment": "Labor allocated by communal principle ('from each…')",
+    "concentrated_power_approach": "Eliminates class ownership in theory",
+    "accountability_source": "Communal self-rule in theory; party hierarchy in many practices",
+    "strengths": [
+      "Egalitarian ideal",
+      "Critique of class division"
+    ],
+    "risks": [
+      "Coordination problems",
+      "Coercion in practice",
+      "Gap between ideal and party-state"
+    ],
+    "relationship_to_cc": "CC rejects abolition of property and markets",
+    "historical_exemplars": [
+      "Marxian end-state writings",
+      "20th-century Communist Party states (practical claimants)"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MARXISM",
+      "CC-SYS-COMMAND-ECONOMIES",
+      "CC-SYS-SOCIALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/communism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-COMMAND-ECONOMIES",
+    "slug": "command-economies",
+    "name": "Command economies",
+    "family": "Socialist",
+    "era": "20th-century Soviet-type and related systems",
+    "ownership_model": "State ownership or command over production",
+    "role_of_markets": "Planning replaces most market allocation",
+    "role_of_government": "Central planners direct output, prices, and investment",
+    "private_property": "Restricted",
+    "labor_treatment": "Labor allocated administratively; enterprise employment norms",
+    "concentrated_power_approach": "Central command concentration",
+    "accountability_source": "Planning authority and party hierarchy",
+    "strengths": [
+      "Mobilization for defined crash goals",
+      "Rapid structural shift capacity"
+    ],
+    "risks": [
+      "Information failures",
+      "Shortages",
+      "Coercion",
+      "Innovation drag"
+    ],
+    "relationship_to_cc": "Contrary to CC market freedom and private property foundations",
+    "historical_exemplars": [
+      "Soviet-type economies",
+      "Classic central planning textbooks and critiques"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-STATE-CAPITALISM",
+      "CC-SYS-COMMUNISM",
+      "CC-SYS-MARKET-SOCIALISM",
+      "CC-SYS-TRIBUTARY-PALACE-ECONOMY"
+    ],
+    "dossier_path": "content/public-resources/systems/command-economies.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-MARKET-SOCIALISM",
+    "slug": "market-socialism",
+    "name": "Market socialism",
+    "family": "Socialist",
+    "era": "20th–21st century theoretical and reform models",
+    "ownership_model": "Social or public ownership of firms that compete in markets",
+    "role_of_markets": "Markets allocate goods; capital ownership socialized",
+    "role_of_government": "Sets ownership rules, regulation, and sometimes investment planning",
+    "private_property": "Limited for means of production; personal property retained",
+    "labor_treatment": "Worker self-management variants or publicly hired labor",
+    "concentrated_power_approach": "Social ownership plus market competition among enterprises",
+    "accountability_source": "Boards, planners, or worker councils depending on model",
+    "strengths": [
+      "Attempts to combine social ownership with price signals"
+    ],
+    "risks": [
+      "Soft budgets",
+      "Political interference",
+      "Investment inefficiency debates"
+    ],
+    "relationship_to_cc": "Still socializes productive capital; CC retains private productive property",
+    "historical_exemplars": [
+      "Lange model debates",
+      "Yugoslav self-management literature",
+      "Late socialist reform programs"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-SOCIALISM",
+      "CC-SYS-DEMOCRATIC-SOCIALISM",
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-COMMAND-ECONOMIES"
+    ],
+    "dossier_path": "content/public-resources/systems/market-socialism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-SYNDICALISM",
+    "slug": "syndicalism",
+    "name": "Syndicalism",
+    "family": "Socialist",
+    "era": "Early 20th-century labor movements",
+    "ownership_model": "Producer unions / syndicates control industry",
+    "role_of_markets": "Often subordinated to federated producer coordination",
+    "role_of_government": "Skeptical of parliamentary state; dual power via unions",
+    "private_property": "Rejected for productive assets",
+    "labor_treatment": "Workers as collective industrial sovereigns",
+    "concentrated_power_approach": "Union federation replaces capital owners",
+    "accountability_source": "Union democracy and industrial federations",
+    "strengths": [
+      "Workplace democracy ideal",
+      "Direct producer power"
+    ],
+    "risks": [
+      "Producer capture against consumers",
+      "Coordination across industries",
+      "Militancy-institutionalization tension"
+    ],
+    "relationship_to_cc": "Rejects private capital sovereignty; incompatible with CC property foundations",
+    "historical_exemplars": [
+      "French CGT revolutionary syndicalism",
+      "Spanish CNT traditions",
+      "IWW influence"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MUTUALISM",
+      "CC-SYS-DEMOCRATIC-SOCIALISM",
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-MARXISM"
+    ],
+    "dossier_path": "content/public-resources/systems/syndicalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-MUTUALISM",
+    "slug": "mutualism",
+    "name": "Mutualism",
+    "family": "Socialist",
+    "era": "19th-century Proudhonian and related traditions",
+    "ownership_model": "Possessory use-rights and mutual credit; anti-capitalist rent/interest critique",
+    "role_of_markets": "Markets of independent producers without capitalist profit on capital",
+    "role_of_government": "Minimal or federative; anti-authoritarian",
+    "private_property": "Possession of use; hostility to absentee capitalist property",
+    "labor_treatment": "Independent producers and mutual associations",
+    "concentrated_power_approach": "Mutual credit and anti-monopoly norms",
+    "accountability_source": "Contracts among free producers and mutual banks",
+    "strengths": [
+      "Anti-authoritarian socialism",
+      "Producer independence ethic"
+    ],
+    "risks": [
+      "Credit system fragility",
+      "Scale limits",
+      "Ambiguity vs markets"
+    ],
+    "relationship_to_cc": "Shares anti-domination instincts but rejects CC's acceptance of productive private capital within constitutional limits",
+    "historical_exemplars": [
+      "P.J. Proudhon's writings",
+      "Mutual credit experiments"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-ANARCHO-CAPITALISM",
+      "CC-SYS-COOPERATIVE-ECONOMICS",
+      "CC-SYS-SYNDICALISM",
+      "CC-SYS-DISTRIBUTISM"
+    ],
+    "dossier_path": "content/public-resources/systems/mutualism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-STATE-CAPITALISM",
+    "slug": "state-capitalism",
+    "name": "State capitalism",
+    "family": "Socialist",
+    "era": "20th–21st century comparative label",
+    "ownership_model": "State owns or controls key enterprises while using market or quasi-market tools",
+    "role_of_markets": "Markets may operate under state direction",
+    "role_of_government": "State is owner, regulator, and strategist",
+    "private_property": "Limited or subordinate in commanding heights",
+    "labor_treatment": "Labor often state-directed or weakly independent",
+    "concentrated_power_approach": "State concentration of economic power",
+    "accountability_source": "State authority and performance legitimacy",
+    "strengths": [
+      "Mobilization",
+      "Strategic investment capacity"
+    ],
+    "risks": [
+      "Political coercion",
+      "Weak independent accountability",
+      "Soft budgets"
+    ],
+    "relationship_to_cc": "Contrary to CC independent property and constitutional limits on state economic domination",
+    "historical_exemplars": [
+      "Debates over USSR as state capitalism",
+      "Contemporary SOE-heavy marketizers"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-COMMAND-ECONOMIES",
+      "CC-SYS-DEVELOPMENTAL-STATE",
+      "CC-SYS-AUTHORITARIAN-MARKET-ECONOMY",
+      "CC-SYS-MIXED-ECONOMY"
+    ],
+    "dossier_path": "content/public-resources/systems/state-capitalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-CRONY-CAPITALISM",
+    "slug": "crony-capitalism",
+    "name": "Crony capitalism",
+    "family": "Diagnostic",
+    "era": "Recurrent pathology across market eras",
+    "ownership_model": "Nominally private ownership with privileged political access",
+    "role_of_markets": "Markets distorted by favors, barriers, and selective enforcement",
+    "role_of_government": "Distributes privileges, bailouts, and protection to connected firms",
+    "private_property": "Formal but selectively applied",
+    "labor_treatment": "Labor subject to privileged firms' market power",
+    "concentrated_power_approach": "Protects favored incumbents",
+    "accountability_source": "Patronage networks",
+    "strengths": [
+      "Can mobilize aligned investment quickly",
+      "Predictability for insiders"
+    ],
+    "risks": [
+      "Corruption",
+      "Weak competition",
+      "Public cynicism"
+    ],
+    "relationship_to_cc": "Directly contrary to CC",
+    "historical_exemplars": [
+      "Privilege-ridden developmental episodes",
+      "Regulatory capture case literatures"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-MERCANTILISM",
+      "CC-SYS-OLIGARCHY",
+      "CC-SYS-KLEPTOCRACY",
+      "CC-SYS-DEVELOPMENTAL-STATE"
+    ],
+    "dossier_path": "content/public-resources/systems/crony-capitalism.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-OLIGARCHY",
+    "slug": "oligarchy",
+    "name": "Oligarchy",
+    "family": "Diagnostic",
+    "era": "Ancient concept; modern comparative use",
+    "ownership_model": "Ownership and control concentrated among a small elite",
+    "role_of_markets": "Markets subordinate to elite coordination when they conflict with elite interests",
+    "role_of_government": "Government captured or directed by the few",
+    "private_property": "Selective—strong for elites",
+    "labor_treatment": "Labor dependent on elite institutions",
+    "concentrated_power_approach": "Concentration entrenched as governing principle",
+    "accountability_source": "Elite cohesion and coercion",
+    "strengths": [
+      "Fast elite coordination",
+      "Policy stability for insiders"
+    ],
+    "risks": [
+      "Domination",
+      "Weak accountability",
+      "Exit of talent and capital over time"
+    ],
+    "relationship_to_cc": "Contrary to CC anti-concentration and equal citizenship",
+    "historical_exemplars": [
+      "Classical Greek oligarchic constitutions (concept)",
+      "Modern 'oligarch' literatures in post-Soviet and other contexts"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-PLUTOCRACY",
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-CLASSICAL-REPUBLICAN-MIXED-ECONOMY",
+      "CC-SYS-KLEPTOCRACY"
+    ],
+    "dossier_path": "content/public-resources/systems/oligarchy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-PLUTOCRACY",
+    "slug": "plutocracy",
+    "name": "Plutocracy",
+    "family": "Diagnostic",
+    "era": "Modern democratic-capitalist pathology label",
+    "ownership_model": "Wealth holders dominate ownership and politics",
+    "role_of_markets": "Markets reinforce wealth-to-power translation",
+    "role_of_government": "Disproportionately responsive to wealth",
+    "private_property": "Strong for elites",
+    "labor_treatment": "Labor voice diminished relative to capital",
+    "concentrated_power_approach": "Money translates into political control",
+    "accountability_source": "Campaign finance, lobbying, and elite media influence (mechanisms vary)",
+    "strengths": [
+      "Investment capacity",
+      "Policy attention to capital formation"
+    ],
+    "risks": [
+      "Political inequality",
+      "Capture",
+      "Erosion of equal citizenship"
+    ],
+    "relationship_to_cc": "Contrary to CC separation of economic power from civic domination",
+    "historical_exemplars": [
+      "Progressive Era critiques",
+      "Contemporary money-in-politics research programs"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-OLIGARCHY",
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-SHAREHOLDER-PRIMACY-CAPITALISM",
+      "CC-SYS-CONSTITUTIONAL-CAPITALISM"
+    ],
+    "dossier_path": "content/public-resources/systems/plutocracy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-KLEPTOCRACY",
+    "slug": "kleptocracy",
+    "name": "Kleptocracy",
+    "family": "Diagnostic",
+    "era": "Modern comparative politics / illicit finance",
+    "ownership_model": "Public office used to seize and launder private fortunes",
+    "role_of_markets": "Markets become channels for looting and offshore concealment",
+    "role_of_government": "Government is the extraction machine",
+    "private_property": "Insecure for subjects; hyper-secure for protected looters",
+    "labor_treatment": "Labor and citizens as fiscal prey",
+    "concentrated_power_approach": "Theft centralized in ruling networks",
+    "accountability_source": "Fear, patronage, and opacity",
+    "strengths": [
+      "Enrichment of rulers",
+      "Short-term loyalty buying"
+    ],
+    "risks": [
+      "State failure risk",
+      "Capital flight",
+      "Violence",
+      "Development collapse"
+    ],
+    "relationship_to_cc": "Maximally contrary to constitutional accountable government and lawful property",
+    "historical_exemplars": [
+      "Comparative kleptocracy case studies",
+      "Illicit financial flows literatures"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-OLIGARCHY",
+      "CC-SYS-AUTHORITARIAN-MARKET-ECONOMY"
+    ],
+    "dossier_path": "content/public-resources/systems/kleptocracy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-FASCIST-POLITICAL-ECONOMY",
+    "slug": "fascist-political-economy",
+    "name": "Fascist political economy / fascist corporatism",
+    "family": "Political-economic",
+    "era": "Interwar Europe; cautionary comparative type",
+    "ownership_model": "Private property retained under state-dictated corporatist coordination",
+    "role_of_markets": "Markets subordinated to autarky, militarization, and party goals",
+    "role_of_government": "Dictatorial party-state directs syndicates and firms",
+    "private_property": "Formally private; politically conditional",
+    "labor_treatment": "Independent unions crushed; compulsory syndicates",
+    "concentrated_power_approach": "State-party concentration; cartels under political command",
+    "accountability_source": "Leader and party; terror against opponents",
+    "strengths": [
+      "Rapid militarized mobilization (historical)",
+      "Suppression of left labor conflict (from regime view)"
+    ],
+    "risks": [
+      "Totalitarian violence",
+      "War",
+      "Destruction of pluralism",
+      "Economic irrationality under politics"
+    ],
+    "relationship_to_cc": "Absolutely contrary to CC's constitutional liberty and anti-domination",
+    "historical_exemplars": [
+      "Italian Fascist corporatist institutions",
+      "Nazi economic controls (related but not identical)"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-CORPORATISM",
+      "CC-SYS-AUTHORITARIAN-MARKET-ECONOMY",
+      "CC-SYS-COMMAND-ECONOMIES"
+    ],
+    "dossier_path": "content/public-resources/systems/fascist-political-economy.md",
+    "status": "developing_analytical_tool"
+  },
+  {
+    "id": "CC-SYS-AUTHORITARIAN-MARKET-ECONOMY",
+    "slug": "authoritarian-market-economy",
+    "name": "Authoritarian market economy / illiberal capitalism",
+    "family": "Political-economic",
+    "era": "Late 20th–21st century comparative type",
+    "ownership_model": "Private and state ownership under authoritarian political monopoly",
+    "role_of_markets": "Product and labor markets operate; politics closed",
+    "role_of_government": "Authoritarian center sets red lines; selectively intervenes in firms",
+    "private_property": "Real but politically contingent",
+    "labor_treatment": "Markets with restricted independent organizing",
+    "concentrated_power_approach": "Political concentration primary; economic concentration tolerated or managed",
+    "accountability_source": "Performance and coercion more than open contestation",
+    "strengths": [
+      "Policy continuity",
+      "Rapid projects without electoral vetoes (regime claim)"
+    ],
+    "risks": [
+      "Rights abuses",
+      "Succession crises",
+      "Crony/kleptocratic drift",
+      "Information distortion"
+    ],
+    "relationship_to_cc": "Rejects CC's democratic constitutional accountability even if markets exist",
+    "historical_exemplars": [
+      "Comparative 'authoritarian capitalism' case literatures",
+      "Illiberal market reformers"
+    ],
+    "neighbor_systems": [
+      "CC-SYS-DEVELOPMENTAL-STATE",
+      "CC-SYS-STATE-CAPITALISM",
+      "CC-SYS-CRONY-CAPITALISM",
+      "CC-SYS-FASCIST-POLITICAL-ECONOMY"
+    ],
+    "dossier_path": "content/public-resources/systems/authoritarian-market-economy.md",
     "status": "developing_analytical_tool"
   }
 ]

@@ -419,21 +419,23 @@
       "title": "Startup rate",
       "domain_id": "CC-NB-BUSINESS",
       "domain_name": "Business",
-      "definition": "Startup rate — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Census BDS economy-wide establishment entry rate: rate of establishments born during the last 12 months (ESTABS_ENTRY_RATE).",
+      "unit": "percent",
+      "current_value": 10.608,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-261"
+      ],
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS) Economy-wide national cell unless geography explicitly narrower",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "source_identified_data_pending",
+      "confidence_level": "high",
+      "status": "sourced",
       "ontology_class": "STRUCTURAL INDICATOR",
       "scoreboard_inclusion": "baseline_slot",
       "governance_disposition": "DEFER — PRIMARY RETRIEVAL PENDING",
@@ -441,54 +443,68 @@
       "governance_at": "2026-08-10",
       "counts_toward_baseline_scoreboard": true,
       "deferred_disposition": "DATA AVAILABLE IN PRINCIPLE / PRIMARY RETRIEVAL PENDING",
-      "deferred_note": "Authoritative series remains Census BDS economy-wide establishment entry rate (estabs_entry_rate). Cloudflare 520 stubs and timed-out CSV URLs are rejected as evidence. No secondary republisher substitution.",
-      "baseline_completion_state": "SOURCE_IDENTIFIED_DATA_PENDING",
-      "identified_source": {
-        "agency": "US Census Bureau",
-        "series": "Business Dynamics Statistics estabs_entry_rate",
-        "preferred_paths": [
-          "https://www2.census.gov/programs-surveys/bds/tables/time-series/2023/bds2023_e.csv",
-          "Census Bureau API (requires key)"
-        ]
+      "baseline_completion_state": "BASELINE_COMPLETE",
+      "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+      "last_reviewed_at": "2026-08-10",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "RedDirt RCIP aligned seed → export exp_79f42d2fe71f4b69 → CC import → DIRECT MATCH promotion",
+        "url": "https://api.census.gov/data/timeseries/bds",
+        "agencies": [
+          "US Census Bureau"
+        ],
+        "reddirt_observation_id": "obs_776eaece2a0847f3",
+        "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
       },
-      "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-CONTINUATION-1.0",
-      "last_reviewed_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "status_note": "Definition locked to official Census series in aligned expansion slice."
     },
     {
       "metric_id": "CC-IND-B02",
       "title": "Business survival",
       "domain_id": "CC-NB-BUSINESS",
       "domain_name": "Business",
-      "definition": "Business survival — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Census BDS economy-wide establishment exit rate: rate of establishments exited during the last 12 months (ESTABS_EXIT_RATE). Official BDS survival-family complement to establishment entry.",
+      "unit": "percent",
+      "current_value": 9.396,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-262"
+      ],
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS) Economy-wide national cell unless geography explicitly narrower",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "source_identified_data_pending",
+      "confidence_level": "high",
+      "status": "sourced",
       "ontology_class": "STRUCTURAL INDICATOR",
       "scoreboard_inclusion": "baseline_slot",
       "governance_disposition": "DEFER — PRIMARY RETRIEVAL PENDING",
       "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
       "governance_at": "2026-08-10",
       "counts_toward_baseline_scoreboard": true,
-      "baseline_completion_state": "SOURCE_IDENTIFIED_DATA_PENDING",
+      "baseline_completion_state": "BASELINE_COMPLETE",
       "deferred_disposition": "SOURCE_IDENTIFIED_DATA_PENDING",
-      "deferred_note": "Authoritative family is Census BDS survival/exit measures. Same primary-retrieval blockage as B01; do not substitute secondary republishers.",
-      "identified_source": {
-        "agency": "US Census Bureau",
-        "series": "Business Dynamics Statistics survival / exit rates"
+      "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+      "last_reviewed_at": "2026-08-10",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "RedDirt RCIP aligned seed → export exp_79f42d2fe71f4b69 → CC import → DIRECT MATCH promotion",
+        "url": "https://api.census.gov/data/timeseries/bds",
+        "agencies": [
+          "US Census Bureau"
+        ],
+        "reddirt_observation_id": "obs_01c668577cce4129",
+        "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
       },
-      "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-CONTINUATION-1.0",
-      "last_reviewed_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "status_note": "Definition locked to official Census series in aligned expansion slice."
     },
     {
       "metric_id": "CC-IND-B03",
@@ -621,36 +637,46 @@
       "title": "New entrants",
       "domain_id": "CC-NB-COMPETITION",
       "domain_name": "Competition",
-      "definition": "New entrants — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Census BDS count of establishments born during the last 12 months (ESTABS_ENTRY) — economy-wide new establishment entrants.",
+      "unit": "establishments",
+      "current_value": 790295,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-263"
+      ],
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS) Economy-wide national cell unless geography explicitly narrower",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "source_identified_data_pending",
+      "confidence_level": "high",
+      "status": "sourced",
       "ontology_class": "STRUCTURAL INDICATOR",
       "scoreboard_inclusion": "baseline_slot",
       "governance_disposition": "DEFER — PRIMARY RETRIEVAL PENDING",
       "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
       "governance_at": "2026-08-10",
       "counts_toward_baseline_scoreboard": true,
-      "baseline_completion_state": "SOURCE_IDENTIFIED_DATA_PENDING",
+      "baseline_completion_state": "BASELINE_COMPLETE",
       "deferred_disposition": "SOURCE_IDENTIFIED_DATA_PENDING",
-      "deferred_note": "Closely coupled to BDS entry/establishment dynamics. Source identified; primary observation pending with B01/B02 retrieval.",
-      "identified_source": {
-        "agency": "US Census Bureau",
-        "series": "Business Dynamics Statistics / related entry measures"
+      "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+      "last_reviewed_at": "2026-08-10",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "RedDirt RCIP aligned seed → export exp_79f42d2fe71f4b69 → CC import → DIRECT MATCH promotion",
+        "url": "https://api.census.gov/data/timeseries/bds",
+        "agencies": [
+          "US Census Bureau"
+        ],
+        "reddirt_observation_id": "obs_30ad90977a5349e5",
+        "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
       },
-      "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-CONTINUATION-1.0",
-      "last_reviewed_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "status_note": "Definition locked to official Census series in aligned expansion slice."
     },
     {
       "metric_id": "CC-IND-C03",
@@ -2992,23 +3018,23 @@
       "title": "Civic participation among young adults",
       "domain_id": "CC-NB-HUMANCAPITAL",
       "domain_name": "Human Capital Doctrine",
-      "definition": "Civic participation among young adults — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
+      "definition": "Percent of United States citizens ages 18–24 who reported voting in the November 2024 election (CPS Voting and Registration Supplement, P20-587 Table 1).",
+      "unit": "percent_of_citizen_population_ages_18_24",
+      "current_value": 47.7,
+      "reference_year": "2024",
       "source_ids": [
-        "CC-SRC-260"
+        "CC-SRC-264"
       ],
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 human-capital diagnosis.",
+      "limitations": "Self-reported voting; overstates administrative turnout Age band 18-24 citizen population — not total population rate",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "source_identified_data_pending",
+      "confidence_level": "high",
+      "status": "sourced",
       "ontology_class": "STRUCTURAL INDICATOR",
       "scoreboard_inclusion": "baseline_slot",
       "governance_disposition": "DEFER — CURRENT OBSERVATION PENDING",
@@ -3016,16 +3042,22 @@
       "governance_at": "2026-08-10",
       "counts_toward_baseline_scoreboard": true,
       "deferred_disposition": "PRIMARY HISTORICAL SERIES CONFIRMED / CURRENT OBSERVATION PENDING",
-      "deferred_note": "CPS A-1 workbook confirms reproducible primary path for 18–24 citizen voting rate through 2020 (e.g., 51.4% in 2020). That 2020 value must not be presented as the current baseline if the slot intends to represent 2024. 2024 CPS P20-587 age-table retrieval remains failed (timeouts) — infrastructure failure, not evidence failure. Source path preserved: CC-SRC-260.",
-      "baseline_completion_state": "SOURCE_IDENTIFIED_DATA_PENDING",
-      "identified_source": {
-        "agency": "US Census Bureau",
-        "series": "CPS Voting and Registration — ages 18–24 citizen reported voting rate",
-        "historical_path": "https://www2.census.gov/programs-surveys/cps/tables/time-series/voting-historical-time-series/a1.xlsx",
-        "current_path_pending": "https://www2.census.gov/programs-surveys/cps/tables/p20/587/ (age tables; retrieval failed)"
+      "baseline_completion_state": "BASELINE_COMPLETE",
+      "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+      "last_reviewed_at": "2026-08-10",
+      "observation_type": "directly_observed_official_series",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "RedDirt RCIP aligned seed → export exp_79f42d2fe71f4b69 → CC import → DIRECT MATCH promotion",
+        "url": "https://www2.census.gov/programs-surveys/cps/tables/p20/587/vote01_2024.xlsx",
+        "agencies": [
+          "US Census Bureau"
+        ],
+        "reddirt_observation_id": "obs_df024ceab3464c30",
+        "reddirt_ingestion_run_id": "run_499dbc69266f4d6f"
       },
-      "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-CONTINUATION-1.0",
-      "last_reviewed_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "status_note": "Definition locked to official Census series in aligned expansion slice."
     },
     {
       "metric_id": "CC-IND-HC08",

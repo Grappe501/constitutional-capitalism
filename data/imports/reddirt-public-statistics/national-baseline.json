@@ -21,7 +21,7 @@
       "cross_check_status": "not_applicable",
       "official_source_url": "https://api.census.gov/data.html",
       "reddirt_observation_id": "obs_90e79e2a2b334c0b",
-      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
       "reddirt_source_query_id": "qry_981f01a9c3d54d49",
       "reddirt_ingestion_run_id": "run_a81ac69cbb444a91"
     },
@@ -46,7 +46,7 @@
       "cross_check_status": "not_applicable",
       "official_source_url": "https://www.bls.gov/data/",
       "reddirt_observation_id": "obs_f42ac1e52eea4fe8",
-      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
       "reddirt_source_query_id": "qry_394d77af6ae84333",
       "reddirt_ingestion_run_id": "run_c86e497b5b904990"
     },
@@ -71,7 +71,7 @@
       "cross_check_status": "not_applicable",
       "official_source_url": "https://www.bls.gov/data/",
       "reddirt_observation_id": "obs_d74c9ec9f23c4db9",
-      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
       "reddirt_source_query_id": "qry_4d46904b2455474f",
       "reddirt_ingestion_run_id": "run_c86e497b5b904990"
     },
@@ -96,9 +96,109 @@
       "cross_check_status": "not_applicable",
       "official_source_url": "https://www.bls.gov/data/",
       "reddirt_observation_id": "obs_1d8ddebc745249eb",
-      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
       "reddirt_source_query_id": "qry_81aa6427aba34d02",
       "reddirt_ingestion_run_id": "run_c86e497b5b904990"
+    },
+    {
+      "consumer_metric_id": "CC-IND-B01",
+      "title": "BDS ESTABS_ENTRY_RATE",
+      "value": 10.608,
+      "unit": "percent",
+      "reference_period": "2023",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "United States Census Bureau",
+      "dataset": "bds",
+      "series_code": "ESTABS_ENTRY_RATE",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_ENTRY_RATE",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://api.census.gov/data.html",
+      "reddirt_observation_id": "obs_776eaece2a0847f3",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
+      "reddirt_source_query_id": "qry_2c084115830045d8",
+      "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
+    },
+    {
+      "consumer_metric_id": "CC-IND-B02",
+      "title": "BDS ESTABS_EXIT_RATE",
+      "value": 9.396,
+      "unit": "percent",
+      "reference_period": "2023",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "United States Census Bureau",
+      "dataset": "bds",
+      "series_code": "ESTABS_EXIT_RATE",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_EXIT_RATE",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://api.census.gov/data.html",
+      "reddirt_observation_id": "obs_01c668577cce4129",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
+      "reddirt_source_query_id": "qry_9e45f51994f1486f",
+      "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
+    },
+    {
+      "consumer_metric_id": "CC-IND-C02",
+      "title": "BDS ESTABS_ENTRY",
+      "value": 790295,
+      "unit": "count",
+      "reference_period": "2023",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "United States Census Bureau",
+      "dataset": "bds",
+      "series_code": "ESTABS_ENTRY",
+      "definition": "Census Business Dynamics Statistics variable ESTABS_ENTRY",
+      "limitations": [
+        "BDS annual establishment/firm dynamics; do not confuse with Business Formation Statistics (BFS)",
+        "Economy-wide national cell unless geography explicitly narrower"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://api.census.gov/data.html",
+      "reddirt_observation_id": "obs_30ad90977a5349e5",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
+      "reddirt_source_query_id": "qry_2a38dc23b22a40a2",
+      "reddirt_ingestion_run_id": "run_ddae89aa6bac4572"
+    },
+    {
+      "consumer_metric_id": "CC-IND-HC07",
+      "title": "CPS 18-24 citizen reported voting rate",
+      "value": 47.7,
+      "unit": "percent",
+      "reference_period": "2024",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "United States Census Bureau",
+      "dataset": "cps_voting_p20_587",
+      "series_code": "citizen_voted_percent_18_to_24",
+      "definition": "CPS Voting and Registration: percent of United States citizens ages 18–24 who reported voting (November 2024)",
+      "limitations": [
+        "Self-reported voting; overstates administrative turnout",
+        "Age band 18-24 citizen population — not total population rate"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://api.census.gov/data.html",
+      "reddirt_observation_id": "obs_df024ceab3464c30",
+      "reddirt_export_id": "exp_79f42d2fe71f4b69",
+      "reddirt_source_query_id": "qry_a427e2d6d97044ea",
+      "reddirt_ingestion_run_id": "run_499dbc69266f4d6f"
     }
   ]
 }

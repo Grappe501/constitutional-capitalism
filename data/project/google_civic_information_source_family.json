@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "source_family": "GOOGLE_CIVIC_INFORMATION",
+  "generated_at": "2026-08-10",
+  "role": "Political geography and election-information source — not a socioeconomic statistics substitute for Census/BLS/BEA/USDA.",
+  "credential_boundary": {
+    "env_var": "GOOGLE_CIVIC_API_KEY",
+    "lives_in": "RedDirt RCIP worktree .env only (gitignored)",
+    "never_in_cc": true,
+    "configure_script": "H:/SOSWebsite/RedDirt-rcip-public-statistics/scripts/configure-google-civic-key.ps1",
+    "probe_script": "H:/SOSWebsite/RedDirt-rcip-public-statistics/scripts/probe-google-civic-api.mjs"
+  },
+  "documented_v2_resources": [
+    {
+      "resource": "elections.electionQuery",
+      "method": "GET /elections",
+      "use": "List supported elections"
+    },
+    {
+      "resource": "elections.voterInfoQuery",
+      "method": "GET /voterinfo",
+      "use": "Contests, candidates, polling/early/dropoff locations, election administration for an address during supported elections"
+    },
+    {
+      "resource": "divisions.search",
+      "method": "GET /divisions",
+      "use": "Political divisions / OCD identifiers by name or OCD ID"
+    }
+  ],
+  "existing_reddirt_infrastructure": [
+    {
+      "path": "scripts/verify-env-api-keys.mjs",
+      "uses": "GET /elections presence check"
+    },
+    {
+      "path": "scripts/build-city-intelligence-profiles.ts",
+      "uses": "GET /representatives (legacy — not in current v2 docs; re-verify before designing new pipelines)"
+    },
+    {
+      "path": ".env.example",
+      "uses": "Documents GOOGLE_CIVIC_API_KEY"
+    }
+  ],
+  "research_uses_for_cc": [
+    "political_geography_ocd_ids",
+    "election_and_contest_structure",
+    "ballot_complexity_and_contest_counts",
+    "polling_place_and_election_access_snapshots",
+    "election_administration_contacts",
+    "candidate_ballot_information_during_supported_elections",
+    "civic_information_infrastructure_vs_journalism_coverage"
+  ],
+  "privacy_rules": [
+    "Never warehouse residential addresses solely to query civic geography.",
+    "Prefer controlled reference/sample addresses or privacy-preserving geographic methods.",
+    "Election coverage is time-bounded; do not treat responses as a permanent historical database."
+  ],
+  "design_rule": "One source in the civic-data stack — not source of truth for everything. Cross with Census, BLS, FEC, journalism coverage, and turnout records.",
+  "inventory_probe_2026_08_10": {
+    "key_present": true,
+    "documented_endpoints_reachable_from_agent_egress": false,
+    "blocker": "API key IP address restriction rejected agent egress IP (HTTP 403). Key is recognized by Google but blocked for this network path.",
+    "remediation": [
+      "Run npm run civic:probe from an allowed IP (your research machine), or",
+      "In Google Cloud Console → Credentials → API key → Application restrictions, add the research machine IP / relax IP restriction for server-side research use",
+      "Keep key out of CC; only RedDirt .env"
+    ],
+    "legacy_representatives_endpoint": "Still used by build-city-intelligence-profiles.ts; not listed in current v2 docs — do not design new pipelines on it until re-verified after IP fix"
+  },
+  "next_research_step": "Fix IP restriction → re-run civic:probe → map GOOGLE_CIVIC_INFORMATION fields onto content_data_evidence_opportunity_registry passages (democracy, LCL, journalism, political capture)."
+}

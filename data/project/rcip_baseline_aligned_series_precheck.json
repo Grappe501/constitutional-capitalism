@@ -1,0 +1,150 @@
+{
+  "version": "1.0.0",
+  "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+  "generated_at": "2026-08-10",
+  "governing_lesson": "A functioning pipeline is not enough. The ingestion plan must be driven by the research ontology.",
+  "rule": "Only DIRECT MATCH or very strong POTENTIAL MATCH — DEFINITION REVIEW REQUIRED enter the priority seed. No agency-driven curiosity ingest.",
+  "scoreboard_at_start": "38/64",
+  "empty_slot_audit": {
+    "countable_empty": 26,
+    "source_identified_data_pending": ["CC-IND-B01", "CC-IND-B02", "CC-IND-C02", "CC-IND-HC07"],
+    "source_unknown_excluded_from_seed": 22,
+    "note": "The next 8–12 empty slots lack locked definitions/series and are OUT OF SCOPE until definition lock — not because APIs are unavailable."
+  },
+  "retrieval_hierarchy": [
+    "API",
+    "official_machine_readable_file",
+    "official_workbook_table",
+    "manual_primary"
+  ],
+  "candidates": [
+    {
+      "candidate_series": "ESTABS_ENTRY_RATE",
+      "agency_dataset": "Census BDS timeseries API /data/timeseries/bds",
+      "geography": "us:*",
+      "period": "2023",
+      "candidate_baseline_id": "CC-IND-B01",
+      "definition_fit": "pass_locked_bds_establishment_entry_rate",
+      "geographic_fit": "pass_national",
+      "temporal_fit": "pass_latest_bds_release_2023",
+      "expected_mapping_status": "DIRECT MATCH",
+      "observed_value_probe": 10.608,
+      "retrieval_path": "API",
+      "api_exposed": true,
+      "public_surfaces": [
+        "baseline_dashboard",
+        "business_dynamics_theory_pages",
+        "book_chapters_local_ownership_and_entry",
+        "public_reasoning_on_startup_claims",
+        "community_comparisons_later_state_bds"
+      ],
+      "seed_priority": "P0"
+    },
+    {
+      "candidate_series": "ESTABS_EXIT_RATE",
+      "agency_dataset": "Census BDS timeseries API /data/timeseries/bds",
+      "geography": "us:*",
+      "period": "2023",
+      "candidate_baseline_id": "CC-IND-B02",
+      "definition_fit": "pass_if_slot_locked_to_bds_establishment_exit_rate",
+      "geographic_fit": "pass_national",
+      "temporal_fit": "pass_latest_bds_release_2023",
+      "expected_mapping_status": "DIRECT MATCH",
+      "definition_lock_required": "Lock CC-IND-B02 to Census BDS economy-wide establishment exit rate (ESTABS_EXIT_RATE), the official survival-family complement to entry.",
+      "observed_value_probe": 9.396,
+      "retrieval_path": "API",
+      "api_exposed": true,
+      "public_surfaces": [
+        "baseline_dashboard",
+        "business_survival_and_churn_theory",
+        "book_chapters_business_dynamics",
+        "public_reasoning_on_failure_and_exit",
+        "community_comparisons_later"
+      ],
+      "seed_priority": "P0"
+    },
+    {
+      "candidate_series": "ESTABS_ENTRY",
+      "agency_dataset": "Census BDS timeseries API /data/timeseries/bds",
+      "geography": "us:*",
+      "period": "2023",
+      "candidate_baseline_id": "CC-IND-C02",
+      "definition_fit": "pass_if_slot_locked_to_bds_establishment_births_count",
+      "geographic_fit": "pass_national",
+      "temporal_fit": "pass_latest_bds_release_2023",
+      "expected_mapping_status": "DIRECT MATCH",
+      "definition_lock_required": "Lock CC-IND-C02 to Census BDS count of establishments born in the last 12 months (ESTABS_ENTRY).",
+      "observed_value_probe": 790295,
+      "retrieval_path": "API",
+      "api_exposed": true,
+      "public_surfaces": [
+        "baseline_dashboard",
+        "new_entrants_and_competition_pages",
+        "book_chapters_market_entry",
+        "public_reasoning_on_entrant_access",
+        "community_comparisons_later"
+      ],
+      "seed_priority": "P0"
+    },
+    {
+      "candidate_series": "CPS_P20_587_vote01_18_to_24_citizen_voted_percent",
+      "agency_dataset": "Census CPS Voting P20-587 Table 1 workbook vote01_2024.xlsx",
+      "geography": "national_US",
+      "period": "2024-11",
+      "candidate_baseline_id": "CC-IND-HC07",
+      "definition_fit": "pass_locked_18_24_citizen_reported_voting_rate",
+      "geographic_fit": "pass_national",
+      "temporal_fit": "pass_2024_presidential",
+      "expected_mapping_status": "DIRECT MATCH",
+      "observed_value_probe": 47.7,
+      "retrieval_path": "official_workbook_table",
+      "api_exposed": false,
+      "official_url": "https://www2.census.gov/programs-surveys/cps/tables/p20/587/vote01_2024.xlsx",
+      "cell": "BOTH SEXES / 18 to 24 years / United States citizen / Reported voted / Percent",
+      "public_surfaces": [
+        "baseline_dashboard",
+        "human_capital_and_civic_formation_pages",
+        "book_chapters_citizenship_and_youth",
+        "public_reasoning_on_youth_civic_participation",
+        "democracy_comparisons_with_D03"
+      ],
+      "seed_priority": "P0"
+    }
+  ],
+  "rejected_from_seed": [
+    {
+      "reason": "SOURCE_UNKNOWN / definition_deferred — no defensible DIRECT MATCH plan",
+      "metric_ids": [
+        "CC-IND-B03",
+        "CC-IND-CM03",
+        "CC-IND-D09",
+        "CC-IND-D11",
+        "CC-IND-I02",
+        "CC-IND-J08",
+        "CC-IND-HC01",
+        "CC-IND-L03",
+        "CC-IND-J04",
+        "CC-IND-J05",
+        "CC-IND-D01",
+        "CC-IND-D02",
+        "CC-IND-D05",
+        "CC-IND-D06",
+        "CC-IND-D08",
+        "CC-IND-E03",
+        "CC-IND-E04",
+        "CC-IND-E06",
+        "CC-IND-E08",
+        "CC-IND-HC03",
+        "CC-IND-HC04",
+        "CC-IND-HC05"
+      ]
+    },
+    {
+      "reason": "Prior Phase-1 ACS/BLS seed — no unresolved baseline target",
+      "series": [
+        "ACS5 AR population/income/poverty/education/LFPR/homeownership/broadband",
+        "BLS LNS14000000 / LAUS AR / CPI / CES AHE levels"
+      ]
+    }
+  ]
+}

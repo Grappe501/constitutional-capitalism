@@ -8,8 +8,11 @@
   "website_node_id": "CC-WEB-CITIZENSHIP",
   "principle_id": "CC-PRIN-30",
   "related_principle_ids": ["CC-PRIN-31"],
-  "note": "Core doctrine: build civic capacity rather than merely expand rights. Civic service is participation and competence under viewpoint neutrality — not partisan conformity or campaign-credit coercion. Architecture and developing doctrine only — not a finished civics statute and not a locked voting-age change. Earlier local participation models are pilot candidates requiring measurement. No invented civic-education outcome, turnout, or trust statistics.",
-  "role_in_philosophy": "Constitutional Capitalism treats democracy as a skill, not merely a right. Most societies assume people automatically know how to govern themselves at 18. This doctrine instead asks how a republic prepares every generation for responsible self-government through continuous civic education, practical service, and meaningful contribution to community decision-making. It aligns with human-capital investment in people as the greatest long-term societal investment.",
+  "note": "Core doctrine: build civic capacity rather than merely expand rights. Civic service is participation and competence under viewpoint neutrality — not partisan conformity or campaign-credit coercion. Architecture and developing doctrine only — not a finished civics statute and not a locked voting-age change. Bound by CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE: civic preparation must never become a franchise gate. Age-16 local suffrage is a separate hypothesis (CC-HYP-AGE-16-LOCAL-SUFFRAGE). No invented civic-education outcome, turnout, or trust statistics.",
+  "research_design_constraint_ids": [
+    "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE"
+  ],
+  "role_in_philosophy": "Constitutional Capitalism treats democracy as a skill, not merely a right. Most societies assume people automatically know how to govern themselves at 18. This doctrine instead asks how a republic prepares every generation for responsible self-government through continuous civic education, practical service, and meaningful contribution to community decision-making — while enfranchising by law, not by examination. It aligns with human-capital investment in people as the greatest long-term societal investment.",
   "central_question_shift": {
     "not_primary": "At what age should someone vote?",
     "primary": "How do we graduate every citizen prepared to participate responsibly in self-government?",
@@ -124,26 +127,40 @@
     "links_to": ["community_operating_system", "democracy_framework", "human_capital_framework"]
   },
   "prepared_civic_participation_exploration": {
-    "title": "Prepared civic participation (including earlier local voting pilots)",
+    "title": "Universal civic preparation + separate age-16 local suffrage hypothesis",
     "status": "research_and_pilot_agenda",
     "hard_rule": "Constitutional Capitalism does not simply declare that voting begins at 16.",
-    "governing_question": "Under what conditions could earlier civic participation strengthen representative government?",
+    "governing_constraint_id": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
+    "separation_rule": {
+      "civic_preparation": "Society has an obligation to prepare every young person for citizenship through universal civic education and participation infrastructure.",
+      "suffrage": "Franchise eligibility is set by law. Civic education, testing, certification, academic achievement, service hours, or political knowledge shall not be prerequisites for voting.",
+      "philosophical_line": "Educate everyone; enfranchise by law — not by examination."
+    },
+    "rejected_model": {
+      "status": "rejected_as_franchise_gate",
+      "description": "Complete a certified civics curriculum / pass a test / finish service hours to become eligible to vote at 16.",
+      "reason": "Whoever controls curriculum, testing, certification, exemptions, or funding could indirectly control the franchise — conflicting with Constitutional Symmetry."
+    },
+    "governing_question": "After universal civic preparation infrastructure is mature, under what conditions could lowering the local voting age to 16 strengthen representative government?",
+    "related_hypothesis_id": "CC-HYP-AGE-16-LOCAL-SUFFRAGE",
+    "hypothesis_registry": "research/phase_2/suffrage_and_civic_education_hypothesis_registry.json",
     "illustrative_model": {
-      "status": "one_possible_model_to_explore",
-      "description": "Students who complete a certified civic education curriculum become eligible to vote in school board elections, municipal elections, and local ballot issues. Federal and statewide elections would remain unchanged unless future evidence supported broader reform.",
+      "status": "hypothesis_to_test_separately_from_civics_obligation",
+      "description": "Investigate whether local elections (school board, municipal, local ballot issues) should include 16- and 17-year-old citizens by law after robust universal civic education exists for everyone — not as a reward for completing a program. Federal and statewide elections remain unchanged unless future evidence supported broader reform.",
       "scope_limit": "Local/school scope first; not automatic federal or statewide expansion."
     },
-    "pilot_posture": "Recommend that ideas like this be piloted, measured, and evaluated before broader adoption.",
+    "pilot_posture": "Recommend that suffrage-age changes be piloted, measured, and evaluated under falsifiability rules before broader adoption. Civic preparation pilots must not create personal voting qualifications.",
     "research_questions": [
-      "Does participation increase lifelong voting?",
-      "Are students better informed?",
+      "Does local suffrage at 16 increase lifelong voting?",
+      "Does universal civic education improve informed participation without becoming a ballot gate?",
       "Does it increase community involvement?",
       "Does it improve trust in institutions?",
       "Does it affect school outcomes?",
-      "Are there unintended consequences?"
+      "What are legal, administrative, and unintended consequences?",
+      "What contrary evidence qualifies or contradicts the age-16 hypothesis?"
     ],
     "doctrine_ids": ["CC-DEV-071"],
-    "note": "Reasonable people disagree on voting age. Architecture records an exploration agenda — not settled policy. No invented youth-voting outcome statistics."
+    "note": "Reasonable people disagree on voting age. Architecture records a sequenced exploration agenda — not settled policy. No invented youth-voting outcome statistics."
   },
   "civic_graduation": {
     "name": "Civic Graduation",
@@ -161,7 +178,9 @@
       "civic project",
       "leadership experience"
     ],
-    "meaning": "Becomes part of adulthood preparation — not a punishment track.",
+    "meaning": "Becomes part of adulthood preparation — not a punishment track and not a voting qualification.",
+    "not_a_suffrage_prerequisite": true,
+    "bound_by_constraint": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
     "doctrine_ids": ["CC-DEV-072"]
   },
   "schools_as_community_laboratories": {

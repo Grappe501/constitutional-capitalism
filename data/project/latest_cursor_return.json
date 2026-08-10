@@ -1,23 +1,15 @@
 {
-  "mission_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
-  "status": "COMPLETE_AUDIT_ONLY_BASELINE_PAUSED",
+  "mission_id": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
+  "status": "PASSED_AND_DEPLOYING",
   "updated_at": "2026-08-10",
-  "summary": "Atlas completed with data_asset_master_registry and B01/B02/C02/HC07 forensic: missing observations (HC07 historical-only), not unused DB data. CENSUS_API_KEY/BLS_API_KEY NOT FOUND in RedDirt env though code expects them. Baseline expansion paused at 38/64 awaiting decision.",
-  "report": "reports/CC_DATABASE_SCHEMA_ATLAS_1_0.md",
-  "data_asset_master_registry": "data/project/data_asset_master_registry.json",
-  "credentials": {
-    "CENSUS_API_KEY": "NOT FOUND",
-    "BLS_API_KEY": "NOT FOUND"
-  },
-  "baseline": "38/64",
-  "baseline_expansion_paused": true,
-  "decision_options": [
-    "API repair in RedDirt (configure CENSUS_API_KEY/BLS_API_KEY; re-run spine; export)",
-    "Database/ingestion consolidation (wire warehouse→export→CC mapping)",
-    "Resume baseline expansion 38/64 with registry-first rule",
-    "Other Phase 2 proof gate (non-baseline)"
-  ],
-  "github_push": "pushed",
-  "ending_commit": "f677a49",
-  "pushed_at": "2026-08-10"
+  "summary": "Registered research/design constraint: no knowledge qualification for suffrage. Separate hypothesis CC-HYP-AGE-16-LOCAL-SUFFRAGE. Corrected citizenship framework. Bundled prior research (RCIP aligned baseline 42/64, corpus evidence audit, systems compare pages, Google Civic source family) for commit/push/Netlify deploy. Progress snapshot regenerated at 43%.",
+  "constraint": "data/project/research_design_constraint_registry.json",
+  "hypothesis_registry": "research/phase_2/suffrage_and_civic_education_hypothesis_registry.json",
+  "public_reasoning": "reports/public_reasoning/CC-PR-084-no-knowledge-qualification-for-suffrage.md",
+  "baseline": "42/64",
+  "sources_registered": 264,
+  "overall_percent": 43,
+  "next_recommended_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
+  "github_push": "in_progress",
+  "ending_commit": null
 }

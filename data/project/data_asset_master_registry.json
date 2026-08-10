@@ -23,9 +23,9 @@
     }
   },
   "baseline_pause": {
-    "paused": true,
-    "scoreboard": "38/64",
-    "reason": "Live bridge proven; baseline expansion remains paused pending definition-compatible promotions. First live export mapped with 0 DIRECT MATCH fills."
+    "paused": false,
+    "scoreboard": "42/64",
+    "reason": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0 filled B01/B02/C02/HC07 as DIRECT MATCH. Further empty slots require definition lock before seed expansion."
   },
   "live_bridge_proof": {
     "slice_id": "CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0",
@@ -35,6 +35,15 @@
     "direct_matches": 0,
     "supporting_only": 3,
     "no_slot": 9
+  },
+  "aligned_series_expansion": {
+    "slice_id": "RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0",
+    "export_id": "exp_79f42d2fe71f4b69",
+    "observations_added": 4,
+    "direct_matches": ["CC-IND-B01", "CC-IND-B02", "CC-IND-C02", "CC-IND-HC07"],
+    "scoreboard_after": "42/64",
+    "precheck": "data/project/rcip_baseline_aligned_series_precheck.json",
+    "return": "reports/CC_RCIP_BASELINE_ALIGNED_SERIES_EXPANSION_1_0_RETURN.md"
   },
   "slot_forensic": {
     "question": "Are B01, B02, C02 and HC07 actually missing data—or are we failing to use infrastructure/data we already possess?",
