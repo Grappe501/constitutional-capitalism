@@ -255,7 +255,7 @@ No invented validator commands.
 
 ## 32. Commit Hash
 
-Filled after commit.
+`d93d54e82d24a8359d39a6051293c3db90dd0e4b` (research commit; this docs note may trail in a follow-up commit)
 
 ## 33. Remaining Unknowns
 
