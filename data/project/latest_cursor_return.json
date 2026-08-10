@@ -1,37 +1,42 @@
 {
-  "mission_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+  "mission_id": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
+  "slice_alias": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
   "status": "PARTIAL",
   "updated_at": "2026-08-10",
-  "summary": "Baseline 2/86 → 14/86 with reproducible retrieval standards. Public Statistics Bridge updated. Ag lock preserved (~3/0/0 processing; feed voice-gated). Sources 218–228.",
+  "summary": "90-day civic-information coverage coding across six AR geographies. Outlet presence ≠ sustained scrutiny. Gap typology only (no composite score). Dual-code sample done. Ag lock preserved (~3/0/0; feed voice-gated). Sources 229–235.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "starting_commit": "fd0d3bfb154e5bdf2ba8e59a24daa364004a43a3",
-  "ending_commit": "73c7c43",
-  "github_push": "pushed",
+  "starting_commit": "pending",
+  "ending_commit": "pending",
+  "github_push": "pending",
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 43,
   "phase_2_status": "PARTIAL",
-  "recommended_next_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
+  "recommended_next_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-1.0",
   "decision_ids": [
     "CC-DEC-103"
   ],
   "update_ids": [
-    "UPD-088"
+    "UPD-089"
   ],
   "public_paths": [],
   "board_paths": [
-    "/research/",
-    "/baseline/"
+    "/research/"
   ],
-  "integrity_note": "No invented metric IDs. No quota. Completeness = reproducible retrieval. No ag booking/mill inference.",
-  "next_command": "Human ag voice calls; Cursor journalism coverage coding",
-  "report": "reports/CC_PHASE_2_1_BASELINE_SUBSET_EXPANSION_AND_PUBLIC_STATISTICS_BRIDGE_1_0_RETURN.md",
-  "sources_registered": 228,
+  "integrity_note": "No composite journalism score. UNKNOWN used for archive failure. No ag booking/mill inference. Baseline remains 14/86.",
+  "next_command": "Baseline expansion round two; human ag voice calls",
+  "report": "reports/CC_PHASE_2_1_ARKANSAS_CIVIC_INFORMATION_90_DAY_COVERAGE_CODING_1_0_RETURN.md",
+  "sources_registered": 235,
   "doctrine_expanded": false,
   "principle_added": false,
-  "baseline_before": 2,
   "baseline_after": 14,
   "baseline_total": 86,
+  "coding_window": {
+    "start": "2026-05-12",
+    "end": "2026-08-10",
+    "days": 90
+  },
+  "dual_code_agreement_rate": 0.75,
   "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md",
   "processing_baseline": {
     "cattle_accessible_claimed_desk": 3,

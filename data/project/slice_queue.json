@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "last_updated": "2026-08-10",
-  "active_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
+  "active_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -708,9 +708,30 @@
         "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
       ],
       "note": "No quota theater. Agriculture remains human-gated."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
+      "slice_alias": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
+      "title": "Arkansas Civic Information 90-Day Coverage Coding",
+      "status": "completed",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "fixed 90-day window coded across 6 geographies",
+        "gap typology without composite score",
+        "dual-code sample with agreement rate",
+        "CC-SRC-229–235",
+        "CC-PR-075–080",
+        "ag posture lock preserved"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+        "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
+      ],
+      "note": "Outlet presence ≠ sustained scrutiny. Unknown ≠ uncovered."
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+  "last_completed_slice": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
   "parallel_blocked": {
     "processing": {
       "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",

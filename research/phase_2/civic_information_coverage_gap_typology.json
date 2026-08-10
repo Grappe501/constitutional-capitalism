@@ -1,0 +1,171 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
+  "window": {
+    "start": "2026-05-12",
+    "end": "2026-08-10",
+    "days": 90
+  },
+  "rule": "Typology labels — not a composite score",
+  "labels": [
+    "OUTLET DESERT",
+    "ORIGINAL-REPORTING DESERT",
+    "INSTITUTIONAL-COVERAGE DESERT",
+    "CONTINUITY GAP",
+    "SPECIALTY-REPORTING GAP",
+    "DISTRIBUTION GAP",
+    "UNKNOWN / INSUFFICIENT ARCHIVE"
+  ],
+  "by_geography": {
+    "AR-GEO-SEARCY-COUNTY": {
+      "gap_types": [
+        "ORIGINAL-REPORTING DESERT",
+        "INSTITUTIONAL-COVERAGE DESERT",
+        "CONTINUITY GAP"
+      ],
+      "ownership_forms": [
+        "chain_owned_cherryroad_media"
+      ],
+      "outlets": [
+        "AR-OUT-001"
+      ],
+      "systematically_undercovered_institutions": [
+        "quorum_court",
+        "city_council",
+        "school_board",
+        "planning_commission",
+        "budgets_procurement",
+        "utilities",
+        "hospital_board",
+        "courts",
+        "economic_development_authority",
+        "elections"
+      ],
+      "archive_access": "partial_homepage_and_events"
+    },
+    "AR-GEO-LAFAYETTE-COUNTY": {
+      "gap_types": [
+        "UNKNOWN / INSUFFICIENT ARCHIVE",
+        "DISTRIBUTION GAP"
+      ],
+      "ownership_forms": [
+        "locally_owned_independent_claimed",
+        "unknown_requires_verification"
+      ],
+      "outlets": [
+        "AR-OUT-002",
+        "AR-OUT-003"
+      ],
+      "systematically_undercovered_institutions": [
+        "city_council",
+        "quorum_court",
+        "school_board",
+        "planning_commission",
+        "courts",
+        "public_safety",
+        "utilities",
+        "hospital_board",
+        "economic_development_authority",
+        "elections",
+        "budgets_procurement",
+        "local_business",
+        "agriculture",
+        "nonprofits_community_life"
+      ],
+      "archive_access": "failed_digital_503"
+    },
+    "AR-GEO-WEST-HELENA": {
+      "gap_types": [
+        "CONTINUITY GAP",
+        "SPECIALTY-REPORTING GAP",
+        "UNKNOWN / INSUFFICIENT ARCHIVE"
+      ],
+      "ownership_forms": [
+        "locally_owned_after_2019_rescue"
+      ],
+      "outlets": [
+        "AR-OUT-004"
+      ],
+      "systematically_undercovered_institutions": [
+        "planning_commission",
+        "hospital_board",
+        "utilities",
+        "courts",
+        "budgets_procurement",
+        "quorum_court"
+      ],
+      "archive_access": "partial_wix_homepage_print_archive"
+    },
+    "AR-GEO-JACKSONVILLE": {
+      "gap_types": [
+        "SPECIALTY-REPORTING GAP",
+        "CONTINUITY GAP"
+      ],
+      "ownership_forms": [
+        "family_owned_local",
+        "wehco_family_owned"
+      ],
+      "outlets": [
+        "AR-OUT-005",
+        "AR-OUT-007"
+      ],
+      "systematically_undercovered_institutions": [
+        "planning_commission",
+        "hospital_board",
+        "utilities",
+        "quorum_court",
+        "budgets_procurement",
+        "agriculture"
+      ],
+      "archive_access": "good_digital_90day_category"
+    },
+    "AR-GEO-BENTON-COUNTY": {
+      "gap_types": [
+        "SPECIALTY-REPORTING GAP",
+        "CONTINUITY GAP",
+        "UNKNOWN / INSUFFICIENT ARCHIVE"
+      ],
+      "ownership_forms": [
+        "wehco_family_owned_regional"
+      ],
+      "outlets": [
+        "AR-OUT-006",
+        "AR-OUT-009"
+      ],
+      "systematically_undercovered_institutions": [
+        "hospital_board",
+        "utilities",
+        "agriculture",
+        "school_board",
+        "quorum_court"
+      ],
+      "archive_access": "search_snippet_partial_paywall"
+    },
+    "AR-GEO-PULASKI-COUNTY": {
+      "gap_types": [
+        "SPECIALTY-REPORTING GAP",
+        "INSTITUTIONAL-COVERAGE DESERT"
+      ],
+      "ownership_forms": [
+        "wehco_family_owned",
+        "independent_alt",
+        "public_radio"
+      ],
+      "outlets": [
+        "AR-OUT-007",
+        "AR-OUT-008",
+        "AR-OUT-009",
+        "AR-OUT-010"
+      ],
+      "systematically_undercovered_institutions": [
+        "hospital_board",
+        "utilities",
+        "agriculture",
+        "school_board",
+        "nonprofits_community_life"
+      ],
+      "archive_access": "good_for_high_salience_issue_partial_elsewhere"
+    }
+  },
+  "cross_cutting_finding": "None of the six geographies is a pure outlet desert in the inventory sense. The dominant failures are institutional-coverage deserts, continuity gaps, specialty deserts, and unknown archives — including in metro Pulaski and high-capacity Benton."
+}

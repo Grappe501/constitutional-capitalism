@@ -1,25 +1,29 @@
-# Civic Information Coverage Matrix — Schema (Pilot)
+# Civic Information Coverage Matrix — Schema
 
-**Slice:** `CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0`  
-**Rule:** No composite score yet.
+**Slice:** `CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0`  
+**Alias:** `CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0`  
+**Window:** 2026-05-12 → 2026-08-10 (90 days)  
+**Rule:** No composite score. Use coverage-gap typology.
 
 ## Dimensions
 
-| Dimension | Meaning | Allowed pilot codes |
-| --- | --- | --- |
-| frequency | How often the institution appears in original coverage | not_yet_coded / later: none, rare, intermittent, regular |
-| depth | Meeting notes vs accountability reporting | not_yet_coded / later: mention, summary, accountability, investigation |
-| original_reporting | Original vs aggregation/repost | not_yet_coded / documented_presence_claim / outlet_self_description / … |
-| reporter_locality | Local beat vs distant/parachute | not_yet_coded |
-| public_record_use | FOIA/minutes/budgets evident | not_yet_coded |
-| continuity | Sustained over time vs one-off | not_yet_coded / documented_presence_claim / weak_signal… |
+| Dimension | Allowed codes |
+| --- | --- |
+| frequency | none, rare, intermittent, regular, unknown |
+| depth | none, meeting_notice, mention, meeting_recap, enterprise, accountability, investigation, unknown |
+| original_reporting | none, calendar_only, wire_repost, press_release_rewrite, original, mixed, unknown |
+| reporter_locality | local_staff, regional_staff, parachute, unknown |
+| public_record_use | evident, not_evident, unknown |
+| continuity | none, one_off, episodic, sustained, unknown |
 
-## Institutions in scope
+## Gap typology (not a score)
 
-City councils · Quorum courts · School boards · Planning commissions · Courts · Public safety · Utilities · Hospital boards · Economic-development authorities · Elections · Budgets/procurement · Local business · Agriculture · Nonprofits/community life
+OUTLET DESERT · ORIGINAL-REPORTING DESERT · INSTITUTIONAL-COVERAGE DESERT · CONTINUITY GAP · SPECIALTY-REPORTING GAP · DISTRIBUTION GAP · UNKNOWN / INSUFFICIENT ARCHIVE
 
 ## Falsification question
 
 > Does the presence of a nominal local news outlet meaningfully predict sustained independent scrutiny of the institutions exercising public power?
 
-If **no**, conventional news-desert measures are insufficient for this research program.
+## Second question
+
+> Which institutions are systematically under-covered even in communities that technically have news outlets?
