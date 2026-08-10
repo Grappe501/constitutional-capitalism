@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "status": "partial_seed",
   "decision_id": "CC-DEC-072",
   "title": "Constitutional Capitalism Knowledge Graph",
@@ -381,6 +381,21 @@
       "kind": "source",
       "related_id": "CC-SRC-144",
       "slice_id": "CC-PHASE-2.1-LOCAL-INDEPENDENT-JOURNALISM-CIVIC-INFORMATION-MODULE-1.0"
+    },
+    {
+      "node_id": "CC-KG-057",
+      "label": "Arkansas FSIS livestock processing establishment map v1",
+      "kind": "instrument",
+      "related_id": "research/phase_2/ar_livestock_processing_establishment_map.json",
+      "slice_id": "CC-PHASE-2.1-CLINTON-HUB-FSIS-TEST-AND-AR-ESTABLISHMENT-CAPACITY-MAP-1.0"
+    },
+    {
+      "node_id": "CC-KG-058",
+      "label": "Clinton processing hub hypothesis test",
+      "kind": "hypothesis",
+      "related_id": "CC-HYP-CLINTON-PROCESSING-HUB",
+      "slice_id": "CC-PHASE-2.1-CLINTON-HUB-FSIS-TEST-AND-AR-ESTABLISHMENT-CAPACITY-MAP-1.0",
+      "note": "Verdict CONTRADICTED for USDA livestock hub in Clinton"
     }
   ],
   "edges": [
@@ -620,6 +635,24 @@
       "to": "CC-KG-020",
       "class": "documented",
       "note": "Pilot finding NOT MEASURABLE for net leakage; claim retained as Qualifies"
+    },
+    {
+      "edge_id": "CC-KGE-029",
+      "from": "CC-KG-057",
+      "relation": "supports",
+      "to": "CC-KG-058",
+      "class": "documented",
+      "note": "FSIS AR extract: no Van Buren Meat Slaughter row; Clinton USDA livestock hub contradicted",
+      "review_status": "draft"
+    },
+    {
+      "edge_id": "CC-KGE-030",
+      "from": "CC-KG-058",
+      "relation": "qualified_by",
+      "to": "CC-KG-057",
+      "class": "documented",
+      "note": "Hub test uses establishment map; no false causal prosperity edge",
+      "review_status": "draft"
     }
   ],
   "build_rules": [

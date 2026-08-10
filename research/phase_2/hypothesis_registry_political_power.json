@@ -68,7 +68,7 @@
       "geography_ids": [
         "AR-GEO-VAN-BUREN-COUNTY"
       ],
-      "empirical_status": "UNTESTED. Statewide processing bottleneck evidenced (CC-SRC-120/121); Clinton-specific hub role not established.",
+      "empirical_status": "CONTRADICTED for USDA livestock hub in Clinton; poultry federal status directory-conflicted; custom-exempt present",
       "not_empirical_proof": true,
       "test_plan": [
         "Query FSIS MPI Directory / demographics for establishments in Clinton / Van Buren County and nearby counties (CC-SRC-123)",
@@ -86,8 +86,16 @@
         "decision_id": "CC-DEC-103",
         "reason": "Do not canonize anecdotal hub claims; instrument exists to test."
       },
-      "last_updated": "2026-08-07",
-      "slice_id": "CC-PHASE-2.1-ARKANSAS-AG-GEOGRAPHY-PAIR-AND-MEAT-INSPECTION-RESEARCH-TRACK-1.0"
+      "last_updated": "2026-08-10",
+      "slice_id": "CC-PHASE-2.1-CLINTON-HUB-FSIS-TEST-AND-AR-ESTABLISHMENT-CAPACITY-MAP-1.0",
+      "dossier_verdict": "CONTRADICTED",
+      "dossier_reason": "No Van Buren County establishment with Meat Slaughter appears in FSIS active MPI Directory (2026-08-03). Only FSIS active row in Clinton/Van Buren: Global Refrigerated Services (V46922) — cold storage/identification, not slaughter. Cypress Valley Meat Company Clinton location is company-labeled Custom Exempt for beef/hogs/goats — not USDA-inspected. Nearest Cypress Valley USDA livestock plant in FSIS directory is Pottsville (Pope County), not Clinton. Natural State Processing (historical M51255 poultry) is absent from the 2026-08-03 active MPI extract despite commercial site and 2024 reporting — federal active status requires verification. Public evidence that family-scale cattle/hog producers from outside Clinton use Clinton for USDA-inspected processing: NOT FOUND.",
+      "test_results": {
+        "fsis_meat_slaughter_in_van_buren": false,
+        "custom_exempt_clinton": true,
+        "natural_state_in_active_mpi_2026_08_03": false,
+        "producer_usage_public_evidence": "NOT_FOUND"
+      }
     },
     {
       "hypothesis_id": "CC-HYP-AR-LIVESTOCK-COMPOUNDED-ACCESS",
@@ -98,7 +106,7 @@
         "AR-GEO-VAN-BUREN-COUNTY",
         "AR-GEO-ARKANSAS-COUNTY"
       ],
-      "empirical_status": "PARTIALLY MOTIVATED nationally (CC-SRC-126) and by AR processing bottleneck (CC-SRC-120/121); Arkansas buyer-radius and capacity-intervention causal effects UNTESTED.",
+      "empirical_status": "QUALIFIED — processing-access scarcity for family retail pathway reinforced by establishment/access map; buyer-radius monopsony still unmeasured",
       "not_empirical_proof": true,
       "deliberate_falsification": true,
       "sources_support": [
@@ -115,8 +123,9 @@
         "decision_id": "CC-DEC-103",
         "reason": "Compounded-access claim requires Arkansas measurement before promotion beyond CC-CLAIM-138's carefully limited wording."
       },
-      "last_updated": "2026-08-07",
-      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0"
+      "last_updated": "2026-08-10",
+      "slice_id": "CC-PHASE-2.1-LIVESTOCK-MONOPSONY-AND-PROCESSING-ACCESS-MODULE-1.0",
+      "dossier_verdict": "QUALIFIED"
     }
   ]
 }

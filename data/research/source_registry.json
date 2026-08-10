@@ -1,7 +1,7 @@
 {
   "version": "0.3.0",
   "last_updated": "2026-08-10",
-  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled. Phase 2.1 continuation (2026-08-07): added CC-SRC-081–090 for first-20 claim audit (monopsony, corporate-tax incidence, e-commerce, Wayfair, NSF R&D, property-tax relief, productivity measurement dispute). Phase 2.1 (2026-08-07): CC-SRC-144–148 registered for Local Independent Journalism / Civic Information Infrastructure module (hypothesis registration only). Phase 2.1 (2026-08-10): CC-SRC-149–163 Arkansas local-news outlet map / coverage matrix pilot. Phase 2.1 (2026-08-10): CC-SRC-164–171 journalism public finance / independence comparative dossier.",
+  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled. Phase 2.1 continuation (2026-08-07): added CC-SRC-081–090 for first-20 claim audit (monopsony, corporate-tax incidence, e-commerce, Wayfair, NSF R&D, property-tax relief, productivity measurement dispute). Phase 2.1 (2026-08-07): CC-SRC-144–148 registered for Local Independent Journalism / Civic Information Infrastructure module (hypothesis registration only). Phase 2.1 (2026-08-10): CC-SRC-149–163 Arkansas local-news outlet map / coverage matrix pilot. Phase 2.1 (2026-08-10): CC-SRC-164–171 journalism public finance / independence comparative dossier. Phase 2.1 (2026-08-10): CC-SRC-172–181 Clinton/FSIS AR establishment capacity map.",
   "sources": [
     {
       "source_id": "CC-SRC-001",
@@ -4341,6 +4341,263 @@
       "ideological_or_institutional_considerations": "Trade journalism.",
       "verification_status": "url_verified",
       "notes": "Comparative design literature."
+    },
+    {
+      "source_id": "CC-SRC-172",
+      "title": "FSIS Meat, Poultry and Egg Product Inspection Directory — Arkansas extract",
+      "authors": [
+        "USDA Food Safety and Inspection Service"
+      ],
+      "year": 2026,
+      "url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Name.csv",
+      "source_type": "federal_agency_directory",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "2026-08-03",
+      "retrieval_date": "2026-08-10",
+      "summary": "Official FSIS MPI Directory CSV (edition noted Aug 3, 2026 on FSIS page). Arkansas extract archived at research/phase_2/source_snapshots/fsis_mpi_directory_arkansas_2026-08-03.csv (47 rows). Shows 6 establishments with Meat Slaughter activity; only Global Refrigerated Services in Van Buren County (cold storage/ID — not slaughter). Natural State Processing M51255 not present.",
+      "key_findings": [
+        "47 FSIS Arkansas rows in extract",
+        "6 Meat Slaughter activity establishments",
+        "No Clinton/Van Buren Meat Slaughter row",
+        "Plant list ≠ throughput or outside-producer access"
+      ],
+      "limitations": "Point-in-time weekly directory; species within 'Meat Slaughter' not fully disaggregated; access class requires supplemental evidence.",
+      "ideological_or_institutional_considerations": "Official FSIS.",
+      "verification_status": "csv_retrieved_and_archived",
+      "notes": "Primary instrument for Clinton hub falsification."
+    },
+    {
+      "source_id": "CC-SRC-173",
+      "title": "USDA awards $3.7M for meat processing facility expansion in Clinton (Arkansas Democrat-Gazette)",
+      "authors": [
+        "Cristina LaRue",
+        "Arkansas Democrat-Gazette"
+      ],
+      "year": 2024,
+      "url": "https://www.arkansasonline.com/news/2024/sep/21/usda-awards-37m-for-meat-processing-facility/",
+      "source_type": "news",
+      "reliability": "secondary_reputable_local",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "2024-09-21",
+      "retrieval_date": "2026-08-10",
+      "summary": "Natural State Processing (Clinton) approved for $3.7M MPPEP grant but CEO says additional capital uncertain (~50/50). Describes firm as independent fee-for-service USDA-inspected poultry processor serving producers in eight states. Notes Cypress Valley network: of five AR facilities only two offer USDA meat inspection (per article/website).",
+      "key_findings": [
+        "Clinton Natural State framed as multi-state fee-for-service poultry, not cattle hub",
+        "Expansion finance fragility acknowledged by operator",
+        "Cypress Valley USDA meat inspection not located at Clinton per network description"
+      ],
+      "limitations": "News interview; not FSIS directory verification; 2024 snapshot.",
+      "ideological_or_institutional_considerations": "Local newspaper agriculture beat.",
+      "verification_status": "url_verified_via_fetch",
+      "notes": "Supports poultry-hub narrative historically; conflicts with 2026-08-03 MPI absence."
+    },
+    {
+      "source_id": "CC-SRC-174",
+      "title": "FSIS Salmonella Categorization dataset referencing Natural State Processing Clinton",
+      "authors": [
+        "USDA FSIS"
+      ],
+      "year": 2025,
+      "url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/Dataset_EstablishmentCategories_202504.pdf",
+      "source_type": "federal_agency_dataset",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "2025-04",
+      "retrieval_date": "2026-08-10",
+      "summary": "FSIS Salmonella categorization PDF lists M51255+P51255 Natural State Processing, Clinton AR for Young Chicken Carcasses and Chicken Parts — confirms historical federal poultry establishment identity. Does not by itself prove 2026-08 active MPI status.",
+      "key_findings": [
+        "Establishment number M51255+P51255 associated with Natural State Processing Clinton",
+        "Poultry carcass/parts categorization — not livestock meat slaughter"
+      ],
+      "limitations": "Sampling-window categorization file; may lag grant-of-inspection changes.",
+      "ideological_or_institutional_considerations": "Official FSIS.",
+      "verification_status": "url_verified_via_fetch",
+      "notes": "Used to document directory conflict with Aug 2026 MPI extract."
+    },
+    {
+      "source_id": "CC-SRC-175",
+      "title": "Cypress Valley Meat Company — About / Locations",
+      "authors": [
+        "Cypress Valley Meat Company"
+      ],
+      "year": 2026,
+      "url": "https://cypressvalleymeatcompany.com/about/",
+      "source_type": "commercial_operator",
+      "reliability": "primary_operator_claim",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "retrieved-2026-08-10",
+      "retrieval_date": "2026-08-10",
+      "summary": "Operator site: Pottsville USDA Inspected (beef/hogs/goats/buffalo); Clinton Custom Exempt (beef/hogs/goats); Natural State Processing USDA Inspected Poultry at 245 Quality Dr Clinton; 5R Mt. Vernon labeled Custom Exempt on site (conflicts with FSIS Meat Slaughter row). Claims service to independent farmers.",
+      "key_findings": [
+        "Clinton livestock plant is custom-exempt per operator",
+        "USDA livestock slaughter claimed at Pottsville, not Clinton",
+        "Natural State is poultry"
+      ],
+      "limitations": "Commercial site — establishes services claimed, not market-wide conclusions or throughput.",
+      "ideological_or_institutional_considerations": "Processor marketing.",
+      "verification_status": "url_verified_via_fetch",
+      "notes": "Critical for access classification and Clinton hub falsification."
+    },
+    {
+      "source_id": "CC-SRC-176",
+      "title": "USDA Inspected Fee-for-Service Poultry Processors (NMPAN list)",
+      "authors": [
+        "Niche Meat Processor Assistance Network"
+      ],
+      "year": 2026,
+      "url": "https://www.nichemeatprocessing.org/usda-inspected-fee-for-service-poultry-processors/",
+      "source_type": "industry_assistance_directory",
+      "reliability": "secondary_practitioner",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "US",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "retrieved-2026-08-10",
+      "retrieval_date": "2026-08-10",
+      "summary": "NMPAN directory lists Arkansas fee-for-service poultry processors including B & R Meat Processing (Winslow) and Natural State Processing (Clinton).",
+      "key_findings": [
+        "Natural State and B&R identified as fee-for-service poultry options",
+        "Supports outside-producer access class for those plants when active"
+      ],
+      "limitations": "Third-party list; may lag plant status; fetch timeout on re-check — use with FSIS.",
+      "ideological_or_institutional_considerations": "Extension/industry assistance network.",
+      "verification_status": "url_indexed_partial_fetch",
+      "notes": "Access classification aid — not capacity proof."
+    },
+    {
+      "source_id": "CC-SRC-177",
+      "title": "4 meat inspection sites OK’d in ’23 (Arkansas Democrat-Gazette)",
+      "authors": [
+        "Arkansas Democrat-Gazette"
+      ],
+      "year": 2023,
+      "url": "https://www.arkansasonline.com/news/2023/dec/09/4-meat-inspection-sites-okd-in-23/",
+      "source_type": "news",
+      "reliability": "secondary_reputable_local",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_inspection_law",
+      "publication_date": "2023-12-09",
+      "retrieval_date": "2026-08-10",
+      "summary": "Reports four state meat inspection licensees in 2023: ASU Meat Market (Jonesboro), JACO Meats (Hope), Ferguson's Packing (Atkins), Williams Baptist University (Walnut Ridge). Quotes UADA livestock economist James Mitchell on ~62% meat-processing firm failure rate and SE small/medium plant vulnerability; diversification (multi-species, retail) as survival advice. Notes $10.4M CARES meat/poultry processing grants and Act 418 / 2022 FSIS agreement.",
+      "key_findings": [
+        "Four state-inspected sites reported in 2023",
+        "Small processor failure risk emphasized by extension economist",
+        "Program growth early-stage"
+      ],
+      "limitations": "News; licensee list may be incomplete/outdated vs 2026.",
+      "ideological_or_institutional_considerations": "Local press + extension quotes.",
+      "verification_status": "url_verified_via_search",
+      "notes": "State adequacy + failure economics."
+    },
+    {
+      "source_id": "CC-SRC-178",
+      "title": "Another Arkansas meat plant receives state license (MEAT+POULTRY)",
+      "authors": [
+        "MEAT+POULTRY"
+      ],
+      "year": 2023,
+      "url": "https://www.meatpoultry.com/articles/29389-another-arkansas-meat-plant-receives-state-license",
+      "source_type": "trade_press",
+      "reliability": "secondary_trade",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_inspection_law",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-10",
+      "summary": "Trade press: Williams Baptist University becomes fourth state-licensed meat processing facility; lists prior JACO, ASU, Ferguson.",
+      "key_findings": [
+        "Confirms four-plant early state program roster"
+      ],
+      "limitations": "Trade press; not official roster PDF.",
+      "ideological_or_institutional_considerations": "Industry trade media.",
+      "verification_status": "url_verified_via_search",
+      "notes": "Corroborates CC-SRC-177 roster."
+    },
+    {
+      "source_id": "CC-SRC-179",
+      "title": "Small Meat Processors in Arkansas Get CARES Grants (Arkansas Business)",
+      "authors": [
+        "Arkansas Business"
+      ],
+      "year": 2020,
+      "url": "https://www.arkansasbusiness.com/article/recipients-of-5m-in-meat-processing-grants-named/",
+      "source_type": "business_press",
+      "reliability": "secondary",
+      "primary_or_secondary": "secondary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "agriculture_processing_infrastructure",
+      "publication_date": "2020",
+      "retrieval_date": "2026-08-10",
+      "summary": "Lists early Arkansas meat-processing grant recipients including Natural State Processing (Clinton), Cypress Valley (Pottsville), Key's Family Butcher Shop, B&R, JACO, and others. Anticipated capacity increases self-reported by applicants.",
+      "key_findings": [
+        "Clinton Natural State among funded processors",
+        "Self-reported capacity expansion goals ≠ measured outcomes"
+      ],
+      "limitations": "Applicant aspirations; not audited throughput outcomes.",
+      "ideological_or_institutional_considerations": "Business press.",
+      "verification_status": "url_verified_via_search",
+      "notes": "Historical funding context only."
+    },
+    {
+      "source_id": "CC-SRC-180",
+      "title": "Cooperative Interstate Shipping Program (FSIS overview)",
+      "authors": [
+        "USDA FSIS"
+      ],
+      "year": 2026,
+      "url": "https://www.fsis.usda.gov/inspection/state-inspection-programs/cooperative-interstate-shipping-program",
+      "source_type": "federal_agency",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "agriculture_inspection_law",
+      "publication_date": "2026",
+      "retrieval_date": "2026-08-10",
+      "summary": "CIS allows selected state-inspected establishments in participating MPI states that meet federal standards and employ 25 or fewer employees to ship interstate. Plants apply via state MPI; state recommends; FSIS selects.",
+      "key_findings": [
+        "≤25 employees",
+        "State MPI + CIS agreement required",
+        "Does not itself create capacity"
+      ],
+      "limitations": "Program description — not Arkansas readiness assessment.",
+      "ideological_or_institutional_considerations": "Official FSIS.",
+      "verification_status": "url_verified_via_search",
+      "notes": "CIS feasibility dossier core."
+    },
+    {
+      "source_id": "CC-SRC-181",
+      "title": "USDA OIG — Cooperative Interstate Shipment Program audit summary materials",
+      "authors": [
+        "USDA Office of Inspector General"
+      ],
+      "year": 2024,
+      "url": "https://usdaoig.oversight.gov/sites/default/files/reports/2024-11/24601-0002-22.pdf",
+      "source_type": "federal_oig",
+      "reliability": "primary_official_oversight",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "agriculture_inspection_law",
+      "publication_date": "2024",
+      "retrieval_date": "2026-08-10",
+      "summary": "OIG materials on CIS: limited to establishments averaging 25 or fewer employees; state must have CIS agreement; documents program scale and oversight issues. Useful for constraints — not an Arkansas endorsement.",
+      "key_findings": [
+        "Employee cap confirmed",
+        "State agreement prerequisite",
+        "Program participation historically limited relative to eligible states"
+      ],
+      "limitations": "National audit focus; Arkansas not analyzed as case study here.",
+      "ideological_or_institutional_considerations": "OIG oversight.",
+      "verification_status": "url_verified_via_search",
+      "notes": "Failure-mode/limitation evidence for CIS optimism."
     }
   ]
 }
