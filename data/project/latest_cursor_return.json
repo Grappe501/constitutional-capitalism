@@ -1,42 +1,43 @@
 {
-  "mission_id": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
-  "status": "PARTIAL",
+  "mission_id": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
+  "status": "PARTIAL_AWAITING_HUMAN_FEED_CALLS",
   "updated_at": "2026-08-10",
-  "summary": "Non-GMO/local-feed assertion QUALIFIED: absolute outside-sourcing contradicted; leading break is segregation/IP/verification and captive vs open access—not absence of mills. Economically usable layer UNKNOWN. Processing voice still ~3/0/0 gated. Sources 191–201.",
+  "summary": "Desk primary: national Non-GMO Project retail ~$22–26/50lb; organic e-com ~$57. AR mill quotes 0. IP soy exists (Taggart/Delta Soy) but livestock-feed channel unproven. Toll/IP at open mills UNKNOWN — least-cost repair candidate pending voice. Processing frozen ~3/0/0. Sources 202–210.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "starting_commit": "574f003",
-  "ending_commit": "9d3b617",
+  "starting_commit": "pending",
+  "ending_commit": "pending",
   "github_push": "pending",
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 43,
   "phase_2_status": "PARTIAL",
-  "recommended_next_slice": "CC-PHASE-2.1-AR-FEED-MILL-PRIMARY-PRICE-AND-IP-GRAIN-SUPPLY-PASS-1.0",
+  "recommended_next_slice": "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0",
   "decision_ids": [
     "CC-DEC-103"
   ],
   "update_ids": [
-    "UPD-085"
+    "UPD-086"
   ],
   "public_paths": [],
   "board_paths": [
     "/research/"
   ],
-  "integrity_note": "Did not equate website silence with absence. Captive≠open. Production≠IP supply. No new-mill recommendation. Processing booking not inferred.",
-  "next_command": "Primary calls to LF Feeds + River Valley Organics; parallel human processing voice calls",
-  "report": "reports/CC_PHASE_2_1_ARKANSAS_LOCAL_FEED_GRAIN_AND_NON_GMO_SUPPLY_CHAIN_TEST_1_0_RETURN.md",
-  "sources_registered": 201,
+  "integrity_note": "Did not invent AR mill quotes or toll willingness. IP capacity ≠ feed access. New mills gated on toll/IP refusals. Processing booking baseline frozen.",
+  "next_command": "Human: feed calls (LF Feeds, JA Farms, RVO, Powell, Taggart) → enter ar_feed_voice_call_records.json; parallel processing voice calls",
+  "report": "reports/CC_PHASE_2_1_AR_NON_GMO_FEED_PRIMARY_PRICE_IP_GRAIN_AND_TOLL_MILLING_STUDY_1_0_RETURN.md",
+  "sources_registered": 210,
   "doctrine_expanded": false,
   "principle_added": false,
   "feed_hypothesis_verdict": "QUALIFIED",
   "processing_voice_status": "AWAITING_HUMAN_CALLS",
-  "falsification": {
-    "A_assertion_substantially_correct": "PARTIAL — access frictions for verified non-GMO/organic independents are plausible; absolute 'must source outside AR' is too strong",
-    "B_production_exists_access_is_problem": "SUPPORTED_AS_LEADING_PATTERN — large nominal/captive capacity; open specialty thin",
-    "C_mills_could_make_nongmo_but_demand_insufficient": "PLAUSIBLE_UNTESTED",
-    "D_transport_not_primary_cost_problem": "NOT_ENOUGH_EVIDENCE_FRAMEWORK_ONLY",
-    "E_regional_supply_more_efficient_than_local": "PLAUSIBLE_UNTESTED",
-    "F_cooperative_beats_new_mill": "NOT_ENOUGH_EVIDENCE_EQUAL_STANDING",
-    "G_original_claim_wrong": "CONTRADICTED_IN_ABSOLUTE_FORM — AR organic mill candidate + custom open mill + retail verified brands exist"
+  "processing_baseline": {
+    "cattle_accessible_claimed_desk": 3,
+    "booking_confirmed": 0,
+    "economically_usable_confirmed": 0
+  },
+  "arkansas_mill_verified_quotes": 0,
+  "desk_nongmo_retail_band_usd_per_50lb": {
+    "low": 21.99,
+    "high": 25.99
   }
 }

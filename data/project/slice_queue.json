@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "last_updated": "2026-08-10",
-  "active_slice": "CC-PHASE-2.1-AR-FEED-MILL-PRIMARY-PRICE-AND-IP-GRAIN-SUPPLY-PASS-1.0",
+  "active_slice": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -645,9 +645,31 @@
         "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0"
       ],
       "note": "Falsification study. Absolute outside-sourcing claim contradicted. Captive≠open. Production≠IP supply. No new-mill recommendation. Processing voice remains human-gated in parallel."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
+      "title": "AR Non-GMO Feed Primary Price, IP Grain, and Toll Milling Study",
+      "status": "partial_complete_awaiting_human_calls",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "ar_nongmo_feed_primary_price_matrix.json",
+        "ar_ip_grain_livestock_channel_map.json",
+        "ar_toll_milling_and_custom_blend_dossier.json",
+        "ar_feed_bottleneck_adjudication.json",
+        "ar_feed_voice_call_records.json",
+        "feed voice call protocol + worksheet + handoff",
+        "CC-SRC-202–210",
+        "CC-PR-062–068",
+        "processing baseline frozen ~3/0/0"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0"
+      ],
+      "note": "Desk primary done; Cursor blocked on mill quote invention. Toll/IP is least-cost repair test."
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
+  "last_completed_slice": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
   "parallel_blocked": {
     "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
     "status": "AWAITING_HUMAN_CALLS",
