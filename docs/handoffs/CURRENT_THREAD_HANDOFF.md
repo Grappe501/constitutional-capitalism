@@ -55,3 +55,14 @@ Historical sections above may still mention older 2/86 or 14/86 counts — treat
 - Design/research parked off scoreboard
 - Active next: `CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-AFTER-ONTOLOGY-CLEANUP-1.0`
 - Phase 2: **PARTIAL**
+
+
+---
+
+## Legitimate-slot expansion (2026-08-10)
+
+- Scoreboard **27/64 → 34/64**
+- Newly completed: CC-IND-L04, CC-IND-CM04, CC-IND-E01, CC-IND-B04, CC-IND-HC02, CC-IND-J07, CC-IND-D10
+- Denominator held at **64**
+- Active next: `CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0`
+- Phase 2: **PARTIAL**

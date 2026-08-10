@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "last_updated": "2026-08-10",
   "status": "spine_partial_first_wave_populated",
   "decision_id": "CC-DEC-076",
@@ -319,7 +319,7 @@
     "No Census/BLS API keys stored here",
     "No baseline values invented from this architecture",
     "No campaign or personal data imported",
-    "Baseline scoreboard now 27/64 after ontology cleanup (historical sourced peak under pre-cleanup 86-slot registry was 27/86); RedDirt live connectors still not required for these records"
+    "Baseline scoreboard now 34/64 after legitimate-slot expansion; RedDirt live connectors still not required for these records"
   ],
   "public_data_engine": {
     "name": "RedDirt Civic Intelligence Platform (RCIP)",
@@ -542,5 +542,67 @@
       "CC-IND-I03"
     ]
   },
-  "live_baseline_display": "27/64"
+  "live_baseline_display": "34/64",
+  "legitimate_slot_expansion": {
+    "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-AFTER-ONTOLOGY-CLEANUP-1.0",
+    "pathways_established": [
+      {
+        "metric_id": "CC-IND-L04",
+        "agencies": [
+          "BLS"
+        ],
+        "series": "JOLTS annual average quits rate (Table 22)"
+      },
+      {
+        "metric_id": "CC-IND-CM04",
+        "agencies": [
+          "FDIC"
+        ],
+        "series": "QBP community-bank domestic deposit share"
+      },
+      {
+        "metric_id": "CC-IND-E01",
+        "agencies": [
+          "FDIC",
+          "NCUA"
+        ],
+        "series": "Community-bank + credit-union lending share"
+      },
+      {
+        "metric_id": "CC-IND-B04",
+        "agencies": [
+          "FFIEC",
+          "OCC"
+        ],
+        "series": "CRA small business loan originations"
+      },
+      {
+        "metric_id": "CC-IND-HC02",
+        "agencies": [
+          "DOL"
+        ],
+        "series": "RAPIDS youth apprentices total served"
+      },
+      {
+        "metric_id": "CC-IND-J07",
+        "agencies": [
+          "BJS"
+        ],
+        "series": "Release-cohort 5-year return-to-prison"
+      },
+      {
+        "metric_id": "CC-IND-D10",
+        "agencies": [
+          "ANES/NSF"
+        ],
+        "series": "Trust in government always/most of the time"
+      }
+    ],
+    "still_blocked": [
+      {
+        "metric_id": "CC-IND-B01",
+        "reason": "Census BDS estabs_entry_rate primary retrieval still API/CSV gated"
+      }
+    ]
+  }
 }
