@@ -126,7 +126,7 @@ CC-RQ-P21-067–070.
 
 ## 25. Commit Hash
 
-Filled after commit.
+`3e6e9ee09a5e47149bac0ea1c6b59322ac411fd4` (research commit; docs hash note may trail)
 
 ## 26. Remaining Unknowns
 
