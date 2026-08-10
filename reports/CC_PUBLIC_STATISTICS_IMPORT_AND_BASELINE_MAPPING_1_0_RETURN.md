@@ -155,7 +155,7 @@ See `reports/CC_PUBLIC_STATISTICS_END_TO_END_LINEAGE_PROOF_1_0.md` (Census pop +
 
 ## 15. Commit Hash
 
-_Pending — filled after commit._
+`4aa0631`
 
 ## 16. Remaining Gaps
 
