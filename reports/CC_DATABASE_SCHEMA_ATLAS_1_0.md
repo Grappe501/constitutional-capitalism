@@ -214,11 +214,12 @@ Future research start rule:
 
 ## Baseline expansion status
 
-**PAUSED** at **38/64** pending human decision among:
+**PAUSED** at **38/64**. Human decision locked 2026-08-10:
 
-1. RedDirt API repair (configure keys; re-run spine; export)
-2. Ingestion consolidation (warehouse → CC mapping)
-3. Resume baseline expansion under registry-first rule
-4. Other Phase 2 proof gate
+1. ~~`REDDIRT-PUBLIC-STATISTICS-CREDENTIAL-REPAIR-AND-LIVE-INGEST-PROOF-1.0`~~ **PASSED**
+2. ~~`CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0`~~ **PASSED** (import + mapping; **0** DIRECT MATCH promotions; scoreboard still **38/64**)
+3. Next: expand RedDirt series that can definition-match empty slots (BDS for B01/B02/C02; CPS voting for HC07) — or other Phase 2 proof gates
+4. Do **not** migrate CC into SQL because RedDirt has a database
+5. Do **not** create a second Census/BLS client in CC
 
-Do not continue blind individual statistic retrieval until that decision.
+Blind individual statistic retrieval remains paused unless registry-first retrieval targets a definition-locked empty slot.

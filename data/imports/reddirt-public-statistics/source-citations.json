@@ -1,5 +1,136 @@
 {
-  "export_id": "CC-RD-PUBLIC-STATS-STUB-000",
-  "sources": [],
-  "note": "Official agency citations only. No RedDirt operational references. Map into data/research/source_registry.json before public claim upgrades."
+  "citations": [
+    {
+      "consumer_metric_id": "CC-BASELINE-POP-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "B01003_001E",
+      "period": "2022",
+      "geography_id": "geo:us",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_981f01a9c3d54d49",
+      "response_checksum": "b2b95d64f2c5b0b7a410b6c1e7598154e36ef4c7e8380d1a012d6e9bf660a4fd"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-POP-002",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "B01003_001E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_59fcb1514e724e4b",
+      "response_checksum": "d68f8f600c3891157a0a5f8df0288defc1c9f3b76a5665e13782de5bcf66b456"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-INC-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "B19013_001E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_3615377995254283",
+      "response_checksum": "993686cef74e2315c28b0291e5e310b6e7a717506b8951cda005ee683691d27a"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-POV-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "S1701_C03_001E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_4b810277e5e643ab",
+      "response_checksum": "1c9bf32c9b600569a889f8fa036128b5ee01da807d96a1d8c7a46ac12590ab25"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-EDU-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "B15003_022E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_3177dfcd25034554",
+      "response_checksum": "525590d6dde438d309aa74c36a24064517edc3993f71b728f918e68739fbbf21"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-LF-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "S2301_C02_001E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_bd43d575c6ef47b0",
+      "response_checksum": "60015e957c19d0a384cdd866896d77d1d4061d4bca164fa7a819ef4888b67160"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-OWN-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "DP04_0046PE",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_0e32f482c7664411",
+      "response_checksum": "15724c07989d063c7fcd13c99e5e95126ca4f600704384b90e8180056ac35aa5"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-BB-001",
+      "agency": "census",
+      "dataset": "acs5",
+      "series_code": "S2801_C02_014E",
+      "period": "2022",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://api.census.gov/data.html",
+      "source_query_id": "qry_3bd3fe80639c4649",
+      "response_checksum": "c88bc5ddd72391c3ee20a728d5470a4cc702f9e4fcdfc83250d784ac0f9d6f22"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-UNEMP-001",
+      "agency": "bls",
+      "dataset": "laus_cps",
+      "series_code": "LNS14000000",
+      "period": "2024-M12",
+      "geography_id": "geo:us",
+      "official_source_url": "https://www.bls.gov/data/",
+      "source_query_id": "qry_394d77af6ae84333",
+      "response_checksum": "e3c09bf19bac639f2cacf1ddf5fc7c7b8d26f1ea9c4c23b6538e5f671a339256"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-UNEMP-002",
+      "agency": "bls",
+      "dataset": "laus",
+      "series_code": "LASST050000000000003",
+      "period": "2024-M12",
+      "geography_id": "geo:us-ar",
+      "official_source_url": "https://www.bls.gov/data/",
+      "source_query_id": "qry_ac7afa659f6e476b",
+      "response_checksum": "40aa83e3e7e7eaa018637f22a313099b65f595b061fd657d8ab3f9c17295af0f"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-CPI-001",
+      "agency": "bls",
+      "dataset": "cpi",
+      "series_code": "CUUR0000SA0",
+      "period": "2024-M12",
+      "geography_id": "geo:us",
+      "official_source_url": "https://www.bls.gov/data/",
+      "source_query_id": "qry_4d46904b2455474f",
+      "response_checksum": "b1cedd20826369b471447e03ad8c2713030ff53bbe7ad3274db2878e329e43e1"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-EARN-001",
+      "agency": "bls",
+      "dataset": "ces",
+      "series_code": "CES0500000003",
+      "period": "2024-M12",
+      "geography_id": "geo:us",
+      "official_source_url": "https://www.bls.gov/data/",
+      "source_query_id": "qry_81aa6427aba34d02",
+      "response_checksum": "ac420776ec2bb914e296f60ccfd3c9a0c9449c5dddc27d01b173a454a31d8f97"
+    }
+  ]
 }

@@ -144,7 +144,17 @@ for (const file of requiredFiles) {
 ok("import files scanned for secrets and operational fields");
 
 const national = pathJoinRead("national-baseline.json");
-const obsCount = Array.isArray(national.observations) ? national.observations.length : 0;
+const arkansas = pathJoinRead("arkansas-baseline.json");
+const county = pathJoinRead("county-baselines.json");
+function countImportedMetrics(payload) {
+  if (Array.isArray(payload?.metrics)) return payload.metrics.length;
+  if (Array.isArray(payload?.observations)) return payload.observations.length;
+  return 0;
+}
+const nationalCount = countImportedMetrics(national);
+const arkansasCount = countImportedMetrics(arkansas);
+const countyCount = countImportedMetrics(county);
+const obsCount = nationalCount + arkansasCount + countyCount;
 const baselineStatus = JSON.parse(fs.readFileSync(r("data/baseline/baseline_status.json"), "utf8"));
 
 if (manifest.validation_status === "architecture_stub") {
@@ -158,8 +168,33 @@ if (manifest.validation_status === "architecture_stub") {
   } else ok("baseline remains 2/86 under stub import");
 } else if (manifest.validation_status === "passed") {
   if (obsCount === 0) fail("passed export must include observations");
+  if ((manifest.observation_count || 0) !== obsCount) {
+    fail(
+      `manifest.observation_count=${manifest.observation_count} does not match imported metric rows=${obsCount}`
+    );
+  } else ok(`imported observation rows match manifest (${obsCount})`);
   if (!manifest.reddirt_commit) warn("passed export missing reddirt_commit");
   if (manifest.series_count < 1) fail("passed export series_count must be >= 1");
+  // Credential-separation proof: reject secret-bearing assignments/values,
+  // not documentation that merely names the forbidden env vars.
+  const payloadFiles = requiredFiles.filter((f) => f !== "import-validation.json");
+  const importText = payloadFiles
+    .map((f) => fs.readFileSync(path.join(importDir, f), "utf8"))
+    .join("\n");
+  const secretBearing = [
+    /"(?:CENSUS_API_KEY|BLS_API_KEY|API_DOT_GOV_KEY)"\s*:\s*"(?!false|true)[^"]+"/i,
+    /(?:CENSUS_API_KEY|BLS_API_KEY|API_DOT_GOV_KEY)\s*=\s*\S+/i,
+  ];
+  let credentialSeparationOk = true;
+  for (const re of secretBearing) {
+    if (re.test(importText)) {
+      fail(`Credential-bearing pattern detected in CC import package: ${re}`);
+      credentialSeparationOk = false;
+    }
+  }
+  if (credentialSeparationOk) {
+    ok("credential-separation proof: no Census/BLS/data.gov secret values in import package");
+  }
 } else if (manifest.validation_status === "pending") {
   warn("manifest validation_status is pending — not yet approved for baseline promotion");
 }

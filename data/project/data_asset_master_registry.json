@@ -12,10 +12,11 @@
     "secondary_corroboration_only"
   ],
   "credential_summary": {
-    "CENSUS_API_KEY": "NOT FOUND",
-    "BLS_API_KEY": "NOT FOUND",
-    "API_DOT_GOV_KEY": "CONFIGURED",
-    "note": "Presence labels only. Values never stored.",
+    "CENSUS_API_KEY": "CONFIGURED_IN_REDIRT_RCIP_WORKTREE_ONLY",
+    "BLS_API_KEY": "CONFIGURED_IN_REDIRT_RCIP_WORKTREE_ONLY",
+    "API_DOT_GOV_KEY": "CONFIGURED_NOT_VALID_FOR_CENSUS",
+    "cc_repo_credentials": "NONE",
+    "note": "Presence labels only. Values never stored in CC. Keys remain RedDirt server-side.",
     "code_expects_keys_absent_in_env": {
       "CENSUS_API_KEY": true,
       "BLS_API_KEY": true
@@ -24,7 +25,16 @@
   "baseline_pause": {
     "paused": true,
     "scoreboard": "38/64",
-    "reason": "Stop individual baseline expansion until atlas-informed decision: API repair vs consolidation vs proof gates."
+    "reason": "Live bridge proven; baseline expansion remains paused pending definition-compatible promotions. First live export mapped with 0 DIRECT MATCH fills."
+  },
+  "live_bridge_proof": {
+    "slice_id": "CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0",
+    "export_id": "exp_b8877b6dc05b4217",
+    "observations": 12,
+    "lineage": "Agency API → RedDirt RCIP ingest → normalized warehouse/export → exp_b8877b6dc05b4217 → CC import → baseline mapping",
+    "direct_matches": 0,
+    "supporting_only": 3,
+    "no_slot": 9
   },
   "slot_forensic": {
     "question": "Are B01, B02, C02 and HC07 actually missing data—or are we failing to use infrastructure/data we already possess?",
@@ -40,7 +50,8 @@
       "cpi",
       "ces"
     ],
-    "warehouse_observations": 0,
+    "warehouse_observations": 12,
+    "warehouse_note": "Live RCIP worktree proof 2026-08-10; still no BDS / CPS voting series.",
     "slots": {
       "CC-IND-B01": {
         "title": "Startup rate",

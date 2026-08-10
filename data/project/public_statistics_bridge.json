@@ -1,14 +1,15 @@
 {
-  "version": "0.6.2",
+  "version": "0.7.0",
   "last_updated": "2026-08-10",
-  "status": "spine_partial_first_wave_populated",
+  "status": "live_path_proven_import_mapped_no_auto_promotion",
   "decision_id": "CC-DEC-076",
   "related_decision_ids": [
     "CC-DEC-076",
     "CC-DEC-077",
     "CC-DEC-078"
   ],
-  "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
+  "slice_id": "CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0",
+  "prior_slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
   "supporting_mission": "RCIP-PHASE-1-PUBLIC-STATISTICS-SPINE-1.0",
   "title": "RedDirt Public Data Engine → Constitutional Capitalism (RCIP consumer contract)",
   "central_diagnosis_alignment": "Architecture ahead of evidence — this bridge exists to convert official statistical infrastructure into reproducible baseline proof without importing campaign systems.",
@@ -656,9 +657,35 @@
     "registries": [
       "data/project/database_table_registry.json",
       "data/project/external_data_source_registry.json",
-      "data/project/data_flow_registry.json"
+      "data/project/data_flow_registry.json",
+      "data/project/data_asset_master_registry.json"
     ],
-    "finding": "Census/BLS API keys not configured in RedDirt env; warehouse pulls failed invalid key; CC baseline remains manual JSON."
+    "finding": "Superseded for credentials: RedDirt RCIP worktree now has live Census/BLS keys and successful ingest/export. CC still has no credentials."
+  },
+  "live_agency_paths": {
+    "census": "Census API → RedDirt RCIP ingest → warehouse/export exp_b8877b6dc05b4217 → CC import",
+    "bls": "BLS API → RedDirt RCIP ingest → warehouse/export exp_b8877b6dc05b4217 → CC import"
+  },
+  "bridge_stage_status": {
+    "credential_configuration": "passed_in_reddirt_only",
+    "live_ingest": "passed_12_observations",
+    "validated_export": "passed_exp_b8877b6dc05b4217_privacy_clean",
+    "cc_import": "passed_data_imports_reddirt_public_statistics",
+    "baseline_mapping": "completed_zero_direct_match_promotions"
+  },
+  "first_live_export": {
+    "export_id": "exp_b8877b6dc05b4217",
+    "reddirt_path": "H:\\\\SOSWebsite\\\\RedDirt-rcip-public-statistics\\\\exports\\\\constitutional-capitalism\\\\exp_b8877b6dc05b4217",
+    "cc_import_path": "data/imports/reddirt-public-statistics/",
+    "observation_count": 12,
+    "census_observations": 8,
+    "bls_observations": 4,
+    "mapping_file": "data/imports/reddirt-public-statistics/baseline-observation-mapping.json",
+    "baseline_delta": {
+      "before": "38/64",
+      "after": "38/64",
+      "new_completions": 0
+    }
   },
   "data_asset_master_registry": "data/project/data_asset_master_registry.json",
   "baseline_expansion_paused": true,

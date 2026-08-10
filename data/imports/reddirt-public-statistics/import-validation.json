@@ -1,27 +1,51 @@
 {
-  "export_id": "CC-RD-PUBLIC-STATS-STUB-000",
-  "status": "architecture_stub",
+  "export_id": "exp_b8877b6dc05b4217",
+  "status": "imported_mapped_no_baseline_promotion",
+  "slice_id": "CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0",
+  "reddirt_generator_commit": null,
+  "constitutional_capitalism_import_commit": null,
+  "contract_version": "1.0",
+  "export_integrity_note": "Manifest checksum repaired to hash of on-disk payload after privacy_scan=passed. RedDirt generator previously hashed before privacy mutation; loadPublicdataEnv/export fix applied in RCIP worktree.",
+  "export_checksum": "5ba11f66251be8e772b2ea7c4f290d5451beb6a0cff318954fc9d1a8d9fb3dfd",
+  "observation_counts": {
+    "total": 12,
+    "census": 8,
+    "bls": 4,
+    "privacy_clean": true
+  },
+  "mapping_summary": {
+    "DIRECT_MATCH": 0,
+    "POTENTIAL_MATCH_DEFINITION_REVIEW_REQUIRED": 0,
+    "SUPPORTING_SERIES_ONLY": 3,
+    "NO_CURRENT_BASELINE_SLOT": 9,
+    "new_baseline_completions": 0,
+    "mapping_file": "data/imports/reddirt-public-statistics/baseline-observation-mapping.json"
+  },
   "checks": [
     {
       "id": "no_api_keys",
       "passed": true,
-      "detail": "Stub contains no credentials"
+      "detail": "No Census/BLS/data.gov secret values or credential fields in import package"
     },
     {
       "id": "no_campaign_fields",
       "passed": true,
-      "detail": "Stub contains no campaign/personal fields"
+      "detail": "Privacy field scan passed at import"
     },
     {
       "id": "observations_present",
-      "passed": false,
-      "detail": "No observations yet — expected until first real export"
+      "passed": true,
+      "detail": "12 observations in export (8 Census ACS5, 4 BLS)"
     },
     {
       "id": "baseline_lineage",
-      "passed": false,
-      "detail": "No metric_mappings applied — CC primary-sourced baseline is now 27/86; RedDirt live import observations remain empty"
+      "passed": true,
+      "detail": "Observation-to-baseline mapping recorded; 0 DIRECT MATCH promotions; scoreboard unchanged at 38/64"
+    },
+    {
+      "id": "credential_separation",
+      "passed": true,
+      "detail": "Bridge carries data and provenance only; credentials remain in RedDirt server env"
     }
-  ],
-  "note": "Import validation scaffold. Real exports must flip observations_present and baseline_lineage only after validated mappings."
+  ]
 }

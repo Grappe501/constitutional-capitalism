@@ -29,17 +29,29 @@
     },
     {
       "id": "FLOW-REDIRT-PUBLICSTATS-SPINE",
-      "status": "BROKEN",
+      "status": "LIVE_PROVEN",
+      "path": [
+        "Census/BLS API (keys in RedDirt RCIP worktree only)",
+        "RedDirt publicdata census:seed / bls:seed (2026-08-10)",
+        "H:\\\\SOSWebsite\\\\RedDirt-rcip-public-statistics\\\\data\\\\public-statistics\\\\warehouse",
+        "export exp_b8877b6dc05b4217 (12 observations, privacy clean)",
+        "CC import data/imports/reddirt-public-statistics/",
+        "baseline-observation-mapping.json (0 DIRECT MATCH promotions)"
+      ],
+      "feeds_baseline_slots": 0,
+      "note": "Bridge proven end-to-end. Scoreboard unchanged because no definition-compatible DIRECT MATCH."
+    },
+    {
+      "id": "FLOW-REDIRT-PUBLICSTATS-SPINE-2026-08-05-FAILED",
+      "status": "HISTORICAL_FAILURE",
       "path": [
         "Census/BLS API",
         "RedDirt public-statistics runner (2026-08-05)",
         "data/public-statistics/raw/* (invalid-key bodies)",
-        "warehouse.json releases/sourceQueries (rowCount=0)",
-        "observations=[] — STOP",
-        "(export to CC never produced)"
+        "warehouse observations=[] — STOP"
       ],
       "feeds_baseline_slots": 0,
-      "blocker": "CENSUS_API_KEY / BLS_API_KEY not configured; raw responses show Invalid Key"
+      "blocker": "Superseded: keys were not configured on 2026-08-05"
     },
     {
       "id": "FLOW-REDIRT-COUNTY-ADAPTERS",
@@ -54,15 +66,17 @@
     },
     {
       "id": "FLOW-CC-PUBLICSTATS-IMPORT",
-      "status": "DORMANT",
+      "status": "ACTIVE",
       "path": [
-        "RedDirt approved export folder",
+        "H:\\\\SOSWebsite\\\\RedDirt-rcip-public-statistics\\\\exports\\\\constitutional-capitalism\\\\exp_b8877b6dc05b4217",
         "pnpm publicstats:import",
-        "data/imports/reddirt-public-statistics/*",
+        "data/imports/reddirt-public-statistics/* (12 observations)",
+        "baseline-observation-mapping.json",
         "validators",
-        "STOP — stubs only, observation_count=0; does not update 38/64 scoreboard"
+        "baseline scoreboard unchanged at 38/64 (no unsafe auto-promotion)"
       ],
-      "feeds_baseline_slots": 0
+      "feeds_baseline_slots": 0,
+      "export_id": "exp_b8877b6dc05b4217"
     },
     {
       "id": "FLOW-RESEARCH-CORPUS-JSON",

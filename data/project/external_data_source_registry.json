@@ -1,8 +1,17 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-PUBLIC-STATISTICS-IMPORT-AND-BASELINE-MAPPING-1.0",
   "generated_at": "2026-08-10",
-  "audit_only": true,
+  "audit_only": false,
+  "live_bridge_update": {
+    "prior_atlas_slice": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+    "export_id": "exp_b8877b6dc05b4217",
+    "reddirt_worktree": "H:\\\\SOSWebsite\\\\RedDirt-rcip-public-statistics",
+    "census_status": "LIVE_SUCCESS",
+    "bls_status": "LIVE_SUCCESS",
+    "cc_holds_credentials": false,
+    "lineage": "Agency API → RedDirt RCIP ingest → warehouse/export → CC import → baseline mapping"
+  },
   "credential_inventory": {
     "note": "Names and presence only. Secret values never recorded.",
     "constitutional_capitalism": {

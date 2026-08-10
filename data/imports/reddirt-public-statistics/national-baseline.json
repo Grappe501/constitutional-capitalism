@@ -1,6 +1,104 @@
 {
-  "export_id": "CC-RD-PUBLIC-STATS-STUB-000",
-  "geographic_level": "national_US",
-  "observations": [],
-  "note": "Empty by design until RedDirt generates an approved public-statistics export."
+  "metrics": [
+    {
+      "consumer_metric_id": "CC-BASELINE-POP-001",
+      "title": "ACS5 B01003_001E",
+      "value": 331097593,
+      "unit": "as_reported",
+      "reference_period": "2022",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "United States Census Bureau",
+      "dataset": "acs5",
+      "series_code": "B01003_001E",
+      "definition": "Census ACS 5-Year variable B01003_001E",
+      "limitations": [
+        "ACS 5-Year estimate; do not mix with ACS 1-Year without disclosure",
+        "Margins of error stored when provided"
+      ],
+      "margin_of_error": -555555555,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://api.census.gov/data.html",
+      "reddirt_observation_id": "obs_90e79e2a2b334c0b",
+      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_source_query_id": "qry_981f01a9c3d54d49",
+      "reddirt_ingestion_run_id": "run_a81ac69cbb444a91"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-UNEMP-001",
+      "title": "BLS LNS14000000",
+      "value": 4.1,
+      "unit": "as_reported",
+      "reference_period": "2024-M12",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "Bureau of Labor Statistics",
+      "dataset": "laus_cps",
+      "series_code": "LNS14000000",
+      "definition": "BLS series LNS14000000",
+      "limitations": [
+        "Do not mix seasonally adjusted and non-seasonally adjusted series silently",
+        "Survey and administrative series are not identical concepts"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://www.bls.gov/data/",
+      "reddirt_observation_id": "obs_f42ac1e52eea4fe8",
+      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_source_query_id": "qry_394d77af6ae84333",
+      "reddirt_ingestion_run_id": "run_c86e497b5b904990"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-CPI-001",
+      "title": "BLS CUUR0000SA0",
+      "value": 315.605,
+      "unit": "as_reported",
+      "reference_period": "2024-M12",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "Bureau of Labor Statistics",
+      "dataset": "cpi",
+      "series_code": "CUUR0000SA0",
+      "definition": "BLS series CUUR0000SA0",
+      "limitations": [
+        "Do not mix seasonally adjusted and non-seasonally adjusted series silently",
+        "Survey and administrative series are not identical concepts"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://www.bls.gov/data/",
+      "reddirt_observation_id": "obs_d74c9ec9f23c4db9",
+      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_source_query_id": "qry_4d46904b2455474f",
+      "reddirt_ingestion_run_id": "run_c86e497b5b904990"
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-EARN-001",
+      "title": "BLS CES0500000003",
+      "value": 35.69,
+      "unit": "as_reported",
+      "reference_period": "2024-M12",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "source_agency": "Bureau of Labor Statistics",
+      "dataset": "ces",
+      "series_code": "CES0500000003",
+      "definition": "BLS series CES0500000003",
+      "limitations": [
+        "Do not mix seasonally adjusted and non-seasonally adjusted series silently",
+        "Survey and administrative series are not identical concepts"
+      ],
+      "margin_of_error": null,
+      "confidence": "verified_primary",
+      "cross_check_status": "not_applicable",
+      "official_source_url": "https://www.bls.gov/data/",
+      "reddirt_observation_id": "obs_1d8ddebc745249eb",
+      "reddirt_export_id": "exp_b8877b6dc05b4217",
+      "reddirt_source_query_id": "qry_81aa6427aba34d02",
+      "reddirt_ingestion_run_id": "run_c86e497b5b904990"
+    }
+  ]
 }
