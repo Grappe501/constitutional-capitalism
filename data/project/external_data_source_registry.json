@@ -1,0 +1,574 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+  "generated_at": "2026-08-10",
+  "audit_only": true,
+  "credential_inventory": {
+    "note": "Names and presence only. Secret values never recorded.",
+    "constitutional_capitalism": {
+      "env_files_checked": [
+        ".env",
+        ".env.example"
+      ],
+      "result": {
+        ".env": {
+          "file_exists": false,
+          "keys": {
+            "CENSUS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "BLS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "API_DOT_GOV_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "OPENFEC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "CONGRESS_GOV_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "SOCRATA_APP_TOKEN": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "GOOGLE_CIVIC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DATABASE_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DIRECT_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            }
+          }
+        },
+        ".env.example": {
+          "file_exists": false,
+          "keys": {
+            "CENSUS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "BLS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "API_DOT_GOV_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "OPENFEC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "CONGRESS_GOV_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "SOCRATA_APP_TOKEN": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "GOOGLE_CIVIC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DATABASE_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DIRECT_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            }
+          }
+        }
+      },
+      "conclusion": "No CENSUS_API_KEY or BLS_API_KEY in CC. Bridge forbids copying RedDirt keys into CC."
+    },
+    "reddirt": {
+      "env_files_checked": [
+        ".env",
+        ".env.local",
+        ".env.example"
+      ],
+      "result": {
+        ".env": {
+          "file_exists": true,
+          "keys": {
+            "CENSUS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "BLS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "API_DOT_GOV_KEY": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "OPENFEC_API_KEY": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "CONGRESS_GOV_API_KEY": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "SOCRATA_APP_TOKEN": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "GOOGLE_CIVIC_API_KEY": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "DATABASE_URL": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "DIRECT_URL": {
+              "present": true,
+              "has_nonempty_value": true
+            }
+          }
+        },
+        ".env.local": {
+          "file_exists": true,
+          "keys": {
+            "CENSUS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "BLS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "API_DOT_GOV_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "OPENFEC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "CONGRESS_GOV_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "SOCRATA_APP_TOKEN": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "GOOGLE_CIVIC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DATABASE_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DIRECT_URL": {
+              "present": false,
+              "has_nonempty_value": false
+            }
+          }
+        },
+        ".env.example": {
+          "file_exists": true,
+          "keys": {
+            "CENSUS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "BLS_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "API_DOT_GOV_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "OPENFEC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "CONGRESS_GOV_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "SOCRATA_APP_TOKEN": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "GOOGLE_CIVIC_API_KEY": {
+              "present": false,
+              "has_nonempty_value": false
+            },
+            "DATABASE_URL": {
+              "present": true,
+              "has_nonempty_value": true
+            },
+            "DIRECT_URL": {
+              "present": true,
+              "has_nonempty_value": true
+            }
+          }
+        }
+      },
+      "conclusion": "CENSUS_API_KEY and BLS_API_KEY are NOT present in RedDirt .env / .env.local. API_DOT_GOV_KEY IS present (nonempty) but is not a substitute Census/BLS registration key. Docs mark Census/BLS as PLANNED."
+    }
+  },
+  "system_rule_proposed": "For authoritative statistical agencies with configured API access, API retrieval should be the preferred baseline-ingestion method. Static file retrieval becomes the fallback when the required dataset is not API-accessible. Preferred order: API → official machine-readable file → official table/workbook → manual primary retrieval → secondary source only for corroboration, never silent substitution. Before any future research script retrieves public statistics manually, it must first check this Data Source Registry.",
+  "agencies": [
+    {
+      "agency": "US Census Bureau",
+      "api_key_env": "CENSUS_API_KEY",
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [
+        "H:\\SOSWebsite\\RedDirt\\src\\lib\\county-workbench\\factory\\ingestion\\countyIngestionAdapters.ts (censusAdapter — checks CENSUS_API_KEY; pull NOT IMPLEMENTED)",
+        "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\warehouse\\warehouse.json (attempted ACS5 pulls 2026-08-05)"
+      ],
+      "scheduled_or_manual": "manual/attempted spine run; not scheduled in package.json",
+      "tables_written": [
+        "RedDirt file warehouse releases/sourceQueries (no observations)",
+        "design: public_statistics.* (not migrated)",
+        "CountyPublicDemographics (intended; adapter not implemented)"
+      ],
+      "fields_stored": "none successfully — Invalid Key HTML body stored in raw cache",
+      "last_pull": "2026-08-05T03:42:39Z",
+      "coverage": "ATTEMPTED_FAILED",
+      "gaps": [
+        "CENSUS_API_KEY missing from RedDirt env",
+        "BDS / CPS voting products may not be on Census Data API even with key",
+        "CC baseline fills for Census metrics are manual URL/file retrieval, not this warehouse"
+      ],
+      "datasets_actually_attempted": [
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5",
+          "variables": "NAME,B01003_001E,B01003_001M",
+          "geography": "us:*",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5",
+          "variables": "NAME,B01003_001E,B01003_001M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5",
+          "variables": "NAME,B19013_001E,B19013_001M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5/subject",
+          "variables": "NAME,S1701_C03_001E,S1701_C03_001M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5",
+          "variables": "NAME,B15003_022E,B15003_022M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5/subject",
+          "variables": "NAME,S2301_C02_001E,S2301_C02_001M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5/profile",
+          "variables": "NAME,DP04_0046PE",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "acs5",
+          "endpoint": "https://api.census.gov/data/2022/acs/acs5/subject",
+          "variables": "NAME,S2801_C02_014E,S2801_C02_014M",
+          "geography": "state:05",
+          "year": "2022",
+          "frequency": "acs5_vintage",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\census\\2026-08-05\\4f21eb245b0a5a19.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        }
+      ],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "Bureau of Labor Statistics",
+      "api_key_env": "BLS_API_KEY",
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [
+        "H:\\SOSWebsite\\RedDirt\\src\\lib\\county-workbench\\factory\\ingestion\\countyIngestionAdapters.ts (blsAdapter — checks BLS_API_KEY; pull NOT IMPLEMENTED)",
+        "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\warehouse\\warehouse.json"
+      ],
+      "scheduled_or_manual": "manual/attempted spine run",
+      "tables_written": [
+        "file warehouse only; 0 observations"
+      ],
+      "fields_stored": "none — REQUEST_NOT_PROCESSED invalid key placeholder",
+      "last_pull": "2026-08-05T03:42:41Z",
+      "coverage": "ATTEMPTED_FAILED",
+      "gaps": [
+        "BLS_API_KEY missing from RedDirt env (warehouse used placeholder YOUR_BLS_API_KEY)",
+        "CC baseline BLS values (JOLTS, CPS earnings pages, etc.) are manual HTML/table retrieval"
+      ],
+      "datasets_actually_attempted": [
+        {
+          "dataset": "laus_cps",
+          "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+          "variables": "LNS14000000",
+          "geography": "nation",
+          "year": "2024",
+          "frequency": "annual_or_series_native",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\bls\\2026-08-05\\4697bafd9c2338e0.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "laus",
+          "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+          "variables": "LASST050000000000003",
+          "geography": "state:05",
+          "year": "2024",
+          "frequency": "annual_or_series_native",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\bls\\2026-08-05\\4697bafd9c2338e0.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "cpi",
+          "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+          "variables": "CUUR0000SA0",
+          "geography": "nation",
+          "year": "2024",
+          "frequency": "annual_or_series_native",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\bls\\2026-08-05\\4697bafd9c2338e0.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        },
+        {
+          "dataset": "ces",
+          "endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+          "variables": "CES0500000003",
+          "geography": "nation",
+          "year": "2024",
+          "frequency": "annual_or_series_native",
+          "destination_table_or_file": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\raw\\bls\\2026-08-05\\4697bafd9c2338e0.json",
+          "last_successful_pull": null,
+          "last_attempt_status": 200,
+          "last_attempt_row_count": 0,
+          "result": "FAILED_INVALID_KEY"
+        }
+      ],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "api.data.gov (generic)",
+      "api_key_env": "API_DOT_GOV_KEY",
+      "key_configured_in_reddirt_env": true,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [
+        "RedDirt .env (present); not wired as Census/BLS client in audited adapters"
+      ],
+      "scheduled_or_manual": "unknown",
+      "tables_written": [],
+      "fields_stored": null,
+      "last_pull": null,
+      "coverage": "KEY_PRESENT_USAGE_UNCLEAR_FOR_CENSUS_BLS",
+      "gaps": [
+        "Must not be assumed to satisfy Census Data API or BLS registrationkey requirements"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "BEA",
+      "api_key_env": null,
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [],
+      "scheduled_or_manual": "manual URL provenance in CC source_registry",
+      "tables_written": [
+        "CC source_registry / baseline metrics (manual)"
+      ],
+      "coverage": "MANUAL_ONLY_IN_CC",
+      "gaps": [
+        "No BEA API client in CC or audited RedDirt public-statistics path"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "USDA / FSA / FSIS / NASS",
+      "api_key_env": null,
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [
+        "CC scripts/run-phase21-*ag*.mjs",
+        "CC research/phase_2 source_snapshots FSIS CSV"
+      ],
+      "scheduled_or_manual": "manual / local CSV snapshot",
+      "tables_written": [
+        "CC research JSON / baseline E02 FSA figure"
+      ],
+      "coverage": "MANUAL_PARTIAL",
+      "gaps": [
+        "No live USDA API connector in CC"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "Federal Reserve (SBCS / FRED)",
+      "api_key_env": null,
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [],
+      "scheduled_or_manual": "manual PDF/primary page retrieval in CC baseline scripts",
+      "tables_written": [
+        "CC baseline metrics (e.g., E02 SBCS, wealth SCF/FRED series)"
+      ],
+      "coverage": "MANUAL_PARTIAL",
+      "gaps": [
+        "No Fed API client in CC"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "FEC",
+      "api_key_env": "OPENFEC_API_KEY",
+      "key_configured_in_reddirt_env": true,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [
+        "CC used FEC bulk weball zip download for D04 — not OpenFEC API"
+      ],
+      "scheduled_or_manual": "manual bulk file in CC",
+      "tables_written": [
+        "CC baseline D04"
+      ],
+      "coverage": "MANUAL_FILE_IN_CC_KEY_PRESENT_IN_REDIRT",
+      "gaps": [
+        "RedDirt OpenFEC key not used by CC baseline pipeline"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    },
+    {
+      "agency": "HRSA / CDC / NCES / EAC / Arkansas agencies",
+      "api_key_env": null,
+      "key_configured_in_reddirt_env": false,
+      "key_configured_in_cc_env": false,
+      "client_helper_files": [],
+      "scheduled_or_manual": "manual primary pages in CC where used",
+      "tables_written": [
+        "selected CC baseline / research modules"
+      ],
+      "coverage": "MANUAL_SPARSE",
+      "gaps": [
+        "No dedicated connectors"
+      ],
+      "datasets_actually_attempted": [],
+      "datasets_successfully_ingested": []
+    }
+  ],
+  "duplication_flags": [
+    {
+      "kind": "STATIC MANUAL VALUE WHERE API INGESTION ALREADY EXISTS",
+      "detail": "CC baseline contains many Census/BLS-sourced metrics entered manually, while RedDirt has public-statistics warehouse + county adapters that intend API ingestion — but keys are missing and adapters/warehouse pulls are broken/unimplemented.",
+      "severity": "high"
+    },
+    {
+      "kind": "SAME AGENCY PULLED BY MULTIPLE CLIENTS",
+      "detail": "Census referenced by (1) RedDirt countyIngestionAdapters censusAdapter, (2) RedDirt public-statistics warehouse runner, (3) CC manual baseline scripts. None currently deliver successful live observations into CC scoreboard via DB.",
+      "severity": "high"
+    },
+    {
+      "kind": "JSON FILE + DATABASE HOLDING DIFFERENT VERSIONS",
+      "detail": "CC national_baseline_metrics.json is the live scoreboard. RedDirt Postgres CountyPublicDemographics and file warehouse are separate and not synchronized to CC. Import stubs remain observation_count=0.",
+      "severity": "high"
+    },
+    {
+      "kind": "SAME DATA IN MULTIPLE TABLES",
+      "detail": "Design public_statistics.observations vs file warehouse observations vs CC baseline current_value — three potential homes; only CC baseline currently has values.",
+      "severity": "medium"
+    }
+  ]
+}

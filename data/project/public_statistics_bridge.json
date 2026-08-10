@@ -648,5 +648,16 @@
         "reason": "2024 CPS P20-587 age table retrieval pending; A-1 historical path confirmed"
       }
     ]
+  },
+  "dataflow_atlas": {
+    "slice_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+    "generated_at": "2026-08-10",
+    "report": "reports/CC_DATABASE_SCHEMA_ATLAS_1_0.md",
+    "registries": [
+      "data/project/database_table_registry.json",
+      "data/project/external_data_source_registry.json",
+      "data/project/data_flow_registry.json"
+    ],
+    "finding": "Census/BLS API keys not configured in RedDirt env; warehouse pulls failed invalid key; CC baseline remains manual JSON."
   }
 }

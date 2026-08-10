@@ -71,5 +71,14 @@
     "SOURCE_IDENTIFIED_DATA_PENDING": "Authoritative source and metric known; primary observation not yet successfully retrieved.",
     "BASELINE_COMPLETE": "Definition, observation, primary evidence, retrieval path, and limitations satisfy the reproducible-retrieval standard."
   },
-  "failed_retrieval_log": "research/phase_2/baseline_failed_retrieval_log.json"
+  "failed_retrieval_log": "research/phase_2/baseline_failed_retrieval_log.json",
+  "preferred_ingestion_order": [
+    "agency_api_with_configured_key",
+    "official_machine_readable_file",
+    "official_table_or_workbook",
+    "manual_primary_retrieval",
+    "secondary_source_corroboration_only_never_silent_substitution"
+  ],
+  "data_source_registry_check_required_before_manual_retrieval": "data/project/external_data_source_registry.json",
+  "dataflow_atlas_slice": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0"
 }

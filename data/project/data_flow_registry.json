@@ -1,0 +1,86 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+  "generated_at": "2026-08-10",
+  "ideal_flow": [
+    "Agency API",
+    "ingestion script (RedDirt)",
+    "raw/staging (RedDirt raw/ + public_statistics)",
+    "normalized statistical table",
+    "approved export",
+    "CC import stubs",
+    "baseline metric",
+    "claim / proof packet",
+    "book/public surface"
+  ],
+  "actual_flows": [
+    {
+      "id": "FLOW-CC-MANUAL-BASELINE",
+      "status": "ACTIVE",
+      "path": [
+        "Agency website / PDF / CSV (manual)",
+        "CC phase21 baseline script hardcodes observation",
+        "data/baseline/national_baseline_metrics.json",
+        "source_registry entry",
+        "build-board / book-site static JSON import"
+      ],
+      "feeds_baseline_slots": 38,
+      "note": "Current reality for nearly all of 38/64."
+    },
+    {
+      "id": "FLOW-REDIRT-PUBLICSTATS-SPINE",
+      "status": "BROKEN",
+      "path": [
+        "Census/BLS API",
+        "RedDirt public-statistics runner (2026-08-05)",
+        "data/public-statistics/raw/* (invalid-key bodies)",
+        "warehouse.json releases/sourceQueries (rowCount=0)",
+        "observations=[] — STOP",
+        "(export to CC never produced)"
+      ],
+      "feeds_baseline_slots": 0,
+      "blocker": "CENSUS_API_KEY / BLS_API_KEY not configured; raw responses show Invalid Key"
+    },
+    {
+      "id": "FLOW-REDIRT-COUNTY-ADAPTERS",
+      "status": "NOT_IMPLEMENTED",
+      "path": [
+        "CENSUS_API_KEY / BLS_API_KEY env check",
+        "countyIngestionAdapters censusAdapter/blsAdapter",
+        "CountyPublicDemographics (intended)",
+        "STOP — pull not implemented; key not configured"
+      ],
+      "feeds_baseline_slots": 0
+    },
+    {
+      "id": "FLOW-CC-PUBLICSTATS-IMPORT",
+      "status": "DORMANT",
+      "path": [
+        "RedDirt approved export folder",
+        "pnpm publicstats:import",
+        "data/imports/reddirt-public-statistics/*",
+        "validators",
+        "STOP — stubs only, observation_count=0; does not update 38/64 scoreboard"
+      ],
+      "feeds_baseline_slots": 0
+    },
+    {
+      "id": "FLOW-RESEARCH-CORPUS-JSON",
+      "status": "ACTIVE",
+      "path": [
+        "manual research",
+        "data/research/*.json + research/phase_2/*",
+        "claim_ledger / knowledge_graph",
+        "proof packets / reports"
+      ],
+      "db_backed": false
+    }
+  ],
+  "baseline_backing": {
+    "scoreboard": "38/64",
+    "db_backed_slots": 0,
+    "file_manual_slots": 38,
+    "reddirt_warehouse_backed_slots": 0
+  },
+  "hard_rule_after_audit": "Before any future research script retrieves public statistics manually, it must first check data/project/external_data_source_registry.json to determine whether an existing API client, database table, or cached canonical dataset already provides the data."
+}
