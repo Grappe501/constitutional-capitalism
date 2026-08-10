@@ -1,15 +1,16 @@
 {
-  "mission_id": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
-  "status": "PASSED_AND_DEPLOYING",
+  "mission_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
+  "status": "PASSED",
   "updated_at": "2026-08-10",
-  "summary": "Registered research/design constraint: no knowledge qualification for suffrage. Separate hypothesis CC-HYP-AGE-16-LOCAL-SUFFRAGE. Corrected citizenship framework. Bundled prior research (RCIP aligned baseline 42/64, corpus evidence audit, systems compare pages, Google Civic source family) for commit/push/Netlify deploy. Progress snapshot regenerated at 43%.",
-  "constraint": "data/project/research_design_constraint_registry.json",
-  "hypothesis_registry": "research/phase_2/suffrage_and_civic_education_hypothesis_registry.json",
-  "public_reasoning": "reports/public_reasoning/CC-PR-084-no-knowledge-qualification-for-suffrage.md",
+  "summary": "Targeted legislative/civic ingest exported exp_legciv_9ab7ba9f3266 (16 objects). Mapping: 253/289 opportunities EVIDENCE_READY (87.5%), 36 PARTIAL (Google Civic IP restriction, CPS reuse pointer, empty Open States vote sample). No page rewrites. Next: publication evidence-upgrade pass on highest-reuse EVIDENCE_READY content.",
+  "report": "reports/CC_RCIP_LEGISLATIVE_CIVIC_TARGETED_INGEST_1_0_RETURN.md",
+  "export_id": "exp_legciv_9ab7ba9f3266",
+  "import_package": "data/imports/reddirt-legislative-civic/",
+  "evidence_ready_mapping": "data/project/legislative_civic_evidence_ready_mapping.json",
+  "evidence_ready": 253,
+  "partial_ready": 36,
+  "opportunity_total": 289,
   "baseline": "42/64",
-  "sources_registered": 264,
   "overall_percent": 43,
-  "next_recommended_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
-  "github_push": "pushed",
-  "ending_commit": "7d82d4d"
+  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1-LEGISLATIVE-CIVIC-1.0"
 }

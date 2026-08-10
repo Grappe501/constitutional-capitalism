@@ -1,0 +1,1444 @@
+{
+  "export_id": "exp_legciv_9ab7ba9f3266",
+  "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
+  "generated_at": "2026-08-10T21:37:52.499Z",
+  "contract_version": "legislative-civic-export-1.0",
+  "boundary_attestation": {
+    "contains_api_keys": false,
+    "contains_residential_address_warehouse": false,
+    "google_civic_controlled_reference_places_only": true,
+    "public_records_and_aggregates_only": true,
+    "credential_free": true
+  },
+  "governing_rule": "No ingest object without manifest-backed publication use and provenance path.",
+  "ingest_results": {
+    "OPENFEC": {
+      "status": "ok",
+      "objects": 5
+    },
+    "OPENSTATES": {
+      "status": "ok",
+      "objects": 3,
+      "bills": 60,
+      "legislators": 142,
+      "votes": 0
+    },
+    "CONGRESS_GOV": {
+      "status": "ok"
+    },
+    "GOOGLE_CIVIC": {
+      "status": "ip_restricted",
+      "elections": 0,
+      "places_with_contests": 0
+    },
+    "CENSUS": {
+      "status": "ok"
+    }
+  },
+  "summary": {
+    "object_count": 16,
+    "provenance_event_count": 36,
+    "by_source_family": {
+      "OPENFEC": 5,
+      "OPENSTATES": 3,
+      "CONGRESS_GOV": 3,
+      "GOOGLE_CIVIC": 3,
+      "CENSUS_BLS_PUBLIC_STATISTICS": 2
+    }
+  },
+  "objects": [
+    {
+      "object_id": "obj_34872535b763",
+      "demand_id": "RCIP-LCD-001",
+      "template_id": "OPENFEC-CANDIDATE-RECEIPTS-CONCENTRATION",
+      "source_family": "OPENFEC",
+      "object_type": "finance_receipts_concentration",
+      "geography": "US",
+      "period": "2016",
+      "metrics": {
+        "top_decile_share_of_receipts": 0.3610929021775302,
+        "candidate_count_receipts_gt_0": 200,
+        "top_decile_count": 20,
+        "total_receipts": 1069958366.6699991
+      },
+      "definition": "Share of aggregate House+Senate candidate receipts held by the top 10% of candidates with receipts > 0 in OpenFEC candidate totals for the cycle (API universe).",
+      "limitations": [
+        "API pagination capped for targeted ingest; universe may differ from FEC weball bulk file used for CC-IND-D04.",
+        "Disclosure is not evidence of capture."
+      ],
+      "privacy_classification": "aggregate_public_finance",
+      "historical_depth": "multi_cycle_series",
+      "target_cc_content_ids": [
+        "CC-IND-D04",
+        "CC-CLAIM-003",
+        "CC-CLAIM-134"
+      ],
+      "official_source_url": "https://api.open.fec.gov/developers/"
+    },
+    {
+      "object_id": "obj_230e9abaf327",
+      "demand_id": "RCIP-LCD-001",
+      "template_id": "OPENFEC-CANDIDATE-RECEIPTS-CONCENTRATION",
+      "source_family": "OPENFEC",
+      "object_type": "finance_receipts_concentration",
+      "geography": "US",
+      "period": "2018",
+      "metrics": {
+        "top_decile_share_of_receipts": 0.3920810298206333,
+        "candidate_count_receipts_gt_0": 200,
+        "top_decile_count": 20,
+        "total_receipts": 1757281133.3799996
+      },
+      "definition": "Share of aggregate House+Senate candidate receipts held by the top 10% of candidates with receipts > 0 in OpenFEC candidate totals for the cycle (API universe).",
+      "limitations": [
+        "API pagination capped for targeted ingest; universe may differ from FEC weball bulk file used for CC-IND-D04.",
+        "Disclosure is not evidence of capture."
+      ],
+      "privacy_classification": "aggregate_public_finance",
+      "historical_depth": "multi_cycle_series",
+      "target_cc_content_ids": [
+        "CC-IND-D04",
+        "CC-CLAIM-003",
+        "CC-CLAIM-134"
+      ],
+      "official_source_url": "https://api.open.fec.gov/developers/"
+    },
+    {
+      "object_id": "obj_3c7176b32648",
+      "demand_id": "RCIP-LCD-001",
+      "template_id": "OPENFEC-CANDIDATE-RECEIPTS-CONCENTRATION",
+      "source_family": "OPENFEC",
+      "object_type": "finance_receipts_concentration",
+      "geography": "US",
+      "period": "2020",
+      "metrics": {
+        "top_decile_share_of_receipts": 0.5293087919876996,
+        "candidate_count_receipts_gt_0": 200,
+        "top_decile_count": 20,
+        "total_receipts": 2931708246.4900017
+      },
+      "definition": "Share of aggregate House+Senate candidate receipts held by the top 10% of candidates with receipts > 0 in OpenFEC candidate totals for the cycle (API universe).",
+      "limitations": [
+        "API pagination capped for targeted ingest; universe may differ from FEC weball bulk file used for CC-IND-D04.",
+        "Disclosure is not evidence of capture."
+      ],
+      "privacy_classification": "aggregate_public_finance",
+      "historical_depth": "multi_cycle_series",
+      "target_cc_content_ids": [
+        "CC-IND-D04",
+        "CC-CLAIM-003",
+        "CC-CLAIM-134"
+      ],
+      "official_source_url": "https://api.open.fec.gov/developers/"
+    },
+    {
+      "object_id": "obj_2653bcaa56b1",
+      "demand_id": "RCIP-LCD-001",
+      "template_id": "OPENFEC-CANDIDATE-RECEIPTS-CONCENTRATION",
+      "source_family": "OPENFEC",
+      "object_type": "finance_receipts_concentration",
+      "geography": "US",
+      "period": "2022",
+      "metrics": {
+        "top_decile_share_of_receipts": 0.4694052862572456,
+        "candidate_count_receipts_gt_0": 200,
+        "top_decile_count": 20,
+        "total_receipts": 2478163024.9099994
+      },
+      "definition": "Share of aggregate House+Senate candidate receipts held by the top 10% of candidates with receipts > 0 in OpenFEC candidate totals for the cycle (API universe).",
+      "limitations": [
+        "API pagination capped for targeted ingest; universe may differ from FEC weball bulk file used for CC-IND-D04.",
+        "Disclosure is not evidence of capture."
+      ],
+      "privacy_classification": "aggregate_public_finance",
+      "historical_depth": "multi_cycle_series",
+      "target_cc_content_ids": [
+        "CC-IND-D04",
+        "CC-CLAIM-003",
+        "CC-CLAIM-134"
+      ],
+      "official_source_url": "https://api.open.fec.gov/developers/"
+    },
+    {
+      "object_id": "obj_225824f891d0",
+      "demand_id": "RCIP-LCD-001",
+      "template_id": "OPENFEC-CANDIDATE-RECEIPTS-CONCENTRATION",
+      "source_family": "OPENFEC",
+      "object_type": "finance_receipts_concentration",
+      "geography": "US",
+      "period": "2024",
+      "metrics": {
+        "top_decile_share_of_receipts": 0.4433080582757652,
+        "candidate_count_receipts_gt_0": 200,
+        "top_decile_count": 20,
+        "total_receipts": 2529706703.6899996
+      },
+      "definition": "Share of aggregate House+Senate candidate receipts held by the top 10% of candidates with receipts > 0 in OpenFEC candidate totals for the cycle (API universe).",
+      "limitations": [
+        "API pagination capped for targeted ingest; universe may differ from FEC weball bulk file used for CC-IND-D04.",
+        "Disclosure is not evidence of capture."
+      ],
+      "privacy_classification": "aggregate_public_finance",
+      "historical_depth": "multi_cycle_series",
+      "target_cc_content_ids": [
+        "CC-IND-D04",
+        "CC-CLAIM-003",
+        "CC-CLAIM-134"
+      ],
+      "official_source_url": "https://api.open.fec.gov/developers/"
+    },
+    {
+      "object_id": "obj_699d342668da",
+      "demand_id": "RCIP-LCD-002",
+      "template_id": "OPENSTATES-AR-BILLS",
+      "source_family": "OPENSTATES",
+      "object_type": "state_bill_sample_aggregate",
+      "geography": "Arkansas",
+      "period": "2026-08-10",
+      "retrieval_status": "ok",
+      "metrics": {
+        "sampled_bill_count": 60,
+        "sessions_represented": 2,
+        "bills_by_session": {
+          "2026S1": 2,
+          "2026F": 58
+        }
+      },
+      "sample_bills": [
+        {
+          "identifier": "SB 1",
+          "title": "TO REDUCE THE INCOME TAX RATES FOR INDIVIDUALS, TRUSTS, ESTATES, AND CORPORATIONS.",
+          "session": "2026S1",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-05-06T19:06:30+00:00"
+        },
+        {
+          "identifier": "HB 1001",
+          "title": "TO REDUCE THE INCOME TAX RATES FOR INDIVIDUALS, TRUSTS, ESTATES, AND CORPORATIONS.",
+          "session": "2026S1",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-05-06T18:58:17+00:00"
+        },
+        {
+          "identifier": "SB 67",
+          "title": "AN ACT FOR THE UNIVERSITY OF ARKANSAS FOR MEDICAL SCIENCES SUPPLEMENTAL APPROPRIATION.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T16:53:22+00:00"
+        },
+        {
+          "identifier": "HB 1010",
+          "title": "AN ACT FOR THE DEPARTMENT OF CORRECTIONS - DIVISION OF COMMUNITY CORRECTION APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T19:45:29+00:00"
+        },
+        {
+          "identifier": "SB 58",
+          "title": "AN ACT FOR THE DEPARTMENT OF EDUCATION - DIVISION OF HIGHER EDUCATION APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T16:52:47+00:00"
+        },
+        {
+          "identifier": "SB 75",
+          "title": "TO AMEND THE REVENUE STABILIZATION LAW; TO CREATE FUNDS; TO MAKE TRANSFERS TO AND FROM FUNDS AND FUND ACCOUNTS; AND TO DECLARE AN EMERGENCY.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T22:04:40+00:00"
+        },
+        {
+          "identifier": "SB 43",
+          "title": "AN ACT FOR THE UNIVERSITY OF ARKANSAS - DIVISION OF AGRICULTURE APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T16:52:15+00:00"
+        },
+        {
+          "identifier": "HB 1099",
+          "title": "AN ACT FOR THE DEPARTMENT OF HUMAN SERVICES - DIVISION OF DEVELOPMENTAL DISABILITIES SERVICES APPROPRIATION.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T13:41:23+00:00"
+        },
+        {
+          "identifier": "SB 8",
+          "title": "AN ACT FOR THE DEPARTMENT OF COMMERCE APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T16:49:10+00:00"
+        },
+        {
+          "identifier": "HB 1018",
+          "title": "AN ACT FOR THE UNIVERSITY OF ARKANSAS EAST ARKANSAS COMMUNITY COLLEGE APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T19:45:56+00:00"
+        },
+        {
+          "identifier": "HB 1080",
+          "title": "AN ACT FOR THE DEPARTMENT OF HUMAN SERVICES - DIVISION OF DEVELOPMENTAL DISABILITIES SERVICES - JONESBORO HUMAN DEVELOPMENT CENTER APPROPRIATION FOR THE 2026-20",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T13:41:16+00:00"
+        },
+        {
+          "identifier": "HR 1013",
+          "title": "TO AUTHORIZE THE INTRODUCTION OF A NONAPPROPRIATION BILL TO AMEND THE REQUIREMENTS FOR A DIGITAL ASSET MINING BUSINESS AND AMEND THE AUTHORITY OF A LOCAL GOVERN",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T13:47:59+00:00"
+        },
+        {
+          "identifier": "SB 73",
+          "title": "AN ACT FOR THE DEPARTMENT OF COMMERCE - ARKANSAS ECONOMIC DEVELOPMENT COMMISSION SUPPLEMENTAL APPROPRIATION.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T16:53:37+00:00"
+        },
+        {
+          "identifier": "HB 1009",
+          "title": "AN ACT FOR THE DEPARTMENT OF PUBLIC SAFETY APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T19:45:17+00:00"
+        },
+        {
+          "identifier": "HB 1017",
+          "title": "AN ACT FOR THE DEPARTMENT OF AGRICULTURE - PROMOTION BOARDS APPROPRIATION FOR THE 2026-2027 FISCAL YEAR.",
+          "session": "2026F",
+          "subject": [],
+          "sponsor_count": null,
+          "latest_action_date": "2026-04-29T19:45:45+00:00"
+        }
+      ],
+      "definition": "Targeted Open States sample of recent Arkansas bills with session aggregates (not a full warehouse).",
+      "limitations": [
+        "Sample capped at 3 pages; not exhaustive session inventory.",
+        "Open States coverage gaps possible."
+      ],
+      "privacy_classification": "public_legislative_record",
+      "historical_depth": "multi_session_sample",
+      "target_cc_content_ids": [
+        "national_diagnosis_democracy",
+        "LCL_community",
+        "journalism_module"
+      ],
+      "official_source_url": "https://docs.openstates.org/api-v3/"
+    },
+    {
+      "object_id": "obj_4df8d0fdb494",
+      "demand_id": "RCIP-LCD-007",
+      "template_id": "OPENSTATES-AR-LEGISLATORS",
+      "source_family": "OPENSTATES",
+      "object_type": "state_legislator_roster_aggregate",
+      "geography": "Arkansas",
+      "period": "2026-08-10",
+      "retrieval_status": "ok",
+      "metrics": {
+        "legislator_count": 142,
+        "by_chamber": {
+          "lower": 99,
+          "upper": 35,
+          "executive": 8
+        },
+        "by_party": {
+          "Republican": 116,
+          "Democratic": 26
+        }
+      },
+      "definition": "Arkansas legislators returned by Open States people endpoint (current roster aggregate).",
+      "limitations": [
+        "Roster ≠ performance or influence.",
+        "Cross-check Arkleg if contested."
+      ],
+      "privacy_classification": "public_officeholder_roster",
+      "historical_depth": "current_roster",
+      "target_cc_content_ids": [
+        "LCL_community",
+        "democracy_framework",
+        "google_civic_crosswalk"
+      ],
+      "official_source_url": "https://docs.openstates.org/api-v3/"
+    },
+    {
+      "object_id": "obj_73f42ab7eb35",
+      "demand_id": "RCIP-LCD-011",
+      "template_id": "OPENSTATES-AR-VOTES",
+      "source_family": "OPENSTATES",
+      "object_type": "state_vote_sample_aggregate",
+      "geography": "Arkansas",
+      "period": "2026-08-10",
+      "retrieval_status": "ok",
+      "metrics": {
+        "sampled_vote_count": 0,
+        "results": {}
+      },
+      "definition": "Sample of recent Arkansas legislative votes from Open States bill includes (capped).",
+      "limitations": [
+        "Sample only; incomplete vote archives must remain UNKNOWN for baseline D05."
+      ],
+      "privacy_classification": "public_legislative_record",
+      "historical_depth": "recent_sample",
+      "target_cc_content_ids": [
+        "journalism_module",
+        "CC-IND-D05"
+      ],
+      "official_source_url": "https://docs.openstates.org/api-v3/"
+    },
+    {
+      "object_id": "obj_62f0178938bd",
+      "demand_id": "RCIP-LCD-004",
+      "template_id": "CONGRESS-BILL-ACTIONS-SPONSORS",
+      "source_family": "CONGRESS_GOV",
+      "object_type": "federal_bill_recent_sample",
+      "geography": "US",
+      "period": "118",
+      "metrics": {
+        "sampled_bill_count": 20
+      },
+      "sample_bills": [
+        {
+          "congress": 118,
+          "type": "HJRES",
+          "number": "124",
+          "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of the Comptroller of the Currency r",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2024-07-30",
+            "text": "Placed on the Union Calendar, Calendar No. 515."
+          },
+          "updateDate": "2025-08-25",
+          "url": "https://api.congress.gov/v3/bill/118/hjres/124?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "HRES",
+          "number": "1153",
+          "title": "Recognizing the designation of the week of April 11 through April 17, 2024, as the seventh annual \"Black Maternal Health Week\".",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2024-04-26",
+            "text": "Referred to the Subcommittee on Health."
+          },
+          "updateDate": "2024-11-21",
+          "url": "https://api.congress.gov/v3/bill/118/hres/1153?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "4734",
+          "title": "Home Modifications for the Climate Crisis Act",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2024-07-23",
+            "text": "Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+          },
+          "updateDate": "2025-04-21",
+          "url": "https://api.congress.gov/v3/bill/118/s/4734?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "3135",
+          "title": "Israel Supplemental Appropriations Act of 2023",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-10-26",
+            "text": "Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 231."
+          },
+          "updateDate": "2025-12-05",
+          "url": "https://api.congress.gov/v3/bill/118/s/3135?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "3776",
+          "title": "Coast Guard Academy Safe-to-Report Act",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2024-02-08",
+            "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+          },
+          "updateDate": "2025-01-14",
+          "url": "https://api.congress.gov/v3/bill/118/s/3776?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "HR",
+          "number": "8050",
+          "title": "Supporting Parents in Education Act",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2024-04-17",
+            "text": "Referred to the House Committee on Education and the Workforce."
+          },
+          "updateDate": "2025-07-21",
+          "url": "https://api.congress.gov/v3/bill/118/hr/8050?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "2913",
+          "title": "Denying Pensions to Convicted Child Molesters Act of 2023",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-09-26",
+            "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+          },
+          "updateDate": "2026-01-09",
+          "url": "https://api.congress.gov/v3/bill/118/s/2913?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "3223",
+          "title": "AMMO Act",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-11-02",
+            "text": "Read twice and referred to the Committee on the Judiciary."
+          },
+          "updateDate": "2026-08-10",
+          "url": "https://api.congress.gov/v3/bill/118/s/3223?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "HRES",
+          "number": "726",
+          "title": "Supporting the designation of the week of September 25 through September 29, 2023, as \"National Clean Energy Week\".",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2023-09-29",
+            "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+          },
+          "updateDate": "2025-01-15",
+          "url": "https://api.congress.gov/v3/bill/118/hres/726?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "HRES",
+          "number": "1154",
+          "title": "Supporting the goals and ideals of \"Financial Literacy Month\".",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2024-04-17",
+            "text": "Referred to the House Committee on Oversight and Accountability."
+          },
+          "updateDate": "2025-02-04",
+          "url": "https://api.congress.gov/v3/bill/118/hres/1154?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "4936",
+          "title": "A bill to require a study relating to the Minidoka National Historic Site.",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2024-11-21",
+            "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 634."
+          },
+          "updateDate": "2026-03-24",
+          "url": "https://api.congress.gov/v3/bill/118/s/4936?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "5125",
+          "title": "Land Manager Housing and Workforce Improvement Act of 2024",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2024-12-19",
+            "actionTime": "18:06:25",
+            "text": "Held at the desk."
+          },
+          "updateDate": "2026-03-24",
+          "url": "https://api.congress.gov/v3/bill/118/s/5125?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "4932",
+          "title": "Department of Energy Quantum Leadership Act of 2024",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2024-11-21",
+            "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 633."
+          },
+          "updateDate": "2026-03-24",
+          "url": "https://api.congress.gov/v3/bill/118/s/4932?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "HR",
+          "number": "6839",
+          "title": "Immigrant Detained Persons Legal Rights Act",
+          "originChamber": "House",
+          "latestAction": {
+            "actionDate": "2023-12-15",
+            "text": "Referred to the House Committee on the Judiciary."
+          },
+          "updateDate": "2024-07-24",
+          "url": "https://api.congress.gov/v3/bill/118/hr/6839?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "SRES",
+          "number": "512",
+          "title": "A resolution designating November 2023 as \"National Lung Cancer Awareness Month\" and expressing support for early detection and treatment of lung cancer.",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-18",
+            "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6029; text: CR S6023-6024)"
+          },
+          "updateDate": "2025-05-27",
+          "url": "https://api.congress.gov/v3/bill/118/sres/512?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "SRES",
+          "number": "513",
+          "title": "A resolution recognizing December 17 as \"Wright Brothers Day\" and commemorating the 120th anniversary of the first powered flight.",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-18",
+            "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6029; text: CR S6024)"
+          },
+          "updateDate": "2025-01-16",
+          "url": "https://api.congress.gov/v3/bill/118/sres/513?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "S",
+          "number": "3555",
+          "title": "STOCK Act 2.0",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-18",
+            "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+          },
+          "updateDate": "2026-01-09",
+          "url": "https://api.congress.gov/v3/bill/118/s/3555?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "SRES",
+          "number": "511",
+          "title": "A resolution reinforcing the United States-Senegal relationship and urging the Government of Senegal to conduct free, fair, transparent, and inclusive elections",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-18",
+            "text": "Referred to the Committee on Foreign Relations. (text: CR S6023)"
+          },
+          "updateDate": "2025-01-14",
+          "url": "https://api.congress.gov/v3/bill/118/sres/511?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "SRES",
+          "number": "514",
+          "title": "A resolution congratulating the Florida State University Seminoles for winning the 2023 National Collegiate Athletic Association Division I Women's Soccer Champ",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-20",
+            "text": "Star Print ordered on the resolution."
+          },
+          "updateDate": "2024-12-19",
+          "url": "https://api.congress.gov/v3/bill/118/sres/514?format=json"
+        },
+        {
+          "congress": 118,
+          "type": "SRES",
+          "number": "515",
+          "title": "A resolution condemning attacks by Iranian military proxies on the armed forces of the United States in Iraq and Syria and emphasizing the urgency of responding",
+          "originChamber": "Senate",
+          "latestAction": {
+            "actionDate": "2023-12-19",
+            "text": "Referred to the Committee on Foreign Relations. (text: CR S6058-6059)"
+          },
+          "updateDate": "2025-01-14",
+          "url": "https://api.congress.gov/v3/bill/118/sres/515?format=json"
+        }
+      ],
+      "definition": "Recent 118th Congress bills from Congress.gov list endpoint (targeted sample for institutional evidence).",
+      "limitations": [
+        "List sample ≠ complete legislative history.",
+        "Introduction ≠ enactment."
+      ],
+      "privacy_classification": "public_legislative_record",
+      "historical_depth": "current_congress_sample",
+      "target_cc_content_ids": [
+        "national_diagnosis_democracy",
+        "democracy_framework",
+        "public_reasoning"
+      ],
+      "official_source_url": "https://api.congress.gov/"
+    },
+    {
+      "object_id": "obj_4593065f2335",
+      "demand_id": "RCIP-LCD-009",
+      "template_id": "CONGRESS-COMMITTEE-STRUCTURE",
+      "source_family": "CONGRESS_GOV",
+      "object_type": "federal_member_roster_aggregate",
+      "geography": "US",
+      "period": "2026-08-10",
+      "metrics": {
+        "current_member_sample_count": 250,
+        "arkansas_member_matches": 0
+      },
+      "definition": "Current-member sample from Congress.gov for political-geography joins (committee detail deferred to follow-on if list endpoint insufficient).",
+      "limitations": [
+        "Member roster ≠ voting record or capture.",
+        "Committee endpoint detail may require follow-on targeted calls."
+      ],
+      "privacy_classification": "public_officeholder_roster",
+      "historical_depth": "current_membership",
+      "target_cc_content_ids": [
+        "LCL_community",
+        "democracy_framework"
+      ],
+      "official_source_url": "https://api.congress.gov/"
+    },
+    {
+      "object_id": "obj_c4466cb28e1e",
+      "demand_id": "RCIP-LCD-009b",
+      "template_id": "CONGRESS-COMMITTEE-STRUCTURE",
+      "source_family": "CONGRESS_GOV",
+      "object_type": "federal_committee_sample",
+      "geography": "US",
+      "period": "2026-08-10",
+      "metrics": {
+        "sampled_house_committee_count": 20
+      },
+      "sample_committees": [
+        {
+          "name": "Task Force on the Declassification of Federal Secrets Subcommittee",
+          "chamber": "House",
+          "systemCode": "hzgo34",
+          "url": "https://api.congress.gov/v3/committee/house/hzgo34?format=json"
+        },
+        {
+          "name": "Select Subcommittee to Investigate the Remaining Questions Surrounding January 6, 2021",
+          "chamber": "House",
+          "systemCode": "hlqj00",
+          "url": "https://api.congress.gov/v3/committee/house/hlqj00?format=json"
+        },
+        {
+          "name": "Select Committee on the Modernization of Congress",
+          "chamber": "House",
+          "systemCode": "hlmh00",
+          "url": "https://api.congress.gov/v3/committee/house/hlmh00?format=json"
+        },
+        {
+          "name": "Open Source Subcommittee",
+          "chamber": "House",
+          "systemCode": "hlig11",
+          "url": "https://api.congress.gov/v3/committee/house/hlig11?format=json"
+        },
+        {
+          "name": "South and Central Asia  Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsfa19",
+          "url": "https://api.congress.gov/v3/committee/house/hsfa19?format=json"
+        },
+        {
+          "name": "Federal Law Enforcement Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsgo33",
+          "url": "https://api.congress.gov/v3/committee/house/hsgo33?format=json"
+        },
+        {
+          "name": "Delivering on Government Efficiency Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsgo16",
+          "url": "https://api.congress.gov/v3/committee/house/hsgo16?format=json"
+        },
+        {
+          "name": "Select Subcommittee on the Weaponization of the Federal Government",
+          "chamber": "House",
+          "systemCode": "hlfd00",
+          "url": "https://api.congress.gov/v3/committee/house/hlfd00?format=json"
+        },
+        {
+          "name": "Select Subcommittee on the Coronavirus Pandemic",
+          "chamber": "House",
+          "systemCode": "hlvc00",
+          "url": "https://api.congress.gov/v3/committee/house/hlvc00?format=json"
+        },
+        {
+          "name": "Task Force on the Attempted Assassination of Donald J. Trump Task Force",
+          "chamber": "House",
+          "systemCode": "htzt00",
+          "url": "https://api.congress.gov/v3/committee/house/htzt00?format=json"
+        },
+        {
+          "name": "Aviation Subcommittee",
+          "chamber": "House",
+          "systemCode": "hspw05",
+          "url": "https://api.congress.gov/v3/committee/house/hspw05?format=json"
+        },
+        {
+          "name": "Work and Welfare Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm03",
+          "url": "https://api.congress.gov/v3/committee/house/hswm03?format=json"
+        },
+        {
+          "name": "Trade Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm04",
+          "url": "https://api.congress.gov/v3/committee/house/hswm04?format=json"
+        },
+        {
+          "name": "Tax Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm05",
+          "url": "https://api.congress.gov/v3/committee/house/hswm05?format=json"
+        },
+        {
+          "name": "Social Security Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm01",
+          "url": "https://api.congress.gov/v3/committee/house/hswm01?format=json"
+        },
+        {
+          "name": "Oversight Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm06",
+          "url": "https://api.congress.gov/v3/committee/house/hswm06?format=json"
+        },
+        {
+          "name": "Health Subcommittee",
+          "chamber": "House",
+          "systemCode": "hswm02",
+          "url": "https://api.congress.gov/v3/committee/house/hswm02?format=json"
+        },
+        {
+          "name": "Technology Modernization Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsvr11",
+          "url": "https://api.congress.gov/v3/committee/house/hsvr11?format=json"
+        },
+        {
+          "name": "Oversight and Investigations Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsvr08",
+          "url": "https://api.congress.gov/v3/committee/house/hsvr08?format=json"
+        },
+        {
+          "name": "Health Subcommittee",
+          "chamber": "House",
+          "systemCode": "hsvr03",
+          "url": "https://api.congress.gov/v3/committee/house/hsvr03?format=json"
+        }
+      ],
+      "definition": "House committee sample from Congress.gov.",
+      "limitations": [
+        "Sample only."
+      ],
+      "privacy_classification": "public_legislative_record",
+      "historical_depth": "current",
+      "target_cc_content_ids": [
+        "democracy_framework",
+        "national_diagnosis_democracy"
+      ],
+      "official_source_url": "https://api.congress.gov/"
+    },
+    {
+      "object_id": "obj_a0042370b479",
+      "demand_id": "RCIP-LCD-006",
+      "template_id": "GOOGLE-CIVIC-ELECTIONS-LIST",
+      "source_family": "GOOGLE_CIVIC",
+      "object_type": "supported_elections_list",
+      "geography": "US",
+      "period": "2026-08-10",
+      "retrieval_status": "ip_restricted",
+      "metrics": {
+        "supported_election_count": 0
+      },
+      "elections": [],
+      "definition": "Google Civic supported elections list at retrieval time (not a permanent historical database).",
+      "limitations": [
+        "Coverage depends on Google-supported elections.",
+        "Capture dated snapshots over time for depth."
+      ],
+      "privacy_classification": "public_election_metadata",
+      "historical_depth": "point_in_time_snapshot",
+      "target_cc_content_ids": [
+        "journalism_module",
+        "democracy_framework",
+        "baseline_dashboard"
+      ],
+      "official_source_url": "https://developers.google.com/civic-information"
+    },
+    {
+      "object_id": "obj_653e75a5864a",
+      "demand_id": "RCIP-LCD-010",
+      "template_id": "GOOGLE-CIVIC-DIVISIONS",
+      "source_family": "GOOGLE_CIVIC",
+      "object_type": "political_division_search",
+      "geography": "Arkansas",
+      "period": "2026-08-10",
+      "retrieval_status": "ip_restricted",
+      "metrics": {
+        "division_result_count": 0
+      },
+      "sample_divisions": [],
+      "definition": "Open Civic Data divisions matching Arkansas query — join keys for political geography.",
+      "limitations": [
+        "OCD IDs are join keys, not performance metrics."
+      ],
+      "privacy_classification": "public_political_geography",
+      "historical_depth": "current_ocd_graph",
+      "target_cc_content_ids": [
+        "LCL_community",
+        "baseline_dashboard"
+      ],
+      "official_source_url": "https://developers.google.com/civic-information"
+    },
+    {
+      "object_id": "obj_85d436a31bfa",
+      "demand_id": "RCIP-LCD-003",
+      "template_id": "GOOGLE-CIVIC-VOTERINFO-CONTESTS",
+      "source_family": "GOOGLE_CIVIC",
+      "object_type": "electoral_contest_structure_by_reference_place",
+      "geography": "Arkansas_controlled_reference_places",
+      "period": "2026-08-10",
+      "retrieval_status": "ip_restricted",
+      "metrics": {
+        "reference_place_count": 5,
+        "places_with_contests": 0,
+        "mean_contest_count": 0
+      },
+      "places": [
+        {
+          "reference_place": "Little Rock, AR",
+          "http_status": 403,
+          "election_name": null,
+          "election_day": null,
+          "contest_count": 0,
+          "contests": [],
+          "polling_location_count": 0,
+          "early_vote_site_count": 0,
+          "dropoff_location_count": 0,
+          "election_admin_name": null
+        },
+        {
+          "reference_place": "Helena-West Helena, AR",
+          "http_status": 403,
+          "election_name": null,
+          "election_day": null,
+          "contest_count": 0,
+          "contests": [],
+          "polling_location_count": 0,
+          "early_vote_site_count": 0,
+          "dropoff_location_count": 0,
+          "election_admin_name": null
+        },
+        {
+          "reference_place": "Lewisville, AR",
+          "http_status": 403,
+          "election_name": null,
+          "election_day": null,
+          "contest_count": 0,
+          "contests": [],
+          "polling_location_count": 0,
+          "early_vote_site_count": 0,
+          "dropoff_location_count": 0,
+          "election_admin_name": null
+        },
+        {
+          "reference_place": "Searcy, AR",
+          "http_status": 403,
+          "election_name": null,
+          "election_day": null,
+          "contest_count": 0,
+          "contests": [],
+          "polling_location_count": 0,
+          "early_vote_site_count": 0,
+          "dropoff_location_count": 0,
+          "election_admin_name": null
+        },
+        {
+          "reference_place": "Conway, AR",
+          "http_status": 403,
+          "election_name": null,
+          "election_day": null,
+          "contest_count": 0,
+          "contests": [],
+          "polling_location_count": 0,
+          "early_vote_site_count": 0,
+          "dropoff_location_count": 0,
+          "election_admin_name": null
+        }
+      ],
+      "definition": "Ballot/contest structure and election-administration counts for controlled Arkansas city/state reference places. No residential-address warehouse.",
+      "limitations": [
+        "Coverage depends on supported elections; may be empty outside election windows.",
+        "Contests ≠ turnout.",
+        "Privacy: city/state reference places only.",
+        "Agent/cloud IP may be blocked by Google Civic key IP restriction — re-run from allowed machine."
+      ],
+      "privacy_classification": "controlled_reference_place_only",
+      "historical_depth": "election_window_snapshot",
+      "target_cc_content_ids": [
+        "journalism_module",
+        "LCL_community",
+        "constitutional_citizenship",
+        "democracy_framework"
+      ],
+      "official_source_url": "https://developers.google.com/civic-information"
+    },
+    {
+      "object_id": "obj_97581d136f01",
+      "demand_id": "RCIP-LCD-008",
+      "template_id": "CENSUS-ACS-DEMOGRAPHIC-CONTEXT-FOR-POLITICS",
+      "source_family": "CENSUS_BLS_PUBLIC_STATISTICS",
+      "object_type": "acs_demographic_context",
+      "geography": "Arkansas",
+      "period": "2023",
+      "metrics": {
+        "population": 3032651,
+        "median_household_income": 58773
+      },
+      "definition": "ACS 5-Year Arkansas population and median household income for political-institution context.",
+      "limitations": [
+        "Socioeconomic context ≠ political causation."
+      ],
+      "privacy_classification": "public_statistics_aggregate",
+      "historical_depth": "acs5_period",
+      "target_cc_content_ids": [
+        "LCL_community",
+        "community_comparisons"
+      ],
+      "official_source_url": "https://api.census.gov/data.html"
+    },
+    {
+      "object_id": "obj_e6c103de10aa",
+      "demand_id": "RCIP-LCD-005",
+      "template_id": "CENSUS-CPS-VOTING-CONTEXT",
+      "source_family": "CENSUS_BLS_PUBLIC_STATISTICS",
+      "object_type": "reuse_pointer",
+      "geography": "US",
+      "period": "2024",
+      "metrics": {
+        "reuse_existing": true,
+        "referenced_export_hint": "exp_79f42d2fe71f4b69 / CC-IND-HC07"
+      },
+      "definition": "CPS voting context already present via baseline-aligned ingest (HC07); no duplicate file pull in this slice.",
+      "limitations": [
+        "Pointer only — see prior RedDirt CPS extract."
+      ],
+      "privacy_classification": "public_statistics_aggregate",
+      "historical_depth": "series_available_in_prior_export",
+      "target_cc_content_ids": [
+        "CC-IND-HC07",
+        "CC-IND-D03"
+      ],
+      "official_source_url": "https://www.census.gov/topics/public-sector/voting.html"
+    }
+  ],
+  "provenance": [
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2016,
+        "office": "H",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2016,
+        "office": "S",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2018,
+        "office": "H",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2018,
+        "office": "S",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2020,
+        "office": "H",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2020,
+        "office": "S",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2022,
+        "office": "H",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2022,
+        "office": "S",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2024,
+        "office": "H",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENFEC",
+      "endpoint": "GET /v1/candidates/totals/",
+      "query": {
+        "cycle": 2024,
+        "office": "S",
+        "page": 1,
+        "per_page": 100
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "response_bytes": null
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 1,
+        "per_page": 20,
+        "sort": "updated_desc"
+      },
+      "http_status": 200,
+      "error_detail": null,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 2,
+        "per_page": 20,
+        "sort": "updated_desc"
+      },
+      "http_status": 200,
+      "error_detail": null,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 3,
+        "per_page": 20,
+        "sort": "updated_desc"
+      },
+      "http_status": 200,
+      "error_detail": null,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/aa0a2493-d88f-4b6b-a799-d796b376015b",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/b59fa6f1-3eb8-40c3-9745-be7c09356a44",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/2e58e91e-12c8-4afe-b495-e5aad2bb18fc",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/0cee6671-062c-47f8-8a71-289cd4e98db6",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/3626caf6-aa0a-4cda-b3f0-429bc9682bab",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/1203d542-4534-446c-88c2-1dc1ed3ae718",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/b24ee304-274e-4341-8e56-9327acb7af98",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /bills/ocd-bill/bae4c121-2d56-46d2-9139-a9833f3ed351",
+      "query": {
+        "include": "votes"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /people",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 1
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /people",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 2
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "GET /people",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "page": 3
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "OPENSTATES",
+      "endpoint": "DERIVED from GET /bills?include=votes",
+      "query": {
+        "jurisdiction": "ocd-jurisdiction/country:us/state:ar/government",
+        "pages": 3
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "CONGRESS_GOV",
+      "endpoint": "GET /v3/bill/118",
+      "query": {
+        "limit": 20,
+        "sort": "updateDate+desc"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "CONGRESS_GOV",
+      "endpoint": "GET /v3/member",
+      "query": {
+        "currentMember": true,
+        "limit": 250
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "CONGRESS_GOV",
+      "endpoint": "GET /v3/committee/house",
+      "query": {
+        "limit": 20
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/elections",
+      "query": {},
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/divisions",
+      "query": {
+        "query": "Arkansas"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/voterinfo",
+      "query": {
+        "reference_place": "Little Rock, AR"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "privacy_note": "controlled_reference_place_only"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/voterinfo",
+      "query": {
+        "reference_place": "Helena-West Helena, AR"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "privacy_note": "controlled_reference_place_only"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/voterinfo",
+      "query": {
+        "reference_place": "Lewisville, AR"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "privacy_note": "controlled_reference_place_only"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/voterinfo",
+      "query": {
+        "reference_place": "Searcy, AR"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "privacy_note": "controlled_reference_place_only"
+    },
+    {
+      "source_family": "GOOGLE_CIVIC",
+      "endpoint": "GET /civicinfo/v2/voterinfo",
+      "query": {
+        "reference_place": "Conway, AR"
+      },
+      "http_status": 403,
+      "retrieved_at": "2026-08-10T21:37:52.499Z",
+      "privacy_note": "controlled_reference_place_only"
+    },
+    {
+      "source_family": "CENSUS_BLS_PUBLIC_STATISTICS",
+      "endpoint": "GET /data/2023/acs/acs5",
+      "query": {
+        "get": "NAME,B01003_001E,B19013_001E",
+        "for": "state:05"
+      },
+      "http_status": 200,
+      "retrieved_at": "2026-08-10T21:37:52.499Z"
+    }
+  ],
+  "checksum_sha256": "c25af30b54213b336300a2a2fa466aa79a1cce9b75c3202cd4bc6ed31e2dc226"
+}

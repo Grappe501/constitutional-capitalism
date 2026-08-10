@@ -1,0 +1,125 @@
+{
+  "version": "1.2.0",
+  "generated_at": "2026-08-10",
+  "slice_gate": "RCIP-LEGISLATIVE-CIVIC-SOURCE-HEALTH-1.0",
+  "next_slice_when_health_clears": "RCIP-LEGISLATIVE-CIVIC-PUBLICATION-DEMAND-MANIFEST-1.0",
+  "governing_rules": [
+    "Configure once in RedDirt, probe each source independently, preserve credential boundaries, then let CC consume only validated exports.",
+    "API availability is not evidence relevance.",
+    "Demand manifest drives ingest: existing written argument → evidence need → source family → exact API object → RedDirt ingestion → credential-free export → CC evidence surface.",
+    "API_DOT_GOV_KEY is for api.data.gov consumers (e.g. NREL). It is NOT a Census Bureau API key.",
+    "CENSUS_API_KEY remains separate via configure-publicdata-keys.ps1.",
+    "Never print or commit key values.",
+    "Prefer historical depth when an API offers a defensible time series — not only today's snapshot.",
+    "No new architecture and no indiscriminate API harvesting."
+  ],
+  "credential_boundary": {
+    "lives_in": "RedDirt RCIP worktree .env only (gitignored)",
+    "never_in_cc": true,
+    "configure_script": "H:/SOSWebsite/RedDirt-rcip-public-statistics/scripts/configure-legislative-civic-keys.ps1",
+    "configure_openstates_only": "npm run legislative:configure-openstates",
+    "probe_script": "H:/SOSWebsite/RedDirt-rcip-public-statistics/scripts/probe-legislative-civic-apis.mjs",
+    "npm": {
+      "configure": "legislative:configure-keys",
+      "configure_openstates": "legislative:configure-openstates",
+      "probe": "legislative:probe"
+    }
+  },
+  "health_pass": {
+    "as_of": "2026-08-10T20:59:00Z",
+    "machine_probe_completed": true,
+    "configure_event": "Windows paste dialog wrote OPENSTATES_API_KEY and API_DOT_GOV_KEY to RedDirt .env (presence only).",
+    "sources": {
+      "CONGRESS_GOV": {
+        "env_var": "CONGRESS_GOV_API_KEY",
+        "status": "LIVE_USABLE",
+        "evidence": "probe HTTP 200 on GET /v3/member",
+        "ingest_posture": "demand_manifest_only"
+      },
+      "OPENFEC": {
+        "env_var": "OPENFEC_API_KEY",
+        "status": "LIVE_USABLE",
+        "evidence": "probe HTTP 200 on GET /v1/candidates/",
+        "ingest_posture": "demand_manifest_only"
+      },
+      "OPENSTATES": {
+        "env_var": "OPENSTATES_API_KEY",
+        "status": "LIVE_USABLE",
+        "evidence": "probe HTTP 200 on GET /jurisdictions after reissue + Windows paste configure",
+        "ingest_posture": "demand_manifest_only"
+      },
+      "GOOGLE_CIVIC": {
+        "env_var": "GOOGLE_CIVIC_API_KEY",
+        "status": "SEPARATE_FAMILY",
+        "note": "Tracked in google_civic_information_source_family.json; include in demand manifest mapping when health allows.",
+        "ingest_posture": "demand_manifest_only"
+      },
+      "API_DOT_GOV": {
+        "env_var": "API_DOT_GOV_KEY",
+        "status": "DEFERRED_NONBLOCKING",
+        "evidence": "Key written via Windows dialog; NREL alt-fuel probe still fetch-failed on machine path. Not marked source-broken; deferred as non-blocking for legislative/civic demand manifest.",
+        "ingest_posture": "deferred_nonblocking_for_legislative_manifest",
+        "not_census": true
+      },
+      "CENSUS_BLS_PUBLIC_STATISTICS": {
+        "env_vars": ["CENSUS_API_KEY", "BLS_API_KEY"],
+        "status": "SEPARATE_SPINE_LIVE",
+        "note": "Socioeconomic context spine; hard separation from API_DOT_GOV_KEY preserved.",
+        "ingest_posture": "existing_public_statistics_and_publication_demand_manifests"
+      }
+    },
+    "legislative_civic_core_cleared": true,
+    "cleared_for_demand_manifest": [
+      "CONGRESS_GOV",
+      "OPENFEC",
+      "OPENSTATES",
+      "GOOGLE_CIVIC",
+      "CENSUS_BLS_PUBLIC_STATISTICS"
+    ]
+  },
+  "demand_manifest_gate": {
+    "status": "PASSED",
+    "slice_id": "RCIP-LEGISLATIVE-CIVIC-PUBLICATION-DEMAND-MANIFEST-1.0",
+    "completed_at": "2026-08-10",
+    "deferred_nonblocking": ["API_DOT_GOV"],
+    "artifact": "data/project/RCIP_LEGISLATIVE_CIVIC_PUBLICATION_DEMAND_MANIFEST.json",
+    "map": "data/project/legislative_civic_source_to_content_map.json",
+    "top25": "data/project/legislative_civic_demand_top25.json",
+    "return": "reports/CC_RCIP_LEGISLATIVE_CIVIC_PUBLICATION_DEMAND_MANIFEST_1_0_RETURN.md",
+    "summary": {
+      "files_scanned": 157,
+      "demand_opportunities": 289,
+      "unique_ingest_demands": 11
+    },
+    "next_slice": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
+    "ingest_rule": "Only exact bill, legislator, committee, campaign-finance, election, and governmental-structure objects demanded by existing CC content. Prefer defensible historical series over single snapshots when available."
+  },
+  "targeted_ingest_gate": {
+    "status": "PASSED",
+    "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
+    "completed_at": "2026-08-10",
+    "export_id": "exp_legciv_9ab7ba9f3266",
+    "import_package": "data/imports/reddirt-legislative-civic/",
+    "mapping": "data/project/legislative_civic_evidence_ready_mapping.json",
+    "return": "reports/CC_RCIP_LEGISLATIVE_CIVIC_TARGETED_INGEST_1_0_RETURN.md",
+    "summary": {
+      "object_count": 16,
+      "opportunity_total": 289,
+      "evidence_ready": 253,
+      "partial_ready": 36,
+      "not_yet": 0
+    },
+    "partial_blockers": [
+      "GOOGLE_CIVIC_IP_RESTRICTED_ON_AGENT_RUNTIME",
+      "CPS_HC07_REUSE_POINTER",
+      "OPENSTATES_VOTES_EMPTY_SAMPLE"
+    ],
+    "next_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1-LEGISLATIVE-CIVIC-1.0"
+  },
+  "related": [
+    "data/project/google_civic_information_source_family.json",
+    "data/project/RCIP_PUBLICATION_DATA_DEMAND_MANIFEST.json",
+    "data/project/content_data_evidence_opportunity_registry.json",
+    "reports/CC_RCIP_LEGISLATIVE_CIVIC_SOURCE_HEALTH_1_0_STATUS.md"
+  ]
+}
