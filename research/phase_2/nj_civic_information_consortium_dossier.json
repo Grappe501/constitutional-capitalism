@@ -1,0 +1,173 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-LOCAL-JOURNALISM-PUBLIC-FINANCE-AND-INDEPENDENCE-COMPARATIVE-DOSSIER-1.0",
+  "generated_at": "2026-08-10",
+  "status": "COMPARATIVE_DOSSIER_RESEARCH",
+  "entity": "New Jersey Civic Information Consortium (NJCIC)",
+  "arkansas_diagnosis_preserved": {
+    "preserved": true,
+    "rule": "OUTLET PRESENCE ≠ PROVEN INSTITUTIONAL SCRUTINY",
+    "matrix_snapshot": {
+      "institution_x_geography_rows": 84,
+      "partial_rows": 8,
+      "remainder": "not_yet_coded",
+      "not_yet_coded_means": "UNKNOWN — not absence of coverage"
+    },
+    "source_slice": "CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0"
+  },
+  "statutory_origin": {
+    "statute": "N.J.S.A. 18A:64-96 et seq. (P.L.2018, c.111)",
+    "signed": "2018-08",
+    "source_ids": [
+      "CC-SRC-144"
+    ],
+    "design_intent": "Nonprofit university consortium vehicle for civic-information grants — not a government newsroom"
+  },
+  "governance": {
+    "board_size": 16,
+    "appointment_structure_from_case_study": {
+      "governor_appointees": 2,
+      "legislative_leadership_appointees": 4,
+      "university_appointees": 6,
+      "board_public_appointees": 4,
+      "source_ids": [
+        "CC-SRC-164"
+      ],
+      "note": "Case study written for NJCIC; verify against statute/bylaws before legal conclusions."
+    },
+    "member_universities_from_program_site": [
+      "TCNJ",
+      "Montclair State",
+      "NJIT",
+      "Rowan",
+      "Kean",
+      "Rutgers"
+    ],
+    "source_ids": [
+      "CC-SRC-145",
+      "CC-SRC-164"
+    ],
+    "nonprofit_status": {
+      "claimed": "501(c)(3) / public charity",
+      "case_study_note": "Nonprofit filing path described; official May 2021 nonprofit milestone in case study",
+      "source_ids": [
+        "CC-SRC-164"
+      ],
+      "independence_warning": "Nonprofit status ≠ immunity from political appropriation/appointment pressure"
+    }
+  },
+  "editorial_independence_safeguards_claimed": {
+    "program_claim": "State law prevents New Jersey and the Consortium from owning funded projects or exercising editorial control over grantees",
+    "source_ids": [
+      "CC-SRC-145",
+      "CC-SRC-144"
+    ],
+    "verification_status": "STATUTORY_CLAIM_DOCUMENTED_PRACTICE_INCOMPLETE"
+  },
+  "funding_history": {
+    "note": "MULTIPLE SECONDARY SERIES CONFLICT. Do not treat any single series as reconciled truth. Prefer line-item budget records when available.",
+    "series_a_njbudget_com_line_items": {
+      "source_ids": [
+        "CC-SRC-165"
+      ],
+      "years": [
+        {
+          "fy": 2024,
+          "governor_recommendation": 2000000,
+          "appropriated": 3000000
+        },
+        {
+          "fy": 2025,
+          "governor_recommendation": 1000000,
+          "appropriated": 2000000
+        },
+        {
+          "fy": 2026,
+          "governor_recommendation": 0,
+          "appropriated": 2500000
+        },
+        {
+          "fy": 2027,
+          "governor_recommendation": 0,
+          "appropriated": 0
+        }
+      ],
+      "reliability": "secondary_budget_aggregator_citing_OMB_legislature — verify against primary PDFs before modeling"
+    },
+    "series_b_njcic_case_study_narrative": {
+      "source_ids": [
+        "CC-SRC-164"
+      ],
+      "years_narrative": [
+        {
+          "year": 2020,
+          "note": "Appropriation described then withdrawn for COVID emergency"
+        },
+        {
+          "year": 2021,
+          "appropriated_claimed": 500000
+        },
+        {
+          "year": 2022,
+          "appropriated_claimed": 2000000
+        },
+        {
+          "year": 2023,
+          "appropriated_claimed": 4000000
+        },
+        {
+          "year": 2024,
+          "appropriated_claimed": 4000000
+        },
+        {
+          "year": 2025,
+          "appropriated_claimed": 3000000
+        }
+      ],
+      "reliability": "program-commissioned case study — not independent audit"
+    },
+    "grant_totals_promotional": {
+      "annual_report_2025_claim": "135 grants totalling over $12M across 19 of 21 counties; grantmaking >$4.3M in 2025",
+      "source_ids": [
+        "CC-SRC-166"
+      ],
+      "reliability": "self-reported program document",
+      "distinguish": {
+        "money_appropriated": "state budget line",
+        "money_awarded": "grants approved",
+        "journalism_produced": "NOT EQUAL TO DOLLARS",
+        "audience_reached": "self-reported web metrics — not institutional coverage",
+        "institutions_covered": "NOT MEASURED in these program totals",
+        "civic_outcomes": "NOT ESTABLISHED by appropriation or award totals"
+      }
+    },
+    "durable_capacity_question": "Did public funding create durable reporting capacity or primarily temporary projects? — NOT ENOUGH EVIDENCE without longitudinal employment/beat continuity study independent of grantee self-reports."
+  },
+  "outcomes": {
+    "measured_outputs_claimed_by_program": [
+      "Grants awarded / dollars granted",
+      "Stories / jobs / trainings (self-reported impact metrics — site JS may not render; use PDF reports)",
+      "Web visit estimates (self-reported)"
+    ],
+    "measured_outcomes_independent": "NOT FOUND in this slice as peer-reviewed causal evaluations of civic behavior change",
+    "institutions_covered": "NOT SYSTEMATICALLY MEASURED (Arkansas-style matrix not applied to NJ grantees here)"
+  },
+  "weaknesses_and_criticism": [
+    "Appropriation volatility / zero recommendation years create dependency risk (CC-SRC-165 FY2027 $0 appropriated in aggregator)",
+    "Board includes political appointees — statutory editorial firewall does not eliminate appropriation retaliation channel",
+    "Program-commissioned case study is not independent impact evaluation (CC-SRC-164 admits impact is separate report)",
+    "Self-reported audience metrics ≠ institutional scrutiny",
+    "Eligibility/grant selection remains a discretionary board process — capture and viewpoint-proxy risks remain open"
+  ],
+  "evidence_of_success_qualified": [
+    "Demonstrates a US state can create a statutory nonprofit intermediary for local-news grants",
+    "Moved public dollars into journalism/civic-info projects at multi-million scale (self-reported + budget lines)",
+    "Explicit statutory/program claim against government ownership/editorial control of grantee content"
+  ],
+  "evidence_of_failure_or_fragility": [
+    "Funding instability across fiscal years / governor recommendations of $0",
+    "No independent proof that grants produce sustained institutional coverage where markets fail",
+    "Hostile-government survival untested — system still depends on annual legislative willingness"
+  ],
+  "last_updated": "2026-08-10"
+}

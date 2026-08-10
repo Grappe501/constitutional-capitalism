@@ -1,0 +1,109 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-LOCAL-JOURNALISM-PUBLIC-FINANCE-AND-INDEPENDENCE-COMPARATIVE-DOSSIER-1.0",
+  "generated_at": "2026-08-10",
+  "hypothesis_id": "CC-HYP-CITIZEN-DIRECTED-JOURNALISM-ALLOCATION",
+  "architecture_under_test": "Public money → Citizen allocation → Independent journalism",
+  "status": "FAILURE_MODES_MAPPED_NOT_SOLVED",
+  "analogy_warning": "Seattle Democracy Vouchers are campaign-finance evidence for allocation mechanics/participation patterns — NOT evidence that journalism vouchers work.",
+  "failure_modes": [
+    {
+      "id": "FM-POP",
+      "name": "Popularity contest",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Predicted by voucher literature; no US journalism voucher pilot to observe"
+    },
+    {
+      "id": "FM-PART",
+      "name": "Partisan mobilization",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Campaign vouchers show organized uptake; journalism transfer untested"
+    },
+    {
+      "id": "FM-CELEB",
+      "name": "Celebrity / large outlets dominate",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Proposals often add caps (e.g., 1% caps in academic designs) precisely because of this risk"
+    },
+    {
+      "id": "FM-FRAUD",
+      "name": "Fraud / bot identities",
+      "status": "THEORETICAL_MEDIUM",
+      "evidence": "Administrative identity problem acknowledged in policy menus; not empirically measured for news vouchers"
+    },
+    {
+      "id": "FM-COORD",
+      "name": "Coordinated allocation campaigns",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Parallel to campaign voucher organizing"
+    },
+    {
+      "id": "FM-SENS",
+      "name": "Sensationalism incentives",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Attention markets; infrastructure-floor hypothesis responds to this"
+    },
+    {
+      "id": "FM-EXT",
+      "name": "Extremist outlets",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Eligibility definition problem — constitutional flashpoint"
+    },
+    {
+      "id": "FM-LOWINFO",
+      "name": "Low-information allocation",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Citizens may not know which outlets cover quorum courts"
+    },
+    {
+      "id": "FM-EQUITY",
+      "name": "Rich communities supplement more",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Tax-credit designs especially regressive; voucher designs claim mitigation — untested for news"
+    },
+    {
+      "id": "FM-RURAL",
+      "name": "Rural outlets lack scale / compliance capacity",
+      "status": "THEORETICAL_HIGH_AND_AR_RELEVANT",
+      "evidence": "Arkansas pilot shows small rural papers; admin burden risk high"
+    },
+    {
+      "id": "FM-SURV",
+      "name": "Administrative surveillance",
+      "status": "THEORETICAL_MEDIUM",
+      "evidence": "Eligibility portals create data + discretion"
+    },
+    {
+      "id": "FM-ELIG",
+      "name": "Government eligibility manipulation",
+      "status": "THEORETICAL_CRITICAL",
+      "evidence": "Attack surface eligibility point"
+    },
+    {
+      "id": "FM-INCUMB",
+      "name": "Incumbent entrenchment / new-entrant barriers",
+      "status": "THEORETICAL_HIGH",
+      "evidence": "Brand recognition + compliance"
+    }
+  ],
+  "observed_us_journalism_voucher_pilot": false,
+  "seattle_democracy_vouchers": {
+    "source_ids": [
+      "CC-SRC-167",
+      "CC-SRC-168"
+    ],
+    "usable_for": [
+      "allocation mechanics",
+      "participation inequality patterns",
+      "administrative design lessons"
+    ],
+    "not_usable_for": [
+      "proof that news vouchers increase institutional journalism"
+    ]
+  },
+  "academic_proposals_source_ids": [
+    "CC-SRC-169",
+    "CC-SRC-170"
+  ],
+  "last_updated": "2026-08-10"
+}
