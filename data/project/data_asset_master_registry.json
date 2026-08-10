@@ -1,0 +1,1002 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+  "generated_at": "2026-08-10",
+  "audit_only": true,
+  "operating_rule": "CHECK EXISTING DATA ASSETS → CHECK EXISTING CONNECTOR → RETRIEVE → CREATE NEW PIPELINE ONLY IF NECESSARY.",
+  "preferred_ingestion_order": [
+    "agency_api_with_configured_key",
+    "official_machine_readable_file",
+    "official_table_or_workbook",
+    "manual_primary_retrieval",
+    "secondary_corroboration_only"
+  ],
+  "credential_summary": {
+    "CENSUS_API_KEY": "NOT FOUND",
+    "BLS_API_KEY": "NOT FOUND",
+    "API_DOT_GOV_KEY": "CONFIGURED",
+    "note": "Presence labels only. Values never stored.",
+    "code_expects_keys_absent_in_env": {
+      "CENSUS_API_KEY": true,
+      "BLS_API_KEY": true
+    }
+  },
+  "baseline_pause": {
+    "paused": true,
+    "scoreboard": "38/64",
+    "reason": "Stop individual baseline expansion until atlas-informed decision: API repair vs consolidation vs proof gates."
+  },
+  "slot_forensic": {
+    "question": "Are B01, B02, C02 and HC07 actually missing data—or are we failing to use infrastructure/data we already possess?",
+    "verdict": "MISSING_PRIMARY_OBSERVATIONS — not unused warehouse/DB fills. Partial path existence without usable values.",
+    "credentials": {
+      "CENSUS_API_KEY": "NOT FOUND",
+      "BLS_API_KEY": "NOT FOUND"
+    },
+    "warehouse_datasets_present": [
+      "acs5",
+      "laus_cps",
+      "laus",
+      "cpi",
+      "ces"
+    ],
+    "warehouse_observations": 0,
+    "slots": {
+      "CC-IND-B01": {
+        "title": "Startup rate",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS estabs_entry_rate",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "local_temp_note": ".local/temp/bds_*.csv are Cloudflare 520 stubs (16 bytes) — rejected",
+        "api_exposure": "Possibly via Census API/BDS routes when key configured; not among warehouse ACS5 attempts. File CSV path also timed out.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Infrastructure intended but empty/broken; no hidden usable BDS value to wire."
+      },
+      "CC-IND-B02": {
+        "title": "Business survival",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS survival/exit family",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "api_exposure": "Same BDS family as B01; not ingested.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Coupled to B01 retrieval failure — not an unused existing fill."
+      },
+      "CC-IND-C02": {
+        "title": "New entrants",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS / related entry measures",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "api_exposure": "Same family; warehouse only has acs5 + bls laus/cpi/ces.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Not sitting unused in DB/warehouse."
+      },
+      "CC-IND-HC07": {
+        "title": "Civic participation among young adults",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "CPS Voting Supplement 18–24 citizen voting rate",
+        "already_in_reddirt_warehouse": false,
+        "warehouse_note": "laus_cps in warehouse is unemployment CPS/LAUS, not voting CPS. warehouseHasCpsVoting=false",
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable_partial": true,
+        "local_temp_note": ".local/temp/a1.xlsx (CPS A-1) confirms historical path through 2020 (e.g. 51.4% 18–24 citizen voted). Must NOT be used as 2024 current baseline. CC-SRC-260 registered as path confirmation only.",
+        "api_exposure": "2024 P20-587 age tables are file/workbook products; not present in RedDirt warehouse API attempts. Census key would not automatically close HC07 if product is file-only.",
+        "chain_stops_at": "current_year_observation_retrieval",
+        "answer": "Partially possess historical primary path (2020), missing current (2024) observation. Not a case of unused live DB/API data."
+      }
+    }
+  },
+  "lineage_chains": [
+    {
+      "chain_id": "LINEAGE-BASELINE-MANUAL-GENERIC",
+      "status": "ACTIVE_PARTIAL",
+      "ideal": [
+        "Agency API",
+        "raw observation",
+        "database",
+        "normalized metric",
+        "baseline ID",
+        "claim",
+        "proof packet",
+        "doctrine",
+        "manuscript/public page"
+      ],
+      "actual": [
+        "Agency page/PDF/CSV (manual)",
+        "CC phase21 script",
+        "national_baseline_metrics.current_value",
+        "source_registry",
+        "optional claim_ledger link",
+        "build-board/book-site static JSON"
+      ],
+      "stops_at": null,
+      "covers": "Most of 38/64 completed slots"
+    },
+    {
+      "chain_id": "LINEAGE-REDIRT-PUBLICSTATS-SPINE",
+      "status": "BROKEN",
+      "ideal": [
+        "Census/BLS API",
+        "RedDirt raw/",
+        "public_statistics tables",
+        "approved export",
+        "CC import",
+        "baseline ID",
+        "claim",
+        "public page"
+      ],
+      "actual": [
+        "Census/BLS API",
+        "RedDirt raw/ (Invalid Key bodies)",
+        "warehouse.json sourceQueries rowCount=0",
+        "observations=[]",
+        "STOP — no export, no CC baseline mapping"
+      ],
+      "stops_at": "raw_observation_valid_parse",
+      "covers": "Intended RCIP path; feeds 0 baseline slots today"
+    },
+    {
+      "chain_id": "LINEAGE-B01-BDS",
+      "status": "STOPPED",
+      "metric_ids": [
+        "CC-IND-B01",
+        "CC-IND-B02",
+        "CC-IND-C02"
+      ],
+      "actual": [
+        "Census BDS identified as authoritative",
+        "file download attempts → timeout/520 stubs",
+        "warehouse has no BDS queries",
+        "Postgres has no BDS observations",
+        "baseline current_value=null",
+        "STOP"
+      ],
+      "stops_at": "primary_observation_retrieval",
+      "next_required": "Configure Census access path that can retrieve BDS (API if exposed, else official file); no secondary substitution"
+    },
+    {
+      "chain_id": "LINEAGE-HC07-CPS-VOTING",
+      "status": "STOPPED_AFTER_HISTORICAL_PATH",
+      "metric_ids": [
+        "CC-IND-HC07"
+      ],
+      "actual": [
+        "CPS Voting 18–24 citizen rate identified",
+        "A-1 workbook retrieved (through 2020) → CC-SRC-260 path confirmation",
+        "2024 P20-587 age tables → retrieval failure",
+        "baseline current_value=null (correct — do not use 2020 as 2024)",
+        "STOP"
+      ],
+      "stops_at": "current_year_observation_retrieval",
+      "next_required": "Retrieve 2024 primary age table; API key alone may be insufficient if product is file-only"
+    },
+    {
+      "chain_id": "LINEAGE-CLAIM-PROOF",
+      "status": "PARTIAL",
+      "actual": [
+        "claim_ledger.json",
+        "source_registry.json",
+        "proof packets / reports (selected)",
+        "doctrine freeze (principles) — separate from baseline numbers",
+        "public reasoning pages"
+      ],
+      "stops_at": "many claims still below STRONG; baseline→claim wiring incomplete for most IND slots",
+      "phase_9_note": "Systems Intelligence Engine cannot answer 'if this number changes, what else changes?' until observation→metric→claim edges are first-class."
+    }
+  ],
+  "related_registries": [
+    "data/project/database_table_registry.json",
+    "data/project/external_data_source_registry.json",
+    "data/project/data_flow_registry.json",
+    "research/phase_2/baseline_failed_retrieval_log.json"
+  ],
+  "assets": [
+    {
+      "asset_id": "CC-ASSET-JSON-national_baseline_metrics",
+      "kind": "json_registry",
+      "title": "national_baseline_metrics",
+      "path": "filesystem:data/baseline/national_baseline_metrics",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Canonical baseline metric registry and scoreboard numerator source",
+      "feeds": [
+        "apps/build-board/src/lib/data.ts",
+        "scripts/validate-baseline-data.mjs",
+        "scripts/validate-phase2-acceptance.mjs"
+      ],
+      "fed_by": [
+        "scripts/run-phase21-baseline-*.mjs",
+        "scripts/run-phase21-baseline-legitimate-slot-expansion-*.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-baseline_status",
+      "kind": "json_registry",
+      "title": "baseline_status",
+      "path": "filesystem:data/baseline/baseline_status",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "DERIVED",
+      "status": "ACTIVE",
+      "purpose": "Scoreboard dial  sourced/total",
+      "feeds": [
+        "scripts/validate-phase2-acceptance.mjs",
+        "apps/build-board"
+      ],
+      "fed_by": [
+        "scripts/run-phase21-baseline-*.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-source_registry",
+      "kind": "json_registry",
+      "title": "source_registry",
+      "path": "filesystem:data/research/source_registry",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Canonical research source ledger",
+      "feeds": [
+        "scripts/validate-*.mjs",
+        "apps/build-board"
+      ],
+      "fed_by": [
+        "scripts/run-phase21-*.mjs",
+        "scripts/populate-phase2-sources-claims.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-claim_ledger",
+      "kind": "json_registry",
+      "title": "claim_ledger",
+      "path": "filesystem:data/research/claim_ledger",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Claim ↔ source fit ledger",
+      "feeds": [
+        "scripts/validate-*.mjs"
+      ],
+      "fed_by": [
+        "scripts/run-phase21-*.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-knowledge_graph",
+      "kind": "json_registry",
+      "title": "knowledge_graph",
+      "path": "filesystem:data/research/knowledge_graph",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "DERIVED",
+      "status": "ACTIVE",
+      "purpose": "Research knowledge graph nodes/edges (JSON-only)",
+      "feeds": [
+        "apps/build-board"
+      ],
+      "fed_by": [
+        "scripts/bootstrap-*.mjs",
+        "research pipeline scripts"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-public_statistics_bridge",
+      "kind": "json_registry",
+      "title": "public_statistics_bridge",
+      "path": "filesystem:data/project/public_statistics_bridge",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Control-plane contract for RedDirt → CC public statistics",
+      "feeds": [
+        "scripts/validate-public-statistics-import.mjs"
+      ],
+      "fed_by": [
+        "scripts/run-phase21-baseline-*.mjs",
+        "scripts/publicstats-*.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-reddirt_public_statistics_import_stubs",
+      "kind": "json_registry",
+      "title": "reddirt_public_statistics_import_stubs",
+      "path": "filesystem:data/imports/reddirt-public-statistics/reddirt_public_statistics_import_stubs",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "STAGING",
+      "status": "DORMANT",
+      "purpose": "Validated RedDirt export landing zone (currently architecture stubs, 0 observations)",
+      "feeds": [
+        "scripts/validate-public-statistics-import.mjs"
+      ],
+      "fed_by": [
+        "scripts/publicstats-import.mjs"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-05 stub",
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-JSON-research_pipeline_schema_registry",
+      "kind": "json_registry",
+      "title": "research_pipeline_schema_registry",
+      "path": "filesystem:research_pipeline/schemas/research_pipeline_schema_registry",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "LEGACY",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Named research pipeline tables — schema registry only, no production DB",
+      "feeds": [
+        "research_pipeline docs"
+      ],
+      "fed_by": [],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-BASELINE-METRICS",
+      "kind": "json_registry",
+      "title": "National baseline metrics",
+      "path": "data/baseline/national_baseline_metrics.json",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Scoreboard + metric definitions/values",
+      "feeds": [
+        "build-board",
+        "validators",
+        "public metrics surfaces"
+      ],
+      "fed_by": [
+        "phase21 baseline scripts (manual)"
+      ],
+      "related_metric_ids": [
+        "CC-IND-W01",
+        "CC-IND-W02",
+        "CC-IND-W03",
+        "CC-IND-W04",
+        "CC-IND-W05",
+        "CC-IND-L01",
+        "CC-IND-L02",
+        "CC-IND-L03",
+        "CC-IND-L04",
+        "CC-IND-L05",
+        "CC-IND-B01",
+        "CC-IND-B02",
+        "CC-IND-B03",
+        "CC-IND-B04",
+        "CC-IND-C01",
+        "CC-IND-C02",
+        "CC-IND-C03",
+        "CC-IND-CM02",
+        "CC-IND-CM03",
+        "CC-IND-CM04",
+        "CC-IND-CM05",
+        "CC-IND-F01",
+        "CC-IND-F02",
+        "CC-IND-F03",
+        "CC-IND-F04",
+        "CC-IND-D09",
+        "CC-IND-D10",
+        "CC-IND-D11",
+        "CC-IND-G01",
+        "CC-IND-G02",
+        "CC-IND-G03",
+        "CC-IND-I01",
+        "CC-IND-I02",
+        "CC-IND-I03",
+        "CC-IND-I04",
+        "CC-IND-J01",
+        "CC-IND-J02",
+        "CC-IND-J03",
+        "CC-IND-J04",
+        "CC-IND-J05",
+        "CC-IND-J06",
+        "CC-IND-J07",
+        "CC-IND-J08",
+        "CC-IND-D01",
+        "CC-IND-D02",
+        "CC-IND-D03",
+        "CC-IND-D04",
+        "CC-IND-D05",
+        "CC-IND-D06",
+        "CC-IND-D08",
+        "CC-IND-E01",
+        "CC-IND-E02",
+        "CC-IND-E03",
+        "CC-IND-E04",
+        "CC-IND-E05",
+        "CC-IND-E06",
+        "CC-IND-E08",
+        "CC-IND-HC01",
+        "CC-IND-HC02",
+        "CC-IND-HC03",
+        "CC-IND-HC04",
+        "CC-IND-HC05",
+        "CC-IND-HC06",
+        "CC-IND-HC07"
+      ],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": "2026-08-10",
+      "notes": "Scoreboard 38/64"
+    },
+    {
+      "asset_id": "CC-ASSET-SOURCE-REGISTRY",
+      "kind": "json_registry",
+      "title": "Source registry",
+      "path": "data/research/source_registry.json",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Canonical source ledger",
+      "feeds": [
+        "claims",
+        "baseline source_ids",
+        "proof packets"
+      ],
+      "fed_by": [
+        "research/baseline scripts"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [],
+      "last_known_update": "2026-08-10",
+      "notes": "260 sources"
+    },
+    {
+      "asset_id": "CC-ASSET-CLAIM-LEDGER",
+      "kind": "json_registry",
+      "title": "Claim ledger",
+      "path": "data/research/claim_ledger.json",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Claims and evidence fit",
+      "feeds": [
+        "proof packets",
+        "public reasoning"
+      ],
+      "fed_by": [
+        "phase21 claim scripts"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [
+        "CC-CLAIM-001",
+        "CC-CLAIM-002",
+        "CC-CLAIM-003",
+        "CC-CLAIM-004",
+        "CC-CLAIM-005"
+      ],
+      "lineage_chain_ids": [
+        "LINEAGE-CLAIM-PROOF"
+      ],
+      "last_known_update": null,
+      "notes": "138 claims"
+    },
+    {
+      "asset_id": "CC-ASSET-FAILED-RETRIEVAL-LOG",
+      "kind": "generated_research_file",
+      "title": "Baseline failed retrieval log",
+      "path": "research/phase_2/baseline_failed_retrieval_log.json",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "CANONICAL",
+      "status": "ACTIVE",
+      "purpose": "Why slots are incomplete — prevent rediscovering failed URLs",
+      "feeds": [
+        "future retrieval planning"
+      ],
+      "fed_by": [
+        "legitimate-slot expansion continuation"
+      ],
+      "related_metric_ids": [
+        "CC-IND-B01",
+        "CC-IND-HC07"
+      ],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-B01-BDS",
+        "LINEAGE-HC07-CPS-VOTING"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "CC-ASSET-PUBLICSTATS-IMPORT-STUBS",
+      "kind": "json_registry",
+      "title": "RedDirt public statistics import stubs",
+      "path": "data/imports/reddirt-public-statistics/",
+      "system": "ConstitutionalCapitalism-JSON",
+      "classification": "STAGING",
+      "status": "DORMANT",
+      "purpose": "Landing zone for RedDirt exports",
+      "feeds": [
+        "intended baseline mapping — not active"
+      ],
+      "fed_by": [
+        "pnpm publicstats:import"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": "observation_count=0"
+    },
+    {
+      "asset_id": "RD-ASSET-FILE-WAREHOUSE",
+      "kind": "json_registry",
+      "title": "RedDirt public-statistics file warehouse",
+      "path": "H:\\SOSWebsite\\RedDirt\\data\\public-statistics\\warehouse\\warehouse.json",
+      "system": "RedDirt-JSON-warehouse",
+      "classification": "STAGING",
+      "status": "BROKEN",
+      "purpose": "Operator warehouse for RCIP spine",
+      "feeds": [
+        "intended export — none yet"
+      ],
+      "fed_by": [
+        "Census/BLS API attempts 2026-08-05"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": "datasets=[acs5,laus_cps,laus,cpi,ces] observations=0"
+    },
+    {
+      "asset_id": "RD-ASSET-COUNTY-PUBLIC-DEMOGRAPHICS",
+      "kind": "database_table",
+      "title": "CountyPublicDemographics",
+      "path": "RedDirt.prisma/CountyPublicDemographics",
+      "system": "RedDirt-Postgres",
+      "classification": "CANONICAL",
+      "status": "ACTIVE_IN_REDIRT_SCHEMA_ONLY",
+      "purpose": "County ACS/BLS-style aggregates (campaign county intel)",
+      "feeds": [
+        "RedDirt county workbench"
+      ],
+      "fed_by": [
+        "censusAdapter/blsAdapter — NOT IMPLEMENTED; keys absent"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": "Must not silently become CC baseline without export boundary"
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-sources",
+      "kind": "database_table_design",
+      "title": "public_statistics.sources",
+      "path": "design:public_statistics.sources",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-datasets",
+      "kind": "database_table_design",
+      "title": "public_statistics.datasets",
+      "path": "design:public_statistics.datasets",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-series",
+      "kind": "database_table_design",
+      "title": "public_statistics.series",
+      "path": "design:public_statistics.series",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-observations",
+      "kind": "database_table_design",
+      "title": "public_statistics.observations",
+      "path": "design:public_statistics.observations",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-geographies",
+      "kind": "database_table_design",
+      "title": "public_statistics.geographies",
+      "path": "design:public_statistics.geographies",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-releases",
+      "kind": "database_table_design",
+      "title": "public_statistics.releases",
+      "path": "design:public_statistics.releases",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-ingestion_runs",
+      "kind": "database_table_design",
+      "title": "public_statistics.ingestion_runs",
+      "path": "design:public_statistics.ingestion_runs",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-revisions",
+      "kind": "database_table_design",
+      "title": "public_statistics.revisions",
+      "path": "design:public_statistics.revisions",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "RD-ASSET-DESIGN-PS-metric_mappings",
+      "kind": "database_table_design",
+      "title": "public_statistics.metric_mappings",
+      "path": "design:public_statistics.metric_mappings",
+      "system": "RedDirt-Postgres-design",
+      "classification": "CANONICAL",
+      "status": "NOT_IMPLEMENTED",
+      "purpose": "Isolated public statistics warehouse (CC-DEC-076)",
+      "feeds": [
+        "intended CC export views"
+      ],
+      "fed_by": [
+        "intended agency connectors"
+      ],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-CENSUS-ACS5",
+      "kind": "government_dataset",
+      "title": "Census ACS 5-year",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "ATTEMPTED_FAILED",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": "Warehouse invalid key"
+    },
+    {
+      "asset_id": "GOV-CENSUS-BDS",
+      "kind": "government_dataset",
+      "title": "Census Business Dynamics Statistics",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "IDENTIFIED_NOT_INGESTED",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [
+        "CC-IND-B01",
+        "CC-IND-B02",
+        "CC-IND-C02"
+      ],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-B01-BDS"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-CENSUS-CPS-VOTING",
+      "kind": "government_dataset",
+      "title": "Census CPS Voting and Registration",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "HISTORICAL_PATH_ONLY",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [
+        "CC-IND-HC07"
+      ],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-HC07-CPS-VOTING"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-BLS-LAUS",
+      "kind": "government_dataset",
+      "title": "BLS LAUS / CPS unemployment series",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "ATTEMPTED_FAILED",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-BLS-CPI",
+      "kind": "government_dataset",
+      "title": "BLS CPI",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "ATTEMPTED_FAILED",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-BLS-CES",
+      "kind": "government_dataset",
+      "title": "BLS CES",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "ATTEMPTED_FAILED",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-REDIRT-PUBLICSTATS-SPINE"
+      ],
+      "last_known_update": null,
+      "notes": null
+    },
+    {
+      "asset_id": "GOV-BLS-JOLTS",
+      "kind": "government_dataset",
+      "title": "BLS JOLTS",
+      "path": null,
+      "system": "external_agency",
+      "classification": "CANONICAL",
+      "status": "MANUAL_IN_CC_BASELINE",
+      "purpose": "Authoritative statistical product",
+      "feeds": [],
+      "fed_by": [],
+      "related_metric_ids": [
+        "CC-IND-L04"
+      ],
+      "related_claim_ids": [],
+      "lineage_chain_ids": [
+        "LINEAGE-BASELINE-MANUAL-GENERIC"
+      ],
+      "last_known_update": null,
+      "notes": null
+    }
+  ],
+  "counts": {
+    "total_assets": 31,
+    "by_kind": {
+      "json_registry": 13,
+      "generated_research_file": 1,
+      "database_table": 1,
+      "database_table_design": 9,
+      "government_dataset": 7
+    },
+    "by_status": {
+      "ACTIVE": 10,
+      "DORMANT": 2,
+      "NOT_IMPLEMENTED": 10,
+      "BROKEN": 1,
+      "ACTIVE_IN_REDIRT_SCHEMA_ONLY": 1,
+      "ATTEMPTED_FAILED": 4,
+      "IDENTIFIED_NOT_INGESTED": 1,
+      "HISTORICAL_PATH_ONLY": 1,
+      "MANUAL_IN_CC_BASELINE": 1
+    }
+  }
+}

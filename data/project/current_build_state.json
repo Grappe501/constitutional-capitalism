@@ -5,8 +5,8 @@
   "phase": "phase-2",
   "status": "phase_2_partial_complete",
   "slice_return": "reports/CC_DATABASE_SCHEMA_ATLAS_1_0.md",
-  "writing_focus": "Baseline 38/64. Census retrievals logged pending; continue definition locks.",
-  "next_action": "Definition locks for remaining SOURCE_UNKNOWN slots; retry Census BDS/P20 via alternate primary mechanism; human ag voice calls remain open.",
+  "writing_focus": "Baseline paused at 38/64. Atlas complete including asset master + B01/B02/C02/HC07 forensic. Await decision.",
+  "next_action": "Human decision: API repair vs consolidation vs resume baseline vs other proof gate.",
   "overall_percent": 43,
   "phase_2_gates_open": 10,
   "phase_2_gates_passed": 6,
@@ -37,11 +37,12 @@
   "journalism_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
   "journalism_pilot": "CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0",
   "journalism_finance_dossier": "CC-PHASE-2.1-LOCAL-JOURNALISM-PUBLIC-FINANCE-AND-INDEPENDENCE-COMPARATIVE-DOSSIER-1.0",
-  "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+  "active_slice": "AWAITING_DECISION_AFTER_DATAFLOW_ATLAS",
   "last_completed_slice": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
   "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md",
   "notes": [
     "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0: audit-only atlas shipped; Census/BLS keys absent in RedDirt env; warehouse broken; no new API client in CC."
   ],
-  "journalism_coverage_coding": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0"
+  "journalism_coverage_coding": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
+  "baseline_expansion_paused": true
 }

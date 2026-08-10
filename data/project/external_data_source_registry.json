@@ -570,5 +570,84 @@
       "detail": "Design public_statistics.observations vs file warehouse observations vs CC baseline current_value — three potential homes; only CC baseline currently has values.",
       "severity": "medium"
     }
-  ]
+  ],
+  "credential_summary_labels": {
+    "CENSUS_API_KEY": "NOT FOUND",
+    "BLS_API_KEY": "NOT FOUND",
+    "API_DOT_GOV_KEY": "CONFIGURED"
+  },
+  "code_expects_but_env_absent": [
+    "CENSUS_API_KEY",
+    "BLS_API_KEY"
+  ],
+  "slot_forensic_b01_b02_c02_hc07": {
+    "question": "Are B01, B02, C02 and HC07 actually missing data—or are we failing to use infrastructure/data we already possess?",
+    "verdict": "MISSING_PRIMARY_OBSERVATIONS — not unused warehouse/DB fills. Partial path existence without usable values.",
+    "credentials": {
+      "CENSUS_API_KEY": "NOT FOUND",
+      "BLS_API_KEY": "NOT FOUND"
+    },
+    "warehouse_datasets_present": [
+      "acs5",
+      "laus_cps",
+      "laus",
+      "cpi",
+      "ces"
+    ],
+    "warehouse_observations": 0,
+    "slots": {
+      "CC-IND-B01": {
+        "title": "Startup rate",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS estabs_entry_rate",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "local_temp_note": ".local/temp/bds_*.csv are Cloudflare 520 stubs (16 bytes) — rejected",
+        "api_exposure": "Possibly via Census API/BDS routes when key configured; not among warehouse ACS5 attempts. File CSV path also timed out.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Infrastructure intended but empty/broken; no hidden usable BDS value to wire."
+      },
+      "CC-IND-B02": {
+        "title": "Business survival",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS survival/exit family",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "api_exposure": "Same BDS family as B01; not ingested.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Coupled to B01 retrieval failure — not an unused existing fill."
+      },
+      "CC-IND-C02": {
+        "title": "New entrants",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "Census BDS / related entry measures",
+        "already_in_reddirt_warehouse": false,
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable": false,
+        "api_exposure": "Same family; warehouse only has acs5 + bls laus/cpi/ces.",
+        "chain_stops_at": "primary_observation_retrieval",
+        "answer": "Missing data (observation). Not sitting unused in DB/warehouse."
+      },
+      "CC-IND-HC07": {
+        "title": "Civic participation among young adults",
+        "status": "SOURCE_IDENTIFIED_DATA_PENDING",
+        "identified_source": "CPS Voting Supplement 18–24 citizen voting rate",
+        "already_in_reddirt_warehouse": false,
+        "warehouse_note": "laus_cps in warehouse is unemployment CPS/LAUS, not voting CPS. warehouseHasCpsVoting=false",
+        "already_in_reddirt_postgres": false,
+        "already_in_cc_baseline_value": false,
+        "local_temp_usable_partial": true,
+        "local_temp_note": ".local/temp/a1.xlsx (CPS A-1) confirms historical path through 2020 (e.g. 51.4% 18–24 citizen voted). Must NOT be used as 2024 current baseline. CC-SRC-260 registered as path confirmation only.",
+        "api_exposure": "2024 P20-587 age tables are file/workbook products; not present in RedDirt warehouse API attempts. Census key would not automatically close HC07 if product is file-only.",
+        "chain_stops_at": "current_year_observation_retrieval",
+        "answer": "Partially possess historical primary path (2020), missing current (2024) observation. Not a case of unused live DB/API data."
+      }
+    }
+  },
+  "data_asset_master_registry": "data/project/data_asset_master_registry.json"
 }

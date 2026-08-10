@@ -157,3 +157,68 @@ Agency API → RedDirt warehouse raw (Invalid Key) → observations=[] → no ex
 - Baseline remains **38/64** (unchanged by this audit)
 - Modeling / legal remain **0%**
 - This slice does not move GATE-07
+
+
+## Credential labels (no values)
+
+```text
+CENSUS_API_KEY: NOT FOUND (RedDirt .env)
+BLS_API_KEY: NOT FOUND (RedDirt .env)
+API_DOT_GOV_KEY: CONFIGURED (RedDirt .env; not Census/BLS client key)
+CENSUS_API_KEY / BLS_API_KEY in CC: NOT FOUND (correct under bridge rules)
+Code expects CENSUS_API_KEY + BLS_API_KEY: YES — env absent (EXPECTED BY CODE BUT ABSENT)
+```
+
+## Slot forensic: B01 / B02 / C02 / HC07
+
+**Question:** Are these slots missing data, or failing to use data we already possess?
+
+**Verdict:** **Missing primary observations** (with one historical-path exception). Not unused live warehouse/DB fills.
+
+| Slot | Possessed? | Where chain stops |
+| --- | --- | --- |
+| B01 Startup (BDS entry) | No usable observation. Warehouse has **no BDS**. Local CSV stubs are 520 rejects. | primary_observation_retrieval |
+| B02 Survival (BDS) | Same as B01 — not in warehouse/DB. | primary_observation_retrieval |
+| C02 New entrants | Same BDS-family gap. | primary_observation_retrieval |
+| HC07 Young adult civic | Historical A-1 path confirmed through **2020** (local + CC-SRC-260). **2024** observation missing. Do not use 2020 as current. | current_year_observation_retrieval |
+
+Warehouse datasets actually attempted: `acs5, laus_cps, laus, cpi, ces` — ACS5 + BLS LAUS/CPI/CES only. `laus_cps` is unemployment, not voting.
+
+## Master lineage (where chains stop)
+
+```text
+IDEAL:
+Agency API → raw → database → normalized metric → baseline ID → claim → proof → doctrine → public page
+
+B01/B02/C02:
+Census BDS identified → file/API retrieval FAILED → STOP (no observation)
+
+HC07:
+CPS voting identified → A-1 historical OK (≤2020) → 2024 P20 FAILED → STOP (no current baseline value)
+
+Working 38/64 path:
+Agency page/PDF → CC script → national_baseline_metrics.json → static site
+(skips RedDirt DB/warehouse)
+
+Broken RCIP path:
+Agency API → Invalid Key raw → warehouse observations=[] → STOP (no export to CC)
+```
+
+## Data asset master registry
+
+Canonical index: `data/project/data_asset_master_registry.json`
+
+Future research start rule:
+
+> **CHECK EXISTING DATA ASSETS → CHECK EXISTING CONNECTOR → RETRIEVE → CREATE NEW PIPELINE ONLY IF NECESSARY.**
+
+## Baseline expansion status
+
+**PAUSED** at **38/64** pending human decision among:
+
+1. RedDirt API repair (configure keys; re-run spine; export)
+2. Ingestion consolidation (warehouse → CC mapping)
+3. Resume baseline expansion under registry-first rule
+4. Other Phase 2 proof gate
+
+Do not continue blind individual statistic retrieval until that decision.

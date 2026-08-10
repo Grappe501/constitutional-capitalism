@@ -659,5 +659,13 @@
       "data/project/data_flow_registry.json"
     ],
     "finding": "Census/BLS API keys not configured in RedDirt env; warehouse pulls failed invalid key; CC baseline remains manual JSON."
+  },
+  "data_asset_master_registry": "data/project/data_asset_master_registry.json",
+  "baseline_expansion_paused": true,
+  "slot_forensic_pending_census": {
+    "B01": "MISSING_OBSERVATION",
+    "B02": "MISSING_OBSERVATION",
+    "C02": "MISSING_OBSERVATION",
+    "HC07": "HISTORICAL_PATH_ONLY_CURRENT_MISSING"
   }
 }

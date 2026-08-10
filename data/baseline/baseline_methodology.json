@@ -80,5 +80,9 @@
     "secondary_source_corroboration_only_never_silent_substitution"
   ],
   "data_source_registry_check_required_before_manual_retrieval": "data/project/external_data_source_registry.json",
-  "dataflow_atlas_slice": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0"
+  "dataflow_atlas_slice": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
+  "baseline_expansion_paused": true,
+  "baseline_expansion_pause_reason": "Await decision after dataflow atlas: API repair / consolidation / proof gate — do not continue blind 38/64 fills.",
+  "data_asset_master_registry": "data/project/data_asset_master_registry.json",
+  "research_start_rule": "CHECK EXISTING DATA ASSETS → CHECK EXISTING CONNECTOR → RETRIEVE → CREATE NEW PIPELINE ONLY IF NECESSARY."
 }

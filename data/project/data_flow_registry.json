@@ -82,5 +82,105 @@
     "file_manual_slots": 38,
     "reddirt_warehouse_backed_slots": 0
   },
-  "hard_rule_after_audit": "Before any future research script retrieves public statistics manually, it must first check data/project/external_data_source_registry.json to determine whether an existing API client, database table, or cached canonical dataset already provides the data."
+  "hard_rule_after_audit": "Before any future research script retrieves public statistics manually, it must first check data/project/external_data_source_registry.json to determine whether an existing API client, database table, or cached canonical dataset already provides the data.",
+  "lineage_chains": [
+    {
+      "chain_id": "LINEAGE-BASELINE-MANUAL-GENERIC",
+      "status": "ACTIVE_PARTIAL",
+      "ideal": [
+        "Agency API",
+        "raw observation",
+        "database",
+        "normalized metric",
+        "baseline ID",
+        "claim",
+        "proof packet",
+        "doctrine",
+        "manuscript/public page"
+      ],
+      "actual": [
+        "Agency page/PDF/CSV (manual)",
+        "CC phase21 script",
+        "national_baseline_metrics.current_value",
+        "source_registry",
+        "optional claim_ledger link",
+        "build-board/book-site static JSON"
+      ],
+      "stops_at": null,
+      "covers": "Most of 38/64 completed slots"
+    },
+    {
+      "chain_id": "LINEAGE-REDIRT-PUBLICSTATS-SPINE",
+      "status": "BROKEN",
+      "ideal": [
+        "Census/BLS API",
+        "RedDirt raw/",
+        "public_statistics tables",
+        "approved export",
+        "CC import",
+        "baseline ID",
+        "claim",
+        "public page"
+      ],
+      "actual": [
+        "Census/BLS API",
+        "RedDirt raw/ (Invalid Key bodies)",
+        "warehouse.json sourceQueries rowCount=0",
+        "observations=[]",
+        "STOP — no export, no CC baseline mapping"
+      ],
+      "stops_at": "raw_observation_valid_parse",
+      "covers": "Intended RCIP path; feeds 0 baseline slots today"
+    },
+    {
+      "chain_id": "LINEAGE-B01-BDS",
+      "status": "STOPPED",
+      "metric_ids": [
+        "CC-IND-B01",
+        "CC-IND-B02",
+        "CC-IND-C02"
+      ],
+      "actual": [
+        "Census BDS identified as authoritative",
+        "file download attempts → timeout/520 stubs",
+        "warehouse has no BDS queries",
+        "Postgres has no BDS observations",
+        "baseline current_value=null",
+        "STOP"
+      ],
+      "stops_at": "primary_observation_retrieval",
+      "next_required": "Configure Census access path that can retrieve BDS (API if exposed, else official file); no secondary substitution"
+    },
+    {
+      "chain_id": "LINEAGE-HC07-CPS-VOTING",
+      "status": "STOPPED_AFTER_HISTORICAL_PATH",
+      "metric_ids": [
+        "CC-IND-HC07"
+      ],
+      "actual": [
+        "CPS Voting 18–24 citizen rate identified",
+        "A-1 workbook retrieved (through 2020) → CC-SRC-260 path confirmation",
+        "2024 P20-587 age tables → retrieval failure",
+        "baseline current_value=null (correct — do not use 2020 as 2024)",
+        "STOP"
+      ],
+      "stops_at": "current_year_observation_retrieval",
+      "next_required": "Retrieve 2024 primary age table; API key alone may be insufficient if product is file-only"
+    },
+    {
+      "chain_id": "LINEAGE-CLAIM-PROOF",
+      "status": "PARTIAL",
+      "actual": [
+        "claim_ledger.json",
+        "source_registry.json",
+        "proof packets / reports (selected)",
+        "doctrine freeze (principles) — separate from baseline numbers",
+        "public reasoning pages"
+      ],
+      "stops_at": "many claims still below STRONG; baseline→claim wiring incomplete for most IND slots",
+      "phase_9_note": "Systems Intelligence Engine cannot answer 'if this number changes, what else changes?' until observation→metric→claim edges are first-class."
+    }
+  ],
+  "baseline_expansion_paused": true,
+  "data_asset_master_registry": "data/project/data_asset_master_registry.json"
 }

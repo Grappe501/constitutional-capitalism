@@ -1,19 +1,21 @@
 {
   "mission_id": "CC-DATABASE-DATAFLOW-FORENSIC-ATLAS-1.0",
-  "status": "COMPLETE_AUDIT_ONLY",
+  "status": "COMPLETE_AUDIT_ONLY_BASELINE_PAUSED",
   "updated_at": "2026-08-10",
-  "summary": "Forensic atlas: CC is JSON-only; RedDirt has 186 Prisma tables but public_statistics DB schema not migrated; CENSUS_API_KEY/BLS_API_KEY absent; warehouse API pulls failed invalid key; baseline 38/64 remains manual.",
-  "repository_root": "H:\\Constitutional-Capitalism",
-  "branch": "main",
-  "github_push": "pushed",
+  "summary": "Atlas completed with data_asset_master_registry and B01/B02/C02/HC07 forensic: missing observations (HC07 historical-only), not unused DB data. CENSUS_API_KEY/BLS_API_KEY NOT FOUND in RedDirt env though code expects them. Baseline expansion paused at 38/64 awaiting decision.",
   "report": "reports/CC_DATABASE_SCHEMA_ATLAS_1_0.md",
-  "registries": [
-    "data/project/database_table_registry.json",
-    "data/project/external_data_source_registry.json",
-    "data/project/data_flow_registry.json"
+  "data_asset_master_registry": "data/project/data_asset_master_registry.json",
+  "credentials": {
+    "CENSUS_API_KEY": "NOT FOUND",
+    "BLS_API_KEY": "NOT FOUND"
+  },
+  "baseline": "38/64",
+  "baseline_expansion_paused": true,
+  "decision_options": [
+    "API repair in RedDirt (configure CENSUS_API_KEY/BLS_API_KEY; re-run spine; export)",
+    "Database/ingestion consolidation (wire warehouse→export→CC mapping)",
+    "Resume baseline expansion 38/64 with registry-first rule",
+    "Other Phase 2 proof gate (non-baseline)"
   ],
-  "baseline_unchanged": "38/64",
-  "recommended_next": "Configure RedDirt Census/BLS keys and repair spine before more manual CC retrieval; then definition locks / API-first fills where exposed.",
-  "ending_commit": "c8e5740",
-  "pushed_at": "2026-08-10"
+  "github_push": "pending"
 }
