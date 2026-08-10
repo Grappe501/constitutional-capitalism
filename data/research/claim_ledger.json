@@ -1,6 +1,6 @@
 {
   "version": "0.3.1",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "note": "Phase 2 claims including justice, democracy, public-service, assistance, Popular Sovereignty, and Energy Sovereignty EIA/DOE baselines. Normative claims labeled. No fabricated support. Phase 2.1 continuation (2026-08-07): forensic re-audit of CC-CLAIM-001–020 with dispositions; no automatic rewrites applied.",
   "claims": [
     {
@@ -37,13 +37,15 @@
         "reasoning": "Honest uncertainty wording; still requires historical modules before stronger claims. NOT ENOUGH EVIDENCE / HISTORICAL RESEARCH REQUIRED."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
-        "disposition": "REWRITE REQUIRED",
-        "fit": "NON-SUPPORTING",
-        "fit_detail": "NON-SUPPORTING (proposed PARTIAL)",
-        "defect": "WORDING TOO BROAD",
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+        "disposition": "NOT ENOUGH EVIDENCE",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "SOURCE GAP / HISTORICAL RESEARCH REQUIRED",
         "confidence": "Very Low",
-        "rewrite_queued": true
+        "change": "NO_EARNED_UPGRADE",
+        "note": "Historical breadth still requires dedicated historical module; honesty preserved.",
+        "repaired_at": "2026-08-10"
       },
       "claim_text_history": [
         {
@@ -166,13 +168,15 @@
         "reasoning": "Sectoral association evidence (utilities PARTIALLY CONFIRMED; agriculture first dossier) does not revive the broad historical parent. Remain NEE."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
         "disposition": "NOT ENOUGH EVIDENCE",
-        "fit": "WEAK",
-        "fit_detail": "WEAK",
-        "defect": "CAUSAL OVERREACH",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "CAUSAL OVERREACH / CONCEPT COLLAPSE",
         "confidence": "Low",
-        "rewrite_queued": false
+        "change": "NO_EARNED_UPGRADE",
+        "note": "Do not inflate with Arkansas ag infrastructure research. Modules A–E remain path.",
+        "repaired_at": "2026-08-10"
       },
       "phase21_domain_deepening": {
         "slice_id": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
@@ -289,16 +293,19 @@
       "claim_type": "antitrust",
       "claim_class": "descriptive_empirical",
       "importance": "high",
-      "support_level": "partially_supported",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "moderate",
       "consensus_status": "data_available_interpretation_debated",
       "source_ids": [
-        "CC-SRC-005"
+        "CC-SRC-005",
+        "CC-SRC-212",
+        "CC-SRC-217"
       ],
       "opposing_evidence": [
         "Rising concentration can reflect efficiency and scale.",
         "National concentration may overstate local rivalry or understate digital competition.",
-        "Efficiency/scale, imports, product-market definition disputes (ledger)."
+        "Efficiency/scale, imports, product-market definition disputes (ledger).",
+        "ITIF 2025: many industries remain below common C4 concentration thresholds; aggregate C4 little changed 2017→2022."
       ],
       "uncertainty": "Effects on prices, wages, and entry are industry-specific.",
       "fact_check_status": "in_progress",
@@ -319,13 +326,15 @@
         "reasoning": "'Can weaken competition' is modal and industry-specific. Concentration measured; harm not automatic. Qualifies."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
         "disposition": "SUPPORTED WITH QUALIFICATION",
-        "fit": "PARTIAL",
-        "fit_detail": "PARTIAL",
-        "defect": "MEASUREMENT MISMATCH",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
         "confidence": "Moderate",
-        "rewrite_queued": false
+        "change": "UPGRADED_FIT_PARTIAL_TO_STRONG",
+        "note": "Census 2022 concentration table closes measurement gap for modal 'can weaken'; contrary ITIF aggregate narrative preserved. Harm still industry-specific.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "CAUSAL_CLAIM"
     },
@@ -415,10 +424,12 @@
       "claim_type": "technology_policy",
       "claim_class": "speculative_and_emerging_empirical",
       "importance": "high",
-      "support_level": "requires_additional_research",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "incomplete",
       "consensus_status": "emerging_contested",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-213"
+      ],
       "opposing_evidence": [
         "Technology can complement labor and create new tasks; historical automation episodes vary.",
         "Automation can complement labor in some tasks (ledger opposing note)."
@@ -442,13 +453,15 @@
         "reasoning": "Emerging/predictive claim without registered spine."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
-        "disposition": "NOT ENOUGH EVIDENCE",
-        "fit": "NON-SUPPORTING",
-        "fit_detail": "NON-SUPPORTING",
-        "defect": "SOURCE GAP",
-        "confidence": "Very Low",
-        "rewrite_queued": false
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "AI-SPECIFIC PREDICTION STILL OPEN",
+        "confidence": "Low",
+        "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL",
+        "note": "Autor/Salomons supply automation→labor-share empirical spine. Claim remains modal; AI-specific futures not proven. Epistemic class stays PREDICTION-adjacent.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "PREDICTION"
     },
@@ -459,10 +472,12 @@
       "claim_type": "tax_policy",
       "claim_class": "normative_proposal_not_empirical_fact",
       "importance": "high",
-      "support_level": "requires_additional_research",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "incomplete",
       "consensus_status": "policy_debate",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-214"
+      ],
       "opposing_evidence": [
         "Administrative complexity; trade and WTO considerations; incidence uncertain.",
         "Trade-law and administrative complexity (ledger)."
@@ -486,13 +501,15 @@
         "reasoning": "Normative/design claim — not diagnosis fact."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
-        "disposition": "NOT ENOUGH EVIDENCE",
-        "fit": "NON-SUPPORTING",
-        "fit_detail": "NON-SUPPORTING",
-        "defect": "SOURCE GAP",
-        "confidence": "Very Low",
-        "rewrite_queued": false
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "DESIGN_LITERATURE_NOT_EMPIRICAL_OUTCOMES",
+        "confidence": "Low",
+        "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL",
+        "note": "Auerbach et al. provide design rationale that destination taxation can align obligations with market location. Not U.S. enacted-outcome proof. Normative/admin/WTO issues remain.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "CAUSAL_CLAIM"
     },
@@ -766,11 +783,12 @@
       "claim_type": "taxation",
       "claim_class": "descriptive_institutional",
       "importance": "high",
-      "support_level": "partially_supported",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "moderate",
       "consensus_status": "institutionally_true_but_incidence_debated",
       "source_ids": [
-        "CC-SRC-013"
+        "CC-SRC-013",
+        "CC-SRC-211"
       ],
       "opposing_evidence": [
         "Economic incidence of payroll taxes may be shared with employers; consumption taxes also burden workers.",
@@ -796,13 +814,15 @@
         "reasoning": "Institutional importance supported; fine-grained incidence incomplete."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
         "disposition": "SUPPORTED WITH QUALIFICATION",
-        "fit": "PARTIAL",
-        "fit_detail": "PARTIAL",
-        "defect": "SOURCE GAP",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
         "confidence": "Moderate",
-        "rewrite_queued": false
+        "change": "UPGRADED_FIT_PARTIAL_TO_STRONG",
+        "note": "CBO revenue composition shows individual income + payroll as major federal revenue components on labor income. Incidence sharing with employers still qualified.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "EMPIRICAL_CLAIM"
     },
@@ -1076,13 +1096,16 @@
       "claim_type": "education",
       "claim_class": "descriptive_and_theoretical",
       "importance": "high",
-      "support_level": "requires_additional_research",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "incomplete",
       "consensus_status": "open",
-      "source_ids": [],
+      "source_ids": [
+        "CC-SRC-215"
+      ],
       "opposing_evidence": [
         "Workers also capture private returns to education; subsidies already share some costs.",
-        "Employers also fund training; skills may raise worker wages (ledger)."
+        "Employers also fund training; skills may raise worker wages (ledger).",
+        "Workers capture private returns via higher wages; employers fund substantial firm-specific training; public subsidies already share some education costs."
       ],
       "uncertainty": "Phase 2.1 education domain.",
       "fact_check_status": "needs_research",
@@ -1103,13 +1126,15 @@
         "reasoning": "Unsourced human-capital incidence claim."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
-        "disposition": "NOT ENOUGH EVIDENCE",
-        "fit": "NON-SUPPORTING",
-        "fit_detail": "NON-SUPPORTING",
-        "defect": "SOURCE GAP",
-        "confidence": "Very Low",
-        "rewrite_queued": false
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+        "disposition": "SUPPORTED WITH QUALIFICATION",
+        "fit": "PARTIAL",
+        "fit_detail": "PARTIAL",
+        "defect": "THEORY_PLUS_INCIDENCE_NUANCE",
+        "confidence": "Low",
+        "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL",
+        "note": "Becker general/specific training framework supports qualified worker-borne general education/training costs while employers benefit from skills — with opposing note that workers capture wage returns and employers fund specific training.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "CAUSAL_CLAIM"
     },
@@ -1168,11 +1193,12 @@
       "claim_type": "innovation",
       "claim_class": "descriptive_historical_empirical",
       "importance": "high",
-      "support_level": "partially_supported",
+      "support_level": "supported_with_qualification",
       "evidence_strength": "moderate",
       "consensus_status": "broadly_plausible_needs_citations",
       "source_ids": [
-        "CC-SRC-087"
+        "CC-SRC-087",
+        "CC-SRC-216"
       ],
       "opposing_evidence": [
         "Private R&D is also central; attribution of specific products is contested.",
@@ -1197,13 +1223,15 @@
         "reasoning": "Mild claim now has official funding spine; keep Qualifies."
       },
       "phase21_repair": {
-        "slice_id": "CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0",
+        "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
         "disposition": "SUPPORTED WITH QUALIFICATION",
-        "fit": "PARTIAL",
-        "fit_detail": "PARTIAL",
-        "defect": "MEASUREMENT MISMATCH",
+        "fit": "STRONG",
+        "fit_detail": "STRONG",
+        "defect": null,
         "confidence": "Moderate",
-        "rewrite_queued": false
+        "change": "UPGRADED_FIT_PARTIAL_TO_STRONG",
+        "note": "Jones/Williams social-return/spillover framework plus existing NSF funding spine support mild 'public research contributes to private innovation' wording. Attribution of specific products remains contested.",
+        "repaired_at": "2026-08-10"
       },
       "epistemic_class": "CAUSAL_CLAIM"
     },

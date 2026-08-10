@@ -1,43 +1,40 @@
 {
-  "mission_id": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
-  "status": "PARTIAL_AWAITING_HUMAN_FEED_CALLS",
+  "mission_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+  "status": "PARTIAL",
   "updated_at": "2026-08-10",
-  "summary": "Desk primary: national Non-GMO Project retail ~$22–26/50lb; organic e-com ~$57. AR mill quotes 0. IP soy exists (Taggart/Delta Soy) but livestock-feed channel unproven. Toll/IP at open mills UNKNOWN — least-cost repair candidate pending voice. Processing frozen ~3/0/0. Sources 202–210.",
+  "summary": "Ag posture locked (capacity≠access). First-20 weak fit 5/20 (was 8); DIRECT/STRONG 14/20 (was 11). 001/003 remain NEE. GATE-02 open. Processing ~3/0/0 and feed voice still human-gated. Sources 211–217.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "starting_commit": "8d00743",
-  "ending_commit": "0e43848",
+  "starting_commit": "pending",
+  "ending_commit": "pending",
   "github_push": "pending",
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 43,
   "phase_2_status": "PARTIAL",
-  "recommended_next_slice": "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0",
+  "recommended_next_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
   "decision_ids": [
     "CC-DEC-103"
   ],
   "update_ids": [
-    "UPD-086"
+    "UPD-087"
   ],
   "public_paths": [],
   "board_paths": [
     "/research/"
   ],
-  "integrity_note": "Did not invent AR mill quotes or toll willingness. IP capacity ≠ feed access. New mills gated on toll/IP refusals. Processing booking baseline frozen.",
-  "next_command": "Human: feed calls (LF Feeds, JA Farms, RVO, Powell, Taggart) → enter ar_feed_voice_call_records.json; parallel processing voice calls",
-  "report": "reports/CC_PHASE_2_1_AR_NON_GMO_FEED_PRIMARY_PRICE_IP_GRAIN_AND_TOLL_MILLING_STUDY_1_0_RETURN.md",
-  "sources_registered": 210,
+  "integrity_note": "No silent claim-text mutations. No ag inflation of CC-CLAIM-003. No invented booking/mill quotes. GATE-02 not falsely closed.",
+  "next_command": "Human ag voice calls in parallel; Cursor may proceed to journalism coverage coding or baseline subset expansion",
+  "report": "reports/CC_PHASE_2_1_FIRST_20_BELOW_STRONG_REPAIR_1_0_RETURN.md",
+  "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md",
+  "sources_registered": 217,
   "doctrine_expanded": false,
   "principle_added": false,
-  "feed_hypothesis_verdict": "QUALIFIED",
-  "processing_voice_status": "AWAITING_HUMAN_CALLS",
+  "weak_fit_below_strong": 5,
+  "direct_strong_fit": 14,
   "processing_baseline": {
     "cattle_accessible_claimed_desk": 3,
     "booking_confirmed": 0,
     "economically_usable_confirmed": 0
   },
-  "arkansas_mill_verified_quotes": 0,
-  "desk_nongmo_retail_band_usd_per_50lb": {
-    "low": 21.99,
-    "high": 25.99
-  }
+  "feed_voice_status": "AWAITING_HUMAN_CALLS"
 }

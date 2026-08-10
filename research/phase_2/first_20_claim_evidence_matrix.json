@@ -1,25 +1,24 @@
 {
-  "version": "0.5.1",
-  "slice_id": "CC-PHASE-2.1-SECTORAL-POLITICAL-INFLUENCE-AND-CAPTURE-EVIDENCE-DOSSIERS-1.0",
-  "generated_at": "2026-08-07",
+  "version": "0.6.0",
+  "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+  "generated_at": "2026-08-10",
   "prior_slice": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
   "decision_id": "CC-DEC-103",
   "adjudicator": "ChatGPT",
   "disposition_counts": {
-    "NOT ENOUGH EVIDENCE": 5,
-    "SUPPORTED WITH QUALIFICATION": 11,
+    "NOT ENOUGH EVIDENCE": 2,
+    "SUPPORTED WITH QUALIFICATION": 14,
     "RETIRED": 1,
     "SUPPORTED AS WRITTEN": 3
   },
   "fit_counts": {
     "PARTIAL": 5,
-    "STRONG": 8,
-    "NON-SUPPORTING": 3,
+    "STRONG": 11,
     "N/A_RETIRED": 1,
     "DIRECT": 3
   },
-  "weak_fit_below_strong": 8,
-  "direct_strong_fit": 11,
+  "weak_fit_below_strong": 5,
+  "direct_strong_fit": 14,
   "rows": [
     {
       "claim_id": "CC-CLAIM-001",
@@ -32,10 +31,11 @@
       "defect": "SOURCE GAP / HISTORICAL RESEARCH REQUIRED",
       "epistemic_class": "HISTORICAL_CLAIM",
       "lifecycle_status": "active",
-      "previous_fit": "NON-SUPPORTING",
-      "previous_disposition": "REWRITE REQUIRED",
-      "reopened_by": "CC-PHASE-2.1-APPLY-CHATGPT-CLAIM-GOVERNANCE-DECISIONS-1.0",
-      "decision_id": "CC-DEC-103"
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Historical breadth still requires dedicated historical module; honesty preserved."
     },
     {
       "claim_id": "CC-CLAIM-002",
@@ -65,12 +65,12 @@
         "CC-SRC-096"
       ],
       "fit": "PARTIAL",
-      "fit_detail": "PARTIAL (unequal responsiveness adjacent; capture unproven)",
+      "fit_detail": "PARTIAL",
       "disposition": "NOT ENOUGH EVIDENCE",
       "confidence": "Low",
       "defect": "CAUSAL OVERREACH / CONCEPT COLLAPSE",
-      "previous_fit": "WEAK",
-      "reopened_by": "CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0",
+      "previous_fit": "PARTIAL",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
       "epistemic_class": "CAUSAL_CLAIM",
       "lifecycle_status": "active",
       "modules": [
@@ -95,7 +95,10 @@
         "CC-CLAIM-134",
         "CC-CLAIM-135"
       ],
-      "sectoral_dossiers": true
+      "sectoral_dossiers": true,
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Do not inflate with Arkansas ag infrastructure research. Modules A–E remain path."
     },
     {
       "claim_id": "CC-CLAIM-004",
@@ -116,15 +119,22 @@
       "claim_id": "CC-CLAIM-005",
       "claim_text": "Market concentration can weaken competition in U.S. industries.",
       "support_sources": [
-        "CC-SRC-005"
+        "CC-SRC-005",
+        "CC-SRC-212",
+        "CC-SRC-217"
       ],
-      "fit": "PARTIAL",
-      "fit_detail": "PARTIAL",
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
       "disposition": "SUPPORTED WITH QUALIFICATION",
       "confidence": "Moderate",
-      "defect": "MEASUREMENT MISMATCH",
+      "defect": null,
       "epistemic_class": "CAUSAL_CLAIM",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Census 2022 concentration table closes measurement gap for modal 'can weaken'; contrary ITIF aggregate narrative preserved. Harm still industry-specific."
     },
     {
       "claim_id": "CC-CLAIM-006",
@@ -149,26 +159,40 @@
     {
       "claim_id": "CC-CLAIM-007",
       "claim_text": "AI and automation may increase returns to capital relative to labor and create concentrated adjustment costs.",
-      "support_sources": [],
-      "fit": "NON-SUPPORTING",
-      "fit_detail": "NON-SUPPORTING",
-      "disposition": "NOT ENOUGH EVIDENCE",
-      "confidence": "Very Low",
-      "defect": "SOURCE GAP",
+      "support_sources": [
+        "CC-SRC-213"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Low",
+      "defect": "AI-SPECIFIC PREDICTION STILL OPEN",
       "epistemic_class": "PREDICTION",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "NON-SUPPORTING",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Autor/Salomons supply automation→labor-share empirical spine. Claim remains modal; AI-specific futures not proven. Epistemic class stays PREDICTION-adjacent."
     },
     {
       "claim_id": "CC-CLAIM-008",
       "claim_text": "Destination-based taxation can better align tax obligations with market access.",
-      "support_sources": [],
-      "fit": "NON-SUPPORTING",
-      "fit_detail": "NON-SUPPORTING",
-      "disposition": "NOT ENOUGH EVIDENCE",
-      "confidence": "Very Low",
-      "defect": "SOURCE GAP",
+      "support_sources": [
+        "CC-SRC-214"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Low",
+      "defect": "DESIGN_LITERATURE_NOT_EMPIRICAL_OUTCOMES",
       "epistemic_class": "CAUSAL_CLAIM",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "NON-SUPPORTING",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Auerbach et al. provide design rationale that destination taxation can align obligations with market location. Not U.S. enacted-outcome proof. Normative/admin/WTO issues remain."
     },
     {
       "claim_id": "CC-CLAIM-009",
@@ -242,15 +266,21 @@
       "claim_id": "CC-CLAIM-013",
       "claim_text": "Payroll and individual income taxes are major components of the tax burden on labor income.",
       "support_sources": [
-        "CC-SRC-013"
+        "CC-SRC-013",
+        "CC-SRC-211"
       ],
-      "fit": "PARTIAL",
-      "fit_detail": "PARTIAL",
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
       "disposition": "SUPPORTED WITH QUALIFICATION",
       "confidence": "Moderate",
-      "defect": "SOURCE GAP",
+      "defect": null,
       "epistemic_class": "EMPIRICAL_CLAIM",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "CBO revenue composition shows individual income + payroll as major federal revenue components on labor income. Incidence sharing with employers still qualified."
     },
     {
       "claim_id": "CC-CLAIM-014",
@@ -334,14 +364,21 @@
     {
       "claim_id": "CC-CLAIM-018",
       "claim_text": "Education costs are frequently borne by workers while employers benefit from acquired skills.",
-      "support_sources": [],
-      "fit": "NON-SUPPORTING",
-      "fit_detail": "NON-SUPPORTING",
-      "disposition": "NOT ENOUGH EVIDENCE",
-      "confidence": "Very Low",
-      "defect": "SOURCE GAP",
+      "support_sources": [
+        "CC-SRC-215"
+      ],
+      "fit": "PARTIAL",
+      "fit_detail": "PARTIAL",
+      "disposition": "SUPPORTED WITH QUALIFICATION",
+      "confidence": "Low",
+      "defect": "THEORY_PLUS_INCIDENCE_NUANCE",
       "epistemic_class": "CAUSAL_CLAIM",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "NON-SUPPORTING",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Becker general/specific training framework supports qualified worker-borne general education/training costs while employers benefit from skills — with opposing note that workers capture wage returns and employers fund specific training."
     },
     {
       "claim_id": "CC-CLAIM-019",
@@ -363,15 +400,21 @@
       "claim_id": "CC-CLAIM-020",
       "claim_text": "Public research contributes to private innovation.",
       "support_sources": [
-        "CC-SRC-087"
+        "CC-SRC-087",
+        "CC-SRC-216"
       ],
-      "fit": "PARTIAL",
-      "fit_detail": "PARTIAL",
+      "fit": "STRONG",
+      "fit_detail": "STRONG",
       "disposition": "SUPPORTED WITH QUALIFICATION",
       "confidence": "Moderate",
-      "defect": "MEASUREMENT MISMATCH",
+      "defect": null,
       "epistemic_class": "CAUSAL_CLAIM",
-      "lifecycle_status": "active"
+      "lifecycle_status": "active",
+      "previous_fit": "PARTIAL",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "reopened_by": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "decision_id": "CC-DEC-103",
+      "repair_note": "Jones/Williams social-return/spillover framework plus existing NSF funding spine support mild 'public research contributes to private innovation' wording. Attribution of specific products remains contested."
     }
   ],
   "public_reasoning_standard": "research/phase_2/public_reasoning_standard.json",
@@ -390,6 +433,72 @@
     }
   },
   "note_slice": "CC-PHASE-2.1-UTILITIES-PEER-REVIEW-CONFIRMATION-AND-AGRICULTURE-INFLUENCE-DOSSIER-1.0",
-  "note": "Utilities/agriculture slice adds CC-CLAIM-136/137 outside first-20 core; first-20 below STRONG unchanged unless connected claims change — they do not.",
-  "last_updated": "2026-08-07"
+  "note": "First-20 below-STRONG repair under CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0. Weak fit 5/20 (retired excluded from weak). DIRECT/STRONG 14/20. CC-CLAIM-001 and 003 remain NEE. Ag lanes not used to inflate 003.",
+  "last_updated": "2026-08-07",
+  "repair_log": [
+    {
+      "claim_id": "CC-CLAIM-001",
+      "previous_fit": "PARTIAL",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "NOT ENOUGH EVIDENCE",
+      "change": "NO_EARNED_UPGRADE"
+    },
+    {
+      "claim_id": "CC-CLAIM-003",
+      "previous_fit": "PARTIAL",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "NOT ENOUGH EVIDENCE",
+      "change": "NO_EARNED_UPGRADE"
+    },
+    {
+      "claim_id": "CC-CLAIM-005",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    },
+    {
+      "claim_id": "CC-CLAIM-007",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-008",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-013",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    },
+    {
+      "claim_id": "CC-CLAIM-018",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-020",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    }
+  ]
 }

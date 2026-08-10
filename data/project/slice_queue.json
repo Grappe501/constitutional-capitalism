@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "last_updated": "2026-08-10",
-  "active_slice": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
+  "active_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -667,12 +667,41 @@
         "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0"
       ],
       "note": "Desk primary done; Cursor blocked on mill quote invention. Toll/IP is least-cost repair test."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+      "title": "First-20 Below-STRONG Repair",
+      "status": "completed",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "agriculture posture lock 1.0",
+        "weak_fit 5/20 (was 8)",
+        "direct_strong 14/20 (was 11)",
+        "CC-SRC-211–217",
+        "CC-PR-069–071",
+        "GATE-02 reassessed still open"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-AR-COVERAGE-MATRIX-90-DAY-CODING-PASS-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-BASELINE-VERIFIED-SUBSET-EXPANSION-1.0",
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+        "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
+      ],
+      "note": "Evidence upgrades only. Ag lanes frozen awaiting human calls. No new mills/plants hypotheses."
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
+  "last_completed_slice": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
   "parallel_blocked": {
-    "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
-    "status": "AWAITING_HUMAN_CALLS",
-    "baseline": "~3 / 0 / 0"
-  }
+    "processing": {
+      "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+      "status": "AWAITING_HUMAN_CALLS",
+      "baseline": "~3 / 0 / 0"
+    },
+    "feed": {
+      "slice_id": "CC-PHASE-2.1-AR-NON-GMO-FEED-PRIMARY-PRICE-IP-GRAIN-AND-TOLL-MILLING-STUDY-1.0",
+      "status": "AWAITING_HUMAN_CALLS",
+      "note": "AR mill quotes and IP toll willingness empty until voice records entered"
+    }
+  },
+  "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md"
 }

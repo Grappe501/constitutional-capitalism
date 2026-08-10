@@ -1,0 +1,85 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-FIRST-20-BELOW-STRONG-REPAIR-1.0",
+  "generated_at": "2026-08-10",
+  "before_weak_fit": 8,
+  "after_weak_fit": 5,
+  "before_direct_strong": 11,
+  "after_direct_strong": 14,
+  "repairs": [
+    {
+      "claim_id": "CC-CLAIM-001",
+      "previous_fit": "PARTIAL",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "NOT ENOUGH EVIDENCE",
+      "change": "NO_EARNED_UPGRADE"
+    },
+    {
+      "claim_id": "CC-CLAIM-003",
+      "previous_fit": "PARTIAL",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "NOT ENOUGH EVIDENCE",
+      "change": "NO_EARNED_UPGRADE"
+    },
+    {
+      "claim_id": "CC-CLAIM-005",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    },
+    {
+      "claim_id": "CC-CLAIM-007",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-008",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-013",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    },
+    {
+      "claim_id": "CC-CLAIM-018",
+      "previous_fit": "NON-SUPPORTING",
+      "new_fit": "PARTIAL",
+      "previous_disposition": "NOT ENOUGH EVIDENCE",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_NONSUPPORTING_TO_PARTIAL"
+    },
+    {
+      "claim_id": "CC-CLAIM-020",
+      "previous_fit": "PARTIAL",
+      "new_fit": "STRONG",
+      "previous_disposition": "SUPPORTED WITH QUALIFICATION",
+      "new_disposition": "SUPPORTED WITH QUALIFICATION",
+      "change": "UPGRADED_FIT_PARTIAL_TO_STRONG"
+    }
+  ],
+  "sources_added": [
+    "CC-SRC-211",
+    "CC-SRC-212",
+    "CC-SRC-213",
+    "CC-SRC-214",
+    "CC-SRC-215",
+    "CC-SRC-216",
+    "CC-SRC-217"
+  ],
+  "honesty": "Staying below STRONG on 001/003/007/008/018 (or subset) is acceptable. No claim-text mutations."
+}
