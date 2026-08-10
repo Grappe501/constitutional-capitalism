@@ -5,7 +5,7 @@
   "summary": "Forensic atlas: CC is JSON-only; RedDirt has 186 Prisma tables but public_statistics DB schema not migrated; CENSUS_API_KEY/BLS_API_KEY absent; warehouse API pulls failed invalid key; baseline 38/64 remains manual.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
-  "github_push": "pending",
+  "github_push": "pushed",
   "report": "reports/CC_DATABASE_SCHEMA_ATLAS_1_0.md",
   "registries": [
     "data/project/database_table_registry.json",
@@ -13,5 +13,7 @@
     "data/project/data_flow_registry.json"
   ],
   "baseline_unchanged": "38/64",
-  "recommended_next": "Configure RedDirt Census/BLS keys and repair spine before more manual CC retrieval; then definition locks / API-first fills where exposed."
+  "recommended_next": "Configure RedDirt Census/BLS keys and repair spine before more manual CC retrieval; then definition locks / API-first fills where exposed.",
+  "ending_commit": "c8e5740",
+  "pushed_at": "2026-08-10"
 }
