@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "last_updated": "2026-08-10",
-  "active_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-1.0",
+  "active_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -729,9 +729,28 @@
         "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
       ],
       "note": "Outlet presence ≠ sustained scrutiny. Unknown ≠ uncovered."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "title": "Baseline Subset Expansion Round 2 and Definition Closeout",
+      "status": "completed",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "baseline 14→27/86",
+        "12 bad-metric/definition flags",
+        "B01/HC01/CM03 honest non-closeout",
+        "CC-SRC-236–247",
+        "CC-PR-081–083",
+        "ag posture lock preserved"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+        "CC-PHASE-2.1-AR-FEED-VOICE-BOTTLENECK-ADJUDICATION-1.0"
+      ]
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-ARKANSAS-CIVIC-INFORMATION-90-DAY-COVERAGE-CODING-1.0",
+  "last_completed_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
   "parallel_blocked": {
     "processing": {
       "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",

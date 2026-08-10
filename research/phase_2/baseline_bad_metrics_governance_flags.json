@@ -1,0 +1,81 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+  "generated_at": "2026-08-10",
+  "rule": "Flag for governance — do not manufacture numbers for bad/unstable metrics",
+  "definition_problems_found": 12,
+  "items": [
+    {
+      "metric_id": "CC-IND-D01..D04_duplicate_ids",
+      "problem": "duplicate_metric_ids",
+      "detail": "Legacy democracy slots (Voter participation / Civic engagement / Public trust / Local participation) share IDs with newer democracy-framework slots. Registry integrity issue — requires ID remapping decision.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-CM01",
+      "problem": "no_authoritative_national_series",
+      "detail": "Main Street occupancy has no Census/BLS national scalar.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-B03",
+      "problem": "definition_too_vague",
+      "detail": "Local ownership lacks locked geography/entity/control criteria.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-G04",
+      "problem": "normatively_loaded_measurement_unstable",
+      "detail": "Regulatory burden has no single accepted official scalar.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-I02",
+      "problem": "definition_unstable",
+      "detail": "AI investment boundary (software/R&D/capex/startups) not locked.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-E07",
+      "problem": "design_agenda_not_metric",
+      "detail": "Community Health Index coverage is explicitly a design agenda.",
+      "action": "keep_pending_design"
+    },
+    {
+      "metric_id": "CC-IND-D07",
+      "problem": "normatively_loaded",
+      "detail": "Independent oversight durability under unified government is a construct, not a series.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-J08",
+      "problem": "definition_too_vague",
+      "detail": "White-collar / economic crime enforcement intensity lacks a locked official rate.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "CC-IND-HC01",
+      "problem": "conceptually_unstable_without_lock",
+      "detail": "Multiple-pathway secondary completion cannot be filled with bachelor's-or-higher without distorting the concept. A defensible composite (HS credential + certificates + associate pathways) needs an explicit governance lock before sourcing.",
+      "action": "definition_lock_required"
+    },
+    {
+      "metric_id": "CC-IND-CM03",
+      "problem": "definition_not_locked",
+      "detail": "Hospital access is not beds, not HPSA primary-care share (already E05), and not overnight-stay utilization. Travel-time / closure-based access lacks a single authoritative national scalar ready for this slot.",
+      "action": "definition_lock_required"
+    },
+    {
+      "metric_id": "CC-IND-HC08",
+      "problem": "no_official_series",
+      "detail": "Employer satisfaction with pathway graduates has no federal statistical series.",
+      "action": "governance_queue"
+    },
+    {
+      "metric_id": "PS01–PS08 / T01–T08 cluster",
+      "problem": "requires_custom_inventory_not_single_series",
+      "detail": "Transparency and public-service slots generally require constructed inventories/audits rather than one agency table.",
+      "action": "phase_later_measurement_build"
+    }
+  ]
+}

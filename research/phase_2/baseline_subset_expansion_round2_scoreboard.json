@@ -1,0 +1,70 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+  "generated_at": "2026-08-10",
+  "before": 14,
+  "after": 27,
+  "total": 86,
+  "newly_sourced_ids": [
+    "CC-IND-F01",
+    "CC-IND-F02",
+    "CC-IND-J01",
+    "CC-IND-J02",
+    "CC-IND-J03",
+    "CC-IND-G01",
+    "CC-IND-G02",
+    "CC-IND-L05",
+    "CC-IND-I01",
+    "CC-IND-CM05",
+    "CC-IND-HC06",
+    "CC-IND-D03:voter_participation_rate",
+    "CC-IND-I03"
+  ],
+  "closeout_attempts": {
+    "CC-IND-B01": {
+      "status": "still_pending",
+      "reason": "Census BDS 2023 is the correct series (estabs_entry_rate), but national cell retrieval still requires Census API key or BDS Explorer interactive export. Secondary republishers (e.g. YCharts 10.61 for 2023) are not accepted as primary.",
+      "locked_definition_candidate": "Census BDS economy-wide establishment entry rate: 100 × estabs_entry / (0.5 × (estabs_t + longitudinally consistent estabs_t-1)).",
+      "retrieval_path": "https://bds.explorer.ces.census.gov / Census API timeseries/bds"
+    },
+    "CC-IND-HC01": {
+      "status": "still_pending_definition_unstable",
+      "reason": "Multiple-pathway secondary completion cannot be filled with bachelor's-or-higher without distorting the concept. A defensible composite (HS credential + certificates + associate pathways) needs an explicit governance lock before sourcing.",
+      "candidate_translations_not_adopted": [
+        "NCES status completion rate (high school only — too narrow)",
+        "ACS bachelor's+ (wrong pathway concept)",
+        "Unverified certificate+AA composite (no locked formula yet)"
+      ]
+    },
+    "CC-IND-CM03": {
+      "status": "still_pending_definition_not_locked",
+      "reason": "Hospital access is not beds, not HPSA primary-care share (already E05), and not overnight-stay utilization. Travel-time / closure-based access lacks a single authoritative national scalar ready for this slot.",
+      "rejected_substitutes": [
+        "Community hospital beds per 1,000 (capacity ≠ access; latest NCHS table vintage 2019)",
+        "Primary care HPSA share (belongs to E05)",
+        "NHIS overnight stay % (utilization ≠ geographic access)"
+      ]
+    }
+  },
+  "definition_problems_found": 12,
+  "domain_weakness": {
+    "strongest_after_round_2": [
+      "wealth_ownership (W01–W05)",
+      "family_demographics (F01–F04)",
+      "justice_core_rates (J01–J03)",
+      "federal_fiscal (G01–G03)",
+      "labor_productivity_wages (L01–L02, L05)"
+    ],
+    "weakest_remaining": [
+      "transparency_T01–T08 (custom inventories)",
+      "public_service_PS01–PS08 (custom inventories)",
+      "democracy_structural_D (contested races, preemption, oversight durability) + duplicate ID debt",
+      "local_ownership_Main_Street_banking (B03, CM01, CM04)",
+      "human_capital_pathways (HC01–HC05, HC07–HC08)",
+      "specialty_essential_systems (E02–E04, E06–E08)",
+      "hospital_access_CM03 (definition unlocked)"
+    ]
+  },
+  "agriculture_posture_lock": "reports/CC_ARKANSAS_AGRICULTURE_RESEARCH_POSTURE_LOCK_1_0.md",
+  "honesty": "No quota. Secondary republishers rejected for B01."
+}

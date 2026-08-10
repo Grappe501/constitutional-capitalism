@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "last_updated": "2026-08-10",
   "status": "spine_partial_first_wave_populated",
   "decision_id": "CC-DEC-076",
@@ -451,6 +451,8 @@
       "CC-IND-W05"
     ],
     "CBO": [
+      "CC-IND-G01",
+      "CC-IND-G02",
       "CC-IND-G03"
     ],
     "HRSA": [
@@ -467,6 +469,27 @@
     ],
     "state agencies": [
       "future_local_fiscal_and_education"
+    ],
+    "CDC/NCHS": [
+      "CC-IND-F01",
+      "CC-IND-F02"
+    ],
+    "BJS": [
+      "CC-IND-J01",
+      "CC-IND-J02",
+      "CC-IND-J03"
+    ],
+    "DOL OA": [
+      "CC-IND-L05"
+    ],
+    "USPTO": [
+      "CC-IND-I01"
+    ],
+    "NSF NCSES": [
+      "CC-IND-I03"
+    ],
+    "AmeriCorps": [
+      "CC-IND-CM05"
     ]
   },
   "mapping_rules": {
@@ -498,5 +521,25 @@
       "CC-IND-C01"
     ],
     "redDirt_note": "Phase 2 continues to prefer validated snapshots; this pass sources from primary publications with reproducible retrieval paths usable by RedDirt connectors later."
+  },
+  "round_2_execution": {
+    "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+    "before": 14,
+    "after": 27,
+    "newly_sourced": [
+      "CC-IND-F01",
+      "CC-IND-F02",
+      "CC-IND-J01",
+      "CC-IND-J02",
+      "CC-IND-J03",
+      "CC-IND-G01",
+      "CC-IND-G02",
+      "CC-IND-L05",
+      "CC-IND-I01",
+      "CC-IND-CM05",
+      "CC-IND-HC06",
+      "CC-IND-D03:voter_participation_rate",
+      "CC-IND-I03"
+    ]
   }
 }

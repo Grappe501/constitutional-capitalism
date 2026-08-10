@@ -1,9 +1,9 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "last_updated": "2026-08-10",
   "status": "partially_sourced",
   "guiding_question": "If Constitutional Capitalism were adopted tomorrow, what would we measure so that we could honestly determine whether it succeeded?",
-  "note": "Phase 2 partial: sourced metrics include wealth (W01–W05 subset), labor (L01–L02), families (F03–F04), communities (CM02), manufacturing (I04), health access (E05), federal debt (G03), and concentration measurement spine (C01). Slice CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0. No invented targets. Agriculture posture lock preserved.",
+  "note": "Phase 2 partial after CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0: sourced 27/86. Completeness = reproducible retrieval. Bad metrics flagged, not filled. Ag posture lock preserved.",
   "linked_legacy_file": "data/project/national_baseline.json",
   "metrics": [
     {
@@ -300,21 +300,35 @@
       "title": "Apprenticeships",
       "domain_id": "CC-NB-LABOR",
       "domain_name": "Labor",
-      "definition": "Apprenticeships — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Count of active registered apprentices in the U.S. Registered Apprenticeship system during the federal fiscal year (DOL OA / RAPIDS; includes SAA and USMAP in national totals).",
+      "unit": "active_registered_apprentices",
+      "current_value": 679960,
+      "reference_year": "FY2024",
+      "source_ids": [
+        "CC-SRC-242"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "registered_apprenticeship_system",
+      "historical_series_available": true,
+      "limitations": "Registered only; not all apprenticeships/internships; military USMAP included.",
+      "update_frequency": "annual_fiscal_dashboard",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_administrative",
+      "numerator_denominator": "count of active apprentices (stock during FY)",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "apprenticeship.gov apprentices-by-state dashboard / CRS Table 1 active apprentices",
+        "url": "https://www.apprenticeship.gov/data-and-statistics/apprentices-by-state-dashboard",
+        "agencies": [
+          "DOL OA"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-B01",
@@ -586,63 +600,108 @@
       "title": "Volunteerism",
       "domain_id": "CC-NB-COMMUNITIES",
       "domain_name": "Communities",
-      "definition": "Volunteerism — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Formal volunteering rate: percent of population age 16+ who volunteered through an organization in the prior year (CPS Civic Engagement and Volunteering Supplement).",
+      "unit": "percent_age_16_plus",
+      "current_value": 28.3,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-244"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "persons_age_16_plus",
+      "historical_series_available": true,
+      "limitations": "Formal organization volunteering only; reference period Sep–Sep.",
+      "update_frequency": "biennial",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "formal volunteers / population 16+",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Census/AmeriCorps CEV release — national formal volunteering rate",
+        "url": "https://www.census.gov/library/stories/2024/11/civic-engagement-and-volunteerism.html",
+        "agencies": [
+          "Census",
+          "AmeriCorps"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-F01",
       "title": "Marriage",
       "domain_id": "CC-NB-FAMILIES",
       "domain_name": "Families",
-      "definition": "Marriage — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Provisional crude marriage rate: marriages per 1,000 total population (NCHS NVSS).",
+      "unit": "per_1000_population",
+      "current_value": 6.1,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-236"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "total_resident_population",
+      "historical_series_available": true,
+      "limitations": "Provisional; occurrence-based; not share currently married.",
+      "update_frequency": "annual_provisional",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_vital_statistics",
+      "numerator_denominator": "marriages / mid-year population × 1,000",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "CDC NCHS FastStats Marriage and Divorce; confirm provisional year",
+        "url": "https://www.cdc.gov/nchs/fastats/marriage-divorce.htm",
+        "agencies": [
+          "CDC",
+          "NCHS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-F02",
       "title": "Birth rates",
       "domain_id": "CC-NB-FAMILIES",
       "domain_name": "Families",
-      "definition": "Birth rates — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "General fertility rate: births per 1,000 females ages 15–44 (NCHS final natality).",
+      "unit": "births_per_1000_females_15_44",
+      "current_value": 54.5,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-237"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "females_ages_15_44",
+      "historical_series_available": true,
+      "limitations": "Locked to GFR (not TFR 1.621). Do not mix with crude birth rate.",
+      "update_frequency": "annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_vital_statistics",
+      "numerator_denominator": "live births / female population 15–44 × 1,000",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "NCHS Births: Final Data — general fertility rate table",
+        "url": "https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-1.pdf",
+        "agencies": [
+          "CDC",
+          "NCHS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-F03",
@@ -803,42 +862,70 @@
       "title": "Revenue",
       "domain_id": "CC-NB-GOVERNMENT",
       "domain_name": "Government",
-      "definition": "Revenue — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Federal receipts as a percent of GDP (fiscal year, CBO).",
+      "unit": "percent_of_GDP",
+      "current_value": 17.1,
+      "reference_year": "FY2024",
+      "source_ids": [
+        "CC-SRC-241"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "federal_government",
+      "historical_series_available": true,
+      "limitations": "Federal only; timing shifts can move receipts across fiscal years.",
+      "update_frequency": "annual_fiscal",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_budget_identity",
+      "numerator_denominator": "federal receipts / GDP",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "CBO Monthly Budget Review / Historical Budget Data — receipts % GDP",
+        "url": "https://www.cbo.gov/publication/60843",
+        "agencies": [
+          "CBO"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-G02",
       "title": "Spending",
       "domain_id": "CC-NB-GOVERNMENT",
       "domain_name": "Government",
-      "definition": "Spending — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Federal outlays as a percent of GDP (fiscal year, CBO).",
+      "unit": "percent_of_GDP",
+      "current_value": 23.4,
+      "reference_year": "FY2024",
+      "source_ids": [
+        "CC-SRC-241"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "federal_government",
+      "historical_series_available": true,
+      "limitations": "Federal only; timing shifts for certain payments can affect fiscal-year totals.",
+      "update_frequency": "annual_fiscal",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_budget_identity",
+      "numerator_denominator": "federal outlays / GDP",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "CBO Monthly Budget Review / Historical Budget Data — outlays % GDP",
+        "url": "https://www.cbo.gov/publication/60843",
+        "agencies": [
+          "CBO"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-G03",
@@ -902,21 +989,35 @@
       "title": "Patents",
       "domain_id": "CC-NB-INNOVATION",
       "domain_name": "Innovation",
-      "definition": "Patents — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Total USPTO patent grants in the federal fiscal year (all patent types).",
+      "unit": "patent_grants",
+      "current_value": 346152,
+      "reference_year": "FY2023",
+      "source_ids": [
+        "CC-SRC-243"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "USPTO_grants",
+      "historical_series_available": true,
+      "limitations": "FY not calendar year; all types unless utility-only is separately specified later.",
+      "update_frequency": "annual_fiscal",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_administrative",
+      "numerator_denominator": "count of patents granted",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "USPTO Annual Performance Report — patent grants total for FY",
+        "url": "https://www.uspto.gov/sites/default/files/documents/USPTO_FY23_FY25_APPR.pdf",
+        "agencies": [
+          "USPTO"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-I02",
@@ -944,21 +1045,35 @@
       "title": "Research",
       "domain_id": "CC-NB-INNOVATION",
       "domain_name": "Innovation",
-      "definition": "Research — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "U.S. R&D expenditures as a percent of GDP (NSF NCSES National Patterns).",
+      "unit": "percent_of_GDP",
+      "current_value": 3.43,
+      "reference_year": "2022",
+      "source_ids": [
+        "CC-SRC-247"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
+      "population_scope": "national_R_and_D_performance",
+      "historical_series_available": true,
+      "limitations": "Intensity ≠ research quality/diffusion; later years may be estimates.",
+      "update_frequency": "annual_with_revisions",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "derived_official_national_accounts_survey_blend",
+      "numerator_denominator": "total R&D performance / GDP",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "NSF NCSES National Patterns — R&D/GDP ratio for stated year",
+        "url": "https://ncses.nsf.gov/pubs/nsf25335",
+        "agencies": [
+          "NSF NCSES"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-I04",
@@ -1000,63 +1115,110 @@
       "title": "Incarceration rate",
       "domain_id": "CC-NB-JUSTICE",
       "domain_name": "Justice",
-      "definition": "Incarceration rate — definition to be finalized with BJS/corrections source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Imprisonment rate: sentenced prisoners under state or federal jurisdiction per 100,000 U.S. residents of all ages (BJS Prisoners).",
+      "unit": "per_100000_residents",
+      "current_value": 360,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-238"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 justice diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "sentenced_prisoners_jurisdiction",
+      "historical_series_available": true,
+      "limitations": "Title says incarceration; official series used is imprisonment (prisons). Jail inmates excluded — see J02.",
+      "update_frequency": "annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_administrative",
+      "numerator_denominator": "sentenced prisoners / resident population × 100,000",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "BJS Prisoners in [year] Statistical Tables — imprisonment rate, all ages",
+        "url": "https://bjs.ojp.gov/document/p23st.pdf",
+        "agencies": [
+          "BJS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-J02",
       "title": "Jail detention / pretrial population",
       "domain_id": "CC-NB-JUSTICE",
       "domain_name": "Justice",
-      "definition": "Jail detention / pretrial population — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Jail incarceration rate: persons held in local jails per 100,000 U.S. residents at midyear (BJS Jail Inmates). Companion composition: share unconvicted.",
+      "unit": "per_100000_residents_plus_composition",
+      "current_value": {
+        "jail_incarceration_rate_per_100k": 198,
+        "confined_population": 664200,
+        "unconvicted_share_approx": 0.7,
+        "note": "Rate is primary scalar; unconvicted share is composition of jail population (~70% midyear 2023)."
+      },
+      "reference_year": "2023-midyear",
+      "source_ids": [
+        "CC-SRC-239"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 justice diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "local_jail_custody",
+      "historical_series_available": true,
+      "limitations": "Midyear; pretrial/unconvicted is composition not a separate rate series.",
+      "update_frequency": "annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_administrative",
+      "numerator_denominator": "jail confined / resident population × 100,000",
+      "source_to_baseline_fit": "STRONG",
+      "reproducible_retrieval": {
+        "method": "BJS Jail Inmates in [year] — incarceration rate and conviction status",
+        "url": "https://bjs.ojp.gov/library/publications/jail-inmates-2023-statistical-tables",
+        "agencies": [
+          "BJS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-J03",
       "title": "Violent victimization rate",
       "domain_id": "CC-NB-JUSTICE",
       "domain_name": "Justice",
-      "definition": "Violent victimization rate — definition to be finalized with NCVS/BJS methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "NCVS violent victimization rate per 1,000 persons age 12+ (rape/sexual assault, robbery, aggravated assault, simple assault).",
+      "unit": "per_1000_persons_age_12_plus",
+      "current_value": 22.5,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-240"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 justice diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "persons_age_12_plus_NCVS",
+      "historical_series_available": true,
+      "limitations": "Survey; excludes homicide; not interchangeable with UCR.",
+      "update_frequency": "annual",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "violent victimizations / persons 12+ × 1,000",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "BJS Criminal Victimization report — total violent victimization rate",
+        "url": "https://bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "agencies": [
+          "BJS"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-J04",
@@ -1210,21 +1372,35 @@
       "title": "Voter participation rate",
       "domain_id": "CC-NB-DEMOCRACY",
       "domain_name": "Democracy",
-      "definition": "Voter participation rate — definition to be finalized with CPS/election methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Percent of citizen voting-age population that reported voting in the November presidential election (CPS Voting and Registration Supplement).",
+      "unit": "percent_of_citizen_VAP",
+      "current_value": 65.3,
+      "reference_year": "2024",
+      "source_ids": [
+        "CC-SRC-246"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 democracy diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "citizen_voting_age_population_CPS",
+      "historical_series_available": true,
+      "limitations": "Self-reported; overstates administrative turnout. Distinct from legacy duplicate slot titled 'Voter participation'.",
+      "update_frequency": "biennial_presidential_midterm",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "reported voters / citizen VAP",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "Census CPS Voting and Registration tables — percent voted, citizen VAP",
+        "url": "https://www.census.gov/data/tables/time-series/demo/voting-and-registration/p20-587.html",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-D04",
@@ -1960,21 +2136,36 @@
       "title": "Young adult homeownership / ownership formation",
       "domain_id": "CC-NB-HUMANCAPITAL",
       "domain_name": "Human Capital Doctrine",
-      "definition": "Young adult homeownership / ownership formation — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
+      "definition": "Homeownership rate among householders under age 35 (ACS occupied housing units).",
+      "unit": "percent_of_householders_under_35",
+      "current_value": 36.1,
+      "reference_year": "2023",
+      "source_ids": [
+        "CC-SRC-245",
+        "CC-SRC-218"
+      ],
       "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 human-capital diagnosis.",
-      "update_frequency": "pending",
+      "population_scope": "householders_under_35_ACS",
+      "historical_series_available": true,
+      "limitations": "Householder-based; not all persons under 35.",
+      "update_frequency": "annual_ACS_1yr",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "confidence_level": "high",
+      "status": "sourced",
+      "observation_type": "directly_observed_survey",
+      "numerator_denominator": "owner-occupied householders <35 / occupied householders <35",
+      "source_to_baseline_fit": "DIRECT",
+      "reproducible_retrieval": {
+        "method": "ACS-61 / ACS tenure by age of householder (under 35)",
+        "url": "https://www.census.gov/library/publications/2025/acs/acs-61.html",
+        "agencies": [
+          "US Census Bureau"
+        ]
+      },
+      "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
+      "last_sourced_at": "2026-08-10"
     },
     {
       "metric_id": "CC-IND-HC07",
