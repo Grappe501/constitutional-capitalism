@@ -1,0 +1,161 @@
+{
+  "version": "1.0.0",
+  "standard_id": "CC-DATA-DENSE-PUBLICATION-STANDARD-1.0",
+  "decision_id": "CC-DEC-104",
+  "status": "ACTIVE",
+  "generated_at": "2026-08-10",
+  "architecture_note": "Publication and evidence-presentation standard only. Not a new CC-PRIN-*, not a Phase 8/9 platform build, and not permission to invent statistics.",
+  "governing_rules": [
+    "When reliable data exist, show them. Do not merely cite them in the background. Put the evidence where the reader encounters the theory.",
+    "DATA-DENSE BY DEFAULT. Every substantive public theory, doctrine, proof, and policy surface should use the maximum amount of relevant, high-quality, comprehensible real-world data available without creating false precision, cherry-picking, or unnecessary visual clutter.",
+    "Every displayed statistic must be traceable to a canonical data asset, observation period, geography, definition, and primary source whenever available.",
+    "Never add a statistic merely because it sounds persuasive. Every number must advance understanding.",
+    "Show contradictions and counterevidence on the page, not only favorable statistics.",
+    "Dense does not mean cluttered: use progressive disclosure."
+  ],
+  "presentation_hierarchy": [
+    "idea",
+    "evidence",
+    "comparison",
+    "implication",
+    "uncertainty",
+    "source"
+  ],
+  "first_view_budget": {
+    "key_finding": 1,
+    "critical_numbers": "3-5",
+    "primary_visualization": 1,
+    "plain_english_explanation": 1,
+    "deeper_layer_label": "Explore the data"
+  },
+  "deeper_layer_may_include": [
+    "tables",
+    "historical_series",
+    "methodology",
+    "comparisons",
+    "downloads",
+    "source_provenance",
+    "related_proof_packets",
+    "public_reasoning_records"
+  ],
+  "evidence_panel": {
+    "required_on": [
+      "substantive_theory_pages",
+      "doctrine_pages",
+      "proof_surfaces",
+      "policy_pages",
+      "public_reasoning_records_when_data_bearing"
+    ],
+    "sections": [
+      {
+        "id": "what_the_data_show",
+        "fields": [
+          "current_value",
+          "historical_trend",
+          "arkansas_comparison",
+          "national_comparison"
+        ]
+      },
+      {
+        "id": "evidence_strength",
+        "enum": ["Direct", "Strong", "Partial", "Weak"]
+      },
+      {
+        "id": "what_supports_this",
+        "fields": [
+          "primary_datasets",
+          "government_research",
+          "peer_reviewed_literature"
+        ]
+      },
+      {
+        "id": "what_challenges_it",
+        "fields": [
+          "contrary_evidence",
+          "alternative_explanations"
+        ]
+      },
+      {
+        "id": "what_we_dont_know",
+        "fields": [
+          "open_questions",
+          "missing_data"
+        ]
+      },
+      {
+        "id": "last_updated",
+        "fields": [
+          "date",
+          "dataset_or_release"
+        ]
+      },
+      {
+        "id": "explore",
+        "fields": [
+          "underlying_table",
+          "methodology",
+          "sources",
+          "related_proof_packet"
+        ]
+      }
+    ]
+  },
+  "evidence_layer_catalog": [
+    "current_baseline_numbers",
+    "historical_trends",
+    "arkansas_vs_us_comparisons",
+    "rural_suburban_urban_differences",
+    "income_and_wealth_distributions_not_averages_alone",
+    "maps_where_geography_matters",
+    "age_and_generational_differences",
+    "ownership_patterns",
+    "industry_concentration",
+    "wages_and_employment",
+    "prices_and_costs",
+    "fiscal_flows",
+    "outcomes_over_time",
+    "counterevidence",
+    "uncertainty_and_confidence",
+    "original_data_source"
+  ],
+  "honesty_labels": [
+    "Current data unavailable",
+    "Arkansas-specific evidence unavailable",
+    "National evidence only",
+    "Historical observation — current update pending",
+    "Association, not demonstrated causation",
+    "Model estimate — not observed data"
+  ],
+  "prose_rule": "Prefer numerically specific prose that names measures, geographies, and comparisons, then explains why they matter. Do not decorate rhetoric with orphan statistics.",
+  "public_reasoning_extension": "Public Reasoning records that reverse or qualify empirical claims should include the data that forced the change (burdens, distributions, dependencies, counterevidence), not only narrative.",
+  "geography_ambition": {
+    "ladder": [
+      "United States",
+      "Arkansas",
+      "county",
+      "community"
+    ],
+    "note": "Populate dynamically only from validated RedDirt/CC data assets. Do not invent county values."
+  },
+  "cross_domain_display": {
+    "goal": "Show related indicators together so readers see a system, not isolated charts.",
+    "caution": "Related indicators are not automatically causal. Label association vs causation."
+  },
+  "data_binding_rule": {
+    "prefer": "metric → observation → dataset → agency → release",
+    "forbid": "hardcoded orphan percentages with no canonical lineage",
+    "engine": "RedDirt public-statistics bridge + CC import lane; CC never holds agency credentials"
+  },
+  "companion_standards": [
+    "research/phase_2/public_reasoning_standard.json",
+    "data/baseline/baseline_methodology.json",
+    "data/project/public_statistics_bridge.json",
+    "data/project/proof_burden_registry.json"
+  ],
+  "explicitly_not_authorized": [
+    "New CC-PRIN-* principle IDs",
+    "Phase 8/9 Systems Intelligence Engine implementation",
+    "False precision or cherry-picked visuals",
+    "Baseline scoreboard inflation from display scaffolding alone"
+  ]
+}

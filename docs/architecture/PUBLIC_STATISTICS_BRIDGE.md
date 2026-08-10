@@ -11,6 +11,10 @@
 
 > **RedDirt may provide Constitutional Capitalism with approved public statistical infrastructure, but Constitutional Capitalism may never inherit RedDirt’s campaign identity, operational data, political targeting, private records, or application dependencies.**
 
+## Publication use (`CC-DEC-104`)
+
+Imported public statistics exist to be **shown** on theory, proof, doctrine, and policy surfaces under the Data-Dense Publication Standard — not buried as research-only footnotes. Binding path: `metric → observation → dataset → agency → release`. See `docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md`.
+
 ## Why this exists
 
 RedDirt (`H:\SOSWebsite\RedDirt`) is the shared **Public Data Engine** — evolving into the **RedDirt Civic Intelligence Platform (RCIP)**. Rebuilding Census/BLS (or future agency) connectors inside Constitutional Capitalism would waste mature infrastructure, risk credential leakage into a static public site, and create duplicate integrations across civic apps.
