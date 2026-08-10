@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "slice_id": "CC-PHASE-2.1-RURAL-CTE-SPECIALTY-MAGNET-RESEARCH-HYPOTHESIS-1.0",
+  "version": "1.3.1",
+  "slice_id": "CC-PHASE-2.1-LOCAL-INDEPENDENT-JOURNALISM-CIVIC-INFORMATION-MODULE-1.0",
   "generated_at": "2026-08-07",
   "status": "ACTIVE_SELECTION_PREFERENCE",
   "architecture_note": "Sampling preference for geographic research questions — not LCL field launch, not new platform.",
@@ -20,7 +20,13 @@
       "contrast_role": "suburban / military-linked municipal systems",
       "counties": [
         "Pulaski"
-      ]
+      ],
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "municipal_information_market",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
+      }
     },
     {
       "id": "AR-GEO-SEARCY-COUNTY",
@@ -38,6 +44,12 @@
           "Healthcare / emergency services"
         ],
         "note": "Hypothesis only."
+      },
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "extreme_rural_information_economics",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
       }
     },
     {
@@ -45,7 +57,13 @@
       "name": "Lafayette County, Arkansas",
       "type": "county",
       "fips": "05073",
-      "contrast_role": "very rural conditions"
+      "contrast_role": "very rural conditions",
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "extreme_rural_information_economics",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
+      }
     },
     {
       "id": "AR-GEO-HOT-SPRINGS-VILLAGE",
@@ -74,6 +92,12 @@
           "Healthcare (if demand evidenced)"
         ],
         "note": "Hypothesis only — establish from regional workforce/demand data."
+      },
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "distressed_delta_information_economics",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
       }
     },
     {
@@ -81,14 +105,26 @@
       "name": "Pulaski County, Arkansas",
       "type": "county",
       "fips": "05119",
-      "contrast_role": "state metropolitan / government center"
+      "contrast_role": "state metropolitan / government center",
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "larger_information_market",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
+      }
     },
     {
       "id": "AR-GEO-BENTON-COUNTY",
       "name": "Benton County, Arkansas",
       "type": "county",
       "fips": "05007",
-      "contrast_role": "high-growth / high-income economic development"
+      "contrast_role": "high-growth / high-income economic development",
+      "civic_information_research": {
+        "module_id": "CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMATION-INFRASTRUCTURE",
+        "related_hypothesis": "CC-HYP-LOCAL-INDEPENDENT-JOURNALISM-ECOSYSTEM",
+        "role": "larger_information_market",
+        "note": "Candidate contrast geography for Local Information Commons research — not a field assignment."
+      }
     },
     {
       "id": "AR-GEO-MISSISSIPPI-COUNTY",
@@ -181,7 +217,7 @@
       "pathway_rule": "Specialization follows regional economic and human-capital opportunity from workforce data — not cookie-cutter statewide curriculum."
     }
   ],
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "location_count": 11,
   "agricultural_paired_comparison": {
     "status": "CANDIDATE_PAIR",
@@ -198,5 +234,22 @@
     "module_id": "CC-MOD-AR-RURAL-CTE-SPECIALTY-MAGNETS",
     "placement_principle": "Place exceptional educational assets in communities where those assets can expand opportunity and become anchors for broader economic renewal — not a false claim that magnets are generally defined by low-SES siting.",
     "specialization_rule": "Specialization follows the economic and human-capital opportunities of the region, not a statewide cookie-cutter curriculum."
+  },
+  "last_civic_information_note": "Journalism/civic-information contrast set: Searcy & Lafayette (extreme rural), West Helena (distressed Delta), Benton & Pulaski (larger markets), Jacksonville (municipal). Preference sampling only — not LCL field launch.",
+  "journalism_outlet_map_pilot": {
+    "slice_id": "CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0",
+    "completed_at": "2026-08-10",
+    "geographies_executed": [
+      "AR-GEO-SEARCY-COUNTY",
+      "AR-GEO-LAFAYETTE-COUNTY",
+      "AR-GEO-WEST-HELENA",
+      "AR-GEO-JACKSONVILLE",
+      "AR-GEO-BENTON-COUNTY",
+      "AR-GEO-PULASKI-COUNTY"
+    ],
+    "artifacts": [
+      "research/phase_2/arkansas_local_news_outlet_inventory.json",
+      "research/phase_2/civic_information_coverage_matrix.json"
+    ]
   }
 }
