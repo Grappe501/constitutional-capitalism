@@ -1,8 +1,8 @@
 {
-  "mission_id": "CC-PHASE-2.1-AR-PROCESSING-PRIMARY-RESEARCH-AND-OPEN-PLANT-BOOKING-STUDY-1.0",
-  "status": "PARTIAL",
+  "mission_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+  "status": "BLOCKED_AWAITING_HUMAN_CALLS",
   "updated_at": "2026-08-10",
-  "summary": "Usable-capacity study desk pass: ~3 claimed accessible inspected cattle paths; 0 booking-confirmed; 0 economically-usable-confirmed. Natural State unresolved. Voice PSTN required. Clinton CONTRADICTED preserved. Sources 182–190.",
+  "summary": "Voice/margin slice prepared with split responsibility. Human callers must fill ar_processing_voice_call_records.json. Cursor must not infer booking from the internet. Desk baseline preserved: ~3 accessible cattle pathways claimed, 0 booking-confirmed, 0 economically confirmed. Margin pilot gated until Pottsville+JACO+Ferguson calls entered.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
   "starting_commit": "pending",
@@ -12,23 +12,17 @@
   "overall_percent": 43,
   "phase_2_status": "PARTIAL",
   "recommended_next_slice": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
-  "decision_ids": [
-    "CC-DEC-103"
-  ],
-  "update_ids": [
-    "UPD-083"
-  ],
+  "decision_ids": ["CC-DEC-103"],
+  "update_ids": ["UPD-084"],
   "public_paths": [],
-  "board_paths": [
-    "/research/"
-  ],
-  "integrity_note": "No invented wait times. Desk primary ≠ booking confirmation. Economically usable paths confirmed: 0. Baseline 2/86 unchanged.",
-  "next_command": "Human PSTN booking confirmation campaign",
-  "report": "reports/CC_PHASE_2_1_AR_PROCESSING_PRIMARY_RESEARCH_AND_OPEN_PLANT_BOOKING_STUDY_1_0_RETURN.md",
+  "board_paths": ["/research/"],
+  "integrity_note": "Do not internet-infer booking availability. Zeros mean not yet verified. Ask processors what the bottleneck is. Separate gross value vs profit. Producer interviews required before intervention conclusions.",
+  "next_command": "Human: complete voice calls → enter JSON → then unlock Cursor margin pilot",
+  "report": "reports/CC_ARKANSAS_PROCESSING_RESEARCH_HANDOFF_HUMAN_VOICE_PASS_1_0.md",
   "sources_registered": 190,
   "doctrine_expanded": false,
   "principle_added": false,
-  "cattle_accessible_claimed_paths": 3,
-  "booking_confirmed_paths": 0,
-  "economically_usable_confirmed_paths": 0
+  "cattle_accessible_claimed_desk": 3,
+  "booking_confirmed": 0,
+  "economically_usable_confirmed": 0
 }
