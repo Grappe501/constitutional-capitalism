@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
+  "generated_at": "2026-08-10",
+  "four_layers": {
+    "nominal": "Feed manufacturing / licensed feed commerce exists at large scale in AR",
+    "accessible": "Independent farmers can buy some feeds; integrator mills generally closed",
+    "available": "Verified non-GMO/organic specs exist via limited AR nodes + national retail — full local chain unverified",
+    "economically_usable": "UNKNOWN — prices/margins not measured this slice"
+  },
+  "geographies": [
+    {
+      "id": "AR-GEO-VAN-BUREN-COUNTY",
+      "nearest_open_candidate": "LF Feeds Bismarck / River Valley Organics Hartman / retail brands",
+      "verified_local_chain": "UNKNOWN",
+      "note": "Distance/access friction UNKNOWN without primary calls"
+    },
+    {
+      "id": "AR-GEO-ROSE-BUD",
+      "nearest_open_candidate": "LF Feeds Bismarck (Hot Spring) / central AR dealers",
+      "verified_local_chain": "UNKNOWN"
+    },
+    {
+      "id": "AR-GEO-ARKANSAS-COUNTY",
+      "nearest_open_candidate": "commodity grain abundant; specialty feed nodes not mapped locally",
+      "verified_local_chain": "UNKNOWN",
+      "note": "Commodity production ≠ IP non-GMO supply"
+    },
+    {
+      "id": "AR-GEO-MISSISSIPPI-COUNTY",
+      "nearest_open_candidate": "integrator/commodity infrastructure likely; open specialty UNKNOWN",
+      "verified_local_chain": "UNKNOWN"
+    },
+    {
+      "id": "AR-GEO-SEARCY-COUNTY",
+      "nearest_open_candidate": "remote; likely higher transport friction to specialty mills",
+      "verified_local_chain": "UNKNOWN"
+    }
+  ],
+  "rows": [
+    {
+      "need": "certified_organic_livestock_feed",
+      "ar_grown_milled_distributed": "CANDIDATE_RVO_PRIMARY_VERIFY",
+      "ar_retail_national_brand": "YES_POULTRY_SKUS",
+      "economically_usable": "UNKNOWN"
+    },
+    {
+      "need": "non_gmo_project_verified_feed",
+      "ar_grown_milled_distributed": "NOT_ESTABLISHED",
+      "ar_retail_national_brand": "YES_KALMBACH_CHANNEL",
+      "economically_usable": "UNKNOWN"
+    },
+    {
+      "need": "identity_preserved_nongmo_grain_for_custom_mill",
+      "ar_supply": "UNKNOWN_LIKELY_SCARCE_RELATIVE_TO_CONVENTIONAL",
+      "note": "Conventional corn/soy large; IP bushels not found in desk sources"
+    },
+    {
+      "need": "supplier_attested_or_custom_local_ration",
+      "ar_supply": "LF_FEEDS_CANDIDATE",
+      "verification_strength": "WEAKER_THAN_CERTIFIED"
+    }
+  ],
+  "last_updated": "2026-08-10"
+}

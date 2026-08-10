@@ -1,8 +1,8 @@
 {
-  "mission_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
-  "status": "BLOCKED_AWAITING_HUMAN_CALLS",
+  "mission_id": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
+  "status": "PARTIAL",
   "updated_at": "2026-08-10",
-  "summary": "Cursor research lane HELD for human evidence pass. Instruments distinguish OWN_OPERATION_FACT vs INDUSTRY_BELIEF. Desk baseline preserved: ~3 / 0 / 0. First margin pilot unlocks after Pottsville+JACO+Ferguson calls—no huge sample required; label limitations. Sequence: voice → margin pilot → producer interviews → reconcile → binding constraints → interventions. Long wait ≠ build plant.",
+  "summary": "Non-GMO/local-feed assertion QUALIFIED: absolute outside-sourcing contradicted; leading break is segregation/IP/verification and captive vs open access—not absence of mills. Economically usable layer UNKNOWN. Processing voice still ~3/0/0 gated. Sources 191–201.",
   "repository_root": "H:\\Constitutional-Capitalism",
   "branch": "main",
   "starting_commit": "pending",
@@ -11,18 +11,32 @@
   "remote_url": "https://github.com/Grappe501/constitutional-capitalism",
   "overall_percent": 43,
   "phase_2_status": "PARTIAL",
-  "recommended_next_slice": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
-  "decision_ids": ["CC-DEC-103"],
-  "update_ids": ["UPD-084"],
+  "recommended_next_slice": "CC-PHASE-2.1-AR-FEED-MILL-PRIMARY-PRICE-AND-IP-GRAIN-SUPPLY-PASS-1.0",
+  "decision_ids": [
+    "CC-DEC-103"
+  ],
+  "update_ids": [
+    "UPD-085"
+  ],
   "public_paths": [],
-  "board_paths": ["/research/"],
-  "integrity_note": "Do not internet-infer booking availability. Zeros mean not yet verified. Ask processors what the bottleneck is. Separate gross value vs profit. Producer interviews required before intervention conclusions.",
-  "next_command": "Human: complete voice calls → enter JSON → then unlock Cursor margin pilot",
-  "report": "reports/CC_ARKANSAS_PROCESSING_RESEARCH_HANDOFF_HUMAN_VOICE_PASS_1_0.md",
-  "sources_registered": 190,
+  "board_paths": [
+    "/research/"
+  ],
+  "integrity_note": "Did not equate website silence with absence. Captive≠open. Production≠IP supply. No new-mill recommendation. Processing booking not inferred.",
+  "next_command": "Primary calls to LF Feeds + River Valley Organics; parallel human processing voice calls",
+  "report": "reports/CC_PHASE_2_1_ARKANSAS_LOCAL_FEED_GRAIN_AND_NON_GMO_SUPPLY_CHAIN_TEST_1_0_RETURN.md",
+  "sources_registered": 201,
   "doctrine_expanded": false,
   "principle_added": false,
-  "cattle_accessible_claimed_desk": 3,
-  "booking_confirmed": 0,
-  "economically_usable_confirmed": 0
+  "feed_hypothesis_verdict": "QUALIFIED",
+  "processing_voice_status": "AWAITING_HUMAN_CALLS",
+  "falsification": {
+    "A_assertion_substantially_correct": "PARTIAL — access frictions for verified non-GMO/organic independents are plausible; absolute 'must source outside AR' is too strong",
+    "B_production_exists_access_is_problem": "SUPPORTED_AS_LEADING_PATTERN — large nominal/captive capacity; open specialty thin",
+    "C_mills_could_make_nongmo_but_demand_insufficient": "PLAUSIBLE_UNTESTED",
+    "D_transport_not_primary_cost_problem": "NOT_ENOUGH_EVIDENCE_FRAMEWORK_ONLY",
+    "E_regional_supply_more_efficient_than_local": "PLAUSIBLE_UNTESTED",
+    "F_cooperative_beats_new_mill": "NOT_ENOUGH_EVIDENCE_EQUAL_STANDING",
+    "G_original_claim_wrong": "CONTRADICTED_IN_ABSOLUTE_FORM — AR organic mill candidate + custom open mill + retail verified brands exist"
+  }
 }

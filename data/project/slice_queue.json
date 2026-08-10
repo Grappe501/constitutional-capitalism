@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "last_updated": "2026-08-10",
-  "active_slice": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+  "active_slice": "CC-PHASE-2.1-AR-FEED-MILL-PRIMARY-PRICE-AND-IP-GRAIN-SUPPLY-PASS-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -622,7 +622,35 @@
       ],
       "next_recommended_slice": "CC-PHASE-2.1-CLINTON-HUB-FSIS-TEST-AND-AR-ESTABLISHMENT-CAPACITY-MAP-1.0",
       "note": "Falsification study — not a subsidy argument. Return to agriculture track."
+    },
+    {
+      "slice_id": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
+      "title": "Arkansas Local Feed Grain and Non-GMO Supply Chain Test",
+      "status": "completed",
+      "completed_at": "2026-08-10",
+      "completion_evidence": [
+        "ar_feed_mill_infrastructure_inventory.json",
+        "ar_non_gmo_feed_access_matrix.json",
+        "ar_feed_grain_supply_chain_map.json",
+        "ar_non_gmo_feed_delivered_cost_framework.json",
+        "ar_local_feed_mill_feasibility_dossier.json",
+        "ar_feed_cooperative_alternative_dossier.json",
+        "CC-HYP-AR-LOCAL-NON-GMO-FEED-INFRASTRUCTURE-GAP QUALIFIED",
+        "CC-SRC-191–201",
+        "CC-PR-053–061",
+        "CC-RQ-P21-074–077"
+      ],
+      "next_recommended_slice": "CC-PHASE-2.1-AR-FEED-MILL-PRIMARY-PRICE-AND-IP-GRAIN-SUPPLY-PASS-1.0",
+      "alternate_next": [
+        "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0"
+      ],
+      "note": "Falsification study. Absolute outside-sourcing claim contradicted. Captive≠open. Production≠IP supply. No new-mill recommendation. Processing voice remains human-gated in parallel."
     }
   ],
-  "last_completed_slice": "CC-PHASE-2.1-AR-PROCESSING-PRIMARY-RESEARCH-AND-OPEN-PLANT-BOOKING-STUDY-1.0"
+  "last_completed_slice": "CC-PHASE-2.1-ARKANSAS-LOCAL-FEED-GRAIN-AND-NON-GMO-SUPPLY-CHAIN-TEST-1.0",
+  "parallel_blocked": {
+    "slice_id": "CC-PHASE-2.1-AR-PROCESSING-VOICE-BOOKING-CONFIRMATION-AND-MARGIN-PILOT-1.0",
+    "status": "AWAITING_HUMAN_CALLS",
+    "baseline": "~3 / 0 / 0"
+  }
 }
