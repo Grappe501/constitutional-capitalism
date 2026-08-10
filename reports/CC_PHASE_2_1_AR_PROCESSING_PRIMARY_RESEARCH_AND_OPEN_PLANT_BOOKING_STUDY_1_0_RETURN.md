@@ -140,7 +140,7 @@ Canonical JSON under `research/phase_2/` (inquiry log, booking matrix, economic 
 
 ## 24. Commit Hash
 
-Filled after commit.
+`3ed17b440d1e94f983054141a54fada31faa530a`
 
 ## 25. Remaining Unknowns
 
