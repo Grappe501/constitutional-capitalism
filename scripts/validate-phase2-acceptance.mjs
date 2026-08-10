@@ -62,11 +62,11 @@ if (missionLock.official_active_state?.phase_2_status !== "PARTIAL") {
 if (baselineStatus.total_metrics !== 64) {
   fail(`baseline_status.total_metrics must be 64 after ontology cleanup, found ${baselineStatus.total_metrics}`);
 } else ok("baseline denominator is 64 (ontology-cleaned countable slots)");
-if (baselineStatus.sourced_metrics !== 34) {
+if (baselineStatus.sourced_metrics !== 38) {
   warn(
-    `sourced_metrics is ${baselineStatus.sourced_metrics} (canonical operating snapshot expected 34 after legitimate-slot expansion)`
+    `sourced_metrics is ${baselineStatus.sourced_metrics} (canonical operating snapshot expected 38 after legitimate-slot expansion continuation)`
   );
-} else ok("baseline sourced count remains 34/64");
+} else ok("baseline sourced count remains 38/64");
 
 const stale38Paths = [
   "data/project/slice_queue.json",

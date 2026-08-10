@@ -68,16 +68,16 @@ Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `do
 
 ```text
 Phase 1: LOCKED / CLOSED
-Latest completed slices: bad-metric governance / ID remap; legitimate-slot expansion after ontology cleanup
+Latest completed slices: legitimate-slot expansion; expansion continuation
 Active / next: CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0
 Phase 2: PARTIAL
 GATE-03: PASSED (three-layer presence)
 GATE-02: PARTIAL / REMAINS OPEN — 5/20 below STRONG; 14/20 DIRECT/STRONG; CC-CLAIM-001 & 003 remain NEE
-GATE-07: OPEN — baseline 34/64 (ontology-cleaned countable slots; growing without proxy stuffing)
+GATE-07: OPEN — baseline 38/64
 Gates: 6 passed / 10 open (of 16)
-Sources: 254
+Sources: 260
 Claims: 138
-Baseline: 34/64
+Baseline: 38/64
 Modeling: 0%
 Legal review: 0%
 Overall snapshot: see data/metrics/progress_snapshot.json (not a completion claim)
@@ -93,7 +93,7 @@ Lock file: `data/project/phase2_mission_lock.json` · Governance queue: `researc
 ## Current direction (Phase 2)
 
 - **Phase 1 = belief; Phase 2 = proof.** Scaffolding is not completion.
-- Active next slice: `CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0` (Phase 2 remains PARTIAL; legitimate-slot expansion shipped)
+- Active next slice: `CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0` (Phase 2 remains PARTIAL; expansion continuation shipped)
 - **Three-layer rule (mandatory):** every diagnosis brief must distinguish (1) what the data directly establishes, (2) what may reasonably be inferred, (3) what Constitutional Capitalism normatively concludes — see `content/research/national-diagnosis/DIAGNOSIS_BRIEF_STANDARD.md`
 - Acceptance criteria live in the mission lock; if unmet, return `Phase 2 status: PARTIAL` / next slice `CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0`
 - Parallel (not active in this mission): `CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0` — no public feedback backend on the unprotected Build Board; open `CC-DEC-011`

@@ -66,3 +66,14 @@ Historical sections above may still mention older 2/86 or 14/86 counts — treat
 - Denominator held at **64**
 - Active next: `CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0`
 - Phase 2: **PARTIAL**
+
+
+---
+
+## Legitimate-slot expansion continuation (2026-08-10)
+
+- Scoreboard **34/64 → 38/64** (arc **27/64 → 38/64**)
+- Newly completed: CC-IND-C03, CC-IND-J06, CC-IND-D04, CC-IND-E02
+- Failed retrieval log: `research/phase_2/baseline_failed_retrieval_log.json`
+- Active next: `CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0`
+- Phase 2: **PARTIAL**

@@ -65,5 +65,11 @@
   "id_remap_table": "research/phase_2/baseline_id_remap_table.json",
   "governance_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
   "governance_rule": "Do not stuff weak proxies into deferred, design, or research-question slots. Prefer an empty countable slot or an explicit park off-scoreboard.",
-  "legitimate_slot_expansion_rule": "After ontology cleanup, source only countable empirical slots with full reproducible-retrieval fields. Prefer empty over proxy."
+  "legitimate_slot_expansion_rule": "After ontology cleanup, source only countable empirical slots with full reproducible-retrieval fields. Prefer empty over proxy.",
+  "completion_state_taxonomy": {
+    "SOURCE_UNKNOWN": "Authoritative source and/or construct not yet locked.",
+    "SOURCE_IDENTIFIED_DATA_PENDING": "Authoritative source and metric known; primary observation not yet successfully retrieved.",
+    "BASELINE_COMPLETE": "Definition, observation, primary evidence, retrieval path, and limitations satisfy the reproducible-retrieval standard."
+  },
+  "failed_retrieval_log": "research/phase_2/baseline_failed_retrieval_log.json"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.6.1",
+  "version": "0.6.2",
   "last_updated": "2026-08-10",
   "status": "spine_partial_first_wave_populated",
   "decision_id": "CC-DEC-076",
@@ -542,7 +542,7 @@
       "CC-IND-I03"
     ]
   },
-  "live_baseline_display": "34/64",
+  "live_baseline_display": "38/64",
   "legitimate_slot_expansion": {
     "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-AFTER-ONTOLOGY-CLEANUP-1.0",
     "pathways_established": [
@@ -602,6 +602,50 @@
       {
         "metric_id": "CC-IND-B01",
         "reason": "Census BDS estabs_entry_rate primary retrieval still API/CSV gated"
+      }
+    ]
+  },
+  "legitimate_slot_expansion_continuation": {
+    "slice_id": "CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-CONTINUATION-1.0",
+    "pathways_established": [
+      {
+        "metric_id": "CC-IND-C03",
+        "agencies": [
+          "DOJ Antitrust Division"
+        ],
+        "series": "Total criminal cases filed"
+      },
+      {
+        "metric_id": "CC-IND-J06",
+        "agencies": [
+          "DOJ Asset Forfeiture Program"
+        ],
+        "series": "AFF total receipts"
+      },
+      {
+        "metric_id": "CC-IND-D04",
+        "agencies": [
+          "FEC"
+        ],
+        "series": "weball top-decile receipt share"
+      },
+      {
+        "metric_id": "CC-IND-E02",
+        "agencies": [
+          "Federal Reserve Banks",
+          "USDA FSA"
+        ],
+        "series": "SBCS full approval rate + FSA FLP obligations"
+      }
+    ],
+    "still_blocked": [
+      {
+        "metric_id": "CC-IND-B01",
+        "reason": "Census BDS primary retrieval pending; 520 stubs rejected"
+      },
+      {
+        "metric_id": "CC-IND-HC07",
+        "reason": "2024 CPS P20-587 age table retrieval pending; A-1 historical path confirmed"
       }
     ]
   }
