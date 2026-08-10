@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "latest_forensic_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md",
   "decision_id": "CC-DEC-075",
   "status": "governing",
@@ -52,7 +52,7 @@
       {
         "step": 5,
         "title": "Repair the baseline",
-        "summary": "Reconcile all narratives to 86 metrics; show sourced/partial/empty; keep 2 of 86 visible until the count changes."
+        "summary": "Reconcile all narratives to 86 metrics; show sourced/partial/empty; keep 27/86 visible until the count changes. Completeness = reproducible retrieval."
       },
       {
         "step": 6,
@@ -184,8 +184,13 @@
   "integrity_dials": {
     "modeling": 0,
     "legal_review": 0,
-    "baseline_sourced_of_total": "2/86",
-    "hfi_note": "Architecture is not measurement; source first indicators before composites"
+    "baseline_sourced_of_total": "27/86",
+    "hfi_note": "Architecture is not measurement; source first indicators before composites",
+    "first_20_weak_fit": 5,
+    "first_20_direct_strong_fit": 14,
+    "sources_registered": 247,
+    "gates_open": 10,
+    "gates_passed": 6
   },
   "related_decision_ids": [
     "CC-DEC-093",
@@ -244,5 +249,14 @@
   "proof_falsifiability": {
     "decision_id": "CC-DEC-102",
     "rule": "Burt Step 2 and proof packets operate under falsifiability — seek contrary evidence and non-adoption conditions."
+  },
+  "live_operating_state": {
+    "as_of": "2026-08-10",
+    "phase_2_status": "PARTIAL",
+    "baseline": "27/86",
+    "sources": 247,
+    "modeling": 0,
+    "legal": 0,
+    "next_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0"
   }
 }

@@ -64,32 +64,36 @@ Steve (owner) · ChatGPT (mission design / review) · Cursor (implementation)
 
 Follow `docs/governance/AI_COLLABORATION_PROTOCOL.md` and handoff docs under `docs/handoffs/`.
 
-## Official active state (CC-DEC-064 · 2026-08-07 claim repair)
+## Official active state (deep audit 2026-08-10)
 
 ```text
-Phase 1: ACCEPTED / CLOSED
-Latest completed slice: CC-PHASE-2.1-PRIORITY-CLAIM-REWRITE-AND-P0-CLOSEOUT-1.0
-Next: CC-PHASE-2.1-GOVERNED-CLAIM-APPROVAL-AND-SUBSTANTIVE-DOMAIN-DEEPENING-1.0
+Phase 1: LOCKED / CLOSED
+Latest completed slices: journalism 90-day coverage coding; baseline expansion round 2
+Active / next: CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0
 Phase 2: PARTIAL
-GATE-03: PASSED (9/9)
-GATE-02: PARTIAL / REMAINS OPEN — 12/20 below STRONG fit; 5 PENDING rewrites; CC-CLAIM-003 still NEE; baseline 2/86
-P0 questions: 9/9 CLOSED
-Sources: 93
-Weak-fit: 13 → 12
-Canonical claim_text mutations: 0 (governance queue PENDING)
-CC-CLAIM-009: retirement_recommended → CC-PRED-009
-Baseline: 2 / 86
+GATE-03: PASSED (three-layer presence)
+GATE-02: PARTIAL / REMAINS OPEN — 5/20 below STRONG; 14/20 DIRECT/STRONG; CC-CLAIM-001 & 003 remain NEE
+GATE-07: OPEN — baseline 27/86 (meaningful subset growing; not complete)
+Gates: 6 passed / 10 open (of 16)
+Sources: 247
+Claims: 138
+Baseline: 27/86
+Modeling: 0%
+Legal review: 0%
+Overall snapshot: see data/metrics/progress_snapshot.json (not a completion claim)
+Agriculture: processing ~3 / 0 / 0; feed voice-gated
 Infrastructure freeze: ACTIVE
 Primary question: What can we prove?
-Return: reports/CC_PHASE_2_1_PRIORITY_CLAIM_REWRITE_AND_P0_CLOSEOUT_1_0_RETURN.md
+Doctrine freeze: 47 principles (CC-DEC-093)
 ```
+
 
 Lock file: `data/project/phase2_mission_lock.json` · Governance queue: `research/phase_2/claim_change_governance_queue.json` · Thread handoff: `docs/handoffs/CURRENT_THREAD_HANDOFF.md`
 
 ## Current direction (Phase 2)
 
 - **Phase 1 = belief; Phase 2 = proof.** Scaffolding is not completion.
-- Active mission: `CC-PHASE-2-DIAGNOSIS-RESEARCH-FOUNDATION-1.0` (Evidence + Baseline absorbed as deliverables, not competing slices)
+- Active next slice: `CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0` (Phase 2 remains PARTIAL; diagnosis foundation already shipped)
 - **Three-layer rule (mandatory):** every diagnosis brief must distinguish (1) what the data directly establishes, (2) what may reasonably be inferred, (3) what Constitutional Capitalism normatively concludes — see `content/research/national-diagnosis/DIAGNOSIS_BRIEF_STANDARD.md`
 - Acceptance criteria live in the mission lock; if unmet, return `Phase 2 status: PARTIAL` / next slice `CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0`
 - Parallel (not active in this mission): `CC-CIVIC-DELIBERATION-FEEDBACK-SYSTEM-1.0` — no public feedback backend on the unprotected Build Board; open `CC-DEC-011`

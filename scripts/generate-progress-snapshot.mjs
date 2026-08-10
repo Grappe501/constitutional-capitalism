@@ -74,8 +74,12 @@ const verifiedStatuses = new Set([
   "url_verified",
   "verified",
   "url_verified_via_search_excerpt",
+  "url_verified_via_search",
+  "url_verified_via_fetch",
   "verified_against_primary_page",
   "verified_via_search_excerpt_primary_page",
+  "csv_retrieved",
+  "csv_retrieved_and_archived",
 ]);
 const verifiedSources = sourceList.filter((s) =>
   verifiedStatuses.has(s.verification_status)

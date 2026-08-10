@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-10",
   "decision_id": "CC-DEC-075",
   "related_decision_ids": [
     "CC-DEC-064",
@@ -171,12 +171,18 @@
     "authorization_head_note": "Original Phase 2 authorization referenced HEAD 7184b70; current repository HEAD advances with each ship and must be read from git, not frozen in this lock.",
     "forensic_audit_overall_snapshot": 36,
     "overall_percent_source": "data/metrics/progress_snapshot.json",
-    "overall_baseline_note": "Historical forensic freeze 36%. Regenerated overall was 43% on 2026-08-07 (progress_snapshot) and is not Phase 2 completion. Baseline remains 2/86; modeling/legal 0%; three-layer priority briefs 0/9; infrastructure freeze active.",
+    "overall_baseline_note": "Live operating state 2026-08-10: overall from progress_snapshot (not Phase 2 completion). Baseline 27/86; sources 247; first-20 weak-fit 5 / DIRECT+STRONG 14; gates 10 open / 6 passed; three-layer priority briefs presence passed (GATE-03); modeling/legal 0%; infrastructure freeze active; ag processing ~3/0/0 voice-gated.",
     "latest_forensic_report": "reports/CC_FORENSIC_AUDIT_STATUS_AND_FORWARD_PLAN_2026-08-07.md",
     "primary_question": "What can we prove?",
     "phase_2_status": "PARTIAL",
     "next_slice_if_partial": "CC-PHASE-2.1-DIAGNOSIS-RESEARCH-CONTINUATION-1.0",
-    "current_risk": "polished surfaces and institution scaffolding may overstate evidentiary maturity"
+    "current_risk": "polished surfaces and institution scaffolding may overstate evidentiary maturity",
+    "baseline": "27/86",
+    "sources_registered": 247,
+    "weak_fit_claims": 5,
+    "direct_strong_fit": 14,
+    "active_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+    "last_completed_slice": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0"
   },
   "doctrine_freeze": {
     "decision_id": "CC-DEC-093",
@@ -242,7 +248,19 @@
     "rule": "LCL OS ready but field work later. Do not expand platform infrastructure; execute research missions."
   },
   "research_institution_foundations": {
-    "updates": ["UPD-069", "UPD-070", "UPD-071", "UPD-072", "UPD-073", "UPD-074", "UPD-075", "UPD-076", "UPD-077", "UPD-078", "UPD-079"],
+    "updates": [
+      "UPD-069",
+      "UPD-070",
+      "UPD-071",
+      "UPD-072",
+      "UPD-073",
+      "UPD-074",
+      "UPD-075",
+      "UPD-076",
+      "UPD-077",
+      "UPD-078",
+      "UPD-079"
+    ],
     "file": "data/project/research_institution_foundations.json",
     "pp_02_readiness": "CONDITIONAL_GO",
     "rule": "Foundations complete. Progress = hypotheses honestly tested, not systems built."

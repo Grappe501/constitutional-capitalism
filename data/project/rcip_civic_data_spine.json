@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-10",
   "status": "architecture_only",
   "decision_id": "CC-DEC-078",
   "related_decision_ids": [
@@ -151,7 +151,7 @@
   "phase_2_posture": {
     "cc_role": "first external proof consumer",
     "delivery": "validated snapshots under data/imports/reddirt-public-statistics/",
-    "baseline_rule": "Architecture does not raise 2/86; only validated mapped observations do",
+    "baseline_rule": "Architecture does not raise the baseline by itself; only validated mapped observations do. Live CC sourced count is 27/86.",
     "build_next": "Formalize RCIP layers in RedDirt; keep CC as snapshot consumer with provenance and multi-source confidence fields"
   },
   "governing_rules": [
