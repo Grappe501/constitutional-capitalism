@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "last_updated": "2026-08-10",
   "principles": [
     "Prefer federal statistical agencies and primary official series",
@@ -41,5 +41,28 @@
     "reproducible_retrieval_instructions",
     "source_to_baseline_fit"
   ],
-  "round_2_rule": "Do not fill a baseline slot until the metric definition, source, geography, year, retrieval path, and limitations all line up."
+  "round_2_rule": "Do not fill a baseline slot until the metric definition, source, geography, year, retrieval path, and limitations all line up.",
+  "bad_metric_rule": "A bad metric is worse than a missing metric because it creates false confidence.",
+  "ontology_classes": [
+    "OBSERVED STATISTIC",
+    "DERIVED STATISTIC",
+    "INDEX",
+    "SURVEY MEASURE",
+    "ADMINISTRATIVE COUNT",
+    "STRUCTURAL INDICATOR",
+    "DESIGN TARGET",
+    "RESEARCH QUESTION",
+    "NORMATIVE GOAL"
+  ],
+  "countable_ontology_classes": [
+    "OBSERVED STATISTIC",
+    "DERIVED STATISTIC",
+    "INDEX",
+    "SURVEY MEASURE",
+    "ADMINISTRATIVE COUNT",
+    "STRUCTURAL INDICATOR"
+  ],
+  "id_remap_table": "research/phase_2/baseline_id_remap_table.json",
+  "governance_slice": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+  "governance_rule": "Do not stuff weak proxies into deferred, design, or research-question slots. Prefer an empty countable slot or an explicit park off-scoreboard."
 }

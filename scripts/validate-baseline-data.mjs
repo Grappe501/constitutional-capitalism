@@ -28,7 +28,23 @@ else {
     }
     if (m.current_value != null && m.source_ids?.length) sourced += 1;
   }
-  ok(`sourced metrics: ${sourced} / ${(data.metrics || []).length}`);
+  const idHits = {};
+  let countable = 0;
+  let sourcedCountable = 0;
+  for (const m of data.metrics || []) {
+    idHits[m.metric_id] = (idHits[m.metric_id] || 0) + 1;
+    const counts = m.counts_toward_baseline_scoreboard !== false
+      && !["design_indicator", "research_question", "retired", "retired_merged"].includes(m.status);
+    if (counts) {
+      countable += 1;
+      if (m.current_value != null && m.source_ids?.length) sourcedCountable += 1;
+    }
+  }
+  const dups = Object.entries(idHits).filter(([, n]) => n > 1);
+  if (dups.length) fail(`duplicate metric_id values: ${dups.map(([id]) => id).join(", ")}`);
+  else ok("unique metric_id values");
+  ok(`sourced metrics (registry rows): ${sourced} / ${(data.metrics || []).length}`);
+  ok(`scoreboard countable: ${sourcedCountable} / ${countable}`);
 }
 
 for (const rel of [

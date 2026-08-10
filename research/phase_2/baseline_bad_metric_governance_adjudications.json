@@ -1,0 +1,558 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+  "generated_at": "2026-08-10",
+  "rule": "A bad metric is worse than a missing metric because it creates false confidence.",
+  "allowed_dispositions": [
+    "KEEP AS WRITTEN",
+    "REDEFINE",
+    "SPLIT",
+    "REMAP ID",
+    "MERGE",
+    "RECLASSIFY AS DESIGN INDICATOR",
+    "RECLASSIFY AS RESEARCH QUESTION",
+    "RETIRE",
+    "DEFER — DEFINITION REQUIRED",
+    "DEFER — DATA UNAVAILABLE"
+  ],
+  "adjudications": [
+    {
+      "flag_id": "FLAG-DUP-D01-D04",
+      "metric_ids": [
+        "CC-IND-D01",
+        "CC-IND-D02",
+        "CC-IND-D03",
+        "CC-IND-D04"
+      ],
+      "disposition": "REMAP ID",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "mixed_see_remap",
+      "questions": {
+        "what_exactly_measured": "Two incompatible democracy blocks shared D01–D04 IDs (legacy titles vs framework titles).",
+        "reproducibly_observable": "ID collision is an architecture defect, not a statistic.",
+        "measures_intended_concept": "Duplicate IDs destroy concept fit by making retrieval ambiguous.",
+        "outside_researcher_same_answer": "No — researchers would not know which D03 was meant."
+      },
+      "rationale": "Preserve historical lineage via remap table. Framework keeps D01–D04. Legacy voter participation MERGES into D03; civic engagement / public trust / local participation REMAP to D09–D11."
+    },
+    {
+      "flag_id": "FLAG-CM01",
+      "metric_ids": [
+        "CC-IND-CM01"
+      ],
+      "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "questions": {
+        "what_exactly_measured": "Storefront / Main Street commercial occupancy — geography, sector, and vacancy definition undefined.",
+        "reproducibly_observable": "No authoritative national Census/BLS scalar for 'Main Street occupancy'.",
+        "measures_intended_concept": "Any convenient proxy (retail employment, commercial vacancy indexes) would misrepresent the construct.",
+        "outside_researcher_same_answer": "No — without a locked inventory method, answers diverge by source."
+      },
+      "rationale": "Keep the concept visible as a research question. Do not fill with a national proxy. Local pilots may later invent a defensible ADMINISTRATIVE COUNT / STRUCTURAL INDICATOR."
+    },
+    {
+      "flag_id": "FLAG-B03",
+      "metric_ids": [
+        "CC-IND-B03"
+      ],
+      "disposition": "DEFER — DEFINITION REQUIRED",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "questions": {
+        "what_exactly_measured": "Share of firms/employment/equity under 'local' ownership — entity, control, and geography undefined.",
+        "reproducibly_observable": "Potentially yes after lock (e.g., Census ABS / ownership tables), not yet.",
+        "measures_intended_concept": "Current title is too vague; a weak proxy would create false confidence.",
+        "outside_researcher_same_answer": "Not until geography/entity/control criteria are locked."
+      },
+      "rationale": "Retain as countable empirical candidate. Explicit definition debt. No number in this slice."
+    },
+    {
+      "flag_id": "FLAG-G04",
+      "metric_ids": [
+        "CC-IND-G04"
+      ],
+      "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "questions": {
+        "what_exactly_measured": "'Regulatory burden' as a single national scalar — pages of CFR, compliance cost, restrictiveness indexes, etc.",
+        "reproducibly_observable": "No single accepted official scalar; competing constructs.",
+        "measures_intended_concept": "Normatively loaded; convenient indexes measure chosen methodology more than a settled concept.",
+        "outside_researcher_same_answer": "No — reasonable researchers pick different burden proxies."
+      },
+      "rationale": "Remove from baseline scoreboard masquerade. Remains a research/normative measurement debate, not a Phase-2 baseline statistic."
+    },
+    {
+      "flag_id": "FLAG-I02",
+      "metric_ids": [
+        "CC-IND-I02"
+      ],
+      "disposition": "DEFER — DEFINITION REQUIRED",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "questions": {
+        "what_exactly_measured": "AI investment — software, R&D, capex, startups, or public budget? Boundary unlocked.",
+        "reproducibly_observable": "Possible after boundary lock (BEA/NSF/private capital series), not before.",
+        "measures_intended_concept": "Private VC headlines are not a substitute for a locked national construct.",
+        "outside_researcher_same_answer": "Not until the investment boundary is governed."
+      },
+      "rationale": "Keep as countable candidate (likely DERIVED). Do not source from unlocked private tallies in this slice."
+    },
+    {
+      "flag_id": "FLAG-E07",
+      "metric_ids": [
+        "CC-IND-E07"
+      ],
+      "disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "questions": {
+        "what_exactly_measured": "Community Health Index coverage — an index CC intends to design.",
+        "reproducibly_observable": "Not an existing observed series.",
+        "measures_intended_concept": "Title already admits design agenda; keeping it as baseline_pending falsifies empirics.",
+        "outside_researcher_same_answer": "No baseline retrieval exists."
+      },
+      "rationale": "Park as design target. Does not count toward baseline scoreboard until a governed observed/derived index exists."
+    },
+    {
+      "flag_id": "FLAG-D07",
+      "metric_ids": [
+        "CC-IND-D07"
+      ],
+      "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "questions": {
+        "what_exactly_measured": "Independent oversight durability under unified government — institutional quality construct.",
+        "reproducibly_observable": "Not a single official series; requires coding rules and case judgment.",
+        "measures_intended_concept": "Institutional quality judgment ≠ baseline statistic.",
+        "outside_researcher_same_answer": "No — coding schemes would diverge without a locked protocol."
+      },
+      "rationale": "Move off scoreboard. Remains an important democracy research question for later structured coding, not a fillable baseline cell."
+    },
+    {
+      "flag_id": "FLAG-J08",
+      "metric_ids": [
+        "CC-IND-J08"
+      ],
+      "disposition": "DEFER — DEFINITION REQUIRED",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "questions": {
+        "what_exactly_measured": "White-collar / economic crime enforcement intensity — rate per what population/base?",
+        "reproducibly_observable": "Possible administrative counts (DOJ/FBI/USSC) after definition lock; no locked intensity rate now.",
+        "measures_intended_concept": "Raw case counts without intensity definition are a weak proxy.",
+        "outside_researcher_same_answer": "Not until offense class, agency universe, and rate base are locked."
+      },
+      "rationale": "Retain countable candidate. Definition debt explicit. No stuffed proxy."
+    },
+    {
+      "flag_id": "FLAG-HC01",
+      "metric_ids": [
+        "CC-IND-HC01"
+      ],
+      "disposition": "DEFER — DEFINITION REQUIRED",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "questions": {
+        "what_exactly_measured": "Multiple-pathway secondary completion / credential attainment composite.",
+        "reproducibly_observable": "Component series exist (NCES); composite does not until governed.",
+        "measures_intended_concept": "Bachelor's-or-higher alone distorts the multiple-pathway concept.",
+        "outside_researcher_same_answer": "Not until composite membership and ages are locked."
+      },
+      "rationale": "Keep countable. Reject bachelor's-or-higher substitute. Definition lock required before sourcing."
+    },
+    {
+      "flag_id": "FLAG-CM03",
+      "metric_ids": [
+        "CC-IND-CM03"
+      ],
+      "disposition": "DEFER — DEFINITION REQUIRED",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "questions": {
+        "what_exactly_measured": "Hospital access — travel-time, closure, or capacity?",
+        "reproducibly_observable": "No single authoritative national access scalar ready for this slot.",
+        "measures_intended_concept": "Beds ≠ access; HPSA primary-care belongs to E05; overnight stays ≠ geographic access.",
+        "outside_researcher_same_answer": "Not until access construct is locked."
+      },
+      "rationale": "Keep countable with explicit rejected substitutes. No number this slice."
+    },
+    {
+      "flag_id": "FLAG-HC08",
+      "metric_ids": [
+        "CC-IND-HC08"
+      ],
+      "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "questions": {
+        "what_exactly_measured": "Employer satisfaction with pathway graduates.",
+        "reproducibly_observable": "No federal statistical series.",
+        "measures_intended_concept": "Any ad-hoc survey would be a new research instrument, not a baseline retrieve.",
+        "outside_researcher_same_answer": "No shared official answer exists."
+      },
+      "rationale": "Park as research question / future survey design. Not a baseline scoreboard cell."
+    },
+    {
+      "flag_id": "FLAG-PS-T-CLUSTER",
+      "metric_ids": [
+        "CC-IND-PS01",
+        "CC-IND-PS02",
+        "CC-IND-PS03",
+        "CC-IND-PS04",
+        "CC-IND-PS05",
+        "CC-IND-PS06",
+        "CC-IND-PS07",
+        "CC-IND-PS08",
+        "CC-IND-T01",
+        "CC-IND-T02",
+        "CC-IND-T03",
+        "CC-IND-T04",
+        "CC-IND-T05",
+        "CC-IND-T06",
+        "CC-IND-T07",
+        "CC-IND-T08"
+      ],
+      "disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "questions": {
+        "what_exactly_measured": "Public-service and transparency inventory / audit constructs.",
+        "reproducibly_observable": "Require custom inventories/audits, not one agency table.",
+        "measures_intended_concept": "Treating them as ordinary baseline statistics creates false confidence.",
+        "outside_researcher_same_answer": "No — answers depend on unfinished inventory methodology."
+      },
+      "rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
+    }
+  ],
+  "summary": {
+    "version": "1.0.0",
+    "slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+    "generated_at": "2026-08-10",
+    "adjudications": [
+      {
+        "flag_id": "FLAG-DUP-D01-D04",
+        "metric_ids": [
+          "CC-IND-D01",
+          "CC-IND-D02",
+          "CC-IND-D03",
+          "CC-IND-D04"
+        ],
+        "disposition": "REMAP ID",
+        "ontology_class": "STRUCTURAL INDICATOR",
+        "scoreboard_inclusion": "mixed_see_remap",
+        "questions": {
+          "what_exactly_measured": "Two incompatible democracy blocks shared D01–D04 IDs (legacy titles vs framework titles).",
+          "reproducibly_observable": "ID collision is an architecture defect, not a statistic.",
+          "measures_intended_concept": "Duplicate IDs destroy concept fit by making retrieval ambiguous.",
+          "outside_researcher_same_answer": "No — researchers would not know which D03 was meant."
+        },
+        "rationale": "Preserve historical lineage via remap table. Framework keeps D01–D04. Legacy voter participation MERGES into D03; civic engagement / public trust / local participation REMAP to D09–D11."
+      },
+      {
+        "flag_id": "FLAG-CM01",
+        "metric_ids": [
+          "CC-IND-CM01"
+        ],
+        "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+        "ontology_class": "RESEARCH QUESTION",
+        "scoreboard_inclusion": "research_question",
+        "questions": {
+          "what_exactly_measured": "Storefront / Main Street commercial occupancy — geography, sector, and vacancy definition undefined.",
+          "reproducibly_observable": "No authoritative national Census/BLS scalar for 'Main Street occupancy'.",
+          "measures_intended_concept": "Any convenient proxy (retail employment, commercial vacancy indexes) would misrepresent the construct.",
+          "outside_researcher_same_answer": "No — without a locked inventory method, answers diverge by source."
+        },
+        "rationale": "Keep the concept visible as a research question. Do not fill with a national proxy. Local pilots may later invent a defensible ADMINISTRATIVE COUNT / STRUCTURAL INDICATOR."
+      },
+      {
+        "flag_id": "FLAG-B03",
+        "metric_ids": [
+          "CC-IND-B03"
+        ],
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "STRUCTURAL INDICATOR",
+        "scoreboard_inclusion": "baseline_slot",
+        "questions": {
+          "what_exactly_measured": "Share of firms/employment/equity under 'local' ownership — entity, control, and geography undefined.",
+          "reproducibly_observable": "Potentially yes after lock (e.g., Census ABS / ownership tables), not yet.",
+          "measures_intended_concept": "Current title is too vague; a weak proxy would create false confidence.",
+          "outside_researcher_same_answer": "Not until geography/entity/control criteria are locked."
+        },
+        "rationale": "Retain as countable empirical candidate. Explicit definition debt. No number in this slice."
+      },
+      {
+        "flag_id": "FLAG-G04",
+        "metric_ids": [
+          "CC-IND-G04"
+        ],
+        "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+        "ontology_class": "RESEARCH QUESTION",
+        "scoreboard_inclusion": "research_question",
+        "questions": {
+          "what_exactly_measured": "'Regulatory burden' as a single national scalar — pages of CFR, compliance cost, restrictiveness indexes, etc.",
+          "reproducibly_observable": "No single accepted official scalar; competing constructs.",
+          "measures_intended_concept": "Normatively loaded; convenient indexes measure chosen methodology more than a settled concept.",
+          "outside_researcher_same_answer": "No — reasonable researchers pick different burden proxies."
+        },
+        "rationale": "Remove from baseline scoreboard masquerade. Remains a research/normative measurement debate, not a Phase-2 baseline statistic."
+      },
+      {
+        "flag_id": "FLAG-I02",
+        "metric_ids": [
+          "CC-IND-I02"
+        ],
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "DERIVED STATISTIC",
+        "scoreboard_inclusion": "baseline_slot",
+        "questions": {
+          "what_exactly_measured": "AI investment — software, R&D, capex, startups, or public budget? Boundary unlocked.",
+          "reproducibly_observable": "Possible after boundary lock (BEA/NSF/private capital series), not before.",
+          "measures_intended_concept": "Private VC headlines are not a substitute for a locked national construct.",
+          "outside_researcher_same_answer": "Not until the investment boundary is governed."
+        },
+        "rationale": "Keep as countable candidate (likely DERIVED). Do not source from unlocked private tallies in this slice."
+      },
+      {
+        "flag_id": "FLAG-E07",
+        "metric_ids": [
+          "CC-IND-E07"
+        ],
+        "disposition": "RECLASSIFY AS DESIGN INDICATOR",
+        "ontology_class": "DESIGN TARGET",
+        "scoreboard_inclusion": "design_indicator",
+        "questions": {
+          "what_exactly_measured": "Community Health Index coverage — an index CC intends to design.",
+          "reproducibly_observable": "Not an existing observed series.",
+          "measures_intended_concept": "Title already admits design agenda; keeping it as baseline_pending falsifies empirics.",
+          "outside_researcher_same_answer": "No baseline retrieval exists."
+        },
+        "rationale": "Park as design target. Does not count toward baseline scoreboard until a governed observed/derived index exists."
+      },
+      {
+        "flag_id": "FLAG-D07",
+        "metric_ids": [
+          "CC-IND-D07"
+        ],
+        "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+        "ontology_class": "RESEARCH QUESTION",
+        "scoreboard_inclusion": "research_question",
+        "questions": {
+          "what_exactly_measured": "Independent oversight durability under unified government — institutional quality construct.",
+          "reproducibly_observable": "Not a single official series; requires coding rules and case judgment.",
+          "measures_intended_concept": "Institutional quality judgment ≠ baseline statistic.",
+          "outside_researcher_same_answer": "No — coding schemes would diverge without a locked protocol."
+        },
+        "rationale": "Move off scoreboard. Remains an important democracy research question for later structured coding, not a fillable baseline cell."
+      },
+      {
+        "flag_id": "FLAG-J08",
+        "metric_ids": [
+          "CC-IND-J08"
+        ],
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "ADMINISTRATIVE COUNT",
+        "scoreboard_inclusion": "baseline_slot",
+        "questions": {
+          "what_exactly_measured": "White-collar / economic crime enforcement intensity — rate per what population/base?",
+          "reproducibly_observable": "Possible administrative counts (DOJ/FBI/USSC) after definition lock; no locked intensity rate now.",
+          "measures_intended_concept": "Raw case counts without intensity definition are a weak proxy.",
+          "outside_researcher_same_answer": "Not until offense class, agency universe, and rate base are locked."
+        },
+        "rationale": "Retain countable candidate. Definition debt explicit. No stuffed proxy."
+      },
+      {
+        "flag_id": "FLAG-HC01",
+        "metric_ids": [
+          "CC-IND-HC01"
+        ],
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "DERIVED STATISTIC",
+        "scoreboard_inclusion": "baseline_slot",
+        "questions": {
+          "what_exactly_measured": "Multiple-pathway secondary completion / credential attainment composite.",
+          "reproducibly_observable": "Component series exist (NCES); composite does not until governed.",
+          "measures_intended_concept": "Bachelor's-or-higher alone distorts the multiple-pathway concept.",
+          "outside_researcher_same_answer": "Not until composite membership and ages are locked."
+        },
+        "rationale": "Keep countable. Reject bachelor's-or-higher substitute. Definition lock required before sourcing."
+      },
+      {
+        "flag_id": "FLAG-CM03",
+        "metric_ids": [
+          "CC-IND-CM03"
+        ],
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "STRUCTURAL INDICATOR",
+        "scoreboard_inclusion": "baseline_slot",
+        "questions": {
+          "what_exactly_measured": "Hospital access — travel-time, closure, or capacity?",
+          "reproducibly_observable": "No single authoritative national access scalar ready for this slot.",
+          "measures_intended_concept": "Beds ≠ access; HPSA primary-care belongs to E05; overnight stays ≠ geographic access.",
+          "outside_researcher_same_answer": "Not until access construct is locked."
+        },
+        "rationale": "Keep countable with explicit rejected substitutes. No number this slice."
+      },
+      {
+        "flag_id": "FLAG-HC08",
+        "metric_ids": [
+          "CC-IND-HC08"
+        ],
+        "disposition": "RECLASSIFY AS RESEARCH QUESTION",
+        "ontology_class": "RESEARCH QUESTION",
+        "scoreboard_inclusion": "research_question",
+        "questions": {
+          "what_exactly_measured": "Employer satisfaction with pathway graduates.",
+          "reproducibly_observable": "No federal statistical series.",
+          "measures_intended_concept": "Any ad-hoc survey would be a new research instrument, not a baseline retrieve.",
+          "outside_researcher_same_answer": "No shared official answer exists."
+        },
+        "rationale": "Park as research question / future survey design. Not a baseline scoreboard cell."
+      },
+      {
+        "flag_id": "FLAG-PS-T-CLUSTER",
+        "metric_ids": [
+          "CC-IND-PS01",
+          "CC-IND-PS02",
+          "CC-IND-PS03",
+          "CC-IND-PS04",
+          "CC-IND-PS05",
+          "CC-IND-PS06",
+          "CC-IND-PS07",
+          "CC-IND-PS08",
+          "CC-IND-T01",
+          "CC-IND-T02",
+          "CC-IND-T03",
+          "CC-IND-T04",
+          "CC-IND-T05",
+          "CC-IND-T06",
+          "CC-IND-T07",
+          "CC-IND-T08"
+        ],
+        "disposition": "RECLASSIFY AS DESIGN INDICATOR",
+        "ontology_class": "DESIGN TARGET",
+        "scoreboard_inclusion": "design_indicator",
+        "questions": {
+          "what_exactly_measured": "Public-service and transparency inventory / audit constructs.",
+          "reproducibly_observable": "Require custom inventories/audits, not one agency table.",
+          "measures_intended_concept": "Treating them as ordinary baseline statistics creates false confidence.",
+          "outside_researcher_same_answer": "No — answers depend on unfinished inventory methodology."
+        },
+        "rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
+      }
+    ],
+    "disposition_counts_on_metrics": {
+      "KEEP AS WRITTEN": 56,
+      "DEFER — DEFINITION REQUIRED": 5,
+      "RECLASSIFY AS RESEARCH QUESTION": 4,
+      "REMAP ID": 3,
+      "RECLASSIFY AS DESIGN INDICATOR": 17
+    },
+    "ids_remapped": {
+      "merged": [
+        {
+          "from": "CC-IND-D01@legacy:Voter participation",
+          "to": "CC-IND-D03"
+        }
+      ],
+      "remapped": [
+        {
+          "from": "CC-IND-D02@legacy:Civic engagement",
+          "to": "CC-IND-D09"
+        },
+        {
+          "from": "CC-IND-D03@legacy:Public trust",
+          "to": "CC-IND-D10"
+        },
+        {
+          "from": "CC-IND-D04@legacy:Local participation",
+          "to": "CC-IND-D11"
+        }
+      ],
+      "canonical_retained": [
+        "CC-IND-D01",
+        "CC-IND-D02",
+        "CC-IND-D03",
+        "CC-IND-D04"
+      ]
+    },
+    "metrics_retained_keep_as_written": 56,
+    "metrics_redefined": 0,
+    "metrics_split": 0,
+    "metrics_retired_or_merged": 1,
+    "metrics_deferred_definition": 8,
+    "metrics_reclassified_design": 17,
+    "metrics_reclassified_research": 4,
+    "definition_debt_remaining": [
+      {
+        "metric_id": "CC-IND-B03",
+        "title": "Local ownership",
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "STRUCTURAL INDICATOR"
+      },
+      {
+        "metric_id": "CC-IND-CM03",
+        "title": "Hospital access",
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "STRUCTURAL INDICATOR"
+      },
+      {
+        "metric_id": "CC-IND-D09",
+        "title": "Civic engagement",
+        "disposition": "REMAP ID",
+        "ontology_class": "SURVEY MEASURE"
+      },
+      {
+        "metric_id": "CC-IND-D10",
+        "title": "Public trust",
+        "disposition": "REMAP ID",
+        "ontology_class": "SURVEY MEASURE"
+      },
+      {
+        "metric_id": "CC-IND-D11",
+        "title": "Local participation",
+        "disposition": "REMAP ID",
+        "ontology_class": "SURVEY MEASURE"
+      },
+      {
+        "metric_id": "CC-IND-I02",
+        "title": "AI investment",
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "DERIVED STATISTIC"
+      },
+      {
+        "metric_id": "CC-IND-J08",
+        "title": "White-collar / economic crime enforcement intensity",
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "ADMINISTRATIVE COUNT"
+      },
+      {
+        "metric_id": "CC-IND-HC01",
+        "title": "Multiple-pathway secondary completion / credential attainment",
+        "disposition": "DEFER — DEFINITION REQUIRED",
+        "ontology_class": "DERIVED STATISTIC"
+      }
+    ],
+    "domains_affected": [
+      "Business",
+      "Communities",
+      "Constitutional Transparency",
+      "Democracy",
+      "Essential Systems",
+      "Government",
+      "Human Capital Doctrine",
+      "Innovation",
+      "Justice",
+      "Public Service"
+    ],
+    "graph_references_repaired": 2,
+    "historical_references_preserved": true,
+    "baseline_count_before": "27/86",
+    "baseline_count_after": "27/64",
+    "numerator_change": 0,
+    "denominator_change": -22,
+    "remapped_legacy_rows": 3
+  }
+}

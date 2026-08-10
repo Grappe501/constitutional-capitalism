@@ -1,14 +1,22 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "last_updated": "2026-08-10",
-  "total_metrics": 86,
+  "total_metrics": 64,
   "sourced_metrics": 27,
-  "pending_metrics": 59,
-  "status": "partial_phase_2",
-  "note": "Baseline 27/86 after CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0.",
+  "pending_metrics": 37,
+  "status": "partial_phase_2_ontology_cleaned",
+  "note": "Baseline scoreboard 27/64 after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0. Historical 27/86 had duplicate D01–D04 IDs and design/research items counting as ordinary slots. Numerator unchanged (27). Denominator cleaned 86→64.",
   "before_after": {
-    "before": 14,
-    "after": 27,
-    "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0"
-  }
+    "before_display": "27/86",
+    "after_display": "27/64",
+    "before_sourced": 27,
+    "after_sourced": 27,
+    "before_denominator": 86,
+    "after_denominator": 64,
+    "slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0"
+  },
+  "registry_entries": 85,
+  "design_indicators_parked": 17,
+  "research_questions_parked": 4,
+  "scoreboard_rule": "Scoreboard = sourced countable slots / countable empirical slots. Design targets and research questions are registry-preserved but excluded from the denominator."
 }

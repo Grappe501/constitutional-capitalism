@@ -1,9 +1,9 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "last_updated": "2026-08-10",
-  "status": "partially_sourced",
+  "status": "partially_sourced_ontology_cleaned",
   "guiding_question": "If Constitutional Capitalism were adopted tomorrow, what would we measure so that we could honestly determine whether it succeeded?",
-  "note": "Phase 2 partial after CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0: sourced 27/86. Completeness = reproducible retrieval. Bad metrics flagged, not filled. Ag posture lock preserved.",
+  "note": "Phase 2 partial after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0: scoreboard 27/64 (was 27/86). Registry entries 85 with unique IDs. Design/research items parked off scoreboard. Completeness = reproducible retrieval. Bad metrics not stuffed. Ag posture lock preserved.",
   "linked_legacy_file": "data/project/national_baseline.json",
   "metrics": [
     {
@@ -36,7 +36,13 @@
           "Federal Reserve"
         ]
       },
-      "numerator_denominator": "SCF survey estimate — median of family net worth distribution"
+      "numerator_denominator": "SCF survey estimate — median of family net worth distribution",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-W02",
@@ -75,7 +81,13 @@
           "Federal Reserve"
         ]
       },
-      "numerator_denominator": "DFA modeled wealth shares by percentile group"
+      "numerator_denominator": "DFA modeled wealth shares by percentile group",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-W03",
@@ -111,7 +123,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-W04",
@@ -146,7 +164,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-W05",
@@ -181,7 +205,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-L01",
@@ -216,7 +246,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-L02",
@@ -251,7 +287,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-L03",
@@ -272,7 +314,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-L04",
@@ -293,7 +341,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-L05",
@@ -328,7 +382,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-B01",
@@ -349,7 +409,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-B02",
@@ -370,7 +436,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-B03",
@@ -385,13 +457,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "Structure only until sourced in Phase 2. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): DEFER — DEFINITION REQUIRED. Retain as countable empirical candidate. Explicit definition debt. No number in this slice.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "DEFER — DEFINITION REQUIRED",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "governance_rationale": "Retain as countable empirical candidate. Explicit definition debt. No number in this slice."
     },
     {
       "metric_id": "CC-IND-B04",
@@ -412,7 +491,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-C01",
@@ -453,7 +538,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-C02",
@@ -474,7 +565,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-C03",
@@ -495,7 +592,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-CM01",
@@ -510,13 +613,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "Structure only until sourced in Phase 2. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS RESEARCH QUESTION. Keep the concept visible as a research question. Do not fill with a national proxy. Local pilots may later invent a defensible ADMINISTRATIVE COUNT / STRUCTURAL INDICATOR.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "research_question",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "governance_disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Keep the concept visible as a research question. Do not fill with a national proxy. Local pilots may later invent a defensible ADMINISTRATIVE COUNT / STRUCTURAL INDICATOR."
     },
     {
       "metric_id": "CC-IND-CM02",
@@ -551,7 +661,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-CM03",
@@ -566,13 +682,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "Structure only until sourced in Phase 2. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): DEFER — DEFINITION REQUIRED. Keep countable with explicit rejected substitutes. No number this slice.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "DEFER — DEFINITION REQUIRED",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "governance_rationale": "Keep countable with explicit rejected substitutes. No number this slice."
     },
     {
       "metric_id": "CC-IND-CM04",
@@ -593,7 +716,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-CM05",
@@ -629,7 +758,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-F01",
@@ -665,7 +800,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-F02",
@@ -701,7 +842,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-F03",
@@ -736,7 +883,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-F04",
@@ -771,35 +924,20 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
-      "metric_id": "CC-IND-D01",
-      "title": "Voter participation",
-      "domain_id": "CC-NB-DEMOCRACY",
-      "domain_name": "Democracy",
-      "definition": "Voter participation — definition to be finalized with source methodology.",
-      "unit": "pending",
-      "current_value": null,
-      "reference_year": null,
-      "source_ids": [],
-      "geographic_level": "national_US",
-      "population_scope": "pending",
-      "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
-      "update_frequency": "pending",
-      "related_principles": [],
-      "related_chapters": [],
-      "target_setting_status": "no_targets_in_phase_2",
-      "confidence_level": "unsourced",
-      "status": "baseline_pending"
-    },
-    {
-      "metric_id": "CC-IND-D02",
+      "metric_id": "CC-IND-D09",
       "title": "Civic engagement",
       "domain_id": "CC-NB-DEMOCRACY",
       "domain_name": "Democracy",
-      "definition": "Civic engagement — definition to be finalized with source methodology.",
+      "definition": "Civic engagement — definition deferred. Not the same slot as district community-integrity (CC-IND-D02). Do not fill with CM05 volunteerism without an explicit redefine decision.",
       "unit": "pending",
       "current_value": null,
       "reference_year": null,
@@ -807,20 +945,28 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "ID remapped from legacy CC-IND-D02. Definition required before sourcing. Bad metric rule: no convenient proxy.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "historical_metric_id": "CC-IND-D02",
+      "historical_title_context": "legacy_early_democracy_block",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "REMAP ID",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
-      "metric_id": "CC-IND-D03",
+      "metric_id": "CC-IND-D10",
       "title": "Public trust",
       "domain_id": "CC-NB-DEMOCRACY",
       "domain_name": "Democracy",
-      "definition": "Public trust — definition to be finalized with source methodology.",
+      "definition": "Public trust in government/institutions — definition deferred (instrument, population, geography). Distinct from CC-IND-D03 voter participation rate.",
       "unit": "pending",
       "current_value": null,
       "reference_year": null,
@@ -828,20 +974,28 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "ID remapped from legacy CC-IND-D03. Survey-measure candidate only after instrument lock. No stuffed proxy.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "historical_metric_id": "CC-IND-D03",
+      "historical_title_context": "legacy_early_democracy_block",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "REMAP ID",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
-      "metric_id": "CC-IND-D04",
+      "metric_id": "CC-IND-D11",
       "title": "Local participation",
       "domain_id": "CC-NB-DEMOCRACY",
       "domain_name": "Democracy",
-      "definition": "Local participation — definition to be finalized with source methodology.",
+      "definition": "Local civic/political participation — definition deferred. Distinct from campaign funding (CC-IND-D04) and from CM05 volunteerism.",
       "unit": "pending",
       "current_value": null,
       "reference_year": null,
@@ -849,13 +1003,21 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "ID remapped from legacy CC-IND-D04. Definition required before sourcing.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "historical_metric_id": "CC-IND-D04",
+      "historical_title_context": "legacy_early_democracy_block",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "REMAP ID",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-G01",
@@ -890,7 +1052,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-G02",
@@ -925,7 +1093,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-G03",
@@ -961,7 +1135,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-G04",
@@ -976,13 +1156,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "Structure only until sourced in Phase 2. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS RESEARCH QUESTION. Remove from baseline scoreboard masquerade. Remains a research/normative measurement debate, not a Phase-2 baseline statistic.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "research_question",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "governance_disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Remove from baseline scoreboard masquerade. Remains a research/normative measurement debate, not a Phase-2 baseline statistic."
     },
     {
       "metric_id": "CC-IND-I01",
@@ -1017,7 +1204,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-I02",
@@ -1032,13 +1225,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.",
+      "limitations": "Structure only until sourced in Phase 2. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): DEFER — DEFINITION REQUIRED. Keep as countable candidate (likely DERIVED). Do not source from unlocked private tallies in this slice.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "DEFER — DEFINITION REQUIRED",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "governance_rationale": "Keep as countable candidate (likely DERIVED). Do not source from unlocked private tallies in this slice."
     },
     {
       "metric_id": "CC-IND-I03",
@@ -1073,7 +1273,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-I04",
@@ -1108,7 +1314,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "OBSERVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J01",
@@ -1143,7 +1355,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J02",
@@ -1183,7 +1401,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J03",
@@ -1218,7 +1442,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J04",
@@ -1239,7 +1469,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J05",
@@ -1260,7 +1496,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J06",
@@ -1281,7 +1523,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J07",
@@ -1302,7 +1550,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-J08",
@@ -1317,13 +1571,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 justice diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 justice diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): DEFER — DEFINITION REQUIRED. Retain countable candidate. Definition debt explicit. No stuffed proxy.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "DEFER — DEFINITION REQUIRED",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "governance_rationale": "Retain countable candidate. Definition debt explicit. No stuffed proxy."
     },
     {
       "metric_id": "CC-IND-D01",
@@ -1344,7 +1605,15 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "canonical_id_holder": true,
+      "id_remap_note": "Canonical democracy-framework holder after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0. See research/phase_2/baseline_id_remap_table.json.",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-D02",
@@ -1365,7 +1634,15 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "canonical_id_holder": true,
+      "id_remap_note": "Canonical democracy-framework holder after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0. See research/phase_2/baseline_id_remap_table.json.",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-D03",
@@ -1400,7 +1677,22 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "canonical_id_holder": true,
+      "id_remap_note": "Canonical democracy-framework holder after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0. See research/phase_2/baseline_id_remap_table.json.",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "merged_historical_ids": [
+        {
+          "historical_ref": "CC-IND-D01",
+          "historical_title": "Voter participation",
+          "context": "legacy_early_democracy_block"
+        }
+      ]
     },
     {
       "metric_id": "CC-IND-D04",
@@ -1421,7 +1713,15 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "canonical_id_holder": true,
+      "id_remap_note": "Canonical democracy-framework holder after CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0. See research/phase_2/baseline_id_remap_table.json.",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-D05",
@@ -1442,7 +1742,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-D06",
@@ -1463,7 +1769,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-D07",
@@ -1478,13 +1790,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 democracy diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 democracy diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS RESEARCH QUESTION. Move off scoreboard. Remains an important democracy research question for later structured coding, not a fillable baseline cell.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "research_question",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "governance_disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Move off scoreboard. Remains an important democracy research question for later structured coding, not a fillable baseline cell."
     },
     {
       "metric_id": "CC-IND-D08",
@@ -1505,7 +1824,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-PS01",
@@ -1520,13 +1845,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced; do not invent Arkansas entity counts.",
+      "limitations": "Structure only until sourced; do not invent Arkansas entity counts. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS02",
@@ -1541,13 +1873,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS03",
@@ -1562,13 +1901,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS04",
@@ -1583,13 +1929,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS05",
@@ -1604,13 +1957,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS06",
@@ -1625,13 +1985,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS07",
@@ -1646,13 +2013,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-PS08",
@@ -1667,13 +2041,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 government-capacity diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T01",
@@ -1688,13 +2069,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T02",
@@ -1709,13 +2097,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced; People's Ledger is a design agenda.",
+      "limitations": "Structure only until sourced; People's Ledger is a design agenda. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T03",
@@ -1730,13 +2125,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T04",
@@ -1751,13 +2153,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T05",
@@ -1772,13 +2181,20 @@
       "geographic_level": "state_federal",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T06",
@@ -1793,13 +2209,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 transparency diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T07",
@@ -1814,13 +2237,20 @@
       "geographic_level": "county",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only; do not invent terminal counts.",
+      "limitations": "Structure only; do not invent terminal counts. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-T08",
@@ -1835,13 +2265,20 @@
       "geographic_level": "state_local",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only; People's Ledger design agenda — no invented completeness rates.",
+      "limitations": "Structure only; People's Ledger design agenda — no invented completeness rates. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park PS01–PS08 and T01–T08 as design/measurement-build indicators. May return later as ADMINISTRATIVE COUNT after inventory methodology locks. Do not count toward empirical baseline scoreboard now."
     },
     {
       "metric_id": "CC-IND-E01",
@@ -1862,7 +2299,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E02",
@@ -1883,7 +2326,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E03",
@@ -1904,7 +2353,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E04",
@@ -1925,7 +2380,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E05",
@@ -1961,7 +2422,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-AND-PUBLIC-STATISTICS-BRIDGE-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "ADMINISTRATIVE COUNT",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E06",
@@ -1982,7 +2449,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-E07",
@@ -1997,13 +2470,20 @@
       "geographic_level": "community",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Design agenda — do not invent index scores or rankings.",
+      "limitations": "Design agenda — do not invent index scores or rankings. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS DESIGN INDICATOR. Park as design target. Does not count toward baseline scoreboard until a governed observed/derived index exists.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "design_indicator",
+      "ontology_class": "DESIGN TARGET",
+      "scoreboard_inclusion": "design_indicator",
+      "governance_disposition": "RECLASSIFY AS DESIGN INDICATOR",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park as design target. Does not count toward baseline scoreboard until a governed observed/derived index exists."
     },
     {
       "metric_id": "CC-IND-E08",
@@ -2024,7 +2504,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC01",
@@ -2039,13 +2525,20 @@
       "geographic_level": "national_US",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only until sourced in Phase 2.1 human-capital diagnosis.",
+      "limitations": "Structure only until sourced in Phase 2.1 human-capital diagnosis. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): DEFER — DEFINITION REQUIRED. Keep countable. Reject bachelor's-or-higher substitute. Definition lock required before sourcing.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "definition_deferred",
+      "ontology_class": "DERIVED STATISTIC",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "DEFER — DEFINITION REQUIRED",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true,
+      "governance_rationale": "Keep countable. Reject bachelor's-or-higher substitute. Definition lock required before sourcing."
     },
     {
       "metric_id": "CC-IND-HC02",
@@ -2066,7 +2559,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC03",
@@ -2087,7 +2586,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC04",
@@ -2108,7 +2613,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC05",
@@ -2129,7 +2640,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC06",
@@ -2165,7 +2682,13 @@
         ]
       },
       "slice_id": "CC-PHASE-2.1-BASELINE-SUBSET-EXPANSION-ROUND-2-AND-DEFINITION-CLOSEOUT-1.0",
-      "last_sourced_at": "2026-08-10"
+      "last_sourced_at": "2026-08-10",
+      "ontology_class": "SURVEY MEASURE",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC07",
@@ -2186,7 +2709,13 @@
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "baseline_pending",
+      "ontology_class": "STRUCTURAL INDICATOR",
+      "scoreboard_inclusion": "baseline_slot",
+      "governance_disposition": "KEEP AS WRITTEN",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": true
     },
     {
       "metric_id": "CC-IND-HC08",
@@ -2201,13 +2730,22 @@
       "geographic_level": "state_national",
       "population_scope": "pending",
       "historical_series_available": null,
-      "limitations": "Structure only; do not invent satisfaction scores.",
+      "limitations": "Structure only; do not invent satisfaction scores. Governance (CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0): RECLASSIFY AS RESEARCH QUESTION. Park as research question / future survey design. Not a baseline scoreboard cell.",
       "update_frequency": "pending",
       "related_principles": [],
       "related_chapters": [],
       "target_setting_status": "no_targets_in_phase_2",
       "confidence_level": "unsourced",
-      "status": "baseline_pending"
+      "status": "research_question",
+      "ontology_class": "RESEARCH QUESTION",
+      "scoreboard_inclusion": "research_question",
+      "governance_disposition": "RECLASSIFY AS RESEARCH QUESTION",
+      "governance_slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+      "governance_at": "2026-08-10",
+      "counts_toward_baseline_scoreboard": false,
+      "governance_rationale": "Park as research question / future survey design. Not a baseline scoreboard cell."
     }
-  ]
+  ],
+  "ontology_rule": "Only OBSERVED STATISTIC, DERIVED STATISTIC, INDEX, SURVEY MEASURE, ADMINISTRATIVE COUNT, and STRUCTURAL INDICATOR normally count toward the baseline scoreboard. DESIGN TARGET / RESEARCH QUESTION / NORMATIVE GOAL do not.",
+  "id_remap_table": "research/phase_2/baseline_id_remap_table.json"
 }

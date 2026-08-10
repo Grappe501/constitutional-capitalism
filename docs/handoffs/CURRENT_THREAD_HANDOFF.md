@@ -44,3 +44,14 @@ Live operating state after deep audit:
 - Phase 2: **PARTIAL**
 
 Historical sections above may still mention older 2/86 or 14/86 counts — treat this block as current.
+
+
+---
+
+## Bad-metric governance (2026-08-10)
+
+- Scoreboard **27/86 → 27/64** (numerator unchanged)
+- Duplicate D01–D04 remapped (lineage table shipped)
+- Design/research parked off scoreboard
+- Active next: `CC-PHASE-2.1-BASELINE-LEGITIMATE-SLOT-EXPANSION-AFTER-ONTOLOGY-CLEANUP-1.0`
+- Phase 2: **PARTIAL**

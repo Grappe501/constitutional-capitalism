@@ -59,7 +59,7 @@ No national redistricting statute, campaign-finance code, or state constitutiona
 
 ## Metrics
 
-- Pending National Baseline democracy indicators (`CC-IND-D01`+).
+- Pending National Baseline democracy indicators (`CC-IND-D01`+ framework block). Legacy early-block titles that once reused D01–D04 are remapped — see `research/phase_2/baseline_id_remap_table.json` (voter participation → `CC-IND-D03`; civic engagement / public trust / local participation → `CC-IND-D09`/`D10`/`D11`).
 
 ## Source IDs
 

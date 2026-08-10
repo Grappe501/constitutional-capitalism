@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-BASELINE-BAD-METRIC-GOVERNANCE-AND-ID-REMAP-1.0",
+  "generated_at": "2026-08-10",
+  "rule": "No silent renumbering. Every historical ID+title context resolves to a canonical target.",
+  "resolve_algorithm": "Match on (metric_id + title context). If historical title is legacy voter participation under D01, resolve to CC-IND-D03. Framework titles keep D01–D04. Legacy civic engagement / public trust / local participation resolve to D09 / D10 / D11.",
+  "entries": [
+    {
+      "historical_ref": "CC-IND-D01",
+      "historical_title": "Voter participation",
+      "context": "legacy_early_democracy_block",
+      "disposition": "MERGE",
+      "canonical_id": "CC-IND-D03",
+      "notes": "Legacy vague 'Voter participation' merges into framework 'Voter participation rate' (CPS citizen VAP). No separate row retained. Historical mentions of D01+voter participation resolve here when title context is legacy."
+    },
+    {
+      "historical_ref": "CC-IND-D02",
+      "historical_title": "Civic engagement",
+      "context": "legacy_early_democracy_block",
+      "disposition": "REMAP ID",
+      "canonical_id": "CC-IND-D09",
+      "notes": "New unique ID. Distinct from framework D02 (district community-integrity). Definition still required before sourcing."
+    },
+    {
+      "historical_ref": "CC-IND-D03",
+      "historical_title": "Public trust",
+      "context": "legacy_early_democracy_block",
+      "disposition": "REMAP ID",
+      "canonical_id": "CC-IND-D10",
+      "notes": "New unique ID. Distinct from framework D03 (voter participation rate, sourced). Survey-measure candidate after definition lock."
+    },
+    {
+      "historical_ref": "CC-IND-D04",
+      "historical_title": "Local participation",
+      "context": "legacy_early_democracy_block",
+      "disposition": "REMAP ID",
+      "canonical_id": "CC-IND-D11",
+      "notes": "New unique ID. Distinct from framework D04 (campaign funding concentration) and from CM05 volunteerism."
+    },
+    {
+      "historical_ref": "CC-IND-D01",
+      "historical_title": "Share of meaningfully contested races",
+      "context": "democracy_framework_block",
+      "disposition": "KEEP AS WRITTEN",
+      "canonical_id": "CC-IND-D01",
+      "notes": "Canonical holder of CC-IND-D01 after remap."
+    },
+    {
+      "historical_ref": "CC-IND-D02",
+      "historical_title": "District community-integrity / split indicators",
+      "context": "democracy_framework_block",
+      "disposition": "KEEP AS WRITTEN",
+      "canonical_id": "CC-IND-D02",
+      "notes": "Canonical holder of CC-IND-D02 after remap."
+    },
+    {
+      "historical_ref": "CC-IND-D03",
+      "historical_title": "Voter participation rate",
+      "context": "democracy_framework_block",
+      "disposition": "KEEP AS WRITTEN",
+      "canonical_id": "CC-IND-D03",
+      "notes": "Canonical holder of CC-IND-D03; already sourced (CC-SRC-246)."
+    },
+    {
+      "historical_ref": "CC-IND-D04",
+      "historical_title": "Campaign funding concentration",
+      "context": "democracy_framework_block",
+      "disposition": "KEEP AS WRITTEN",
+      "canonical_id": "CC-IND-D04",
+      "notes": "Canonical holder of CC-IND-D04 after remap."
+    }
+  ],
+  "graph_and_report_repair": [
+    {
+      "path": "content/research/national-diagnosis/22-democracy-representation-and-distributed-government.md",
+      "change": "Clarify D01+ now means democracy-framework block; see remap table for legacy titles."
+    },
+    {
+      "path": "data/research/source_registry.json",
+      "change": "CC-SRC-246 note already points at voter participation rate framework slot (D03)."
+    }
+  ],
+  "historical_references_preserved": true,
+  "silent_renumbering": false
+}
