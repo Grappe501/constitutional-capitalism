@@ -491,8 +491,12 @@
       "producer_access_class": "OPEN_TO_OUTSIDE_PRODUCERS",
       "family_farm_practical_access": "CANDIDATE",
       "source_ids": [
-        "CC-SRC-172"
-      ]
+        "CC-SRC-172",
+        "CC-SRC-187"
+      ],
+      "booking_available": "UNKNOWN_PRIMARY_VERIFICATION_REQUIRED",
+      "economic_usability": "UNKNOWN",
+      "evidence_provenance": "establishment_operator_primary"
     },
     {
       "establishment_id": "FSIS-6167939",
@@ -718,8 +722,12 @@
       "producer_access_class": "OPEN_TO_OUTSIDE_PRODUCERS",
       "family_farm_practical_access": "CANDIDATE",
       "source_ids": [
-        "CC-SRC-177"
-      ]
+        "CC-SRC-177",
+        "CC-SRC-183"
+      ],
+      "booking_available": "UNKNOWN_PRIMARY_VERIFICATION_REQUIRED",
+      "economic_usability": "FEE_COMPONENTS_KNOWN_MARGIN_UNKNOWN",
+      "evidence_provenance": "establishment_operator_primary"
     },
     {
       "establishment_id": "STATE-ASU-JONESBORO",
@@ -765,5 +773,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-10"
+  "last_updated": "2026-08-10",
+  "booking_study_slice": "CC-PHASE-2.1-AR-PROCESSING-PRIMARY-RESEARCH-AND-OPEN-PLANT-BOOKING-STUDY-1.0",
+  "four_layer_rule": "nominal ≠ accessible ≠ available ≠ economically usable"
 }
