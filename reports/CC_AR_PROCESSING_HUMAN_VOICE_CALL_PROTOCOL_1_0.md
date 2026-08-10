@@ -66,6 +66,23 @@ WRONG_NUMBER
 CALL_BACK_SCHEDULED
 ```
 
+## Evidence class distinction (mandatory in notes)
+
+Record separately — do not collapse:
+
+| Class | Definition | Example |
+| --- | --- | --- |
+| **OWN_OPERATION_FACT** | What the processor states as fact about **their own** plant | “Our next cattle appointment is October 14” |
+| **INDUSTRY_BELIEF** | What they believe about Arkansas / the industry generally | “Arkansas needs twenty more small processors” |
+
+Both are useful. Only the first is primary operational evidence. The second is expert testimony that still needs corroboration.
+
+Tag quotes in the call record accordingly. Cursor must not promote industry beliefs into capacity facts.
+
+## Resist false remedies
+
+A long wait (e.g. six months) is **not** automatic proof that Arkansas should build another plant. Possible causes include physical capacity, butcher shortages, inspection staffing, seasonality, equipment, working capital, scheduling practices, or demand spikes — different causes imply different solutions.
+
 ## After calls
 
 Enter results into:
@@ -74,4 +91,15 @@ Enter results into:
 research/phase_2/ar_processing_voice_call_records.json
 ```
 
-using the schema in that file. Then hand the completed records to Cursor for the **margin pilot** (gross value vs profit after full pathway costs). Do not ask Cursor to fill empty booking fields.
+using the schema in that file.
+
+**Unlock first controlled margin pilot** when Pottsville, JACO, and Ferguson are entered (COMPLETED or PARTIAL). Do **not** wait for a huge sample. Label sample limitations prominently in the return.
+
+Then sequence:
+
+```text
+voice confirmation → first margin pilot → producer interviews
+→ reconcile processor/farmer accounts → identify binding constraints → test interventions
+```
+
+Do not ask Cursor to fill empty booking fields or infer from the internet.

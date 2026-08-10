@@ -36,5 +36,10 @@ _________________________________________________________________
 
 Caller bottleneck code(s): slaughter · cut/wrap · inspection · labor · cold storage · packaging · demand/scheduling · producer supply · wastewater/facility · capital · regulation · other · declined · unknown  
 
-**Notes / quotes:**  
+**Notes / quotes — tag each line:**
+
+`[OWN_OPERATION_FACT]` = about *their* plant (dates, fees, head counts, their bottleneck)  
+`[INDUSTRY_BELIEF]` = about Arkansas / the industry generally (needs corroboration)
+
+_________________________________________________________________
 _________________________________________________________________

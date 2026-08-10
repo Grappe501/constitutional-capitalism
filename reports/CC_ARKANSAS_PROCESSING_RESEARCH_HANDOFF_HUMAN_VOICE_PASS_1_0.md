@@ -39,4 +39,23 @@ Zeros = **not yet verified**.
 
 ## Unlock Cursor economics when
 
-At least Pottsville, JACO, and Ferguson calls are entered as COMPLETED or PARTIAL with cattle/hog species rows.
+At least Pottsville, JACO, and Ferguson calls are entered as COMPLETED or PARTIAL with cattle/hog species rows.  
+Do not wait for a huge sample; first margin pilot must flag sample limits.
+
+## Tag every quote
+
+- `[OWN_OPERATION_FACT]` — their plant / their farm experience  
+- `[INDUSTRY_BELIEF]` — Arkansas/industry opinion (corroborate later)
+
+## Sequence
+
+```text
+voice confirmation → first margin pilot → producer interviews
+→ reconcile → binding constraints → test interventions
+```
+
+Long wait ≠ automatic “build another plant.”
+
+## Cursor status
+
+**WAITING.** No further desk inference of booking availability.

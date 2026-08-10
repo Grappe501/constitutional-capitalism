@@ -42,6 +42,15 @@ Clinton / Van Buren · Rose Bud · Searcy County · Arkansas County · Lafayette
 
 Do not collapse these in notes.
 
+## Evidence class distinction (mandatory)
+
+| Class | Definition | Example |
+| --- | --- | --- |
+| **OWN_OPERATION_FACT** | What the farmer states as fact about **their own** experience | “I waited 4 months at Plant X last spring” |
+| **INDUSTRY_BELIEF** | What they believe about Arkansas processing / markets generally | “There’s no processing left in the Delta” |
+
+Both useful; only the first is primary operational evidence for that producer’s path.
+
 ## Record file (when interviews begin)
 
 ```text

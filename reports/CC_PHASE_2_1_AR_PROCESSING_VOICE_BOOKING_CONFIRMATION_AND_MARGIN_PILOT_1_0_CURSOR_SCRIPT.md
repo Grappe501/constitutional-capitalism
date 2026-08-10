@@ -43,7 +43,29 @@ At least VOICE-001 (Pottsville), VOICE-002 (JACO), VOICE-003 (Ferguson)
 with outcome COMPLETED or PARTIAL and non-null species_rows for cattle and/or hogs
 ```
 
+Do **not** wait for a huge interview sample. First margin pilot must **label sample limitations prominently**.
+
 Natural State (VOICE-007) remains a discrete verification packet.
+
+### Evidence class rule (ingest)
+
+When reading call/interview records, treat:
+
+- `OWN_OPERATION_FACT` → eligible as primary operational evidence  
+- `INDUSTRY_BELIEF` → expert testimony / hypothesis only; needs corroboration; never convert into booking or capacity counts  
+
+### Sequence after unlock
+
+```text
+voice confirmation → first margin pilot → producer interviews
+→ reconcile processor/farmer accounts → identify binding constraints → test interventions
+```
+
+### Intervention research question (eventual)
+
+> What is the least costly intervention that removes the actual binding constraint while preserving food safety and allowing more value to remain with Arkansas producers and communities?
+
+A long wait ≠ automatic “build another plant.”
 
 ---
 

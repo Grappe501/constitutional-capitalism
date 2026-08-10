@@ -65,10 +65,17 @@
       "UNKNOWN"
     ],
     "notes": "string|null",
-    "raw_quotes": ["string"],
+    "raw_quotes": [
+      {
+        "text": "string",
+        "evidence_class": "OWN_OPERATION_FACT|INDUSTRY_BELIEF|UNCLEAR",
+        "note": "OWN_OPERATION_FACT = about their plant; INDUSTRY_BELIEF = Arkansas/industry opinion needing corroboration"
+      }
+    ],
     "entered_by": "string",
     "entered_at": "date"
   },
+  "evidence_class_rule": "Do not promote INDUSTRY_BELIEF into capacity or booking facts. Cursor margin pilot may cite beliefs only as hypotheses.",
   "priority_slots": [
     {
       "call_id": "VOICE-001",
