@@ -852,8 +852,8 @@
     "overall_percent": 43
   },
   "baseline_expansion_paused": false,
-  "last_completed_research_slice": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
-  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1-LEGISLATIVE-CIVIC-1.0",
+  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
   "parallel_ready_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
   "legislative_civic_targeted_ingest": {
     "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
@@ -865,13 +865,21 @@
     "return": "reports/CC_RCIP_LEGISLATIVE_CIVIC_TARGETED_INGEST_1_0_RETURN.md",
     "mapping": "data/project/legislative_civic_evidence_ready_mapping.json"
   },
+  "publication_evidence_upgrade_pass_1": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+    "status": "PASSED",
+    "panels": 3,
+    "sources_registered": 268,
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_1_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json"
+  },
   "progress_markers": {
     "overall_percent": 43,
     "baseline": "42/64",
-    "sources": 264,
+    "sources": 268,
     "modeling": 0,
     "legal": 0,
-    "regenerated_at": "2026-08-10"
+    "regenerated_at": "2026-08-11"
   },
   "decision_options_after_content_evidence_audit": [
     "Pass 1: bind HIGH + DATA ALREADY AVAILABLE opportunities into Evidence Panels (no new ingest)",

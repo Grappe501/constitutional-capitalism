@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+  "decision_id": "CC-DEC-104",
+  "generated_at": "2026-08-11",
+  "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
+  "export_id": "exp_legciv_9ab7ba9f3266",
+  "skip": {
+    "GOOGLE_CIVIC": "PARTIAL — IP-restricted on agent runtime; do not publish empty contest counts as evidence.",
+    "OPENFEC_API_CAPPED_SERIES": "API sample capped at ~200 candidates/cycle; do not substitute for CC-IND-D04 weball baseline (73%)."
+  },
+  "panels": [
+    {
+      "panel_id": "CC-EP-DEMOCRACY-POLITICAL-MONEY-1",
+      "title": "Political money and legislative observability",
+      "reader_question": "How concentrated is congressional campaign funding, and what legislative structure is actually observable?",
+      "surfaces": [
+        "apps/book-site/src/pages/democracy.astro",
+        "apps/build-board/src/pages/democracy.astro",
+        "content/research/national-diagnosis/22-democracy-representation-and-distributed-government.md",
+        "content/research/national-diagnosis/16-political-and-economic-power.md"
+      ],
+      "claim_ids": ["CC-CLAIM-134", "CC-CLAIM-003", "CC-CLAIM-024"],
+      "metric_ids": ["CC-IND-D04"],
+      "source_ids": ["CC-SRC-257", "CC-SRC-265", "CC-SRC-266", "CC-SRC-267"],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for disclosure/observability of candidate-receipt concentration (CC-IND-D04). Partial/not enough evidence for causal capture (CC-CLAIM-003).",
+      "what_the_data_show": {
+        "key_finding": "In the 2023–2024 FEC weball universe, the top tenth of House and Senate candidates with receipts held about 73% of those candidates’ aggregate receipts.",
+        "critical_numbers": [
+          {
+            "label": "Top-decile share of HS candidate receipts",
+            "value": "73%",
+            "period": "2023–2024 cycle",
+            "geography": "US",
+            "metric_id": "CC-IND-D04",
+            "source_id": "CC-SRC-257"
+          },
+          {
+            "label": "Candidates with receipts > 0 in weball file",
+            "value": "2,733",
+            "period": "2023–2024 cycle",
+            "geography": "US",
+            "metric_id": "CC-IND-D04",
+            "source_id": "CC-SRC-257"
+          },
+          {
+            "label": "Arkansas officeholders returned by Open States",
+            "value": "142",
+            "period": "2026-08-10 retrieval",
+            "geography": "Arkansas",
+            "source_id": "CC-SRC-266",
+            "note": "Roster aggregate (99 lower / 35 upper / 8 executive in retrieved roles) — not a performance or capture score."
+          },
+          {
+            "label": "Recent Arkansas bill sample (Open States)",
+            "value": "60 bills / 2 sessions",
+            "period": "2026 retrieval sample",
+            "geography": "Arkansas",
+            "source_id": "CC-SRC-266",
+            "note": "Targeted sample, not a full session warehouse."
+          },
+          {
+            "label": "Congress.gov recent bill sample",
+            "value": "20 bills",
+            "period": "118th Congress sample",
+            "geography": "US",
+            "source_id": "CC-SRC-267",
+            "note": "Observability of actions/sponsors; introduction ≠ enactment."
+          }
+        ],
+        "plain_english": "Federal disclosure makes candidate-receipt concentration measurable. That observability supports honesty about political money; it does not by itself prove that economic concentration weakens democratic accountability."
+      },
+      "what_supports_this": [
+        "FEC weball bulk file computation for CC-IND-D04 (CC-SRC-257).",
+        "RedDirt credential-free legislative/civic export exp_legciv_9ab7ba9f3266 (Open States AR roster/bills; Congress.gov samples).",
+        "CC-CLAIM-134: disclosure systems make large political-money flows publicly observable."
+      ],
+      "what_challenges_it": [
+        "Disclosure is not capture (CC-CLAIM-003 opposing evidence; CC-CLAIM-134).",
+        "Candidate-receipt concentration is not donor-level concentration and excludes presidential and IE-only committees.",
+        "Open States bill volume ≠ legislative scrutiny; roster ≠ influence.",
+        "Branham/Soroka/Wlezien and related literatures contest strong oligarchy readings when preferences diverge."
+      ],
+      "what_we_dont_know": [
+        "Causal identification from concentration → weakened accountability remains open (CC-CLAIM-003).",
+        "Google Civic contest/election structure for controlled AR places is not yet publishable from this runtime (IP restriction).",
+        "Multi-cycle weball series beyond the 2023–2024 baseline slot is not yet bound on this panel."
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "CC-IND-D04 weball24 + exp_legciv_9ab7ba9f3266"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "import_package": "data/imports/reddirt-legislative-civic/",
+        "mapping": "data/project/legislative_civic_evidence_ready_mapping.json",
+        "related_claims": ["CC-CLAIM-134", "CC-CLAIM-003"],
+        "related_public_reasoning": ["CC-PR-007", "CC-PR-010"]
+      }
+    },
+    {
+      "panel_id": "CC-EP-AR-COMMUNITY-CONTEXT-1",
+      "title": "Arkansas demographic context for community laboratories",
+      "reader_question": "What statewide demographic backdrop surrounds Arkansas Living Community Laboratory cases?",
+      "surfaces": [
+        "content/research/case-studies/rose-bud/00-overview.md",
+        "content/research/case-studies/lewisville/00-overview.md"
+      ],
+      "claim_ids": [],
+      "metric_ids": [],
+      "source_ids": ["CC-SRC-268", "CC-SRC-266"],
+      "evidence_strength": "Partial",
+      "strength_note": "ACS state aggregates are context only — not community baselines and not causal proof of local outcomes.",
+      "what_the_data_show": {
+        "key_finding": "Arkansas ACS 2023 5-year estimates place state population near 3.03 million and median household income near $58,773 — useful statewide context, not a Rose Bud or Lewisville community baseline.",
+        "critical_numbers": [
+          {
+            "label": "Arkansas population (ACS 5-year)",
+            "value": "3,032,651",
+            "period": "2023",
+            "geography": "Arkansas",
+            "source_id": "CC-SRC-268"
+          },
+          {
+            "label": "Arkansas median household income",
+            "value": "$58,773",
+            "period": "2023 ACS 5-year",
+            "geography": "Arkansas",
+            "source_id": "CC-SRC-268"
+          },
+          {
+            "label": "Open States AR legislator roster count",
+            "value": "142",
+            "period": "2026-08-10 retrieval",
+            "geography": "Arkansas",
+            "source_id": "CC-SRC-266"
+          }
+        ],
+        "plain_english": "Statewide ACS numbers answer ‘what kind of state context are these cases inside?’ They do not answer whether a local school, farm, or resource project will succeed."
+      },
+      "what_supports_this": [
+        "Census ACS 5-year via RedDirt targeted ingest (exp_legciv_9ab7ba9f3266).",
+        "Open States Arkansas people endpoint roster aggregate."
+      ],
+      "what_challenges_it": [
+        "State aggregates hide rural/urban and county differences.",
+        "Socioeconomic context ≠ political causation.",
+        "LEARNS / local funding questions remain open and must not be filled with statewide averages."
+      ],
+      "what_we_dont_know": [
+        "Community-specific baselines for Rose Bud and Lewisville Parts I–VI are not started.",
+        "Place-level contest/election administration structure awaits Google Civic re-run from an IP-allowed machine."
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "ACS 2023 5-year + exp_legciv_9ab7ba9f3266"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "import_package": "data/imports/reddirt-legislative-civic/",
+        "mapping": "data/project/legislative_civic_evidence_ready_mapping.json"
+      }
+    },
+    {
+      "panel_id": "CC-EP-COMPARISON-POLITICAL-MONEY-1",
+      "title": "Observable political-money concentration (comparison pages)",
+      "reader_question": "When a comparison dossier talks about money translating into political control, what concentration figure is actually measured today?",
+      "surfaces": [
+        "content/public-resources/systems/plutocracy.md",
+        "content/public-resources/systems/crony-capitalism.md"
+      ],
+      "claim_ids": ["CC-CLAIM-134"],
+      "metric_ids": ["CC-IND-D04"],
+      "source_ids": ["CC-SRC-257"],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for measurable candidate-receipt concentration; does not prove plutocracy or capture as a regime type.",
+      "what_the_data_show": {
+        "key_finding": "Candidate-receipt concentration is measurable: top-decile House/Senate candidates held about 73% of aggregate receipts among candidates with receipts > 0 in the 2023–2024 FEC weball file.",
+        "critical_numbers": [
+          {
+            "label": "Top-decile share of HS candidate receipts",
+            "value": "73%",
+            "period": "2023–2024 cycle",
+            "geography": "US",
+            "metric_id": "CC-IND-D04",
+            "source_id": "CC-SRC-257"
+          }
+        ],
+        "plain_english": "This answers a measurement question on political-money concentration among congressional candidates. It does not license labeling the United States a plutocracy or proving national capture."
+      },
+      "what_supports_this": [
+        "CC-IND-D04 / CC-SRC-257",
+        "CC-CLAIM-134 disclosure/observability claim"
+      ],
+      "what_challenges_it": [
+        "Receipt concentration ≠ donor oligarchy and ≠ policy capture.",
+        "Comparative dossiers remain analytical tools, not settled regime classifications."
+      ],
+      "what_we_dont_know": [
+        "Cross-national comparable series and donor-level concentration are not bound here."
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "CC-IND-D04 weball24"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": ["CC-CLAIM-134", "CC-CLAIM-003"]
+      }
+    }
+  ],
+  "pass_summary": {
+    "panels_created": 3,
+    "google_civic_bound": false,
+    "pages_targeted": 10,
+    "claims_touched": ["CC-CLAIM-003", "CC-CLAIM-024", "CC-CLAIM-134"]
+  }
+}

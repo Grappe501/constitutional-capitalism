@@ -42,6 +42,30 @@ Examine actual statutory/regulatory effects on open enrollment, student-attached
 
 **Do not assume** the Arkansas LEARNS Act automatically authorizes or funds this model.
 
+### Evidence Panel — statewide context (not a community baseline)
+
+**Reader question:** What statewide demographic and institutional backdrop surrounds this Arkansas Living Community Laboratory case?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Arkansas population (ACS 5-year) | **3,032,651** (2023) | `CC-SRC-268` |
+| Arkansas median household income | **$58,773** (2023 ACS 5-year) | `CC-SRC-268` |
+| Open States AR officeholder roster | **142** (2026-08-10 retrieval) | `CC-SRC-266` |
+| Recent AR bill sample | **60 bills / 2 sessions** | `CC-SRC-266` |
+
+**Plain English:** These figures answer “what kind of state is this case inside?” They do **not** answer Rose Bud enrollment economics, LEARNS authorization, or local school finance. Community Parts I–VI remain not started.
+
+**Evidence strength:** Partial (context only). Honesty labels: socioeconomic context ≠ political causation · targeted legislative sample, not a warehouse.
+
+<details>
+<summary>Explore the data</summary>
+
+- Panel id: `CC-EP-AR-COMMUNITY-CONTEXT-1`
+- Export: `exp_legciv_9ab7ba9f3266`
+- Do not invent LEARNS conclusions from statewide ACS averages.
+
+</details>
+
 ## USDA and other funding (tools, not presumed sources)
 
 Map eligibility, allowable use, match, renewal, timing, operations vs capital — for rural community facilities, distance learning, business/cooperative development, food systems, farm-to-school, value-added ag, beginning farmers, housing, utilities, broadband, energy, workforce, plus federal/state education, community college, apprenticeships, philanthropy, employer training, veteran pathways, public-private infrastructure.

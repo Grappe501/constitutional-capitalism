@@ -57,6 +57,27 @@ Diagnostic tendency measurable in degrees; rarely a self-ascribed constitution.
 
 **Exemplars / references (non-statistical):** Progressive Era critiques; Contemporary money-in-politics research programs.
 
+### Evidence Panel — measurable political-money concentration
+
+**Reader question:** When this dossier talks about money translating into political control, what concentration figure is actually measured today?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Top-decile share of House+Senate candidate receipts | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**Plain English:** Candidate-receipt concentration is observable. That answers a measurement question. It does **not** prove the United States is a plutocracy or that economic concentration has captured democratic accountability (`CC-CLAIM-134`; `CC-CLAIM-003` remains not enough evidence).
+
+**Evidence strength:** Strong for observability; Weak/Partial for regime classification.
+
+<details>
+<summary>Explore the data</summary>
+
+- Supports: FEC weball computation for `CC-IND-D04`.
+- Challenges: receipt concentration ≠ donor oligarchy; disclosure ≠ capture.
+- Panel id: `CC-EP-COMPARISON-POLITICAL-MONEY-1`
+
+</details>
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

@@ -2,15 +2,21 @@
 import BoardLayout from "../layouts/BoardLayout.astro";
 import { developingDoctrine, claims, sources, baselineStatus } from "../lib/data";
 import democracy from "../../../../data/project/democracy_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const demDoctrine = (developingDoctrine.items || []).filter((d: any) =>
   ["CC-DEV-015", "CC-DEV-016", "CC-DEV-017", "CC-DEV-018", "CC-DEV-019"].includes(d.doctrine_id)
 );
 const demClaims = (claims.claims || []).filter((c: any) =>
-  ["CC-CLAIM-024", "CC-CLAIM-025", "CC-CLAIM-026"].includes(c.claim_id)
+  ["CC-CLAIM-024", "CC-CLAIM-025", "CC-CLAIM-026", "CC-CLAIM-134", "CC-CLAIM-003"].includes(c.claim_id)
 );
 const demSources = (sources.sources || []).filter((s: any) =>
-  ["CC-SRC-014", "CC-SRC-015", "CC-SRC-016"].includes(s.source_id)
+  ["CC-SRC-014", "CC-SRC-015", "CC-SRC-016", "CC-SRC-257", "CC-SRC-265", "CC-SRC-266", "CC-SRC-267"].includes(
+    s.source_id
+  )
+);
+const politicalMoneyPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-DEMOCRACY-POLITICAL-MONEY-1"
 );
 ---
 
@@ -54,6 +60,52 @@ const demSources = (sources.sources || []).filter((s: any) =>
     <h2>Foundational principle</h2>
     <p>{democracy.foundational_principle.text}</p>
   </section>
+
+  {
+    politicalMoneyPanel ? (
+      <section class="panel" style="margin-top:1rem;">
+        <h2>Evidence Panel · {politicalMoneyPanel.panel_id}</h2>
+        <p>
+          <strong>Reader question:</strong> {politicalMoneyPanel.reader_question}
+        </p>
+        <p>{politicalMoneyPanel.what_the_data_show.key_finding}</p>
+        <ul>
+          {politicalMoneyPanel.what_the_data_show.critical_numbers.map((n: any) => (
+            <li>
+              <strong>{n.value}</strong> — {n.label}
+              {n.metric_id || n.source_id ? (
+                <>
+                  {" "}
+                  (<code>{n.metric_id || n.source_id}</code>)
+                </>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+        <p>{politicalMoneyPanel.what_the_data_show.plain_english}</p>
+        <p>
+          Evidence strength: <strong>{politicalMoneyPanel.evidence_strength}</strong> —{" "}
+          {politicalMoneyPanel.strength_note}
+        </p>
+        <details>
+          <summary>Explore the data</summary>
+          <p>
+            <strong>Supports:</strong> {politicalMoneyPanel.what_supports_this.join(" · ")}
+          </p>
+          <p>
+            <strong>Challenges:</strong> {politicalMoneyPanel.what_challenges_it.join(" · ")}
+          </p>
+          <p>
+            <strong>Don’t know:</strong> {politicalMoneyPanel.what_we_dont_know.join(" · ")}
+          </p>
+          <p class="muted">
+            Last updated: {politicalMoneyPanel.last_updated.date} ·{" "}
+            {politicalMoneyPanel.last_updated.dataset_or_release}
+          </p>
+        </details>
+      </section>
+    ) : null
+  }
 
   <section class="panel" style="margin-top:1rem;">
     <h2>Developing doctrine</h2>

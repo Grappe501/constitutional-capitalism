@@ -1,6 +1,6 @@
 {
   "version": "0.3.1",
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-11",
   "note": "Phase 2 claims including justice, democracy, public-service, assistance, Popular Sovereignty, and Energy Sovereignty EIA/DOE baselines. Normative claims labeled. No fabricated support. Phase 2.1 continuation (2026-08-07): forensic re-audit of CC-CLAIM-001–020 with dispositions; no automatic rewrites applied.",
   "claims": [
     {
@@ -235,7 +235,13 @@
         "CC-CLAIM-135",
         "CC-CLAIM-136",
         "CC-CLAIM-137"
-      ]
+      ],
+      "publication_evidence": {
+        "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+        "panel_id": "CC-EP-DEMOCRACY-POLITICAL-MONEY-1",
+        "bound_at": "2026-08-11",
+        "note": "Disclosure spine and D04 now shown beside the claim; support_level remains requires_additional_research / NEE. No causal upgrade."
+      }
     },
     {
       "claim_id": "CC-CLAIM-004",
@@ -1344,7 +1350,13 @@
         "CC-DEV-015",
         "CC-DEV-016"
       ],
-      "public_wording": "Developing doctrine: political authority is held in trust and must remain returnable — detailed entrenchment evidence modules pending."
+      "public_wording": "Developing doctrine: political authority is held in trust and must remain returnable — detailed entrenchment evidence modules pending.",
+      "publication_evidence": {
+        "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+        "panel_id": "CC-EP-DEMOCRACY-POLITICAL-MONEY-1",
+        "bound_at": "2026-08-11",
+        "note": "Democracy page now shows measurable political-money concentration as institutional backdrop; normative anti-entrenchment claim unchanged."
+      }
     },
     {
       "claim_id": "CC-CLAIM-025",
@@ -4326,12 +4338,14 @@
       "source_ids": [
         "CC-SRC-092",
         "CC-SRC-093",
-        "CC-SRC-096"
+        "CC-SRC-096",
+        "CC-SRC-257",
+        "CC-SRC-265"
       ],
       "opposing_evidence": [],
       "uncertainty": "Disclosure completeness and state/local coverage limits.",
       "fact_check_status": "audited",
-      "publication_readiness": "not_ready",
+      "publication_readiness": "evidence_panel_bound",
       "geographic_scope": "US-federal",
       "temporal_scope": "ongoing",
       "parent_claim_id": "CC-CLAIM-003",
@@ -4351,6 +4365,15 @@
         "confidence": "High",
         "evidence_type": "DESCRIPTIVE",
         "reasoning": "FEC/LDA disclosure spines; explicit non-inference to accountability."
+      },
+      "publication_evidence": {
+        "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+        "panel_id": "CC-EP-DEMOCRACY-POLITICAL-MONEY-1",
+        "bound_at": "2026-08-11",
+        "metric_ids": [
+          "CC-IND-D04"
+        ],
+        "note": "D04 weball concentration bound as disclosure/observability evidence; does not alter claim text."
       }
     },
     {

@@ -1,7 +1,7 @@
 {
   "version": "0.3.0",
-  "last_updated": "2026-08-10",
-  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled. Phase 2.1 continuation (2026-08-07): added CC-SRC-081–090 for first-20 claim audit (monopsony, corporate-tax incidence, e-commerce, Wayfair, NSF R&D, property-tax relief, productivity measurement dispute). Phase 2.1 (2026-08-07): CC-SRC-144–148 registered for Local Independent Journalism / Civic Information Infrastructure module (hypothesis registration only). Phase 2.1 (2026-08-10): CC-SRC-149–163 Arkansas local-news outlet map / coverage matrix pilot. Phase 2.1 (2026-08-10): CC-SRC-164–171 journalism public finance / independence comparative dossier. Phase 2.1 (2026-08-10): CC-SRC-172–181 Clinton/FSIS AR establishment capacity map. Phase 2.1 (2026-08-10): CC-SRC-182–190 open-plant booking / usable-capacity study. Phase 2.1 (2026-08-10): CC-SRC-191–201 Arkansas local feed / non-GMO supply chain test. Phase 2.1 (2026-08-10): CC-SRC-202–210 non-GMO feed primary price / IP grain / toll milling study. Phase 2.1 (2026-08-10): CC-SRC-211–217 first-20 below-STRONG repair + ag posture lock. Phase 2.1 (2026-08-10): CC-SRC-218–228 baseline subset expansion / public statistics bridge. Phase 2.1 (2026-08-10): CC-SRC-229–235 civic-information 90-day coverage coding. Phase 2.1 (2026-08-10): CC-SRC-236–247 baseline expansion round 2. Phase 2.1 (2026-08-10): CC-SRC-248–254 legitimate-slot expansion after ontology cleanup. Phase 2.1 (2026-08-10): CC-SRC-255–260 legitimate-slot expansion continuation.",
+  "last_updated": "2026-08-11",
+  "note": "Phase 2 priority sources plus democracy, justice/safety, assistance, Popular Sovereignty, Energy Sovereignty EIA/DOE structural baselines, Health/CMS/HRSA/CDC/ACHI structural baselines, Prosperous Aging SSA/GAO/IRS baselines, Family Farm USDA ERS/FNS baselines, Community Prosperity ICI/MSRB baselines, Community Resilience ISO/NFPA baselines, and Local Ownership NCEO/USDA baselines. No fabricated findings. Secondary sources labeled. Phase 2.1 continuation (2026-08-07): added CC-SRC-081–090 for first-20 claim audit (monopsony, corporate-tax incidence, e-commerce, Wayfair, NSF R&D, property-tax relief, productivity measurement dispute). Phase 2.1 (2026-08-07): CC-SRC-144–148 registered for Local Independent Journalism / Civic Information Infrastructure module (hypothesis registration only). Phase 2.1 (2026-08-10): CC-SRC-149–163 Arkansas local-news outlet map / coverage matrix pilot. Phase 2.1 (2026-08-10): CC-SRC-164–171 journalism public finance / independence comparative dossier. Phase 2.1 (2026-08-10): CC-SRC-172–181 Clinton/FSIS AR establishment capacity map. Phase 2.1 (2026-08-10): CC-SRC-182–190 open-plant booking / usable-capacity study. Phase 2.1 (2026-08-10): CC-SRC-191–201 Arkansas local feed / non-GMO supply chain test. Phase 2.1 (2026-08-10): CC-SRC-202–210 non-GMO feed primary price / IP grain / toll milling study. Phase 2.1 (2026-08-10): CC-SRC-211–217 first-20 below-STRONG repair + ag posture lock. Phase 2.1 (2026-08-10): CC-SRC-218–228 baseline subset expansion / public statistics bridge. Phase 2.1 (2026-08-10): CC-SRC-229–235 civic-information 90-day coverage coding. Phase 2.1 (2026-08-10): CC-SRC-236–247 baseline expansion round 2. Phase 2.1 (2026-08-10): CC-SRC-248–254 legitimate-slot expansion after ontology cleanup. Phase 2.1 (2026-08-10): CC-SRC-255–260 legitimate-slot expansion continuation. Phase 2.1 (2026-08-11): CC-SRC-265–268 legislative/civic targeted ingest publication bind (CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0).",
   "sources": [
     {
       "source_id": "CC-SRC-001",
@@ -6591,6 +6591,107 @@
       "limitations": "Self-reported; overstates administrative turnout. Distinct from all-age D03 (65.3%).",
       "verification_status": "primary_retrieval_via_reddirt_aligned_seed",
       "notes": "CC-IND-HC07; RCIP-BASELINE-ALIGNED-SERIES-EXPANSION-1.0; reddirt_observation_id=obs_df024ceab3464c30; export=exp_79f42d2fe71f4b69"
+    },
+    {
+      "source_id": "CC-SRC-265",
+      "title": "RedDirt legislative/civic targeted export — OpenFEC candidate totals path (supporting; not D04 baseline)",
+      "authors": [
+        "Federal Election Commission via OpenFEC API",
+        "RedDirt RCIP export"
+      ],
+      "year": 2026,
+      "url": "https://api.open.fec.gov/developers/",
+      "source_type": "federal_administrative_api",
+      "reliability": "primary_official_with_sample_limits",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "democracy",
+      "publication_date": "2026-08-10",
+      "retrieval_date": "2026-08-10",
+      "summary": "Credential-free RedDirt export exp_legciv_9ab7ba9f3266 includes OpenFEC candidate-totals retrieval provenance. Publication panels bind CC-IND-D04 weball (CC-SRC-257) for the concentration headline; this source records the API path and its capped-sample limitation.",
+      "key_findings": [
+        "OpenFEC candidate totals endpoint retrieved for cycles 2016–2024 in targeted ingest",
+        "API pagination capped (~200 candidates/cycle) — do not substitute for weball D04"
+      ],
+      "limitations": "Capped API universe differs from FEC weball bulk used for CC-IND-D04. Disclosure ≠ capture.",
+      "verification_status": "primary_retrieval_via_reddirt_targeted_ingest",
+      "notes": "exp_legciv_9ab7ba9f3266; CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0; supporting provenance only"
+    },
+    {
+      "source_id": "CC-SRC-266",
+      "title": "RedDirt legislative/civic targeted export — Open States Arkansas bills and legislators",
+      "authors": [
+        "Open States",
+        "RedDirt RCIP export"
+      ],
+      "year": 2026,
+      "url": "https://docs.openstates.org/api-v3/",
+      "source_type": "state_legislative_api",
+      "reliability": "primary_official_sample",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "democracy",
+      "publication_date": "2026-08-10",
+      "retrieval_date": "2026-08-10",
+      "summary": "Targeted Open States sample for Arkansas: 60 recent bills across 2 sessions; 142 officeholders in people roster aggregate (99 lower / 35 upper / 8 executive in retrieved roles).",
+      "key_findings": [
+        "sampled_bill_count=60",
+        "legislator_count=142",
+        "sessions_represented=2"
+      ],
+      "limitations": "Targeted sample, not a full session warehouse. Bill volume ≠ scrutiny. Roster ≠ influence. Vote sample empty in this export.",
+      "verification_status": "primary_retrieval_via_reddirt_targeted_ingest",
+      "notes": "exp_legciv_9ab7ba9f3266; CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0"
+    },
+    {
+      "source_id": "CC-SRC-267",
+      "title": "RedDirt legislative/civic targeted export — Congress.gov bills, members, and committees samples",
+      "authors": [
+        "Library of Congress / Congress.gov API",
+        "RedDirt RCIP export"
+      ],
+      "year": 2026,
+      "url": "https://api.congress.gov/",
+      "source_type": "federal_legislative_api",
+      "reliability": "primary_official_sample",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "US",
+      "research_domain": "democracy",
+      "publication_date": "2026-08-10",
+      "retrieval_date": "2026-08-10",
+      "summary": "Targeted Congress.gov samples in exp_legciv_9ab7ba9f3266: 20 recent bills; member roster sample; House committee sample. Used for observability of actions/sponsors/structure.",
+      "key_findings": [
+        "sampled_bill_count=20",
+        "sampled_house_committee_count=20"
+      ],
+      "limitations": "Sample only. Bill introduction ≠ enactment. Cosponsorship ≠ support strength.",
+      "verification_status": "primary_retrieval_via_reddirt_targeted_ingest",
+      "notes": "exp_legciv_9ab7ba9f3266; CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0"
+    },
+    {
+      "source_id": "CC-SRC-268",
+      "title": "Census ACS 5-year 2023 — Arkansas population and median household income (RedDirt legislative/civic export)",
+      "authors": [
+        "U.S. Census Bureau",
+        "RedDirt RCIP export"
+      ],
+      "year": 2023,
+      "url": "https://api.census.gov/data/2023/acs/acs5",
+      "source_type": "federal_statistical",
+      "reliability": "primary_official",
+      "primary_or_secondary": "primary",
+      "jurisdiction": "Arkansas",
+      "research_domain": "demographics",
+      "publication_date": "2023",
+      "retrieval_date": "2026-08-10",
+      "summary": "ACS 5-year 2023 state:05: population B01003_001E=3032651; median household income B19013_001E=58773. Bound as statewide context for LCL pages only.",
+      "key_findings": [
+        "AR population 3,032,651",
+        "AR median household income ,773"
+      ],
+      "limitations": "State aggregates are context, not community baselines. Socioeconomic context ≠ political causation.",
+      "verification_status": "primary_retrieval_via_reddirt_targeted_ingest",
+      "notes": "exp_legciv_9ab7ba9f3266; CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0"
     }
   ]
 }

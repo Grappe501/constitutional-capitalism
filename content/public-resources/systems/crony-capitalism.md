@@ -57,6 +57,27 @@ Appears inside many nominal system types. Diagnostic category, not a proud schoo
 
 **Exemplars / references (non-statistical):** Privilege-ridden developmental episodes; Regulatory capture case literatures.
 
+### Evidence Panel — measurable political-money concentration
+
+**Reader question:** When campaign-finance pressure is named as a sustaining mechanism, what concentration figure is actually measured among congressional candidates?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Top-decile share of House+Senate candidate receipts | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**Plain English:** Federal disclosure makes candidate-receipt concentration measurable. That does not, by itself, prove crony capture in any sector (`CC-CLAIM-134`).
+
+**Evidence strength:** Strong for observability; sector capture remains case-by-case.
+
+<details>
+<summary>Explore the data</summary>
+
+- Supports: `CC-IND-D04` / `CC-SRC-257`.
+- Challenges: campaign totals ≠ regulatory capture; association ≠ quid-pro-quo.
+- Panel id: `CC-EP-COMPARISON-POLITICAL-MONEY-1`
+
+</details>
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

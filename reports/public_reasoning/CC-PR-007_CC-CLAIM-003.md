@@ -20,3 +20,26 @@ Because that sentence asks one claim to do too many jobs. We can show that wealt
 | What else this could affect | Political power chapters; Antitrust-democracy narratives; Any design assuming 'break concentration → restore democracy' as established |
 | Secondary effects | May frustrate readers who want a single capture thesis now; May protect the project from building policy on an unproven causal bridge; If later evidence supports a narrow capture claim, we can promote a module without laundering it through the old umbrella |
 | Evidence that could change our mind again | Identified causal designs linking defined concentration measures to defined accountability/capture outcomes at relevant government levels, plus sectoral capture case dossiers that survive contrary review. |
+
+---
+
+## Evidence Panel update (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0`)
+
+**Reader question the new numbers answer:** How concentrated are congressional candidate receipts — and does that settle capture?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Top-decile share of HS candidate receipts | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**What this strengthens:** The disclosure/observability half of the story (`CC-CLAIM-134`) — campaign money is publicly measurable.
+
+**What this does *not* change:** Parent `CC-CLAIM-003` remains **NOT ENOUGH EVIDENCE**. Receipt concentration is not a capture finding.
+
+<details>
+<summary>Explore the data</summary>
+
+- Panel: `CC-EP-DEMOCRACY-POLITICAL-MONEY-1`
+- Challenges preserved: disclosure ≠ capture; Branham et al. contest strong oligarchy readings.
+- Related: `CC-PR-010`
+
+</details>

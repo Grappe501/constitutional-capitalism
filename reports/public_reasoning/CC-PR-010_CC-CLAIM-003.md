@@ -14,3 +14,13 @@ Not campaign-finance totals alone, and not a revolving door by itself. Capture w
 | Still unknown | Agriculture dossier; peer-reviewed utilities confirmation; Arkansas-specific regulator modules. |
 | Secondary effects | Readers may think we are soft on industry power — correct framing: we are hard on evidence standards; Sector findings could later support narrow claims without resurrecting the umbrella |
 | Mind-changing evidence | Multiple sector dossiers with identification designs that earn narrowly worded capture claims without forbidden overclaim verbs — still without converting parent 003 into Supports casually. |
+
+---
+
+## Evidence Panel note (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0`)
+
+**Reader question:** Are campaign-finance totals now at least measurable, even if they are not capture?
+
+Yes — among House/Senate candidates with receipts > 0 in the 2023–2024 FEC weball file, the top tenth held about **73%** of aggregate receipts (`CC-IND-D04` / `CC-SRC-257`). That answers an observability question. Per this record’s public answer, totals alone still do **not** count as regulatory capture.
+
+Panel: `CC-EP-DEMOCRACY-POLITICAL-MONEY-1`.

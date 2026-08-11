@@ -29,6 +29,19 @@ Candidate dimensions for investigation (must be sourced before use in baseline):
 
 These are **research-site reasons**, not established facts.
 
+### Evidence Panel — statewide context (not a community baseline)
+
+**Reader question:** What statewide demographic backdrop surrounds this Arkansas Living Community Laboratory case?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Arkansas population (ACS 5-year) | **3,032,651** (2023) | `CC-SRC-268` |
+| Arkansas median household income | **$58,773** (2023 ACS 5-year) | `CC-SRC-268` |
+
+**Plain English:** Statewide ACS numbers locate the case inside Arkansas; they do not establish Lewisville’s resource-opportunity baseline or local outcomes. Parts I–VI remain not started.
+
+**Evidence strength:** Partial (context only). Panel id: `CC-EP-AR-COMMUNITY-CONTEXT-1`.
+
 ## Case structure (Parts I–VI)
 
 | Part | Title | Status |

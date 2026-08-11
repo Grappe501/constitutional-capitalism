@@ -2,8 +2,9 @@
 
 **Domain status:** priority_first_pass  
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
-**Last updated:** 2026-08-07  
-**Phase:** 2.1 — Three-layer proof retrofit
+**Last updated:** 2026-08-11  
+**Phase:** 2.1 — Three-layer proof retrofit  
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0` · panel `CC-EP-DEMOCRACY-POLITICAL-MONEY-1`
 
 ## Central question
 
@@ -29,7 +30,8 @@ Honest Phase 2 posture: treat concentration as a **risk factor and research prio
 ### Economic evidence
 
 - **Established from registry:** Wealth concentration levels/shares (`CC-SRC-001`, `CC-SRC-002`, `CC-SRC-012`); industry concentration ratios (`CC-SRC-005`).
-- **MISSING EVIDENCE:** Lobbying spend, campaign-finance, and media-ownership series registered and linked to `CC-CLAIM-003`.
+- **Established (disclosure spine):** Campaign funding concentration among House/Senate candidates with receipts — top-decile share **73%** in 2023–2024 FEC weball (`CC-IND-D04` / `CC-SRC-257`). Supports observability (`CC-CLAIM-134`); does **not** upgrade causal `CC-CLAIM-003`.
+- **MISSING EVIDENCE:** Lobbying→policy identification series and media-ownership concentration sources still needed for capture modules.
 
 ### Constitutional / legal evidence
 
@@ -39,7 +41,8 @@ Honest Phase 2 posture: treat concentration as a **risk factor and research prio
 
 1. Household wealth is highly concentrated on official Fed products (`CC-SRC-001`, `CC-SRC-002`, `CC-SRC-012`).
 2. Industry concentration ratios are measurable via Economic Census products (`CC-SRC-005`).
-3. These concentration facts do **not** by themselves establish democratic capture or weakened accountability (`CC-CLAIM-003` opposing_evidence; support_level requires_additional_research).
+3. Among House/Senate candidates with receipts > 0 in the 2023–2024 FEC weball file, the top tenth held about **73%** of aggregate receipts (`CC-IND-D04` / `CC-SRC-257`).
+4. These concentration and disclosure facts do **not** by themselves establish democratic capture or weakened accountability (`CC-CLAIM-003` opposing_evidence; support_level requires_additional_research; `CC-CLAIM-134`).
 
 ## What may reasonably be inferred
 
@@ -67,7 +70,7 @@ Republican government presupposes that private economic power remains accountabl
 
 ## Missing evidence (exposed)
 
-- FEC / IRS nonprofit political-spending modules.
+- Multi-cycle FEC weball series beyond the single D04 slot (do not use capped OpenFEC API samples as substitutes).
 - Lobbying → policy identification studies with registered sources.
 - Media-ownership concentration sources.
 - State-level capture case studies with primary sources.
@@ -81,7 +84,8 @@ Republican government presupposes that private economic power remains accountabl
 
 ## Metrics
 
-- Political-economy indicators pending.
+- `CC-IND-D04` sourced (campaign funding concentration).
+- Broader political-economy capture indicators still pending.
 
 ## Source IDs
 
@@ -89,6 +93,8 @@ Republican government presupposes that private economic power remains accountabl
 - `CC-SRC-001`
 - `CC-SRC-002`
 - `CC-SRC-012`
+- `CC-SRC-257`
+- `CC-SRC-265`–`CC-SRC-267`
 
 ## Claim IDs
 
