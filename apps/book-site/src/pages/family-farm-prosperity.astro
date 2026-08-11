@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import f from "../../../../data/project/family_farm_prosperity_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const pillars = f.thirteen_pillars?.pillars || [];
 const baselines = f.sourced_context_baselines?.items || [];
@@ -9,6 +11,9 @@ const testQs = f.family_farm_prosperity_test?.questions || [];
 const branches = f.website_branches || [];
 const institutions =
   pillars.find((p: any) => p.id === "P2")?.institutions || [];
+const processingPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-AR-AG-PROCESSING-ACCESS-1"
+);
 ---
 
 <BaseLayout
@@ -50,6 +55,8 @@ const institutions =
         </li>
       ))}
     </ul>
+
+    {processingPanel ? <EvidencePanel panel={processingPanel} /> : null}
 
     <h2>Thirteen pillars</h2>
     {

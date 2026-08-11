@@ -23,3 +23,10 @@ NOT MET for a CC canonical 'capture' claim — association ≠ capture wording.
 ## Arkansas
 
 Not Arkansas-specific; transfer requires state PUC modules later if needed.
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Ladder position earned:** Association (documented) — **not** Capture.  
+**Capture bar here:** NOT MET.  
+**Related observability:** `CC-IND-D04` = **73%** (disclosure only).

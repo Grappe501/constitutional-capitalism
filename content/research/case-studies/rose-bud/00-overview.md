@@ -53,9 +53,9 @@ Examine actual statutory/regulatory effects on open enrollment, student-attached
 | Open States AR officeholder roster | **142** (2026-08-10 retrieval) | `CC-SRC-266` |
 | Recent AR bill sample | **60 bills / 2 sessions** | `CC-SRC-266` |
 
-**Plain English:** These figures answer “what kind of state is this case inside?” They do **not** answer Rose Bud enrollment economics, LEARNS authorization, or local school finance. Community Parts I–VI remain not started.
+**Plain English:** These figures answer “what kind of state is this case inside?” They do **not** answer Rose Bud enrollment economics, LEARNS authorization, or local school finance. Label: **statewide / statewide-roster context**, not local Rose Bud observation. Community Parts I–VI remain not started.
 
-**Evidence strength:** Partial (context only). Honesty labels: socioeconomic context ≠ political causation · targeted legislative sample, not a warehouse.
+**Evidence strength:** Partial (context only). Honesty labels: socioeconomic context ≠ political causation · targeted legislative sample, not a warehouse · statewide ≠ local.
 
 <details>
 <summary>Explore the data</summary>

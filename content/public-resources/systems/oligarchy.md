@@ -57,6 +57,41 @@ Aristotle's typology remains conceptually useful. Modern measurement is conteste
 
 **Exemplars / references (non-statistical):** Classical Greek oligarchic constitutions (concept); Modern 'oligarch' literatures in post-Soviet and other contexts.
 
+### Evidence Panel — household wealth concentration (baseline)
+
+**Reader question:** When this dossier talks about rule by the few, what wealth concentration figure is actually measured today?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Median household net worth | **$192,900** (2022 SCF) | `CC-IND-W01` · `CC-SRC-001` |
+| Bottom 50% wealth share | **5.3%** (2026-Q1 DFA) | `CC-IND-W02` · `CC-SRC-012` |
+| Top 1% wealth share | **28.8%** (2026-Q1 DFA) | `CC-IND-W02` · `CC-SRC-012` |
+
+**Plain English:** High household wealth concentration is observable on official Fed products. That answers a measurement question. It does **not** prove the United States is an oligarchy as a regime type (`CC-CLAIM-011`/`012` support concentration facts; regime classification remains contested).
+
+**Evidence strength:** Strong for measured concentration; Weak/Partial for oligarchy as settled regime label.
+
+<details>
+<summary>Explore the data</summary>
+
+- Supports: SCF median and DFA shares in the national baseline.
+- Challenges: SCF levels and DFA shares are not interchangeable; concentration ≠ oligarchic political control.
+- Panel id: `CC-EP-WEALTH-BASELINE-1`
+
+</details>
+
+### Evidence Panel — political-money observability (not capture)
+
+**Reader question:** What political-money concentration figure sits beside oligarchy talk without upgrading capture claims?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Top-decile share of House+Senate candidate receipts | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**Plain English:** Candidate-receipt concentration is measurable. It does **not** clear `CC-CLAIM-003` (remains Not Enough Evidence for national capture).
+
+**Evidence strength:** Strong for observability. Panel id: `CC-EP-COMPARISON-POLITICAL-MONEY-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

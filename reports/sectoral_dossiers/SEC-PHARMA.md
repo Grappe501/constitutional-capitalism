@@ -23,3 +23,9 @@ Casual capture labeling REJECTED for this case; keep mechanism discipline.
 ## Arkansas
 
 Not geographic.
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Ladder:** Preserve Activity → Access → Association → Influence → Capture.  
+**Capture bar here:** Casual capture labeling **REJECTED**; mechanism discipline required.

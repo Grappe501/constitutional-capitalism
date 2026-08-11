@@ -57,6 +57,18 @@ Scholars disagree on whether neoliberalism is a coherent system or a cluster. Di
 
 **Exemplars / references (non-statistical):** Post-1970s policy shifts in multiple OECD countries; Washington Consensus debates.
 
+### Evidence Panel — political money and trust dials (not a neoliberal scorecard)
+
+**Reader question:** What measured U.S. dials sit beside neoliberalism comparisons without inventing a regime score?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Public trust (always/most of the time) | **15.4%** (2024) | `CC-IND-D10` |
+| Top-decile HS candidate-receipt share | **73%** (2023–2024) | `CC-IND-D04` |
+| Baseline slots sourced | **42/64** | national baseline dial |
+
+**Plain English:** Low trust and candidate-receipt concentration are observable. They do **not** settle whether “neoliberalism” is a coherent system, nor upgrade `CC-CLAIM-003` beyond Not Enough Evidence. Panels: `CC-EP-TRUST-AND-BASELINE-DIAL-1`, `CC-EP-COMPARISON-POLITICAL-MONEY-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

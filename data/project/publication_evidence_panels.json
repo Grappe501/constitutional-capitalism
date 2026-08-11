@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
   "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
@@ -20,9 +20,20 @@
         "content/research/national-diagnosis/22-democracy-representation-and-distributed-government.md",
         "content/research/national-diagnosis/16-political-and-economic-power.md"
       ],
-      "claim_ids": ["CC-CLAIM-134", "CC-CLAIM-003", "CC-CLAIM-024"],
-      "metric_ids": ["CC-IND-D04"],
-      "source_ids": ["CC-SRC-257", "CC-SRC-265", "CC-SRC-266", "CC-SRC-267"],
+      "claim_ids": [
+        "CC-CLAIM-134",
+        "CC-CLAIM-003",
+        "CC-CLAIM-024"
+      ],
+      "metric_ids": [
+        "CC-IND-D04"
+      ],
+      "source_ids": [
+        "CC-SRC-257",
+        "CC-SRC-265",
+        "CC-SRC-266",
+        "CC-SRC-267"
+      ],
       "evidence_strength": "Strong",
       "strength_note": "Strong for disclosure/observability of candidate-receipt concentration (CC-IND-D04). Partial/not enough evidence for causal capture (CC-CLAIM-003).",
       "what_the_data_show": {
@@ -95,8 +106,14 @@
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
         "import_package": "data/imports/reddirt-legislative-civic/",
         "mapping": "data/project/legislative_civic_evidence_ready_mapping.json",
-        "related_claims": ["CC-CLAIM-134", "CC-CLAIM-003"],
-        "related_public_reasoning": ["CC-PR-007", "CC-PR-010"]
+        "related_claims": [
+          "CC-CLAIM-134",
+          "CC-CLAIM-003"
+        ],
+        "related_public_reasoning": [
+          "CC-PR-007",
+          "CC-PR-010"
+        ]
       }
     },
     {
@@ -109,7 +126,10 @@
       ],
       "claim_ids": [],
       "metric_ids": [],
-      "source_ids": ["CC-SRC-268", "CC-SRC-266"],
+      "source_ids": [
+        "CC-SRC-268",
+        "CC-SRC-266"
+      ],
       "evidence_strength": "Partial",
       "strength_note": "ACS state aggregates are context only — not community baselines and not causal proof of local outcomes.",
       "what_the_data_show": {
@@ -170,9 +190,15 @@
         "content/public-resources/systems/plutocracy.md",
         "content/public-resources/systems/crony-capitalism.md"
       ],
-      "claim_ids": ["CC-CLAIM-134"],
-      "metric_ids": ["CC-IND-D04"],
-      "source_ids": ["CC-SRC-257"],
+      "claim_ids": [
+        "CC-CLAIM-134"
+      ],
+      "metric_ids": [
+        "CC-IND-D04"
+      ],
+      "source_ids": [
+        "CC-SRC-257"
+      ],
       "evidence_strength": "Strong",
       "strength_note": "Strong for measurable candidate-receipt concentration; does not prove plutocracy or capture as a regime type.",
       "what_the_data_show": {
@@ -206,14 +232,503 @@
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
-        "related_claims": ["CC-CLAIM-134", "CC-CLAIM-003"]
+        "related_claims": [
+          "CC-CLAIM-134",
+          "CC-CLAIM-003"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-JOURNALISM-90DAY-1",
+      "title": "Outlet presence vs institutional scrutiny (Arkansas 90-day sample)",
+      "reader_question": "Does having a local newspaper mean public institutions are being watched?",
+      "surfaces": [
+        "apps/book-site/src/pages/transparency.astro",
+        "reports/public_reasoning/CC-PR-075.md",
+        "reports/public_reasoning/CC-PR-076.md",
+        "reports/public_reasoning/CC-PR-077.md",
+        "reports/public_reasoning/CC-PR-078.md",
+        "reports/public_reasoning/CC-PR-079.md",
+        "reports/public_reasoning/CC-PR-080.md"
+      ],
+      "claim_ids": [],
+      "metric_ids": [],
+      "source_ids": [
+        "CC-SRC-229",
+        "CC-SRC-230",
+        "CC-SRC-231",
+        "CC-SRC-232",
+        "CC-SRC-233",
+        "CC-SRC-234",
+        "CC-SRC-235"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for the negative finding that outlet presence ≠ sustained institutional scrutiny in this window. Not a journalism quality score.",
+      "what_the_data_show": {
+        "key_finding": "Across six Arkansas pilot geographies in a 90-day digital window (2026-05-12→2026-08-10), nominal outlet presence did not predict sustained independent original scrutiny of public institutions. Searcy shows an institutional-coverage desert despite a paper.",
+        "critical_numbers": [
+          {
+            "label": "Matrix rows coded",
+            "value": "84/84",
+            "period": "90-day window",
+            "geography": "AR pilot geos",
+            "source_id": "CC-SRC-229"
+          },
+          {
+            "label": "Cells non-unknown",
+            "value": "300/504",
+            "period": "90-day window",
+            "geography": "AR pilot geos"
+          },
+          {
+            "label": "Dual-code agreement",
+            "value": "75%",
+            "period": "12-cell sample",
+            "geography": "AR pilot geos"
+          },
+          {
+            "label": "Composite journalism score",
+            "value": "none (forbidden)",
+            "note": "Project forbids collapsing coverage into a single score."
+          }
+        ],
+        "plain_english": "A newspaper can exist and still publish almost no original scrutiny of Quorum Court, city council, or school-board decisions. Outlet presence answers a distribution question; institutional coverage answers a democracy question."
+      },
+      "what_supports_this": [
+        "CC-PHASE-2.1 90-day coverage coding return",
+        "CC-PR-075–080",
+        "CC-SRC-229–235"
+      ],
+      "what_challenges_it": [
+        "Window is 90 days and digital-sample limited",
+        "Paywalled/archive gaps inflate UNKNOWN cells",
+        "Lafayette site 503 / insufficient archive"
+      ],
+      "what_we_dont_know": [
+        "Statewide Arkansas journalism map beyond six geos",
+        "Whether financing reforms raise institutional coverage",
+        "Google Civic contest structure deferred (IP)"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "civic_information_90_day_coding_observations.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_public_reasoning": [
+          "CC-PR-075",
+          "CC-PR-076",
+          "CC-PR-077",
+          "CC-PR-078",
+          "CC-PR-079",
+          "CC-PR-080"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-AR-AG-PROCESSING-ACCESS-1",
+      "title": "Arkansas livestock processing: capacity somewhere ≠ usable access",
+      "reader_question": "Is Clinton a USDA livestock processing hub, and do family farmers have practical inspected pathways?",
+      "surfaces": [
+        "apps/book-site/src/pages/family-farm-prosperity.astro",
+        "reports/public_reasoning/CC-PR-013_CC-CLAIM-138.md",
+        "reports/sectoral_dossiers/SEC-AGRICULTURE.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-138"
+      ],
+      "metric_ids": [],
+      "source_ids": [
+        "CC-SRC-121"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for falsifying the Clinton USDA-livestock-hub claim and for the access≠capacity posture. Booking/usable economics remain unverified (0/0).",
+      "what_the_data_show": {
+        "key_finding": "Clinton is not a proven regional USDA-inspected livestock processing hub. FSIS extract shows no Meat Slaughter establishment in Van Buren County; Cypress Valley is custom-exempt. Arkansas has inspected plants — that is not the same as practical family-farm access.",
+        "critical_numbers": [
+          {
+            "label": "FSIS Arkansas establishment rows",
+            "value": "47",
+            "period": "2026-08-03 extract",
+            "geography": "Arkansas"
+          },
+          {
+            "label": "Federal Meat Slaughter activity (extract)",
+            "value": "6",
+            "period": "2026-08-03 extract",
+            "geography": "Arkansas"
+          },
+          {
+            "label": "Clinton USDA livestock hub hypothesis",
+            "value": "CONTRADICTED",
+            "period": "hub test",
+            "geography": "Clinton / Van Buren"
+          },
+          {
+            "label": "Desk-accessible inspected cattle pathways",
+            "value": "~3",
+            "period": "posture lock",
+            "geography": "Arkansas",
+            "note": "Booking confirmation 0; economically usable confirmation 0 — zeros mean not yet verified."
+          },
+          {
+            "label": "CC-CLAIM-138 posture",
+            "value": "QUALIFIED",
+            "note": "Processing-bottleneck clause strengthened; monopsony magnitudes still unmeasured."
+          }
+        ],
+        "plain_english": "Arkansas often has physical capacity somewhere in the system, but independent producers may lack practical access on usable terms. Do not invent booking times or build new plants from desk inference alone."
+      },
+      "what_supports_this": [
+        "Clinton hub FSIS test return",
+        "AR establishment map",
+        "Agriculture posture lock",
+        "CC-PR-013"
+      ],
+      "what_challenges_it": [
+        "Custom-exempt pathways exist but are not retail USDA pathways",
+        "Poultry MPI/commercial conflicts remain NEE",
+        "National packer concentration literature is separate from AR access maps"
+      ],
+      "what_we_dont_know": [
+        "Voice-confirmed booking lead times",
+        "IP/non-GMO feed open supply chain",
+        "CIS producer benefits"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "AR ag posture lock + Clinton hub FSIS test"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-138"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-SECTORAL-INFLUENCE-LADDER-1",
+      "title": "Sectoral influence ladder (not a capture shortcut)",
+      "reader_question": "When sector dossiers talk about political money and regulation, what level of claim is actually earned?",
+      "surfaces": [
+        "reports/sectoral_dossiers/SEC-ELECTRIC.md",
+        "reports/sectoral_dossiers/SEC-TELECOM.md",
+        "reports/sectoral_dossiers/SEC-BANKING.md",
+        "reports/sectoral_dossiers/SEC-PHARMA.md",
+        "reports/sectoral_dossiers/SEC-PATENT-REVOLVING.md",
+        "reports/public_reasoning/CC-PR-011_CC-CLAIM-136.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-135",
+        "CC-CLAIM-136"
+      ],
+      "metric_ids": [
+        "CC-IND-D04"
+      ],
+      "source_ids": [
+        "CC-SRC-105",
+        "CC-SRC-108",
+        "CC-SRC-257"
+      ],
+      "evidence_strength": "Partial",
+      "strength_note": "Partial/associational at sector level. Capture bar not met for a national canonical capture claim.",
+      "what_the_data_show": {
+        "key_finding": "Preserve the ladder: Activity → Access → Association → Influence → Capture. Telecom shows associational contribution–outcome patterns; electric utilities have a provisional quasi-experimental working-paper candidate; none currently clears a CC capture bar. National candidate-receipt concentration (73%) is observability, not sector capture.",
+        "critical_numbers": [
+          {
+            "label": "National HS candidate-receipt top-decile share",
+            "value": "73%",
+            "metric_id": "CC-IND-D04",
+            "source_id": "CC-SRC-257",
+            "note": "Observability only."
+          },
+          {
+            "label": "Telecom capture bar",
+            "value": "NOT MET",
+            "note": "Association ≠ capture."
+          },
+          {
+            "label": "Electric utilities capture bar",
+            "value": "PROVISIONAL",
+            "note": "Working-paper DiD — do not promote capture from WP alone."
+          },
+          {
+            "label": "Agriculture sectoral capture bar",
+            "value": "NOT ADMISSIBLE yet",
+            "note": "AR access research ≠ national capture proof."
+          }
+        ],
+        "plain_english": "Sector evidence can document political activity and associations without proving that an industry owns its regulators. Keep verbs honest."
+      },
+      "what_supports_this": [
+        "SEC-TELECOM / SEC-ELECTRIC dossiers",
+        "CC-CLAIM-135/136",
+        "CC-PR-010/011"
+      ],
+      "what_challenges_it": [
+        "Working papers are not peer-settled facts",
+        "Arkansas-specific regulator modules mostly future work",
+        "Branham et al. contest strong oligarchy readings"
+      ],
+      "what_we_dont_know": [
+        "Independent replication of PUHCA DiD",
+        "Ownership-type outcome comparisons",
+        "Agriculture capture identification"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "sectoral dossiers + CC-IND-D04"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-135",
+          "CC-CLAIM-136",
+          "CC-CLAIM-003"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-WEALTH-BASELINE-1",
+      "title": "Household wealth concentration (baseline)",
+      "reader_question": "How concentrated is U.S. household wealth on official Fed products?",
+      "surfaces": [
+        "apps/book-site/src/pages/where-we-are.astro",
+        "content/public-resources/systems/oligarchy.md",
+        "content/public-resources/systems/constitutional-capitalism.md",
+        "content/research/national-diagnosis/01-wealth-and-ownership.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-011",
+        "CC-CLAIM-012"
+      ],
+      "metric_ids": [
+        "CC-IND-W01",
+        "CC-IND-W02",
+        "CC-IND-W04"
+      ],
+      "source_ids": [
+        "CC-SRC-001",
+        "CC-SRC-012",
+        "CC-SRC-218"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for measured concentration levels/shares. Does not prove oligarchy as regime type or that CC redesign would shift ownership.",
+      "what_the_data_show": {
+        "key_finding": "Official Fed products show high household wealth concentration with important product caveats: 2022 SCF median net worth about $192,900; 2026-Q1 DFA shares place the bottom 50% near 5.3% and the top 1% near 28.8%.",
+        "critical_numbers": [
+          {
+            "label": "Median household net worth",
+            "value": "$192,900",
+            "period": "2022 SCF",
+            "metric_id": "CC-IND-W01",
+            "source_id": "CC-SRC-001"
+          },
+          {
+            "label": "Bottom 50% wealth share",
+            "value": "5.3%",
+            "period": "2026-Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012"
+          },
+          {
+            "label": "Top 1% wealth share",
+            "value": "28.8%",
+            "period": "2026-Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012"
+          },
+          {
+            "label": "Homeownership rate",
+            "value": "65.2%",
+            "period": "2023",
+            "metric_id": "CC-IND-W04",
+            "source_id": "CC-SRC-218"
+          }
+        ],
+        "plain_english": "Wealth is highly concentrated on official series. SCF levels and DFA shares are not interchangeable. Concentration is a factual predicate for later accountability questions — not proof of oligarchy or of a finished CC remedy."
+      },
+      "what_supports_this": [
+        "CC-IND-W01/W02/W04",
+        "diagnosis brief 01",
+        "CC-CLAIM-011/012"
+      ],
+      "what_challenges_it": [
+        "2019–2022 SCF narrowing episode",
+        "Middle 40% still ~31% share",
+        "Method differences change extremes"
+      ],
+      "what_we_dont_know": [
+        "Business-equity/ESOP wealth by percentile",
+        "State/local ownership maps"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-011",
+          "CC-CLAIM-012",
+          "CC-CLAIM-010"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-TRUST-AND-BASELINE-DIAL-1",
+      "title": "Public trust and baseline readiness dial",
+      "reader_question": "How thin is measured public trust, and how complete is the national baseline?",
+      "surfaces": [
+        "apps/book-site/src/pages/where-we-are.astro",
+        "apps/book-site/src/pages/democracy.astro",
+        "content/public-resources/systems/constitutional-capitalism.md"
+      ],
+      "claim_ids": [],
+      "metric_ids": [
+        "CC-IND-D10",
+        "CC-IND-D04"
+      ],
+      "source_ids": [
+        "CC-SRC-254",
+        "CC-SRC-257"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for the trust series reading and baseline completeness dial. Trust ≠ capture; baseline completeness ≠ theory completion.",
+      "what_the_data_show": {
+        "key_finding": "About 15.4% say they trust the government in Washington always/most of the time (2024). National baseline slots are 42/64 sourced — enough for data-dense publication in many domains, not enough to declare diagnosis finished.",
+        "critical_numbers": [
+          {
+            "label": "Public trust (always/most of the time)",
+            "value": "15.4%",
+            "period": "2024",
+            "metric_id": "CC-IND-D10",
+            "source_id": "CC-SRC-254"
+          },
+          {
+            "label": "Baseline slots sourced",
+            "value": "42/64",
+            "period": "2026-08-11",
+            "geography": "US"
+          },
+          {
+            "label": "Campaign funding concentration (D04)",
+            "value": "73%",
+            "metric_id": "CC-IND-D04",
+            "source_id": "CC-SRC-257"
+          }
+        ],
+        "plain_english": "Low trust and incomplete baselines are reasons for humility: publish the strongest available numbers beside theory, and keep unknowns visible."
+      },
+      "what_supports_this": [
+        "CC-IND-D10",
+        "baseline_status / national_baseline_metrics",
+        "CC-IND-D04"
+      ],
+      "what_challenges_it": [
+        "Survey trust items are not institutional performance scores",
+        "42/64 leaves major democracy/justice slots thin"
+      ],
+      "what_we_dont_know": [
+        "CC-IND-D05 legislative transparency still pending",
+        "Google Civic deferred"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md"
+      }
+    },
+    {
+      "panel_id": "CC-EP-JOURNALISM-PUBLIC-FINANCE-1",
+      "title": "Public finance of local news — dollars ≠ scrutiny",
+      "reader_question": "If public money can fund journalism projects, does that prove institutional coverage or durable independence?",
+      "surfaces": [
+        "apps/book-site/src/pages/transparency.astro",
+        "reports/CC_PHASE_2_1_LOCAL_JOURNALISM_PUBLIC_FINANCE_AND_INDEPENDENCE_COMPARATIVE_DOSSIER_1_0_RETURN.md"
+      ],
+      "claim_ids": [],
+      "metric_ids": [],
+      "source_ids": [
+        "CC-SRC-144",
+        "CC-SRC-164",
+        "CC-SRC-165",
+        "CC-SRC-166"
+      ],
+      "evidence_strength": "Partial",
+      "strength_note": "Strong for appropriation volatility and the chain-of-inference ban; Partial/NEE for durable capacity and civic outcomes. Citizen-directed Civic Information Credits remain Not Enough Evidence.",
+      "what_the_data_show": {
+        "key_finding": "NJ Civic Information Consortium shows a real public-finance pathway with claimed statutory editorial firewalls — and appropriation volatility that can go to zero (FY2027 $0 in the budget-aggregator series). Money appropriated ≠ journalism produced ≠ institutions covered ≠ civic outcomes.",
+        "critical_numbers": [
+          {
+            "label": "NJ CIC FY2027 appropriated (aggregator series)",
+            "value": "$0",
+            "period": "FY2027",
+            "geography": "New Jersey",
+            "source_id": "CC-SRC-165",
+            "note": "Conflict with program case-study narrative retained; neither preferred without primary PDF reconciliation."
+          },
+          {
+            "label": "NJ CIC grants claimed (self-report)",
+            "value": "135 / >$12M",
+            "period": "program cumulative claim",
+            "geography": "New Jersey",
+            "source_id": "CC-SRC-166",
+            "note": "Self-report — not an independent institutional-coverage audit."
+          },
+          {
+            "label": "Citizen-directed Civic Information Credits",
+            "value": "NOT ENOUGH EVIDENCE",
+            "note": "No US news-voucher pilot; Seattle Democracy Vouchers are campaign-finance analogy only."
+          },
+          {
+            "label": "Arkansas institutional-coverage composite score",
+            "value": "none (forbidden)",
+            "note": "Financing dossiers must not invent a journalism quality score."
+          }
+        ],
+        "plain_english": "Public finance can move dollars through a nonprofit intermediary. That does not prove beat continuity, institutional scrutiny, or survival under hostile appropriators. Do not prescribe financing where Arkansas-style institutional coverage remains unknown."
+      },
+      "what_supports_this": [
+        "Journalism public-finance comparative dossier return",
+        "NJ CIC institutional history",
+        "Arkansas outlet≠scrutiny diagnosis preserved"
+      ],
+      "what_challenges_it": [
+        "Two conflicting NJ funding series (aggregator vs case study)",
+        "Statutory firewall ≠ purse immunity",
+        "Self-reported stories/jobs ≠ institutions covered"
+      ],
+      "what_we_dont_know": [
+        "Independent longitudinal employment/beat continuity under CIC",
+        "Hostile-government survival for every public-money path",
+        "Whether any financing model raises Arkansas institutional coverage"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "journalism_public_finance_comparison_matrix.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_public_reasoning": [
+          "CC-PR-075",
+          "CC-PR-076",
+          "CC-PR-077",
+          "CC-PR-078",
+          "CC-PR-079",
+          "CC-PR-080"
+        ]
       }
     }
   ],
   "pass_summary": {
-    "panels_created": 3,
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
+    "panels_total": 9,
+    "panels_added_pass_2": 6,
     "google_civic_bound": false,
-    "pages_targeted": 10,
-    "claims_touched": ["CC-CLAIM-003", "CC-CLAIM-024", "CC-CLAIM-134"]
-  }
+    "note": "Breadth across existing writing; no new ingest infrastructure. Google Civic remains deferred."
+  },
+  "pass_1_panels": 3
 }

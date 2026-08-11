@@ -1,20 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { claims, sources, baselineStatus } from "../lib/data";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const priorityDomains = [
-  { id: "wealth", title: "Wealth and ownership", claim: "CC-CLAIM-011", note: "Fed SCF/DFA: high concentration; mean far above median." },
+  { id: "wealth", title: "Wealth and ownership", claim: "CC-CLAIM-011", note: "Fed SCF/DFA: high concentration; mean far above median. See Evidence Panel below." },
   { id: "wages", title: "Wages and productivity", claim: "CC-CLAIM-002", note: "BLS documents a productivity–compensation gap since the 1970s; magnitudes debated." },
   { id: "taxation", title: "Taxation", claim: "CC-CLAIM-013", note: "CBO 2021: transfers and federal taxes compress inequality without erasing it." },
   { id: "concentration", title: "Corporate power / concentration", claim: "CC-CLAIM-005", note: "Census concentration ratios available; competitive effects are industry-specific." },
   { id: "ownership", title: "Worker ownership", claim: "CC-CLAIM-004", note: "Research finds modest average gains with heterogeneity — not universal improvement." },
   { id: "rural", title: "Local and rural economies", claim: "CC-CLAIM-019", note: "ERS/FDIC: widespread county stress indicators alongside uneven recent gains." },
   { id: "commerce", title: "Internet commerce", claim: "CC-CLAIM-016", note: "Architecture ready; national leakage magnitudes not yet sourced." },
-  { id: "power", title: "Political and economic power", claim: "CC-CLAIM-003", note: "Concentration measurable; democratic-accountability causation still open." },
+  { id: "power", title: "Political and economic power", claim: "CC-CLAIM-003", note: "Concentration measurable; democratic-accountability causation still open (NEE). Disclosure spine and D04 now shown on Democracy." },
   { id: "justice", title: "Justice, safety, and restoration", claim: "CC-CLAIM-021", note: "Developing doctrine seeded; sourced diagnosis queued for Phase 2.1 — no invented justice statistics." },
-  { id: "democracy", title: "Democracy and distributed government", claim: "CC-CLAIM-025", note: "Second constitutional spine: Rucho holding sourced; anti-entrenchment doctrine seeded; quantitative competition metrics pending." },
+  { id: "democracy", title: "Democracy and distributed government", claim: "CC-CLAIM-025", note: "Rucho sourced; D04 campaign-funding concentration 73%; public trust 15.4% (D10); competition metrics still thin." },
   { id: "public-service", title: "Public service and institutional modernization", claim: "CC-CLAIM-031", note: "Invisible—but never unaccountable; reduce friction while improving service — architecture seeded; no invented board counts." },
-  { id: "transparency", title: "Constitutional transparency and the People's Ledger", claim: "CC-CLAIM-034", note: "Presumed open with justified exceptions; People's Ledger is a design agenda — no invented FOIA or portal statistics." },
+  { id: "transparency", title: "Constitutional transparency and the People's Ledger", claim: "CC-CLAIM-034", note: "People's Ledger is a design agenda. Arkansas 90-day coding: outlet presence ≠ institutional scrutiny." },
   { id: "essential-systems", title: "Essential systems (banking, insurance, healthcare)", claim: "CC-CLAIM-038", note: "System-design framing — incentives and outcomes, not inherent corruption; Community Health Index is a design agenda." },
   { id: "human-capital", title: "Human capital doctrine and regional academies", claim: "CC-CLAIM-042", note: "Multiple pathways of equal dignity; academies are a pilot design agenda — no invented outcomes." },
   { id: "build-community", title: "Build your community / playbooks", claim: "CC-CLAIM-046", note: "Playbooks and Community OS are design agendas — no invented town growth outcomes." },
@@ -22,6 +24,8 @@ const priorityDomains = [
 
 const byId = Object.fromEntries((claims.claims || []).map((c: any) => [c.claim_id, c]));
 const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || []).length > 0).length;
+const wealthPanel = (panels.panels || []).find((p: { panel_id: string }) => p.panel_id === "CC-EP-WEALTH-BASELINE-1");
+const trustPanel = (panels.panels || []).find((p: { panel_id: string }) => p.panel_id === "CC-EP-TRUST-AND-BASELINE-DIAL-1");
 ---
 
 <BaseLayout
@@ -40,6 +44,9 @@ const sourcedClaims = (claims.claims || []).filter((c: any) => (c.source_ids || 
       Claims with sources: {sourcedClaims}. Baseline metrics sourced: {baselineStatus.sourced_metrics ?? 0}
       / {baselineStatus.total_metrics ?? "—"}.
     </p>
+
+    {trustPanel ? <EvidencePanel panel={trustPanel} /> : null}
+    {wealthPanel ? <EvidencePanel panel={wealthPanel} /> : null}
 
     <h2>Priority domains</h2>
     {

@@ -23,3 +23,8 @@ Sector dependence reinforces high bar.
 ## Arkansas
 
 Not geographic.
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Ladder:** Sector dependence reinforces a high Capture bar — revolving-door association ≠ Capture.

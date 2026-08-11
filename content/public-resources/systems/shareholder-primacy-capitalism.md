@@ -57,6 +57,17 @@ Legal historians debate how absolute 'primacy' ever was in doctrine versus rheto
 
 **Exemplars / references (non-statistical):** Berle-Means corporation debates; Late-20th-century agency theory influence.
 
+### Evidence Panel — wealth concentration beside ownership ideology
+
+**Reader question:** When shareholder-primacy talk treats capital returns as the governing purpose, what wealth concentration is actually measured?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Median household net worth | **$192,900** (2022 SCF) | `CC-IND-W01` |
+| Bottom 50% / top 1% wealth shares | **5.3% / 28.8%** (2026-Q1 DFA) | `CC-IND-W02` |
+
+**Plain English:** Concentration is factual on Fed products. It does **not** prove that shareholder primacy caused the distribution, or that rejecting primacy as a sole constitutional lens would reverse it. Panel: `CC-EP-WEALTH-BASELINE-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

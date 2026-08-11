@@ -852,8 +852,8 @@
     "overall_percent": 43
   },
   "baseline_expansion_paused": false,
-  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-1.0",
-  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
+  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
+  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
   "parallel_ready_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
   "legislative_civic_targeted_ingest": {
     "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
@@ -873,8 +873,17 @@
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_1_0_RETURN.md",
     "panels_registry": "data/project/publication_evidence_panels.json"
   },
+  "publication_evidence_upgrade_pass_2": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
+    "status": "PASSED",
+    "panels_total": 9,
+    "panels_added": 6,
+    "google_civic_bound": false,
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_2_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json"
+  },
   "progress_markers": {
-    "overall_percent": 43,
+    "overall_percent": 44,
     "baseline": "42/64",
     "sources": 268,
     "modeling": 0,

@@ -57,6 +57,30 @@ Not a historical regime with settled outcomes. Comparative neighbors (ordolibera
 
 **Exemplars / references (non-statistical):** Project Declaration and principles (in development); Comparative lessons from ordoliberal and republican traditions.
 
+### Evidence Panel — baselines that complicate preferred mechanisms
+
+**Reader question:** What measured facts must sit beside Constitutional Capitalism’s design claims so the framework does not overclaim?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Public trust (always/most of the time) | **15.4%** (2024) | `CC-IND-D10` · `CC-SRC-254` |
+| Baseline slots sourced | **42/64** | national baseline dial |
+| Top-decile HS candidate-receipt share | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+| Bottom 50% / top 1% wealth shares | **5.3% / 28.8%** (2026-Q1 DFA) | `CC-IND-W02` |
+
+**Plain English:** Low trust, incomplete baselines, political-money concentration, and wealth concentration are real constraints. They motivate institutional redesign questions; they do **not** prove that CC mechanisms would restore trust, complete the baseline, or reverse concentration. `CC-CLAIM-003` remains Not Enough Evidence.
+
+**Evidence strength:** Strong for the dials; Partial for any causal CC remedy story.
+
+<details>
+<summary>Explore the data</summary>
+
+- Supports: publish strongest available numbers beside theory.
+- Challenges / counterevidence needed for responsible interpretation: trust ≠ capture; baseline completeness ≠ theory completion; receipt concentration ≠ proven capture.
+- Panel ids: `CC-EP-TRUST-AND-BASELINE-DIAL-1`, `CC-EP-WEALTH-BASELINE-1`
+
+</details>
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

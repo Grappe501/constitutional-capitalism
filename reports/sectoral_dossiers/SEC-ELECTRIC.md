@@ -23,3 +23,10 @@ PROVISIONAL — do not promote capture claim from WP alone.
 ## Arkansas
 
 Future AR PSC modules could use designated set if state regulator questions arise.
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Ladder:** Activity → Access → Association → Influence → **Capture (not met)**  
+**Capture bar here:** PROVISIONAL — working-paper DiD only.  
+**Related observability:** national HS candidate-receipt top-decile share **73%** (`CC-IND-D04`) — not sector capture.

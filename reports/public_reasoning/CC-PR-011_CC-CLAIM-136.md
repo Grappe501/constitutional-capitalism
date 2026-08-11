@@ -11,3 +11,15 @@ In U.S. investor-owned electric utility regulation, peer-reviewed research assoc
 ## Still unknown
 
 Independent replication of the PUHCA DiD; ownership-type outcome comparisons.
+
+---
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Reader question:** When utilities engage politically, what claim level is earned?
+
+Preserve **Activity → Access → Association → Influence → Capture**. Electric-utility evidence reaches a **PROVISIONAL** quasi-experimental candidate (working paper); it does **not** clear a CC capture bar. National candidate-receipt concentration (**73%**, `CC-IND-D04`) is observability only.
+
+**Evidence strength:** Partial / provisional. Association is not control.
+

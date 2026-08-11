@@ -38,9 +38,9 @@ These are **research-site reasons**, not established facts.
 | Arkansas population (ACS 5-year) | **3,032,651** (2023) | `CC-SRC-268` |
 | Arkansas median household income | **$58,773** (2023 ACS 5-year) | `CC-SRC-268` |
 
-**Plain English:** Statewide ACS numbers locate the case inside Arkansas; they do not establish Lewisville’s resource-opportunity baseline or local outcomes. Parts I–VI remain not started.
+**Plain English:** Statewide ACS numbers locate the case inside Arkansas; they do not establish Lewisville’s resource-opportunity baseline or local outcomes. Label: **statewide context**, not local Lewisville observation. Parts I–VI remain not started.
 
-**Evidence strength:** Partial (context only). Panel id: `CC-EP-AR-COMMUNITY-CONTEXT-1`.
+**Evidence strength:** Partial (context only). Honesty labels: statewide ≠ local. Panel id: `CC-EP-AR-COMMUNITY-CONTEXT-1`.
 
 ## Case structure (Parts I–VI)
 

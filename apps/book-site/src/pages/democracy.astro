@@ -12,6 +12,9 @@ const branches = democracy.website_branches || [];
 const politicalMoneyPanel = (panels.panels || []).find(
   (p: { panel_id: string }) => p.panel_id === "CC-EP-DEMOCRACY-POLITICAL-MONEY-1"
 );
+const trustPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-TRUST-AND-BASELINE-DIAL-1"
+);
 ---
 
 <BaseLayout
@@ -33,6 +36,7 @@ const politicalMoneyPanel = (panels.panels || []).find(
     <blockquote>
       <p>{democracy.trust_doctrine.text}</p>
     </blockquote>
+    {trustPanel ? <EvidencePanel panel={trustPanel} /> : null}
 
     <h2>Anti-entrenchment</h2>
     <blockquote>

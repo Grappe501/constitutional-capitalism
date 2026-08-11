@@ -23,3 +23,9 @@ NOT MET for blanket claim; hypothesis remains open sector-by-sector.
 ## Arkansas
 
 No AR geography required for this literature slice.
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Ladder:** Association/influence hypotheses remain open; **Capture NOT MET** for blanket banking claims.  
+**Related observability:** `CC-IND-D04` = **73%** (national candidate-receipt concentration — not bank capture).

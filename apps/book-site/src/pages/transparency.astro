@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import trn from "../../../../data/project/transparency_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const testQs = trn.constitutional_transparency_test?.questions || [];
 const branches = trn.website_branches || [];
@@ -8,6 +10,12 @@ const ledgerPath = trn.peoples_ledger?.example_path || [];
 const exceptions = trn.legitimate_exceptions_examples || [];
 const dashboardFields = trn.public_dashboard?.fields || [];
 const budgetReqs = trn.open_budgets?.requirements || [];
+const journalismPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-JOURNALISM-90DAY-1"
+);
+const journalismFinancePanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-JOURNALISM-PUBLIC-FINANCE-1"
+);
 ---
 
 <BaseLayout
@@ -29,6 +37,8 @@ const budgetReqs = trn.open_budgets?.requirements || [];
     <blockquote>
       <p>{trn.openness_presumption.text}</p>
     </blockquote>
+    {journalismPanel ? <EvidencePanel panel={journalismPanel} /> : null}
+    {journalismFinancePanel ? <EvidencePanel panel={journalismFinancePanel} /> : null}
     <p>{trn.exceptions_rule}</p>
     <p>Examples of legitimate protections:</p>
     <ul>
