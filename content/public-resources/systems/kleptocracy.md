@@ -57,6 +57,16 @@ Diagnostic extreme. Distinguish from ordinary corruption by systemic centrality 
 
 **Exemplars / references (non-statistical):** Comparative kleptocracy case studies; Illicit financial flows literatures.
 
+### Evidence Panel — political-money observability (not a kleptocracy score)
+
+**Reader question:** When this dossier talks about theft of the public purse, what political-money concentration is actually measured in the U.S. disclosure series?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Top-decile share of House+Senate candidate receipts | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**Plain English:** Candidate-receipt concentration is observable. It does **not** classify the United States as a kleptocracy, and `CC-CLAIM-003` remains Not Enough Evidence for national capture. Panel: `CC-EP-COMPARISON-POLITICAL-MONEY-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

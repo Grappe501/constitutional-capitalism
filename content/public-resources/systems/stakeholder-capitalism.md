@@ -57,6 +57,17 @@ Some coordinated-market economies practiced stakeholder-ish governance before th
 
 **Exemplars / references (non-statistical):** Business Roundtable 2019 statement debates; Rhenish governance comparisons.
 
+### Evidence Panel — ownership concentration beside stakeholder rhetoric
+
+**Reader question:** When stakeholder capitalism talks about broader purpose, what wealth concentration is actually measured?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Median household net worth | **$192,900** (2022 SCF) | `CC-IND-W01` |
+| Bottom 50% / top 1% wealth shares | **5.3% / 28.8%** (2026-Q1 DFA) | `CC-IND-W02` |
+
+**Plain English:** Concentration is factual on Fed products. It does **not** prove stakeholder pledges redistribute ownership, nor that voluntary ESG statements change residual claims. Panel: `CC-EP-WEALTH-BASELINE-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

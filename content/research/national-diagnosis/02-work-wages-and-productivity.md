@@ -2,8 +2,9 @@
 
 **Domain status:** priority_first_pass  
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
-**Last updated:** 2026-08-07  
-**Phase:** 2.1 — Three-layer proof retrofit
+**Last updated:** 2026-08-11  
+**Phase:** 2.1 — Three-layer proof retrofit  
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0` · panel `CC-EP-WAGES-PRODUCTIVITY-1`
 
 ## Central question
 
@@ -12,6 +13,17 @@ Have wages and productivity moved together for typical U.S. workers, and what do
 ## Why it matters
 
 If typical compensation lags productivity for long periods, claims about shared gains from growth require scrutiny.
+
+### Evidence Panel — recent official dials (not the whole gap debate)
+
+**Reader question:** What do the current national baseline wage and productivity dials say?
+
+| Number | Value | Trace |
+|---|---:|---|
+| Real AHE over-the-year change (CES) | **1.1%** (2025-12 vs 2024-12) | `CC-IND-L01` · `CC-SRC-219` |
+| Nonfarm business productivity (annual) | **2.3%** (2024) | `CC-IND-L02` · `CC-SRC-220` |
+
+**Plain English:** These answer a recent-dials question. They do **not** close the longer BLS/EPI productivity–compensation gap debate, and L01 is mean AHE of jobs — not median/typical-worker pay. Panel: `CC-EP-WAGES-PRODUCTIVITY-1`.
 
 ## Current findings (sourced inventory)
 

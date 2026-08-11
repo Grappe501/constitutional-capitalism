@@ -852,8 +852,8 @@
     "overall_percent": 43
   },
   "baseline_expansion_paused": false,
-  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
-  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
+  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
+  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
   "parallel_ready_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
   "legislative_civic_targeted_ingest": {
     "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
@@ -887,11 +887,14 @@
   },
   "publication_evidence_upgrade_pass_3": {
     "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
-    "status": "QUEUED",
+    "status": "PASSED",
     "mode": "publication_bind_only",
     "no_new_architecture": true,
     "do_not_duplicate_pass_2": true,
     "google_civic_deferred": true,
+    "panels_total": 11,
+    "panels_added": 2,
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_3_0_RETURN.md",
     "residuals_from_pass_2_inventory": {
       "public_reasoning": [
         "CC-PR-045",
@@ -906,13 +909,22 @@
       "competition_enforcement_metrics": [
         "CC-IND-C03"
       ],
-      "economic_system_pages": "additional bare comparison dossiers beyond Pass 2 binds",
-      "board_twins": "corresponding apps/build-board mirrors for book surfaces already upgraded"
+      "economic_system_pages": [
+        "kleptocracy",
+        "laissez-faire-capitalism",
+        "stakeholder-capitalism"
+      ],
+      "board_twins": [
+        "transparency",
+        "family-farm-prosperity",
+        "democracy"
+      ],
+      "disposition": "ALL_BOUND"
     },
     "panels_registry": "data/project/publication_evidence_panels.json"
   },
   "progress_markers": {
-    "overall_percent": 44,
+    "overall_percent": 45,
     "baseline": "42/64",
     "sources": 268,
     "modeling": 0,

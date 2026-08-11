@@ -11,3 +11,17 @@ U.S. agricultural policy processes involve competing economic interests rather t
 ## Still unknown
 
 Causal processor influence on antitrust; Arkansas-specific modules; seed/patent/right-to-repair cases.
+
+---
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0`)
+
+**Panel:** `CC-EP-SECTORAL-INFLUENCE-LADDER-1`  
+**Reader question:** Do large agricultural companies have more political influence than farmers — and is that capture?
+
+**Ladder:** Activity → Access → Association → Influence → Capture  
+**Agriculture sectoral capture bar:** **NOT ADMISSIBLE yet** (`SEC-AGRICULTURE` remains a critical gap for Level-3+).  
+**What is established descriptively:** competing farm/processor/insurer interests; electoral incentives often outweigh lobbying in peer-reviewed farm-protection vote studies; crop-insurance coalitions document joint benefits — **none equals USDA capture**.
+
+**Related observability (not ag capture):** national HS candidate-receipt top-decile share **73%** (`CC-IND-D04`).
+

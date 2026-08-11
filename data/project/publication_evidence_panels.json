@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
+  "version": "1.2.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
   "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
@@ -188,7 +188,9 @@
       "reader_question": "When a comparison dossier talks about money translating into political control, what concentration figure is actually measured today?",
       "surfaces": [
         "content/public-resources/systems/plutocracy.md",
-        "content/public-resources/systems/crony-capitalism.md"
+        "content/public-resources/systems/crony-capitalism.md",
+        "content/public-resources/systems/kleptocracy.md",
+        "content/public-resources/systems/laissez-faire-capitalism.md"
       ],
       "claim_ids": [
         "CC-CLAIM-134"
@@ -249,7 +251,8 @@
         "reports/public_reasoning/CC-PR-077.md",
         "reports/public_reasoning/CC-PR-078.md",
         "reports/public_reasoning/CC-PR-079.md",
-        "reports/public_reasoning/CC-PR-080.md"
+        "reports/public_reasoning/CC-PR-080.md",
+        "apps/build-board/src/pages/transparency.astro"
       ],
       "claim_ids": [],
       "metric_ids": [],
@@ -332,7 +335,10 @@
       "surfaces": [
         "apps/book-site/src/pages/family-farm-prosperity.astro",
         "reports/public_reasoning/CC-PR-013_CC-CLAIM-138.md",
-        "reports/sectoral_dossiers/SEC-AGRICULTURE.md"
+        "reports/sectoral_dossiers/SEC-AGRICULTURE.md",
+        "reports/public_reasoning/CC-PR-045.md",
+        "reports/public_reasoning/CC-PR-034.md",
+        "apps/build-board/src/pages/family-farm-prosperity.astro"
       ],
       "claim_ids": [
         "CC-CLAIM-138"
@@ -416,7 +422,8 @@
         "reports/sectoral_dossiers/SEC-BANKING.md",
         "reports/sectoral_dossiers/SEC-PHARMA.md",
         "reports/sectoral_dossiers/SEC-PATENT-REVOLVING.md",
-        "reports/public_reasoning/CC-PR-011_CC-CLAIM-136.md"
+        "reports/public_reasoning/CC-PR-011_CC-CLAIM-136.md",
+        "reports/public_reasoning/CC-PR-012_CC-CLAIM-137.md"
       ],
       "claim_ids": [
         "CC-CLAIM-135",
@@ -496,7 +503,8 @@
         "apps/book-site/src/pages/where-we-are.astro",
         "content/public-resources/systems/oligarchy.md",
         "content/public-resources/systems/constitutional-capitalism.md",
-        "content/research/national-diagnosis/01-wealth-and-ownership.md"
+        "content/research/national-diagnosis/01-wealth-and-ownership.md",
+        "content/public-resources/systems/stakeholder-capitalism.md"
       ],
       "claim_ids": [
         "CC-CLAIM-011",
@@ -582,7 +590,8 @@
       "surfaces": [
         "apps/book-site/src/pages/where-we-are.astro",
         "apps/book-site/src/pages/democracy.astro",
-        "content/public-resources/systems/constitutional-capitalism.md"
+        "content/public-resources/systems/constitutional-capitalism.md",
+        "apps/build-board/src/pages/democracy.astro"
       ],
       "claim_ids": [],
       "metric_ids": [
@@ -647,7 +656,9 @@
       "reader_question": "If public money can fund journalism projects, does that prove institutional coverage or durable independence?",
       "surfaces": [
         "apps/book-site/src/pages/transparency.astro",
-        "reports/CC_PHASE_2_1_LOCAL_JOURNALISM_PUBLIC_FINANCE_AND_INDEPENDENCE_COMPARATIVE_DOSSIER_1_0_RETURN.md"
+        "reports/CC_PHASE_2_1_LOCAL_JOURNALISM_PUBLIC_FINANCE_AND_INDEPENDENCE_COMPARATIVE_DOSSIER_1_0_RETURN.md",
+        "reports/public_reasoning/CC-PR-019.md",
+        "apps/build-board/src/pages/transparency.astro"
       ],
       "claim_ids": [],
       "metric_ids": [],
@@ -721,14 +732,158 @@
           "CC-PR-080"
         ]
       }
+    },
+    {
+      "panel_id": "CC-EP-WAGES-PRODUCTIVITY-1",
+      "title": "Recent wage growth and productivity (baseline dials)",
+      "reader_question": "Have wages and productivity moved together recently, and what do the official dials actually measure?",
+      "surfaces": [
+        "content/research/national-diagnosis/02-work-wages-and-productivity.md",
+        "apps/book-site/src/pages/where-we-are.astro"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-002"
+      ],
+      "metric_ids": [
+        "CC-IND-L01",
+        "CC-IND-L02"
+      ],
+      "source_ids": [
+        "CC-SRC-219",
+        "CC-SRC-220",
+        "CC-SRC-003",
+        "CC-SRC-004"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for recent official dials (L01/L02). Historical productivity–compensation gap remains a separate BLS/EPI evidence track; EPI secondary must not stand alone. Not a causal capture finding.",
+      "what_the_data_show": {
+        "key_finding": "Recent official dials show real average hourly earnings up about 1.1% over the year to Dec 2025, while nonfarm-business labor productivity rose about 2.3% in 2024. These are CES/Productivity-and-Costs measures — not proof that typical-worker pay kept pace with productivity over decades.",
+        "critical_numbers": [
+          {
+            "label": "Real AHE over-the-year change (CES)",
+            "value": "1.1%",
+            "period": "2025-12 vs 2024-12",
+            "geography": "US",
+            "metric_id": "CC-IND-L01",
+            "source_id": "CC-SRC-219",
+            "note": "Mean AHE of private nonfarm jobs, CPI-U deflated — not median worker wages."
+          },
+          {
+            "label": "Nonfarm business productivity (annual)",
+            "value": "2.3%",
+            "period": "2024",
+            "geography": "US",
+            "metric_id": "CC-IND-L02",
+            "source_id": "CC-SRC-220"
+          },
+          {
+            "label": "Long-run productivity–compensation gap",
+            "value": "documented (BLS); magnitude contested",
+            "source_id": "CC-SRC-003",
+            "note": "EPI secondary cumulative series must remain labeled secondary (CC-SRC-004)."
+          }
+        ],
+        "plain_english": "Publish the official recent dials beside the longer gap literature. Do not treat a one-year AHE print as closing the historical shared-gains debate, and do not convert either into a legal or capture verdict."
+      },
+      "what_supports_this": [
+        "CC-IND-L01 / CC-SRC-219",
+        "CC-IND-L02 / CC-SRC-220",
+        "BLS productivity–compensation gap analysis (CC-SRC-003)"
+      ],
+      "what_challenges_it": [
+        "L01 is mean AHE of jobs, not median/typical-worker pay",
+        "EPI gap magnitudes are secondary and methodology-sensitive",
+        "Causal attribution remains debated"
+      ],
+      "what_we_dont_know": [
+        "Monopsony wage effects (CC-CLAIM-015) still thin",
+        "Official post-2015 industry gap update tables not attached"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-002"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-COMPETITION-ENFORCEMENT-1",
+      "title": "Antitrust enforcement activity (criminal cases filed)",
+      "reader_question": "How much criminal antitrust enforcement is actually filed, and what does that count not prove?",
+      "surfaces": [
+        "content/research/national-diagnosis/05-competition-and-concentration.md",
+        "content/public-resources/systems/laissez-faire-capitalism.md",
+        "apps/book-site/src/pages/where-we-are.astro"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-005"
+      ],
+      "metric_ids": [
+        "CC-IND-C03"
+      ],
+      "source_ids": [
+        "CC-SRC-255",
+        "CC-SRC-005"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for the administrative count. Not a concentration index, not consumer-harm proof, and not political capture.",
+      "what_the_data_show": {
+        "key_finding": "DOJ Antitrust Division filed 20 criminal antitrust cases in FY2024. That answers an enforcement-activity question. It does not measure economy-wide concentration, FTC activity, civil merger outcomes, or capture of competition policy.",
+        "critical_numbers": [
+          {
+            "label": "DOJ ATR criminal cases filed",
+            "value": "20",
+            "period": "FY2024",
+            "geography": "US",
+            "metric_id": "CC-IND-C03",
+            "source_id": "CC-SRC-255",
+            "note": "Criminal cases only — excludes FTC and DOJ civil/non-criminal merger actions."
+          },
+          {
+            "label": "Census concentration products",
+            "value": "industry CR shares (not a national %)",
+            "source_id": "CC-SRC-005",
+            "note": "Keep industry CR cells; do not invent a fake national concentration percent."
+          }
+        ],
+        "plain_english": "Enforcement counts and industry concentration ratios are measurement outputs. Neither alone proves monopoly, consumer harm, or that laissez-faire (or any rival system) is vindicated or refuted."
+      },
+      "what_supports_this": [
+        "CC-IND-C03 / CC-SRC-255",
+        "Census Economic Census concentration spine (CC-SRC-005)"
+      ],
+      "what_challenges_it": [
+        "Case counts are not rates per firm or per merger",
+        "Product-market definition changes apparent concentration",
+        "No automatic finding of harm or capture"
+      ],
+      "what_we_dont_know": [
+        "Fixed-NAICS multi-year CR comparison table not yet in-repo",
+        "Labor-market concentration datasets not bound here"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-005"
+        ]
+      }
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
-    "panels_total": 9,
-    "panels_added_pass_2": 6,
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
+    "panels_total": 11,
+    "panels_added_pass_3": 2,
     "google_civic_bound": false,
-    "note": "Breadth across existing writing; no new ingest infrastructure. Google Civic remains deferred."
+    "note": "Residual binds from Pass 2 inventory; no new architecture; Pass 2 not reopened."
   },
-  "pass_1_panels": 3
+  "pass_1_panels": 3,
+  "pass_2_panels": 9
 }

@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine, claims, baselineStatus } from "../lib/data";
 import trn from "../../../../data/project/transparency_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = ["CC-DEV-029", "CC-DEV-030", "CC-DEV-031", "CC-DEV-032"];
 const claimIds = ["CC-CLAIM-034", "CC-CLAIM-035", "CC-CLAIM-036", "CC-CLAIM-037"];
@@ -10,6 +12,12 @@ const trnDoctrine = (developingDoctrine.items || []).filter((d: any) =>
 );
 const trnClaims = (claims.claims || []).filter((c: any) => claimIds.includes(c.claim_id));
 const testQs = trn.constitutional_transparency_test?.questions || [];
+const journalismPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-JOURNALISM-90DAY-1"
+);
+const journalismFinancePanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-JOURNALISM-PUBLIC-FINANCE-1"
+);
 ---
 
 <BoardLayout title="Transparency" path="/transparency/">
@@ -53,6 +61,8 @@ const testQs = trn.constitutional_transparency_test?.questions || [];
     <h2>Openness presumption</h2>
     <p>{trn.openness_presumption.text}</p>
   </section>
+  {journalismPanel ? <EvidencePanel panel={journalismPanel} /> : null}
+  {journalismFinancePanel ? <EvidencePanel panel={journalismFinancePanel} /> : null}
 
   <section class="panel" style="margin-top:1rem;">
     <h2>The People's Ledger</h2>

@@ -11,3 +11,20 @@ Registered research module CC-MOD-LOCAL-INDEPENDENT-JOURNALISM-AND-CIVIC-INFORMA
 ## What we still don't know
 
 Whether citizen-directed credits, nonprofit models, cooperatives, or shared services can raise granular coverage without capture or retaliation.
+
+---
+
+## Evidence Panel (`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0`)
+
+**Panel:** `CC-EP-JOURNALISM-PUBLIC-FINANCE-1`  
+**Reader question:** Is Constitutional Capitalism proposing a government newspaper?
+
+| Number | Value |
+|---|---:|
+| NJ CIC FY2027 appropriated (aggregator) | **$0** |
+| NJ CIC grants claimed (self-report) | **135 / >$12M** |
+| Citizen-directed Civic Information Credits | **NOT ENOUGH EVIDENCE** |
+| Composite journalism score | **none (forbidden)** |
+
+**Plain English:** Researching public-finance pathways with claimed firewalls is not proposing a government newsroom. Money appropriated ≠ journalism produced ≠ institutions covered. Arkansas outlet≠scrutiny diagnosis still governs any financing talk.
+

@@ -57,6 +57,17 @@ Pure laissez-faire is rare; most 'liberal' centuries mixed markets with empire, 
 
 **Exemplars / references (non-statistical):** Classical liberal treatises; Select 19th-century policy regimes (approximate).
 
+### Evidence Panel — enforcement and money dials under thin-rule ideals
+
+**Reader question:** Under thin public rules, what enforcement and political-money dials are actually measured today?
+
+| Number | Value | Trace |
+|---|---:|---|
+| DOJ ATR criminal cases filed | **20** (FY2024) | `CC-IND-C03` · `CC-SRC-255` |
+| Top-decile HS candidate-receipt share | **73%** (2023–2024) | `CC-IND-D04` · `CC-SRC-257` |
+
+**Plain English:** Enforcement activity and candidate-receipt concentration are measurable. Neither proves that laissez-faire “works,” that markets self-police, or that the U.S. is captured. Keep industry CR cells; invent no national concentration percent. Panels: `CC-EP-COMPETITION-ENFORCEMENT-1`, `CC-EP-COMPARISON-POLITICAL-MONEY-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

@@ -2,8 +2,9 @@
 
 **Domain status:** priority_first_pass  
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
-**Last updated:** 2026-08-07  
-**Phase:** 2.1 — Three-layer proof retrofit
+**Last updated:** 2026-08-11  
+**Phase:** 2.1 — Three-layer proof retrofit  
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0` · panel `CC-EP-COMPETITION-ENFORCEMENT-1`
 
 ## Central question
 
@@ -12,6 +13,16 @@ What do official concentration statistics show, and what do they not prove?
 ## Why it matters
 
 Competition policy depends on measurement that is honest about limits.
+
+### Evidence Panel — enforcement activity count (not a concentration verdict)
+
+**Reader question:** How much criminal antitrust enforcement is actually filed?
+
+| Number | Value | Trace |
+|---|---:|---|
+| DOJ ATR criminal cases filed | **20** (FY2024) | `CC-IND-C03` · `CC-SRC-255` |
+
+**Plain English:** This is an administrative enforcement count — criminal cases only. It is **not** a national concentration percent, not FTC activity, and not proof of monopoly, consumer harm, or capture. Panel: `CC-EP-COMPETITION-ENFORCEMENT-1`.
 
 ## Current findings (sourced inventory)
 

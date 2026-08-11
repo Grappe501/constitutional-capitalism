@@ -1,0 +1,120 @@
+---
+/**
+ * CC-DEC-104 Evidence Panel — progressive disclosure interim component.
+ * Numbers must come from publication_evidence_panels.json (traceable assets).
+ */
+type CriticalNumber = {
+  label: string;
+  value: string;
+  period?: string;
+  geography?: string;
+  metric_id?: string;
+  source_id?: string;
+  note?: string;
+};
+
+type Panel = {
+  panel_id: string;
+  title: string;
+  reader_question: string;
+  evidence_strength: string;
+  strength_note?: string;
+  what_the_data_show: {
+    key_finding: string;
+    critical_numbers: CriticalNumber[];
+    plain_english: string;
+  };
+  what_supports_this: string[];
+  what_challenges_it: string[];
+  what_we_dont_know: string[];
+  last_updated: { date: string; dataset_or_release: string };
+  explore?: {
+    methodology?: string;
+    import_package?: string;
+    mapping?: string;
+    related_claims?: string[];
+    related_public_reasoning?: string[];
+  };
+  source_ids?: string[];
+  metric_ids?: string[];
+};
+
+interface Props {
+  panel: Panel;
+}
+
+const { panel } = Astro.props;
+const nums = panel.what_the_data_show.critical_numbers || [];
+---
+
+<section class="evidence-panel" aria-labelledby={`${panel.panel_id}-title`}>
+  <header class="evidence-panel__header">
+    <p class="evidence-panel__eyebrow">Evidence Panel · {panel.panel_id}</p>
+    <h2 id={`${panel.panel_id}-title`}>{panel.title}</h2>
+    <p class="evidence-panel__question">
+      <span class="evidence-panel__q-label">Reader question</span>
+      {panel.reader_question}
+    </p>
+  </header>
+
+  <div class="evidence-panel__finding">
+    <h3>What the data show</h3>
+    <p class="evidence-panel__key">{panel.what_the_data_show.key_finding}</p>
+    <ul class="evidence-panel__numbers">
+      {
+        nums.map((n) => (
+          <li>
+            <div class="evidence-panel__value">{n.value}</div>
+            <div class="evidence-panel__label">{n.label}</div>
+            <div class="evidence-panel__meta">
+              {[n.period, n.geography, n.metric_id, n.source_id].filter(Boolean).join(" · ")}
+            </div>
+            {n.note ? <p class="evidence-panel__note">{n.note}</p> : null}
+          </li>
+        ))
+      }
+    </ul>
+    <p>{panel.what_the_data_show.plain_english}</p>
+    <p class="evidence-panel__strength">
+      Evidence strength: <strong>{panel.evidence_strength}</strong>
+      {panel.strength_note ? ` — ${panel.strength_note}` : ""}
+    </p>
+  </div>
+
+  <details class="evidence-panel__explore">
+    <summary>Explore the data</summary>
+    <div class="evidence-panel__explore-body">
+      <h3>What supports this</h3>
+      <ul>
+        {panel.what_supports_this.map((x) => <li>{x}</li>)}
+      </ul>
+      <h3>What challenges it</h3>
+      <ul>
+        {panel.what_challenges_it.map((x) => <li>{x}</li>)}
+      </ul>
+      <h3>What we don’t know</h3>
+      <ul>
+        {panel.what_we_dont_know.map((x) => <li>{x}</li>)}
+      </ul>
+      <p class="muted">
+        Last updated: {panel.last_updated.date} · {panel.last_updated.dataset_or_release}
+      </p>
+      {
+        panel.explore?.related_claims?.length ? (
+          <p>
+            Related claims:{" "}
+            {panel.explore.related_claims.map((id, i) => (
+              <>
+                {i > 0 ? ", " : null}
+                <code>{id}</code>
+              </>
+            ))}
+          </p>
+        ) : null
+      }
+      <p>
+        Standard: <a href="/evidence/methodology/">Evidence methodology</a> · CC-DEC-104
+      </p>
+    </div>
+  </details>
+</section>

@@ -1,5 +1,6 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine, claims, sources, baselineStatus } from "../lib/data";
 import democracy from "../../../../data/project/democracy_framework.json";
 import panels from "../../../../data/project/publication_evidence_panels.json";
@@ -17,6 +18,9 @@ const demSources = (sources.sources || []).filter((s: any) =>
 );
 const politicalMoneyPanel = (panels.panels || []).find(
   (p: { panel_id: string }) => p.panel_id === "CC-EP-DEMOCRACY-POLITICAL-MONEY-1"
+);
+const trustPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-TRUST-AND-BASELINE-DIAL-1"
 );
 ---
 
@@ -60,6 +64,7 @@ const politicalMoneyPanel = (panels.panels || []).find(
     <h2>Foundational principle</h2>
     <p>{democracy.foundational_principle.text}</p>
   </section>
+  {trustPanel ? <EvidencePanel panel={trustPanel} /> : null}
 
   {
     politicalMoneyPanel ? (
