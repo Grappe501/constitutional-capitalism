@@ -875,11 +875,40 @@
   },
   "publication_evidence_upgrade_pass_2": {
     "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0",
-    "status": "PASSED",
+    "status": "CLOSED",
+    "passed": true,
     "panels_total": 9,
     "panels_added": 6,
     "google_civic_bound": false,
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_2_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json",
+    "reopen": false,
+    "closure_rule": "finish → inventory residuals → advance"
+  },
+  "publication_evidence_upgrade_pass_3": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
+    "status": "QUEUED",
+    "mode": "publication_bind_only",
+    "no_new_architecture": true,
+    "do_not_duplicate_pass_2": true,
+    "google_civic_deferred": true,
+    "residuals_from_pass_2_inventory": {
+      "public_reasoning": [
+        "CC-PR-045",
+        "CC-PR-034",
+        "CC-PR-019",
+        "CC-PR-012"
+      ],
+      "wages_productivity_metrics": [
+        "CC-IND-L01",
+        "CC-IND-L02"
+      ],
+      "competition_enforcement_metrics": [
+        "CC-IND-C03"
+      ],
+      "economic_system_pages": "additional bare comparison dossiers beyond Pass 2 binds",
+      "board_twins": "corresponding apps/build-board mirrors for book surfaces already upgraded"
+    },
     "panels_registry": "data/project/publication_evidence_panels.json"
   },
   "progress_markers": {

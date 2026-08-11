@@ -69,6 +69,24 @@ Canonical: `data/project/publication_evidence_panels.json` (v1.1.0)
 
 Highest-reuse prose and publication surfaces now carry claim-adjacent Evidence Panels across the Pass 2 priority list — denser, honest, and still refusing causal overclaim.
 
+## Slice closure
+
+**Pass 2 is CLOSED.** Do not reopen for residual binds. Pattern: finish → inventory residuals → advance.
+
+## Residuals carried intact to Pass 3
+
+Inventory residuals (not a Pass 2 defect list) locked for **`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0`**:
+
+| Residual class | Exact targets |
+|---|---|
+| Public Reasoning | `CC-PR-045`, `CC-PR-034`, `CC-PR-019`, `CC-PR-012` |
+| Wages / productivity | `CC-IND-L01`, `CC-IND-L02` (diagnosis + related PR/manuscript surfaces) |
+| Competition / enforcement | `CC-IND-C03` |
+| Economic-system pages | additional bare comparison dossiers beyond Pass 2 binds |
+| Board twins | corresponding `apps/build-board` mirrors for book surfaces already upgraded |
+
+Rules unchanged: no new architecture; no Pass 2 duplication; Google Civic remains deferred unless an IP-allowed machine is available; disclosure ≠ capture; `CC-CLAIM-003` stays Not Enough Evidence until earned.
+
 ## Exact next slice
 
-**`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0`** — continue remaining high-reuse binds (more diagnosis chapters, remaining system dossiers, board mirrors where book already upgraded), and/or re-run Google Civic from an IP-allowed machine if contest structure is needed on community pages.
+**`CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0`** — convert the residual table above into publication binds only.
