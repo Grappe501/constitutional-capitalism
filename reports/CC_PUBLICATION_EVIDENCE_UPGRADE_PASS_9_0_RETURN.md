@@ -6,6 +6,8 @@
 **Mode:** Credentials follow publication demand → adapter → bind existing panels.  
 **Standard:** CC-DEC-104. No new panels. No baseline ontology promotion.
 
+> **Structural deepen addendum (2026-08-12):** Original Pass 9 structural acceptance tests (QBP community-bank path, HPSA history fail-closed, energy reliability/ownership, campaign-finance registration) completed under CC-DEC-124 / UPD-137. See [`CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_STRUCTURAL_DEEPEN_RETURN.md`](CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_STRUCTURAL_DEEPEN_RETURN.md). Panel count still **18**; baseline **42/64**; dial **43%**.
+
 ## Governing rules
 
 > Credentials follow publication demand; publication demand does not follow credentials.

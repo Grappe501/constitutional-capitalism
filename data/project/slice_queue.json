@@ -1737,6 +1737,36 @@
       "cited_anchors_primary_bind_required"
     ]
   },
+  "publication_pass9_structural_deepen": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0-STRUCTURAL-DEEPEN",
+    "status": "PASSED",
+    "decision_id": "CC-DEC-124",
+    "update_id": "UPD-137",
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_STRUCTURAL_DEEPEN_RETURN.md",
+    "companion_nass_return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_RETURN.md",
+    "artifacts": [
+      "data/project/publication_evidence_panels.json",
+      "data/imports/fdic-qbp/",
+      "data/imports/eia-861/",
+      "data/imports/hrsa-hpsa/",
+      "scripts/pass9_bind_structural_deepen.cjs"
+    ],
+    "panels_total": 18,
+    "baseline": "42/64",
+    "holds": [
+      "overall_percent_held_at_43",
+      "cc_claim_003_nee",
+      "google_civic_deferred",
+      "no_new_panels",
+      "qbp_ne_bankfind_cb1",
+      "generation_ne_reliability_ne_ownership",
+      "hpsa_history_explicitly_missing"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "research_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ]
+  },
   "baseline_definition_locks_next_fills": {
     "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "status": "QUEUED_NEXT_STRUCTURAL",
