@@ -29,8 +29,19 @@ const METRICS = [
   { key: "FARM-OPERATIONS", label: "farm operations", format: "int" },
   { key: "ACRES-OPERATED", label: "acres operated", format: "acres" },
   { key: "AG-PRODUCT-SALES", label: "ag product sales", format: "usd" },
+  { key: "CROP-SALES", label: "crop sales", format: "usd" },
+  { key: "ANIMAL-PRODUCT-SALES", label: "animal product sales", format: "usd" },
   { key: "BROILER-INVENTORY", label: "broiler inventory", format: "int" },
   { key: "CATTLE-COWS-INVENTORY", label: "cattle cows inventory", format: "int" },
+  { key: "CATTLE-INCL-CALVES", label: "cattle incl calves", format: "int" },
+  { key: "HOGS-INVENTORY", label: "hogs inventory", format: "int" },
+  { key: "LAYERS-INVENTORY", label: "layers inventory", format: "int" },
+  { key: "RICE-ACRES", label: "rice acres harvested", format: "acres" },
+  { key: "SOYBEAN-ACRES", label: "soybean acres harvested", format: "acres" },
+  { key: "COTTON-ACRES", label: "cotton acres harvested", format: "acres" },
+  { key: "CORN-GRAIN-ACRES", label: "corn grain acres harvested", format: "acres" },
+  { key: "WHEAT-ACRES", label: "wheat acres harvested", format: "acres" },
+  { key: "HAY-ACRES", label: "hay acres harvested", format: "acres" },
 ];
 
 function seriesById(id, geo) {
@@ -180,6 +191,34 @@ const vbCounty = countyLatest["05141"];
     (c) => !countyLatest[c.fips].metrics["BROILER-INVENTORY"]
   ).map((c) => c.label.replace(" County", ""));
 
+  const cropSalesLine = COUNTIES.map((c) => {
+    const m = countyLatest[c.fips].metrics["CROP-SALES"];
+    return m ? `${c.label.replace(" County", "")} ${fmtUsd(m.value)}` : null;
+  })
+    .filter(Boolean)
+    .join(" · ");
+
+  const animalSalesLine = COUNTIES.map((c) => {
+    const m = countyLatest[c.fips].metrics["ANIMAL-PRODUCT-SALES"];
+    return m ? `${c.label.replace(" County", "")} ${fmtUsd(m.value)}` : null;
+  })
+    .filter(Boolean)
+    .join(" · ");
+
+  const riceLine = COUNTIES.map((c) => {
+    const m = countyLatest[c.fips].metrics["RICE-ACRES"];
+    return m ? `${c.label.replace(" County", "")} ${fmtAcres(m.value)}` : null;
+  })
+    .filter(Boolean)
+    .join(" · ");
+
+  const hayLine = COUNTIES.map((c) => {
+    const m = countyLatest[c.fips].metrics["HAY-ACRES"];
+    return m ? `${c.label.replace(" County", "")} ${fmtAcres(m.value)}` : null;
+  })
+    .filter(Boolean)
+    .join(" · ");
+
   sys.geography_contrast = [
     ...priorGeo,
     {
@@ -201,6 +240,24 @@ const vbCounty = countyLatest["05141"];
       note: "Sales structure ≠ market power ≠ monopsony.",
     },
     {
+      label: "Designated AR counties — crop sales vs animal-product sales",
+      value:
+        cropSalesLine || animalSalesLine
+          ? `Crops: ${cropSalesLine || "sparse"}. Animals: ${animalSalesLine || "sparse"}.`
+          : "NOT ATTACHED",
+      note: "Commodity-mix structure contrast — especially Delta crop counties vs Ozark livestock counties. Not causation.",
+    },
+    {
+      label: "Rice acres harvested (where disclosed)",
+      value: riceLine || "NOT ATTACHED / suppressed across designated set",
+      note: "Rice marks commodity/export structure; absence/suppression in hill counties is structural evidence, not a slogan.",
+    },
+    {
+      label: "Hay acres harvested (where disclosed)",
+      value: hayLine || "NOT ATTACHED",
+      note: "Hay often tracks livestock-oriented counties; complementary to rice/soy contrasts.",
+    },
+    {
       label: "Broiler inventory presence (disclosure-aware)",
       value: `Attached: ${broilerPresent.join(", ") || "none"}. Not attached / suppressed: ${broilerAbsent.join(", ") || "none"}.`,
       note: "Missing cells are disclosure/definition outcomes — not proof of absence of poultry economy narratives.",
@@ -209,12 +266,12 @@ const vbCounty = countyLatest["05141"];
 
   sys.series_note = [
     sys.series_note || "",
-    `County NASS pass attached designated-geography farm-structure histories via ${exportId} (ops/acres/sales/livestock where disclosure-safe). County sales-class economic-class facets returned HTTP 400 and remain blocked. Structure ≠ market power ≠ monopsony ≠ capture.`,
+    `County NASS density pass via ${exportId}: core ops/acres/sales/livestock plus crop/animal sales split, commodity acreage (rice/soy/cotton/corn/wheat/hay), and expanded livestock inventories where disclosure-safe. County sales-class still blocked. Structure ≠ market power ≠ monopsony ≠ capture. NASS shows what happened to structure, not why.`,
   ]
     .filter(Boolean)
     .join(" ");
 
-  sys.series_status = "county_nass_farm_structure_arrays_bound_pass9_retained";
+  sys.series_status = "county_nass_density_bound_pass9_pass10_retained";
   sys.missing_layers = [
     ...(sys.missing_layers || []).filter(
       (m) =>

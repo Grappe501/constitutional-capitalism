@@ -2082,6 +2082,21 @@
             "note": "Economic-class operation shares — not a small-vs-large moral verdict."
           },
           {
+            "label": "Arkansas County vs Van Buren County (ag pair) — 2022 operations",
+            "value": "Arkansas Co 421 vs Van Buren 569",
+            "note": "Commodity/export vs family/livestock/specialty pair — archetypes not locked from this alone."
+          },
+          {
+            "label": "Broiler inventory presence (disclosure-aware)",
+            "value": "Attached: Van Buren, Searcy, Lafayette, White. Not attached / suppressed: Arkansas, Mississippi, Phillips.",
+            "note": "Missing cells are disclosure/definition outcomes — not proof of absence of poultry economy narratives."
+          },
+          {
+            "label": "Per capita personal income",
+            "value": "AR $61,752 vs US $76,328 (2025)",
+            "note": "BEA via FRED; complements county NASS structure, does not explain farm consolidation causes."
+          },
+          {
             "label": "Designated AR counties — 2022 farm operations",
             "value": "Arkansas 421 · Van Buren 569 · Searcy 562 · Mississippi 268 · Lafayette 192 · Phillips 240 · White 1,552",
             "note": "Same Census TOTAL operations definition across counties — structure contrast, not capture."
@@ -2097,18 +2112,28 @@
             "note": "Sales structure ≠ market power ≠ monopsony."
           },
           {
+            "label": "Designated AR counties — crop sales vs animal-product sales",
+            "value": "Crops: Arkansas $328.1M · Van Buren $1.4M · Searcy $1.3M · Mississippi $460.0M · Lafayette $30.3M · Phillips $305.5M · White $62.6M. Animals: Arkansas $618,000 · Van Buren $14.2M · Searcy $32.4M · Mississippi $2.6M · Lafayette $122.2M · Phillips $948,000 · White $173.7M.",
+            "note": "Commodity-mix structure contrast — especially Delta crop counties vs Ozark livestock counties. Not causation."
+          },
+          {
+            "label": "Rice acres harvested (where disclosed)",
+            "value": "Arkansas 85,528 · Mississippi 47,763 · Lafayette 2,613 · Phillips 18,793 · White 7,949",
+            "note": "Rice marks commodity/export structure; absence/suppression in hill counties is structural evidence, not a slogan."
+          },
+          {
+            "label": "Hay acres harvested (where disclosed)",
+            "value": "Arkansas 1,466 · Van Buren 20,905 · Searcy 21,422 · Mississippi 1,022 · Lafayette 14,262 · Phillips 2,625 · White 58,447",
+            "note": "Hay often tracks livestock-oriented counties; complementary to rice/soy contrasts."
+          },
+          {
             "label": "Broiler inventory presence (disclosure-aware)",
             "value": "Attached: Van Buren, Searcy, Lafayette, White. Not attached / suppressed: Arkansas, Mississippi, Phillips.",
             "note": "Missing cells are disclosure/definition outcomes — not proof of absence of poultry economy narratives."
-          },
-          {
-            "label": "Per capita personal income",
-            "value": "AR $61,752 vs US $76,328 (2025)",
-            "note": "BEA via FRED; complements county NASS structure, does not explain farm consolidation causes."
           }
         ],
-        "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture. County NASS pass attached designated-geography farm-structure histories via exp_2849252ba6094615 (ops/acres/sales/livestock where disclosure-safe). County sales-class economic-class facets returned HTTP 400 and remain blocked. Structure ≠ market power ≠ monopsony ≠ capture. Pass 10 adds BEA/FRED AR–US personal income, GDP, and personal saving rate. Macro structure ≠ capture.",
-        "series_status": "county_nass_and_pass10_fred_bea_bound",
+        "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture. County NASS pass attached designated-geography farm-structure histories via exp_2849252ba6094615 (ops/acres/sales/livestock where disclosure-safe). County sales-class economic-class facets returned HTTP 400 and remain blocked. Structure ≠ market power ≠ monopsony ≠ capture. Pass 10 adds BEA/FRED AR–US personal income, GDP, and personal saving rate. Macro structure ≠ capture. County NASS density pass via exp_f456263593194081: core ops/acres/sales/livestock plus crop/animal sales split, commodity acreage (rice/soy/cotton/corn/wheat/hay), and expanded livestock inventories where disclosure-safe. County sales-class still blocked. Structure ≠ market power ≠ monopsony ≠ capture. NASS shows what happened to structure, not why.",
+        "series_status": "county_nass_density_bound_pass9_pass10_retained",
         "missing_layers": [
           "FDIC QBP multi-year community-bank domestic deposit/loan share path — PASS5-DEM-FDIC-PATH (current CB:1 snapshot only)",
           "Hospital-access baseline CM03 (deferred)",
@@ -2116,6 +2141,9 @@
           "Community-level ownership / leakage maps",
           "Operator/producer characteristic time series with locked definitions",
           "Market power / monopsony / political capture evidence (not NASS)",
+          "Operator/producer characteristic time series with locked definitions",
+          "Market power / monopsony / political capture evidence (not NASS)",
+          "Statewide all-county NASS panel (intentionally out of scope)",
           "County sales-class (economic class) facets — Quick Stats 400 at county agg_level in this pass",
           "Operator/producer characteristic time series with locked definitions",
           "Market power / monopsony / political capture evidence (not NASS)",
@@ -3065,1271 +3093,6 @@
             ]
           },
           {
-            "series_id": "CC-COUNTY-NASS-05001-FARM-OPERATIONS",
-            "label": "Arkansas County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "550",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "502",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "539",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "492",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "488",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "421",
-                "geography": "Arkansas County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05001-ACRES-OPERATED",
-            "label": "Arkansas County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "432,816",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "389,894",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "405,103",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "402,159",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "414,354",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "407,865",
-                "geography": "Arkansas County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05001-AG-PRODUCT-SALES",
-            "label": "Arkansas County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$143.7M",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$95.8M",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$180.1M",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$298.2M",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$214.3M",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$328.7M",
-                "geography": "Arkansas County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05001-CATTLE-COWS-INVENTORY",
-            "label": "Arkansas County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "1,780",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "1,290",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "1,273",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "3,035",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "1,445",
-                "geography": "Arkansas County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "879",
-                "geography": "Arkansas County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05141-FARM-OPERATIONS",
-            "label": "Van Buren County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "633",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "603",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "566",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "587",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "611",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "569",
-                "geography": "Van Buren County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05141-ACRES-OPERATED",
-            "label": "Van Buren County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "138,676",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "131,661",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "114,270",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "122,875",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "127,623",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "106,364",
-                "geography": "Van Buren County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05141-AG-PRODUCT-SALES",
-            "label": "Van Buren County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$21.1M",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$15.0M",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$15.5M",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$19.9M",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$16.3M",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$15.6M",
-                "geography": "Van Buren County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05141-BROILER-INVENTORY",
-            "label": "Van Buren County broiler inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 5,
-            "coverage": "1997 → 2017",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "758,208",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "518,454",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "444,009",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "489,312",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "212,110",
-                "geography": "Van Buren County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05141-CATTLE-COWS-INVENTORY",
-            "label": "Van Buren County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "15,677",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "13,111",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "11,925",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "9,151",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "13,198",
-                "geography": "Van Buren County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "10,221",
-                "geography": "Van Buren County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05129-FARM-OPERATIONS",
-            "label": "Searcy County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "677",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "615",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "617",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "592",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "631",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "562",
-                "geography": "Searcy County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05129-ACRES-OPERATED",
-            "label": "Searcy County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "196,817",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "183,472",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "194,963",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "168,795",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "195,438",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "175,165",
-                "geography": "Searcy County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05129-AG-PRODUCT-SALES",
-            "label": "Searcy County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$10.5M",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$9.3M",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$12.3M",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$13.0M",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$18.0M",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$33.7M",
-                "geography": "Searcy County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05129-BROILER-INVENTORY",
-            "label": "Searcy County broiler inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 5,
-            "coverage": "1997 → 2017",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "93",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "28",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "36",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "198",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "217",
-                "geography": "Searcy County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05129-CATTLE-COWS-INVENTORY",
-            "label": "Searcy County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "20,497",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "19,955",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "18,046",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "13,541",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "19,797",
-                "geography": "Searcy County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "16,888",
-                "geography": "Searcy County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05093-FARM-OPERATIONS",
-            "label": "Mississippi County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "496",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "388",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "369",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "347",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "284",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "268",
-                "geography": "Mississippi County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05093-ACRES-OPERATED",
-            "label": "Mississippi County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "503,134",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "468,501",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "461,328",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "475,699",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "476,502",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "515,954",
-                "geography": "Mississippi County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05093-AG-PRODUCT-SALES",
-            "label": "Mississippi County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$171.5M",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$135.5M",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$195.6M",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$314.6M",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$300.9M",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$462.7M",
-                "geography": "Mississippi County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05093-CATTLE-COWS-INVENTORY",
-            "label": "Mississippi County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "1,153",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "449",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "951",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "427",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "180",
-                "geography": "Mississippi County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "724",
-                "geography": "Mississippi County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05073-FARM-OPERATIONS",
-            "label": "Lafayette County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "276",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "284",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "313",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "263",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "287",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "192",
-                "geography": "Lafayette County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05073-ACRES-OPERATED",
-            "label": "Lafayette County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "96,865",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "103,948",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "97,628",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "115,257",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "133,235",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "120,374",
-                "geography": "Lafayette County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05073-AG-PRODUCT-SALES",
-            "label": "Lafayette County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$73.6M",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$77.6M",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$91.3M",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$127.9M",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$119.2M",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$152.4M",
-                "geography": "Lafayette County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05073-BROILER-INVENTORY",
-            "label": "Lafayette County broiler inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "4,418,721",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "4,382,254",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "3,893,952",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "3,518,080",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "3,832,283",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "3,467,115",
-                "geography": "Lafayette County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05073-CATTLE-COWS-INVENTORY",
-            "label": "Lafayette County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "8,454",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "8,875",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "9,890",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "6,971",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "9,882",
-                "geography": "Lafayette County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "11,489",
-                "geography": "Lafayette County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05107-FARM-OPERATIONS",
-            "label": "Phillips County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "347",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "301",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "307",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "282",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "231",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "240",
-                "geography": "Phillips County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05107-ACRES-OPERATED",
-            "label": "Phillips County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "367,054",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "329,021",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "437,274",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "352,363",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "363,415",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "380,542",
-                "geography": "Phillips County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05107-AG-PRODUCT-SALES",
-            "label": "Phillips County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$114.9M",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$83.4M",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$185.1M",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$248.0M",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$189.7M",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$306.5M",
-                "geography": "Phillips County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05107-CATTLE-COWS-INVENTORY",
-            "label": "Phillips County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 5,
-            "coverage": "1997 → 2017",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "2,038",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "802",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "2,004",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "728",
-                "geography": "Phillips County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "895",
-                "geography": "Phillips County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05145-FARM-OPERATIONS",
-            "label": "White County farm operations",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "1,862",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "1,823",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "2,199",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "1,836",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "1,613",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "1,552",
-                "geography": "White County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05145-ACRES-OPERATED",
-            "label": "White County acres operated",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "411,784",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "394,424",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "411,404",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "355,669",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "344,368",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "376,803",
-                "geography": "White County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05145-AG-PRODUCT-SALES",
-            "label": "White County ag product sales",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "$64.5M",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "$50.0M",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "$119.2M",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "$100.4M",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "$124.7M",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "$236.3M",
-                "geography": "White County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05145-BROILER-INVENTORY",
-            "label": "White County broiler inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "622,185",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "564,837",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "1,391,698",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "806,465",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "870,347",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "4,128,849",
-                "geography": "White County, AR"
-              }
-            ]
-          },
-          {
-            "series_id": "CC-COUNTY-NASS-05145-CATTLE-COWS-INVENTORY",
-            "label": "White County cattle cows inventory",
-            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
-            "point_count": 6,
-            "coverage": "1997 → 2022",
-            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
-            "points": [
-              {
-                "period": "1997",
-                "value": "33,483",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2002",
-                "value": "28,196",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2007",
-                "value": "29,451",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2012",
-                "value": "20,635",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2017",
-                "value": "26,869",
-                "geography": "White County, AR"
-              },
-              {
-                "period": "2022",
-                "value": "27,060",
-                "geography": "White County, AR"
-              }
-            ]
-          },
-          {
             "series_id": "CC-PASS10-FRED-BEA-US-PCPI",
             "label": "BEA US per capita personal income (via FRED)",
             "coverage": "1980 → 2025",
@@ -4633,6 +3396,3646 @@
                 "geography": "United States"
               }
             ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-FARM-OPERATIONS",
+            "label": "Arkansas County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "550",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "502",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "539",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "492",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "488",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "421",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-ACRES-OPERATED",
+            "label": "Arkansas County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "432,816",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "389,894",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "405,103",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "402,159",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "414,354",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "407,865",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-AG-PRODUCT-SALES",
+            "label": "Arkansas County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$143.7M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$95.8M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$180.1M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$298.2M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$214.3M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$328.7M",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-CROP-SALES",
+            "label": "Arkansas County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$142.8M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$94.9M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$179.5M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$297.2M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$213.4M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$328.1M",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-ANIMAL-PRODUCT-SALES",
+            "label": "Arkansas County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$874,000",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$854,000",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$529,000",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$1.0M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$841,000",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$618,000",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-CATTLE-COWS-INVENTORY",
+            "label": "Arkansas County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,780",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,290",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,273",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "3,035",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,445",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "879",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-CATTLE-INCL-CALVES",
+            "label": "Arkansas County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,981",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "2,809",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,912",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "4,803",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "2,637",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,729",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-HOGS-INVENTORY",
+            "label": "Arkansas County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 2,
+            "coverage": "1997 → 2002",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "263",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "96",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-LAYERS-INVENTORY",
+            "label": "Arkansas County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "220",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "150",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "337",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "205",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "303",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "192",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-RICE-ACRES",
+            "label": "Arkansas County rice acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "123,297",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "118,452",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "119,918",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "106,190",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "81,070",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "85,528",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-SOYBEAN-ACRES",
+            "label": "Arkansas County soybean acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "212,213",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "185,504",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "205,372",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "188,563",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "205,585",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "194,630",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-COTTON-ACRES",
+            "label": "Arkansas County cotton acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 1,
+            "coverage": "1997 → 1997",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,080",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-CORN-GRAIN-ACRES",
+            "label": "Arkansas County corn grain acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "6,525",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,364",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,502",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "34,038",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "46,585",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "60,131",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-WHEAT-ACRES",
+            "label": "Arkansas County wheat acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "87,849",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "65,031",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "89,630",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "25,935",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "4,523",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,374",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-HAY-ACRES",
+            "label": "Arkansas County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "2,274",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,114",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,677",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,059",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,466",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-FARM-OPERATIONS",
+            "label": "Van Buren County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "633",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "603",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "566",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "587",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "611",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "569",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-ACRES-OPERATED",
+            "label": "Van Buren County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "138,676",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "131,661",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "114,270",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "122,875",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "127,623",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "106,364",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-AG-PRODUCT-SALES",
+            "label": "Van Buren County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$21.1M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$15.0M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$15.5M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$19.9M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$16.3M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$15.6M",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-CROP-SALES",
+            "label": "Van Buren County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$629,000",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$1.1M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$1.3M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$1.1M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$1.1M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$1.4M",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-ANIMAL-PRODUCT-SALES",
+            "label": "Van Buren County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$20.4M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$13.9M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$14.2M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$18.9M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$15.3M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$14.2M",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-BROILER-INVENTORY",
+            "label": "Van Buren County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "758,208",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "518,454",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "444,009",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "489,312",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "212,110",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-CATTLE-COWS-INVENTORY",
+            "label": "Van Buren County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "15,677",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "13,111",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "11,925",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "9,151",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "13,198",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "10,221",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-CATTLE-INCL-CALVES",
+            "label": "Van Buren County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "25,650",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "21,022",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "20,297",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "18,736",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "27,403",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "18,171",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-HOGS-INVENTORY",
+            "label": "Van Buren County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 4,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "9,572",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,103",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "166",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "165",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-LAYERS-INVENTORY",
+            "label": "Van Buren County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "618",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "813",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "983",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,031",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,561",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,760",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-HAY-ACRES",
+            "label": "Van Buren County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "24,002",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "21,002",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "20,685",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "17,364",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "20,905",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-FARM-OPERATIONS",
+            "label": "Searcy County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "677",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "615",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "617",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "592",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "631",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "562",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-ACRES-OPERATED",
+            "label": "Searcy County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "196,817",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "183,472",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "194,963",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "168,795",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "195,438",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "175,165",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-AG-PRODUCT-SALES",
+            "label": "Searcy County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$10.5M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$9.3M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$12.3M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$13.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$18.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$33.7M",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-CROP-SALES",
+            "label": "Searcy County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$348,000",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$378,000",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$719,000",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$1.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$1.3M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$1.3M",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-ANIMAL-PRODUCT-SALES",
+            "label": "Searcy County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$10.2M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$8.9M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$11.5M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$12.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$16.7M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$32.4M",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-BROILER-INVENTORY",
+            "label": "Searcy County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "93",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "28",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "36",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "198",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "217",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-CATTLE-COWS-INVENTORY",
+            "label": "Searcy County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "20,497",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "19,955",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "18,046",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "13,541",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "19,797",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "16,888",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-CATTLE-INCL-CALVES",
+            "label": "Searcy County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "34,903",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "32,591",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "28,798",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "22,954",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "36,252",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "29,618",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-HOGS-INVENTORY",
+            "label": "Searcy County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "3,456",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "974",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "788",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "176",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "116",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-LAYERS-INVENTORY",
+            "label": "Searcy County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "637",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "369",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "650",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "937",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,908",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,093",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-HAY-ACRES",
+            "label": "Searcy County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "20,486",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "20,235",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "18,437",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "24,382",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "21,422",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-FARM-OPERATIONS",
+            "label": "Mississippi County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "496",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "388",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "369",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "347",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "284",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "268",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-ACRES-OPERATED",
+            "label": "Mississippi County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "503,134",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "468,501",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "461,328",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "475,699",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "476,502",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "515,954",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-AG-PRODUCT-SALES",
+            "label": "Mississippi County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$171.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$135.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$195.6M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$314.6M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$300.9M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$462.7M",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-CROP-SALES",
+            "label": "Mississippi County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$170.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$135.3M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$195.0M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$314.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$300.8M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$460.0M",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-ANIMAL-PRODUCT-SALES",
+            "label": "Mississippi County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$944,000",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$256,000",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$612,000",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$183,000",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$84,000",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$2.6M",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-CATTLE-COWS-INVENTORY",
+            "label": "Mississippi County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,153",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "449",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "951",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "427",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "180",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "724",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-CATTLE-INCL-CALVES",
+            "label": "Mississippi County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,945",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "726",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,551",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "673",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "353",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,627",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-HOGS-INVENTORY",
+            "label": "Mississippi County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 1,
+            "coverage": "2007 → 2007",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2007",
+                "value": "10",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-LAYERS-INVENTORY",
+            "label": "Mississippi County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 4,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "18",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "180",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "453",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "45,040",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-RICE-ACRES",
+            "label": "Mississippi County rice acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "18,025",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "41,951",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "36,412",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "37,110",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "51,935",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "47,763",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-SOYBEAN-ACRES",
+            "label": "Mississippi County soybean acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "217,284",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "150,935",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "153,559",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "208,997",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "278,413",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "291,118",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-COTTON-ACRES",
+            "label": "Mississippi County cotton acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "218,860",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "214,888",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "215,681",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "164,871",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "92,385",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "111,518",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-CORN-GRAIN-ACRES",
+            "label": "Mississippi County corn grain acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "10,847",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "10,804",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "23,183",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "20,795",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "17,558",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "21,590",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-WHEAT-ACRES",
+            "label": "Mississippi County wheat acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "47,607",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "34,974",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "24,594",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "26,123",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "9,887",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "13,675",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-HAY-ACRES",
+            "label": "Mississippi County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "1,501",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,116",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,262",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "504",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,022",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-FARM-OPERATIONS",
+            "label": "Lafayette County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "276",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "284",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "313",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "263",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "287",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "192",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-ACRES-OPERATED",
+            "label": "Lafayette County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "96,865",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "103,948",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "97,628",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "115,257",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "133,235",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "120,374",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-AG-PRODUCT-SALES",
+            "label": "Lafayette County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$73.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$77.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$91.3M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$127.9M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$119.2M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$152.4M",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-CROP-SALES",
+            "label": "Lafayette County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$9.5M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$6.7M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$16.2M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$31.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$18.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$30.3M",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-ANIMAL-PRODUCT-SALES",
+            "label": "Lafayette County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$64.1M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$70.9M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$75.1M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$96.3M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$100.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$122.2M",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-BROILER-INVENTORY",
+            "label": "Lafayette County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "4,418,721",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "4,382,254",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,893,952",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "3,518,080",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "3,832,283",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "3,467,115",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-CATTLE-COWS-INVENTORY",
+            "label": "Lafayette County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "8,454",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "8,875",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "9,890",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "6,971",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "9,882",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "11,489",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-CATTLE-INCL-CALVES",
+            "label": "Lafayette County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "28,209",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "31,042",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "24,523",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "30,279",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "32,066",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "26,544",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-HOGS-INVENTORY",
+            "label": "Lafayette County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 3,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "578",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "80",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "90",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-LAYERS-INVENTORY",
+            "label": "Lafayette County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "121,634",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "105,766",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "161,444",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "129,720",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "221",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-RICE-ACRES",
+            "label": "Lafayette County rice acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "3,082",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "3,975",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,618",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "4,052",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "2,613",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-SOYBEAN-ACRES",
+            "label": "Lafayette County soybean acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "17,847",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "7,351",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "4,583",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "10,993",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "15,347",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "10,769",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-COTTON-ACRES",
+            "label": "Lafayette County cotton acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "3,651",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "2,489",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,683",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,312",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "7,191",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-CORN-GRAIN-ACRES",
+            "label": "Lafayette County corn grain acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "3,809",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "9,110",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "11,518",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "14,352",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "11,869",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "11,729",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-WHEAT-ACRES",
+            "label": "Lafayette County wheat acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "7,177",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "8,411",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "9,483",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "7,194",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "3,255",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "2,411",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-HAY-ACRES",
+            "label": "Lafayette County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "11,749",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "10,613",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "12,894",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "15,708",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "14,262",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-FARM-OPERATIONS",
+            "label": "Phillips County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "347",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "301",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "307",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "282",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "231",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "240",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-ACRES-OPERATED",
+            "label": "Phillips County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "367,054",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "329,021",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "437,274",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "352,363",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "363,415",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "380,542",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-AG-PRODUCT-SALES",
+            "label": "Phillips County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$114.9M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$83.4M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$185.1M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$248.0M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$189.7M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$306.5M",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-CROP-SALES",
+            "label": "Phillips County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$114.1M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$82.7M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$184.6M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$247.8M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$189.4M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$305.5M",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-ANIMAL-PRODUCT-SALES",
+            "label": "Phillips County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$724,000",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$647,000",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$489,000",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$239,000",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$292,000",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$948,000",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-CATTLE-COWS-INVENTORY",
+            "label": "Phillips County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,038",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "802",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,004",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "728",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "895",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-CATTLE-INCL-CALVES",
+            "label": "Phillips County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "3,147",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,357",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,358",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "978",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,130",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,875",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-HOGS-INVENTORY",
+            "label": "Phillips County hogs inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 4,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "608",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "311",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "63",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "125",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-LAYERS-INVENTORY",
+            "label": "Phillips County layers inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 3,
+            "coverage": "2012 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2012",
+                "value": "28",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "19",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "56",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-RICE-ACRES",
+            "label": "Phillips County rice acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "17,857",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "34,501",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "27,118",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "17,927",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "13,116",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "18,793",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-SOYBEAN-ACRES",
+            "label": "Phillips County soybean acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "209,238",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "138,126",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "190,744",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "213,333",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "263,390",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "230,493",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-COTTON-ACRES",
+            "label": "Phillips County cotton acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "79,442",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "79,308",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "55,923",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "33,199",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "27,230",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "55,169",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-CORN-GRAIN-ACRES",
+            "label": "Phillips County corn grain acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "12,207",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "20,041",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "90,515",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "48,912",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "34,883",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "43,867",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-WHEAT-ACRES",
+            "label": "Phillips County wheat acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "52,424",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "33,989",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "41,971",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "31,698",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "9,496",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "13,875",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-HAY-ACRES",
+            "label": "Phillips County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "567",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,140",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,258",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "3,484",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "2,625",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-FARM-OPERATIONS",
+            "label": "White County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,862",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,823",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,199",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,836",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,613",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,552",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-ACRES-OPERATED",
+            "label": "White County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "411,784",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "394,424",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "411,404",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "355,669",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "344,368",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "376,803",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-AG-PRODUCT-SALES",
+            "label": "White County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$64.5M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$50.0M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$119.2M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$100.4M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$124.7M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$236.3M",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-CROP-SALES",
+            "label": "White County crop sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$31.4M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$21.4M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$34.2M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$39.1M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$34.2M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$62.6M",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-ANIMAL-PRODUCT-SALES",
+            "label": "White County animal product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$33.0M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$28.6M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$85.0M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$61.3M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$90.5M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$173.7M",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-BROILER-INVENTORY",
+            "label": "White County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "622,185",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "564,837",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,391,698",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "806,465",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "870,347",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "4,128,849",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-CATTLE-COWS-INVENTORY",
+            "label": "White County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "33,483",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "28,196",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "29,451",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "20,635",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "26,869",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "27,060",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-CATTLE-INCL-CALVES",
+            "label": "White County cattle incl calves",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "56,987",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "57,845",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "51,947",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "41,951",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "47,116",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "51,780",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-RICE-ACRES",
+            "label": "White County rice acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "25,231",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "19,498",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "15,158",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "10,042",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "10,857",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "7,949",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-SOYBEAN-ACRES",
+            "label": "White County soybean acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "82,087",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "47,121",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "48,253",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "34,075",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "34,724",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "42,902",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-CORN-GRAIN-ACRES",
+            "label": "White County corn grain acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,031",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "3,981",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,860",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "4,537",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "4,552",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "6,810",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-WHEAT-ACRES",
+            "label": "White County wheat acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "11,418",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "17,287",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "7,513",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "4,118",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,323",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "793",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-HAY-ACRES",
+            "label": "White County hay acres harvested",
+            "source": "USDA NASS Quick Stats via RedDirt exp_f456263593194081",
+            "point_count": 5,
+            "coverage": "2002 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "2002",
+                "value": "54,493",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "55,761",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "45,744",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "55,047",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "58,447",
+                "geography": "White County, AR"
+              }
+            ]
           }
         ]
       },
@@ -4671,55 +7074,55 @@
             "value": "421",
             "period": "2022",
             "geography": "Arkansas County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "Van Buren County farm operations",
             "value": "569",
             "period": "2022",
             "geography": "Van Buren County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "Searcy County farm operations",
             "value": "562",
             "period": "2022",
             "geography": "Searcy County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "Mississippi County farm operations",
             "value": "268",
             "period": "2022",
             "geography": "Mississippi County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "Lafayette County farm operations",
             "value": "192",
             "period": "2022",
             "geography": "Lafayette County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "Phillips County farm operations",
             "value": "240",
             "period": "2022",
             "geography": "Phillips County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           },
           {
             "label": "White County farm operations",
             "value": "1,552",
             "period": "2022",
             "geography": "White County",
-            "note": "NASS Census via exp_2849252ba6094615"
+            "note": "NASS Census via exp_f456263593194081"
           }
         ],
         "plain_english": "Family-farm and rural pages can now show that Arkansas County, Van Buren/Clinton, Searcy, Mississippi, Lafayette, Phillips/West Helena, and White/Rose Bud are different agricultural systems — not interchangeable 'rural Arkansas' — while keeping the hard line that structure evidence is not capture evidence."
       },
       "what_supports_this": [
-        "USDA NASS Quick Stats county Census via RedDirt exp_2849252ba6094615",
+        "USDA NASS Quick Stats county Census via RedDirt exp_f456263593194081",
         "Prior Pass 9 AR/US NASS farm-structure arrays",
         "FDIC BankFind Suite (Pass 8) and Census BDS (Pass 6)"
       ],
@@ -4735,7 +7138,7 @@
       ],
       "last_updated": {
         "date": "2026-08-12",
-        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA + prior county NASS"
+        "dataset_or_release": "County NASS farm-structure arrays bound from exp_f456263593194081"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -6430,7 +8833,7 @@
     },
     "county_nass_farm_structure": {
       "slice_id": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
-      "export_id": "exp_2849252ba6094615",
+      "export_id": "exp_f456263593194081",
       "panels_touched": [
         "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
       ],
@@ -6444,7 +8847,7 @@
         "05107",
         "05145"
       ],
-      "series_bound": 32,
+      "series_bound": 96,
       "sales_class_status": "blocked_http_400_at_county_agg_level",
       "distinction": "farm structure ≠ market power ≠ monopsony ≠ political capture",
       "note": "Designated geographies only. Reusable across family-farm, rural prosperity, food systems, LCL pages via existing panel."
