@@ -29,11 +29,22 @@ type HistoryPoint = {
   source_id?: string;
 };
 
+type SeriesPointBlock = {
+  series_id?: string;
+  label: string;
+  source?: string;
+  point_count?: number;
+  coverage?: string;
+  definition_note?: string;
+  points: HistoryPoint[];
+};
+
 type EvidenceSystem = {
   definition?: string;
   comparison?: ComparisonRow[];
   observation_history?: HistoryPoint[];
   geography_contrast?: ComparisonRow[];
+  series_points?: SeriesPointBlock[];
   missing_layers?: string[];
   series_note?: string;
   series_status?: string;
@@ -131,6 +142,38 @@ const sys = panel.evidence_system;
                 </li>
               ))}
             </ul>
+          </>
+        ) : null}
+        {sys.series_points?.length ? (
+          <>
+            <p class="evidence-panel__sys-label">Attached series points</p>
+            {sys.series_points.map((block) => (
+              <div class="evidence-panel__series-block">
+                <p>
+                  <strong>{block.label}</strong>
+                  <span class="evidence-panel__meta">
+                    {" "}
+                    · {[block.coverage, block.point_count != null ? `${block.point_count} points` : null, block.source]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </span>
+                </p>
+                {block.definition_note ? (
+                  <p class="evidence-panel__note">{block.definition_note}</p>
+                ) : null}
+                <ul class="evidence-panel__history">
+                  {block.points.map((pt) => (
+                    <li>
+                      <strong>{pt.value}</strong>
+                      <span class="evidence-panel__meta">
+                        {" "}
+                        · {[pt.period, pt.geography, pt.note].filter(Boolean).join(" · ")}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </>
         ) : null}
         {sys.geography_contrast?.length ? (

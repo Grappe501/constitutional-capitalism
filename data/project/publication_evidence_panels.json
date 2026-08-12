@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
+  "version": "1.5.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
   "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
@@ -760,7 +760,7 @@
       "evidence_strength": "Strong",
       "strength_note": "Strong for recent official dials (L01/L02). Historical productivity–compensation gap remains a separate BLS/EPI evidence track; EPI secondary must not stand alone. Not a causal capture finding.",
       "what_the_data_show": {
-        "key_finding": "A small labor evidence system shows recent official dials (real AHE +1.1% to Dec 2025; productivity +2.3% in 2024; quits 2.1%) beside nominal CES/CPI levels and a longer BLS-documented productivity–compensation divergence since the 1970s, with EPI secondary endpoints for 1979–2020.",
+        "key_finding": "Current dials remain real AHE +1.1% / productivity +2.3% / quits 2.1%. Pass 6 now attaches multi-year movement: derived Dec-to-Dec real AHE OTY from CES/CPI (2008–2025 span where adjacent years exist), a 1970–2024 Q4 productivity % spine (definitionally distinct from L02), JOLTS Dec quits history, and AR vs US December unemployment paths.",
         "critical_numbers": [
           {
             "label": "Real AHE over-the-year change (CES)",
@@ -822,13 +822,15 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json + reddirt-public-statistics exp_79f42d2fe71f4b69 + CC-SRC-003/004"
+        "dataset_or_release": "reddirt exp_226e711e08704b06 series-arrays"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
         "related_claims": [
           "CC-CLAIM-002"
-        ]
+        ],
+        "import_package": "data/imports/reddirt-public-statistics/",
+        "mapping": "data/imports/reddirt-public-statistics/series-arrays.json"
       },
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
@@ -852,53 +854,277 @@
         ],
         "observation_history": [
           {
-            "period": "1979–2020",
-            "value": "net productivity +61.8% vs typical-worker pay +17.5%",
-            "label": "EPI secondary cumulative endpoints",
+            "period": "2008-M12 vs 2007-M12 → 2023-M12 vs 2022-M12",
+            "value": "16 derived Dec-to-Dec real AHE OTY points attached",
+            "label": "CES/CPI derived wage history",
             "geography": "US",
-            "source_id": "CC-SRC-004",
-            "note": "Secondary methodology — not a federal official series; magnitude contested."
+            "note": "See series_points; not official L01 release table."
           },
           {
-            "period": "post-1970s / 1987–2015",
-            "value": "aggregate + industry compensation lag vs productivity",
-            "label": "BLS gap analysis span",
+            "period": "1970-Q04→2024-Q04",
+            "value": "55 Q4 productivity points",
+            "label": "PRS85006092 Q4 spine",
             "geography": "US",
-            "source_id": "CC-SRC-003",
-            "note": "Primary staff analysis; older than current BLS releases."
+            "note": "Definition break vs L02 annual dial."
           },
           {
-            "period": "2024-M12",
-            "value": "CES AHE $35.69; CPI-U 315.605",
-            "label": "Supporting levels (imported)",
-            "geography": "US",
-            "note": "From reddirt-public-statistics; levels ≠ L01 % change."
-          },
-          {
-            "period": "2025-12 vs 2024-12",
-            "value": "real AHE +1.1%",
-            "label": "Current L01 dial",
-            "geography": "US",
-            "source_id": "CC-SRC-219"
+            "period": "2001-M12→2024-M12",
+            "value": "24 JOLTS Dec points",
+            "label": "JOLTS quits history",
+            "geography": "US"
           }
         ],
         "geography_contrast": [
           {
-            "label": "Unemployment rate (LAUS/CPS, 2024-M12)",
-            "value": "AR 3.7% vs US 4.1%",
-            "note": "Comparable labor-market context only — not an Arkansas real-AHE or productivity dial. Definitions differ from L01/L02."
+            "label": "Unemployment Dec path (AR vs US)",
+            "value": "AR 4.3% (2025-M12) vs US 4.4% (2025-M12)",
+            "note": "Series coverage 2007-M12–2025-M12 (AR) and 2007-M12–2025-M12 (US). Labor-market context only — not L01/L02."
           }
         ],
-        "series_note": "Pass 5 attaches sourced historical endpoints + supporting CES/CPI levels + AR/US unemployment contrast. Full multi-year L01/L02/L04 point arrays remain demanded via RCIP (not inventable from single-period imports).",
-        "series_status": "partial_history_endpoints_attached",
+        "series_note": "Pass 6 attached RedDirt multi-year arrays for CES/CPI-derived real AHE OTY, JOLTS quits, unemployment AR/US, and a Q4 productivity spine. Official L01/L02 release cells remain the current dials; derived/Q4 series are labeled supporting history.",
+        "series_status": "partial_arrays_attached",
         "missing_layers": [
-          "Multi-year real AHE OTY path (L01) — RCIP-DEM-0006 / PASS5-DEM-L01-SERIES",
-          "Multi-decade NFB productivity annual path (L02) — PASS5-DEM-L02-SERIES",
-          "JOLTS quits history from 2000 (L04) — PASS5-DEM-L04-SERIES",
+          "Official BLS Real Earnings L01 multi-year release table (prefer over derived CES/CPI)",
+          "Official annual L02 % path (PRS85006092 Q4 ≠ L02)",
+          "SCF/DFA/CBO/FDIC/HRSA/EIA arrays still blocked without adapters",
           "Arkansas CES real AHE / state productivity analogues (definition lock required)",
           "Official post-2015 industry productivity–compensation update tables"
         ],
-        "qualification": "L01 is mean AHE of jobs, not median/typical-worker pay. EPI endpoints must stay labeled secondary. One-year dials do not close the post-1970s shared-gains debate."
+        "qualification": "L01 remains mean AHE of jobs. Derived CES/CPI OTY is supporting history only. PRS85006092 Q4 is not the L02 annual dial — do not collapse them.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS6-DERIVED-REAL-AHE-OTY",
+            "label": "Derived real AHE Dec-to-Dec % change (CES/CPI)",
+            "source": "RedDirt exp_226e711e08704b06 → CES0500000003 + CUUR0000SA0",
+            "point_count": 16,
+            "coverage": "2008-M12 vs 2007-M12 → 2023-M12 vs 2022-M12",
+            "definition_note": "Supporting derived history. Not a substitute for the official BLS Real Earnings L01 cell.",
+            "points": [
+              {
+                "period": "2012-M12 vs 2011-M12",
+                "value": "0.4%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2013-M12 vs 2012-M12",
+                "value": "0.4%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2014-M12 vs 2013-M12",
+                "value": "1.1%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2015-M12 vs 2014-M12",
+                "value": "1.8%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2016-M12 vs 2015-M12",
+                "value": "0.6%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2017-M12 vs 2016-M12",
+                "value": "0.6%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2018-M12 vs 2017-M12",
+                "value": "1.6%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2019-M12 vs 2018-M12",
+                "value": "0.7%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2020-M12 vs 2019-M12",
+                "value": "4.0%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2021-M12 vs 2020-M12",
+                "value": "-2.0%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2022-M12 vs 2021-M12",
+                "value": "-1.4%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              },
+              {
+                "period": "2023-M12 vs 2022-M12",
+                "value": "0.7%",
+                "geography": "US",
+                "note": "Derived from CES0500000003 / CUUR0000SA0 December levels — supporting history, not a replacement for the official L01 release cell."
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS6-NFB-PRODUCTIVITY-Q4",
+            "label": "NFB productivity % change (Q4, annual rate)",
+            "source": "BLS PRS85006092 via RedDirt",
+            "point_count": 55,
+            "coverage": "1970-Q04 → 2024-Q04",
+            "definition_note": "DEFINITION BREAK vs CC-IND-L02: this is quarterly % change at annual rate (Q4 spine), not the official annual L02 dial.",
+            "points": [
+              {
+                "period": "1970-Q04",
+                "value": "-3.6%",
+                "geography": "US"
+              },
+              {
+                "period": "1974-Q04",
+                "value": "3.6%",
+                "geography": "US"
+              },
+              {
+                "period": "1978-Q04",
+                "value": "2.7%",
+                "geography": "US"
+              },
+              {
+                "period": "1982-Q04",
+                "value": "3.6%",
+                "geography": "US"
+              },
+              {
+                "period": "1987-Q04",
+                "value": "4.1%",
+                "geography": "US"
+              },
+              {
+                "period": "1991-Q04",
+                "value": "1.9%",
+                "geography": "US"
+              },
+              {
+                "period": "1995-Q04",
+                "value": "2.2%",
+                "geography": "US"
+              },
+              {
+                "period": "1999-Q04",
+                "value": "6.1%",
+                "geography": "US"
+              },
+              {
+                "period": "2003-Q04",
+                "value": "3.9%",
+                "geography": "US"
+              },
+              {
+                "period": "2007-Q04",
+                "value": "3.2%",
+                "geography": "US"
+              },
+              {
+                "period": "2012-Q04",
+                "value": "-1.5%",
+                "geography": "US"
+              },
+              {
+                "period": "2016-Q04",
+                "value": "2.7%",
+                "geography": "US"
+              },
+              {
+                "period": "2020-Q04",
+                "value": "-3.2%",
+                "geography": "US"
+              },
+              {
+                "period": "2024-Q04",
+                "value": "1.4%",
+                "geography": "US"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS6-JOLTS-QUITS",
+            "label": "JOLTS quits rate (Dec points where annual absent)",
+            "source": "BLS JTS000000000000000QUR via RedDirt",
+            "point_count": 24,
+            "coverage": "2001-M12 → 2024-M12",
+            "definition_note": "December points used when annual M13 cells are absent — labeled, not interpolated.",
+            "points": [
+              {
+                "period": "2001-M12",
+                "value": "2%",
+                "geography": "US"
+              },
+              {
+                "period": "2003-M12",
+                "value": "1.9%",
+                "geography": "US"
+              },
+              {
+                "period": "2005-M12",
+                "value": "2.1%",
+                "geography": "US"
+              },
+              {
+                "period": "2007-M12",
+                "value": "2%",
+                "geography": "US"
+              },
+              {
+                "period": "2009-M12",
+                "value": "1.4%",
+                "geography": "US"
+              },
+              {
+                "period": "2011-M12",
+                "value": "1.5%",
+                "geography": "US"
+              },
+              {
+                "period": "2014-M12",
+                "value": "1.8%",
+                "geography": "US"
+              },
+              {
+                "period": "2016-M12",
+                "value": "2.1%",
+                "geography": "US"
+              },
+              {
+                "period": "2018-M12",
+                "value": "2.3%",
+                "geography": "US"
+              },
+              {
+                "period": "2020-M12",
+                "value": "2.4%",
+                "geography": "US"
+              },
+              {
+                "period": "2022-M12",
+                "value": "2.7%",
+                "geography": "US"
+              },
+              {
+                "period": "2024-M12",
+                "value": "1.9%",
+                "geography": "US"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -1041,8 +1267,8 @@
             "note": "Federal identities cannot validate Arkansas or national prosperity-tax redesigns."
           }
         ],
-        "series_note": "CBO Historical Budget Data and long-run average tax rates by income group are official. Pass 5 does not invent point arrays; it marks the history layer as demanded.",
-        "series_status": "official_series_available_not_attached",
+        "series_note": "CBO Historical Budget Data and long-run average tax rates by income group are official. Pass 5 does not invent point arrays; it marks the history layer as demanded. Pass 6: adapter still missing — no new arrays attached.",
+        "series_status": "official_series_available_adapter_blocked",
         "missing_layers": [
           "Federal receipts/outlays/debt % GDP multi-decade path — RCIP-DEM-0007 / PASS5-DEM-CBO-BUDGET-HISTORY",
           "CBO average federal tax rates by income group over time — PASS5-DEM-CBO-TAX-RATES",
@@ -1201,8 +1427,8 @@
             "note": "Different ACS products/years — geographic contrast only; do not treat as identical survey cells."
           }
         ],
-        "series_note": "Pass 5 attaches the SCF 2019–2022 episode endpoints and AR/US homeownership contrast. Full SCF triennial table and DFA quarterly path remain demanded.",
-        "series_status": "partial_history_endpoints_attached",
+        "series_note": "Pass 5 attaches the SCF 2019–2022 episode endpoints and AR/US homeownership contrast. Full SCF triennial table and DFA quarterly path remain demanded. Pass 6: adapter still missing — no new arrays attached.",
+        "series_status": "official_series_available_adapter_blocked",
         "missing_layers": [
           "SCF triennial median/mean table 1989–2022 — RCIP-DEM-0001 / PASS5-DEM-SCF-HISTORY",
           "DFA wealth shares quarterly path 1989–present — PASS5-DEM-DFA-PATH",
@@ -1362,35 +1588,174 @@
         ],
         "geography_contrast": [
           {
+            "label": "BDS entry rate latest year (AR vs US)",
+            "value": "AR 9.621% vs US 10.608% (2023)",
+            "note": "Same BDS definition — comparable. Statewide ≠ local community baseline."
+          },
+          {
+            "label": "BDS exit rate latest year (AR vs US)",
+            "value": "AR 8.052% vs US 9.396% (2023)",
+            "note": "Same BDS definition — comparable."
+          },
+          {
             "label": "Rural definition contrast",
             "value": "Census rural 20% vs ERS nonmetro 13.6%",
             "note": "Keep both; never average them."
-          },
-          {
-            "label": "Arkansas statewide ACS5 context (2022)",
-            "value": "pop ~3.02M; median HH income $56,335; poverty 16.2%; LFPR 58.2%; broadband 82.4%",
-            "note": "Statewide context from RedDirt AR import — not Rose Bud/Lewisville community baselines."
-          },
-          {
-            "label": "AR vs US unemployment (2024-M12)",
-            "value": "3.7% vs 4.1%",
-            "note": "Labor-market backdrop only."
           }
         ],
-        "series_note": "Pass 5 attaches definition contrasts, BDS rates, ERS county/hospital history endpoints, and AR ACS context. FDIC QBP multi-year paths and county series remain demanded.",
-        "series_status": "partial_history_endpoints_attached",
+        "series_note": "Pass 6 attached AR and US BDS entry/exit rate histories (2000–2023). FDIC community-bank paths and HPSA arrays remain blocked without adapters.",
+        "series_status": "partial_arrays_attached",
         "missing_layers": [
-          "FDIC QBP community-bank deposit/loan share path — RCIP-DEM-0414 / PASS5-DEM-FDIC-PATH",
-          "BDS ESTABS_* multi-year national + AR paths — PASS5-DEM-BDS-HISTORY",
-          "Decennial rural-share series beyond 2020 — PASS5-DEM-RURAL-SHARE-HISTORY",
+          "FDIC QBP community-bank deposit/loan share path — PASS5-DEM-FDIC-PATH",
+          "HRSA HPSA multi-year / AR designations — PASS5-DEM-HPSA-HISTORY / PASS5-DEM-HPSA-AR",
           "Hospital-access baseline CM03 (deferred)",
           "SBA 7(a)/504 dollar series",
           "Community-level ownership / leakage maps"
         ],
-        "qualification": "These are structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success."
+        "qualification": "These are structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS6-BDS-ENTRY-AR",
+            "label": "Arkansas BDS establishment entry rate",
+            "source": "Census BDS via RedDirt",
+            "point_count": 24,
+            "coverage": "2000→2023",
+            "points": [
+              {
+                "period": "2000",
+                "value": "11.081%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "12.042%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2004",
+                "value": "10.712%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2006",
+                "value": "11.749%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "9.36%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2010",
+                "value": "8.645%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013",
+                "value": "8.708%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "8.52%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "8.717%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2019",
+                "value": "8.765%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2021",
+                "value": "9.606%",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2023",
+                "value": "9.621%",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-IND-B01",
+            "label": "US BDS establishment entry rate (comparison)",
+            "source": "Census BDS via RedDirt",
+            "point_count": 24,
+            "coverage": "2000→2023",
+            "points": [
+              {
+                "period": "2000",
+                "value": "10.848%",
+                "geography": "US"
+              },
+              {
+                "period": "2002",
+                "value": "11.911%",
+                "geography": "US"
+              },
+              {
+                "period": "2004",
+                "value": "11.511%",
+                "geography": "US"
+              },
+              {
+                "period": "2006",
+                "value": "12.495%",
+                "geography": "US"
+              },
+              {
+                "period": "2008",
+                "value": "10.307%",
+                "geography": "US"
+              },
+              {
+                "period": "2010",
+                "value": "9.495%",
+                "geography": "US"
+              },
+              {
+                "period": "2013",
+                "value": "9.807%",
+                "geography": "US"
+              },
+              {
+                "period": "2015",
+                "value": "10.025%",
+                "geography": "US"
+              },
+              {
+                "period": "2017",
+                "value": "9.675%",
+                "geography": "US"
+              },
+              {
+                "period": "2019",
+                "value": "9.613%",
+                "geography": "US"
+              },
+              {
+                "period": "2021",
+                "value": "10.845%",
+                "geography": "US"
+              },
+              {
+                "period": "2023",
+                "value": "10.608%",
+                "geography": "US"
+              }
+            ]
+          }
+        ]
       },
       "what_the_data_show": {
-        "key_finding": "Rural/local-capital evidence now combines Census-rural 20% with ERS nonmetro 13.6% (different definitions), national BDS entry/exit rates, community-bank/credit dials, a 2005–2023 rural-hospital closure count, and Arkansas ACS statewide context — still labeled national/statewide ≠ local.",
+        "key_finding": "Rural/local-capital context now includes Arkansas vs U.S. BDS entry/exit rate histories (2000–2023) beside Census-rural/ERS-nonmetro definition contrasts and single-period local-capital dials. Statewide dynamics ≠ town outcomes; FDIC/HPSA trend arrays still missing.",
         "critical_numbers": [
           {
             "label": "Rural population share",
@@ -1473,7 +1838,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline + arkansas-baseline + BDS rates + CC-SRC-008/009"
+        "dataset_or_release": "reddirt exp_226e711e08704b06 series-arrays"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1535,18 +1900,10 @@
         ],
         "observation_history": [
           {
-            "period": "2023",
-            "value": "790,295 entrants; entry 10.608%; exit 9.396%",
-            "label": "Current BDS dynamics cluster",
-            "geography": "US",
-            "source_id": "CC-SRC-263"
-          },
-          {
-            "period": "FY2024",
-            "value": "20 criminal cases filed",
-            "label": "Current enforcement dial",
-            "geography": "US",
-            "source_id": "CC-SRC-255"
+            "period": "2000–2023",
+            "value": "24 entry-rate / 24 exit-rate / 24 entrant-count points",
+            "label": "BDS annual history attached",
+            "geography": "US"
           }
         ],
         "geography_contrast": [
@@ -1556,19 +1913,227 @@
             "note": "PASS5-DEM-BDS-AR / PASS5-DEM-CR-SAMPLE"
           }
         ],
-        "series_note": "BDS annual history and Economic Census CR tables exist officially. Pass 5 attaches current rate companions only; multi-year CR/markup paths are demanded before competition claims escalate.",
-        "series_status": "partial_history_endpoints_attached",
+        "series_note": "Pass 6 attached Census BDS annual arrays 2000–2023 for entry rate, exit rate, and entrant counts. Enforcement (C03) remains a single-year dial. CR/markup series still missing.",
+        "series_status": "partial_arrays_attached",
         "missing_layers": [
           "Fixed-NAICS multi-year CR4/CR8 sample table — PASS5-DEM-CR-SAMPLE",
           "Markup / price-cost margin comparable series — PASS5-DEM-MARKUPS",
-          "BDS multi-year entry/exit path (US + AR) — PASS5-DEM-BDS-HISTORY",
-          "Labor-market concentration datasets",
-          "Merger retrospective attachments"
+          "DOJ ATR criminal-case multi-year path",
+          "Labor-market concentration datasets"
         ],
-        "qualification": "Do not treat 20 criminal cases as a competitiveness score. Do not invent a national CR4. Entry counts and enforcement counts answer different reader questions."
+        "qualification": "Do not treat 20 criminal cases as a competitiveness score. Do not invent a national CR4. Entry counts and enforcement counts answer different reader questions.",
+        "series_points": [
+          {
+            "series_id": "CC-IND-B01",
+            "label": "US BDS establishment entry rate",
+            "source": "Census BDS via RedDirt",
+            "point_count": 24,
+            "coverage": "2000→2023",
+            "points": [
+              {
+                "period": "2000",
+                "value": "10.848%",
+                "geography": "US"
+              },
+              {
+                "period": "2002",
+                "value": "11.911%",
+                "geography": "US"
+              },
+              {
+                "period": "2004",
+                "value": "11.511%",
+                "geography": "US"
+              },
+              {
+                "period": "2006",
+                "value": "12.495%",
+                "geography": "US"
+              },
+              {
+                "period": "2008",
+                "value": "10.307%",
+                "geography": "US"
+              },
+              {
+                "period": "2010",
+                "value": "9.495%",
+                "geography": "US"
+              },
+              {
+                "period": "2013",
+                "value": "9.807%",
+                "geography": "US"
+              },
+              {
+                "period": "2015",
+                "value": "10.025%",
+                "geography": "US"
+              },
+              {
+                "period": "2017",
+                "value": "9.675%",
+                "geography": "US"
+              },
+              {
+                "period": "2019",
+                "value": "9.613%",
+                "geography": "US"
+              },
+              {
+                "period": "2021",
+                "value": "10.845%",
+                "geography": "US"
+              },
+              {
+                "period": "2023",
+                "value": "10.608%",
+                "geography": "US"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-IND-B02",
+            "label": "US BDS establishment exit rate",
+            "source": "Census BDS via RedDirt",
+            "point_count": 24,
+            "coverage": "2000→2023",
+            "points": [
+              {
+                "period": "2000",
+                "value": "10.022%",
+                "geography": "US"
+              },
+              {
+                "period": "2002",
+                "value": "11.251%",
+                "geography": "US"
+              },
+              {
+                "period": "2004",
+                "value": "9.872%",
+                "geography": "US"
+              },
+              {
+                "period": "2006",
+                "value": "10.073%",
+                "geography": "US"
+              },
+              {
+                "period": "2008",
+                "value": "10.895%",
+                "geography": "US"
+              },
+              {
+                "period": "2010",
+                "value": "10.542%",
+                "geography": "US"
+              },
+              {
+                "period": "2013",
+                "value": "9.205%",
+                "geography": "US"
+              },
+              {
+                "period": "2015",
+                "value": "8.811%",
+                "geography": "US"
+              },
+              {
+                "period": "2017",
+                "value": "9.078%",
+                "geography": "US"
+              },
+              {
+                "period": "2019",
+                "value": "8.537%",
+                "geography": "US"
+              },
+              {
+                "period": "2021",
+                "value": "10.11%",
+                "geography": "US"
+              },
+              {
+                "period": "2023",
+                "value": "9.396%",
+                "geography": "US"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-IND-C02",
+            "label": "US BDS new establishment entrants",
+            "source": "Census BDS via RedDirt",
+            "point_count": 24,
+            "coverage": "2000→2023",
+            "points": [
+              {
+                "period": "2000",
+                "value": "680,795",
+                "geography": "US"
+              },
+              {
+                "period": "2002",
+                "value": "758,902",
+                "geography": "US"
+              },
+              {
+                "period": "2004",
+                "value": "749,769",
+                "geography": "US"
+              },
+              {
+                "period": "2006",
+                "value": "844,274",
+                "geography": "US"
+              },
+              {
+                "period": "2008",
+                "value": "710,589",
+                "geography": "US"
+              },
+              {
+                "period": "2010",
+                "value": "636,620",
+                "geography": "US"
+              },
+              {
+                "period": "2013",
+                "value": "659,947",
+                "geography": "US"
+              },
+              {
+                "period": "2015",
+                "value": "688,197",
+                "geography": "US"
+              },
+              {
+                "period": "2017",
+                "value": "682,347",
+                "geography": "US"
+              },
+              {
+                "period": "2019",
+                "value": "686,264",
+                "geography": "US"
+              },
+              {
+                "period": "2021",
+                "value": "783,793",
+                "geography": "US"
+              },
+              {
+                "period": "2023",
+                "value": "790,295",
+                "geography": "US"
+              }
+            ]
+          }
+        ]
       },
       "what_the_data_show": {
-        "key_finding": "Market-dynamics evidence supports an entry count (~790k), entry/exit rates (10.608%/9.396%), and an enforcement dial (20 DOJ ATR criminal cases). Concentration ratios, markups, and multi-year CR tables remain explicitly missing — enforcement is not competitiveness.",
+        "key_finding": "Market-dynamics evidence now includes BDS histories (entry/exit rates and entrant counts, 2000–2023) beside the FY2024 enforcement dial (20 criminal cases). Latest US entry rate 10.608% vs 10.848% in 2000 — dynamics move over time; still not a competitiveness score or national CR%.",
         "critical_numbers": [
           {
             "label": "New establishment entrants (BDS)",
@@ -1598,7 +2163,7 @@
             "note": "Keep industry CR cells; do not invent a fake national %."
           }
         ],
-        "plain_english": "Pass 5 deepens the dynamics dials with imported BDS rates and keeps the competitiveness gap visible as a data demand, not a filled cell."
+        "plain_english": "Readers can now see establishment dynamics move across two decades. Entry/exit histories still do not measure markups or industry concentration."
       },
       "what_supports_this": [
         "Census BDS",
@@ -1617,7 +2182,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "reddirt BDS rates + national_baseline C02/C03"
+        "dataset_or_release": "reddirt exp_226e711e08704b06 series-arrays"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1688,8 +2253,8 @@
             "note": "Demand PASS5-DEM-HPSA-AR — do not invent from national 22%."
           }
         ],
-        "series_note": "Pass 5 attaches the multi-year rural-hospital closure count beside the current HPSA dial. Multi-year HPSA population-share arrays remain demanded.",
-        "series_status": "partial_history_endpoints_attached",
+        "series_note": "Pass 5 attaches the multi-year rural-hospital closure count beside the current HPSA dial. Multi-year HPSA population-share arrays remain demanded. Pass 6: adapter still missing — no new arrays attached.",
+        "series_status": "official_series_available_adapter_blocked",
         "missing_layers": [
           "HRSA primary-care HPSA population-share multi-year array — RCIP-DEM-0412 / PASS5-DEM-HPSA-HISTORY",
           "Arkansas HPSA share and county designations — PASS5-DEM-HPSA-AR",
@@ -1934,8 +2499,8 @@
             "note": "PASS5-DEM-ENERGY-AR — do not invent from national endpoints."
           }
         ],
-        "series_note": "Pass 5 publishes sourced structural endpoints and the LNG mini-history already in the registry, then routes the remaining energy desert through the public-statistics demand backlog rather than decorating the page with unsourced series.",
-        "series_status": "structural_endpoints_partial_history",
+        "series_note": "Pass 6 attempted RCIP-DEM-0418–0425 retrieval: blocked — no EIA connector/API key path in RedDirt RCIP spine yet. Structural endpoints from CC-SRC-056–061 remain; full MER/electricity/trade arrays not attached.",
+        "series_status": "structural_endpoints_eia_arrays_blocked",
         "missing_layers": [
           "Primary energy production/consumption/net exports annual quads path — PASS5-DEM-ENERGY-MER",
           "Electricity net generation annual path + capacity — PASS5-DEM-ENERGY-ELEC",
@@ -2009,7 +2574,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "source_registry CC-SRC-056–061 (no energy baseline slots)"
+        "dataset_or_release": "Pass 6 — EIA adapter pending; export exp_226e711e08704b06 has no energy series"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -2018,19 +2583,21 @@
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
     "panels_total": 18,
-    "panels_added_pass_5": 1,
-    "systems_deepened_pass_5": 6,
-    "preference": "depth_over_panel_count",
-    "google_civic_bound": false,
-    "energy_baseline_bound": false,
-    "energy_structural_panel_bound": true,
-    "note": "Turn snapshots into histories where sourced endpoints exist; route deserts through data-demand backlog."
+    "panels_added_pass_6": 0,
+    "systems_deepened_with_arrays": 3,
+    "export_id": "exp_226e711e08704b06",
+    "observation_count": 284,
+    "preference": "retrieval_and_binding_no_new_panels",
+    "energy_rcip_0418_0425": "blocked_no_eia_adapter",
+    "baseline_impact": "none — no ontology promotion",
+    "note": "Attached BLS/Census multi-year arrays into wages, market-dynamics, and rural systems. SCF/DFA/CBO/FDIC/HRSA/EIA still blocked."
   },
   "pass_1_panels": 3,
   "pass_2_panels": 9,
   "pass_4_rule": "Prefer a small evidence system over isolated headline numbers whenever the data permit it (definition + comparison + series status + qualification + source).",
   "pass_3_panels": 11,
-  "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing."
+  "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing.",
+  "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels."
 }

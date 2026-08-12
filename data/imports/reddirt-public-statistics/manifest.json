@@ -1,6 +1,6 @@
 {
-  "export_id": "exp_79f42d2fe71f4b69",
-  "generated_at": "2026-08-10T17:57:31.109Z",
+  "export_id": "exp_226e711e08704b06",
+  "generated_at": "2026-08-12T02:37:19.535Z",
   "source_database": "RedDirt public_statistics / file warehouse export",
   "source_agencies": [
     "United States Census Bureau",
@@ -13,22 +13,25 @@
     "cpi",
     "ces",
     "bds",
-    "cps_voting_p20_587"
+    "cps_voting_p20_587",
+    "jolts",
+    "productivity"
   ],
-  "series_count": 15,
-  "observation_count": 16,
-  "minimum_period": "2022",
-  "maximum_period": "2024-M12",
+  "series_count": 17,
+  "observation_count": 284,
+  "minimum_period": "1970-Q04",
+  "maximum_period": "2025-M12",
   "validation_status": "passed",
   "contract_version": "1.0",
   "reddirt_commit": null,
-  "constitutional_capitalism_import_commit": "75281f5",
-  "git_commit": "75281f5",
+  "constitutional_capitalism_import_commit": "8a879ef",
+  "git_commit": "8a879ef",
   "boundary_attestation": {
     "contains_campaign_data": false,
     "contains_personal_data": false,
     "contains_api_keys": false,
     "public_statistics_only": true
   },
-  "note": "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate."
+  "series_arrays_present": true,
+  "note": "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate. Pass 6 series-arrays bind to evidence systems separately — not automatic baseline promotion."
 }

@@ -38,6 +38,8 @@ const required = [
   "limitations.json",
   "validation-report.json",
 ];
+/** Optional Pass 6+ multi-period arrays — included in checksum when present in export. */
+const optional = ["series-arrays.json"];
 
 const PROHIBITED = [
   /email/i,
@@ -77,6 +79,12 @@ const files = {};
 for (const file of required) {
   files[file] = JSON.parse(fs.readFileSync(path.join(from, file), "utf8"));
 }
+for (const file of optional) {
+  const p = path.join(from, file);
+  if (fs.existsSync(p)) {
+    files[file] = JSON.parse(fs.readFileSync(p, "utf8"));
+  }
+}
 
 const manifest = files["manifest.json"];
 if (manifest.contract_version !== "1.0") {
@@ -100,7 +108,7 @@ function scan(node, trail) {
 }
 for (const [name, payload] of Object.entries(files)) scan(payload, name);
 
-const ordered = required
+const ordered = Object.keys(files)
   .filter((f) => f !== "manifest.json")
   .sort()
   .map((f) => JSON.stringify(files[f]));
@@ -110,7 +118,7 @@ if (manifest.checksum && manifest.checksum !== checksum) {
 }
 
 fs.mkdirSync(dest, { recursive: true });
-for (const file of required) {
+for (const file of Object.keys(files)) {
   if (file === "manifest.json") continue;
   fs.writeFileSync(path.join(dest, file), JSON.stringify(files[file], null, 2) + "\n", "utf8");
 }
@@ -136,7 +144,8 @@ const ccManifest = {
     contains_api_keys: false,
     public_statistics_only: true,
   },
-  note: "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate.",
+  series_arrays_present: Boolean(files["series-arrays.json"]),
+  note: "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate. Pass 6 series-arrays bind to evidence systems separately — not automatic baseline promotion.",
 };
 
 fs.writeFileSync(path.join(dest, "manifest.json"), JSON.stringify(ccManifest, null, 2) + "\n", "utf8");

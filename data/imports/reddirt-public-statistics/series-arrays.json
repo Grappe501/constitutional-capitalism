@@ -1,0 +1,1689 @@
+{
+  "contract_note": "Multi-period observation arrays for publication evidence systems. Do not interpolate missing periods. Do not collapse AR/US unless definitions match.",
+  "series": [
+    {
+      "consumer_metric_id": "CC-BASELINE-POP-001",
+      "series_code": "B01003_001E",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 331097593,
+          "observation_id": "obs_90e79e2a2b334c0b"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-POP-002",
+      "series_code": "B01003_001E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 3018669,
+          "observation_id": "obs_f737d6b98a074e99"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-INC-001",
+      "series_code": "B19013_001E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 56335,
+          "observation_id": "obs_b78cbdfcb0fd4c62"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-POV-001",
+      "series_code": "S1701_C03_001E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 16.2,
+          "observation_id": "obs_1d476390a033471b"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-EDU-001",
+      "series_code": "B15003_022E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 317437,
+          "observation_id": "obs_2716055bf6694c61"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-LF-001",
+      "series_code": "S2301_C02_001E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 58.2,
+          "observation_id": "obs_347ef01d1ed34958"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-OWN-001",
+      "series_code": "DP04_0046PE",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 66.2,
+          "observation_id": "obs_567d60a45fcb4c04"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-BB-001",
+      "series_code": "S2801_C02_014E",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "acs5",
+      "source_agency": "United States Census Bureau",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2022",
+          "value": 82.4,
+          "observation_id": "obs_4544088e19bb44cc"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-UNEMP-001",
+      "series_code": "LNS14000000",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "laus_cps",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2024-M12",
+          "value": 4.1,
+          "observation_id": "obs_f42ac1e52eea4fe8"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-UNEMP-002",
+      "series_code": "LASST050000000000003",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "laus",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2024-M12",
+          "value": 3.7,
+          "observation_id": "obs_bb2fecb63a194a44"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-CPI-001",
+      "series_code": "CUUR0000SA0",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "cpi",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2024-M12",
+          "value": 315.605,
+          "observation_id": "obs_d74c9ec9f23c4db9"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-BASELINE-EARN-001",
+      "series_code": "CES0500000003",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "ces",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2024-M12",
+          "value": 35.69,
+          "observation_id": "obs_1d8ddebc745249eb"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-IND-B01",
+      "series_code": "ESTABS_ENTRY_RATE",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "bds",
+      "source_agency": "United States Census Bureau",
+      "unit": "percent",
+      "points": [
+        {
+          "period": "2000",
+          "value": 10.848,
+          "observation_id": "obs_d036ed727808479d"
+        },
+        {
+          "period": "2001",
+          "value": 10.99,
+          "observation_id": "obs_661f129493f34e2c"
+        },
+        {
+          "period": "2002",
+          "value": 11.911,
+          "observation_id": "obs_281d8db0ad5044e6"
+        },
+        {
+          "period": "2003",
+          "value": 11.425,
+          "observation_id": "obs_7503812754cf42c1"
+        },
+        {
+          "period": "2004",
+          "value": 11.511,
+          "observation_id": "obs_5a9f1d52002a444d"
+        },
+        {
+          "period": "2005",
+          "value": 11.615,
+          "observation_id": "obs_12e4a81099224c25"
+        },
+        {
+          "period": "2006",
+          "value": 12.495,
+          "observation_id": "obs_8c929aa738a441b0"
+        },
+        {
+          "period": "2007",
+          "value": 11.761,
+          "observation_id": "obs_2566876591ef4c93"
+        },
+        {
+          "period": "2008",
+          "value": 10.307,
+          "observation_id": "obs_6021596c54cd40b2"
+        },
+        {
+          "period": "2009",
+          "value": 9.281,
+          "observation_id": "obs_d19565da37164144"
+        },
+        {
+          "period": "2010",
+          "value": 9.495,
+          "observation_id": "obs_0ee710e5240446f4"
+        },
+        {
+          "period": "2011",
+          "value": 9.886,
+          "observation_id": "obs_eb9ea09effe54cca"
+        },
+        {
+          "period": "2012",
+          "value": 10.018,
+          "observation_id": "obs_d6c3618f97e54245"
+        },
+        {
+          "period": "2013",
+          "value": 9.807,
+          "observation_id": "obs_dc85e940186f4df8"
+        },
+        {
+          "period": "2014",
+          "value": 9.906,
+          "observation_id": "obs_801bac9aaa0b47aa"
+        },
+        {
+          "period": "2015",
+          "value": 10.025,
+          "observation_id": "obs_21107034e8df44eb"
+        },
+        {
+          "period": "2016",
+          "value": 10.194,
+          "observation_id": "obs_03963820b82c45d4"
+        },
+        {
+          "period": "2017",
+          "value": 9.675,
+          "observation_id": "obs_3140e7f0e5e64f86"
+        },
+        {
+          "period": "2018",
+          "value": 9.414,
+          "observation_id": "obs_b67025eedadc469e"
+        },
+        {
+          "period": "2019",
+          "value": 9.613,
+          "observation_id": "obs_d418e67c26934d4d"
+        },
+        {
+          "period": "2020",
+          "value": 9.637,
+          "observation_id": "obs_5a5ca8dc67fc4cf2"
+        },
+        {
+          "period": "2021",
+          "value": 10.845,
+          "observation_id": "obs_835d200d349a4917"
+        },
+        {
+          "period": "2022",
+          "value": 11.651,
+          "observation_id": "obs_6ef4faf6cbfe4d03"
+        },
+        {
+          "period": "2023",
+          "value": 10.608,
+          "observation_id": "obs_776eaece2a0847f3"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-IND-B02",
+      "series_code": "ESTABS_EXIT_RATE",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "bds",
+      "source_agency": "United States Census Bureau",
+      "unit": "percent",
+      "points": [
+        {
+          "period": "2000",
+          "value": 10.022,
+          "observation_id": "obs_c0c4089c202242f3"
+        },
+        {
+          "period": "2001",
+          "value": 10.472,
+          "observation_id": "obs_ca6b85f32e59432c"
+        },
+        {
+          "period": "2002",
+          "value": 11.251,
+          "observation_id": "obs_20cc35555639493f"
+        },
+        {
+          "period": "2003",
+          "value": 10.356,
+          "observation_id": "obs_bd77db8cfe5b4368"
+        },
+        {
+          "period": "2004",
+          "value": 9.872,
+          "observation_id": "obs_33bad10026ef4d0b"
+        },
+        {
+          "period": "2005",
+          "value": 9.98,
+          "observation_id": "obs_ceaf12ae0a1742cf"
+        },
+        {
+          "period": "2006",
+          "value": 10.073,
+          "observation_id": "obs_31735771fd6a4ae0"
+        },
+        {
+          "period": "2007",
+          "value": 10.584,
+          "observation_id": "obs_be091b9bbcce432d"
+        },
+        {
+          "period": "2008",
+          "value": 10.895,
+          "observation_id": "obs_e2fbea11c9534f81"
+        },
+        {
+          "period": "2009",
+          "value": 11.622,
+          "observation_id": "obs_91ac63ff82694abc"
+        },
+        {
+          "period": "2010",
+          "value": 10.542,
+          "observation_id": "obs_3af06aef20ac4d8a"
+        },
+        {
+          "period": "2011",
+          "value": 9.938,
+          "observation_id": "obs_0a3b5d8b22904fa6"
+        },
+        {
+          "period": "2012",
+          "value": 9.332,
+          "observation_id": "obs_836d6694929a43b2"
+        },
+        {
+          "period": "2013",
+          "value": 9.205,
+          "observation_id": "obs_af81a51382a14dc2"
+        },
+        {
+          "period": "2014",
+          "value": 8.853,
+          "observation_id": "obs_4a6f283813b94073"
+        },
+        {
+          "period": "2015",
+          "value": 8.811,
+          "observation_id": "obs_d4ebdc0fd1334b80"
+        },
+        {
+          "period": "2016",
+          "value": 8.393,
+          "observation_id": "obs_9e8017cef4724a83"
+        },
+        {
+          "period": "2017",
+          "value": 9.078,
+          "observation_id": "obs_fc375367b2f44086"
+        },
+        {
+          "period": "2018",
+          "value": 8.902,
+          "observation_id": "obs_22f30d05a1f043a4"
+        },
+        {
+          "period": "2019",
+          "value": 8.537,
+          "observation_id": "obs_1a203c3efbc14207"
+        },
+        {
+          "period": "2020",
+          "value": 9.29,
+          "observation_id": "obs_9227586c72c84b5a"
+        },
+        {
+          "period": "2021",
+          "value": 10.11,
+          "observation_id": "obs_d4f1ccd94aa74886"
+        },
+        {
+          "period": "2022",
+          "value": 9.512,
+          "observation_id": "obs_43427aaf8fe24624"
+        },
+        {
+          "period": "2023",
+          "value": 9.396,
+          "observation_id": "obs_01c668577cce4129"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-IND-C02",
+      "series_code": "ESTABS_ENTRY",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "bds",
+      "source_agency": "United States Census Bureau",
+      "unit": "count",
+      "points": [
+        {
+          "period": "2000",
+          "value": 680795,
+          "observation_id": "obs_9a9809696e394ac4"
+        },
+        {
+          "period": "2001",
+          "value": 694163,
+          "observation_id": "obs_cfbcc56fcb2d4074"
+        },
+        {
+          "period": "2002",
+          "value": 758902,
+          "observation_id": "obs_577dba6373f14d0c"
+        },
+        {
+          "period": "2003",
+          "value": 734050,
+          "observation_id": "obs_d54fd217aad14b2e"
+        },
+        {
+          "period": "2004",
+          "value": 749769,
+          "observation_id": "obs_d305900c331f4099"
+        },
+        {
+          "period": "2005",
+          "value": 769042,
+          "observation_id": "obs_e12603996415453d"
+        },
+        {
+          "period": "2006",
+          "value": 844274,
+          "observation_id": "obs_da387b25f4184be6"
+        },
+        {
+          "period": "2007",
+          "value": 808797,
+          "observation_id": "obs_702e880170ea4a6c"
+        },
+        {
+          "period": "2008",
+          "value": 710589,
+          "observation_id": "obs_6440d17fe6ab41e2"
+        },
+        {
+          "period": "2009",
+          "value": 632741,
+          "observation_id": "obs_2c91c888d4054953"
+        },
+        {
+          "period": "2010",
+          "value": 636620,
+          "observation_id": "obs_0e1a891bf89e4bac"
+        },
+        {
+          "period": "2011",
+          "value": 659127,
+          "observation_id": "obs_31a17f72d6ee4fa8"
+        },
+        {
+          "period": "2012",
+          "value": 669983,
+          "observation_id": "obs_70d00b8976d342f7"
+        },
+        {
+          "period": "2013",
+          "value": 659947,
+          "observation_id": "obs_4a22346124204b53"
+        },
+        {
+          "period": "2014",
+          "value": 672292,
+          "observation_id": "obs_c58dbed006a049a6"
+        },
+        {
+          "period": "2015",
+          "value": 688197,
+          "observation_id": "obs_04fa27e65e084b08"
+        },
+        {
+          "period": "2016",
+          "value": 710442,
+          "observation_id": "obs_f59cbc6edf3941f3"
+        },
+        {
+          "period": "2017",
+          "value": 682347,
+          "observation_id": "obs_c4f6fbf98f614e69"
+        },
+        {
+          "period": "2018",
+          "value": 666736,
+          "observation_id": "obs_24e89f29548a44ab"
+        },
+        {
+          "period": "2019",
+          "value": 686264,
+          "observation_id": "obs_185858c0b4f74701"
+        },
+        {
+          "period": "2020",
+          "value": 692739,
+          "observation_id": "obs_9255829ca38d4272"
+        },
+        {
+          "period": "2021",
+          "value": 783793,
+          "observation_id": "obs_29a329ef37ae4720"
+        },
+        {
+          "period": "2022",
+          "value": 854030,
+          "observation_id": "obs_cff186a4e5024ae6"
+        },
+        {
+          "period": "2023",
+          "value": 790295,
+          "observation_id": "obs_30ad90977a5349e5"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-IND-HC07",
+      "series_code": "citizen_voted_percent_18_to_24",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "cps_voting_p20_587",
+      "source_agency": "United States Census Bureau",
+      "unit": "percent",
+      "points": [
+        {
+          "period": "2024",
+          "value": 47.7,
+          "observation_id": "obs_df024ceab3464c30"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-CES-AHE-LEVEL",
+      "series_code": "CES0500000003",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "ces",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2007-M12",
+          "value": 21.16,
+          "observation_id": "obs_f731d19ae8f146bf"
+        },
+        {
+          "period": "2008-M12",
+          "value": 21.95,
+          "observation_id": "obs_eee77987e3b94a7c"
+        },
+        {
+          "period": "2009-M12",
+          "value": 22.37,
+          "observation_id": "obs_806095efc318431e"
+        },
+        {
+          "period": "2010-M12",
+          "value": 22.76,
+          "observation_id": "obs_392261d8ca8c43df"
+        },
+        {
+          "period": "2011-M12",
+          "value": 23.22,
+          "observation_id": "obs_216d1a2b0efc433b"
+        },
+        {
+          "period": "2012-M12",
+          "value": 23.72,
+          "observation_id": "obs_c4d1ed4592ee4186"
+        },
+        {
+          "period": "2013-M12",
+          "value": 24.18,
+          "observation_id": "obs_c79cf5236e244224"
+        },
+        {
+          "period": "2014-M12",
+          "value": 24.63,
+          "observation_id": "obs_5274fc9f805946b4"
+        },
+        {
+          "period": "2015-M12",
+          "value": 25.25,
+          "observation_id": "obs_de6ddeda94c6457e"
+        },
+        {
+          "period": "2016-M12",
+          "value": 25.93,
+          "observation_id": "obs_5d0494b407044217"
+        },
+        {
+          "period": "2017-M12",
+          "value": 26.63,
+          "observation_id": "obs_47a5feb5c010480b"
+        },
+        {
+          "period": "2018-M12",
+          "value": 27.56,
+          "observation_id": "obs_593bf3cda4be4f14"
+        },
+        {
+          "period": "2019-M12",
+          "value": 28.38,
+          "observation_id": "obs_97f8f72b26354665"
+        },
+        {
+          "period": "2020-M12",
+          "value": 29.91,
+          "observation_id": "obs_e01d8bc15b0d4f51"
+        },
+        {
+          "period": "2021-M12",
+          "value": 31.39,
+          "observation_id": "obs_d3294821bc5d4c1f"
+        },
+        {
+          "period": "2022-M12",
+          "value": 32.94,
+          "observation_id": "obs_fc7ac426b14f477d"
+        },
+        {
+          "period": "2023-M12",
+          "value": 34.29,
+          "observation_id": "obs_e3aac89e036f4958"
+        },
+        {
+          "period": "2025-M12",
+          "value": 37.02,
+          "observation_id": "obs_40b7b7ee14ab4656"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-CPI-U",
+      "series_code": "CUUR0000SA0",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "cpi",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2007-M12",
+          "value": 210.036,
+          "observation_id": "obs_c2a278ef664a4a65"
+        },
+        {
+          "period": "2008-M12",
+          "value": 210.228,
+          "observation_id": "obs_a03ba117e0fb4991"
+        },
+        {
+          "period": "2009-M12",
+          "value": 215.949,
+          "observation_id": "obs_efbc8fef9a3b4a76"
+        },
+        {
+          "period": "2010-M12",
+          "value": 219.179,
+          "observation_id": "obs_c8be47aa0fb14f33"
+        },
+        {
+          "period": "2011-M12",
+          "value": 225.672,
+          "observation_id": "obs_617237e09cd2461f"
+        },
+        {
+          "period": "2012-M12",
+          "value": 229.601,
+          "observation_id": "obs_3bddb95c4f9b476c"
+        },
+        {
+          "period": "2013-M12",
+          "value": 233.049,
+          "observation_id": "obs_bc644910a3ad4885"
+        },
+        {
+          "period": "2014-M12",
+          "value": 234.812,
+          "observation_id": "obs_2b0318402dbb4eb1"
+        },
+        {
+          "period": "2015-M12",
+          "value": 236.525,
+          "observation_id": "obs_f417bc19d68248f9"
+        },
+        {
+          "period": "2016-M12",
+          "value": 241.432,
+          "observation_id": "obs_540421e8024545b2"
+        },
+        {
+          "period": "2017-M12",
+          "value": 246.524,
+          "observation_id": "obs_a9f5395252f7477f"
+        },
+        {
+          "period": "2018-M12",
+          "value": 251.233,
+          "observation_id": "obs_623a03f56be1471c"
+        },
+        {
+          "period": "2019-M12",
+          "value": 256.974,
+          "observation_id": "obs_ca98bc36d3cc4272"
+        },
+        {
+          "period": "2020-M12",
+          "value": 260.474,
+          "observation_id": "obs_9a68b0c384f44630"
+        },
+        {
+          "period": "2021-M12",
+          "value": 278.802,
+          "observation_id": "obs_70aec8f815844d68"
+        },
+        {
+          "period": "2022-M12",
+          "value": 296.797,
+          "observation_id": "obs_32856b4ace94458a"
+        },
+        {
+          "period": "2023-M12",
+          "value": 306.746,
+          "observation_id": "obs_770343b4083948b9"
+        },
+        {
+          "period": "2025-M12",
+          "value": 324.054,
+          "observation_id": "obs_1ec964830f484a49"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-JOLTS-QUITS",
+      "series_code": "JTS000000000000000QUR",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "jolts",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2001-M12",
+          "value": 2,
+          "observation_id": "obs_29b6f531895d4a40"
+        },
+        {
+          "period": "2002-M12",
+          "value": 1.9,
+          "observation_id": "obs_ee0733ed91b3480c"
+        },
+        {
+          "period": "2003-M12",
+          "value": 1.9,
+          "observation_id": "obs_b569f4287da04aff"
+        },
+        {
+          "period": "2004-M12",
+          "value": 2,
+          "observation_id": "obs_ffac36fe29104633"
+        },
+        {
+          "period": "2005-M12",
+          "value": 2.1,
+          "observation_id": "obs_8325bd5da02248c5"
+        },
+        {
+          "period": "2006-M12",
+          "value": 2.2,
+          "observation_id": "obs_ee34e04e44d5420a"
+        },
+        {
+          "period": "2007-M12",
+          "value": 2,
+          "observation_id": "obs_b292009aa10b4fc4"
+        },
+        {
+          "period": "2008-M12",
+          "value": 1.5,
+          "observation_id": "obs_9562a3dbc95e43a7"
+        },
+        {
+          "period": "2009-M12",
+          "value": 1.4,
+          "observation_id": "obs_3a67fb5126324c53"
+        },
+        {
+          "period": "2010-M12",
+          "value": 1.5,
+          "observation_id": "obs_c8cee344ec6c4ff8"
+        },
+        {
+          "period": "2011-M12",
+          "value": 1.5,
+          "observation_id": "obs_8f07e2d149d14727"
+        },
+        {
+          "period": "2012-M12",
+          "value": 1.5,
+          "observation_id": "obs_e438c660850049d2"
+        },
+        {
+          "period": "2013-M12",
+          "value": 1.7,
+          "observation_id": "obs_4fcd4126dfd14193"
+        },
+        {
+          "period": "2014-M12",
+          "value": 1.8,
+          "observation_id": "obs_8340599ad61b448d"
+        },
+        {
+          "period": "2015-M12",
+          "value": 2.1,
+          "observation_id": "obs_4f285b49fe134d7f"
+        },
+        {
+          "period": "2016-M12",
+          "value": 2.1,
+          "observation_id": "obs_1834403b519b422e"
+        },
+        {
+          "period": "2017-M12",
+          "value": 2.2,
+          "observation_id": "obs_cc3be25f8fd842c0"
+        },
+        {
+          "period": "2018-M12",
+          "value": 2.3,
+          "observation_id": "obs_88193dbb5b684ab9"
+        },
+        {
+          "period": "2019-M12",
+          "value": 2.3,
+          "observation_id": "obs_3d0b48521abc47ac"
+        },
+        {
+          "period": "2020-M12",
+          "value": 2.4,
+          "observation_id": "obs_b454c05235e14727"
+        },
+        {
+          "period": "2021-M12",
+          "value": 2.9,
+          "observation_id": "obs_66d54a12dad741c8"
+        },
+        {
+          "period": "2022-M12",
+          "value": 2.7,
+          "observation_id": "obs_e0002bfe272c4dce"
+        },
+        {
+          "period": "2023-M12",
+          "value": 2.2,
+          "observation_id": "obs_51817fccfdd04371"
+        },
+        {
+          "period": "2024-M12",
+          "value": 1.9,
+          "observation_id": "obs_6593c65490064bef"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-UNEMP-US",
+      "series_code": "LNS14000000",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "laus_cps",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2007-M12",
+          "value": 5,
+          "observation_id": "obs_02a72fd58f914fb8"
+        },
+        {
+          "period": "2008-M12",
+          "value": 7.3,
+          "observation_id": "obs_798eee73e3e8427d"
+        },
+        {
+          "period": "2009-M12",
+          "value": 9.9,
+          "observation_id": "obs_88be835c9ab9429d"
+        },
+        {
+          "period": "2010-M12",
+          "value": 9.3,
+          "observation_id": "obs_9e1ee8353d0f41fe"
+        },
+        {
+          "period": "2011-M12",
+          "value": 8.5,
+          "observation_id": "obs_42e8432f96d946eb"
+        },
+        {
+          "period": "2012-M12",
+          "value": 7.9,
+          "observation_id": "obs_fda1f4b467cb40e5"
+        },
+        {
+          "period": "2013-M12",
+          "value": 6.7,
+          "observation_id": "obs_3fadb7be187c4832"
+        },
+        {
+          "period": "2014-M12",
+          "value": 5.6,
+          "observation_id": "obs_d399248cd2454da1"
+        },
+        {
+          "period": "2015-M12",
+          "value": 5,
+          "observation_id": "obs_48eafbf29df74a32"
+        },
+        {
+          "period": "2016-M12",
+          "value": 4.7,
+          "observation_id": "obs_75c524698241497a"
+        },
+        {
+          "period": "2017-M12",
+          "value": 4.1,
+          "observation_id": "obs_d7ab13c8f0284f72"
+        },
+        {
+          "period": "2018-M12",
+          "value": 3.9,
+          "observation_id": "obs_8b3c5882f24b4d3e"
+        },
+        {
+          "period": "2019-M12",
+          "value": 3.6,
+          "observation_id": "obs_9c8f71db80f84b25"
+        },
+        {
+          "period": "2020-M12",
+          "value": 6.7,
+          "observation_id": "obs_d289aa91feda44c7"
+        },
+        {
+          "period": "2021-M12",
+          "value": 3.9,
+          "observation_id": "obs_22430b63101c4b76"
+        },
+        {
+          "period": "2022-M12",
+          "value": 3.5,
+          "observation_id": "obs_c62b37501c984039"
+        },
+        {
+          "period": "2023-M12",
+          "value": 3.8,
+          "observation_id": "obs_e67bbd95d5904fcd"
+        },
+        {
+          "period": "2025-M12",
+          "value": 4.4,
+          "observation_id": "obs_40bb40ba87c749f4"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-UNEMP-AR",
+      "series_code": "LASST050000000000003",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "laus",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "2007-M12",
+          "value": 5.2,
+          "observation_id": "obs_d80b181f838c4dc2"
+        },
+        {
+          "period": "2008-M12",
+          "value": 6.6,
+          "observation_id": "obs_c93e100185bf4bb8"
+        },
+        {
+          "period": "2009-M12",
+          "value": 7.9,
+          "observation_id": "obs_42874026d6b94b6a"
+        },
+        {
+          "period": "2010-M12",
+          "value": 8,
+          "observation_id": "obs_f60aa17224bf4cd8"
+        },
+        {
+          "period": "2011-M12",
+          "value": 7.5,
+          "observation_id": "obs_14acf92097c547c6"
+        },
+        {
+          "period": "2012-M12",
+          "value": 7.2,
+          "observation_id": "obs_b2dba14837f940d3"
+        },
+        {
+          "period": "2013-M12",
+          "value": 6.6,
+          "observation_id": "obs_4092307e04eb4c20"
+        },
+        {
+          "period": "2014-M12",
+          "value": 5.5,
+          "observation_id": "obs_c155552924c8431b"
+        },
+        {
+          "period": "2015-M12",
+          "value": 4.3,
+          "observation_id": "obs_2c217b22db574929"
+        },
+        {
+          "period": "2016-M12",
+          "value": 3.8,
+          "observation_id": "obs_4cbf0c8ebab94573"
+        },
+        {
+          "period": "2017-M12",
+          "value": 3.8,
+          "observation_id": "obs_87792379b21a4f52"
+        },
+        {
+          "period": "2018-M12",
+          "value": 3.7,
+          "observation_id": "obs_2da18000f105494a"
+        },
+        {
+          "period": "2019-M12",
+          "value": 3.5,
+          "observation_id": "obs_725d70ae6d1d4826"
+        },
+        {
+          "period": "2020-M12",
+          "value": 5,
+          "observation_id": "obs_560af1b7a3164f5e"
+        },
+        {
+          "period": "2021-M12",
+          "value": 3.2,
+          "observation_id": "obs_986ef270d3f646ad"
+        },
+        {
+          "period": "2022-M12",
+          "value": 3,
+          "observation_id": "obs_80f43dd8983c4fc2"
+        },
+        {
+          "period": "2023-M12",
+          "value": 3.5,
+          "observation_id": "obs_6c52519ede1e498d"
+        },
+        {
+          "period": "2025-M12",
+          "value": 4.3,
+          "observation_id": "obs_a45b570edac645ff"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-BDS-ENTRY-AR",
+      "series_code": "ESTABS_ENTRY_RATE",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "bds",
+      "source_agency": "United States Census Bureau",
+      "unit": "percent",
+      "points": [
+        {
+          "period": "2000",
+          "value": 11.081,
+          "observation_id": "obs_6f339b93b46344ce"
+        },
+        {
+          "period": "2001",
+          "value": 10.834,
+          "observation_id": "obs_dc5f56f43bd84a7d"
+        },
+        {
+          "period": "2002",
+          "value": 12.042,
+          "observation_id": "obs_fb532f475bb249d3"
+        },
+        {
+          "period": "2003",
+          "value": 11.193,
+          "observation_id": "obs_eb34c2dd2f4d4552"
+        },
+        {
+          "period": "2004",
+          "value": 10.712,
+          "observation_id": "obs_7f2be9a005294f72"
+        },
+        {
+          "period": "2005",
+          "value": 10.791,
+          "observation_id": "obs_77324ad7174241c2"
+        },
+        {
+          "period": "2006",
+          "value": 11.749,
+          "observation_id": "obs_fb0c839957cf45b3"
+        },
+        {
+          "period": "2007",
+          "value": 10.879,
+          "observation_id": "obs_96dba20baddf4187"
+        },
+        {
+          "period": "2008",
+          "value": 9.36,
+          "observation_id": "obs_24cce85e1168424c"
+        },
+        {
+          "period": "2009",
+          "value": 8.891,
+          "observation_id": "obs_d78de887c0774a76"
+        },
+        {
+          "period": "2010",
+          "value": 8.645,
+          "observation_id": "obs_bd934365968644be"
+        },
+        {
+          "period": "2011",
+          "value": 8.79,
+          "observation_id": "obs_79b9106bd7a54bfa"
+        },
+        {
+          "period": "2012",
+          "value": 8.443,
+          "observation_id": "obs_9c50a37db4814498"
+        },
+        {
+          "period": "2013",
+          "value": 8.708,
+          "observation_id": "obs_a13e6c27cfd14b08"
+        },
+        {
+          "period": "2014",
+          "value": 8.16,
+          "observation_id": "obs_880eaaa005b54a0e"
+        },
+        {
+          "period": "2015",
+          "value": 8.52,
+          "observation_id": "obs_c34a257efad749e2"
+        },
+        {
+          "period": "2016",
+          "value": 9.052,
+          "observation_id": "obs_0d0c990b9fb94ca1"
+        },
+        {
+          "period": "2017",
+          "value": 8.717,
+          "observation_id": "obs_5be3b27d4e254a02"
+        },
+        {
+          "period": "2018",
+          "value": 8.27,
+          "observation_id": "obs_8b9be6468ce443ac"
+        },
+        {
+          "period": "2019",
+          "value": 8.765,
+          "observation_id": "obs_878eca14bc0c4d4b"
+        },
+        {
+          "period": "2020",
+          "value": 8.482,
+          "observation_id": "obs_c143302505034886"
+        },
+        {
+          "period": "2021",
+          "value": 9.606,
+          "observation_id": "obs_0b009e9611df44bf"
+        },
+        {
+          "period": "2022",
+          "value": 9.794,
+          "observation_id": "obs_14f9947d2b0f4b09"
+        },
+        {
+          "period": "2023",
+          "value": 9.621,
+          "observation_id": "obs_9cd07132ef224921"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-BDS-EXIT-AR",
+      "series_code": "ESTABS_EXIT_RATE",
+      "geography_id": "geo:us-ar",
+      "geography_name": "Arkansas",
+      "dataset": "bds",
+      "source_agency": "United States Census Bureau",
+      "unit": "percent",
+      "points": [
+        {
+          "period": "2000",
+          "value": 10.387,
+          "observation_id": "obs_4ae285ef88f04029"
+        },
+        {
+          "period": "2001",
+          "value": 11.273,
+          "observation_id": "obs_c25e88030ca341d6"
+        },
+        {
+          "period": "2002",
+          "value": 10.726,
+          "observation_id": "obs_ad477a2c96bd4e8a"
+        },
+        {
+          "period": "2003",
+          "value": 9.666,
+          "observation_id": "obs_c36f926968a74385"
+        },
+        {
+          "period": "2004",
+          "value": 9.314,
+          "observation_id": "obs_d95baf37de0d4d2b"
+        },
+        {
+          "period": "2005",
+          "value": 9.397,
+          "observation_id": "obs_1ec2398b85c24f89"
+        },
+        {
+          "period": "2006",
+          "value": 9.783,
+          "observation_id": "obs_555a6d8e1692407e"
+        },
+        {
+          "period": "2007",
+          "value": 9.769,
+          "observation_id": "obs_199f45f031194c54"
+        },
+        {
+          "period": "2008",
+          "value": 10.107,
+          "observation_id": "obs_6d691b3c2c2c428d"
+        },
+        {
+          "period": "2009",
+          "value": 10.503,
+          "observation_id": "obs_4b8159f6aade405e"
+        },
+        {
+          "period": "2010",
+          "value": 9.211,
+          "observation_id": "obs_2f78e0d5c9134d66"
+        },
+        {
+          "period": "2011",
+          "value": 9.271,
+          "observation_id": "obs_5f07319e6b3a4242"
+        },
+        {
+          "period": "2012",
+          "value": 8.568,
+          "observation_id": "obs_a0b2dd9713fe429d"
+        },
+        {
+          "period": "2013",
+          "value": 8.655,
+          "observation_id": "obs_755f12255e9143d8"
+        },
+        {
+          "period": "2014",
+          "value": 8.123,
+          "observation_id": "obs_200d1d85a436458e"
+        },
+        {
+          "period": "2015",
+          "value": 8.152,
+          "observation_id": "obs_0060807f0650465e"
+        },
+        {
+          "period": "2016",
+          "value": 7.709,
+          "observation_id": "obs_664d9c6ce06741c5"
+        },
+        {
+          "period": "2017",
+          "value": 8.063,
+          "observation_id": "obs_e50b0b49f8fe428e"
+        },
+        {
+          "period": "2018",
+          "value": 7.952,
+          "observation_id": "obs_611b61840df84d98"
+        },
+        {
+          "period": "2019",
+          "value": 7.872,
+          "observation_id": "obs_f75acf7d5bc84ed6"
+        },
+        {
+          "period": "2020",
+          "value": 8.19,
+          "observation_id": "obs_cc11218d262d4d07"
+        },
+        {
+          "period": "2021",
+          "value": 8.476,
+          "observation_id": "obs_755c4545f0304150"
+        },
+        {
+          "period": "2022",
+          "value": 8.876,
+          "observation_id": "obs_04d48715f65e4daa"
+        },
+        {
+          "period": "2023",
+          "value": 8.052,
+          "observation_id": "obs_1a40751bf6024899"
+        }
+      ]
+    },
+    {
+      "consumer_metric_id": "CC-PASS6-NFB-PRODUCTIVITY-Q4",
+      "series_code": "PRS85006092",
+      "geography_id": "geo:us",
+      "geography_name": "United States",
+      "dataset": "productivity",
+      "source_agency": "Bureau of Labor Statistics",
+      "unit": "as_reported",
+      "points": [
+        {
+          "period": "1970-Q04",
+          "value": -3.6,
+          "observation_id": "obs_29eec76f4c9e4744"
+        },
+        {
+          "period": "1971-Q04",
+          "value": -3.4,
+          "observation_id": "obs_f401ab4fea27420a"
+        },
+        {
+          "period": "1972-Q04",
+          "value": 3.4,
+          "observation_id": "obs_8e0b3617ac314acd"
+        },
+        {
+          "period": "1973-Q04",
+          "value": -2.5,
+          "observation_id": "obs_8445d61e5e964c7a"
+        },
+        {
+          "period": "1974-Q04",
+          "value": 3.6,
+          "observation_id": "obs_de2e919978344b05"
+        },
+        {
+          "period": "1975-Q04",
+          "value": 0.4,
+          "observation_id": "obs_ac0d89e622904855"
+        },
+        {
+          "period": "1976-Q04",
+          "value": 1.2,
+          "observation_id": "obs_254f2ffaf0e34bf8"
+        },
+        {
+          "period": "1977-Q04",
+          "value": -5,
+          "observation_id": "obs_9dfcacbf2b6c48f8"
+        },
+        {
+          "period": "1978-Q04",
+          "value": 2.7,
+          "observation_id": "obs_89f54cf13e6f41c9"
+        },
+        {
+          "period": "1979-Q04",
+          "value": -0.5,
+          "observation_id": "obs_ed29fb94b2e24ef2"
+        },
+        {
+          "period": "1980-Q04",
+          "value": 4.1,
+          "observation_id": "obs_5f2d7064b9954ce2"
+        },
+        {
+          "period": "1981-Q04",
+          "value": -4.2,
+          "observation_id": "obs_c55290251d384fd1"
+        },
+        {
+          "period": "1982-Q04",
+          "value": 3.6,
+          "observation_id": "obs_13e526ff2b114194"
+        },
+        {
+          "period": "1983-Q04",
+          "value": 2.3,
+          "observation_id": "obs_70e3bd0965934680"
+        },
+        {
+          "period": "1984-Q04",
+          "value": 0.4,
+          "observation_id": "obs_4f2a2e81cdc74f46"
+        },
+        {
+          "period": "1985-Q04",
+          "value": 1.6,
+          "observation_id": "obs_77396749fc724b9e"
+        },
+        {
+          "period": "1986-Q04",
+          "value": -0.9,
+          "observation_id": "obs_5e0b8dca978e498c"
+        },
+        {
+          "period": "1987-Q04",
+          "value": 4.1,
+          "observation_id": "obs_2e8f5d41d3374820"
+        },
+        {
+          "period": "1988-Q04",
+          "value": 0.4,
+          "observation_id": "obs_d2630ddf3f7348ca"
+        },
+        {
+          "period": "1989-Q04",
+          "value": 0,
+          "observation_id": "obs_8c55fe178c2345d0"
+        },
+        {
+          "period": "1990-Q04",
+          "value": -4.1,
+          "observation_id": "obs_c52c834f35274c5f"
+        },
+        {
+          "period": "1991-Q04",
+          "value": 1.9,
+          "observation_id": "obs_0088f44104f04594"
+        },
+        {
+          "period": "1992-Q04",
+          "value": 2.3,
+          "observation_id": "obs_86005ac3ccaf43d5"
+        },
+        {
+          "period": "1993-Q04",
+          "value": 1.5,
+          "observation_id": "obs_9dada50cb2c34b3f"
+        },
+        {
+          "period": "1994-Q04",
+          "value": 4.3,
+          "observation_id": "obs_6ac29905ff37463d"
+        },
+        {
+          "period": "1995-Q04",
+          "value": 2.2,
+          "observation_id": "obs_0cac0f6489b445c6"
+        },
+        {
+          "period": "1996-Q04",
+          "value": 0.4,
+          "observation_id": "obs_085375cdd87d4551"
+        },
+        {
+          "period": "1997-Q04",
+          "value": 2,
+          "observation_id": "obs_fd74afc191274918"
+        },
+        {
+          "period": "1998-Q04",
+          "value": 3.1,
+          "observation_id": "obs_858d3af155ab4907"
+        },
+        {
+          "period": "1999-Q04",
+          "value": 6.1,
+          "observation_id": "obs_33c174060fc94b9b"
+        },
+        {
+          "period": "2000-Q04",
+          "value": 4.3,
+          "observation_id": "obs_af3792cf5b2846d5"
+        },
+        {
+          "period": "2001-Q04",
+          "value": 5.2,
+          "observation_id": "obs_5202636d78c7445d"
+        },
+        {
+          "period": "2002-Q04",
+          "value": -0.5,
+          "observation_id": "obs_6e98c6672c854d96"
+        },
+        {
+          "period": "2003-Q04",
+          "value": 3.9,
+          "observation_id": "obs_7b5e3ce5cad34da1"
+        },
+        {
+          "period": "2004-Q04",
+          "value": 1.8,
+          "observation_id": "obs_08d24cde754e46c2"
+        },
+        {
+          "period": "2005-Q04",
+          "value": 0,
+          "observation_id": "obs_ed2bc68c98344dcf"
+        },
+        {
+          "period": "2006-Q04",
+          "value": 2.6,
+          "observation_id": "obs_0038fd04d1534e86"
+        },
+        {
+          "period": "2007-Q04",
+          "value": 3.2,
+          "observation_id": "obs_4254c1ad8313435a"
+        },
+        {
+          "period": "2008-Q04",
+          "value": -2.1,
+          "observation_id": "obs_44681bfd8dc74a76"
+        },
+        {
+          "period": "2009-Q04",
+          "value": 5.5,
+          "observation_id": "obs_a285999d1113484d"
+        },
+        {
+          "period": "2010-Q04",
+          "value": 1.3,
+          "observation_id": "obs_19d2561839584faa"
+        },
+        {
+          "period": "2011-Q04",
+          "value": 1.9,
+          "observation_id": "obs_f281a7bc9e2946ff"
+        },
+        {
+          "period": "2012-Q04",
+          "value": -1.5,
+          "observation_id": "obs_cb994388a0d4436d"
+        },
+        {
+          "period": "2013-Q04",
+          "value": 3.9,
+          "observation_id": "obs_ff1c363392554f1d"
+        },
+        {
+          "period": "2014-Q04",
+          "value": -1.4,
+          "observation_id": "obs_2ea0e3b818c94201"
+        },
+        {
+          "period": "2015-Q04",
+          "value": -2.4,
+          "observation_id": "obs_93888b1a73f34d72"
+        },
+        {
+          "period": "2016-Q04",
+          "value": 2.7,
+          "observation_id": "obs_86f13e5c79b44767"
+        },
+        {
+          "period": "2017-Q04",
+          "value": 3,
+          "observation_id": "obs_837e05f0940a4669"
+        },
+        {
+          "period": "2018-Q04",
+          "value": -0.7,
+          "observation_id": "obs_25d2f08d3a4e4ffd"
+        },
+        {
+          "period": "2019-Q04",
+          "value": 3.8,
+          "observation_id": "obs_1e491e48af684910"
+        },
+        {
+          "period": "2020-Q04",
+          "value": -3.2,
+          "observation_id": "obs_c950e94544c945ef"
+        },
+        {
+          "period": "2021-Q04",
+          "value": 2.3,
+          "observation_id": "obs_cb295efd53ec4859"
+        },
+        {
+          "period": "2022-Q04",
+          "value": 2.3,
+          "observation_id": "obs_27b5bef2e72f45eb"
+        },
+        {
+          "period": "2023-Q04",
+          "value": 3.9,
+          "observation_id": "obs_9b82580238184fb4"
+        },
+        {
+          "period": "2024-Q04",
+          "value": 1.4,
+          "observation_id": "obs_bd4452df8d51434f"
+        }
+      ]
+    }
+  ]
+}

@@ -957,6 +957,25 @@
     "panels_registry": "data/project/publication_evidence_panels.json",
     "next": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0"
   },
+  "publication_evidence_upgrade_pass_6": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
+    "status": "PASSED_PARTIAL",
+    "mode": "retrieval_and_binding",
+    "no_new_panels": true,
+    "panels_total": 18,
+    "systems_with_arrays": [
+      "CC-EP-WAGES-PRODUCTIVITY-1",
+      "CC-EP-MARKET-DYNAMICS-SYSTEM-1",
+      "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+    ],
+    "export_id": "exp_226e711e08704b06",
+    "observation_count": 284,
+    "baseline_impact": "none",
+    "energy_rcip_0418_0425": "blocked_no_eia_adapter",
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_6_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json",
+    "next": "EIA_ADAPTER_OR_PASS_7"
+  },
   "progress_markers": {
     "overall_percent": 46,
     "baseline": "42/64",
