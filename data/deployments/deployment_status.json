@@ -13,8 +13,8 @@
       "production_url": "https://constitutional-capitalism.netlify.app",
       "admin_url": "https://app.netlify.com/projects/constitutional-capitalism",
       "last_build_status": "ready",
-      "last_deploy_id": "6a7caa98e1ab51625e8244c2",
-      "last_known_commit": "560c586",
+      "last_deploy_id": "6a7caeff2a472a2662fd4569",
+      "last_known_commit": "a16f3fd",
       "deploy_method": "netlify_cli_manual_prod",
       "build_command": "pnpm build",
       "publish_directory": "dist",
@@ -35,17 +35,20 @@
       "production_url": "https://constitutional-capitalism-board.netlify.app",
       "admin_url": "https://app.netlify.com/projects/constitutional-capitalism-board",
       "last_build_status": "ready",
-      "last_deploy_id": "6a7caaa18b118e8d65096450",
-      "last_known_commit": "560c586",
+      "last_deploy_id": "6a7caef01bffc7e08d58bb99",
+      "last_known_commit": "a16f3fd",
       "deploy_method": "netlify_cli_manual_prod",
       "build_command": "pnpm build",
       "publish_directory": "dist",
       "base_directory": "apps/build-board",
       "netlify_config": "netlify.board.toml",
+      "functions_directory": "apps/build-board/netlify/functions",
+      "functions_note": "OPENAI_API_KEY must be set in Netlify board site env (Functions only). Never in client assets.",
       "access": "public_url_unprotected",
       "access_note": "Board is NOT private until Netlify site-level access protection or another approved auth layer is configured. Do not place sensitive planning information until protected.",
       "manual_setup_required": [
         "Enable Netlify site-level access protection before placing sensitive planning content",
+        "Set OPENAI_API_KEY on board Netlify site for live county/hypothesis analysts (optional; deterministic modes work without it)",
         "Optionally connect GitHub continuous deploy for apps/build-board using netlify.board.toml settings"
       ]
     }

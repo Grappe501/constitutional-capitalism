@@ -6,14 +6,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PACK_PATH = path.join(
-  __dirname,
-  "_pack",
-  "ai_research_context_pack.json"
-);
+import packFallback from "./_pack/ai_research_context_pack.json";
 
 const AI_MAY = ["observe", "compare", "question", "summarize", "recommend"];
 const AI_MUST_NOT = [
@@ -38,7 +31,19 @@ Use headings: Observed; Potential relationships (correlation only); Counterexamp
 If a fact is not in the evidence pack, say unknown. Do not invent numbers or citations.`;
 
 function loadPack() {
-  return JSON.parse(fs.readFileSync(PACK_PATH, "utf8"));
+  const candidates = [
+    path.join(process.cwd(), "netlify/functions/_pack/ai_research_context_pack.json"),
+    path.join(process.cwd(), "_pack/ai_research_context_pack.json"),
+    path.join(process.cwd(), "ai_research_context_pack.json"),
+  ];
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(p)) return JSON.parse(fs.readFileSync(p, "utf8"));
+    } catch {
+      /* try next */
+    }
+  }
+  return packFallback;
 }
 
 function pickEvidence(mode, body, pack) {
@@ -54,9 +59,9 @@ function pickEvidence(mode, body, pack) {
       return { mode, county, counterexamples: pack.counterexamples };
     }
     case "comparative_systems": {
-      const list = (body.fips_list || [body.fips_a || "05145", body.fips_b || "05073"]).map(
-        String
-      );
+      const list = (
+        body.fips_list || [body.fips_a || "05145", body.fips_b || "05073"]
+      ).map(String);
       return {
         mode,
         counties: {
@@ -243,7 +248,6 @@ export async function handler(event) {
         ai_must_not: AI_MUST_NOT,
         publication_rule: "AI proposes. The project decides.",
       },
-      // never echo secrets
     };
 
     return { statusCode: 200, headers: cors, body: JSON.stringify(payload) };
