@@ -3,34 +3,47 @@
 
 <aside class="listen-bar" data-listen-bar aria-label="Listen to this page">
   <div class="listen-bar__inner">
-    <p class="listen-bar__title">
-      <span class="listen-bar__heading">Listen</span>
-      <span class="listen-bar__status" data-listen-status>Ready</span>
-    </p>
-    <div class="listen-bar__controls">
-      <button type="button" class="listen-btn listen-btn--primary" data-listen-play>
-        Play
-      </button>
-      <button type="button" class="listen-btn" data-listen-pause disabled>
-        Pause
-      </button>
-      <button type="button" class="listen-btn" data-listen-stop disabled>
-        Stop
+    <div class="listen-bar__row">
+      <p class="listen-bar__title">
+        <span class="listen-bar__heading">Listen</span>
+        <span class="listen-bar__status" data-listen-status>Ready</span>
+      </p>
+      <div class="listen-bar__controls">
+        <button type="button" class="listen-btn listen-btn--primary" data-listen-play>
+          Play
+        </button>
+        <button type="button" class="listen-btn" data-listen-pause disabled>
+          Pause
+        </button>
+        <button type="button" class="listen-btn" data-listen-stop disabled>
+          Stop
+        </button>
+      </div>
+      <button
+        type="button"
+        class="listen-bar__toggle"
+        data-listen-toggle
+        aria-expanded="false"
+        aria-controls="listen-extras"
+      >
+        Options
       </button>
     </div>
-    <label class="listen-bar__rate">
-      <span>Speed</span>
-      <select data-listen-rate aria-label="Speech speed">
-        <option value="0.85">Slow</option>
-        <option value="1" selected>Normal</option>
-        <option value="1.15">Fast</option>
-      </select>
-    </label>
+    <div class="listen-bar__extras" id="listen-extras" data-listen-extras>
+      <label class="listen-bar__rate">
+        <span>Speed</span>
+        <select data-listen-rate aria-label="Speech speed">
+          <option value="0.85">Slow</option>
+          <option value="1" selected>Normal</option>
+          <option value="1.15">Fast</option>
+        </select>
+      </label>
+      <p class="listen-bar__note">
+        Uses your browser’s built-in voice (Chrome works best). For driving, start playback
+        before you move and keep the phone secured.
+      </p>
+    </div>
   </div>
-  <p class="listen-bar__note">
-    Uses your browser’s built-in voice (Chrome works best). For driving, start playback before you
-    move and keep the phone secured.
-  </p>
 </aside>
 
 <script>
@@ -40,6 +53,8 @@
   const stopBtn = document.querySelector("[data-listen-stop]");
   const statusEl = document.querySelector("[data-listen-status]");
   const rateEl = document.querySelector("[data-listen-rate]") as HTMLSelectElement | null;
+  const toggleBtn = document.querySelector("[data-listen-toggle]");
+  const extras = document.querySelector("[data-listen-extras]");
   const main = document.querySelector("#main");
 
   const supported =
@@ -52,6 +67,29 @@
     !!main &&
     "speechSynthesis" in window &&
     "SpeechSynthesisUtterance" in window;
+
+  const desktopMq = window.matchMedia("(min-width: 901px)");
+
+  const syncExtrasVisibility = () => {
+    if (!toggleBtn || !bar) return;
+    if (desktopMq.matches) {
+      toggleBtn.setAttribute("aria-expanded", "true");
+      bar.removeAttribute("data-expanded");
+      return;
+    }
+    const expanded = bar.hasAttribute("data-expanded");
+    toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+  };
+
+  toggleBtn?.addEventListener("click", () => {
+    if (!bar || desktopMq.matches) return;
+    if (bar.hasAttribute("data-expanded")) bar.removeAttribute("data-expanded");
+    else bar.setAttribute("data-expanded", "");
+    syncExtrasVisibility();
+  });
+
+  desktopMq.addEventListener("change", syncExtrasVisibility);
+  syncExtrasVisibility();
 
   if (!supported) {
     if (statusEl) statusEl.textContent = "Voice not supported in this browser";
@@ -96,7 +134,6 @@
         const text = (node.textContent || "").replace(/\s+/g, " ").trim();
         if (!text) return;
         if (text.length < 2) return;
-        // Chrome truncates very long utterances — split conservatively.
         if (text.length > 450) {
           const parts = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
           parts.forEach((part) => {
@@ -151,7 +188,7 @@
       utter.rate = Number(rateEl.value) || 1;
       utter.onstart = () => {
         setControls("playing");
-        setStatus(`Reading ${index + 1} of ${chunks.length}`);
+        setStatus(`${index + 1}/${chunks.length}`);
       };
       utter.onend = () => {
         if (paused) return;
@@ -171,7 +208,7 @@
         paused = false;
         synth.resume();
         setControls("playing");
-        setStatus(`Reading ${index + 1} of ${chunks.length}`);
+        setStatus(`${index + 1}/${chunks.length}`);
         return;
       }
       await stopAll();
@@ -183,7 +220,6 @@
       index = 0;
       paused = false;
       await requestWakeLock();
-      // Some Chrome builds need a beat after cancel before speak.
       window.setTimeout(() => speakNext(), 60);
     });
 
@@ -201,7 +237,6 @@
 
     rateEl.addEventListener("change", () => {
       if (synth.speaking && !paused) {
-        // Restart current chunk at new rate.
         const current = index;
         synth.cancel();
         index = current;
