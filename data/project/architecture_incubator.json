@@ -579,24 +579,27 @@
       "confidence_percent": 3,
       "related_principle_ids": [],
       "related_decision_ids": [
-        "CC-DEC-108"
+        "CC-DEC-108",
+        "CC-DEC-117"
       ],
       "related_framework": "data/project/civic_engagement_community_structure_research.json",
       "canonical_hypothesis_id": "CC-HYP-CIVIC-ENGAGEMENT-AND-COMMUNITY-STRUCTURE",
       "public_path": null,
       "dossier_path": "content/research/hypotheses/civic-engagement-community-structure.md",
       "demand_manifest_path": "data/project/CC_CIVIC_ENGAGEMENT_COMMUNITY_STRUCTURE_DATA_DEMANDS.json",
+      "longitudinal_layer_path": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "turnout_inventory_path": "data/project/arkansas_county_turnout_source_inventory.json",
       "evidence_needed": [
-        "Arkansas county turnout source inventory 2000–2024",
-        "Presidential/midterm/primary/local/school-board/initiative series where obtainable",
-        "Derived trend, volatility, persistence measures",
-        "Joins to NASS/FDIC/HRSA/ACS/journalism overlays without proxy abuse",
+        "VAP/registered turnout rates (presidential votes now bound; denominators NEE)",
+        "Midterm/primary/local/school-board/initiative series where obtainable",
+        "Derived trend, volatility, persistence on comparable election types",
+        "ACS/FDIC/HRSA county joins to deepen longitudinal layer",
         "Descriptive co-travel maps with alternative explanations",
         "Adult civic baselines as control context for HYP-127",
         "Environment contrasts for HYP-126"
       ],
       "proof_packet_status": "not_started",
-      "note": "KEEP_AS_HYPOTHESIS under CC-DEC-108. Connective track. Community Health Index exploratory only — not baseline. Descriptive before causal. Does not displace definition-locks."
+      "note": "KEEP_AS_HYPOTHESIS under CC-DEC-108. CC-DEC-117 added County×Year layer v1 (correlation first). Community Health Index exploratory only — not baseline. Does not displace definition-locks."
     },
     {
       "hypothesis_id": "HYP-129",

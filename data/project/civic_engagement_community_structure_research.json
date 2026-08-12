@@ -147,13 +147,16 @@
   "research_progression_lock": [
     "register_track_and_layers",
     "inventory_arkansas_county_turnout_sources_2000_2024",
-    "build_county_participation_panel_descriptive",
-    "join_existing_structure_overlays_nass_fdic_hrsa_journalism_acs",
+    "build_county_longitudinal_observation_layer_v1",
+    "join_existing_structure_overlays_nass_pep_saipe_presidential_votes",
+    "acs_vap_registered_turnout_denominators",
     "exploratory_co_travel_maps_not_causation",
     "only_then_modeling_questions_with_alternatives",
     "feed_control_context_into_hyp126_hyp127"
   ],
-  "next_slice": "CC-ARKANSAS-COUNTY-TURNOUT-SOURCE-INVENTORY-1.0",
+  "longitudinal_layer": "data/project/arkansas_county_longitudinal_observation_layer.json",
+  "turnout_inventory": "data/project/arkansas_county_turnout_source_inventory.json",
+  "next_slice": "CC-ARKANSAS-ACS-VAP-COUNTY-JOIN-1.0",
   "supports_arkansas_transition_framework": {
     "hypothesis_id": "HYP-129",
     "role": "Comparable-community participation/structure overlays for Layer-1 site selection and expansion measurement",

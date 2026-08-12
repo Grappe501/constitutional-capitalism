@@ -1,0 +1,327 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-TURNOUT-SOURCE-INVENTORY-1.0",
+  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-GROUNDING-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-117",
+  "update_id": "UPD-130",
+  "hypothesis_id": "CC-HYP-CIVIC-ENGAGEMENT-AND-COMMUNITY-STRUCTURE",
+  "incubator_alias": "HYP-128",
+  "status": "PASSED_PARTIAL_PRESIDENTIAL_VOTES_BOUND",
+  "purpose": "Inventory Arkansas county participation sources and bind clean presidential vote totals for designated counties — descriptive co-travel with structure, not causal proof.",
+  "method_wall": [
+    "correlation_and_pattern_discovery_first",
+    "causal_hypothesis_second",
+    "intervention_third",
+    "measurement_fourth",
+    "replication_fifth"
+  ],
+  "not": [
+    "official_turnout_rate_without_denominator",
+    "claim_that_poverty_causes_turnout_or_vice_versa",
+    "Community Health Index baseline metric",
+    "locked_pilot_site"
+  ],
+  "sources": [
+    {
+      "id": "TONMCG-US-COUNTY-PRES-08-24",
+      "name": "tonmcg US County Level Presidential Results 2008–2024",
+      "url": "https://github.com/tonmcg/US_County_Level_Election_Results_08-24",
+      "coverage": "Presidential county vote totals 2016/2020/2024 bound for designated AR counties",
+      "status": "BOUND_FOR_DESIGNATED_COUNTIES",
+      "definition": "votes_gop / votes_dem / total_votes — NOT official turnout rate (no registered-voter or VAP denominator in source)",
+      "years_bound": [
+        "2016",
+        "2020",
+        "2024"
+      ],
+      "license_note": "Public GitHub compilation of official county canvass aggregates; treat as research-grade secondary until SOS canvass cross-check"
+    },
+    {
+      "id": "AR-SOS-ELECTION-RESEARCH",
+      "name": "Arkansas Secretary of State election research / canvass",
+      "url": "https://www.sos.arkansas.gov/",
+      "coverage": "Official canvass; needed for registered voters, midterms, locals, school board",
+      "status": "INVENTORY_NEEDED_OFFICIAL_CROSSCHECK"
+    },
+    {
+      "id": "MIT-ELECTION-DATA-LAB",
+      "name": "MIT Election Data + Science Lab / Harvard Dataverse county returns",
+      "coverage": "Longer historical presidential/county series; midterm possibilities",
+      "status": "CANDIDATE_NOT_BOUND"
+    },
+    {
+      "id": "ACS-VAP-CVAP",
+      "name": "ACS / CVAP voting-age / citizen voting-age population",
+      "coverage": "Denominator for turnout_of_VAP / turnout_of_CVAP",
+      "status": "BLOCKED_INVALID_CENSUS_API_KEY",
+      "note": "Environment CENSUS_API_KEY present but rejected as Invalid Key (2026-08-12). Refresh key before ACS county join."
+    }
+  ],
+  "designated_counties": [
+    {
+      "fips": "05001",
+      "county": "Arkansas County",
+      "role": "commodity/export ag pair",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 6167,
+          "presidential_votes_gop": 3825,
+          "presidential_votes_dem": 1939,
+          "presidential_share_gop": 0.62023674396,
+          "presidential_share_dem": 0.314415437003
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 6292,
+          "presidential_votes_gop": 4304,
+          "presidential_votes_dem": 1818,
+          "presidential_share_gop": 0.684043229497775,
+          "presidential_share_dem": 0.28893833439287986
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 5547,
+          "presidential_votes_gop": 3951,
+          "presidential_votes_dem": 1503,
+          "presidential_share_gop": 0.7122769064359114,
+          "presidential_share_dem": 0.2709572742022715
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 6002.0,
+        "total_votes_stdev": 325.8,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05073",
+      "county": "Lafayette County",
+      "role": "Lewisville surrounding; extreme rural contrast",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 2835,
+          "presidential_votes_gop": 1750,
+          "presidential_votes_dem": 1028,
+          "presidential_share_gop": 0.617283950617,
+          "presidential_share_dem": 0.362610229277
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 2679,
+          "presidential_votes_gop": 1757,
+          "presidential_votes_dem": 839,
+          "presidential_share_gop": 0.6558417319895483,
+          "presidential_share_dem": 0.3131765584173199
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 2325,
+          "presidential_votes_gop": 1589,
+          "presidential_votes_dem": 698,
+          "presidential_share_gop": 0.6834408602150538,
+          "presidential_share_dem": 0.3002150537634409
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 2613.0,
+        "total_votes_stdev": 213.4,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05093",
+      "county": "Mississippi County",
+      "role": "Delta ag/industry",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 12995,
+          "presidential_votes_gop": 6988,
+          "presidential_votes_dem": 5621,
+          "presidential_share_gop": 0.537745286649,
+          "presidential_share_dem": 0.432550981147
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 12342,
+          "presidential_votes_gop": 7296,
+          "presidential_votes_dem": 4558,
+          "presidential_share_gop": 0.5911521633446767,
+          "presidential_share_dem": 0.3693080538000324
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 10717,
+          "presidential_votes_gop": 6963,
+          "presidential_votes_dem": 3574,
+          "presidential_share_gop": 0.6497154054306242,
+          "presidential_share_dem": 0.3334888494914622
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 12018.0,
+        "total_votes_stdev": 957.8,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05107",
+      "county": "Phillips County",
+      "role": "West Helena / Delta distress context",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 6894,
+          "presidential_votes_gop": 2443,
+          "presidential_votes_dem": 4292,
+          "presidential_share_gop": 0.354366115463,
+          "presidential_share_dem": 0.62257035103
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 6242,
+          "presidential_votes_gop": 2417,
+          "presidential_votes_dem": 3623,
+          "presidential_share_gop": 0.38721563601409803,
+          "presidential_share_dem": 0.5804229413649471
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 4938,
+          "presidential_votes_gop": 2098,
+          "presidential_votes_dem": 2754,
+          "presidential_share_gop": 0.4248683677602268,
+          "presidential_share_dem": 0.5577156743620899
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 6024.7,
+        "total_votes_stdev": 813.2,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05129",
+      "county": "Searcy County",
+      "role": "extreme rural",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 3698,
+          "presidential_votes_gop": 2955,
+          "presidential_votes_dem": 601,
+          "presidential_share_gop": 0.7990805841,
+          "presidential_share_dem": 0.162520281233
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 4019,
+          "presidential_votes_gop": 3365,
+          "presidential_votes_dem": 588,
+          "presidential_share_gop": 0.8372729534710127,
+          "presidential_share_dem": 0.14630505100771335
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 3869,
+          "presidential_votes_gop": 3305,
+          "presidential_votes_dem": 511,
+          "presidential_share_gop": 0.8542258981649005,
+          "presidential_share_dem": 0.1320754716981132
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 3862.0,
+        "total_votes_stdev": 131.1,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05141",
+      "county": "Van Buren County",
+      "role": "Clinton / family-livestock specialty",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 7111,
+          "presidential_votes_gop": 5382,
+          "presidential_votes_dem": 1547,
+          "presidential_share_gop": 0.756855575868,
+          "presidential_share_dem": 0.217550274223
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 7807,
+          "presidential_votes_gop": 6034,
+          "presidential_votes_dem": 1593,
+          "presidential_share_gop": 0.7728961188676828,
+          "presidential_share_dem": 0.20404764954527987
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 7621,
+          "presidential_votes_gop": 6023,
+          "presidential_votes_dem": 1437,
+          "presidential_share_gop": 0.790316231465687,
+          "presidential_share_dem": 0.18855793202991733
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 7513.0,
+        "total_votes_stdev": 294.2,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    },
+    {
+      "fips": "05145",
+      "county": "White County",
+      "role": "Rose Bud surrounding county context",
+      "presidential_series": [
+        {
+          "year": "2016",
+          "presidential_total_votes": 27451,
+          "presidential_votes_gop": 21038,
+          "presidential_votes_dem": 5157,
+          "presidential_share_gop": 0.766383738297,
+          "presidential_share_dem": 0.18786200867
+        },
+        {
+          "year": "2020",
+          "presidential_total_votes": 30885,
+          "presidential_votes_gop": 24182,
+          "presidential_votes_dem": 5978,
+          "presidential_share_gop": 0.7829690788408613,
+          "presidential_share_dem": 0.19355674275538287
+        },
+        {
+          "year": "2024",
+          "presidential_total_votes": 30837,
+          "presidential_votes_gop": 24514,
+          "presidential_votes_dem": 5641,
+          "presidential_share_gop": 0.7949541135648733,
+          "presidential_share_dem": 0.1829295975613711
+        }
+      ],
+      "descriptive_dispersion": {
+        "total_votes_mean": 29724.3,
+        "total_votes_stdev": 1607.6,
+        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+      }
+    }
+  ],
+  "still_nee": [
+    "Registered-voter turnout (votes / registered)",
+    "VAP/CVAP turnout (votes / voting-age population)",
+    "Midterm, primary, municipal, school-board, ballot-initiative series",
+    "Official SOS canvass cross-check of tonmcg aggregates",
+    "Persistence/volatility measures on comparable election types"
+  ],
+  "feeds": [
+    "data/project/arkansas_county_longitudinal_observation_layer.json",
+    "data/project/arkansas_hyp128_site_selection_model.json",
+    "data/project/civic_engagement_community_structure_research.json"
+  ]
+}

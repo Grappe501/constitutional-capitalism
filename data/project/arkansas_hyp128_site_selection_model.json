@@ -38,13 +38,15 @@
   "selection_criteria": [
     {
       "id": "population",
-      "status": "NEE_COUNTY_ACS",
-      "notes": "Bind county ACS population next; state ACS already exists but is not site-selectable"
+      "status": "BOUND_PEP_DESIGNATED_COUNTIES",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "Census PEP 2020–2023 bound for designated counties; ACS5 detail still blocked (invalid API key)"
     },
     {
       "id": "poverty_economic_conditions",
-      "status": "NEE_COUNTY_ACS",
-      "notes": "County poverty/income join required"
+      "status": "BOUND_SAIPE_DESIGNATED_COUNTIES",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "SAIPE poverty rate + median HH income bound; ACS MOE detail still NEE"
     },
     {
       "id": "school_capacity",
@@ -76,9 +78,9 @@
     },
     {
       "id": "civic_participation",
-      "status": "INVENTORY_NEEDED",
-      "source": "HYP-128 turnout inventory",
-      "notes": "Presidential/midterm/local turnout level, volatility, persistence — critical missing"
+      "status": "PARTIAL_PRESIDENTIAL_VOTES_BOUND",
+      "source": "data/project/arkansas_county_turnout_source_inventory.json",
+      "notes": "Presidential total votes 2016/2020/2024 bound for designated counties — NOT official turnout rate (VAP/registered still NEE); midterm/local still NEE"
     },
     {
       "id": "transportation",
@@ -104,9 +106,9 @@
   "scoring_rule": {
     "version": "1.0",
     "do_not_compute_total_until": [
-      "county ACS poverty/population bound",
-      "turnout inventory for candidate counties",
-      "district CTE readiness checklist"
+      "VAP/registered turnout rates (votes alone insufficient)",
+      "district CTE readiness checklist field-complete",
+      "partner/facility/funding eligibility at PARTIAL+ for chosen geography"
     ],
     "weights_draft_not_final": {
       "agricultural_structure_fit": 0.2,
@@ -131,14 +133,17 @@
       "measurable_now": {
         "farm_operations_2022": 1552,
         "ag_product_sales_2022_usd": 236301000,
-        "source": "USDA NASS Census of Agriculture via RedDirt export exp_5da8b3fe67d94923"
+        "population_2023": 78452,
+        "poverty_rate_2023_percent": 15.7,
+        "presidential_total_votes_2024": 30837,
+        "source": "NASS + PEP + SAIPE + tonmcg presidential via arkansas_county_longitudinal_observation_layer.json"
       },
       "missing_for_lock": [
         "district CTE readiness",
-        "county turnout",
-        "county ACS poverty",
+        "VAP/registered turnout rate",
         "county HPSA",
-        "partner MOU interest"
+        "partner MOU interest",
+        "facility + funding eligibility worksheet"
       ]
     },
     {
@@ -152,14 +157,17 @@
       "measurable_now": {
         "farm_operations_2022": 192,
         "ag_product_sales_2022_usd": 152423000,
-        "source": "USDA NASS Census of Agriculture via RedDirt export exp_5da8b3fe67d94923"
+        "population_2023": 6095,
+        "poverty_rate_2023_percent": 22.8,
+        "presidential_total_votes_2024": 2325,
+        "source": "NASS + PEP + SAIPE + tonmcg presidential via arkansas_county_longitudinal_observation_layer.json"
       },
       "missing_for_lock": [
         "district CTE readiness",
-        "county turnout",
-        "county ACS poverty",
+        "VAP/registered turnout rate",
         "county HPSA",
-        "partner MOU interest"
+        "partner MOU interest",
+        "facility + funding eligibility worksheet"
       ]
     }
   ],
@@ -172,9 +180,11 @@
     "data/project/living_community_laboratories.json"
   ],
   "next_research": [
-    "CC-ARKANSAS-COUNTY-TURNOUT-SOURCE-INVENTORY-1.0",
-    "County ACS poverty/population bind for designated set",
-    "District CTE readiness checklist for Rose Bud and Lewisville geographies",
+    "CC-ARKANSAS-ACS-VAP-COUNTY-JOIN-1.0",
+    "SOS canvass cross-check + midterm/local participation",
+    "District CTE readiness field pass for Rose Bud and Lewisville",
     "Only then compute draft scores and propose a lock packet"
-  ]
+  ],
+  "longitudinal_layer": "data/project/arkansas_county_longitudinal_observation_layer.json",
+  "readiness_checklist": "data/project/arkansas_pilot_geography_readiness_checklist.json"
 }
