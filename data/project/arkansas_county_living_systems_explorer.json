@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-ARKANSAS-COUNTY-LIVING-SYSTEMS-EXPLORER-1.1",
-  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-INTEGRATION-WAVE-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-LIVING-SYSTEMS-EXPLORER-1.2",
+  "wave_slice_id": "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-119",
-  "update_id": "UPD-132",
-  "status": "INTERNAL_INTEGRATED_LAB_V1",
+  "decision_id": "CC-DEC-122",
+  "update_id": "UPD-135",
+  "status": "INTERNAL_INTEGRATED_LAB_V1_MULTIYEAR_REG",
   "not": [
     "public_scoreboard",
     "community_health_index",
@@ -245,7 +245,7 @@
               "value": 6167,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -266,15 +266,43 @@
               "value": 378.18,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 48.4,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10385,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 6245,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 60.1,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 59.4,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -362,6 +390,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10161,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 8115,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
+            },
+            "ballots_cast_eavs": {
+              "value": 5003,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS F1a total ballots cast (2018 general cycle)",
+              "election_type": "midterm_general_2018"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 49.2,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2018",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2018 general)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -400,7 +456,7 @@
               "value": 6292,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -421,7 +477,7 @@
               "value": 367.8,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -456,8 +512,43 @@
               "value": 49.4,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10300,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 7071,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "ballots_cast_eavs": {
+              "value": 6314,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS F1a total ballots cast (2020 general cycle)",
+              "election_type": "presidential_general_2020"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 61.3,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2020",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2020 general)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 61.1,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -643,6 +734,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 8901,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 7207,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 4521,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 50.8,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -763,7 +882,7 @@
               "value": 5547,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -784,14 +903,14 @@
               "value": 340.16,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 43.5,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -819,14 +938,14 @@
               "value": 61.0,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 60.7,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -1087,7 +1206,7 @@
               "value": 2835,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -1108,15 +1227,43 @@
               "value": 465.14,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 56.1,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 4281,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 2882,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 67.3,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 66.2,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -1204,6 +1351,20 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 4265,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 3790,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -1242,7 +1403,7 @@
               "value": 2679,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -1263,7 +1424,7 @@
               "value": 425.71,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -1298,8 +1459,29 @@
               "value": 53.0,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 4402,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 2224,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 60.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -1485,6 +1667,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 3956,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 2642,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 1200,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 30.3,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -1605,7 +1815,7 @@
               "value": 2325,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -1626,14 +1836,14 @@
               "value": 381.46,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 46.0,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -1661,14 +1871,14 @@
               "value": 66.3,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 65.7,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -1929,7 +2139,7 @@
               "value": 12995,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -1950,15 +2160,43 @@
               "value": 336.11,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 45.1,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 21542,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 13321,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 61.8,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 60.3,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -2046,6 +2284,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 22412,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 16871,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
+            },
+            "ballots_cast_eavs": {
+              "value": 10811,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS F1a total ballots cast (2018 general cycle)",
+              "election_type": "midterm_general_2018"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 48.2,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2018",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2018 general)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -2084,7 +2350,7 @@
               "value": 12342,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -2105,7 +2371,7 @@
               "value": 304.46,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -2140,8 +2406,43 @@
               "value": 42.8,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 20601,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 15255,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "ballots_cast_eavs": {
+              "value": 11355,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS F1a total ballots cast (2020 general cycle)",
+              "election_type": "presidential_general_2020"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 55.1,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2020",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2020 general)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 59.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -2327,6 +2628,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 19421,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 14675,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 9025,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 46.5,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -2447,7 +2776,7 @@
               "value": 10717,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -2468,14 +2797,14 @@
               "value": 277.19,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 37.2,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -2503,14 +2832,14 @@
               "value": 53.5,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 53.2,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -2771,7 +3100,7 @@
               "value": 6894,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -2792,15 +3121,43 @@
               "value": 460.8,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 60.1,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 13044,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 7070,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 54.2,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 52.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -2888,6 +3245,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 13052,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 8778,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
+            },
+            "ballots_cast_eavs": {
+              "value": 5653,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS F1a total ballots cast (2018 general cycle)",
+              "election_type": "midterm_general_2018"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 43.3,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2018",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2018 general)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -2926,7 +3311,7 @@
               "value": 6242,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -2947,7 +3332,7 @@
               "value": 379.68,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -2975,8 +3360,43 @@
               "value": 54.4,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10673,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 7456,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "ballots_cast_eavs": {
+              "value": 5956,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS F1a total ballots cast (2020 general cycle)",
+              "election_type": "presidential_general_2020"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 55.8,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2020",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2020 general)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 58.5,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -3127,6 +3547,34 @@
               "source_id": "CENSUS-ACS5-SF-B01003",
               "definition": "ACS 5-year total population (B01003)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 9801,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 7279,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 2753,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 28.1,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -3247,7 +3695,7 @@
               "value": 4938,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -3268,14 +3716,14 @@
               "value": 330.06,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 43.0,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -3303,14 +3751,14 @@
               "value": 55.7,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 55.4,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -3571,7 +4019,7 @@
               "value": 3698,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -3592,15 +4040,43 @@
               "value": 473.74,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 59.5,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 5587,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 3792,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 67.9,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 66.2,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -3681,6 +4157,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 5896,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 5157,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
+            },
+            "ballots_cast_eavs": {
+              "value": 3256,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS F1a total ballots cast (2018 general cycle)",
+              "election_type": "midterm_general_2018"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 55.2,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2018",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2018 general)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -3719,7 +4223,7 @@
               "value": 4019,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -3740,7 +4244,7 @@
               "value": 512.63,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -3768,8 +4272,29 @@
               "value": 64.6,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 5220,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 5215,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 77.0,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -3955,6 +4480,20 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 5782,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 5717,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -4075,7 +4614,7 @@
               "value": 3869,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -4096,14 +4635,14 @@
               "value": 495.64,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 62.2,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -4131,14 +4670,14 @@
               "value": 62.6,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 62.1,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -4399,7 +4938,7 @@
               "value": 7111,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -4420,15 +4959,43 @@
               "value": 440.53,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 55.9,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10077,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "ballots_cast_eavs": {
+              "value": 7424,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS F1a total ballots cast (2016 general cycle)",
+              "election_type": "presidential_general_2016"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 73.7,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2016",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2016 general)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 70.6,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -4509,6 +5076,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10556,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 9008,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
+            },
+            "ballots_cast_eavs": {
+              "value": 6345,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS F1a total ballots cast (2018 general cycle)",
+              "election_type": "midterm_general_2018"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 60.1,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2018",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2018 general)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -4547,7 +5142,7 @@
               "value": 7807,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -4568,7 +5163,7 @@
               "value": 494.15,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -4596,8 +5191,43 @@
               "value": 61.4,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 10751,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 8928,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "ballots_cast_eavs": {
+              "value": 7838,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS F1a total ballots cast (2020 general cycle)",
+              "election_type": "presidential_general_2020"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 72.9,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2020",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2020 general)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 72.6,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -4783,6 +5413,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 11224,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 9394,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 6482,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 57.8,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -4903,7 +5561,7 @@
               "value": 7621,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -4924,14 +5582,14 @@
               "value": 472.12,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 59.9,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -4959,14 +5617,14 @@
               "value": 65.3,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 64.6,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -5227,7 +5885,7 @@
               "value": 27451,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -5248,15 +5906,29 @@
               "value": 349.91,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 47.1,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 43055,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2016",
+              "definition": "EAVS A1a total registered voters (2016 cycle jurisdiction report)",
+              "election_type": "presidential_general_2016"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 63.8,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2016",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2016)",
+              "election_type": "presidential_general_2016"
             }
           }
         },
@@ -5344,6 +6016,20 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 43955,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1a total registered voters (2018 cycle jurisdiction report)",
+              "election_type": "midterm_general_2018"
+            },
+            "registered_voters_active": {
+              "value": 37036,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2018",
+              "definition": "EAVS A1b active registered voters (2018)",
+              "election_type": "midterm_general_2018"
             }
           }
         },
@@ -5382,7 +6068,7 @@
               "value": 30885,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -5403,7 +6089,7 @@
               "value": 401.83,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "us_senate_total_votes": {
@@ -5431,8 +6117,43 @@
               "value": 53.0,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 44997,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1a total registered voters (2020 cycle jurisdiction report)",
+              "election_type": "presidential_general_2020"
+            },
+            "registered_voters_active": {
+              "value": 35554,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS A1b active registered voters (2020)",
+              "election_type": "presidential_general_2020"
+            },
+            "ballots_cast_eavs": {
+              "value": 30970,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2020",
+              "definition": "EAVS F1a total ballots cast (2020 general cycle)",
+              "election_type": "presidential_general_2020"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 68.8,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2020",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2020 general)",
+              "election_type": "presidential_general_2020"
+            },
+            "presidential_turnout_of_registered_percent": {
+              "value": 68.6,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-EAVS-2020",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100 (2020)",
+              "election_type": "presidential_general_2020"
             }
           }
         },
@@ -5618,6 +6339,34 @@
               "source_id": "OPENELECTIONS-AR",
               "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
               "election_type": null
+            },
+            "registered_voters_total": {
+              "value": 45051,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1a total registered voters (2022 cycle jurisdiction report)",
+              "election_type": "midterm_general_2022"
+            },
+            "registered_voters_active": {
+              "value": 37861,
+              "unit": "persons",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS A1b active registered voters (2022)",
+              "election_type": "midterm_general_2022"
+            },
+            "ballots_cast_eavs": {
+              "value": 23300,
+              "unit": "ballots",
+              "source_id": "EAC-EAVS-2022",
+              "definition": "EAVS F1a total ballots cast (2022 general cycle)",
+              "election_type": "midterm_general_2022"
+            },
+            "general_turnout_of_registered_percent": {
+              "value": 51.7,
+              "unit": "percent",
+              "source_id": "DERIVED-EAVS-TURNOUT-2022",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2022 general)",
+              "election_type": "midterm_general_2022"
             }
           }
         },
@@ -5738,7 +6487,7 @@
               "value": 30837,
               "unit": "votes",
               "source_id": "TONMCG-US-COUNTY-PRES-08-24",
-              "definition": "County presidential total votes (secondary compilation) — not turnout rate",
+              "definition": "County presidential total votes (secondary compilation) \u2014 not turnout rate",
               "election_type": null
             },
             "presidential_share_gop": {
@@ -5759,14 +6508,14 @@
               "value": 393.07,
               "unit": "votes_per_1000_persons",
               "source_id": "DERIVED-PRES-PEP",
-              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy \u2014 NOT official turnout",
               "election_type": null
             },
             "presidential_turnout_of_cvap_percent": {
               "value": 52.9,
               "unit": "percent",
               "source_id": "DERIVED-PRES-CVAP",
-              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "definition": "Presidential total votes / CVAP Total (2019\u20132023 vintage) \u00d7 100",
               "election_type": null
             },
             "registered_voters_total": {
@@ -5794,14 +6543,14 @@
               "value": 67.1,
               "unit": "percent",
               "source_id": "DERIVED-EAVS-TURNOUT",
-              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "definition": "EAVS ballots cast / total registered \u00d7 100 (2024 general)",
               "election_type": "general_2024"
             },
             "presidential_turnout_of_registered_percent": {
               "value": 66.7,
               "unit": "percent",
               "source_id": "DERIVED-PRES-EAVS",
-              "definition": "Presidential total votes / EAVS registered total × 100",
+              "definition": "Presidential total votes / EAVS registered total \u00d7 100",
               "election_type": "presidential_2024"
             },
             "fdic_branch_count": {
@@ -5928,27 +6677,27 @@
           "2022": 157,
           "2023": 155
         },
-        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "interpretation": "Educational capacity signal from completions \u2014 not employment demand proof",
         "status": "BOUND_CAPACITY_SIGNAL"
       },
       {
         "cip": "51.0401",
         "label": "dentistry_dds",
         "ipeds_completions_by_year": {},
-        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "interpretation": "Educational capacity signal from completions \u2014 not employment demand proof",
         "status": "NEE_OR_ZERO_COMPLETIONS"
       },
       {
         "cip": "01.8001",
         "label": "veterinary_dvm",
         "ipeds_completions_by_year": {},
-        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "interpretation": "Educational capacity signal from completions \u2014 not employment demand proof",
         "status": "NEE_OR_ZERO_COMPLETIONS"
       }
     ],
     "distinction": {
       "educational_capacity": "Programs available + completers produced (IPEDS Completions + ADHE catalog)",
-      "employment_demand": "NEE — requires ADWS / BLS projections / employer signals; not inferred from CIP counts alone"
+      "employment_demand": "NEE \u2014 requires ADWS / BLS projections / employer signals; not inferred from CIP counts alone"
     },
     "adws_state_bridge": [
       {
@@ -5958,11 +6707,11 @@
         "adws_linked_soc_count": 53,
         "adws_total_annual_openings_sum": 19997,
         "capacity_to_openings_ratio": 0.025,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -5973,11 +6722,11 @@
         "adws_linked_soc_count": 97,
         "adws_total_annual_openings_sum": 33374,
         "capacity_to_openings_ratio": 0.173,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -5988,11 +6737,11 @@
         "adws_linked_soc_count": 16,
         "adws_total_annual_openings_sum": 1725,
         "capacity_to_openings_ratio": 0.995,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -6003,11 +6752,11 @@
         "adws_linked_soc_count": 91,
         "adws_total_annual_openings_sum": 21488,
         "capacity_to_openings_ratio": 0.246,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -6018,11 +6767,11 @@
         "adws_linked_soc_count": 52,
         "adws_total_annual_openings_sum": 4561,
         "capacity_to_openings_ratio": 0.408,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -6033,11 +6782,11 @@
         "adws_linked_soc_count": 101,
         "adws_total_annual_openings_sum": 16875,
         "capacity_to_openings_ratio": 0.638,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -6048,11 +6797,11 @@
         "adws_linked_soc_count": 34,
         "adws_total_annual_openings_sum": 5044,
         "capacity_to_openings_ratio": 0.217,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       },
@@ -6063,11 +6812,11 @@
         "adws_linked_soc_count": 108,
         "adws_total_annual_openings_sum": 20916,
         "capacity_to_openings_ratio": 0.164,
-        "chain": "training_capacity → graduates(IPEDS) → occupations(SOC-CIP) → demand(ADWS statewide) → geographic_gap(NEE_COUNTY)",
+        "chain": "training_capacity \u2192 graduates(IPEDS) \u2192 occupations(SOC-CIP) \u2192 demand(ADWS statewide) \u2192 geographic_gap(NEE_COUNTY)",
         "not_a_shortage_claim": true,
         "notes": [
-          "Low completions alone ≠ shortage",
-          "Demand is statewide/LWDA — not county FIPS",
+          "Low completions alone \u2260 shortage",
+          "Demand is statewide/LWDA \u2014 not county FIPS",
           "Ratio is descriptive bridge, not adequacy verdict"
         ]
       }
@@ -6114,7 +6863,7 @@
             "county": "Arkansas County",
             "x_z": 2.152,
             "y_z": -0.104,
-            "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+            "why_valuable": "Economic/institutional strength without matching civic participation \u2014 theory gap candidate"
           },
           {
             "pattern": "strong_x_weak_y",
@@ -6122,7 +6871,7 @@
             "county": "Phillips County",
             "x_z": 0.28,
             "y_z": -1.21,
-            "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+            "why_valuable": "Economic/institutional strength without matching civic participation \u2014 theory gap candidate"
           },
           {
             "pattern": "weak_x_strong_y",
@@ -6130,7 +6879,7 @@
             "county": "White County",
             "x_z": -0.297,
             "y_z": 1.148,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           }
         ],
         "ambiguous_middle": [
@@ -6169,15 +6918,15 @@
           }
         ],
         "definition_breaks": [
-          "Cross-sectional z-scores on latest available years — not causal",
+          "Cross-sectional z-scores on latest available years \u2014 not causal",
           "Metric years may differ across series",
-          "Seven-county designated set only — not statewide inference"
+          "Seven-county designated set only \u2014 not statewide inference"
         ],
         "missing_data_cases": []
       },
       {
         "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
-        "claim": "Higher poverty tends to co-travel with weaker civic participation (descriptive test — not destiny)",
+        "claim": "Higher poverty tends to co-travel with weaker civic participation (descriptive test \u2014 not destiny)",
         "expected_co_travel": "negative",
         "x": "poverty_rate",
         "y": "presidential_turnout_registered_or_cvap",
@@ -6241,9 +6990,9 @@
           }
         ],
         "definition_breaks": [
-          "Cross-sectional z-scores on latest available years — not causal",
+          "Cross-sectional z-scores on latest available years \u2014 not causal",
           "Metric years may differ across series",
-          "Seven-county designated set only — not statewide inference"
+          "Seven-county designated set only \u2014 not statewide inference"
         ],
         "missing_data_cases": []
       },
@@ -6283,7 +7032,7 @@
             "county": "Lafayette County",
             "x_z": -0.808,
             "y_z": 0.939,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           }
         ],
         "ambiguous_middle": [
@@ -6322,9 +7071,9 @@
           }
         ],
         "definition_breaks": [
-          "Cross-sectional z-scores on latest available years — not causal",
+          "Cross-sectional z-scores on latest available years \u2014 not causal",
           "Metric years may differ across series",
-          "Seven-county designated set only — not statewide inference"
+          "Seven-county designated set only \u2014 not statewide inference"
         ],
         "missing_data_cases": []
       },
@@ -6364,7 +7113,7 @@
             "county": "Lafayette County",
             "x_z": -2.05,
             "y_z": 1.115,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           },
           {
             "pattern": "weak_x_strong_y",
@@ -6372,7 +7121,7 @@
             "county": "Phillips County",
             "x_z": -0.715,
             "y_z": 1.42,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           },
           {
             "pattern": "strong_x_weak_y",
@@ -6380,7 +7129,7 @@
             "county": "Van Buren County",
             "x_z": 0.62,
             "y_z": -0.45,
-            "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+            "why_valuable": "Economic/institutional strength without matching civic participation \u2014 theory gap candidate"
           }
         ],
         "ambiguous_middle": [
@@ -6408,9 +7157,9 @@
           }
         ],
         "definition_breaks": [
-          "Cross-sectional z-scores on latest available years — not causal",
+          "Cross-sectional z-scores on latest available years \u2014 not causal",
           "Metric years may differ across series",
-          "Seven-county designated set only — not statewide inference"
+          "Seven-county designated set only \u2014 not statewide inference"
         ],
         "missing_data_cases": []
       },
@@ -6450,7 +7199,7 @@
             "county": "Lafayette County",
             "x_z": -1.278,
             "y_z": 0.132,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           },
           {
             "pattern": "strong_x_weak_y",
@@ -6458,7 +7207,7 @@
             "county": "Mississippi County",
             "x_z": 0.723,
             "y_z": -1.11,
-            "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+            "why_valuable": "Economic/institutional strength without matching civic participation \u2014 theory gap candidate"
           },
           {
             "pattern": "weak_x_strong_y",
@@ -6466,7 +7215,7 @@
             "county": "Phillips County",
             "x_z": -1.076,
             "y_z": 0.28,
-            "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+            "why_valuable": "Strong participation despite weaker structural conditions \u2014 theory gap candidate"
           },
           {
             "pattern": "strong_x_weak_y",
@@ -6474,7 +7223,7 @@
             "county": "White County",
             "x_z": 0.724,
             "y_z": -0.297,
-            "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+            "why_valuable": "Economic/institutional strength without matching civic participation \u2014 theory gap candidate"
           }
         ],
         "ambiguous_middle": [
@@ -6513,9 +7262,9 @@
           }
         ],
         "definition_breaks": [
-          "Cross-sectional z-scores on latest available years — not causal",
+          "Cross-sectional z-scores on latest available years \u2014 not causal",
           "Metric years may differ across series",
-          "Seven-county designated set only — not statewide inference"
+          "Seven-county designated set only \u2014 not statewide inference"
         ],
         "missing_data_cases": []
       }
@@ -6526,5 +7275,17 @@
     "AR-GEO-LEWISVILLE"
   ],
   "source_layer": "data/project/arkansas_county_longitudinal_observation_layer.json",
-  "dial_note": "Overall completion remains 43% — richer evidence infrastructure does not inflate the dial"
+  "dial_note": "Overall completion remains 43% \u2014 richer evidence infrastructure does not inflate the dial",
+  "registration_series": {
+    "status": "EAVS_2016_2018_2020_2022_2024_BOUND",
+    "years": [
+      "2016",
+      "2018",
+      "2020",
+      "2022",
+      "2024"
+    ],
+    "source_family": "EAC-EAVS",
+    "note": "Federal general cycle registration stocks; SOS daily rolls still NEE"
+  }
 }

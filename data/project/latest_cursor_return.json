@@ -1,28 +1,24 @@
 {
-  "mission_id": "CC-REPO-HARDENING-1.0",
+  "mission_id": "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
   "status": "PASSED",
   "phase_2_status": "PARTIAL",
   "updated_at": "2026-08-12",
-  "summary": "CC-DEC-121 / UPD-134: Repository hardening — check:all passed; claims/hyps/baseline/compare/parity audited; CECS demands made explicit; county missing-data registry v1; deploy sync; UI polish cycle closed. 43% held. Next: empirical depth or definition-locks — not presentation.",
+  "summary": "CC-DEC-122 / UPD-135: EAVS multi-year registered voters 2016–2024 for 7 designated AR counties. Layer v1.3 (866 obs, +107). Turnout-of-registered derived with election-type labels. SOS rolls still NEE. 43% held. No site lock.",
   "repository_root": "H:\\constitutional-capitalism",
   "branch": "main",
-  "slice_id": "CC-REPO-HARDENING-1.0",
+  "slice_id": "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
   "returned_at": "2026-08-12",
-  "return_path": "reports/CC_REPO_HARDENING_1_0_RETURN.md",
-  "decision_id": "CC-DEC-121",
+  "return_path": "reports/CC_ARKANSAS_REGISTERED_VOTER_MULTIYEAR_1_0_RETURN.md",
+  "decision_id": "CC-DEC-122",
   "overall_percent": 43,
-  "baseline": "42/64",
-  "claims_empty_sources": 58,
-  "baseline_source_unknown": 22,
-  "compare_bound": 16,
-  "compare_backlog": 24,
-  "county_observations": 759,
-  "ui_polish_cycle": "CLOSED",
+  "longitudinal_non_null_observations": 866,
+  "registration_years": ["2016", "2018", "2020", "2022", "2024"],
+  "locked_pilot_site": null,
+  "board_explorer_path": "/county-living-systems/",
   "next_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
   "research_next": [
     "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0",
-    "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
     "CC-ARKANSAS-PILOT-READINESS-FIELD-PASS-1.0"
   ],
-  "update_id": "UPD-134"
+  "update_id": "UPD-135"
 }

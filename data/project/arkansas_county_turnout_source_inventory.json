@@ -8,7 +8,7 @@
   "hypothesis_id": "CC-HYP-CIVIC-ENGAGEMENT-AND-COMMUNITY-STRUCTURE",
   "incubator_alias": "HYP-128",
   "status": "PASSED_PARTIAL_PRESIDENTIAL_VOTES_BOUND",
-  "purpose": "Inventory Arkansas county participation sources and bind clean presidential vote totals for designated counties — descriptive co-travel with structure, not causal proof.",
+  "purpose": "Inventory Arkansas county participation sources and bind clean presidential vote totals for designated counties \u2014 descriptive co-travel with structure, not causal proof.",
   "method_wall": [
     "correlation_and_pattern_discovery_first",
     "causal_hypothesis_second",
@@ -24,12 +24,26 @@
   ],
   "sources": [
     {
+      "id": "EAC-EAVS-MULTIYEAR",
+      "name": "EAC Election Administration and Voting Survey (2016\u20132024)",
+      "url": "https://www.eac.gov/research-and-data/studies-and-reports",
+      "coverage": "Designated AR counties: A1a registration (+A1b where available), F1a ballots; presidential + midterm generals",
+      "status": "BOUND_FOR_DESIGNATED_COUNTIES",
+      "years_bound": [
+        "2016",
+        "2018",
+        "2020",
+        "2022",
+        "2024"
+      ]
+    },
+    {
       "id": "TONMCG-US-COUNTY-PRES-08-24",
-      "name": "tonmcg US County Level Presidential Results 2008–2024",
+      "name": "tonmcg US County Level Presidential Results 2008\u20132024",
       "url": "https://github.com/tonmcg/US_County_Level_Election_Results_08-24",
       "coverage": "Presidential county vote totals 2016/2020/2024 bound for designated AR counties",
       "status": "BOUND_FOR_DESIGNATED_COUNTIES",
-      "definition": "votes_gop / votes_dem / total_votes — NOT official turnout rate (no registered-voter or VAP denominator in source)",
+      "definition": "votes_gop / votes_dem / total_votes \u2014 NOT official turnout rate (no registered-voter or VAP denominator in source)",
       "years_bound": [
         "2016",
         "2020",
@@ -42,7 +56,8 @@
       "name": "Arkansas Secretary of State election research / canvass",
       "url": "https://www.sos.arkansas.gov/",
       "coverage": "Official canvass; needed for registered voters, midterms, locals, school board",
-      "status": "INVENTORY_NEEDED_OFFICIAL_CROSSCHECK"
+      "status": "STILL_NEEDED_FOR_SOS_ROLLS_AND_LOCALS",
+      "note": "EAVS multi-year now bound; SOS still needed for daily rolls and non-federal elections"
     },
     {
       "id": "MIT-ELECTION-DATA-LAB",
@@ -92,7 +107,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 6002.0,
         "total_votes_stdev": 325.8,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -128,7 +143,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 2613.0,
         "total_votes_stdev": 213.4,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -164,7 +179,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 12018.0,
         "total_votes_stdev": 957.8,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -200,7 +215,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 6024.7,
         "total_votes_stdev": 813.2,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -236,7 +251,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 3862.0,
         "total_votes_stdev": 131.1,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -272,7 +287,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 7513.0,
         "total_votes_stdev": 294.2,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     },
     {
@@ -308,7 +323,7 @@
       "descriptive_dispersion": {
         "total_votes_mean": 29724.3,
         "total_votes_stdev": 1607.6,
-        "definition": "Descriptive dispersion of presidential total votes across bound years — not causal stability claim"
+        "definition": "Descriptive dispersion of presidential total votes across bound years \u2014 not causal stability claim"
       }
     }
   ],
@@ -323,5 +338,8 @@
     "data/project/arkansas_county_longitudinal_observation_layer.json",
     "data/project/arkansas_hyp128_site_selection_model.json",
     "data/project/civic_engagement_community_structure_research.json"
-  ]
+  ],
+  "registered_voter_series_status": "PASSED_EAVS_2016_2024_DESIGNATED_SET",
+  "registered_voter_series_file": "data/imports/arkansas-registered-voter-multiyear/designated_county_eavs_multiyear.json",
+  "update_id_registration": "UPD-135"
 }

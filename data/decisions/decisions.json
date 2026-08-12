@@ -2117,6 +2117,25 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-122",
+      "title": "Arkansas Registered-Voter Multi-Year Series (EAVS 2016–2024)",
+      "question": "Should Constitutional Capitalism bind EAC EAVS registered-voter (A1a/A1b) and ballots-cast (F1a) series for 2016, 2018, 2020, 2022, and 2024 into the County×Year layer for the seven designated Arkansas counties, derive election-type-labeled turnout-of-registered where denominators allow, update the missing-data registry, and hold overall completion at 43% without locking pilot sites?",
+      "status": "approved",
+      "rationale": "Steve selected execution order item A after hardening. A single-year EAVS 2024 snapshot was insufficient for longitudinal civic participation analysis. Official EAC public releases provide a reproducible multi-year registration stock series; SOS daily rolls remain a separate NEE.",
+      "impact": [
+        "data/project/arkansas_county_longitudinal_observation_layer.json (v1.3)",
+        "data/project/arkansas_county_living_systems_explorer.json (v1.2)",
+        "data/project/arkansas_registered_voter_multiyear_wave.json",
+        "data/imports/arkansas-registered-voter-multiyear/",
+        "UPD-135",
+        "Overall % held at 43 / NO site lock / election-type labels preserved"
+      ],
+      "recommendation": "BEGIN validated comparative diagnosis packets using multi-year registration + Counterexample Register. SOS rolls and local election series remain depth work. Structural next remains definition-locks.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }
