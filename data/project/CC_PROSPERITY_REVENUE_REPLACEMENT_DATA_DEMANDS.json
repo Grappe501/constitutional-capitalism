@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "decision_id": "CC-DEC-123",
+  "update_id": "UPD-136",
+  "rule": "Demands guide Money Flow Map inventory and replacement modeling. Registration/scaffold only — no tax abolition, no invented sufficiency, no dial inflation. Cited DFA/BLR anchors require primary table bind before ledger dollars are treated as verified.",
+  "demands": [
+    {
+      "id": "CC-DEM-RRR-001",
+      "name": "dfa_comprehensive_state_revenue_inventory",
+      "question": "What is the complete Arkansas DFA state revenue inventory by source and fiscal year (including IIT, sales/use, corporate, severance, gaming, and dedications), with primary tables bound?",
+      "status": "ANCHORS_CITED_PRIMARY_BIND_REQUIRED",
+      "priority": "critical",
+      "layer": "state_ledger",
+      "linked": ["AR-REV-IIT-FY2026", "AR-REV-SALES-USE-FY2026"]
+    },
+    {
+      "id": "CC-DEM-RRR-002",
+      "name": "local_millage_and_property_tax_inventory",
+      "question": "What are total property-tax collections and millages by beneficiary class (schools, counties, cities, fire/EMS, libraries, roads, debt, pensions) statewide and for designated Living Systems counties?",
+      "status": "NEE_FULL_INVENTORY",
+      "priority": "critical",
+      "layer": "community_ledger",
+      "linked": ["AR-REV-PROPERTY-TAX-TOTAL-LOCAL"]
+    },
+    {
+      "id": "CC-DEM-RRR-003",
+      "name": "constitutional_statutory_dependency_matrix",
+      "question": "Which revenue streams are constitutionally required (esp. 25-mill URT), which are statutory, and which expenditures cannot lawfully be uncoupled from those sources without amendment?",
+      "status": "PARTIAL_URT_NOTED_MATRIX_NEE",
+      "priority": "critical",
+      "layer": "legal_constitutional",
+      "linked": ["AR-REV-URT-25MILL-2024-25"]
+    },
+    {
+      "id": "CC-DEM-RRR-004",
+      "name": "school_foundation_funding_bind",
+      "question": "Can the ~$1.603B URT local foundation funding estimate for 2024–25 be bound to the BLR Funding Overview primary tables and reconciled to ADE/DFA series?",
+      "status": "CITED_PENDING_PRIMARY_TABLE_BIND",
+      "priority": "critical",
+      "layer": "community_ledger"
+    },
+    {
+      "id": "CC-DEM-RRR-005",
+      "name": "incidence_analysis_iit_sales_property",
+      "question": "Who actually bears Arkansas IIT, sales/use, and property taxes by income quintile, housing tenure, and geography?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "incidence"
+    },
+    {
+      "id": "CC-DEM-RRR-006",
+      "name": "replacement_candidate_five_tests",
+      "question": "For each Resource + Enterprise + Consumption candidate, what are T1–T5 scores (capacity, volatility, incidence, prosperity alignment, behavioral distortion) with sourced magnitudes — without assuming sufficiency?",
+      "status": "STUDY_LIST_SCAFFOLDED",
+      "priority": "critical",
+      "layer": "replacement_modeling"
+    },
+    {
+      "id": "CC-DEM-RRR-007",
+      "name": "tax_retirement_fund_design",
+      "question": "What legal/administrative design ring-fences replacement dollars into a Tax Retirement Fund with automatic safety-threshold reductions?",
+      "status": "DESIGN_MEMO_NEE",
+      "priority": "high",
+      "layer": "transition"
+    },
+    {
+      "id": "CC-DEM-RRR-008",
+      "name": "community_prosperity_revenue_pilots",
+      "question": "Which local replacement classes (energy, broadband, value capture, enterprise ownership, equalization) can be piloted under existing law before constitutional URT redesign?",
+      "status": "UNMODELED_HYPOTHESIS",
+      "priority": "high",
+      "layer": "community_ledger",
+      "linked": ["HYP-129"]
+    },
+    {
+      "id": "CC-DEM-RRR-009",
+      "name": "volatility_series_commodity_tourism_gaming",
+      "question": "How volatile are severance, energy, tourism, and gaming revenues across recessions and commodity cycles relative to IIT?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "state_ledger"
+    },
+    {
+      "id": "CC-DEM-RRR-010",
+      "name": "prosperity_fund_and_public_returns_modeling",
+      "question": "Under what assumptions could prosperity-fund dividends or public investment returns become material replacement dollars — and what is the honest timeline before they count?",
+      "status": "UNMODELED_HYPOTHESIS_NOT_REPLACEMENT_DOLLARS",
+      "priority": "medium",
+      "layer": "replacement_modeling"
+    },
+    {
+      "id": "CC-DEM-RRR-011",
+      "name": "equalization_transfer_design",
+      "question": "If local property-tax retirement proceeds unevenly, what state equalization design prevents school/service collapse in low-base communities?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "community_ledger"
+    },
+    {
+      "id": "CC-DEM-RRR-012",
+      "name": "money_flow_map_row_population",
+      "question": "Can every material Arkansas revenue source carry the full row schema (source → dollars → beneficiary → dependency → volatility → incidence → replacement → maturity → trigger)?",
+      "status": "SCAFFOLD_V1_THREE_ANCHOR_ROWS",
+      "priority": "critical",
+      "layer": "cross_layer",
+      "linked": ["HYP-131"]
+    }
+  ],
+  "holds": [
+    "KEEP_AS_HYPOTHESIS",
+    "no_abolish_today",
+    "unmodeled_is_not_replacement_dollars",
+    "overall_percent_held_at_43"
+  ]
+}

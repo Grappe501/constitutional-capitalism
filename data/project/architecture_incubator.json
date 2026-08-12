@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-12",
   "decision_id": "CC-DEC-093",
   "related_decision_ids": [
     "CC-DEC-075",
@@ -13,7 +13,8 @@
     "CC-DEC-099",
     "CC-DEC-100",
     "CC-DEC-101",
-    "CC-DEC-102"
+    "CC-DEC-102",
+    "CC-DEC-123"
   ],
   "status": "governing",
   "title": "Architecture Incubator — Hypothesis Cards and Proof Packets",
@@ -664,6 +665,38 @@
       ],
       "proof_packet_status": "not_started",
       "note": "KEEP_AS_HYPOTHESIS under CC-DEC-112; capability-map chain locked under CC-DEC-114. Tier-1 parallel track. Registration only — no capacity census executed. Does not displace definition-locks."
+    },
+    {
+      "hypothesis_id": "HYP-131",
+      "title": "Prosperity-Based Revenue Replacement System",
+      "proposition": "Arkansas can eventually retire individual income tax and property tax only if it first inventories every current revenue source and legal dependency, then builds dual State and Community Prosperity Revenue Ledgers where replacement streams that grow with prosperity are demonstrably online — ring-fenced in a Tax Retirement Fund — before staged tax reductions, without shifting the same burden onto ordinary people through a single regressive swap and without treating unmodeled public-wealth returns as replacement dollars.",
+      "status": "Research framework — not doctrine",
+      "publishable": false,
+      "confidence_percent": 2,
+      "related_principle_ids": [],
+      "related_decision_ids": [
+        "CC-DEC-123"
+      ],
+      "related_framework": "data/project/arkansas_revenue_replacement_architecture.json",
+      "ledger_path": "data/project/arkansas_revenue_replacement_ledger.json",
+      "canonical_hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+      "public_path": null,
+      "dossier_path": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
+      "demand_manifest_path": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
+      "evidence_needed": [
+        "DFA comprehensive state revenue inventory by source/year (primary bind of IIT/sales/use anchors)",
+        "Full local millage and property-tax inventory by beneficiary class",
+        "Constitutional/statutory dependency matrix (25-mill URT vs other millages vs IIT)",
+        "Incidence analysis for IIT, sales/use, and property by income/housing tenure",
+        "Five-test scores for Resource + Enterprise + Consumption candidates without sufficiency assumption",
+        "Tax Retirement Fund legal/administrative design",
+        "Community prosperity revenue pilots under existing law before constitutional URT redesign",
+        "Volatility series for severance/energy/tourism/gaming vs IIT",
+        "Equalization transfer design for uneven local retirement",
+        "Money Flow Map row population beyond scaffold anchors"
+      ],
+      "proof_packet_status": "not_started",
+      "note": "KEEP_AS_HYPOTHESIS under CC-DEC-123. Dual ledgers: State (IIT) vs Community (property). Tax retirement earned. No abolish-today. Unmodeled prosperity returns ≠ replacement dollars. Does not displace definition-locks or County Living Systems empirical next."
     }
   ],
   "website_node": {

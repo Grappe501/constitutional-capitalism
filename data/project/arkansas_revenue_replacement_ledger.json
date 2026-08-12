@@ -1,0 +1,301 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-LEDGER-1.0",
+  "wave_slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-123",
+  "update_id": "UPD-136",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "status": "SCAFFOLD_V1_ANCHORS_ONLY",
+  "purpose": "Money Flow Map: Current source → current dollars → beneficiary → constitutional/legal dependency → volatility → incidence → proposed replacement → replacement maturity → transition trigger.",
+  "row_schema": [
+    "current_source",
+    "current_dollars",
+    "geography",
+    "beneficiary",
+    "constitutional_or_legal_dependency",
+    "volatility",
+    "incidence",
+    "proposed_replacement_class",
+    "replacement_maturity",
+    "transition_trigger",
+    "status",
+    "source_refs"
+  ],
+  "scale_warning": "Individual income tax alone is roughly the size of Arkansas state sales/use tax. Property tax is a separate local-finance problem. Do not collapse them.",
+  "state_prosperity_revenue_ledger": {
+    "title": "State Prosperity Revenue Ledger",
+    "replaces": "individual_income_tax",
+    "rows": [
+      {
+        "id": "AR-REV-IIT-FY2026",
+        "current_source": "Arkansas individual income tax",
+        "current_dollars": 3859000000,
+        "currency": "USD",
+        "period": "FY2026",
+        "geography": "state",
+        "beneficiary": "State general revenue / appropriations (bind exact uses)",
+        "constitutional_or_legal_dependency": "Statutory rate structure; not the 25-mill URT — statutory path may allow staged reduction once replacement online",
+        "volatility": "UNKNOWN_PENDING_BIND — historically cyclical with wages/capital gains",
+        "incidence": "Primarily individual labor and taxable income — exact incidence by quintile NEE",
+        "proposed_replacement_class": [
+          "consumption_with_household_protections",
+          "corporate_activity",
+          "resource_royalties",
+          "energy_export_revenue",
+          "land_resource_rents",
+          "tourism_gaming",
+          "public_investment_returns",
+          "state_enterprise_dividends"
+        ],
+        "replacement_maturity": "UNMODELED",
+        "transition_trigger": "Recurring replacement revenue in Tax Retirement Fund meets safety threshold → reduce IIT by safe equivalent → measure → repeat",
+        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "source_refs": [
+          {
+            "label": "Arkansas DFA — FY2026 surplus release citing $3.859B individual income tax",
+            "url": "https://www.dfa.arkansas.gov/news/state-completes-fiscal-year-with-655-million-surplus/",
+            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
+          }
+        ]
+      },
+      {
+        "id": "AR-REV-SALES-USE-FY2026",
+        "current_source": "Arkansas state sales and use tax",
+        "current_dollars": 3666000000,
+        "currency": "USD",
+        "period": "FY2026",
+        "geography": "state",
+        "beneficiary": "State general revenue (bind exact dedications)",
+        "constitutional_or_legal_dependency": "Statutory; local option overlays separate",
+        "volatility": "UNKNOWN_PENDING_BIND — consumption-linked",
+        "incidence": "Regressive risk without household protections — incidence analysis required before any rate increase as IIT replacement",
+        "proposed_replacement_class": [
+          "not_a_default_IIT_replacement_alone"
+        ],
+        "replacement_maturity": "EXISTING_STREAM",
+        "transition_trigger": "Comparator scale only — do not treat as automatic IIT substitute",
+        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "source_refs": [
+          {
+            "label": "Arkansas DFA — FY2026 surplus release citing $3.666B state sales and use tax",
+            "url": "https://www.dfa.arkansas.gov/news/state-completes-fiscal-year-with-655-million-surplus/",
+            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
+          }
+        ]
+      }
+    ],
+    "candidate_replacement_sources": [
+      {
+        "id": "CAND-STATE-SEVERANCE",
+        "class": "severance_resource_royalties",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-ENERGY-EXPORT",
+        "class": "energy_production_export_revenue",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-CORPORATE",
+        "class": "corporate_income_business_taxation",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-CONSUMPTION-PROTECTED",
+        "class": "broad_consumption_with_household_protections",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY_WITH_REGRESSIVITY_GATE"
+      },
+      {
+        "id": "CAND-STATE-TOURISM",
+        "class": "tourism_visitor_taxes",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-GAMING",
+        "class": "gaming_revenues",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-LAND-RENT",
+        "class": "land_resource_rents",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-FRANCHISE",
+        "class": "franchise_privilege_taxes",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-STATE-PUBLIC-RETURNS",
+        "class": "financial_returns_public_investment",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-STATE-ENTERPRISE-DIVIDEND",
+        "class": "state_enterprise_dividend_models",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-STATE-EXTERNALITY",
+        "class": "environmental_externality_charges_where_justified",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      }
+    ]
+  },
+  "community_prosperity_revenue_ledger": {
+    "title": "Community Prosperity Revenue Ledger",
+    "replaces": "property_tax_local_infrastructure_finance",
+    "rows": [
+      {
+        "id": "AR-REV-URT-25MILL-2024-25",
+        "current_source": "25-mill Uniform Rate of Tax (school foundation portion)",
+        "current_dollars": 1603000000,
+        "currency": "USD",
+        "period": "2024-25_school_year_estimate",
+        "geography": "statewide_local_school_districts",
+        "beneficiary": "Local school foundation funding",
+        "constitutional_or_legal_dependency": "Arkansas Constitution — 25-mill URT; complete elimination requires constitutional redesign/amendment after demonstrated replacement",
+        "volatility": "Relatively stable locally vs income tax — bind assessment cycle sensitivity",
+        "incidence": "Homeowners/landowners/business property; hardship vs income/liquidity known research theme — not identical to 'ownership of a person's home' alone",
+        "proposed_replacement_class": [
+          "community_owned_energy_dividends",
+          "local_enterprise_ownership",
+          "value_capture",
+          "state_equalization_transfers",
+          "local_activity_revenue",
+          "infrastructure_investment_returns"
+        ],
+        "replacement_maturity": "UNMODELED",
+        "transition_trigger": "Demonstrated multi-community replacement + equalization design → statutory/local pilots → constitutional amendment only after carry capacity proved",
+        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "source_refs": [
+          {
+            "label": "Arkansas General Assembly — Funding Overview Report (URT ~$1.603B estimate)",
+            "url": "https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly%2F%2FMeeting+Attachments%2F410%2F27809%2FEXHIBIT+E2+-+Funding+Overview+Report.pdf",
+            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
+          },
+          {
+            "label": "UAEX — Arkansas property taxes fund schools/counties/cities/roads/police/fire/libraries",
+            "url": "https://www.uaex.uada.edu/business-communities/local-government/property-taxes.aspx",
+            "bind_status": "CONTEXT_CITED"
+          }
+        ]
+      },
+      {
+        "id": "AR-REV-PROPERTY-TAX-TOTAL-LOCAL",
+        "current_source": "All Arkansas property taxes (schools + counties + cities + other millages)",
+        "current_dollars": null,
+        "currency": "USD",
+        "period": null,
+        "geography": "local",
+        "beneficiary": "Schools, counties, cities, fire/EMS, libraries, roads, debt service, pensions, infrastructure",
+        "constitutional_or_legal_dependency": "Mix of constitutional URT and statutory/local millages — inventory required before any retirement path",
+        "volatility": "UNKNOWN_PENDING_INVENTORY",
+        "incidence": "UNKNOWN_PENDING_INVENTORY",
+        "proposed_replacement_class": [
+          "community_prosperity_portfolio"
+        ],
+        "replacement_maturity": "INVENTORY_REQUIRED",
+        "transition_trigger": "Full millage inventory complete → classify statutory vs constitutional → stage retirement",
+        "status": "NEE_FULL_INVENTORY",
+        "source_refs": []
+      }
+    ],
+    "candidate_replacement_sources": [
+      {
+        "id": "CAND-LOCAL-SALES-ACTIVITY",
+        "class": "local_sales_activity_revenue",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-LOCAL-ENERGY",
+        "class": "community_owned_energy",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-LOCAL-UTILITY-DIVIDEND",
+        "class": "utility_dividends",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-LOCAL-BROADBAND",
+        "class": "municipal_broadband",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-LOCAL-LAND-LEASE",
+        "class": "land_leases",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-LOCAL-VALUE-CAPTURE",
+        "class": "development_value_capture",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-LOCAL-ENTERPRISE",
+        "class": "local_enterprise_ownership",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS"
+      },
+      {
+        "id": "CAND-LOCAL-CPA",
+        "class": "community_prosperity_accounts",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "UNMODELED_HYPOTHESIS",
+        "related_framework": "data/project/community_prosperity_framework.json"
+      },
+      {
+        "id": "CAND-LOCAL-EQUALIZATION",
+        "class": "state_equalization_transfers",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-LOCAL-OPTION",
+        "class": "local_option_revenue",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      },
+      {
+        "id": "CAND-LOCAL-ED-VALUE-CAPTURE",
+        "class": "economic_development_value_capture",
+        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
+        "status": "STUDY"
+      }
+    ]
+  },
+  "money_flow_map_next_fills": [
+    "DFA comprehensive revenue tables by source/year (primary bind)",
+    "ADE/BLR school millage and foundation funding tables",
+    "County/city millage inventories for designated Living Systems counties",
+    "Constitutional/statutory dependency matrix (URT vs other millages vs IIT)",
+    "Incidence tables by income/housing tenure for IIT, sales, property",
+    "Volatility series for severance/energy/gaming/tourism",
+    "Tax Retirement Fund legal design memo (research assistance, not legal advice)"
+  ],
+  "holds": [
+    "scaffolding_not_sufficiency",
+    "unmodeled_is_not_replacement_dollars",
+    "no_abolish_today",
+    "overall_percent_held_at_43"
+  ]
+}

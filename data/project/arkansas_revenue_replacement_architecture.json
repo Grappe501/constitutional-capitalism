@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-123",
+  "update_id": "UPD-136",
+  "status": "RESEARCH_FRAMEWORK_REGISTERED_NOT_DOCTRINE",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "title": "Arkansas Revenue Replacement Architecture",
+  "subtitle": "Two ledgers + Money Flow Map before choosing replacement taxes",
+  "core_question": "Exactly what revenue must be replaced, who currently depends on it, and what replacement sources can grow with prosperity without simply shifting the same burden onto ordinary people through another tax?",
+  "philosophical_goal": "Government increasingly earns revenue from the prosperity of the system rather than taxing the productive labor of individuals — and communities own enough productive capacity that growth itself helps finance the community.",
+  "method_wall": [
+    "inventory_current_revenue_first",
+    "map_legal_and_constitutional_dependencies_second",
+    "model_replacement_candidates_without_assuming_sufficiency",
+    "retire_taxes_only_after_replacement_revenue_is_demonstrably_online"
+  ],
+  "not": [
+    "doctrine",
+    "principle",
+    "immediate_abolition_plan",
+    "sales_tax_only_swap",
+    "assumption_that_energy_or_agriculture_alone_covers_the_gap",
+    "modeled_replacement_dollars",
+    "dial_inflation"
+  ],
+  "hard_distinction": {
+    "individual_income_tax": {
+      "ledger": "state_prosperity_revenue_ledger",
+      "nature": "Primarily state general revenue",
+      "anchor_note": "FY2026 individual income tax collections cited ~$3.859B (Arkansas DFA surplus release) — primary bind still required"
+    },
+    "property_tax": {
+      "ledger": "community_prosperity_revenue_ledger",
+      "nature": "Local infrastructure finance (schools, counties, cities, roads, police, fire, libraries, debt service, pensions)",
+      "constitutional_hardness": "Arkansas Constitution 25-mill Uniform Rate of Tax (URT) for schools — complete school property-tax retirement requires constitutional redesign or amendment after demonstrated replacement",
+      "anchor_note": "2024–25 URT local foundation funding estimated ~$1.603B (Arkansas General Assembly funding overview) — primary bind still required"
+    }
+  },
+  "two_ledgers": {
+    "state_prosperity_revenue_ledger": {
+      "replaces": "Arkansas individual income tax",
+      "study_classes": [
+        "consumption",
+        "corporate_activity",
+        "resource_extraction_royalties",
+        "energy_production_export_revenue",
+        "land_resource_rents",
+        "gaming_tourism",
+        "financial_activity_where_constitutionally_permissible",
+        "state_owned_productive_assets",
+        "public_investment_returns",
+        "user_charges",
+        "prosperity_fund_dividends_eventual"
+      ],
+      "incidence_rule": "Every replacement source requires who-actually-pays analysis; income-tax repeal + large sales-tax hike is a regressivity risk, not a default."
+    },
+    "community_prosperity_revenue_ledger": {
+      "replaces": "Property tax as local infrastructure finance",
+      "must_still_finance": [
+        "schools",
+        "counties",
+        "cities",
+        "fire_ems",
+        "libraries",
+        "roads",
+        "debt_service",
+        "pensions",
+        "local_infrastructure"
+      ],
+      "study_classes": [
+        "local_sales_activity_revenue",
+        "community_owned_energy",
+        "utility_dividends",
+        "municipal_broadband",
+        "land_leases",
+        "development_value_capture",
+        "local_enterprise_ownership",
+        "community_prosperity_accounts",
+        "infrastructure_investment_returns",
+        "resource_royalties",
+        "cooperative_distributions",
+        "tourism",
+        "state_equalization_transfers"
+      ],
+      "governing_idea": "A community should own enough productive capacity that growth itself helps finance the community."
+    }
+  },
+  "tax_retirement_protocol": {
+    "rule": "Tax retirement is earned — not hoped.",
+    "forbid": "abolish_$X_billion_today → hope_prosperity_fills_the_gap",
+    "design": "new prosperity revenue reaches threshold → reduce existing tax by equivalent safe amount → measure → repeat",
+    "stages": [
+      {
+        "id": "S1",
+        "title": "Build replacement revenue",
+        "action": "Stand up verified, recurring replacement streams with provenance"
+      },
+      {
+        "id": "S2",
+        "title": "Dedicate to Tax Retirement Fund",
+        "action": "Ring-fence replacement dollars so they cannot be silently spent elsewhere"
+      },
+      {
+        "id": "S3",
+        "title": "Safety-threshold automatic reduction",
+        "action": "When recurring replacement revenue meets a defined safety threshold, reduce the targeted tax by the safe equivalent"
+      },
+      {
+        "id": "S4",
+        "title": "Continue to zero",
+        "action": "Iterate until the targeted tax reaches zero without service collapse"
+      }
+    ]
+  },
+  "local_up_constitutional_sequence": {
+    "note": "Research sequence sketch — not a legislative calendar commitment",
+    "years_0_4": "Build replacement-revenue pilots; reduce taxes that can be reduced statutorily",
+    "years_4_8": "Demonstrate community prosperity revenues and state equalization in multiple communities/counties",
+    "years_8_12": "Redesign school/local-government funding based on demonstrated replacements",
+    "years_12_16": "Constitutional amendment to retire remaining constitutionally required property-tax structure only after replacement has proved it can carry the load"
+  },
+  "replacement_source_tests": [
+    {
+      "id": "T1",
+      "name": "revenue_capacity",
+      "question": "Can it actually raise billions (or the local share required)?"
+    },
+    {
+      "id": "T2",
+      "name": "volatility",
+      "question": "Will it collapse in a recession or commodity crash?"
+    },
+    {
+      "id": "T3",
+      "name": "incidence",
+      "question": "Who really bears the burden?"
+    },
+    {
+      "id": "T4",
+      "name": "prosperity_alignment",
+      "question": "Does revenue rise when people/community prosperity rises?"
+    },
+    {
+      "id": "T5",
+      "name": "behavioral_distortion",
+      "question": "Does it discourage the productive activity we are trying to create?"
+    }
+  ],
+  "first_research_slice_answers": [
+    "Inventory every current Arkansas revenue source — state, county, city, school district — and current amount",
+    "Identify expenditures legally or constitutionally tied to particular revenue sources",
+    "Model potential replacement revenue sources without assuming they will be sufficient",
+    "Create a transition sequence where income/property taxes fall only after replacement revenue is demonstrably online"
+  ],
+  "ledger_file": "data/project/arkansas_revenue_replacement_ledger.json",
+  "demand_manifest_path": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
+  "related_frameworks": [
+    "data/project/community_prosperity_framework.json",
+    "data/project/civic_wealth_framework.json",
+    "data/project/arkansas_transition_framework.json",
+    "data/project/arkansas_learns_cte_legal_funding_feasibility.json"
+  ],
+  "warning": "Prosperity funds, community enterprises, and public investment returns are currently unmodeled revenue hypotheses — not replacement dollars. $3.859B income tax plus the statewide/local property-tax structure is an enormous replacement requirement.",
+  "holds": [
+    "KEEP_AS_HYPOTHESIS",
+    "overall_percent_held_at_43",
+    "no_new_principle",
+    "no_autonomous_tax_abolition",
+    "prove_locally_before_constitutionalize"
+  ]
+}
