@@ -11,7 +11,9 @@
 
 ## 1. Status / fairness disclaimer
 
-This dossier is a Phase 1 comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+This dossier is a comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+
+**Phase 2 status:** Political-money, sectoral-influence ladder, journalism, and competition panels are live-bound. Disclosure concentration ≠ proven sector capture (`CC-CLAIM-003` / `CC-CLAIM-134` holds).
 
 ## 2. Definition
 
@@ -102,6 +104,12 @@ Constitutional Capitalism remains a developing framework. Boundary statements he
 - Anne O. Krueger on rent-seeking
 - George J. Stigler, 'The Theory of Economic Regulation'
 - Transparency International and similar corruption perception methodologies (use cautiously; no invented scores here)
+
+## 12. Phase 2 — Evidence status
+
+**Supporting (observational):** political-money concentration; journalism capacity gaps; competition-enforcement dials; sectoral influence ladder as a risk map.  
+**NEE:** any named Arkansas sector proven captured from dials alone.  
+Live panels and feasibility notes appear in the Phase 2 section on this page.
 
 ---
 

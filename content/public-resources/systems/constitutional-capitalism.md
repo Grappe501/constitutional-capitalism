@@ -11,7 +11,9 @@
 
 ## 1. Status / fairness disclaimer
 
-This dossier is a Phase 1 comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+This dossier is a comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+
+**Phase 2 status:** Evidence layers (observable outcomes, Arkansas relevance, for/against/NEE, transition feasibility) are bound below the classic dossier via live panels on this page. They reuse existing evidence passes — they do not graduate HYP-125–129 or upgrade `CC-CLAIM-003`.
 
 ## 2. Definition
 
@@ -105,6 +107,16 @@ Constitutional Capitalism remains a developing framework. Boundary statements he
 - Project document: WHAT_CONSTITUTIONAL_CAPITALISM_IS_AND_IS_NOT.md
 - Project Declaration of Constitutional Capitalism (draft)
 - Comparative references: Walter Eucken on economic order; classical republican liberty literature
+
+## 12. Phase 2 — Evidence status (Constitutional Capitalism)
+
+**Supported (observational):** local capital and rural structure dials; journalism presence gaps; agricultural structure and processing-access posture; labor/wage-productivity trends; wealth and ownership concentration; political-money concentration; primary-care access shortages.
+
+**Unresolved (NEE):** prosperity-fund outcomes; ownership-transition outcomes; HYP-125 campaign-finance locality; HYP-126 distributed civic commons; HYP-127 age-16 local suffrage propositions; HYP-128 civic engagement × structure causation; HYP-129 Arkansas transition pathway results; `CC-CLAIM-003` (concentration ≠ market power ≠ monopsony ≠ capture).
+
+**Contradicted / bounded:** any claim that CC mechanisms are already validated by completed outcome trials — LCL work remains investigative case study, not proof theater.
+
+See the live **Phase 2 — Evidence integration** section on this page for panels, Arkansas examples (Rose Bud, Clinton, Searcy, Lafayette/Lewisville), and feasibility notes.
 
 ---
 

@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-COMPARATIVE-SYSTEMS-PHASE-2-EVIDENCE-INTEGRATION-1.0",
+  "decision_id": "CC-DEC-110",
+  "update_id": "UPD-123",
+  "rule": "Push evidence density into existing comparison pages before new compare content. Bind first; invent later.",
+  "demands": [
+    {
+      "id": "CC-DEM-CMP-001",
+      "name": "priority_wave_live_panel_bind",
+      "question": "Do priority compare pages render live EvidencePanel components from phase2_evidence.evidence_panel_ids?",
+      "status": "COMPLETE_PRIORITY_WAVE",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-CMP-002",
+      "name": "arkansas_relevance_on_priority_five",
+      "question": "Do the five priority systems answer what the system would mean in Arkansas with local examples?",
+      "status": "COMPLETE_PRIORITY_WAVE",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-CMP-003",
+      "name": "evidence_verdicts_for_against_nee",
+      "question": "Does each priority system have supporting / contradicting / NEE verdict lists with holds intact?",
+      "status": "COMPLETE_PRIORITY_WAVE",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-CMP-004",
+      "name": "transition_feasibility_five_levels",
+      "question": "Are constitutional / Arkansas legislative / local / county / state-amendment feasibility notes present?",
+      "status": "COMPLETE_PRIORITY_WAVE",
+      "priority": "high"
+    },
+    {
+      "id": "CC-DEM-CMP-005",
+      "name": "wave2_social_democracy_corporatism_democratic_socialism",
+      "question": "Bind healthcare, education, labor, and participation panels into social democracy and near neighbors.",
+      "status": "QUEUED",
+      "priority": "high"
+    },
+    {
+      "id": "CC-DEM-CMP-006",
+      "name": "remaining_35_systems_scaffold",
+      "question": "Scaffold empty phase2_evidence shells for remaining systems without inventing verdicts.",
+      "status": "QUEUED",
+      "priority": "medium"
+    },
+    {
+      "id": "CC-DEM-CMP-007",
+      "name": "matrix_index_phase2_badge",
+      "question": "Should /compare/ index surface which systems have Phase 2 evidence layers bound?",
+      "status": "COMPLETE_PRIORITY_WAVE",
+      "priority": "medium"
+    }
+  ],
+  "next_slice": "CC-COMPARATIVE-SYSTEMS-PHASE-2-WAVE-2-SOCIAL-DEMOCRACY-AND-DIAGNOSTICS-1.0",
+  "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+}

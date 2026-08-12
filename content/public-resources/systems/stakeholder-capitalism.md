@@ -11,7 +11,9 @@
 
 ## 1. Status / fairness disclaimer
 
-This dossier is a Phase 1 comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+This dossier is a comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+
+**Phase 2 status:** Ownership, wealth, labor, human-capital, and rural-capital panels are live-bound beside stakeholder rhetoric. Soft ESG pledges remain NEE as Arkansas ownership outcomes.
 
 ## 2. Definition
 
@@ -91,6 +93,12 @@ Constitutional Capitalism remains a developing framework. Boundary statements he
 - R. Edward Freeman, Strategic Management: A Stakeholder Approach
 - Colin Mayer, Prosperity
 - Lucian Bebchuk and Roberto Tallarita critiques of stakeholderism (law-review literature)
+
+## 12. Phase 2 — Evidence status
+
+**Supporting (observational):** wealth and ownership concentration remain measurable beside stakeholder pledges; labor and human-capital dials constrain soft-governance claims.  
+**NEE:** that voluntary ESG/stakeholder statements redistribute residual claims or Arkansas local ownership.  
+Live panels appear in the Phase 2 section on this page.
 
 ---
 

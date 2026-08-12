@@ -11,7 +11,9 @@
 
 ## 1. Status / fairness disclaimer
 
-This dossier is a Phase 1 comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+This dossier is a comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+
+**Phase 2 status:** Live evidence layers bind wages-productivity, competition/entry-exit, wealth, political-money, rural capital, and primary-care panels with Arkansas relevance — without claiming the U.S. or Arkansas is a pure laissez-faire regime.
 
 ## 2. Definition
 
@@ -92,6 +94,10 @@ Constitutional Capitalism remains a developing framework. Boundary statements he
 - Adam Smith, Wealth of Nations
 - Frédéric Bastiat, Economic Sophisms
 - Friedrich Hayek, The Road to Serfdom; The Constitution of Liberty
+
+## 12. Phase 2 — Arkansas lens
+
+A thin-rule ideal would leave Delta counties, rural hospitals/HPSA gaps, farm and processing access, and workforce participation largely to market correction. Existing dials show where that bet is empirically contested. Observational tension is not a completed causal proof that thicker rules would close every gap. `CC-CLAIM-003` remains NEE.
 
 ---
 

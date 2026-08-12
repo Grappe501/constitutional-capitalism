@@ -11,7 +11,9 @@
 
 ## 1. Status / fairness disclaimer
 
-This dossier is a Phase 1 comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+This dossier is a comparative instrument for Constitutional Capitalism. Categories overlap; real societies are usually hybrids. Pejorative or diagnostic labels (where used) describe patterns of power, not identities people must proudly claim.
+
+**Phase 2 status:** Wealth (Z.1/DFA/SCF family), ownership, and political-money panels are live-bound. Measurable concentration does **not** prove a completed plutocracy regime.
 
 ## 2. Definition
 
@@ -102,6 +104,12 @@ Constitutional Capitalism remains a developing framework. Boundary statements he
 - Larry M. Bartels, Unequal Democracy
 - Martin Gilens, Affluence and Influence
 - Progressive Era anti-plutocracy literature (e.g., critiques of 'money power')
+
+## 12. Phase 2 — Evidence status
+
+**Supporting (observational):** wealth concentration (W01/W02 family; Z.1/DFA); political-money receipt concentration (D04).  
+**NEE:** that measurable concentration proves a completed plutocracy regime or capture (`CC-CLAIM-003`, `CC-CLAIM-134`).  
+Live panels and Arkansas relevance appear in the Phase 2 section on this page.
 
 ---
 

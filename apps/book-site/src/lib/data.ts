@@ -33,6 +33,38 @@ function asList<T>(value: unknown): T[] {
   return [];
 }
 
+export type Phase2EvidenceVerdict = {
+  claim: string;
+  evidence?: string;
+  status?: string;
+  linked?: string[];
+};
+
+export type Phase2Evidence = {
+  wave?: string;
+  slice_id?: string;
+  evidence_panel_ids?: string[];
+  observable_outcomes?: Record<string, string[]>;
+  arkansas_relevance?: {
+    summary?: string;
+    local_examples?: string[];
+    status?: string;
+  };
+  evidence_verdicts?: {
+    supporting?: Phase2EvidenceVerdict[];
+    contradicting?: Phase2EvidenceVerdict[];
+    not_enough_evidence?: Phase2EvidenceVerdict[];
+  };
+  transition_feasibility?: {
+    constitutional?: string;
+    arkansas_legislative?: string;
+    local?: string;
+    county?: string;
+    state_constitutional_amendment?: string;
+  };
+  holds?: string[];
+};
+
 export type EconomicSystem = {
   id: string;
   slug: string;
@@ -53,6 +85,7 @@ export type EconomicSystem = {
   neighbor_systems: string[];
   dossier_path: string;
   status: string;
+  phase2_evidence?: Phase2Evidence;
 };
 
 export const FAMILY_ORDER = [

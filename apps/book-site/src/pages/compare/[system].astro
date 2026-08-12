@@ -1,11 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import EvidencePanel from "../../components/EvidencePanel.astro";
 import {
   comparison,
   comparisonBySlug,
   simpleMarkdownToHtml,
   type EconomicSystem,
 } from "../../lib/data";
+import panels from "../../../../../data/project/publication_evidence_panels.json";
 
 export function getStaticPaths() {
   return comparison.systems.map((s: EconomicSystem) => ({
@@ -15,6 +17,7 @@ export function getStaticPaths() {
 
 const slug = Astro.params.system as string;
 const system = comparisonBySlug(slug)!;
+const phase2 = system.phase2_evidence;
 
 const dossierModules = import.meta.glob("../../../../../content/public-resources/systems/*.md", {
   query: "?raw",
@@ -31,6 +34,15 @@ const html = raw
 const neighbors = (system.neighbor_systems || [])
   .map((id) => comparison.systems.find((s) => s.id === id))
   .filter(Boolean) as EconomicSystem[];
+
+type PanelRow = (typeof panels.panels)[number];
+const boundPanels: PanelRow[] = (phase2?.evidence_panel_ids || [])
+  .map((id) => (panels.panels || []).find((p: { panel_id: string }) => p.panel_id === id))
+  .filter((p): p is PanelRow => Boolean(p));
+
+const outcomeEntries = Object.entries(phase2?.observable_outcomes || {}).filter(
+  ([, ids]) => Array.isArray(ids) && ids.length > 0
+);
 ---
 
 <BaseLayout
@@ -41,9 +53,162 @@ const neighbors = (system.neighbor_systems || [])
   <article class="prose system-dossier">
     <p class="muted">
       <a href="/compare/">← All systems</a> · {system.family} · Developing analytical tool
+      {
+        phase2 ? (
+          <>
+            {" "}
+            · <span class="phase2-badge">Phase 2 evidence layers</span>
+          </>
+        ) : null
+      }
     </p>
 
     <div class="dossier-body" set:html={html} />
+
+    {
+      phase2 ? (
+        <section class="phase2-layers" aria-label="Phase 2 evidence layers">
+          <h2 id="phase2-evidence">Phase 2 — Evidence integration</h2>
+          <p class="lede-soft">
+            Layer 1 (definition) is above. Layers 2–5 bind existing evidence panels and Arkansas relevance
+            without inventing causal proofs. Observational dials motivate questions; they do not graduate
+            hypotheses.
+          </p>
+
+          <h3 id="layer-observable">Layer 2 — Observable outcomes</h3>
+          {
+            outcomeEntries.length > 0 ? (
+              <ul>
+                {outcomeEntries.map(([domain, ids]) => (
+                  <li>
+                    <strong>{domain}</strong>:{" "}
+                    {(ids as string[]).map((id, i) => (
+                      <>
+                        {i > 0 ? ", " : ""}
+                        <code>{id}</code>
+                      </>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="muted">No outcome domains bound yet.</p>
+            )
+          }
+
+          {
+            boundPanels.length > 0 ? (
+              <div class="bound-panels">
+                {boundPanels.map((panel) => (
+                  <EvidencePanel panel={panel} />
+                ))}
+              </div>
+            ) : null
+          }
+
+          <h3 id="layer-arkansas">Layer 3 — Arkansas relevance</h3>
+          <p>{phase2.arkansas_relevance?.summary || "Not yet assessed for Arkansas."}</p>
+          {
+            (phase2.arkansas_relevance?.local_examples || []).length > 0 ? (
+              <ul>
+                {(phase2.arkansas_relevance?.local_examples || []).map((ex) => (
+                  <li>{ex}</li>
+                ))}
+              </ul>
+            ) : null
+          }
+
+          <h3 id="layer-verdicts">Layer 4 — Evidence for / against / not enough evidence</h3>
+          <h4>Evidence supporting (observational)</h4>
+          <ul>
+            {(phase2.evidence_verdicts?.supporting || []).map((v) => (
+              <li>
+                <strong>{v.claim}</strong>
+                {v.evidence ? ` — ${v.evidence}` : ""}
+              </li>
+            ))}
+          </ul>
+          <h4>Evidence contradicting or bounding overclaim</h4>
+          {
+            (phase2.evidence_verdicts?.contradicting || []).length > 0 ? (
+              <ul>
+                {(phase2.evidence_verdicts?.contradicting || []).map((v) => (
+                  <li>
+                    <strong>{v.claim}</strong>
+                    {v.evidence ? ` — ${v.evidence}` : ""}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="muted">No direct contradicting observational verdicts listed for this wave.</p>
+            )
+          }
+          <h4>Not enough evidence</h4>
+          <ul>
+            {(phase2.evidence_verdicts?.not_enough_evidence || []).map((v) => (
+              <li>
+                <strong>{v.claim}</strong>
+                {(v.linked || []).length > 0 ? ` (${(v.linked || []).join(", ")})` : ""}
+              </li>
+            ))}
+          </ul>
+
+          <h3 id="layer-feasibility">Layer 5 — Transition feasibility</h3>
+          <table class="compare-dossier-table">
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Assessment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Constitutional</td>
+                <td>{phase2.transition_feasibility?.constitutional || "—"}</td>
+              </tr>
+              <tr>
+                <td>Arkansas legislative</td>
+                <td>{phase2.transition_feasibility?.arkansas_legislative || "—"}</td>
+              </tr>
+              <tr>
+                <td>Local</td>
+                <td>{phase2.transition_feasibility?.local || "—"}</td>
+              </tr>
+              <tr>
+                <td>County</td>
+                <td>{phase2.transition_feasibility?.county || "—"}</td>
+              </tr>
+              <tr>
+                <td>State constitutional amendment</td>
+                <td>{phase2.transition_feasibility?.state_constitutional_amendment || "—"}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          {
+            (phase2.holds || []).length > 0 ? (
+              <>
+                <h3 id="phase2-holds">Holds</h3>
+                <ul>
+                  {(phase2.holds || []).map((h) => (
+                    <li>{h}</li>
+                  ))}
+                </ul>
+              </>
+            ) : null
+          }
+        </section>
+      ) : (
+        <section class="phase2-pending" aria-label="Phase 2 pending">
+          <h2>Phase 2 evidence layers</h2>
+          <p class="muted">
+            Not yet bound for this system. Priority wave covers Constitutional Capitalism, plutocracy,
+            crony capitalism, laissez-faire capitalism, and stakeholder capitalism. Remaining systems
+            keep Layer 1 definition until Wave 2+.
+          </p>
+        </section>
+      )
+    }
 
     {
       neighbors.length > 0 && (
@@ -53,6 +218,7 @@ const neighbors = (system.neighbor_systems || [])
             {neighbors.map((n) => (
               <li>
                 <a href={`/compare/${n.slug}/`}>{n.name}</a>
+                {n.phase2_evidence ? " · Phase 2" : ""}
               </li>
             ))}
           </ul>
@@ -67,6 +233,21 @@ const neighbors = (system.neighbor_systems || [])
 </BaseLayout>
 
 <style>
+  .phase2-badge {
+    display: inline-block;
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--line);
+  }
+  .lede-soft {
+    color: var(--ink-soft);
+  }
+  .bound-panels {
+    display: grid;
+    gap: 1.25rem;
+    margin: 1.25rem 0 1.75rem;
+  }
   .system-dossier :global(.compare-dossier-table) {
     width: 100%;
     border-collapse: collapse;
