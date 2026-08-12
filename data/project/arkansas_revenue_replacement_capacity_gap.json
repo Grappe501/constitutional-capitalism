@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-125",
+  "update_id": "UPD-138",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "status": "PRIMARY_BIND_AND_T1_T5_PARTIAL_GAP_MAP",
+  "political_conclusion": "NONE — no recommendation to abolish IIT or property tax",
+  "core_answers": {
+    "iit_recurring_dollars_to_retire": {
+      "gross_fy2026_usd": 3859100000,
+      "net_of_refunds_usd": 3304600000,
+      "source": "DFA generalRevenue202606.pdf"
+    },
+    "property_layers_to_retire": {
+      "school_urt_bound_usd": 1602678681,
+      "school_additional_estimated_usd": 866800000,
+      "school_debt_service_usd": null,
+      "county_estimated_usd": 267400000,
+      "municipal_preferred_estimated_usd": 218800000,
+      "special_other_estimated_usd": 31300000,
+      "illustrative_sum_ex_debt_split_usd": 2986958681
+    },
+    "who_depends": {
+      "iit": "State general revenue appropriations (largest GR category); education PSF is heavily GR-funded and thus IIT/sales/corporate dependent",
+      "urt": "Traditional school district foundation funding (M&O) under constitutional 25-mill URT",
+      "school_additional": "Local school M&O above foundation and/or debt service",
+      "county": "County general, roads, libraries, hospitals, colleges, other",
+      "municipal": "City general, pensions, libraries, bonds, parks, other",
+      "special": "Special districts / other local entities"
+    },
+    "which_families_can_carry_meaningful_shares": {
+      "can_plausibly_matter_with_caveats": [
+        "Corporate/enterprise taxation — partial (~14% of IIT gross at current collections) but already funding GR; not free capacity",
+        "Consumption — only family with IIT-scale yield, but naive rate hike is an explicit regressive household burden shift"
+      ],
+      "clearly_cannot_at_current_bound_magnitudes": [
+        "Severance/resource GR (~$10.6M)",
+        "Franchise (~$8M)",
+        "Gaming GR (~$64M)",
+        "Tourism GR tourist line (~$0.9M)"
+      ],
+      "not_counted": [
+        "Prosperity-fund dividends",
+        "Public investment returns",
+        "Unmodeled community enterprise distributions"
+      ]
+    }
+  },
+  "replacement_capacity_gap": {
+    "state_iit_gap": {
+      "target_usd": 3859100000,
+      "bound_non_consumption_enterprise_resource_sum_usd": 598600000,
+      "illusion_note": "Summing existing corporate+gaming+franchise+severance is NOT incremental capacity — those dollars already fund GR.",
+      "incremental_modeled_replacement_capacity_usd": 0,
+      "gap_usd": 3859100000,
+      "gap_status": "FULL_GAP_REMAINS_AFTER_HONEST_INCREMENTAL_ACCOUNTING"
+    },
+    "community_property_gap": {
+      "urt_target_bound_usd": 1602678681,
+      "other_layers_estimated_usd": 1384280000,
+      "incremental_modeled_community_replacement_capacity_usd": 0,
+      "gap_status": "FULL_GAP_REMAINS — community prosperity revenues unmodeled"
+    }
+  },
+  "regressivity_surface": {
+    "rule": "If a proposed replacement merely shifts burden onto ordinary households through higher prices or regressive consumption taxes, surface that explicitly.",
+    "findings": [
+      "Sales/use is already $3.667B — nearly IIT-scale. Using higher sales rates to retire IIT is a burden rename unless household protections are proven.",
+      "Gaming and some consumption excises lean regressive.",
+      "Property-tax retirement that dumps cost into local sales options can recreate the same household burden locally."
+    ]
+  },
+  "imports": {
+    "dfa": "data/imports/arkansas-revenue-replacement/fy2026_dfa_general_revenue_bind.json",
+    "blr_urt": "data/imports/arkansas-revenue-replacement/blr_urt_foundation_bind.json",
+    "property_layers": "data/imports/arkansas-revenue-replacement/property_tax_layer_structure.json",
+    "t1_t5": "data/imports/arkansas-revenue-replacement/t1_t5_resource_enterprise_consumption.json"
+  },
+  "holds": [
+    "no_abolish_recommendation",
+    "unmodeled_prosperity_returns_not_replacement_dollars",
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS"
+  ]
+}

@@ -1720,9 +1720,47 @@
     "demand_manifest": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
     "dossier": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
     "return": "reports/CC_ARKANSAS_REVENUE_REPLACEMENT_ARCHITECTURE_1_0_RETURN.md",
+    "superseded_next_by": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+    "parallel_empirical_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "unmodeled_is_not_replacement_dollars",
+      "iit_vs_property_tax_distinct"
+    ]
+  },
+  "arkansas_revenue_replacement_primary_bind_t1_t5": {
+    "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+    "status": "PASSED_PRIMARY_BIND_AND_T1_T5_GAP_MAPPED",
+    "mode": "primary_bind_layered_property_five_tests_capacity_gap",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "decision_id": "CC-DEC-125",
+    "update_id": "UPD-138",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_new_principle": true,
+    "no_abolish_recommendation": true,
+    "program_file": "data/project/arkansas_revenue_replacement_architecture.json",
+    "ledger_file": "data/project/arkansas_revenue_replacement_ledger.json",
+    "capacity_gap_file": "data/project/arkansas_revenue_replacement_capacity_gap.json",
+    "demand_manifest": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
+    "dossier": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
+    "imports_dir": "data/imports/arkansas-revenue-replacement/",
+    "return": "reports/CC_PHASE_2_1_ARKANSAS_REVENUE_REPLACEMENT_PRIMARY_BIND_AND_T1_T5_TEST_1_0_RETURN.md",
+    "bound": {
+      "iit_gross_fy2026_usd": 3859100000,
+      "sales_use_fy2026_usd": 3666700000,
+      "corporate_fy2026_usd": 523600000,
+      "urt_foundation_2024_25_usd": 1602678681
+    },
+    "incremental_modeled_replacement_capacity_usd": 0,
     "research_next": [
-      "CC-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-MILLAGE-INVENTORY-1.0",
-      "CC-ARKANSAS-RESOURCE-ENTERPRISE-CONSUMPTION-FIVE-TESTS-1.0"
+      "CC-ARKANSAS-REVENUE-REPLACEMENT-MILLAGE-COLLECTIONS-INVENTORY-1.0",
+      "CC-ARKANSAS-REVENUE-REPLACEMENT-INCIDENCE-TABLES-1.0"
     ],
     "parallel_empirical_next": [
       "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
@@ -1733,8 +1771,9 @@
       "KEEP_AS_HYPOTHESIS",
       "no_abolish_today",
       "unmodeled_is_not_replacement_dollars",
+      "regressive_swap_surfaced",
       "iit_vs_property_tax_distinct",
-      "cited_anchors_primary_bind_required"
+      "debt_service_millage_split_nee"
     ]
   },
   "publication_pass9_structural_deepen": {

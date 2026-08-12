@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-125",
+  "update_id": "UPD-138",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "rule": "Score without assuming sufficiency. Public-investment / prosperity-fund returns are SEPARATE and NOT counted as replacement dollars.",
+  "benchmarks_usd": {
+    "iit_gross_fy2026": 3859100000,
+    "urt_local_foundation_2024_25": 1602678681,
+    "property_layers_illustrative_sum": 2986958681
+  },
+  "score_scale": {
+    "T1_revenue_capacity": ["FAIL_NEGLIGIBLE", "WEAK_UNDER_10PCT", "PARTIAL_10_TO_40PCT", "MATERIAL_OVER_40PCT", "SUFFICIENT_ALONE"],
+    "T2_volatility": ["LOW", "MODERATE", "HIGH", "UNKNOWN"],
+    "T3_incidence": ["PROGRESSIVE_LEAN", "MIXED", "REGRESSIVE_RISK", "UNKNOWN"],
+    "T4_prosperity_alignment": ["ALIGNED", "MIXED", "MISALIGNED", "UNKNOWN"],
+    "T5_behavioral_distortion": ["LOW", "MODERATE", "HIGH", "UNKNOWN"]
+  },
+  "families": [
+    {
+      "id": "FAM-RESOURCE",
+      "title": "Resource revenue",
+      "members": [
+        {
+          "id": "severance_gr",
+          "label": "Severance (DFA GR line)",
+          "fy2026_actual_usd": 10600000,
+          "source": "DFA generalRevenue202606.pdf",
+          "share_of_iit_gross": 0.0027,
+          "T1": "FAIL_NEGLIGIBLE",
+          "T2": "HIGH",
+          "T3": "MIXED",
+          "T4": "MIXED",
+          "T5": "MODERATE",
+          "notes": "Orders of magnitude too small for IIT replacement. Commodity-cycle volatility. Incidence on extractive operators may pass through prices."
+        },
+        {
+          "id": "energy_export_premium",
+          "label": "Energy production/export premium (beyond current severance)",
+          "fy2026_actual_usd": null,
+          "status": "UNMODELED_HYPOTHESIS",
+          "T1": "UNKNOWN",
+          "T2": "HIGH",
+          "T3": "UNKNOWN",
+          "T4": "ALIGNED",
+          "T5": "MODERATE",
+          "notes": "Not counted as replacement dollars until a legal instrument and magnitude are modeled."
+        },
+        {
+          "id": "land_resource_rents",
+          "label": "Land/resource rents",
+          "status": "UNMODELED_HYPOTHESIS",
+          "T1": "UNKNOWN",
+          "T2": "MODERATE",
+          "T3": "MIXED",
+          "T4": "ALIGNED",
+          "T5": "LOW",
+          "notes": "Philosophically aligned; no Arkansas magnitude bind this slice."
+        }
+      ],
+      "family_verdict": "Current bound resource GR (~$10.6M) cannot carry a meaningful share of the $3.859B IIT burden. Resource family remains a study track, not a fill."
+    },
+    {
+      "id": "FAM-ENTERPRISE",
+      "title": "Enterprise / business revenue",
+      "members": [
+        {
+          "id": "corporate_income",
+          "label": "Corporate income tax (gross)",
+          "fy2026_actual_usd": 523600000,
+          "net_of_refunds_usd": 453800000,
+          "share_of_iit_gross": 0.1357,
+          "T1": "PARTIAL_10_TO_40PCT",
+          "T2": "HIGH",
+          "T3": "MIXED",
+          "T4": "MIXED",
+          "T5": "MODERATE",
+          "notes": "Largest bound enterprise stream, still only ~14% of IIT gross even before behavioral response. Rate increases may reduce base (T5). Not sufficient alone."
+        },
+        {
+          "id": "franchise",
+          "label": "Franchise tax (GR)",
+          "fy2026_actual_usd": 8000000,
+          "share_of_iit_gross": 0.0021,
+          "T1": "FAIL_NEGLIGIBLE",
+          "T2": "LOW",
+          "T3": "MIXED",
+          "T4": "MIXED",
+          "T5": "LOW",
+          "notes": "Negligible vs IIT scale."
+        },
+        {
+          "id": "gaming",
+          "label": "Gaming (GR line)",
+          "fy2026_actual_usd": 64400000,
+          "share_of_iit_gross": 0.0167,
+          "plus_highway_casino_transfer_millions": 31.2,
+          "T1": "WEAK_UNDER_10PCT",
+          "T2": "MODERATE",
+          "T3": "REGRESSIVE_RISK",
+          "T4": "MIXED",
+          "T5": "MODERATE",
+          "notes": "Small vs IIT. Incidence often falls on players; earmarks (e.g. Highway Casino Transfer) already claim portions."
+        },
+        {
+          "id": "state_enterprise_dividends",
+          "label": "State enterprise / public investment dividends",
+          "status": "UNMODELED_HYPOTHESIS_NOT_REPLACEMENT_DOLLARS",
+          "T1": "UNKNOWN",
+          "T2": "UNKNOWN",
+          "T3": "UNKNOWN",
+          "T4": "ALIGNED",
+          "T5": "LOW",
+          "notes": "KEEP SEPARATE — do not count toward gap closure this slice."
+        }
+      ],
+      "family_verdict": "Bound enterprise streams (corporate ~$0.52B + gaming ~$0.06B + franchise ~$0.01B ≈ $0.60B) cover at most ~15% of IIT gross if hypothetically redirected — and they are already funding current GR. Raising them is not free money."
+    },
+    {
+      "id": "FAM-CONSUMPTION",
+      "title": "Consumption revenue",
+      "members": [
+        {
+          "id": "state_sales_use_existing",
+          "label": "State sales & use tax (existing stream)",
+          "fy2026_actual_usd": 3666700000,
+          "share_of_iit_gross": 0.9501,
+          "T1": "MATERIAL_OVER_40PCT",
+          "T2": "MODERATE",
+          "T3": "REGRESSIVE_RISK",
+          "T4": "MIXED",
+          "T5": "MODERATE",
+          "notes": "Scale is comparable to IIT — but this stream ALREADY funds the state. Using it as IIT replacement requires large rate hikes or spending cuts elsewhere. Default sales-tax swap is a household burden shift."
+        },
+        {
+          "id": "sales_rate_hike_as_iit_swap",
+          "label": "Broad consumption tax increase as IIT replacement",
+          "status": "HYPOTHETICAL_INSTRUMENT",
+          "illustrative": "Replacing $3.859B via higher sales tax would require roughly doubling the state's sales/use yield (before elasticity) unless base is broadened aggressively.",
+          "T1": "SUFFICIENT_ALONE_IF_RATES_CRANKED",
+          "T2": "MODERATE",
+          "T3": "REGRESSIVE_RISK",
+          "T4": "MISALIGNED",
+          "T5": "HIGH",
+          "explicit_burden_shift": true,
+          "notes": "SURFACED EXPLICITLY: this path shifts burden onto ordinary households through higher prices unless strong household protections (rebates, exempt necessities, progressive credits) are locked first. Not prosperity-aligned by default."
+        },
+        {
+          "id": "tourism_visitor",
+          "label": "Tourism / visitor taxes",
+          "fy2026_city_county_tourist_gr_line_millions": 0.9,
+          "T1": "FAIL_NEGLIGIBLE",
+          "T2": "HIGH",
+          "T3": "MIXED",
+          "T4": "ALIGNED",
+          "T5": "MODERATE",
+          "notes": "GR tourist line is tiny; local option tourism may be larger but not bound as statewide IIT replacement."
+        },
+        {
+          "id": "consumption_with_household_protections",
+          "label": "Consumption with household protections (design gate)",
+          "status": "DESIGN_REQUIRED",
+          "T1": "UNKNOWN",
+          "T2": "MODERATE",
+          "T3": "MIXED",
+          "T4": "MIXED",
+          "T5": "MODERATE",
+          "notes": "Only admissible as a study candidate if incidence analysis shows protections neutralize regressivity. Without that, treat as burden rename."
+        }
+      ],
+      "family_verdict": "Consumption is the only family with scale near IIT — and that is exactly why a naive sales-tax swap fails the prosperity test. Surface regressivity; do not recommend abolition via silent rate shift."
+    }
+  ],
+  "excluded_from_replacement_dollars": [
+    {
+      "id": "prosperity_fund_dividends",
+      "reason": "Unmodeled revenue hypothesis"
+    },
+    {
+      "id": "public_investment_returns",
+      "reason": "Unmodeled revenue hypothesis"
+    },
+    {
+      "id": "community_owned_enterprise_distributions",
+      "reason": "Local ledger hypothesis — not state GR bind"
+    }
+  ],
+  "combined_bound_enterprise_plus_resource_usd": 598600000,
+  "combined_share_of_iit": 0.1551,
+  "gap_after_bound_non_consumption_redirect_illusion": {
+    "note": "Even summing corporate+gaming+franchise+severance (~$0.60B) leaves ~$3.26B of IIT gross uncovered — and those dollars are already spent in the GR system, so 'redirect' is not incremental capacity.",
+    "incremental_capacity_still_required_vs_iit_gross": 3260500000
+  }
+}

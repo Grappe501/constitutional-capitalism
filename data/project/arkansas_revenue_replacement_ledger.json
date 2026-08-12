@@ -1,28 +1,16 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-LEDGER-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
   "wave_slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-123",
-  "update_id": "UPD-136",
+  "decision_id": "CC-DEC-125",
+  "update_id": "UPD-138",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
-  "status": "SCAFFOLD_V1_ANCHORS_ONLY",
+  "status": "PRIMARY_BIND_V1_GAP_MAPPED",
   "purpose": "Money Flow Map: Current source → current dollars → beneficiary → constitutional/legal dependency → volatility → incidence → proposed replacement → replacement maturity → transition trigger.",
-  "row_schema": [
-    "current_source",
-    "current_dollars",
-    "geography",
-    "beneficiary",
-    "constitutional_or_legal_dependency",
-    "volatility",
-    "incidence",
-    "proposed_replacement_class",
-    "replacement_maturity",
-    "transition_trigger",
-    "status",
-    "source_refs"
-  ],
-  "scale_warning": "Individual income tax alone is roughly the size of Arkansas state sales/use tax. Property tax is a separate local-finance problem. Do not collapse them.",
+  "capacity_gap_file": "data/project/arkansas_revenue_replacement_capacity_gap.json",
+  "imports_dir": "data/imports/arkansas-revenue-replacement/",
+  "scale_warning": "IIT alone (~$3.859B) ≈ state sales/use (~$3.667B). Property tax is a separate multi-layer local-finance problem. Unmodeled prosperity returns are not replacement dollars.",
   "state_prosperity_revenue_ledger": {
     "title": "State Prosperity Revenue Ledger",
     "replaces": "individual_income_tax",
@@ -30,272 +18,184 @@
       {
         "id": "AR-REV-IIT-FY2026",
         "current_source": "Arkansas individual income tax",
-        "current_dollars": 3859000000,
+        "current_dollars": 3859100000,
         "currency": "USD",
         "period": "FY2026",
         "geography": "state",
-        "beneficiary": "State general revenue / appropriations (bind exact uses)",
-        "constitutional_or_legal_dependency": "Statutory rate structure; not the 25-mill URT — statutory path may allow staged reduction once replacement online",
-        "volatility": "UNKNOWN_PENDING_BIND — historically cyclical with wages/capital gains",
-        "incidence": "Primarily individual labor and taxable income — exact incidence by quintile NEE",
-        "proposed_replacement_class": [
-          "consumption_with_household_protections",
-          "corporate_activity",
-          "resource_royalties",
-          "energy_export_revenue",
-          "land_resource_rents",
-          "tourism_gaming",
-          "public_investment_returns",
-          "state_enterprise_dividends"
-        ],
-        "replacement_maturity": "UNMODELED",
-        "transition_trigger": "Recurring replacement revenue in Tax Retirement Fund meets safety threshold → reduce IIT by safe equivalent → measure → repeat",
-        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "beneficiary": "State general revenue (largest GR category); education and other RSA appropriations depend on GR mix",
+        "constitutional_or_legal_dependency": "Statutory rate structure — staged reduction possible once replacement online; not constitutional URT",
+        "volatility": "Cyclical with wages/capital gains (FY26 +7.4% YoY)",
+        "incidence": "Taxable individual income — quintile incidence NEE",
+        "proposed_replacement_class": ["enterprise_partial", "consumption_with_household_protections_only", "resource_study"],
+        "replacement_maturity": "GAP_FULL_INCREMENTAL_CAPACITY_ZERO",
+        "transition_trigger": "Tax Retirement Fund recurring incremental dollars ≥ safety threshold",
+        "status": "PRIMARY_BOUND",
         "source_refs": [
           {
-            "label": "Arkansas DFA — FY2026 surplus release citing $3.859B individual income tax",
-            "url": "https://www.dfa.arkansas.gov/news/state-completes-fiscal-year-with-655-million-surplus/",
-            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
+            "label": "DFA General Revenue Report June 2026 (FY2026) — Individual Income $3,859.1M",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+            "bind_status": "PRIMARY_TABLE_BOUND"
           }
         ]
       },
       {
         "id": "AR-REV-SALES-USE-FY2026",
         "current_source": "Arkansas state sales and use tax",
-        "current_dollars": 3666000000,
+        "current_dollars": 3666700000,
         "currency": "USD",
         "period": "FY2026",
         "geography": "state",
-        "beneficiary": "State general revenue (bind exact dedications)",
-        "constitutional_or_legal_dependency": "Statutory; local option overlays separate",
-        "volatility": "UNKNOWN_PENDING_BIND — consumption-linked",
-        "incidence": "Regressive risk without household protections — incidence analysis required before any rate increase as IIT replacement",
-        "proposed_replacement_class": [
-          "not_a_default_IIT_replacement_alone"
-        ],
-        "replacement_maturity": "EXISTING_STREAM",
-        "transition_trigger": "Comparator scale only — do not treat as automatic IIT substitute",
-        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "beneficiary": "State GR + Educational Adequacy / Excellence earmark pathways",
+        "constitutional_or_legal_dependency": "Statutory; Adequacy fund dedications constrain unconstrained use",
+        "volatility": "Consumption-linked (FY26 +3.9% YoY)",
+        "incidence": "REGRESSIVE_RISK without household protections — explicit burden-shift surface if used as IIT swap",
+        "proposed_replacement_class": ["not_default_iit_replacement_alone"],
+        "replacement_maturity": "EXISTING_STREAM_ALREADY_SPENT",
+        "transition_trigger": "Comparator + protected-consumption design gate only",
+        "status": "PRIMARY_BOUND",
         "source_refs": [
           {
-            "label": "Arkansas DFA — FY2026 surplus release citing $3.666B state sales and use tax",
-            "url": "https://www.dfa.arkansas.gov/news/state-completes-fiscal-year-with-655-million-surplus/",
-            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
+            "label": "DFA GR June 2026 — Sales & Use $3,666.7M",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+            "bind_status": "PRIMARY_TABLE_BOUND"
           }
         ]
-      }
-    ],
-    "candidate_replacement_sources": [
-      {
-        "id": "CAND-STATE-SEVERANCE",
-        "class": "severance_resource_royalties",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
       },
       {
-        "id": "CAND-STATE-ENERGY-EXPORT",
-        "class": "energy_production_export_revenue",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
+        "id": "AR-REV-CORPORATE-FY2026",
+        "current_source": "Corporate income tax",
+        "current_dollars": 523600000,
+        "net_of_refunds": 453800000,
+        "period": "FY2026",
+        "geography": "state",
+        "beneficiary": "State GR",
+        "constitutional_or_legal_dependency": "Statutory",
+        "volatility": "HIGH (profit/NOL/throwback sensitive)",
+        "incidence": "MIXED — pass-through possible",
+        "t1_t5": "PARTIAL_10_TO_40PCT of IIT; already spent",
+        "status": "PRIMARY_BOUND",
+        "source_refs": [
+          {
+            "label": "DFA GR June 2026 — Corporate Income $523.6M",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+            "bind_status": "PRIMARY_TABLE_BOUND"
+          }
+        ]
       },
       {
-        "id": "CAND-STATE-CORPORATE",
-        "class": "corporate_income_business_taxation",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
+        "id": "AR-REV-SEVERANCE-FY2026",
+        "current_source": "Severance tax (GR)",
+        "current_dollars": 10600000,
+        "period": "FY2026",
+        "t1_t5": "FAIL_NEGLIGIBLE vs IIT",
+        "status": "PRIMARY_BOUND",
+        "source_refs": [
+          {
+            "label": "DFA GR June 2026 — Severance $10.6M",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+            "bind_status": "PRIMARY_TABLE_BOUND"
+          }
+        ]
       },
       {
-        "id": "CAND-STATE-CONSUMPTION-PROTECTED",
-        "class": "broad_consumption_with_household_protections",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY_WITH_REGRESSIVITY_GATE"
-      },
-      {
-        "id": "CAND-STATE-TOURISM",
-        "class": "tourism_visitor_taxes",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-STATE-GAMING",
-        "class": "gaming_revenues",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-STATE-LAND-RENT",
-        "class": "land_resource_rents",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-STATE-FRANCHISE",
-        "class": "franchise_privilege_taxes",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-STATE-PUBLIC-RETURNS",
-        "class": "financial_returns_public_investment",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
-      },
-      {
-        "id": "CAND-STATE-ENTERPRISE-DIVIDEND",
-        "class": "state_enterprise_dividend_models",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
-      },
-      {
-        "id": "CAND-STATE-EXTERNALITY",
-        "class": "environmental_externality_charges_where_justified",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
+        "id": "AR-REV-GAMING-FY2026",
+        "current_source": "Gaming (GR)",
+        "current_dollars": 64400000,
+        "period": "FY2026",
+        "t1_t5": "WEAK_UNDER_10PCT; regressive risk",
+        "status": "PRIMARY_BOUND",
+        "source_refs": [
+          {
+            "label": "DFA GR June 2026 — Gaming $64.4M",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+            "bind_status": "PRIMARY_TABLE_BOUND"
+          }
+        ]
       }
     ]
   },
   "community_prosperity_revenue_ledger": {
     "title": "Community Prosperity Revenue Ledger",
     "replaces": "property_tax_local_infrastructure_finance",
+    "layer_rule": "Separate school URT, additional school millage, county, municipal, special districts, debt-service",
     "rows": [
       {
         "id": "AR-REV-URT-25MILL-2024-25",
-        "current_source": "25-mill Uniform Rate of Tax (school foundation portion)",
-        "current_dollars": 1603000000,
-        "currency": "USD",
-        "period": "2024-25_school_year_estimate",
+        "current_source": "25-mill Uniform Rate of Tax (school foundation local)",
+        "current_dollars": 1602678681,
+        "period": "2024-25_school_year",
         "geography": "statewide_local_school_districts",
-        "beneficiary": "Local school foundation funding",
-        "constitutional_or_legal_dependency": "Arkansas Constitution — 25-mill URT; complete elimination requires constitutional redesign/amendment after demonstrated replacement",
-        "volatility": "Relatively stable locally vs income tax — bind assessment cycle sensitivity",
-        "incidence": "Homeowners/landowners/business property; hardship vs income/liquidity known research theme — not identical to 'ownership of a person's home' alone",
-        "proposed_replacement_class": [
-          "community_owned_energy_dividends",
-          "local_enterprise_ownership",
-          "value_capture",
-          "state_equalization_transfers",
-          "local_activity_revenue",
-          "infrastructure_investment_returns"
-        ],
-        "replacement_maturity": "UNMODELED",
-        "transition_trigger": "Demonstrated multi-community replacement + equalization design → statutory/local pilots → constitutional amendment only after carry capacity proved",
-        "status": "ANCHOR_CITED_PRIMARY_BIND_REQUIRED",
+        "beneficiary": "Traditional district foundation funding (M&O)",
+        "constitutional_or_legal_dependency": "Ark. Const. Art. 14, § 3 — CONSTITUTIONAL",
+        "volatility": "Assessment/collection sensitive; more stable than IIT",
+        "incidence": "Property owners statewide (district base varies)",
+        "replacement_maturity": "UNMODELED_COMMUNITY_REPLACEMENTS",
+        "transition_trigger": "Demonstrate multi-community carry capacity → equalization design → constitutional work last",
+        "status": "PRIMARY_BOUND",
         "source_refs": [
           {
-            "label": "Arkansas General Assembly — Funding Overview Report (URT ~$1.603B estimate)",
+            "label": "BLR Funding Overview — Estimated Local Taxes 98% of URT × Assessment $1,602,678,681",
             "url": "https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly%2F%2FMeeting+Attachments%2F410%2F27809%2FEXHIBIT+E2+-+Funding+Overview+Report.pdf",
-            "bind_status": "CITED_PENDING_PRIMARY_TABLE_BIND"
-          },
-          {
-            "label": "UAEX — Arkansas property taxes fund schools/counties/cities/roads/police/fire/libraries",
-            "url": "https://www.uaex.uada.edu/business-communities/local-government/property-taxes.aspx",
-            "bind_status": "CONTEXT_CITED"
+            "bind_status": "PRIMARY_TABLE_BOUND"
           }
         ]
       },
       {
-        "id": "AR-REV-PROPERTY-TAX-TOTAL-LOCAL",
-        "current_source": "All Arkansas property taxes (schools + counties + cities + other millages)",
+        "id": "AR-REV-SCHOOL-ADDITIONAL-EST",
+        "current_source": "Additional school millage above URT (avg ~13.52 mills)",
+        "current_dollars": 866800000,
+        "status": "ESTIMATED_ILLUSTRATIVE",
+        "beneficiary": "School M&O above foundation and/or debt service (split NEE)",
+        "constitutional_or_legal_dependency": "Statutory / local voter-approved",
+        "contains_debt_service": "PARTIAL_UNKNOWN_SPLIT",
+        "source_refs": [
+          {
+            "label": "AACD 2025 Millage Report state avg school 38.52 mills; ACD 2025 taxable value $73.937B",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025-millage-2026-collections.pdf",
+            "bind_status": "STRUCTURE_BOUND_DOLLARS_ESTIMATED"
+          }
+        ]
+      },
+      {
+        "id": "AR-REV-SCHOOL-DEBT-NEE",
+        "current_source": "School debt-service millage",
         "current_dollars": null,
-        "currency": "USD",
-        "period": null,
-        "geography": "local",
-        "beneficiary": "Schools, counties, cities, fire/EMS, libraries, roads, debt service, pensions, infrastructure",
-        "constitutional_or_legal_dependency": "Mix of constitutional URT and statutory/local millages — inventory required before any retirement path",
-        "volatility": "UNKNOWN_PENDING_INVENTORY",
-        "incidence": "UNKNOWN_PENDING_INVENTORY",
-        "proposed_replacement_class": [
-          "community_prosperity_portfolio"
-        ],
-        "replacement_maturity": "INVENTORY_REQUIRED",
-        "transition_trigger": "Full millage inventory complete → classify statutory vs constitutional → stage retirement",
-        "status": "NEE_FULL_INVENTORY",
-        "source_refs": []
-      }
-    ],
-    "candidate_replacement_sources": [
-      {
-        "id": "CAND-LOCAL-SALES-ACTIVITY",
-        "class": "local_sales_activity_revenue",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
+        "status": "NEE_SPLIT",
+        "beneficiary": "Bonded debt service",
+        "constitutional_or_legal_dependency": "Contractual + local voter-approved",
+        "note": "Embedded in School Total in millage book; do not retire casually"
       },
       {
-        "id": "CAND-LOCAL-ENERGY",
-        "class": "community_owned_energy",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
+        "id": "AR-REV-COUNTY-EST",
+        "current_source": "County millage (avg ~4.17 mills)",
+        "current_dollars": 267400000,
+        "status": "ESTIMATED_ILLUSTRATIVE",
+        "beneficiary": "County general, roads, libraries, hospitals, colleges, other",
+        "constitutional_or_legal_dependency": "Statutory / quorum court"
       },
       {
-        "id": "CAND-LOCAL-UTILITY-DIVIDEND",
-        "class": "utility_dividends",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
+        "id": "AR-REV-MUNICIPAL-EST",
+        "current_source": "Municipal millage",
+        "current_dollars": 218800000,
+        "status": "ESTIMATED_SHARE_METHOD",
+        "dollar_range_usd": [218800000, 508400000],
+        "beneficiary": "Cities — general, pensions, libraries, bonds, parks",
+        "note": "Full-AV scaling overstates; preferred share method ~7% of property tax"
       },
       {
-        "id": "CAND-LOCAL-BROADBAND",
-        "class": "municipal_broadband",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
-      },
-      {
-        "id": "CAND-LOCAL-LAND-LEASE",
-        "class": "land_leases",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-LOCAL-VALUE-CAPTURE",
-        "class": "development_value_capture",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-LOCAL-ENTERPRISE",
-        "class": "local_enterprise_ownership",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS"
-      },
-      {
-        "id": "CAND-LOCAL-CPA",
-        "class": "community_prosperity_accounts",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "UNMODELED_HYPOTHESIS",
-        "related_framework": "data/project/community_prosperity_framework.json"
-      },
-      {
-        "id": "CAND-LOCAL-EQUALIZATION",
-        "class": "state_equalization_transfers",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-LOCAL-OPTION",
-        "class": "local_option_revenue",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
-      },
-      {
-        "id": "CAND-LOCAL-ED-VALUE-CAPTURE",
-        "class": "economic_development_value_capture",
-        "tests_pending": ["T1", "T2", "T3", "T4", "T5"],
-        "status": "STUDY"
+        "id": "AR-REV-SPECIAL-EST",
+        "current_source": "Special districts / other",
+        "current_dollars": 31300000,
+        "status": "CONTEXT_SHARE",
+        "beneficiary": "Special districts and other local entities"
       }
     ]
   },
-  "money_flow_map_next_fills": [
-    "DFA comprehensive revenue tables by source/year (primary bind)",
-    "ADE/BLR school millage and foundation funding tables",
-    "County/city millage inventories for designated Living Systems counties",
-    "Constitutional/statutory dependency matrix (URT vs other millages vs IIT)",
-    "Incidence tables by income/housing tenure for IIT, sales, property",
-    "Volatility series for severance/energy/gaming/tourism",
-    "Tax Retirement Fund legal design memo (research assistance, not legal advice)"
-  ],
+  "t1_t5_file": "data/imports/arkansas-revenue-replacement/t1_t5_resource_enterprise_consumption.json",
   "holds": [
-    "scaffolding_not_sufficiency",
+    "no_abolish_recommendation",
     "unmodeled_is_not_replacement_dollars",
-    "no_abolish_today",
+    "regressive_swap_surfaced",
     "overall_percent_held_at_43"
   ]
 }

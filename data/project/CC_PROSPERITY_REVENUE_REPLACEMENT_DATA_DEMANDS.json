@@ -1,46 +1,46 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-123",
-  "update_id": "UPD-136",
-  "rule": "Demands guide Money Flow Map inventory and replacement modeling. Registration/scaffold only — no tax abolition, no invented sufficiency, no dial inflation. Cited DFA/BLR anchors require primary table bind before ledger dollars are treated as verified.",
+  "decision_id": "CC-DEC-125",
+  "update_id": "UPD-138",
+  "rule": "Demands guide Money Flow Map inventory and replacement modeling. No tax abolition. Unmodeled prosperity returns are not replacement dollars. Regressive swaps must be surfaced.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
       "name": "dfa_comprehensive_state_revenue_inventory",
       "question": "What is the complete Arkansas DFA state revenue inventory by source and fiscal year (including IIT, sales/use, corporate, severance, gaming, and dedications), with primary tables bound?",
-      "status": "ANCHORS_CITED_PRIMARY_BIND_REQUIRED",
+      "status": "PASSED_FY2026_GR_TABLE_BOUND",
       "priority": "critical",
       "layer": "state_ledger",
-      "linked": ["AR-REV-IIT-FY2026", "AR-REV-SALES-USE-FY2026"]
+      "artifact": "data/imports/arkansas-revenue-replacement/fy2026_dfa_general_revenue_bind.json"
     },
     {
       "id": "CC-DEM-RRR-002",
       "name": "local_millage_and_property_tax_inventory",
       "question": "What are total property-tax collections and millages by beneficiary class (schools, counties, cities, fire/EMS, libraries, roads, debt, pensions) statewide and for designated Living Systems counties?",
-      "status": "NEE_FULL_INVENTORY",
+      "status": "PARTIAL_LAYERS_STRUCTURED_COLLECTIONS_NEE",
       "priority": "critical",
       "layer": "community_ledger",
-      "linked": ["AR-REV-PROPERTY-TAX-TOTAL-LOCAL"]
+      "artifact": "data/imports/arkansas-revenue-replacement/property_tax_layer_structure.json"
     },
     {
       "id": "CC-DEM-RRR-003",
       "name": "constitutional_statutory_dependency_matrix",
       "question": "Which revenue streams are constitutionally required (esp. 25-mill URT), which are statutory, and which expenditures cannot lawfully be uncoupled from those sources without amendment?",
-      "status": "PARTIAL_URT_NOTED_MATRIX_NEE",
+      "status": "PARTIAL_URT_CONSTITUTIONAL_OTHERS_STATUTORY_MAPPED",
       "priority": "critical",
-      "layer": "legal_constitutional",
-      "linked": ["AR-REV-URT-25MILL-2024-25"]
+      "layer": "legal_constitutional"
     },
     {
       "id": "CC-DEM-RRR-004",
       "name": "school_foundation_funding_bind",
       "question": "Can the ~$1.603B URT local foundation funding estimate for 2024–25 be bound to the BLR Funding Overview primary tables and reconciled to ADE/DFA series?",
-      "status": "CITED_PENDING_PRIMARY_TABLE_BIND",
+      "status": "PASSED_BOUND_1602678681",
       "priority": "critical",
-      "layer": "community_ledger"
+      "layer": "community_ledger",
+      "artifact": "data/imports/arkansas-revenue-replacement/blr_urt_foundation_bind.json"
     },
     {
       "id": "CC-DEM-RRR-005",
@@ -54,9 +54,10 @@
       "id": "CC-DEM-RRR-006",
       "name": "replacement_candidate_five_tests",
       "question": "For each Resource + Enterprise + Consumption candidate, what are T1–T5 scores (capacity, volatility, incidence, prosperity alignment, behavioral distortion) with sourced magnitudes — without assuming sufficiency?",
-      "status": "STUDY_LIST_SCAFFOLDED",
+      "status": "PASSED_FIRST_PASS_RESOURCE_ENTERPRISE_CONSUMPTION",
       "priority": "critical",
-      "layer": "replacement_modeling"
+      "layer": "replacement_modeling",
+      "artifact": "data/imports/arkansas-revenue-replacement/t1_t5_resource_enterprise_consumption.json"
     },
     {
       "id": "CC-DEM-RRR-007",
@@ -72,14 +73,13 @@
       "question": "Which local replacement classes (energy, broadband, value capture, enterprise ownership, equalization) can be piloted under existing law before constitutional URT redesign?",
       "status": "UNMODELED_HYPOTHESIS",
       "priority": "high",
-      "layer": "community_ledger",
-      "linked": ["HYP-129"]
+      "layer": "community_ledger"
     },
     {
       "id": "CC-DEM-RRR-009",
       "name": "volatility_series_commodity_tourism_gaming",
       "question": "How volatile are severance, energy, tourism, and gaming revenues across recessions and commodity cycles relative to IIT?",
-      "status": "NEE",
+      "status": "PARTIAL_QUALITATIVE_FROM_FY_TABLES",
       "priority": "high",
       "layer": "state_ledger"
     },
@@ -103,16 +103,32 @@
       "id": "CC-DEM-RRR-012",
       "name": "money_flow_map_row_population",
       "question": "Can every material Arkansas revenue source carry the full row schema (source → dollars → beneficiary → dependency → volatility → incidence → replacement → maturity → trigger)?",
-      "status": "SCAFFOLD_V1_THREE_ANCHOR_ROWS",
+      "status": "PARTIAL_PRIMARY_ROWS_BOUND_LAYERS_ESTIMATED",
       "priority": "critical",
-      "layer": "cross_layer",
-      "linked": ["HYP-131"]
+      "layer": "cross_layer"
+    },
+    {
+      "id": "CC-DEM-RRR-013",
+      "name": "school_debt_service_millage_split",
+      "question": "What statewide dollars sit in school debt-service millages versus additional M&O above URT?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "community_ledger"
+    },
+    {
+      "id": "CC-DEM-RRR-014",
+      "name": "municipal_av_weighted_collections",
+      "question": "What are AV-weighted municipal property-tax collections (not average city millage × statewide AV)?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "community_ledger"
     }
   ],
   "holds": [
     "KEEP_AS_HYPOTHESIS",
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
+    "regressive_swap_surfaced",
     "overall_percent_held_at_43"
   ]
 }
