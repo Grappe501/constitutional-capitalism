@@ -1636,6 +1636,7 @@
       "apps/build-board/src/pages/ai-research-intelligence.astro"
     ],
     "research_next": [
+      "CC-REPO-HARDENING-1.0",
       "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0",
       "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
       "CC-ARKANSAS-PILOT-READINESS-FIELD-PASS-1.0"
@@ -1648,6 +1649,35 @@
       "not_phase_9_sie_activation",
       "no_locked_site",
       "observation_first"
+    ]
+  },
+  "repository_hardening": {
+    "slice_id": "CC-REPO-HARDENING-1.0",
+    "status": "PASSED_HARDENING_PASS_1",
+    "decision_id": "CC-DEC-121",
+    "update_id": "UPD-134",
+    "program_file": "data/project/repository_hardening_audit.json",
+    "return": "reports/CC_REPO_HARDENING_1_0_RETURN.md",
+    "artifacts": [
+      "data/project/repository_hardening_audit.json",
+      "data/project/arkansas_county_missing_data_registry.json",
+      "data/project/arkansas_county_counterexample_register.json",
+      "data/project/proof_burden_registry.json",
+      "data/deployments/deployment_status.json"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0",
+      "CC-ARKANSAS-REGISTERED-VOTER-MULTIYEAR-1.0",
+      "CC-ARKANSAS-PILOT-READINESS-FIELD-PASS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "no_invented_claim_sources",
+      "no_baseline_auto_fills",
+      "ui_polish_cycle_closed",
+      "modeling_after_definition_locks",
+      "legal_after_empirical_clarity"
     ]
   },
   "baseline_definition_locks_next_fills": {

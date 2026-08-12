@@ -1,0 +1,130 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-REPO-HARDENING-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-121",
+  "update_id": "UPD-134",
+  "status": "HARDENING_PASS_1_COMPLETE",
+  "overall_percent_held": 43,
+  "validators": {
+    "check_all": "PASSED",
+    "warnings": [
+      "PP-FF-01: no contrary CC-SRC sources (confidence should stay Low)",
+      "Deployment registry commits were stale before this pass",
+      "Publicstats import: passed export missing reddirt_commit"
+    ]
+  },
+  "claims": {
+    "total": 138,
+    "empty_source_ids": 58,
+    "requires_additional_research": 64,
+    "publication_not_ready": 90,
+    "nee_phase21_dispositions": [
+      "CC-CLAIM-001",
+      "CC-CLAIM-003",
+      "CC-CLAIM-007",
+      "CC-CLAIM-008",
+      "CC-CLAIM-018"
+    ],
+    "missing_registry_source_refs": 0,
+    "safe_repair": "none — do not invent source links"
+  },
+  "hypotheses": {
+    "unique_ids_found": 31,
+    "with_explicit_demands_before": 23,
+    "cecs_demands_added": 5,
+    "proof_burden_demand_paths_wired": [
+      "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
+      "CC-HYP-DISTRIBUTED-CIVIC-COMMONS",
+      "CC-HYP-AGE-16-LOCAL-SUFFRAGE"
+    ],
+    "note": "Incubator already held demand_manifest_path for HYP-125/126/127; proof_burden now mirrors those paths. CECS hyps now carry evidence_demands + missing_data_cases."
+  },
+  "baseline": {
+    "scoreboard": "42/64",
+    "source_unknown_countable": 22,
+    "unsourced_metric_ids": [
+      "CC-IND-L03",
+      "CC-IND-B03",
+      "CC-IND-CM03",
+      "CC-IND-D09",
+      "CC-IND-D11",
+      "CC-IND-I02",
+      "CC-IND-J04",
+      "CC-IND-J05",
+      "CC-IND-J08",
+      "CC-IND-D01",
+      "CC-IND-D02",
+      "CC-IND-D05",
+      "CC-IND-D06",
+      "CC-IND-D08",
+      "CC-IND-E03",
+      "CC-IND-E04",
+      "CC-IND-E06",
+      "CC-IND-E08",
+      "CC-IND-HC01",
+      "CC-IND-HC03",
+      "CC-IND-HC04",
+      "CC-IND-HC05"
+    ],
+    "safe_repair": "none — definition-locks before fills"
+  },
+  "comparison_systems": {
+    "total": 40,
+    "evidence_bound_matrix": 16,
+    "controlled_backlog": 24,
+    "matrix_cells": { "comparable": 52, "similar_not_comparable": 5, "missing": 55 },
+    "phase3_status": "passed_wave_expansion"
+  },
+  "book_board_parity": {
+    "shared_pages": 31,
+    "book_only": 16,
+    "board_only": 19,
+    "ia_declared_paths_orphan": 0,
+    "assessment": "Parity is intentional: book = public doctrine/education; board = internal research ops. Not a defect."
+  },
+  "county_living_systems": {
+    "observations": 759,
+    "layer": "v1.2",
+    "missing_data_registry": "data/project/arkansas_county_missing_data_registry.json",
+    "checklist": {
+      "registration": "PARTIAL_EAVS_2024",
+      "vap_cvap": "PARTIAL_CVAP_DERIVED",
+      "election_types": "PARTIAL_PRESIDENTIAL_PLUS_LABELS",
+      "adws_demand": "STATEWIDE_ONLY_COUNTY_NEE",
+      "hpsa_fdic": "PARTIAL_SNAPSHOTS_BOUND",
+      "longitudinal_joins": "OPERATIONAL",
+      "counterexamples": "REGISTER_V1_5_HYPS",
+      "missing_data_registry": "REGISTER_V1"
+    }
+  },
+  "ai_research_layer": {
+    "status": "RESEARCH_OPS_PRECURSOR_V1_SHIPPED",
+    "slice_id": "CC-AI-RESEARCH-INTELLIGENCE-LAYER-1.0",
+    "remaining": [
+      "Set OPENAI_API_KEY on Netlify board Functions for live county/hypothesis analysts",
+      "Do not expand to Phase 9 SIE"
+    ]
+  },
+  "stale_artifacts_repaired": [
+    "deployment_status last_known_commit sync",
+    "ListenBar unused extras variable removed",
+    "proof_burden demand_manifest_path wiring",
+    "CECS evidence_demands + missing_data_cases",
+    "county missing-data registry created"
+  ],
+  "do_not": [
+    "inflate overall_percent",
+    "auto-upgrade CC-CLAIM-003",
+    "lock Rose Bud / Lewisville",
+    "fill baseline without definition locks",
+    "begin modeling before definition locks",
+    "polish UI further this cycle"
+  ],
+  "execution_order_remaining": [
+    "2_finish_county_empirical_depth",
+    "3_operate_ai_research_layer",
+    "4_modeling_after_definition_locks",
+    "5_legal_feasibility_layer"
+  ]
+}

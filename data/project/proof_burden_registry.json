@@ -489,6 +489,7 @@
     "canonical_hypothesis_id": "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
     "decision_id": "CC-DEC-105",
     "file": "data/project/local_democratic_campaign_finance_research.json",
+    "demand_manifest_path": "data/project/CC_LOCAL_DEMOCRATIC_CAMPAIGN_FINANCE_DATA_DEMANDS.json",
     "rule": "Major research hypothesis under falsifiability standard. Not doctrine and not a principle. Supports / Qualifies / Contradicts only. Eliminating dark money ≠ eliminating spending; locality ≠ ban on out-of-state speech; disclosure ≠ capture. CC-CLAIM-003 remains Not Enough Evidence."
   },
   "distributed_civic_commons": {
@@ -497,6 +498,7 @@
     "canonical_hypothesis_id": "CC-HYP-DISTRIBUTED-CIVIC-COMMONS",
     "decision_id": "CC-DEC-106",
     "file": "data/project/distributed_civic_commons_research.json",
+    "demand_manifest_path": "data/project/CC_DISTRIBUTED_CIVIC_COMMONS_DATA_DEMANDS.json",
     "rule": "Major cultural-layer research hypothesis under falsifiability standard. Not doctrine and not a principle. Hard boundary: participation as civic duty; political rights must never depend on participation. Civic Record ≠ government score. Civic connectivity ≠ party registration. Productive disagreement = participation. Failure modes required. Converges with journalism + HYP-125."
   },
   "age_16_local_suffrage": {
@@ -505,6 +507,7 @@
     "canonical_hypothesis_id": "CC-HYP-AGE-16-LOCAL-SUFFRAGE",
     "decision_id": "CC-DEC-107",
     "file": "data/project/age_16_local_suffrage_research.json",
+    "demand_manifest_path": "data/project/CC_AGE_16_LOCAL_SUFFRAGE_DATA_DEMANDS.json",
     "constraint_id": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
     "rule": "Major comparative empirical track under falsifiability. Not doctrine and not a principle. Local suffrage first. Four propositions (capability/participation/habit/system) may graduate separately. Newark failure-mode kept visible. Education-before-enfranchisement sequencing is a test, not a lock. Converges with HYP-126."
   },
@@ -607,6 +610,14 @@
     "proposals_file": "data/project/ai_research_proposals.json",
     "related_sie": "data/project/systems_intelligence_engine_framework.json",
     "rule": "Research-ops precursor above evidence warehouse — not Phase 9 SIE activation. Server-side OPENAI_API_KEY only. AI may observe/compare/question/summarize/recommend; must not invent evidence, alter baseline, publish, or inflate dial. Completion Advancement Map explains 43→50→60 without raising percent. AI proposes; project decides."
+  },
+  "repository_hardening": {
+    "update_id": "UPD-134",
+    "decision_id": "CC-DEC-121",
+    "file": "data/project/repository_hardening_audit.json",
+    "missing_data_registry": "data/project/arkansas_county_missing_data_registry.json",
+    "return": "reports/CC_REPO_HARDENING_1_0_RETURN.md",
+    "rule": "UI polish cycle closed. Validate before inventing. No claim source invention. No baseline auto-fills. No dial inflation. Empirical depth and AI operation precede modeling and legal expansion."
   },
   "evidence_hierarchy": {
     "update_id": "UPD-066",

@@ -160,23 +160,23 @@
     "dial_rule": "This map explains advancement paths. It does not change overall_percent. AI must not inflate the dial.",
     "current_state_snapshot": {
       "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
-      "last_completed_parallel_research_slice": "CC-AI-RESEARCH-INTELLIGENCE-LAYER-1.0",
+      "last_completed_parallel_research_slice": "CC-REPO-HARDENING-1.0",
       "sources_registered": 268,
       "verified_sources": 241,
       "claims": 138,
       "county_longitudinal_layer_status": "LAYER_V1_2_759_OBS",
-      "county_counterexample_register_status": "REGISTER_V1_5_HYPS",
-      "next_action": "Structural: definition-locks. Research: validated comparative diagnosis packets; optional live OpenAI key on board Functions for county/hypothesis analysts — still no site lock, no dial inflation."
+      "county_counterexample_register_status": "REGISTER_V1_5_HYPS_DEMANDS_EXPLICIT",
+      "next_action": "Structural: definition-locks. Research: multi-year registration or validated comparative diagnosis packets. Operate AI layer with server-side key. Modeling/legal only after locks."
     },
     "why_still_at_current_percent": [
       {
         "id": "honesty_hold",
         "statement": "Overall completion is an honesty hold at 43%, not a measure of research inactivity.",
         "evidence": [
-          "CC-DEC-120 / UPD-133: AI Research Intelligence Layer. 43% held — intelligence ≠ dial inflation.",
-          "Not Phase 9 SIE activation. Server-side keys only. AI proposes; project decides.",
-          "Completion Advancement Map explains 43→50→60 without raising the number.",
-          "Next research transition: validated comparative diagnosis packets."
+          "CC-DEC-121 / UPD-134: Repository hardening. UI polish cycle closed.",
+          "58 unsourced claims inventoried — not auto-linked.",
+          "22 baseline SOURCE_UNKNOWN held for definition-locks.",
+          "County missing-data registry v1. AI precursor already shipped. Modeling/legal still ahead."
         ]
       },
       {
@@ -6258,7 +6258,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Multi-year registered-voter series (beyond EAVS 2024)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Consistent turnout denominator labels (registered vs CVAP) across election types",
+            "status": "NEE"
+          },
+          {
+            "reason": "FDIC ownership/local-deposit share beyond branch counts",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Multi-year registered-voter series (beyond EAVS 2024)",
+          "Consistent turnout denominator labels (registered vs CVAP) across election types",
+          "FDIC ownership/local-deposit share beyond branch counts"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
@@ -6330,7 +6354,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Multi-year SAIPE/ACS poverty aligned to election years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Local participation measures beyond presidential turnout",
+            "status": "NEE"
+          },
+          {
+            "reason": "Controls for age structure / outmigration",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Multi-year SAIPE/ACS poverty aligned to election years",
+          "Local participation measures beyond presidential turnout",
+          "Controls for age structure / outmigration"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
@@ -6411,7 +6459,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Intercensal farm structure estimates between NASS COA years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Non-farm rural employment structure",
+            "status": "NEE"
+          },
+          {
+            "reason": "Matched election-year civic denominators",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Intercensal farm structure estimates between NASS COA years",
+          "Non-farm rural employment structure",
+          "Matched election-year civic denominators"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
@@ -6497,7 +6569,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Hospital closure / maternal care series for designated counties",
+            "status": "NEE"
+          },
+          {
+            "reason": "HPSA score time series (not designation snapshot only)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Travel-time access measures distinct from HPSA designation",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Hospital closure / maternal care series for designated counties",
+          "HPSA score time series (not designation snapshot only)",
+          "Travel-time access measures distinct from HPSA designation"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
@@ -6602,7 +6698,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Deposit ownership locality (not just SOD branch deposits)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Income series aligned to FDIC SOD years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Credit access / CDFIs beyond deposit intensity",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Deposit ownership locality (not just SOD branch deposits)",
+          "Income series aligned to FDIC SOD years",
+          "Credit access / CDFIs beyond deposit intensity"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       }
     ]
   },
@@ -6610,12 +6730,12 @@
     "build_holds": {
       "overall_percent": 43,
       "notes": [
-        "CC-DEC-120 / UPD-133: AI Research Intelligence Layer. 43% held — intelligence ≠ dial inflation.",
-        "Not Phase 9 SIE activation. Server-side keys only. AI proposes; project decides.",
-        "Completion Advancement Map explains 43→50→60 without raising the number.",
-        "Next research transition: validated comparative diagnosis packets."
+        "CC-DEC-121 / UPD-134: Repository hardening. UI polish cycle closed.",
+        "58 unsourced claims inventoried — not auto-linked.",
+        "22 baseline SOURCE_UNKNOWN held for definition-locks.",
+        "County missing-data registry v1. AI precursor already shipped. Modeling/legal still ahead."
       ],
-      "next_action": "Structural: definition-locks. Research: validated comparative diagnosis packets; optional live OpenAI key on board Functions for county/hypothesis analysts — still no site lock, no dial inflation.",
+      "next_action": "Structural: definition-locks. Research: multi-year registration or validated comparative diagnosis packets. Operate AI layer with server-side key. Modeling/legal only after locks.",
       "county_demand_status": "STATEWIDE_BRIDGE_COUNTY_GAP_NEE",
       "turnout_status": "REGISTERED_AND_CVAP_TURNOUT_DERIVED",
       "pilot_readiness_status": "CHECKLIST_SHELLS_V1_NO_LOCKED_SITE"
@@ -6626,7 +6746,113 @@
       "scope_note": null,
       "known_gap": "County-level demand allocation remains NEE; statewide bridge must not invent county shortages."
     },
-    "counterexample_missing": [],
+    "counterexample_missing": [
+      {
+        "hypothesis_id": "HYP-CECS-LOCAL-CAPITAL-CIVIC",
+        "missing": {
+          "reason": "Multi-year registered-voter series (beyond EAVS 2024)",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-LOCAL-CAPITAL-CIVIC",
+        "missing": {
+          "reason": "Consistent turnout denominator labels (registered vs CVAP) across election types",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-LOCAL-CAPITAL-CIVIC",
+        "missing": {
+          "reason": "FDIC ownership/local-deposit share beyond branch counts",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
+        "missing": {
+          "reason": "Multi-year SAIPE/ACS poverty aligned to election years",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
+        "missing": {
+          "reason": "Local participation measures beyond presidential turnout",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
+        "missing": {
+          "reason": "Controls for age structure / outmigration",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
+        "missing": {
+          "reason": "Intercensal farm structure estimates between NASS COA years",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
+        "missing": {
+          "reason": "Non-farm rural employment structure",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
+        "missing": {
+          "reason": "Matched election-year civic denominators",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
+        "missing": {
+          "reason": "Hospital closure / maternal care series for designated counties",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
+        "missing": {
+          "reason": "HPSA score time series (not designation snapshot only)",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
+        "missing": {
+          "reason": "Travel-time access measures distinct from HPSA designation",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
+        "missing": {
+          "reason": "Deposit ownership locality (not just SOD branch deposits)",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
+        "missing": {
+          "reason": "Income series aligned to FDIC SOD years",
+          "status": "NEE"
+        }
+      },
+      {
+        "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
+        "missing": {
+          "reason": "Credit access / CDFIs beyond deposit intensity",
+          "status": "NEE"
+        }
+      }
+    ],
     "structural_known_gaps": [
       "Multi-year registered-voter series beyond EAVS 2024 snapshot",
       "County-allocated ADWS demand (statewide only today)",
@@ -6841,7 +7067,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Multi-year registered-voter series (beyond EAVS 2024)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Consistent turnout denominator labels (registered vs CVAP) across election types",
+            "status": "NEE"
+          },
+          {
+            "reason": "FDIC ownership/local-deposit share beyond branch counts",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Multi-year registered-voter series (beyond EAVS 2024)",
+          "Consistent turnout denominator labels (registered vs CVAP) across election types",
+          "FDIC ownership/local-deposit share beyond branch counts"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
@@ -6913,7 +7163,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Multi-year SAIPE/ACS poverty aligned to election years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Local participation measures beyond presidential turnout",
+            "status": "NEE"
+          },
+          {
+            "reason": "Controls for age structure / outmigration",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Multi-year SAIPE/ACS poverty aligned to election years",
+          "Local participation measures beyond presidential turnout",
+          "Controls for age structure / outmigration"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
@@ -6994,7 +7268,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Intercensal farm structure estimates between NASS COA years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Non-farm rural employment structure",
+            "status": "NEE"
+          },
+          {
+            "reason": "Matched election-year civic denominators",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Intercensal farm structure estimates between NASS COA years",
+          "Non-farm rural employment structure",
+          "Matched election-year civic denominators"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
@@ -7080,7 +7378,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Hospital closure / maternal care series for designated counties",
+            "status": "NEE"
+          },
+          {
+            "reason": "HPSA score time series (not designation snapshot only)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Travel-time access measures distinct from HPSA designation",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Hospital closure / maternal care series for designated counties",
+          "HPSA score time series (not designation snapshot only)",
+          "Travel-time access measures distinct from HPSA designation"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       },
       {
         "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
@@ -7185,7 +7507,31 @@
           "Metric years may differ across series",
           "Seven-county designated set only — not statewide inference"
         ],
-        "missing_data_cases": []
+        "missing_data_cases": [
+          {
+            "reason": "Deposit ownership locality (not just SOD branch deposits)",
+            "status": "NEE"
+          },
+          {
+            "reason": "Income series aligned to FDIC SOD years",
+            "status": "NEE"
+          },
+          {
+            "reason": "Credit access / CDFIs beyond deposit intensity",
+            "status": "NEE"
+          }
+        ],
+        "evidence_demands": [
+          "Deposit ownership locality (not just SOD branch deposits)",
+          "Income series aligned to FDIC SOD years",
+          "Credit access / CDFIs beyond deposit intensity"
+        ],
+        "demand_status": "explicit_v1",
+        "not": [
+          "causal_claim",
+          "statewide_inference",
+          "hypothesis_promotion"
+        ]
       }
     ]
   },

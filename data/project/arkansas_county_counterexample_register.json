@@ -32,7 +32,7 @@
         "x_z": -1.11,
         "y_z": -1.669,
         "support_score": 1.853,
-        "x_value": 20213.0,
+        "x_value": 20213,
         "y_value": 53.2,
         "x_year": "2025",
         "y_year": "2024"
@@ -43,7 +43,7 @@
         "x_z": -0.297,
         "y_z": 1.148,
         "support_score": -0.341,
-        "x_value": 26111.0,
+        "x_value": 26111,
         "y_value": 66.7,
         "x_year": "2025",
         "y_year": "2024"
@@ -81,7 +81,7 @@
           "x_z": 0.132,
           "y_z": 0.939,
           "support_score": 0.124,
-          "x_value": 29223.0,
+          "x_value": 29223,
           "y_value": 65.7,
           "x_year": "2025",
           "y_year": "2024"
@@ -92,7 +92,7 @@
           "x_z": -0.203,
           "y_z": 0.709,
           "support_score": -0.144,
-          "x_value": 26792.0,
+          "x_value": 26792,
           "y_value": 64.6,
           "x_year": "2025",
           "y_year": "2024"
@@ -103,7 +103,7 @@
           "x_z": -0.954,
           "y_z": 0.188,
           "support_score": -0.179,
-          "x_value": 21341.0,
+          "x_value": 21341,
           "y_value": 62.1,
           "x_year": "2025",
           "y_year": "2024"
@@ -114,7 +114,31 @@
         "Metric years may differ across series",
         "Seven-county designated set only — not statewide inference"
       ],
-      "missing_data_cases": []
+      "missing_data_cases": [
+        {
+          "reason": "Multi-year registered-voter series (beyond EAVS 2024)",
+          "status": "NEE"
+        },
+        {
+          "reason": "Consistent turnout denominator labels (registered vs CVAP) across election types",
+          "status": "NEE"
+        },
+        {
+          "reason": "FDIC ownership/local-deposit share beyond branch counts",
+          "status": "NEE"
+        }
+      ],
+      "evidence_demands": [
+        "Multi-year registered-voter series (beyond EAVS 2024)",
+        "Consistent turnout denominator labels (registered vs CVAP) across election types",
+        "FDIC ownership/local-deposit share beyond branch counts"
+      ],
+      "demand_status": "explicit_v1",
+      "not": [
+        "causal_claim",
+        "statewide_inference",
+        "hypothesis_promotion"
+      ]
     },
     {
       "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
@@ -175,7 +199,7 @@
           "x_z": -0.145,
           "y_z": -1.669,
           "support_score": -0.242,
-          "x_value": 21.0,
+          "x_value": 21,
           "y_value": 53.2,
           "x_year": "2023",
           "y_year": "2024"
@@ -186,7 +210,31 @@
         "Metric years may differ across series",
         "Seven-county designated set only — not statewide inference"
       ],
-      "missing_data_cases": []
+      "missing_data_cases": [
+        {
+          "reason": "Multi-year SAIPE/ACS poverty aligned to election years",
+          "status": "NEE"
+        },
+        {
+          "reason": "Local participation measures beyond presidential turnout",
+          "status": "NEE"
+        },
+        {
+          "reason": "Controls for age structure / outmigration",
+          "status": "NEE"
+        }
+      ],
+      "evidence_demands": [
+        "Multi-year SAIPE/ACS poverty aligned to election years",
+        "Local participation measures beyond presidential turnout",
+        "Controls for age structure / outmigration"
+      ],
+      "demand_status": "explicit_v1",
+      "not": [
+        "causal_claim",
+        "statewide_inference",
+        "hypothesis_promotion"
+      ]
     },
     {
       "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
@@ -201,7 +249,7 @@
         "x_z": 2.319,
         "y_z": 1.148,
         "support_score": 2.661,
-        "x_value": 1552.0,
+        "x_value": 1552,
         "y_value": 66.7,
         "x_year": "2022",
         "y_year": "2024"
@@ -212,7 +260,7 @@
         "x_z": -0.808,
         "y_z": 0.939,
         "support_score": -0.759,
-        "x_value": 192.0,
+        "x_value": 192,
         "y_value": 65.7,
         "x_year": "2022",
         "y_year": "2024"
@@ -234,7 +282,7 @@
           "x_z": 0.059,
           "y_z": 0.709,
           "support_score": 0.042,
-          "x_value": 569.0,
+          "x_value": 569,
           "y_value": 64.6,
           "x_year": "2022",
           "y_year": "2024"
@@ -245,7 +293,7 @@
           "x_z": -0.281,
           "y_z": -0.104,
           "support_score": 0.029,
-          "x_value": 421.0,
+          "x_value": 421,
           "y_value": 60.7,
           "x_year": "2022",
           "y_year": "2024"
@@ -256,7 +304,7 @@
           "x_z": 0.043,
           "y_z": 0.188,
           "support_score": 0.008,
-          "x_value": 562.0,
+          "x_value": 562,
           "y_value": 62.1,
           "x_year": "2022",
           "y_year": "2024"
@@ -267,7 +315,31 @@
         "Metric years may differ across series",
         "Seven-county designated set only — not statewide inference"
       ],
-      "missing_data_cases": []
+      "missing_data_cases": [
+        {
+          "reason": "Intercensal farm structure estimates between NASS COA years",
+          "status": "NEE"
+        },
+        {
+          "reason": "Non-farm rural employment structure",
+          "status": "NEE"
+        },
+        {
+          "reason": "Matched election-year civic denominators",
+          "status": "NEE"
+        }
+      ],
+      "evidence_demands": [
+        "Intercensal farm structure estimates between NASS COA years",
+        "Non-farm rural employment structure",
+        "Matched election-year civic denominators"
+      ],
+      "demand_status": "explicit_v1",
+      "not": [
+        "causal_claim",
+        "statewide_inference",
+        "hypothesis_promotion"
+      ]
     },
     {
       "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
@@ -282,7 +354,7 @@
         "x_z": 0.953,
         "y_z": 0.566,
         "support_score": 0.54,
-        "x_value": 19.0,
+        "x_value": 19,
         "y_value": 24.5,
         "x_year": "2025",
         "y_year": "2023"
@@ -293,7 +365,7 @@
         "x_z": -2.05,
         "y_z": 1.115,
         "support_score": -2.285,
-        "x_value": 10.0,
+        "x_value": 10,
         "y_value": 27.2,
         "x_year": "2025",
         "y_year": "2023"
@@ -331,7 +403,7 @@
           "x_z": -0.048,
           "y_z": -1.425,
           "support_score": 0.068,
-          "x_value": 16.0,
+          "x_value": 16,
           "y_value": 14.7,
           "x_year": "2025",
           "y_year": "2023"
@@ -342,8 +414,8 @@
           "x_z": 0.953,
           "y_z": -0.145,
           "support_score": -0.138,
-          "x_value": 19.0,
-          "y_value": 21.0,
+          "x_value": 19,
+          "y_value": 21,
           "x_year": "2025",
           "y_year": "2023"
         }
@@ -353,7 +425,31 @@
         "Metric years may differ across series",
         "Seven-county designated set only — not statewide inference"
       ],
-      "missing_data_cases": []
+      "missing_data_cases": [
+        {
+          "reason": "Hospital closure / maternal care series for designated counties",
+          "status": "NEE"
+        },
+        {
+          "reason": "HPSA score time series (not designation snapshot only)",
+          "status": "NEE"
+        },
+        {
+          "reason": "Travel-time access measures distinct from HPSA designation",
+          "status": "NEE"
+        }
+      ],
+      "evidence_demands": [
+        "Hospital closure / maternal care series for designated counties",
+        "HPSA score time series (not designation snapshot only)",
+        "Travel-time access measures distinct from HPSA designation"
+      ],
+      "demand_status": "explicit_v1",
+      "not": [
+        "causal_claim",
+        "statewide_inference",
+        "hypothesis_promotion"
+      ]
     },
     {
       "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
@@ -368,8 +464,8 @@
         "x_z": 1.638,
         "y_z": 2.152,
         "support_score": 3.525,
-        "x_value": 60831.0,
-        "y_value": 43878.0,
+        "x_value": 60831,
+        "y_value": 43878,
         "x_year": "2023",
         "y_year": "2025"
       },
@@ -379,8 +475,8 @@
         "x_z": 0.723,
         "y_z": -1.11,
         "support_score": -0.802,
-        "x_value": 53428.0,
-        "y_value": 20213.0,
+        "x_value": 53428,
+        "y_value": 20213,
         "x_year": "2023",
         "y_year": "2025"
       },
@@ -425,8 +521,8 @@
           "x_z": -0.039,
           "y_z": -0.203,
           "support_score": 0.008,
-          "x_value": 47266.0,
-          "y_value": 26792.0,
+          "x_value": 47266,
+          "y_value": 26792,
           "x_year": "2023",
           "y_year": "2025"
         },
@@ -436,8 +532,8 @@
           "x_z": -1.278,
           "y_z": 0.132,
           "support_score": -0.169,
-          "x_value": 37237.0,
-          "y_value": 29223.0,
+          "x_value": 37237,
+          "y_value": 29223,
           "x_year": "2023",
           "y_year": "2025"
         },
@@ -447,8 +543,8 @@
           "x_z": 0.724,
           "y_z": -0.297,
           "support_score": -0.215,
-          "x_value": 53435.0,
-          "y_value": 26111.0,
+          "x_value": 53435,
+          "y_value": 26111,
           "x_year": "2023",
           "y_year": "2025"
         }
@@ -458,8 +554,33 @@
         "Metric years may differ across series",
         "Seven-county designated set only — not statewide inference"
       ],
-      "missing_data_cases": []
+      "missing_data_cases": [
+        {
+          "reason": "Deposit ownership locality (not just SOD branch deposits)",
+          "status": "NEE"
+        },
+        {
+          "reason": "Income series aligned to FDIC SOD years",
+          "status": "NEE"
+        },
+        {
+          "reason": "Credit access / CDFIs beyond deposit intensity",
+          "status": "NEE"
+        }
+      ],
+      "evidence_demands": [
+        "Deposit ownership locality (not just SOD branch deposits)",
+        "Income series aligned to FDIC SOD years",
+        "Credit access / CDFIs beyond deposit intensity"
+      ],
+      "demand_status": "explicit_v1",
+      "not": [
+        "causal_claim",
+        "statewide_inference",
+        "hypothesis_promotion"
+      ]
     }
   ],
-  "note": "Counterexamples are not nuisances — they reveal what the theory is missing."
+  "note": "Counterexamples are not nuisances — they reveal what the theory is missing.",
+  "hardening_note": "CC-REPO-HARDENING-1.0: explicit evidence_demands added for CECS hyps; missing_data_cases mirrored from demands until field fills exist."
 }
