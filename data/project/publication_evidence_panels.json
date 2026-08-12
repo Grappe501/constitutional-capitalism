@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.7.0",
   "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
@@ -1534,7 +1534,7 @@
         "CC-SRC-268"
       ],
       "evidence_strength": "Strong",
-      "strength_note": "Strong for structural dials. Statewide/national ≠ local community baselines. SBCS is applicant approval among employer firms, not a population access rate.",
+      "strength_note": "Stronger with FDIC AR/US bank and branch histories. Still Partial for QBP community-bank share path and community-level outcomes. Statewide ≠ town baselines.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
         "definition": "CM02 = Census rural population share. ERS nonmetro is a different geography. CM04/E01 = FDIC/NCUA local-capital shares. E02 = SBCS + FSA. BDS entry/exit rates = national establishment dynamics.",
@@ -1564,38 +1564,41 @@
         ],
         "observation_history": [
           {
+            "period": "1980 → 2025",
+            "value": "3798 US commercial banks in 2025",
+            "label": "US commercial bank count path",
+            "geography": "US",
+            "note": "FDIC BankFind /summary via exp_022146cbbc26489d"
+          },
+          {
+            "period": "1980 → 2025",
+            "value": "77 AR commercial banks in 2025",
+            "label": "Arkansas commercial bank count path",
+            "geography": "AR"
+          },
+          {
             "period": "2005–2023",
             "value": "146 rural-county hospital closures/conversions (81 shutdowns)",
             "label": "ERS rural hospital access history",
             "geography": "US rural counties",
-            "source_id": "CC-SRC-009",
-            "note": "Multi-year count — not a complete hospital-access baseline (CM03 deferred)."
-          },
-          {
-            "period": "July 2020–June 2024",
-            "value": "51% of nonmetro counties lost population",
-            "label": "ERS county decline share",
-            "geography": "US nonmetro",
-            "source_id": "CC-SRC-008",
-            "note": "Aggregate nonmetro gains can coexist with widespread county decline."
-          },
-          {
-            "period": "2020 / 2023 / 2024",
-            "value": "current rural + capital + dynamics dials",
-            "label": "Current observations",
-            "geography": "US"
+            "source_id": "CC-SRC-009"
           }
         ],
         "geography_contrast": [
           {
-            "label": "BDS entry rate latest year (AR vs US)",
-            "value": "AR 9.621% vs US 10.608% (2023)",
-            "note": "Same BDS definition — comparable. Statewide ≠ local community baseline."
+            "label": "Commercial banks latest year (AR vs US)",
+            "value": "AR 77 vs US 3798 (2025)",
+            "note": "FDIC summary CB_SI:CB — institution structure, not community prosperity accounts."
           },
           {
-            "label": "BDS exit rate latest year (AR vs US)",
-            "value": "AR 8.052% vs US 9.396% (2023)",
-            "note": "Same BDS definition — comparable."
+            "label": "Commercial bank branches latest year (AR vs US)",
+            "value": "AR 1251 vs US 68860 (2025)",
+            "note": "Branch counts describe access geography incompletely; rural towns can still be thin."
+          },
+          {
+            "label": "Community-bank deposit share (CB:1 current snapshot)",
+            "value": "AR 31.0% vs US 11.2%",
+            "note": "Derived from BankFind institutions CB:1 / ACTIVE deposits. Not the QBP multi-year path; definition differs from registry 13.1% QBP cell until reconciled."
           },
           {
             "label": "Rural definition contrast",
@@ -1603,16 +1606,15 @@
             "note": "Keep both; never average them."
           }
         ],
-        "series_note": "Pass 6 attached AR and US BDS entry/exit rate histories (2000–2023). FDIC community-bank paths and HPSA arrays remain blocked without adapters.",
-        "series_status": "partial_arrays_attached",
+        "series_note": "Pass 8 attached FDIC BankFind commercial-bank banks/branches/deposits histories (AR vs US) and current community-bank (CB:1) deposit-share snapshots via exp_022146cbbc26489d. QBP multi-year community-bank share path still not a BankFind series. BDS arrays from Pass 6 retained.",
+        "series_status": "fdic_arrays_partial_qbp_path_blocked",
         "missing_layers": [
-          "FDIC QBP community-bank deposit/loan share path — PASS5-DEM-FDIC-PATH",
-          "HRSA HPSA multi-year / AR designations — PASS5-DEM-HPSA-HISTORY / PASS5-DEM-HPSA-AR",
+          "FDIC QBP multi-year community-bank domestic deposit/loan share path — PASS5-DEM-FDIC-PATH (current CB:1 snapshot only)",
           "Hospital-access baseline CM03 (deferred)",
           "SBA 7(a)/504 dollar series",
           "Community-level ownership / leakage maps"
         ],
-        "qualification": "These are structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success.",
+        "qualification": "Bank/branch/deposit structure and community-bank snapshots describe local-capital infrastructure. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success.",
         "series_points": [
           {
             "series_id": "CC-PASS6-BDS-ENTRY-AR",
@@ -1684,161 +1686,529 @@
             ]
           },
           {
-            "series_id": "CC-IND-B01",
-            "label": "US BDS establishment entry rate (comparison)",
-            "source": "Census BDS via RedDirt",
-            "point_count": 24,
-            "coverage": "2000→2023",
+            "series_id": "CC-PASS8-FDIC-US-BANKS",
+            "label": "US commercial banks (FDIC summary)",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "definition_note": "CB_SI:CB commercial banks — not identical to FDIC community-bank (CB:1).",
             "points": [
               {
-                "period": "2000",
-                "value": "10.848%",
-                "geography": "US"
+                "period": "1980",
+                "value": "14421",
+                "geography": "United States"
               },
               {
-                "period": "2002",
-                "value": "11.911%",
-                "geography": "US"
+                "period": "1983",
+                "value": "14454",
+                "geography": "United States"
+              },
+              {
+                "period": "1987",
+                "value": "13705",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "12329",
+                "geography": "United States"
+              },
+              {
+                "period": "1994",
+                "value": "10432",
+                "geography": "United States"
+              },
+              {
+                "period": "1997",
+                "value": "9125",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "8064",
+                "geography": "United States"
               },
               {
                 "period": "2004",
-                "value": "11.511%",
-                "geography": "US"
-              },
-              {
-                "period": "2006",
-                "value": "12.495%",
-                "geography": "US"
+                "value": "7612",
+                "geography": "United States"
               },
               {
                 "period": "2008",
-                "value": "10.307%",
-                "geography": "US"
+                "value": "7061",
+                "geography": "United States"
               },
               {
-                "period": "2010",
-                "value": "9.495%",
-                "geography": "US"
-              },
-              {
-                "period": "2013",
-                "value": "9.807%",
-                "geography": "US"
+                "period": "2011",
+                "value": "6263",
+                "geography": "United States"
               },
               {
                 "period": "2015",
-                "value": "10.025%",
-                "geography": "US"
+                "value": "5330",
+                "geography": "United States"
               },
               {
-                "period": "2017",
-                "value": "9.675%",
-                "geography": "US"
+                "period": "2018",
+                "value": "4708",
+                "geography": "United States"
               },
               {
-                "period": "2019",
-                "value": "9.613%",
-                "geography": "US"
+                "period": "2022",
+                "value": "4129",
+                "geography": "United States"
               },
               {
-                "period": "2021",
-                "value": "10.845%",
-                "geography": "US"
+                "period": "2025",
+                "value": "3798",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-FDIC-AR-BANKS",
+            "label": "Arkansas commercial banks (FDIC summary)",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "definition_note": "Same CB_SI:CB definition as US summary — valid AR/US contrast.",
+            "points": [
+              {
+                "period": "1980",
+                "value": "260",
+                "geography": "Arkansas"
               },
               {
-                "period": "2023",
-                "value": "10.608%",
-                "geography": "US"
+                "period": "1983",
+                "value": "259",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1987",
+                "value": "257",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1990",
+                "value": "256",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1994",
+                "value": "257",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1997",
+                "value": "226",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2001",
+                "value": "178",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2004",
+                "value": "161",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "137",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2011",
+                "value": "122",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "103",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2018",
+                "value": "92",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "83",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "77",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-FDIC-US-BRANCHES",
+            "label": "US commercial bank branches",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "points": [
+              {
+                "period": "1980",
+                "value": "38458",
+                "geography": "United States"
+              },
+              {
+                "period": "1983",
+                "value": "40548",
+                "geography": "United States"
+              },
+              {
+                "period": "1987",
+                "value": "44813",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "49800",
+                "geography": "United States"
+              },
+              {
+                "period": "1994",
+                "value": "53871",
+                "geography": "United States"
+              },
+              {
+                "period": "1997",
+                "value": "59641",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "64378",
+                "geography": "United States"
+              },
+              {
+                "period": "2004",
+                "value": "69690",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "81809",
+                "geography": "United States"
+              },
+              {
+                "period": "2011",
+                "value": "82045",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "80537",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "76772",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "69590",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "68860",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-FDIC-AR-BRANCHES",
+            "label": "Arkansas commercial bank branches",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "points": [
+              {
+                "period": "1980",
+                "value": "415",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1983",
+                "value": "428",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1987",
+                "value": "466",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1990",
+                "value": "562",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1994",
+                "value": "674",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1997",
+                "value": "791",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2001",
+                "value": "997",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2004",
+                "value": "1164",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "1316",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2011",
+                "value": "1321",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "1275",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2018",
+                "value": "1268",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "1232",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "1251",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-FDIC-US-DEP",
+            "label": "US commercial bank deposits ($ billions)",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "definition_note": "Converted from FDIC $ thousands to $ billions (÷1,000,000) for readers.",
+            "points": [
+              {
+                "period": "1980",
+                "value": "1476",
+                "geography": "United States"
+              },
+              {
+                "period": "1983",
+                "value": "1835",
+                "geography": "United States"
+              },
+              {
+                "period": "1987",
+                "value": "2324",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "2633",
+                "geography": "United States"
+              },
+              {
+                "period": "1994",
+                "value": "2854",
+                "geography": "United States"
+              },
+              {
+                "period": "1997",
+                "value": "3399",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "4343",
+                "geography": "United States"
+              },
+              {
+                "period": "2004",
+                "value": "5550",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "8021",
+                "geography": "United States"
+              },
+              {
+                "period": "2011",
+                "value": "9207",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "11303",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "12842",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "18052",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "19014",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-FDIC-AR-DEP",
+            "label": "Arkansas commercial bank deposits ($ billions)",
+            "source": "FDIC BankFind /summary via RedDirt exp_022146cbbc26489d",
+            "point_count": 46,
+            "coverage": "1980 → 2025",
+            "definition_note": "Converted from FDIC $ thousands to $ billions (÷1,000,000) for readers.",
+            "points": [
+              {
+                "period": "1980",
+                "value": "9.5",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1983",
+                "value": "12.7",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1987",
+                "value": "15.7",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1990",
+                "value": "19.1",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1994",
+                "value": "23.4",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1997",
+                "value": "24.7",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2001",
+                "value": "23.5",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2004",
+                "value": "31.7",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "39.4",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2011",
+                "value": "47.0",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "61.2",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2018",
+                "value": "85.7",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "130.3",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "149.2",
+                "geography": "Arkansas"
               }
             ]
           }
         ]
       },
       "what_the_data_show": {
-        "key_finding": "Rural/local-capital context now includes Arkansas vs U.S. BDS entry/exit rate histories (2000–2023) beside Census-rural/ERS-nonmetro definition contrasts and single-period local-capital dials. Statewide dynamics ≠ town outcomes; FDIC/HPSA trend arrays still missing.",
+        "key_finding": "FDIC BankFind commercial-bank histories now show Arkansas and U.S. institution counts through 2025 (AR 77 vs US 3798 banks). Branch counts: AR 1251 vs US 68860 (2025). Current community-bank (CB:1) deposit shares: AR 31.0% vs US 11.2% — snapshot only, not the QBP multi-year path. These deepen local-capital structure under existing community-prosperity arguments; they do not prove town-level success.",
         "critical_numbers": [
           {
-            "label": "Rural population share",
-            "value": "20%",
-            "period": "2020",
-            "metric_id": "CC-IND-CM02",
-            "source_id": "CC-SRC-222"
+            "label": "Commercial banks AR vs US",
+            "value": "AR 77 / US 3798",
+            "period": "2025",
+            "geography": "AR / US",
+            "note": "FDIC summary via exp_022146cbbc26489d"
           },
           {
-            "label": "Community-bank deposit share",
+            "label": "Community-bank deposit share (CB:1 snapshot)",
+            "value": "AR 31.0% / US 11.2%",
+            "period": "2026-08-11",
+            "geography": "AR / US",
+            "note": "Derived from BankFind institutions aggregates — not QBP path."
+          },
+          {
+            "label": "Community-bank domestic deposit share (registry QBP)",
             "value": "13.1%",
             "period": "2024Q4",
-            "metric_id": "CC-IND-CM04",
-            "source_id": "CC-SRC-249"
-          },
-          {
-            "label": "Community bank + CU loan share",
-            "value": "24.9%",
-            "period": "2024Q4",
-            "metric_id": "CC-IND-E01",
-            "source_id": "CC-SRC-249"
-          },
-          {
-            "label": "SBCS full approval rate",
-            "value": "52%",
-            "period": "2024 survey",
-            "metric_id": "CC-IND-E02",
-            "source_id": "CC-SRC-258"
-          },
-          {
-            "label": "USDA FSA farm-loan obligations",
-            "value": "$5.39B / 24,555 loans",
-            "period": "FY2024",
-            "metric_id": "CC-IND-E02",
-            "source_id": "CC-SRC-259"
-          },
-          {
-            "label": "Establishment entry rate (BDS)",
-            "value": "10.608%",
-            "period": "2023",
-            "geography": "US",
-            "metric_id": "CC-IND-B01",
-            "note": "National dynamics rate from RedDirt import — not a rural-only rate."
-          },
-          {
-            "label": "Establishment exit rate (BDS)",
-            "value": "9.396%",
-            "period": "2023",
-            "geography": "US",
-            "metric_id": "CC-IND-B02",
-            "note": "National dynamics rate — not competitiveness or rural survival."
-          },
-          {
-            "label": "Rural hospital closures/conversions",
-            "value": "146",
-            "period": "2005–2023",
-            "geography": "US rural counties",
-            "source_id": "CC-SRC-009",
-            "note": "81 complete shutdowns; access proxy — not CM03 hospital-access baseline."
+            "note": "Prior registry cell retained; do not overwrite with CB:1 snapshot without reconciliation."
           }
         ],
-        "plain_english": "Local-ownership and community-prosperity pages need this structural system beside design claims — labeled as national context, not town outcomes."
+        "plain_english": "Local-capital pages can now show multi-decade bank and branch histories for Arkansas and the U.S., plus a clearly labeled current community-bank deposit-share snapshot — while still naming the missing QBP path and town-level unknowns."
       },
       "what_supports_this": [
-        "Census urban/rural",
-        "FDIC QBP",
-        "NCUA",
-        "SBCS",
-        "USDA FSA"
+        "FDIC BankFind Suite via RedDirt exp_022146cbbc26489d",
+        "Census BDS entry/exit histories (Pass 6)",
+        "FDIC QBP (registry community-bank share cell)"
       ],
       "what_challenges_it": [
-        "Census rural ≠ OMB nonmetro",
-        "SBCS applicant universe ≠ all firms",
-        "FSA is farm credit, not general rural SMB credit"
+        "Commercial-bank summary ≠ community-bank QBP definition",
+        "Statewide banking structure ≠ town capital access",
+        "CB:1 snapshot ≠ multi-year QBP share path"
       ],
       "what_we_dont_know": [
-        "Hospital access slot (CM03) still deferred",
-        "SBA 7(a)/504 dollar series still pending primary retrieval",
-        "Community-level ownership maps"
+        "Official multi-year QBP community-bank deposit/loan share arrays in-repo",
+        "Community-level ownership / leakage maps",
+        "CM03 hospital access (deferred)"
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "reddirt exp_226e711e08704b06 series-arrays"
+        "dataset_or_release": "Pass 8 — FDIC arrays bound from exp_022146cbbc26489d"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -2209,7 +2579,7 @@
         "CC-SRC-009"
       ],
       "evidence_strength": "Partial",
-      "strength_note": "Strong for the HPSA population-share proxy; Partial because designation ≠ utilization, and mental-health HPSAs are separate.",
+      "strength_note": "Stronger for current AR vs US HPSA area/FTE contrasts. Still Partial because multi-year HPSA share history is unavailable and designation ≠ care received.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
         "definition": "E05 ≈ share of U.S. population residing in designated primary-care Health Professional Shortage Areas (HRSA). Rural hospital closure counts are a related access history, not the same metric.",
@@ -2232,6 +2602,19 @@
         ],
         "observation_history": [
           {
+            "period": "2026-08-11",
+            "value": "2840 designated primary-care HPSA areas (US)",
+            "label": "Current US HPSA area count",
+            "geography": "US",
+            "note": "HRSA GIS via exp_022146cbbc26489d; multi-year share path still blocked."
+          },
+          {
+            "period": "2026-08-11",
+            "value": "70 designated primary-care HPSA areas (AR)",
+            "label": "Current Arkansas HPSA area count",
+            "geography": "AR"
+          },
+          {
             "period": "2005–2023",
             "value": "146 closures/conversions; 81 shutdowns",
             "label": "ERS rural hospital history",
@@ -2241,64 +2624,181 @@
           {
             "period": "2024-06-30",
             "value": "~22% population in primary-care HPSAs",
-            "label": "Current E05 dial",
+            "label": "Current E05 dial (registry)",
             "geography": "US",
-            "source_id": "CC-SRC-225"
+            "source_id": "CC-SRC-225",
+            "note": "Retained; not replaced by overlapping GIS population sums."
           }
         ],
         "geography_contrast": [
           {
-            "label": "Arkansas primary-care HPSA share / county map",
-            "value": "NOT ATTACHED",
-            "note": "Demand PASS5-DEM-HPSA-AR — do not invent from national 22%."
+            "label": "Designated primary-care HPSA areas (AR vs US)",
+            "value": "AR 70 vs US 2840",
+            "note": "Current HRSA GIS snapshot — counts of area designations, not visits delivered."
+          },
+          {
+            "label": "Primary-care HPSA FTE sum (AR vs US)",
+            "value": "AR 170.8 vs US 10326.5",
+            "note": "Workforce capacity inside designated areas — not a utilization rate."
+          },
+          {
+            "label": "Arkansas HPSA population share",
+            "value": "NOT COMPUTED FROM OVERLAPPING SUMS",
+            "note": "Designation population sums may overlap; do not invent AR share from pop_sum. National E05 ~22% registry dial retained separately."
           }
         ],
-        "series_note": "Pass 5 attaches the multi-year rural-hospital closure count beside the current HPSA dial. Multi-year HPSA population-share arrays remain demanded. Pass 6: adapter still missing — no new arrays attached.",
-        "series_status": "official_series_available_adapter_blocked",
+        "series_note": "Pass 8 attached current HRSA primary-care HPSA area counts, FTE sums, and designation-population sums (AR vs US) via exp_022146cbbc26489d. Multi-year HPSA population-share arrays remain blocked — no official time-series API.",
+        "series_status": "hrsa_current_snapshot_history_blocked",
         "missing_layers": [
           "HRSA primary-care HPSA population-share multi-year array — RCIP-DEM-0412 / PASS5-DEM-HPSA-HISTORY",
-          "Arkansas HPSA share and county designations — PASS5-DEM-HPSA-AR",
+          "Non-overlapping Arkansas HPSA population share (method lock required)",
           "CM03 hospital access baseline (deferred)",
           "E03/E04/E06 pending insurance/drug/prevention slots"
         ],
-        "qualification": "Do not let health-system design prose outrun these thin but honest dials. Designation ≠ utilization; mental-health HPSAs are separate."
+        "qualification": "Do not let health-system design prose outrun these dials. Designation ≠ utilization; overlapping population sums ≠ population share; mental-health HPSAs are separate.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS8-HRSA-US-HPSA-COUNT",
+            "label": "US designated primary-care HPSA areas",
+            "source": "HRSA GIS HPSA MapServer layer 10 via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "definition_note": "Current designated-area count only — not a multi-year population-share path.",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "2840",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-HRSA-AR-HPSA-COUNT",
+            "label": "Arkansas designated primary-care HPSA areas",
+            "source": "HRSA GIS HPSA MapServer layer 10 via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "70",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-HRSA-US-HPSA-FTE",
+            "label": "US primary-care HPSA FTE sum",
+            "source": "HRSA GIS via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "10326.5",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-HRSA-AR-HPSA-FTE",
+            "label": "Arkansas primary-care HPSA FTE sum",
+            "source": "HRSA GIS via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "170.8",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-HRSA-US-HPSA-POP-SUM",
+            "label": "US HPSA designation population sum (may overlap)",
+            "source": "HRSA GIS via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "definition_note": "Sum of designation populations — overlap possible. Not a substitute for the ~22% E05 population-share dial.",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "68,703,725",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS8-HRSA-AR-HPSA-POP-SUM",
+            "label": "Arkansas HPSA designation population sum (may overlap)",
+            "source": "HRSA GIS via RedDirt exp_022146cbbc26489d",
+            "point_count": 1,
+            "coverage": "2026-08-11 → 2026-08-11",
+            "definition_note": "Overlap possible — do not convert to an Arkansas population-share claim.",
+            "points": [
+              {
+                "period": "2026-08-11",
+                "value": "1,046,988",
+                "geography": "Arkansas"
+              }
+            ]
+          }
+        ]
       },
       "what_the_data_show": {
-        "key_finding": "Primary-care HPSA population share is about 22% (~75M) as of 2024-06-30. Separately, ERS counts 146 rural hospital closures/conversions from 2005–2023. Multi-year HPSA share arrays and Arkansas HPSA maps are not yet attached.",
+        "key_finding": "HRSA GIS now shows 70 designated primary-care HPSA areas in Arkansas vs 2840 nationally (current snapshot). Associated FTE sums: AR 170.8 vs US 10326.5. Designation-population sums are attached with an overlap warning and are not converted into an Arkansas share. The national ~22% E05 registry dial remains. Multi-year HPSA share arrays are still missing.",
         "critical_numbers": [
           {
-            "label": "Population in primary-care HPSAs",
+            "label": "Designated primary-care HPSA areas",
+            "value": "AR 70 / US 2840",
+            "period": "2026-08-11",
+            "geography": "AR / US",
+            "note": "HRSA GIS via exp_022146cbbc26489d"
+          },
+          {
+            "label": "Primary-care HPSA FTE sum",
+            "value": "AR 170.8 / US 10326.5",
+            "period": "2026-08-11",
+            "geography": "AR / US"
+          },
+          {
+            "label": "Population in primary-care HPSAs (registry E05)",
             "value": "22%",
             "period": "2024-06-30",
             "metric_id": "CC-IND-E05",
-            "source_id": "CC-SRC-225"
+            "source_id": "CC-SRC-225",
+            "note": "Not replaced by overlapping GIS population sums."
           },
           {
             "label": "Rural hospital closures/conversions",
             "value": "146",
             "period": "2005–2023",
             "geography": "US rural counties",
-            "source_id": "CC-SRC-009",
-            "note": "Related access history — not a substitute for E05 HPSA share or CM03."
+            "source_id": "CC-SRC-009"
           }
         ],
-        "plain_english": "Put the shortage dial beside rural-health and community-care claims; keep unknowns about insurance, prevention investment, and hospital access visible."
+        "plain_english": "Healthcare pages can now contrast Arkansas and U.S. shortage-area counts and FTE capacity under HRSA definitions — while still saying clearly that multi-year HPSA share history and utilization remain open."
       },
       "what_supports_this": [
-        "HRSA primary-care workforce / shortage dashboards"
+        "HRSA GIS Primary Care HPSA areas via RedDirt exp_022146cbbc26489d",
+        "HRSA / CC-SRC-225 E05 registry dial",
+        "ERS rural hospital history (CC-SRC-009)"
       ],
       "what_challenges_it": [
         "Designation ≠ care received",
-        "Mental-health HPSAs separate",
-        "Rural hospital measures deferred"
+        "Population sums may overlap — not a share",
+        "No official multi-year HPSA API"
       ],
       "what_we_dont_know": [
+        "Multi-year HPSA population-share path",
+        "Non-overlapping Arkansas HPSA share",
         "E03/E04/E06 still pending",
         "CM03 hospital access deferred"
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json + CC-SRC-009/225"
+        "dataset_or_release": "Pass 8 — HRSA snapshot bound from exp_022146cbbc26489d"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md"
@@ -3378,17 +3878,25 @@
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-7.0",
-    "slice_id": "RCIP-PASS-7-AGENCY-ADAPTER-EXPANSION-AND-EVIDENCE-SYSTEM-BINDING-1.0",
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-8.0",
+    "slice_id": "RCIP-PASS-8-FRED-FDIC-HRSA-ADAPTERS-AND-BINDING-1.0",
     "panels_total": 18,
-    "panels_added_pass_7": 0,
-    "systems_deepened_with_arrays": 4,
-    "export_id": "exp_51310e4926bb45e9",
-    "observation_count": 988,
-    "preference": "adapter_expansion_then_bind_only",
-    "energy_rcip_0418_0425": "partial_eia_arrays_bound_reliability_ownership_blocked",
-    "baseline_impact": "none — no ontology promotion",
-    "note": "EIA adapter retrieved demanded MER/retail series and bound into CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1. FRED/FDIC/HRSA/CBO/SCF still next. No prosperity-fund claims from energy facts."
+    "panels_added_pass_8": 0,
+    "systems_deepened_with_arrays": 5,
+    "export_id": "exp_022146cbbc26489d",
+    "observation_count": 1280,
+    "preference": "more_observations_under_existing_arguments",
+    "fdic": "commercial_bank_histories_plus_cb1_snapshot",
+    "hrsa": "current_hpsa_area_fte_popsum_ar_us",
+    "fred": "not_seeded_no_demanded_awkward_series",
+    "baseline_impact": "none — no ontology promotion; energy baseline unchanged",
+    "holds": [
+      "CC-CLAIM-003 remains NEE",
+      "Google Civic deferred",
+      "Energy baseline does not move from EIA strength",
+      "Energy reliability/ownership remain missing layers"
+    ],
+    "note": "FDIC deepened rural/local-capital; HRSA deepened primary-care access. FRED reserved. No new panels."
   },
   "pass_1_panels": 3,
   "pass_2_panels": 9,
@@ -3396,5 +3904,6 @@
   "pass_3_panels": 11,
   "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing.",
   "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels.",
-  "pass_7_rule": "Existing publication demand → exact source object → normalized series → credential-free export → bind into an existing evidence system. No generic warehouse expansion. No new panel unless unavoidable."
+  "pass_7_rule": "Existing publication demand → exact source object → normalized series → credential-free export → bind into an existing evidence system. No generic warehouse expansion. No new panel unless unavoidable.",
+  "pass_8_rule": "More real observations under existing arguments, not more headline statistics. FDIC→HRSA→FRED(only if awkward). Bind existing panels only."
 }

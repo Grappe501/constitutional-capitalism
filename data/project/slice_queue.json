@@ -1006,10 +1006,42 @@
     ],
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_7_0_RETURN.md",
     "panels_registry": "data/project/publication_evidence_panels.json",
-    "next": "RCIP-PASS-8-ADAPTER-CONTINUATION-FRED-FDIC-HRSA-CBO-1.0"
+    "next": "RCIP-PASS-8-FRED-FDIC-HRSA-ADAPTERS-AND-BINDING-1.0"
+  },
+  "publication_evidence_upgrade_pass_8": {
+    "slice_id": "RCIP-PASS-8-FRED-FDIC-HRSA-ADAPTERS-AND-BINDING-1.0",
+    "cc_alias": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-8.0",
+    "status": "PASSED",
+    "mode": "adapter_expansion_then_bind_only",
+    "no_new_panels": true,
+    "panels_total": 18,
+    "adapters_landed": ["fdic", "hrsa"],
+    "fred": "reserved_not_seeded",
+    "systems_with_arrays": [
+      "CC-EP-WAGES-PRODUCTIVITY-1",
+      "CC-EP-MARKET-DYNAMICS-SYSTEM-1",
+      "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
+      "CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1",
+      "CC-EP-PRIMARY-CARE-ACCESS-1"
+    ],
+    "export_id": "exp_022146cbbc26489d",
+    "observation_count": 1280,
+    "baseline_impact": "none",
+    "still_blocked": [
+      "PASS5-DEM-FDIC-PATH_qbp_multiyear",
+      "PASS5-DEM-HPSA-HISTORY",
+      "FRED_until_awkward_demand",
+      "CBO",
+      "SCF_DFA",
+      "CR_markups",
+      "energy_reliability_ownership"
+    ],
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_8_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json",
+    "next": "OPTIONAL_QBP_HPSA_HISTORY_OR_CBO_OR_FRED_AWKWARD_SERIES"
   },
   "progress_markers": {
-    "overall_percent": 47,
+    "overall_percent": 48,
     "baseline": "42/64",
     "sources": 268,
     "modeling": 0,

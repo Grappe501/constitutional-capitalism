@@ -1,11 +1,13 @@
 {
-  "export_id": "exp_51310e4926bb45e9",
-  "generated_at": "2026-08-12T03:05:11.452Z",
+  "export_id": "exp_022146cbbc26489d",
+  "generated_at": "2026-08-12T03:40:53.858Z",
   "source_database": "RedDirt public_statistics / file warehouse export",
   "source_agencies": [
     "United States Census Bureau",
     "Bureau of Labor Statistics",
-    "U.S. Energy Information Administration"
+    "U.S. Energy Information Administration",
+    "Federal Deposit Insurance Corporation",
+    "Health Resources and Services Administration"
   ],
   "dataset_versions": [
     "acs5",
@@ -18,17 +20,20 @@
     "jolts",
     "productivity",
     "total-energy",
-    "electricity/retail-sales"
+    "electricity/retail-sales",
+    "summary",
+    "institutions",
+    "hpsa-primary-care-areas"
   ],
-  "series_count": 29,
-  "observation_count": 988,
+  "series_count": 43,
+  "observation_count": 1280,
   "minimum_period": "1949",
-  "maximum_period": "2025-M12",
+  "maximum_period": "2026-08-11",
   "validation_status": "passed",
   "contract_version": "1.0",
   "reddirt_commit": null,
-  "constitutional_capitalism_import_commit": "fe5acf4",
-  "git_commit": "fe5acf4",
+  "constitutional_capitalism_import_commit": "e672db6",
+  "git_commit": "e672db6",
   "boundary_attestation": {
     "contains_campaign_data": false,
     "contains_personal_data": false,

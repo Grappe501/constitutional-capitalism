@@ -1,12 +1,11 @@
 {
-  "slice_id": "RCIP-PASS-7-AGENCY-ADAPTER-EXPANSION-AND-EVIDENCE-SYSTEM-BINDING-1.0",
-  "cc_alias": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-7.0",
+  "slice_id": "RCIP-PASS-8-FRED-FDIC-HRSA-ADAPTERS-AND-BINDING-1.0",
+  "cc_alias": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-8.0",
   "status": "PASSED",
   "returned_at": "2026-08-11",
-  "return_path": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_7_0_RETURN.md",
-  "summary": "Pass 7: EIA Open Data v2 adapter end-to-end; RedDirt exp_51310e4926bb45e9 (988 obs) imported; MER + AR/US retail electricity arrays bound into CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1; 0 new panels; baseline unchanged 42/64; reliability/ownership + FRED/FDIC/HRSA/CBO remain blocked. CC-CLAIM-003 remains NEE.",
+  "return_path": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_8_0_RETURN.md",
+  "summary": "Pass 8: FDIC BankFind + HRSA GIS adapters end-to-end; RedDirt exp_022146cbbc26489d (1280 obs) bound into rural/local-capital and primary-care panels; 0 new panels; baseline 42/64 unchanged; FRED reserved; QBP multi-year and HPSA history still blocked. CC-CLAIM-003 remains NEE.",
   "panels_total": 18,
-  "export_id": "exp_51310e4926bb45e9",
-  "energy_rcip_0418_0425": "partial_arrays_bound_reliability_ownership_blocked",
-  "next_slice": "RCIP-PASS-8-ADAPTER-CONTINUATION-FRED-FDIC-HRSA-CBO-1.0"
+  "export_id": "exp_022146cbbc26489d",
+  "next_slice": "OPTIONAL_QBP_HPSA_HISTORY_OR_CBO_OR_FRED_AWKWARD_SERIES"
 }
