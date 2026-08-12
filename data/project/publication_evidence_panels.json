@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
@@ -2435,7 +2435,7 @@
         "CC-SRC-061"
       ],
       "evidence_strength": "Partial",
-      "strength_note": "Strong for the cited EIA/DOE structural endpoints. Partial because multi-year arrays, prices, reliability, ownership shares, and Arkansas series are not attached — and none of these endpoints validate a National Energy Prosperity Fund.",
+      "strength_note": "Stronger for MER production/consumption/net-trade and retail electricity price/sales histories now attached. Still partial: reliability, ownership, capacity, and prosperity-fund outcomes remain unattached or definition-locked.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
         "definition": "Structural energy endpoints from EIA/DOE publications already in the source registry. These are not CC baseline energy metrics and not public-return or dividend outcomes.",
@@ -2463,118 +2463,910 @@
         ],
         "observation_history": [
           {
-            "period": "1949–2024 (record span cited)",
-            "value": "net energy exports 9.3 quads in 2024 — highest in EIA records to 1949",
-            "label": "Primary energy net-export record",
+            "period": "1949 → 2024",
+            "value": "-9147.492 quads net imports in 2024 (negative = net exports)",
+            "label": "Primary energy net-import path (MER TENIBUS)",
             "geography": "US",
-            "source_id": "CC-SRC-056",
-            "note": "Endpoint + record claim — full annual quads path not attached in-repo."
+            "note": "Full annual path attached from exp_51310e4926bb45e9; structural endpoint CC-SRC-056 remains valid for narrative endpoints."
+          },
+          {
+            "period": "1949 → 2024",
+            "value": "4308634.298 (2024)",
+            "label": "Electricity net generation path (MER ELETPUS)",
+            "geography": "US"
+          },
+          {
+            "period": "2001 → 2024",
+            "value": "AR 12.32 vs US 16.48 ¢/kWh (2024)",
+            "label": "Residential electricity price AR vs US",
+            "geography": "AR / US"
           },
           {
             "period": "2016→2025",
             "value": "LNG exports 0.5 → 15.0 Bcf/d",
-            "label": "LNG export growth endpoints",
+            "label": "LNG export growth endpoints (registry; not MER quads)",
             "geography": "US",
-            "source_id": "CC-SRC-061"
-          },
-          {
-            "period": "2020 onward",
-            "value": "total petroleum net exporter (while still importing some crude/products)",
-            "label": "Petroleum trade status",
-            "geography": "US",
-            "source_id": "CC-SRC-060",
-            "note": "Sovereignty ≠ autarky."
-          },
-          {
-            "period": "2024–2025",
-            "value": "current production/generation/export endpoints",
-            "label": "Current observations",
-            "geography": "US"
+            "source_id": "CC-SRC-061",
+            "note": "Kept as sourced endpoints; dedicated LNG Bcf/d annual adapter not in this Pass 7 slice."
           }
         ],
         "geography_contrast": [
           {
-            "label": "Arkansas production / consumption / prices / capacity",
+            "label": "Arkansas vs US residential electricity price",
+            "value": "AR 12.32 vs US 16.48 ¢/kWh (2024)",
+            "note": "Same EIA retail-sales definition — valid AR/US contrast."
+          },
+          {
+            "label": "Arkansas vs US electricity sales (all sectors)",
+            "value": "AR 49895.81201 vs US 3975381.83162 million kWh (2024)",
+            "note": "Sales volumes describe scale, not affordability or ownership."
+          },
+          {
+            "label": "Arkansas production / capacity / ownership / reliability",
             "value": "NOT ATTACHED",
-            "note": "PASS5-DEM-ENERGY-AR — do not invent from national endpoints."
+            "note": "Reliability (RCIP-DEM-0423) and ownership (RCIP-DEM-0424) remain blocked without defensible official series."
           }
         ],
-        "series_note": "Pass 6 attempted RCIP-DEM-0418–0425 retrieval: blocked — no EIA connector/API key path in RedDirt RCIP spine yet. Structural endpoints from CC-SRC-056–061 remain; full MER/electricity/trade arrays not attached.",
-        "series_status": "structural_endpoints_eia_arrays_blocked",
+        "series_note": "Pass 7 attached EIA Open Data v2 MER + retail-sales annual arrays into this existing system. Structural registry endpoints (CC-SRC-056–061) remain; arrays deepen history. Energy facts do not prove prosperity-fund design.",
+        "series_status": "eia_arrays_partial_reliability_ownership_blocked",
         "missing_layers": [
-          "Primary energy production/consumption/net exports annual quads path — PASS5-DEM-ENERGY-MER",
-          "Electricity net generation annual path + capacity — PASS5-DEM-ENERGY-ELEC",
-          "Crude oil production annual path — PASS5-DEM-ENERGY-CRUDE",
-          "LNG / petroleum trade full annual tables — PASS5-DEM-ENERGY-TRADE",
-          "Electricity prices / household energy burden (definition lock first) — PASS5-DEM-ENERGY-PRICES",
-          "Reliability metrics where measurable — PASS5-DEM-ENERGY-RELIABILITY",
-          "IOU / municipal / cooperative customer-share ownership structure — PASS5-DEM-ENERGY-OWNERSHIP",
-          "Arkansas energy accounts — PASS5-DEM-ENERGY-AR",
+          "LNG Bcf/d dedicated annual series (registry endpoints only) — optional next EIA object",
+          "Generation capacity / nameplate where a stable EIA object is mapped",
+          "Reliability metrics (SAIDI/SAIFI or equivalent) — RCIP-DEM-0423 still blocked",
+          "IOU / municipal / cooperative customer-share ownership — RCIP-DEM-0424 still blocked",
+          "Arkansas primary energy production/consumption accounts beyond electricity sales/prices",
           "Public-return / prosperity-fund outcome metrics (definition lock — do not invent)"
         ],
-        "qualification": "Production, exports, and generation facts do not measure public capture of energy rents, People’s Energy Dividend feasibility, or community hosting outcomes. Do not promote these endpoints into baseline prosperity metrics without ontology lock."
+        "qualification": "Production, exports, generation, and price histories describe the energy system. They do not measure public capture of energy rents, People’s Energy Dividend feasibility, or community hosting outcomes. Do not promote these series into baseline prosperity metrics without ontology lock.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS7-EIA-TEPRBUS",
+            "label": "US total primary energy production (quads)",
+            "source": "EIA MER TEPRBUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "definition_note": "Official MER annual series. Describes production scale — not public-return capture.",
+            "points": [
+              {
+                "period": "1949",
+                "value": "30613.106",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "39167.537",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "42134.141",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "52119.676",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "61937.322",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "61069.714",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "66465.843",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "67256.001",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "68866.415",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "70027.35",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "69409.818",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "76546.727",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "91961.808",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "103574.924",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-TETCBUS",
+            "label": "US total primary energy consumption (quads)",
+            "source": "EIA MER TETCBUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "points": [
+              {
+                "period": "1949",
+                "value": "30866.419",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "39215.038",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "44564.329",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "55561.695",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "70727.518",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "77916.212",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "74236.954",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "82711.472",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "88667.979",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "94415.713",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "98965.112",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "91677.514",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "97400.226",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "94582.337",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-TENIBUS",
+            "label": "US total energy net imports (quads; negative = net exports)",
+            "source": "EIA MER TENIBUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "definition_note": "Negative values mean net exports. Do not invent a prosperity score from this path.",
+            "points": [
+              {
+                "period": "1949",
+                "value": "-143.602",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "504.399",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "3060.316",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "4316.764",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "9268.831",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "17185.733",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "8684.579",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "14105.399",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "17683.723",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "26321.066",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "29340.725",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "15800.794",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "3609.618",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "-9147.492",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-ELETPUS",
+            "label": "US electricity net generation",
+            "source": "EIA MER ELETPUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "points": [
+              {
+                "period": "1949",
+                "value": "296124.289",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "550298.862",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "797124.391",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "1147531.895",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "1752978.413",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "2209376.911",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "2419465.367",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "2967146.087",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "3353487.362",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "3736643.649",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "4156744.724",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "4047765.267",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "4180987.703",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "4308634.298",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-PAPRPUS",
+            "label": "US crude oil production",
+            "source": "EIA MER PAPRPUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "definition_note": "MER annual path; STEO-linked current endpoints in registry may revise separately.",
+            "points": [
+              {
+                "period": "1949",
+                "value": "5046.411",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "6806.652",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "7182.899",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "8295.241",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "9440.896",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "8707.441",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "8878.951",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "7613.077",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "6559.638",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "5801.401",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "5073.9",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "6523.771",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "10952.951",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "13234.586",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-NGMPPUS",
+            "label": "US natural gas marketed production",
+            "source": "EIA MER NGMPPUS via RedDirt exp_51310e4926bb45e9",
+            "point_count": 76,
+            "coverage": "1949 → 2024",
+            "definition_note": "MER marketed production (NGMPPUS). Not labeled as dry production — NGMPBUS returned zero rows on total-energy.",
+            "points": [
+              {
+                "period": "1949",
+                "value": "5419.736",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "9405.351",
+                "geography": "United States"
+              },
+              {
+                "period": "1961",
+                "value": "13254.025",
+                "geography": "United States"
+              },
+              {
+                "period": "1966",
+                "value": "17206.628",
+                "geography": "United States"
+              },
+              {
+                "period": "1972",
+                "value": "22531.698",
+                "geography": "United States"
+              },
+              {
+                "period": "1978",
+                "value": "19974.033",
+                "geography": "United States"
+              },
+              {
+                "period": "1984",
+                "value": "18304.339",
+                "geography": "United States"
+              },
+              {
+                "period": "1989",
+                "value": "18095.147",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "19506.474",
+                "geography": "United States"
+              },
+              {
+                "period": "2001",
+                "value": "20570.295",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "20196.346",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "25283.278",
+                "geography": "United States"
+              },
+              {
+                "period": "2018",
+                "value": "33008.867",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "41383.893",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-US-RES-PRICE",
+            "label": "US residential electricity average price (¢/kWh)",
+            "source": "EIA electricity/retail-sales via RedDirt exp_51310e4926bb45e9",
+            "point_count": 24,
+            "coverage": "2001 → 2024",
+            "points": [
+              {
+                "period": "2001",
+                "value": "8.58",
+                "geography": "United States"
+              },
+              {
+                "period": "2003",
+                "value": "8.72",
+                "geography": "United States"
+              },
+              {
+                "period": "2005",
+                "value": "9.45",
+                "geography": "United States"
+              },
+              {
+                "period": "2006",
+                "value": "10.4",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "11.26",
+                "geography": "United States"
+              },
+              {
+                "period": "2010",
+                "value": "11.54",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "11.88",
+                "geography": "United States"
+              },
+              {
+                "period": "2013",
+                "value": "12.13",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "12.65",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "12.89",
+                "geography": "United States"
+              },
+              {
+                "period": "2019",
+                "value": "13.01",
+                "geography": "United States"
+              },
+              {
+                "period": "2020",
+                "value": "13.15",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "15.04",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "16.48",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-AR-RES-PRICE",
+            "label": "Arkansas residential electricity average price (¢/kWh)",
+            "source": "EIA electricity/retail-sales via RedDirt exp_51310e4926bb45e9",
+            "point_count": 24,
+            "coverage": "2001 → 2024",
+            "definition_note": "AR vs US price comparison uses the same EIA retail-sales object/definition.",
+            "points": [
+              {
+                "period": "2001",
+                "value": "7.72",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2003",
+                "value": "7.24",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005",
+                "value": "8",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2006",
+                "value": "8.85",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "9.27",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2010",
+                "value": "8.86",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "9.3",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013",
+                "value": "9.59",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "9.82",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "10.28",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2019",
+                "value": "9.8",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2020",
+                "value": "10.41",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "12.05",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2024",
+                "value": "12.32",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-US-ALL-SALES",
+            "label": "US electricity sales (all sectors, million kWh)",
+            "source": "EIA electricity/retail-sales via RedDirt exp_51310e4926bb45e9",
+            "point_count": 24,
+            "coverage": "2001 → 2024",
+            "points": [
+              {
+                "period": "2001",
+                "value": "3394458.104",
+                "geography": "United States"
+              },
+              {
+                "period": "2003",
+                "value": "3493734.486",
+                "geography": "United States"
+              },
+              {
+                "period": "2005",
+                "value": "3660968.513",
+                "geography": "United States"
+              },
+              {
+                "period": "2006",
+                "value": "3669918.84",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "3733964.61911",
+                "geography": "United States"
+              },
+              {
+                "period": "2010",
+                "value": "3754841.36823",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "3694649.78562",
+                "geography": "United States"
+              },
+              {
+                "period": "2013",
+                "value": "3724867.82101",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "3758992.38936",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "3723355.97399",
+                "geography": "United States"
+              },
+              {
+                "period": "2019",
+                "value": "3811150.46304",
+                "geography": "United States"
+              },
+              {
+                "period": "2020",
+                "value": "3717674.48088",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "3927169.06933",
+                "geography": "United States"
+              },
+              {
+                "period": "2024",
+                "value": "3975381.83162",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS7-EIA-AR-ALL-SALES",
+            "label": "Arkansas electricity sales (all sectors, million kWh)",
+            "source": "EIA electricity/retail-sales via RedDirt exp_51310e4926bb45e9",
+            "point_count": 24,
+            "coverage": "2001 → 2024",
+            "points": [
+              {
+                "period": "2001",
+                "value": "41732.449",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2003",
+                "value": "43108.259",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005",
+                "value": "46164.923",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2006",
+                "value": "46635.624",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2008",
+                "value": "46134.68101",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2010",
+                "value": "48194.285",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "46859.56698",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013",
+                "value": "46683.034",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "46465.15402",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "46085.95101",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2019",
+                "value": "48093.03199",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2020",
+                "value": "45851.00301",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "48997.66299",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2024",
+                "value": "49895.81201",
+                "geography": "Arkansas"
+              }
+            ]
+          }
+        ]
       },
       "what_the_data_show": {
-        "key_finding": "Sourced EIA/DOE endpoints show the U.S. produced more primary energy than it consumed in 2024 (net exports 9.3 quads, record since 1949), record electricity generation in 2025 (4.43 thousand TWh), record crude production (13.6 mb/d), and LNG exports rising from 0.5 Bcf/d in 2016 to 15.0 Bcf/d in 2025 — while petroleum net-exporter status since 2020 still coexists with imports.",
+        "key_finding": "EIA MER arrays now show U.S. primary energy production and net-trade paths through 2024 (latest production 103574.924 quads; latest net imports -9147.492 quads — negative means net exports). Electricity net generation path attached through 2024. Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR 12.32 vs US 16.48 ¢/kWh in 2024). These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
         "critical_numbers": [
           {
-            "label": "Net primary energy exports",
-            "value": "9.3 quads",
+            "label": "Net primary energy imports (negative = exports)",
+            "value": "-9147.492",
             "period": "2024",
             "geography": "US",
-            "source_id": "CC-SRC-056",
-            "note": "Highest in EIA records dating to 1949."
+            "note": "MER TENIBUS via exp_51310e4926bb45e9"
           },
           {
-            "label": "Energy exports",
-            "value": "30.9 quads",
+            "label": "Primary energy production",
+            "value": "103574.924 quads",
             "period": "2024",
             "geography": "US",
-            "source_id": "CC-SRC-056"
+            "note": "MER TEPRBUS via exp_51310e4926bb45e9"
           },
           {
-            "label": "Electricity net generation",
-            "value": "4.43 thousand TWh",
-            "period": "2025",
-            "geography": "US",
-            "source_id": "CC-SRC-057"
+            "label": "Residential electricity price AR vs US",
+            "value": "AR 12.32 / US 16.48 ¢/kWh",
+            "period": "2024",
+            "geography": "AR / US"
           },
           {
-            "label": "Crude oil production",
-            "value": "13.6 million b/d",
-            "period": "2025",
-            "geography": "US",
-            "source_id": "CC-SRC-058",
-            "note": "STEO-linked; may revise."
-          },
-          {
-            "label": "LNG exports",
+            "label": "LNG exports (registry endpoint)",
             "value": "15.0 Bcf/d",
             "period": "2025 (from 0.5 in 2016)",
             "geography": "US",
             "source_id": "CC-SRC-061"
           }
         ],
-        "plain_english": "Energy Sovereignty pages should sit on these structural facts and the visible missing-layer list. Abundance and export capacity are measurable; public-return design is not yet an empirical scorecard."
+        "plain_english": "The energy page can now show real multi-year production, trade, generation, and electricity-price histories under EIA definitions — while still saying clearly what is missing (reliability, ownership, fund outcomes)."
       },
       "what_supports_this": [
+        "EIA Open Data v2 MER + retail-sales via RedDirt exp_51310e4926bb45e9",
         "EIA Today in Energy / Energy Explained (CC-SRC-056/057/058/060/061)",
-        "DOE Natural Gas Imports and Exports Monthly (CC-SRC-059)",
-        "energy_sovereignty_framework sourced_context_baselines"
+        "DOE Natural Gas Imports and Exports Monthly (CC-SRC-059)"
       ],
       "what_challenges_it": [
-        "Endpoints ≠ full historical series attached in-repo",
+        "Attached histories ≠ public-return or dividend feasibility",
         "Net exporter status ≠ energy autarky or household affordability",
-        "No measurement here of public vs private capture of export value"
+        "Reliability and ownership layers still blocked"
       ],
       "what_we_dont_know": [
-        "In-repo multi-year MER/electricity/price/reliability arrays",
-        "Arkansas energy accounts",
+        "Defensible official reliability series in-repo",
+        "IOU/muni/coop ownership shares",
         "Prosperity-fund distributable outcomes (modeling 0%)"
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "Pass 6 — EIA adapter pending; export exp_226e711e08704b06 has no energy series"
+        "dataset_or_release": "Pass 7 — EIA arrays bound from exp_51310e4926bb45e9"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -2583,21 +3375,23 @@
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0",
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-7.0",
+    "slice_id": "RCIP-PASS-7-AGENCY-ADAPTER-EXPANSION-AND-EVIDENCE-SYSTEM-BINDING-1.0",
     "panels_total": 18,
-    "panels_added_pass_6": 0,
-    "systems_deepened_with_arrays": 3,
-    "export_id": "exp_226e711e08704b06",
-    "observation_count": 284,
-    "preference": "retrieval_and_binding_no_new_panels",
-    "energy_rcip_0418_0425": "blocked_no_eia_adapter",
+    "panels_added_pass_7": 0,
+    "systems_deepened_with_arrays": 4,
+    "export_id": "exp_51310e4926bb45e9",
+    "observation_count": 988,
+    "preference": "adapter_expansion_then_bind_only",
+    "energy_rcip_0418_0425": "partial_eia_arrays_bound_reliability_ownership_blocked",
     "baseline_impact": "none — no ontology promotion",
-    "note": "Attached BLS/Census multi-year arrays into wages, market-dynamics, and rural systems. SCF/DFA/CBO/FDIC/HRSA/EIA still blocked."
+    "note": "EIA adapter retrieved demanded MER/retail series and bound into CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1. FRED/FDIC/HRSA/CBO/SCF still next. No prosperity-fund claims from energy facts."
   },
   "pass_1_panels": 3,
   "pass_2_panels": 9,
   "pass_4_rule": "Prefer a small evidence system over isolated headline numbers whenever the data permit it (definition + comparison + series status + qualification + source).",
   "pass_3_panels": 11,
   "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing.",
-  "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels."
+  "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels.",
+  "pass_7_rule": "Existing publication demand → exact source object → normalized series → credential-free export → bind into an existing evidence system. No generic warehouse expansion. No new panel unless unavoidable."
 }

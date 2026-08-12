@@ -1,10 +1,11 @@
 {
-  "export_id": "exp_226e711e08704b06",
-  "generated_at": "2026-08-12T02:37:19.535Z",
+  "export_id": "exp_51310e4926bb45e9",
+  "generated_at": "2026-08-12T03:05:11.452Z",
   "source_database": "RedDirt public_statistics / file warehouse export",
   "source_agencies": [
     "United States Census Bureau",
-    "Bureau of Labor Statistics"
+    "Bureau of Labor Statistics",
+    "U.S. Energy Information Administration"
   ],
   "dataset_versions": [
     "acs5",
@@ -15,17 +16,19 @@
     "bds",
     "cps_voting_p20_587",
     "jolts",
-    "productivity"
+    "productivity",
+    "total-energy",
+    "electricity/retail-sales"
   ],
-  "series_count": 17,
-  "observation_count": 284,
-  "minimum_period": "1970-Q04",
+  "series_count": 29,
+  "observation_count": 988,
+  "minimum_period": "1949",
   "maximum_period": "2025-M12",
   "validation_status": "passed",
   "contract_version": "1.0",
   "reddirt_commit": null,
-  "constitutional_capitalism_import_commit": "8a879ef",
-  "git_commit": "8a879ef",
+  "constitutional_capitalism_import_commit": "fe5acf4",
+  "git_commit": "fe5acf4",
   "boundary_attestation": {
     "contains_campaign_data": false,
     "contains_personal_data": false,
