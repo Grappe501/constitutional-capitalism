@@ -93,7 +93,10 @@ const tetc = scaleSeries(seriesById("CC-PASS7-EIA-TETCBUS", "geo:us"), QUAD);
 const teex = scaleSeries(seriesById("CC-PASS7-EIA-TEEXBUS", "geo:us"), QUAD);
 const teim = scaleSeries(seriesById("CC-PASS7-EIA-TEIMBUS", "geo:us"), QUAD);
 const teni = scaleSeries(seriesById("CC-PASS7-EIA-TENIBUS", "geo:us"), QUAD);
-const elet = seriesById("CC-PASS7-EIA-ELETPUS", "geo:us");
+// ELETPUS arrives as million kWh; reader-facing billion kWh = ÷1000.
+const elet = scaleSeries(seriesById("CC-PASS7-EIA-ELETPUS", "geo:us"), QUAD);
+const eletNote =
+  "Converted for readers from MER million kWh to billion kWh (÷1000). Raw warehouse values remain million kWh.";
 const papr = seriesById("CC-PASS7-EIA-PAPRPUS", "geo:us");
 const ngmp = seriesById("CC-PASS7-EIA-NGMPPUS", "geo:us");
 const usRes = seriesById("CC-PASS7-EIA-US-RES-PRICE", "geo:us");
@@ -147,6 +150,7 @@ sys.series_points = [
     source: `EIA MER ELETPUS via RedDirt ${exportId}`,
     point_count: elet?.points?.length || 0,
     coverage: coverage(elet),
+    definition_note: eletNote,
     points: toPoints(elet, 14, (v) => v.toFixed(1)),
   },
   {
@@ -230,6 +234,7 @@ sys.observation_history = [
           })(),
           label: "Electricity net generation path (MER ELETPUS)",
           geography: "US",
+          note: eletNote,
         },
       ]
     : []),

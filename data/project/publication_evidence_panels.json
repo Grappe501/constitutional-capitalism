@@ -2471,9 +2471,10 @@
           },
           {
             "period": "1949 → 2024",
-            "value": "4308634.3 billion kWh (2024)",
+            "value": "4308.6 billion kWh (2024)",
             "label": "Electricity net generation path (MER ELETPUS)",
-            "geography": "US"
+            "geography": "US",
+            "note": "Converted for readers from MER million kWh to billion kWh (÷1000). Raw warehouse values remain million kWh."
           },
           {
             "period": "2001 → 2024",
@@ -2765,75 +2766,76 @@
             "source": "EIA MER ELETPUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
+            "definition_note": "Converted for readers from MER million kWh to billion kWh (÷1000). Raw warehouse values remain million kWh.",
             "points": [
               {
                 "period": "1949",
-                "value": "296124.3",
+                "value": "296.1",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "550298.9",
+                "value": "550.3",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "797124.4",
+                "value": "797.1",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "1147531.9",
+                "value": "1147.5",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "1752978.4",
+                "value": "1753.0",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "2209376.9",
+                "value": "2209.4",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "2419465.4",
+                "value": "2419.5",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "2967146.1",
+                "value": "2967.1",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "3353487.4",
+                "value": "3353.5",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "3736643.6",
+                "value": "3736.6",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "4156744.7",
+                "value": "4156.7",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "4047765.3",
+                "value": "4047.8",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "4180987.7",
+                "value": "4181.0",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "4308634.3",
+                "value": "4308.6",
                 "geography": "United States"
               }
             ]
@@ -3318,7 +3320,7 @@
         ]
       },
       "what_the_data_show": {
-        "key_finding": "EIA MER arrays now show U.S. primary energy production and net-trade paths through 2024 (latest production 103.6 quads; latest net imports -9.1 quads — negative means net exports). Electricity net generation path attached through 2024 (4308634.3 billion kWh). Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR 12.32 vs US 16.48 ¢/kWh in 2024). These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
+        "key_finding": "EIA MER arrays now show U.S. primary energy production and net-trade paths through 2024 (latest production 103.6 quads; latest net imports -9.1 quads — negative means net exports). Electricity net generation path attached through 2024 (4308.6 billion kWh). Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR 12.32 vs US 16.48 ¢/kWh in 2024). These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
         "critical_numbers": [
           {
             "label": "Net primary energy imports (negative = exports)",
