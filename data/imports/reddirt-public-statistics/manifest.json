@@ -1,13 +1,17 @@
 {
-  "export_id": "exp_022146cbbc26489d",
-  "generated_at": "2026-08-12T03:40:53.858Z",
-  "source_database": "RedDirt public_statistics / file warehouse export",
+  "contract_version": "1.0",
+  "export_id": "exp_a700221b6d2e4b3a",
+  "generated_at": "2026-08-12T04:16:06.834Z",
+  "consumer": "constitutional_capitalism",
+  "generator_repository": "RedDirt",
+  "generator_commit": null,
   "source_agencies": [
     "United States Census Bureau",
     "Bureau of Labor Statistics",
     "U.S. Energy Information Administration",
     "Federal Deposit Insurance Corporation",
-    "Health Resources and Services Administration"
+    "Health Resources and Services Administration",
+    "USDA National Agricultural Statistics Service"
   ],
   "dataset_versions": [
     "acs5",
@@ -23,23 +27,16 @@
     "electricity/retail-sales",
     "summary",
     "institutions",
-    "hpsa-primary-care-areas"
+    "hpsa-primary-care-areas",
+    "api_GET"
   ],
-  "series_count": 43,
-  "observation_count": 1280,
-  "minimum_period": "1949",
-  "maximum_period": "2026-08-11",
+  "series_count": 50,
+  "observation_count": 1344,
+  "geography_count": 2,
+  "minimum_reference_period": "1949",
+  "maximum_reference_period": "2026-08-11",
   "validation_status": "passed",
-  "contract_version": "1.0",
-  "reddirt_commit": null,
-  "constitutional_capitalism_import_commit": "e672db6",
-  "git_commit": "e672db6",
-  "boundary_attestation": {
-    "contains_campaign_data": false,
-    "contains_personal_data": false,
-    "contains_api_keys": false,
-    "public_statistics_only": true
-  },
-  "series_arrays_present": true,
-  "note": "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate. Pass 6 series-arrays bind to evidence systems separately — not automatic baseline promotion."
+  "cross_check_status": "pending",
+  "contains_private_data": false,
+  "checksum": "2f162f892af07215d54834dd11b3e5a515992b0bc087aec6521c4fb313fafbfe"
 }

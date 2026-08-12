@@ -1,0 +1,119 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-11",
+  "slice_id": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0",
+  "hypothesis_id": "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
+  "status": "demand_manifest_only_no_ingest",
+  "rule": "Register empirical demands for later RCIP ingest. Do not retrieve, bind, or promote claims in this pass.",
+  "holds": [
+    "No OpenFEC/Congress/OpenStates retrieval in this registration slice",
+    "CC-CLAIM-003 remains Not Enough Evidence",
+    "Google Civic deferred",
+    "Journalism covariates: link existing coding; do not invent coverage series"
+  ],
+  "next_ingest_slice": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+  "demands": [
+    {
+      "demand_id": "CC-DEM-LCF-001",
+      "metric": "local_vs_out_of_state_donor_share",
+      "question": "What share of itemized contributions to selected races comes from in-state vs out-of-state donors?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "race_scope": ["federal_candidate", "selected_state_if_available"],
+      "ingest_status": "not_started",
+      "notes": "Define locality by contributor state vs race state; document itemization thresholds."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-002",
+      "metric": "small_dollar_share",
+      "question": "What share of receipts is small-dollar (below a locked threshold) versus large-dollar?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started",
+      "notes": "Lock threshold in probe slice; distinguish unitemized aggregates from true small-donor counts."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-003",
+      "metric": "donor_concentration",
+      "question": "How concentrated are contributions among top donors / top PACs for selected races?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started",
+      "notes": "Disclosure metric only; does not establish capture (CC-CLAIM-003 hold)."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-004",
+      "metric": "independent_expenditure_share",
+      "question": "What share of race spending is independent expenditures / outside spending vs candidate committee spending?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started",
+      "notes": "Use IE and communication-cost / outside-spending endpoints carefully; disclaimer ≠ beneficial-source chain."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-005",
+      "metric": "outside_spending_concentration",
+      "question": "How concentrated is outside spending among spenders and ultimate funding orgs for selected races?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started",
+      "notes": "Beneficial-source chain remains incomplete under current federal disclosure; flag gaps."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-006",
+      "metric": "candidate_spending_levels",
+      "question": "What are candidate committee disbursement levels across selected races and cycles?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started"
+    },
+    {
+      "demand_id": "CC-DEM-LCF-007",
+      "metric": "contested_vs_uncontested",
+      "question": "How do finance patterns differ between contested and uncontested races?",
+      "primary_source": "OpenFEC",
+      "secondary_sources": ["OpenStates", "election_results_context"],
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started",
+      "notes": "Competitiveness definition must be locked before bind."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-008",
+      "metric": "incumbent_challenger_gaps",
+      "question": "How do receipts, disbursements, and outside spending differ for incumbents vs challengers?",
+      "primary_source": "OpenFEC",
+      "geography_focus": ["AR", "US_selected"],
+      "ingest_status": "not_started"
+    },
+    {
+      "demand_id": "CC-DEM-LCF-009",
+      "metric": "ar_state_race_finance_analogues",
+      "question": "What Arkansas state-race finance analogues are available via Open States and AR-specific sources?",
+      "primary_source": "OpenStates",
+      "secondary_sources": ["AR_campaign_finance_sources_TBD"],
+      "geography_focus": ["AR"],
+      "ingest_status": "not_started",
+      "gap_flag": true,
+      "notes": "Expect material gaps vs federal OpenFEC coverage; document rather than invent."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-010",
+      "metric": "congress_finance_reform_legislative_objects",
+      "question": "What Congress.gov legislative objects exist for campaign-finance reform and amendment proposals relevant to Track A/B?",
+      "primary_source": "Congress.gov",
+      "example_objects": ["S.J.Res.78_119th"],
+      "ingest_status": "not_started",
+      "notes": "Study objects only — not endorsement. Link to legislative-civic spine when retrieved."
+    },
+    {
+      "demand_id": "CC-DEM-LCF-011",
+      "metric": "journalism_coverage_covariates",
+      "question": "How does local journalism / civic-information coverage covary with race finance structure for selected geographies?",
+      "primary_source": "existing_civic_information_coding",
+      "linked_registry": "research/phase_2/civic_information_research_hypothesis_registry.json",
+      "geography_focus": ["AR"],
+      "ingest_status": "link_only_do_not_invent",
+      "notes": "Use existing outlet inventory / matrix coding; do not fabricate coverage series in this track."
+    }
+  ]
+}

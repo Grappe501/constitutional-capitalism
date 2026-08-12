@@ -1507,13 +1507,16 @@
         "apps/book-site/src/pages/community-prosperity.astro",
         "apps/book-site/src/pages/local-ownership.astro",
         "apps/book-site/src/pages/community-resilience.astro",
+        "apps/book-site/src/pages/family-farm-prosperity.astro",
         "apps/build-board/src/pages/community-prosperity.astro",
         "apps/build-board/src/pages/local-ownership.astro",
         "apps/build-board/src/pages/community-resilience.astro",
+        "apps/build-board/src/pages/family-farm-prosperity.astro",
         "content/research/national-diagnosis/06-local-and-rural-economies.md"
       ],
       "claim_ids": [
-        "CC-CLAIM-019"
+        "CC-CLAIM-019",
+        "CC-CLAIM-124"
       ],
       "metric_ids": [
         "CC-IND-CM02",
@@ -1534,10 +1537,10 @@
         "CC-SRC-268"
       ],
       "evidence_strength": "Strong",
-      "strength_note": "Stronger with FDIC AR/US bank and branch histories. Still Partial for QBP community-bank share path and community-level outcomes. Statewide ≠ town baselines.",
+      "strength_note": "Stronger with NASS AR/US farm-structure histories plus FDIC local-capital arrays. Still Partial for county farm maps, QBP community-bank path, and community-level outcomes. Structure ≠ capture.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
-        "definition": "CM02 = Census rural population share. ERS nonmetro is a different geography. CM04/E01 = FDIC/NCUA local-capital shares. E02 = SBCS + FSA. BDS entry/exit rates = national establishment dynamics.",
+        "definition": "CM02 = Census rural population share. ERS nonmetro is a different geography. CM04/E01 = FDIC/NCUA local-capital shares. E02 = SBCS + FSA. BDS entry/exit rates = national establishment dynamics. NASS Census farm operations/acres/sales/livestock = agricultural structure histories (AR vs US).",
         "comparison": [
           {
             "label": "Census rural population share (2020)",
@@ -1582,6 +1585,20 @@
             "label": "ERS rural hospital access history",
             "geography": "US rural counties",
             "source_id": "CC-SRC-009"
+          },
+          {
+            "period": "1997 → 2022",
+            "value": "49,493 → 37,756 AR farm operations",
+            "label": "Arkansas farm operations path",
+            "geography": "AR",
+            "note": "USDA NASS Census via exp_a700221b6d2e4b3a"
+          },
+          {
+            "period": "1997 → 2022",
+            "value": "2,215,876 → 1,900,487 US farm operations",
+            "label": "US farm operations path",
+            "geography": "US",
+            "note": "USDA NASS Census via exp_a700221b6d2e4b3a"
           }
         ],
         "geography_contrast": [
@@ -1604,17 +1621,40 @@
             "label": "Rural definition contrast",
             "value": "Census rural 20% vs ERS nonmetro 13.6%",
             "note": "Keep both; never average them."
+          },
+          {
+            "label": "Farm operations latest census (AR vs US)",
+            "value": "AR 37,756 vs US 1,900,487 (2022)",
+            "note": "NASS Census TOTAL operations — agricultural structure, not capture."
+          },
+          {
+            "label": "Acres operated latest census (AR vs US)",
+            "value": "AR 13.7M vs US 880.1M acres (2022)",
+            "note": "FARM OPERATIONS - ACRES OPERATED."
+          },
+          {
+            "label": "Ag product sales latest census (AR vs US)",
+            "value": "AR $13.9B vs US $543.1B (2022)",
+            "note": "Sales concentration ≠ market power ≠ monopsony."
+          },
+          {
+            "label": "2022 sales-class structure (AR vs US)",
+            "value": "AR <$1k 17.9% / ≥$1M 10.1% vs US <$1k 19.8% / ≥$1M 5.7%",
+            "note": "Economic-class operation shares — not a small-vs-large moral verdict."
           }
         ],
-        "series_note": "Pass 8 attached FDIC BankFind commercial-bank banks/branches/deposits histories (AR vs US) and current community-bank (CB:1) deposit-share snapshots via exp_022146cbbc26489d. QBP multi-year community-bank share path still not a BankFind series. BDS arrays from Pass 6 retained.",
-        "series_status": "fdic_arrays_partial_qbp_path_blocked",
+        "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture.",
+        "series_status": "nass_farm_structure_arrays_bound_fdic_retained",
         "missing_layers": [
           "FDIC QBP multi-year community-bank domestic deposit/loan share path — PASS5-DEM-FDIC-PATH (current CB:1 snapshot only)",
           "Hospital-access baseline CM03 (deferred)",
           "SBA 7(a)/504 dollar series",
-          "Community-level ownership / leakage maps"
+          "Community-level ownership / leakage maps",
+          "County farm-structure comparisons (disclosure-suppressed cells common)",
+          "Operator/producer characteristic time series with locked definitions",
+          "Market power / monopsony / political capture evidence (not NASS)"
         ],
-        "qualification": "Bank/branch/deposit structure and community-bank snapshots describe local-capital infrastructure. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success.",
+        "qualification": "NASS arrays show how Arkansas and U.S. agricultural structure changed. They do not prove that small farms are good or large farms are bad, and they do not establish market power, monopsony, or political capture. Bank/branch structure remains local-capital infrastructure, not town prosperity proof.",
         "series_points": [
           {
             "series_id": "CC-PASS6-BDS-ENTRY-AR",
@@ -2162,53 +2202,454 @@
                 "geography": "Arkansas"
               }
             ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-US-FARM-OPERATIONS",
+            "label": "US farm operations (Census of Agriculture)",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "Census TOTAL operations — structure history, not market power.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,215,876",
+                "geography": "United States"
+              },
+              {
+                "period": "2002",
+                "value": "2,128,982",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "2,204,792",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "2,109,303",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "2,042,220",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "1,900,487",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-AR-FARM-OPERATIONS",
+            "label": "Arkansas farm operations (Census of Agriculture)",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "Same Census TOTAL definition as US — valid AR/US contrast.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "49,493",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "47,483",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "49,346",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "45,071",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "42,625",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "37,756",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-US-ACRES-OPERATED",
+            "label": "US acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "954.8M",
+                "geography": "United States"
+              },
+              {
+                "period": "2002",
+                "value": "938.3M",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "922.1M",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "914.5M",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "900.2M",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "880.1M",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-AR-ACRES-OPERATED",
+            "label": "Arkansas acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "14.8M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "14.5M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "13.9M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "13.8M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "13.9M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "13.7M",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-US-AG-PRODUCT-SALES",
+            "label": "US ag product sales ($)",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "201.4B",
+                "geography": "United States"
+              },
+              {
+                "period": "2002",
+                "value": "200.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "297.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "394.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "388.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "543.1B",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-AR-AG-PRODUCT-SALES",
+            "label": "Arkansas ag product sales ($)",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "5.6B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "5.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "7.5B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "9.8B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "9.7B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "13.9B",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-US-BROILER-INVENTORY",
+            "label": "US broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "Commodity structure — inventory ≠ monopsony or packer power.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,214,446,356",
+                "geography": "United States"
+              },
+              {
+                "period": "2002",
+                "value": "1,389,279,047",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "1,602,574,592",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "1,506,276,846",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "1,621,400,316",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "1,737,674,957",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-AR-BROILER-INVENTORY",
+            "label": "Arkansas broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "Commodity structure — inventory ≠ monopsony or packer power.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "180,355,401",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "181,555,253",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "202,397,626",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "170,380,435",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "190,345,332",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "205,552,568",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-US-CATTLE-COWS-INVENTORY",
+            "label": "US cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "43,333,777",
+                "geography": "United States"
+              },
+              {
+                "period": "2002",
+                "value": "42,502,230",
+                "geography": "United States"
+              },
+              {
+                "period": "2007",
+                "value": "42,101,375",
+                "geography": "United States"
+              },
+              {
+                "period": "2012",
+                "value": "38,208,825",
+                "geography": "United States"
+              },
+              {
+                "period": "2017",
+                "value": "41,261,670",
+                "geography": "United States"
+              },
+              {
+                "period": "2022",
+                "value": "38,524,334",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS9-NASS-AR-CATTLE-COWS-INVENTORY",
+            "label": "Arkansas cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_a700221b6d2e4b3a",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "points": [
+              {
+                "period": "1997",
+                "value": "974,106",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "982,217",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "964,483",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "822,222",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "933,392",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "885,993",
+                "geography": "Arkansas"
+              }
+            ]
           }
         ]
       },
       "what_the_data_show": {
-        "key_finding": "FDIC BankFind commercial-bank histories now show Arkansas and U.S. institution counts through 2025 (AR 77 vs US 3798 banks). Branch counts: AR 1251 vs US 68860 (2025). Current community-bank (CB:1) deposit shares: AR 31.0% vs US 11.2% — snapshot only, not the QBP multi-year path. These deepen local-capital structure under existing community-prosperity arguments; they do not prove town-level success.",
+        "key_finding": "Census of Agriculture farm operations now show Arkansas 37,756 vs U.S. 1,900,487 in 2022 (AR ≈ 1.99% of U.S. operations). Arkansas operations moved from 49,493 (1997) to 37,756 (2022). Ag product sales: AR $13.9B vs US $543.1B (2022). Broiler inventory (structure only): AR 205,552,568 vs US 1,737,674,957 head (2022). These deepen agricultural structure under existing rural/community arguments. They do not establish monopsony or political capture.",
         "critical_numbers": [
           {
-            "label": "Commercial banks AR vs US",
-            "value": "AR 77 / US 3798",
-            "period": "2025",
+            "label": "Farm operations AR vs US",
+            "value": "AR 37,756 / US 1,900,487",
+            "period": "2022",
             "geography": "AR / US",
-            "note": "FDIC summary via exp_022146cbbc26489d"
+            "note": "NASS Census via exp_a700221b6d2e4b3a"
           },
           {
-            "label": "Community-bank deposit share (CB:1 snapshot)",
-            "value": "AR 31.0% / US 11.2%",
-            "period": "2026-08-11",
-            "geography": "AR / US",
-            "note": "Derived from BankFind institutions aggregates — not QBP path."
+            "label": "Acres operated AR vs US",
+            "value": "AR 13.7M / US 880.1M",
+            "period": "2022",
+            "geography": "AR / US"
           },
           {
-            "label": "Community-bank domestic deposit share (registry QBP)",
-            "value": "13.1%",
-            "period": "2024Q4",
-            "note": "Prior registry cell retained; do not overwrite with CB:1 snapshot without reconciliation."
+            "label": "Ag product sales AR vs US",
+            "value": "AR $13.9B / US $543.1B",
+            "period": "2022",
+            "geography": "AR / US",
+            "note": "Sales structure ≠ market power."
+          },
+          {
+            "label": "Share of farms with sales ≥ $1M (2022)",
+            "value": "AR 10.1% / US 5.7%",
+            "period": "2022",
+            "geography": "AR / US",
+            "note": "Economic-class bookend — not a moral ranking of farm size."
           }
         ],
-        "plain_english": "Local-capital pages can now show multi-decade bank and branch histories for Arkansas and the U.S., plus a clearly labeled current community-bank deposit-share snapshot — while still naming the missing QBP path and town-level unknowns."
+        "plain_english": "Rural and community pages can now show how Arkansas farm counts, acres, sales, and key livestock inventories changed across Census years beside U.S. totals — while keeping the hard line that structure evidence is not capture evidence."
       },
       "what_supports_this": [
-        "FDIC BankFind Suite via RedDirt exp_022146cbbc26489d",
-        "Census BDS entry/exit histories (Pass 6)",
-        "FDIC QBP (registry community-bank share cell)"
+        "USDA NASS Quick Stats Census via RedDirt exp_a700221b6d2e4b3a",
+        "FDIC BankFind Suite via prior Pass 8 export",
+        "Census BDS entry/exit histories (Pass 6)"
       ],
       "what_challenges_it": [
-        "Commercial-bank summary ≠ community-bank QBP definition",
-        "Statewide banking structure ≠ town capital access",
-        "CB:1 snapshot ≠ multi-year QBP share path"
+        "Production concentration ≠ market power ≠ monopsony ≠ political capture",
+        "Statewide farm structure ≠ town prosperity or family-farm engine proof",
+        "ERS family-farm production-value shares are a different series than NASS operation counts"
       ],
       "what_we_dont_know": [
-        "Official multi-year QBP community-bank deposit/loan share arrays in-repo",
-        "Community-level ownership / leakage maps",
-        "CM03 hospital access (deferred)"
+        "County farm-structure maps with disclosure-safe cells",
+        "Stable operator/producer characteristic paths",
+        "Whether sales-class concentration caused market power or political capture"
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "Pass 8 — FDIC arrays bound from exp_022146cbbc26489d"
+        "dataset_or_release": "Pass 9 — NASS farm-structure arrays bound from exp_a700221b6d2e4b3a"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -3878,26 +4319,31 @@
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-8.0",
-    "slice_id": "RCIP-PASS-8-FRED-FDIC-HRSA-ADAPTERS-AND-BINDING-1.0",
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0",
+    "slice_id": "RCIP-PASS-9-USDA-NASS-FARM-STRUCTURE-ADAPTER-AND-PUBLICATION-BINDING-1.0",
     "panels_total": 18,
-    "panels_added_pass_8": 0,
-    "systems_deepened_with_arrays": 5,
-    "export_id": "exp_022146cbbc26489d",
-    "observation_count": 1280,
-    "preference": "more_observations_under_existing_arguments",
-    "fdic": "commercial_bank_histories_plus_cb1_snapshot",
-    "hrsa": "current_hpsa_area_fte_popsum_ar_us",
-    "fred": "not_seeded_no_demanded_awkward_series",
-    "baseline_impact": "none — no ontology promotion; energy baseline unchanged",
+    "panels_added_pass_9": 0,
+    "systems_deepened_with_arrays": 6,
+    "export_id": "exp_a700221b6d2e4b3a",
+    "observation_count": 1344,
+    "preference": "credentials_follow_publication_demand",
+    "nass": "census_farm_operations_acres_sales_livestock_salesclass_ar_us",
+    "distinction": "Production concentration ≠ market power ≠ monopsony ≠ political capture",
+    "fred_bea": "deferred_after_nass_farm_structure",
+    "baseline_impact": "none — no ontology promotion",
     "holds": [
       "CC-CLAIM-003 remains NEE",
       "Google Civic deferred",
-      "Energy baseline does not move from EIA strength",
-      "Energy reliability/ownership remain missing layers"
+      "NASS structure ≠ capture / monopsony proof",
+      "County and operator-characteristic series deferred"
     ],
-    "note": "FDIC deepened rural/local-capital; HRSA deepened primary-care access. FRED reserved. No new panels."
+    "note": "NASS deepened rural/local-capital + family-farm surfaces. 0 new panels. Congress/OpenFEC credentials healthy.",
+    "pass_8_retained": {
+      "export_id": "exp_022146cbbc26489d",
+      "fdic_hrsa": "retained_in_panel_arrays"
+    }
   },
+  "pass_9_rule": "Credentials follow publication demand. NASS farm structure → family-farm/rural comparisons. Bind existing panels only. Structure ≠ market power ≠ monopsony ≠ capture.",
   "pass_1_panels": 3,
   "pass_2_panels": 9,
   "pass_4_rule": "Prefer a small evidence system over isolated headline numbers whenever the data permit it (definition + comparison + series status + qualification + source).",
@@ -3905,5 +4351,6 @@
   "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing.",
   "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels.",
   "pass_7_rule": "Existing publication demand → exact source object → normalized series → credential-free export → bind into an existing evidence system. No generic warehouse expansion. No new panel unless unavoidable.",
-  "pass_8_rule": "More real observations under existing arguments, not more headline statistics. FDIC→HRSA→FRED(only if awkward). Bind existing panels only."
+  "pass_8_rule": "More real observations under existing arguments, not more headline statistics. FDIC→HRSA→FRED(only if awkward). Bind existing panels only.",
+  "last_updated": "2026-08-11"
 }

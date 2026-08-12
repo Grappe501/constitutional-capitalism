@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-10",
-  "active_slice": "AWAITING_DECISION_AFTER_DATAFLOW_ATLAS",
+  "last_updated": "2026-08-11",
+  "active_slice": "AWAITING_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -587,6 +587,27 @@
       "note": "Hypothesis registration only. Not a principle. No invented credit dollars."
     },
     {
+      "slice_id": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0",
+      "title": "Local Democratic Campaign-Finance Research Track Registration",
+      "status": "completed",
+      "completed_at": "2026-08-11",
+      "completion_evidence": [
+        "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
+        "HYP-125",
+        "CC-DEC-105",
+        "data/project/local_democratic_campaign_finance_research.json",
+        "content/research/hypotheses/local-democratic-campaign-finance.md",
+        "data/project/CC_LOCAL_DEMOCRATIC_CAMPAIGN_FINANCE_DATA_DEMANDS.json",
+        "UPD-110"
+      ],
+      "next_recommended_slice": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+      "alternate_next": [
+        "OPTIONAL_QBP_HPSA_HISTORY_OR_CBO_OR_FRED_AWKWARD_SERIES",
+        "CC-PHASE-2.1-NJ-CIC-AND-JOURNALISM-VOUCHER-COMPARATIVE-DOSSIER-1.0"
+      ],
+      "note": "Hypothesis registration + empirical demand list only. No OpenFEC ingest. No new Evidence Panel. Not doctrine. CC-CLAIM-003 remains NEE."
+    },
+    {
       "slice_id": "CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0",
       "title": "Arkansas Local-News Outlet Map & Coverage Dashboard Pilot",
       "status": "completed",
@@ -852,8 +873,8 @@
     "overall_percent": 43
   },
   "baseline_expansion_paused": false,
-  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
-  "next_recommended_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
+  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0",
+  "next_recommended_slice": "OPTIONAL_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE",
   "parallel_ready_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
   "legislative_civic_targeted_ingest": {
     "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
@@ -1038,7 +1059,57 @@
     ],
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_8_0_RETURN.md",
     "panels_registry": "data/project/publication_evidence_panels.json",
-    "next": "OPTIONAL_QBP_HPSA_HISTORY_OR_CBO_OR_FRED_AWKWARD_SERIES"
+    "next": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0"
+  },
+  "local_democratic_campaign_finance_research_track": {
+    "slice_id": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0",
+    "status": "PASSED_REGISTRATION_ONLY",
+    "mode": "hypothesis_registration_and_demand_manifest",
+    "hypothesis_id": "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
+    "incubator_alias": "HYP-125",
+    "decision_id": "CC-DEC-105",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_ingest": true,
+    "no_new_panels": true,
+    "baseline_impact": "none",
+    "program_file": "data/project/local_democratic_campaign_finance_research.json",
+    "demand_manifest": "data/project/CC_LOCAL_DEMOCRATIC_CAMPAIGN_FINANCE_DATA_DEMANDS.json",
+    "dossier": "content/research/hypotheses/local-democratic-campaign-finance.md",
+    "return": "reports/CC_LOCAL_DEMOCRATIC_CAMPAIGN_FINANCE_RESEARCH_TRACK_1_0_RETURN.md",
+    "next": "RCIP-PASS-9-USDA-NASS-FARM-STRUCTURE-ADAPTER-AND-PUBLICATION-BINDING-1.0",
+    "alternate_next": [
+      "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0"
+    ]
+  },
+  "publication_evidence_upgrade_pass_9": {
+    "slice_id": "RCIP-PASS-9-USDA-NASS-FARM-STRUCTURE-ADAPTER-AND-PUBLICATION-BINDING-1.0",
+    "cc_alias": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0",
+    "status": "PASSED",
+    "mode": "adapter_expansion_then_bind_only",
+    "no_new_panels": true,
+    "panels_total": 18,
+    "adapter_landed": "nass",
+    "systems_with_arrays": [
+      "CC-EP-WAGES-PRODUCTIVITY-1",
+      "CC-EP-MARKET-DYNAMICS-SYSTEM-1",
+      "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
+      "CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1",
+      "CC-EP-PRIMARY-CARE-ACCESS-1"
+    ],
+    "export_id": "exp_a700221b6d2e4b3a",
+    "observation_count": 1344,
+    "baseline_impact": "none",
+    "distinction": "Production concentration ≠ market power ≠ monopsony ≠ political capture",
+    "still_blocked": [
+      "PASS9-COUNTY-FULL-PANEL",
+      "PASS9-OPERATOR-CHARACTERISTICS-FULL",
+      "PASS9-MARKET-POWER-MONOPSONY-CAPTURE",
+      "FRED_BEA_deferred",
+      "energy_reliability_ownership"
+    ],
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json",
+    "next": "OPTIONAL_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE"
   },
   "progress_markers": {
     "overall_percent": 48,
