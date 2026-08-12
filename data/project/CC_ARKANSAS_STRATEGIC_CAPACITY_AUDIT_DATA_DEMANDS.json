@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
+  "hypothesis_id": "CC-HYP-ARKANSAS-STRATEGIC-CAPACITY",
+  "incubator_alias": "HYP-130",
+  "decision_id": "CC-DEC-112",
+  "update_id": "UPD-125",
+  "rule": "Map capacity from official program/enrollment sources and existing shortage dials. Do not invent graduate counts.",
+  "demands": [
+    {
+      "id": "CC-DEM-ASCA-001",
+      "name": "official_program_source_inventory",
+      "question": "Which ADHE / university / community-college / CTE / apprenticeship / extension catalogs are authoritative for Arkansas program existence?",
+      "status": "INVENTORY_NEEDED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-ASCA-002",
+      "name": "shortage_signal_join",
+      "question": "Which existing panels (HRSA, human-capital pathways, ag processing, energy) legitimately signal capacity gaps without proxy abuse?",
+      "status": "JOIN_DESIGN",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-ASCA-003",
+      "name": "leave_state_training_paths",
+      "question": "For which critical professions must Arkansans still leave the state for training or residencies?",
+      "status": "RESEARCH",
+      "priority": "high"
+    },
+    {
+      "id": "CC-DEM-ASCA-004",
+      "name": "strategic_add_list",
+      "question": "What program additions would most reduce dependency for rural medicine, advanced ag, energy, and industrial automation?",
+      "status": "QUEUED_AFTER_INVENTORY",
+      "priority": "high",
+      "linked": ["HYP-129"]
+    },
+    {
+      "id": "CC-DEM-ASCA-005",
+      "name": "magnet_hub_feed",
+      "question": "Which capacity gaps should Layer-1 Rural Agriculture Magnet Hub training explicitly target?",
+      "status": "QUEUED",
+      "priority": "high",
+      "linked": ["HYP-129", "HYP-123"]
+    }
+  ],
+  "next_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+}
