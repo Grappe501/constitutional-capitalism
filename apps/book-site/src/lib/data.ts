@@ -65,6 +65,13 @@ export type Phase2Evidence = {
   holds?: string[];
 };
 
+export type Phase3Crosswalk = {
+  slice_id?: string;
+  domains?: string[];
+  evidence_density?: string;
+  note?: string;
+};
+
 export type EconomicSystem = {
   id: string;
   slug: string;
@@ -86,6 +93,7 @@ export type EconomicSystem = {
   dossier_path: string;
   status: string;
   phase2_evidence?: Phase2Evidence;
+  phase3_crosswalk?: Phase3Crosswalk;
 };
 
 export const FAMILY_ORDER = [

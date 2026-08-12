@@ -1,37 +1,97 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { comparison, comparisonGroupedByFamily } from "../lib/data";
+import { comparison, comparisonGroupedByFamily, type EconomicSystem } from "../lib/data";
 
 const groups = comparisonGroupedByFamily();
 const count = comparison.systems.length;
+const CROSSWALK_DOMAINS = [
+  "wealth",
+  "labor",
+  "competition",
+  "democracy",
+  "healthcare",
+  "agriculture",
+  "fiscal",
+] as const;
+
+const boundSystems = comparison.systems.filter((s) => s.phase3_crosswalk?.domains?.length);
+const boundCount = boundSystems.length;
+
+function hasDomain(s: EconomicSystem, domain: string): boolean {
+  return (s.phase3_crosswalk?.domains || []).includes(domain);
+}
 ---
 
 <BaseLayout
   title="Compare Systems"
   path="/compare/"
-  description="Expanded philosophical comparison of economic and political-economic systems with Constitutional Capitalism."
+  description="Phase 3 comparative systems matrix — evidence crosswalk, Arkansas relevance, and transition feasibility."
 >
   <article>
     <h1 style="font-family:var(--serif);margin-top:0;">Economic system comparison</h1>
-    <p class="muted">Developing analytical tool — not settled scholarship · {count} systems</p>
+    <p class="muted">
+      Developing analytical tool — not settled scholarship · {count} systems · {boundCount} with Phase 3
+      evidence crosswalk
+    </p>
     <p class="lede">
       This matrix is an expanded philosophical comparison, including historical ideal-types and modern
       variants. Categories overlap. Real-world systems are usually hybrids. Descriptions aim to be
       fair enough that an informed adherent would recognize them, while clearly distinguishing
-      analysis from endorsement. Future research will deepen primary sourcing. This page is not a
-      substitute for full historical analysis, and it invents no statistics.
+      analysis from endorsement. This page invents no statistics.
     </p>
+
+    <section class="phase3-intro" aria-labelledby="phase3-heading">
+      <h2 id="phase3-heading" class="compare-family__title">Phase 3 — Evidence crosswalk</h2>
+      <p>
+        Phase 1 asked what each system claims. Phase 2 bound evidence layers on priority dossiers.
+        Phase 3 adds a <strong>shared-dial crosswalk</strong>: which systems are already connected to
+        the same observable domains (wealth, labor, competition, democracy, healthcare, agriculture,
+        fiscal) so readers can compare coverage — not a ranking, score, or endorsement.
+      </p>
+      <p class="muted">
+        Holds: observational dials ≠ capture proofs; <code>CC-CLAIM-003</code> remains NEE; HYP-125–129
+        stay research tracks.
+      </p>
+
+      <div class="table-wrap">
+        <table class="crosswalk-table">
+          <thead>
+            <tr>
+              <th scope="col">System</th>
+              {CROSSWALK_DOMAINS.map((d) => (
+                <th scope="col">{d}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {boundSystems.map((s) => (
+              <tr>
+                <th scope="row">
+                  <a href={`/compare/${s.slug}/`}>{s.name}</a>
+                </th>
+                {CROSSWALK_DOMAINS.map((d) => (
+                  <td class={hasDomain(s, d) ? "cell-on" : "cell-off"}>
+                    {hasDomain(s, d) ? "●" : "·"}
+                    <span class="sr-only">
+                      {hasDomain(s, d) ? `${d} bound` : `${d} not bound`}
+                    </span>
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted crosswalk-note">
+        ● = existing evidence panels bound for that domain on the system dossier. Empty cells mean not
+        yet bound — not “the system lacks the issue.”
+      </p>
+    </section>
+
     <p>
-      Phase 2 upgrades selected dossiers from “what does this system claim?” toward “what does existing
-      evidence show when societies move toward it?” — with Arkansas relevance, evidence for/against/NEE,
-      and transition feasibility. Priority wave: Constitutional Capitalism, plutocracy, crony capitalism,
-      laissez-faire capitalism, and stakeholder capitalism. Holds remain: observational dials ≠ capture
-      proofs; HYP-125–129 stay research tracks.
-    </p>
-    <p>
-      Click any system name for a full drill-down dossier (definition, function, emergence, claimed
-      benefits, weaknesses, exemplars, neighbors, and sources). Systems with Phase 2 layers also render
-      live evidence panels.
+      Click any system name for definition, function, emergence, claimed benefits, weaknesses,
+      exemplars, neighbors, and sources. Systems with evidence layers also render live panels plus
+      Arkansas relevance, for/against/NEE verdicts, and transition feasibility.
     </p>
 
     {
@@ -62,7 +122,9 @@ const count = comparison.systems.length;
                   <tr>
                     <th scope="row">
                       <a href={`/compare/${s.slug}/`}>{s.name}</a>
-                      {s.phase2_evidence ? (
+                      {s.phase3_crosswalk ? (
+                        <div class="compare-phase2 muted">Phase 3 crosswalk</div>
+                      ) : s.phase2_evidence ? (
                         <div class="compare-phase2 muted">Phase 2 evidence</div>
                       ) : null}
                       <div class="compare-era muted">{s.era}</div>
@@ -151,5 +213,59 @@ const count = comparison.systems.length;
     margin-top: 0.2rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+  }
+  .crosswalk-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 720px;
+  }
+  .crosswalk-table th,
+  .crosswalk-table td {
+    border-bottom: 1px solid var(--line);
+    padding: 0.55rem 0.45rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .crosswalk-table thead th {
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .crosswalk-table tbody th {
+    text-align: left;
+    font-weight: 650;
+    position: sticky;
+    left: 0;
+    background: var(--bg, #fff);
+    min-width: 12rem;
+  }
+  .crosswalk-table tbody th a {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .cell-on {
+    color: var(--ink, #111);
+    font-size: 1.05rem;
+  }
+  .cell-off {
+    color: var(--ink-soft);
+    opacity: 0.45;
+  }
+  .crosswalk-note {
+    margin-top: -0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 </style>

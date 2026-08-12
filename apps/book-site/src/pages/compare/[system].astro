@@ -18,6 +18,7 @@ export function getStaticPaths() {
 const slug = Astro.params.system as string;
 const system = comparisonBySlug(slug)!;
 const phase2 = system.phase2_evidence;
+const phase3 = system.phase3_crosswalk;
 
 const dossierModules = import.meta.glob("../../../../../content/public-resources/systems/*.md", {
   query: "?raw",
@@ -54,7 +55,12 @@ const outcomeEntries = Object.entries(phase2?.observable_outcomes || {}).filter(
     <p class="muted">
       <a href="/compare/">← All systems</a> · {system.family} · Developing analytical tool
       {
-        phase2 ? (
+        phase3 ? (
+          <>
+            {" "}
+            · <span class="phase2-badge">Phase 3 crosswalk</span>
+          </>
+        ) : phase2 ? (
           <>
             {" "}
             · <span class="phase2-badge">Phase 2 evidence layers</span>
