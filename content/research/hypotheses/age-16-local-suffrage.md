@@ -103,3 +103,14 @@ Compare:
 - Registration upgrades an existing NEE hypothesis into a comparative empirical track  
 - Four propositions may graduate on different schedules  
 - Supports / Qualifies / Contradicts / Not Enough Evidence — reality decides  
+
+## Maryland election-record inventory (2026-08-12)
+
+Slice: `CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0`  
+Artifact: `data/project/age_16_md_election_record_inventory.json`
+
+Coded adopters (same-state lab), matched Montgomery/PG non-adopters, Glenarden reverse, and Newark as **warning case** (not an MD control). Schema covers adoption date, ages, offices, registration method, eligible youth, youth registration/turnout, overall turnout, repeat participation, competition, school-board inclusion, civic-education context, and record availability.
+
+**Finding:** institutional coding is possible; **machine-ready age-stratified election series are almost entirely unpublished**. Takoma Park / Greenbelt are the best manual-extractable starts. Inventory ≠ measurement dataset. A positive youth-turnout anecdote must not promote habit formation or system-effects verdicts. All four propositions remain **Not Enough Evidence**.
+
+Next research: clerk canvass requests. Structural lane is not displaced.

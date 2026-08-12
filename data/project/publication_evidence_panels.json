@@ -1089,7 +1089,314 @@
             "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
           }
         ]
-      }
+      },
+      "evidence_blocks": [
+        {
+          "block_id": "z1-hh-balance-sheet-release",
+          "title": "Z.1 household/nonprofit balance-sheet stocks (FRED release densify)",
+          "source_channel": "FRED v2 release/observations + Z.1 aliases",
+          "producer": "Board of Governors of the Federal Reserve System (Z.1)",
+          "export_id": "exp_5da8b3fe67d94923",
+          "retrieved_for_slice": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
+          "rows": [
+            {
+              "series_id": "CC-PASS10-Z1-HH-NET-WORTH",
+              "label": "Household + nonprofit net worth (Z.1 level)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$183.0T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$806.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$1.8T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$2.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$4.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$7.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$14.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$23.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$37.2T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$60.2T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$69.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$109.4T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$183.0T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Balance-sheet stock; complements DFA distribution shares. Not ownership remedy."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-HH-DEPOSITS",
+              "label": "Household + nonprofit currency & deposits incl. MMF (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$20.6T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$108.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$192.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$320.5B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$565.8B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$1.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$2.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$3.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$4.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$6.2T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$9.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$12.7T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$20.6T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Liquid asset stock only."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-HH-DEBT-SECURITIES-LOANS",
+              "label": "Household + nonprofit debt securities & loans liability (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$21.1T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$29.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$163.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$295.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$475.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$966.5B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$2.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$3.8T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$6.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$11.4T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$13.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$15.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$21.1T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Liability stock; not distress or capture."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-HH-CONSUMER-CREDIT",
+              "label": "Household + nonprofit consumer credit liability (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$5.1T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$6.8B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$48.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$80.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$138.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$264.9B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$526.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$818.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$1.4T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$2.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$2.8T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$4.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$5.1T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Consumer credit stock only."
+            }
+          ],
+          "epistemic_note": "Z.1 levels are aggregate stocks. They do not measure distribution alone (use DFA shares) and do not establish capture."
+        }
+      ],
+      "updated_at": "2026-08-12",
+      "last_export_id": "exp_5da8b3fe67d94923"
     },
     {
       "panel_id": "CC-EP-TRUST-AND-BASELINE-DIAL-1",
@@ -3103,7 +3410,241 @@
           "CC-CLAIM-012",
           "CC-CLAIM-004"
         ]
-      }
+      },
+      "evidence_blocks": [
+        {
+          "block_id": "z1-nfc-balance-sheet-release",
+          "title": "Z.1 nonfinancial corporate balance-sheet stocks (FRED release densify)",
+          "source_channel": "FRED v2 release/observations + Z.1 aliases",
+          "producer": "Board of Governors of the Federal Reserve System (Z.1)",
+          "export_id": "exp_5da8b3fe67d94923",
+          "retrieved_for_slice": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
+          "rows": [
+            {
+              "series_id": "CC-PASS10-Z1-NFC-NET-WORTH",
+              "label": "Nonfinancial corporate business net worth (Z.1)",
+              "coverage": "1945 → 2025",
+              "latest": {
+                "period": "2025",
+                "value": "$37.1T"
+              },
+              "points": [
+                {
+                  "period": "1945",
+                  "value": "$199.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1952",
+                  "value": "$337.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1960",
+                  "value": "$302.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1967",
+                  "value": "$482.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1974",
+                  "value": "$1.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1981",
+                  "value": "$3.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1989",
+                  "value": "$5.7T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1996",
+                  "value": "$7.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2003",
+                  "value": "$12.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2010",
+                  "value": "$14.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2018",
+                  "value": "$21.2T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2025",
+                  "value": "$37.1T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Corporate balance-sheet net worth ≠ worker/local ownership."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-NFC-DEBT-SECURITIES",
+              "label": "Nonfinancial corporate debt securities liability excl. EREITs (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$8.5T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$24.0B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$61.3B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$90.0B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$180.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$329.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$658.0B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$1.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$2.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$3.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$4.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$6.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$8.5T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Corporate leverage structure; not market power proof."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-NFC-CORPORATE-EQUITIES",
+              "label": "Nonfinancial corporate equities liability excl. EREITs (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$68.1T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$103.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$273.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$495.0B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$774.5B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$819.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$1.6T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$3.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$9.8T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$13.4T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$15.9T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$30.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$68.1T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Equity liability stock; not concentration of control."
+            }
+          ],
+          "epistemic_note": "Corporate net worth / debt / equity liabilities ≠ employee ownership or local ownership."
+        }
+      ],
+      "updated_at": "2026-08-12",
+      "last_export_id": "exp_5da8b3fe67d94923"
     },
     {
       "panel_id": "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
@@ -8759,7 +9300,241 @@
         "related_claims": [
           "CC-CLAIM-019"
         ]
-      }
+      },
+      "evidence_blocks": [
+        {
+          "block_id": "z1-farm-balance-sheet-release",
+          "title": "Z.1 farm-sector balance-sheet stocks (FRED release densify)",
+          "source_channel": "FRED v2 release/observations + Z.1 aliases",
+          "producer": "Board of Governors of the Federal Reserve System (Z.1)",
+          "export_id": "exp_5da8b3fe67d94923",
+          "retrieved_for_slice": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
+          "rows": [
+            {
+              "series_id": "CC-PASS10-Z1-CORPORATE-FARM-NET-WORTH",
+              "label": "Corporate farm business net worth (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$1.1T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$1.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$3.5B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$7.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$12.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$36.9B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$53.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$61.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$115.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$305.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$546.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$707.1B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$1.1T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "National farm corporate NW; not county structure (use NASS for counties)."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-NONCORP-FARM-PROPRIETORS-EQUITY",
+              "label": "Noncorporate farm proprietors' equity (Z.1)",
+              "coverage": "1945-Q4 → 2026-Q1",
+              "latest": {
+                "period": "2026-Q1",
+                "value": "$2.8T"
+              },
+              "points": [
+                {
+                  "period": "1945-Q4",
+                  "value": "$79.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1957-Q2",
+                  "value": "$133.2B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1964-Q1",
+                  "value": "$161.5B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1971-Q1",
+                  "value": "$223.3B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1977-Q4",
+                  "value": "$511.6B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1984-Q4",
+                  "value": "$647.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1991-Q3",
+                  "value": "$667.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1998-Q3",
+                  "value": "$853.3B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2005-Q2",
+                  "value": "$1.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2012-Q2",
+                  "value": "$1.7T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2019-Q1",
+                  "value": "$1.9T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2026-Q1",
+                  "value": "$2.8T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "National noncorporate farm equity; complements BEA farm income, not NASS ops."
+            },
+            {
+              "series_id": "CC-PASS10-Z1-HH-MORTGAGES-LIAB",
+              "label": "Household 1–4 family residential mortgages liability (Z.1)",
+              "coverage": "1945 → 2025",
+              "latest": {
+                "period": "2025",
+                "value": "$13.8T"
+              },
+              "points": [
+                {
+                  "period": "1945",
+                  "value": "$18.7B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1952",
+                  "value": "$58.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1960",
+                  "value": "$141.4B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1967",
+                  "value": "$246.0B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1974",
+                  "value": "$419.3B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1981",
+                  "value": "$998.3B",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1989",
+                  "value": "$2.3T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "1996",
+                  "value": "$3.5T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2003",
+                  "value": "$6.9T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2010",
+                  "value": "$10.0T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2018",
+                  "value": "$10.1T",
+                  "geography": "United States"
+                },
+                {
+                  "period": "2025",
+                  "value": "$13.8T",
+                  "geography": "United States"
+                }
+              ],
+              "producer": "Board of Governors of the Federal Reserve System (Z.1 via FRED)",
+              "note": "Mortgage liability stock; not local housing prosperity."
+            }
+          ],
+          "epistemic_note": "National Z.1 farm stocks complement county NASS structure and BEA farm income; they are not local prosperity or causation evidence."
+        }
+      ],
+      "updated_at": "2026-08-12",
+      "last_export_id": "exp_5da8b3fe67d94923"
     },
     {
       "panel_id": "CC-EP-MARKET-DYNAMICS-SYSTEM-1",

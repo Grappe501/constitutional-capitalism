@@ -12,9 +12,11 @@
       "id": "CC-DEM-A16-001",
       "name": "md_municipal_election_record_inventory",
       "question": "Which Maryland 16+ municipal adopters publish age/cohort-capable registration and turnout records for before/after and neighbor comparisons?",
-      "status": "INVENTORY_NEEDED",
+      "status": "INVENTORY_COMPLETE_MEASUREMENT_GAPS_REMAIN",
       "priority": "critical",
-      "cases": ["Takoma Park", "Greenbelt", "other MD municipalities", "matched controls"]
+      "cases": ["Takoma Park", "Greenbelt", "other MD municipalities", "matched controls"],
+      "inventory_path": "data/project/age_16_md_election_record_inventory.json",
+      "outcome_note": "Coding complete for adopters/controls/Newark warning. Almost no machine_ready age tables; next = clerk canvass requests."
     },
     {
       "id": "CC-DEM-A16-002",
@@ -105,6 +107,6 @@
       "priority": "critical"
     }
   ],
-  "next_slice": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
-  "next_structural_slice": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0"
+  "next_slice": "CC-AGE-16-LOCAL-SUFFRAGE-MD-CLERK-CANVASS-REQUESTS-1.0",
+  "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
 }

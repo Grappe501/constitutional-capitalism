@@ -1291,12 +1291,42 @@
       "no_automatic_CC_CLAIM_003_upgrade"
     ]
   },
+  "fred_release_observations_density": {
+    "slice_id": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
+    "status": "PASSED",
+    "mode": "v2_release_observations_whitelist_bind",
+    "purpose": "FRED v2 release/observations (Z.1) demand-filtered densify with Bearer + next_cursor; bind existing panels only.",
+    "export_id": "exp_5da8b3fe67d94923",
+    "return": "reports/CC_RCIP_PASS_10_FRED_RELEASE_OBSERVATIONS_DENSITY_1_0_RETURN.md",
+    "holds": [
+      "no_full_release_dump",
+      "preserve_fed_producer",
+      "z1_structure_neq_capture",
+      "no_new_panels"
+    ]
+  },
+  "age_16_md_election_record_inventory": {
+    "slice_id": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
+    "status": "PASSED_PARALLEL_RESEARCH",
+    "mode": "inventory_coding_not_measurement",
+    "hypothesis_id": "CC-HYP-AGE-16-LOCAL-SUFFRAGE",
+    "incubator_alias": "HYP-127",
+    "inventory": "data/project/age_16_md_election_record_inventory.json",
+    "return": "reports/CC_AGE_16_LOCAL_SUFFRAGE_MD_ELECTION_RECORD_INVENTORY_1_0_RETURN.md",
+    "research_next": "CC-AGE-16-LOCAL-SUFFRAGE-MD-CLERK-CANVASS-REQUESTS-1.0",
+    "holds": [
+      "no_doctrine_promotion",
+      "four_verdicts_separate",
+      "newark_warning_visible",
+      "does_not_displace_structural"
+    ]
+  },
   "baseline_definition_locks_next_fills": {
     "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "status": "QUEUED_NEXT_STRUCTURAL",
     "mode": "definition_lock_then_legitimate_baseline_fills",
     "purpose": "Close remaining ~22 SOURCE_UNKNOWN / definition-locked baseline slots with reproducible fills — not curiosity ingest. Use gap map after FRED/BEA.",
-    "after": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-DENSITY-1.0",
+    "after": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
     "gap_map": "reports/CC_REMAINING_DATA_GAP_MAP_AFTER_FRED_BEA_1_0.md",
     "holds": [
       "denominator_held_at_64",
@@ -1319,8 +1349,10 @@
     "demand_manifest": "data/project/CC_AGE_16_LOCAL_SUFFRAGE_DATA_DEMANDS.json",
     "dossier": "content/research/hypotheses/age-16-local-suffrage.md",
     "return": "reports/CC_AGE_16_LOCAL_SUFFRAGE_RESEARCH_TRACK_1_0_RETURN.md",
-    "research_next": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
-    "next_structural": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "research_next": "CC-AGE-16-LOCAL-SUFFRAGE-MD-CLERK-CANVASS-REQUESTS-1.0",
+    "md_inventory": "PASSED",
+    "md_inventory_path": "data/project/age_16_md_election_record_inventory.json",
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "failure_mode_case": "Newark_NJ_2025_school_board"
   },
   "progress_markers": {
@@ -1334,8 +1366,9 @@
     "modeling": 0,
     "legal": 0,
     "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
-    "last_completed": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-DENSITY-1.0",
-    "export_id": "exp_e18ea124fac04bf8",
+    "last_completed": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
+    "last_completed_parallel": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
+    "export_id": "exp_5da8b3fe67d94923",
     "gap_map": "reports/CC_REMAINING_DATA_GAP_MAP_AFTER_FRED_BEA_1_0.md",
     "regenerated_at": "2026-08-12",
     "source": "pnpm progress:generate"
