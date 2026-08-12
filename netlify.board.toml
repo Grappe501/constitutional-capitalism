@@ -10,12 +10,18 @@
 
 [build]
   base = "apps/build-board"
-  command = "cd ../.. && corepack enable && pnpm install --frozen-lockfile && pnpm --filter build-board build"
+  command = "cd ../.. && corepack enable && pnpm install --frozen-lockfile && node scripts/run-ai-research-intelligence.mjs --pack && pnpm --filter build-board build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "22"
   ASTRO_TELEMETRY_DISABLED = "1"
+  # Set OPENAI_API_KEY in Netlify UI → Site settings → Environment variables (board site only).
+  # Never commit the key. Never expose it to the browser.
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"

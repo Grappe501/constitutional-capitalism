@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-AI-RESEARCH-INTELLIGENCE-LAYER-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-120",
+  "update_id": "UPD-133",
+  "purpose": "Human approval gate queue. AI outputs land here as proposals. Nothing becomes canonical until a human records approval and a separate project update applies it.",
+  "statuses": [
+    "proposed",
+    "approved_for_research_queue",
+    "rejected",
+    "applied_by_human_update"
+  ],
+  "proposals": [
+    {
+      "id": "AI-PROP-1786555414207",
+      "at": "2026-08-12T17:23:34.206Z",
+      "mode": "completion_advancement_map",
+      "status": "proposed",
+      "analysis_kind": "deterministic",
+      "markdown": "## Observed\nCurrent honesty-hold overall percent: **43%**.\nDial rule: This map explains advancement paths. It does not change overall_percent. AI must not inflate the dial.\n\n## Why still at 43%?\n- **honesty_hold**: Overall completion is an honesty hold at 43%, not a measure of research inactivity.\n- **architecture_vs_proof**: Empirical waves expand the research instrument; they do not by themselves earn dial credit.\n- **nee_claims**: High-importance claims such as CC-CLAIM-003 remain NEE / not publication-ready.\n- **no_locked_pilot**: Rose Bud / Lewisville remain investigative candidates; pilot lock and measured intervention have not earned credit.\n- **county_demand_gap**: ADWS capacity↔demand bridge is statewide; county demand gap remains NEE (no false shortages).\n\n## Advancement ladder\n### 43 → 50 — Validated comparative diagnosis + definition-lock fills\n  - Validated comparative diagnosis packets: Packets distinguish observed co-travel, contradictions, and missing evidence without causal overclaim.\n  - Baseline definition-locks and legitimate fills: Remaining SOURCE_UNKNOWN / definition-locked slots close with reproducible fills — not curiosity ingest.\n  - Multi-year registered-voter series: Turnout denominators are longitudinal, labeled by election type, and not confused with CVAP-only rates.\n\n### 50 → 60 — Modeled relationships + legal feasibility + pilot readiness\n  - Modeling after observation: Causation claims appear only after explicit modeling; method wall preserved.\n  - Legal and funding feasibility for intervention packets: Packets carry WHY_THIS_CAN_START_NOW with cited authority — labeled research assistance, not legal conclusions.\n  - Pilot geography field readiness: Readiness checklists filled from field/source work; sites still not locked until selection gate fires.\n  - CC-CLAIM-003 evidence upgrade path: Additional sourced political-economy modules justify any disposition change; no automatic upgrade.\n\n### Beyond 60 (later) — Measured pilot → expansion → Phase 8/9\n  - Pilot measurement and matched comparison: Baseline → intervention → annual measurement exists for locked pilots.\n  - Systems Intelligence Engine (true capstone): CC-DEC-097 activation gates met; not this research-ops precursor alone.\n\n## Human decision required\nChoose which workstream to fund next. Do not inflate the dial.",
+      "evidence_sources": [],
+      "human_approval_required": true,
+      "cannot_auto_publish": true
+    },
+    {
+      "id": "AI-PROP-1786555414282",
+      "at": "2026-08-12T17:23:34.281Z",
+      "mode": "counterexample",
+      "status": "proposed",
+      "analysis_kind": "deterministic",
+      "markdown": "## Observed\nCounterexample Register entries: 5.\n\n### HYP-CECS-LOCAL-CAPITAL-CIVIC\nStronger local capital intensity tends to co-travel with stronger civic participation\n**Strongest contradiction**\n  - White County (05145) x=26111 y=66.7\n**Counterexample cases**\n  - Arkansas County (05001): strong_x_weak_y — Economic/institutional strength without matching civic participation — theory gap candidate\n  - Phillips County (05107): strong_x_weak_y — Economic/institutional strength without matching civic participation — theory gap candidate\n  - White County (05145): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n**Missing data**\n  - (none listed)\n\n### HYP-CECS-POVERTY-CIVIC\nHigher poverty tends to co-travel with weaker civic participation (descriptive test — not destiny)\n**Strongest contradiction**\n  - Lafayette County (05073) x=27.2 y=65.7\n**Counterexample cases**\n  - (none listed)\n**Missing data**\n  - (none listed)\n\n### HYP-CECS-FARM-STRUCTURE-CIVIC\nDenser farm-operation structure tends to co-travel with civic participation patterns\n**Strongest contradiction**\n  - Lafayette County (05073) x=192 y=65.7\n**Counterexample cases**\n  - Lafayette County (05073): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n**Missing data**\n  - (none listed)\n\n### HYP-CECS-HPSA-POVERTY\nPrimary-care shortage intensity tends to co-travel with poverty\n**Strongest contradiction**\n  - Lafayette County (05073) x=10 y=27.2\n**Counterexample cases**\n  - Lafayette County (05073): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n  - Phillips County (05107): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n  - Van Buren County (05141): strong_x_weak_y — Economic/institutional strength without matching civic participation — theory gap candidate\n**Missing data**\n  - (none listed)\n\n### HYP-CECS-INCOME-LOCAL-CAPITAL\nHigher median income tends to co-travel with higher local deposit intensity\n**Strongest contradiction**\n  - Mississippi County (05093) x=53428 y=20213\n**Counterexample cases**\n  - Lafayette County (05073): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n  - Mississippi County (05093): strong_x_weak_y — Economic/institutional strength without matching civic participation — theory gap candidate\n  - Phillips County (05107): weak_x_strong_y — Strong participation despite weaker structural conditions — theory gap candidate\n  - White County (05145): strong_x_weak_y — Economic/institutional strength without matching civic participation — theory gap candidate\n**Missing data**\n  - (none listed)\n\n## Human decision required\nPrivilege contradictions in any comparative diagnosis packet. AI must not erase them.",
+      "evidence_sources": [
+        "data/project/arkansas_county_counterexample_register.json"
+      ],
+      "human_approval_required": true,
+      "cannot_auto_publish": true
+    }
+  ]
+}

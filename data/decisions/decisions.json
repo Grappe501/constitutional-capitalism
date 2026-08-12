@@ -2073,6 +2073,30 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-120",
+      "title": "AI Research Intelligence Layer 1.0",
+      "question": "Should Constitutional Capitalism implement CC-AI-RESEARCH-INTELLIGENCE-LAYER-1.0 as a Phase-2 research-ops precursor — a server-side, provenance-aware Intelligence Engine above the evidence warehouse (observe/compare/question/summarize/recommend only; no client API keys; no autonomous publication; not Phase 9 SIE activation) — while holding overall completion at 43% and producing a Completion Advancement Map instead of dial inflation?",
+      "status": "approved",
+      "rationale": "Steve-directed next major engineering slice. AI should make the system more intelligent without making it less trustworthy. The evidence warehouse (County×Year, Counterexample Register, claims/hyps) is now rich enough to support a narrow research layer. Full Phase 9 Systems Intelligence Engine remains deferred under CC-DEC-097.",
+      "impact": [
+        "data/project/ai_research_intelligence_layer.json",
+        "data/project/ai_research_object_registry.json",
+        "data/project/ai_research_completion_advancement_map.json",
+        "data/project/ai_research_activity_log.json",
+        "data/project/ai_research_proposals.json",
+        "scripts/lib/cc-ai-research/",
+        "scripts/run-ai-research-intelligence.mjs",
+        "apps/build-board/netlify/functions/cc-ai-research.mjs",
+        "apps/build-board/src/pages/ai-research-intelligence.astro",
+        "UPD-133",
+        "Overall % held at 43 / NO client API keys / NO autonomous publication / NOT Phase 9 activation"
+      ],
+      "recommendation": "Set OPENAI_API_KEY only in local env or Netlify board Functions. Use CLI/board analysts for County Living Systems and Completion Advancement Map. Continue structural definition-locks and validated comparative diagnosis packets as human-led workstreams.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }
