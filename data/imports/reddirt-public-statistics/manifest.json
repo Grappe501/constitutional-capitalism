@@ -1,17 +1,15 @@
 {
-  "contract_version": "1.0",
-  "export_id": "exp_a700221b6d2e4b3a",
-  "generated_at": "2026-08-12T04:16:06.834Z",
-  "consumer": "constitutional_capitalism",
-  "generator_repository": "RedDirt",
-  "generator_commit": null,
+  "export_id": "exp_9e75bc70adf94e7e",
+  "generated_at": "2026-08-12T05:39:39.315Z",
+  "source_database": "RedDirt public_statistics / file warehouse export",
   "source_agencies": [
     "United States Census Bureau",
     "Bureau of Labor Statistics",
     "U.S. Energy Information Administration",
     "Federal Deposit Insurance Corporation",
     "Health Resources and Services Administration",
-    "USDA National Agricultural Statistics Service"
+    "USDA National Agricultural Statistics Service",
+    "Federal Reserve Economic Data (FRED)"
   ],
   "dataset_versions": [
     "acs5",
@@ -28,15 +26,24 @@
     "summary",
     "institutions",
     "hpsa-primary-care-areas",
-    "api_GET"
+    "api_GET",
+    "series/observations"
   ],
-  "series_count": 50,
-  "observation_count": 1344,
-  "geography_count": 2,
-  "minimum_reference_period": "1949",
-  "maximum_reference_period": "2026-08-11",
+  "series_count": 59,
+  "observation_count": 2334,
+  "minimum_period": "1949",
+  "maximum_period": "2026-Q1",
   "validation_status": "passed",
-  "cross_check_status": "pending",
-  "contains_private_data": false,
-  "checksum": "2f162f892af07215d54834dd11b3e5a515992b0bc087aec6521c4fb313fafbfe"
+  "contract_version": "1.0",
+  "reddirt_commit": null,
+  "constitutional_capitalism_import_commit": "c7008db",
+  "git_commit": "c7008db",
+  "boundary_attestation": {
+    "contains_campaign_data": false,
+    "contains_personal_data": false,
+    "contains_api_keys": false,
+    "public_statistics_only": true
+  },
+  "series_arrays_present": true,
+  "note": "Imported from RedDirt validated export. Baseline mapping requires separate approval after publicstats:validate. Pass 6 series-arrays bind to evidence systems separately — not automatic baseline promotion."
 }

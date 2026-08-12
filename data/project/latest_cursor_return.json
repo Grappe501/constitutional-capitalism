@@ -1,11 +1,23 @@
 {
-  "slice_id": "RCIP-PASS-9-USDA-NASS-FARM-STRUCTURE-ADAPTER-AND-PUBLICATION-BINDING-1.0",
-  "cc_alias": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0",
+  "mission_id": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
   "status": "PASSED",
-  "returned_at": "2026-08-11",
-  "return_path": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_RETURN.md",
-  "summary": "Pass 9: USDA NASS Quick Stats adapter end-to-end; RedDirt exp_a700221b6d2e4b3a (1344 obs) bound into CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1; 0 new panels; baseline 42/64 unchanged; structure≠capture distinction locked; FRED/BEA deferred. CC-CLAIM-003 remains NEE.",
+  "updated_at": "2026-08-12",
+  "summary": "FRED connector + Pass 10 seed: 801 observations (export exp_9e75bc70adf94e7e). DFA net-worth share histories (1989-Q3→2026-Q1) and BEA-via-FRED macro (saving rate, AR/US PCPI, GDP) bound into ownership, wealth-baseline, and rural panels. 0 new panels. Net-worth ≠ asset shares; structure ≠ capture. CC-CLAIM-003 remains NEE.",
+  "repository_root": "H:\\constitutional-capitalism",
+  "branch": "main",
+  "starting_commit": null,
+  "ending_commit": null,
+  "slice_id": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+  "returned_at": "2026-08-12",
+  "return_path": "reports/CC_RCIP_PASS_10_FRED_BEA_MACRO_WEALTH_GAPS_1_0_RETURN.md",
+  "export_id": "exp_9e75bc70adf94e7e",
   "panels_total": 18,
-  "export_id": "exp_a700221b6d2e4b3a",
-  "next_slice": "OPTIONAL_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE"
+  "panels_bound": [
+    "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1",
+    "CC-EP-WEALTH-BASELINE-1",
+    "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+  ],
+  "new_panels": 0,
+  "next_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+  "update_id": "UPD-117"
 }

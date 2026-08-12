@@ -1,6 +1,6 @@
 {
-  "version": "0.1.2",
-  "last_updated": "2026-08-10",
+  "version": "0.1.4",
+  "last_updated": "2026-08-12",
   "decisions": [
     {
       "decision_id": "CC-DEC-001",
@@ -1789,6 +1789,63 @@
       "recommendation": "Approve as permanent publication rule. Scaffold Evidence Panel in a follow-on slice; apply the hierarchy immediately to new public prose.",
       "approved_by": "Steve",
       "decided_at": "2026-08-10",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-105",
+      "title": "Local Democratic Campaign-Finance System — keep as hypothesis",
+      "question": "Should Constitutional Capitalism open a major research track on whether campaign-finance rules can make political power substantially more local, transparent, citizen-driven, and competitive without allowing government to determine which political voices may be heard — registered as hypothesis only under architecture freeze?",
+      "status": "approved",
+      "rationale": "Steve-directed opening of a major research track converging democracy, journalism, political influence, and civic infrastructure. Register as hypothesis only; do not promote to doctrine, principle, or claim until evidence graduates under falsifiability. No new CC-PRIN-*. CC-CLAIM-003 remains Not Enough Evidence.",
+      "impact": [
+        "data/project/local_democratic_campaign_finance_research.json",
+        "content/research/hypotheses/local-democratic-campaign-finance.md",
+        "data/project/CC_LOCAL_DEMOCRATIC_CAMPAIGN_FINANCE_DATA_DEMANDS.json",
+        "HYP-125",
+        "UPD-110",
+        "NO new CC-PRIN-*"
+      ],
+      "recommendation": "KEEP_AS_HYPOTHESIS. Proceed with instrumentation (OpenFEC locality probe) before doctrine.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-11",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-106",
+      "title": "Distributed Civic Commons — keep as hypothesis",
+      "question": "Should Constitutional Capitalism register a major cultural-layer research hypothesis that dense, voluntary, locally rooted and networked civic institutions may increase participation, trust, accountability, community problem-solving and democratic resilience — while locking the hard boundary that political rights must never depend on participation, and without minting a new principle?",
+      "status": "approved",
+      "rationale": "Steve-directed cultural foundation for self-government as something citizens do together. Architecture freeze remains intact: hypothesis/system for research only. Hard boundary: universal civic expectation without rights-conditioning or compulsory political conformity. Failure modes (capture, exclusion, burnout, factionalism) must be researched. No new CC-PRIN-*. No Civic Record product in registration.",
+      "impact": [
+        "data/project/distributed_civic_commons_research.json",
+        "content/research/hypotheses/distributed-civic-commons.md",
+        "data/project/CC_DISTRIBUTED_CIVIC_COMMONS_DATA_DEMANDS.json",
+        "HYP-126",
+        "UPD-113",
+        "NO new CC-PRIN-* / NO rights-conditioning / NO government civic score"
+      ],
+      "recommendation": "KEEP_AS_HYPOTHESIS. Map scholarship and failure modes next; do not displace county NASS → FRED/BEA structural sequence.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-11",
+      "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-107",
+      "title": "Age-16 local suffrage — keep as empirical research track",
+      "question": "Should Constitutional Capitalism upgrade CC-HYP-AGE-16-LOCAL-SUFFRAGE from a speculative card to a serious comparative empirical research track — Maryland municipal laboratories first, Newark as visible failure-mode/control, Brattleboro and international cases included — while locking no-knowledge-qualification-for-suffrage, testing rather than locking the education-before-enfranchisement sequencing preference, and without minting a new principle or voting-age doctrine?",
+      "status": "approved",
+      "rationale": "Steve-directed upgrade based on real-world municipal and international experience. Central question becomes institutional conditions for meaningful durable participation, not a yes/no slogan. Four propositions (capability, participation, habit, system effects) may graduate separately. Newark 2025 contrary evidence stays visible. Architecture freeze intact: hypothesis only.",
+      "impact": [
+        "data/project/age_16_local_suffrage_research.json",
+        "content/research/hypotheses/age-16-local-suffrage.md",
+        "data/project/CC_AGE_16_LOCAL_SUFFRAGE_DATA_DEMANDS.json",
+        "HYP-127",
+        "UPD-116",
+        "NO new CC-PRIN-* / NO locked voting-age change / NO franchise gate via civics"
+      ],
+      "recommendation": "KEEP_AS_HYPOTHESIS. Next research: Maryland election-record inventory. Do not displace FRED/BEA structural sequence.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
       "supersedes": null
     }
   ]

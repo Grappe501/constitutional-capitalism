@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-11",
-  "active_slice": "AWAITING_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE",
+  "last_updated": "2026-08-12",
+  "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -608,6 +608,85 @@
       "note": "Hypothesis registration + empirical demand list only. No OpenFEC ingest. No new Evidence Panel. Not doctrine. CC-CLAIM-003 remains NEE."
     },
     {
+      "slice_id": "CC-DISTRIBUTED-CIVIC-COMMONS-RESEARCH-TRACK-1.0",
+      "title": "Distributed Civic Commons Research Track Registration",
+      "status": "completed",
+      "completed_at": "2026-08-11",
+      "completion_evidence": [
+        "CC-HYP-DISTRIBUTED-CIVIC-COMMONS",
+        "HYP-126",
+        "CC-DEC-106",
+        "data/project/distributed_civic_commons_research.json",
+        "content/research/hypotheses/distributed-civic-commons.md",
+        "data/project/CC_DISTRIBUTED_CIVIC_COMMONS_DATA_DEMANDS.json",
+        "UPD-113"
+      ],
+      "next_recommended_slice": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+      "alternate_next": [
+        "CC-DISTRIBUTED-CIVIC-COMMONS-SCHOLARSHIP-AND-FAILURE-MODE-MAP-1.0",
+        "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0"
+      ],
+      "note": "Cultural-layer hypothesis registration only. Hard boundary: rights never depend on participation. No new principle. No Civic Record product. Structural next remains county NASS."
+    },
+    {
+      "slice_id": "CC-FULL-SYSTEM-PROGRESS-AND-WEBSITE-AUDIT-1.0",
+      "title": "Full-system progress and website audit",
+      "status": "completed",
+      "completed_at": "2026-08-11",
+      "completion_evidence": [
+        "reports/CC_FULL_SYSTEM_PROGRESS_AND_WEBSITE_AUDIT_1_0_RETURN.md",
+        "data/project/site_internal_link_audit_1_0.json",
+        "data/metrics/progress_snapshot.json",
+        "UPD-114"
+      ],
+      "next_recommended_slice": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+      "alternate_next": [
+        "CC-DISTRIBUTED-CIVIC-COMMONS-SCHOLARSHIP-AND-FAILURE-MODE-MAP-1.0",
+        "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0"
+      ],
+      "note": "Reconciled progress dials to regenerator; fixed board cross-app links; expanded sitemap; extensive build-out backlog published."
+    },
+    {
+      "slice_id": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+      "title": "County NASS farm structure for designated AR research geographies",
+      "status": "completed",
+      "completed_at": "2026-08-12",
+      "completion_evidence": [
+        "exp_2849252ba6094615",
+        "32 county series bound",
+        "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
+        "reports/CC_RCIP_PASS_COUNTY_NASS_FARM_STRUCTURE_1_0_RETURN.md",
+        "UPD-115"
+      ],
+      "next_recommended_slice": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+      "alternate_next": [
+        "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0",
+        "CC-DISTRIBUTED-CIVIC-COMMONS-SCHOLARSHIP-AND-FAILURE-MODE-MAP-1.0"
+      ],
+      "note": "Designated counties only. Structure ≠ capture. County sales-class blocked HTTP 400. OpenFEC credential restored in parallel."
+    },
+    {
+      "slice_id": "CC-AGE-16-LOCAL-SUFFRAGE-RESEARCH-TRACK-1.0",
+      "title": "Age-16 local suffrage empirical research track registration",
+      "status": "completed",
+      "completed_at": "2026-08-12",
+      "completion_evidence": [
+        "CC-HYP-AGE-16-LOCAL-SUFFRAGE",
+        "HYP-127",
+        "CC-DEC-107",
+        "data/project/age_16_local_suffrage_research.json",
+        "content/research/hypotheses/age-16-local-suffrage.md",
+        "data/project/CC_AGE_16_LOCAL_SUFFRAGE_DATA_DEMANDS.json",
+        "UPD-116"
+      ],
+      "next_recommended_slice": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+      "alternate_next": [
+        "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
+        "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0"
+      ],
+      "note": "Comparative empirical track only. Maryland labs + Newark failure-mode. No knowledge gate. No locked voting-age doctrine. Does not displace FRED/BEA."
+    },
+    {
       "slice_id": "CC-PHASE-2.1-AR-LOCAL-NEWS-OUTLET-MAP-AND-COVERAGE-DASHBOARD-PILOT-1.0",
       "title": "Arkansas Local-News Outlet Map & Coverage Dashboard Pilot",
       "status": "completed",
@@ -873,9 +952,9 @@
     "overall_percent": 43
   },
   "baseline_expansion_paused": false,
-  "last_completed_research_slice": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0",
-  "next_recommended_slice": "OPTIONAL_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE",
-  "parallel_ready_slice": "CC-EVIDENCE-PANEL-PASS-1-EXISTING-DATA-BINDING-1.0",
+  "last_completed_research_slice": "CC-AGE-16-LOCAL-SUFFRAGE-RESEARCH-TRACK-1.0",
+  "next_recommended_slice": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+  "parallel_ready_slice": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
   "legislative_civic_targeted_ingest": {
     "slice_id": "RCIP-LEGISLATIVE-CIVIC-TARGETED-INGEST-1.0",
     "status": "PASSED",
@@ -1109,15 +1188,126 @@
     ],
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_9_0_RETURN.md",
     "panels_registry": "data/project/publication_evidence_panels.json",
-    "next": "OPTIONAL_FRED_BEA_OR_COUNTY_NASS_OR_OPENFEC_LOCALITY_PROBE"
+    "next": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0"
+  },
+  "local_campaign_finance_openfec_locality_probe": {
+    "slice_id": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+    "status": "PASSED",
+    "mode": "feasibility_probe_no_publication_bind",
+    "hypothesis_id": "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
+    "incubator_alias": "HYP-125",
+    "decision_id": "CC-DEC-105",
+    "no_new_panels": true,
+    "baseline_impact": "none",
+    "claim_003": "unchanged_NEE",
+    "probe": "data/project/campaign_finance_probes/openfec_locality_probe_1_0.json",
+    "matrix": "data/project/campaign_finance_probes/locality_measurement_feasibility_matrix_1_0.json",
+    "ldfes_draft": "data/project/local_democratic_finance_evidence_system.json",
+    "return": "reports/CC_RCIP_PASS_LOCAL_CAMPAIGN_FINANCE_OPENFEC_LOCALITY_PROBE_1_0_RETURN.md",
+    "outside_money_taxonomy": true,
+    "four_answers_recorded": true,
+    "next_structural": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+    "then_structural": "FRED_BEA_macro_wealth_gaps",
+    "hyp125_parallel": "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0",
+    "then_hyp125": "CC-LOCAL-CAMPAIGN-FINANCE-AR-STATE-LOCAL-SOURCE-INVENTORY-1.0"
+  },
+  "distributed_civic_commons_research_track": {
+    "slice_id": "CC-DISTRIBUTED-CIVIC-COMMONS-RESEARCH-TRACK-1.0",
+    "status": "PASSED_REGISTRATION_ONLY",
+    "mode": "hypothesis_registration_and_demand_manifest",
+    "hypothesis_id": "CC-HYP-DISTRIBUTED-CIVIC-COMMONS",
+    "incubator_alias": "HYP-126",
+    "decision_id": "CC-DEC-106",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_new_principle": true,
+    "no_new_panels": true,
+    "baseline_impact": "none",
+    "hard_boundary": "participation_as_civic_duty_rights_never_depend_on_participation",
+    "program_file": "data/project/distributed_civic_commons_research.json",
+    "demand_manifest": "data/project/CC_DISTRIBUTED_CIVIC_COMMONS_DATA_DEMANDS.json",
+    "dossier": "content/research/hypotheses/distributed-civic-commons.md",
+    "return": "reports/CC_DISTRIBUTED_CIVIC_COMMONS_RESEARCH_TRACK_1_0_RETURN.md",
+    "next_structural": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+    "cultural_research_next": "CC-DISTRIBUTED-CIVIC-COMMONS-SCHOLARSHIP-AND-FAILURE-MODE-MAP-1.0"
+  },
+  "county_nass_farm_structure": {
+    "slice_id": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+    "status": "PASSED",
+    "mode": "county_resolution_nass_for_designated_research_geographies",
+    "purpose": "Stop treating rural Arkansas as one agricultural economy; contrast designated counties (Arkansas, Van Buren/Clinton, Searcy, Mississippi, Lafayette, Phillips, White).",
+    "export_id": "exp_2849252ba6094615",
+    "county_series_bound": 32,
+    "panels_touched": ["CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"],
+    "new_panels": 0,
+    "sales_class_status": "blocked_http_400_at_county_agg_level",
+    "return": "reports/CC_RCIP_PASS_COUNTY_NASS_FARM_STRUCTURE_1_0_RETURN.md",
+    "then": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "holds": [
+      "farm_structure_neq_market_power_neq_monopsony_neq_capture",
+      "no_automatic_CC_CLAIM_003_upgrade"
+    ]
+  },
+  "fred_bea_macro_wealth_gaps": {
+    "slice_id": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "status": "PASSED",
+    "mode": "adapter_expansion_then_bind_only",
+    "purpose": "Fill remaining macro, income, wealth, and regional-output gaps via FRED/BEA after county NASS.",
+    "after": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+    "export_id": "exp_9e75bc70adf94e7e",
+    "return": "reports/CC_RCIP_PASS_10_FRED_BEA_MACRO_WEALTH_GAPS_1_0_RETURN.md",
+    "holds": [
+      "no_new_panels_by_default",
+      "no_automatic_CC_CLAIM_003_upgrade",
+      "wealth_structure_neq_market_power_neq_capture",
+      "net_worth_shares_neq_asset_shares"
+    ]
+  },
+  "baseline_definition_locks_next_fills": {
+    "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "status": "QUEUED_NEXT_STRUCTURAL",
+    "mode": "definition_lock_then_legitimate_baseline_fills",
+    "purpose": "Close remaining ~22 SOURCE_UNKNOWN / definition-locked baseline slots with reproducible fills — not curiosity ingest.",
+    "after": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "holds": [
+      "denominator_held_at_64",
+      "no_quota_theater",
+      "no_automatic_CC_CLAIM_003_upgrade"
+    ]
+  },
+  "age_16_local_suffrage_research_track": {
+    "slice_id": "CC-AGE-16-LOCAL-SUFFRAGE-RESEARCH-TRACK-1.0",
+    "status": "PASSED_REGISTRATION_ONLY",
+    "mode": "hypothesis_registration_and_comparative_case_set",
+    "hypothesis_id": "CC-HYP-AGE-16-LOCAL-SUFFRAGE",
+    "incubator_alias": "HYP-127",
+    "decision_id": "CC-DEC-107",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "constraint_id": "CC-RDC-NO-KNOWLEDGE-QUALIFICATION-FOR-SUFFRAGE",
+    "no_new_principle": true,
+    "no_new_panels": true,
+    "program_file": "data/project/age_16_local_suffrage_research.json",
+    "demand_manifest": "data/project/CC_AGE_16_LOCAL_SUFFRAGE_DATA_DEMANDS.json",
+    "dossier": "content/research/hypotheses/age-16-local-suffrage.md",
+    "return": "reports/CC_AGE_16_LOCAL_SUFFRAGE_RESEARCH_TRACK_1_0_RETURN.md",
+    "research_next": "CC-AGE-16-LOCAL-SUFFRAGE-MD-ELECTION-RECORD-INVENTORY-1.0",
+    "next_structural": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "failure_mode_case": "Newark_NJ_2025_school_board"
   },
   "progress_markers": {
-    "overall_percent": 48,
+    "overall_percent": 43,
     "baseline": "42/64",
     "sources": 268,
+    "verified_sources": 241,
+    "claims": 138,
+    "panels": 18,
+    "principles": 47,
     "modeling": 0,
     "legal": 0,
-    "regenerated_at": "2026-08-11"
+    "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "last_completed": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-1.0",
+    "export_id": "exp_9e75bc70adf94e7e",
+    "regenerated_at": "2026-08-12",
+    "source": "pnpm progress:generate"
   },
   "decision_options_after_content_evidence_audit": [
     "Pass 1: bind HIGH + DATA ALREADY AVAILABLE opportunities into Evidence Panels (no new ingest)",

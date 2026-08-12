@@ -1,17 +1,28 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "generated_at": "2026-08-11",
   "slice_id": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0",
   "hypothesis_id": "CC-HYP-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
-  "status": "demand_manifest_only_no_ingest",
-  "rule": "Register empirical demands for later RCIP ingest. Do not retrieve, bind, or promote claims in this pass.",
+  "status": "openfec_locality_probe_complete",
+  "rule": "Demands guide research design. OpenFEC federal pilot is instrumentation only — not the HYP-125 destination universe.",
   "holds": [
-    "No OpenFEC/Congress/OpenStates retrieval in this registration slice",
     "CC-CLAIM-003 remains Not Enough Evidence",
     "Google Civic deferred",
-    "Journalism covariates: link existing coding; do not invent coverage series"
+    "No new Evidence Panel from locality probe",
+    "Contributor address ≠ beneficial source",
+    "Journalism covariates: link existing coding; do not invent"
   ],
-  "next_ingest_slice": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+  "last_probe": {
+    "slice_id": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+    "probe_path": "data/project/campaign_finance_probes/openfec_locality_probe_1_0.json",
+    "matrix_path": "data/project/campaign_finance_probes/locality_measurement_feasibility_matrix_1_0.json",
+    "return_path": "reports/CC_RCIP_PASS_LOCAL_CAMPAIGN_FINANCE_OPENFEC_LOCALITY_PROBE_1_0_RETURN.md",
+    "completed_at": "2026-08-11"
+  },
+  "next_slice": "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0",
+  "next_structural_slice": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+  "ldfes_draft": "data/project/local_democratic_finance_evidence_system.json",
+  "then": "Arkansas/state/local campaign-finance source inventory",
   "demands": [
     {
       "demand_id": "CC-DEM-LCF-001",
@@ -20,8 +31,9 @@
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
       "race_scope": ["federal_candidate", "selected_state_if_available"],
-      "ingest_status": "not_started",
-      "notes": "Define locality by contributor state vs race state; document itemization thresholds."
+      "ingest_status": "probe_derivable_with_limitations",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS",
+      "notes": "OpenFEC schedule_a/by_state on principal committees. Contributor address ≠ beneficial source. Itemized only."
     },
     {
       "demand_id": "CC-DEM-LCF-002",
@@ -29,8 +41,9 @@
       "question": "What share of receipts is small-dollar (below a locked threshold) versus large-dollar?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started",
-      "notes": "Lock threshold in probe slice; distinguish unitemized aggregates from true small-donor counts."
+      "ingest_status": "probe_derivable_with_limitations",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS",
+      "notes": "Locked for probe: FEC by_size size=200 ($200 and under). Not unique small-donor counts. Large ≠ corruption."
     },
     {
       "demand_id": "CC-DEM-LCF-003",
@@ -38,7 +51,8 @@
       "question": "How concentrated are contributions among top donors / top PACs for selected races?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started",
+      "ingest_status": "probe_derivable_with_limitations",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS",
       "notes": "Disclosure metric only; does not establish capture (CC-CLAIM-003 hold)."
     },
     {
@@ -47,8 +61,9 @@
       "question": "What share of race spending is independent expenditures / outside spending vs candidate committee spending?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started",
-      "notes": "Use IE and communication-cost / outside-spending endpoints carefully; disclaimer ≠ beneficial-source chain."
+      "ingest_status": "probe_derivable_with_limitations",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS",
+      "notes": "Schedule E vs candidate totals. IE ≠ coordination. Full pagination required for large races."
     },
     {
       "demand_id": "CC-DEM-LCF-005",
@@ -56,8 +71,10 @@
       "question": "How concentrated is outside spending among spenders and ultimate funding orgs for selected races?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started",
-      "notes": "Beneficial-source chain remains incomplete under current federal disclosure; flag gaps."
+      "ingest_status": "probe_spender_layer_only",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS",
+      "feasibility_classification_ultimate_funding_orgs": "NOT_OBSERVABLE",
+      "notes": "Spender-committee concentration derivable; ultimate funding orgs NOT_OBSERVABLE from OpenFEC alone."
     },
     {
       "demand_id": "CC-DEM-LCF-006",
@@ -65,7 +82,8 @@
       "question": "What are candidate committee disbursement levels across selected races and cycles?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started"
+      "ingest_status": "probe_directly_measurable",
+      "feasibility_classification": "DIRECTLY_MEASURABLE"
     },
     {
       "demand_id": "CC-DEM-LCF-007",
@@ -74,8 +92,9 @@
       "primary_source": "OpenFEC",
       "secondary_sources": ["OpenStates", "election_results_context"],
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started",
-      "notes": "Competitiveness definition must be locked before bind."
+      "ingest_status": "requires_additional_source",
+      "feasibility_classification": "REQUIRES_ADDITIONAL_SOURCE",
+      "notes": "Competitiveness definition must be locked; finance totals alone are insufficient."
     },
     {
       "demand_id": "CC-DEM-LCF-008",
@@ -83,7 +102,8 @@
       "question": "How do receipts, disbursements, and outside spending differ for incumbents vs challengers?",
       "primary_source": "OpenFEC",
       "geography_focus": ["AR", "US_selected"],
-      "ingest_status": "not_started"
+      "ingest_status": "probe_derivable_with_limitations",
+      "feasibility_classification": "DERIVABLE_WITH_LIMITATIONS"
     },
     {
       "demand_id": "CC-DEM-LCF-009",
@@ -92,9 +112,10 @@
       "primary_source": "OpenStates",
       "secondary_sources": ["AR_campaign_finance_sources_TBD"],
       "geography_focus": ["AR"],
-      "ingest_status": "not_started",
+      "ingest_status": "requires_additional_source",
+      "feasibility_classification": "REQUIRES_ADDITIONAL_SOURCE",
       "gap_flag": true,
-      "notes": "Expect material gaps vs federal OpenFEC coverage; document rather than invent."
+      "notes": "OpenFEC cannot cover state/local. Next inventory after locality measure lock."
     },
     {
       "demand_id": "CC-DEM-LCF-010",
@@ -102,8 +123,9 @@
       "question": "What Congress.gov legislative objects exist for campaign-finance reform and amendment proposals relevant to Track A/B?",
       "primary_source": "Congress.gov",
       "example_objects": ["S.J.Res.78_119th"],
-      "ingest_status": "not_started",
-      "notes": "Study objects only — not endorsement. Link to legislative-civic spine when retrieved."
+      "ingest_status": "requires_additional_source",
+      "feasibility_classification": "REQUIRES_ADDITIONAL_SOURCE",
+      "notes": "Study objects only — not endorsement."
     },
     {
       "demand_id": "CC-DEM-LCF-011",
@@ -113,7 +135,8 @@
       "linked_registry": "research/phase_2/civic_information_research_hypothesis_registry.json",
       "geography_focus": ["AR"],
       "ingest_status": "link_only_do_not_invent",
-      "notes": "Use existing outlet inventory / matrix coding; do not fabricate coverage series in this track."
+      "feasibility_classification": "REQUIRES_ADDITIONAL_SOURCE",
+      "notes": "Use existing outlet inventory / matrix coding; do not fabricate coverage series."
     }
   ]
 }

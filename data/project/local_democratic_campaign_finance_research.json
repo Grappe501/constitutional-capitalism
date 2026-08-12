@@ -1,10 +1,10 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-RESEARCH-TRACK-1.0",
   "generated_at": "2026-08-11",
   "status": "major_research_hypothesis_not_doctrine",
   "module_id": "CC-MOD-LOCAL-DEMOCRATIC-CAMPAIGN-FINANCE-SYSTEM",
-  "update_id": "UPD-110",
+  "update_id": "UPD-112",
   "decision_id": "CC-DEC-105",
   "not": [
     "doctrine",
@@ -51,8 +51,46 @@
       "id": "hypothesis_vs_doctrine",
       "rule": "Hypothesis is not doctrine.",
       "target": "Design tracks and empirical questions only until Supports / Qualifies / Contradicts verdicts graduate under evidence."
+    },
+    {
+      "id": "contributor_address_vs_beneficial_source",
+      "rule": "Contributor address ≠ beneficial source.",
+      "target": "OpenFEC locality metrics measure disclosed contributor geography only."
+    },
+    {
+      "id": "out_of_state_vs_illegitimate",
+      "rule": "Out-of-state money ≠ illegitimate money.",
+      "target": "Locality measures describe structure; they do not imply illegitimacy."
+    },
+    {
+      "id": "large_contribution_vs_corruption",
+      "rule": "Large contribution ≠ corruption.",
+      "target": "Size buckets are disclosure structure, not a corruption finding."
+    },
+    {
+      "id": "ie_vs_coordination",
+      "rule": "Independent expenditure ≠ coordination.",
+      "target": "Schedule E discloses spender-layer IE activity, not coordination."
+    },
+    {
+      "id": "donor_concentration_vs_capture",
+      "rule": "Donor concentration ≠ political capture.",
+      "target": "CC-CLAIM-003 remains Not Enough Evidence."
     }
   ],
+  "openfec_locality_probe": {
+    "slice_id": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0",
+    "status": "PASSED",
+    "probe_path": "data/project/campaign_finance_probes/openfec_locality_probe_1_0.json",
+    "matrix_path": "data/project/campaign_finance_probes/locality_measurement_feasibility_matrix_1_0.json",
+    "ldfes_draft": "data/project/local_democratic_finance_evidence_system.json",
+    "return_path": "reports/CC_RCIP_PASS_LOCAL_CAMPAIGN_FINANCE_OPENFEC_LOCALITY_PROBE_1_0_RETURN.md",
+    "verdict": "Partially feasible for federal contributor-state locality, size buckets, totals, and spender-layer IE; beneficial-source transparency NOT OBSERVABLE from OpenFEC alone; state/local elections out of OpenFEC scope.",
+    "federal_is": "instrumentation_pilot_only",
+    "destination_universe": "Arkansas statewide, legislative, county, municipal, school-board, and other local elections",
+    "outside_money_taxonomy": "LDF-OUT-01…06 locked — not interchangeable",
+    "governing_question": "Do the people governed by an election retain meaningful influence over that election's political economy?"
+  },
   "design_target_beneficial_source_transparency": {
     "chain": [
       "advertisement",
@@ -137,6 +175,16 @@
     "government_must_not": "Decide what the newspaper says or which candidate deserves attention.",
     "civic_system_may": "Make it dramatically cheaper for citizens to learn who is running, who funded them, what they believe, what the office controls, and what incumbents have done."
   },
+  "civic_commons_convergence": {
+    "rule": "Local democratic finance instrumentation studies whether the people governed retain influence over an election's political economy; Distributed Civic Commons studies the relational culture that makes that influence usable day to day.",
+    "linked_hypothesis_ids": [
+      "CC-HYP-DISTRIBUTED-CIVIC-COMMONS"
+    ],
+    "incubator_alias": "HYP-126",
+    "decision_id": "CC-DEC-106",
+    "program_file": "data/project/distributed_civic_commons_research.json",
+    "hard_boundary_shared": "Political rights must never depend on participation"
+  },
   "linked_systems": {
     "democracy_framework": "data/project/democracy_framework.json",
     "journalism_hypothesis_registry": "research/phase_2/civic_information_research_hypothesis_registry.json",
@@ -165,5 +213,21 @@
     "Qualifies",
     "Contradicts"
   ],
-  "next_slice": "RCIP-PASS-LOCAL-CAMPAIGN-FINANCE-OPENFEC-LOCALITY-PROBE-1.0"
+  "research_progression_lock": [
+    "OpenFEC feasibility",
+    "define defensible locality measures",
+    "Arkansas/state/local source inventory",
+    "historical measurement",
+    "compare election types",
+    "test reform mechanisms",
+    "legal analysis",
+    "only then policy design"
+  ],
+  "next_slice": "CC-LOCAL-CAMPAIGN-FINANCE-LOCALITY-MEASURE-LOCK-1.0",
+  "then_slice": "CC-LOCAL-CAMPAIGN-FINANCE-AR-STATE-LOCAL-SOURCE-INVENTORY-1.0",
+  "structural_sequence_after_probe": [
+    "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+    "FRED_BEA_macro_wealth_gaps"
+  ],
+  "note_on_sequence": "User-affirmed structural path is OpenFEC probe → county NASS → FRED/BEA. HYP-125 measure-lock and AR state/local inventory remain the campaign-finance research track next steps, run in parallel when capacity allows — not a substitute for county NASS."
 }

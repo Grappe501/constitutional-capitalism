@@ -523,7 +523,7 @@
       "evidence_strength": "Strong",
       "strength_note": "Strong for measured concentration levels/shares. Does not prove oligarchy as regime type or that CC redesign would shift ownership.",
       "what_the_data_show": {
-        "key_finding": "Official Fed products show high household wealth concentration with important product caveats: 2022 SCF median net worth about $192,900; 2026-Q1 DFA shares place the bottom 50% near 5.3% and the top 1% near 28.8%.",
+        "key_finding": "Official Fed products show high household wealth concentration with product caveats: 2022 SCF median net worth about $192,900; DFA net-worth shares (via FRED, 2026-Q1) place the bottom 50% near 2.5% and the top 1% near 31.6%. Baseline W02 asset-share dials (≈5.3% / 28.8%) remain a separate product row.",
         "critical_numbers": [
           {
             "label": "Median household net worth",
@@ -533,25 +533,33 @@
             "source_id": "CC-SRC-001"
           },
           {
-            "label": "Bottom 50% wealth share",
-            "value": "5.3%",
-            "period": "2026-Q1 DFA",
-            "metric_id": "CC-IND-W02",
-            "source_id": "CC-SRC-012"
-          },
-          {
-            "label": "Top 1% wealth share",
-            "value": "28.8%",
-            "period": "2026-Q1 DFA",
-            "metric_id": "CC-IND-W02",
-            "source_id": "CC-SRC-012"
-          },
-          {
             "label": "Homeownership rate",
             "value": "65.2%",
             "period": "2023",
             "metric_id": "CC-IND-W04",
             "source_id": "CC-SRC-218"
+          },
+          {
+            "label": "Bottom 50% net-worth share",
+            "value": "2.5%",
+            "period": "2026-Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012"
+          },
+          {
+            "label": "Top 1% net-worth share",
+            "value": "31.6%",
+            "period": "2026-Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012"
+          },
+          {
+            "label": "Bottom 50% / top 1% asset shares (baseline W02)",
+            "value": "5.3% / 28.8%",
+            "period": "2026-Q1 DFA assets",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012",
+            "note": "Asset shares — complementary to net-worth path above"
           }
         ],
         "plain_english": "Wealth is highly concentrated on official series. SCF levels and DFA shares are not interchangeable. Concentration is a factual predicate for later accountability questions — not proof of oligarchy or of a finished CC remedy."
@@ -571,8 +579,8 @@
         "State/local ownership maps"
       ],
       "last_updated": {
-        "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "date": "2026-08-12",
+        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -581,6 +589,139 @@
           "CC-CLAIM-012",
           "CC-CLAIM-010"
         ]
+      },
+      "evidence_system": {
+        "reader_stack": "claim → current observation → historical series → qualification → provenance",
+        "definition": "W01 SCF median net worth; W02 DFA wealth shares (asset vs net-worth products differ); W04 homeownership.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS10-FRED-DFA-TOP1-NET-WORTH-SHARE",
+            "label": "DFA top 1% net-worth share (via FRED)",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "31.6%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "22.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1993-Q3",
+                "value": "24.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q3",
+                "value": "27.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2001-Q4",
+                "value": "25.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2005-Q4",
+                "value": "27.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q4",
+                "value": "28.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2013-Q4",
+                "value": "29.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q1",
+                "value": "30.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q1",
+                "value": "30.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "31.6%",
+                "geography": "United States"
+              }
+            ],
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-BOTTOM50-NET-WORTH-SHARE",
+            "label": "DFA bottom 50% net-worth share (via FRED)",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "2.5%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "3.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1993-Q3",
+                "value": "3.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q3",
+                "value": "3.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2001-Q4",
+                "value": "3.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2005-Q4",
+                "value": "2.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q4",
+                "value": "0.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2013-Q4",
+                "value": "0.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q1",
+                "value": "1.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q1",
+                "value": "2.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "2.5%",
+                "geography": "United States"
+              }
+            ],
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          }
+        ],
+        "series_status": "dfa_net_worth_path_bound",
+        "series_note": "Pass 10 binds DFA net-worth share histories. Baseline W02 point dials remain Share of Total Assets unless separately revised. Concentration ≠ oligarchy proof.",
+        "qualification": "Do not upgrade CC-CLAIM-003 or treat wealth shares as market-power or capture evidence."
       }
     },
     {
@@ -1372,7 +1513,7 @@
         "CC-SRC-227"
       ],
       "evidence_strength": "Strong",
-      "strength_note": "Strong for ownership/participation snapshots. Ownership ≠ adequacy; employee-ownership baseline (L03) still pending.",
+      "strength_note": "Strong for ownership/participation snapshots plus attached DFA net-worth path. Ownership ≠ adequacy; employee-ownership baseline (L03) still pending. Wealth shares ≠ political capture.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
         "definition": "W01 SCF median net worth; W02 DFA wealth shares; W04 homeownership rate; W05 share of families with retirement accounts (SCF). SCF and DFA are not interchangeable products.",
@@ -1387,13 +1528,14 @@
             "note": "Mean far above median — concentration predicate."
           },
           {
-            "label": "Bottom 50% / top 1% wealth shares (DFA 2026-Q1)",
-            "value": "5.3% / 28.8%"
-          },
-          {
             "label": "Families with retirement accounts",
             "value": "54.3% (2022 SCF)",
             "note": "Participation ≠ balance adequacy."
+          },
+          {
+            "label": "Bottom 50% / top 1% net-worth shares (DFA via FRED)",
+            "value": "2.5% / 31.6% (2026-Q1)",
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
           }
         ],
         "observation_history": [
@@ -1406,18 +1548,18 @@
             "note": "Largest three-year median increase in modern SCF history; some narrowing while inequality remains high."
           },
           {
-            "period": "1989–present (product span)",
-            "value": "DFA wealth-share product available",
-            "label": "Official DFA history",
-            "geography": "US",
-            "source_id": "CC-SRC-012",
-            "note": "In-repo attachment is 2026-Q1 snapshot only — quarterly path not attached."
-          },
-          {
             "period": "2022 SCF / 2026-Q1 DFA / 2023 ACS",
             "value": "current ownership dials (W01/W02/W04/W05)",
             "label": "Current observations",
             "geography": "US"
+          },
+          {
+            "period": "1989-Q3 → 2026-Q1",
+            "value": "top 1% net worth 22.8% → 31.6%; bottom 50% 3.5% → 2.5%",
+            "label": "DFA net-worth share path (via FRED)",
+            "geography": "US",
+            "source_id": "CC-SRC-012",
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
           }
         ],
         "geography_contrast": [
@@ -1427,19 +1569,310 @@
             "note": "Different ACS products/years — geographic contrast only; do not treat as identical survey cells."
           }
         ],
-        "series_note": "Pass 5 attaches the SCF 2019–2022 episode endpoints and AR/US homeownership contrast. Full SCF triennial table and DFA quarterly path remain demanded. Pass 6: adapter still missing — no new arrays attached.",
-        "series_status": "official_series_available_adapter_blocked",
+        "series_note": "Pass 10 attaches DFA quarterly net-worth share paths (1989–present via FRED). SCF triennial micro tables, CBO budget history, and markups remain blocked. Wealth shares ≠ capture.",
+        "series_status": "dfa_net_worth_path_bound_scf_triennial_still_blocked",
         "missing_layers": [
           "SCF triennial median/mean table 1989–2022 — RCIP-DEM-0001 / PASS5-DEM-SCF-HISTORY",
-          "DFA wealth shares quarterly path 1989–present — PASS5-DEM-DFA-PATH",
           "W05 retirement ownership triennial path",
           "Employee-ownership wealth by percentile (L03 pending)",
           "State/local ownership maps"
         ],
-        "qualification": "Do not treat retirement-account ownership as proof of secure aging, or wealth concentration as proof of oligarchy. The 2019–2022 narrowing episode qualifies any ever-rising story."
+        "qualification": "Do not treat retirement-account ownership as proof of secure aging, or wealth concentration as proof of oligarchy. The 2019–2022 narrowing episode qualifies any ever-rising story.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS10-FRED-DFA-TOP1-NET-WORTH-SHARE",
+            "label": "DFA top 1% net-worth share (via FRED)",
+            "unit": "percent_of_aggregate",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "31.6%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "22.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "23.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "27.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "27.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "25.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "27.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "28.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "29.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "30.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "30.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "29.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "31.6%",
+                "geography": "United States"
+              }
+            ],
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-P90-P99-NET-WORTH-SHARE",
+            "label": "DFA 90–99th net-worth share (via FRED)",
+            "unit": "percent_of_aggregate",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "36.3%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "38.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "36.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "34.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "35.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "36.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "37.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "39.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "39.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "39.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "39.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "36.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "36.3%",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-P50-P90-NET-WORTH-SHARE",
+            "label": "DFA 50–90th net-worth share (via FRED)",
+            "unit": "percent_of_aggregate",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "29.6%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "35.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "36.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "35.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "33.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "36.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "32.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "31.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "30.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "28.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "28.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "31.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "29.6%",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-BOTTOM50-NET-WORTH-SHARE",
+            "label": "DFA bottom 50% net-worth share (via FRED)",
+            "unit": "percent_of_aggregate",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "2.5%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "3.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "4.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "3.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "3.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "2.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "2.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "0.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "0.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "1.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "1.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "2.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "2.5%",
+                "geography": "United States"
+              }
+            ],
+            "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          }
+        ]
       },
       "what_the_data_show": {
-        "key_finding": "Ownership/retirement evidence now includes SCF 2019→2022 history endpoints (real median +37%, real mean +23%), current concentration/participation dials, and an Arkansas ACS homeownership contrast — still not a multi-decade chart warehouse.",
+        "key_finding": "DFA quarterly net-worth shares are now attached (1989-Q3 → 2026-Q1): latest bottom 50% 2.5% vs top 1% 31.6% (2026-Q1). Asset-share dials in baseline W02 remain complementary, not identical. SCF levels still differ from DFA shares.",
         "critical_numbers": [
           {
             "label": "Median household net worth",
@@ -1447,13 +1880,6 @@
             "period": "2022 SCF",
             "metric_id": "CC-IND-W01",
             "source_id": "CC-SRC-001"
-          },
-          {
-            "label": "Bottom 50% / top 1% wealth shares",
-            "value": "5.3% / 28.8%",
-            "period": "2026-Q1 DFA",
-            "metric_id": "CC-IND-W02",
-            "source_id": "CC-SRC-012"
           },
           {
             "label": "Homeownership rate",
@@ -1468,6 +1894,14 @@
             "period": "2022 SCF",
             "metric_id": "CC-IND-W05",
             "source_id": "CC-SRC-227"
+          },
+          {
+            "label": "Bottom 50% / top 1% net-worth shares",
+            "value": "2.5% / 31.6%",
+            "period": "2026 Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012",
+            "note": "Net worth shares via FRED; not asset shares"
           }
         ],
         "plain_english": "Capital-participation claims should sit on this system. Participation gaps are real; redesign benefits are not measured here."
@@ -1487,8 +1921,8 @@
         "Civic Investment Account outcomes (design only)"
       ],
       "last_updated": {
-        "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json + arkansas-baseline ACS5 2022 + CC-SRC-001/012"
+        "date": "2026-08-12",
+        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1537,7 +1971,7 @@
         "CC-SRC-268"
       ],
       "evidence_strength": "Strong",
-      "strength_note": "Stronger with NASS AR/US farm-structure histories plus FDIC local-capital arrays. Still Partial for county farm maps, QBP community-bank path, and community-level outcomes. Structure ≠ capture.",
+      "strength_note": "Stronger with designated-county farm-structure contrasts plus prior AR/US NASS and FDIC arrays. Still Partial for sales-class at county scale, operator characteristics, and capture claims. Structure ≠ capture.",
       "evidence_system": {
         "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
         "definition": "CM02 = Census rural population share. ERS nonmetro is a different geography. CM04/E01 = FDIC/NCUA local-capital shares. E02 = SBCS + FSA. BDS entry/exit rates = national establishment dynamics. NASS Census farm operations/acres/sales/livestock = agricultural structure histories (AR vs US).",
@@ -1563,6 +1997,11 @@
             "label": "BDS entry / exit rates",
             "value": "10.608% / 9.396% (2023)",
             "note": "National rates from imported series — not rural-only."
+          },
+          {
+            "label": "Per capita personal income (BEA via FRED)",
+            "value": "AR $61,752 vs US $76,328 (2025)",
+            "note": "State vs national personal-income levels — not rural-only and not capture evidence."
           }
         ],
         "observation_history": [
@@ -1641,20 +2080,48 @@
             "label": "2022 sales-class structure (AR vs US)",
             "value": "AR <$1k 17.9% / ≥$1M 10.1% vs US <$1k 19.8% / ≥$1M 5.7%",
             "note": "Economic-class operation shares — not a small-vs-large moral verdict."
+          },
+          {
+            "label": "Designated AR counties — 2022 farm operations",
+            "value": "Arkansas 421 · Van Buren 569 · Searcy 562 · Mississippi 268 · Lafayette 192 · Phillips 240 · White 1,552",
+            "note": "Same Census TOTAL operations definition across counties — structure contrast, not capture."
+          },
+          {
+            "label": "Arkansas County vs Van Buren County (ag pair) — 2022 operations",
+            "value": "Arkansas Co 421 vs Van Buren 569",
+            "note": "Commodity/export vs family/livestock/specialty pair — archetypes not locked from this alone."
+          },
+          {
+            "label": "Designated AR counties — latest ag product sales",
+            "value": "Arkansas $328.7M · Van Buren $15.6M · Searcy $33.7M · Mississippi $462.7M · Lafayette $152.4M · Phillips $306.5M · White $236.3M",
+            "note": "Sales structure ≠ market power ≠ monopsony."
+          },
+          {
+            "label": "Broiler inventory presence (disclosure-aware)",
+            "value": "Attached: Van Buren, Searcy, Lafayette, White. Not attached / suppressed: Arkansas, Mississippi, Phillips.",
+            "note": "Missing cells are disclosure/definition outcomes — not proof of absence of poultry economy narratives."
+          },
+          {
+            "label": "Per capita personal income",
+            "value": "AR $61,752 vs US $76,328 (2025)",
+            "note": "BEA via FRED; complements county NASS structure, does not explain farm consolidation causes."
           }
         ],
-        "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture.",
-        "series_status": "nass_farm_structure_arrays_bound_fdic_retained",
+        "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture. County NASS pass attached designated-geography farm-structure histories via exp_2849252ba6094615 (ops/acres/sales/livestock where disclosure-safe). County sales-class economic-class facets returned HTTP 400 and remain blocked. Structure ≠ market power ≠ monopsony ≠ capture. Pass 10 adds BEA/FRED AR–US personal income, GDP, and personal saving rate. Macro structure ≠ capture.",
+        "series_status": "county_nass_and_pass10_fred_bea_bound",
         "missing_layers": [
           "FDIC QBP multi-year community-bank domestic deposit/loan share path — PASS5-DEM-FDIC-PATH (current CB:1 snapshot only)",
           "Hospital-access baseline CM03 (deferred)",
           "SBA 7(a)/504 dollar series",
           "Community-level ownership / leakage maps",
-          "County farm-structure comparisons (disclosure-suppressed cells common)",
           "Operator/producer characteristic time series with locked definitions",
-          "Market power / monopsony / political capture evidence (not NASS)"
+          "Market power / monopsony / political capture evidence (not NASS)",
+          "County sales-class (economic class) facets — Quick Stats 400 at county agg_level in this pass",
+          "Operator/producer characteristic time series with locked definitions",
+          "Market power / monopsony / political capture evidence (not NASS)",
+          "Statewide all-county NASS panel (intentionally out of scope)"
         ],
-        "qualification": "NASS arrays show how Arkansas and U.S. agricultural structure changed. They do not prove that small farms are good or large farms are bad, and they do not establish market power, monopsony, or political capture. Bank/branch structure remains local-capital infrastructure, not town prosperity proof.",
+        "qualification": "County NASS arrays show how designated Arkansas research geographies differ in farm count, acres, sales, and livestock structure. They do not prove that one county model is morally superior, and they do not establish market power, monopsony, or political capture. Rural Arkansas is not one farm economy.",
         "series_points": [
           {
             "series_id": "CC-PASS6-BDS-ENTRY-AR",
@@ -2596,11 +3063,1581 @@
                 "geography": "Arkansas"
               }
             ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-FARM-OPERATIONS",
+            "label": "Arkansas County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "550",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "502",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "539",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "492",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "488",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "421",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-ACRES-OPERATED",
+            "label": "Arkansas County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "432,816",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "389,894",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "405,103",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "402,159",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "414,354",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "407,865",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-AG-PRODUCT-SALES",
+            "label": "Arkansas County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$143.7M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$95.8M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$180.1M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$298.2M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$214.3M",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$328.7M",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05001-CATTLE-COWS-INVENTORY",
+            "label": "Arkansas County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,780",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,290",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,273",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "3,035",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,445",
+                "geography": "Arkansas County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "879",
+                "geography": "Arkansas County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-FARM-OPERATIONS",
+            "label": "Van Buren County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "633",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "603",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "566",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "587",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "611",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "569",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-ACRES-OPERATED",
+            "label": "Van Buren County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "138,676",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "131,661",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "114,270",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "122,875",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "127,623",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "106,364",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-AG-PRODUCT-SALES",
+            "label": "Van Buren County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$21.1M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$15.0M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$15.5M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$19.9M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$16.3M",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$15.6M",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-BROILER-INVENTORY",
+            "label": "Van Buren County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "758,208",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "518,454",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "444,009",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "489,312",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "212,110",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05141-CATTLE-COWS-INVENTORY",
+            "label": "Van Buren County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "15,677",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "13,111",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "11,925",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "9,151",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "13,198",
+                "geography": "Van Buren County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "10,221",
+                "geography": "Van Buren County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-FARM-OPERATIONS",
+            "label": "Searcy County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "677",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "615",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "617",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "592",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "631",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "562",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-ACRES-OPERATED",
+            "label": "Searcy County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "196,817",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "183,472",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "194,963",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "168,795",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "195,438",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "175,165",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-AG-PRODUCT-SALES",
+            "label": "Searcy County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$10.5M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$9.3M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$12.3M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$13.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$18.0M",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$33.7M",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-BROILER-INVENTORY",
+            "label": "Searcy County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "93",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "28",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "36",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "198",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "217",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05129-CATTLE-COWS-INVENTORY",
+            "label": "Searcy County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "20,497",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "19,955",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "18,046",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "13,541",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "19,797",
+                "geography": "Searcy County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "16,888",
+                "geography": "Searcy County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-FARM-OPERATIONS",
+            "label": "Mississippi County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "496",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "388",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "369",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "347",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "284",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "268",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-ACRES-OPERATED",
+            "label": "Mississippi County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "503,134",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "468,501",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "461,328",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "475,699",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "476,502",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "515,954",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-AG-PRODUCT-SALES",
+            "label": "Mississippi County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$171.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$135.5M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$195.6M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$314.6M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$300.9M",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$462.7M",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05093-CATTLE-COWS-INVENTORY",
+            "label": "Mississippi County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,153",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "449",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "951",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "427",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "180",
+                "geography": "Mississippi County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "724",
+                "geography": "Mississippi County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-FARM-OPERATIONS",
+            "label": "Lafayette County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "276",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "284",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "313",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "263",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "287",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "192",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-ACRES-OPERATED",
+            "label": "Lafayette County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "96,865",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "103,948",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "97,628",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "115,257",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "133,235",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "120,374",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-AG-PRODUCT-SALES",
+            "label": "Lafayette County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$73.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$77.6M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$91.3M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$127.9M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$119.2M",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$152.4M",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-BROILER-INVENTORY",
+            "label": "Lafayette County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "4,418,721",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "4,382,254",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "3,893,952",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "3,518,080",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "3,832,283",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "3,467,115",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05073-CATTLE-COWS-INVENTORY",
+            "label": "Lafayette County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "8,454",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "8,875",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "9,890",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "6,971",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "9,882",
+                "geography": "Lafayette County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "11,489",
+                "geography": "Lafayette County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-FARM-OPERATIONS",
+            "label": "Phillips County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "347",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "301",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "307",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "282",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "231",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "240",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-ACRES-OPERATED",
+            "label": "Phillips County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "367,054",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "329,021",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "437,274",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "352,363",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "363,415",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "380,542",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-AG-PRODUCT-SALES",
+            "label": "Phillips County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$114.9M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$83.4M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$185.1M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$248.0M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$189.7M",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$306.5M",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05107-CATTLE-COWS-INVENTORY",
+            "label": "Phillips County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 5,
+            "coverage": "1997 → 2017",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "2,038",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "802",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,004",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "728",
+                "geography": "Phillips County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "895",
+                "geography": "Phillips County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-FARM-OPERATIONS",
+            "label": "White County farm operations",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "1,862",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "1,823",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "2,199",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "1,836",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "1,613",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "1,552",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-ACRES-OPERATED",
+            "label": "White County acres operated",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "411,784",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "394,424",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "411,404",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "355,669",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "344,368",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "376,803",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-AG-PRODUCT-SALES",
+            "label": "White County ag product sales",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "$64.5M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "$50.0M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "$119.2M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "$100.4M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "$124.7M",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "$236.3M",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-BROILER-INVENTORY",
+            "label": "White County broiler inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "622,185",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "564,837",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "1,391,698",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "806,465",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "870,347",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "4,128,849",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-COUNTY-NASS-05145-CATTLE-COWS-INVENTORY",
+            "label": "White County cattle cows inventory",
+            "source": "USDA NASS Quick Stats via RedDirt exp_2849252ba6094615",
+            "point_count": 6,
+            "coverage": "1997 → 2022",
+            "definition_note": "County Census structure — not market power, monopsony, or political capture.",
+            "points": [
+              {
+                "period": "1997",
+                "value": "33,483",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2002",
+                "value": "28,196",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2007",
+                "value": "29,451",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2012",
+                "value": "20,635",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2017",
+                "value": "26,869",
+                "geography": "White County, AR"
+              },
+              {
+                "period": "2022",
+                "value": "27,060",
+                "geography": "White County, AR"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-US-PCPI",
+            "label": "BEA US per capita personal income (via FRED)",
+            "coverage": "1980 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$76,328"
+            },
+            "points": [
+              {
+                "period": "1980",
+                "value": "$10,207",
+                "geography": "United States"
+              },
+              {
+                "period": "1985",
+                "value": "$14,771",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "$19,639",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "$23,570",
+                "geography": "United States"
+              },
+              {
+                "period": "2000",
+                "value": "$30,529",
+                "geography": "United States"
+              },
+              {
+                "period": "2005",
+                "value": "$35,630",
+                "geography": "United States"
+              },
+              {
+                "period": "2010",
+                "value": "$40,526",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "$48,038",
+                "geography": "United States"
+              },
+              {
+                "period": "2020",
+                "value": "$59,160",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "$76,328",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-AR-PCPI",
+            "label": "BEA Arkansas per capita personal income (via FRED)",
+            "coverage": "1980 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$61,752"
+            },
+            "points": [
+              {
+                "period": "1980",
+                "value": "$7,601",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1985",
+                "value": "$11,165",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1990",
+                "value": "$14,621",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1995",
+                "value": "$18,582",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2000",
+                "value": "$22,731",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005",
+                "value": "$28,043",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2010",
+                "value": "$32,218",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "$39,267",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2020",
+                "value": "$47,131",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "$61,752",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-AR-GDP",
+            "label": "BEA Arkansas GDP all-industry (via FRED)",
+            "coverage": "1997 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$198.4B"
+            },
+            "points": [
+              {
+                "period": "1997",
+                "value": "$59.9B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2000",
+                "value": "$69.2B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2003",
+                "value": "$79.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2006",
+                "value": "$96.1B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2009",
+                "value": "$97.8B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013",
+                "value": "$114.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2016",
+                "value": "$121.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2019",
+                "value": "$132.6B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "$167.9B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "$198.4B",
+                "geography": "Arkansas"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-US-GDP",
+            "label": "BEA US GDP (via FRED)",
+            "coverage": "1980 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$31.4T"
+            },
+            "points": [
+              {
+                "period": "1980",
+                "value": "$3.0T",
+                "geography": "United States"
+              },
+              {
+                "period": "1985",
+                "value": "$4.4T",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "$6.0T",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "$7.8T",
+                "geography": "United States"
+              },
+              {
+                "period": "2000",
+                "value": "$10.4T",
+                "geography": "United States"
+              },
+              {
+                "period": "2005",
+                "value": "$13.3T",
+                "geography": "United States"
+              },
+              {
+                "period": "2010",
+                "value": "$15.3T",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "$18.4T",
+                "geography": "United States"
+              },
+              {
+                "period": "2020",
+                "value": "$22.1T",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "$31.4T",
+                "geography": "United States"
+              }
+            ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-PERSONAL-SAVING-RATE",
+            "label": "BEA personal saving rate annual (via FRED)",
+            "coverage": "1980 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "4.6%"
+            },
+            "points": [
+              {
+                "period": "1980",
+                "value": "11.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1985",
+                "value": "9.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "8.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "1995",
+                "value": "6.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "2000",
+                "value": "4.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2005",
+                "value": "2.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2010",
+                "value": "5.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2015",
+                "value": "5.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "2020",
+                "value": "15.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "4.6%",
+                "geography": "United States"
+              }
+            ]
           }
         ]
       },
       "what_the_data_show": {
-        "key_finding": "Census of Agriculture farm operations now show Arkansas 37,756 vs U.S. 1,900,487 in 2022 (AR ≈ 1.99% of U.S. operations). Arkansas operations moved from 49,493 (1997) to 37,756 (2022). Ag product sales: AR $13.9B vs US $543.1B (2022). Broiler inventory (structure only): AR 205,552,568 vs US 1,737,674,957 head (2022). These deepen agricultural structure under existing rural/community arguments. They do not establish monopsony or political capture.",
+        "key_finding": "Designated-county Census farm operations (latest): Arkansas 421 · Van Buren 569 · Searcy 562 · Mississippi 268 · Lafayette 192 · Phillips 240 · White 1,552. Arkansas County (421) vs Van Buren County (569) shows the ag-pair contrast without collapsing rural Arkansas into one economy. Broiler inventories attach in some livestock/mountain counties and not in others — disclosure-aware structure, not a capture finding. These deepen family-farm, rural-capital, food-system, and LCL pages. They do not establish monopsony or political capture.",
         "critical_numbers": [
           {
             "label": "Farm operations AR vs US",
@@ -2628,28 +4665,77 @@
             "period": "2022",
             "geography": "AR / US",
             "note": "Economic-class bookend — not a moral ranking of farm size."
+          },
+          {
+            "label": "Arkansas County farm operations",
+            "value": "421",
+            "period": "2022",
+            "geography": "Arkansas County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "Van Buren County farm operations",
+            "value": "569",
+            "period": "2022",
+            "geography": "Van Buren County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "Searcy County farm operations",
+            "value": "562",
+            "period": "2022",
+            "geography": "Searcy County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "Mississippi County farm operations",
+            "value": "268",
+            "period": "2022",
+            "geography": "Mississippi County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "Lafayette County farm operations",
+            "value": "192",
+            "period": "2022",
+            "geography": "Lafayette County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "Phillips County farm operations",
+            "value": "240",
+            "period": "2022",
+            "geography": "Phillips County",
+            "note": "NASS Census via exp_2849252ba6094615"
+          },
+          {
+            "label": "White County farm operations",
+            "value": "1,552",
+            "period": "2022",
+            "geography": "White County",
+            "note": "NASS Census via exp_2849252ba6094615"
           }
         ],
-        "plain_english": "Rural and community pages can now show how Arkansas farm counts, acres, sales, and key livestock inventories changed across Census years beside U.S. totals — while keeping the hard line that structure evidence is not capture evidence."
+        "plain_english": "Family-farm and rural pages can now show that Arkansas County, Van Buren/Clinton, Searcy, Mississippi, Lafayette, Phillips/West Helena, and White/Rose Bud are different agricultural systems — not interchangeable 'rural Arkansas' — while keeping the hard line that structure evidence is not capture evidence."
       },
       "what_supports_this": [
-        "USDA NASS Quick Stats Census via RedDirt exp_a700221b6d2e4b3a",
-        "FDIC BankFind Suite via prior Pass 8 export",
-        "Census BDS entry/exit histories (Pass 6)"
+        "USDA NASS Quick Stats county Census via RedDirt exp_2849252ba6094615",
+        "Prior Pass 9 AR/US NASS farm-structure arrays",
+        "FDIC BankFind Suite (Pass 8) and Census BDS (Pass 6)"
       ],
       "what_challenges_it": [
-        "Production concentration ≠ market power ≠ monopsony ≠ political capture",
-        "Statewide farm structure ≠ town prosperity or family-farm engine proof",
-        "ERS family-farm production-value shares are a different series than NASS operation counts"
+        "farm structure ≠ market power ≠ monopsony ≠ political capture",
+        "County sales-class facets failed Quick Stats (HTTP 400) in this pass",
+        "Suppressed livestock cells are not narrative proof"
       ],
       "what_we_dont_know": [
-        "County farm-structure maps with disclosure-safe cells",
-        "Stable operator/producer characteristic paths",
-        "Whether sales-class concentration caused market power or political capture"
+        "County economic-class sales shares under a disclosure-safe facet path",
+        "Stable operator/producer characteristic paths at county scale",
+        "Whether structural differences caused market power or political capture"
       ],
       "last_updated": {
-        "date": "2026-08-11",
-        "dataset_or_release": "Pass 9 — NASS farm-structure arrays bound from exp_a700221b6d2e4b3a"
+        "date": "2026-08-12",
+        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA + prior county NASS"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -4341,6 +6427,27 @@
     "pass_8_retained": {
       "export_id": "exp_022146cbbc26489d",
       "fdic_hrsa": "retained_in_panel_arrays"
+    },
+    "county_nass_farm_structure": {
+      "slice_id": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-1.0",
+      "export_id": "exp_2849252ba6094615",
+      "panels_touched": [
+        "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+      ],
+      "new_panels": 0,
+      "counties": [
+        "05001",
+        "05141",
+        "05129",
+        "05093",
+        "05073",
+        "05107",
+        "05145"
+      ],
+      "series_bound": 32,
+      "sales_class_status": "blocked_http_400_at_county_agg_level",
+      "distinction": "farm structure ≠ market power ≠ monopsony ≠ political capture",
+      "note": "Designated geographies only. Reusable across family-farm, rural prosperity, food systems, LCL pages via existing panel."
     }
   },
   "pass_9_rule": "Credentials follow publication demand. NASS farm structure → family-farm/rural comparisons. Bind existing panels only. Structure ≠ market power ≠ monopsony ≠ capture.",
@@ -4352,5 +6459,8 @@
   "pass_6_rule": "No new panel unless a genuinely new evidence question requires one. Prefer richer time series, geographic comparisons, and distribution layers inside the existing panels.",
   "pass_7_rule": "Existing publication demand → exact source object → normalized series → credential-free export → bind into an existing evidence system. No generic warehouse expansion. No new panel unless unavoidable.",
   "pass_8_rule": "More real observations under existing arguments, not more headline statistics. FDIC→HRSA→FRED(only if awkward). Bind existing panels only.",
-  "last_updated": "2026-08-11"
+  "last_updated": "2026-08-12",
+  "pass_10_rule": "FRED as distribution channel for Fed DFA net-worth histories and BEA-produced macro series. Bind existing panels only. 0 new panels. Wealth/income structure ≠ market power ≠ political capture.",
+  "pass_10_export_id": "exp_9e75bc70adf94e7e",
+  "pass_10_bound_at": "2026-08-12T05:39:59.889Z"
 }
