@@ -4,8 +4,10 @@
   "generated_at": "2026-08-12",
   "status": "research_framework_not_doctrine",
   "module_id": "CC-MOD-ARKANSAS-TRANSITION-FRAMEWORK",
-  "update_id": "UPD-122",
-  "decision_id": "CC-DEC-109",
+  "update_id": "UPD-127",
+  "decision_id": "CC-DEC-114",
+  "amends_decision": "CC-DEC-109",
+  "role_now": "Bridge from diagnosis into implementation — handable architecture, not advocacy alone.",
   "not": [
     "doctrine",
     "principle",
@@ -219,6 +221,35 @@
     "role": "Maps education/training capacity gaps that Layer-1 magnet hub and later education pathways should target",
     "program_file": "data/project/arkansas_strategic_capacity_audit.json"
   },
+  "implementation_ladder": [
+    "local_pilot",
+    "measurable_result",
+    "replication",
+    "county_network",
+    "regional_system",
+    "statewide_system"
+  ],
+  "intervention_packet_required_fields": [
+    "existing_legal_authority",
+    "required_legislation",
+    "potential_constitutional_amendment",
+    "available_federal_state_local_funding",
+    "private_community_capital",
+    "responsible_institutions",
+    "implementation_timeline",
+    "measurable_outcomes",
+    "failure_conditions",
+    "expansion_criteria"
+  ],
+  "intervention_packet_rule": "Each proposed intervention eventually carries the full packet so an Arkansas administration could implement rather than merely be advocated at. Packets start empty/NEE until researched — invent nothing.",
+  "intervention_domains_priority": [
+    "local_magnet_hub",
+    "healthcare",
+    "agriculture",
+    "workforce",
+    "higher_education",
+    "community_capital"
+  ],
   "holds": [
     "No new CC-PRIN-*",
     "No statewide locked rollout",
@@ -230,9 +261,11 @@
   "research_progression_lock": [
     "register_four_layer_framework",
     "funding_eligibility_matrix_for_magnet_hub",
+    "draft_first_intervention_packets_magnet_hub_and_adjacent",
     "select_candidate_district_or_county_with_comparable_controls",
     "layer1_program_design_against_learns_and_cte_authority",
     "measure_with_hyp128_participation_structure_overlays",
+    "climb_implementation_ladder_only_after_measurable_result",
     "only_then_layer2_entity_design",
     "layer3_civic_process_design_joint_hyp126",
     "layer4_only_after_evidence_and_legal"
@@ -241,5 +274,5 @@
   "structural_sequence_unchanged": [
     "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
   ],
-  "note_on_sequence": "Framework registration only. Structural next remains definition-locks. Magnet-hub funding matrix and site selection are parallel research."
+  "note_on_sequence": "Bridge from diagnosis to implementation. Structural next remains definition-locks. Parallel: funding matrix + first intervention packets + HYP-130 capability feed."
 }

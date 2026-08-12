@@ -1,11 +1,12 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-STRATEGIC-CAPACITY",
   "incubator_alias": "HYP-130",
-  "decision_id": "CC-DEC-112",
-  "update_id": "UPD-125",
-  "rule": "Map capacity from official program/enrollment sources and existing shortage dials. Do not invent graduate counts.",
+  "decision_id": "CC-DEC-114",
+  "update_id": "UPD-127",
+  "amends_decision": "CC-DEC-112",
+  "rule": "Build capability map bottom-up: has → needs → imports → lacks → buildable. Do not invent graduate counts.",
   "demands": [
     {
       "id": "CC-DEM-ASCA-001",
@@ -16,25 +17,24 @@
     },
     {
       "id": "CC-DEM-ASCA-002",
+      "name": "has_needs_imports_lacks_buildable_matrix",
+      "question": "Can we populate what Arkansas has / needs / imports / lacks / could realistically build for priority sectors?",
+      "status": "QUEUED_AFTER_INVENTORY",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-ASCA-003",
       "name": "shortage_signal_join",
       "question": "Which existing panels (HRSA, human-capital pathways, ag processing, energy) legitimately signal capacity gaps without proxy abuse?",
       "status": "JOIN_DESIGN",
       "priority": "critical"
     },
     {
-      "id": "CC-DEM-ASCA-003",
-      "name": "leave_state_training_paths",
-      "question": "For which critical professions must Arkansans still leave the state for training or residencies?",
-      "status": "RESEARCH",
-      "priority": "high"
-    },
-    {
       "id": "CC-DEM-ASCA-004",
-      "name": "strategic_add_list",
-      "question": "What program additions would most reduce dependency for rural medicine, advanced ag, energy, and industrial automation?",
-      "status": "QUEUED_AFTER_INVENTORY",
-      "priority": "high",
-      "linked": ["HYP-129"]
+      "name": "sector_coverage_expansion",
+      "question": "Extend coverage across education, healthcare, agriculture, energy, manufacturing, technology, infrastructure, skilled trades, and public services honestly.",
+      "status": "QUEUED",
+      "priority": "high"
     },
     {
       "id": "CC-DEM-ASCA-005",

@@ -1419,9 +1419,9 @@
   },
   "phase2_development_wave_priority_lock": {
     "slice_id": "CC-PHASE-2-DEVELOPMENT-WAVE-PRIORITY-LOCK-1.0",
-    "status": "AMENDED_MILESTONE_CHAIN",
+    "status": "AMENDED_THREE_WORKSTREAMS",
     "mode": "priority_lock_and_capacity_audit_registration",
-    "decision_id": "CC-DEC-113",
+    "decision_id": "CC-DEC-114",
     "program_file": "data/project/phase2_development_wave_priority_lock.json",
     "capacity_audit": "data/project/arkansas_strategic_capacity_audit.json",
     "hypothesis_id": "CC-HYP-ARKANSAS-STRATEGIC-CAPACITY",
@@ -1443,13 +1443,31 @@
   },
   "arkansas_transition_milestone_chain": {
     "slice_id": "CC-ARKANSAS-TRANSITION-MILESTONE-CHAIN-1.0",
-    "status": "PASSED_OPERATING_LOCK",
-    "decision_id": "CC-DEC-113",
+    "status": "PASSED_OPERATING_LOCK_DEEPENED",
+    "decision_id": "CC-DEC-114",
     "program_file": "data/project/arkansas_transition_milestone_chain.json",
     "shared_dial_architecture": "data/project/comparative_systems_shared_dial_architecture.json",
-    "return": "reports/CC_ARKANSAS_TRANSITION_MILESTONE_CHAIN_1_0_RETURN.md",
+    "return": "reports/CC_THREE_CONNECTED_WORKSTREAMS_1_0_RETURN.md",
     "chain": "Evidence → comparative diagnosis → Arkansas design → legal feasibility → pilot → measurement → expansion",
+    "connected_workstreams": [
+      "shared_dial_definition_control",
+      "hyp130_capability_map",
+      "hyp129_intervention_packets"
+    ],
     "research_next": [
+      "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+      "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+      "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+  },
+  "three_connected_workstreams": {
+    "slice_id": "CC-THREE-CONNECTED-WORKSTREAMS-1.0",
+    "status": "PASSED_SPEC_LOCK",
+    "decision_id": "CC-DEC-114",
+    "update_id": "UPD-127",
+    "return": "reports/CC_THREE_CONNECTED_WORKSTREAMS_1_0_RETURN.md",
+    "workstreams": [
       "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
       "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
       "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"

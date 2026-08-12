@@ -1,13 +1,17 @@
 # CC-HYP-ARKANSAS-TRANSITION-PATHWAY (HYP-129)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not a locked statewide plan**  
-**Update:** UPD-122 · Decision: CC-DEC-109 (`KEEP_AS_RESEARCH_FRAMEWORK`)  
+**Update:** UPD-127 · Decisions: CC-DEC-109 (`KEEP_AS_RESEARCH_FRAMEWORK`), deepened by CC-DEC-114  
 **Hypothesis:** `CC-HYP-ARKANSAS-TRANSITION-PATHWAY` (`HYP-129`)  
 **Demands:** `data/project/CC_ARKANSAS_TRANSITION_FRAMEWORK_DATA_DEMANDS.json`
 
 ## Central question
 
 > How do we move power, ownership, capability, and decision-making closer to ordinary people without breaking constitutional protections, markets, or civil liberties?
+
+## Role now
+
+Bridge from diagnosis into implementation — a system that can eventually be **handed to an Arkansas administration**, not merely advocated.
 
 ## Why four layers
 
@@ -20,13 +24,34 @@ Many Arkansas transition pieces can be built under **existing law**; others need
 | 3 Civic infrastructure | 4–12 years | Participation **between** elections (HYP-126) |
 | 4 Structural reform | 8–16 years | Legislation / constitutional / institutional — research-bound first |
 
+## Implementation ladder
+
+`local_pilot → measurable_result → replication → county_network → regional_system → statewide_system`
+
+Climb only after measurable results and pre-registered expansion criteria.
+
+## Intervention packet (required fields)
+
+Each proposed intervention eventually carries:
+
+1. existing legal authority  
+2. required legislation  
+3. potential constitutional amendment  
+4. available federal/state/local funding  
+5. private/community capital  
+6. responsible institutions  
+7. implementation timeline  
+8. measurable outcomes  
+9. failure conditions  
+10. expansion criteria  
+
+Packets start empty / NEE until researched — invent nothing.
+
 ## Layer 1 flagship — Rural Agriculture Magnet Hub
 
 Not merely a school farm. A **community economic development engine** centered on the school: magnet agriculture, greenhouses, school farm, FFA/4-H, apprenticeships, food processing, business/marketing, AI/tech, skilled trades.
 
-The school becomes education + workforce + food + entrepreneurship + civic center. Graduates leave with certifications, apprenticeships, ownership opportunities, and leadership experience — not only a diploma.
-
-Converges with Rose Bud LCL (HYP-122), Rural Prosperity Campus (HYP-123), and Distributed Arkansas Prosperity Network (HYP-124).
+Converges with Rose Bud LCL (HYP-122), Rural Prosperity Campus (HYP-123), Distributed Arkansas Prosperity Network (HYP-124), and HYP-130 capacity gaps.
 
 **Funding scan** (eligibility not yet proven): USDA (EQIP, CIG, RD, VAPG, LFPP, RFSP, Community Facilities, RBDG), Perkins V / magnet / workforce funds, Registered Apprenticeship & WIOA, Arkansas AEDC/Ag/CTE, and major rural philanthropies.
 
@@ -38,7 +63,7 @@ Converges with Rose Bud LCL (HYP-122), Rural Prosperity Campus (HYP-123), and Di
 
 ## Evidence-first expansion rule
 
-Strongest current posture: pilot or program in **one** school district, town, or county; measure against **comparable communities** (HYP-128); expand only after results. Aligns with Living Community Laboratories: learn from the community; do not brand early work as proof the whole framework already works.
+Strongest current posture: pilot or program in **one** school district, town, or county; measure against **comparable communities** (HYP-128); expand only after results.
 
 ## What this is not
 

@@ -1,43 +1,51 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-ARCHITECTURE-1.0",
-  "decision_id": "CC-DEC-113",
-  "update_id": "UPD-126",
-  "rule": "Harmonize the 16 evidence-bound systems before binding more. Remaining 24 = controlled backlog.",
+  "decision_id": "CC-DEC-114",
+  "update_id": "UPD-127",
+  "amends_decision": "CC-DEC-113",
+  "rule": "Definition control first: make the 16 a comparable dataset. Remaining 24 = controlled backlog.",
   "demands": [
     {
       "id": "CC-DEM-SDA-001",
-      "name": "definition_alignment_pass",
-      "question": "Do all 16 bound systems cite the same panel/metric definitions for each shared domain?",
+      "name": "identical_metric_definitions",
+      "question": "Do all 16 bound systems use identical metric/panel definitions per shared domain?",
       "status": "QUEUED",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-SDA-002",
-      "name": "time_period_label_pass",
-      "question": "Are time periods explicit and non-blended on every critical number shown in bound compare layers?",
+      "name": "compatible_time_periods",
+      "question": "Are time periods explicit, non-blended, and marked comparable vs non-comparable?",
       "status": "QUEUED",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-SDA-003",
-      "name": "geography_label_pass",
-      "question": "Does every Arkansas relevance claim state US vs Arkansas vs county without national-to-local implication?",
+      "name": "identical_geography_rules",
+      "question": "Does every claim state US vs Arkansas vs county without national-to-local implication?",
       "status": "QUEUED",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-SDA-004",
-      "name": "evidence_status_language_pass",
-      "question": "Do supporting / contradicting / NEE buckets use the locked vocabulary and forbidden-claim list?",
+      "name": "missing_data_and_provenance",
+      "question": "Is missing data left missing, with source provenance retained on every critical number?",
       "status": "QUEUED",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-SDA-005",
+      "name": "comparable_markers_and_verdicts",
+      "question": "Are comparable/non-comparable markers and for/against/NEE vocabulary consistent across the 16?",
+      "status": "QUEUED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-SDA-006",
       "name": "controlled_backlog_gate",
       "question": "Are the remaining 24 systems gated behind written-argument need rather than completeness optics?",
-      "status": "LOCKED_THIS_SLICE",
+      "status": "LOCKED",
       "priority": "critical"
     }
   ],

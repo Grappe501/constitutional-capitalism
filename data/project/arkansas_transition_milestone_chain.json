@@ -4,16 +4,18 @@
   "generated_at": "2026-08-12",
   "status": "operating_milestone_locked",
   "module_id": "CC-MOD-ARKANSAS-TRANSITION-MILESTONE-CHAIN",
-  "update_id": "UPD-126",
-  "decision_id": "CC-DEC-113",
+  "update_id": "UPD-127",
+  "decision_id": "CC-DEC-114",
+  "amends_decision": "CC-DEC-113",
   "not": [
     "overall_percent_target_of_50",
     "fill_remaining_24_compare_systems_for_completeness_optics",
     "new_CC_PRIN",
     "doctrine",
-    "claim_that_legal_or_modeling_layers_are_underway"
+    "claim_that_legal_or_modeling_layers_are_underway",
+    "cosmetic_compare_parity_without_definition_control"
   ],
-  "signal": "With 16 of 40 comparative systems evidence-bound, the matrix is a testable comparative framework. The remaining 24 are a controlled backlog. The numerator (~43%) is no longer the interesting story.",
+  "signal": "Evidence → design. The three active workstreams stay tightly connected: shared-dial definition control (16 comparable), HYP-130 capability map (has→needs→imports→lacks→buildable), HYP-129 transition architecture (intervention packets + implementation ladder). Remaining 24 compare systems = controlled backlog. Do not chase 50%.",
   "milestone_chain": [
     {
       "step": 1,
@@ -61,34 +63,93 @@
   ],
   "chain_sentence": "Evidence → comparative diagnosis → Arkansas design → legal feasibility → pilot → measurement → expansion.",
   "chain_purpose": "The sequence that can eventually turn the research corpus into the 8–16 year Arkansas transition framework (HYP-129) without pretending modeling, legal architecture, or manuscript are complete.",
-  "next_wave_focus": [
+  "connected_workstreams": [
     {
-      "id": "shared_dial_architecture",
+      "id": "shared_dial_harmonization",
       "rank": 1,
-      "item": "Finish the shared-dial architecture for all evidence-bound systems",
-      "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-ARCHITECTURE-1.0",
-      "rule": "Same definitions, time periods, geography rules, and evidence-status language across the 16 bound systems."
+      "item": "Turn the 16 evidence-bound systems into a genuinely comparable dataset",
+      "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+      "definition_control": [
+        "identical_metric_definitions",
+        "identical_geography_rules",
+        "compatible_time_periods",
+        "explicit_missing_data_treatment",
+        "source_provenance",
+        "comparable_vs_non_comparable_markers",
+        "evidence_for_against_nee"
+      ]
     },
     {
       "id": "hyp130_capability_map",
       "rank": 2,
-      "item": "Move HYP-130 from inventory toward an Arkansas capability map",
+      "item": "Build the Arkansas capability map from the bottom up",
+      "hypothesis": "HYP-130",
       "slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
-      "map": ["what_state_can_educate_train_today", "what_it_imports", "what_critical_capacities_are_missing"]
-    },
-    {
-      "id": "hyp129_transition_funding",
-      "rank": 3,
-      "item": "Build HYP-129 into an actual transition/funding architecture",
-      "slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
-      "domains": [
-        "local_magnet_hub",
+      "chain": [
+        "what_Arkansas_has",
+        "what_Arkansas_needs",
+        "what_Arkansas_imports",
+        "what_Arkansas_lacks",
+        "what_capacity_could_realistically_be_built"
+      ],
+      "sectors": [
+        "education",
         "healthcare",
         "agriculture",
-        "workforce",
-        "higher_education",
-        "community_capital"
+        "energy",
+        "manufacturing",
+        "technology",
+        "infrastructure",
+        "skilled_trades",
+        "public_services"
       ]
+    },
+    {
+      "id": "hyp129_transition_architecture",
+      "rank": 3,
+      "item": "Bridge diagnosis into implementation via intervention packets",
+      "hypothesis": "HYP-129",
+      "slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
+      "implementation_ladder": [
+        "local_pilot",
+        "measurable_result",
+        "replication",
+        "county_network",
+        "regional_system",
+        "statewide_system"
+      ],
+      "intervention_packet_fields": [
+        "existing_legal_authority",
+        "required_legislation",
+        "potential_constitutional_amendment",
+        "available_federal_state_local_funding",
+        "private_community_capital",
+        "responsible_institutions",
+        "implementation_timeline",
+        "measurable_outcomes",
+        "failure_conditions",
+        "expansion_criteria"
+      ]
+    }
+  ],
+  "next_wave_focus": [
+    {
+      "id": "shared_dial_harmonization",
+      "rank": 1,
+      "item": "Shared-dial definition control across the 16",
+      "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0"
+    },
+    {
+      "id": "hyp130_capability_map",
+      "rank": 2,
+      "item": "HYP-130 Arkansas capability map",
+      "slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0"
+    },
+    {
+      "id": "hyp129_transition_architecture",
+      "rank": 3,
+      "item": "HYP-129 funding matrix + intervention packets",
+      "slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"
     }
   ],
   "compare_backlog_rule": {

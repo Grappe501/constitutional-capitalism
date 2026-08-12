@@ -4,8 +4,9 @@
   "generated_at": "2026-08-12",
   "status": "research_track_registered_not_executed",
   "module_id": "CC-MOD-ARKANSAS-STRATEGIC-CAPACITY-AUDIT",
-  "update_id": "UPD-125",
-  "decision_id": "CC-DEC-112",
+  "update_id": "UPD-127",
+  "decision_id": "CC-DEC-114",
+  "amends_decision": "CC-DEC-112",
   "not": [
     "doctrine",
     "principle",
@@ -45,6 +46,13 @@
     "water_infrastructure",
     "industrial_automation"
   ],
+  "capability_map_chain": [
+    "what_Arkansas_has",
+    "what_Arkansas_needs",
+    "what_Arkansas_imports",
+    "what_Arkansas_lacks",
+    "what_capacity_could_realistically_be_built"
+  ],
   "map_layers": {
     "current_capacity": [
       "universities",
@@ -53,9 +61,23 @@
       "apprenticeships",
       "extension_programs"
     ],
-    "missing_capacity": "Where students must leave Arkansas for training or credentialing",
-    "strategic_capacity": "What Arkansas would need to add to become self-sustaining in critical sectors"
+    "needs": "Critical professions/industries/technical capacities required for local prosperity and reduced dependency",
+    "imports": "Where Arkansas currently relies on out-of-state training, residencies, firms, or credential pipelines",
+    "missing_capacity": "Where students or institutions must leave Arkansas for training or credentialing",
+    "buildable_capacity": "What could realistically be built under existing or near-term authority (feeds HYP-129)"
   },
+  "sector_coverage_target": [
+    "education",
+    "healthcare",
+    "agriculture",
+    "energy",
+    "manufacturing",
+    "technology",
+    "infrastructure",
+    "skilled_trades",
+    "public_services",
+    "other_strategically_important_capabilities"
+  ],
   "aligns_with": [
     "HYP-129",
     "HYP-123",
@@ -63,13 +85,15 @@
     "human_capital_framework",
     "CC-EP-PRIMARY-CARE-ACCESS-1",
     "CC-EP-HUMAN-CAPITAL-PATHWAYS-1",
-    "CC-EP-AR-AG-PROCESSING-ACCESS-1"
+    "CC-EP-AR-AG-PROCESSING-ACCESS-1",
+    "shared_dial_architecture"
   ],
   "research_progression_lock": [
     "register_track",
     "inventory_official_enrollment_and_program_sources",
     "map_shortage_signals_from_existing_panels_without_proxy_abuse",
-    "build_current_vs_missing_vs_strategic_matrix",
+    "build_has_needs_imports_lacks_buildable_matrix",
+    "expand_sector_coverage_honestly",
     "feed_hyp129_layer1_magnet_hub_and_cte_design",
     "only_then_implementation_blueprints"
   ],

@@ -3,9 +3,10 @@
   "slice_id": "CC-ARKANSAS-TRANSITION-FRAMEWORK-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-TRANSITION-PATHWAY",
   "incubator_alias": "HYP-129",
-  "decision_id": "CC-DEC-109",
-  "update_id": "UPD-122",
-  "rule": "Demands guide sequenced Arkansas transition research. Registration only — no grant applications, no locked site selection, no doctrine.",
+  "decision_id": "CC-DEC-114",
+  "update_id": "UPD-127",
+  "amends_decision": "CC-DEC-109",
+  "rule": "Demands guide sequenced Arkansas transition research into handable intervention packets. Registration only — no grant applications, no locked site selection, no doctrine.",
   "demands": [
     {
       "id": "CC-DEM-ATF-001",
@@ -14,6 +15,24 @@
       "status": "INVENTORY_NEEDED",
       "priority": "critical",
       "layer": "L1"
+    },
+    {
+      "id": "CC-DEM-ATF-011",
+      "name": "intervention_packet_schema_population",
+      "question": "Can first intervention packets (magnet hub and adjacent) carry existing legal authority, required legislation, potential constitutional amendment, funding, private/community capital, responsible institutions, timeline, measurable outcomes, failure conditions, and expansion criteria — leaving unknowns as NEE?",
+      "status": "QUEUED",
+      "priority": "critical",
+      "layer": "cross_layer",
+      "linked": ["HYP-129", "HYP-130"]
+    },
+    {
+      "id": "CC-DEM-ATF-012",
+      "name": "implementation_ladder_gates",
+      "question": "Are expansion decisions gated by local_pilot → measurable_result → replication → county_network → regional_system → statewide_system with pre-registered failure conditions?",
+      "status": "DESIGN_LOCK",
+      "priority": "critical",
+      "layer": "cross_layer",
+      "linked": ["HYP-128"]
     },
     {
       "id": "CC-DEM-ATF-002",
