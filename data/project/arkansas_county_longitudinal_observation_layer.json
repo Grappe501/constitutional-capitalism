@@ -1,19 +1,17 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-ARKANSAS-COUNTY-LONGITUDINAL-OBSERVATION-LAYER-1.0",
-  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-GROUNDING-WAVE-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-LONGITUDINAL-OBSERVATION-LAYER-1.1",
+  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-DEPTH-WAVE-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-117",
-  "update_id": "UPD-130",
-  "status": "LAYER_V1_CORRELATION_FIRST",
+  "decision_id": "CC-DEC-118",
+  "update_id": "UPD-131",
+  "status": "LAYER_V1_1_ACS_CVAP_OPENELECTIONS",
   "purpose": "County × Year observation layer joining economic structure, institutional capacity signals, and civic participation for pattern discovery — not causal attribution.",
   "research_question": "What combinations of economic structure, institutional capacity, health access, educational opportunity, agricultural structure, and civic participation tend to coexist — and how do those combinations change over time?",
   "method_wall": [
-    "correlation_and_pattern_discovery_first",
-    "causal_hypothesis_second",
-    "intervention_third",
-    "measurement_fourth",
-    "replication_fifth"
+    "observation_first",
+    "interpretation_second",
+    "causation_only_after_modeling"
   ],
   "not": [
     "causal_model",
@@ -498,6 +496,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 48.4,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -687,6 +700,48 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 4920,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 4962,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 626,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -869,6 +924,77 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 6068,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 5402,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 5113,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 4739,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 49.4,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -1123,6 +1249,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 58695,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 2816,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 16.8,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 7809,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 511,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 6.5,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 17024,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 4459,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 4425,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 4489,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 4273,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 4445,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -1250,6 +1542,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 60831,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 2425,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 14.7,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 7987,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 543,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 6.8,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 16773,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 12740,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 12885,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -1380,6 +1794,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 43.5,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -1857,6 +2286,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 56.1,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -2046,6 +2490,48 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 2118,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 2131,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 1442,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -2228,6 +2714,77 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 2544,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 2629,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 2196,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 2518,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 53.0,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -2482,6 +3039,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 40262,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 1328,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 21.6,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 2557,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 223,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 8.7,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 6277,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 1956,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 1951,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 1982,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 1579,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 1931,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -2609,6 +3332,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 37237,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 1658,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 27.2,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 2324,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 205,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 8.8,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 6211,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 5055,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 5065,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -2739,6 +3584,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 46.0,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -3216,6 +4076,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 45.1,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -3405,6 +4280,48 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 10375,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 10455,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 10519,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -3587,6 +4504,77 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 11690,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 10189,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 10239,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 11783,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 42.8,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -3841,6 +4829,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 50012,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 8599,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 21.9,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 18813,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 1848,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 9.8,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 40361,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 8501,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 8548,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 8693,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 6941,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 8334,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -3968,6 +5122,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 53428,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 8150,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 21.0,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 18690,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 1563,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 8.4,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 39749,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 28820,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 29355,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -4098,6 +5374,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 37.2,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -4575,6 +5866,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 60.1,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -4764,6 +6070,48 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 5379,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 5444,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 5413,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -4946,6 +6294,63 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 5665,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 4350,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 1185,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 54.4,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -5200,6 +6605,102 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 37458,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 4946,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 30.5,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 6522,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 868,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 13.3,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 16373,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
             }
           ]
         },
@@ -5327,6 +6828,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 38874,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 4534,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 28.7,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 6070,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 962,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 15.8,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 15910,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 11475,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 11655,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -5457,6 +7080,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 43.0,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -5934,6 +7572,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 59.5,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -6123,6 +7776,34 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 3131,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 3194,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -6305,6 +7986,63 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 3935,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 3597,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 3566,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 64.6,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -6559,6 +8297,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 42063,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 2054,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 26.6,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 3065,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 159,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 5.2,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 7880,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 3111,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 2963,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 3170,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 2610,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 2468,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -6686,6 +8590,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 41978,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 1896,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 24.5,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 3014,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 159,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 5.3,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 7861,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 6220,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 6245,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -6816,6 +8842,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 62.2,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -7293,6 +9334,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 55.9,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -7482,6 +9538,34 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 6282,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 6296,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -7664,6 +9748,63 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 7654,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 7750,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 4054,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 61.4,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -7918,6 +10059,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 45768,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 2971,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 18.9,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 5692,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 265,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 4.7,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 15900,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 6238,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 6203,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 6273,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 5497,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 5432,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -8045,6 +10352,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 47266,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 3069,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 19.5,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 5842,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 252,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 4.3,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 15936,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 12715,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 12890,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -8175,6 +10604,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 59.9,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -8652,6 +11096,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 47.1,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -8841,6 +11300,48 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 22014,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 21993,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 10307,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -9023,6 +11524,63 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 30759,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 30816,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 5489,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 53.0,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         },
@@ -9277,6 +11835,172 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 51144,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 11867,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 16.1,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 34031,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 1770,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 5.2,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 77118,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "us_senate_total_votes",
+              "value": 23052,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "us_house_total_votes",
+              "value": 22964,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "gubernatorial_total_votes",
+              "value": 23125,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_senate_total_votes",
+              "value": 22957,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "state_house_total_votes",
+              "value": 22650,
+              "unit": "votes",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)",
+              "source_id": "OPENELECTIONS-AR",
+              "source_url": "https://github.com/openelections/openelections-data-ar",
+              "confidence": "verified_secondary",
+              "limitations": [
+                "Secondary PDF→CSV compilation; SOS canvass cross-check still NEE",
+                "2022 Phillips County file missing in source repo"
+              ]
             }
           ]
         },
@@ -9404,6 +12128,128 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "income",
+              "metric": "acs5_median_household_income",
+              "value": 53435,
+              "unit": "usd",
+              "definition": "ACS 5-year median household income (B19013)",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "5-year period estimate ending in stated year",
+                "Preserves parallel SAIPE median_household_income series"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "median_household_income"
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_count_all_ages",
+              "value": 12190,
+              "unit": "persons",
+              "definition": "ACS 5-year persons below poverty (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to SAIPE poverty_count_all_ages"
+              ],
+              "preferred_for_ses_microdata": true
+            },
+            {
+              "domain": "poverty",
+              "metric": "acs5_poverty_rate_all_ages",
+              "value": 16.4,
+              "unit": "percent",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b17001.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Parallel to SAIPE poverty_rate_all_ages; definitions differ — do not silently replace"
+              ],
+              "preferred_for_ses_microdata": true,
+              "parallel_to": "poverty_rate_all_ages"
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_civilian_labor_force",
+              "value": 34263,
+              "unit": "persons",
+              "definition": "ACS 5-year civilian labor force (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not BLS LAUS; ACS period estimate"
+              ]
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployed",
+              "value": 1748,
+              "unit": "persons",
+              "definition": "ACS 5-year unemployed (B23025)",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "verified_primary",
+              "limitations": []
+            },
+            {
+              "domain": "employment",
+              "metric": "acs5_unemployment_rate",
+              "value": 5.1,
+              "unit": "percent",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b23025.dat",
+              "confidence": "derived",
+              "limitations": [
+                "Not interchangeable with BLS LAUS county rates"
+              ]
+            },
+            {
+              "domain": "population",
+              "metric": "acs5_population_total",
+              "value": 77395,
+              "unit": "persons",
+              "definition": "ACS 5-year total population (B01003)",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "source_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Parallel to PEP population_total; do not overwrite PEP"
+              ],
+              "parallel_to": "population_total"
+            },
+            {
+              "domain": "civic",
+              "metric": "cvap_total",
+              "value": 58295,
+              "unit": "persons",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Period 2019–2023; race-detail available in source but Total used here"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "vap_adult_estimate",
+              "value": 59335,
+              "unit": "persons",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Not identical to ACS B01001 18+ sum; CVAP adult field"
+              ]
             }
           ]
         },
@@ -9534,6 +12380,21 @@
                 "Not invented; await authoritative county bind"
               ],
               "status": "NEE"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_cvap_percent",
+              "value": 52.9,
+              "unit": "percent",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100",
+              "source_id": "DERIVED-PRES-CVAP",
+              "source_url": "https://www2.census.gov/programs-surveys/decennial/rdo/datasets/2023/2023-cvap/CVAP_2019-2023_ACS_csv_files.zip",
+              "confidence": "derived",
+              "limitations": [
+                "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
+                "Not registered-voter turnout",
+                "Not official SOS turnout"
+              ]
             }
           ]
         }
@@ -9568,25 +12429,29 @@
     }
   },
   "nee_domains": [
-    "employment_rate",
-    "wages",
+    "registered_voters",
     "healthcare_access_county",
     "banking_local_capital_county",
-    "educational_capacity_county",
-    "demographic_structure_detail",
+    "educational_capacity_county_district",
     "infrastructure_indicators",
-    "turnout_rate_registered",
-    "turnout_rate_vap",
-    "acs_detailed_income_poverty_moe"
+    "wages_county"
   ],
   "blockers": [
     {
-      "id": "invalid_census_api_key",
-      "detail": "ACS5 county detail blocked: CENSUS_API_KEY rejected as Invalid Key on 2026-08-12. SAIPE+PEP used as interim structural joins."
+      "id": "census_api_key_still_invalid",
+      "detail": "api.census.gov key remains invalid; ACS5/CVAP bound via www2 FTP (no key)."
     },
     {
-      "id": "bls_laus_download_blocked",
-      "detail": "BLS LAUS county xlsx endpoints returned non-workbook payloads in this environment; employment left NEE."
+      "id": "registered_voters_county_nee",
+      "detail": "County registered-voter series still NEE (SOS PDF / EAVS next)."
+    },
+    {
+      "id": "openelections_2022_phillips_missing",
+      "detail": "OpenElections 2022 Phillips County precinct file absent."
+    },
+    {
+      "id": "healthcare_banking_county_still_nee",
+      "detail": "County HPSA and FDIC branch/deposit concentration still NEE."
     }
   ],
   "provenance_note": "Every non-null observation carries source_id, source_url, definition, confidence, and limitations.",
@@ -9596,12 +12461,14 @@
       "1997",
       "2024"
     ],
-    "non_null_observations": 448
+    "non_null_observations": 654,
+    "observations_added_this_wave": 206
   },
   "feeds": [
     "HYP-128 site selection",
     "Rose Bud / Lewisville living-system profiles",
     "Future matched-comparison design"
   ],
-  "reddirt_export_id": "exp_5da8b3fe67d94923"
+  "reddirt_export_id": "exp_5da8b3fe67d94923",
+  "provenance_policy": "Never silently overwrite prior observations. ACS5 joins are added alongside PEP/SAIPE series; prefer ACS for microdata-style SES joins where definitionally superior, but retain SAIPE/PEP with original source_id."
 }

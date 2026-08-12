@@ -47,14 +47,20 @@ This wave does **not** claim that poverty, agriculture, healthcare, education, a
 
 ## Holds
 
-- Overall completion dial held at **43%**
-- No pilot site lock
+- Overall completion dial held at **43%** — this is an honesty hold on cosmetic completion, **not** a verdict that the wave failed to advance the project
+- The County×Year longitudinal observation layer is **foundational infrastructure**: it feeds HYP-128 site selection, living-community profiles, matched-comparison design, and later causal modeling — higher-order layers that the dial does not yet credit
+- No pilot site lock (Rose Bud / Lewisville remain candidates)
 - No causal model promotion
 - Votes ≠ turnout rate until VAP/registered denominators bind
 
-## Next depth (earn beyond 43%)
+## Foundational advance (even while 43% held)
 
-1. Refresh Census API key → ACS5/VAP county joins
-2. CIP completer microdata / Fact Book structured parse + workforce demand crosswalk
-3. Field-complete pilot readiness for one geography (still no political convenience lock)
-4. SOS canvass cross-check + midterm/local participation series
+Building a provenance-bearing County×Year laboratory is real project progress. Percent-complete remains deliberately conservative until CIP capacity, turnout denominators, readiness field-work, and measured pilots earn credit under the existing dial rules.
+
+## Next depth
+
+1. Refresh Census API key → ACS5/VAP/CVAP county joins (preserve PEP/SAIPE provenance)
+2. CIP × institution × year Fact Book parse + workforce-demand crosswalk
+3. Expand County×Year beyond presidential votes (governor/congress/legislature/registered/turnout)
+4. County Living Systems Explorer (internal research surface — not a public score)
+5. Field-complete pilot readiness — still no political convenience lock

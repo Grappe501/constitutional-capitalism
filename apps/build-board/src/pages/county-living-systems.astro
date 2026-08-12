@@ -1,0 +1,186 @@
+---
+import BoardLayout from "../layouts/BoardLayout.astro";
+import explorer from "../../../../data/project/arkansas_county_living_systems_explorer.json";
+
+const counties = explorer.counties || [];
+const compareMetrics = explorer.compare_metrics || [];
+const questions = explorer.research_questions || [];
+const edu = explorer.education_workforce_bridge || {};
+const familyRows = Object.entries(
+  (edu.completions_by_workforce_category || {}) as Record<string, Record<string, number>>
+).map(([fam, years]) => ({
+  fam,
+  series: Object.entries(years)
+    .map(([y, n]) => `${y}: ${Number(n).toLocaleString()}`)
+    .join(" · "),
+}));
+const keystones = edu.keystone_capacity_signals || [];
+---
+
+<BoardLayout
+  title="County Living Systems"
+  path="/county-living-systems/"
+  description="Internal research explorer for County×Year structural and civic observations. Not a public score."
+>
+  <h1 class="page-title">County Living Systems Explorer</h1>
+  <p class="page-lede">
+    Internal research surface — <strong>not a public score</strong>. Observation first.
+    Interpretation second. Causation only after modeling. Rose Bud / Lewisville remain
+    candidates, not locks.
+  </p>
+
+  <div class="grid grid--stats">
+    <div class="stat">
+      <div class="stat__label">Counties</div>
+      <div class="stat__value">{counties.length}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Status</div>
+      <div class="stat__value" style="font-size:0.95rem;">{explorer.status}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Update</div>
+      <div class="stat__value" style="font-size:0.95rem;">{explorer.update_id}</div>
+    </div>
+    <div class="stat">
+      <div class="stat__label">Method</div>
+      <div class="stat__value" style="font-size:0.85rem;">observation → interpretation → causation</div>
+    </div>
+  </div>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Questions this surface is for</h2>
+    <ul class="list-plain">
+      {questions.map((q) => <li>{q}</li>)}
+    </ul>
+    <p style="margin-top:0.75rem;opacity:0.85;">
+      Counterexamples may be more valuable than confirming cases.
+    </p>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;" data-living-systems>
+    <h2>County timeline</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:end;margin-bottom:1rem;">
+      <label>
+        County A
+        <select data-county-a>
+          {counties.map((c) => (
+            <option value={c.fips} selected={c.fips === "05145"}>
+              {c.county} ({c.fips})
+            </option>
+          ))}
+        </select>
+      </label>
+      <label>
+        County B (compare)
+        <select data-county-b>
+          <option value="">— none —</option>
+          {counties.map((c) => (
+            <option value={c.fips} selected={c.fips === "05073"}>
+              {c.county} ({c.fips})
+            </option>
+          ))}
+        </select>
+      </label>
+      <label>
+        Focus metric
+        <select data-metric>
+          {compareMetrics.map((m) => (
+            <option value={m} selected={m === "presidential_turnout_of_cvap_percent"}>
+              {m}
+            </option>
+          ))}
+        </select>
+      </label>
+    </div>
+    <div data-timeline-out style="overflow-x:auto;"></div>
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Education capacity bridge (not employment demand)</h2>
+    <p>
+      Status: <code>{edu.status}</code>. Completions are educational capacity signals.
+      Employment demand remains NEE until ADWS/BLS joins.
+    </p>
+    <ul class="list-plain">
+      {familyRows.map((row) => (
+        <li>
+          <code>{row.fam}</code> — {row.series}
+        </li>
+      ))}
+    </ul>
+    <h3 style="margin-top:1rem;">Keystone capacity signals</h3>
+    <ul class="list-plain">
+      {keystones.map((k: any) => (
+        <li>
+          <code>{k.label}</code> ({k.cip}) — {k.status} —{" "}
+          {JSON.stringify(k.ipeds_completions_by_year)}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <script is:inline define:vars={{ counties, compareMetrics }}>
+    const root = document.querySelector("[data-living-systems]");
+    if (root) {
+      const aSel = root.querySelector("[data-county-a]");
+      const bSel = root.querySelector("[data-county-b]");
+      const mSel = root.querySelector("[data-metric]");
+      const out = root.querySelector("[data-timeline-out]");
+      const byFips = Object.fromEntries(counties.map((c) => [c.fips, c]));
+
+      function yearsFor(c) {
+        return (c?.timeline || []).map((t) => t.year);
+      }
+
+      function val(c, year, metric) {
+        const row = (c?.timeline || []).find((t) => t.year === year);
+        return row?.metrics?.[metric]?.value;
+      }
+
+      function render() {
+        const a = byFips[aSel.value];
+        const b = bSel.value ? byFips[bSel.value] : null;
+        const metric = mSel.value;
+        const years = Array.from(
+          new Set([...yearsFor(a), ...yearsFor(b)].filter(Boolean))
+        ).sort();
+        const rows = years
+          .map((y) => {
+            const av = val(a, y, metric);
+            const bv = b ? val(b, y, metric) : null;
+            if (av == null && bv == null) return "";
+            return `<tr>
+              <td><code>${y}</code></td>
+              <td>${av == null ? "—" : typeof av === "number" ? av.toLocaleString() : av}</td>
+              <td>${b ? (bv == null ? "—" : typeof bv === "number" ? bv.toLocaleString() : bv) : "—"}</td>
+            </tr>`;
+          })
+          .join("");
+        out.innerHTML = `
+          <p style="opacity:0.85;margin-bottom:0.5rem;">
+            Metric <code>${metric}</code> · ${a?.county || ""}${b ? " vs " + b.county : ""}
+          </p>
+          <table class="table">
+            <thead><tr><th>Year</th><th>${a?.county || "A"}</th><th>${b?.county || "B"}</th></tr></thead>
+            <tbody>${rows || '<tr><td colspan="3">No observations for this metric.</td></tr>'}</tbody>
+          </table>
+          <details style="margin-top:1rem;">
+            <summary>Full metric keys present in County A (latest year with data)</summary>
+            <pre style="white-space:pre-wrap;font-size:0.8rem;">${JSON.stringify(
+              (a?.timeline || []).slice(-1)[0]?.metrics
+                ? Object.keys((a.timeline.slice(-1)[0] || {}).metrics || {})
+                : [],
+              null,
+              2
+            )}</pre>
+          </details>
+        `;
+      }
+      aSel.addEventListener("change", render);
+      bSel.addEventListener("change", render);
+      mSel.addEventListener("change", render);
+      render();
+    }
+  </script>
+</BoardLayout>

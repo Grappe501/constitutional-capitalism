@@ -576,7 +576,16 @@
     "readiness_file": "data/project/arkansas_pilot_geography_readiness_checklist.json",
     "turnout_file": "data/project/arkansas_county_turnout_source_inventory.json",
     "longitudinal_file": "data/project/arkansas_county_longitudinal_observation_layer.json",
-    "rule": "Correlation and pattern discovery first. County×Year observations with provenance. Votes ≠ turnout rate without denominator. No causal model. No locked site. Overall % held at 43."
+    "rule": "Correlation and pattern discovery first. County×Year observations with provenance. Votes ≠ turnout rate without denominator. No causal model. No locked site. Overall % held at 43 as honesty hold — not wave failure; the longitudinal layer is foundational infrastructure for higher-order analysis."
+  },
+  "arkansas_empirical_depth_wave": {
+    "update_id": "UPD-131",
+    "decision_id": "CC-DEC-118",
+    "file": "data/project/arkansas_empirical_depth_wave.json",
+    "longitudinal_file": "data/project/arkansas_county_longitudinal_observation_layer.json",
+    "cip_file": "data/project/arkansas_cip_institution_year_completer_bind.json",
+    "explorer_file": "data/project/arkansas_county_living_systems_explorer.json",
+    "rule": "Observation first. Preserve prior provenance when adding ACS. Educational capacity ≠ employment demand. Internal explorer ≠ public score. No site lock. 43% honesty hold."
   },
   "evidence_hierarchy": {
     "update_id": "UPD-066",

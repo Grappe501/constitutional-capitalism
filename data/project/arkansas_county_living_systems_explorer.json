@@ -1,0 +1,4526 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-LIVING-SYSTEMS-EXPLORER-1.0",
+  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-DEPTH-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-118",
+  "update_id": "UPD-131",
+  "status": "INTERNAL_RESEARCH_SURFACE_V1",
+  "not": [
+    "public_scoreboard",
+    "community_health_index",
+    "causal_model",
+    "locked_pilot_ranking"
+  ],
+  "method_wall": [
+    "observation_first",
+    "interpretation_second",
+    "causation_only_after_modeling"
+  ],
+  "research_questions": [
+    "What changed before civic participation changed?",
+    "What changed before economic conditions changed?",
+    "Which communities became more resilient despite similar economic pressures?",
+    "Which interventions or institutional changes appear alongside positive movement?",
+    "Where do apparently successful theories fail? (counterexamples)"
+  ],
+  "compare_metrics": [
+    "population_total",
+    "acs5_population_total",
+    "poverty_rate_all_ages",
+    "acs5_poverty_rate_all_ages",
+    "median_household_income",
+    "acs5_median_household_income",
+    "farm_operations",
+    "ag_product_sales_usd",
+    "presidential_total_votes",
+    "presidential_turnout_of_cvap_percent",
+    "gubernatorial_total_votes",
+    "us_house_total_votes",
+    "state_house_total_votes",
+    "state_senate_total_votes",
+    "cvap_total",
+    "acs5_unemployment_rate"
+  ],
+  "counties": [
+    {
+      "fips": "05001",
+      "county": "Arkansas County",
+      "role": "commodity/export ag pair",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 550.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 432816.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 143671000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 142797000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 874000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 502.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 389894.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 95798000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 94945000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 854000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 539.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 405103.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 180051000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 179522000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 529000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 492.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 402159.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 298173000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 297151000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 1022000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 18.1,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 3237,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 39726,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 6167,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.62023674396,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.314415437003,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 378.18,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 48.4,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 488.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 414354.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 214280000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 213439000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 841000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 17.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 3120,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 43887,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 4920,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 4962,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 626,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 17107,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 17.2,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2940,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 51186,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 6292,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.684043229497775,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.28893833439287986,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 367.8,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 6068,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 5402,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 5113,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 4739,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 49.4,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 16687,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 17.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2923,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 50928,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 16498,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 18.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 3049,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 52145,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 421.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 407865.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 328702000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 328084000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 618000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 58695,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 2816,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 16.8,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 7809,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 511,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 6.5,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 17024,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 4459,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 4425,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 4489,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 4273,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 4445,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 16307,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 16.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2697,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 50198,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 60831,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 2425,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 14.7,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 7987,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 543,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 6.8,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 16773,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 12740,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 12885,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 5547,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.7122769064359114,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.2709572742022715,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 340.16,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 43.5,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05073",
+      "county": "Lafayette County",
+      "role": "Lewisville surrounding; extreme rural contrast",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 276.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 96865.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 73577000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 9501000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 64076000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 284.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 103948.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 77609000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 6704000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 70905000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 313.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 97628.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 91263000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 16175000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 75089000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 263.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 115257.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 127886000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 31628000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 96258000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 27.4,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1838,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 32288,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 2835,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.617283950617,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.362610229277,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 465.14,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 56.1,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 287.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 133235.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 119223000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 18610000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 100613000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 22.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1498,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 35527,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 2118,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 2131,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 1442,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 6293,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 19.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1289,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 40007,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 2679,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.6558417319895483,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.3131765584173199,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 425.71,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 2544,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 2629,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 2196,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 2518,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 53.0,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 6159,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 23.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1448,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 38777,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 6129,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 23.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1429,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 42437,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 192.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 120374.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 152423000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 30255000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 122168000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 40262,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 1328,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 21.6,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 2557,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 223,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 8.7,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 6277,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 1956,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 1951,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 1982,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 1579,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 1931,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 6095,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 22.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1372,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 43824,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 37237,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 1658,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 27.2,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 2324,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 205,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 8.8,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 6211,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 5055,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 5065,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 2325,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.6834408602150538,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.3002150537634409,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 381.46,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 46.0,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05093",
+      "county": "Mississippi County",
+      "role": "Delta ag/industry",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 496.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 503134.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 171483000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 170539000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 944000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 388.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 468501.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 135529000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 135273000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 256000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 369.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 461328.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 195596000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 194984000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 612000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 347.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 475699.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 314647000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 314464000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 183000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 24.6,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 10307,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 35846,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 12995,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.537745286649,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.432550981147,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 336.11,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 45.1,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 284.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 476502.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 300927000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 300843000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 84000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 25.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 10325,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 36718,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 10375,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 10455,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 10519,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 40538,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 21.0,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 8235,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 47892,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 12342,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.5911521633446767,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.3693080538000324,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 304.46,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 11690,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 10189,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 10239,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 11783,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 42.8,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 39534,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 23.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 9276,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 41007,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 38863,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 21.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 8269,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 45168,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 268.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 515954.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 462652000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 460044000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 2608000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 50012,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 8599,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 21.9,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 18813,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 1848,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 9.8,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 40361,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 8501,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 8548,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 8693,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 6941,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 8334,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 38663,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 24.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 9378,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 49484,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 53428,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 8150,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 21.0,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 18690,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 1563,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 8.4,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 39749,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 28820,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 29355,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 10717,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.6497154054306242,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.3334888494914622,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 277.19,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 37.2,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05107",
+      "county": "Phillips County",
+      "role": "West Helena / Delta distress context",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 347.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 367054.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 114858000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 114133000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 724000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 301.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 329021.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 83361000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 82715000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 647000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 307.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 437274.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 185088000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 184599000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 489000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 282.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 352363.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 247998000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 247759000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 239000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 32.3,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 6042,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 29073,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 6894,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.354366115463,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.62257035103,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 460.8,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 60.1,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 231.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 363415.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 189709000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 189417000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 292000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 35.4,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 6301,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 29945,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 5379,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 5444,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 5413,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 16440,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 22.1,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 3767,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 35167,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 6242,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.38721563601409803,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.5804229413649471,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 379.68,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 5665,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 4350,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 1185,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 54.4,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 15825,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 35.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 5623,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 32419,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 15350,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 34.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 5263,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 36098,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 240.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 380542.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 306453000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 305505000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 948000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 37458,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 4946,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 30.5,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 6522,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 868,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 13.3,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 16373,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 14961,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 34.2,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 5057,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 37338,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 38874,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 4534,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 28.7,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 6070,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 962,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 15.8,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 15910,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 11475,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 11655,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 4938,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.4248683677602268,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.5577156743620899,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 330.06,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 43.0,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05129",
+      "county": "Searcy County",
+      "role": "extreme rural",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 677.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 196817.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 10499000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 348000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 10151000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 615.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 183472.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 9314000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 378000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 8935000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 617.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 194963.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 12267000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 719000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 11548000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 592.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 168795.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 13038000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1012000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 12026000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 23.1,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1814,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 29747,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 3698,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.7990805841,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.162520281233,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 473.74,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 59.5,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 631.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 195438.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 18024000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1331000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 16693000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 24.3,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1912,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 31659,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 3131,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 3194,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 7840,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 22.3,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1732,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 33814,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 4019,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.8372729534710127,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.14630505100771335,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 512.63,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 3935,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 3597,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 3566,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 64.6,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 7893,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 20.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1633,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 35422,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 7906,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 21.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1703,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 38070,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 562.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 175165.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 33729000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1313000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 32416000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 42063,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 2054,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 26.6,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 3065,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 159,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 5.2,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 7880,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 3111,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 2963,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 3170,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 2610,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 2468,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 7806,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 20.2,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 1560,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 40688,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 41978,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 1896,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 24.5,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 3014,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 159,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 5.3,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 7861,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 6220,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 6245,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 3869,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.8542258981649005,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.1320754716981132,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 495.64,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 62.2,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05141",
+      "county": "Van Buren County",
+      "role": "Clinton / family-livestock specialty",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 633.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 138676.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 21052000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 629000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 20423000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 603.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 131661.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 14964000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1104000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 13860000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 566.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 114270.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 15502000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1276000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 14226000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 587.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 122875.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 19947000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1067000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 18880000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 16.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2737,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 38166,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 7111,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.756855575868,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.217550274223,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 440.53,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 55.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 611.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 127623.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 16347000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1074000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 15273000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 16.4,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2685,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 40486,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 6282,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 6296,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 15799,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 16.4,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2674,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 42345,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 7807,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.7728961188676828,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.20404764954527987,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 494.15,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 7654,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 7750,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 4054,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 61.4,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 15777,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 17.1,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2659,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 39629,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 16103,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 19.6,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 3127,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 47150,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 569.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 106364.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 15604000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 1397000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 14208000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 45768,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 2971,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 18.9,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 5692,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 265,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 4.7,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 15900,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 6238,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 6203,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 6273,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 5497,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 5432,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 16142,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 16.5,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 2638,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 50332,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 47266,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 3069,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 19.5,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 5842,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 252,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 4.3,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 15936,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 12715,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 12890,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 7621,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.790316231465687,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.18855793202991733,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 472.12,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 59.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fips": "05145",
+      "county": "White County",
+      "role": "Rose Bud surrounding county context",
+      "timeline": [
+        {
+          "year": "1997",
+          "metrics": {
+            "farm_operations": {
+              "value": 1862.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 411784.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 64498000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 31448000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 33050000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2002",
+          "metrics": {
+            "farm_operations": {
+              "value": 1823.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 394424.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 50034000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 21403000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 28631000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2007",
+          "metrics": {
+            "farm_operations": {
+              "value": 2199.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 411404.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 119240000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 34241000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 84999000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2012",
+          "metrics": {
+            "farm_operations": {
+              "value": 1836.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 355669.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 100373000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 39106000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 61267000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2016",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 15.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 11843,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 44329,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 27451,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.766383738297,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.18786200867,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 349.91,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 47.1,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2017",
+          "metrics": {
+            "farm_operations": {
+              "value": 1613.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 344368.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 124715000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 34182000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 90533000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            }
+          }
+        },
+        {
+          "year": "2018",
+          "metrics": {
+            "poverty_rate_all_ages": {
+              "value": 16.6,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 12505,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 44811,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "us_house_total_votes": {
+              "value": 22014,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 21993,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 10307,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2020",
+          "metrics": {
+            "population_total": {
+              "value": 76860,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 14.8,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 11176,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 43765,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "presidential_total_votes": {
+              "value": 30885,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.7829690788408613,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.19355674275538287,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 401.83,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP 2020); crude intensity proxy — NOT official turnout"
+            },
+            "us_senate_total_votes": {
+              "value": 30759,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 30816,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 5489,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 53.0,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        },
+        {
+          "year": "2021",
+          "metrics": {
+            "population_total": {
+              "value": 77109,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 16.3,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 12106,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 51660,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            }
+          }
+        },
+        {
+          "year": "2022",
+          "metrics": {
+            "population_total": {
+              "value": 77616,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 15.9,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 11907,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 56866,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "farm_operations": {
+              "value": 1552.0,
+              "unit": "operations",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture farm operations count"
+            },
+            "acres_operated": {
+              "value": 376803.0,
+              "unit": "acres",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture acres_operated"
+            },
+            "ag_product_sales_usd": {
+              "value": 236301000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture ag_product_sales_usd"
+            },
+            "crop_sales_usd": {
+              "value": 62649000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture crop_sales_usd"
+            },
+            "animal_product_sales_usd": {
+              "value": 173652000.0,
+              "unit": "usd",
+              "source_id": "USDA-NASS-COA",
+              "definition": "USDA NASS Census of Agriculture animal_product_sales_usd"
+            },
+            "acs5_median_household_income": {
+              "value": 51144,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 11867,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 16.1,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 34031,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 1770,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 5.2,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 77118,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "us_senate_total_votes": {
+              "value": 23052,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_senate_total_votes (OpenElections AR)"
+            },
+            "us_house_total_votes": {
+              "value": 22964,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for us_house_total_votes (OpenElections AR)"
+            },
+            "gubernatorial_total_votes": {
+              "value": 23125,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for gubernatorial_total_votes (OpenElections AR)"
+            },
+            "state_senate_total_votes": {
+              "value": 22957,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_senate_total_votes (OpenElections AR)"
+            },
+            "state_house_total_votes": {
+              "value": 22650,
+              "unit": "votes",
+              "source_id": "OPENELECTIONS-AR",
+              "definition": "County sum of precinct votes for state_house_total_votes (OpenElections AR)"
+            }
+          }
+        },
+        {
+          "year": "2023",
+          "metrics": {
+            "population_total": {
+              "value": 78452,
+              "unit": "persons",
+              "source_id": "CENSUS-PEP-CO-EST2023",
+              "definition": "Census Bureau Vintage 2023 county population estimate (July 1)"
+            },
+            "poverty_rate_all_ages": {
+              "value": 15.7,
+              "unit": "percent",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based poverty percent, all ages"
+            },
+            "poverty_count_all_ages": {
+              "value": 11899,
+              "unit": "persons",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE poverty estimate, all ages"
+            },
+            "median_household_income": {
+              "value": 56178,
+              "unit": "usd",
+              "source_id": "CENSUS-SAIPE",
+              "definition": "SAIPE model-based median household income"
+            },
+            "acs5_median_household_income": {
+              "value": 53435,
+              "unit": "usd",
+              "source_id": "CENSUS-ACS5-SF-B19013",
+              "definition": "ACS 5-year median household income (B19013)"
+            },
+            "acs5_poverty_count_all_ages": {
+              "value": 12190,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year persons below poverty (B17001)"
+            },
+            "acs5_poverty_rate_all_ages": {
+              "value": 16.4,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B17001",
+              "definition": "ACS 5-year poverty rate = below poverty / poverty universe (B17001)"
+            },
+            "acs5_civilian_labor_force": {
+              "value": 34263,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year civilian labor force (B23025)"
+            },
+            "acs5_unemployed": {
+              "value": 1748,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployed (B23025)"
+            },
+            "acs5_unemployment_rate": {
+              "value": 5.1,
+              "unit": "percent",
+              "source_id": "CENSUS-ACS5-SF-B23025",
+              "definition": "ACS 5-year unemployment rate = unemployed / civilian labor force"
+            },
+            "acs5_population_total": {
+              "value": 77395,
+              "unit": "persons",
+              "source_id": "CENSUS-ACS5-SF-B01003",
+              "definition": "ACS 5-year total population (B01003)"
+            },
+            "cvap_total": {
+              "value": 58295,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Citizen voting-age population (CVAP), ACS special tabulation Total"
+            },
+            "vap_adult_estimate": {
+              "value": 59335,
+              "unit": "persons",
+              "source_id": "CENSUS-CVAP-2019-2023",
+              "definition": "Adult (18+) estimate from CVAP County.csv adu_est"
+            }
+          }
+        },
+        {
+          "year": "2024",
+          "metrics": {
+            "presidential_total_votes": {
+              "value": 30837,
+              "unit": "votes",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "County presidential total votes (secondary compilation) — not turnout rate"
+            },
+            "presidential_share_gop": {
+              "value": 0.7949541135648733,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "GOP share of presidential total votes"
+            },
+            "presidential_share_dem": {
+              "value": 0.1829295975613711,
+              "unit": "share",
+              "source_id": "TONMCG-US-COUNTY-PRES-08-24",
+              "definition": "Democratic share of presidential total votes"
+            },
+            "presidential_votes_per_1000_population": {
+              "value": 393.07,
+              "unit": "votes_per_1000_persons",
+              "source_id": "DERIVED-PRES-PEP",
+              "definition": "Presidential total votes per 1,000 population (PEP nearest); crude intensity proxy — NOT official turnout"
+            },
+            "presidential_turnout_of_cvap_percent": {
+              "value": 52.9,
+              "unit": "percent",
+              "source_id": "DERIVED-PRES-CVAP",
+              "definition": "Presidential total votes / CVAP Total (2019–2023 vintage) × 100"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "education_workforce_bridge": {
+    "status": "PASSED_PARTIAL_IPEDS_COMPLETIONS_NOT_ENROLLMENT",
+    "completions_by_workforce_category": {
+      "agriculture_food": {
+        "2021": 895,
+        "2022": 797,
+        "2023": 782
+      },
+      "business_management": {
+        "2021": 6399,
+        "2022": 6397,
+        "2023": 6600
+      },
+      "computer_ai_tech": {
+        "2021": 1468,
+        "2022": 1638,
+        "2023": 2166
+      },
+      "education_human_services": {
+        "2021": 6386,
+        "2022": 6465,
+        "2023": 6329
+      },
+      "engineering_advanced_mfg": {
+        "2021": 2494,
+        "2022": 2365,
+        "2023": 2297
+      },
+      "healthcare": {
+        "2021": 11914,
+        "2022": 12437,
+        "2023": 11669
+      },
+      "other": {
+        "2021": 826,
+        "2022": 758,
+        "2023": 629
+      },
+      "public_law": {
+        "2021": 1863,
+        "2022": 1663,
+        "2023": 1452
+      },
+      "trades_transport_logistics": {
+        "2021": 3466,
+        "2022": 3931,
+        "2023": 4274
+      }
+    },
+    "keystone_capacity_signals": [
+      {
+        "cip": "51.1201",
+        "label": "medicine_md",
+        "ipeds_completions_by_year": {
+          "2021": 177,
+          "2022": 157,
+          "2023": 155
+        },
+        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "status": "BOUND_CAPACITY_SIGNAL"
+      },
+      {
+        "cip": "51.0401",
+        "label": "dentistry_dds",
+        "ipeds_completions_by_year": {},
+        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "status": "NEE_OR_ZERO_COMPLETIONS"
+      },
+      {
+        "cip": "01.8001",
+        "label": "veterinary_dvm",
+        "ipeds_completions_by_year": {},
+        "interpretation": "Educational capacity signal from completions — not employment demand proof",
+        "status": "NEE_OR_ZERO_COMPLETIONS"
+      }
+    ],
+    "distinction": {
+      "educational_capacity": "Programs available + completers produced (IPEDS Completions + ADHE catalog)",
+      "employment_demand": "NEE — requires ADWS / BLS projections / employer signals; not inferred from CIP counts alone"
+    }
+  },
+  "candidates_not_locked": [
+    "AR-GEO-ROSE-BUD",
+    "AR-GEO-LEWISVILLE"
+  ],
+  "source_layer": "data/project/arkansas_county_longitudinal_observation_layer.json"
+}

@@ -40,13 +40,13 @@
       "id": "population",
       "status": "BOUND_PEP_DESIGNATED_COUNTIES",
       "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
-      "notes": "Census PEP 2020–2023 bound for designated counties; ACS5 detail still blocked (invalid API key)"
+      "notes": "PEP 2020–2023 + parallel ACS5 B01003 (2022–2023) bound; both preserved"
     },
     {
       "id": "poverty_economic_conditions",
-      "status": "BOUND_SAIPE_DESIGNATED_COUNTIES",
+      "status": "BOUND_SAIPE_AND_ACS5_DESIGNATED_COUNTIES",
       "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
-      "notes": "SAIPE poverty rate + median HH income bound; ACS MOE detail still NEE"
+      "notes": "SAIPE + ACS5 poverty/income in parallel; definitions differ — do not silently replace"
     },
     {
       "id": "school_capacity",
@@ -73,14 +73,15 @@
     },
     {
       "id": "workforce_conditions",
-      "status": "NEE_COUNTY",
-      "notes": "BLS/LAUS county unemployment and industry mix"
+      "status": "PARTIAL_ACS5_UNEMPLOYMENT",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "ACS5 unemployment bound for 2022–2023; BLS LAUS and industry mix still NEE"
     },
     {
       "id": "civic_participation",
-      "status": "PARTIAL_PRESIDENTIAL_VOTES_BOUND",
-      "source": "data/project/arkansas_county_turnout_source_inventory.json",
-      "notes": "Presidential total votes 2016/2020/2024 bound for designated counties — NOT official turnout rate (VAP/registered still NEE); midterm/local still NEE"
+      "status": "PARTIAL_PRES_MIDTERM_CVAP",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "Presidential + gubernatorial/US House/state legislative votes bound where OpenElections present; CVAP + derived turnout-of-CVAP; registered-voter turnout still NEE"
     },
     {
       "id": "transportation",

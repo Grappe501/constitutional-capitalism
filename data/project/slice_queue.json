@@ -1551,16 +1551,43 @@
       "data/imports/arkansas-empirical-grounding/"
     ],
     "research_next": [
-      "CC-ARKANSAS-ACS-VAP-COUNTY-JOIN-1.0",
-      "CC-ARKANSAS-CIP-COMPLETER-WORKFORCE-CROSSWALK-1.0",
-      "CC-ARKANSAS-PILOT-READINESS-FIELD-PASS-1.0"
+      "CC-ARKANSAS-EMPIRICAL-DEPTH-WAVE-1.0"
     ],
     "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "holds": [
       "overall_percent_held_at_43",
       "no_locked_site",
       "correlation_first_no_causal_model",
-      "votes_not_turnout_rate_without_denominator"
+      "votes_not_turnout_rate_without_denominator",
+      "dial_hold_is_honesty_not_failure"
+    ]
+  },
+  "arkansas_empirical_depth_wave": {
+    "slice_id": "CC-ARKANSAS-EMPIRICAL-DEPTH-WAVE-1.0",
+    "status": "PASSED_PARTIAL_DEPTH",
+    "decision_id": "CC-DEC-118",
+    "update_id": "UPD-131",
+    "program_file": "data/project/arkansas_empirical_depth_wave.json",
+    "return": "reports/CC_ARKANSAS_EMPIRICAL_DEPTH_WAVE_1_0_RETURN.md",
+    "artifacts": [
+      "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "data/project/arkansas_cip_institution_year_completer_bind.json",
+      "data/project/arkansas_county_living_systems_explorer.json",
+      "apps/build-board/src/pages/county-living-systems.astro"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-REGISTERED-VOTER-SERIES-1.0",
+      "CC-ARKANSAS-ADWS-DEMAND-CIP-JOIN-1.0",
+      "CC-ARKANSAS-COUNTY-HPSA-FDIC-JOIN-1.0",
+      "CC-ARKANSAS-PILOT-READINESS-FIELD-PASS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "no_locked_site",
+      "no_public_score",
+      "capacity_neq_demand",
+      "preserve_prior_provenance"
     ]
   },
   "baseline_definition_locks_next_fills": {
