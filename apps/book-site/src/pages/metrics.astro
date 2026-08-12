@@ -1,10 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { baselineMetrics, baselineStatus } from "../lib/data";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const metrics = baselineMetrics.metrics || [];
 const sourced = metrics.filter((m: any) => m.status === "sourced" || m.current_value != null);
 const pending = metrics.filter((m: any) => m.current_value == null);
+const fiscalPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-FISCAL-REVENUE-SYSTEM-1"
+);
 ---
 
 <BaseLayout
@@ -21,6 +26,7 @@ const pending = metrics.filter((m: any) => m.current_value == null);
       Status: {baselineStatus.status}. Sourced {baselineStatus.sourced_metrics} of{" "}
       {baselineStatus.total_metrics} metrics. Pending: {baselineStatus.pending_metrics}.
     </p>
+    {fiscalPanel ? <EvidencePanel panel={fiscalPanel} /> : null}
 
     <h2>Sourced metrics</h2>
     {

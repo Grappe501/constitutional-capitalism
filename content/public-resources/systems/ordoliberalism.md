@@ -57,6 +57,17 @@ Distinct from Anglo-American neoliberal caricatures; related but not identical t
 
 **Exemplars / references (non-statistical):** Freiburg School texts; German competition-law tradition influences.
 
+### Evidence system — market dynamics beside competition-order claims
+
+**Reader question:** When ordoliberal pages talk about competitive order, what U.S. entry/enforcement dials are measured?
+
+| Dial | Value | Trace |
+|---|---:|---|
+| New establishment entrants | **790,295** (2023) | `CC-IND-C02` |
+| DOJ ATR criminal cases | **20** (FY2024) | `CC-IND-C03` |
+
+**Qualification:** These are U.S. measurement dials, not a German competition-order scorecard, and not proof that CC or ordoliberal mechanisms would raise entry. Panel: `CC-EP-MARKET-DYNAMICS-SYSTEM-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

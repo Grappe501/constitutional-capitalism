@@ -4,7 +4,7 @@
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
 **Last updated:** 2026-08-11  
 **Phase:** 2.1 — Three-layer proof retrofit  
-**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-2.0` · panel `CC-EP-WEALTH-BASELINE-1`
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0` · panels `CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1`, `CC-EP-WEALTH-BASELINE-1`
 
 ## Central question
 

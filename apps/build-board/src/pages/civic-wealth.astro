@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import cw from "../../../../data/project/civic_wealth_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 16 }, (_, i) => `CC-DEV-${193 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -10,6 +12,9 @@ const items = (developingDoctrine.items || []).filter((d: any) =>
 const testQs = cw.civic_wealth_test?.questions || [];
 const pathway = cw.veteran_prosperity_pathway?.steps || [];
 const never = cw.guardrails?.must_never_become || [];
+const ownershipPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1"
+);
 ---
 
 <BoardLayout title="Civic Wealth" path="/civic-wealth/">
@@ -18,6 +23,8 @@ const never = cw.guardrails?.must_never_become || [];
     Framework: <code>data/project/civic_wealth_framework.json</code> v{cw.version}. Principle:{" "}
     <code>{cw.principle_id}</code>. Decision: <code>CC-DEC-085</code>. Signature investment framing.
   </p>
+
+  {ownershipPanel ? <EvidencePanel panel={ownershipPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

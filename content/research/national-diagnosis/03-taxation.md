@@ -2,8 +2,9 @@
 
 **Domain status:** priority_first_pass  
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
-**Last updated:** 2026-08-07  
-**Phase:** 2.1 — Three-layer proof retrofit
+**Last updated:** 2026-08-11  
+**Phase:** 2.1 — Three-layer proof retrofit  
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0` · panel `CC-EP-FISCAL-REVENUE-SYSTEM-1`
 
 ## Central question
 
@@ -12,6 +13,19 @@ How do federal taxes and transfers currently distribute income, and what remains
 ## Why it matters
 
 Tax design is a core lever in any economic constitution; diagnosis must separate distributional facts from normative redesign.
+
+### Evidence system — federal fiscal dials (not a no-PIT/no-property-tax proof)
+
+**Reader question:** What federal revenue/spending/debt dials exist, and what do they not prove about prosperity-tax redesign?
+
+| Dial | Value | Trace |
+|---|---:|---|
+| Federal receipts % GDP | **17.1%** (FY2024) | `CC-IND-G01` |
+| Federal outlays % GDP | **23.4%** (FY2024) | `CC-IND-G02` |
+| Debt held by the public % GDP | **~99%** (2024) | `CC-IND-G03` |
+| CBO Q5/Q1 after transfers/taxes | **~7×** (from ~19× pre-tax, 2021) | `CC-SRC-013` |
+
+**Qualification:** Federal identities ≠ state/local capacity. These dials do **not** validate a no-personal-income-tax / no-property-tax model. Panel: `CC-EP-FISCAL-REVENUE-SYSTEM-1`.
 
 ## Current findings (sourced inventory)
 

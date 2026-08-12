@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import a from "../../../../data/project/prosperous_aging_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${249 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -11,6 +13,9 @@ const testQs = a.prosperous_aging_test?.questions || [];
 const baselines = a.sourced_context_baselines?.items || [];
 const layers = a.four_retirement_layers?.layers || [];
 const covenant = a.retirement_security_covenant?.rules || [];
+const ownershipPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1"
+);
 ---
 
 <BoardLayout title="Prosperous Aging" path="/prosperous-aging/">
@@ -20,6 +25,7 @@ const covenant = a.retirement_security_covenant?.rules || [];
     <code>{a.principle_id}</code>. Decision: <code>CC-DEC-088</code>. Protect Social Security first;
     build ownership above it.; financing formulas and legal drafting 0%.
   </p>
+  {ownershipPanel ? <EvidencePanel panel={ownershipPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

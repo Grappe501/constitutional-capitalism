@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import f from "../../../../data/project/local_ownership_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${329 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -11,6 +13,12 @@ const testQs = f.local_ownership_test?.questions || [];
 const baselines = f.sourced_context_baselines?.items || [];
 const pillars = f.design_pillars?.pillars || [];
 const categories = f.community_enterprise_classification?.categories || [];
+const ownershipPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1"
+);
+const ruralPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+);
 ---
 
 <BoardLayout title="Local Ownership" path="/local-ownership/">
@@ -20,6 +28,8 @@ const categories = f.community_enterprise_classification?.categories || [];
     Principle: <code>{f.principle_id}</code>. Decision: <code>CC-DEC-092</code>. Rewards
     measured local contribution — not structure alone. Score weights require modeling; legal 0%.
   </p>
+  {ownershipPanel ? <EvidencePanel panel={ownershipPanel} /> : null}
+  {ruralPanel ? <EvidencePanel panel={ruralPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

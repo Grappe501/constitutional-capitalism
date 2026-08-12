@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import h from "../../../../data/project/health_human_capacity_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${229 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -10,6 +12,9 @@ const items = (developingDoctrine.items || []).filter((d: any) =>
 const testQs = h.health_system_test?.questions || [];
 const baselines = h.problem_diagnosis?.sourced_baselines || [];
 const layers = h.five_financial_layers?.layers || [];
+const healthPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-PRIMARY-CARE-ACCESS-1"
+);
 ---
 
 <BoardLayout title="Health, Human Capacity, and Community Care" path="/health/">
@@ -19,6 +24,7 @@ const layers = h.five_financial_layers?.layers || [];
     Principle: <code>{h.principle_id}</code>. Decision: <code>CC-DEC-087</code>. Major dedicated
     healthcare doctrine.; financing formulas and legal drafting 0%.
   </p>
+  {healthPanel ? <EvidencePanel panel={healthPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

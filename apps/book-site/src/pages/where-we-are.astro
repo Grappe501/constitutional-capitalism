@@ -7,8 +7,8 @@ import panels from "../../../../data/project/publication_evidence_panels.json";
 const priorityDomains = [
   { id: "wealth", title: "Wealth and ownership", claim: "CC-CLAIM-011", note: "Fed SCF/DFA: high concentration; mean far above median. See Evidence Panel below." },
   { id: "wages", title: "Wages and productivity", claim: "CC-CLAIM-002", note: "Recent dials: real AHE +1.1% (L01), productivity +2.3% (L02); longer BLS/EPI gap debate remains open." },
-  { id: "taxation", title: "Taxation", claim: "CC-CLAIM-013", note: "CBO 2021: transfers and federal taxes compress inequality without erasing it." },
-  { id: "concentration", title: "Corporate power / concentration", claim: "CC-CLAIM-005", note: "DOJ ATR criminal cases filed: 20 (FY2024, C03). Census CR ratios remain industry-specific — not a national %." },
+  { id: "taxation", title: "Taxation", claim: "CC-CLAIM-013", note: "Fiscal system: receipts 17.1% / outlays 23.4% / debt ~99% GDP; CBO 2021 compresses Q5/Q1 ~19×→~7×. No-PIT/no-property-tax redesign not validated by these dials." },
+  { id: "concentration", title: "Corporate power / concentration", claim: "CC-CLAIM-005", note: "Market-dynamics system: ~790k new establishments (C02) + 20 criminal cases (C03). Not a competitiveness score; no national CR%." },
   { id: "ownership", title: "Worker ownership", claim: "CC-CLAIM-004", note: "Research finds modest average gains with heterogeneity — not universal improvement." },
   { id: "rural", title: "Local and rural economies", claim: "CC-CLAIM-019", note: "ERS/FDIC: widespread county stress indicators alongside uneven recent gains." },
   { id: "commerce", title: "Internet commerce", claim: "CC-CLAIM-016", note: "Architecture ready; national leakage magnitudes not yet sourced." },
@@ -30,6 +30,11 @@ const wagesPanel = (panels.panels || []).find((p: { panel_id: string }) => p.pan
 const competitionPanel = (panels.panels || []).find(
   (p: { panel_id: string }) => p.panel_id === "CC-EP-COMPETITION-ENFORCEMENT-1"
 );
+const fiscalPanel = (panels.panels || []).find((p: { panel_id: string }) => p.panel_id === "CC-EP-FISCAL-REVENUE-SYSTEM-1");
+const ownershipPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1"
+);
+const marketPanel = (panels.panels || []).find((p: { panel_id: string }) => p.panel_id === "CC-EP-MARKET-DYNAMICS-SYSTEM-1");
 ---
 
 <BaseLayout
@@ -50,8 +55,11 @@ const competitionPanel = (panels.panels || []).find(
     </p>
 
     {trustPanel ? <EvidencePanel panel={trustPanel} /> : null}
+    {ownershipPanel ? <EvidencePanel panel={ownershipPanel} /> : null}
     {wealthPanel ? <EvidencePanel panel={wealthPanel} /> : null}
+    {fiscalPanel ? <EvidencePanel panel={fiscalPanel} /> : null}
     {wagesPanel ? <EvidencePanel panel={wagesPanel} /> : null}
+    {marketPanel ? <EvidencePanel panel={marketPanel} /> : null}
     {competitionPanel ? <EvidencePanel panel={competitionPanel} /> : null}
 
     <h2>Priority domains</h2>

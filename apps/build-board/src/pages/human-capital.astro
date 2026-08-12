@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine, claims, baselineStatus } from "../lib/data";
 import hc from "../../../../data/project/human_capital_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = ["CC-DEV-038", "CC-DEV-039", "CC-DEV-040", "CC-DEV-041"];
 const claimIds = ["CC-CLAIM-042", "CC-CLAIM-043", "CC-CLAIM-044", "CC-CLAIM-045"];
@@ -10,6 +12,9 @@ const hcDoctrine = (developingDoctrine.items || []).filter((d: any) =>
 );
 const hcClaims = (claims.claims || []).filter((c: any) => claimIds.includes(c.claim_id));
 const testQs = hc.human_capital_test?.questions || [];
+const hcPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-HUMAN-CAPITAL-PATHWAYS-1"
+);
 ---
 
 <BoardLayout title="Human Capital" path="/human-capital/">
@@ -18,6 +23,7 @@ const testQs = hc.human_capital_test?.questions || [];
     Research title: {hc.research_domain_title}. Framework:
     <code>data/project/human_capital_framework.json</code> v{hc.version}.
   </p>
+  {hcPanel ? <EvidencePanel panel={hcPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

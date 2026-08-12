@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import h from "../../../../data/project/health_human_capacity_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const healthPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-PRIMARY-CARE-ACCESS-1"
+);
 const layers = h.five_financial_layers?.layers || [];
 const equityFactors = h.rural_health_equity_formula?.weighted_factors || [];
 const network = h.community_health_network?.stack || [];
@@ -31,6 +36,7 @@ const branches = h.website_branches || [];
     <h1>{h.domain_title}</h1>
 
     <h2>Governing principle</h2>
+    {healthPanel ? <EvidencePanel panel={healthPanel} /> : null}
     <blockquote>
       <p>{h.governing_principle.text}</p>
     </blockquote>

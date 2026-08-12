@@ -1,7 +1,7 @@
 ---
 /**
  * CC-DEC-104 Evidence Panel — progressive disclosure interim component.
- * Numbers must come from publication_evidence_panels.json (traceable assets).
+ * Prefer evidence_system (definition + comparison + series note) over isolated headlines.
  */
 type CriticalNumber = {
   label: string;
@@ -13,12 +13,27 @@ type CriticalNumber = {
   note?: string;
 };
 
+type ComparisonRow = {
+  label: string;
+  value: string;
+  note?: string;
+};
+
+type EvidenceSystem = {
+  definition?: string;
+  comparison?: ComparisonRow[];
+  series_note?: string;
+  series_status?: string;
+  qualification?: string;
+};
+
 type Panel = {
   panel_id: string;
   title: string;
   reader_question: string;
   evidence_strength: string;
   strength_note?: string;
+  evidence_system?: EvidenceSystem;
   what_the_data_show: {
     key_finding: string;
     critical_numbers: CriticalNumber[];
@@ -45,6 +60,7 @@ interface Props {
 
 const { panel } = Astro.props;
 const nums = panel.what_the_data_show.critical_numbers || [];
+const sys = panel.evidence_system;
 ---
 
 <section class="evidence-panel" aria-labelledby={`${panel.panel_id}-title`}>
@@ -56,6 +72,48 @@ const nums = panel.what_the_data_show.critical_numbers || [];
       {panel.reader_question}
     </p>
   </header>
+
+  {
+    sys ? (
+      <div class="evidence-panel__system">
+        <h3>Evidence system</h3>
+        {sys.definition ? (
+          <p>
+            <span class="evidence-panel__sys-label">Definition</span>
+            {sys.definition}
+          </p>
+        ) : null}
+        {sys.comparison?.length ? (
+          <>
+            <p class="evidence-panel__sys-label">Comparison</p>
+            <ul class="evidence-panel__comparison">
+              {sys.comparison.map((row) => (
+                <li>
+                  <strong>{row.value}</strong> — {row.label}
+                  {row.note ? <span class="evidence-panel__note"> {row.note}</span> : null}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+        {sys.series_note ? (
+          <p>
+            <span class="evidence-panel__sys-label">Series</span>
+            {sys.series_note}
+            {sys.series_status ? (
+              <span class="evidence-panel__note"> [{sys.series_status}]</span>
+            ) : null}
+          </p>
+        ) : null}
+        {sys.qualification ? (
+          <p>
+            <span class="evidence-panel__sys-label">Qualification</span>
+            {sys.qualification}
+          </p>
+        ) : null}
+      </div>
+    ) : null
+  }
 
   <div class="evidence-panel__finding">
     <h3>What the data show</h3>

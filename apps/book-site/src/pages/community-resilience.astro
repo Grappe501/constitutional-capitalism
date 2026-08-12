@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import f from "../../../../data/project/community_resilience_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const ruralPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+);
 const components = f.integrated_system?.components || [];
 const prevention = f.prosperity_through_lower_risk?.examples || [];
 const dividendMetrics = f.community_safety_dividend?.metrics_examples || [];
@@ -33,6 +38,7 @@ const branches = f.website_branches || [];
     <blockquote>
       <p>{f.principle.text}</p>
     </blockquote>
+    {ruralPanel ? <EvidencePanel panel={ruralPanel} /> : null}
 
     <h2>Compact</h2>
     <blockquote>

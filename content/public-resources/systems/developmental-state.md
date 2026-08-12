@@ -57,6 +57,15 @@ Chalmers Johnson and successors debate scope conditions. Not a blank check for a
 
 **Exemplars / references (non-statistical):** Japan MITI debates; South Korea and Taiwan high-growth literatures.
 
+### Evidence system — human-capital pathway dials (not industrial-policy success proof)
+
+| Dial | Value | Trace |
+|---|---:|---|
+| Active registered apprentices | **679,960** (FY2024) | `CC-IND-L05` |
+| Youth apprentices total served | **353,177** (FY2023) | `CC-IND-HC02` |
+
+**Qualification:** Pathway scale is measurable; developmental-state performance claims remain historical/comparative and are not established by these U.S. dials. Panel: `CC-EP-HUMAN-CAPITAL-PATHWAYS-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import a from "../../../../data/project/prosperous_aging_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const ownershipPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1"
+);
 const layers = a.four_retirement_layers?.layers || [];
 const eras = a.thirty_year_transition?.eras || [];
 const covenant = a.retirement_security_covenant?.rules || [];
@@ -32,6 +37,7 @@ const essentials = a.four_retirement_layers?.layers?.find((l: any) => l.id === "
     <blockquote>
       <p>{a.doctrine_statement.text}</p>
     </blockquote>
+    {ownershipPanel ? <EvidencePanel panel={ownershipPanel} /> : null}
 
     <h2>How we talk about it</h2>
     <ul>

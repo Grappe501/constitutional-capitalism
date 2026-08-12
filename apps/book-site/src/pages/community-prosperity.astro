@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import f from "../../../../data/project/community_prosperity_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const ruralPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+);
 const pillars = f.design_pillars?.pillars || [];
 const baselines = f.sourced_context_baselines?.items || [];
 const credits = f.citizenship_creates_equity?.credit_examples || [];
@@ -32,6 +37,7 @@ const toQ = f.political_shift?.to_questions || [];
       <p>{f.core_question.text}</p>
     </blockquote>
     <p>{f.core_principle.text}</p>
+    {ruralPanel ? <EvidencePanel panel={ruralPanel} /> : null}
 
     <h2>Compact</h2>
     <blockquote>

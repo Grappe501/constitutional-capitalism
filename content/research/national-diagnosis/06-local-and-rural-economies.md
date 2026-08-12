@@ -2,8 +2,9 @@
 
 **Domain status:** priority_first_pass  
 **Slice:** `CC-PHASE-2.1-THREE-LAYER-PROOF-RETROFIT-EXECUTION-1.0`  
-**Last updated:** 2026-08-07  
-**Phase:** 2.1 — Three-layer proof retrofit
+**Last updated:** 2026-08-11  
+**Phase:** 2.1 — Three-layer proof retrofit  
+**Evidence upgrade:** `CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0` · panel `CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1`
 
 ## Central question
 
@@ -12,6 +13,17 @@ What structural pressures face nonmetro communities in population, services, and
 ## Why it matters
 
 Constitutional Capitalism claims about broad flourishing fail if rural and local economies are treated as residual.
+
+### Evidence system — rural structure + local capital (national context)
+
+| Dial | Value | Trace |
+|---|---:|---|
+| Census rural population share | **20%** (2020) | `CC-IND-CM02` |
+| Community-bank deposit share | **13.1%** (2024Q4) | `CC-IND-CM04` |
+| Community bank + CU loan share | **24.9%** (2024Q4) | `CC-IND-E01` |
+| SBCS full approval / FSA obligations | **52%** / **$5.39B** | `CC-IND-E02` |
+
+**Label:** statewide/national ≠ local community baseline. Panel: `CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1`.
 
 ## Current findings (sourced inventory)
 

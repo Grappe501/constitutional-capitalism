@@ -57,6 +57,15 @@ Interwoven with ordoliberal ideas yet broader in social-policy practice. Nationa
 
 **Exemplars / references (non-statistical):** Soziale Marktwirtschaft discourse; Postwar Federal Republic economic order debates.
 
+### Evidence system — ownership/retirement participation (not a social-market outcome score)
+
+| Dial | Value | Trace |
+|---|---:|---|
+| Families with retirement accounts | **54.3%** (2022 SCF) | `CC-IND-W05` |
+| Bottom 50% / top 1% wealth shares | **5.3% / 28.8%** | `CC-IND-W02` |
+
+**Qualification:** U.S. ownership dials are not a verdict on Soziale Marktwirtschaft, but they are the empirical backdrop for comparing social-protection + market-order claims. Panel: `CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.

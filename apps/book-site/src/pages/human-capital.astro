@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import hc from "../../../../data/project/human_capital_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const hcPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-HUMAN-CAPITAL-PATHWAYS-1"
+);
 const testQs = hc.human_capital_test?.questions || [];
 const branches = hc.website_branches || [];
 const names = hc.arkansas_academy_model?.name_candidates || [];
@@ -21,6 +26,7 @@ const partners = hc.arkansas_academy_model?.community_partnerships?.advisory_boa
     <h1>{hc.domain_title}</h1>
 
     <p class="lede">{hc.role_in_philosophy}</p>
+    {hcPanel ? <EvidencePanel panel={hcPanel} /> : null}
 
     <h2>First principle</h2>
     <blockquote>

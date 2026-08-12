@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import f from "../../../../data/project/community_resilience_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${309 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -11,6 +13,9 @@ const testQs = f.community_resilience_test?.questions || [];
 const baselines = f.sourced_context_baselines?.items || [];
 const pillars = f.design_pillars?.pillars || [];
 const scorecard = f.community_resilience_scorecard?.indicators || [];
+const ruralPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+);
 ---
 
 <BoardLayout title="Community Resilience" path="/community-resilience/">
@@ -20,6 +25,7 @@ const scorecard = f.community_resilience_scorecard?.indicators || [];
     Principle: <code>{f.principle_id}</code>. Decision: <code>CC-DEC-091</code>. Safety
     Dividend and reserve formulas require modeling; legal 0%.
   </p>
+  {ruralPanel ? <EvidencePanel panel={ruralPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">

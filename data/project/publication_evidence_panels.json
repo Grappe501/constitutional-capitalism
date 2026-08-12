@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
+  "version": "1.3.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
   "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
@@ -739,25 +739,28 @@
       "reader_question": "Have wages and productivity moved together recently, and what do the official dials actually measure?",
       "surfaces": [
         "content/research/national-diagnosis/02-work-wages-and-productivity.md",
-        "apps/book-site/src/pages/where-we-are.astro"
+        "apps/book-site/src/pages/where-we-are.astro",
+        "content/research/national-diagnosis/02-work-wages-and-productivity.md"
       ],
       "claim_ids": [
         "CC-CLAIM-002"
       ],
       "metric_ids": [
         "CC-IND-L01",
-        "CC-IND-L02"
+        "CC-IND-L02",
+        "CC-IND-L04"
       ],
       "source_ids": [
         "CC-SRC-219",
         "CC-SRC-220",
+        "CC-SRC-248",
         "CC-SRC-003",
         "CC-SRC-004"
       ],
       "evidence_strength": "Strong",
       "strength_note": "Strong for recent official dials (L01/L02). Historical productivity–compensation gap remains a separate BLS/EPI evidence track; EPI secondary must not stand alone. Not a causal capture finding.",
       "what_the_data_show": {
-        "key_finding": "Recent official dials show real average hourly earnings up about 1.1% over the year to Dec 2025, while nonfarm-business labor productivity rose about 2.3% in 2024. These are CES/Productivity-and-Costs measures — not proof that typical-worker pay kept pace with productivity over decades.",
+        "key_finding": "A small labor dial system — not a single headline — shows real AHE +1.1% (to Dec 2025), productivity +2.3% (2024), and voluntary quits 2.1% (2024), beside a longer BLS-documented productivity–compensation gap whose magnitude remains contested.",
         "critical_numbers": [
           {
             "label": "Real AHE over-the-year change (CES)",
@@ -766,7 +769,7 @@
             "geography": "US",
             "metric_id": "CC-IND-L01",
             "source_id": "CC-SRC-219",
-            "note": "Mean AHE of private nonfarm jobs, CPI-U deflated — not median worker wages."
+            "note": "Mean AHE of private nonfarm jobs, CPI-U deflated."
           },
           {
             "label": "Nonfarm business productivity (annual)",
@@ -777,13 +780,15 @@
             "source_id": "CC-SRC-220"
           },
           {
-            "label": "Long-run productivity–compensation gap",
-            "value": "documented (BLS); magnitude contested",
-            "source_id": "CC-SRC-003",
-            "note": "EPI secondary cumulative series must remain labeled secondary (CC-SRC-004)."
+            "label": "Voluntary quits rate (JOLTS)",
+            "value": "2.1%",
+            "period": "2024 annual average",
+            "geography": "US",
+            "metric_id": "CC-IND-L04",
+            "source_id": "CC-SRC-248"
           }
         ],
-        "plain_english": "Publish the official recent dials beside the longer gap literature. Do not treat a one-year AHE print as closing the historical shared-gains debate, and do not convert either into a legal or capture verdict."
+        "plain_english": "Readers should see definition, comparison, and series status — not treat 1.1% as the whole labor story."
       },
       "what_supports_this": [
         "CC-IND-L01 / CC-SRC-219",
@@ -808,6 +813,29 @@
         "related_claims": [
           "CC-CLAIM-002"
         ]
+      },
+      "evidence_system": {
+        "definition": "L01 = 12-month % change in real average hourly earnings (CES, CPI-U). L02 = annual % change in nonfarm-business labor productivity (BLS). L04 = JOLTS annual-average voluntary quits rate.",
+        "comparison": [
+          {
+            "label": "Recent wage dial vs productivity dial",
+            "value": "1.1% vs 2.3%",
+            "note": "Different concepts/years — not a causal gap estimate."
+          },
+          {
+            "label": "Voluntary quits rate (mobility proxy)",
+            "value": "2.1% (2024)",
+            "note": "Quits ≠ job-to-job flows; not Census J2J."
+          },
+          {
+            "label": "Long-run productivity–compensation gap",
+            "value": "documented (BLS); magnitude contested",
+            "note": "EPI secondary series must stay labeled secondary."
+          }
+        ],
+        "series_note": "Official historical series exist at BLS for AHE, productivity, and JOLTS. Multi-year point arrays are not yet attached in-repo; Pass 4 publishes the dial system + series status, not a chart warehouse.",
+        "series_status": "official_series_available_not_attached",
+        "qualification": "L01 is mean AHE of jobs, not median/typical-worker pay. One-year dials do not close the post-1970s shared-gains debate."
       }
     },
     {
@@ -875,15 +903,656 @@
           "CC-CLAIM-005"
         ]
       }
+    },
+    {
+      "panel_id": "CC-EP-FISCAL-REVENUE-SYSTEM-1",
+      "title": "Federal fiscal dials (revenue, spending, debt)",
+      "reader_question": "What federal revenue, spending, and debt dials exist today — and what do they not prove about a no-personal-income-tax / no-property-tax redesign?",
+      "surfaces": [
+        "apps/book-site/src/pages/where-we-are.astro",
+        "apps/book-site/src/pages/public-service.astro",
+        "apps/book-site/src/pages/metrics.astro",
+        "apps/build-board/src/pages/public-service.astro",
+        "content/research/national-diagnosis/03-taxation.md",
+        "content/public-resources/systems/mixed-economy.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-013",
+        "CC-CLAIM-008",
+        "CC-CLAIM-017"
+      ],
+      "metric_ids": [
+        "CC-IND-G01",
+        "CC-IND-G02",
+        "CC-IND-G03"
+      ],
+      "source_ids": [
+        "CC-SRC-241",
+        "CC-SRC-226",
+        "CC-SRC-211",
+        "CC-SRC-013"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for federal CBO budget identities. Does not validate or falsify a state/local no-PIT/no-property-tax prosperity model; those modules remain open.",
+      "evidence_system": {
+        "definition": "G01 = federal receipts % GDP (FY). G02 = federal outlays % GDP (FY). G03 = federal debt held by the public % GDP. All federal — not state/local tax capacity.",
+        "comparison": [
+          {
+            "label": "Receipts vs outlays (FY2024)",
+            "value": "17.1% vs 23.4% of GDP",
+            "note": "Gap is a fiscal identity, not a tax-incidence model."
+          },
+          {
+            "label": "Debt held by the public",
+            "value": "~99% of GDP (2024)",
+            "note": "Outlook vintages revise; later vintages may show ~100% for 2025."
+          },
+          {
+            "label": "CBO household distribution (2021)",
+            "value": "pre-tax ~19× → after transfers/taxes ~7× (Q5/Q1)",
+            "note": "Distributional fact for 2021; pandemic-year effects matter. Not a property-tax module."
+          }
+        ],
+        "series_note": "CBO historical budget identities are official series. Multi-year point arrays not yet attached in-repo.",
+        "series_status": "official_series_available_not_attached",
+        "qualification": "These dials do not prove a no-personal-income-tax / no-property-tax redesign is feasible. Destination-based tax and property-tax modules remain research-open. Do not invent state revenue replacement paths."
+      },
+      "what_the_data_show": {
+        "key_finding": "Federal fiscal dials show receipts about 17.1% of GDP, outlays 23.4%, and debt held by the public near 99% of GDP (FY2024/2024). Separately, CBO’s 2021 household distribution shows large pre-tax gaps compressed by transfers and federal taxes without elimination.",
+        "critical_numbers": [
+          {
+            "label": "Federal receipts % GDP",
+            "value": "17.1%",
+            "period": "FY2024",
+            "metric_id": "CC-IND-G01",
+            "source_id": "CC-SRC-241"
+          },
+          {
+            "label": "Federal outlays % GDP",
+            "value": "23.4%",
+            "period": "FY2024",
+            "metric_id": "CC-IND-G02",
+            "source_id": "CC-SRC-241"
+          },
+          {
+            "label": "Debt held by the public % GDP",
+            "value": "99%",
+            "period": "2024",
+            "metric_id": "CC-IND-G03",
+            "source_id": "CC-SRC-226"
+          },
+          {
+            "label": "CBO Q5/Q1 income ratio after transfers/taxes",
+            "value": "~7× (from ~19× pre-tax)",
+            "period": "2021",
+            "source_id": "CC-SRC-013",
+            "note": "Household distribution snapshot — not a tax redesign scorecard."
+          }
+        ],
+        "plain_english": "Publish the federal fiscal system beside any prosperity-tax claim. Compression of inequality by today’s federal taxes/transfers is real; that is not proof that removing personal income or property taxes would preserve public capacity."
+      },
+      "what_supports_this": [
+        "CC-IND-G01/G02/G03",
+        "CBO MBR/outlook",
+        "CBO Distribution of Household Income 2021"
+      ],
+      "what_challenges_it": [
+        "Federal-only identities miss state/local and property-tax structure",
+        "2021 distribution includes pandemic credits and elevated capital gains",
+        "No completed revenue-replacement model for no-PIT/no-property-tax"
+      ],
+      "what_we_dont_know": [
+        "Corporate-tax incidence modules (CC-CLAIM-014)",
+        "Destination-based tax administration evidence (CC-CLAIM-008)",
+        "State/local property-tax modules (CC-CLAIM-017)"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-013",
+          "CC-CLAIM-008",
+          "CC-CLAIM-017"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-OWNERSHIP-RETIREMENT-SYSTEM-1",
+      "title": "Ownership and retirement participation system",
+      "reader_question": "Who owns assets and retirement accounts today — and what does that imply for capital-participation designs?",
+      "surfaces": [
+        "apps/book-site/src/pages/civic-wealth.astro",
+        "apps/book-site/src/pages/prosperous-aging.astro",
+        "apps/book-site/src/pages/local-ownership.astro",
+        "apps/book-site/src/pages/where-we-are.astro",
+        "apps/build-board/src/pages/civic-wealth.astro",
+        "apps/build-board/src/pages/prosperous-aging.astro",
+        "apps/build-board/src/pages/local-ownership.astro",
+        "content/research/national-diagnosis/01-wealth-and-ownership.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-011",
+        "CC-CLAIM-012",
+        "CC-CLAIM-004"
+      ],
+      "metric_ids": [
+        "CC-IND-W01",
+        "CC-IND-W02",
+        "CC-IND-W04",
+        "CC-IND-W05"
+      ],
+      "source_ids": [
+        "CC-SRC-001",
+        "CC-SRC-012",
+        "CC-SRC-218",
+        "CC-SRC-227"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for ownership/participation snapshots. Ownership ≠ adequacy; employee-ownership baseline (L03) still pending.",
+      "evidence_system": {
+        "definition": "W01 SCF median net worth; W02 DFA wealth shares; W04 homeownership rate; W05 share of families with retirement accounts (SCF).",
+        "comparison": [
+          {
+            "label": "Median net worth (SCF 2022)",
+            "value": "$192,900"
+          },
+          {
+            "label": "Bottom 50% / top 1% wealth shares (DFA 2026-Q1)",
+            "value": "5.3% / 28.8%"
+          },
+          {
+            "label": "Homeownership rate",
+            "value": "65.2% (2023)"
+          },
+          {
+            "label": "Families with retirement accounts",
+            "value": "54.3% (2022 SCF)",
+            "note": "Participation ≠ balance adequacy."
+          }
+        ],
+        "series_note": "SCF triennial and DFA quarterly products exist officially. In-repo attachment is snapshot composition + participation rates, not a multi-decade chart pack yet.",
+        "series_status": "snapshot_only",
+        "qualification": "Do not treat retirement-account ownership as proof of secure aging, or wealth concentration as proof of oligarchy. Employee/local ownership magnitudes remain thin (L03 pending)."
+      },
+      "what_the_data_show": {
+        "key_finding": "A small ownership system shows high wealth concentration, majority but incomplete homeownership, and only about 54.3% of families holding retirement accounts — the empirical backdrop for civic-wealth and prosperous-aging designs.",
+        "critical_numbers": [
+          {
+            "label": "Median household net worth",
+            "value": "$192,900",
+            "period": "2022 SCF",
+            "metric_id": "CC-IND-W01",
+            "source_id": "CC-SRC-001"
+          },
+          {
+            "label": "Bottom 50% / top 1% wealth shares",
+            "value": "5.3% / 28.8%",
+            "period": "2026-Q1 DFA",
+            "metric_id": "CC-IND-W02",
+            "source_id": "CC-SRC-012"
+          },
+          {
+            "label": "Homeownership rate",
+            "value": "65.2%",
+            "period": "2023",
+            "metric_id": "CC-IND-W04",
+            "source_id": "CC-SRC-218"
+          },
+          {
+            "label": "Families with retirement accounts",
+            "value": "54.3%",
+            "period": "2022 SCF",
+            "metric_id": "CC-IND-W05",
+            "source_id": "CC-SRC-227"
+          }
+        ],
+        "plain_english": "Capital-participation claims should sit on this system. Participation gaps are real; redesign benefits are not measured here."
+      },
+      "what_supports_this": [
+        "SCF/DFA/CPS ownership baselines",
+        "CC-IND-W01/W02/W04/W05"
+      ],
+      "what_challenges_it": [
+        "SCF levels ≠ DFA shares",
+        "Retirement ownership ≠ adequacy",
+        "2019–2022 SCF narrowing episode"
+      ],
+      "what_we_dont_know": [
+        "Employee-ownership wealth by percentile (L03 pending)",
+        "State/local ownership maps",
+        "Civic Investment Account outcomes (design only)"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-011",
+          "CC-CLAIM-012",
+          "CC-CLAIM-004"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
+      "title": "Rural structure and local capital-access system",
+      "reader_question": "What measurable rural and local-capital structure surrounds community-prosperity claims?",
+      "surfaces": [
+        "apps/book-site/src/pages/community-prosperity.astro",
+        "apps/book-site/src/pages/local-ownership.astro",
+        "apps/book-site/src/pages/community-resilience.astro",
+        "apps/build-board/src/pages/community-prosperity.astro",
+        "apps/build-board/src/pages/local-ownership.astro",
+        "apps/build-board/src/pages/community-resilience.astro",
+        "content/research/national-diagnosis/06-local-and-rural-economies.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-019"
+      ],
+      "metric_ids": [
+        "CC-IND-CM02",
+        "CC-IND-CM04",
+        "CC-IND-E01",
+        "CC-IND-E02"
+      ],
+      "source_ids": [
+        "CC-SRC-222",
+        "CC-SRC-249",
+        "CC-SRC-250",
+        "CC-SRC-258",
+        "CC-SRC-259"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for structural dials. Statewide/national ≠ local community baselines. SBCS is applicant approval among employer firms, not a population access rate.",
+      "evidence_system": {
+        "definition": "CM02 = Census rural population share. CM04 = FDIC community-bank deposit share. E01 = community-bank + credit-union loan share. E02 = SBCS full-approval rate + USDA FSA farm-loan obligations.",
+        "comparison": [
+          {
+            "label": "Rural population share (2020 Census urban/rural)",
+            "value": "20%"
+          },
+          {
+            "label": "Community-bank domestic deposit share",
+            "value": "13.1% (2024Q4)"
+          },
+          {
+            "label": "Community bank + CU loan share",
+            "value": "24.9% (2024Q4)"
+          },
+          {
+            "label": "SBCS full approval / FSA farm-loan obligations",
+            "value": "52% / $5.39B (FY2024)",
+            "note": "Two different instruments — do not collapse into one score."
+          }
+        ],
+        "series_note": "FDIC QBP and Census urban/rural products are official. In-repo points are single-period snapshots; label statewide ≠ local.",
+        "series_status": "snapshot_only",
+        "qualification": "These are national structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account, hospital access (CM03 deferred), or leakage."
+      },
+      "what_the_data_show": {
+        "key_finding": "About one-fifth of the U.S. population is Census-rural; community banks hold about 13.1% of domestic deposits; community banks plus credit unions hold about 24.9% of depository loans; SBCS full approval was 52% among employer-firm applicants while FSA farm-loan obligations were about $5.39B in FY2024.",
+        "critical_numbers": [
+          {
+            "label": "Rural population share",
+            "value": "20%",
+            "period": "2020",
+            "metric_id": "CC-IND-CM02",
+            "source_id": "CC-SRC-222"
+          },
+          {
+            "label": "Community-bank deposit share",
+            "value": "13.1%",
+            "period": "2024Q4",
+            "metric_id": "CC-IND-CM04",
+            "source_id": "CC-SRC-249"
+          },
+          {
+            "label": "Community bank + CU loan share",
+            "value": "24.9%",
+            "period": "2024Q4",
+            "metric_id": "CC-IND-E01",
+            "source_id": "CC-SRC-249"
+          },
+          {
+            "label": "SBCS full approval rate",
+            "value": "52%",
+            "period": "2024 survey",
+            "metric_id": "CC-IND-E02",
+            "source_id": "CC-SRC-258"
+          },
+          {
+            "label": "USDA FSA farm-loan obligations",
+            "value": "$5.39B / 24,555 loans",
+            "period": "FY2024",
+            "metric_id": "CC-IND-E02",
+            "source_id": "CC-SRC-259"
+          }
+        ],
+        "plain_english": "Local-ownership and community-prosperity pages need this structural system beside design claims — labeled as national context, not town outcomes."
+      },
+      "what_supports_this": [
+        "Census urban/rural",
+        "FDIC QBP",
+        "NCUA",
+        "SBCS",
+        "USDA FSA"
+      ],
+      "what_challenges_it": [
+        "Census rural ≠ OMB nonmetro",
+        "SBCS applicant universe ≠ all firms",
+        "FSA is farm credit, not general rural SMB credit"
+      ],
+      "what_we_dont_know": [
+        "Hospital access slot (CM03) still deferred",
+        "SBA 7(a)/504 dollar series still pending primary retrieval",
+        "Community-level ownership maps"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-019"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-MARKET-DYNAMICS-SYSTEM-1",
+      "title": "Market dynamics: entry and enforcement (not a competitiveness score)",
+      "reader_question": "Beyond 20 criminal antitrust cases, what else is measurable about market dynamics — and what still is not?",
+      "surfaces": [
+        "apps/book-site/src/pages/where-we-are.astro",
+        "content/research/national-diagnosis/05-competition-and-concentration.md",
+        "content/public-resources/systems/laissez-faire-capitalism.md",
+        "content/public-resources/systems/ordoliberalism.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-005"
+      ],
+      "metric_ids": [
+        "CC-IND-C02",
+        "CC-IND-C03"
+      ],
+      "source_ids": [
+        "CC-SRC-263",
+        "CC-SRC-255",
+        "CC-SRC-005"
+      ],
+      "evidence_strength": "Partial",
+      "strength_note": "Strong for entry count + criminal enforcement count. Weak/Partial as a competitiveness measure — industry CR sample cells and multi-year CR tables are not yet bound.",
+      "evidence_system": {
+        "definition": "C02 = Census BDS establishments born in the last 12 months. C03 = DOJ ATR criminal antitrust cases filed (FY). Census concentration products report industry CR shares — not a national concentration percent.",
+        "comparison": [
+          {
+            "label": "New establishment entrants (BDS)",
+            "value": "790,295 (2023)",
+            "note": "Dynamics count — not survival or markups."
+          },
+          {
+            "label": "DOJ ATR criminal cases filed",
+            "value": "20 (FY2024)",
+            "note": "Enforcement activity ≠ market competitiveness."
+          },
+          {
+            "label": "Industry concentration (Economic Census)",
+            "value": "CR cells by industry (no national %)",
+            "note": "C01 object exists; sample CR table not attached."
+          }
+        ],
+        "series_note": "BDS and DOJ ATR tables are official series. Fixed-NAICS multi-year CR comparison table is still missing in-repo.",
+        "series_status": "official_series_available_not_attached",
+        "qualification": "Do not treat 20 criminal cases as a competitiveness score. Do not invent a national CR4. Entry counts and enforcement counts answer different reader questions."
+      },
+      "what_the_data_show": {
+        "key_finding": "Market-dynamics evidence currently supports an entry dial (≈790k new establishments in 2023) and an enforcement dial (20 DOJ ATR criminal cases in FY2024). Neither is a concentration index; industry CR products remain cell-based.",
+        "critical_numbers": [
+          {
+            "label": "New establishment entrants (BDS)",
+            "value": "790,295",
+            "period": "2023",
+            "metric_id": "CC-IND-C02",
+            "source_id": "CC-SRC-263"
+          },
+          {
+            "label": "DOJ ATR criminal cases filed",
+            "value": "20",
+            "period": "FY2024",
+            "metric_id": "CC-IND-C03",
+            "source_id": "CC-SRC-255"
+          },
+          {
+            "label": "National concentration percent",
+            "value": "none (forbidden / not attached)",
+            "source_id": "CC-SRC-005",
+            "note": "Keep industry CR cells; do not invent a fake national %."
+          }
+        ],
+        "plain_english": "Pass 4 upgrades competition surfaces from a single enforcement headline into a two-dial system with an explicit CR gap."
+      },
+      "what_supports_this": [
+        "Census BDS",
+        "DOJ ATR criminal cases table",
+        "Economic Census concentration spine"
+      ],
+      "what_challenges_it": [
+        "Entrants ≠ competitive intensity",
+        "Criminal cases exclude FTC and civil merger actions",
+        "Product-market definition changes CR readings"
+      ],
+      "what_we_dont_know": [
+        "In-repo sample CR4 table for fixed NAICS",
+        "Labor-market concentration datasets",
+        "Merger retrospective attachments"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-005"
+        ]
+      }
+    },
+    {
+      "panel_id": "CC-EP-PRIMARY-CARE-ACCESS-1",
+      "title": "Primary-care access shortage (HPSA)",
+      "reader_question": "Where healthcare prose talks about access, what shortage dial is actually measured?",
+      "surfaces": [
+        "apps/book-site/src/pages/health.astro",
+        "apps/build-board/src/pages/health.astro",
+        "content/research/national-diagnosis/10-healthcare-and-economic-security.md"
+      ],
+      "claim_ids": [],
+      "metric_ids": [
+        "CC-IND-E05"
+      ],
+      "source_ids": [
+        "CC-SRC-225"
+      ],
+      "evidence_strength": "Partial",
+      "strength_note": "Strong for the HPSA population-share proxy; Partial because designation ≠ utilization, and mental-health HPSAs are separate.",
+      "evidence_system": {
+        "definition": "E05 ≈ share of U.S. population residing in designated primary-care Health Professional Shortage Areas (HRSA).",
+        "comparison": [
+          {
+            "label": "Population in primary-care HPSAs",
+            "value": "~22% (~75 million)",
+            "note": "Designation proxy, not visits delivered."
+          },
+          {
+            "label": "Hospital-access baseline (CM03)",
+            "value": "DEFERRED",
+            "note": "Do not substitute HPSA for hospital access."
+          }
+        ],
+        "series_note": "HRSA designations update ongoing; multi-year share array not attached in-repo.",
+        "series_status": "official_series_available_not_attached",
+        "qualification": "Do not let health-system design prose outrun this thin but honest dial. Insurance concentration and drug-pricing slots remain unsourced."
+      },
+      "what_the_data_show": {
+        "key_finding": "About 22% of the U.S. population lives in designated primary-care HPSAs (2024-06-30 HRSA reading). That is an access-shortage proxy — not a completed healthcare diagnosis.",
+        "critical_numbers": [
+          {
+            "label": "Population in primary-care HPSAs",
+            "value": "22%",
+            "period": "2024-06-30",
+            "metric_id": "CC-IND-E05",
+            "source_id": "CC-SRC-225"
+          }
+        ],
+        "plain_english": "Put the shortage dial beside rural-health and community-care claims; keep unknowns about insurance, prevention investment, and hospital access visible."
+      },
+      "what_supports_this": [
+        "HRSA primary-care workforce / shortage dashboards"
+      ],
+      "what_challenges_it": [
+        "Designation ≠ care received",
+        "Mental-health HPSAs separate",
+        "Rural hospital measures deferred"
+      ],
+      "what_we_dont_know": [
+        "E03/E04/E06 still pending",
+        "CM03 hospital access deferred"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md"
+      }
+    },
+    {
+      "panel_id": "CC-EP-HUMAN-CAPITAL-PATHWAYS-1",
+      "title": "Apprenticeship and early-adult pathway dials",
+      "reader_question": "What measurable apprenticeship and early-adult ownership/civic dials sit beside academy and CTE design claims?",
+      "surfaces": [
+        "apps/book-site/src/pages/human-capital.astro",
+        "apps/build-board/src/pages/human-capital.astro",
+        "content/research/national-diagnosis/09-education-skills-and-credentialing.md",
+        "content/research/national-diagnosis/26-human-capital-doctrine-and-regional-academies.md"
+      ],
+      "claim_ids": [
+        "CC-CLAIM-042"
+      ],
+      "metric_ids": [
+        "CC-IND-HC02",
+        "CC-IND-L05",
+        "CC-IND-HC06",
+        "CC-IND-HC07"
+      ],
+      "source_ids": [
+        "CC-SRC-252",
+        "CC-SRC-242",
+        "CC-SRC-245",
+        "CC-SRC-264"
+      ],
+      "evidence_strength": "Strong",
+      "strength_note": "Strong for administrative/survey dials. Not Arkansas CTE outcomes and not academy pilot results.",
+      "evidence_system": {
+        "definition": "L05 = active registered apprentices (all ages). HC02 = RAPIDS youth (16–24) total served. HC06 = homeownership among householders under 35. HC07 = CPS voting rate ages 18–24.",
+        "comparison": [
+          {
+            "label": "Active registered apprentices",
+            "value": "679,960 (FY2024)"
+          },
+          {
+            "label": "Youth apprentices total served (16–24)",
+            "value": "353,177 (FY2023)"
+          },
+          {
+            "label": "Homeownership, householders <35",
+            "value": "36.1% (2023 ACS)"
+          },
+          {
+            "label": "Voting rate, citizens 18–24",
+            "value": "47.7% (Nov 2024)"
+          }
+        ],
+        "series_note": "DOL RAPIDS and ACS/CPS products are official. Arkansas CTE matrices exist in research/ but are not substituted here as national academy outcomes.",
+        "series_status": "official_series_available_not_attached",
+        "qualification": "Pathway dials ≠ regional academy success. Do not invent graduate retention or early-career earnings by pathway (HC04/HC05 pending)."
+      },
+      "what_the_data_show": {
+        "key_finding": "Registered apprenticeship is large in absolute terms (~680k active; ~353k youth served), while young-adult homeownership is about 36.1% and 18–24 citizen voting about 47.7% — empirical dials for human-capital pages that currently lean design-heavy.",
+        "critical_numbers": [
+          {
+            "label": "Active registered apprentices",
+            "value": "679,960",
+            "period": "FY2024",
+            "metric_id": "CC-IND-L05",
+            "source_id": "CC-SRC-242"
+          },
+          {
+            "label": "Youth apprentices total served (16–24)",
+            "value": "353,177",
+            "period": "FY2023",
+            "metric_id": "CC-IND-HC02",
+            "source_id": "CC-SRC-252"
+          },
+          {
+            "label": "Homeownership, householders <35",
+            "value": "36.1%",
+            "period": "2023",
+            "metric_id": "CC-IND-HC06",
+            "source_id": "CC-SRC-245"
+          },
+          {
+            "label": "Voting rate, citizens 18–24",
+            "value": "47.7%",
+            "period": "2024",
+            "metric_id": "CC-IND-HC07",
+            "source_id": "CC-SRC-264"
+          }
+        ],
+        "plain_english": "Academy and CTE design should sit beside pathway dials and keep Arkansas-specific outcome claims separately labeled until attached."
+      },
+      "what_supports_this": [
+        "DOL OA / RAPIDS",
+        "ACS tenure by age",
+        "CPS Voting Supplement"
+      ],
+      "what_challenges_it": [
+        "Registered only — not all WBL",
+        "Youth total served ≠ active stock",
+        "Householder-based ownership measure"
+      ],
+      "what_we_dont_know": [
+        "HC01/HC03–HC05 pending",
+        "Academy pilot outcomes",
+        "AR CTE → wage alignment series not bound here"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "national_baseline_metrics.json"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "related_claims": [
+          "CC-CLAIM-042"
+        ]
+      }
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-3.0",
-    "panels_total": 11,
-    "panels_added_pass_3": 2,
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
+    "panels_total": 17,
+    "panels_added_or_upgraded_pass_4": 7,
     "google_civic_bound": false,
-    "note": "Residual binds from Pass 2 inventory; no new architecture; Pass 2 not reopened."
+    "energy_baseline_bound": false,
+    "note": "Evidence-desert hunt; small evidence systems preferred; energy deferred (no sourced baseline metrics)."
   },
   "pass_1_panels": 3,
-  "pass_2_panels": 9
+  "pass_2_panels": 9,
+  "pass_4_rule": "Prefer a small evidence system over isolated headline numbers whenever the data permit it (definition + comparison + series status + qualification + source).",
+  "pass_3_panels": 11
 }

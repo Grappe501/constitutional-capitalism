@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import gov from "../../../../data/project/government_capacity_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const fiscalPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-FISCAL-REVENUE-SYSTEM-1"
+);
 const testQs = gov.government_capacity_test?.questions || [];
 const branches = gov.website_branches || [];
 const pipeline = gov.civic_leadership_pipeline || [];
@@ -22,6 +27,7 @@ const formulaSub = gov.lean_government_formula?.subtract || [];
     <h2>The design question</h2>
     <p>Most debates ask: <em>{gov.defining_design_question.rejected_frame}</em></p>
     <p class="lede">{gov.defining_design_question.constitutional_question}</p>
+    {fiscalPanel ? <EvidencePanel panel={fiscalPanel} /> : null}
 
     <h2>Iconic phrase</h2>
     <blockquote>

@@ -57,6 +57,16 @@ Use as a residual empirical label and bridge category, then drill into more spec
 
 **Exemplars / references (non-statistical):** Postwar Western economies; Contemporary OECD mixes.
 
+### Evidence system — federal fiscal dials (complicates thin-state and thick-state stories alike)
+
+| Dial | Value | Trace |
+|---|---:|---|
+| Federal receipts % GDP | **17.1%** (FY2024) | `CC-IND-G01` |
+| Federal outlays % GDP | **23.4%** (FY2024) | `CC-IND-G02` |
+| Debt held by the public % GDP | **~99%** (2024) | `CC-IND-G03` |
+
+**Qualification:** Mixed-economy practice already operates at this fiscal scale. These dials neither vindicate nor refute Constitutional Capitalism’s preferred tax redesign. Panel: `CC-EP-FISCAL-REVENUE-SYSTEM-1`.
+
 ## 8. Comparison along shared dimensions
 
 Use the table in section 3 as the shared scorecard against other systems on [/compare/](/compare/). Prefer qualitative institutional comparison over invented performance numbers.
