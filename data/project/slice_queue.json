@@ -1502,6 +1502,36 @@
       "remaining_24_compare_controlled_backlog"
     ]
   },
+  "arkansas_capacity_feasibility_wave": {
+    "slice_id": "CC-ARKANSAS-CAPACITY-FEASIBILITY-WAVE-1.0",
+    "status": "PASSED_PARTIAL_DEPTH",
+    "decision_id": "CC-DEC-116",
+    "update_id": "UPD-129",
+    "program_file": "data/project/arkansas_capacity_feasibility_wave.json",
+    "return": "reports/CC_ARKANSAS_CAPACITY_FEASIBILITY_WAVE_1_0_RETURN.md",
+    "dependency_chain": [
+      "CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0",
+      "CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0",
+      "CC-ARKANSAS-HYP128-SITE-SELECTION-MODEL-1.0"
+    ],
+    "artifacts": [
+      "data/project/arkansas_official_program_catalog.json",
+      "data/project/arkansas_learns_cte_legal_funding_feasibility.json",
+      "data/project/arkansas_hyp128_site_selection_model.json"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-STRATEGIC-CAPACITY-ENROLLMENT-COMPLETER-BIND-1.0",
+      "CC-ARKANSAS-PILOT-GEOGRAPHY-READINESS-CHECKLIST-1.0",
+      "CC-ARKANSAS-COUNTY-TURNOUT-SOURCE-INVENTORY-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "no_locked_site",
+      "build_state_by_proving_locally",
+      "existence_not_scale"
+    ]
+  },
   "baseline_definition_locks_next_fills": {
     "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "status": "QUEUED_NEXT_STRUCTURAL",

@@ -3,7 +3,8 @@
 **Status:** Research hypothesis — **not doctrine** · **not a completed audit**  
 **Update:** UPD-128 · Decisions: CC-DEC-112 (`KEEP_AS_HYPOTHESIS`), deepened by CC-DEC-114 / CC-DEC-115  
 **Demands:** `data/project/CC_ARKANSAS_STRATEGIC_CAPACITY_AUDIT_DATA_DEMANDS.json`  
-**Inventory:** `data/project/arkansas_strategic_capacity_inventory.json`
+**Inventory:** `data/project/arkansas_strategic_capacity_inventory.json`  
+**Catalog:** `data/project/arkansas_official_program_catalog.json` (ADHE partial pull)
 
 ## Central questions
 
@@ -43,4 +44,4 @@ Example domains (research list, not findings): rural medicine, maternal care, de
 
 ## Next research
 
-`CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0` — populate leave-state answers from official catalogs only.
+`CC-ARKANSAS-STRATEGIC-CAPACITY-ENROLLMENT-COMPLETER-BIND-1.0` — existence is partial-bound; scale remains NEE.

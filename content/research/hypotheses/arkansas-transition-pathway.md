@@ -70,6 +70,10 @@ Strongest current posture: pilot or program in **one** school district, town, or
 - Not an all-at-once statewide transformation  
 - Not a substitute for baseline definition-locks  
 
+## Build the state by proving it locally
+
+Community 1 → Community 2 → county network → regional model → multiple proven counties → statewide legislation → constitutional amendments only where genuinely necessary.
+
 ## Next research
 
-`CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0` · site selection with HYP-128 controls
+`CC-ARKANSAS-PILOT-GEOGRAPHY-READINESS-CHECKLIST-1.0` · county turnout/ACS joins before any site lock

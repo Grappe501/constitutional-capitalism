@@ -1,0 +1,180 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-HYP128-SITE-SELECTION-MODEL-1.0",
+  "wave_slice_id": "CC-ARKANSAS-CAPACITY-FEASIBILITY-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "status": "transparent_model_v1_no_locked_site",
+  "module_id": "CC-MOD-ARKANSAS-HYP128-SITE-SELECTION",
+  "decision_id": "CC-DEC-116",
+  "update_id": "UPD-129",
+  "hypothesis_id": "CC-HYP-CIVIC-ENGAGEMENT-AND-COMMUNITY-STRUCTURE",
+  "incubator_alias": "HYP-128",
+  "purpose": "Select pilot communities based on measurable need + institutional readiness — not political convenience — with matched comparison communities wherever possible.",
+  "experimental_framework": [
+    "pilot_community",
+    "intervention",
+    "baseline",
+    "annual_measurement",
+    "matched_comparison",
+    "outcome",
+    "replication_decision"
+  ],
+  "local_proof_ladder": [
+    "Community 1",
+    "Community 2",
+    "County network",
+    "Regional model",
+    "multiple proven counties",
+    "statewide legislation",
+    "constitutional amendments where genuinely necessary"
+  ],
+  "not": [
+    "politically_convenient_site_pick",
+    "locked_site",
+    "invented_turnout_or_poverty_scores",
+    "claim_that_NASS_alone_selects_the_pilot",
+    "doctrine"
+  ],
+  "selection_criteria": [
+    {
+      "id": "population",
+      "status": "NEE_COUNTY_ACS",
+      "notes": "Bind county ACS population next; state ACS already exists but is not site-selectable"
+    },
+    {
+      "id": "poverty_economic_conditions",
+      "status": "NEE_COUNTY_ACS",
+      "notes": "County poverty/income join required"
+    },
+    {
+      "id": "school_capacity",
+      "status": "NEE_DISTRICT",
+      "notes": "District enrollment, CTE program of study presence, facility readiness"
+    },
+    {
+      "id": "agricultural_structure",
+      "status": "BOUND_FOR_DESIGNATED_COUNTIES",
+      "source": "data/imports/reddirt-public-statistics/county-baselines.json",
+      "series": ["FARM_OPERATIONS_COUNT", "AG_PRODUCT_SALES", "crop/animal splits"]
+    },
+    {
+      "id": "healthcare_access",
+      "status": "STATE_PANEL_ONLY",
+      "source": "CC-EP-PRIMARY-CARE-ACCESS-1",
+      "notes": "County HPSA join still NEE"
+    },
+    {
+      "id": "banking_local_capital",
+      "status": "STATE_PANEL_ONLY",
+      "source": "FDIC AR vs US series",
+      "notes": "County bank/deposit concentration still NEE"
+    },
+    {
+      "id": "workforce_conditions",
+      "status": "NEE_COUNTY",
+      "notes": "BLS/LAUS county unemployment and industry mix"
+    },
+    {
+      "id": "civic_participation",
+      "status": "INVENTORY_NEEDED",
+      "source": "HYP-128 turnout inventory",
+      "notes": "Presidential/midterm/local turnout level, volatility, persistence — critical missing"
+    },
+    {
+      "id": "transportation",
+      "status": "NEE",
+      "notes": "Highway access / commute / food-hub logistics"
+    },
+    {
+      "id": "existing_institutional_capacity",
+      "status": "PARTIAL_LCL_SCAFFOLD",
+      "source": "data/project/living_community_laboratories.json"
+    },
+    {
+      "id": "proximity_to_partners",
+      "status": "QUALITATIVE",
+      "notes": "Community college, Extension, clinic, employer sponsors"
+    },
+    {
+      "id": "demonstrated_community_participation",
+      "status": "NEE",
+      "notes": "Do not invent; gather from LCL field work"
+    }
+  ],
+  "scoring_rule": {
+    "version": "1.0",
+    "do_not_compute_total_until": [
+      "county ACS poverty/population bound",
+      "turnout inventory for candidate counties",
+      "district CTE readiness checklist"
+    ],
+    "weights_draft_not_final": {
+      "agricultural_structure_fit": 0.2,
+      "school_cte_readiness": 0.2,
+      "healthcare_shortage_context": 0.1,
+      "economic_need": 0.15,
+      "civic_participation_context": 0.1,
+      "institutional_partners": 0.15,
+      "comparable_control_availability": 0.1
+    },
+    "note": "Weights are draft research design — not a locked scoreboard. No site may be locked on draft weights alone."
+  },
+  "candidate_geographies": [
+    {
+      "id": "AR-GEO-ROSE-BUD",
+      "community": "Rose Bud",
+      "county": "White County",
+      "fips": "05145",
+      "lcl_case": "CC-CASE-ROSEBUD-001",
+      "role_hypothesis": "education / agriculture / renewal complement engine",
+      "status": "investigative_candidate_not_locked",
+      "measurable_now": {
+        "farm_operations_2022": 1552,
+        "ag_product_sales_2022_usd": 236301000,
+        "source": "USDA NASS Census of Agriculture via RedDirt export exp_5da8b3fe67d94923"
+      },
+      "missing_for_lock": [
+        "district CTE readiness",
+        "county turnout",
+        "county ACS poverty",
+        "county HPSA",
+        "partner MOU interest"
+      ]
+    },
+    {
+      "id": "AR-GEO-LEWISVILLE",
+      "community": "Lewisville",
+      "county": "Lafayette County",
+      "fips": "05073",
+      "lcl_case": "CC-CASE-LEWISVILLE-001",
+      "role_hypothesis": "resource / wealth complement engine; potential matched contrast to White County ag structure",
+      "status": "investigative_candidate_not_locked",
+      "measurable_now": {
+        "farm_operations_2022": 192,
+        "ag_product_sales_2022_usd": 152423000,
+        "source": "USDA NASS Census of Agriculture via RedDirt export exp_5da8b3fe67d94923"
+      },
+      "missing_for_lock": [
+        "district CTE readiness",
+        "county turnout",
+        "county ACS poverty",
+        "county HPSA",
+        "partner MOU interest"
+      ]
+    }
+  ],
+  "contrast_note": "White County (1,552 ops / $236.3M sales) vs Lafayette County (192 ops / $152.4M sales) in 2022 provides an agricultural-structure contrast usable for matched-comparison design — not by itself a pilot selection.",
+  "matched_comparison_rule": "Every pilot geography should name at least one comparable control community/county before expansion; prefer pre-registered outcomes (HYP-128).",
+  "locked_site": null,
+  "feeds": [
+    "data/project/arkansas_magnet_hub_intervention_packets.json",
+    "data/project/civic_engagement_community_structure_research.json",
+    "data/project/living_community_laboratories.json"
+  ],
+  "next_research": [
+    "CC-ARKANSAS-COUNTY-TURNOUT-SOURCE-INVENTORY-1.0",
+    "County ACS poverty/population bind for designated set",
+    "District CTE readiness checklist for Rose Bud and Lewisville geographies",
+    "Only then compute draft scores and propose a lock packet"
+  ]
+}

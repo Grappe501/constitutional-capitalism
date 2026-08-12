@@ -6,13 +6,20 @@
   "status": "first_packets_scaffolded_eligibility_not_proven",
   "module_id": "CC-MOD-ARKANSAS-MAGNET-HUB-INTERVENTION-PACKETS",
   "decision_id": "CC-DEC-115",
-  "update_id": "UPD-128",
+  "update_id": "UPD-129",
+  "decision_id": "CC-DEC-116",
   "hypothesis_id": "CC-HYP-ARKANSAS-TRANSITION-PATHWAY",
   "incubator_alias": "HYP-129",
   "depends_on": [
     "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
-    "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0"
+    "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+    "CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0",
+    "CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0",
+    "CC-ARKANSAS-HYP128-SITE-SELECTION-MODEL-1.0"
   ],
+  "legal_funding_feasibility_path": "data/project/arkansas_learns_cte_legal_funding_feasibility.json",
+  "site_selection_model_path": "data/project/arkansas_hyp128_site_selection_model.json",
+  "catalog_path": "data/project/arkansas_official_program_catalog.json",
   "purpose": "Turn highest-value HYP-130 capacity gaps into handable intervention packets — prototype local economic infrastructure, not merely a school project.",
   "not": [
     "secured_grants",
