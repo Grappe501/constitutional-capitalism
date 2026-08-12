@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-ARCHITECTURE-1.0",
+  "decision_id": "CC-DEC-113",
+  "update_id": "UPD-126",
+  "rule": "Harmonize the 16 evidence-bound systems before binding more. Remaining 24 = controlled backlog.",
+  "demands": [
+    {
+      "id": "CC-DEM-SDA-001",
+      "name": "definition_alignment_pass",
+      "question": "Do all 16 bound systems cite the same panel/metric definitions for each shared domain?",
+      "status": "QUEUED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-SDA-002",
+      "name": "time_period_label_pass",
+      "question": "Are time periods explicit and non-blended on every critical number shown in bound compare layers?",
+      "status": "QUEUED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-SDA-003",
+      "name": "geography_label_pass",
+      "question": "Does every Arkansas relevance claim state US vs Arkansas vs county without national-to-local implication?",
+      "status": "QUEUED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-SDA-004",
+      "name": "evidence_status_language_pass",
+      "question": "Do supporting / contradicting / NEE buckets use the locked vocabulary and forbidden-claim list?",
+      "status": "QUEUED",
+      "priority": "critical"
+    },
+    {
+      "id": "CC-DEM-SDA-005",
+      "name": "controlled_backlog_gate",
+      "question": "Are the remaining 24 systems gated behind written-argument need rather than completeness optics?",
+      "status": "LOCKED_THIS_SLICE",
+      "priority": "critical"
+    }
+  ],
+  "next_slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+  "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+}

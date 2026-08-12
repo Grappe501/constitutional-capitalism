@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-ARCHITECTURE-1.0",
+  "generated_at": "2026-08-12",
+  "status": "architecture_scaffold_not_fully_harmonized",
+  "module_id": "CC-MOD-COMPARATIVE-SHARED-DIAL-ARCHITECTURE",
+  "update_id": "UPD-126",
+  "decision_id": "CC-DEC-113",
+  "purpose": "Make every evidence-bound comparative system use the same definitions, time periods, geography rules, and evidence-status language before binding more systems.",
+  "applies_to": "All systems with phase2_evidence / phase3_crosswalk (currently 16).",
+  "not": [
+    "ranking",
+    "new_panels",
+    "fill_remaining_24",
+    "causal_claims_from_observational_dials",
+    "upgrade_of_CC_CLAIM_003"
+  ],
+  "shared_domains": [
+    "wealth",
+    "labor",
+    "competition",
+    "democracy",
+    "healthcare",
+    "agriculture",
+    "fiscal"
+  ],
+  "rules": {
+    "definitions": {
+      "rule": "Domain labels and panel joins use the publication evidence panel titles and metric IDs already registered — do not invent alternate definitions per system page.",
+      "source_of_truth": "data/project/publication_evidence_panels.json"
+    },
+    "time_periods": {
+      "rule": "Prefer the period already published on the bound panel/critical number. If multiple periods appear, label each explicitly; never blend into a fake contemporaneous snapshot.",
+      "status": "HARMONIZATION_NEEDED"
+    },
+    "geography": {
+      "rule": "State US national vs Arkansas vs county explicitly on every Arkansas relevance claim. National dials do not become Arkansas outcomes by implication.",
+      "allowed": ["US", "Arkansas", "Arkansas_county", "multi_state_comparative"],
+      "status": "HARMONIZATION_NEEDED"
+    },
+    "evidence_status_language": {
+      "allowed_verdict_buckets": [
+        "supporting_observational",
+        "contradicting_or_bounding_overclaim",
+        "not_enough_evidence"
+      ],
+      "forbidden": [
+        "proves_regime_classification",
+        "proves_capture",
+        "proves_CC_works",
+        "ranks_systems"
+      ],
+      "holds": [
+        "CC-CLAIM-003 remains NEE",
+        "HYP-125 through HYP-130 stay research tracks",
+        "Observational ≠ causal"
+      ],
+      "status": "STANDARD_LOCKED_PENDING_PAGE_PASS"
+    }
+  },
+  "harmonization_pass": {
+    "next_slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+    "scope": "Audit the 16 bound dossiers + phase2_evidence objects for definition/period/geography/status-language consistency; fix language only — no new systems.",
+    "remaining_24": "controlled_backlog"
+  },
+  "demands_path": "data/project/CC_COMPARATIVE_SYSTEMS_SHARED_DIAL_DATA_DEMANDS.json"
+}

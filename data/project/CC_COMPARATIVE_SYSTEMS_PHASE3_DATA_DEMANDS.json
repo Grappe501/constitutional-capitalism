@@ -30,8 +30,9 @@
       "id": "CC-DEM-CMP3-004",
       "name": "remaining_24_historical_socialist_binds",
       "question": "Bind remaining historical and socialist systems where panels illuminate without inventing verdicts.",
-      "status": "QUEUED",
-      "priority": "high"
+      "status": "CONTROLLED_BACKLOG",
+      "priority": "low",
+      "rule": "Do not fill for matrix-completeness optics. Bind only when a written argument needs the system."
     },
     {
       "id": "CC-DEM-CMP3-005",
@@ -39,8 +40,16 @@
       "question": "Optional later: interactive side-by-side dial reader for two systems on the same panel set.",
       "status": "QUEUED",
       "priority": "medium"
+    },
+    {
+      "id": "CC-DEM-CMP3-006",
+      "name": "shared_dial_harmonization_before_more_binds",
+      "question": "Are definitions, periods, geography, and evidence-status language harmonized across the 16 bound systems?",
+      "status": "NEXT",
+      "priority": "critical",
+      "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0"
     }
   ],
-  "next_slice": "CC-COMPARATIVE-SYSTEMS-PHASE-3-REMAINING-HISTORICAL-AND-SOCIALIST-BINDS-1.0",
+  "next_slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
   "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
 }

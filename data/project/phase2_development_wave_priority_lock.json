@@ -1,19 +1,24 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-PHASE-2-DEVELOPMENT-WAVE-PRIORITY-LOCK-1.0",
   "generated_at": "2026-08-12",
-  "status": "priority_lock_registered",
+  "status": "priority_lock_amended_milestone_chain",
   "module_id": "CC-MOD-PHASE2-DEVELOPMENT-WAVE-PRIORITY",
-  "update_id": "UPD-125",
-  "decision_id": "CC-DEC-112",
-  "signal": "Project is shifting from data acquisition into system design and validation. Completion dial stays near 43% because remaining work is disproportionately architecture, modeling, drafting, and pilots — not more ingest.",
+  "update_id": "UPD-126",
+  "decision_id": "CC-DEC-113",
+  "amends": "CC-DEC-112",
+  "signal": "Project is shifting from data acquisition into system design and validation. Completion dial stays near 43% because remaining work is disproportionately architecture, modeling, drafting, and pilots — not more ingest. Do not chase 50%.",
+  "milestone_chain": "Evidence → comparative diagnosis → Arkansas design → legal feasibility → pilot → measurement → expansion.",
+  "milestone_chain_file": "data/project/arkansas_transition_milestone_chain.json",
   "not": [
     "claim_that_data_acquisition_is_finished_forever",
     "pause_on_legitimate_baseline_fills",
     "new_CC_PRIN",
     "doctrine_promotion",
     "economic_modeling_started",
-    "legal_architecture_started"
+    "legal_architecture_started",
+    "fill_remaining_24_compare_for_optics",
+    "overall_percent_target_of_50"
   ],
   "foundations_now_in_place": [
     "Census",
@@ -34,11 +39,13 @@
     "AR_vs_US_comparisons",
     "wealth_energy_healthcare_banking_histories",
     "legislative_and_campaign_finance_infrastructure",
-    "comparative_matrix_phase2_phase3"
+    "comparative_matrix_16_of_40_evidence_bound"
   ],
   "completion_honesty": {
     "overall_percent_held": 43,
+    "do_not_chase": "50%",
     "why_dial_barely_moves": "Next 10% is harder than the first ~40%: legal, constitutional, transition, modeling, drafting, and manuscript remain near-zero.",
+    "interesting_story": "Milestone chain progress, not numerator inflation",
     "high_or_improving": [
       "source_acquisition",
       "baseline_research",
@@ -64,6 +71,36 @@
     "from": "What is happening?",
     "to": "What exactly would Arkansas do first, second, third, and fourth if it chose this path?"
   },
+  "next_wave_focus": [
+    {
+      "rank": 1,
+      "item": "Finish shared-dial architecture (16 bound systems)",
+      "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+      "role": "parallel_compare"
+    },
+    {
+      "rank": 2,
+      "item": "HYP-130 Arkansas capability map (current / import / missing)",
+      "slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+      "hypothesis": "HYP-130",
+      "role": "parallel_research"
+    },
+    {
+      "rank": 3,
+      "item": "HYP-129 transition/funding architecture",
+      "slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
+      "hypothesis": "HYP-129",
+      "role": "parallel_research",
+      "domains": [
+        "local_magnet_hub",
+        "healthcare",
+        "agriculture",
+        "workforce",
+        "higher_education",
+        "community_capital"
+      ]
+    }
+  ],
   "tiers": {
     "tier_1": [
       {
@@ -74,24 +111,23 @@
       },
       {
         "rank": 2,
-        "item": "Comparative Systems remaining binds (historical/socialist)",
-        "slice": "CC-COMPARATIVE-SYSTEMS-PHASE-3-REMAINING-HISTORICAL-AND-SOCIALIST-BINDS-1.0",
+        "item": "Shared-dial architecture harmonization (not more system binds)",
+        "slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
         "role": "parallel_compare"
       },
       {
         "rank": 3,
-        "item": "Arkansas Strategic Capacity Audit",
-        "slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
+        "item": "Arkansas Strategic Capacity Audit → capability map",
+        "slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
         "hypothesis": "HYP-130",
         "role": "parallel_research"
       },
       {
         "rank": 4,
-        "item": "HYP-129 Transition Architecture (implementation layer)",
+        "item": "HYP-129 Transition / funding architecture",
         "slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
         "hypothesis": "HYP-129",
-        "role": "parallel_research",
-        "note": "Bridge from philosophy + evidence to implementation sequencing"
+        "role": "parallel_research"
       }
     ],
     "tier_2": [
@@ -124,11 +160,19 @@
         "rank": 10,
         "item": "Arkansas implementation roadmap"
       }
+    ],
+    "controlled_backlog": [
+      {
+        "item": "Remaining 24 definition-only comparative systems",
+        "status": "controlled_backlog",
+        "rule": "Bind only when a written argument needs the system and panels illuminate it — never for matrix-completeness optics."
+      }
     ]
   },
   "active_slice_unchanged": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
   "next_research_emphasis": [
-    "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
+    "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+    "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
     "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"
   ]
 }
