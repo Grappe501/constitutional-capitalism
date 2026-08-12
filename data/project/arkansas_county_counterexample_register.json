@@ -1,0 +1,465 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-COUNTEREXAMPLE-REGISTER-1.0",
+  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-INTEGRATION-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-119",
+  "update_id": "UPD-132",
+  "status": "REGISTER_V1_DESIGNATED_SET",
+  "purpose": "Protect against confirmation machines: for each major co-travel hypothesis, surface strongest support, strongest contradiction, ambiguous and missing-data cases.",
+  "method_wall": [
+    "observation_first",
+    "interpretation_second",
+    "causation_only_after_modeling"
+  ],
+  "not": [
+    "causal_tests",
+    "public_scoreboard",
+    "hypothesis_promotion",
+    "statewide_inference_from_7_counties"
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HYP-CECS-LOCAL-CAPITAL-CIVIC",
+      "claim": "Stronger local capital intensity tends to co-travel with stronger civic participation",
+      "expected_co_travel": "positive",
+      "x": "fdic_deposits_per_capita_or_deposits",
+      "y": "presidential_turnout_registered_or_cvap",
+      "n_counties": 7,
+      "strongest_supporting_pattern": {
+        "fips": "05093",
+        "county": "Mississippi County",
+        "x_z": -1.11,
+        "y_z": -1.669,
+        "support_score": 1.853,
+        "x_value": 20213.0,
+        "y_value": 53.2,
+        "x_year": "2025",
+        "y_year": "2024"
+      },
+      "strongest_contradictory_pattern": {
+        "fips": "05145",
+        "county": "White County",
+        "x_z": -0.297,
+        "y_z": 1.148,
+        "support_score": -0.341,
+        "x_value": 26111.0,
+        "y_value": 66.7,
+        "x_year": "2025",
+        "y_year": "2024"
+      },
+      "counterexamples": [
+        {
+          "pattern": "strong_x_weak_y",
+          "fips": "05001",
+          "county": "Arkansas County",
+          "x_z": 2.152,
+          "y_z": -0.104,
+          "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+        },
+        {
+          "pattern": "strong_x_weak_y",
+          "fips": "05107",
+          "county": "Phillips County",
+          "x_z": 0.28,
+          "y_z": -1.21,
+          "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+        },
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05145",
+          "county": "White County",
+          "x_z": -0.297,
+          "y_z": 1.148,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        }
+      ],
+      "ambiguous_middle": [
+        {
+          "fips": "05073",
+          "county": "Lafayette County",
+          "x_z": 0.132,
+          "y_z": 0.939,
+          "support_score": 0.124,
+          "x_value": 29223.0,
+          "y_value": 65.7,
+          "x_year": "2025",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05141",
+          "county": "Van Buren County",
+          "x_z": -0.203,
+          "y_z": 0.709,
+          "support_score": -0.144,
+          "x_value": 26792.0,
+          "y_value": 64.6,
+          "x_year": "2025",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05129",
+          "county": "Searcy County",
+          "x_z": -0.954,
+          "y_z": 0.188,
+          "support_score": -0.179,
+          "x_value": 21341.0,
+          "y_value": 62.1,
+          "x_year": "2025",
+          "y_year": "2024"
+        }
+      ],
+      "definition_breaks": [
+        "Cross-sectional z-scores on latest available years — not causal",
+        "Metric years may differ across series",
+        "Seven-county designated set only — not statewide inference"
+      ],
+      "missing_data_cases": []
+    },
+    {
+      "hypothesis_id": "HYP-CECS-POVERTY-CIVIC",
+      "claim": "Higher poverty tends to co-travel with weaker civic participation (descriptive test — not destiny)",
+      "expected_co_travel": "negative",
+      "x": "poverty_rate",
+      "y": "presidential_turnout_registered_or_cvap",
+      "n_counties": 7,
+      "strongest_supporting_pattern": {
+        "fips": "05107",
+        "county": "Phillips County",
+        "x_z": 1.42,
+        "y_z": -1.21,
+        "support_score": 1.718,
+        "x_value": 28.7,
+        "y_value": 55.4,
+        "x_year": "2023",
+        "y_year": "2024"
+      },
+      "strongest_contradictory_pattern": {
+        "fips": "05073",
+        "county": "Lafayette County",
+        "x_z": 1.115,
+        "y_z": 0.939,
+        "support_score": -1.047,
+        "x_value": 27.2,
+        "y_value": 65.7,
+        "x_year": "2023",
+        "y_year": "2024"
+      },
+      "counterexamples": [],
+      "ambiguous_middle": [
+        {
+          "fips": "05129",
+          "county": "Searcy County",
+          "x_z": 0.566,
+          "y_z": 0.188,
+          "support_score": -0.106,
+          "x_value": 24.5,
+          "y_value": 62.1,
+          "x_year": "2023",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05001",
+          "county": "Arkansas County",
+          "x_z": -1.425,
+          "y_z": -0.104,
+          "support_score": -0.149,
+          "x_value": 14.7,
+          "y_value": 60.7,
+          "x_year": "2023",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05093",
+          "county": "Mississippi County",
+          "x_z": -0.145,
+          "y_z": -1.669,
+          "support_score": -0.242,
+          "x_value": 21.0,
+          "y_value": 53.2,
+          "x_year": "2023",
+          "y_year": "2024"
+        }
+      ],
+      "definition_breaks": [
+        "Cross-sectional z-scores on latest available years — not causal",
+        "Metric years may differ across series",
+        "Seven-county designated set only — not statewide inference"
+      ],
+      "missing_data_cases": []
+    },
+    {
+      "hypothesis_id": "HYP-CECS-FARM-STRUCTURE-CIVIC",
+      "claim": "Denser farm-operation structure tends to co-travel with civic participation patterns",
+      "expected_co_travel": "positive",
+      "x": "farm_operations",
+      "y": "presidential_turnout_registered_or_cvap",
+      "n_counties": 7,
+      "strongest_supporting_pattern": {
+        "fips": "05145",
+        "county": "White County",
+        "x_z": 2.319,
+        "y_z": 1.148,
+        "support_score": 2.661,
+        "x_value": 1552.0,
+        "y_value": 66.7,
+        "x_year": "2022",
+        "y_year": "2024"
+      },
+      "strongest_contradictory_pattern": {
+        "fips": "05073",
+        "county": "Lafayette County",
+        "x_z": -0.808,
+        "y_z": 0.939,
+        "support_score": -0.759,
+        "x_value": 192.0,
+        "y_value": 65.7,
+        "x_year": "2022",
+        "y_year": "2024"
+      },
+      "counterexamples": [
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05073",
+          "county": "Lafayette County",
+          "x_z": -0.808,
+          "y_z": 0.939,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        }
+      ],
+      "ambiguous_middle": [
+        {
+          "fips": "05141",
+          "county": "Van Buren County",
+          "x_z": 0.059,
+          "y_z": 0.709,
+          "support_score": 0.042,
+          "x_value": 569.0,
+          "y_value": 64.6,
+          "x_year": "2022",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05001",
+          "county": "Arkansas County",
+          "x_z": -0.281,
+          "y_z": -0.104,
+          "support_score": 0.029,
+          "x_value": 421.0,
+          "y_value": 60.7,
+          "x_year": "2022",
+          "y_year": "2024"
+        },
+        {
+          "fips": "05129",
+          "county": "Searcy County",
+          "x_z": 0.043,
+          "y_z": 0.188,
+          "support_score": 0.008,
+          "x_value": 562.0,
+          "y_value": 62.1,
+          "x_year": "2022",
+          "y_year": "2024"
+        }
+      ],
+      "definition_breaks": [
+        "Cross-sectional z-scores on latest available years — not causal",
+        "Metric years may differ across series",
+        "Seven-county designated set only — not statewide inference"
+      ],
+      "missing_data_cases": []
+    },
+    {
+      "hypothesis_id": "HYP-CECS-HPSA-POVERTY",
+      "claim": "Primary-care shortage intensity tends to co-travel with poverty",
+      "expected_co_travel": "positive",
+      "x": "primary_care_hpsa_max_score",
+      "y": "poverty_rate",
+      "n_counties": 7,
+      "strongest_supporting_pattern": {
+        "fips": "05129",
+        "county": "Searcy County",
+        "x_z": 0.953,
+        "y_z": 0.566,
+        "support_score": 0.54,
+        "x_value": 19.0,
+        "y_value": 24.5,
+        "x_year": "2025",
+        "y_year": "2023"
+      },
+      "strongest_contradictory_pattern": {
+        "fips": "05073",
+        "county": "Lafayette County",
+        "x_z": -2.05,
+        "y_z": 1.115,
+        "support_score": -2.285,
+        "x_value": 10.0,
+        "y_value": 27.2,
+        "x_year": "2025",
+        "y_year": "2023"
+      },
+      "counterexamples": [
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05073",
+          "county": "Lafayette County",
+          "x_z": -2.05,
+          "y_z": 1.115,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        },
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05107",
+          "county": "Phillips County",
+          "x_z": -0.715,
+          "y_z": 1.42,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        },
+        {
+          "pattern": "strong_x_weak_y",
+          "fips": "05141",
+          "county": "Van Buren County",
+          "x_z": 0.62,
+          "y_z": -0.45,
+          "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+        }
+      ],
+      "ambiguous_middle": [
+        {
+          "fips": "05001",
+          "county": "Arkansas County",
+          "x_z": -0.048,
+          "y_z": -1.425,
+          "support_score": 0.068,
+          "x_value": 16.0,
+          "y_value": 14.7,
+          "x_year": "2025",
+          "y_year": "2023"
+        },
+        {
+          "fips": "05093",
+          "county": "Mississippi County",
+          "x_z": 0.953,
+          "y_z": -0.145,
+          "support_score": -0.138,
+          "x_value": 19.0,
+          "y_value": 21.0,
+          "x_year": "2025",
+          "y_year": "2023"
+        }
+      ],
+      "definition_breaks": [
+        "Cross-sectional z-scores on latest available years — not causal",
+        "Metric years may differ across series",
+        "Seven-county designated set only — not statewide inference"
+      ],
+      "missing_data_cases": []
+    },
+    {
+      "hypothesis_id": "HYP-CECS-INCOME-LOCAL-CAPITAL",
+      "claim": "Higher median income tends to co-travel with higher local deposit intensity",
+      "expected_co_travel": "positive",
+      "x": "median_household_income",
+      "y": "fdic_deposits_per_capita_or_deposits",
+      "n_counties": 7,
+      "strongest_supporting_pattern": {
+        "fips": "05001",
+        "county": "Arkansas County",
+        "x_z": 1.638,
+        "y_z": 2.152,
+        "support_score": 3.525,
+        "x_value": 60831.0,
+        "y_value": 43878.0,
+        "x_year": "2023",
+        "y_year": "2025"
+      },
+      "strongest_contradictory_pattern": {
+        "fips": "05093",
+        "county": "Mississippi County",
+        "x_z": 0.723,
+        "y_z": -1.11,
+        "support_score": -0.802,
+        "x_value": 53428.0,
+        "y_value": 20213.0,
+        "x_year": "2023",
+        "y_year": "2025"
+      },
+      "counterexamples": [
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05073",
+          "county": "Lafayette County",
+          "x_z": -1.278,
+          "y_z": 0.132,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        },
+        {
+          "pattern": "strong_x_weak_y",
+          "fips": "05093",
+          "county": "Mississippi County",
+          "x_z": 0.723,
+          "y_z": -1.11,
+          "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+        },
+        {
+          "pattern": "weak_x_strong_y",
+          "fips": "05107",
+          "county": "Phillips County",
+          "x_z": -1.076,
+          "y_z": 0.28,
+          "why_valuable": "Strong participation despite weaker structural conditions — theory gap candidate"
+        },
+        {
+          "pattern": "strong_x_weak_y",
+          "fips": "05145",
+          "county": "White County",
+          "x_z": 0.724,
+          "y_z": -0.297,
+          "why_valuable": "Economic/institutional strength without matching civic participation — theory gap candidate"
+        }
+      ],
+      "ambiguous_middle": [
+        {
+          "fips": "05141",
+          "county": "Van Buren County",
+          "x_z": -0.039,
+          "y_z": -0.203,
+          "support_score": 0.008,
+          "x_value": 47266.0,
+          "y_value": 26792.0,
+          "x_year": "2023",
+          "y_year": "2025"
+        },
+        {
+          "fips": "05073",
+          "county": "Lafayette County",
+          "x_z": -1.278,
+          "y_z": 0.132,
+          "support_score": -0.169,
+          "x_value": 37237.0,
+          "y_value": 29223.0,
+          "x_year": "2023",
+          "y_year": "2025"
+        },
+        {
+          "fips": "05145",
+          "county": "White County",
+          "x_z": 0.724,
+          "y_z": -0.297,
+          "support_score": -0.215,
+          "x_value": 53435.0,
+          "y_value": 26111.0,
+          "x_year": "2023",
+          "y_year": "2025"
+        }
+      ],
+      "definition_breaks": [
+        "Cross-sectional z-scores on latest available years — not causal",
+        "Metric years may differ across series",
+        "Seven-county designated set only — not statewide inference"
+      ],
+      "missing_data_cases": []
+    }
+  ],
+  "note": "Counterexamples are not nuisances — they reveal what the theory is missing."
+}

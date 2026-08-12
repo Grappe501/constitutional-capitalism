@@ -15,18 +15,25 @@ const familyRows = Object.entries(
     .join(" · "),
 }));
 const keystones = edu.keystone_capacity_signals || [];
+const adwsRows = (edu.adws_state_bridge || []).map((r: any) => ({
+  fam: r.workforce_category,
+  completions: r.ipeds_completions_2023,
+  openings: r.adws_total_annual_openings_sum,
+  ratio: r.capacity_to_openings_ratio,
+}));
+const counterHyps = explorer.counterexample_register?.hypotheses || [];
 ---
 
 <BoardLayout
   title="County Living Systems"
   path="/county-living-systems/"
-  description="Internal research explorer for County×Year structural and civic observations. Not a public score."
+  description="Internal integrated empirical laboratory. Not a public score. Counterexamples privileged."
 >
   <h1 class="page-title">County Living Systems Explorer</h1>
   <p class="page-lede">
-    Internal research surface — <strong>not a public score</strong>. Observation first.
-    Interpretation second. Causation only after modeling. Rose Bud / Lewisville remain
-    candidates, not locks.
+    Internal integrated empirical laboratory — <strong>not a public score</strong>.
+    Observation first. Interpretation second. Causation only after modeling.
+    Rose Bud / Lewisville remain candidates, not locks. Overall dial held at 43%.
   </p>
 
   <div class="grid grid--stats">
@@ -36,25 +43,26 @@ const keystones = edu.keystone_capacity_signals || [];
     </div>
     <div class="stat">
       <div class="stat__label">Status</div>
-      <div class="stat__value" style="font-size:0.95rem;">{explorer.status}</div>
+      <div class="stat__value" style="font-size:0.9rem;">{explorer.status}</div>
     </div>
     <div class="stat">
       <div class="stat__label">Update</div>
       <div class="stat__value" style="font-size:0.95rem;">{explorer.update_id}</div>
     </div>
     <div class="stat">
-      <div class="stat__label">Method</div>
-      <div class="stat__value" style="font-size:0.85rem;">observation → interpretation → causation</div>
+      <div class="stat__label">Counterexample hyps</div>
+      <div class="stat__value">{counterHyps.length}</div>
     </div>
   </div>
 
   <section class="panel" style="margin-top:1rem;">
-    <h2>Questions this surface is for</h2>
+    <h2>Questions this laboratory is for</h2>
     <ul class="list-plain">
       {questions.map((q) => <li>{q}</li>)}
     </ul>
     <p style="margin-top:0.75rem;opacity:0.85;">
-      Counterexamples may be more valuable than confirming cases.
+      Not yet “does X cause Y?” — which variables move together, which first, which don’t,
+      where counterexamples live, which relationships survive cross-county comparison.
     </p>
   </section>
 
@@ -86,7 +94,7 @@ const keystones = edu.keystone_capacity_signals || [];
         Focus metric
         <select data-metric>
           {compareMetrics.map((m) => (
-            <option value={m} selected={m === "presidential_turnout_of_cvap_percent"}>
+            <option value={m} selected={m === "presidential_turnout_of_registered_percent"}>
               {m}
             </option>
           ))}
@@ -97,11 +105,66 @@ const keystones = edu.keystone_capacity_signals || [];
   </section>
 
   <section class="panel" style="margin-top:1rem;">
-    <h2>Education capacity bridge (not employment demand)</h2>
+    <h2>County Counterexample Register</h2>
     <p>
-      Status: <code>{edu.status}</code>. Completions are educational capacity signals.
-      Employment demand remains NEE until ADWS/BLS joins.
+      Protects against confirmation machines. For each co-travel hypothesis: strongest support,
+      strongest contradiction, ambiguous cases, missing data, definition breaks.
+      Counterexamples are not nuisances — they show what the theory is missing.
     </p>
+    {
+      counterHyps.map((h: any) => (
+        <div style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid var(--border, #333);">
+          <h3 style="font-size:1rem;">
+            <code>{h.hypothesis_id}</code>
+          </h3>
+          <p style="opacity:0.9;">{h.claim}</p>
+          {
+            h.status === "MISSING_DATA" ? (
+              <p>Missing data — {h.note}</p>
+            ) : (
+              <ul class="list-plain">
+                <li>
+                  Strongest support: <strong>{h.strongest_supporting_pattern?.county}</strong>{" "}
+                  (score {h.strongest_supporting_pattern?.support_score})
+                </li>
+                <li>
+                  Strongest contradiction (z-product):{" "}
+                  <strong>{h.strongest_contradictory_pattern?.county}</strong>{" "}
+                  (score {h.strongest_contradictory_pattern?.support_score})
+                </li>
+                <li>
+                  Counterexample patterns:{" "}
+                  {(h.counterexamples || [])
+                    .map((c: any) => `${c.county} [${c.pattern}]`)
+                    .join("; ") || "none flagged"}
+                </li>
+                <li>
+                  Definition breaks: {(h.definition_breaks || []).join(" · ")}
+                </li>
+              </ul>
+            )
+          }
+        </div>
+      ))
+    }
+  </section>
+
+  <section class="panel" style="margin-top:1rem;">
+    <h2>Education capacity → ADWS demand bridge</h2>
+    <p>
+      Status: <code>{edu.adws_status || edu.status}</code>. Statewide/LWDA demand only —
+      <strong>county geographic gap remains NEE</strong>. Low completions ≠ shortage.
+    </p>
+    <ul class="list-plain">
+      {adwsRows.map((row) => (
+        <li>
+          <code>{row.fam}</code> — completions 2023: {Number(row.completions).toLocaleString()} ·
+          ADWS linked annual openings: {Number(row.openings).toLocaleString()} · ratio:{" "}
+          {row.ratio ?? "—"}
+        </li>
+      ))}
+    </ul>
+    <h3 style="margin-top:1rem;">IPEDS family completions</h3>
     <ul class="list-plain">
       {familyRows.map((row) => (
         <li>
@@ -165,16 +228,6 @@ const keystones = edu.keystone_capacity_signals || [];
             <thead><tr><th>Year</th><th>${a?.county || "A"}</th><th>${b?.county || "B"}</th></tr></thead>
             <tbody>${rows || '<tr><td colspan="3">No observations for this metric.</td></tr>'}</tbody>
           </table>
-          <details style="margin-top:1rem;">
-            <summary>Full metric keys present in County A (latest year with data)</summary>
-            <pre style="white-space:pre-wrap;font-size:0.8rem;">${JSON.stringify(
-              (a?.timeline || []).slice(-1)[0]?.metrics
-                ? Object.keys((a.timeline.slice(-1)[0] || {}).metrics || {})
-                : [],
-              null,
-              2
-            )}</pre>
-          </details>
         `;
       }
       aSel.addEventListener("change", render);

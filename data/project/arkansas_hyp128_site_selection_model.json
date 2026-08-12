@@ -61,15 +61,15 @@
     },
     {
       "id": "healthcare_access",
-      "status": "STATE_PANEL_ONLY",
-      "source": "CC-EP-PRIMARY-CARE-ACCESS-1",
-      "notes": "County HPSA join still NEE"
+      "status": "PARTIAL_COUNTY_HPSA",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "HRSA primary-care Designated HPSA scores/rows bound for designated counties; maternal/hospital closure still NEE"
     },
     {
       "id": "banking_local_capital",
-      "status": "STATE_PANEL_ONLY",
-      "source": "FDIC AR vs US series",
-      "notes": "County bank/deposit concentration still NEE"
+      "status": "PARTIAL_COUNTY_FDIC_SOD",
+      "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
+      "notes": "FDIC SOD branches/deposits 2023–2025 bound; ownership density still NEE"
     },
     {
       "id": "workforce_conditions",
@@ -79,9 +79,9 @@
     },
     {
       "id": "civic_participation",
-      "status": "PARTIAL_PRES_MIDTERM_CVAP",
+      "status": "PARTIAL_PRES_MIDTERM_CVAP_REGISTERED",
       "source": "data/project/arkansas_county_longitudinal_observation_layer.json",
-      "notes": "Presidential + gubernatorial/US House/state legislative votes bound where OpenElections present; CVAP + derived turnout-of-CVAP; registered-voter turnout still NEE"
+      "notes": "Presidential/midterm votes + CVAP turnout + EAVS 2024 registered turnout bound; multi-year registration series still NEE"
     },
     {
       "id": "transportation",

@@ -1,13 +1,13 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-ARKANSAS-COUNTY-LONGITUDINAL-OBSERVATION-LAYER-1.1",
-  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-DEPTH-WAVE-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-ARKANSAS-COUNTY-LONGITUDINAL-OBSERVATION-LAYER-1.2",
+  "wave_slice_id": "CC-ARKANSAS-EMPIRICAL-INTEGRATION-WAVE-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-118",
-  "update_id": "UPD-131",
-  "status": "LAYER_V1_1_ACS_CVAP_OPENELECTIONS",
+  "decision_id": "CC-DEC-119",
+  "update_id": "UPD-132",
+  "status": "LAYER_V1_2_INTEGRATION",
   "purpose": "County × Year observation layer joining economic structure, institutional capacity signals, and civic participation for pattern discovery — not causal attribution.",
-  "research_question": "What combinations of economic structure, institutional capacity, health access, educational opportunity, agricultural structure, and civic participation tend to coexist — and how do those combinations change over time?",
+  "research_question": "Do communities with stronger institutional capacity, economic opportunity, healthcare access, educational pathways, local capital, and civic participation exhibit different trajectories over time?",
   "method_wall": [
     "observation_first",
     "interpretation_second",
@@ -1664,6 +1664,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 10,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 630919000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -1808,6 +1836,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 9137,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 6396,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 5577,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 61.0,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 60.7,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 10,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 728303000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 8,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 715524000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 16.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 1,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 43878.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -3454,6 +3666,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 5,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 168026000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -3598,6 +3838,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 3540,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 2822,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 2346,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 66.3,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 65.7,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 5,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 190694000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 5,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 178116000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 10.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 1,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 29223.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -5244,6 +5668,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 19,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 738112000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -5388,6 +5840,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 20151,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 12762,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 10774,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 53.5,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 53.2,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 19,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 776297000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 19,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 781489000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 19.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 3,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 20213.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -6950,6 +7586,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 10,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 486607000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -7094,6 +7758,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 8915,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 5772,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 4964,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 55.7,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 55.4,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 10,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 472682000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 10,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 453252000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 14.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 1,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 30296.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -8712,6 +9560,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 3,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 157540000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -8856,6 +9732,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 6230,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 6171,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 3899,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 62.6,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 62.1,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 3,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 160382000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 3,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 166587000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 19.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 3,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 21341.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -10474,6 +11534,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 7,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 400506000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -10618,6 +11706,190 @@
                 "CVAP denominator is 2019–2023 period — imperfect for 2016 and 2024",
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
+              ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 11790,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 8972,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 7697,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 65.3,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 64.6,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 7,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 414296000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 7,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 432470000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 18.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 1,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 26792.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
               ]
             }
           ]
@@ -12250,6 +13522,34 @@
               "limitations": [
                 "Not identical to ACS B01001 18+ sum; CVAP adult field"
               ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 32,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 1946755000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
             }
           ]
         },
@@ -12395,6 +13695,190 @@
                 "Not registered-voter turnout",
                 "Not official SOS turnout"
               ]
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_total",
+              "value": 46212,
+              "unit": "persons",
+              "definition": "EAVS A1a total registered voters (2024 cycle jurisdiction report)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Point-in-time registration for EAVS 2024 cycle — not a multi-year series yet"
+              ],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "registered_voters_active",
+              "value": 35990,
+              "unit": "persons",
+              "definition": "EAVS A1b active registered voters",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [],
+              "election_type": "registration_stock"
+            },
+            {
+              "domain": "civic",
+              "metric": "ballots_cast_eavs",
+              "value": 31027,
+              "unit": "ballots",
+              "definition": "EAVS F1a total ballots cast (2024 general cycle)",
+              "source_id": "EAC-EAVS-2024",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Election-type: 2024 general; preserve distinction from presidential-only totals"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "general_turnout_of_registered_percent",
+              "value": 67.1,
+              "unit": "percent",
+              "definition": "EAVS ballots cast / total registered × 100 (2024 general)",
+              "source_id": "DERIVED-EAVS-TURNOUT",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Registered-voter turnout — distinct from CVAP turnout",
+                "Preserve election-type labels"
+              ],
+              "election_type": "general_2024"
+            },
+            {
+              "domain": "civic",
+              "metric": "presidential_turnout_of_registered_percent",
+              "value": 66.7,
+              "unit": "percent",
+              "definition": "Presidential total votes / EAVS registered total × 100",
+              "source_id": "DERIVED-PRES-EAVS",
+              "source_url": "https://www.eac.gov/research-and-data/studies-and-reports",
+              "confidence": "derived",
+              "limitations": [
+                "Uses 2024 EAVS registration stock with 2024 presidential votes",
+                "Distinct from general_turnout_of_registered_percent and CVAP turnout"
+              ],
+              "election_type": "presidential_2024"
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 32,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 1996672000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "observations": [
+            {
+              "domain": "local_capital",
+              "metric": "fdic_branch_count",
+              "value": 32,
+              "unit": "branches",
+              "definition": "Count of FDIC SOD branch records in county",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Branch presence ≠ community prosperity accounts",
+                "Deposits are SOD branch deposits"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_usd",
+              "value": 2048465000,
+              "unit": "usd",
+              "definition": "Sum of FDIC SOD DEPSUMBR (converted from $ thousands) for county branches",
+              "source_id": "FDIC-SOD",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Deposit concentration ≠ local ownership",
+                "Headquarters vs branch deposits can mislead"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated",
+              "value": 1,
+              "unit": "flag",
+              "definition": "1 if any Designated HRSA primary-care HPSA row intersects county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Overlapping geographic/population/facility designations — do not sum to population share without method lock",
+                "Snapshot of download date designations"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_max_score",
+              "value": 17.0,
+              "unit": "score_0_25",
+              "definition": "Maximum HPSA score among Designated primary-care rows in county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Higher score ≈ greater shortage intensity in HRSA methodology"
+              ]
+            },
+            {
+              "domain": "healthcare",
+              "metric": "primary_care_hpsa_designated_row_count",
+              "value": 2,
+              "unit": "count",
+              "definition": "Count of Designated primary-care HPSA detail rows intersecting county",
+              "source_id": "HRSA-HPSA-PC",
+              "source_url": "https://data.hrsa.gov/data/download",
+              "confidence": "verified_primary",
+              "limitations": [
+                "Row count ≠ unique population covered"
+              ]
+            },
+            {
+              "domain": "local_capital",
+              "metric": "fdic_deposits_per_capita_usd",
+              "value": 26111.0,
+              "unit": "usd_per_person",
+              "definition": "FDIC SOD county deposits / nearest PEP population",
+              "source_id": "DERIVED-FDIC-PEP",
+              "source_url": "https://banks.data.fdic.gov/bankfind-suite/SOD",
+              "confidence": "derived",
+              "limitations": [
+                "Crude intensity proxy — not wealth or ownership"
+              ]
             }
           ]
         }
@@ -12438,20 +13922,20 @@
   ],
   "blockers": [
     {
-      "id": "census_api_key_still_invalid",
-      "detail": "api.census.gov key remains invalid; ACS5/CVAP bound via www2 FTP (no key)."
+      "id": "registered_voter_multi_year_nee",
+      "detail": "Only EAVS 2024 bound; SOS historical PDF series still NEE"
     },
     {
-      "id": "registered_voters_county_nee",
-      "detail": "County registered-voter series still NEE (SOS PDF / EAVS next)."
+      "id": "adws_county_demand_nee",
+      "detail": "ADWS demand is statewide/LWDA — county geographic gap NEE"
     },
     {
-      "id": "openelections_2022_phillips_missing",
-      "detail": "OpenElections 2022 Phillips County precinct file absent."
+      "id": "maternal_hospital_closure_nee",
+      "detail": "County maternal/hospital closure series not bound this pass"
     },
     {
-      "id": "healthcare_banking_county_still_nee",
-      "detail": "County HPSA and FDIC branch/deposit concentration still NEE."
+      "id": "ownership_density_nee",
+      "detail": "Local business/ownership density still NEE beyond FDIC/NASS"
     }
   ],
   "provenance_note": "Every non-null observation carries source_id, source_url, definition, confidence, and limitations.",
@@ -12459,10 +13943,10 @@
     "county_count": 7,
     "year_span": [
       "1997",
-      "2024"
+      "2025"
     ],
-    "non_null_observations": 654,
-    "observations_added_this_wave": 206
+    "non_null_observations": 759,
+    "observations_added_this_wave": 105
   },
   "feeds": [
     "HYP-128 site selection",
@@ -12470,5 +13954,12 @@
     "Future matched-comparison design"
   ],
   "reddirt_export_id": "exp_5da8b3fe67d94923",
-  "provenance_policy": "Never silently overwrite prior observations. ACS5 joins are added alongside PEP/SAIPE series; prefer ACS for microdata-style SES joins where definitionally superior, but retain SAIPE/PEP with original source_id."
+  "provenance_policy": "Never silently overwrite prior observations. ACS5 joins are added alongside PEP/SAIPE series; prefer ACS for microdata-style SES joins where definitionally superior, but retain SAIPE/PEP with original source_id.",
+  "analytical_mode": [
+    "which_variables_move_together",
+    "which_move_first",
+    "which_do_not_move_together",
+    "where_are_counterexamples",
+    "which_relationships_survive_cross_county_comparison"
+  ]
 }
