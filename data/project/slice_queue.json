@@ -1275,12 +1275,29 @@
       "no_automatic_CC_CLAIM_003_upgrade"
     ]
   },
+  "fred_bea_macro_wealth_gaps_density": {
+    "slice_id": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-DENSITY-1.0",
+    "status": "PASSED",
+    "mode": "density_expansion_bind_only",
+    "purpose": "BEA-first densify of macro/wealth/fiscal/productivity histories via FRED; bind existing 18 panels only.",
+    "export_id": "exp_e18ea124fac04bf8",
+    "return": "reports/CC_RCIP_PASS_10_FRED_BEA_MACRO_WEALTH_GAPS_DENSITY_1_0_RETURN.md",
+    "gap_map": "reports/CC_REMAINING_DATA_GAP_MAP_AFTER_FRED_BEA_1_0.md",
+    "holds": [
+      "bea_first_fred_retrieval",
+      "preserve_producing_agency",
+      "macro_neq_ownership_neq_capture_neq_causation",
+      "no_new_panels",
+      "no_automatic_CC_CLAIM_003_upgrade"
+    ]
+  },
   "baseline_definition_locks_next_fills": {
     "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
     "status": "QUEUED_NEXT_STRUCTURAL",
     "mode": "definition_lock_then_legitimate_baseline_fills",
-    "purpose": "Close remaining ~22 SOURCE_UNKNOWN / definition-locked baseline slots with reproducible fills — not curiosity ingest.",
-    "after": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-DENSITY-1.0",
+    "purpose": "Close remaining ~22 SOURCE_UNKNOWN / definition-locked baseline slots with reproducible fills — not curiosity ingest. Use gap map after FRED/BEA.",
+    "after": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-DENSITY-1.0",
+    "gap_map": "reports/CC_REMAINING_DATA_GAP_MAP_AFTER_FRED_BEA_1_0.md",
     "holds": [
       "denominator_held_at_64",
       "no_quota_theater",
@@ -1317,8 +1334,9 @@
     "modeling": 0,
     "legal": 0,
     "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
-    "last_completed": "RCIP-PASS-COUNTY-NASS-FARM-STRUCTURE-DENSITY-1.0",
-    "export_id": "exp_f456263593194081",
+    "last_completed": "RCIP-PASS-10-FRED-BEA-MACRO-WEALTH-GAPS-DENSITY-1.0",
+    "export_id": "exp_e18ea124fac04bf8",
+    "gap_map": "reports/CC_REMAINING_DATA_GAP_MAP_AFTER_FRED_BEA_1_0.md",
     "regenerated_at": "2026-08-12",
     "source": "pnpm progress:generate"
   },

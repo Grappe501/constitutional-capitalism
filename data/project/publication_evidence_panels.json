@@ -580,7 +580,7 @@
       ],
       "last_updated": {
         "date": "2026-08-12",
-        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA"
+        "dataset_or_release": "reddirt exp_e18ea124fac04bf8 Pass 10 densify"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -717,11 +717,378 @@
               }
             ],
             "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-TOP1-ASSET-SHARE",
+            "label": "DFA top 1% asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "28.8%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "20.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "20.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "24.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "24.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "21.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "24.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "23.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "25.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "27.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "27.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "26.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "28.8%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-P90-P99-ASSET-SHARE",
+            "label": "DFA 90–99 asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "34.7%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "35.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "33.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "31.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "33.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "32.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "34.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "35.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "36.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "36.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "36.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "34.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "34.7%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-P50-P90-ASSET-SHARE",
+            "label": "DFA 50–90 asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "31.1%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "37.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "37.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "36.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "35.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "37.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "34.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "33.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "32.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "30.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "30.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "32.6%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "31.1%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-BOTTOM50-ASSET-SHARE",
+            "label": "DFA bottom 50% asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "5.3%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "7.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "7.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "8.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "7.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "7.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "7.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "7.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "6.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "5.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "5.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "6.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "5.3%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-TOP1-FINANCIAL-ASSET-SHARE",
+            "label": "DFA top 1% financial-asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "35.5%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "25.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "25.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "30.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "29.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "27.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "30.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "29.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "30.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "31.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "32.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "33.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "35.5%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Financial-asset composition — not a prosperity score."
           }
         ],
-        "series_status": "dfa_net_worth_path_bound",
-        "series_note": "Pass 10 binds DFA net-worth share histories. Baseline W02 point dials remain Share of Total Assets unless separately revised. Concentration ≠ oligarchy proof.",
-        "qualification": "Do not upgrade CC-CLAIM-003 or treat wealth shares as market-power or capture evidence."
+        "series_status": "dfa_asset_and_net_worth_paths_bound",
+        "series_note": "Pass 10 densify attaches DFA asset-share histories alongside prior net-worth paths. Asset ≠ net worth ≠ SCF levels ≠ capture.",
+        "qualification": "Do not upgrade CC-CLAIM-003 or treat wealth shares as market-power or capture evidence.",
+        "comparison": [
+          {
+            "label": "Bottom 50% / top 1% asset shares (DFA via FRED)",
+            "value": "5.3% / 28.8% (2026-Q1)",
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          }
+        ]
       }
     },
     {
@@ -962,8 +1329,8 @@
         "Official post-2015 industry gap update tables not attached"
       ],
       "last_updated": {
-        "date": "2026-08-11",
-        "dataset_or_release": "reddirt exp_226e711e08704b06 series-arrays"
+        "date": "2026-08-12",
+        "dataset_or_release": "reddirt exp_e18ea124fac04bf8 Pass 10 densify"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1023,7 +1390,7 @@
           }
         ],
         "series_note": "Pass 6 attached RedDirt multi-year arrays for CES/CPI-derived real AHE OTY, JOLTS quits, unemployment AR/US, and a Q4 productivity spine. Official L01/L02 release cells remain the current dials; derived/Q4 series are labeled supporting history.",
-        "series_status": "partial_arrays_attached",
+        "series_status": "partial_arrays_attached_pass10_fred_bls_comp_prod_bound",
         "missing_layers": [
           "Official BLS Real Earnings L01 multi-year release table (prefer over derived CES/CPI)",
           "Official annual L02 % path (PRS85006092 Q4 ≠ L02)",
@@ -1264,6 +1631,150 @@
                 "geography": "US"
               }
             ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BLS-REAL-HOURLY-COMP",
+            "label": "BLS real hourly compensation (via FRED)",
+            "coverage": "1947-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "110.1"
+            },
+            "points": [
+              {
+                "period": "1947-Q1",
+                "value": "34.4",
+                "geography": "United States"
+              },
+              {
+                "period": "1954-Q2",
+                "value": "42.4",
+                "geography": "United States"
+              },
+              {
+                "period": "1961-Q2",
+                "value": "52.0",
+                "geography": "United States"
+              },
+              {
+                "period": "1968-Q3",
+                "value": "61.6",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q4",
+                "value": "66.7",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-Q1",
+                "value": "71.2",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q1",
+                "value": "75.7",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q2",
+                "value": "79.3",
+                "geography": "United States"
+              },
+              {
+                "period": "2004-Q3",
+                "value": "94.1",
+                "geography": "United States"
+              },
+              {
+                "period": "2011-Q4",
+                "value": "93.3",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q4",
+                "value": "101.2",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "110.1",
+                "geography": "United States"
+              }
+            ],
+            "note": "BLS producer; FRED channel. Complements Pass 6 CES arrays."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BLS-LABOR-PRODUCTIVITY",
+            "label": "BLS labor productivity OPH (via FRED)",
+            "coverage": "1947-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "119.6"
+            },
+            "points": [
+              {
+                "period": "1947-Q1",
+                "value": "22.3",
+                "geography": "United States"
+              },
+              {
+                "period": "1954-Q2",
+                "value": "27.5",
+                "geography": "United States"
+              },
+              {
+                "period": "1961-Q2",
+                "value": "32.5",
+                "geography": "United States"
+              },
+              {
+                "period": "1968-Q3",
+                "value": "41.0",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q4",
+                "value": "46.9",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-Q1",
+                "value": "50.8",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q1",
+                "value": "57.9",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q2",
+                "value": "65.4",
+                "geography": "United States"
+              },
+              {
+                "period": "2004-Q3",
+                "value": "83.1",
+                "geography": "United States"
+              },
+              {
+                "period": "2011-Q4",
+                "value": "94.6",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q4",
+                "value": "101.5",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "119.6",
+                "geography": "United States"
+              }
+            ],
+            "note": "BLS producer; FRED channel. Productivity ≠ compensation adequacy."
           }
         ]
       }
@@ -1369,11 +1880,6 @@
         "definition": "G01 = federal receipts % GDP (FY). G02 = federal outlays % GDP (FY). G03 = federal debt held by the public % GDP. All federal — not state/local tax capacity or property-tax modules.",
         "comparison": [
           {
-            "label": "Receipts vs outlays (FY2024)",
-            "value": "17.1% vs 23.4% of GDP",
-            "note": "Gap is a fiscal identity, not a tax-incidence model."
-          },
-          {
             "label": "Debt held by the public",
             "value": "~99% of GDP (2024)",
             "note": "Outlook vintages revise; later vintages may show ~100% for 2025."
@@ -1382,6 +1888,16 @@
             "label": "CBO household distribution (2021)",
             "value": "pre-tax ~19× → after transfers/taxes ~7× (Q5/Q1)",
             "note": "Distributional fact for 2021; pandemic-year effects matter. Not a property-tax module."
+          },
+          {
+            "label": "Receipts vs outlays (latest FRED/OMB identities)",
+            "value": "17.0% vs 22.8% of GDP (2025)",
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
+          },
+          {
+            "label": "Debt held by the public",
+            "value": "98.7% of GDP (2026-Q1)",
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
           }
         ],
         "observation_history": [
@@ -1399,6 +1915,13 @@
             "geography": "US",
             "source_id": "CC-SRC-013",
             "note": "One-year distributional cut — not a long-run tax-composition series."
+          },
+          {
+            "period": "1929 → 2025",
+            "value": "receipts 17.0%; outlays 22.8%; debt 98.7%",
+            "label": "Federal %GDP path (OMB/Treasury via FRED)",
+            "geography": "US",
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
           }
         ],
         "geography_contrast": [
@@ -1408,16 +1931,305 @@
             "note": "Federal identities cannot validate Arkansas or national prosperity-tax redesigns."
           }
         ],
-        "series_note": "CBO Historical Budget Data and long-run average tax rates by income group are official. Pass 5 does not invent point arrays; it marks the history layer as demanded. Pass 6: adapter still missing — no new arrays attached.",
-        "series_status": "official_series_available_adapter_blocked",
+        "series_note": "Pass 10 densify binds long federal receipts/outlays/debt %GDP histories via FRED. CBO tax-rate-by-income and revenue-composition adapters remain separate. Federal identities ≠ state/local no-PIT redesign proof.",
+        "series_status": "fred_omb_treasury_pct_gdp_bound_cbo_tax_tables_still_blocked",
         "missing_layers": [
-          "Federal receipts/outlays/debt % GDP multi-decade path — RCIP-DEM-0007 / PASS5-DEM-CBO-BUDGET-HISTORY",
           "CBO average federal tax rates by income group over time — PASS5-DEM-CBO-TAX-RATES",
           "Federal revenue composition (individual/corporate/payroll/excise) historical shares — PASS5-DEM-REV-COMPOSITION",
           "State/local tax capacity and property-tax modules (CC-CLAIM-017)",
           "Destination-based tax administration evidence (CC-CLAIM-008)"
         ],
-        "qualification": "These dials do not prove a no-personal-income-tax / no-property-tax redesign is feasible. Do not invent state revenue replacement paths."
+        "qualification": "These dials do not prove a no-personal-income-tax / no-property-tax redesign is feasible. Do not invent state revenue replacement paths.",
+        "series_points": [
+          {
+            "series_id": "CC-PASS10-FRED-OMB-RECEIPTS-PCT-GDP",
+            "label": "Federal receipts % GDP",
+            "coverage": "1929 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "17.0%"
+            },
+            "points": [
+              {
+                "period": "1929",
+                "value": "3.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1938",
+                "value": "7.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1946",
+                "value": "17.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "15.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "1964",
+                "value": "16.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "1973",
+                "value": "16.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "1981",
+                "value": "18.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "17.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999",
+                "value": "19.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "17.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016",
+                "value": "17.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "17.0%",
+                "geography": "United States"
+              }
+            ],
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-OMB-OUTLAYS-PCT-GDP",
+            "label": "Federal net outlays % GDP",
+            "coverage": "1929 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "22.8%"
+            },
+            "points": [
+              {
+                "period": "1929",
+                "value": "3.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1938",
+                "value": "7.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1946",
+                "value": "24.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "16.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1964",
+                "value": "17.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1973",
+                "value": "17.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "1981",
+                "value": "21.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "21.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999",
+                "value": "17.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "20.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016",
+                "value": "20.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "22.8%",
+                "geography": "United States"
+              }
+            ],
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DEBT-HELD-BY-PUBLIC-PCT-GDP",
+            "label": "Debt held by public % GDP",
+            "coverage": "1970-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "98.7%"
+            },
+            "points": [
+              {
+                "period": "1970-Q1",
+                "value": "26.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q1",
+                "value": "23.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1980-Q2",
+                "value": "24.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "1985-Q2",
+                "value": "34.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q2",
+                "value": "39.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "1995-Q3",
+                "value": "47.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2000-Q3",
+                "value": "33.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2005-Q4",
+                "value": "35.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2010-Q4",
+                "value": "61.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2015-Q4",
+                "value": "74.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2021-Q1",
+                "value": "97.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "98.7%",
+                "geography": "United States"
+              }
+            ],
+            "note": "OMB/Treasury×BEA identities via FRED — not CBO Historical Budget Data and not tax-rate-by-income tables."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-CORPORATE-PROFITS",
+            "label": "BEA corporate profits after tax",
+            "coverage": "1947-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "$3950.7B"
+            },
+            "points": [
+              {
+                "period": "1947-Q1",
+                "value": "$22.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1954-Q2",
+                "value": "$22.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "1961-Q2",
+                "value": "$30.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "1968-Q3",
+                "value": "$61.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q4",
+                "value": "$124.1B",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-Q1",
+                "value": "$174.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q1",
+                "value": "$272.8B",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q2",
+                "value": "$584.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "2004-Q3",
+                "value": "$1042.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "2011-Q4",
+                "value": "$1671.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q4",
+                "value": "$2016.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "$3950.7B",
+                "geography": "United States"
+              }
+            ],
+            "note": "Income-side structure — not markups and not capture."
+          }
+        ]
       },
       "what_the_data_show": {
         "key_finding": "Federal fiscal dials remain receipts 17.1% / outlays 23.4% / debt held by the public ~99% of GDP, with CBO 2021 household compression ~19×→~7×. Pass 5 makes the missing multi-decade budget-identity history and state/local tax modules explicit rather than inventing series.",
@@ -1469,8 +2281,8 @@
         "State/local property-tax modules (CC-CLAIM-017)"
       ],
       "last_updated": {
-        "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json + CBO distributional/historical demand status"
+        "date": "2026-08-12",
+        "dataset_or_release": "reddirt exp_e18ea124fac04bf8 Pass 10 densify"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1570,7 +2382,7 @@
           }
         ],
         "series_note": "Pass 10 attaches DFA quarterly net-worth share paths (1989–present via FRED). SCF triennial micro tables, CBO budget history, and markups remain blocked. Wealth shares ≠ capture.",
-        "series_status": "dfa_net_worth_path_bound_scf_triennial_still_blocked",
+        "series_status": "dfa_paths_and_bea_income_flows_bound_scf_still_blocked",
         "missing_layers": [
           "SCF triennial median/mean table 1989–2022 — RCIP-DEM-0001 / PASS5-DEM-SCF-HISTORY",
           "W05 retirement ownership triennial path",
@@ -1868,6 +2680,366 @@
               }
             ],
             "note": "These are Share of Total Net Worth (DFA via FRED). Baseline W02 dials (top 1% ≈28.8% / bottom 50% ≈5.3%) match Share of Total Assets in the same FRED release tables — do not collapse net-worth and asset shares."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-TOP1-ASSET-SHARE",
+            "label": "DFA top 1% asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "28.8%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "20.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "20.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "24.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "24.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "21.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "24.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "23.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "25.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "27.1%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "27.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "26.9%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "28.8%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-DFA-BOTTOM50-ASSET-SHARE",
+            "label": "DFA bottom 50% asset share",
+            "coverage": "1989-Q3 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "5.3%"
+            },
+            "points": [
+              {
+                "period": "1989-Q3",
+                "value": "7.2%",
+                "geography": "United States"
+              },
+              {
+                "period": "1992-Q4",
+                "value": "7.8%",
+                "geography": "United States"
+              },
+              {
+                "period": "1996-Q2",
+                "value": "8.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "1999-Q3",
+                "value": "7.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2002-Q4",
+                "value": "7.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2006-Q1",
+                "value": "7.4%",
+                "geography": "United States"
+              },
+              {
+                "period": "2009-Q3",
+                "value": "7.7%",
+                "geography": "United States"
+              },
+              {
+                "period": "2012-Q4",
+                "value": "6.3%",
+                "geography": "United States"
+              },
+              {
+                "period": "2016-Q1",
+                "value": "5.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2019-Q2",
+                "value": "5.5%",
+                "geography": "United States"
+              },
+              {
+                "period": "2022-Q4",
+                "value": "6.0%",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "5.3%",
+                "geography": "United States"
+              }
+            ],
+            "note": "Share of Total Assets (DFA via FRED) — matches baseline W02 product. Distinct from net-worth shares already bound."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-REAL-DPI-PER-CAPITA",
+            "label": "BEA real DPI per capita",
+            "coverage": "1959-01 → 2026-06",
+            "latest": {
+              "period": "2026-06",
+              "value": "$52,669"
+            },
+            "points": [
+              {
+                "period": "1959-01",
+                "value": "$13,186",
+                "geography": "United States"
+              },
+              {
+                "period": "1965-03",
+                "value": "$15,621",
+                "geography": "United States"
+              },
+              {
+                "period": "1971-04",
+                "value": "$19,243",
+                "geography": "United States"
+              },
+              {
+                "period": "1977-06",
+                "value": "$21,852",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-07",
+                "value": "$24,091",
+                "geography": "United States"
+              },
+              {
+                "period": "1989-09",
+                "value": "$28,641",
+                "geography": "United States"
+              },
+              {
+                "period": "1995-10",
+                "value": "$30,750",
+                "geography": "United States"
+              },
+              {
+                "period": "2001-12",
+                "value": "$35,943",
+                "geography": "United States"
+              },
+              {
+                "period": "2008-01",
+                "value": "$40,020",
+                "geography": "United States"
+              },
+              {
+                "period": "2014-03",
+                "value": "$41,464",
+                "geography": "United States"
+              },
+              {
+                "period": "2020-04",
+                "value": "$54,304",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-06",
+                "value": "$52,669",
+                "geography": "United States"
+              }
+            ],
+            "note": "Income flow — not retirement adequacy or ownership redesign proof."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-COMPENSATION-WAGES",
+            "label": "BEA wage and salary disbursements",
+            "coverage": "1959-01 → 2026-06",
+            "latest": {
+              "period": "2026-06",
+              "value": "$13404.0B"
+            },
+            "points": [
+              {
+                "period": "1959-01",
+                "value": "$252.3B",
+                "geography": "United States"
+              },
+              {
+                "period": "1965-03",
+                "value": "$354.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "1971-04",
+                "value": "$576.4B",
+                "geography": "United States"
+              },
+              {
+                "period": "1977-06",
+                "value": "$991.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-07",
+                "value": "$1683.9B",
+                "geography": "United States"
+              },
+              {
+                "period": "1989-09",
+                "value": "$2600.9B",
+                "geography": "United States"
+              },
+              {
+                "period": "1995-10",
+                "value": "$3470.3B",
+                "geography": "United States"
+              },
+              {
+                "period": "2001-12",
+                "value": "$4944.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "2008-01",
+                "value": "$6518.9B",
+                "geography": "United States"
+              },
+              {
+                "period": "2014-03",
+                "value": "$7404.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "2020-04",
+                "value": "$8706.4B",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-06",
+                "value": "$13404.0B",
+                "geography": "United States"
+              }
+            ],
+            "note": "Labor-income flow via BEA — not wealth share."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-PROPRIETORS-INCOME",
+            "label": "BEA proprietors' income",
+            "coverage": "1947-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "$2138.0B"
+            },
+            "points": [
+              {
+                "period": "1947-Q1",
+                "value": "$36.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1954-Q2",
+                "value": "$42.1B",
+                "geography": "United States"
+              },
+              {
+                "period": "1961-Q2",
+                "value": "$52.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "1968-Q3",
+                "value": "$75.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q4",
+                "value": "$125.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-Q1",
+                "value": "$183.3B",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q1",
+                "value": "$345.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q2",
+                "value": "$575.1B",
+                "geography": "United States"
+              },
+              {
+                "period": "2004-Q3",
+                "value": "$964.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "2011-Q4",
+                "value": "$1268.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q4",
+                "value": "$1529.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "$2138.0B",
+                "geography": "United States"
+              }
+            ],
+            "note": "Small-owner income flow ≠ wealth concentration share."
           }
         ]
       },
@@ -1922,7 +3094,7 @@
       ],
       "last_updated": {
         "date": "2026-08-12",
-        "dataset_or_release": "reddirt exp_9e75bc70adf94e7e Pass 10 FRED/BEA"
+        "dataset_or_release": "reddirt exp_e18ea124fac04bf8 Pass 10 densify"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -2130,10 +3302,20 @@
             "label": "Broiler inventory presence (disclosure-aware)",
             "value": "Attached: Van Buren, Searcy, Lafayette, White. Not attached / suppressed: Arkansas, Mississippi, Phillips.",
             "note": "Missing cells are disclosure/definition outcomes — not proof of absence of poultry economy narratives."
+          },
+          {
+            "label": "Arkansas real GDP (BEA via FRED)",
+            "value": "$150.6B (2025)",
+            "note": "Complements county NASS structure; does not explain consolidation causes."
+          },
+          {
+            "label": "Arkansas farm proprietors' income (BEA via FRED)",
+            "value": "$2,409M (2026-Q1); US $75.8B",
+            "note": "Income ≠ structure ≠ market power. Complements county NASS ops/acres/sales."
           }
         ],
         "series_note": "Pass 9 attached USDA NASS Census farm-structure histories (operations, acres operated, ag product sales, broiler inventory, cattle-cows inventory) and 2022 sales-class bookends via exp_a700221b6d2e4b3a. Pass 8 FDIC and Pass 6 BDS arrays retained. Production concentration ≠ market power ≠ monopsony ≠ political capture. County NASS pass attached designated-geography farm-structure histories via exp_2849252ba6094615 (ops/acres/sales/livestock where disclosure-safe). County sales-class economic-class facets returned HTTP 400 and remain blocked. Structure ≠ market power ≠ monopsony ≠ capture. Pass 10 adds BEA/FRED AR–US personal income, GDP, and personal saving rate. Macro structure ≠ capture. County NASS density pass via exp_f456263593194081: core ops/acres/sales/livestock plus crop/animal sales split, commodity acreage (rice/soy/cotton/corn/wheat/hay), and expanded livestock inventories where disclosure-safe. County sales-class still blocked. Structure ≠ market power ≠ monopsony ≠ capture. NASS shows what happened to structure, not why.",
-        "series_status": "county_nass_density_bound_pass9_pass10_retained",
+        "series_status": "county_nass_and_pass10_fred_bea_density_bound",
         "missing_layers": [
           "FDIC QBP multi-year community-bank domestic deposit/loan share path — PASS5-DEM-FDIC-PATH (current CB:1 snapshot only)",
           "Hospital-access baseline CM03 (deferred)",
@@ -7036,6 +8218,438 @@
                 "geography": "White County, AR"
               }
             ]
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-AR-REAL-GDP",
+            "label": "BEA Arkansas real GDP",
+            "coverage": "1997 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$150.6B"
+            },
+            "points": [
+              {
+                "period": "1997",
+                "value": "$87.2B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2000",
+                "value": "$95.5B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2002",
+                "value": "$98.6B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005",
+                "value": "$112.5B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2007",
+                "value": "$114.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2010",
+                "value": "$113.0B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2012",
+                "value": "$116.6B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2015",
+                "value": "$121.5B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017",
+                "value": "$123.9B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2020",
+                "value": "$128.4B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2022",
+                "value": "$138.7B",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2025",
+                "value": "$150.6B",
+                "geography": "Arkansas"
+              }
+            ],
+            "note": "Real state output — not rural-only and not capture."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-US-REAL-GDP",
+            "label": "BEA US real GDP",
+            "coverage": "1947-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "$24.2T"
+            },
+            "points": [
+              {
+                "period": "1947-Q1",
+                "value": "$2.2T",
+                "geography": "United States"
+              },
+              {
+                "period": "1954-Q2",
+                "value": "$2.8T",
+                "geography": "United States"
+              },
+              {
+                "period": "1961-Q2",
+                "value": "$3.6T",
+                "geography": "United States"
+              },
+              {
+                "period": "1968-Q3",
+                "value": "$5.2T",
+                "geography": "United States"
+              },
+              {
+                "period": "1975-Q4",
+                "value": "$6.2T",
+                "geography": "United States"
+              },
+              {
+                "period": "1983-Q1",
+                "value": "$7.4T",
+                "geography": "United States"
+              },
+              {
+                "period": "1990-Q1",
+                "value": "$10.0T",
+                "geography": "United States"
+              },
+              {
+                "period": "1997-Q2",
+                "value": "$12.3T",
+                "geography": "United States"
+              },
+              {
+                "period": "2004-Q3",
+                "value": "$15.5T",
+                "geography": "United States"
+              },
+              {
+                "period": "2011-Q4",
+                "value": "$17.2T",
+                "geography": "United States"
+              },
+              {
+                "period": "2018-Q4",
+                "value": "$20.3T",
+                "geography": "United States"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "$24.2T",
+                "geography": "United States"
+              }
+            ],
+            "note": "National real GDP companion."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-AR-PERSONAL-INCOME",
+            "label": "BEA Arkansas total personal income",
+            "coverage": "1980-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "$196,109M"
+            },
+            "points": [
+              {
+                "period": "1980-Q1",
+                "value": "$16,797M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1984-Q2",
+                "value": "$24,329M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1988-Q2",
+                "value": "$30,387M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1992-Q3",
+                "value": "$39,983M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1996-Q4",
+                "value": "$50,775M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2001-Q1",
+                "value": "$63,736M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005-Q1",
+                "value": "$76,289M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2009-Q2",
+                "value": "$90,940M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013-Q3",
+                "value": "$107,628M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017-Q4",
+                "value": "$125,726M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2021-Q4",
+                "value": "$159,858M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "$196,109M",
+                "geography": "Arkansas"
+              }
+            ],
+            "note": "State income level — complements PCPI; not local ownership."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-AR-FARM-PROPRIETORS-INCOME",
+            "label": "BEA Arkansas farm proprietors' income",
+            "coverage": "1980-Q1 → 2026-Q1",
+            "latest": {
+              "period": "2026-Q1",
+              "value": "$2,409M"
+            },
+            "points": [
+              {
+                "period": "1980-Q1",
+                "value": "$274M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1984-Q2",
+                "value": "$774M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1988-Q2",
+                "value": "$1,241M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1992-Q3",
+                "value": "$1,274M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "1996-Q4",
+                "value": "$1,603M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2001-Q1",
+                "value": "$1,822M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2005-Q1",
+                "value": "$1,644M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2009-Q2",
+                "value": "$565M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2013-Q3",
+                "value": "$2,350M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2017-Q4",
+                "value": "$1,277M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2021-Q4",
+                "value": "$1,856M",
+                "geography": "Arkansas"
+              },
+              {
+                "period": "2026-Q1",
+                "value": "$2,409M",
+                "geography": "Arkansas"
+              }
+            ],
+            "note": "Income flow complementary to NASS farm structure — not causation of consolidation."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-US-FARM-PROPRIETORS-INCOME",
+            "label": "BEA US farm proprietors' income",
+            "coverage": "1929 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$75.8B"
+            },
+            "points": [
+              {
+                "period": "1929",
+                "value": "$5.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "1938",
+                "value": "$4.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1946",
+                "value": "$14.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "$10.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "1964",
+                "value": "$9.8B",
+                "geography": "United States"
+              },
+              {
+                "period": "1973",
+                "value": "$29.1B",
+                "geography": "United States"
+              },
+              {
+                "period": "1981",
+                "value": "$19.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "$32.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1999",
+                "value": "$28.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "$39.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "2016",
+                "value": "$36.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "$75.8B",
+                "geography": "United States"
+              }
+            ],
+            "note": "National farm income companion to NASS structure."
+          },
+          {
+            "series_id": "CC-PASS10-FRED-BEA-TRANSFER-RECEIPTS",
+            "label": "BEA personal current transfer receipts",
+            "coverage": "1929 → 2025",
+            "latest": {
+              "period": "2025",
+              "value": "$4952.0B"
+            },
+            "points": [
+              {
+                "period": "1929",
+                "value": "$1.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "1938",
+                "value": "$2.4B",
+                "geography": "United States"
+              },
+              {
+                "period": "1946",
+                "value": "$10.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "1955",
+                "value": "$15.7B",
+                "geography": "United States"
+              },
+              {
+                "period": "1964",
+                "value": "$33.5B",
+                "geography": "United States"
+              },
+              {
+                "period": "1973",
+                "value": "$112.6B",
+                "geography": "United States"
+              },
+              {
+                "period": "1981",
+                "value": "$319.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "1990",
+                "value": "$596.9B",
+                "geography": "United States"
+              },
+              {
+                "period": "1999",
+                "value": "$1026.2B",
+                "geography": "United States"
+              },
+              {
+                "period": "2008",
+                "value": "$1955.1B",
+                "geography": "United States"
+              },
+              {
+                "period": "2016",
+                "value": "$2777.0B",
+                "geography": "United States"
+              },
+              {
+                "period": "2025",
+                "value": "$4952.0B",
+                "geography": "United States"
+              }
+            ],
+            "note": "Transfer structure — not poverty adequacy."
           }
         ]
       },
@@ -7138,7 +8752,7 @@
       ],
       "last_updated": {
         "date": "2026-08-12",
-        "dataset_or_release": "County NASS farm-structure arrays bound from exp_f456263593194081"
+        "dataset_or_release": "reddirt exp_e18ea124fac04bf8 Pass 10 densify"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -8865,5 +10479,8 @@
   "last_updated": "2026-08-12",
   "pass_10_rule": "FRED as distribution channel for Fed DFA net-worth histories and BEA-produced macro series. Bind existing panels only. 0 new panels. Wealth/income structure ≠ market power ≠ political capture.",
   "pass_10_export_id": "exp_9e75bc70adf94e7e",
-  "pass_10_bound_at": "2026-08-12T05:39:59.889Z"
+  "pass_10_bound_at": "2026-08-12T05:39:59.889Z",
+  "pass_10_density_rule": "BEA-first densify via FRED channel; preserve original producer; bind existing panels only; 0 new panels; structure ≠ capture.",
+  "pass_10_density_export_id": "exp_e18ea124fac04bf8",
+  "pass_10_density_bound_at": "2026-08-12T06:18:16.182Z"
 }
