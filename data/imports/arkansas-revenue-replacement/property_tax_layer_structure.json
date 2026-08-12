@@ -1,145 +1,208 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "version": "2.0.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-125",
-  "update_id": "UPD-138",
-  "rule": "Replace property tax is several different fiscal problems. Do not collapse URT, additional school millage, county, municipal, special-district, and debt-service layers.",
-  "sources": [
-    {
-      "id": "ACD_2025_TAXABLE",
-      "label": "AACD / DFA Assessment Coordination Division — 2026 Annual Report (2025 taxable values)",
-      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F000%2F27925%2FExhibit+H.08.b+-+DFA+-+ACD+-+2026+Annual+Report.pdf",
-      "statewide_taxable_value_2025": 73937121379
+  "decision_id": "CC-DEC-126",
+  "update_id": "UPD-139",
+  "supersedes_note": "Replaces v1 estimated mixed school-additional layer with DESE M&O vs debt split",
+  "rule": "$1 of school URT \u2260 $1 of city millage \u2260 $1 of bonded debt-service millage. Replace millage-class by millage-class.",
+  "preferred_dollars": {
+    "school_urt_bound_usd": 1602678681,
+    "school_additional_mo_preferred_usd": 63673549,
+    "school_debt_service_preferred_usd": 945415981,
+    "school_total_collections_est_county_av_weighted_usd": 2611768211,
+    "county_collections_est_av_weighted_usd": 496554570,
+    "municipal_share_method_usd": 231422500,
+    "special_share_method_usd": 33060357,
+    "crosscheck_dese_simple_avg_mill_method_usd": {
+      "school_additional_mo": 57465647,
+      "school_debt_service": 852727630
     },
-    {
-      "id": "MILLAGE_BOOK_2025",
-      "label": "AACD 2025 Millage Report (2026 Collections) — state averages of per-county averages",
-      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025-millage-2026-collections.pdf",
-      "state_average_mills": {
-        "school_district": 38.52,
-        "county": 4.17,
-        "city": 7.93,
-        "overall": 48.8
-      },
-      "structure_note": "School Total may include M&O and Debt Service. City Total may include general, fire/police pension, library, bond, park, other. County Total may include general, road, library, hospital, community college, other."
+    "methods": {
+      "school_total": "Sum(county_avg_school_mills \u00d7 county_2024_AV) \u00d7 scale_to_2025_taxable \u00d7 URT_collection_factor",
+      "debt_and_addl_mo_preferred": "Allocate (school_total_est \u2212 URT_bound) by DESE unweighted mill shares of Debt vs M&O-above-URT across 233 LEAs",
+      "debt_and_addl_mo_crosscheck": "DESE simple-average mills \u00d7 2025 statewide taxable \u00d7 URT_collection_factor",
+      "municipal_special": "AAC contextual share on school-implied property total \u2014 not official DFA dollar table"
     },
-    {
-      "id": "BLR_URT",
-      "label": "BLR Funding Overview — 98% URT local foundation",
-      "bound_usd": 1602678681
-    },
-    {
-      "id": "AAC_SHARE_CONTEXT",
-      "label": "Association of Arkansas Counties — approximate property-tax distribution shares (contextual, not a DFA table)",
-      "url": "https://arcounties.org/media/articles/the-critical-role-of-property-taxes-in-arkansas-and-why-we-should-leave-them-alone-1/",
-      "shares": { "schools": 0.79, "counties": 0.13, "municipalities": 0.07, "other": 0.01 },
-      "status": "CONTEXT_SHARE_STRUCTURE_NOT_OFFICIAL_DOLLAR_BIND"
-    }
-  ],
-  "one_mill_theoretical_levy_usd": 73937121.379,
-  "collection_factor_vs_urt": {
-    "urt_25_theoretical_levy_usd": 1848428034.475,
-    "urt_foundation_bound_usd": 1602678681,
-    "implied_factor": 0.86705,
-    "note": "Used only to scale ILLUSTRATIVE mill×AV estimates toward collection-like dollars. Not an official collection rate for every layer."
+    "key_finding": "DESE mill structure: ~94% of non-URT school mills are debt service; additional M&O above URT is small on average (~0.9 mills)."
   },
   "layers": [
     {
       "id": "LAYER-SCHOOL-URT-25",
-      "name": "School Uniform Rate of Tax (25 mills)",
       "status": "BOUND",
       "current_dollars": 1602678681,
-      "method": "BLR foundation table — estimated local taxes 98% of URT × assessment (2024–25)",
-      "recipient": "Traditional public school foundation funding (M&O)",
-      "legal_dependency": "Constitutional (Ark. Const. Art. 14, § 3)",
-      "volatility": "Relatively stable vs IIT; assessment-cycle and collection-rate sensitive",
-      "incidence": "Property owners (homeowners, businesses, ag, utilities); liquidity hardship possible even when asset-rich",
-      "replacement_burden": 1602678681,
+      "mills": 25,
+      "recipient": "Traditional public school foundation M&O",
+      "legal_dependency": "CONSTITUTIONAL",
       "transition_hardness": "CONSTITUTIONAL"
     },
     {
-      "id": "LAYER-SCHOOL-ADDITIONAL",
-      "name": "Additional school millage above URT (avg school 38.52 − 25 = 13.52 mills)",
-      "status": "ESTIMATED_ILLUSTRATIVE",
-      "average_mills_above_urt": 13.52,
-      "theoretical_levy_usd": 999629840.64,
-      "estimated_collections_usd": 866800000,
-      "method": "State-average school millage above 25 × 2025 taxable AV, scaled by URT collection factor",
-      "recipient": "School districts — additional M&O and/or debt service (mixed; statewide debt split NEE)",
-      "legal_dependency": "Statutory / local voter-approved millages above constitutional URT",
-      "volatility": "Local election and assessment sensitive",
-      "incidence": "Same property base as URT; local rate variation high",
-      "replacement_burden": 866800000,
+      "id": "LAYER-SCHOOL-ADDITIONAL-MO",
+      "status": "ESTIMATED_SCHOOL_TOTAL_MINUS_URT_X_DESE_SHARE",
+      "average_mills_above_urt": 0.8964,
+      "estimated_collections_usd": 63673549,
+      "crosscheck_simple_avg_mill_method_usd": 57465647,
+      "recipient": "School district M&O above foundation",
+      "legal_dependency": "STATUTORY_LOCAL_VOTER",
       "transition_hardness": "STATUTORY_LOCAL",
-      "contains_debt_service": "PARTIAL_UNKNOWN_SPLIT",
-      "note": "Debt-service mills are embedded in School Total in the millage book; statewide M&O vs bond split not yet inventory-bound."
+      "debt_covenant_blocker": false
     },
     {
       "id": "LAYER-SCHOOL-DEBT-SERVICE",
-      "name": "School debt-service millage (subset of school total)",
-      "status": "NEE_SPLIT",
-      "current_dollars": null,
-      "method": "Present in millage book School Other Bond columns at district level; statewide aggregation not completed this slice",
+      "status": "ESTIMATED_SCHOOL_TOTAL_MINUS_URT_X_DESE_SHARE",
+      "average_debt_service_mills": 13.3016,
+      "estimated_collections_usd": 945415981,
+      "crosscheck_simple_avg_mill_method_usd": 852727630,
+      "dese_share_of_non_urt_mills": 0.9369,
       "recipient": "School bonded debt service",
-      "legal_dependency": "Local voter-approved bonds / millages; contractual debt obligations",
-      "replacement_burden": null,
+      "legal_dependency": "CONTRACTUAL_PLUS_LOCAL_VOTER",
       "transition_hardness": "CONTRACTUAL_PLUS_LOCAL",
-      "note": "Must not be retired casually — debt covenants may require dedicated millage until bonds mature."
+      "debt_covenant_blocker": true,
+      "note": "Protected first in any retirement sequence. District-AV-weighted collections still NEE."
     },
     {
       "id": "LAYER-COUNTY",
-      "name": "County millage (state avg 4.17 mills)",
-      "status": "ESTIMATED_ILLUSTRATIVE",
-      "average_mills": 4.17,
-      "theoretical_levy_usd": 308317795.75,
-      "estimated_collections_usd": 267400000,
-      "method": "State-average county millage × 2025 taxable AV × URT collection factor",
-      "recipient": "Counties — general, road, library, hospital, community college, other (mixed)",
-      "legal_dependency": "Statutory / quorum court levies within constitutional/statutory caps",
-      "volatility": "Moderate",
-      "incidence": "Countywide property base",
-      "replacement_burden": 267400000,
+      "status": "ESTIMATED_COUNTY_AV_WEIGHTED",
+      "estimated_collections_usd": 496554570,
+      "recipient": "County general/road/library/hospital/college/other",
+      "legal_dependency": "STATUTORY_LOCAL",
       "transition_hardness": "STATUTORY_LOCAL"
     },
     {
       "id": "LAYER-MUNICIPAL",
-      "name": "Municipal millage (state avg city millage 7.93 — NOT statewide AV-weighted)",
-      "status": "ESTIMATED_UPPER_BOUND_ILLUSTRATIVE",
-      "average_mills": 7.93,
-      "theoretical_levy_if_applied_to_full_av_usd": 586321282.54,
-      "estimated_collections_if_full_av_usd": 508400000,
-      "alt_share_method_usd": 218800000,
-      "alt_method": "If school layers ~$2.469B ≈ 79% of property tax (AAC share context), municipalities ≈ 7% → ~$219M",
-      "recipient": "Cities — general, fire/police pension, library, bonds, parks, other",
-      "legal_dependency": "Statutory / city council levies; some voter-approved",
-      "volatility": "Local",
-      "incidence": "Municipal property base only — full-AV scaling overstates; prefer share method or parcel inventory",
-      "replacement_burden_preferred": 218800000,
-      "replacement_burden_range_usd": [218800000, 508400000],
+      "status": "ESTIMATED_SHARE_METHOD",
+      "estimated_collections_usd": 231422500,
+      "recipient": "City general/pension/library/bond/park/other",
+      "legal_dependency": "STATUTORY_LOCAL",
       "transition_hardness": "STATUTORY_LOCAL",
-      "note": "City millage averages are averages of city rates, not a statewide effective rate on all taxable value."
+      "note": "Bond/pension subclasses not yet dollar-split statewide."
     },
     {
       "id": "LAYER-SPECIAL-DISTRICTS",
-      "name": "Special districts / other entities (~1% contextual share)",
-      "status": "NEE_PLUS_CONTEXT_SHARE",
-      "current_dollars": null,
-      "alt_share_method_usd": 31300000,
-      "recipient": "Special districts and other local entities",
-      "legal_dependency": "Varies by district authorizing law",
-      "replacement_burden_preferred": 31300000,
+      "status": "ESTIMATED_SHARE_METHOD",
+      "estimated_collections_usd": 33060357,
+      "recipient": "Special districts / other",
+      "legal_dependency": "VARIES",
       "transition_hardness": "VARIES"
     }
   ],
   "replacement_burden_summary_usd": {
     "school_urt_bound": 1602678681,
-    "school_additional_estimated": 866800000,
-    "school_debt_service_nee": null,
-    "county_estimated": 267400000,
-    "municipal_preferred_estimate": 218800000,
-    "special_other_preferred_estimate": 31300000,
-    "property_tax_layers_sum_ex_debt_split": 2986958681,
-    "note": "URT is the only property layer with primary foundation-dollar bind. Other layers are structural estimates pending full millage×assessment×collections inventory. Debt-service dollars remain inside school-additional until split."
-  }
+    "school_additional_mo_estimated": 63673549,
+    "school_debt_service_estimated": 945415981,
+    "county_estimated": 496554570,
+    "municipal_estimated": 231422500,
+    "special_estimated": 33060357,
+    "property_layers_sum": 3372805638
+  },
+  "legal_dependency_matrix": [
+    {
+      "layer_id": "LAYER-SCHOOL-URT-25",
+      "name": "School Uniform Rate of Tax (25 mills)",
+      "legal_class": "CONSTITUTIONAL",
+      "authority": "Ark. Const. Art. 14, \u00a7 3",
+      "admin_replaceable": false,
+      "requires_state_statute": true,
+      "requires_constitutional_change": true,
+      "debt_covenant_blocker": false,
+      "retirement_gate": "Demonstrated recurring replacement + constitutional redesign/amendment path",
+      "sequence_position": "LATE \u2014 after local M&O pilots and additional school millage path"
+    },
+    {
+      "layer_id": "LAYER-SCHOOL-ADDITIONAL-MO",
+      "name": "Additional school M&O above URT",
+      "legal_class": "STATUTORY_LOCAL_VOTER",
+      "authority": "Local school elections / school millage statutes; rollback rules (e.g. A.C.A. \u00a7 6-14-115)",
+      "admin_replaceable": false,
+      "requires_state_statute": true,
+      "requires_constitutional_change": false,
+      "debt_covenant_blocker": false,
+      "retirement_gate": "District-by-district when replacement dollars reserved for same M&O obligations",
+      "sequence_position": "MID \u2014 after debt protection and vulnerable-household relief"
+    },
+    {
+      "layer_id": "LAYER-SCHOOL-DEBT-SERVICE",
+      "name": "School debt-service millage",
+      "legal_class": "CONTRACTUAL_PLUS_LOCAL_VOTER",
+      "authority": "Voter-approved bonds; pledged debt-service mills; DESE bonded debt assistance context (A.C.A. \u00a7 6-20-2503)",
+      "admin_replaceable": false,
+      "requires_state_statute": true,
+      "requires_constitutional_change": false,
+      "debt_covenant_blocker": true,
+      "retirement_gate": "Cannot retire while pledged mills required for outstanding obligations; refinance/defease or wait maturity",
+      "sequence_position": "FIRST PROTECTED \u2014 do not cut pledged debt mills"
+    },
+    {
+      "layer_id": "LAYER-COUNTY",
+      "name": "County millage",
+      "legal_class": "STATUTORY_LOCAL",
+      "authority": "Quorum court levies within constitutional/statutory caps",
+      "admin_replaceable": "PARTIAL",
+      "requires_state_statute": "LIKELY_FOR_FULL_RETIREMENT",
+      "requires_constitutional_change": false,
+      "debt_covenant_blocker": "POSSIBLE",
+      "retirement_gate": "County-class by class; preserve pledged debt mills",
+      "sequence_position": "EARLY/MID local M&O replacement candidates"
+    },
+    {
+      "layer_id": "LAYER-MUNICIPAL",
+      "name": "Municipal millage",
+      "legal_class": "STATUTORY_LOCAL",
+      "authority": "City levies; some voter-approved; pension/bond dedications",
+      "admin_replaceable": "PARTIAL",
+      "requires_state_statute": "LIKELY_FOR_FULL_RETIREMENT",
+      "requires_constitutional_change": false,
+      "debt_covenant_blocker": "YES for city bond mills",
+      "retirement_gate": "Separate general vs pension vs bond; bond mills protected",
+      "sequence_position": "EARLY/MID with bond protection"
+    },
+    {
+      "layer_id": "LAYER-SPECIAL-DISTRICTS",
+      "name": "Special districts / other",
+      "legal_class": "VARIES_BY_AUTHORIZING_LAW",
+      "authority": "District-specific statutes",
+      "admin_replaceable": false,
+      "requires_state_statute": true,
+      "requires_constitutional_change": false,
+      "debt_covenant_blocker": "VARIES",
+      "retirement_gate": "Entity-by-entity legal read",
+      "sequence_position": "CASE-BY-CASE"
+    }
+  ],
+  "category_taxable_value_2025": {
+    "source": "AACD 2026 Annual Report statewide taxable value by category (2025)",
+    "dollars": {
+      "agricultural_land": 2012690609,
+      "agricultural_improvements": 2623586468,
+      "residential_incl_manufactured": 33555278677,
+      "minerals": 304565952,
+      "business_personal": 7935130795,
+      "vehicles": 8531320595,
+      "industrial": 834210485,
+      "utility": 6426099061,
+      "commercial": 11714238737
+    },
+    "shares_of_statewide_taxable": {
+      "agricultural_land": 0.0272,
+      "agricultural_improvements": 0.0355,
+      "residential_incl_manufactured": 0.4538,
+      "minerals": 0.0041,
+      "business_personal": 0.1073,
+      "vehicles": 0.1154,
+      "industrial": 0.0113,
+      "utility": 0.0869,
+      "commercial": 0.1584
+    },
+    "sum_categories": 73937121379,
+    "statewide_total": 73937121379,
+    "category_sum_vs_statewide_diff": 0
+  },
+  "proposed_retirement_sequence": [
+    "Protect debt-service obligations first",
+    "Vulnerable-household relief (not abolition)",
+    "Selected local county/municipal M&O replacement where incremental capacity exists",
+    "Additional school M&O replacement district-by-district",
+    "URT constitutional transition only after demonstrated carry capacity",
+    "Final property-tax retirement"
+  ]
 }

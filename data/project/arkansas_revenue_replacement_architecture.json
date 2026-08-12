@@ -1,12 +1,13 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
-  "latest_execution_slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "latest_execution_slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-125",
-  "update_id": "UPD-138",
+  "decision_id": "CC-DEC-126",
+  "update_id": "UPD-139",
   "prior_registration_decision_id": "CC-DEC-123",
-  "status": "PRIMARY_BIND_AND_T1_T5_PARTIAL_NOT_DOCTRINE",
+  "prior_primary_bind_decision_id": "CC-DEC-125",
+  "status": "PROPERTY_LAYERS_HARDENED_FORK_TO_PROSPERITY_MODELING",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
   "title": "Arkansas Revenue Replacement Architecture",
@@ -42,7 +43,9 @@
     }
   },
   "capacity_gap_file": "data/project/arkansas_revenue_replacement_capacity_gap.json",
-  "latest_return": "reports/CC_PHASE_2_1_ARKANSAS_REVENUE_REPLACEMENT_PRIMARY_BIND_AND_T1_T5_TEST_1_0_RETURN.md",
+  "prosperity_modeling_framework": "data/project/prosperity_revenue_modeling_framework.json",
+  "latest_return": "reports/CC_PHASE_2_1_ARKANSAS_PROPERTY_TAX_COLLECTIONS_INCIDENCE_AND_DEBT_SERVICE_MAP_1_0_RETURN.md",
+  "queued_next_research_slice": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "two_ledgers": {
     "state_prosperity_revenue_ledger": {
       "replaces": "Arkansas individual income tax",

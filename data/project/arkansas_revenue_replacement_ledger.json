@@ -1,16 +1,17 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
   "wave_slice_id": "CC-ARKANSAS-REVENUE-REPLACEMENT-ARCHITECTURE-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-125",
-  "update_id": "UPD-138",
+  "decision_id": "CC-DEC-126",
+  "update_id": "UPD-139",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
-  "status": "PRIMARY_BIND_V1_GAP_MAPPED",
+  "status": "PROPERTY_LAYERS_HARDENED_DEBT_SPLIT_GAP_REMAINS",
   "purpose": "Money Flow Map: Current source → current dollars → beneficiary → constitutional/legal dependency → volatility → incidence → proposed replacement → replacement maturity → transition trigger.",
   "capacity_gap_file": "data/project/arkansas_revenue_replacement_capacity_gap.json",
+  "prosperity_modeling_framework": "data/project/prosperity_revenue_modeling_framework.json",
   "imports_dir": "data/imports/arkansas-revenue-replacement/",
-  "scale_warning": "IIT alone (~$3.859B) ≈ state sales/use (~$3.667B). Property tax is a separate multi-layer local-finance problem. Unmodeled prosperity returns are not replacement dollars.",
+  "scale_warning": "IIT alone (~$3.859B) ≈ state sales/use (~$3.667B). Property tax ~$3.37B layered; ~94% of non-URT school mills are debt service. Unmodeled prosperity returns are not replacement dollars.",
   "state_prosperity_revenue_ledger": {
     "title": "State Prosperity Revenue Ledger",
     "replaces": "individual_income_tax",
@@ -141,51 +142,66 @@
         ]
       },
       {
-        "id": "AR-REV-SCHOOL-ADDITIONAL-EST",
-        "current_source": "Additional school millage above URT (avg ~13.52 mills)",
-        "current_dollars": 866800000,
-        "status": "ESTIMATED_ILLUSTRATIVE",
-        "beneficiary": "School M&O above foundation and/or debt service (split NEE)",
+        "id": "AR-REV-SCHOOL-ADDITIONAL-MO-EST",
+        "current_source": "Additional school M&O above URT (DESE avg ~0.90 mills)",
+        "current_dollars": 63673549,
+        "status": "ESTIMATED_SCHOOL_TOTAL_MINUS_URT_X_DESE_SHARE",
+        "beneficiary": "School M&O above foundation only",
         "constitutional_or_legal_dependency": "Statutory / local voter-approved",
-        "contains_debt_service": "PARTIAL_UNKNOWN_SPLIT",
+        "debt_covenant_blocker": false,
         "source_refs": [
           {
-            "label": "AACD 2025 Millage Report state avg school 38.52 mills; ACD 2025 taxable value $73.937B",
-            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025-millage-2026-collections.pdf",
-            "bind_status": "STRUCTURE_BOUND_DOLLARS_ESTIMATED"
+            "label": "DESE Millage Report 2024 (Voted) — M&O / DM&O / Debt Service columns; 233 LEAs",
+            "url": "https://dese-admin.ade.arkansas.gov/Files/Millage_Report_2024_Includes_Rollback_FAS.pdf",
+            "bind_status": "MILLS_BOUND_DOLLARS_ESTIMATED"
           }
         ]
       },
       {
-        "id": "AR-REV-SCHOOL-DEBT-NEE",
-        "current_source": "School debt-service millage",
-        "current_dollars": null,
-        "status": "NEE_SPLIT",
+        "id": "AR-REV-SCHOOL-DEBT-SERVICE-EST",
+        "current_source": "School debt-service millage (DESE avg ~13.30 mills)",
+        "current_dollars": 945415981,
+        "status": "ESTIMATED_SCHOOL_TOTAL_MINUS_URT_X_DESE_SHARE",
         "beneficiary": "Bonded debt service",
         "constitutional_or_legal_dependency": "Contractual + local voter-approved",
-        "note": "Embedded in School Total in millage book; do not retire casually"
+        "debt_covenant_blocker": true,
+        "transition_hardness": "PROTECTED_FIRST",
+        "note": "~93.7% of non-URT school mills are debt service. Do not retire while pledged.",
+        "source_refs": [
+          {
+            "label": "DESE Millage Report 2024 (Voted) — Debt Serv Mills",
+            "url": "https://dese-admin.ade.arkansas.gov/Files/Millage_Report_2024_Includes_Rollback_FAS.pdf",
+            "bind_status": "MILLS_BOUND_DOLLARS_ESTIMATED"
+          }
+        ]
       },
       {
         "id": "AR-REV-COUNTY-EST",
-        "current_source": "County millage (avg ~4.17 mills)",
-        "current_dollars": 267400000,
-        "status": "ESTIMATED_ILLUSTRATIVE",
+        "current_source": "County millage (AV-weighted county averages)",
+        "current_dollars": 496554570,
+        "status": "ESTIMATED_COUNTY_AV_WEIGHTED",
         "beneficiary": "County general, roads, libraries, hospitals, colleges, other",
-        "constitutional_or_legal_dependency": "Statutory / quorum court"
+        "constitutional_or_legal_dependency": "Statutory / quorum court",
+        "source_refs": [
+          {
+            "label": "AACD 2024 Assessed Values × 2025 Millage Report county averages",
+            "url": "https://www.dfa.arkansas.gov/wp-content/uploads/AssessedValuesReported_2024.pdf",
+            "bind_status": "AV_AND_MILLS_BOUND_DOLLARS_ESTIMATED"
+          }
+        ]
       },
       {
         "id": "AR-REV-MUNICIPAL-EST",
         "current_source": "Municipal millage",
-        "current_dollars": 218800000,
+        "current_dollars": 231422500,
         "status": "ESTIMATED_SHARE_METHOD",
-        "dollar_range_usd": [218800000, 508400000],
         "beneficiary": "Cities — general, pensions, libraries, bonds, parks",
-        "note": "Full-AV scaling overstates; preferred share method ~7% of property tax"
+        "note": "Bond/pension subclasses not yet dollar-split; city avg mills ≠ full-county AV rate"
       },
       {
         "id": "AR-REV-SPECIAL-EST",
         "current_source": "Special districts / other",
-        "current_dollars": 31300000,
+        "current_dollars": 33060357,
         "status": "CONTEXT_SHARE",
         "beneficiary": "Special districts and other local entities"
       }
@@ -196,6 +212,8 @@
     "no_abolish_recommendation",
     "unmodeled_is_not_replacement_dollars",
     "regressive_swap_surfaced",
+    "debt_service_protected_first",
+    "millage_class_by_millage_class",
     "overall_percent_held_at_43"
   ]
 }

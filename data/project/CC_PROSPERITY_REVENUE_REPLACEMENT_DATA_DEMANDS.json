@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-125",
-  "update_id": "UPD-138",
-  "rule": "Demands guide Money Flow Map inventory and replacement modeling. No tax abolition. Unmodeled prosperity returns are not replacement dollars. Regressive swaps must be surfaced.",
+  "decision_id": "CC-DEC-126",
+  "update_id": "UPD-139",
+  "rule": "Demands guide Money Flow Map inventory and replacement modeling. No tax abolition. Unmodeled prosperity returns are not replacement dollars. Regressive swaps must be surfaced. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -20,7 +20,7 @@
       "id": "CC-DEM-RRR-002",
       "name": "local_millage_and_property_tax_inventory",
       "question": "What are total property-tax collections and millages by beneficiary class (schools, counties, cities, fire/EMS, libraries, roads, debt, pensions) statewide and for designated Living Systems counties?",
-      "status": "PARTIAL_LAYERS_STRUCTURED_COLLECTIONS_NEE",
+      "status": "PARTIAL_COUNTY_AV_WEIGHTED_AND_DESE_SPLIT_MUNI_STILL_SHARE",
       "priority": "critical",
       "layer": "community_ledger",
       "artifact": "data/imports/arkansas-revenue-replacement/property_tax_layer_structure.json"
@@ -29,9 +29,10 @@
       "id": "CC-DEM-RRR-003",
       "name": "constitutional_statutory_dependency_matrix",
       "question": "Which revenue streams are constitutionally required (esp. 25-mill URT), which are statutory, and which expenditures cannot lawfully be uncoupled from those sources without amendment?",
-      "status": "PARTIAL_URT_CONSTITUTIONAL_OTHERS_STATUTORY_MAPPED",
+      "status": "PASSED_LAYER_LEGAL_MATRIX_V1",
       "priority": "critical",
-      "layer": "legal_constitutional"
+      "layer": "legal_constitutional",
+      "artifact": "data/imports/arkansas-revenue-replacement/property_tax_layer_structure.json"
     },
     {
       "id": "CC-DEM-RRR-004",
@@ -46,9 +47,10 @@
       "id": "CC-DEM-RRR-005",
       "name": "incidence_analysis_iit_sales_property",
       "question": "Who actually bears Arkansas IIT, sales/use, and property taxes by income quintile, housing tenure, and geography?",
-      "status": "NEE",
+      "status": "PARTIAL_CATEGORY_AV_SHARES_HOUSEHOLD_TABLES_NEE",
       "priority": "critical",
-      "layer": "incidence"
+      "layer": "incidence",
+      "artifact": "data/imports/arkansas-revenue-replacement/property_tax_incidence_structure.json"
     },
     {
       "id": "CC-DEM-RRR-006",
@@ -87,9 +89,10 @@
       "id": "CC-DEM-RRR-010",
       "name": "prosperity_fund_and_public_returns_modeling",
       "question": "Under what assumptions could prosperity-fund dividends or public investment returns become material replacement dollars — and what is the honest timeline before they count?",
-      "status": "UNMODELED_HYPOTHESIS_NOT_REPLACEMENT_DOLLARS",
-      "priority": "medium",
-      "layer": "replacement_modeling"
+      "status": "QUEUED_PROSPERITY_REVENUE_MODELING_TRACK",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/project/prosperity_revenue_modeling_framework.json"
     },
     {
       "id": "CC-DEM-RRR-011",
@@ -103,7 +106,7 @@
       "id": "CC-DEM-RRR-012",
       "name": "money_flow_map_row_population",
       "question": "Can every material Arkansas revenue source carry the full row schema (source → dollars → beneficiary → dependency → volatility → incidence → replacement → maturity → trigger)?",
-      "status": "PARTIAL_PRIMARY_ROWS_BOUND_LAYERS_ESTIMATED",
+      "status": "PARTIAL_PRIMARY_AND_PROPERTY_LAYERS_POPULATED",
       "priority": "critical",
       "layer": "cross_layer"
     },
@@ -111,17 +114,36 @@
       "id": "CC-DEM-RRR-013",
       "name": "school_debt_service_millage_split",
       "question": "What statewide dollars sit in school debt-service millages versus additional M&O above URT?",
-      "status": "NEE",
+      "status": "PASSED_DESE_MILLS_BOUND_DOLLARS_ESTIMATED",
       "priority": "critical",
-      "layer": "community_ledger"
+      "layer": "community_ledger",
+      "artifact": "data/imports/arkansas-revenue-replacement/dese_school_millage_mo_debt_bind.json",
+      "note": "~93.7% of non-URT school mills are debt; preferred debt ~$945M; additional M&O ~$64M. District-AV-weighted still NEE."
     },
     {
       "id": "CC-DEM-RRR-014",
       "name": "municipal_av_weighted_collections",
       "question": "What are AV-weighted municipal property-tax collections (not average city millage × statewide AV)?",
-      "status": "NEE",
+      "status": "NEE_SHARE_METHOD_ONLY",
       "priority": "high",
       "layer": "community_ledger"
+    },
+    {
+      "id": "CC-DEM-RRR-015",
+      "name": "prosperity_linked_and_productive_wealth_cashflows",
+      "question": "For prosperity-linked revenue and productive public wealth, which assets, capital requirements, return/volatility assumptions, and years-to-scale are required before material incremental replacement dollars exist?",
+      "status": "QUEUED_NEXT_SLICE",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "next_slice": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0"
+    },
+    {
+      "id": "CC-DEM-RRR-016",
+      "name": "renter_economic_incidence",
+      "question": "What share of residential property tax is economically borne by renters through rents in Arkansas markets?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "incidence"
     }
   ],
   "holds": [
@@ -129,6 +151,8 @@
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
     "regressive_swap_surfaced",
+    "debt_service_protected_first",
+    "millage_class_by_millage_class",
     "overall_percent_held_at_43"
   ]
 }

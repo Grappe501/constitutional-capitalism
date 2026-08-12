@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-126",
+  "update_id": "UPD-139",
+  "status": "STRUCTURAL_CATEGORY_BIND_HOUSEHOLD_TABLES_NEE",
+  "rule": "Surface who bears property tax before designing replacement. Renter burden through rents is economic incidence, not just statutory liability.",
+  "bound_structural_base": {
+    "statewide_taxable_2025": 73937121379,
+    "category_shares": {
+      "agricultural_land": 0.0272,
+      "agricultural_improvements": 0.0355,
+      "residential_incl_manufactured": 0.4538,
+      "minerals": 0.0041,
+      "business_personal": 0.1073,
+      "vehicles": 0.1154,
+      "industrial": 0.0113,
+      "utility": 0.0869,
+      "commercial": 0.1584
+    },
+    "interpretation": {
+      "residential_share": 0.4538,
+      "commercial_plus_industrial_share": 0.1697,
+      "agricultural_land_plus_improvements_share": 0.0627,
+      "utility_share": 0.0869,
+      "business_personal_share": 0.1073,
+      "vehicles_share": 0.1154
+    }
+  },
+  "household_incidence": {
+    "owner_occupier_statutory": "NEE \u2014 need parcel/ACS join by income quintile and county",
+    "renter_economic_through_rents": "NEE \u2014 must not treat renters as zero-incidence",
+    "commercial_industrial": "PARTIAL \u2014 category AV shares bound; firm-level pass-through NEE",
+    "agricultural_land_treatment": "PARTIAL \u2014 ag land + improvements AV bound; preferential assessment legal map incomplete"
+  },
+  "geographic_variation": {
+    "status": "PARTIAL_COUNTY_AV_AND_MILLAGE",
+    "artifact": "data/imports/arkansas-revenue-replacement/county_av_millage_levy_map.json"
+  },
+  "still_nee": [
+    "ACS/income-quintile property-tax burden tables for Arkansas",
+    "Renter incidence / rent pass-through estimates",
+    "District-level assessed value for true AV-weighted school debt vs M&O dollars",
+    "Municipal AV-weighted collections and city bond vs general split",
+    "Special-district parcel inventory",
+    "Debt covenant inventory / maturity schedule statewide"
+  ]
+}
