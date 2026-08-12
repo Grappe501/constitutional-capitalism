@@ -2464,14 +2464,14 @@
         "observation_history": [
           {
             "period": "1949 → 2024",
-            "value": "-9147.492 quads net imports in 2024 (negative = net exports)",
+            "value": "-9.1 quads net imports in 2024 (negative = net exports)",
             "label": "Primary energy net-import path (MER TENIBUS)",
             "geography": "US",
-            "note": "Full annual path attached from exp_51310e4926bb45e9; structural endpoint CC-SRC-056 remains valid for narrative endpoints."
+            "note": "Full annual path attached from exp_51310e4926bb45e9; Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu."
           },
           {
             "period": "1949 → 2024",
-            "value": "4308634.298 (2024)",
+            "value": "4308634.3 billion kWh (2024)",
             "label": "Electricity net generation path (MER ELETPUS)",
             "geography": "US"
           },
@@ -2525,76 +2525,76 @@
             "source": "EIA MER TEPRBUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
-            "definition_note": "Official MER annual series. Describes production scale — not public-return capture.",
+            "definition_note": "Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu. Describes production scale — not public-return capture.",
             "points": [
               {
                 "period": "1949",
-                "value": "30613.106",
+                "value": "30.6",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "39167.537",
+                "value": "39.2",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "42134.141",
+                "value": "42.1",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "52119.676",
+                "value": "52.1",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "61937.322",
+                "value": "61.9",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "61069.714",
+                "value": "61.1",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "66465.843",
+                "value": "66.5",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "67256.001",
+                "value": "67.3",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "68866.415",
+                "value": "68.9",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "70027.35",
+                "value": "70.0",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "69409.818",
+                "value": "69.4",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "76546.727",
+                "value": "76.5",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "91961.808",
+                "value": "92.0",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "103574.924",
+                "value": "103.6",
                 "geography": "United States"
               }
             ]
@@ -2605,75 +2605,76 @@
             "source": "EIA MER TETCBUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
+            "definition_note": "Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu.",
             "points": [
               {
                 "period": "1949",
-                "value": "30866.419",
+                "value": "30.9",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "39215.038",
+                "value": "39.2",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "44564.329",
+                "value": "44.6",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "55561.695",
+                "value": "55.6",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "70727.518",
+                "value": "70.7",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "77916.212",
+                "value": "77.9",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "74236.954",
+                "value": "74.2",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "82711.472",
+                "value": "82.7",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "88667.979",
+                "value": "88.7",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "94415.713",
+                "value": "94.4",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "98965.112",
+                "value": "99.0",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "91677.514",
+                "value": "91.7",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "97400.226",
+                "value": "97.4",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "94582.337",
+                "value": "94.6",
                 "geography": "United States"
               }
             ]
@@ -2684,162 +2685,162 @@
             "source": "EIA MER TENIBUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
-            "definition_note": "Negative values mean net exports. Do not invent a prosperity score from this path.",
+            "definition_note": "Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu. Negative values mean net exports. Do not invent a prosperity score from this path.",
             "points": [
               {
                 "period": "1949",
-                "value": "-143.602",
+                "value": "-0.1",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "504.399",
+                "value": "0.5",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "3060.316",
+                "value": "3.1",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "4316.764",
+                "value": "4.3",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "9268.831",
+                "value": "9.3",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "17185.733",
+                "value": "17.2",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "8684.579",
+                "value": "8.7",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "14105.399",
+                "value": "14.1",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "17683.723",
+                "value": "17.7",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "26321.066",
+                "value": "26.3",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "29340.725",
+                "value": "29.3",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "15800.794",
+                "value": "15.8",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "3609.618",
+                "value": "3.6",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "-9147.492",
+                "value": "-9.1",
                 "geography": "United States"
               }
             ]
           },
           {
             "series_id": "CC-PASS7-EIA-ELETPUS",
-            "label": "US electricity net generation",
+            "label": "US electricity net generation (billion kWh)",
             "source": "EIA MER ELETPUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
             "points": [
               {
                 "period": "1949",
-                "value": "296124.289",
+                "value": "296124.3",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "550298.862",
+                "value": "550298.9",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "797124.391",
+                "value": "797124.4",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "1147531.895",
+                "value": "1147531.9",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "1752978.413",
+                "value": "1752978.4",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "2209376.911",
+                "value": "2209376.9",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "2419465.367",
+                "value": "2419465.4",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "2967146.087",
+                "value": "2967146.1",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "3353487.362",
+                "value": "3353487.4",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "3736643.649",
+                "value": "3736643.6",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "4156744.724",
+                "value": "4156744.7",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "4047765.267",
+                "value": "4047765.3",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "4180987.703",
+                "value": "4180987.7",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "4308634.298",
+                "value": "4308634.3",
                 "geography": "United States"
               }
             ]
           },
           {
             "series_id": "CC-PASS7-EIA-PAPRPUS",
-            "label": "US crude oil production",
+            "label": "US crude oil production (as reported by MER)",
             "source": "EIA MER PAPRPUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
@@ -2847,52 +2848,52 @@
             "points": [
               {
                 "period": "1949",
-                "value": "5046.411",
+                "value": "5046.4",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "6806.652",
+                "value": "6806.7",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "7182.899",
+                "value": "7182.9",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "8295.241",
+                "value": "8295.2",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "9440.896",
+                "value": "9440.9",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "8707.441",
+                "value": "8707.4",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "8878.951",
+                "value": "8879.0",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "7613.077",
+                "value": "7613.1",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "6559.638",
+                "value": "6559.6",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "5801.401",
+                "value": "5801.4",
                 "geography": "United States"
               },
               {
@@ -2902,24 +2903,24 @@
               },
               {
                 "period": "2012",
-                "value": "6523.771",
+                "value": "6523.8",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "10952.951",
+                "value": "10953.0",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "13234.586",
+                "value": "13234.6",
                 "geography": "United States"
               }
             ]
           },
           {
             "series_id": "CC-PASS7-EIA-NGMPPUS",
-            "label": "US natural gas marketed production",
+            "label": "US natural gas marketed production (as reported)",
             "source": "EIA MER NGMPPUS via RedDirt exp_51310e4926bb45e9",
             "point_count": 76,
             "coverage": "1949 → 2024",
@@ -2927,72 +2928,72 @@
             "points": [
               {
                 "period": "1949",
-                "value": "5419.736",
+                "value": "5419.7",
                 "geography": "United States"
               },
               {
                 "period": "1955",
-                "value": "9405.351",
+                "value": "9405.4",
                 "geography": "United States"
               },
               {
                 "period": "1961",
-                "value": "13254.025",
+                "value": "13254.0",
                 "geography": "United States"
               },
               {
                 "period": "1966",
-                "value": "17206.628",
+                "value": "17206.6",
                 "geography": "United States"
               },
               {
                 "period": "1972",
-                "value": "22531.698",
+                "value": "22531.7",
                 "geography": "United States"
               },
               {
                 "period": "1978",
-                "value": "19974.033",
+                "value": "19974.0",
                 "geography": "United States"
               },
               {
                 "period": "1984",
-                "value": "18304.339",
+                "value": "18304.3",
                 "geography": "United States"
               },
               {
                 "period": "1989",
-                "value": "18095.147",
+                "value": "18095.1",
                 "geography": "United States"
               },
               {
                 "period": "1995",
-                "value": "19506.474",
+                "value": "19506.5",
                 "geography": "United States"
               },
               {
                 "period": "2001",
-                "value": "20570.295",
+                "value": "20570.3",
                 "geography": "United States"
               },
               {
                 "period": "2007",
-                "value": "20196.346",
+                "value": "20196.3",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "25283.278",
+                "value": "25283.3",
                 "geography": "United States"
               },
               {
                 "period": "2018",
-                "value": "33008.867",
+                "value": "33008.9",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "41383.893",
+                "value": "41383.9",
                 "geography": "United States"
               }
             ]
@@ -3021,7 +3022,7 @@
               },
               {
                 "period": "2006",
-                "value": "10.4",
+                "value": "10.40",
                 "geography": "United States"
               },
               {
@@ -3096,7 +3097,7 @@
               },
               {
                 "period": "2005",
-                "value": "8",
+                "value": "8.00",
                 "geography": "Arkansas"
               },
               {
@@ -3116,7 +3117,7 @@
               },
               {
                 "period": "2012",
-                "value": "9.3",
+                "value": "9.30",
                 "geography": "Arkansas"
               },
               {
@@ -3136,7 +3137,7 @@
               },
               {
                 "period": "2019",
-                "value": "9.8",
+                "value": "9.80",
                 "geography": "Arkansas"
               },
               {
@@ -3165,72 +3166,72 @@
             "points": [
               {
                 "period": "2001",
-                "value": "3394458.104",
+                "value": "3394458",
                 "geography": "United States"
               },
               {
                 "period": "2003",
-                "value": "3493734.486",
+                "value": "3493734",
                 "geography": "United States"
               },
               {
                 "period": "2005",
-                "value": "3660968.513",
+                "value": "3660969",
                 "geography": "United States"
               },
               {
                 "period": "2006",
-                "value": "3669918.84",
+                "value": "3669919",
                 "geography": "United States"
               },
               {
                 "period": "2008",
-                "value": "3733964.61911",
+                "value": "3733965",
                 "geography": "United States"
               },
               {
                 "period": "2010",
-                "value": "3754841.36823",
+                "value": "3754841",
                 "geography": "United States"
               },
               {
                 "period": "2012",
-                "value": "3694649.78562",
+                "value": "3694650",
                 "geography": "United States"
               },
               {
                 "period": "2013",
-                "value": "3724867.82101",
+                "value": "3724868",
                 "geography": "United States"
               },
               {
                 "period": "2015",
-                "value": "3758992.38936",
+                "value": "3758992",
                 "geography": "United States"
               },
               {
                 "period": "2017",
-                "value": "3723355.97399",
+                "value": "3723356",
                 "geography": "United States"
               },
               {
                 "period": "2019",
-                "value": "3811150.46304",
+                "value": "3811150",
                 "geography": "United States"
               },
               {
                 "period": "2020",
-                "value": "3717674.48088",
+                "value": "3717674",
                 "geography": "United States"
               },
               {
                 "period": "2022",
-                "value": "3927169.06933",
+                "value": "3927169",
                 "geography": "United States"
               },
               {
                 "period": "2024",
-                "value": "3975381.83162",
+                "value": "3975382",
                 "geography": "United States"
               }
             ]
@@ -3244,72 +3245,72 @@
             "points": [
               {
                 "period": "2001",
-                "value": "41732.449",
+                "value": "41732",
                 "geography": "Arkansas"
               },
               {
                 "period": "2003",
-                "value": "43108.259",
+                "value": "43108",
                 "geography": "Arkansas"
               },
               {
                 "period": "2005",
-                "value": "46164.923",
+                "value": "46165",
                 "geography": "Arkansas"
               },
               {
                 "period": "2006",
-                "value": "46635.624",
+                "value": "46636",
                 "geography": "Arkansas"
               },
               {
                 "period": "2008",
-                "value": "46134.68101",
+                "value": "46135",
                 "geography": "Arkansas"
               },
               {
                 "period": "2010",
-                "value": "48194.285",
+                "value": "48194",
                 "geography": "Arkansas"
               },
               {
                 "period": "2012",
-                "value": "46859.56698",
+                "value": "46860",
                 "geography": "Arkansas"
               },
               {
                 "period": "2013",
-                "value": "46683.034",
+                "value": "46683",
                 "geography": "Arkansas"
               },
               {
                 "period": "2015",
-                "value": "46465.15402",
+                "value": "46465",
                 "geography": "Arkansas"
               },
               {
                 "period": "2017",
-                "value": "46085.95101",
+                "value": "46086",
                 "geography": "Arkansas"
               },
               {
                 "period": "2019",
-                "value": "48093.03199",
+                "value": "48093",
                 "geography": "Arkansas"
               },
               {
                 "period": "2020",
-                "value": "45851.00301",
+                "value": "45851",
                 "geography": "Arkansas"
               },
               {
                 "period": "2022",
-                "value": "48997.66299",
+                "value": "48998",
                 "geography": "Arkansas"
               },
               {
                 "period": "2024",
-                "value": "49895.81201",
+                "value": "49896",
                 "geography": "Arkansas"
               }
             ]
@@ -3317,21 +3318,21 @@
         ]
       },
       "what_the_data_show": {
-        "key_finding": "EIA MER arrays now show U.S. primary energy production and net-trade paths through 2024 (latest production 103574.924 quads; latest net imports -9147.492 quads — negative means net exports). Electricity net generation path attached through 2024. Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR 12.32 vs US 16.48 ¢/kWh in 2024). These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
+        "key_finding": "EIA MER arrays now show U.S. primary energy production and net-trade paths through 2024 (latest production 103.6 quads; latest net imports -9.1 quads — negative means net exports). Electricity net generation path attached through 2024 (4308634.3 billion kWh). Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR 12.32 vs US 16.48 ¢/kWh in 2024). These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
         "critical_numbers": [
           {
             "label": "Net primary energy imports (negative = exports)",
-            "value": "-9147.492",
+            "value": "-9.1 quads",
             "period": "2024",
             "geography": "US",
-            "note": "MER TENIBUS via exp_51310e4926bb45e9"
+            "note": "MER TENIBUS via exp_51310e4926bb45e9; Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu."
           },
           {
             "label": "Primary energy production",
-            "value": "103574.924 quads",
+            "value": "103.6 quads",
             "period": "2024",
             "geography": "US",
-            "note": "MER TEPRBUS via exp_51310e4926bb45e9"
+            "note": "MER TEPRBUS via exp_51310e4926bb45e9; Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu."
           },
           {
             "label": "Residential electricity price AR vs US",

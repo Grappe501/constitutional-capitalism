@@ -22,13 +22,27 @@ function seriesById(id, geo) {
   );
 }
 
-function toPoints(series, max = 16) {
+function scaleSeries(series, divisor) {
+  if (!series || !divisor || divisor === 1) return series;
+  return {
+    ...series,
+    points: series.points.map((p) => ({
+      ...p,
+      value:
+        p.value == null || !Number.isFinite(Number(p.value))
+          ? p.value
+          : Number(p.value) / divisor,
+    })),
+  };
+}
+
+function toPoints(series, max = 16, format = (v) => String(v)) {
   if (!series) return [];
   const pts = series.points
     .filter((p) => p.value != null && Number.isFinite(Number(p.value)))
     .map((p) => ({
       period: String(p.period),
-      value: String(p.value),
+      value: format(Number(p.value)),
       geography: series.geography_name,
     }));
   if (pts.length <= max) return pts;
@@ -71,11 +85,14 @@ function find(id) {
   return p;
 }
 
-const tepr = seriesById("CC-PASS7-EIA-TEPRBUS", "geo:us");
-const tetc = seriesById("CC-PASS7-EIA-TETCBUS", "geo:us");
-const teex = seriesById("CC-PASS7-EIA-TEEXBUS", "geo:us");
-const teim = seriesById("CC-PASS7-EIA-TEIMBUS", "geo:us");
-const teni = seriesById("CC-PASS7-EIA-TENIBUS", "geo:us");
+// MER primary-energy MSNs arrive as trillion Btu; reader-facing quads = ÷1000.
+const QUAD = 1000;
+const fmtQuad = (v) => v.toFixed(1);
+const tepr = scaleSeries(seriesById("CC-PASS7-EIA-TEPRBUS", "geo:us"), QUAD);
+const tetc = scaleSeries(seriesById("CC-PASS7-EIA-TETCBUS", "geo:us"), QUAD);
+const teex = scaleSeries(seriesById("CC-PASS7-EIA-TEEXBUS", "geo:us"), QUAD);
+const teim = scaleSeries(seriesById("CC-PASS7-EIA-TEIMBUS", "geo:us"), QUAD);
+const teni = scaleSeries(seriesById("CC-PASS7-EIA-TENIBUS", "geo:us"), QUAD);
 const elet = seriesById("CC-PASS7-EIA-ELETPUS", "geo:us");
 const papr = seriesById("CC-PASS7-EIA-PAPRPUS", "geo:us");
 const ngmp = seriesById("CC-PASS7-EIA-NGMPPUS", "geo:us");
@@ -87,6 +104,8 @@ const arSales = seriesById("CC-PASS7-EIA-AR-ALL-SALES", "geo:us-ar");
 const attached = [tepr, tetc, teex, teim, teni, elet, papr, ngmp, usRes, arRes, usSales, arSales].filter(
   Boolean
 );
+const quadNote =
+  "Converted for readers from MER trillion Btu to quads (÷1000). Raw warehouse values remain trillion Btu.";
 if (attached.length < 1) {
   throw new Error("No Pass 7 EIA series found in series-arrays.json — import export first");
 }
@@ -101,8 +120,8 @@ sys.series_points = [
     source: `EIA MER TEPRBUS via RedDirt ${exportId}`,
     point_count: tepr?.points?.length || 0,
     coverage: coverage(tepr),
-    definition_note: "Official MER annual series. Describes production scale — not public-return capture.",
-    points: toPoints(tepr, 14),
+    definition_note: `${quadNote} Describes production scale — not public-return capture.`,
+    points: toPoints(tepr, 14, fmtQuad),
   },
   {
     series_id: "CC-PASS7-EIA-TETCBUS",
@@ -110,7 +129,8 @@ sys.series_points = [
     source: `EIA MER TETCBUS via RedDirt ${exportId}`,
     point_count: tetc?.points?.length || 0,
     coverage: coverage(tetc),
-    points: toPoints(tetc, 14),
+    definition_note: quadNote,
+    points: toPoints(tetc, 14, fmtQuad),
   },
   {
     series_id: "CC-PASS7-EIA-TENIBUS",
@@ -118,35 +138,35 @@ sys.series_points = [
     source: `EIA MER TENIBUS via RedDirt ${exportId}`,
     point_count: teni?.points?.length || 0,
     coverage: coverage(teni),
-    definition_note: "Negative values mean net exports. Do not invent a prosperity score from this path.",
-    points: toPoints(teni, 14),
+    definition_note: `${quadNote} Negative values mean net exports. Do not invent a prosperity score from this path.`,
+    points: toPoints(teni, 14, fmtQuad),
   },
   {
     series_id: "CC-PASS7-EIA-ELETPUS",
-    label: "US electricity net generation",
+    label: "US electricity net generation (billion kWh)",
     source: `EIA MER ELETPUS via RedDirt ${exportId}`,
     point_count: elet?.points?.length || 0,
     coverage: coverage(elet),
-    points: toPoints(elet, 14),
+    points: toPoints(elet, 14, (v) => v.toFixed(1)),
   },
   {
     series_id: "CC-PASS7-EIA-PAPRPUS",
-    label: "US crude oil production",
+    label: "US crude oil production (as reported by MER)",
     source: `EIA MER PAPRPUS via RedDirt ${exportId}`,
     point_count: papr?.points?.length || 0,
     coverage: coverage(papr),
     definition_note: "MER annual path; STEO-linked current endpoints in registry may revise separately.",
-    points: toPoints(papr, 14),
+    points: toPoints(papr, 14, (v) => v.toFixed(1)),
   },
   {
     series_id: "CC-PASS7-EIA-NGMPPUS",
-    label: "US natural gas marketed production",
+    label: "US natural gas marketed production (as reported)",
     source: `EIA MER NGMPPUS via RedDirt ${exportId}`,
     point_count: ngmp?.points?.length || 0,
     coverage: coverage(ngmp),
     definition_note:
       "MER marketed production (NGMPPUS). Not labeled as dry production — NGMPBUS returned zero rows on total-energy.",
-    points: toPoints(ngmp, 14),
+    points: toPoints(ngmp, 14, (v) => v.toFixed(1)),
   },
   {
     series_id: "CC-PASS7-EIA-US-RES-PRICE",
@@ -154,7 +174,7 @@ sys.series_points = [
     source: `EIA electricity/retail-sales via RedDirt ${exportId}`,
     point_count: usRes?.points?.length || 0,
     coverage: coverage(usRes),
-    points: toPoints(usRes, 14),
+    points: toPoints(usRes, 14, (v) => v.toFixed(2)),
   },
   {
     series_id: "CC-PASS7-EIA-AR-RES-PRICE",
@@ -163,7 +183,7 @@ sys.series_points = [
     point_count: arRes?.points?.length || 0,
     coverage: coverage(arRes),
     definition_note: "AR vs US price comparison uses the same EIA retail-sales object/definition.",
-    points: toPoints(arRes, 14),
+    points: toPoints(arRes, 14, (v) => v.toFixed(2)),
   },
   {
     series_id: "CC-PASS7-EIA-US-ALL-SALES",
@@ -171,7 +191,7 @@ sys.series_points = [
     source: `EIA electricity/retail-sales via RedDirt ${exportId}`,
     point_count: usSales?.points?.length || 0,
     coverage: coverage(usSales),
-    points: toPoints(usSales, 14),
+    points: toPoints(usSales, 14, (v) => v.toFixed(0)),
   },
   {
     series_id: "CC-PASS7-EIA-AR-ALL-SALES",
@@ -179,7 +199,7 @@ sys.series_points = [
     source: `EIA electricity/retail-sales via RedDirt ${exportId}`,
     point_count: arSales?.points?.length || 0,
     coverage: coverage(arSales),
-    points: toPoints(arSales, 14),
+    points: toPoints(arSales, 14, (v) => v.toFixed(0)),
   },
 ].filter((s) => s.point_count > 0);
 
@@ -191,12 +211,12 @@ sys.observation_history = [
           value: (() => {
             const last = latest(teni);
             return last
-              ? `${last.value} quads net imports in ${last.period} (negative = net exports)`
+              ? `${Number(last.value).toFixed(1)} quads net imports in ${last.period} (negative = net exports)`
               : "attached";
           })(),
           label: "Primary energy net-import path (MER TENIBUS)",
           geography: "US",
-          note: `Full annual path attached from ${exportId}; structural endpoint CC-SRC-056 remains valid for narrative endpoints.`,
+          note: `Full annual path attached from ${exportId}; ${quadNote}`,
         },
       ]
     : []),
@@ -206,7 +226,7 @@ sys.observation_history = [
           period: coverage(elet),
           value: (() => {
             const last = latest(elet);
-            return last ? `${last.value} (${last.period})` : "attached";
+            return last ? `${Number(last.value).toFixed(1)} billion kWh (${last.period})` : "attached";
           })(),
           label: "Electricity net generation path (MER ELETPUS)",
           geography: "US",
@@ -221,7 +241,7 @@ sys.observation_history = [
             const u = latest(usRes);
             const a = latest(arRes);
             return u && a
-              ? `AR ${a.value} vs US ${u.value} ¢/kWh (${a.period})`
+              ? `AR ${Number(a.value).toFixed(2)} vs US ${Number(u.value).toFixed(2)} ¢/kWh (${a.period})`
               : "attached";
           })(),
           label: "Residential electricity price AR vs US",
@@ -305,11 +325,13 @@ const lastUs = latest(usRes);
 p.what_the_data_show = {
   key_finding: [
     lastTepr && lastTeni
-      ? `EIA MER arrays now show U.S. primary energy production and net-trade paths through ${lastTepr.period} (latest production ${lastTepr.value} quads; latest net imports ${lastTeni.value} quads — negative means net exports).`
+      ? `EIA MER arrays now show U.S. primary energy production and net-trade paths through ${lastTepr.period} (latest production ${Number(lastTepr.value).toFixed(1)} quads; latest net imports ${Number(lastTeni.value).toFixed(1)} quads — negative means net exports).`
       : "EIA MER arrays attached for primary energy balance.",
-    lastElet ? `Electricity net generation path attached through ${lastElet.period}.` : null,
+    lastElet
+      ? `Electricity net generation path attached through ${lastElet.period} (${Number(lastElet.value).toFixed(1)} billion kWh).`
+      : null,
     lastAr && lastUs
-      ? `Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR ${lastAr.value} vs US ${lastUs.value} ¢/kWh in ${lastAr.period}).`
+      ? `Arkansas residential electricity price contrasts with the U.S. under the same EIA retail-sales definition (latest AR ${Number(lastAr.value).toFixed(2)} vs US ${Number(lastUs.value).toFixed(2)} ¢/kWh in ${lastAr.period}).`
       : null,
     "These histories deepen the energy page’s empirical foundation; they do not validate a National Energy Prosperity Fund.",
   ]
@@ -320,10 +342,10 @@ p.what_the_data_show = {
       ? [
           {
             label: "Net primary energy imports (negative = exports)",
-            value: String(lastTeni.value),
+            value: `${Number(lastTeni.value).toFixed(1)} quads`,
             period: String(lastTeni.period),
             geography: "US",
-            note: `MER TENIBUS via ${exportId}`,
+            note: `MER TENIBUS via ${exportId}; ${quadNote}`,
           },
         ]
       : []),
@@ -331,10 +353,10 @@ p.what_the_data_show = {
       ? [
           {
             label: "Primary energy production",
-            value: `${lastTepr.value} quads`,
+            value: `${Number(lastTepr.value).toFixed(1)} quads`,
             period: String(lastTepr.period),
             geography: "US",
-            note: `MER TEPRBUS via ${exportId}`,
+            note: `MER TEPRBUS via ${exportId}; ${quadNote}`,
           },
         ]
       : []),
@@ -342,7 +364,7 @@ p.what_the_data_show = {
       ? [
           {
             label: "Residential electricity price AR vs US",
-            value: `AR ${lastAr.value} / US ${lastUs.value} ¢/kWh`,
+            value: `AR ${Number(lastAr.value).toFixed(2)} / US ${Number(lastUs.value).toFixed(2)} ¢/kWh`,
             period: String(lastAr.period),
             geography: "AR / US",
           },

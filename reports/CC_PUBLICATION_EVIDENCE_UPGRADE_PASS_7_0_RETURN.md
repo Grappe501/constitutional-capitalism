@@ -62,7 +62,9 @@ Landed the first new official agency adapter (**EIA Open Data v2**) in the RedDi
 | Residential electricity price | US / AR | 24 / 24 | 2001 → 2024 |
 | Electricity sales (all sectors) | US / AR | 24 / 24 | 2001 → 2024 |
 
-**Definition break:** Manifest originally asked for `NGMPBUS` (colloquial “dry”); that MSN returned zero rows on `total-energy`. Bound **`NGMPPUS` marketed production** instead, labeled explicitly.
+**Definition breaks:**
+- Manifest originally asked for `NGMPBUS` (colloquial “dry”); that MSN returned zero rows on `total-energy`. Bound **`NGMPPUS` marketed production** instead, labeled explicitly.
+- MER primary-energy MSNs arrive as **trillion Btu**; publication bind converts to **quads (÷1000)** with an explicit note. Raw warehouse values stay trillion Btu.
 
 ## What did not change
 
