@@ -933,6 +933,30 @@
     "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_4_0_RETURN.md",
     "panels_registry": "data/project/publication_evidence_panels.json"
   },
+  "publication_evidence_upgrade_pass_5": {
+    "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
+    "status": "PASSED",
+    "mode": "depth_histories_behind_systems",
+    "prefer_depth_over_panel_count": true,
+    "panels_total": 18,
+    "systems_deepened": 6,
+    "energy_baseline_bound": false,
+    "energy_structural_panel_bound": true,
+    "data_demand_backlog": "data/project/CC_PASS_5_EVIDENCE_DESERT_DATA_DEMAND_BACKLOG.json",
+    "rcip_energy_demands": [
+      "RCIP-DEM-0418",
+      "RCIP-DEM-0419",
+      "RCIP-DEM-0420",
+      "RCIP-DEM-0421",
+      "RCIP-DEM-0422",
+      "RCIP-DEM-0423",
+      "RCIP-DEM-0424",
+      "RCIP-DEM-0425"
+    ],
+    "return": "reports/CC_PUBLICATION_EVIDENCE_UPGRADE_PASS_5_0_RETURN.md",
+    "panels_registry": "data/project/publication_evidence_panels.json",
+    "next": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-6.0"
+  },
   "progress_markers": {
     "overall_percent": 46,
     "baseline": "42/64",

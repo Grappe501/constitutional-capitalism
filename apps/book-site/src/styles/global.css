@@ -396,9 +396,15 @@ main {
   color: var(--accent-deep);
 }
 
-.evidence-panel__comparison {
+.evidence-panel__comparison,
+.evidence-panel__history,
+.evidence-panel__missing {
   margin: 0.35rem 0 0.75rem;
   padding-left: 1.1rem;
+}
+
+.evidence-panel__missing {
+  color: var(--ink-soft);
 }
 
 .evidence-panel__header h2 {

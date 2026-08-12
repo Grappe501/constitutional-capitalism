@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import es from "../../../../data/project/energy_sovereignty_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
+const energyPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1"
+);
 const priorities = es.priority_sequence?.order || [];
 const fuels = es.diversified_system?.develop || [];
 const corpMay = es.american_energy_and_resilience_corporation?.may || [];
@@ -31,6 +36,8 @@ const branches = es.website_branches || [];
 >
   <article class="prose">
     <h1>{es.domain_title}</h1>
+
+    {energyPanel ? <EvidencePanel panel={energyPanel} /> : null}
 
     <h2>Governing principle</h2>
     <blockquote>

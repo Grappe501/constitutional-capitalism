@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
+  "version": "1.4.0",
+  "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
   "decision_id": "CC-DEC-104",
   "generated_at": "2026-08-11",
   "governing_rule": "No decorative statistics. Every number, chart, table, or map must answer a question the reader is likely to have at that point in the text.",
@@ -760,7 +760,7 @@
       "evidence_strength": "Strong",
       "strength_note": "Strong for recent official dials (L01/L02). Historical productivity–compensation gap remains a separate BLS/EPI evidence track; EPI secondary must not stand alone. Not a causal capture finding.",
       "what_the_data_show": {
-        "key_finding": "A small labor dial system — not a single headline — shows real AHE +1.1% (to Dec 2025), productivity +2.3% (2024), and voluntary quits 2.1% (2024), beside a longer BLS-documented productivity–compensation gap whose magnitude remains contested.",
+        "key_finding": "A small labor evidence system shows recent official dials (real AHE +1.1% to Dec 2025; productivity +2.3% in 2024; quits 2.1%) beside nominal CES/CPI levels and a longer BLS-documented productivity–compensation divergence since the 1970s, with EPI secondary endpoints for 1979–2020.",
         "critical_numbers": [
           {
             "label": "Real AHE over-the-year change (CES)",
@@ -786,9 +786,25 @@
             "geography": "US",
             "metric_id": "CC-IND-L04",
             "source_id": "CC-SRC-248"
+          },
+          {
+            "label": "CES AHE level (nominal)",
+            "value": "$35.69",
+            "period": "2024-M12",
+            "geography": "US",
+            "source_id": "CC-SRC-219",
+            "note": "Supporting level from RedDirt import CES0500000003 — not the L01 growth dial."
+          },
+          {
+            "label": "CPI-U index level",
+            "value": "315.605",
+            "period": "2024-M12",
+            "geography": "US",
+            "source_id": "CC-SRC-219",
+            "note": "Supporting deflator input CUUR0000SA0 — not a wage outcome."
           }
         ],
-        "plain_english": "Readers should see definition, comparison, and series status — not treat 1.1% as the whole labor story."
+        "plain_english": "Readers should see current dials, supporting levels, historical endpoints, AR labor-market context where definitions permit, and explicit missing multi-year arrays — not treat 1.1% as the whole labor story."
       },
       "what_supports_this": [
         "CC-IND-L01 / CC-SRC-219",
@@ -806,7 +822,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "national_baseline_metrics.json + reddirt-public-statistics exp_79f42d2fe71f4b69 + CC-SRC-003/004"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -815,7 +831,8 @@
         ]
       },
       "evidence_system": {
-        "definition": "L01 = 12-month % change in real average hourly earnings (CES, CPI-U). L02 = annual % change in nonfarm-business labor productivity (BLS). L04 = JOLTS annual-average voluntary quits rate.",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "L01 = 12-month % change in real average hourly earnings (CES, CPI-U). L02 = annual % change in nonfarm-business labor productivity (BLS). L04 = JOLTS annual-average voluntary quits rate. CES AHE / CPI-U levels are supporting inputs, not substitute dials.",
         "comparison": [
           {
             "label": "Recent wage dial vs productivity dial",
@@ -828,14 +845,60 @@
             "note": "Quits ≠ job-to-job flows; not Census J2J."
           },
           {
-            "label": "Long-run productivity–compensation gap",
-            "value": "documented (BLS); magnitude contested",
-            "note": "EPI secondary series must stay labeled secondary."
+            "label": "Long-run productivity–compensation relationship",
+            "value": "co-movement then divergence (BLS)",
+            "note": "BLS Beyond the Numbers: rose together after the 1940s; diverged since the 1970s; industry lag documented 1987–2015 (CC-SRC-003)."
           }
         ],
-        "series_note": "Official historical series exist at BLS for AHE, productivity, and JOLTS. Multi-year point arrays are not yet attached in-repo; Pass 4 publishes the dial system + series status, not a chart warehouse.",
-        "series_status": "official_series_available_not_attached",
-        "qualification": "L01 is mean AHE of jobs, not median/typical-worker pay. One-year dials do not close the post-1970s shared-gains debate."
+        "observation_history": [
+          {
+            "period": "1979–2020",
+            "value": "net productivity +61.8% vs typical-worker pay +17.5%",
+            "label": "EPI secondary cumulative endpoints",
+            "geography": "US",
+            "source_id": "CC-SRC-004",
+            "note": "Secondary methodology — not a federal official series; magnitude contested."
+          },
+          {
+            "period": "post-1970s / 1987–2015",
+            "value": "aggregate + industry compensation lag vs productivity",
+            "label": "BLS gap analysis span",
+            "geography": "US",
+            "source_id": "CC-SRC-003",
+            "note": "Primary staff analysis; older than current BLS releases."
+          },
+          {
+            "period": "2024-M12",
+            "value": "CES AHE $35.69; CPI-U 315.605",
+            "label": "Supporting levels (imported)",
+            "geography": "US",
+            "note": "From reddirt-public-statistics; levels ≠ L01 % change."
+          },
+          {
+            "period": "2025-12 vs 2024-12",
+            "value": "real AHE +1.1%",
+            "label": "Current L01 dial",
+            "geography": "US",
+            "source_id": "CC-SRC-219"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Unemployment rate (LAUS/CPS, 2024-M12)",
+            "value": "AR 3.7% vs US 4.1%",
+            "note": "Comparable labor-market context only — not an Arkansas real-AHE or productivity dial. Definitions differ from L01/L02."
+          }
+        ],
+        "series_note": "Pass 5 attaches sourced historical endpoints + supporting CES/CPI levels + AR/US unemployment contrast. Full multi-year L01/L02/L04 point arrays remain demanded via RCIP (not inventable from single-period imports).",
+        "series_status": "partial_history_endpoints_attached",
+        "missing_layers": [
+          "Multi-year real AHE OTY path (L01) — RCIP-DEM-0006 / PASS5-DEM-L01-SERIES",
+          "Multi-decade NFB productivity annual path (L02) — PASS5-DEM-L02-SERIES",
+          "JOLTS quits history from 2000 (L04) — PASS5-DEM-L04-SERIES",
+          "Arkansas CES real AHE / state productivity analogues (definition lock required)",
+          "Official post-2015 industry productivity–compensation update tables"
+        ],
+        "qualification": "L01 is mean AHE of jobs, not median/typical-worker pay. EPI endpoints must stay labeled secondary. One-year dials do not close the post-1970s shared-gains debate."
       }
     },
     {
@@ -935,7 +998,8 @@
       "evidence_strength": "Strong",
       "strength_note": "Strong for federal CBO budget identities. Does not validate or falsify a state/local no-PIT/no-property-tax prosperity model; those modules remain open.",
       "evidence_system": {
-        "definition": "G01 = federal receipts % GDP (FY). G02 = federal outlays % GDP (FY). G03 = federal debt held by the public % GDP. All federal — not state/local tax capacity.",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "G01 = federal receipts % GDP (FY). G02 = federal outlays % GDP (FY). G03 = federal debt held by the public % GDP. All federal — not state/local tax capacity or property-tax modules.",
         "comparison": [
           {
             "label": "Receipts vs outlays (FY2024)",
@@ -953,12 +1017,43 @@
             "note": "Distributional fact for 2021; pandemic-year effects matter. Not a property-tax module."
           }
         ],
-        "series_note": "CBO historical budget identities are official series. Multi-year point arrays not yet attached in-repo.",
+        "observation_history": [
+          {
+            "period": "FY2024 / 2024",
+            "value": "receipts 17.1%; outlays 23.4%; debt ~99% GDP",
+            "label": "Current federal identities",
+            "geography": "US",
+            "source_id": "CC-SRC-241"
+          },
+          {
+            "period": "2021",
+            "value": "Q5/Q1 ~19× → ~7× after transfers/taxes",
+            "label": "CBO household distribution snapshot",
+            "geography": "US",
+            "source_id": "CC-SRC-013",
+            "note": "One-year distributional cut — not a long-run tax-composition series."
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "State/local no-PIT / no-property-tax redesign modules",
+            "value": "NOT ATTACHED",
+            "note": "Federal identities cannot validate Arkansas or national prosperity-tax redesigns."
+          }
+        ],
+        "series_note": "CBO Historical Budget Data and long-run average tax rates by income group are official. Pass 5 does not invent point arrays; it marks the history layer as demanded.",
         "series_status": "official_series_available_not_attached",
-        "qualification": "These dials do not prove a no-personal-income-tax / no-property-tax redesign is feasible. Destination-based tax and property-tax modules remain research-open. Do not invent state revenue replacement paths."
+        "missing_layers": [
+          "Federal receipts/outlays/debt % GDP multi-decade path — RCIP-DEM-0007 / PASS5-DEM-CBO-BUDGET-HISTORY",
+          "CBO average federal tax rates by income group over time — PASS5-DEM-CBO-TAX-RATES",
+          "Federal revenue composition (individual/corporate/payroll/excise) historical shares — PASS5-DEM-REV-COMPOSITION",
+          "State/local tax capacity and property-tax modules (CC-CLAIM-017)",
+          "Destination-based tax administration evidence (CC-CLAIM-008)"
+        ],
+        "qualification": "These dials do not prove a no-personal-income-tax / no-property-tax redesign is feasible. Do not invent state revenue replacement paths."
       },
       "what_the_data_show": {
-        "key_finding": "Federal fiscal dials show receipts about 17.1% of GDP, outlays 23.4%, and debt held by the public near 99% of GDP (FY2024/2024). Separately, CBO’s 2021 household distribution shows large pre-tax gaps compressed by transfers and federal taxes without elimination.",
+        "key_finding": "Federal fiscal dials remain receipts 17.1% / outlays 23.4% / debt held by the public ~99% of GDP, with CBO 2021 household compression ~19×→~7×. Pass 5 makes the missing multi-decade budget-identity history and state/local tax modules explicit rather than inventing series.",
         "critical_numbers": [
           {
             "label": "Federal receipts % GDP",
@@ -1008,7 +1103,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "national_baseline_metrics.json + CBO distributional/historical demand status"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1053,19 +1148,21 @@
       "evidence_strength": "Strong",
       "strength_note": "Strong for ownership/participation snapshots. Ownership ≠ adequacy; employee-ownership baseline (L03) still pending.",
       "evidence_system": {
-        "definition": "W01 SCF median net worth; W02 DFA wealth shares; W04 homeownership rate; W05 share of families with retirement accounts (SCF).",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "W01 SCF median net worth; W02 DFA wealth shares; W04 homeownership rate; W05 share of families with retirement accounts (SCF). SCF and DFA are not interchangeable products.",
         "comparison": [
           {
             "label": "Median net worth (SCF 2022)",
             "value": "$192,900"
           },
           {
-            "label": "Bottom 50% / top 1% wealth shares (DFA 2026-Q1)",
-            "value": "5.3% / 28.8%"
+            "label": "Mean net worth (SCF 2022)",
+            "value": "$1,063,700",
+            "note": "Mean far above median — concentration predicate."
           },
           {
-            "label": "Homeownership rate",
-            "value": "65.2% (2023)"
+            "label": "Bottom 50% / top 1% wealth shares (DFA 2026-Q1)",
+            "value": "5.3% / 28.8%"
           },
           {
             "label": "Families with retirement accounts",
@@ -1073,12 +1170,50 @@
             "note": "Participation ≠ balance adequacy."
           }
         ],
-        "series_note": "SCF triennial and DFA quarterly products exist officially. In-repo attachment is snapshot composition + participation rates, not a multi-decade chart pack yet.",
-        "series_status": "snapshot_only",
-        "qualification": "Do not treat retirement-account ownership as proof of secure aging, or wealth concentration as proof of oligarchy. Employee/local ownership magnitudes remain thin (L03 pending)."
+        "observation_history": [
+          {
+            "period": "2019→2022",
+            "value": "real median net worth +37%; real mean +23%",
+            "label": "SCF three-year episode",
+            "geography": "US",
+            "source_id": "CC-SRC-001",
+            "note": "Largest three-year median increase in modern SCF history; some narrowing while inequality remains high."
+          },
+          {
+            "period": "1989–present (product span)",
+            "value": "DFA wealth-share product available",
+            "label": "Official DFA history",
+            "geography": "US",
+            "source_id": "CC-SRC-012",
+            "note": "In-repo attachment is 2026-Q1 snapshot only — quarterly path not attached."
+          },
+          {
+            "period": "2022 SCF / 2026-Q1 DFA / 2023 ACS",
+            "value": "current ownership dials (W01/W02/W04/W05)",
+            "label": "Current observations",
+            "geography": "US"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Homeownership rate",
+            "value": "AR ACS5 66.2% (2022) vs US ACS 65.2% (2023)",
+            "note": "Different ACS products/years — geographic contrast only; do not treat as identical survey cells."
+          }
+        ],
+        "series_note": "Pass 5 attaches the SCF 2019–2022 episode endpoints and AR/US homeownership contrast. Full SCF triennial table and DFA quarterly path remain demanded.",
+        "series_status": "partial_history_endpoints_attached",
+        "missing_layers": [
+          "SCF triennial median/mean table 1989–2022 — RCIP-DEM-0001 / PASS5-DEM-SCF-HISTORY",
+          "DFA wealth shares quarterly path 1989–present — PASS5-DEM-DFA-PATH",
+          "W05 retirement ownership triennial path",
+          "Employee-ownership wealth by percentile (L03 pending)",
+          "State/local ownership maps"
+        ],
+        "qualification": "Do not treat retirement-account ownership as proof of secure aging, or wealth concentration as proof of oligarchy. The 2019–2022 narrowing episode qualifies any ever-rising story."
       },
       "what_the_data_show": {
-        "key_finding": "A small ownership system shows high wealth concentration, majority but incomplete homeownership, and only about 54.3% of families holding retirement accounts — the empirical backdrop for civic-wealth and prosperous-aging designs.",
+        "key_finding": "Ownership/retirement evidence now includes SCF 2019→2022 history endpoints (real median +37%, real mean +23%), current concentration/participation dials, and an Arkansas ACS homeownership contrast — still not a multi-decade chart warehouse.",
         "critical_numbers": [
           {
             "label": "Median household net worth",
@@ -1127,7 +1262,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "national_baseline_metrics.json + arkansas-baseline ACS5 2022 + CC-SRC-001/012"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1158,23 +1293,34 @@
         "CC-IND-CM02",
         "CC-IND-CM04",
         "CC-IND-E01",
-        "CC-IND-E02"
+        "CC-IND-E02",
+        "CC-IND-B01",
+        "CC-IND-B02"
       ],
       "source_ids": [
         "CC-SRC-222",
         "CC-SRC-249",
         "CC-SRC-250",
         "CC-SRC-258",
-        "CC-SRC-259"
+        "CC-SRC-259",
+        "CC-SRC-008",
+        "CC-SRC-009",
+        "CC-SRC-268"
       ],
       "evidence_strength": "Strong",
       "strength_note": "Strong for structural dials. Statewide/national ≠ local community baselines. SBCS is applicant approval among employer firms, not a population access rate.",
       "evidence_system": {
-        "definition": "CM02 = Census rural population share. CM04 = FDIC community-bank deposit share. E01 = community-bank + credit-union loan share. E02 = SBCS full-approval rate + USDA FSA farm-loan obligations.",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "CM02 = Census rural population share. ERS nonmetro is a different geography. CM04/E01 = FDIC/NCUA local-capital shares. E02 = SBCS + FSA. BDS entry/exit rates = national establishment dynamics.",
         "comparison": [
           {
-            "label": "Rural population share (2020 Census urban/rural)",
+            "label": "Census rural population share (2020)",
             "value": "20%"
+          },
+          {
+            "label": "ERS nonmetro population share (July 2024)",
+            "value": "13.6% (~46.2M)",
+            "note": "Different rural definition than Census urban/rural — do not collapse."
           },
           {
             "label": "Community-bank domestic deposit share",
@@ -1185,17 +1331,66 @@
             "value": "24.9% (2024Q4)"
           },
           {
-            "label": "SBCS full approval / FSA farm-loan obligations",
-            "value": "52% / $5.39B (FY2024)",
-            "note": "Two different instruments — do not collapse into one score."
+            "label": "BDS entry / exit rates",
+            "value": "10.608% / 9.396% (2023)",
+            "note": "National rates from imported series — not rural-only."
           }
         ],
-        "series_note": "FDIC QBP and Census urban/rural products are official. In-repo points are single-period snapshots; label statewide ≠ local.",
-        "series_status": "snapshot_only",
-        "qualification": "These are national structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account, hospital access (CM03 deferred), or leakage."
+        "observation_history": [
+          {
+            "period": "2005–2023",
+            "value": "146 rural-county hospital closures/conversions (81 shutdowns)",
+            "label": "ERS rural hospital access history",
+            "geography": "US rural counties",
+            "source_id": "CC-SRC-009",
+            "note": "Multi-year count — not a complete hospital-access baseline (CM03 deferred)."
+          },
+          {
+            "period": "July 2020–June 2024",
+            "value": "51% of nonmetro counties lost population",
+            "label": "ERS county decline share",
+            "geography": "US nonmetro",
+            "source_id": "CC-SRC-008",
+            "note": "Aggregate nonmetro gains can coexist with widespread county decline."
+          },
+          {
+            "period": "2020 / 2023 / 2024",
+            "value": "current rural + capital + dynamics dials",
+            "label": "Current observations",
+            "geography": "US"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Rural definition contrast",
+            "value": "Census rural 20% vs ERS nonmetro 13.6%",
+            "note": "Keep both; never average them."
+          },
+          {
+            "label": "Arkansas statewide ACS5 context (2022)",
+            "value": "pop ~3.02M; median HH income $56,335; poverty 16.2%; LFPR 58.2%; broadband 82.4%",
+            "note": "Statewide context from RedDirt AR import — not Rose Bud/Lewisville community baselines."
+          },
+          {
+            "label": "AR vs US unemployment (2024-M12)",
+            "value": "3.7% vs 4.1%",
+            "note": "Labor-market backdrop only."
+          }
+        ],
+        "series_note": "Pass 5 attaches definition contrasts, BDS rates, ERS county/hospital history endpoints, and AR ACS context. FDIC QBP multi-year paths and county series remain demanded.",
+        "series_status": "partial_history_endpoints_attached",
+        "missing_layers": [
+          "FDIC QBP community-bank deposit/loan share path — RCIP-DEM-0414 / PASS5-DEM-FDIC-PATH",
+          "BDS ESTABS_* multi-year national + AR paths — PASS5-DEM-BDS-HISTORY",
+          "Decennial rural-share series beyond 2020 — PASS5-DEM-RURAL-SHARE-HISTORY",
+          "Hospital-access baseline CM03 (deferred)",
+          "SBA 7(a)/504 dollar series",
+          "Community-level ownership / leakage maps"
+        ],
+        "qualification": "These are structural dials for rural/local capital context. They do not measure a specific Arkansas town’s prosperity account or prove community-laboratory success."
       },
       "what_the_data_show": {
-        "key_finding": "About one-fifth of the U.S. population is Census-rural; community banks hold about 13.1% of domestic deposits; community banks plus credit unions hold about 24.9% of depository loans; SBCS full approval was 52% among employer-firm applicants while FSA farm-loan obligations were about $5.39B in FY2024.",
+        "key_finding": "Rural/local-capital evidence now combines Census-rural 20% with ERS nonmetro 13.6% (different definitions), national BDS entry/exit rates, community-bank/credit dials, a 2005–2023 rural-hospital closure count, and Arkansas ACS statewide context — still labeled national/statewide ≠ local.",
         "critical_numbers": [
           {
             "label": "Rural population share",
@@ -1231,6 +1426,30 @@
             "period": "FY2024",
             "metric_id": "CC-IND-E02",
             "source_id": "CC-SRC-259"
+          },
+          {
+            "label": "Establishment entry rate (BDS)",
+            "value": "10.608%",
+            "period": "2023",
+            "geography": "US",
+            "metric_id": "CC-IND-B01",
+            "note": "National dynamics rate from RedDirt import — not a rural-only rate."
+          },
+          {
+            "label": "Establishment exit rate (BDS)",
+            "value": "9.396%",
+            "period": "2023",
+            "geography": "US",
+            "metric_id": "CC-IND-B02",
+            "note": "National dynamics rate — not competitiveness or rural survival."
+          },
+          {
+            "label": "Rural hospital closures/conversions",
+            "value": "146",
+            "period": "2005–2023",
+            "geography": "US rural counties",
+            "source_id": "CC-SRC-009",
+            "note": "81 complete shutdowns; access proxy — not CM03 hospital-access baseline."
           }
         ],
         "plain_english": "Local-ownership and community-prosperity pages need this structural system beside design claims — labeled as national context, not town outcomes."
@@ -1254,7 +1473,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "national_baseline + arkansas-baseline + BDS rates + CC-SRC-008/009"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1278,7 +1497,9 @@
       ],
       "metric_ids": [
         "CC-IND-C02",
-        "CC-IND-C03"
+        "CC-IND-C03",
+        "CC-IND-B01",
+        "CC-IND-B02"
       ],
       "source_ids": [
         "CC-SRC-263",
@@ -1288,7 +1509,8 @@
       "evidence_strength": "Partial",
       "strength_note": "Strong for entry count + criminal enforcement count. Weak/Partial as a competitiveness measure — industry CR sample cells and multi-year CR tables are not yet bound.",
       "evidence_system": {
-        "definition": "C02 = Census BDS establishments born in the last 12 months. C03 = DOJ ATR criminal antitrust cases filed (FY). Census concentration products report industry CR shares — not a national concentration percent.",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "C02 = Census BDS establishments born in the last 12 months. B01/B02 = establishment entry/exit rates. C03 = DOJ ATR criminal antitrust cases filed (FY). Industry CR shares are cell-based — no national concentration percent.",
         "comparison": [
           {
             "label": "New establishment entrants (BDS)",
@@ -1296,22 +1518,57 @@
             "note": "Dynamics count — not survival or markups."
           },
           {
+            "label": "Entry / exit rates (BDS)",
+            "value": "10.608% / 9.396% (2023)",
+            "note": "National rates from RedDirt import."
+          },
+          {
             "label": "DOJ ATR criminal cases filed",
             "value": "20 (FY2024)",
             "note": "Enforcement activity ≠ market competitiveness."
           },
           {
-            "label": "Industry concentration (Economic Census)",
-            "value": "CR cells by industry (no national %)",
-            "note": "C01 object exists; sample CR table not attached."
+            "label": "Industry concentration / markups",
+            "value": "NOT ATTACHED",
+            "note": "Need fixed-NAICS CR and/or markup series before calling this competitiveness evidence."
           }
         ],
-        "series_note": "BDS and DOJ ATR tables are official series. Fixed-NAICS multi-year CR comparison table is still missing in-repo.",
-        "series_status": "official_series_available_not_attached",
+        "observation_history": [
+          {
+            "period": "2023",
+            "value": "790,295 entrants; entry 10.608%; exit 9.396%",
+            "label": "Current BDS dynamics cluster",
+            "geography": "US",
+            "source_id": "CC-SRC-263"
+          },
+          {
+            "period": "FY2024",
+            "value": "20 criminal cases filed",
+            "label": "Current enforcement dial",
+            "geography": "US",
+            "source_id": "CC-SRC-255"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Arkansas BDS entry/exit or industry CR sample",
+            "value": "NOT ATTACHED",
+            "note": "PASS5-DEM-BDS-AR / PASS5-DEM-CR-SAMPLE"
+          }
+        ],
+        "series_note": "BDS annual history and Economic Census CR tables exist officially. Pass 5 attaches current rate companions only; multi-year CR/markup paths are demanded before competition claims escalate.",
+        "series_status": "partial_history_endpoints_attached",
+        "missing_layers": [
+          "Fixed-NAICS multi-year CR4/CR8 sample table — PASS5-DEM-CR-SAMPLE",
+          "Markup / price-cost margin comparable series — PASS5-DEM-MARKUPS",
+          "BDS multi-year entry/exit path (US + AR) — PASS5-DEM-BDS-HISTORY",
+          "Labor-market concentration datasets",
+          "Merger retrospective attachments"
+        ],
         "qualification": "Do not treat 20 criminal cases as a competitiveness score. Do not invent a national CR4. Entry counts and enforcement counts answer different reader questions."
       },
       "what_the_data_show": {
-        "key_finding": "Market-dynamics evidence currently supports an entry dial (≈790k new establishments in 2023) and an enforcement dial (20 DOJ ATR criminal cases in FY2024). Neither is a concentration index; industry CR products remain cell-based.",
+        "key_finding": "Market-dynamics evidence supports an entry count (~790k), entry/exit rates (10.608%/9.396%), and an enforcement dial (20 DOJ ATR criminal cases). Concentration ratios, markups, and multi-year CR tables remain explicitly missing — enforcement is not competitiveness.",
         "critical_numbers": [
           {
             "label": "New establishment entrants (BDS)",
@@ -1319,6 +1576,13 @@
             "period": "2023",
             "metric_id": "CC-IND-C02",
             "source_id": "CC-SRC-263"
+          },
+          {
+            "label": "Establishment entry / exit rates (BDS)",
+            "value": "10.608% / 9.396%",
+            "period": "2023",
+            "geography": "US",
+            "note": "Rate companions to the 790,295 entrant count — still not markups or CR."
           },
           {
             "label": "DOJ ATR criminal cases filed",
@@ -1334,7 +1598,7 @@
             "note": "Keep industry CR cells; do not invent a fake national %."
           }
         ],
-        "plain_english": "Pass 4 upgrades competition surfaces from a single enforcement headline into a two-dial system with an explicit CR gap."
+        "plain_english": "Pass 5 deepens the dynamics dials with imported BDS rates and keeps the competitiveness gap visible as a data demand, not a filled cell."
       },
       "what_supports_this": [
         "Census BDS",
@@ -1353,7 +1617,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "reddirt BDS rates + national_baseline C02/C03"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
@@ -1376,12 +1640,14 @@
         "CC-IND-E05"
       ],
       "source_ids": [
-        "CC-SRC-225"
+        "CC-SRC-225",
+        "CC-SRC-009"
       ],
       "evidence_strength": "Partial",
       "strength_note": "Strong for the HPSA population-share proxy; Partial because designation ≠ utilization, and mental-health HPSAs are separate.",
       "evidence_system": {
-        "definition": "E05 ≈ share of U.S. population residing in designated primary-care Health Professional Shortage Areas (HRSA).",
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "E05 ≈ share of U.S. population residing in designated primary-care Health Professional Shortage Areas (HRSA). Rural hospital closure counts are a related access history, not the same metric.",
         "comparison": [
           {
             "label": "Population in primary-care HPSAs",
@@ -1389,17 +1655,51 @@
             "note": "Designation proxy, not visits delivered."
           },
           {
+            "label": "Rural hospital closures/conversions",
+            "value": "146 (2005–2023)",
+            "note": "81 complete shutdowns (CC-SRC-009)."
+          },
+          {
             "label": "Hospital-access baseline (CM03)",
             "value": "DEFERRED",
-            "note": "Do not substitute HPSA for hospital access."
+            "note": "Do not substitute HPSA or closure counts for CM03."
           }
         ],
-        "series_note": "HRSA designations update ongoing; multi-year share array not attached in-repo.",
-        "series_status": "official_series_available_not_attached",
-        "qualification": "Do not let health-system design prose outrun this thin but honest dial. Insurance concentration and drug-pricing slots remain unsourced."
+        "observation_history": [
+          {
+            "period": "2005–2023",
+            "value": "146 closures/conversions; 81 shutdowns",
+            "label": "ERS rural hospital history",
+            "geography": "US rural counties",
+            "source_id": "CC-SRC-009"
+          },
+          {
+            "period": "2024-06-30",
+            "value": "~22% population in primary-care HPSAs",
+            "label": "Current E05 dial",
+            "geography": "US",
+            "source_id": "CC-SRC-225"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Arkansas primary-care HPSA share / county map",
+            "value": "NOT ATTACHED",
+            "note": "Demand PASS5-DEM-HPSA-AR — do not invent from national 22%."
+          }
+        ],
+        "series_note": "Pass 5 attaches the multi-year rural-hospital closure count beside the current HPSA dial. Multi-year HPSA population-share arrays remain demanded.",
+        "series_status": "partial_history_endpoints_attached",
+        "missing_layers": [
+          "HRSA primary-care HPSA population-share multi-year array — RCIP-DEM-0412 / PASS5-DEM-HPSA-HISTORY",
+          "Arkansas HPSA share and county designations — PASS5-DEM-HPSA-AR",
+          "CM03 hospital access baseline (deferred)",
+          "E03/E04/E06 pending insurance/drug/prevention slots"
+        ],
+        "qualification": "Do not let health-system design prose outrun these thin but honest dials. Designation ≠ utilization; mental-health HPSAs are separate."
       },
       "what_the_data_show": {
-        "key_finding": "About 22% of the U.S. population lives in designated primary-care HPSAs (2024-06-30 HRSA reading). That is an access-shortage proxy — not a completed healthcare diagnosis.",
+        "key_finding": "Primary-care HPSA population share is about 22% (~75M) as of 2024-06-30. Separately, ERS counts 146 rural hospital closures/conversions from 2005–2023. Multi-year HPSA share arrays and Arkansas HPSA maps are not yet attached.",
         "critical_numbers": [
           {
             "label": "Population in primary-care HPSAs",
@@ -1407,6 +1707,14 @@
             "period": "2024-06-30",
             "metric_id": "CC-IND-E05",
             "source_id": "CC-SRC-225"
+          },
+          {
+            "label": "Rural hospital closures/conversions",
+            "value": "146",
+            "period": "2005–2023",
+            "geography": "US rural counties",
+            "source_id": "CC-SRC-009",
+            "note": "Related access history — not a substitute for E05 HPSA share or CM03."
           }
         ],
         "plain_english": "Put the shortage dial beside rural-health and community-care claims; keep unknowns about insurance, prevention investment, and hospital access visible."
@@ -1425,7 +1733,7 @@
       ],
       "last_updated": {
         "date": "2026-08-11",
-        "dataset_or_release": "national_baseline_metrics.json"
+        "dataset_or_release": "national_baseline_metrics.json + CC-SRC-009/225"
       },
       "explore": {
         "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md"
@@ -1541,18 +1849,188 @@
           "CC-CLAIM-042"
         ]
       }
+    },
+    {
+      "panel_id": "CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1",
+      "title": "Energy structural endpoints (not a prosperity-fund scorecard)",
+      "reader_question": "What energy production, trade, and generation facts are already sourced — and which historical series still must be demanded before design claims sit on an empirical foundation?",
+      "surfaces": [
+        "apps/book-site/src/pages/energy-sovereignty.astro",
+        "apps/build-board/src/pages/energy-sovereignty.astro",
+        "data/project/energy_sovereignty_framework.json"
+      ],
+      "claim_ids": [],
+      "metric_ids": [],
+      "source_ids": [
+        "CC-SRC-056",
+        "CC-SRC-057",
+        "CC-SRC-058",
+        "CC-SRC-059",
+        "CC-SRC-060",
+        "CC-SRC-061"
+      ],
+      "evidence_strength": "Partial",
+      "strength_note": "Strong for the cited EIA/DOE structural endpoints. Partial because multi-year arrays, prices, reliability, ownership shares, and Arkansas series are not attached — and none of these endpoints validate a National Energy Prosperity Fund.",
+      "evidence_system": {
+        "reader_stack": "claim → current observation → historical series → Arkansas/U.S. comparison → distribution/geography → qualification/counterevidence → provenance. Layers absent are listed below.",
+        "definition": "Structural energy endpoints from EIA/DOE publications already in the source registry. These are not CC baseline energy metrics and not public-return or dividend outcomes.",
+        "comparison": [
+          {
+            "label": "Primary energy balance (2024)",
+            "value": "production > consumption; net exports 9.3 quads",
+            "note": "Highest net exports in EIA records dating to 1949 (CC-SRC-056)."
+          },
+          {
+            "label": "Electricity net generation (2025)",
+            "value": "4.43 thousand TWh",
+            "note": "Record generation; not reliability or affordability (CC-SRC-057)."
+          },
+          {
+            "label": "Crude oil production (2025)",
+            "value": "13.6 million b/d",
+            "note": "STEO-linked annual estimate; revisions possible (CC-SRC-058)."
+          },
+          {
+            "label": "LNG exports",
+            "value": "0.5 Bcf/d (2016) → 15.0 Bcf/d (2025)",
+            "note": "True multi-year endpoints from CC-SRC-061; DOE YTD 2025 ~5.5 Tcf by vessel (CC-SRC-059)."
+          }
+        ],
+        "observation_history": [
+          {
+            "period": "1949–2024 (record span cited)",
+            "value": "net energy exports 9.3 quads in 2024 — highest in EIA records to 1949",
+            "label": "Primary energy net-export record",
+            "geography": "US",
+            "source_id": "CC-SRC-056",
+            "note": "Endpoint + record claim — full annual quads path not attached in-repo."
+          },
+          {
+            "period": "2016→2025",
+            "value": "LNG exports 0.5 → 15.0 Bcf/d",
+            "label": "LNG export growth endpoints",
+            "geography": "US",
+            "source_id": "CC-SRC-061"
+          },
+          {
+            "period": "2020 onward",
+            "value": "total petroleum net exporter (while still importing some crude/products)",
+            "label": "Petroleum trade status",
+            "geography": "US",
+            "source_id": "CC-SRC-060",
+            "note": "Sovereignty ≠ autarky."
+          },
+          {
+            "period": "2024–2025",
+            "value": "current production/generation/export endpoints",
+            "label": "Current observations",
+            "geography": "US"
+          }
+        ],
+        "geography_contrast": [
+          {
+            "label": "Arkansas production / consumption / prices / capacity",
+            "value": "NOT ATTACHED",
+            "note": "PASS5-DEM-ENERGY-AR — do not invent from national endpoints."
+          }
+        ],
+        "series_note": "Pass 5 publishes sourced structural endpoints and the LNG mini-history already in the registry, then routes the remaining energy desert through the public-statistics demand backlog rather than decorating the page with unsourced series.",
+        "series_status": "structural_endpoints_partial_history",
+        "missing_layers": [
+          "Primary energy production/consumption/net exports annual quads path — PASS5-DEM-ENERGY-MER",
+          "Electricity net generation annual path + capacity — PASS5-DEM-ENERGY-ELEC",
+          "Crude oil production annual path — PASS5-DEM-ENERGY-CRUDE",
+          "LNG / petroleum trade full annual tables — PASS5-DEM-ENERGY-TRADE",
+          "Electricity prices / household energy burden (definition lock first) — PASS5-DEM-ENERGY-PRICES",
+          "Reliability metrics where measurable — PASS5-DEM-ENERGY-RELIABILITY",
+          "IOU / municipal / cooperative customer-share ownership structure — PASS5-DEM-ENERGY-OWNERSHIP",
+          "Arkansas energy accounts — PASS5-DEM-ENERGY-AR",
+          "Public-return / prosperity-fund outcome metrics (definition lock — do not invent)"
+        ],
+        "qualification": "Production, exports, and generation facts do not measure public capture of energy rents, People’s Energy Dividend feasibility, or community hosting outcomes. Do not promote these endpoints into baseline prosperity metrics without ontology lock."
+      },
+      "what_the_data_show": {
+        "key_finding": "Sourced EIA/DOE endpoints show the U.S. produced more primary energy than it consumed in 2024 (net exports 9.3 quads, record since 1949), record electricity generation in 2025 (4.43 thousand TWh), record crude production (13.6 mb/d), and LNG exports rising from 0.5 Bcf/d in 2016 to 15.0 Bcf/d in 2025 — while petroleum net-exporter status since 2020 still coexists with imports.",
+        "critical_numbers": [
+          {
+            "label": "Net primary energy exports",
+            "value": "9.3 quads",
+            "period": "2024",
+            "geography": "US",
+            "source_id": "CC-SRC-056",
+            "note": "Highest in EIA records dating to 1949."
+          },
+          {
+            "label": "Energy exports",
+            "value": "30.9 quads",
+            "period": "2024",
+            "geography": "US",
+            "source_id": "CC-SRC-056"
+          },
+          {
+            "label": "Electricity net generation",
+            "value": "4.43 thousand TWh",
+            "period": "2025",
+            "geography": "US",
+            "source_id": "CC-SRC-057"
+          },
+          {
+            "label": "Crude oil production",
+            "value": "13.6 million b/d",
+            "period": "2025",
+            "geography": "US",
+            "source_id": "CC-SRC-058",
+            "note": "STEO-linked; may revise."
+          },
+          {
+            "label": "LNG exports",
+            "value": "15.0 Bcf/d",
+            "period": "2025 (from 0.5 in 2016)",
+            "geography": "US",
+            "source_id": "CC-SRC-061"
+          }
+        ],
+        "plain_english": "Energy Sovereignty pages should sit on these structural facts and the visible missing-layer list. Abundance and export capacity are measurable; public-return design is not yet an empirical scorecard."
+      },
+      "what_supports_this": [
+        "EIA Today in Energy / Energy Explained (CC-SRC-056/057/058/060/061)",
+        "DOE Natural Gas Imports and Exports Monthly (CC-SRC-059)",
+        "energy_sovereignty_framework sourced_context_baselines"
+      ],
+      "what_challenges_it": [
+        "Endpoints ≠ full historical series attached in-repo",
+        "Net exporter status ≠ energy autarky or household affordability",
+        "No measurement here of public vs private capture of export value"
+      ],
+      "what_we_dont_know": [
+        "In-repo multi-year MER/electricity/price/reliability arrays",
+        "Arkansas energy accounts",
+        "Prosperity-fund distributable outcomes (modeling 0%)"
+      ],
+      "last_updated": {
+        "date": "2026-08-11",
+        "dataset_or_release": "source_registry CC-SRC-056–061 (no energy baseline slots)"
+      },
+      "explore": {
+        "methodology": "docs/publishing/DATA_DENSE_PUBLICATION_STANDARD.md",
+        "mapping": "data/project/CC_PASS_5_EVIDENCE_DESERT_DATA_DEMAND_BACKLOG.json"
+      }
     }
   ],
   "pass_summary": {
-    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-4.0",
-    "panels_total": 17,
-    "panels_added_or_upgraded_pass_4": 7,
+    "pass": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-5.0",
+    "panels_total": 18,
+    "panels_added_pass_5": 1,
+    "systems_deepened_pass_5": 6,
+    "preference": "depth_over_panel_count",
     "google_civic_bound": false,
     "energy_baseline_bound": false,
-    "note": "Evidence-desert hunt; small evidence systems preferred; energy deferred (no sourced baseline metrics)."
+    "energy_structural_panel_bound": true,
+    "note": "Turn snapshots into histories where sourced endpoints exist; route deserts through data-demand backlog."
   },
   "pass_1_panels": 3,
   "pass_2_panels": 9,
   "pass_4_rule": "Prefer a small evidence system over isolated headline numbers whenever the data permit it (definition + comparison + series status + qualification + source).",
-  "pass_3_panels": 11
+  "pass_3_panels": 11,
+  "pass_5_rule": "Prefer more observations behind existing evidence systems rather than more evidence-panel count. Claim → current → history → AR/US → geography → qualification → provenance; say so when layers are missing."
 }

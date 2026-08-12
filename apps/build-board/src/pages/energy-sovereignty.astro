@@ -1,7 +1,9 @@
 ---
 import BoardLayout from "../layouts/BoardLayout.astro";
+import EvidencePanel from "../components/EvidencePanel.astro";
 import { developingDoctrine } from "../lib/data";
 import es from "../../../../data/project/energy_sovereignty_framework.json";
+import panels from "../../../../data/project/publication_evidence_panels.json";
 
 const doctrineIds = Array.from({ length: 20 }, (_, i) => `CC-DEV-${209 + i}`);
 const items = (developingDoctrine.items || []).filter((d: any) =>
@@ -12,6 +14,9 @@ const prosperityQs = es.domestic_prosperity_test?.questions || [];
 const baselines = es.sourced_context_baselines?.items || [];
 const allocation =
   es.national_energy_prosperity_fund?.illustrative_distributable_allocation?.shares || [];
+const energyPanel = (panels.panels || []).find(
+  (p: { panel_id: string }) => p.panel_id === "CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1"
+);
 ---
 
 <BoardLayout title="Energy Sovereignty" path="/energy-sovereignty/">
@@ -21,6 +26,8 @@ const allocation =
     Principle: <code>{es.principle_id}</code>. Decision: <code>CC-DEC-086</code>. Major national
     doctrine.; fund modeling 0%.
   </p>
+
+  {energyPanel ? <EvidencePanel panel={energyPanel} /> : null}
 
   <div class="grid grid--stats">
     <div class="stat">
