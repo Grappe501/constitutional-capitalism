@@ -1463,7 +1463,7 @@
   },
   "three_connected_workstreams": {
     "slice_id": "CC-THREE-CONNECTED-WORKSTREAMS-1.0",
-    "status": "PASSED_SPEC_LOCK",
+    "status": "SUPERSEDED_BY_COORDINATED_WAVE",
     "decision_id": "CC-DEC-114",
     "update_id": "UPD-127",
     "return": "reports/CC_THREE_CONNECTED_WORKSTREAMS_1_0_RETURN.md",
@@ -1473,6 +1473,34 @@
       "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"
     ],
     "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+  },
+  "coordinated_development_wave": {
+    "slice_id": "CC-COORDINATED-DEVELOPMENT-WAVE-1.0",
+    "status": "PASSED_WAVE_EXECUTED_PARTIAL_DEPTH",
+    "decision_id": "CC-DEC-115",
+    "update_id": "UPD-128",
+    "program_file": "data/project/coordinated_development_wave.json",
+    "return": "reports/CC_COORDINATED_DEVELOPMENT_WAVE_1_0_RETURN.md",
+    "dependency_chain": [
+      "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+      "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+      "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"
+    ],
+    "artifacts": [
+      "data/project/comparative_systems_shared_dial_matrix.json",
+      "data/project/arkansas_strategic_capacity_inventory.json",
+      "data/project/arkansas_magnet_hub_intervention_packets.json"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0",
+      "CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "why_this_can_start_now_required",
+      "remaining_24_compare_controlled_backlog"
+    ]
   },
   "baseline_definition_locks_next_fills": {
     "slice_id": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",

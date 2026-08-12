@@ -1,0 +1,458 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
+  "wave_slice_id": "CC-COORDINATED-DEVELOPMENT-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "status": "first_packets_scaffolded_eligibility_not_proven",
+  "module_id": "CC-MOD-ARKANSAS-MAGNET-HUB-INTERVENTION-PACKETS",
+  "decision_id": "CC-DEC-115",
+  "update_id": "UPD-128",
+  "hypothesis_id": "CC-HYP-ARKANSAS-TRANSITION-PATHWAY",
+  "incubator_alias": "HYP-129",
+  "depends_on": [
+    "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+    "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0"
+  ],
+  "purpose": "Turn highest-value HYP-130 capacity gaps into handable intervention packets — prototype local economic infrastructure, not merely a school project.",
+  "not": [
+    "secured_grants",
+    "locked_site_selection",
+    "doctrine",
+    "statewide_rollout",
+    "claim_that_listing_a_fund_equals_eligibility",
+    "new_CC_PRIN"
+  ],
+  "packet_field_schema": [
+    "need",
+    "local_institution",
+    "pilot_geography",
+    "existing_authority",
+    "funding_stack",
+    "partners",
+    "workforce_pipeline",
+    "ownership_model",
+    "measurable_outcomes",
+    "legal_barriers",
+    "pilot",
+    "expansion_trigger",
+    "failure_conditions",
+    "WHY_THIS_CAN_START_NOW"
+  ],
+  "WHY_THIS_CAN_START_NOW_vocabulary": [
+    {
+      "code": "EXISTING_AUTHORITY",
+      "label": "Existing authority — can begin without new legislation"
+    },
+    {
+      "code": "ADMINISTRATIVE_ACTION",
+      "label": "Administrative action — executive/agency implementation"
+    },
+    {
+      "code": "LEGISLATIVE_CHANGE_REQUIRED",
+      "label": "Legislative change required"
+    },
+    {
+      "code": "CONSTITUTIONAL_AMENDMENT_POTENTIALLY_REQUIRED",
+      "label": "Constitutional amendment potentially required"
+    },
+    {
+      "code": "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY",
+      "label": "Federal waiver/program dependency"
+    },
+    {
+      "code": "CANNOT_CURRENTLY_BE_IMPLEMENTED",
+      "label": "Cannot currently be implemented"
+    }
+  ],
+  "WHY_THIS_CAN_START_NOW_rule": "Every intervention packet must classify startability honestly so an Arkansas administration can see what is executable now versus what requires law, amendment, or federal permission.",
+  "implementation_ladder": [
+    "local_pilot",
+    "measurable_result",
+    "replication",
+    "county_network",
+    "regional_system",
+    "statewide_system"
+  ],
+  "funding_eligibility_matrix": {
+    "status": "SCAN_NOT_ELIGIBILITY_PROOF",
+    "note": "Listing a program ≠ eligibility, match capacity, or award. Each row needs a verified eligibility memo before application.",
+    "rows": [
+      {
+        "program": "Perkins V CTE",
+        "agency": "US ED / Arkansas DESE CTE",
+        "magnet_hub_relevance": "agriculture, trades, business/marketing pathways",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "EXISTING_AUTHORITY"
+      },
+      {
+        "program": "Registered Apprenticeship / WIOA",
+        "agency": "US DOL / Arkansas OSD / WIOA boards",
+        "magnet_hub_relevance": "apprenticeship pipeline attached to school/employer partners",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "ADMINISTRATIVE_ACTION"
+      },
+      {
+        "program": "USDA Community Facilities",
+        "agency": "USDA RD",
+        "magnet_hub_relevance": "greenhouse, processing classroom, community facility components",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"
+      },
+      {
+        "program": "USDA Local Food Promotion / VAPG / RFSP",
+        "agency": "USDA AMS / RD",
+        "magnet_hub_relevance": "food hub, processing training, producer partnerships",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"
+      },
+      {
+        "program": "USDA EQIP / CIG",
+        "agency": "USDA NRCS",
+        "magnet_hub_relevance": "conservation practices on school/community farm components",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"
+      },
+      {
+        "program": "Rural Business Development Grants",
+        "agency": "USDA RD",
+        "magnet_hub_relevance": "entrepreneurship / small business training attached to hub",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"
+      },
+      {
+        "program": "Arkansas LEARNS / state CTE / magnet authorities",
+        "agency": "Arkansas DESE / legislature (existing statutes)",
+        "magnet_hub_relevance": "core school magnet configuration",
+        "eligibility_status": "LEGAL_MEMO_NEEDED",
+        "likely_start_code": "EXISTING_AUTHORITY"
+      },
+      {
+        "program": "AEDC / Arkansas Department of Agriculture programs",
+        "agency": "State",
+        "magnet_hub_relevance": "workforce and ag economic development alignment",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "ADMINISTRATIVE_ACTION"
+      },
+      {
+        "program": "Philanthropy (Walton / Rockefeller / rural funds)",
+        "agency": "Private foundations",
+        "magnet_hub_relevance": "match, facilities, evaluation",
+        "eligibility_status": "NEE_VERIFY",
+        "likely_start_code": "ADMINISTRATIVE_ACTION"
+      }
+    ]
+  },
+  "packets": [
+    {
+      "packet_id": "CC-INT-ARK-MAGNET-HUB-001",
+      "title": "Rural Agriculture Magnet Hub — local economic infrastructure prototype",
+      "layer": "L1_IMMEDIATE_PILOTS",
+      "status": "SCAFFOLD",
+      "need": {
+        "summary": "Build local capability in agriculture, food systems, skilled trades, and introductory tech so rural communities own more of their economic infrastructure rather than exporting youth and importing scarce skills.",
+        "capacity_gaps_fed": [
+          "agriculture_food_systems",
+          "skilled_trades",
+          "healthcare_medicine",
+          "technology_ai",
+          "public_services"
+        ],
+        "inventory_path": "data/project/arkansas_strategic_capacity_inventory.json"
+      },
+      "local_institution": {
+        "primary": "Public school district hosting agriculture magnet + CTE",
+        "supporting": [
+          "community college / technical institute partner",
+          "UA Cooperative Extension / 4-H / FFA",
+          "local employers and producer associations",
+          "county / municipal facilities partners"
+        ],
+        "status": "INSTITUTION_TYPE_LOCKED_SITE_NEE"
+      },
+      "pilot_geography": {
+        "rule": "One school district, town, or county with matched comparable-community controls (HYP-128)",
+        "candidates_investigative": ["Rose Bud LCL geography", "Lewisville LCL geography"],
+        "locked_site": null,
+        "status": "NEE_SITE_SELECTION"
+      },
+      "existing_authority": {
+        "likely": [
+          "Arkansas CTE / Perkins pathways",
+          "LEARNS-compatible school program design (legal memo required)",
+          "Registered Apprenticeship sponsorship with employers",
+          "Extension / FFA / 4-H partnerships"
+        ],
+        "legal_memo_status": "NEE"
+      },
+      "funding_stack": {
+        "matrix_ref": "funding_eligibility_matrix",
+        "near_term_candidates": [
+          "Perkins V CTE",
+          "Registered Apprenticeship / WIOA",
+          "USDA Community Facilities / local food programs",
+          "State CTE / AEDC / Ag",
+          "Philanthropic match"
+        ],
+        "secured": [],
+        "eligibility_proven": false
+      },
+      "partners": [
+        "District leadership and school board",
+        "Regional CTE coordinator",
+        "Producer / food-hub partners",
+        "Apprenticeship sponsors",
+        "Local clinic / CHW pathway partners (allied, not UAMS replacement)",
+        "Comparable-community evaluation partner (HYP-128)"
+      ],
+      "workforce_pipeline": {
+        "stages": [
+          "middle/high magnet coursework",
+          "certifications",
+          "apprenticeships",
+          "community-college articulation",
+          "local employment or ownership starts"
+        ],
+        "graduate_outcomes_beyond_diploma": [
+          "certifications",
+          "apprenticeships",
+          "business_ownership_opportunities",
+          "community_leadership_experience"
+        ]
+      },
+      "ownership_model": {
+        "near_term": "Public school + partner MOUs; community greenhouse/farm use agreements",
+        "medium_term_layer2": "Pathway to cooperative food network / local grocery / community capital pools (separate packets)",
+        "not": "Privatizing the school or creating partisan civic gatekeeping"
+      },
+      "measurable_outcomes": {
+        "pre_register_before_pilot": true,
+        "candidates": [
+          "CTE concentrator completion",
+          "industry certifications earned",
+          "registered apprenticeship starts/completions",
+          "local food production / processing training hours",
+          "graduate retention in county (survey — method NEE)",
+          "ownership starts or co-op memberships (Layer-2 linkage)",
+          "comparable-community deltas (HYP-128)"
+        ],
+        "invented_statistics_forbidden": true
+      },
+      "legal_barriers": {
+        "known_research_items": [
+          "Magnet / CTE authority boundaries under LEARNS",
+          "Facility ownership and USDA eligibility for school-linked community facilities",
+          "Student labor / apprenticeship age and liability rules",
+          "Food processing and cottage-food / commercial kitchen compliance",
+          "Nonpartisan civic-hub boundary (HYP-126)"
+        ],
+        "status": "LEGAL_RESEARCH"
+      },
+      "pilot": {
+        "definition": "Single-site magnet hub program under existing authority with pre-registered outcomes",
+        "ladder_step": "local_pilot",
+        "branding_rule": "Investigative / implementation pilot — not proof that Constitutional Capitalism is validated"
+      },
+      "expansion_trigger": {
+        "requires": [
+          "measurable_result against pre-registered outcomes",
+          "comparable_community comparison (HYP-128)",
+          "funding and authority still valid",
+          "no failure_condition tripped"
+        ],
+        "next_ladder_steps": ["replication", "county_network", "regional_system", "statewide_system"]
+      },
+      "failure_conditions": [
+        "Outcomes not measured or inventing success metrics",
+        "Program becomes partisan civic gate or rights-conditioned participation",
+        "School farm remains isolated activity with no workforce/ownership pathway",
+        "Expansion without comparable-community evidence",
+        "Dependency on a single unrenewed grant with no local ownership path"
+      ],
+      "WHY_THIS_CAN_START_NOW": {
+        "primary_code": "EXISTING_AUTHORITY",
+        "secondary_codes": [
+          "ADMINISTRATIVE_ACTION",
+          "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"
+        ],
+        "not_required_to_start_core_school_program": [
+          "CONSTITUTIONAL_AMENDMENT_POTENTIALLY_REQUIRED"
+        ],
+        "explanation": "Core magnet/CTE/apprenticeship configuration is hypothesized to begin under existing Arkansas school and workforce authorities with administrative partnerships. Facility and USDA food-system components often depend on federal program eligibility. Constitutional amendment is not required to start the school-centered prototype. Full legal memo still NEE before claiming authority is settled.",
+        "cannot_currently_be_implemented": false,
+        "blocking_items_before_launch": [
+          "LEARNS/CTE legal memo",
+          "site selection with controls",
+          "at least one verified funding eligibility path",
+          "pre-registered measurement bundle"
+        ]
+      },
+      "shared_dial_measurement_language": {
+        "matrix_path": "data/project/comparative_systems_shared_dial_matrix.json",
+        "domains_to_respect": ["agriculture", "labor", "healthcare", "fiscal"],
+        "rule": "Use only comparable dials when claiming cross-system or cross-community measurement parity"
+      }
+    },
+    {
+      "packet_id": "CC-INT-ARK-TRADES-PIPELINE-001",
+      "title": "Magnet-attached skilled trades / apprenticeship pipeline",
+      "layer": "L1_IMMEDIATE_PILOTS",
+      "status": "SCAFFOLD",
+      "need": {
+        "summary": "Close leave-state and leave-county patterns for trades Arkansas employers need by attaching Registered Apprenticeship to the hub.",
+        "capacity_gaps_fed": ["skilled_trades"]
+      },
+      "local_institution": {
+        "primary": "School CTE + employer apprenticeship sponsor + two-year college",
+        "status": "INSTITUTION_TYPE_LOCKED_SITE_NEE"
+      },
+      "pilot_geography": {
+        "rule": "Same pilot geography as magnet hub or adjacent feeder",
+        "locked_site": null,
+        "status": "NEE_SITE_SELECTION"
+      },
+      "existing_authority": {
+        "likely": ["Registered Apprenticeship", "WIOA", "Perkins V"],
+        "legal_memo_status": "NEE"
+      },
+      "funding_stack": {
+        "near_term_candidates": ["WIOA", "Perkins V", "employer match"],
+        "secured": [],
+        "eligibility_proven": false
+      },
+      "partners": ["Employers", "OSD / apprenticeship agency", "community college"],
+      "workforce_pipeline": {
+        "stages": ["CTE", "youth/adult apprenticeship", "journey-level employment"]
+      },
+      "ownership_model": {
+        "near_term": "Employer-sponsored apprenticeship; school as related-instruction site"
+      },
+      "measurable_outcomes": {
+        "candidates": [
+          "apprenticeship starts",
+          "completions",
+          "local placement",
+          "wage progression (method NEE)"
+        ],
+        "invented_statistics_forbidden": true
+      },
+      "legal_barriers": {
+        "known_research_items": ["Age/liability", "sponsor standards", "related-instruction credit"],
+        "status": "LEGAL_RESEARCH"
+      },
+      "pilot": {
+        "definition": "One trade cohort attached to hub employers",
+        "ladder_step": "local_pilot"
+      },
+      "expansion_trigger": {
+        "requires": ["cohort completion data", "employer continuation", "no safety/failure flags"],
+        "next_ladder_steps": ["replication", "county_network"]
+      },
+      "failure_conditions": [
+        "Classroom-only CTE with no employer sponsor",
+        "Expansion without completion data"
+      ],
+      "WHY_THIS_CAN_START_NOW": {
+        "primary_code": "ADMINISTRATIVE_ACTION",
+        "secondary_codes": ["EXISTING_AUTHORITY", "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"],
+        "explanation": "Apprenticeship sponsorship and WIOA alignment are primarily administrative under existing federal/state frameworks. Not a constitutional amendment path.",
+        "cannot_currently_be_implemented": false,
+        "blocking_items_before_launch": [
+          "employer sponsor",
+          "related-instruction agreement",
+          "measurement pre-registration"
+        ]
+      }
+    },
+    {
+      "packet_id": "CC-INT-ARK-RURAL-CARE-PATHWAY-001",
+      "title": "Rural allied / primary-care pathway attached to hub (not medical school substitute)",
+      "layer": "L1_IMMEDIATE_PILOTS",
+      "status": "SCAFFOLD",
+      "need": {
+        "summary": "Use HPSA shortage signal to build local allied-health and community-health pipelines while leave-state residency questions remain NEE.",
+        "capacity_gaps_fed": ["healthcare_medicine", "dental_maternal_primary_care"],
+        "linked_panels": ["CC-EP-PRIMARY-CARE-ACCESS-1"]
+      },
+      "local_institution": {
+        "primary": "School CTE health sciences + local clinic / CHW partners + community college nursing/allied",
+        "status": "INSTITUTION_TYPE_LOCKED_SITE_NEE"
+      },
+      "pilot_geography": {
+        "rule": "Prefer HPSA-overlapping rural geography co-located with magnet hub pilot",
+        "locked_site": null,
+        "status": "NEE_SITE_SELECTION"
+      },
+      "existing_authority": {
+        "likely": ["CTE health sciences", "community-college allied programs", "clinic partnership MOUs"],
+        "legal_memo_status": "NEE"
+      },
+      "funding_stack": {
+        "near_term_candidates": ["Perkins V", "HRSA-linked workforce programs (verify)", "state health workforce funds (verify)"],
+        "secured": [],
+        "eligibility_proven": false
+      },
+      "partners": ["Local clinic", "community college", "UAMS regional partners where appropriate"],
+      "workforce_pipeline": {
+        "stages": ["CTE health", "CNA/CHW/allied certificates", "nursing/allied articulation", "local placement"]
+      },
+      "ownership_model": {
+        "near_term": "Public education + clinical partners; not a privatized care gate"
+      },
+      "measurable_outcomes": {
+        "candidates": [
+          "health CTE completers",
+          "certificates",
+          "local clinical placement",
+          "do-not-claim HPSA closure without measurement design"
+        ],
+        "invented_statistics_forbidden": true
+      },
+      "legal_barriers": {
+        "known_research_items": [
+          "Clinical placement liability",
+          "Scope of practice for CHW pathways",
+          "Privacy / student clinical rules"
+        ],
+        "status": "LEGAL_RESEARCH"
+      },
+      "pilot": {
+        "definition": "Allied/primary pathway cohort — explicitly not a claim to replace medical school capacity",
+        "ladder_step": "local_pilot"
+      },
+      "expansion_trigger": {
+        "requires": ["certificate/placement data", "clinic continuation", "HPSA interpretation remains non-causal"],
+        "next_ladder_steps": ["replication"]
+      },
+      "failure_conditions": [
+        "Claiming capture or system proof from HPSA dials",
+        "Promising physician supply from CTE alone"
+      ],
+      "WHY_THIS_CAN_START_NOW": {
+        "primary_code": "EXISTING_AUTHORITY",
+        "secondary_codes": ["ADMINISTRATIVE_ACTION", "FEDERAL_WAIVER_OR_PROGRAM_DEPENDENCY"],
+        "explanation": "CTE health and allied certificates can start under existing education/clinical partnership authorities. Expanding medical school seats or residencies is a different packet and may require capital/legislation.",
+        "cannot_currently_be_implemented": false,
+        "blocking_items_before_launch": [
+          "clinic MOU",
+          "program approval",
+          "measurement pre-registration"
+        ]
+      }
+    }
+  ],
+  "holds": [
+    "Eligibility scan ≠ award",
+    "No locked statewide plan",
+    "Layer-1 ≠ proof CC works",
+    "Overall completion dial held at 43",
+    "CC-CLAIM-003 remains NEE"
+  ],
+  "next_research": [
+    "Verify Perkins / apprenticeship / USDA eligibility memos for CC-INT-ARK-MAGNET-HUB-001",
+    "LEARNS/CTE authority legal memo",
+    "Site selection with HYP-128 controls",
+    "Populate quantified fields only from official sources"
+  ],
+  "framework_path": "data/project/arkansas_transition_framework.json",
+  "inventory_path": "data/project/arkansas_strategic_capacity_inventory.json"
+}

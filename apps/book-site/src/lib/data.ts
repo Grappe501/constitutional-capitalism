@@ -94,6 +94,15 @@ export type EconomicSystem = {
   status: string;
   phase2_evidence?: Phase2Evidence;
   phase3_crosswalk?: Phase3Crosswalk;
+  shared_dial_harmonization?: {
+    slice_id?: string;
+    wave_slice_id?: string;
+    matrix_path?: string;
+    status?: string;
+    comparable_domains?: string[];
+    missing_domains?: string[];
+    similar_not_comparable_domains?: string[];
+  };
 };
 
 export const FAMILY_ORDER = [

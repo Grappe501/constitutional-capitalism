@@ -1,12 +1,15 @@
 # CC-HYP-ARKANSAS-STRATEGIC-CAPACITY (HYP-130)
 
 **Status:** Research hypothesis — **not doctrine** · **not a completed audit**  
-**Update:** UPD-127 · Decisions: CC-DEC-112 (`KEEP_AS_HYPOTHESIS`), deepened by CC-DEC-114  
-**Demands:** `data/project/CC_ARKANSAS_STRATEGIC_CAPACITY_AUDIT_DATA_DEMANDS.json`
+**Update:** UPD-128 · Decisions: CC-DEC-112 (`KEEP_AS_HYPOTHESIS`), deepened by CC-DEC-114 / CC-DEC-115  
+**Demands:** `data/project/CC_ARKANSAS_STRATEGIC_CAPACITY_AUDIT_DATA_DEMANDS.json`  
+**Inventory:** `data/project/arkansas_strategic_capacity_inventory.json`
 
-## Central question
+## Central questions
 
 > What critical professions, industries, and technical capacities does Arkansas need but not currently educate enough people for?
+
+> **Where does an Arkansas resident currently have to leave Arkansas to acquire the capability Arkansas needs?**
 
 ## Capability map chain
 
@@ -40,4 +43,4 @@ Example domains (research list, not findings): rural medicine, maternal care, de
 
 ## Next research
 
-`CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0`
+`CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0` — populate leave-state answers from official catalogs only.

@@ -2,11 +2,14 @@
   "version": "1.0.0",
   "slice_id": "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
   "generated_at": "2026-08-12",
-  "status": "research_track_registered_not_executed",
+  "status": "inventory_scaffold_executed_not_census",
   "module_id": "CC-MOD-ARKANSAS-STRATEGIC-CAPACITY-AUDIT",
-  "update_id": "UPD-127",
-  "decision_id": "CC-DEC-114",
-  "amends_decision": "CC-DEC-112",
+  "update_id": "UPD-128",
+  "decision_id": "CC-DEC-115",
+  "amends_decision": "CC-DEC-114",
+  "inventory_path": "data/project/arkansas_strategic_capacity_inventory.json",
+  "central_economic_development_question": "Where does an Arkansas resident currently have to leave Arkansas to acquire the capability Arkansas needs?",
+  "wave_slice_id": "CC-COORDINATED-DEVELOPMENT-WAVE-1.0",
   "not": [
     "doctrine",
     "principle",
@@ -67,16 +70,18 @@
     "buildable_capacity": "What could realistically be built under existing or near-term authority (feeds HYP-129)"
   },
   "sector_coverage_target": [
-    "education",
-    "healthcare",
-    "agriculture",
-    "energy",
-    "manufacturing",
-    "technology",
-    "infrastructure",
+    "healthcare_medicine",
+    "dental_maternal_primary_care",
+    "higher_education",
     "skilled_trades",
+    "agriculture_food_systems",
+    "manufacturing",
+    "energy",
+    "technology_ai",
+    "infrastructure",
+    "transportation",
     "public_services",
-    "other_strategically_important_capabilities"
+    "research_advanced_technical"
   ],
   "aligns_with": [
     "HYP-129",
@@ -90,6 +95,8 @@
   ],
   "research_progression_lock": [
     "register_track",
+    "shared_dial_harmonization_feed",
+    "inventory_scaffold_with_leave_state_question",
     "inventory_official_enrollment_and_program_sources",
     "map_shortage_signals_from_existing_panels_without_proxy_abuse",
     "build_has_needs_imports_lacks_buildable_matrix",
@@ -97,7 +104,8 @@
     "feed_hyp129_layer1_magnet_hub_and_cte_design",
     "only_then_implementation_blueprints"
   ],
-  "next_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "completed_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "next_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0",
   "structural_sequence_unchanged": [
     "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
   ]

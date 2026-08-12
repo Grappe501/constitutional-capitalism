@@ -1,7 +1,7 @@
 # CC-HYP-ARKANSAS-TRANSITION-PATHWAY (HYP-129)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not a locked statewide plan**  
-**Update:** UPD-127 · Decisions: CC-DEC-109 (`KEEP_AS_RESEARCH_FRAMEWORK`), deepened by CC-DEC-114  
+**Update:** UPD-128 · Decisions: CC-DEC-109 (`KEEP_AS_RESEARCH_FRAMEWORK`), deepened by CC-DEC-114 / CC-DEC-115  
 **Hypothesis:** `CC-HYP-ARKANSAS-TRANSITION-PATHWAY` (`HYP-129`)  
 **Demands:** `data/project/CC_ARKANSAS_TRANSITION_FRAMEWORK_DATA_DEMANDS.json`
 
@@ -32,20 +32,18 @@ Climb only after measurable results and pre-registered expansion criteria.
 
 ## Intervention packet (required fields)
 
-Each proposed intervention eventually carries:
+Need → local institution → pilot geography → existing authority → funding stack → partners → workforce pipeline → ownership model → measurable outcomes → legal barriers → pilot → expansion trigger → failure conditions.
 
-1. existing legal authority  
-2. required legislation  
-3. potential constitutional amendment  
-4. available federal/state/local funding  
-5. private/community capital  
-6. responsible institutions  
-7. implementation timeline  
-8. measurable outcomes  
-9. failure conditions  
-10. expansion criteria  
+Every packet also requires **`WHY_THIS_CAN_START_NOW`**:
 
-Packets start empty / NEE until researched — invent nothing.
+- Existing authority  
+- Administrative action  
+- Legislative change required  
+- Constitutional amendment potentially required  
+- Federal waiver/program dependency  
+- Cannot currently be implemented  
+
+First packets: `data/project/arkansas_magnet_hub_intervention_packets.json`. Invent nothing.
 
 ## Layer 1 flagship — Rural Agriculture Magnet Hub
 
@@ -74,4 +72,4 @@ Strongest current posture: pilot or program in **one** school district, town, or
 
 ## Next research
 
-`CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0`
+`CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0` · site selection with HYP-128 controls

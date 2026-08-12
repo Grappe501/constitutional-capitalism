@@ -1,0 +1,392 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "wave_slice_id": "CC-COORDINATED-DEVELOPMENT-WAVE-1.0",
+  "generated_at": "2026-08-12",
+  "status": "inventory_scaffold_partial_signals_not_census",
+  "module_id": "CC-MOD-ARKANSAS-STRATEGIC-CAPACITY-INVENTORY",
+  "decision_id": "CC-DEC-115",
+  "update_id": "UPD-128",
+  "hypothesis_id": "CC-HYP-ARKANSAS-STRATEGIC-CAPACITY",
+  "incubator_alias": "HYP-130",
+  "depends_on": [
+    "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0"
+  ],
+  "central_economic_development_question": "Where does an Arkansas resident currently have to leave Arkansas to acquire the capability Arkansas needs?",
+  "capability_map_chain": [
+    "has",
+    "needs",
+    "imports",
+    "lacks",
+    "buildable"
+  ],
+  "not": [
+    "completed_enrollment_census",
+    "invented_graduate_counts",
+    "university_ranking",
+    "claim_that_every_NEE_cell_means_zero_capacity",
+    "doctrine",
+    "new_CC_PRIN"
+  ],
+  "cell_status_vocabulary": [
+    "KNOWN_EXISTENCE_UNQUANTIFIED",
+    "SHORTAGE_SIGNAL_FROM_PANEL",
+    "LEAVE_STATE_PATTERN_RESEARCH",
+    "NEE",
+    "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+    "REQUIRES_LEGISLATION_OR_CAPITAL_HYPOTHESIS"
+  ],
+  "source_inventory_targets": [
+    {
+      "id": "ADHE",
+      "name": "Arkansas Division of Higher Education program / credential catalogs",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "UAMS",
+      "name": "UAMS medical / dental / nursing / allied health program inventory",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "UA_SYSTEM",
+      "name": "University of Arkansas System colleges and research capacity",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "ASU_SYSTEM",
+      "name": "Arkansas State University System",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "TWO_YEAR",
+      "name": "Arkansas community colleges / technical institutes",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "CTE",
+      "name": "Arkansas Department of Education CTE / Perkins pathways",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "APPRENTICESHIP",
+      "name": "Registered Apprenticeship / Office of Skills Development catalogs",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "EXTENSION",
+      "name": "UA Cooperative Extension / 4-H / ag education",
+      "status": "INVENTORY_NEEDED"
+    },
+    {
+      "id": "HRSA_PANEL",
+      "name": "CC-EP-PRIMARY-CARE-ACCESS-1 (HPSA shortage signal)",
+      "status": "BOUND"
+    },
+    {
+      "id": "HC_PANEL",
+      "name": "CC-EP-HUMAN-CAPITAL-PATHWAYS-1",
+      "status": "BOUND"
+    },
+    {
+      "id": "AG_PANEL",
+      "name": "CC-EP-AR-AG-PROCESSING-ACCESS-1 / CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1",
+      "status": "BOUND"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "healthcare_medicine",
+      "label": "Healthcare and medicine",
+      "has": {
+        "status": "KNOWN_EXISTENCE_UNQUANTIFIED",
+        "notes": [
+          "UAMS is the state's primary academic medical center",
+          "Multiple nursing and allied-health programs exist across two-year and four-year campuses"
+        ],
+        "quantified_enrollment": "NEE"
+      },
+      "needs": {
+        "status": "SHORTAGE_SIGNAL_FROM_PANEL",
+        "linked_panels": ["CC-EP-PRIMARY-CARE-ACCESS-1"],
+        "notes": [
+          "Primary-care / HPSA shortage dial shows substantial Arkansas shortage areas relative to US counts — shortage ≠ proof of zero training capacity"
+        ]
+      },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "For which medical residencies, fellowships, or specialties must Arkansans train out of state because Arkansas slots do not exist or do not meet rural demand?",
+        "answer": "NEE — residency slot census required"
+      },
+      "lacks": {
+        "status": "NEE",
+        "notes": ["Do not infer lack solely from HPSA counts"]
+      },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "feeds_hyp129": [
+          "rural_primary_care_pipeline_via_magnet_hub_and_CTE",
+          "community_health_worker_and_allied_pathways"
+        ],
+        "notes": ["Hypothesis only until authority + funding packets clear"]
+      }
+    },
+    {
+      "id": "dental_maternal_primary_care",
+      "label": "Dental / maternal / primary care",
+      "has": {
+        "status": "KNOWN_EXISTENCE_UNQUANTIFIED",
+        "notes": ["UAMS and partner clinics provide some dental/maternal/primary capacity"],
+        "quantified_enrollment": "NEE"
+      },
+      "needs": {
+        "status": "SHORTAGE_SIGNAL_FROM_PANEL",
+        "linked_panels": ["CC-EP-PRIMARY-CARE-ACCESS-1"],
+        "notes": ["Rural maternal and dental access are priority research domains — quantified gap matrix NEE"]
+      },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Must Arkansas residents leave the state for dental school seats, OB/GYN residencies, or midwifery pathways Arkansas needs?",
+        "answer": "NEE — seat/residency inventory required"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "REQUIRES_LEGISLATION_OR_CAPITAL_HYPOTHESIS",
+        "notes": ["Some allied pathways may start under existing CTE/agency authority; school seats often capital/legislative"]
+      }
+    },
+    {
+      "id": "higher_education",
+      "label": "Higher education",
+      "has": {
+        "status": "KNOWN_EXISTENCE_UNQUANTIFIED",
+        "notes": [
+          "UA System, ASU System, UCA, ATU, SAU, HSU, UAPB, and two-year colleges exist",
+          "Program-level strategic capacity map not yet built"
+        ],
+        "quantified_enrollment": "NEE"
+      },
+      "needs": {
+        "status": "NEE",
+        "notes": ["Needs derived from sector shortage + economic strategy — not a generic 'more college' claim"]
+      },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which graduate and professional programs do Arkansans routinely leave the state to complete?",
+        "answer": "NEE — ADHE / NSC transfer and out-of-state enrollment study required"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "notes": ["Program additions often board/ADHE process; capital projects differ"]
+      }
+    },
+    {
+      "id": "skilled_trades",
+      "label": "Skilled trades",
+      "has": {
+        "status": "KNOWN_EXISTENCE_UNQUANTIFIED",
+        "notes": ["CTE, apprenticeships, and technical institutes exist; coverage by trade and county is NEE"],
+        "quantified_enrollment": "NEE",
+        "linked_panels": ["CC-EP-HUMAN-CAPITAL-PATHWAYS-1"]
+      },
+      "needs": {
+        "status": "SHORTAGE_SIGNAL_FROM_PANEL",
+        "linked_panels": ["CC-EP-HUMAN-CAPITAL-PATHWAYS-1"],
+        "notes": ["Apprenticeship and early-adult pathway dials are signals, not a completed trade census"]
+      },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which critical trades require out-of-state apprenticeship sponsors or certifications Arkansas employers need?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "feeds_hyp129": ["magnet_hub_skilled_trades_and_apprenticeship_pipeline"],
+        "notes": ["Strong Layer-1 candidate under Perkins / Registered Apprenticeship / LEARNS CTE authorities — eligibility still to prove"]
+      }
+    },
+    {
+      "id": "agriculture_food_systems",
+      "label": "Agriculture / food systems",
+      "has": {
+        "status": "KNOWN_EXISTENCE_UNQUANTIFIED",
+        "notes": [
+          "UA Division of Agriculture / Extension, FFA/4-H pathways, and ag programs exist",
+          "Processing-access panel documents Arkansas geography constraints"
+        ],
+        "linked_panels": [
+          "CC-EP-AR-AG-PROCESSING-ACCESS-1",
+          "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+        ],
+        "quantified_enrollment": "NEE"
+      },
+      "needs": {
+        "status": "SHORTAGE_SIGNAL_FROM_PANEL",
+        "linked_panels": [
+          "CC-EP-AR-AG-PROCESSING-ACCESS-1",
+          "CC-EP-RURAL-LOCAL-CAPITAL-SYSTEM-1"
+        ],
+        "notes": [
+          "Local processing, food-hub, and rural capital access are measured constraints for community ownership pathways"
+        ]
+      },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Where must Arkansas producers leave local counties (or the state) for processing, veterinary specialty care, or advanced ag tech training?",
+        "answer": "Partial signal from processing-access panel; full leave-state matrix NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "feeds_hyp129": ["rural_agriculture_magnet_hub"],
+        "notes": ["Flagship Layer-1 economic infrastructure prototype — not merely a school farm"]
+      }
+    },
+    {
+      "id": "manufacturing",
+      "label": "Manufacturing",
+      "has": { "status": "NEE", "notes": ["Industrial base exists; strategic capacity map not started"] },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which advanced manufacturing credentials or technician pipelines require leaving Arkansas?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": { "status": "NEE" }
+    },
+    {
+      "id": "energy",
+      "label": "Energy",
+      "has": {
+        "status": "NEE",
+        "notes": ["Energy structural endpoints panel exists separately; training capacity map NEE"],
+        "linked_panels": ["CC-EP-ENERGY-STRUCTURAL-ENDPOINTS-1"]
+      },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Must Arkansans leave the state for nuclear, grid, or advanced energy engineering pathways the state needs?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": { "status": "NEE" }
+    },
+    {
+      "id": "technology_ai",
+      "label": "Technology / AI",
+      "has": { "status": "NEE", "notes": ["Campus CS/IT programs exist; AI systems / semiconductor capacity unmapped"] },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Where must Arkansas residents leave for semiconductor, advanced AI systems, or industrial automation credentials?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "feeds_hyp129": ["magnet_hub_ai_and_technology_training"],
+        "notes": ["Introductory AI/tech CTE can start locally; advanced fabs/labs are capital-scale"]
+      }
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "has": { "status": "NEE" },
+      "needs": { "status": "NEE", "notes": ["Water, broadband, and civil works capacity are strategic — not yet inventoried"] },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which infrastructure engineering specialties require out-of-state graduate training?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": { "status": "NEE" }
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation",
+      "has": { "status": "NEE" },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which logistics, aviation, or rail technical credentials require leaving Arkansas?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": { "status": "NEE" }
+    },
+    {
+      "id": "public_services",
+      "label": "Public services",
+      "has": { "status": "NEE", "notes": ["Teacher, public-health, and local-government workforce pipelines unmapped"] },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which public-service credentials or leadership pathways require leaving Arkansas?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": {
+        "status": "BUILDABLE_UNDER_EXISTING_AUTHORITY_HYPOTHESIS",
+        "feeds_hyp129": ["civic_center_function_of_magnet_hub"]
+      }
+    },
+    {
+      "id": "research_advanced_technical",
+      "label": "Research and advanced technical capacity",
+      "has": { "status": "NEE", "notes": ["UA research enterprise exists; strategic tech capacity map NEE"] },
+      "needs": { "status": "NEE" },
+      "imports": {
+        "status": "LEAVE_STATE_PATTERN_RESEARCH",
+        "leave_state_question": "Which advanced research skills or lab credentials must Arkansans acquire out of state for industries Arkansas wants to host?",
+        "answer": "NEE"
+      },
+      "lacks": { "status": "NEE" },
+      "buildable": { "status": "NEE" }
+    }
+  ],
+  "priority_gaps_feeding_hyp129": [
+    {
+      "rank": 1,
+      "sector_id": "agriculture_food_systems",
+      "rationale": "Strongest Layer-1 prototype — magnet hub as local economic infrastructure with processing/rural capital dials already bound",
+      "leave_state_dimension": "processing access and specialty ag training"
+    },
+    {
+      "rank": 2,
+      "sector_id": "skilled_trades",
+      "rationale": "Apprenticeship/CTE authority likely allows early pilots; human-capital pathway dials exist",
+      "leave_state_dimension": "trade certification sponsors"
+    },
+    {
+      "rank": 3,
+      "sector_id": "healthcare_medicine",
+      "rationale": "HPSA dial establishes shortage signal; pipelines can attach to hub without claiming UAMS replacement",
+      "leave_state_dimension": "residencies and specialty training"
+    },
+    {
+      "rank": 4,
+      "sector_id": "dental_maternal_primary_care",
+      "rationale": "Rural access urgency; seat/residency census still NEE",
+      "leave_state_dimension": "dental seats / OB pathways"
+    },
+    {
+      "rank": 5,
+      "sector_id": "technology_ai",
+      "rationale": "Introductory CTE attachable to magnet hub; advanced capacity remains NEE",
+      "leave_state_dimension": "advanced AI / semiconductor credentials"
+    }
+  ],
+  "shared_dial_feed": {
+    "matrix_path": "data/project/comparative_systems_shared_dial_matrix.json",
+    "rule": "Use comparable dials only when making cross-system claims about capacity-related domains (healthcare, agriculture, labor, fiscal)."
+  },
+  "next_research": [
+    "Official program catalog pulls (ADHE / UAMS / CTE / apprenticeship)",
+    "Leave-state matrix for priority sectors 1–5",
+    "Quantified enrollment only from official sources — never invent"
+  ],
+  "feeds": ["CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0"],
+  "overall_percent_rule": "Do not increase the 43% dial from this scaffold alone"
+}

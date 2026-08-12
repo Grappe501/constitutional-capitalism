@@ -1,26 +1,26 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-ARKANSAS-TRANSITION-FRAMEWORK-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-TRANSITION-PATHWAY",
   "incubator_alias": "HYP-129",
-  "decision_id": "CC-DEC-114",
-  "update_id": "UPD-127",
-  "amends_decision": "CC-DEC-109",
-  "rule": "Demands guide sequenced Arkansas transition research into handable intervention packets. Registration only — no grant applications, no locked site selection, no doctrine.",
+  "decision_id": "CC-DEC-115",
+  "update_id": "UPD-128",
+  "amends_decision": "CC-DEC-114",
+  "rule": "Demands guide sequenced Arkansas transition research into handable intervention packets with WHY_THIS_CAN_START_NOW. Registration/scaffold only — no grant applications, no locked site selection, no doctrine.",
   "demands": [
     {
       "id": "CC-DEM-ATF-001",
       "name": "magnet_hub_funding_eligibility_matrix",
       "question": "Which USDA / ED / Labor / state / philanthropic programs are actually eligible for a rural agriculture magnet hub configuration, with what match/timeline constraints?",
-      "status": "INVENTORY_NEEDED",
+      "status": "SCAN_ROWS_LISTED_ELIGIBILITY_NEE",
       "priority": "critical",
       "layer": "L1"
     },
     {
       "id": "CC-DEM-ATF-011",
       "name": "intervention_packet_schema_population",
-      "question": "Can first intervention packets (magnet hub and adjacent) carry existing legal authority, required legislation, potential constitutional amendment, funding, private/community capital, responsible institutions, timeline, measurable outcomes, failure conditions, and expansion criteria — leaving unknowns as NEE?",
-      "status": "QUEUED",
+      "question": "Can first intervention packets (magnet hub and adjacent) carry need→institution→geography→authority→funding→partners→pipeline→ownership→outcomes→barriers→pilot→expansion plus WHY_THIS_CAN_START_NOW?",
+      "status": "FIRST_PACKETS_SCAFFOLDED",
       "priority": "critical",
       "layer": "cross_layer",
       "linked": ["HYP-129", "HYP-130"]
@@ -33,6 +33,14 @@
       "priority": "critical",
       "layer": "cross_layer",
       "linked": ["HYP-128"]
+    },
+    {
+      "id": "CC-DEM-ATF-013",
+      "name": "why_this_can_start_now",
+      "question": "Does every packet classify startability as existing authority / administrative / legislative / constitutional / federal dependency / cannot implement?",
+      "status": "REQUIRED_FIELD_LOCKED_ON_PACKETS",
+      "priority": "critical",
+      "layer": "cross_layer"
     },
     {
       "id": "CC-DEM-ATF-002",
@@ -113,6 +121,8 @@
       "linked": ["HYP-128", "LCL OS"]
     }
   ],
-  "next_slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
+  "packets_path": "data/project/arkansas_magnet_hub_intervention_packets.json",
+  "completed_slice": "CC-ARKANSAS-MAGNET-HUB-FUNDING-ELIGIBILITY-MATRIX-1.0",
+  "next_slice": "CC-ARKANSAS-MAGNET-HUB-LEGAL-AND-ELIGIBILITY-MEMO-1.0",
   "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
 }

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { comparison, comparisonGroupedByFamily, type EconomicSystem } from "../lib/data";
+import sharedDialMatrix from "../../../../data/project/comparative_systems_shared_dial_matrix.json";
 
 const groups = comparisonGroupedByFamily();
 const count = comparison.systems.length;
@@ -16,9 +17,32 @@ const CROSSWALK_DOMAINS = [
 
 const boundSystems = comparison.systems.filter((s) => s.phase3_crosswalk?.domains?.length);
 const boundCount = boundSystems.length;
+const matrixBySlug = new Map(
+  (sharedDialMatrix.systems || []).map((row: { slug: string; domains: Record<string, { status?: string; comparable?: boolean }> }) => [
+    row.slug,
+    row,
+  ])
+);
 
-function hasDomain(s: EconomicSystem, domain: string): boolean {
-  return (s.phase3_crosswalk?.domains || []).includes(domain);
+function cellMark(s: EconomicSystem, domain: string): { mark: string; label: string; cls: string } {
+  const row = matrixBySlug.get(s.slug) as
+    | { domains?: Record<string, { status?: string; comparable?: boolean }> }
+    | undefined;
+  const status = row?.domains?.[domain]?.status;
+  if (status === "comparable") {
+    return { mark: "C", label: `${domain} comparable (canonical dial)`, cls: "cell-comparable" };
+  }
+  if (status === "similar_not_comparable") {
+    return { mark: "S", label: `${domain} similar but not comparable`, cls: "cell-similar" };
+  }
+  if (status === "missing") {
+    return { mark: "·", label: `${domain} missing — not imputed`, cls: "cell-off" };
+  }
+  // Fallback to Phase 3 coverage if matrix row absent
+  const covered = (s.phase3_crosswalk?.domains || []).includes(domain);
+  return covered
+    ? { mark: "●", label: `${domain} bound (pre-harmonization)`, cls: "cell-on" }
+    : { mark: "·", label: `${domain} not bound`, cls: "cell-off" };
 }
 ---
 
@@ -51,10 +75,9 @@ function hasDomain(s: EconomicSystem, domain: string): boolean {
       <p class="muted">
         Holds: observational dials ≠ capture proofs; <code>CC-CLAIM-003</code> remains NEE; HYP-125–130
         stay research tracks. The other {count - boundCount} systems remain a controlled backlog — not
-        filled for completeness optics. Next finish line is <strong>definition control</strong> across
-        these {boundCount} (identical metrics, geography rules, compatible periods, missing-data
-        treatment, provenance, comparable markers, for/against/NEE) — a genuinely comparable dataset,
-        not more binds.
+        filled for completeness optics. Shared-dial <strong>harmonization Pass 1</strong> marks
+        genuinely comparable dials (C) versus similar-but-not-comparable (S) versus missing (·). Missing
+        stays missing.
       </p>
 
       <div class="table-wrap">
@@ -73,22 +96,24 @@ function hasDomain(s: EconomicSystem, domain: string): boolean {
                 <th scope="row">
                   <a href={`/compare/${s.slug}/`}>{s.name}</a>
                 </th>
-                {CROSSWALK_DOMAINS.map((d) => (
-                  <td class={hasDomain(s, d) ? "cell-on" : "cell-off"}>
-                    {hasDomain(s, d) ? "●" : "·"}
-                    <span class="sr-only">
-                      {hasDomain(s, d) ? `${d} bound` : `${d} not bound`}
-                    </span>
-                  </td>
-                ))}
+                {CROSSWALK_DOMAINS.map((d) => {
+                  const cell = cellMark(s, d);
+                  return (
+                    <td class={cell.cls}>
+                      {cell.mark}
+                      <span class="sr-only">{cell.label}</span>
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <p class="muted crosswalk-note">
-        ● = existing evidence panels bound for that domain on the system dossier. Empty cells mean not
-        yet bound — not “the system lacks the issue.”
+        <strong>C</strong> = comparable under canonical dial definitions · <strong>S</strong> = similar
+        coverage but not cross-system comparable · <strong>·</strong> = missing (not imputed). Not a
+        ranking or endorsement.
       </p>
     </section>
 
@@ -252,6 +277,17 @@ function hasDomain(s: EconomicSystem, domain: string): boolean {
   .cell-on {
     color: var(--ink, #111);
     font-size: 1.05rem;
+  }
+  .cell-comparable {
+    color: var(--ink, #111);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cell-similar {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 650;
   }
   .cell-off {
     color: var(--ink-soft);

@@ -1,50 +1,59 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "slice_id": "CC-ARKANSAS-STRATEGIC-CAPACITY-AUDIT-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-STRATEGIC-CAPACITY",
   "incubator_alias": "HYP-130",
-  "decision_id": "CC-DEC-114",
-  "update_id": "UPD-127",
-  "amends_decision": "CC-DEC-112",
-  "rule": "Build capability map bottom-up: has → needs → imports → lacks → buildable. Do not invent graduate counts.",
+  "decision_id": "CC-DEC-115",
+  "update_id": "UPD-128",
+  "amends_decision": "CC-DEC-114",
+  "rule": "Build capability map bottom-up: has → needs → imports → lacks → buildable. Central question: where must residents leave Arkansas to acquire needed capability? Do not invent graduate counts.",
   "demands": [
     {
       "id": "CC-DEM-ASCA-001",
       "name": "official_program_source_inventory",
       "question": "Which ADHE / university / community-college / CTE / apprenticeship / extension catalogs are authoritative for Arkansas program existence?",
-      "status": "INVENTORY_NEEDED",
+      "status": "TARGETS_LISTED_PULL_NEEDED",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-ASCA-002",
       "name": "has_needs_imports_lacks_buildable_matrix",
       "question": "Can we populate what Arkansas has / needs / imports / lacks / could realistically build for priority sectors?",
-      "status": "QUEUED_AFTER_INVENTORY",
+      "status": "SCAFFOLD_PASSED_CELLS_MOSTLY_NEE",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-ASCA-003",
       "name": "shortage_signal_join",
       "question": "Which existing panels (HRSA, human-capital pathways, ag processing, energy) legitimately signal capacity gaps without proxy abuse?",
-      "status": "JOIN_DESIGN",
+      "status": "PARTIAL_JOINED_IN_INVENTORY",
       "priority": "critical"
     },
     {
       "id": "CC-DEM-ASCA-004",
       "name": "sector_coverage_expansion",
-      "question": "Extend coverage across education, healthcare, agriculture, energy, manufacturing, technology, infrastructure, skilled trades, and public services honestly.",
-      "status": "QUEUED",
+      "question": "Extend coverage across healthcare, dental/maternal/primary, higher ed, trades, ag/food, manufacturing, energy, tech/AI, infrastructure, transportation, public services, research/advanced technical.",
+      "status": "SECTORS_SCAFFOLDED",
       "priority": "high"
     },
     {
       "id": "CC-DEM-ASCA-005",
       "name": "magnet_hub_feed",
       "question": "Which capacity gaps should Layer-1 Rural Agriculture Magnet Hub training explicitly target?",
-      "status": "QUEUED",
+      "status": "PRIORITY_GAPS_RANKED",
       "priority": "high",
       "linked": ["HYP-129", "HYP-123"]
+    },
+    {
+      "id": "CC-DEM-ASCA-006",
+      "name": "leave_state_matrix",
+      "question": "Where does an Arkansas resident currently have to leave Arkansas to acquire the capability Arkansas needs?",
+      "status": "QUESTION_LOCKED_ANSWERS_NEE",
+      "priority": "critical"
     }
   ],
-  "next_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "inventory_path": "data/project/arkansas_strategic_capacity_inventory.json",
+  "completed_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-SOURCE-INVENTORY-1.0",
+  "next_slice": "CC-ARKANSAS-STRATEGIC-CAPACITY-OFFICIAL-CATALOG-PULL-1.0",
   "next_structural_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
 }

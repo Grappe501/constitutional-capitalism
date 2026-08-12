@@ -1,11 +1,12 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "slice_id": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-ARCHITECTURE-1.0",
   "generated_at": "2026-08-12",
-  "status": "architecture_scaffold_not_fully_harmonized",
+  "status": "harmonization_pass_1_complete",
   "module_id": "CC-MOD-COMPARATIVE-SHARED-DIAL-ARCHITECTURE",
-  "update_id": "UPD-127",
-  "decision_id": "CC-DEC-114",
+  "update_id": "UPD-128",
+  "decision_id": "CC-DEC-115",
+  "amends_decision": "CC-DEC-114",
   "purpose": "Turn the 16 evidence-bound comparison systems into a genuinely comparable dataset — not merely 16 pages displaying similar categories.",
   "applies_to": "All systems with phase2_evidence / phase3_crosswalk (currently 16).",
   "not": [
@@ -60,17 +61,21 @@
       ]
     }
   },
+  "harmonization_pass": {
+    "slice_id": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
+    "status": "PASSED",
+    "matrix_path": "data/project/comparative_systems_shared_dial_matrix.json",
+    "script": "scripts/harmonize-compare-shared-dials.mjs",
+    "scope": "Audited 16 bound systems; reusable matrix; comparable vs similar vs missing; no new systems.",
+    "remaining_24": "controlled_backlog"
+  },
   "holds": [
     "CC-CLAIM-003 remains NEE",
     "HYP-125 through HYP-130 stay research tracks",
     "Observational ≠ causal",
     "Remaining 24 systems = controlled backlog"
   ],
-  "harmonization_pass": {
-    "next_slice": "CC-COMPARATIVE-SYSTEMS-SHARED-DIAL-HARMONIZATION-PASS-1.0",
-    "scope": "Audit the 16 bound dossiers + phase2_evidence objects against definition_control; fix language and markers only — no new systems.",
-    "remaining_24": "controlled_backlog"
-  },
   "feeds": ["comparative_diagnosis", "HYP-129", "HYP-130"],
-  "demands_path": "data/project/CC_COMPARATIVE_SYSTEMS_SHARED_DIAL_DATA_DEMANDS.json"
+  "demands_path": "data/project/CC_COMPARATIVE_SYSTEMS_SHARED_DIAL_DATA_DEMANDS.json",
+  "wave_slice_id": "CC-COORDINATED-DEVELOPMENT-WAVE-1.0"
 }
