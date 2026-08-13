@@ -628,8 +628,8 @@
     "rule": "EAVS 2016–2024 registration stocks for designated counties. Election-type labels required. CVAP turnout ≠ registered turnout. SOS daily rolls still NEE. No causal model. 43% dial held."
   },
   "prosperity_revenue_replacement": {
-    "update_id": "UPD-150",
-    "decision_id": "CC-DEC-137",
+    "update_id": "UPD-153",
+    "decision_id": "CC-DEC-140",
     "prior_registration_decision_id": "CC-DEC-123",
     "prior_primary_bind_decision_id": "CC-DEC-125",
     "prior_property_map_decision_id": "CC-DEC-126",
@@ -642,6 +642,7 @@
     "prior_residual_wealth_decision_id": "CC-DEC-133",
     "prior_residual_wealth_no_loopholes_decision_id": "CC-DEC-134",
     "prior_external_income_decision_id": "CC-DEC-135",
+    "prior_replacement_stack_decision_id": "CC-DEC-137",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
     "file": "data/project/arkansas_revenue_replacement_architecture.json",
@@ -656,12 +657,14 @@
     "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
     "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
     "public_income_replacement_stack_ledger": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
+    "feeder_binding_ledger": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json",
     "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
     "prosperity_modeling_framework": "data/project/prosperity_revenue_modeling_framework.json",
     "demand_manifest": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
     "dossier": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
     "imports_dir": "data/imports/arkansas-revenue-replacement/",
-    "return": "reports/CC_ARKANSAS_PUBLIC_INCOME_REPLACEMENT_STACK_1_0_RETURN.md",
+    "return": "reports/CC_ARKANSAS_REPLACEMENT_STACK_FEEDER_BINDING_PASS_1_0_RETURN.md",
+    "replacement_stack_return": "reports/CC_ARKANSAS_PUBLIC_INCOME_REPLACEMENT_STACK_1_0_RETURN.md",
     "external_income_return": "reports/CC_ARKANSAS_EXTERNAL_INCOME_SECTOR_CAPTURE_1_0_RETURN.md",
     "no_loopholes_return": "reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_NO_LOOPHOLES_BASE_AND_LEGAL_TEST_1_0_RETURN.md",
     "residual_wealth_return": "reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_MODEL_1_0_RETURN.md",
@@ -674,7 +677,7 @@
     "property_map_return": "reports/CC_PHASE_2_1_ARKANSAS_PROPERTY_TAX_COLLECTIONS_INCIDENCE_AND_DEBT_SERVICE_MAP_1_0_RETURN.md",
     "primary_bind_return": "reports/CC_PHASE_2_1_ARKANSAS_REVENUE_REPLACEMENT_PRIMARY_BIND_AND_T1_T5_TEST_1_0_RETURN.md",
     "registration_return": "reports/CC_ARKANSAS_REVENUE_REPLACEMENT_ARCHITECTURE_1_0_RETURN.md",
-    "rule": "KEEP_AS_HYPOTHESIS. Replacement Stack integrated; COUNTABLE NOW $0; Base@16y illustrative ~27% of ~$7.23B; Accelerated@16y ~61% still strained; full dual abolition does not survive Base@16y. HYP-132 sensitivity only — not counted revenue. Next feeder-binding pass. No abolish-today. 43% dial held."
+    "rule": "KEEP_AS_HYPOTHESIS. Feeder Binding demoted stack envelopes; COUNTABLE NOW $0; Base@16y ceiling ~$0.84B (~12%); Acc@16y ~$1.35B (~19%). Dual abolition still fails. Discipline: fewer new architectures, more evidence. Next: External Income capture-mechanism bind. No abolish-today. 43% dial held."
   },
   "arkansas_population_wealth_attraction_retention": {
     "update_id": "UPD-149",

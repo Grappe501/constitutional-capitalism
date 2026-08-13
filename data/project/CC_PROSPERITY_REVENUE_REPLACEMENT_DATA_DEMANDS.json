@@ -1,11 +1,11 @@
 {
-  "version": "1.12.0",
-  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+  "version": "1.13.0",
+  "slice_id": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-137",
-  "update_id": "UPD-150",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. External income is not automatically public revenue. Gross outside revenue ≠ Arkansas capture (EICR). Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. HYP-130 capacity gates External Income scale claims. HYP-132 migration is sensitivity only — not counted revenue. Retire millage-class by millage-class. Full dual abolition does not survive Base@16y illustrative.",
+  "decision_id": "CC-DEC-140",
+  "update_id": "UPD-153",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. External income is not automatically public revenue. Gross outside revenue ≠ Arkansas capture (EICR). Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. HYP-130 capacity gates External Income scale claims. HYP-132 migration is sensitivity only — not counted revenue. Retire millage-class by millage-class. Full dual abolition does not survive Base@16y or feeder demotion. Discipline: fewer new architectures, more evidence.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -227,10 +227,20 @@
       "id": "CC-DEM-RRR-028",
       "name": "replacement_stack_feeder_binding",
       "question": "Which illustrative Replacement Stack envelopes can be challenged, demoted, or promoted by binding real feeder cash-flow candidates with incremental reserved cash?",
-      "status": "NEE_QUEUED_NEXT",
+      "status": "PASSED_ZERO_COUNTABLE_ENVELOPES_DEMOTED",
       "priority": "critical",
       "layer": "integration",
-      "next_slice": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json",
+      "note": "Nothing promoted. Base@16y ~$1.93B→~$0.84B; Acc@16y ~$4.45B→~$1.35B. Next: External Income capture-mechanism bind."
+    },
+    {
+      "id": "CC-DEM-RRR-029",
+      "name": "external_income_capture_mechanism_bind",
+      "question": "Which External Income sectors (priority: food/ag processing, energy participation) can clear the hard wall with royalty/lease/participation/enterprise mechanisms that produce incremental reserved public cash?",
+      "status": "NEE_QUEUED_NEXT",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0"
     },
     {
       "id": "CC-DEM-RRR-024",
@@ -293,6 +303,8 @@
     "millage_class_by_millage_class",
     "hyp132_sensitivity_not_revenue",
     "full_dual_abolition_does_not_survive_base_16y_illustrative",
+    "dual_abolition_still_fails_after_demotion",
+    "fewer_new_architectures_more_evidence",
     "many_small_mechanisms_not_one_swap",
     "overall_percent_held_at_43"
   ]

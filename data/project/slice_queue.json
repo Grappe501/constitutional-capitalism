@@ -2328,15 +2328,54 @@
   },
   "arkansas_replacement_stack_feeder_binding": {
     "slice_id": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
-    "status": "QUEUED_NEXT",
+    "status": "PASSED_ZERO_COUNTABLE_ENVELOPES_DEMOTED",
     "mode": "bind_real_feeders_against_illustrative_envelopes",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
+    "decision_id": "CC-DEC-140",
+    "update_id": "UPD-153",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
     "question": "Which illustrative Replacement Stack envelopes can be challenged, demoted, or promoted by binding real feeder cash-flow candidates?",
-    "depends_on_completed": [
-      "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0"
+    "ledger": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json",
+    "script": "scripts/bind_replacement_stack_feeder_binding.py",
+    "return": "reports/CC_ARKANSAS_REPLACEMENT_STACK_FEEDER_BINDING_PASS_1_0_RETURN.md",
+    "headline": {
+      "countable_now_usd": 0,
+      "promoted_to_countable": 0,
+      "prior_base_16y_usd": 1926986729,
+      "demoted_base_16y_ceiling_usd": 836986729,
+      "prior_acc_16y_usd": 4445480093,
+      "demoted_acc_16y_ceiling_usd": 1346986729,
+      "hardest_demotions": ["External_Income", "Prosperity_Fund", "Impact"]
+    },
+    "discipline": "fewer_new_architectures_more_evidence",
+    "research_next": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0"
     ],
-    "count_rule": "Refuse to invent countable dollars; promote only evidence-backed incremental reserved cash"
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "dual_abolition_still_fails_after_demotion",
+      "hyp133_not_expanded"
+    ]
+  },
+  "arkansas_external_income_capture_mechanism_bind": {
+    "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0",
+    "status": "QUEUED_NEXT",
+    "mode": "mechanism_cashflow_not_outside_demand_volume",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "engine_id": "ENGINE-EXTERNAL-INCOME",
+    "question": "Which External Income sectors can clear the hard wall with royalty/lease/participation/enterprise mechanisms that produce incremental reserved public cash?",
+    "priority_sectors": ["food_ag_processing", "energy_participation"],
+    "depends_on_completed": [
+      "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+    ],
+    "count_rule": "Outside demand ≠ public revenue; countable only with evidence-backed capture mechanism"
   },
   "arkansas_human_capital_education_prosperity": {
     "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",

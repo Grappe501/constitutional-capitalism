@@ -1,13 +1,13 @@
 {
-  "version": "1.11.0",
-  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
-  "prior_slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+  "version": "1.12.0",
+  "slice_id": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+  "prior_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-137",
-  "update_id": "UPD-150",
+  "decision_id": "CC-DEC-140",
+  "update_id": "UPD-153",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "REPLACEMENT_STACK_INTEGRATED_ZERO_COUNTABLE",
+  "status": "FEEDER_BINDING_ZERO_COUNTABLE_ENVELOPES_DEMOTED",
   "political_conclusion": "NONE — no recommendation to abolish IIT or property tax",
   "core_answers": {
     "iit_recurring_dollars_to_retire": {
@@ -68,7 +68,9 @@
     },
     "public_income_engines_counted_usd": 0,
     "replacement_stack_countable_now_usd": 0,
-    "replacement_stack_verdict": "INTEGRATED_ZERO_COUNTABLE — Base@16y illustrative ~$1.93B (~27%); Accelerated@16y ~$4.45B (~61%) strained; Stress@16y ~6%; full dual abolition does not survive Base@16y",
+    "replacement_stack_verdict": "INTEGRATED_THEN_DEMOTED — prior Base@16y ~$1.93B / Acc@16y ~$4.45B; after feeder binding grounded ceilings Base ~$0.84B (~12%) / Acc ~$1.35B (~19%); COUNTABLE $0; dual abolition still fails",
+    "feeder_binding_countable_now_usd": 0,
+    "feeder_binding_verdict": "NO_PROMOTIONS — External Income and Prosperity Fund hardest demotions; Impact→$0; already-spent streams cannot refill envelopes",
     "use_depletion_countable_now_usd": 0,
     "use_depletion_verdict": "SUPPORT_ENGINES_NOT_MAIN_REPLACEMENT — fuel ~$572M and gas severance ~$26M are real but already spent / volatile / dedicated",
     "value_capture_enterprise_countable_now_usd": 0,
@@ -83,8 +85,8 @@
     "residual_iit_role_superseded": "SUPERSEDED by Residual Wealth Contribution (CC-DEC-133 / UPD-146) — SOI top-down IIT ledger retained for history only"
   },
   "fork": {
-    "statement": "Arkansas cannot simply abolish personal income tax and property tax by leaning harder on revenue streams it already has — and full dual abolition does not survive Base@16y illustrative integration.",
-    "executed_track": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+    "statement": "Arkansas cannot simply abolish personal income tax and property tax by leaning harder on revenue streams it already has — full dual abolition fails Base@16y integration and fails again after feeder demotion.",
+    "executed_track": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
     "engine_model": "data/project/arkansas_public_income_engine_model.json",
     "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
     "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
@@ -94,9 +96,10 @@
     "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
     "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
     "public_income_replacement_stack_ledger": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
+    "feeder_binding_ledger": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json",
     "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
     "framework": "data/project/prosperity_revenue_modeling_framework.json",
-    "next_track": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0"
+    "next_track": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0"
   },
   "regressivity_surface": {
     "rule": "If a proposed replacement merely shifts burden onto ordinary households through higher prices or regressive consumption taxes, surface that explicitly.",
@@ -113,7 +116,8 @@
     "dfa": "data/imports/arkansas-revenue-replacement/fy2026_dfa_general_revenue_bind.json",
     "blr_urt": "data/imports/arkansas-revenue-replacement/blr_urt_foundation_bind.json",
     "t1_t5": "data/imports/arkansas-revenue-replacement/t1_t5_resource_enterprise_consumption.json",
-    "replacement_stack": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json"
+    "replacement_stack": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
+    "feeder_binding": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json"
   },
   "holds": [
     "no_abolish_recommendation",
@@ -123,6 +127,8 @@
     "debt_service_protected_first",
     "millage_class_by_millage_class",
     "full_dual_abolition_does_not_survive_base_16y_illustrative",
+    "dual_abolition_still_fails_after_demotion",
+    "fewer_new_architectures_more_evidence",
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS"
   ]
