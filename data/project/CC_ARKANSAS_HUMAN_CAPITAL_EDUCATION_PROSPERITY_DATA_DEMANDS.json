@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
+  "hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
+  "incubator_alias": "HYP-133",
+  "decision_id": "CC-DEC-138",
+  "update_id": "UPD-151",
+  "rule": "KEEP_AS_HYPOTHESIS. Education is a public capital investment, not an unlimited transferable benefit and not 'free.' Prefer positive residency-and-service compact over exit penalties. Classify every major design element as CAN START NOW / RULE CHANGE / LEGISLATION / CONSTITUTIONAL / FEDERAL before scale claims. Link Strategic Human-Capital Demand Map to HYP-130. Do not invent legal clearance or seat counts. Does not displace feeder-binding or definition-locks.",
+  "demands": [
+    {
+      "id": "CC-DEM-HCEP-001",
+      "name": "strategic_human_capital_demand_map",
+      "question": "Can Arkansas bind Need → available seats → graduates → shortages → geographic shortage → program expansion required for priority professions (rural physicians, maternal health, dentists, vets, teachers, trades, AI, grid/nuclear, food science, manufacturing, public administration)?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "capacity",
+      "linked": ["HYP-130"],
+      "next_slice": "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0"
+    },
+    {
+      "id": "CC-DEM-HCEP-002",
+      "name": "residency_and_service_compact_legal_design",
+      "question": "What constitutionally valid bona fide-residency and service-obligation / subsidy-repayment structures can Arkansas use for Resident Investment Rate and State Strategic Capacity Contracts without creating exit taxes, irrebuttable presumptions, or travel-right violations?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "legal_constitutional",
+      "next_slice": "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0"
+    },
+    {
+      "id": "CC-DEM-HCEP-003",
+      "name": "current_arkansas_residency_tuition_scholarship_bind",
+      "question": "What are the primary-bound bona fide domicile / continuous-residence rules for Arkansas public institutions (including UA reclassification) and residency criteria for state-funded scholarships?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "legal_constitutional"
+    },
+    {
+      "id": "CC-DEM-HCEP-004",
+      "name": "education_track_legal_gate_matrix",
+      "question": "For each of the 18 HYP-133 tracks, which elements CAN START NOW, require rule change, legislation, constitutional change, or federal dependency?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "transition",
+      "next_slice": "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+    },
+    {
+      "id": "CC-DEM-HCEP-005",
+      "name": "learning_network_and_regional_centers",
+      "question": "How should the 1,759 HYP-130 strategic programs specialize into an Arkansas Learning Network with regional Centers of Excellence rather than every institution duplicating everything?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "network_architecture",
+      "linked": ["HYP-124", "HYP-130"],
+      "next_slice": "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0"
+    },
+    {
+      "id": "CC-DEM-HCEP-006",
+      "name": "cte_spine_and_concurrent_education_inventory",
+      "question": "What current Arkansas CTE pathway revisions and concurrent higher-education participation statutes already exist that can become the main spine of Stage 2 pathway formation?",
+      "status": "PROGRAM_EXISTENCE_SECONDARY_DETAIL_NEE",
+      "priority": "high",
+      "layer": "secondary_pathways"
+    },
+    {
+      "id": "CC-DEM-HCEP-007",
+      "name": "school_based_health_integration_gap",
+      "question": "For designated Living Systems / hub counties, what is the gap map for pediatric, dental, vision, hearing, nutrition, mental health, developmental screening, maternal/family support, and school-based clinics?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "foundation_health",
+      "linked": ["HYP-130", "HYP-132"]
+    },
+    {
+      "id": "CC-DEM-HCEP-008",
+      "name": "public_research_ip_royalty_path",
+      "question": "What share of Arkansas publicly funded university research IP is currently licensed, what royalties return to institutions, and what redesign would feed a Prosperity Fund / Enterprise path without harming commercialization incentives?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "public_wealth",
+      "linked": ["HYP-131"]
+    },
+    {
+      "id": "CC-DEM-HCEP-009",
+      "name": "students_as_builders_productive_capacity",
+      "question": "Which supervised student-enterprise models (ag magnet, food, logistics, broadband, healthcare, software, apprenticeships) already produce measurable education + productive capacity dual output in Arkansas?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "secondary_pathways"
+    },
+    {
+      "id": "CC-DEM-HCEP-010",
+      "name": "adult_reskilling_and_automation_transition",
+      "question": "What short-credential + apprenticeship pipelines exist for AI/automation displacement, and what Workforce Transition Plan elements could be required of incentive-receiving employers without preventing automation?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "lifelong",
+      "linked": ["HYP-131_Human_capital"]
+    },
+    {
+      "id": "CC-DEM-HCEP-011",
+      "name": "service_obligation_scholarship_comparables",
+      "question": "Which U.S. service-obligation scholarship / loan-repayment models (e.g. rural health, teaching) are closest to a State Strategic Capacity Contract and what repayment/service outcomes do they show?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "compact_design"
+    },
+    {
+      "id": "CC-DEM-HCEP-012",
+      "name": "outcome_measurement_learning_society",
+      "question": "What outcome dashboard measures capability formation, pathway completion, Arkansas retention/service fulfillment, health readiness, civic capacity, and productive output without reducing education to test scores alone?",
+      "status": "NEE",
+      "priority": "medium",
+      "layer": "measurement"
+    }
+  ],
+  "queued_next": [
+    "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
+    "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
+    "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
+    "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+  ],
+  "parallel_does_not_displace": [
+    "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+    "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+  ],
+  "holds": [
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS",
+    "never_call_it_free",
+    "positive_compact_not_exit_penalty",
+    "no_mobility_wall",
+    "legal_gates_required_per_track",
+    "does_not_displace_feeder_binding_or_definition_locks"
+  ]
+}
