@@ -2255,6 +2255,24 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-129",
+      "title": "Arkansas Public Income Value Capture and Enterprise Cash Flows",
+      "question": "Should Constitutional Capitalism execute CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0 by scoring Value Capture and Enterprise candidates through the full capital→financing→ownership→gross→O&M→debt→reserves→net→volatility→downside→legal→state/local→incremental schema, requiring a PUBLIC_RISK_AT_RISK field on every candidate, classifying results into COUNTABLE NOW / PLAUSIBLE BUT UNMODELED / NOT MATERIAL, keeping COUNTABLE NOW at $0 unless a candidate survives cash-flow math and stress testing, and holding overall completion at 43% with no abolish recommendation?",
+      "status": "approved",
+      "rationale": "After Use/Depletion proved support-only, Steve required a Value Capture + Enterprise pass that distinguishes taxing independently created value from earning returns on value materially created by public capital/land/infrastructure/exclusive rights. Bound legal structures (TIF, AEDC incentives, airports, conduit IDBs, water/housing enterprises) show pledged cash, giveaway incentives, or unsurveyed nets — not free Tax Retirement Fund dollars. Zero countable is the honest fail-closed result and pushes scale burden toward Human-capital, Prosperity Fund, and External Income.",
+      "impact": [
+        "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
+        "scripts/bind_value_capture_enterprise_cashflows.py",
+        "data/project/arkansas_public_income_engine_model.json",
+        "UPD-142",
+        "Overall % held at 43 / COUNTABLE NOW $0 / PUBLIC_RISK_AT_RISK required / scale shifts to Human-capital/Prosperity Fund/External Income"
+      ],
+      "recommendation": "Next tax research: Workforce Prosperity Contribution incidence; Prosperity Fund capital path; External Income sector capture; lithium public-share/permanent-fund. Structural: definition-locks. Empirical: comparative diagnosis packets.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }

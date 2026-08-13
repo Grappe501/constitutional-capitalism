@@ -6,9 +6,10 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "USE_DEPLETION_CASHFLOW_PASS_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+  "status": "VALUE_CAPTURE_ENTERPRISE_CASHFLOW_PASS_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
+  "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
@@ -307,10 +308,12 @@
         "royalties / profit participation from publicly capitalized enterprises"
       ],
       "existing_bound_scale": {
-        "status": "NO_STATEWIDE_VALUE_CAPTURE_CASHFLOW_SERIES_BOUND"
+        "status": "CASHFLOW_PASS_ZERO_COUNTABLE — TIF pledged; AEDC currently giveaway; participation/ground-lease redesign unmodeled",
+        "ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json"
       },
-      "addressable_base_status": "NEE — inventory of major incentive/infrastructure packages + legal templates",
-      "authority": "Local improvement districts, development agreements, lease/authority statutes; gift/loan of credit constraints must be mapped",
+      "addressable_base_status": "PARTIAL — legal anchors bound; statewide participation cash-flow inventory NEE",
+      "authority": "Amendment 78 / A.C.A. § 14-168-301 et seq.; Consolidated Incentive Act; development agreements; gift/loan of credit constraints",
+      "public_risk_at_risk_rule": "Public downside risk must match upside claim; private-only risk does not entitle the state to most return",
       "plausible_incremental_range_usd_per_year": {
         "status": "UNMODELED",
         "low": null,
@@ -320,8 +323,8 @@
       "volatility": "Project-specific; lumpy",
       "earmark": "community infrastructure",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
-      "t1_t5_posture": "T4 core to 'government makes money'; T1 builds slowly project-by-project"
+      "cash_flow_model_status": "PASSED_ZERO_COUNTABLE",
+      "t1_t5_posture": "T4 core to 'government makes money'; T1 builds slowly project-by-project — not yet countable"
     },
     {
       "id": "ENGINE-ENTERPRISE",
@@ -339,10 +342,12 @@
         "IP from publicly financed research"
       ],
       "existing_bound_scale": {
-        "status": "UNMODELED — zero replacement dollars"
+        "status": "CASHFLOW_PASS_ZERO_COUNTABLE — airports/ports/utilities mostly pledged; energy/broadband/IP unsurveyed",
+        "ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json"
       },
-      "addressable_base_status": "NEE — public balance sheet inventory",
-      "authority": "Public corporation, authority, and investment statutes; constitutional gift/loan limits",
+      "addressable_base_status": "PARTIAL — authority structures bound; audited statewide net-distributable surplus NEE",
+      "authority": "Airport authorities (A.C.A. § 14-362-101 et seq.); industrial development bonds (Amend. 65 / § 14-164-201); port/utility enterprise law",
+      "public_risk_at_risk_rule": "Public downside risk must match upside claim; conduit financing without public risk is not ownership return",
       "plausible_incremental_range_usd_per_year": {
         "status": "UNMODELED",
         "low": null,
@@ -352,7 +357,7 @@
       "volatility": "Asset-class dependent",
       "earmark": "Tax Retirement Fund / system reinvestment",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
+      "cash_flow_model_status": "PASSED_ZERO_COUNTABLE",
       "t1_t5_posture": "Endgame engine with Enterprise+Prosperity Fund — only counts after demonstrated returns"
     },
     {
@@ -449,11 +454,12 @@
     "PROSPERITY_LINKED_REVENUE": ["Use (new)", "Impact", "Depletion", "Visitor", "Value Capture", "Energy public income", "External Income"],
     "PRODUCTIVE_PUBLIC_WEALTH": ["Enterprise", "Prosperity Fund", "Energy ownership returns"]
   },
+  "scale_implication_after_vc_enterprise": "With Use/Depletion/Value Capture/Enterprise still at $0 countable, large-scale replacement burden shifts decisively toward Human-capital, Prosperity Fund, and External Income modeling",
   "next_modeling_slices": [
-    "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
     "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
     "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
-    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
+    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0",
+    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
   ],
   "holds": [
     "overall_percent_held_at_43",
@@ -461,6 +467,7 @@
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
+    "public_risk_at_risk_required",
     "no_discriminatory_export_tax",
     "defense_is_federal_ledger",
     "regressive_swap_surfaced"

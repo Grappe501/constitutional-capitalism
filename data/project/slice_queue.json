@@ -1891,6 +1891,7 @@
     },
     "countable_now_usd": 0,
     "engine_role_verdict": "USE_AND_DEPLETION_ARE_SUPPORT_ENGINES",
+    "superseded_next_by": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
     "research_next": [
       "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
       "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
@@ -1905,6 +1906,42 @@
       "KEEP_AS_HYPOTHESIS",
       "no_abolish_today",
       "zero_counted_until_cashflow_model",
+      "already_spent_cannot_double_count"
+    ]
+  },
+  "arkansas_public_income_value_capture_enterprise_cashflows": {
+    "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
+    "status": "PASSED_ZERO_COUNTABLE_SCALE_SHIFTS",
+    "mode": "cashflow_schema_public_risk_at_risk_three_buckets",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "decision_id": "CC-DEC-129",
+    "update_id": "UPD-142",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
+    "script": "scripts/bind_value_capture_enterprise_cashflows.py",
+    "return": "reports/CC_ARKANSAS_PUBLIC_INCOME_ENGINE_VALUE_CAPTURE_AND_ENTERPRISE_1_0_RETURN.md",
+    "countable_now_usd": 0,
+    "candidates_scored": 15,
+    "engine_role_verdict": "VALUE_CAPTURE_AND_ENTERPRISE_STRATEGIC_BUT_ZERO_COUNTABLE",
+    "scale_implication": "Large-scale replacement burden shifts to Human-capital, Prosperity Fund, and External Income",
+    "research_next": [
+      "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+      "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0",
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+    ],
+    "parallel_empirical_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "public_risk_at_risk_required",
       "already_spent_cannot_double_count"
     ]
   },

@@ -1,11 +1,11 @@
 {
-  "version": "1.4.0",
-  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+  "version": "1.5.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-128",
-  "update_id": "UPD-141",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. No discriminatory export taxes. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-129",
+  "update_id": "UPD-142",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -132,11 +132,11 @@
       "id": "CC-DEM-RRR-015",
       "name": "prosperity_linked_and_productive_wealth_cashflows",
       "question": "For prosperity-linked revenue and productive public wealth, which assets, capital requirements, return/volatility assumptions, and years-to-scale are required before material incremental replacement dollars exist?",
-      "status": "ENGINE_ARCHITECTURE_PASSED_CASHFLOWS_QUEUED",
+      "status": "PARTIAL_USE_DEPLETION_AND_VC_ENTERPRISE_ZERO_COUNTABLE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "artifact": "data/project/arkansas_public_income_engine_model.json",
-      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
+      "next_slice": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0"
     },
     {
       "id": "CC-DEM-RRR-016",
@@ -172,6 +172,24 @@
       "status": "NEE",
       "priority": "critical",
       "layer": "incidence"
+    },
+    {
+      "id": "CC-DEM-RRR-020",
+      "name": "value_capture_and_enterprise_incremental_cashflows",
+      "question": "Which Value Capture and Enterprise candidates clear capital→debt→O&M→net→legal→stress gates as truly incremental recurring public income, with PUBLIC_RISK_AT_RISK aligned to upside?",
+      "status": "PASSED_ZERO_COUNTABLE_SCALE_SHIFTS",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
+      "note": "15 candidates scored; COUNTABLE NOW $0. Plausible: participation redesign, ground leases, ports/parks, energy/broadband/IP. Not material: TIF, airports, conduit IDBs, water/housing raids."
+    },
+    {
+      "id": "CC-DEM-RRR-021",
+      "name": "prosperity_fund_capital_path",
+      "question": "What corpus, contribution feeders, return assumptions, payout rule, and years-to-scale are required before Prosperity Fund payouts can count toward IIT/property replacement?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "replacement_modeling"
     }
   ],
   "holds": [
@@ -179,6 +197,7 @@
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
+    "public_risk_at_risk_required",
     "no_discriminatory_export_tax",
     "regressive_swap_surfaced",
     "debt_service_protected_first",
