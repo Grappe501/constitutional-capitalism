@@ -1,11 +1,12 @@
 # CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM (HYP-131)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not an abolition plan**  
-**Latest update:** UPD-140 · Decision: CC-DEC-127 (Public Income Engine Model)  
-**Prior:** UPD-139 / CC-DEC-126 · UPD-138 / CC-DEC-125 · UPD-136 / CC-DEC-123  
+**Latest update:** UPD-141 · Decision: CC-DEC-128 (Use + Depletion cash flows)  
+**Prior:** UPD-140 / CC-DEC-127 · UPD-139 / CC-DEC-126 · UPD-138 / CC-DEC-125 · UPD-136 / CC-DEC-123  
 **Engine model:** `data/project/arkansas_public_income_engine_model.json`  
+**Use/Depletion ledger:** `data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json`  
 **Capacity gap:** `data/project/arkansas_revenue_replacement_capacity_gap.json`  
-**Latest return:** `reports/CC_ARKANSAS_PUBLIC_INCOME_ENGINE_MODEL_1_0_RETURN.md`
+**Latest return:** `reports/CC_ARKANSAS_PUBLIC_INCOME_ENGINE_USE_AND_DEPLETION_CASHFLOWS_1_0_RETURN.md`
 
 ## Objective (locked)
 
@@ -32,7 +33,7 @@ Over time, reduce **TAX** as **FEE/RENT/ROYALTY** and **RETURN** grow.
 | **Prosperity Fund** | Compounded return on accumulated public wealth |
 | **External Income** | Outside dollars via value chains/contracts (strategy, not export tax) |
 
-**Counted toward ~$7.23B IIT+property map: $0** until each stream has an evidence-backed cash-flow model.
+**Counted toward ~$7.23B IIT+property map: $0.** Use+Depletion cash-flow pass cleared **no** COUNTABLE NOW dollars. Motor fuel ~$572M and full gas severance ~$26M are real but **already spent** (mostly highways) and/or too volatile — **support engines**, not main replacement engines. Lithium public permanent share remains plausible but unmodeled until production.
 
 ## Constitutional guardrails
 
@@ -54,4 +55,4 @@ Over time, reduce **TAX** as **FEE/RENT/ROYALTY** and **RETURN** grow.
 
 ## Next
 
-`CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0` — first real incremental cash-flow models, still refusing invented ranges.
+`CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0` — where larger replacement capacity is more likely to appear.

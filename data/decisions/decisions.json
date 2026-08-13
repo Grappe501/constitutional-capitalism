@@ -2237,6 +2237,24 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-128",
+      "title": "Arkansas Public Income Use and Depletion Cash Flows",
+      "question": "Should Constitutional Capitalism execute CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0 by binding DFA motor-fuel and full natural-gas/oil severance cash-flow scales, scoring Use and Depletion candidates through the required addressable-base→incremental-recurring schema with already-spent flags, classifying results into COUNTABLE NOW / PLAUSIBLE BUT UNMODELED / NOT MATERIAL, refusing double-counting of highway-earmarked streams, and holding countable replacement capacity at $0 if no incremental free cash flow clears — while keeping overall completion at 43%?",
+      "status": "approved",
+      "rationale": "Steve required Use and Depletion to prove actual scale before assuming they can replace IIT/property. Bound evidence shows ~$572M fuel and ~$26M gas severance are real but already spent or unsuitable as main replacement engines; lithium public share remains future/unmodeled. Zero countable is a successful fail-closed pass.",
+      "impact": [
+        "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
+        "scripts/bind_use_depletion_cashflows.py",
+        "data/project/arkansas_public_income_engine_model.json",
+        "UPD-141",
+        "Overall % held at 43 / COUNTABLE NOW $0 / Use+Depletion = support engines"
+      ],
+      "recommendation": "Next tax research: Value Capture + Enterprise cash-flow/ownership templates; Workforce Prosperity Contribution incidence; lithium public-share/permanent-fund design for post-production years. Structural: definition-locks. Empirical: comparative diagnosis packets.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }

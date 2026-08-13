@@ -1,13 +1,13 @@
 {
-  "version": "1.2.0",
-  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
-  "prior_slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
+  "version": "1.3.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+  "prior_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-127",
-  "update_id": "UPD-140",
+  "decision_id": "CC-DEC-128",
+  "update_id": "UPD-141",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "PUBLIC_INCOME_ENGINES_ARCHITECTED_ZERO_COUNTED",
+  "status": "USE_DEPLETION_CASHFLOW_ZERO_COUNTABLE",
   "political_conclusion": "NONE — no recommendation to abolish IIT or property tax",
   "core_answers": {
     "iit_recurring_dollars_to_retire": {
@@ -65,14 +65,17 @@
       "incremental_modeled_community_replacement_capacity_usd": 0,
       "gap_status": "FULL_GAP_REMAINS — debt mills protected; public-income engines unmodeled"
     },
-    "public_income_engines_counted_usd": 0
+    "public_income_engines_counted_usd": 0,
+    "use_depletion_countable_now_usd": 0,
+    "use_depletion_verdict": "SUPPORT_ENGINES_NOT_MAIN_REPLACEMENT — fuel ~$572M and gas severance ~$26M are real but already spent / volatile / dedicated"
   },
   "fork": {
     "statement": "Arkansas cannot simply abolish personal income tax and property tax by leaning harder on revenue streams it already has.",
-    "executed_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+    "executed_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
     "engine_model": "data/project/arkansas_public_income_engine_model.json",
+    "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
     "framework": "data/project/prosperity_revenue_modeling_framework.json",
-    "next_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
+    "next_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0"
   },
   "regressivity_surface": {
     "rule": "If a proposed replacement merely shifts burden onto ordinary households through higher prices or regressive consumption taxes, surface that explicitly.",

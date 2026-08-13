@@ -1,10 +1,10 @@
 {
-  "version": "1.3.0",
-  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+  "version": "1.4.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-127",
-  "update_id": "UPD-140",
+  "decision_id": "CC-DEC-128",
+  "update_id": "UPD-141",
   "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
@@ -159,10 +159,11 @@
       "id": "CC-DEM-RRR-018",
       "name": "use_and_depletion_incremental_cashflows",
       "question": "What incremental Use and Depletion cash flows (beyond already-earmarked fuel/severance) are legally available and stress-tested?",
-      "status": "QUEUED_NEXT",
+      "status": "PASSED_ZERO_COUNTABLE_SUPPORT_ENGINES",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
+      "note": "Fuel ~$572M and gas severance ~$26M bound; already spent / volatile. COUNTABLE NOW $0."
     },
     {
       "id": "CC-DEM-RRR-019",

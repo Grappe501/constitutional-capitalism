@@ -6,7 +6,9 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "ENGINE_ARCHITECTURE_V1_ZERO_COUNTED_UNTIL_CASHFLOW",
+  "status": "USE_DEPLETION_CASHFLOW_PASS_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+  "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
@@ -68,24 +70,25 @@
         "utility infrastructure access"
       ],
       "existing_bound_scale": {
-        "motor_fuels_tax_usd_ytd_may_fy2026": 380887399,
+        "motor_fuel_fy2026_usd": 571758870,
         "highway_transport_special_revenues_usd_ytd_may_fy2026": 689458005,
         "status": "ALREADY_EARMARKED_SPECIAL_REVENUE — not free IIT replacement"
       },
-      "addressable_base_status": "PARTIAL — fuel/highway bound; freight VMT, aviation, water/waste incremental bases NEE",
+      "addressable_base_status": "BOUND_FUEL — freight ESAL/aviation/ports incremental NEE",
       "authority": "State/local user fees and special revenues within constitutional fee/tax distinction and Highway Revenue Distribution constraints",
       "plausible_incremental_range_usd_per_year": {
         "low": null,
         "high": null,
-        "status": "UNMODELED — do not invent",
-        "note": "Existing ~$0.38B+ fuel stream shows Use can be material statewide, but is already dedicated to highways"
+        "status": "CASHFLOW_PASS_ZERO_COUNTABLE",
+        "note": "~$572M fuel Use base bound; already spent on highways; COUNTABLE NOW $0"
       },
       "incidence": "Users of infrastructure; heavy users should pay more than passive homeowners — progressive vs existence-tax if designed well; regressive if flat fees hit low-income mobility",
       "volatility": "Traffic/fuel-efficiency/EV transition sensitive",
       "earmark": "transportation / system maintenance",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
-      "t1_t5_posture": "T1 possible at scale for roads; T4 strong if use≠existence; T3 requires mobility equity design"
+      "cash_flow_model_status": "PASSED_ZERO_COUNTABLE",
+      "engine_role": "SUPPORT_NOT_MAIN_REPLACEMENT",
+      "t1_t5_posture": "T1 large but already spent; T4 strong if use≠existence; not IIT replacement capacity"
     },
     {
       "id": "ENGINE-IMPACT",
@@ -136,23 +139,26 @@
       ],
       "existing_bound_scale": {
         "severance_gr_fy2026_usd": 10600000,
-        "status": "BOUND_TOO_SMALL — proves redesign needed"
+        "natural_gas_severance_full_fy2026_usd": 25615616,
+        "oil_revenue_fy2026_usd": 12176540,
+        "status": "FULL_GAS_BOUND — mostly highway-earmarked; GR line understates"
       },
-      "addressable_base_status": "PARTIAL — production volumes by commodity NEE for full royalty stack",
+      "addressable_base_status": "GAS_OIL_BOUND — lithium/timber/leases/water pending",
       "authority": "Severance/royalty statutes; public land lease authority; permanent fund would need statutory design",
       "plausible_incremental_range_usd_per_year": {
-        "status": "UNMODELED",
+        "status": "CASHFLOW_PASS_ZERO_COUNTABLE",
         "low": null,
         "high": null,
-        "note": "Current $10.6M GR severance cannot carry transition; lithium/gas/minerals/water industrial use need commodity-specific models"
+        "note": "Gas ~$26M FY26 / $77M FY23 peak; lithium public share unmodeled until production + statute"
       },
       "incidence": "Producers / resource owners; may pass into energy/material prices",
-      "volatility": "HIGH — commodity cycles",
+      "volatility": "VERY_HIGH — commodity cycles",
       "earmark": "permanent Prosperity Fund + community impact",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
+      "cash_flow_model_status": "PASSED_ZERO_COUNTABLE",
+      "engine_role": "SUPPORT_AND_FUTURE_LITHIUM_OPTION",
       "philosophy": "lithium leaves Arkansas → permanent Arkansas wealth remains (not just annual budget spend)",
-      "t1_t5_posture": "T1 fails at current severance; T2 high volatility; T4 strong if permanent-fund locked"
+      "t1_t5_posture": "T1 fails for replacement scale; T2 fails stress; T4 strong only if permanent-fund locked on NEW increments"
     },
     {
       "id": "ENGINE-ENERGY-PUBLIC-INCOME",
@@ -444,10 +450,10 @@
     "PRODUCTIVE_PUBLIC_WEALTH": ["Enterprise", "Prosperity Fund", "Energy ownership returns"]
   },
   "next_modeling_slices": [
-    "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
     "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
+    "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
     "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
-    "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0"
+    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
   ],
   "holds": [
     "overall_percent_held_at_43",
