@@ -6,11 +6,12 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "HUMAN_CAPITAL_INCIDENCE_PASS_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+  "status": "PROSPERITY_FUND_CAPITAL_PATH_PASS_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
+  "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
@@ -390,27 +391,44 @@
         "automatic Tax Retirement Fund transfers when payout exceeds safety threshold"
       ],
       "existing_bound_scale": {
-        "status": "FUND_DOES_NOT_EXIST — $0"
+        "status": "FUND_DOES_NOT_EXIST — capital path modeled; $0 countable",
+        "ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+        "illustrative_4pct_corpus_markers_usd": {
+          "payout_250m": 6250000000,
+          "payout_500m": 12500000000,
+          "payout_1b": 25000000000,
+          "payout_2b": 50000000000
+        }
       },
-      "addressable_base_status": "NEE — capital accumulation path + return assumptions + years-to-scale",
-      "authority": "Would require statutory/constitutional fund design",
+      "addressable_base_status": "PATH_MODELED — feeders illustrative; External Income is swing variable for Base vs Accelerated",
+      "authority": "Would require statutory/constitutional fund design with principal-protection / anti-raid rules",
+      "hard_safeguards": [
+        "no_tax_retirement_credit_for_unrealized_market_gains",
+        "no_political_raiding_of_principal",
+        "no_raiding_existing_obligations_to_seed"
+      ],
       "plausible_incremental_range_usd_per_year": {
-        "status": "UNMODELED",
+        "status": "HORIZON_DEPENDENT_ZERO_UNTIL_REAL",
         "low": null,
         "high": null,
+        "time_to_threshold_illustrative": {
+          "base_T250_years": 11,
+          "base_T500_years": 18,
+          "accelerated_T1000_years": 14,
+          "accelerated_T2000_years": 21
+        },
         "critical_questions": [
-          "how much capital",
-          "what return assumptions",
-          "what volatility",
-          "how many years before material payout vs $3.859B IIT"
+          "which feeders become real cash",
+          "whether External Income is transformational",
+          "constitutional principal protection"
         ]
       },
       "incidence": "Intergenerational — benefits future taxpayers if corpus protected",
-      "volatility": "Market + contribution-flow sensitive",
+      "volatility": "Market + contribution-flow sensitive — recession years modeled in capital path",
       "earmark": "Tax Retirement Fund / permanent wealth",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
-      "t1_t5_posture": "T4 essential to philosophy; T1 is a multi-decade capital question — refuse premature counting"
+      "cash_flow_model_status": "CAPITAL_PATH_PASSED_ZERO_COUNTABLE",
+      "t1_t5_posture": "T4 essential; T1 multi-year/decade — $250M possible in-window only if Base/Accelerated feeders materialize; refuse premature counting"
     },
     {
       "id": "ENGINE-EXTERNAL-INCOME",
@@ -473,8 +491,8 @@
   },
   "scale_implication_after_vc_enterprise": "With Use/Depletion/Value Capture/Enterprise still at $0 countable, large-scale replacement burden shifts decisively toward Human-capital, Prosperity Fund, and External Income modeling",
   "scale_implication_after_human_capital": "Human-capital shows real wage/compensation envelopes but $0 countable after incidence gates; sequence continues Prosperity Fund → External Income → integrate all 10 engines vs ~$7.23B — retirement must be earned",
+  "scale_implication_after_prosperity_fund": "Fund math is honest about capital and horizon — $250M in-window only if feeders arrive; $2B outside 16y on modeled paths; External Income determines Base vs Accelerated realism; even $2B/year is only ~28% of ~$7.23B",
   "next_modeling_slices": [
-    "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
     "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
     "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
     "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
@@ -486,6 +504,9 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
+    "unrealized_gains_not_tax_retirement",
+    "no_principal_raid",
+    "no_raid_existing_obligations",
     "small_family_business_protected_by_default",
     "public_risk_at_risk_required",
     "no_discriminatory_export_tax",

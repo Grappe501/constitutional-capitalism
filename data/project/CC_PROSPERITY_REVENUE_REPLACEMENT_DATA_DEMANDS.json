@@ -1,11 +1,11 @@
 {
-  "version": "1.6.0",
-  "slice_id": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+  "version": "1.7.0",
+  "slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-130",
-  "update_id": "UPD-143",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Illustrative yields are not countable. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-131",
+  "update_id": "UPD-144",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -132,11 +132,11 @@
       "id": "CC-DEM-RRR-015",
       "name": "prosperity_linked_and_productive_wealth_cashflows",
       "question": "For prosperity-linked revenue and productive public wealth, which assets, capital requirements, return/volatility assumptions, and years-to-scale are required before material incremental replacement dollars exist?",
-      "status": "PARTIAL_USE_DEPLETION_VC_ENTERPRISE_HUMAN_CAPITAL_ZERO_COUNTABLE",
+      "status": "PARTIAL_ENGINES_THROUGH_PROSPERITY_FUND_ZERO_COUNTABLE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "artifact": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
-      "next_slice": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+      "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
     },
     {
       "id": "CC-DEM-RRR-016",
@@ -189,10 +189,11 @@
       "id": "CC-DEM-RRR-021",
       "name": "prosperity_fund_capital_path",
       "question": "What corpus, contribution feeders, return assumptions, payout rule, and years-to-scale are required before Prosperity Fund payouts can count toward IIT/property replacement?",
-      "status": "NEE_QUEUED_NEXT",
+      "status": "PASSED_PATH_MODELED_ZERO_COUNTABLE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "next_slice": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+      "note": "4% markers $6.25B–$50B; Base ~y11 for $250M if feeders real; $2B outside 16y; COUNTABLE NOW $0."
     },
     {
       "id": "CC-DEM-RRR-022",
@@ -201,6 +202,15 @@
       "status": "NEE",
       "priority": "critical",
       "layer": "replacement_modeling"
+    },
+    {
+      "id": "CC-DEM-RRR-023",
+      "name": "external_income_sector_capture",
+      "question": "Which External Income sectors (energy, food, tourism, defense, manufacturing, healthcare, education, research, AI, logistics, high-value services) can pull outside dollars into Arkansas with public/community capture that feeds Enterprise and the Prosperity Fund?",
+      "status": "NEE_QUEUED_NEXT",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
     }
   ],
   "holds": [
@@ -209,6 +219,9 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
+    "unrealized_gains_not_tax_retirement",
+    "no_principal_raid",
+    "no_raid_existing_obligations",
     "small_family_business_protected_by_default",
     "public_risk_at_risk_required",
     "no_discriminatory_export_tax",

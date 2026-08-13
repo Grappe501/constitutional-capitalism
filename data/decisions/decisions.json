@@ -2291,6 +2291,24 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-131",
+      "title": "Arkansas Prosperity Fund Capital Path",
+      "question": "Should Constitutional Capitalism execute CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0 by reverse-engineering corpus requirements for sustainable $250M/$500M/$1B/$2B distributions, simulating Conservative/Base/Accelerated contribution paths with return/inflation/recession/POMV/principal-floor rules, forbidding tax-retirement credit for unrealized gains and forbidding raids of existing obligations or principal, keeping COUNTABLE NOW at $0 until a real fund produces sustainable distributable cash, and holding overall completion at 43% with no abolish recommendation?",
+      "status": "approved",
+      "rationale": "Steve required the Prosperity Fund to answer whether Arkansas can ever generate recurring public income at scale without continuously raising compulsory taxes. Illustrative 4% POMV markers imply $6.25B–$50B corpus. Path math shows $250M may be reachable inside 8–16 years only if Base/Accelerated feeders materialize; $1B–$2B need transformational External Income and sit at or beyond the window. Zero countable is required because the fund and feeders do not yet exist as cash.",
+      "impact": [
+        "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+        "scripts/bind_prosperity_fund_capital_path.py",
+        "data/project/arkansas_public_income_engine_model.json",
+        "UPD-144",
+        "Overall % held at 43 / COUNTABLE NOW $0 / External Income queued next"
+      ],
+      "recommendation": "Next tax research: CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0; then integrate all 10 engines and stress-test vs ~$7.23B. Structural: definition-locks. Empirical: comparative diagnosis packets.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }

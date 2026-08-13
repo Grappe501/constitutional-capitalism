@@ -1,0 +1,1331 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-131",
+  "update_id": "UPD-144",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "engine_id": "ENGINE-PROSPERITY-FUND",
+  "status": "CAPITAL_PATH_MODELED_ZERO_COUNTABLE",
+  "central_question": "How much permanently invested public capital would Arkansas need to generate sustainable annual distributions of $250M, $500M, $1B, and $2B without consuming principal or destabilizing the fund?",
+  "count_rule": "COUNTABLE NOW stays $0 until a real fund exists with sustainable distributable cash under POMV + principal-floor rules. Unrealized market gains are not tax-retirement credit. Illustrative feeder schedules are hypotheses, not bound Arkansas revenues.",
+  "hard_safeguards": {
+    "no_tax_retirement_credit_for_unrealized_market_gains": "Only sustainable distributable cash under the payout rule counts \u2014 never mark-to-market paper gains",
+    "no_political_raiding_of_principal": "If this becomes doctrine, principal protection and withdrawal rules should be constitutional-level",
+    "no_raiding_existing_obligations_to_seed": "Existing committed revenues (fuel/highway, URT, CIT GR, etc.) must not be diverted merely to inflate the fund"
+  },
+  "replacement_target_usd": 7231905638,
+  "iit_gross_fy2026_usd": 3859100000,
+  "counted_toward_replacement_usd": 0,
+  "scale_markers": {
+    "note": "Corpus required for each payout at alternate sustainable distribution rates",
+    "by_distribution_rate": {
+      "3_percent": {
+        "distribution_rate": 0.03,
+        "note": "Illustrative scale markers \u2014 not recommendations",
+        "targets": [
+          {
+            "id": "T250",
+            "sustainable_annual_distribution_usd": 250000000,
+            "implied_corpus_usd": 8333333333,
+            "share_of_iit_gross": 0.0648,
+            "share_of_combined_7_23b": 0.0346
+          },
+          {
+            "id": "T500",
+            "sustainable_annual_distribution_usd": 500000000,
+            "implied_corpus_usd": 16666666667,
+            "share_of_iit_gross": 0.1296,
+            "share_of_combined_7_23b": 0.0691
+          },
+          {
+            "id": "T1000",
+            "sustainable_annual_distribution_usd": 1000000000,
+            "implied_corpus_usd": 33333333333,
+            "share_of_iit_gross": 0.2591,
+            "share_of_combined_7_23b": 0.1383
+          },
+          {
+            "id": "T2000",
+            "sustainable_annual_distribution_usd": 2000000000,
+            "implied_corpus_usd": 66666666667,
+            "share_of_iit_gross": 0.5183,
+            "share_of_combined_7_23b": 0.2766
+          }
+        ]
+      },
+      "4_percent": {
+        "distribution_rate": 0.04,
+        "note": "Illustrative scale markers \u2014 not recommendations",
+        "targets": [
+          {
+            "id": "T250",
+            "sustainable_annual_distribution_usd": 250000000,
+            "implied_corpus_usd": 6250000000,
+            "share_of_iit_gross": 0.0648,
+            "share_of_combined_7_23b": 0.0346
+          },
+          {
+            "id": "T500",
+            "sustainable_annual_distribution_usd": 500000000,
+            "implied_corpus_usd": 12500000000,
+            "share_of_iit_gross": 0.1296,
+            "share_of_combined_7_23b": 0.0691
+          },
+          {
+            "id": "T1000",
+            "sustainable_annual_distribution_usd": 1000000000,
+            "implied_corpus_usd": 25000000000,
+            "share_of_iit_gross": 0.2591,
+            "share_of_combined_7_23b": 0.1383
+          },
+          {
+            "id": "T2000",
+            "sustainable_annual_distribution_usd": 2000000000,
+            "implied_corpus_usd": 50000000000,
+            "share_of_iit_gross": 0.5183,
+            "share_of_combined_7_23b": 0.2766
+          }
+        ]
+      },
+      "5_percent": {
+        "distribution_rate": 0.05,
+        "note": "Illustrative scale markers \u2014 not recommendations",
+        "targets": [
+          {
+            "id": "T250",
+            "sustainable_annual_distribution_usd": 250000000,
+            "implied_corpus_usd": 5000000000,
+            "share_of_iit_gross": 0.0648,
+            "share_of_combined_7_23b": 0.0346
+          },
+          {
+            "id": "T500",
+            "sustainable_annual_distribution_usd": 500000000,
+            "implied_corpus_usd": 10000000000,
+            "share_of_iit_gross": 0.1296,
+            "share_of_combined_7_23b": 0.0691
+          },
+          {
+            "id": "T1000",
+            "sustainable_annual_distribution_usd": 1000000000,
+            "implied_corpus_usd": 20000000000,
+            "share_of_iit_gross": 0.2591,
+            "share_of_combined_7_23b": 0.1383
+          },
+          {
+            "id": "T2000",
+            "sustainable_annual_distribution_usd": 2000000000,
+            "implied_corpus_usd": 40000000000,
+            "share_of_iit_gross": 0.5183,
+            "share_of_combined_7_23b": 0.2766
+          }
+        ]
+      }
+    }
+  },
+  "primary_4pct_markers": {
+    "distribution_rate": 0.04,
+    "note": "Illustrative scale markers \u2014 not recommendations",
+    "targets": [
+      {
+        "id": "T250",
+        "sustainable_annual_distribution_usd": 250000000,
+        "implied_corpus_usd": 6250000000,
+        "share_of_iit_gross": 0.0648,
+        "share_of_combined_7_23b": 0.0346
+      },
+      {
+        "id": "T500",
+        "sustainable_annual_distribution_usd": 500000000,
+        "implied_corpus_usd": 12500000000,
+        "share_of_iit_gross": 0.1296,
+        "share_of_combined_7_23b": 0.0691
+      },
+      {
+        "id": "T1000",
+        "sustainable_annual_distribution_usd": 1000000000,
+        "implied_corpus_usd": 25000000000,
+        "share_of_iit_gross": 0.2591,
+        "share_of_combined_7_23b": 0.1383
+      },
+      {
+        "id": "T2000",
+        "sustainable_annual_distribution_usd": 2000000000,
+        "implied_corpus_usd": 50000000000,
+        "share_of_iit_gross": 0.5183,
+        "share_of_combined_7_23b": 0.2766
+      }
+    ]
+  },
+  "feeder_buckets": [
+    {
+      "id": "FEED-LITHIUM",
+      "name": "Future lithium / resource participation",
+      "status": "PLAUSIBLE_UNMODELED",
+      "raid_existing": false,
+      "notes": "Post-production permanent share \u2014 prior Depletion pass; not countable yet"
+    },
+    {
+      "id": "FEED-WINDFALL",
+      "name": "One-time windfalls / settlement proceeds",
+      "status": "EPISODIC",
+      "raid_existing": false,
+      "notes": "Seed-capable; not a stable annual engine"
+    },
+    {
+      "id": "FEED-PUBLIC-ASSET",
+      "name": "Public asset returns",
+      "status": "UNMODELED_ZERO_NOW",
+      "raid_existing": false,
+      "notes": "Enterprise pass found pledged/unsurveyed nets"
+    },
+    {
+      "id": "FEED-VALUE-CAPTURE",
+      "name": "Value-capture proceeds",
+      "status": "UNMODELED_ZERO_NOW",
+      "raid_existing": false,
+      "notes": "Requires participation redesign"
+    },
+    {
+      "id": "FEED-ENTERPRISE",
+      "name": "Enterprise distributions",
+      "status": "UNMODELED_ZERO_NOW",
+      "raid_existing": false,
+      "notes": "Only free cash after debt/O&M \u2014 mostly unavailable today"
+    },
+    {
+      "id": "FEED-EXTERNAL",
+      "name": "External-income surpluses",
+      "status": "QUEUED_NEXT_PASS",
+      "raid_existing": false,
+      "notes": "Likely determines whether Base vs Accelerated is realistic"
+    },
+    {
+      "id": "FEED-WPC",
+      "name": "Workforce Prosperity Contribution surplus share",
+      "status": "INCIDENCE_PENDING",
+      "raid_existing": false,
+      "notes": "Only if legal/incidence clears; earmark tension with education spend"
+    },
+    {
+      "id": "FEED-RAID-EXISTING",
+      "name": "Raid existing committed revenues (fuel, URT, CIT, etc.)",
+      "status": "REJECTED",
+      "raid_existing": true,
+      "notes": "Makes the fund look viable on paper while breaking current obligations \u2014 forbidden"
+    }
+  ],
+  "paths": [
+    {
+      "id": "PATH-CONSERVATIVE",
+      "label": "Conservative",
+      "description": "Low annual contributions + conservative real return; slow compounding",
+      "assumptions": {
+        "seed_usd": 100000000,
+        "year1_contribution_usd": 150000000,
+        "contribution_growth_rate": 0.02,
+        "nominal_return_rate": 0.055,
+        "inflation_rate": 0.025,
+        "approx_real_return_rate": 0.0293,
+        "distribution_rate_pomv": 0.03,
+        "recession_years": {
+          "3": -0.15,
+          "10": -0.12
+        },
+        "status": "ILLUSTRATIVE_HYPOTHESIS \u2014 not Arkansas budget commitments"
+      },
+      "feeder_mix": {
+        "status": "ILLUSTRATIVE",
+        "annual_composition_note": "Modest settlement/windfall scraps + thin resource share; little External Income",
+        "buckets": {
+          "lithium_resource_participation": "small/late",
+          "one_time_windfalls": "seed-like only",
+          "public_asset_returns": "minimal",
+          "value_capture_proceeds": "minimal",
+          "enterprise_distributions": "minimal",
+          "external_income_surpluses": "near zero",
+          "settlement_proceeds": "occasional",
+          "wpc_surplus_if_justified": "none assumed"
+        },
+        "raid_existing_obligations": false
+      },
+      "corpus_thresholds_at_path_distribution_rate": {
+        "T250": 8333333333,
+        "T500": 16666666667,
+        "T1000": 33333333333,
+        "T2000": 66666666667
+      },
+      "time_to_threshold_years": {
+        "T250": 25,
+        "T500": 36,
+        "T1000": null,
+        "T2000": null
+      },
+      "within_8_16_year_window": {
+        "T250": {
+          "hit_year": 25,
+          "within_8": false,
+          "within_16": false
+        },
+        "T500": {
+          "hit_year": 36,
+          "within_8": false,
+          "within_16": false
+        },
+        "T1000": {
+          "hit_year": null,
+          "within_8": false,
+          "within_16": false
+        },
+        "T2000": {
+          "hit_year": null,
+          "within_8": false,
+          "within_16": false
+        }
+      },
+      "year_16_snapshot": {
+        "closing_principal_usd": 3928489113,
+        "allowable_distribution_usd": 0,
+        "cumulative_distributed_through_y16_usd": 0,
+        "cumulative_contributions_through_y16_usd": 2895892787
+      },
+      "year_40_snapshot": {
+        "closing_principal_usd": 19998031710,
+        "allowable_distribution_usd": 500000000,
+        "cumulative_distributed_through_y40_usd": 4722089233
+      },
+      "years_1_to_16": [
+        {
+          "year": 1,
+          "opening_principal_usd": 100000000,
+          "contributions_usd": 150000000,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 13750000,
+          "inflation_reserve_usd": 2500000,
+          "real_contributed_floor_usd": 256250000,
+          "trailing_3yr_avg_principal_usd": 100000000,
+          "pomv_cap_usd": 3000000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 263750000,
+          "note": null
+        },
+        {
+          "year": 2,
+          "opening_principal_usd": 263750000,
+          "contributions_usd": 153000000,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 22921250,
+          "inflation_reserve_usd": 6593750,
+          "real_contributed_floor_usd": 419481250,
+          "trailing_3yr_avg_principal_usd": 181875000,
+          "pomv_cap_usd": 5456250,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 439671250,
+          "note": null
+        },
+        {
+          "year": 3,
+          "opening_principal_usd": 439671250,
+          "contributions_usd": 156060000,
+          "nominal_return_rate_applied": -0.15,
+          "investment_return_usd": -89359688,
+          "inflation_reserve_usd": 10991781,
+          "real_contributed_floor_usd": 589929781,
+          "trailing_3yr_avg_principal_usd": 267807083,
+          "pomv_cap_usd": 8034212,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 506371562,
+          "note": "recession_stress"
+        },
+        {
+          "year": 4,
+          "opening_principal_usd": 506371562,
+          "contributions_usd": 159181200,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 36605402,
+          "inflation_reserve_usd": 12659289,
+          "real_contributed_floor_usd": 767838756,
+          "trailing_3yr_avg_principal_usd": 403264271,
+          "pomv_cap_usd": 12097928,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 702158164,
+          "note": null
+        },
+        {
+          "year": 5,
+          "opening_principal_usd": 702158164,
+          "contributions_usd": 162364824,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 47548764,
+          "inflation_reserve_usd": 17553954,
+          "real_contributed_floor_usd": 953458669,
+          "trailing_3yr_avg_principal_usd": 549400326,
+          "pomv_cap_usd": 16482010,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 912071753,
+          "note": null
+        },
+        {
+          "year": 6,
+          "opening_principal_usd": 912071753,
+          "contributions_usd": 165612120,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 59272613,
+          "inflation_reserve_usd": 22801794,
+          "real_contributed_floor_usd": 1147047559,
+          "trailing_3yr_avg_principal_usd": 706867160,
+          "pomv_cap_usd": 21206015,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1136956486,
+          "note": null
+        },
+        {
+          "year": 7,
+          "opening_principal_usd": 1136956486,
+          "contributions_usd": 168924363,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 71823447,
+          "inflation_reserve_usd": 28423912,
+          "real_contributed_floor_usd": 1348871220,
+          "trailing_3yr_avg_principal_usd": 917062135,
+          "pomv_cap_usd": 27511864,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1377704296,
+          "note": null
+        },
+        {
+          "year": 8,
+          "opening_principal_usd": 1377704296,
+          "contributions_usd": 172302850,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 85250393,
+          "inflation_reserve_usd": 34442607,
+          "real_contributed_floor_usd": 1559203422,
+          "trailing_3yr_avg_principal_usd": 1142244178,
+          "pomv_cap_usd": 34267325,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1635257539,
+          "note": null
+        },
+        {
+          "year": 9,
+          "opening_principal_usd": 1635257539,
+          "contributions_usd": 175748907,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 99605355,
+          "inflation_reserve_usd": 40881438,
+          "real_contributed_floor_usd": 1778326138,
+          "trailing_3yr_avg_principal_usd": 1383306107,
+          "pomv_cap_usd": 41499183,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1910611801,
+          "note": null
+        },
+        {
+          "year": 10,
+          "opening_principal_usd": 1910611801,
+          "contributions_usd": 179263885,
+          "nominal_return_rate_applied": -0.12,
+          "investment_return_usd": -250785082,
+          "inflation_reserve_usd": 47765295,
+          "real_contributed_floor_usd": 2006529774,
+          "trailing_3yr_avg_principal_usd": 1641191212,
+          "pomv_cap_usd": 49235736,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1839090604,
+          "note": "recession_stress"
+        },
+        {
+          "year": 11,
+          "opening_principal_usd": 1839090604,
+          "contributions_usd": 182849163,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 111206687,
+          "inflation_reserve_usd": 45977265,
+          "real_contributed_floor_usd": 2244113410,
+          "trailing_3yr_avg_principal_usd": 1794986648,
+          "pomv_cap_usd": 53849599,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 2133146454,
+          "note": null
+        },
+        {
+          "year": 12,
+          "opening_principal_usd": 2133146454,
+          "contributions_usd": 186506146,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 127580893,
+          "inflation_reserve_usd": 53328661,
+          "real_contributed_floor_usd": 2491385045,
+          "trailing_3yr_avg_principal_usd": 1960949619,
+          "pomv_cap_usd": 58828489,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 2447233493,
+          "note": null
+        },
+        {
+          "year": 13,
+          "opening_principal_usd": 2447233493,
+          "contributions_usd": 190236269,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 145060837,
+          "inflation_reserve_usd": 61180837,
+          "real_contributed_floor_usd": 2748661847,
+          "trailing_3yr_avg_principal_usd": 2139823517,
+          "pomv_cap_usd": 64194706,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 2782530599,
+          "note": null
+        },
+        {
+          "year": 14,
+          "opening_principal_usd": 2782530599,
+          "contributions_usd": 194040995,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 163711438,
+          "inflation_reserve_usd": 69563265,
+          "real_contributed_floor_usd": 3016270413,
+          "trailing_3yr_avg_principal_usd": 2454303515,
+          "pomv_cap_usd": 73629105,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3140283032,
+          "note": null
+        },
+        {
+          "year": 15,
+          "opening_principal_usd": 3140283032,
+          "contributions_usd": 197921814,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 183601267,
+          "inflation_reserve_usd": 78507076,
+          "real_contributed_floor_usd": 3294547033,
+          "trailing_3yr_avg_principal_usd": 2790015708,
+          "pomv_cap_usd": 83700471,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3521806113,
+          "note": null
+        },
+        {
+          "year": 16,
+          "opening_principal_usd": 3521806113,
+          "contributions_usd": 201880251,
+          "nominal_return_rate_applied": 0.055,
+          "investment_return_usd": 204802750,
+          "inflation_reserve_usd": 88045153,
+          "real_contributed_floor_usd": 3583837966,
+          "trailing_3yr_avg_principal_usd": 3148206581,
+          "pomv_cap_usd": 94446197,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3928489113,
+          "note": null
+        }
+      ],
+      "safeguard_checks": {
+        "no_unrealized_gain_tax_retirement_credit": true,
+        "distributions_only_via_pomv_and_cleared_threshold": true,
+        "principal_floor_inflation_adjusted_contributions": true,
+        "countable_toward_replacement_usd": 0
+      }
+    },
+    {
+      "id": "PATH-BASE",
+      "label": "Base",
+      "description": "Moderate contributions + diversified long-run return",
+      "assumptions": {
+        "seed_usd": 250000000,
+        "year1_contribution_usd": 400000000,
+        "contribution_growth_rate": 0.03,
+        "nominal_return_rate": 0.07,
+        "inflation_rate": 0.025,
+        "approx_real_return_rate": 0.0439,
+        "distribution_rate_pomv": 0.04,
+        "recession_years": {
+          "3": -0.15,
+          "10": -0.12
+        },
+        "status": "ILLUSTRATIVE_HYPOTHESIS \u2014 not Arkansas budget commitments"
+      },
+      "feeder_mix": {
+        "status": "ILLUSTRATIVE",
+        "annual_composition_note": "Lithium public share ramp + some value-capture/enterprise + limited External Income surplus dedication",
+        "buckets": {
+          "lithium_resource_participation": "material after production",
+          "one_time_windfalls": "seed + infrequent",
+          "public_asset_returns": "growing slowly",
+          "value_capture_proceeds": "deal-lumpy",
+          "enterprise_distributions": "partial",
+          "external_income_surpluses": "partial \u2014 determines whether Base holds",
+          "settlement_proceeds": "occasional",
+          "wpc_surplus_if_justified": "small dedicated share only if incidence clears"
+        },
+        "raid_existing_obligations": false
+      },
+      "corpus_thresholds_at_path_distribution_rate": {
+        "T250": 6250000000,
+        "T500": 12500000000,
+        "T1000": 25000000000,
+        "T2000": 50000000000
+      },
+      "time_to_threshold_years": {
+        "T250": 11,
+        "T500": 18,
+        "T1000": 26,
+        "T2000": 36
+      },
+      "within_8_16_year_window": {
+        "T250": {
+          "hit_year": 11,
+          "within_8": false,
+          "within_16": true
+        },
+        "T500": {
+          "hit_year": 18,
+          "within_8": false,
+          "within_16": false
+        },
+        "T1000": {
+          "hit_year": 26,
+          "within_8": false,
+          "within_16": false
+        },
+        "T2000": {
+          "hit_year": 36,
+          "within_8": false,
+          "within_16": false
+        }
+      },
+      "year_16_snapshot": {
+        "closing_principal_usd": 11131243990,
+        "allowable_distribution_usd": 250000000,
+        "cumulative_distributed_through_y16_usd": 1232480815,
+        "cumulative_contributions_through_y16_usd": 8312752523
+      },
+      "year_40_snapshot": {
+        "closing_principal_usd": 66238618665,
+        "allowable_distribution_usd": 2000000000,
+        "cumulative_distributed_through_y40_usd": 23682547224
+      },
+      "years_1_to_16": [
+        {
+          "year": 1,
+          "opening_principal_usd": 250000000,
+          "contributions_usd": 400000000,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 45500000,
+          "inflation_reserve_usd": 6250000,
+          "real_contributed_floor_usd": 666250000,
+          "trailing_3yr_avg_principal_usd": 250000000,
+          "pomv_cap_usd": 10000000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 695500000,
+          "note": null
+        },
+        {
+          "year": 2,
+          "opening_principal_usd": 695500000,
+          "contributions_usd": 412000000,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 77525000,
+          "inflation_reserve_usd": 17387500,
+          "real_contributed_floor_usd": 1105206250,
+          "trailing_3yr_avg_principal_usd": 472750000,
+          "pomv_cap_usd": 18910000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1185025000,
+          "note": null
+        },
+        {
+          "year": 3,
+          "opening_principal_usd": 1185025000,
+          "contributions_usd": 424360000,
+          "nominal_return_rate_applied": -0.15,
+          "investment_return_usd": -241407750,
+          "inflation_reserve_usd": 29625625,
+          "real_contributed_floor_usd": 1567805406,
+          "trailing_3yr_avg_principal_usd": 710175000,
+          "pomv_cap_usd": 28407000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1367977250,
+          "note": "recession_stress"
+        },
+        {
+          "year": 4,
+          "opening_principal_usd": 1367977250,
+          "contributions_usd": 437090800,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 126354764,
+          "inflation_reserve_usd": 34199431,
+          "real_contributed_floor_usd": 2055018611,
+          "trailing_3yr_avg_principal_usd": 1082834083,
+          "pomv_cap_usd": 43313363,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1931422814,
+          "note": null
+        },
+        {
+          "year": 5,
+          "opening_principal_usd": 1931422814,
+          "contributions_usd": 450203524,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 166713844,
+          "inflation_reserve_usd": 48285570,
+          "real_contributed_floor_usd": 2567852689,
+          "trailing_3yr_avg_principal_usd": 1494808354,
+          "pomv_cap_usd": 59792334,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 2548340181,
+          "note": null
+        },
+        {
+          "year": 6,
+          "opening_principal_usd": 2548340181,
+          "contributions_usd": 463709630,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 210843487,
+          "inflation_reserve_usd": 63708505,
+          "real_contributed_floor_usd": 3107351376,
+          "trailing_3yr_avg_principal_usd": 1949246748,
+          "pomv_cap_usd": 77969870,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3222893298,
+          "note": null
+        },
+        {
+          "year": 7,
+          "opening_principal_usd": 3222893298,
+          "contributions_usd": 477620919,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 259035995,
+          "inflation_reserve_usd": 80572332,
+          "real_contributed_floor_usd": 3674596602,
+          "trailing_3yr_avg_principal_usd": 2567552097,
+          "pomv_cap_usd": 102702084,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3959550211,
+          "note": null
+        },
+        {
+          "year": 8,
+          "opening_principal_usd": 3959550211,
+          "contributions_usd": 491949546,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 311604983,
+          "inflation_reserve_usd": 98988755,
+          "real_contributed_floor_usd": 4270709802,
+          "trailing_3yr_avg_principal_usd": 3243594563,
+          "pomv_cap_usd": 129743783,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 4763104741,
+          "note": null
+        },
+        {
+          "year": 9,
+          "opening_principal_usd": 4763104741,
+          "contributions_usd": 506708033,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 368886894,
+          "inflation_reserve_usd": 119077619,
+          "real_contributed_floor_usd": 4896853281,
+          "trailing_3yr_avg_principal_usd": 3981849417,
+          "pomv_cap_usd": 159273977,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 5638699667,
+          "note": null
+        },
+        {
+          "year": 10,
+          "opening_principal_usd": 5638699667,
+          "contributions_usd": 521909274,
+          "nominal_return_rate_applied": -0.12,
+          "investment_return_usd": -739273073,
+          "inflation_reserve_usd": 140967492,
+          "real_contributed_floor_usd": 5554231618,
+          "trailing_3yr_avg_principal_usd": 4787118206,
+          "pomv_cap_usd": 191484728,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 5421335868,
+          "note": "recession_stress"
+        },
+        {
+          "year": 11,
+          "opening_principal_usd": 5421335868,
+          "contributions_usd": 537566552,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 417123169,
+          "inflation_reserve_usd": 135533397,
+          "real_contributed_floor_usd": 6244093124,
+          "trailing_3yr_avg_principal_usd": 5274380092,
+          "pomv_cap_usd": 210975204,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 6376025589,
+          "note": null
+        },
+        {
+          "year": 12,
+          "opening_principal_usd": 6376025589,
+          "contributions_usd": 553693548,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 485080340,
+          "inflation_reserve_usd": 159400640,
+          "real_contributed_floor_usd": 6967731339,
+          "trailing_3yr_avg_principal_usd": 5812020375,
+          "pomv_cap_usd": 232480815,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 232480815,
+          "closing_principal_usd": 7182318662,
+          "note": null
+        },
+        {
+          "year": 13,
+          "opening_principal_usd": 7182318662,
+          "contributions_usd": 570304355,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 542683611,
+          "inflation_reserve_usd": 179557967,
+          "real_contributed_floor_usd": 7726486586,
+          "trailing_3yr_avg_principal_usd": 6326560040,
+          "pomv_cap_usd": 253062402,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 8045306628,
+          "note": null
+        },
+        {
+          "year": 14,
+          "opening_principal_usd": 8045306628,
+          "contributions_usd": 587413485,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 604290408,
+          "inflation_reserve_usd": 201132666,
+          "real_contributed_floor_usd": 8521747574,
+          "trailing_3yr_avg_principal_usd": 7201216960,
+          "pomv_cap_usd": 288048678,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 8987010521,
+          "note": null
+        },
+        {
+          "year": 15,
+          "opening_principal_usd": 8987010521,
+          "contributions_usd": 605035890,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 671443249,
+          "inflation_reserve_usd": 224675263,
+          "real_contributed_floor_usd": 9354953050,
+          "trailing_3yr_avg_principal_usd": 8071545270,
+          "pomv_cap_usd": 322861811,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 10013489660,
+          "note": null
+        },
+        {
+          "year": 16,
+          "opening_principal_usd": 10013489660,
+          "contributions_usd": 623186967,
+          "nominal_return_rate_applied": 0.07,
+          "investment_return_usd": 744567364,
+          "inflation_reserve_usd": 250337241,
+          "real_contributed_floor_usd": 10227593517,
+          "trailing_3yr_avg_principal_usd": 9015268936,
+          "pomv_cap_usd": 360610757,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 11131243990,
+          "note": null
+        }
+      ],
+      "safeguard_checks": {
+        "no_unrealized_gain_tax_retirement_credit": true,
+        "distributions_only_via_pomv_and_cleared_threshold": true,
+        "principal_floor_inflation_adjusted_contributions": true,
+        "countable_toward_replacement_usd": 0
+      }
+    },
+    {
+      "id": "PATH-ACCELERATED",
+      "label": "Accelerated",
+      "description": "Major new external/resource income + higher annual contributions",
+      "assumptions": {
+        "seed_usd": 500000000,
+        "year1_contribution_usd": 1000000000,
+        "contribution_growth_rate": 0.05,
+        "nominal_return_rate": 0.075,
+        "inflation_rate": 0.025,
+        "approx_real_return_rate": 0.0488,
+        "distribution_rate_pomv": 0.04,
+        "recession_years": {
+          "3": -0.15,
+          "10": -0.12
+        },
+        "status": "ILLUSTRATIVE_HYPOTHESIS \u2014 not Arkansas budget commitments"
+      },
+      "feeder_mix": {
+        "status": "ILLUSTRATIVE",
+        "annual_composition_note": "Transformational External Income + lithium/permanent resource stack + enterprise/value-capture surpluses",
+        "buckets": {
+          "lithium_resource_participation": "large permanent share",
+          "one_time_windfalls": "seed + major settlements",
+          "public_asset_returns": "material",
+          "value_capture_proceeds": "material",
+          "enterprise_distributions": "material",
+          "external_income_surpluses": "dominant feeder \u2014 External Income pass decides realism",
+          "settlement_proceeds": "large early",
+          "wpc_surplus_if_justified": "dedicated share if legally/incidence-cleared"
+        },
+        "raid_existing_obligations": false,
+        "warning": "Requires External Income and resource participation that do not yet exist as countable cash"
+      },
+      "corpus_thresholds_at_path_distribution_rate": {
+        "T250": 6250000000,
+        "T500": 12500000000,
+        "T1000": 25000000000,
+        "T2000": 50000000000
+      },
+      "time_to_threshold_years": {
+        "T250": 5,
+        "T500": 9,
+        "T1000": 14,
+        "T2000": 21
+      },
+      "within_8_16_year_window": {
+        "T250": {
+          "hit_year": 5,
+          "within_8": true,
+          "within_16": true
+        },
+        "T500": {
+          "hit_year": 9,
+          "within_8": false,
+          "within_16": true
+        },
+        "T1000": {
+          "hit_year": 14,
+          "within_8": false,
+          "within_16": true
+        },
+        "T2000": {
+          "hit_year": 21,
+          "within_8": false,
+          "within_16": false
+        }
+      },
+      "year_16_snapshot": {
+        "closing_principal_usd": 31886435861,
+        "allowable_distribution_usd": 1000000000,
+        "cumulative_distributed_through_y16_usd": 4338475438,
+        "cumulative_contributions_through_y16_usd": 24157491768
+      },
+      "year_40_snapshot": {
+        "closing_principal_usd": 309053821637,
+        "allowable_distribution_usd": 2000000000,
+        "cumulative_distributed_through_y40_usd": 47320150751
+      },
+      "years_1_to_16": [
+        {
+          "year": 1,
+          "opening_principal_usd": 500000000,
+          "contributions_usd": 1000000000,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 112500000,
+          "inflation_reserve_usd": 12500000,
+          "real_contributed_floor_usd": 1537500000,
+          "trailing_3yr_avg_principal_usd": 500000000,
+          "pomv_cap_usd": 20000000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 1612500000,
+          "note": null
+        },
+        {
+          "year": 2,
+          "opening_principal_usd": 1612500000,
+          "contributions_usd": 1050000000,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 199687500,
+          "inflation_reserve_usd": 40312500,
+          "real_contributed_floor_usd": 2652187500,
+          "trailing_3yr_avg_principal_usd": 1056250000,
+          "pomv_cap_usd": 42250000,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 2862187500,
+          "note": null
+        },
+        {
+          "year": 3,
+          "opening_principal_usd": 2862187500,
+          "contributions_usd": 1102500000,
+          "nominal_return_rate_applied": -0.15,
+          "investment_return_usd": -594703125,
+          "inflation_reserve_usd": 71554688,
+          "real_contributed_floor_usd": 3848554687,
+          "trailing_3yr_avg_principal_usd": 1658229167,
+          "pomv_cap_usd": 66329167,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 3369984375,
+          "note": "recession_stress"
+        },
+        {
+          "year": 4,
+          "opening_principal_usd": 3369984375,
+          "contributions_usd": 1157625000,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 339570703,
+          "inflation_reserve_usd": 84249609,
+          "real_contributed_floor_usd": 5131334180,
+          "trailing_3yr_avg_principal_usd": 2614890625,
+          "pomv_cap_usd": 104595625,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 4867180078,
+          "note": null
+        },
+        {
+          "year": 5,
+          "opening_principal_usd": 4867180078,
+          "contributions_usd": 1215506250,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 456201475,
+          "inflation_reserve_usd": 121679502,
+          "real_contributed_floor_usd": 6505511440,
+          "trailing_3yr_avg_principal_usd": 3699783984,
+          "pomv_cap_usd": 147991359,
+          "cleared_payout_target_usd": 0,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 6538887803,
+          "note": null
+        },
+        {
+          "year": 6,
+          "opening_principal_usd": 6538887803,
+          "contributions_usd": 1276281563,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 586137702,
+          "inflation_reserve_usd": 163472195,
+          "real_contributed_floor_usd": 7976337828,
+          "trailing_3yr_avg_principal_usd": 4925350752,
+          "pomv_cap_usd": 197014030,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 197014030,
+          "closing_principal_usd": 8204293038,
+          "note": null
+        },
+        {
+          "year": 7,
+          "opening_principal_usd": 8204293038,
+          "contributions_usd": 1340095641,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 715829151,
+          "inflation_reserve_usd": 205107326,
+          "real_contributed_floor_usd": 9549344305,
+          "trailing_3yr_avg_principal_usd": 6536786973,
+          "pomv_cap_usd": 261471479,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 10010217829,
+          "note": null
+        },
+        {
+          "year": 8,
+          "opening_principal_usd": 10010217829,
+          "contributions_usd": 1407100423,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 856298869,
+          "inflation_reserve_usd": 250255446,
+          "real_contributed_floor_usd": 11230355846,
+          "trailing_3yr_avg_principal_usd": 8251132890,
+          "pomv_cap_usd": 330045316,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 12023617121,
+          "note": null
+        },
+        {
+          "year": 9,
+          "opening_principal_usd": 12023617121,
+          "contributions_usd": 1477455444,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 1012580442,
+          "inflation_reserve_usd": 300590428,
+          "real_contributed_floor_usd": 13025506572,
+          "trailing_3yr_avg_principal_usd": 10079375996,
+          "pomv_cap_usd": 403175040,
+          "cleared_payout_target_usd": 250000000,
+          "allowable_distribution_usd": 250000000,
+          "closing_principal_usd": 14263653007,
+          "note": null
+        },
+        {
+          "year": 10,
+          "opening_principal_usd": 14263653007,
+          "contributions_usd": 1551328216,
+          "nominal_return_rate_applied": -0.12,
+          "investment_return_usd": -1897797747,
+          "inflation_reserve_usd": 356591325,
+          "real_contributed_floor_usd": 14941255658,
+          "trailing_3yr_avg_principal_usd": 12099162652,
+          "pomv_cap_usd": 483966506,
+          "cleared_payout_target_usd": 500000000,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 13917183476,
+          "note": "recession_stress"
+        },
+        {
+          "year": 11,
+          "opening_principal_usd": 13917183476,
+          "contributions_usd": 1628894627,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 1165955858,
+          "inflation_reserve_usd": 347929587,
+          "real_contributed_floor_usd": 16984404042,
+          "trailing_3yr_avg_principal_usd": 13401484534,
+          "pomv_cap_usd": 536059381,
+          "cleared_payout_target_usd": 500000000,
+          "allowable_distribution_usd": 0,
+          "closing_principal_usd": 16712033960,
+          "note": null
+        },
+        {
+          "year": 12,
+          "opening_principal_usd": 16712033960,
+          "contributions_usd": 1710339358,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 1381677999,
+          "inflation_reserve_usd": 417800849,
+          "real_contributed_floor_usd": 19162111985,
+          "trailing_3yr_avg_principal_usd": 14964290148,
+          "pomv_cap_usd": 598571606,
+          "cleared_payout_target_usd": 500000000,
+          "allowable_distribution_usd": 500000000,
+          "closing_principal_usd": 19304051317,
+          "note": null
+        },
+        {
+          "year": 13,
+          "opening_principal_usd": 19304051317,
+          "contributions_usd": 1795856326,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 1582493073,
+          "inflation_reserve_usd": 482601283,
+          "real_contributed_floor_usd": 21481917519,
+          "trailing_3yr_avg_principal_usd": 16644422918,
+          "pomv_cap_usd": 665776917,
+          "cleared_payout_target_usd": 500000000,
+          "allowable_distribution_usd": 500000000,
+          "closing_principal_usd": 22182400717,
+          "note": null
+        },
+        {
+          "year": 14,
+          "opening_principal_usd": 22182400717,
+          "contributions_usd": 1885649142,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 1805103739,
+          "inflation_reserve_usd": 554560018,
+          "real_contributed_floor_usd": 23951755828,
+          "trailing_3yr_avg_principal_usd": 19399495332,
+          "pomv_cap_usd": 775979813,
+          "cleared_payout_target_usd": 500000000,
+          "allowable_distribution_usd": 500000000,
+          "closing_principal_usd": 25373153598,
+          "note": null
+        },
+        {
+          "year": 15,
+          "opening_principal_usd": 25373153598,
+          "contributions_usd": 1979931599,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 2051481390,
+          "inflation_reserve_usd": 634328840,
+          "real_contributed_floor_usd": 26579979613,
+          "trailing_3yr_avg_principal_usd": 22286535211,
+          "pomv_cap_usd": 891461408,
+          "cleared_payout_target_usd": 1000000000,
+          "allowable_distribution_usd": 891461408,
+          "closing_principal_usd": 28513105179,
+          "note": null
+        },
+        {
+          "year": 16,
+          "opening_principal_usd": 28513105179,
+          "contributions_usd": 2078928179,
+          "nominal_return_rate_applied": 0.075,
+          "investment_return_usd": 2294402502,
+          "inflation_reserve_usd": 712827629,
+          "real_contributed_floor_usd": 29375380487,
+          "trailing_3yr_avg_principal_usd": 25356219831,
+          "pomv_cap_usd": 1014248793,
+          "cleared_payout_target_usd": 1000000000,
+          "allowable_distribution_usd": 1000000000,
+          "closing_principal_usd": 31886435861,
+          "note": null
+        }
+      ],
+      "safeguard_checks": {
+        "no_unrealized_gain_tax_retirement_credit": true,
+        "distributions_only_via_pomv_and_cleared_threshold": true,
+        "principal_floor_inflation_adjusted_contributions": true,
+        "countable_toward_replacement_usd": 0
+      }
+    }
+  ],
+  "path_reads_compact": [
+    {
+      "id": "PATH-CONSERVATIVE",
+      "y16_principal_usd": 3928489113,
+      "y16_allowable_distribution_usd": 0,
+      "T250_year": 25,
+      "T500_year": 36,
+      "T1000_year": null,
+      "T2000_year": null,
+      "T250_within_16": false,
+      "T500_within_16": false,
+      "T1000_within_16": false,
+      "T2000_within_16": false
+    },
+    {
+      "id": "PATH-BASE",
+      "y16_principal_usd": 11131243990,
+      "y16_allowable_distribution_usd": 250000000,
+      "T250_year": 11,
+      "T500_year": 18,
+      "T1000_year": 26,
+      "T2000_year": 36,
+      "T250_within_16": true,
+      "T500_within_16": false,
+      "T1000_within_16": false,
+      "T2000_within_16": false
+    },
+    {
+      "id": "PATH-ACCELERATED",
+      "y16_principal_usd": 31886435861,
+      "y16_allowable_distribution_usd": 1000000000,
+      "T250_year": 5,
+      "T500_year": 9,
+      "T1000_year": 14,
+      "T2000_year": 21,
+      "T250_within_16": true,
+      "T500_within_16": true,
+      "T1000_within_16": true,
+      "T2000_within_16": false
+    }
+  ],
+  "verdict": {
+    "fund_exists_today": false,
+    "countable_toward_replacement_usd": 0,
+    "central_answer": {
+      "question": "How much permanently invested public capital would Arkansas need to generate sustainable annual distributions of $250M, $500M, $1B, and $2B without consuming principal or destabilizing the fund?",
+      "at_4_percent_pomv": {
+        "T250": 6250000000,
+        "T500": 12500000000,
+        "T1000": 25000000000,
+        "T2000": 50000000000
+      },
+      "time_to_threshold_summary": {
+        "PATH-CONSERVATIVE": {
+          "T250": 25,
+          "T500": 36,
+          "T1000": null,
+          "T2000": null
+        },
+        "PATH-BASE": {
+          "T250": 11,
+          "T500": 18,
+          "T1000": 26,
+          "T2000": 36
+        },
+        "PATH-ACCELERATED": {
+          "T250": 5,
+          "T500": 9,
+          "T1000": 14,
+          "T2000": 21
+        }
+      },
+      "window_8_16_reading": "Even under Accelerated illustrative feeders, $1B\u2013$2B sustainable payouts are unlikely inside 8 years and strained inside 16 without transformational External Income / resource participation. $250M may be reachable on Base/Accelerated paths inside or near the window if feeders materialize \u2014 still $0 countable until real."
+    },
+    "vs_7_23b": {
+      "note": "Prosperity Fund alone cannot cover ~$7.23B even at $2B/year payout",
+      "t2000_share_of_combined": 0.2766,
+      "implication": "Fund is a compounding engine + Tax Retirement feeder, not a solo replacement system"
+    }
+  },
+  "buckets": {
+    "COUNTABLE_NOW": {
+      "ids": [],
+      "incremental_recurring_usd": 0,
+      "verdict": "EMPTY \u2014 fund does not exist; no sustainable distributable cash"
+    },
+    "PLAUSIBLE_BUT_FEEDER_AND_LEGAL_PENDING": {
+      "ids": [
+        "PATH-CONSERVATIVE",
+        "PATH-BASE",
+        "PATH-ACCELERATED",
+        "FEED-LITHIUM",
+        "FEED-WINDFALL",
+        "FEED-PUBLIC-ASSET",
+        "FEED-VALUE-CAPTURE",
+        "FEED-ENTERPRISE",
+        "FEED-EXTERNAL",
+        "FEED-WPC"
+      ],
+      "verdict": "Capital-path math is real; feeders and constitutional principal protection are not yet built"
+    },
+    "NOT_MATERIAL_OR_NOT_SUITABLE": {
+      "ids": [
+        "FEED-RAID-EXISTING",
+        "COUNT_UNREALIZED_MARKET_GAINS"
+      ],
+      "verdict": "Raiding existing obligations or counting paper gains as tax-retirement dollars is unsuitable"
+    }
+  },
+  "horizon_years_primary": 16,
+  "horizon_years_extended": 40,
+  "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+  "sequence_lock": [
+    "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+    "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+  ],
+  "holds": [
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS",
+    "no_abolish_today",
+    "zero_counted_until_cashflow_model",
+    "unrealized_gains_not_tax_retirement",
+    "no_principal_raid",
+    "no_raid_existing_obligations",
+    "illustrative_feeders_not_bound_cash"
+  ]
+}

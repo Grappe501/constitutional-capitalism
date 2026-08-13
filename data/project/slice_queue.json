@@ -1968,6 +1968,7 @@
     },
     "design_logic": "contribute_or_build_verified_workforce_capacity",
     "engine_role_verdict": "REAL_SCALE_ENVELOPE_ZERO_COUNTABLE_UNTIL_INCIDENCE_AND_CREDITS",
+    "superseded_next_by": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
     "research_next": [
       "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
       "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
@@ -1989,39 +1990,82 @@
   },
   "arkansas_prosperity_fund_capital_path": {
     "slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
-    "status": "QUEUED_NEXT",
+    "status": "PASSED_ZERO_COUNTABLE_HORIZON_MAPPED",
     "mode": "seed_contributions_returns_drawdown_years_to_scale",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
     "engine_id": "ENGINE-PROSPERITY-FUND",
-    "question": "How could Arkansas accumulate enough productive public capital over 8–16 years that investment returns eventually replace a meaningful portion of recurring taxes?",
-    "must_model": [
-      "seed_capital",
-      "annual_contributions",
-      "investment_return_assumptions",
-      "volatility",
-      "drawdown_rule",
-      "inflation_protection",
-      "reserve_rule",
-      "annual_distributable_income",
-      "year_tax_retirement_thresholds"
+    "decision_id": "CC-DEC-131",
+    "update_id": "UPD-144",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+    "script": "scripts/bind_prosperity_fund_capital_path.py",
+    "return": "reports/CC_ARKANSAS_PROSPERITY_FUND_CAPITAL_PATH_1_0_RETURN.md",
+    "countable_now_usd": 0,
+    "primary_4pct_corpus_markers_usd": {
+      "T250": 6250000000,
+      "T500": 12500000000,
+      "T1000": 25000000000,
+      "T2000": 50000000000
+    },
+    "time_to_threshold_years": {
+      "PATH-CONSERVATIVE": {"T250": 25, "T500": 36, "T1000": null, "T2000": null},
+      "PATH-BASE": {"T250": 11, "T500": 18, "T1000": 26, "T2000": 36},
+      "PATH-ACCELERATED": {"T250": 5, "T500": 9, "T1000": 14, "T2000": 21}
+    },
+    "hard_safeguards": [
+      "no_unrealized_gain_tax_retirement_credit",
+      "no_principal_raid",
+      "no_raid_existing_obligations"
     ],
-    "payout_targets_usd": [250000000, 500000000, 1000000000, 2000000000],
-    "feeder_rule": "Windfalls and new prosperity revenues — not raiding existing obligations",
-    "feeder_candidates": [
-      "lithium_resource_participation",
-      "public_asset_returns",
-      "value_capture_proceeds",
-      "external_income_surpluses",
-      "settlement_windfall_revenue",
-      "portions_of_wpc_if_justified"
+    "engine_role_verdict": "COMPOUNDING_ENGINE_NOT_SOLO_REPLACEMENT — External Income is swing variable",
+    "research_next": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
     ],
-    "count_rule": "Unmodeled fund earnings are $0 replacement dollars; must show capital base needed to sustain targets without consuming principal",
+    "parallel_empirical_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "unrealized_gains_not_tax_retirement",
+      "no_principal_raid",
+      "no_raid_existing_obligations",
+      "illustrative_feeders_not_bound_cash"
+    ]
+  },
+  "arkansas_external_income_sector_capture": {
+    "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+    "status": "QUEUED_NEXT",
+    "mode": "sector_capture_public_share_not_export_tax",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "engine_id": "ENGINE-EXTERNAL-INCOME",
+    "question": "How can Arkansas intentionally pull money into the state through energy, food, tourism, defense procurement, advanced manufacturing, healthcare, education, research, AI, logistics, and high-value service exports — with public/community capture that feeds Enterprise and the Prosperity Fund — without discriminatory export taxes?",
+    "sectors": [
+      "energy",
+      "food",
+      "tourism",
+      "defense_procurement",
+      "advanced_manufacturing",
+      "healthcare",
+      "education",
+      "research",
+      "ai",
+      "logistics",
+      "high_value_services"
+    ],
+    "philosophical_note": "Not fundamentally about taxation — about bringing outside dollars in",
+    "count_rule": "COUNTABLE NOW stays $0 until ownership/contract capture produces demonstrated incremental recurring public cash",
     "depends_on_completed": [
-      "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0"
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
     ],
     "research_after": [
-      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
       "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
     ]
   },
