@@ -2,11 +2,13 @@
   "version": "1.0.0",
   "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
   "generated_at": "2026-08-12",
-  "status": "registration_only_keep_as_hypothesis",
+  "status": "operating_architecture_locked_parallel_until_empirical_build",
   "module_id": "CC-MOD-ARKANSAS-HUMAN-CAPITAL-EDUCATION-PROSPERITY",
   "module_scale": "LARGEST_CLASS_ARKANSAS_TRANSITION_ARCHITECTURE",
-  "decision_id": "CC-DEC-138",
-  "update_id": "UPD-151",
+  "decision_id": "CC-DEC-139",
+  "update_id": "UPD-152",
+  "registration_decision_id": "CC-DEC-138",
+  "registration_update_id": "UPD-151",
   "not": [
     "doctrine",
     "principle",
@@ -35,8 +37,9 @@
     "not_empirical_proof": true,
     "governance": {
       "decision": "KEEP_AS_HYPOTHESIS",
-      "decision_id": "CC-DEC-138",
-      "reason": "Steve-directed major transition module: universal childhood formation; pathway formation; strategic capacity investment; positive residency-and-service compact (not exit tax); Learning Network + regional centers; research/IP to Prosperity Fund; adult AI-era reskilling. Registration only — no seat inventory, compact statute draft, or IP royalty cash-flow executed."
+      "decision_id": "CC-DEC-139",
+      "registration_decision_id": "CC-DEC-138",
+      "reason": "Registered under CC-DEC-138; operating architecture locked under CC-DEC-139. Stop conceptual branching. Four empirical passes in order. Parallel until Demand Map build. Feeder Binding remains main fiscal lane."
     },
     "empirical_status": "NOT_ENOUGH_EVIDENCE",
     "dossier_path": "content/research/hypotheses/arkansas-human-capital-and-education-prosperity-system.md",
@@ -283,16 +286,128 @@
   },
   "linked_hypotheses": {
     "HYP-124": "Distributed Prosperity Network — regional centers and access standard",
-    "HYP-129": "Arkansas transition pathway — Layer-1 programs",
-    "HYP-130": "Strategic Capacity Audit — Demand Map Need→seats→graduates→shortages; 1,759 programs",
-    "HYP-131": "Public-income engines — Human-capital engine; Enterprise/IP; Prosperity Fund; Workforce Prosperity",
-    "HYP-132": "Population-Wealth Attraction — Keep/Return/Attract; Come Home pipelines; family package schools"
+    "HYP-129": "Arkansas transition pathway — Layer-1 programs — where we prove it locally",
+    "HYP-130": "Strategic Capacity Audit — what capability Arkansas needs; 1,759-program inventory",
+    "HYP-131": "Public-income engines — capture resulting prosperity to reduce compulsory taxation",
+    "HYP-132": "Population-Wealth Attraction — reasons to stay, return, raise families, build wealth"
+  },
+  "system_chain": {
+    "locked_by": "CC-DEC-139",
+    "statement": "HYP-130 tells Arkansas what capability it needs. HYP-133 builds the people capable of doing it. HYP-129 determines where we prove it locally. HYP-132 gives those people reasons to stay, return, raise families and build wealth here. HYP-131 captures enough resulting prosperity to reduce compulsory taxation.",
+    "order": [
+      { "hypothesis": "HYP-130", "role": "capability_need" },
+      { "hypothesis": "HYP-133", "role": "build_people" },
+      { "hypothesis": "HYP-129", "role": "prove_locally" },
+      { "hypothesis": "HYP-132", "role": "retain_attract_families_wealth" },
+      { "hypothesis": "HYP-131", "role": "capture_prosperity_reduce_compulsory_tax" }
+    ],
+    "implication": "Coherent system — not separate policy proposals"
+  },
+  "operating_architecture_passes": {
+    "locked_by": "CC-DEC-139",
+    "update_id": "UPD-152",
+    "posture": "Stop adding conceptual branches; prove operating architecture in this order when HYP-133 gets its next substantial pass",
+    "global_lane_order_unchanged": {
+      "main_fiscal_evidence": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+      "structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+      "hyp133": "PARALLEL_UNTIL_EMPIRICAL_BUILD_PASS"
+    },
+    "passes": [
+      {
+        "order": 1,
+        "slice_id": "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
+        "name": "Arkansas Human-Capital Demand Map",
+        "deliverable": "Statewide needs ledger",
+        "ledger_fields": [
+          "occupation_capability",
+          "current_employment",
+          "projected_demand",
+          "replacement_demand",
+          "wages",
+          "current_arkansas_education_programs",
+          "enrollment",
+          "completers",
+          "geographic_shortages",
+          "people_arkansas_effectively_imports",
+          "missing_educational_capacity"
+        ],
+        "first_wave_sectors": [
+          "healthcare",
+          "dental_maternal",
+          "agriculture_food",
+          "trades",
+          "engineering_energy",
+          "teachers",
+          "advanced_manufacturing",
+          "ai_technology"
+        ]
+      },
+      {
+        "order": 2,
+        "slice_id": "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
+        "name": "Residency-and-Service Compact legal design",
+        "deliverable": "Serious constitutional/legal memo before policy",
+        "must_test": [
+          "what_arkansas_can_offer_bona_fide_residents",
+          "reasonable_residency_duration",
+          "what_constitutes_arkansas_investment_additional_subsidy",
+          "serve_or_repay_contract_mechanics",
+          "hardship_disability_military_exceptions",
+          "interstate_mobility_issues",
+          "professional_program_application",
+          "repayment_follows_incremental_subsidy_not_punitive_tuition_debt"
+        ],
+        "hard_rule": "Repayment tracks the incremental public subsidy — not punitive tuition debt or exit tax"
+      },
+      {
+        "order": 3,
+        "slice_id": "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
+        "name": "Arkansas Learning Network + Centers of Excellence",
+        "deliverable": "Map 1,759-program inventory onto Demand Map",
+        "questions": [
+          "What already exists?",
+          "What needs expansion?",
+          "What needs regional redistribution?",
+          "What capability simply does not exist in Arkansas?"
+        ],
+        "gap_actions": [
+          "BUILD",
+          "EXPAND",
+          "PARTNER",
+          "IMPORT_TEMPORARILY"
+        ],
+        "rule": "When something important is absent, generate a specific BUILD/EXPAND/PARTNER/IMPORT-TEMPORARILY recommendation — do not merely record a gap"
+      },
+      {
+        "order": 4,
+        "slice_id": "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0",
+        "name": "Full implementation/legal matrix",
+        "deliverable": "8–16 year Arkansas implementation program — not an education manifesto",
+        "pathway_per_component": [
+          "existing_authority",
+          "agency_rule_change",
+          "appropriation",
+          "statute",
+          "constitutional_change",
+          "federal_dependency"
+        ],
+        "also_required_per_component": [
+          "responsible_institution",
+          "funding_source",
+          "pilot_geography",
+          "measurement",
+          "failure_trigger",
+          "expansion_gate"
+        ],
+        "supersedes_queue_alias": "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+      }
+    ]
   },
   "queued_next_research_slices": [
     "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
     "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
     "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
-    "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+    "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
   ],
   "parallel_does_not_displace": [
     "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
@@ -303,18 +418,18 @@
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS",
     "no_new_principle",
-    "registration_only",
+    "stop_adding_conceptual_branches",
+    "operating_passes_locked_in_order",
+    "parallel_until_empirical_build_pass",
+    "feeder_binding_remains_main_fiscal_lane",
+    "definition_locks_remain_structural",
     "never_call_it_free",
     "positive_compact_not_exit_penalty",
     "no_mobility_wall",
-    "bona_fide_residency_room_not_irrebuttable_presumption",
-    "bachelor_not_only_prestige_path",
-    "education_is_public_capital_investment",
-    "health_inside_education_foundation",
-    "students_as_builders",
-    "hyp130_demand_map_required",
-    "research_ip_feeds_prosperity_fund_research",
-    "legal_gates_required_per_track",
+    "repayment_is_incremental_subsidy_not_punitive_debt",
+    "gap_actions_build_expand_partner_import",
+    "implementation_matrix_is_8_16y_program",
+    "system_chain_130_133_129_132_131",
     "does_not_displace_feeder_binding_or_definition_locks"
   ]
 }

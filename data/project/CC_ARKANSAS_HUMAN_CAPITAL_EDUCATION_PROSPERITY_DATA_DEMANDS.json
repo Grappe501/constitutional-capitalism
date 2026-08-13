@@ -3,27 +3,30 @@
   "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
   "incubator_alias": "HYP-133",
-  "decision_id": "CC-DEC-138",
-  "update_id": "UPD-151",
-  "rule": "KEEP_AS_HYPOTHESIS. Education is a public capital investment, not an unlimited transferable benefit and not 'free.' Prefer positive residency-and-service compact over exit penalties. Classify every major design element as CAN START NOW / RULE CHANGE / LEGISLATION / CONSTITUTIONAL / FEDERAL before scale claims. Link Strategic Human-Capital Demand Map to HYP-130. Do not invent legal clearance or seat counts. Does not displace feeder-binding or definition-locks.",
+  "decision_id": "CC-DEC-139",
+  "update_id": "UPD-152",
+  "prior_registration_decision_id": "CC-DEC-138",
+  "rule": "KEEP_AS_HYPOTHESIS. Stop adding conceptual branches. Prove operating architecture in locked order: (1) Demand Map (2) Compact legal memo (3) Learning Network + Centers with BUILD/EXPAND/PARTNER/IMPORT-TEMPORARILY (4) Full implementation/legal matrix as 8–16y program. Feeder Binding remains main fiscal lane; definition-locks structural; HYP-133 parallel until empirical build. Never 'free.' Repayment = incremental subsidy not punitive debt. System chain: HYP-130→133→129→132→131.",
   "demands": [
     {
       "id": "CC-DEM-HCEP-001",
       "name": "strategic_human_capital_demand_map",
-      "question": "Can Arkansas bind Need → available seats → graduates → shortages → geographic shortage → program expansion required for priority professions (rural physicians, maternal health, dentists, vets, teachers, trades, AI, grid/nuclear, food science, manufacturing, public administration)?",
-      "status": "NEE",
+      "question": "Can Arkansas bind a statewide needs ledger: occupation/capability → current employment → projected demand → replacement demand → wages → current Arkansas education programs → enrollment → completers → geographic shortages → people Arkansas effectively imports → missing educational capacity — starting with healthcare, dental/maternal, agriculture/food, trades, engineering/energy, teachers, advanced manufacturing, and AI/technology?",
+      "status": "NEE_QUEUED_PASS_1",
       "priority": "critical",
       "layer": "capacity",
       "linked": ["HYP-130"],
+      "pass_order": 1,
       "next_slice": "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0"
     },
     {
       "id": "CC-DEM-HCEP-002",
       "name": "residency_and_service_compact_legal_design",
-      "question": "What constitutionally valid bona fide-residency and service-obligation / subsidy-repayment structures can Arkansas use for Resident Investment Rate and State Strategic Capacity Contracts without creating exit taxes, irrebuttable presumptions, or travel-right violations?",
-      "status": "NEE",
+      "question": "What can Arkansas offer bona fide residents; how long may residency reasonably be required; what additional subsidy is the 'Arkansas investment'; how do serve-or-repay contracts, hardship/disability/military exceptions, interstate mobility, and professional programs work — with repayment following the incremental subsidy rather than punitive tuition debt — in a constitutional/legal memo before policy?",
+      "status": "NEE_QUEUED_PASS_2",
       "priority": "critical",
       "layer": "legal_constitutional",
+      "pass_order": 2,
       "next_slice": "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0"
     },
     {
@@ -36,21 +39,24 @@
     },
     {
       "id": "CC-DEM-HCEP-004",
-      "name": "education_track_legal_gate_matrix",
-      "question": "For each of the 18 HYP-133 tracks, which elements CAN START NOW, require rule change, legislation, constitutional change, or federal dependency?",
-      "status": "NEE",
+      "name": "education_implementation_legal_matrix",
+      "question": "For every major HYP-133 component, what is the pathway existing authority → agency/rule change → appropriation → statute → constitutional change → federal dependency, plus responsible institution, funding source, pilot geography, measurement, failure trigger, and expansion gate — as an 8–16 year implementation program?",
+      "status": "NEE_QUEUED_PASS_4",
       "priority": "critical",
       "layer": "transition",
-      "next_slice": "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+      "pass_order": 4,
+      "next_slice": "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0",
+      "alias_of_prior": "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
     },
     {
       "id": "CC-DEM-HCEP-005",
       "name": "learning_network_and_regional_centers",
-      "question": "How should the 1,759 HYP-130 strategic programs specialize into an Arkansas Learning Network with regional Centers of Excellence rather than every institution duplicating everything?",
-      "status": "NEE",
+      "question": "Mapping the 1,759-program inventory onto the Demand Map: what already exists, what needs expansion, what needs regional redistribution, and what capability simply does not exist — with BUILD / EXPAND / PARTNER / IMPORT-TEMPORARILY recommendations rather than gap-only records?",
+      "status": "NEE_QUEUED_PASS_3",
       "priority": "critical",
       "layer": "network_architecture",
       "linked": ["HYP-124", "HYP-130"],
+      "pass_order": 3,
       "next_slice": "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0"
     },
     {
@@ -117,7 +123,7 @@
     "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
     "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
     "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
-    "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+    "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
   ],
   "parallel_does_not_displace": [
     "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
@@ -126,10 +132,16 @@
   "holds": [
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS",
+    "stop_adding_conceptual_branches",
+    "operating_passes_locked_in_order",
+    "parallel_until_empirical_build_pass",
+    "feeder_binding_remains_main_fiscal_lane",
     "never_call_it_free",
     "positive_compact_not_exit_penalty",
     "no_mobility_wall",
-    "legal_gates_required_per_track",
+    "repayment_is_incremental_subsidy_not_punitive_debt",
+    "gap_actions_build_expand_partner_import",
+    "system_chain_130_133_129_132_131",
     "does_not_displace_feeder_binding_or_definition_locks"
   ]
 }

@@ -2340,39 +2340,56 @@
   },
   "arkansas_human_capital_education_prosperity": {
     "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
-    "status": "PASSED_REGISTRATION_ONLY",
-    "mode": "hypothesis_registration_largest_class_education_module",
+    "status": "PASSED_REGISTRATION_AND_OPERATING_ARCHITECTURE_LOCKED",
+    "mode": "largest_class_education_module_four_pass_operating_architecture",
     "hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
     "incubator_alias": "HYP-133",
-    "decision_id": "CC-DEC-138",
-    "update_id": "UPD-151",
+    "decision_id": "CC-DEC-139",
+    "update_id": "UPD-152",
+    "registration_decision_id": "CC-DEC-138",
     "decision_posture": "KEEP_AS_HYPOTHESIS",
     "module_scale": "LARGEST_CLASS_ARKANSAS_TRANSITION_ARCHITECTURE",
     "framework": "data/project/arkansas_human_capital_education_prosperity_system.json",
     "demands": "data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json",
     "dossier": "content/research/hypotheses/arkansas-human-capital-and-education-prosperity-system.md",
     "return": "reports/CC_ARKANSAS_HUMAN_CAPITAL_AND_EDUCATION_PROSPERITY_SYSTEM_1_0_RETURN.md",
+    "operating_architecture_return": "reports/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_OPERATING_ARCHITECTURE_LOCK_1_0_RETURN.md",
     "linked_hypotheses": ["HYP-124", "HYP-129", "HYP-130", "HYP-131", "HYP-132"],
+    "system_chain": ["HYP-130", "HYP-133", "HYP-129", "HYP-132", "HYP-131"],
     "stages": ["universal_foundation_plus_health", "pathway_formation_14_18", "advanced_capacity_investment", "adult_lifelong_reskilling"],
+    "operating_passes_locked": [
+      "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
+      "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
+      "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
+      "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
+    ],
+    "lane_posture": {
+      "main_fiscal_evidence": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+      "structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+      "hyp133": "PARALLEL_UNTIL_EMPIRICAL_BUILD_PASS"
+    },
     "hard_safeguards": [
+      "stop_adding_conceptual_branches",
       "never_call_it_free",
       "positive_compact_not_exit_penalty",
       "no_mobility_wall",
-      "bona_fide_residency_room_not_irrebuttable_presumption",
+      "repayment_is_incremental_subsidy_not_punitive_debt",
+      "gap_actions_build_expand_partner_import",
       "bachelor_not_only_prestige_path",
       "education_is_public_capital_investment",
-      "legal_gates_required_per_track",
       "no_new_principle"
     ],
     "research_next": [
       "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
       "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
       "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
-      "CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0"
+      "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
     ],
     "holds": [
       "overall_percent_held_at_43",
       "KEEP_AS_HYPOTHESIS",
+      "parallel_until_empirical_build_pass",
+      "feeder_binding_remains_main_fiscal_lane",
       "does_not_displace_feeder_binding_or_definition_locks"
     ]
   },

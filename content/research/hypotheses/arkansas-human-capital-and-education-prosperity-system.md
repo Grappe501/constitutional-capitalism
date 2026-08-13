@@ -1,7 +1,7 @@
 # CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM (HYP-133)
 
 **Status:** Research hypothesis — **not doctrine** · **not a principle** · **not “free college”** · **not an exit wall**  
-**Update:** UPD-151 · Decision: CC-DEC-138 (`KEEP_AS_HYPOTHESIS`)  
+**Update:** UPD-152 · Decision: CC-DEC-139 (operating architecture locked) · Registration: CC-DEC-138  
 **Module scale:** Largest-class Arkansas transition architecture  
 **Framework:** `data/project/arkansas_human_capital_education_prosperity_system.json`  
 **Demands:** `data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json`
@@ -86,27 +86,28 @@ Early childhood · K–8 · Secondary pathways · Rural/regional magnets · CTE/
 
 Each track requires legal gates: **CAN START NOW / RULE CHANGE / LEGISLATION / CONSTITUTIONAL / FEDERAL**.
 
-## Links
+## System chain (locked)
 
-| Hypothesis | Join |
-|---|---|
-| HYP-124 | Distributed hubs / access standard |
-| HYP-130 | Demand Map; program inventory |
-| HYP-131 | Human-capital engine; IP → Prosperity Fund; Workforce Prosperity |
-| HYP-132 | Keep/Return/Attract; Come Home; family package schools |
+> **HYP-130** tells Arkansas what capability it needs. **HYP-133** builds the people capable of doing it. **HYP-129** determines where we prove it locally. **HYP-132** gives those people reasons to stay, return, raise families and build wealth here. **HYP-131** captures enough resulting prosperity to reduce compulsory taxation.
+
+## Operating architecture (locked — stop conceptual branching)
+
+When HYP-133 gets its next substantial pass, execute in this order only:
+
+| # | Pass | Core deliverable |
+|---|---|---|
+| **1** | Human-Capital Demand Map | Statewide ledger: occupation → employment → projected/replacement demand → wages → programs → enrollment → completers → geographic shortages → imports → missing capacity. First wave: healthcare, dental/maternal, ag/food, trades, engineering/energy, teachers, advanced mfg, AI/tech |
+| **2** | Residency/Service Compact legal design | Constitutional/legal memo: bona fide offer, residency duration, incremental subsidy definition, serve-or-repay, exceptions, interstate mobility, professional programs — repayment ≠ punitive tuition debt |
+| **3** | Learning Network + Centers | Map 1,759 programs onto Demand Map; for gaps issue **BUILD / EXPAND / PARTNER / IMPORT-TEMPORARILY** |
+| **4** | Implementation/legal matrix | Per component: existing authority → rule → appropriation → statute → constitutional → federal + institution, funding, pilot geography, measurement, failure trigger, expansion gate — the **8–16 year program** |
+
+**Global lanes unchanged:** Feeder Binding = main fiscal/evidence · definition-locks = structural · HYP-133 = **parallel until empirical build pass**.
 
 ## Holds
 
-- Registration only — no invented seat counts or locked compact statute  
+- Stop adding conceptual branches  
 - No new principle · 43% dial held  
-- Does not displace feeder-binding pass or definition-locks  
-
-## Next research
-
-1. `CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0`  
-2. `CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0`  
-3. `CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0`  
-4. `CC-ARKANSAS-EDUCATION-TRACK-LEGAL-GATE-MATRIX-1.0`
+- Does not displace feeder-binding or definition-locks
 
 ## Long-term vision
 
