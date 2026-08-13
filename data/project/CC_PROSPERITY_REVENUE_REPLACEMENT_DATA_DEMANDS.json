@@ -1,11 +1,11 @@
 {
-  "version": "1.2.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
+  "version": "1.3.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-126",
-  "update_id": "UPD-139",
-  "rule": "Demands guide Money Flow Map inventory and replacement modeling. No tax abolition. Unmodeled prosperity returns are not replacement dollars. Regressive swaps must be surfaced. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-127",
+  "update_id": "UPD-140",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -89,10 +89,10 @@
       "id": "CC-DEM-RRR-010",
       "name": "prosperity_fund_and_public_returns_modeling",
       "question": "Under what assumptions could prosperity-fund dividends or public investment returns become material replacement dollars — and what is the honest timeline before they count?",
-      "status": "QUEUED_PROSPERITY_REVENUE_MODELING_TRACK",
+      "status": "ARCHITECTURE_REGISTERED_CASHFLOW_NEE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "artifact": "data/project/prosperity_revenue_modeling_framework.json"
+      "artifact": "data/project/arkansas_public_income_engine_model.json"
     },
     {
       "id": "CC-DEM-RRR-011",
@@ -132,15 +132,42 @@
       "id": "CC-DEM-RRR-015",
       "name": "prosperity_linked_and_productive_wealth_cashflows",
       "question": "For prosperity-linked revenue and productive public wealth, which assets, capital requirements, return/volatility assumptions, and years-to-scale are required before material incremental replacement dollars exist?",
-      "status": "QUEUED_NEXT_SLICE",
+      "status": "ENGINE_ARCHITECTURE_PASSED_CASHFLOWS_QUEUED",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "next_slice": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0"
+      "artifact": "data/project/arkansas_public_income_engine_model.json",
+      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
     },
     {
       "id": "CC-DEM-RRR-016",
       "name": "renter_economic_incidence",
       "question": "What share of residential property tax is economically borne by renters through rents in Arkansas markets?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "incidence"
+    },
+    {
+      "id": "CC-DEM-RRR-017",
+      "name": "ten_public_income_engines_architecture",
+      "question": "Can HYP-131 specify ten public-income engines (Use, Impact, Depletion, Visitor, Luxury, Human-capital, Value Capture, Enterprise, Prosperity Fund, External Income) with constitutional guardrails and a zero-count-until-cashflow rule?",
+      "status": "PASSED_ARCHITECTURE_V1",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/project/arkansas_public_income_engine_model.json"
+    },
+    {
+      "id": "CC-DEM-RRR-018",
+      "name": "use_and_depletion_incremental_cashflows",
+      "question": "What incremental Use and Depletion cash flows (beyond already-earmarked fuel/severance) are legally available and stress-tested?",
+      "status": "QUEUED_NEXT",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
+    },
+    {
+      "id": "CC-DEM-RRR-019",
+      "name": "workforce_prosperity_contribution_incidence",
+      "question": "For a Workforce Prosperity Contribution, what is the incidence on workers, consumers, and shareholders under alternative bases and credit designs?",
       "status": "NEE",
       "priority": "critical",
       "layer": "incidence"
@@ -150,6 +177,8 @@
     "KEEP_AS_HYPOTHESIS",
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
+    "zero_counted_until_cashflow_model",
+    "no_discriminatory_export_tax",
     "regressive_swap_surfaced",
     "debt_service_protected_first",
     "millage_class_by_millage_class",

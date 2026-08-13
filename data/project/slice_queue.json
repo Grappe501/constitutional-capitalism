@@ -1803,9 +1803,10 @@
     },
     "incremental_modeled_replacement_capacity_usd": 0,
     "research_next": [
-      "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
       "CC-ARKANSAS-REVENUE-REPLACEMENT-DISTRICT-AV-AND-MUNICIPAL-SPLIT-1.0"
     ],
+    "superseded_next_by": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
     "parallel_empirical_next": [
       "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
     ],
@@ -1822,18 +1823,68 @@
   },
   "arkansas_prosperity_revenue_modeling_queued": {
     "slice_id": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
-    "status": "QUEUED_NEXT_TAX_RESEARCH",
+    "status": "SUPERSEDED_EXECUTED_AS_PUBLIC_INCOME_ENGINE_MODEL",
+    "executed_as": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
     "mode": "conventional_vs_prosperity_linked_vs_productive_public_wealth",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
     "framework": "data/project/prosperity_revenue_modeling_framework.json",
     "after": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
-    "purpose": "Model which productive assets, cash flows, capital, returns, volatility, and years are required before $3.859B IIT and layered property targets become realistically replaceable — without counting unmodeled dollars.",
+    "purpose": "Superseded by ten-engine public-income architecture under CC-DEC-127.",
     "holds": [
       "unmodeled_is_not_replacement_dollars",
       "no_abolish_today",
       "KEEP_AS_HYPOTHESIS",
       "overall_percent_held_at_43"
+    ]
+  },
+  "arkansas_public_income_engine_model": {
+    "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+    "status": "PASSED_ENGINE_ARCHITECTURE_ZERO_COUNTED",
+    "mode": "ten_engines_tax_rent_return_constitutional_guardrails",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "decision_id": "CC-DEC-127",
+    "update_id": "UPD-140",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_new_principle": true,
+    "no_abolish_recommendation": true,
+    "program_file": "data/project/arkansas_public_income_engine_model.json",
+    "anchors_file": "data/imports/arkansas-revenue-replacement/public_income_engine_base_anchors.json",
+    "capacity_gap_file": "data/project/arkansas_revenue_replacement_capacity_gap.json",
+    "demand_manifest": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
+    "dossier": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
+    "return": "reports/CC_ARKANSAS_PUBLIC_INCOME_ENGINE_MODEL_1_0_RETURN.md",
+    "counted_toward_replacement_usd": 0,
+    "combined_target_usd": 7231905638,
+    "engines": [
+      "Use",
+      "Impact",
+      "Depletion",
+      "Visitor",
+      "Luxury",
+      "Human-capital",
+      "Value Capture",
+      "Enterprise",
+      "Prosperity Fund",
+      "External Income"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
+    ],
+    "parallel_empirical_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "no_discriminatory_export_tax",
+      "unmodeled_is_not_replacement_dollars"
     ]
   },
   "publication_pass9_structural_deepen": {

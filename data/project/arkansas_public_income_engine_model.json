@@ -1,0 +1,462 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-127",
+  "update_id": "UPD-140",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "status": "ENGINE_ARCHITECTURE_V1_ZERO_COUNTED_UNTIL_CASHFLOW",
+  "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
+  "objective": {
+    "not": "Replace income tax with Tax X",
+    "is": "Move government revenue away from taxing ordinary work and ownership of a home, and toward use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create."
+  },
+  "philosophical_transition": {
+    "TAX": "Government compels payment",
+    "FEE_RENT_ROYALTY": "Payment for use, consumption, depletion, or receipt of value from a public asset/system",
+    "RETURN": "Arkansas earns because Arkansans own productive assets",
+    "direction": "Over time, reduce TAX as FEE/RENT/ROYALTY and RETURN grow"
+  },
+  "count_rule": "Refuse to count any engine dollar toward the ~$7.23B IIT+property replacement requirement until it has an evidence-backed cash-flow model that is incremental, stress-tested, legally available, and reserved for the same essential obligations.",
+  "replacement_targets_usd": {
+    "iit_gross_fy2026": 3859100000,
+    "property_layers_sum_preferred": 3372805638,
+    "combined_illustrative": 7231905638
+  },
+  "counted_toward_replacement_usd": 0,
+  "incremental_modeled_capacity_usd": 0,
+  "constitutional_guardrails": {
+    "import_export_clause": "No Arkansas impost/duty on imports or exports as such (U.S. Const. Art. I, § 10, cl. 2).",
+    "commerce_clause": "No discriminatory tax on goods leaving Arkansas or undue burden on interstate commerce; generally applicable taxes/use taxes with nexus remain available.",
+    "rejected_designs": [
+      {
+        "idea": "Discriminatory tax on goods exported from Arkansas (incl. food-export tax)",
+        "status": "CONSTITUTIONALLY_DISFAVORED",
+        "redirect": "Capture value chain inside Arkansas (food hub / processing / logistics / cooperative ownership returns) before product leaves"
+      },
+      {
+        "idea": "State tax on interstate imports for national defense",
+        "status": "REJECTED",
+        "redirect": "Federal defense responsibility; Arkansas pursues defense/aerospace/procurement as External Income"
+      },
+      {
+        "idea": "Energy export tax / discriminatory interstate surcharge",
+        "status": "CONSTITUTIONALLY_DISFAVORED",
+        "redirect": "Production royalties, public land leases, transmission access, generation partnerships, public ownership interests, utility dividends"
+      }
+    ],
+    "allowed_posture": "Generally applicable taxes and use taxes with sufficient connection; user fees reasonably corresponding to systems used or costs imposed; ownership returns from lawful public productive interests."
+  },
+  "earmark_principle": "Where feasible, revenue should map to purpose: road-use→transportation; energy→energy+Prosperity Fund; visitor→tourism/community infrastructure; carbon impact→remediation/resilience; workforce→education/training; depletion→permanent fund; value capture→community infrastructure.",
+  "base_anchors_file": "data/imports/arkansas-revenue-replacement/public_income_engine_base_anchors.json",
+  "engines": [
+    {
+      "id": "ENGINE-USE",
+      "name": "Use — pay for use, not existence",
+      "income_form": ["FEE_RENT_ROYALTY"],
+      "what_pays": "Use of scarce/public infrastructure and systems",
+      "design_rule": "Fee should reasonably correspond to the public system used or cost imposed",
+      "mechanisms": [
+        "road/freight use and heavy-truck impact",
+        "congestion where relevant",
+        "airport/aviation use",
+        "ports/intermodal",
+        "water and waste systems",
+        "specialized permitting",
+        "recreation/state parks infrastructure",
+        "utility infrastructure access"
+      ],
+      "existing_bound_scale": {
+        "motor_fuels_tax_usd_ytd_may_fy2026": 380887399,
+        "highway_transport_special_revenues_usd_ytd_may_fy2026": 689458005,
+        "status": "ALREADY_EARMARKED_SPECIAL_REVENUE — not free IIT replacement"
+      },
+      "addressable_base_status": "PARTIAL — fuel/highway bound; freight VMT, aviation, water/waste incremental bases NEE",
+      "authority": "State/local user fees and special revenues within constitutional fee/tax distinction and Highway Revenue Distribution constraints",
+      "plausible_incremental_range_usd_per_year": {
+        "low": null,
+        "high": null,
+        "status": "UNMODELED — do not invent",
+        "note": "Existing ~$0.38B+ fuel stream shows Use can be material statewide, but is already dedicated to highways"
+      },
+      "incidence": "Users of infrastructure; heavy users should pay more than passive homeowners — progressive vs existence-tax if designed well; regressive if flat fees hit low-income mobility",
+      "volatility": "Traffic/fuel-efficiency/EV transition sensitive",
+      "earmark": "transportation / system maintenance",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T1 possible at scale for roads; T4 strong if use≠existence; T3 requires mobility equity design"
+    },
+    {
+      "id": "ENGINE-IMPACT",
+      "name": "Impact — Carbon Balance System",
+      "income_form": ["FEE_RENT_ROYALTY", "TAX"],
+      "what_pays": "Measurable carbon/environmental costs created; restoration can earn",
+      "design_rule": "Pollution pays; restoration earns — not merely a punitive carbon tax brand",
+      "mechanisms": [
+        "charges on measurable emissions/externalities",
+        "credits/payments for verified sequestration (regenerative ag, reforestation, soil carbon, methane reduction, wetlands, capture)"
+      ],
+      "existing_bound_scale": {
+        "status": "NO_STATEWIDE_CARBON_BALANCE_SYSTEM_BOUND"
+      },
+      "addressable_base_status": "NEE — emissions inventory + MRV design required",
+      "authority": "Likely requires new statute; federal preemption / EPA interaction / interstate leakage must be mapped",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "MIXED — can pass to consumers/workers; credits can help rural ag if additionality real",
+      "volatility": "Policy and commodity sensitive; credit market risk",
+      "earmark": "remediation / resilience / verified drawdown",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "modeling_gates": [
+        "measurement and verification",
+        "leakage",
+        "federal preemption",
+        "competitiveness / border effects",
+        "additionality of credits"
+      ],
+      "t1_t5_posture": "T4 philosophically strong; T1/T2/T5 unknown until modeled"
+    },
+    {
+      "id": "ENGINE-DEPLETION",
+      "name": "Depletion — make depletion pay for permanence",
+      "income_form": ["FEE_RENT_ROYALTY"],
+      "what_pays": "Removal of finite public/natural wealth",
+      "design_rule": "When a finite Arkansas asset leaves the ground, convert part of proceeds into productive assets that remain",
+      "mechanisms": [
+        "royalty",
+        "severance redesign",
+        "public lease revenue",
+        "community impact payment",
+        "permanent-fund contribution"
+      ],
+      "existing_bound_scale": {
+        "severance_gr_fy2026_usd": 10600000,
+        "status": "BOUND_TOO_SMALL — proves redesign needed"
+      },
+      "addressable_base_status": "PARTIAL — production volumes by commodity NEE for full royalty stack",
+      "authority": "Severance/royalty statutes; public land lease authority; permanent fund would need statutory design",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null,
+        "note": "Current $10.6M GR severance cannot carry transition; lithium/gas/minerals/water industrial use need commodity-specific models"
+      },
+      "incidence": "Producers / resource owners; may pass into energy/material prices",
+      "volatility": "HIGH — commodity cycles",
+      "earmark": "permanent Prosperity Fund + community impact",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "philosophy": "lithium leaves Arkansas → permanent Arkansas wealth remains (not just annual budget spend)",
+      "t1_t5_posture": "T1 fails at current severance; T2 high volatility; T4 strong if permanent-fund locked"
+    },
+    {
+      "id": "ENGINE-ENERGY-PUBLIC-INCOME",
+      "name": "Energy as public income (not export tax)",
+      "income_form": ["FEE_RENT_ROYALTY", "RETURN"],
+      "what_pays": "Production/infrastructure participation — Arkansans own a share of enabling productive infrastructure",
+      "design_rule": "Do not discriminate against interstate export; use royalties, leases, transmission access, partnerships, ownership interests, utility dividends",
+      "mechanisms": [
+        "production royalties",
+        "public land leases",
+        "transmission access charges",
+        "state infrastructure participation",
+        "generation partnerships",
+        "public ownership interests",
+        "resource rents",
+        "utility dividends"
+      ],
+      "existing_bound_scale": {
+        "status": "OVERLAPS_DEPLETION_AND_ENTERPRISE — no separate energy-ownership return series bound"
+      },
+      "addressable_base_status": "NEE — generation/transmission/ownership map required (ties to Energy Sovereignty research)",
+      "authority": "Utility regulation, lease statutes, public corporation / partnership law; Commerce Clause bars export-discriminatory taxes",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "MIXED — ratepayers vs shareholders vs landowners",
+      "volatility": "MODERATE_TO_HIGH — power markets / fuel prices",
+      "earmark": "energy infrastructure + Prosperity Fund",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "constitutional_note": "Energy export tax rejected; ownership/participation path preferred",
+      "t1_t5_posture": "Potentially among largest long-run nontraditional engines — only after ownership cash flows modeled"
+    },
+    {
+      "id": "ENGINE-VISITOR",
+      "name": "Visitor — external dollars for visitor infrastructure",
+      "income_form": ["FEE_RENT_ROYALTY", "TAX"],
+      "what_pays": "Outside consumption of Arkansas amenities",
+      "design_rule": "Visitors contribute more than residents to visitor infrastructure; test demand suppression",
+      "mechanisms": [
+        "hotel/lodging",
+        "short-term rentals",
+        "rental vehicles",
+        "entertainment admissions",
+        "destination/resort districts",
+        "recreation permits",
+        "tourism-area improvement districts"
+      ],
+      "existing_bound_scale": {
+        "state_2pct_tourism_tax_fy2026_usd": 26851526,
+        "status": "BOUND_SMALL_VS_IIT — already dedicated to tourism marketing"
+      },
+      "addressable_base_status": "PARTIAL — 2% tax bound; full lodging/STR/vehicle base incremental NEE",
+      "authority": "Existing Parks & Tourism tax (2%); local hospitality options; new tiers need statute/ordinance",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null,
+        "note": "Existing ~$27M shows visitor engine exists but is ~0.7% of IIT; expansion needs demand-elasticity model"
+      },
+      "incidence": "Primarily nonresidents if designed well; residents travel/leisure also hit",
+      "volatility": "Tourism-cycle / recession sensitive",
+      "earmark": "parks + roads + tourism infrastructure + community preservation + local prosperity accounts",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T4 strong for external-dollar logic; T1 currently small"
+    },
+    {
+      "id": "ENGINE-LUXURY",
+      "name": "Luxury — discretionary consumption over ordinary needs",
+      "income_form": ["TAX"],
+      "what_pays": "High-discretion consumption; essentials protected",
+      "design_rule": "Essentials protected (food state rate already 0%); avoid dozens of nuisance taxes; test broad luxury tier yield vs avoidance",
+      "mechanisms": [
+        "very high-value vehicles",
+        "private aviation",
+        "luxury recreational equipment",
+        "second/vacation home transfer taxes (not recurring property tax)",
+        "luxury lodging",
+        "high-end entertainment",
+        "selected high-value discretionary purchases"
+      ],
+      "existing_bound_scale": {
+        "state_sales_use_fy2026_usd": 3666700000,
+        "state_food_rate_percent": 0.0,
+        "gaming_gr_fy2026_usd": 64400000,
+        "status": "BROAD_SALES_ALREADY_SPENT — luxury differential unmodeled"
+      },
+      "addressable_base_status": "NEE — luxury taxable base definition + elasticity",
+      "authority": "Excise / sales differential statutes; must remain generally applicable / non-discriminatory as to interstate commerce",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null,
+        "warning": "Must not become regressive broad consumption hike rebranded as luxury"
+      },
+      "incidence": "Intended high-discretion buyers; avoidance and definition games are the risk",
+      "volatility": "Cyclical with luxury demand",
+      "earmark": "optional — prefer transparent purpose funds over opaque GR dump",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T3 better than broad sales hike if truly luxury-tier; T1 unknown; prior slice forbids counting sales swap as prosperity-aligned by default"
+    },
+    {
+      "id": "ENGINE-HUMAN-CAPITAL",
+      "name": "Human-capital — Workforce Prosperity Contribution",
+      "income_form": ["TAX", "FEE_RENT_ROYALTY"],
+      "what_pays": "Corporate dependence on publicly built workforce",
+      "design_rule": "Pay into the workforce system or directly help build the workforce via verified investments",
+      "mechanisms": [
+        "contribution base on payroll / employment / profits or value-added / workforce demand / use of public training",
+        "credits for registered apprenticeships, employee education, university partnerships, training facilities, paid internships, rural workforce development"
+      ],
+      "existing_bound_scale": {
+        "corporate_income_fy2026_usd": 523600000,
+        "status": "EXISTING_CORPORATE_ALREADY_SPENT — WPC is a redesign hypothesis, not free capacity"
+      },
+      "addressable_base_status": "NEE — payroll/value-added base and credit leakage model required",
+      "authority": "Likely new statute; interaction with corporate income tax and incentive stack",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "CRITICAL GATE — corporate taxes can fall on workers, consumers, or shareholders; must model before claiming prosperity alignment",
+      "volatility": "Business-cycle sensitive",
+      "earmark": "K-12 → CTE → apprenticeships → community colleges → universities → strategic capacity",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T4 strong if credit path real; T3 unresolved until incidence modeled"
+    },
+    {
+      "id": "ENGINE-VALUE-CAPTURE",
+      "name": "Value Capture — public participation in upside government creates",
+      "income_form": ["FEE_RENT_ROYALTY", "RETURN"],
+      "what_pays": "Appreciation / profits created by public investment",
+      "design_rule": "Public investment → contractual public participation in upside (not hope for jobs alone)",
+      "mechanisms": [
+        "value capture districts",
+        "infrastructure participation agreements",
+        "ground leases",
+        "revenue participation",
+        "equity/warrants where legally appropriate",
+        "royalties / profit participation from publicly capitalized enterprises"
+      ],
+      "existing_bound_scale": {
+        "status": "NO_STATEWIDE_VALUE_CAPTURE_CASHFLOW_SERIES_BOUND"
+      },
+      "addressable_base_status": "NEE — inventory of major incentive/infrastructure packages + legal templates",
+      "authority": "Local improvement districts, development agreements, lease/authority statutes; gift/loan of credit constraints must be mapped",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "Developers / benefited landowners / project sponsors — can be progressive relative to general taxation if targeted",
+      "volatility": "Project-specific; lumpy",
+      "earmark": "community infrastructure",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T4 core to 'government makes money'; T1 builds slowly project-by-project"
+    },
+    {
+      "id": "ENGINE-ENTERPRISE",
+      "name": "Enterprise — revenues/dividends from productive public assets",
+      "income_form": ["RETURN"],
+      "what_pays": "Returns from state/community productive interests (not running grocery stores everywhere)",
+      "design_rule": "When public capital helps create a productive asset, retain some productive economic interest",
+      "mechanisms": [
+        "energy / broadband / infrastructure equity",
+        "land leases",
+        "logistics / industrial parks",
+        "housing / water infrastructure interests",
+        "public-private enterprises",
+        "community development finance returns",
+        "IP from publicly financed research"
+      ],
+      "existing_bound_scale": {
+        "status": "UNMODELED — zero replacement dollars"
+      },
+      "addressable_base_status": "NEE — public balance sheet inventory",
+      "authority": "Public corporation, authority, and investment statutes; constitutional gift/loan limits",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "Returns reduce need for household TAX if real — governance/corruption risk must be controlled",
+      "volatility": "Asset-class dependent",
+      "earmark": "Tax Retirement Fund / system reinvestment",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "Endgame engine with Enterprise+Prosperity Fund — only counts after demonstrated returns"
+    },
+    {
+      "id": "ENGINE-PROSPERITY-FUND",
+      "name": "Prosperity Fund — compounded return on accumulated public wealth",
+      "income_form": ["RETURN"],
+      "what_pays": "Investment return on ring-fenced permanent wealth (fed by depletion, energy participation, surplus dedication, etc.)",
+      "design_rule": "Unmodeled fund earnings are $0 replacement dollars; spend-vs-save rules must protect corpus",
+      "mechanisms": [
+        "permanent fund corpus",
+        "payout rule",
+        "dedication from depletion/energy/value-capture",
+        "automatic Tax Retirement Fund transfers when payout exceeds safety threshold"
+      ],
+      "existing_bound_scale": {
+        "status": "FUND_DOES_NOT_EXIST — $0"
+      },
+      "addressable_base_status": "NEE — capital accumulation path + return assumptions + years-to-scale",
+      "authority": "Would require statutory/constitutional fund design",
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null,
+        "critical_questions": [
+          "how much capital",
+          "what return assumptions",
+          "what volatility",
+          "how many years before material payout vs $3.859B IIT"
+        ]
+      },
+      "incidence": "Intergenerational — benefits future taxpayers if corpus protected",
+      "volatility": "Market + contribution-flow sensitive",
+      "earmark": "Tax Retirement Fund / permanent wealth",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "T4 essential to philosophy; T1 is a multi-decade capital question — refuse premature counting"
+    },
+    {
+      "id": "ENGINE-EXTERNAL-INCOME",
+      "name": "External Income — pull outside dollars into Arkansas",
+      "income_form": ["RETURN", "FEE_RENT_ROYALTY", "STRATEGY_NOT_TAX"],
+      "what_pays": "Outside demand captured as Arkansas value-add, contracts, and ownership returns — not a tax on leaving",
+      "design_rule": "Create taxable/profitable value before the product leaves; bring outside dollars in rather than tax Arkansans harder",
+      "mechanisms": [
+        "energy value chain",
+        "food hubs / processing / logistics cooperatives",
+        "tourism",
+        "defense/aerospace/federal procurement",
+        "technology and manufacturing",
+        "higher education / healthcare / research",
+        "intellectual property",
+        "logistics"
+      ],
+      "existing_bound_scale": {
+        "status": "STRATEGY_LAYER — not a single revenue line; tourism/defense/energy overlaps other engines"
+      },
+      "addressable_base_status": "NEE — sector export/GSP and public capture share models",
+      "authority": "Primarily economic development + ownership design; food-export tax rejected",
+      "food_export_redirect": {
+        "rejected": "Specific tax because food is exported to another state",
+        "preferred": "farmer → Arkansas food hub → premium out-of-state market; retain processing/logistics/marketing/cooperative/facility/ownership margins inside Arkansas"
+      },
+      "defense_redirect": {
+        "rejected": "State import tax for defense",
+        "preferred": "Defense manufacturing, aerospace, logistics, cybersecurity, veteran pipelines, federal procurement as external income"
+      },
+      "plausible_incremental_range_usd_per_year": {
+        "status": "UNMODELED",
+        "low": null,
+        "high": null
+      },
+      "incidence": "Depends on ownership structure — community capture vs leakage",
+      "volatility": "Sector-specific",
+      "earmark": "local prosperity accounts / productive ownership / Tax Retirement Fund when returns exist",
+      "counts_toward_replacement_usd": 0,
+      "cash_flow_model_status": "NOT_STARTED",
+      "t1_t5_posture": "Not taxation — state economic strategy that feeds Enterprise/Prosperity Fund over time"
+    }
+  ],
+  "engine_summary_table": [
+    { "engine": "Use", "what_pays": "use of public infrastructure" },
+    { "engine": "Impact", "what_pays": "measurable costs/externalities created" },
+    { "engine": "Depletion", "what_pays": "removal of finite public/natural wealth" },
+    { "engine": "Visitor", "what_pays": "outside consumption of Arkansas amenities" },
+    { "engine": "Luxury", "what_pays": "high-discretion consumption" },
+    { "engine": "Human-capital", "what_pays": "corporate dependence on publicly built workforce" },
+    { "engine": "Value Capture", "what_pays": "appreciation created by public investment" },
+    { "engine": "Enterprise", "what_pays": "revenues/dividends from productive public assets" },
+    { "engine": "Prosperity Fund", "what_pays": "compounded return from accumulated public wealth" },
+    { "engine": "External Income", "what_pays": "outside dollars captured via value chains and contracts (strategy)" }
+  ],
+  "mapping_from_prior_three_categories": {
+    "CONVENTIONAL_PUBLIC_REVENUE": ["partial Use (existing fees)", "Luxury (careful)", "Human-capital (if tax-form)", "existing Enterprise tax lines"],
+    "PROSPERITY_LINKED_REVENUE": ["Use (new)", "Impact", "Depletion", "Visitor", "Value Capture", "Energy public income", "External Income"],
+    "PRODUCTIVE_PUBLIC_WEALTH": ["Enterprise", "Prosperity Fund", "Energy ownership returns"]
+  },
+  "next_modeling_slices": [
+    "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0",
+    "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
+    "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+    "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0"
+  ],
+  "holds": [
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS",
+    "no_abolish_today",
+    "unmodeled_is_not_replacement_dollars",
+    "zero_counted_until_cashflow_model",
+    "no_discriminatory_export_tax",
+    "defense_is_federal_ledger",
+    "regressive_swap_surfaced"
+  ]
+}

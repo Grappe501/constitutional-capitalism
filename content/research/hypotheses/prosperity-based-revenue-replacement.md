@@ -1,54 +1,57 @@
 # CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM (HYP-131)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not an abolition plan**  
-**Latest update:** UPD-139 · Decision: CC-DEC-126 (property collections / debt-service map)  
-**Prior:** UPD-138 / CC-DEC-125 (primary bind + T1–T5) · UPD-136 / CC-DEC-123 (registration)  
-**Hypothesis:** `CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM` (`HYP-131`)  
-**Architecture:** `data/project/arkansas_revenue_replacement_architecture.json`  
-**Ledger:** `data/project/arkansas_revenue_replacement_ledger.json`  
+**Latest update:** UPD-140 · Decision: CC-DEC-127 (Public Income Engine Model)  
+**Prior:** UPD-139 / CC-DEC-126 · UPD-138 / CC-DEC-125 · UPD-136 / CC-DEC-123  
+**Engine model:** `data/project/arkansas_public_income_engine_model.json`  
 **Capacity gap:** `data/project/arkansas_revenue_replacement_capacity_gap.json`  
-**Prosperity modeling framework:** `data/project/prosperity_revenue_modeling_framework.json`  
-**Demands:** `data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json`  
-**Latest return:** `reports/CC_PHASE_2_1_ARKANSAS_PROPERTY_TAX_COLLECTIONS_INCIDENCE_AND_DEBT_SERVICE_MAP_1_0_RETURN.md`
+**Latest return:** `reports/CC_ARKANSAS_PUBLIC_INCOME_ENGINE_MODEL_1_0_RETURN.md`
 
-## Central question
+## Objective (locked)
 
-> Exactly what revenue must be replaced, who currently depends on it, and what replacement sources can grow with prosperity without simply shifting the same burden onto ordinary people through another tax?
+Not: replace income tax with Tax X.
 
-## Arithmetic fork (forced by evidence)
+Yes: move government revenue away from taxing ordinary work and homeownership toward **use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create.**
 
-Arkansas **cannot** simply abolish personal income tax and property tax by leaning harder on streams it already has. Resource revenue is negligible; enterprise/corporate dollars are already committed; a large sales-tax swap could scale mathematically but risks renaming the household burden.
+## TAX → FEE/RENT/ROYALTY → RETURN
 
-## Bound / preferred dollars
+Over time, reduce **TAX** as **FEE/RENT/ROYALTY** and **RETURN** grow.
 
-| Target | Amount | Notes |
-|---|---:|---|
-| IIT FY2026 gross | **$3.859B** | BOUND |
-| School URT | **$1.603B** | BOUND |
-| Additional school M&O above URT | **~$64M** | ESTIMATED — DESE share |
-| School debt-service millage | **~$945M** | ESTIMATED — **~94% of non-URT school mills** |
-| County millage | **~$497M** | ESTIMATED — AV-weighted |
-| Municipal / special | **~$231M / ~$33M** | ESTIMATED — share method |
-| Property layers sum | **~$3.37B** | mixed bind quality |
+## Ten public-income engines
 
-**$1 of URT ≠ $1 of city millage ≠ $1 of bonded debt-service millage.**
+| Engine | What pays |
+|---|---|
+| **Use** | Use of public infrastructure |
+| **Impact** | Measurable costs/externalities (Carbon Balance: pollution pays; restoration earns) |
+| **Depletion** | Removal of finite wealth → permanent fund |
+| **Visitor** | Outside consumption of Arkansas amenities |
+| **Luxury** | High-discretion consumption (essentials protected; food state rate 0%) |
+| **Human-capital** | Corporate dependence on publicly built workforce |
+| **Value Capture** | Appreciation created by public investment |
+| **Enterprise** | Dividends from productive public assets |
+| **Prosperity Fund** | Compounded return on accumulated public wealth |
+| **External Income** | Outside dollars via value chains/contracts (strategy, not export tax) |
+
+**Counted toward ~$7.23B IIT+property map: $0** until each stream has an evidence-backed cash-flow model.
+
+## Constitutional guardrails
+
+- No discriminatory export/import duties (Import-Export Clause; Commerce Clause).  
+- Rejected: food-export tax; energy export tax; state defense-import tax.  
+- Preferred: in-state value-chain capture; energy royalties/ownership; federal defense as External Income.
+
+## Arithmetic still in force
+
+- IIT ~**$3.859B**; property layers ~**$3.37B** (URT bound; ~94% of non-URT school mills are debt).  
+- Existing severance ~**$10.6M**; tourism 2% ~**$27M**; motor fuels ~**$381M** YTD (already highway-earmarked).  
+- Conventional Resource/Enterprise/Consumption cannot close the gap without burden rename.
 
 ## Transition rules
 
 1. Never retire a tax dollar until a recurring replacement dollar is demonstrated, stress-tested, legally available, and reserved for the same essential obligations.  
-2. Property: retire **millage class by millage class** — debt-service protected first → vulnerable-household relief → local M&O → additional school M&O → URT constitutional transition → final retirement.  
-3. Unmodeled prosperity-fund / public-wealth returns = **$0** replacement dollars.
+2. Property: millage-class by millage-class; debt-service protected first.  
+3. Purpose earmarks where feasible (use→transport; depletion→permanent fund; workforce→education; etc.).
 
-## Three replacement categories (modeling track)
+## Next
 
-| Category | Role | Status |
-|---|---|---|
-| **Conventional public revenue** | Stability / bridge | Bound insufficient as sole path |
-| **Prosperity-linked revenue** | Value capture, infrastructure returns, utility/energy, leases, concessions, tourism mechanisms | UNMODELED |
-| **Productive public wealth** | Prosperity Fund, community equity, public energy/broadband participation | UNMODELED — zero until demonstrated |
-
-Queued: **`CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0`**
-
-## Still NEE
-
-District-AV-weighted school debt dollars; municipal bond/general split; ACS income-quintile incidence; **renter economic incidence through rents**.
+`CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0` — first real incremental cash-flow models, still refusing invented ranges.

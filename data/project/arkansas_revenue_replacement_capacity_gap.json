@@ -1,13 +1,13 @@
 {
-  "version": "1.1.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
-  "prior_slice_id": "CC-PHASE-2.1-ARKANSAS-REVENUE-REPLACEMENT-PRIMARY-BIND-AND-T1-T5-TEST-1.0",
+  "version": "1.2.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+  "prior_slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-126",
-  "update_id": "UPD-139",
+  "decision_id": "CC-DEC-127",
+  "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "PROPERTY_LAYER_HARDENED_GAP_REMAINS",
+  "status": "PUBLIC_INCOME_ENGINES_ARCHITECTED_ZERO_COUNTED",
   "political_conclusion": "NONE — no recommendation to abolish IIT or property tax",
   "core_answers": {
     "iit_recurring_dollars_to_retire": {
@@ -40,16 +40,19 @@
     },
     "which_families_can_carry_meaningful_shares": {
       "conventional_public_revenue": "Stability only — prior T1–T5: Resource fail; Enterprise already spent; Consumption scale but regressive-swap risk",
-      "prosperity_linked_revenue": "UNMODELED — not replacement dollars yet",
-      "productive_public_wealth": "UNMODELED — zero until demonstrated",
+      "ten_public_income_engines": "Architected under CC-DEC-127 — all count $0 until cash-flow models",
+      "prosperity_linked_revenue": "Mapped into Use/Impact/Depletion/Visitor/Value Capture/Energy/External — still UNMODELED",
+      "productive_public_wealth": "Enterprise + Prosperity Fund — UNMODELED zero until demonstrated",
       "not_counted": [
         "Prosperity-fund dividends",
         "Public investment returns",
-        "Unmodeled community enterprise distributions"
+        "Unmodeled community enterprise distributions",
+        "Existing earmarked fuel/tourism streams already spent"
       ]
     }
   },
   "replacement_capacity_gap": {
+    "combined_illustrative_target_usd": 7231905638,
     "state_iit_gap": {
       "target_usd": 3859100000,
       "incremental_modeled_replacement_capacity_usd": 0,
@@ -60,13 +63,16 @@
       "debt_service_estimated_usd": 945415981,
       "other_layers_estimated_usd": 824712976,
       "incremental_modeled_community_replacement_capacity_usd": 0,
-      "gap_status": "FULL_GAP_REMAINS — debt mills protected; prosperity revenues unmodeled"
-    }
+      "gap_status": "FULL_GAP_REMAINS — debt mills protected; public-income engines unmodeled"
+    },
+    "public_income_engines_counted_usd": 0
   },
   "fork": {
     "statement": "Arkansas cannot simply abolish personal income tax and property tax by leaning harder on revenue streams it already has.",
-    "next_track": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
-    "framework": "data/project/prosperity_revenue_modeling_framework.json"
+    "executed_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+    "engine_model": "data/project/arkansas_public_income_engine_model.json",
+    "framework": "data/project/prosperity_revenue_modeling_framework.json",
+    "next_track": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-USE-AND-DEPLETION-CASHFLOWS-1.0"
   },
   "regressivity_surface": {
     "rule": "If a proposed replacement merely shifts burden onto ordinary households through higher prices or regressive consumption taxes, surface that explicitly.",

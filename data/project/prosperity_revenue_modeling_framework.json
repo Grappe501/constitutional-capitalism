@@ -1,72 +1,38 @@
 {
-  "version": "1.0.0",
-  "slice_id": "CC-PHASE-2.1-ARKANSAS-PROPERTY-TAX-COLLECTIONS-INCIDENCE-AND-DEBT-SERVICE-MAP-1.0",
-  "queued_next_slice_id": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
+  "version": "1.1.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
+  "prior_queue_slice_id": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
+  "executed_as": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-MODEL-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-126",
-  "update_id": "UPD-139",
+  "decision_id": "CC-DEC-127",
+  "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "FRAMEWORK_REGISTERED_MODELING_NOT_STARTED",
-  "why_now": "Primary bind + T1–T5 showed conventional streams cannot close IIT/property gaps without regressive burden rename. Property map shows most non-URT school mills are debt-pledged. Tax reform alone is unlikely to reach the destination.",
-  "core_question": "If conventional replacement taxes cannot do this without shifting the burden, what new productive revenue base must Constitutional Capitalism create?",
+  "status": "SUPERSEDED_BY_TEN_ENGINE_PUBLIC_INCOME_MODEL_V1",
+  "engine_model": "data/project/arkansas_public_income_engine_model.json",
+  "why_now": "Conventional streams cannot close IIT/property gaps without burden rename; property side is mostly URT + debt. HYP-131 must become a public-income system (use/impact/depletion/visitor/luxury/human-capital/value-capture/enterprise/prosperity-fund/external-income).",
+  "core_question": "What new productive revenue base must Constitutional Capitalism create — and which engines can produce incremental, legal, reserved cash flows?",
   "transition_rule": "Never retire a tax dollar until a recurring replacement dollar has been demonstrated, stress-tested, legally available, and reserved for the same essential obligations.",
-  "property_rule": "Replace millage-class by millage-class — not one dramatic abolition date.",
-  "categories": [
+  "count_rule": "Zero dollars count toward ~$7.23B until evidence-backed cash-flow model exists.",
+  "categories_retained_as_meta_buckets": [
     {
       "id": "CONVENTIONAL_PUBLIC_REVENUE",
-      "name": "Conventional public revenue",
-      "role": "Stability and bridge — cannot carry the whole transition at bound magnitudes",
-      "examples": [
-        "Existing IIT / sales / corporate / severance / gaming / fees",
-        "Existing property millages (inventory only; not new capacity)"
-      ],
-      "replacement_status": "BOUND_INSUFFICIENT_AS_SOLE_PATH",
-      "counts_as_replacement_dollars": "Only incremental new yield after protecting current obligations — not double-counting already-spent streams"
+      "maps_to_engines": ["Use (existing)", "Luxury (careful)", "Human-capital (tax form)", "existing corporate/sales lines"]
     },
     {
       "id": "PROSPERITY_LINKED_REVENUE",
-      "name": "Prosperity-linked revenue",
-      "role": "Grows from economic activity without simply taxing individual labor or homeownership",
-      "examples": [
-        "Value capture",
-        "Public infrastructure returns",
-        "Economic-development participation",
-        "Locally generated utility/energy revenue",
-        "Public land/resource leases",
-        "Franchise or concession revenues",
-        "Visitor/tourism mechanisms not yet quantified"
-      ],
-      "replacement_status": "UNMODELED",
-      "counts_as_replacement_dollars": false
+      "maps_to_engines": ["Use (new)", "Impact", "Depletion", "Visitor", "Value Capture", "Energy public income", "External Income"]
     },
     {
       "id": "PRODUCTIVE_PUBLIC_WEALTH",
-      "name": "Productive public wealth",
-      "role": "State/community ownership or investment interests that produce recurring returns — the genuinely new balance-sheet requirement",
-      "examples": [
-        "Prosperity Fund",
-        "Community infrastructure equity",
-        "Public energy participation",
-        "Broadband/utilities where appropriate",
-        "Other productive assets"
-      ],
-      "replacement_status": "UNMODELED_ZERO_UNTIL_DEMONSTRATED",
-      "counts_as_replacement_dollars": false,
-      "modeling_demands": [
-        "Which productive assets",
-        "Which cash flows",
-        "How much capital",
-        "What return assumptions",
-        "What volatility",
-        "How many years before $3.859B IIT (and layered property targets) become realistically replaceable"
-      ]
+      "maps_to_engines": ["Enterprise", "Prosperity Fund", "Energy ownership returns"]
     }
   ],
   "holds": [
     "unmodeled_is_not_replacement_dollars",
     "no_abolish_today",
     "KEEP_AS_HYPOTHESIS",
-    "overall_percent_held_at_43"
+    "overall_percent_held_at_43",
+    "zero_counted_until_cashflow_model"
   ]
 }
