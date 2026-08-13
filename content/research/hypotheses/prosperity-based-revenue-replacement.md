@@ -1,10 +1,10 @@
 # CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM (HYP-131)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not an abolition plan**  
-**Latest update:** UPD-148 · Decision: CC-DEC-135 (External Income Sector Capture)  
-**Prior residual harden:** UPD-147 / CC-DEC-134  
-**Latest return:** `reports/CC_ARKANSAS_EXTERNAL_INCOME_SECTOR_CAPTURE_1_0_RETURN.md`  
-**External Income ledger:** `data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json`
+**Latest update:** UPD-150 · Decision: CC-DEC-137 (Public Income Replacement Stack)  
+**Prior:** UPD-148 / CC-DEC-135 (External Income); UPD-147 / CC-DEC-134 (no-loopholes wealth)  
+**Latest return:** `reports/CC_ARKANSAS_PUBLIC_INCOME_REPLACEMENT_STACK_1_0_RETURN.md`  
+**Stack ledger:** `data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json`
 
 ## Objective (locked)
 
@@ -12,34 +12,31 @@ Move revenue away from taxing ordinary work and homeownership toward **use, impa
 
 ## Counted prosperity-engine dollars: **$0**
 
-## External Income (this pass) — swing variable
+## Replacement Stack (this pass) — system integration
 
-Central question: how much outside money can Arkansas pull in and **keep circulating** as wages, local profits, public revenue, and retained ownership?
+Central question: given everything tested so far, what combination can realistically replace IIT + property tax — and on what timeline?
 
-**Hard wall:** outside dollars ≠ public revenue without royalty / lease / participation / enterprise return / workforce contribution / Prosperity Fund feeder.
+Horizons: **Current / 4y / 8y / 16y** · Scenarios: **Stress / Base / Accelerated**  
+Order: Use → Impact → Depletion → Visitor/Luxury → Human-capital → Value Capture → Enterprise → External Income → Prosperity Fund → Residual Wealth
 
-**Capture chain:**  
-`outside $ → AR payroll → AR-owned margin → local suppliers → public revenue → retained ownership → leakage out`
+### Vision test (illustrative — not countable)
 
-**EICR (modeling tool):** share of outside-origin revenue retained as Arkansas wages, local profits, public revenue, retained ownership, and reinvestment — not a public baseline.
-
-### Bound scale (not countable)
-
-| Anchor | Value |
+| Cell | Coverage of ~$7.23B |
 |---|---:|
-| Visitor spending 2025 | ~$10.2B |
-| Tourism 2% tax FY2026 | ~$26.9M (already spent) |
-| Manufacturing GDP 2023 | ~$25.9B |
-| Ag/forestry/fishing GDP 2023 | ~$2.86B |
+| COUNTABLE NOW | **$0** |
+| Base @16y | ~**27%** (~$1.93B) — dual abolition **fails** |
+| Accelerated @16y | ~**61%** (~$4.45B) — still strained |
+| Stress @16y | ~**6%** |
 
-### Capture-priority ranking (top)
+Debt service and URT remain the hard cores. No abolish-today.
 
-1. Food/ag processing  
-2. Tourism  
-3. Specialty ag / brands  
-4. Energy participation  
+### End-state finding
 
-Linked to **HYP-130**: capacity gap → build program → workforce → attract sector → capture → public wealth → lower tax burden.
+> **10–15 smaller public-income mechanisms + productive public wealth + a narrow residual wealth contribution** collectively make ordinary labor and ordinary homeownership unnecessary tax bases — more resilient than replacing one giant tax with another.
+
+## Parallel: Population-Wealth Attraction (HYP-132)
+
+**Upside multiplier / sensitivity only.** Do **not** count hypothetical migration as revenue. Keep / Return / Attract; Distributed Prosperity Network; `ARKANSAS_ROOTEDNESS` research variable under anti-loophole gates. See `content/research/hypotheses/arkansas-population-wealth-attraction-and-retention.md`.
 
 ## Residual Wealth Contribution (active residual)
 
@@ -49,15 +46,11 @@ Beneficial ownership · universal NW floor · illiquidity = collection timing ·
 
 | Layer | Status |
 |---|---|
-| Use / Depletion / VC / Enterprise / Human-capital / Prosperity Fund / External Income | Modeled — **$0 countable** |
-| Residual Wealth Contribution | Modeled (effective base) |
-
-## Parallel: Population-Wealth Attraction (HYP-132)
-
-Residual wealth is sustainable only if people **choose** Arkansas. Registered: Keep / Return / Attract; Distributed Prosperity Network; Come Home pipelines; `ARKANSAS_ROOTEDNESS` research variable (anti-loophole). Attraction, not coercion. See `content/research/hypotheses/arkansas-population-wealth-attraction-and-retention.md`.
+| Use / Depletion / VC / Enterprise / Human-capital / Prosperity Fund / External Income | Integrated — **$0 countable** |
+| Residual Wealth Contribution | Integrated (effective base) — **$0 countable** |
 
 ## Sequence
 
-1. **`CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0`** — integrate all 10 engines + effective residual wealth  
-2. Answer: how much IIT/property tax can Arkansas realistically retire, on what timeline, and what must be built first?  
-3. Parallel HYP-132: Keep/Return/Attract binds + household lifetime fiscal value
+1. **`CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0`** — bind real feeders against illustrative envelopes  
+2. Parallel HYP-132: Keep/Return/Attract binds + household lifetime fiscal value  
+3. Structural: definition-locks

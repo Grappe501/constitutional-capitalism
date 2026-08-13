@@ -2224,8 +2224,7 @@
       "defense_is_federal_ledger"
     ],
     "research_next": [
-      "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
-      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+      "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0"
     ],
     "holds": [
       "overall_percent_held_at_43",
@@ -2271,30 +2270,73 @@
   },
   "arkansas_public_income_replacement_stack": {
     "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
-    "status": "QUEUED_NEXT",
+    "status": "PASSED_INTEGRATION_ZERO_COUNTABLE_VISION_FAILS_BASE_16Y",
     "mode": "ten_engines_plus_effective_residual_wealth_timeline_stack",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
-    "question": "How much of personal income tax and property tax can Arkansas realistically retire, on what timeline, and what has to be built first?",
-    "will_include": [
-      "countable_current_revenue",
-      "plausible_near_term_revenue",
-      "4_year",
-      "8_year",
-      "12_year",
-      "16_year_ranges",
-      "stress_case",
-      "optimistic_case",
-      "tax_retirement_thresholds",
-      "ten_engines_plus_effective_residual_wealth_base"
+    "decision_id": "CC-DEC-137",
+    "update_id": "UPD-150",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "question": "Given everything tested so far, what combination of public-income engines, residual wealth contribution, and long-term prosperity-fund growth can realistically replace Arkansas personal income tax and property tax — and on what timeline?",
+    "ledger": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
+    "script": "scripts/bind_public_income_replacement_stack.py",
+    "return": "reports/CC_ARKANSAS_PUBLIC_INCOME_REPLACEMENT_STACK_1_0_RETURN.md",
+    "horizons": ["Current", "4y", "8y", "16y"],
+    "scenarios": ["STRESS", "BASE", "ACCELERATED"],
+    "stack_order": [
+      "Use",
+      "Impact",
+      "Depletion",
+      "Visitor_Luxury",
+      "Human_capital",
+      "Value_Capture",
+      "Enterprise",
+      "External_Income",
+      "Prosperity_Fund",
+      "Residual_Wealth_Contribution"
     ],
-    "depends_on_completed": [
-      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
-      "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
-      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
-    ],
+    "headline": {
+      "countable_now_usd": 0,
+      "base_8y_usd": 922342701,
+      "base_16y_usd": 1926986729,
+      "base_16y_share": 0.2665,
+      "accelerated_16y_usd": 4445480093,
+      "accelerated_16y_share": 0.6147,
+      "stress_16y_usd": 454068921,
+      "vision_test": "full_dual_abolition_does_not_survive_base_16y"
+    },
+    "hyp132_role": "UPSIDE_MULTIPLIER_SENSITIVITY_ONLY_NOT_REVENUE",
+    "end_state": "many_small_mechanisms_plus_public_wealth_plus_narrow_residual_wealth",
     "alias_of_prior_queue": "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
-    "count_rule": "Refuse to invent countable dollars; use effective residual wealth base; engines remain $0 until mechanisms clear"
+    "research_next": [
+      "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+      "CC-ARKANSAS-KEEP-RETURN-ATTRACT-MIGRATION-COMPOSITION-BIND-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "illustrative_is_not_countable",
+      "hyp132_sensitivity_not_revenue",
+      "debt_service_protected_first",
+      "urt_constitutional_hard",
+      "many_small_mechanisms_not_one_swap",
+      "full_dual_abolition_does_not_survive_base_16y_illustrative"
+    ]
+  },
+  "arkansas_replacement_stack_feeder_binding": {
+    "slice_id": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+    "status": "QUEUED_NEXT",
+    "mode": "bind_real_feeders_against_illustrative_envelopes",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "question": "Which illustrative Replacement Stack envelopes can be challenged, demoted, or promoted by binding real feeder cash-flow candidates?",
+    "depends_on_completed": [
+      "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0"
+    ],
+    "count_rule": "Refuse to invent countable dollars; promote only evidence-backed incremental reserved cash"
   },
   "publication_pass9_structural_deepen": {
     "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0-STRUCTURAL-DEEPEN",

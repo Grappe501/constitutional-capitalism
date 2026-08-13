@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0",
-  "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+  "version": "1.12.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-135",
-  "update_id": "UPD-148",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. External income is not automatically public revenue. Gross outside revenue ≠ Arkansas capture (EICR). Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. HYP-130 capacity gates External Income scale claims. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-137",
+  "update_id": "UPD-150",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. External income is not automatically public revenue. Gross outside revenue ≠ Arkansas capture (EICR). Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. HYP-130 capacity gates External Income scale claims. HYP-132 migration is sensitivity only — not counted revenue. Retire millage-class by millage-class. Full dual abolition does not survive Base@16y illustrative.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -216,11 +216,21 @@
     {
       "id": "CC-DEM-RRR-027",
       "name": "public_income_replacement_stack",
-      "question": "Integrating all 10 engines plus the effective residual wealth base, how much of personal income tax and property tax can Arkansas realistically retire on 4/8/12/16-year timelines under stress and optimistic cases?",
+      "question": "Integrating all 10 engines plus the effective residual wealth base, how much of personal income tax and property tax can Arkansas realistically retire on Current/4/8/16-year timelines under Stress/Base/Accelerated cases?",
+      "status": "PASSED_INTEGRATION_ZERO_COUNTABLE_VISION_FAILS_BASE_16Y",
+      "priority": "critical",
+      "layer": "integration",
+      "artifact": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
+      "note": "COUNTABLE $0. Base@16y ~27%; Acc@16y ~61% strained; dual abolition fails Base@16y. HYP-132 sensitivity only. Next: feeder-binding pass."
+    },
+    {
+      "id": "CC-DEM-RRR-028",
+      "name": "replacement_stack_feeder_binding",
+      "question": "Which illustrative Replacement Stack envelopes can be challenged, demoted, or promoted by binding real feeder cash-flow candidates with incremental reserved cash?",
       "status": "NEE_QUEUED_NEXT",
       "priority": "critical",
       "layer": "integration",
-      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0"
+      "next_slice": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0"
     },
     {
       "id": "CC-DEM-RRR-024",
@@ -281,6 +291,9 @@
     "regressive_swap_surfaced",
     "debt_service_protected_first",
     "millage_class_by_millage_class",
+    "hyp132_sensitivity_not_revenue",
+    "full_dual_abolition_does_not_survive_base_16y_illustrative",
+    "many_small_mechanisms_not_one_swap",
     "overall_percent_held_at_43"
   ]
 }

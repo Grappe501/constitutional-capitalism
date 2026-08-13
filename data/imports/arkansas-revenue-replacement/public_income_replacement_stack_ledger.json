@@ -1,0 +1,1630 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-137",
+  "update_id": "UPD-150",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "status": "REPLACEMENT_STACK_INTEGRATED_ZERO_COUNTABLE",
+  "central_question": "Given everything tested so far, what combination of public-income engines, residual wealth contribution, and long-term prosperity-fund growth can realistically replace Arkansas personal income tax and property tax \u2014 and on what timeline?",
+  "count_rule": "No engine is counted merely because it is philosophically attractive or economically plausible. COUNTABLE NOW = demonstrated incremental reserved cash only.",
+  "stack_order": [
+    "Use",
+    "Impact",
+    "Depletion",
+    "Visitor_Luxury",
+    "Human_capital",
+    "Value_Capture",
+    "Enterprise",
+    "External_Income",
+    "Prosperity_Fund",
+    "Residual_Wealth_Contribution"
+  ],
+  "horizons": [
+    {
+      "id": "H0",
+      "label": "Current",
+      "years": 0
+    },
+    {
+      "id": "H4",
+      "label": "4 years",
+      "years": 4
+    },
+    {
+      "id": "H8",
+      "label": "8 years",
+      "years": 8
+    },
+    {
+      "id": "H16",
+      "label": "16 years",
+      "years": 16
+    }
+  ],
+  "scenarios": [
+    "STRESS",
+    "BASE",
+    "ACCELERATED"
+  ],
+  "targets_usd": {
+    "iit_gross_fy2026": 3859100000,
+    "property_layers": {
+      "school_urt": 1602678681,
+      "school_additional_mo": 63673549,
+      "school_debt_service": 945415981,
+      "county": 496554570,
+      "municipal": 231422500,
+      "special_other": 33060357
+    },
+    "property_sum": 3372805638,
+    "combined": 7231905638
+  },
+  "property_retirement_classes": {
+    "contractual_blocker_first": {
+      "layers": [
+        "school_debt_service",
+        "municipal_bond_portion_inside_municipal"
+      ],
+      "usd_floor_school_debt": 945415981,
+      "rule": "Cannot safely retire while covenants outstanding \u2014 replace dollar-for-dollar or wait"
+    },
+    "constitutional": {
+      "layers": [
+        "school_urt"
+      ],
+      "usd": 1602678681,
+      "rule": "25-mill URT \u2014 amendment/redesign after demonstrated replacement"
+    },
+    "statutory_local": {
+      "layers": [
+        "school_additional_mo",
+        "county",
+        "municipal_general",
+        "special_other"
+      ],
+      "usd_approx": 824710976,
+      "rule": "Class-by-class after local replacement online; municipal includes bond mills mixed"
+    }
+  },
+  "engine_inventory": [
+    {
+      "id": "Use",
+      "countable_now_usd": 0,
+      "prior_status": "SUPPORT \u2014 fuel/highway ~$572\u2013689M real but already earmarked/spent",
+      "gates": [
+        "already_spent",
+        "earmark",
+        "incremental_redesign_unmodeled"
+      ]
+    },
+    {
+      "id": "Impact",
+      "countable_now_usd": 0,
+      "prior_status": "UNMODELED \u2014 carbon/externality pricing not cash-flowed",
+      "gates": [
+        "unmodeled",
+        "legal_design"
+      ]
+    },
+    {
+      "id": "Depletion",
+      "countable_now_usd": 0,
+      "prior_status": "SUPPORT/FUTURE \u2014 gas severance ~$26M mostly highways; lithium post-2028 design",
+      "gates": [
+        "already_spent",
+        "volatility",
+        "lithium_not_yet_cash"
+      ]
+    },
+    {
+      "id": "Visitor_Luxury",
+      "countable_now_usd": 0,
+      "prior_status": "Visitor 2% tourism tax ~$26.9M already spent; luxury redesign unmodeled",
+      "gates": [
+        "already_spent",
+        "regressive_swap_risk_on_broad_sales"
+      ]
+    },
+    {
+      "id": "Human_capital",
+      "countable_now_usd": 0,
+      "prior_status": "Wage envelope ~$64.5B bound; incidence/credit/legal gates open; CIT already spent",
+      "gates": [
+        "incidence",
+        "credit_leakage",
+        "legal_pending"
+      ]
+    },
+    {
+      "id": "Value_Capture",
+      "countable_now_usd": 0,
+      "prior_status": "TIF/etc pledged or unsuitable; participation redesign unmodeled",
+      "gates": [
+        "pledged",
+        "public_risk_at_risk",
+        "unmodeled"
+      ]
+    },
+    {
+      "id": "Enterprise",
+      "countable_now_usd": 0,
+      "prior_status": "Strategic but $0 \u2014 participation/energy/broadband/IP unmodeled",
+      "gates": [
+        "unmodeled",
+        "public_risk_at_risk"
+      ]
+    },
+    {
+      "id": "External_Income",
+      "countable_now_usd": 0,
+      "prior_status": "Swing variable \u2014 tourism spend ~$10.2B bound; public capture mechanisms $0",
+      "gates": [
+        "hard_wall",
+        "ownership_leakage",
+        "eicr_illustrative"
+      ]
+    },
+    {
+      "id": "Prosperity_Fund",
+      "countable_now_usd": 0,
+      "prior_status": "Path modeled \u2014 $250M @4% needs ~$6.25B corpus; Base ~y11 if feeders real",
+      "gates": [
+        "fund_does_not_exist",
+        "feeders_illustrative",
+        "no_unrealized_gain_credit"
+      ]
+    },
+    {
+      "id": "Residual_Wealth_Contribution",
+      "countable_now_usd": 0,
+      "prior_status": "Effective base ~$27.7B; 1%\u2248$277M illustrative; legal lane not cleared",
+      "gates": [
+        "constitutional_lane_open",
+        "admin_valuation",
+        "not_enacted"
+      ],
+      "not_a_prosperity_engine": true
+    }
+  ],
+  "countable_now_usd": 0,
+  "matrix": [
+    {
+      "horizon_id": "H0",
+      "horizon_label": "Current",
+      "years": 0,
+      "scenario": "STRESS",
+      "status": "COUNTABLE_ZERO",
+      "engine_stack_usd": {
+        "Use": 0,
+        "Impact": 0,
+        "Depletion": 0,
+        "Visitor_Luxury": 0,
+        "Human_capital": 0,
+        "Value_Capture": 0,
+        "Enterprise": 0,
+        "External_Income": 0,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 0
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Impact",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Depletion",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "External_Income",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 0,
+          "cumulative_usd": 0
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 0,
+        "allocation": {
+          "to_debt_service_replacement_usd": 0,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 3372805638,
+        "remaining_property_detail": {
+          "debt_service_usd": 945415981,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 0,
+          "combined": 0,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 3372805638,
+          "combined": 7231905638
+        },
+        "share_of_combined_retired": 0.0,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.0
+      },
+      "hyp132_sensitivity": {
+        "status": "NOT_APPLIED_AT_CURRENT",
+        "rule": "Do not count hypothetical migration as revenue",
+        "uplift_on_stack_total_usd": 0
+      },
+      "reading": "Current countable capacity $0 \u2014 full IIT + property gaps remain; no abolish."
+    },
+    {
+      "horizon_id": "H0",
+      "horizon_label": "Current",
+      "years": 0,
+      "scenario": "BASE",
+      "status": "COUNTABLE_ZERO",
+      "engine_stack_usd": {
+        "Use": 0,
+        "Impact": 0,
+        "Depletion": 0,
+        "Visitor_Luxury": 0,
+        "Human_capital": 0,
+        "Value_Capture": 0,
+        "Enterprise": 0,
+        "External_Income": 0,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 0
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Impact",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Depletion",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "External_Income",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 0,
+          "cumulative_usd": 0
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 0,
+        "allocation": {
+          "to_debt_service_replacement_usd": 0,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 3372805638,
+        "remaining_property_detail": {
+          "debt_service_usd": 945415981,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 0,
+          "combined": 0,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 3372805638,
+          "combined": 7231905638
+        },
+        "share_of_combined_retired": 0.0,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.0
+      },
+      "hyp132_sensitivity": {
+        "status": "NOT_APPLIED_AT_CURRENT",
+        "rule": "Do not count hypothetical migration as revenue",
+        "uplift_on_stack_total_usd": 0
+      },
+      "reading": "Current countable capacity $0 \u2014 full IIT + property gaps remain; no abolish."
+    },
+    {
+      "horizon_id": "H0",
+      "horizon_label": "Current",
+      "years": 0,
+      "scenario": "ACCELERATED",
+      "status": "COUNTABLE_ZERO",
+      "engine_stack_usd": {
+        "Use": 0,
+        "Impact": 0,
+        "Depletion": 0,
+        "Visitor_Luxury": 0,
+        "Human_capital": 0,
+        "Value_Capture": 0,
+        "Enterprise": 0,
+        "External_Income": 0,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 0
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Impact",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Depletion",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "External_Income",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 0
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 0,
+          "cumulative_usd": 0
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 0,
+        "allocation": {
+          "to_debt_service_replacement_usd": 0,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 3372805638,
+        "remaining_property_detail": {
+          "debt_service_usd": 945415981,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 0,
+          "combined": 0,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 3372805638,
+          "combined": 7231905638
+        },
+        "share_of_combined_retired": 0.0,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.0
+      },
+      "hyp132_sensitivity": {
+        "status": "NOT_APPLIED_AT_CURRENT",
+        "rule": "Do not count hypothetical migration as revenue",
+        "uplift_on_stack_total_usd": 0
+      },
+      "reading": "Current countable capacity $0 \u2014 full IIT + property gaps remain; no abolish."
+    },
+    {
+      "horizon_id": "H4",
+      "horizon_label": "4 years",
+      "years": 4,
+      "scenario": "STRESS",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 10000000,
+        "Impact": 5000000,
+        "Depletion": 7500000,
+        "Visitor_Luxury": 10000000,
+        "Human_capital": 12500000,
+        "Value_Capture": 10000000,
+        "Enterprise": 15000000,
+        "External_Income": 25000000,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 18517230
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 10000000,
+          "cumulative_usd": 10000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 5000000,
+          "cumulative_usd": 15000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 7500000,
+          "cumulative_usd": 22500000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 10000000,
+          "cumulative_usd": 32500000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 12500000,
+          "cumulative_usd": 45000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 10000000,
+          "cumulative_usd": 55000000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 15000000,
+          "cumulative_usd": 70000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 25000000,
+          "cumulative_usd": 95000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 95000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 18517230,
+          "cumulative_usd": 113517230
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 113517230,
+        "allocation": {
+          "to_debt_service_replacement_usd": 113517230,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 3259288408,
+        "remaining_property_detail": {
+          "debt_service_usd": 831898751,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 113517230,
+          "combined": 113517230,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 3259288408,
+          "combined": 7118388408
+        },
+        "share_of_combined_retired": 0.0157,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.0337
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.05,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 656250,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "STRESS @4y: illustrative stack covers <15% of ~$7.23B (~$0.11B). Full dual abolition does not appear."
+    },
+    {
+      "horizon_id": "H4",
+      "horizon_label": "4 years",
+      "years": 4,
+      "scenario": "BASE",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 30000000,
+        "Impact": 20000000,
+        "Depletion": 25000000,
+        "Visitor_Luxury": 25000000,
+        "Human_capital": 50000000,
+        "Value_Capture": 37500000,
+        "Enterprise": 62500000,
+        "External_Income": 100000000,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 69246682
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 30000000,
+          "cumulative_usd": 30000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 20000000,
+          "cumulative_usd": 50000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 25000000,
+          "cumulative_usd": 75000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 25000000,
+          "cumulative_usd": 100000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 50000000,
+          "cumulative_usd": 150000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 37500000,
+          "cumulative_usd": 187500000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 62500000,
+          "cumulative_usd": 250000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 100000000,
+          "cumulative_usd": 350000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 350000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 69246682,
+          "cumulative_usd": 419246682
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 419246682,
+        "allocation": {
+          "to_debt_service_replacement_usd": 419246682,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 2953558956,
+        "remaining_property_detail": {
+          "debt_service_usd": 526169299,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 419246682,
+          "combined": 419246682,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 2953558956,
+          "combined": 6812658956
+        },
+        "share_of_combined_retired": 0.058,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.1243
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.12,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 6375000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "BASE @4y: illustrative stack covers <15% of ~$7.23B (~$0.42B). Full dual abolition does not appear."
+    },
+    {
+      "horizon_id": "H4",
+      "horizon_label": "4 years",
+      "years": 4,
+      "scenario": "ACCELERATED",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 50000000,
+        "Impact": 37500000,
+        "Depletion": 62500000,
+        "Visitor_Luxury": 45000000,
+        "Human_capital": 100000000,
+        "Value_Capture": 87500000,
+        "Enterprise": 125000000,
+        "External_Income": 250000000,
+        "Prosperity_Fund": 250000000,
+        "Residual_Wealth_Contribution": 103870023
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 50000000,
+          "cumulative_usd": 50000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 37500000,
+          "cumulative_usd": 87500000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 62500000,
+          "cumulative_usd": 150000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 45000000,
+          "cumulative_usd": 195000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 100000000,
+          "cumulative_usd": 295000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 87500000,
+          "cumulative_usd": 382500000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 125000000,
+          "cumulative_usd": 507500000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 250000000,
+          "cumulative_usd": 757500000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 250000000,
+          "cumulative_usd": 1007500000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 103870023,
+          "cumulative_usd": 1111370023
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 1111370023,
+        "allocation": {
+          "to_debt_service_replacement_usd": 945415981,
+          "to_iit_usd": 165954042,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3693145958,
+        "remaining_property_gap_usd": 2427389657,
+        "remaining_property_detail": {
+          "debt_service_usd": 0,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 165954042,
+          "property": 945415981,
+          "combined": 1111370023,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3693145958,
+          "property": 2427389657,
+          "combined": 6120535615
+        },
+        "share_of_combined_retired": 0.1537,
+        "share_of_iit_retired": 0.043,
+        "share_of_property_retired": 0.2803
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.25,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 29687500,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "ACCELERATED @4y: partial illustrative coverage (~15%); ~$6.12B still required. Debt/URT remain hard. Many small mechanisms \u2014 not one swap."
+    },
+    {
+      "horizon_id": "H8",
+      "horizon_label": "8 years",
+      "years": 8,
+      "scenario": "STRESS",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 22000000,
+        "Impact": 11000000,
+        "Depletion": 16500000,
+        "Visitor_Luxury": 22000000,
+        "Human_capital": 27500000,
+        "Value_Capture": 22000000,
+        "Enterprise": 33000000,
+        "External_Income": 55000000,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 40737907
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 22000000,
+          "cumulative_usd": 22000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 11000000,
+          "cumulative_usd": 33000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 16500000,
+          "cumulative_usd": 49500000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 22000000,
+          "cumulative_usd": 71500000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 27500000,
+          "cumulative_usd": 99000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 22000000,
+          "cumulative_usd": 121000000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 33000000,
+          "cumulative_usd": 154000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 55000000,
+          "cumulative_usd": 209000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 209000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 40737907,
+          "cumulative_usd": 249737907
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 249737907,
+        "allocation": {
+          "to_debt_service_replacement_usd": 249737907,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 3123067731,
+        "remaining_property_detail": {
+          "debt_service_usd": 695678074,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 249737907,
+          "combined": 249737907,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 3123067731,
+          "combined": 6982167731
+        },
+        "share_of_combined_retired": 0.0345,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.074
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.05,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 2887500,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "STRESS @8y: illustrative stack covers <15% of ~$7.23B (~$0.25B). Full dual abolition does not appear."
+    },
+    {
+      "horizon_id": "H8",
+      "horizon_label": "8 years",
+      "years": 8,
+      "scenario": "BASE",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 66000000,
+        "Impact": 44000000,
+        "Depletion": 55000000,
+        "Visitor_Luxury": 55000000,
+        "Human_capital": 110000000,
+        "Value_Capture": 82500000,
+        "Enterprise": 137500000,
+        "External_Income": 220000000,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 152342701
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 66000000,
+          "cumulative_usd": 66000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 44000000,
+          "cumulative_usd": 110000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 55000000,
+          "cumulative_usd": 165000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 55000000,
+          "cumulative_usd": 220000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 110000000,
+          "cumulative_usd": 330000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 82500000,
+          "cumulative_usd": 412500000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 137500000,
+          "cumulative_usd": 550000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 220000000,
+          "cumulative_usd": 770000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 770000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 152342701,
+          "cumulative_usd": 922342701
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 922342701,
+        "allocation": {
+          "to_debt_service_replacement_usd": 922342701,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 2450462937,
+        "remaining_property_detail": {
+          "debt_service_usd": 23073280,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 922342701,
+          "combined": 922342701,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 2450462937,
+          "combined": 6309562937
+        },
+        "share_of_combined_retired": 0.1275,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.2735
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.12,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 28050000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "BASE @8y: illustrative stack covers <15% of ~$7.23B (~$0.92B). Full dual abolition does not appear."
+    },
+    {
+      "horizon_id": "H8",
+      "horizon_label": "8 years",
+      "years": 8,
+      "scenario": "ACCELERATED",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 110000000,
+        "Impact": 82500000,
+        "Depletion": 137500000,
+        "Visitor_Luxury": 99000000,
+        "Human_capital": 220000000,
+        "Value_Capture": 192500000,
+        "Enterprise": 275000000,
+        "External_Income": 550000000,
+        "Prosperity_Fund": 500000000,
+        "Residual_Wealth_Contribution": 228514051
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 110000000,
+          "cumulative_usd": 110000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 82500000,
+          "cumulative_usd": 192500000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 137500000,
+          "cumulative_usd": 330000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 99000000,
+          "cumulative_usd": 429000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 220000000,
+          "cumulative_usd": 649000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 192500000,
+          "cumulative_usd": 841500000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 275000000,
+          "cumulative_usd": 1116500000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 550000000,
+          "cumulative_usd": 1666500000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 500000000,
+          "cumulative_usd": 2166500000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 228514051,
+          "cumulative_usd": 2395014051
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 2395014051,
+        "allocation": {
+          "to_debt_service_replacement_usd": 945415981,
+          "to_iit_usd": 1449598070,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 2409501930,
+        "remaining_property_gap_usd": 2427389657,
+        "remaining_property_detail": {
+          "debt_service_usd": 0,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 1449598070,
+          "property": 945415981,
+          "combined": 2395014051,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 2409501930,
+          "property": 2427389657,
+          "combined": 4836891587
+        },
+        "share_of_combined_retired": 0.3312,
+        "share_of_iit_retired": 0.3756,
+        "share_of_property_retired": 0.2803
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.25,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 130625000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "ACCELERATED @8y: partial illustrative coverage (~33%); ~$4.84B still required. Debt/URT remain hard. Many small mechanisms \u2014 not one swap."
+    },
+    {
+      "horizon_id": "H16",
+      "horizon_label": "16 years",
+      "years": 16,
+      "scenario": "STRESS",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 40000000,
+        "Impact": 20000000,
+        "Depletion": 30000000,
+        "Visitor_Luxury": 40000000,
+        "Human_capital": 50000000,
+        "Value_Capture": 40000000,
+        "Enterprise": 60000000,
+        "External_Income": 100000000,
+        "Prosperity_Fund": 0,
+        "Residual_Wealth_Contribution": 74068921
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 40000000,
+          "cumulative_usd": 40000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 20000000,
+          "cumulative_usd": 60000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 30000000,
+          "cumulative_usd": 90000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 40000000,
+          "cumulative_usd": 130000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 50000000,
+          "cumulative_usd": 180000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 40000000,
+          "cumulative_usd": 220000000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 60000000,
+          "cumulative_usd": 280000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 100000000,
+          "cumulative_usd": 380000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 0,
+          "cumulative_usd": 380000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 74068921,
+          "cumulative_usd": 454068921
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 454068921,
+        "allocation": {
+          "to_debt_service_replacement_usd": 454068921,
+          "to_iit_usd": 0,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 3859100000,
+        "remaining_property_gap_usd": 2918736717,
+        "remaining_property_detail": {
+          "debt_service_usd": 491347060,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 0,
+          "property": 454068921,
+          "combined": 454068921,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 3859100000,
+          "property": 2918736717,
+          "combined": 6777836717
+        },
+        "share_of_combined_retired": 0.0628,
+        "share_of_iit_retired": 0.0,
+        "share_of_property_retired": 0.1346
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.05,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 10500000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "STRESS @16y: illustrative stack covers <15% of ~$7.23B (~$0.45B). Full dual abolition does not appear."
+    },
+    {
+      "horizon_id": "H16",
+      "horizon_label": "16 years",
+      "years": 16,
+      "scenario": "BASE",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 120000000,
+        "Impact": 80000000,
+        "Depletion": 100000000,
+        "Visitor_Luxury": 100000000,
+        "Human_capital": 200000000,
+        "Value_Capture": 150000000,
+        "Enterprise": 250000000,
+        "External_Income": 400000000,
+        "Prosperity_Fund": 250000000,
+        "Residual_Wealth_Contribution": 276986729
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 120000000,
+          "cumulative_usd": 120000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 80000000,
+          "cumulative_usd": 200000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 100000000,
+          "cumulative_usd": 300000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 100000000,
+          "cumulative_usd": 400000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 200000000,
+          "cumulative_usd": 600000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 150000000,
+          "cumulative_usd": 750000000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 250000000,
+          "cumulative_usd": 1000000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 400000000,
+          "cumulative_usd": 1400000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 250000000,
+          "cumulative_usd": 1650000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 276986729,
+          "cumulative_usd": 1926986729
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 1926986729,
+        "allocation": {
+          "to_debt_service_replacement_usd": 945415981,
+          "to_iit_usd": 981570748,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 2877529252,
+        "remaining_property_gap_usd": 2427389657,
+        "remaining_property_detail": {
+          "debt_service_usd": 0,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 981570748,
+          "property": 945415981,
+          "combined": 1926986729,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 2877529252,
+          "property": 2427389657,
+          "combined": 5304918909
+        },
+        "share_of_combined_retired": 0.2665,
+        "share_of_iit_retired": 0.2544,
+        "share_of_property_retired": 0.2803
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.12,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 102000000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "BASE @16y: partial illustrative coverage (~27%); ~$5.30B still required. Debt/URT remain hard. Many small mechanisms \u2014 not one swap."
+    },
+    {
+      "horizon_id": "H16",
+      "horizon_label": "16 years",
+      "years": 16,
+      "scenario": "ACCELERATED",
+      "status": "ILLUSTRATIVE_NOT_COUNTED",
+      "engine_stack_usd": {
+        "Use": 200000000,
+        "Impact": 150000000,
+        "Depletion": 250000000,
+        "Visitor_Luxury": 180000000,
+        "Human_capital": 400000000,
+        "Value_Capture": 350000000,
+        "Enterprise": 500000000,
+        "External_Income": 1000000000,
+        "Prosperity_Fund": 1000000000,
+        "Residual_Wealth_Contribution": 415480093
+      },
+      "stack_order_cumulative": [
+        {
+          "engine": "Use",
+          "usd": 200000000,
+          "cumulative_usd": 200000000
+        },
+        {
+          "engine": "Impact",
+          "usd": 150000000,
+          "cumulative_usd": 350000000
+        },
+        {
+          "engine": "Depletion",
+          "usd": 250000000,
+          "cumulative_usd": 600000000
+        },
+        {
+          "engine": "Visitor_Luxury",
+          "usd": 180000000,
+          "cumulative_usd": 780000000
+        },
+        {
+          "engine": "Human_capital",
+          "usd": 400000000,
+          "cumulative_usd": 1180000000
+        },
+        {
+          "engine": "Value_Capture",
+          "usd": 350000000,
+          "cumulative_usd": 1530000000
+        },
+        {
+          "engine": "Enterprise",
+          "usd": 500000000,
+          "cumulative_usd": 2030000000
+        },
+        {
+          "engine": "External_Income",
+          "usd": 1000000000,
+          "cumulative_usd": 3030000000
+        },
+        {
+          "engine": "Prosperity_Fund",
+          "usd": 1000000000,
+          "cumulative_usd": 4030000000
+        },
+        {
+          "engine": "Residual_Wealth_Contribution",
+          "usd": 415480093,
+          "cumulative_usd": 4445480093
+        }
+      ],
+      "integration": {
+        "stack_total_usd": 4445480093,
+        "allocation": {
+          "to_debt_service_replacement_usd": 945415981,
+          "to_iit_usd": 3500064112,
+          "to_other_property_usd": 0,
+          "to_urt_usd": 0,
+          "unallocated_surplus_usd": 0
+        },
+        "remaining_iit_gap_usd": 359035888,
+        "remaining_property_gap_usd": 2427389657,
+        "remaining_property_detail": {
+          "debt_service_usd": 0,
+          "urt_usd": 1602678681,
+          "other_statutory_local_usd": 824710976
+        },
+        "taxes_safely_retired_usd": {
+          "iit": 3500064112,
+          "property": 945415981,
+          "combined": 4445480093,
+          "note": "Debt-service dollars are 'replaced' not freely retired; URT only after constitutional path; all scenario dollars ILLUSTRATIVE_NOT_COUNTED"
+        },
+        "taxes_still_required_usd": {
+          "iit": 359035888,
+          "property": 2427389657,
+          "combined": 2786425545
+        },
+        "share_of_combined_retired": 0.6147,
+        "share_of_iit_retired": 0.907,
+        "share_of_property_retired": 0.2803
+      },
+      "hyp132_sensitivity": {
+        "status": "SENSITIVITY_ONLY_NOT_COUNTED",
+        "rule": "If Arkansas attracts more working-age families, entrepreneurs, high-income households, businesses and external capital, how does that expand the base?",
+        "illustrative_uplift_rate_on_sensitive_engines": 0.25,
+        "sensitive_engines": [
+          "External_Income",
+          "Human_capital",
+          "Enterprise"
+        ],
+        "illustrative_uplift_usd": 475000000,
+        "note": "Not added to countable or to primary scenario totals \u2014 scenario analysis only until measured population-attraction model exists (HYP-132)"
+      },
+      "reading": "ACCELERATED @16y: material illustrative coverage (~61%) only if External Income + Fund + wealth legal/admin all clear \u2014 still not full dual abolition."
+    }
+  ],
+  "headline_cells": {
+    "current_all_scenarios_countable_usd": 0,
+    "base_8y": {
+      "stack_total_usd": 922342701,
+      "share_combined_retired": 0.1275,
+      "still_required_usd": 6309562937
+    },
+    "accelerated_8y": {
+      "stack_total_usd": 2395014051,
+      "share_combined_retired": 0.3312,
+      "still_required_usd": 4836891587
+    },
+    "stress_16y": {
+      "stack_total_usd": 454068921,
+      "share_combined_retired": 0.0628,
+      "still_required_usd": 6777836717
+    },
+    "base_16y": {
+      "stack_total_usd": 1926986729,
+      "share_combined_retired": 0.2665,
+      "still_required_usd": 5304918909,
+      "remaining_iit_usd": 2877529252,
+      "remaining_property_usd": 2427389657
+    },
+    "accelerated_16y": {
+      "stack_total_usd": 4445480093,
+      "share_combined_retired": 0.6147,
+      "still_required_usd": 2786425545,
+      "remaining_iit_usd": 359035888,
+      "remaining_property_usd": 2427389657
+    }
+  },
+  "hyp132_role": {
+    "status": "UPSIDE_MULTIPLIER_SENSITIVITY_ONLY",
+    "rule": "Do not count hypothetical migration as revenue",
+    "linked_hypothesis": "HYP-132",
+    "use": "Scenario analysis until measured Keep/Return/Attract model exists"
+  },
+  "end_state_architecture": {
+    "finding": "The proper end state is unlikely to be one mechanism replacing property tax or IIT. More resilient: 10\u201315 smaller public-income mechanisms + productive public wealth + a narrow residual wealth contribution collectively make ordinary labor and ordinary homeownership unnecessary tax bases.",
+    "not": "Replace one giant tax with another giant tax",
+    "implication": "Integration favors diversified FEE/RENT/ROYALTY/RETURN engines and a last-resort wealth contribution \u2014 not a single silver-bullet tax swap"
+  },
+  "vision_test": {
+    "question": "Does the no-income-tax / no-property-tax vision survive full-system integration?",
+    "countable_now_answer": "NO \u2014 COUNTABLE capacity is $0; full gaps remain; no abolish-today",
+    "illustrative_16y_base_answer": "NO as full dual abolition \u2014 Base@16y illustrative stack ~$1.93B (~27% of ~$7.23B); ~$5.30B still required",
+    "illustrative_16y_accelerated_answer": "STILL STRAINED \u2014 Accelerated@16y illustrative ~$4.45B (~61%); requires transformational External Income, Fund payouts, wealth legal clearance, and still leaves material gaps especially on property/URT/debt",
+    "what_may_survive": "Partial retirement of ordinary-labor IIT reach and some statutory local property layers over 8\u201316 years IF feeders become real cash \u2014 debt service and URT remain the hard core"
+  },
+  "political_conclusion": "NONE \u2014 no recommendation to abolish IIT or property tax",
+  "build_first": [
+    "External Income public-capture mechanisms (ownership/participation) \u2014 swing variable",
+    "Prosperity Fund with real feeders + principal protection",
+    "Human-capital design that clears incidence/credit gates",
+    "Enterprise/Value Capture participation redesign",
+    "Residual wealth legal lane (Am. 57 / realization / amendment)",
+    "Property class-by-class: debt covenants first; URT last among property",
+    "HYP-132 attraction infrastructure in parallel \u2014 not as counted revenue"
+  ],
+  "next_slice": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+  "parallel": [
+    "CC-ARKANSAS-KEEP-RETURN-ATTRACT-MIGRATION-COMPOSITION-BIND-1.0",
+    "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+  ],
+  "holds": [
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS",
+    "no_abolish_today",
+    "zero_counted_until_cashflow_model",
+    "illustrative_is_not_countable",
+    "hyp132_sensitivity_not_revenue",
+    "debt_service_protected_first",
+    "urt_constitutional_hard",
+    "many_small_mechanisms_not_one_swap",
+    "full_dual_abolition_does_not_survive_base_16y_illustrative"
+  ]
+}

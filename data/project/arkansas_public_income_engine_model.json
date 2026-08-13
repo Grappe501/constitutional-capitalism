@@ -6,8 +6,10 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "EXTERNAL_INCOME_SCORED_ALL_ENGINES_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+  "status": "REPLACEMENT_STACK_INTEGRATED_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+  "latest_integration_decision_id": "CC-DEC-137",
+  "latest_integration_update_id": "UPD-150",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
@@ -15,6 +17,7 @@
   "residual_wealth_contribution_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
   "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
   "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
+  "public_income_replacement_stack_ledger": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
   "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
@@ -547,10 +550,11 @@
   "scale_implication_after_prosperity_fund": "Fund math is honest about capital and horizon — $250M in-window only if feeders arrive; $2B outside 16y on modeled paths; External Income determines Base vs Accelerated realism; even $2B/year is only ~28% of ~$7.23B",
   "scale_implication_after_residual_iit": "Residual Progressive IIT can keep ordinary labor outside the tax only if prosperity engines cover most of today's ~$3.859B; a $250M residual can start at $1M+; a $3B residual forces the boundary toward $100k",
   "scale_implication_after_external_income": "Outside-demand scale is real (tourism ~$10.2B spend) but COUNTABLE public cash remains $0; capture requires ownership/participation mechanisms; HYP-130 capacity gates block honest scale claims for healthcare/AI/advanced mfg; next integrate all 10 engines + effective residual wealth into the Public Income Replacement Stack",
+  "scale_implication_after_replacement_stack": "CC-DEC-137: COUNTABLE NOW still $0. Base@16y illustrative ~$1.93B (~27% of ~$7.23B); Accelerated@16y ~$4.45B (~61%) still strained; Stress@16y ~6%. Full dual abolition does not survive Base@16y. Debt/URT remain hard cores. End state favors many small mechanisms + productive public wealth + narrow residual wealth. HYP-132 is sensitivity only — not counted revenue. Next: feeder-binding pass.",
   "next_modeling_slices": [
-    "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
-    "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
-    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
+    "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0",
+    "CC-ARKANSAS-KEEP-RETURN-ATTRACT-MIGRATION-COMPOSITION-BIND-1.0"
   ],
   "holds": [
     "overall_percent_held_at_43",
@@ -559,6 +563,10 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
+    "illustrative_is_not_countable",
+    "hyp132_sensitivity_not_revenue",
+    "full_dual_abolition_does_not_survive_base_16y_illustrative",
+    "many_small_mechanisms_not_one_swap",
     "external_income_not_automatically_public_revenue",
     "gross_outside_revenue_ne_arkansas_capture",
     "residual_wealth_is_shock_absorber_not_prosperity_engine",

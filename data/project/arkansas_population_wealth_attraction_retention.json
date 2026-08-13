@@ -274,9 +274,15 @@
     "CC-ARKANSAS-ROOTEDNESS-CREDIT-ANTI-LOOPHOLE-DESIGN-1.0"
   ],
   "parallel_does_not_displace": [
-    "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+    "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
     "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
   ],
+  "replacement_stack_role": {
+    "status": "UPSIDE_MULTIPLIER_SENSITIVITY_ONLY",
+    "rule": "Do not count hypothetical migration as revenue",
+    "linked_decision": "CC-DEC-137",
+    "note": "Appears beside Replacement Stack matrix as sensitivity; not added to countable or primary scenario totals"
+  },
   "holds": [
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS",
