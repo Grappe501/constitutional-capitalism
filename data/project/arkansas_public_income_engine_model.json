@@ -6,13 +6,14 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "RESIDUAL_WEALTH_CONTRIBUTION_MODELED_ENGINES_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
+  "status": "RESIDUAL_WEALTH_NO_LOOPHOLES_BASE_LEGAL_MODELED_ENGINES_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
   "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
   "residual_wealth_contribution_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+  "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
   "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
@@ -28,24 +29,37 @@
   "residual_shock_absorber": {
     "name": "Residual Wealth Contribution",
     "not_a_prosperity_engine": true,
-    "role": "Last compulsory revenue source after engines exhausted; net-worth floor; self-retiring; never ordinary labor income",
+    "role": "Last compulsory revenue source after engines exhausted; beneficial economic ownership; universal NW floor; self-retiring; never ordinary labor income",
     "supersedes": {
       "name": "Residual Progressive Income Tax",
       "decision_id": "CC-DEC-132",
       "update_id": "UPD-145"
     },
+    "revised_by": {
+      "decision_id": "CC-DEC-134",
+      "update_id": "UPD-147",
+      "revision": "Universal floor + beneficial ownership + illiquidity-as-collection; asset-menu exemptions rejected as protection design"
+    },
+    "taxable_concept": "beneficial_economic_ownership",
+    "illiquidity_rule": "Changes collection timing, not liability",
+    "symmetry_rule": "No structuring privilege for economically equivalent wealth",
     "bound_top_wealth_holders": 2374,
     "bound_top_net_worth_usd": 48532391000,
     "irs_floor_net_worth_usd": 11400000,
+    "floors_not_locked": true,
     "headline": {
-      "residual_250m_threshold_usd": 11400000,
-      "residual_250m_rate_on_full_top_nw": 0.01,
-      "residual_500m_rate_on_full_top_nw": 0.015,
-      "residual_1b_requires_rate_above_2pct_or_broader_base": true,
+      "theoretical_1pct_usd": 485323910,
+      "base_effective_retention": 0.5707,
+      "base_effective_base_usd": 27698672926,
+      "base_effective_1pct_usd": 276986729,
+      "residual_250m_rate_on_base_effective": 0.01,
+      "residual_500m_rate_on_base_effective": 0.02,
+      "residual_1b_requires_above_2pct_on_base_effective": true,
       "never_ordinary_labor_income": true
     },
-    "hard_protection": "Liability begins only above substantial surplus net wealth; protections against forced liquidation of ordinary homes, productive family farms, retirement security, and closely held enterprises",
-    "ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json"
+    "hard_protection": "Very high universal net-worth floor protects ordinary households; inside surplus tier, wrappers and asset labels do not erase economically owned wealth; illiquid productive assets use secured deferral/installment/liquidity-event collection — not exemption",
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+    "no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json"
   },
   "count_rule": "Refuse to count any engine dollar toward the ~$7.23B IIT+property replacement requirement until it has an evidence-backed cash-flow model that is incremental, stress-tested, legally available, and reserved for the same essential obligations.",
   "replacement_targets_usd": {

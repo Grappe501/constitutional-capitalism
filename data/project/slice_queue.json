@@ -2100,12 +2100,16 @@
     },
     "hard_safeguards": [
       "never_ordinary_labor_income",
-      "primary_residence_retirement_farm_protections",
-      "liquidity_and_deferral_for_illiquid",
       "thresholds_not_locked",
       "self_retiring_toward_zero",
       "constitutional_uniformity_gate_open"
     ],
+    "revised_by": {
+      "decision_id": "CC-DEC-134",
+      "update_id": "UPD-147",
+      "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+      "note": "Asset-menu protections revised to universal floor + illiquidity-as-collection"
+    },
     "research_next": [
       "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
       "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
@@ -2118,6 +2122,65 @@
       "residual_wealth_is_shock_absorber_not_prosperity_engine",
       "never_ordinary_labor_income",
       "residual_iit_superseded_by_residual_wealth"
+    ]
+  },
+  "arkansas_residual_wealth_no_loopholes_base_legal": {
+    "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+    "status": "PASSED_NO_LOOPHOLES_BASE_AND_LEGAL_TEST_MODELED",
+    "mode": "beneficial_ownership_universal_floor_effective_base_legal_tracks",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "role": "RESIDUAL_BASE_AND_LEGAL_HARDEN_NOT_PROSPERITY_ENGINE",
+    "decision_id": "CC-DEC-134",
+    "update_id": "UPD-147",
+    "revises": {
+      "decision_id": "CC-DEC-133",
+      "update_id": "UPD-146",
+      "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0"
+    },
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
+    "script": "scripts/bind_residual_wealth_no_loopholes_base_legal.py",
+    "return": "reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_NO_LOOPHOLES_BASE_AND_LEGAL_TEST_1_0_RETURN.md",
+    "prosperity_engines_countable_now_usd": 0,
+    "bound": {
+      "theoretical_top_nw_usd": 48532391000,
+      "base_effective_retention": 0.5707,
+      "base_effective_base_usd": 27698672926,
+      "base_effective_1pct_usd": 276986729
+    },
+    "headline": {
+      "taxable_concept": "beneficial_economic_ownership",
+      "poverty_protection": "universal_nw_floor_not_asset_menu",
+      "illiquidity_rule": "collection_timing_not_exemption",
+      "residual_250m_on_base_effective": 0.01,
+      "residual_500m_on_base_effective": 0.02,
+      "legal_lane_cleared": false
+    },
+    "hard_safeguards": [
+      "never_ordinary_labor_income",
+      "beneficial_economic_ownership",
+      "universal_floor_not_asset_menu",
+      "illiquidity_is_collection_timing_not_exemption",
+      "symmetry_no_structuring_privilege",
+      "theoretical_base_is_not_effective_base",
+      "floors_not_locked",
+      "constitutional_lane_not_cleared"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "prosperity_engines_still_zero_countable",
+      "residual_wealth_is_shock_absorber_not_prosperity_engine",
+      "never_ordinary_labor_income",
+      "beneficial_economic_ownership",
+      "universal_floor_not_asset_menu"
     ]
   },
   "arkansas_external_income_sector_capture": {

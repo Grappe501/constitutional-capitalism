@@ -1,5 +1,9 @@
 # CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0 — Return
 
+> **REVISED** by **CC-DEC-134 / UPD-147** — No-loopholes base + legal test.  
+> Protection design is now a **universal net-worth floor** + **beneficial ownership** + **illiquidity-as-collection**, not an asset-exemption menu.  
+> Active return: `reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_NO_LOOPHOLES_BASE_AND_LEGAL_TEST_1_0_RETURN.md`
+
 **Decision:** CC-DEC-133  
 **Update:** UPD-146  
 **Date:** 2026-08-12  
