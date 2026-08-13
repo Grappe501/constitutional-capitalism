@@ -1,7 +1,7 @@
 # CC-HYP-AI-ABUNDANCE-AND-DISTRIBUTED-PRODUCTIVE-OWNERSHIP (HYP-134)
 
 **Status:** Research hypothesis — **not doctrine** · **not a principle** · **not a forecast** · **not Replacement Stack revenue**  
-**Update:** UPD-154 · Decision: CC-DEC-141 (`KEEP_AS_HYPOTHESIS`)  
+**Update:** UPD-155 · Decision: CC-DEC-142 (parallel evidence-only posture) · Registration: CC-DEC-141  
 **Framework:** `data/project/ai_abundance_distributed_productive_ownership.json`  
 **Demands:** `data/project/CC_AI_ABUNDANCE_DISTRIBUTED_OWNERSHIP_DATA_DEMANDS.json`
 
@@ -84,11 +84,24 @@ Add separate **AI Abundance Sensitivity** (not revenue, not COUNTABLE): compare 
 
 > The economic philosophy designed for the next century cannot assume that human labor will forever remain the scarce input around which society organizes income, dignity, taxation and ownership.
 
-## Next research
+## Lane posture (locked — CC-DEC-142)
 
-1. AI Productivity Transition Dashboard  
-2. Ownership-structure surplus comparison  
-3. AI Abundance Sensitivity vs Replacement Stack  
+> **AI abundance may change the long-run economics of Constitutional Capitalism, but it does not rescue today’s replacement stack by assumption.**
+
+| Lane | Role |
+|---|---|
+| **Main** | External Income capture mechanism → reserved cash → replacement stack |
+| **Structural** | Definition-locks |
+| **HYP-134** | Parallel evidence inventory **only when grounded in real series** |
+
+Do **not** expand further until bound: labor share · output/worker · hours · AI capital investment · automation intensity · ownership concentration · productivity · profits · prices · household wealth distribution.  
+**Then** compare ownership structures under AI-abundance sensitivity.
+
+## Next research (gated)
+
+1. AI Productivity Transition Dashboard — **after** series bind  
+2. Ownership-structure surplus comparison — **after** series bind  
+3. AI Abundance Sensitivity vs Replacement Stack — **after** series bind  
 
 ## Does not displace
 

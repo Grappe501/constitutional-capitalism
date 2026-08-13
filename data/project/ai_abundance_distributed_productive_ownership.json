@@ -2,10 +2,12 @@
   "version": "1.0.0",
   "slice_id": "CC-AI-ABUNDANCE-AND-DISTRIBUTED-PRODUCTIVE-OWNERSHIP-1.0",
   "generated_at": "2026-08-12",
-  "status": "registration_only_keep_as_hypothesis",
+  "status": "registered_parallel_evidence_only_until_series_bound",
   "module_id": "CC-MOD-AI-ABUNDANCE-DISTRIBUTED-PRODUCTIVE-OWNERSHIP",
-  "decision_id": "CC-DEC-141",
-  "update_id": "UPD-154",
+  "decision_id": "CC-DEC-142",
+  "update_id": "UPD-155",
+  "registration_decision_id": "CC-DEC-141",
+  "registration_update_id": "UPD-154",
   "not": [
     "doctrine",
     "principle",
@@ -40,8 +42,9 @@
     "not_empirical_proof": true,
     "governance": {
       "decision": "KEEP_AS_HYPOTHESIS",
-      "decision_id": "CC-DEC-141",
-      "reason": "Steve identified a major missing assumption in HYP-131: the revenue architecture still assumes labor-constrained production. Registration only — no AI forecast, no stack inflation, no ownership percentages locked, no dashboard bind executed."
+      "decision_id": "CC-DEC-142",
+      "registration_decision_id": "CC-DEC-141",
+      "reason": "Registered under CC-DEC-141. CC-DEC-142 locks parallel evidence-only posture: do not expand HYP-134 until transition-indicator series are bound; must not contaminate today’s fiscal math or rescue the Replacement Stack by assumption."
     },
     "empirical_status": "NOT_ENOUGH_EVIDENCE",
     "dossier_path": "content/research/hypotheses/ai-abundance-and-distributed-productive-ownership.md",
@@ -220,11 +223,34 @@
     "HYP-132": "Retain/attract people and capital in an ownership society",
     "HYP-133": "Human-capability education for abundance economy — join note only"
   },
+  "lane_posture": {
+    "locked_by": "CC-DEC-142",
+    "update_id": "UPD-155",
+    "role": "Important enough to shape later modeling; isolated enough that it cannot contaminate today’s fiscal math",
+    "main_evidence_lane": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0",
+    "structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "hyp134": "PARALLEL_EVIDENCE_INVENTORY_ONLY_WHEN_GROUNDED_IN_REAL_SERIES",
+    "do_not_expand_until": [
+      "labor_share",
+      "output_per_worker",
+      "hours_worked",
+      "ai_capital_investment",
+      "automation_intensity",
+      "ownership_concentration",
+      "productivity",
+      "profits",
+      "prices",
+      "household_wealth_distribution"
+    ],
+    "then_allowed": "Compare ownership structures under AI-abundance sensitivity model",
+    "key_distinction": "AI abundance may change the long-run economics of Constitutional Capitalism, but it does not rescue today’s replacement stack by assumption."
+  },
   "queued_next_research_slices": [
     "CC-AI-PRODUCTIVITY-TRANSITION-DASHBOARD-1.0",
     "CC-AI-ABUNDANCE-OWNERSHIP-STRUCTURE-COMPARISON-1.0",
     "CC-AI-ABUNDANCE-SENSITIVITY-VS-REPLACEMENT-STACK-1.0"
   ],
+  "research_gate": "Dashboard / ownership comparison / sensitivity modeling may begin only after transition-indicator series are bound — not before",
   "parallel_does_not_displace": [
     "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0",
     "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
@@ -233,15 +259,18 @@
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS",
     "no_new_principle",
-    "registration_only",
+    "parallel_evidence_only_until_series_bound",
+    "do_not_expand_hyp134_further_yet",
     "ai_abundance_is_hypothesis_not_forecast",
     "projected_productivity_not_replacement_stack_revenue",
+    "does_not_rescue_todays_replacement_stack_by_assumption",
     "no_government_owns_ai",
     "innovation_incentives_protected",
     "broad_ownership_over_dependency",
     "do_not_inflate_demoted_stack_for_ai_boom",
     "ai_abundance_sensitivity_only",
     "fewer_new_architectures_more_evidence",
+    "external_income_mechanism_bind_remains_main_evidence_lane",
     "does_not_displace_external_income_mechanism_bind_or_definition_locks"
   ]
 }
