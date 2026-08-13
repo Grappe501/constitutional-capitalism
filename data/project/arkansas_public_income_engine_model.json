@@ -6,10 +6,11 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "VALUE_CAPTURE_ENTERPRISE_CASHFLOW_PASS_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-PUBLIC-INCOME-ENGINE-VALUE-CAPTURE-AND-ENTERPRISE-1.0",
+  "status": "HUMAN_CAPITAL_INCIDENCE_PASS_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
+  "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
@@ -277,21 +278,37 @@
       ],
       "existing_bound_scale": {
         "corporate_income_fy2026_usd": 523600000,
-        "status": "EXISTING_CORPORATE_ALREADY_SPENT — WPC is a redesign hypothesis, not free capacity"
+        "qcew_private_wages_2024_usd": 64458593075,
+        "qcew_private_employment_2024": 1097701,
+        "private_nonfarm_compensation_2024_usd": 86042723000,
+        "status": "EXISTING_CORPORATE_ALREADY_SPENT — wage/compensation envelopes bound; WPC redesign not free capacity",
+        "ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json"
       },
-      "addressable_base_status": "NEE — payroll/value-added base and credit leakage model required",
+      "addressable_base_status": "PARTIAL — QCEW wages/employment bound; private VA and size-class shares NEE; credit leakage UNMODELED",
       "authority": "Likely new statute; interaction with corporate income tax and incentive stack",
+      "design_logic": "Contribute to shared workforce system OR directly build verified workforce capacity",
+      "bases_tested": [
+        "payroll",
+        "profits",
+        "value_added",
+        "employee_count",
+        "high_skill_demand",
+        "combination"
+      ],
+      "small_family_protection": "STRUCTURALLY_PROTECTED_BY_DEFAULT",
       "plausible_incremental_range_usd_per_year": {
-        "status": "UNMODELED",
+        "status": "ILLUSTRATIVE_ENVELOPES_NOT_COUNTED",
         "low": null,
-        "high": null
+        "high": null,
+        "illustrative_1pct_private_wages_usd": 644585931,
+        "note": "Before thresholds, credits, incidence, and behavioral response"
       },
-      "incidence": "CRITICAL GATE — corporate taxes can fall on workers, consumers, or shareholders; must model before claiming prosperity alignment",
-      "volatility": "Business-cycle sensitive",
+      "incidence": "CRITICAL GATE OPEN — payroll/headcount high worker-pass-through risk; VA high consumer-price risk; profits volatile/competitiveness-sensitive; Arkansas-specific pass-through NEE",
+      "volatility": "Business-cycle sensitive — payroll more stable than profits",
       "earmark": "K-12 → CTE → apprenticeships → community colleges → universities → strategic capacity",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
-      "t1_t5_posture": "T4 strong if credit path real; T3 unresolved until incidence modeled"
+      "cash_flow_model_status": "INCIDENCE_PASSED_ZERO_COUNTABLE",
+      "t1_t5_posture": "T4 strong if credit path real; T1 scale envelope real; T3 unresolved until incidence microsim"
     },
     {
       "id": "ENGINE-VALUE-CAPTURE",
@@ -455,11 +472,12 @@
     "PRODUCTIVE_PUBLIC_WEALTH": ["Enterprise", "Prosperity Fund", "Energy ownership returns"]
   },
   "scale_implication_after_vc_enterprise": "With Use/Depletion/Value Capture/Enterprise still at $0 countable, large-scale replacement burden shifts decisively toward Human-capital, Prosperity Fund, and External Income modeling",
+  "scale_implication_after_human_capital": "Human-capital shows real wage/compensation envelopes but $0 countable after incidence gates; sequence continues Prosperity Fund → External Income → integrate all 10 engines vs ~$7.23B — retirement must be earned",
   "next_modeling_slices": [
-    "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
     "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
-    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0",
-    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+    "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
+    "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
   ],
   "holds": [
     "overall_percent_held_at_43",
@@ -467,6 +485,8 @@
     "no_abolish_today",
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
+    "illustrative_yield_is_not_countable",
+    "small_family_business_protected_by_default",
     "public_risk_at_risk_required",
     "no_discriminatory_export_tax",
     "defense_is_federal_ledger",

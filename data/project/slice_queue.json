@@ -1926,6 +1926,7 @@
     "candidates_scored": 15,
     "engine_role_verdict": "VALUE_CAPTURE_AND_ENTERPRISE_STRATEGIC_BUT_ZERO_COUNTABLE",
     "scale_implication": "Large-scale replacement burden shifts to Human-capital, Prosperity Fund, and External Income",
+    "superseded_next_by": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
     "research_next": [
       "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
       "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
@@ -1943,6 +1944,85 @@
       "zero_counted_until_cashflow_model",
       "public_risk_at_risk_required",
       "already_spent_cannot_double_count"
+    ]
+  },
+  "arkansas_workforce_prosperity_contribution_incidence": {
+    "slice_id": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+    "status": "PASSED_ZERO_COUNTABLE_INCIDENCE_PENDING",
+    "mode": "multi_base_incidence_credit_three_buckets",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "engine_id": "ENGINE-HUMAN-CAPITAL",
+    "decision_id": "CC-DEC-130",
+    "update_id": "UPD-143",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
+    "script": "scripts/bind_workforce_prosperity_contribution_incidence.py",
+    "return": "reports/CC_ARKANSAS_WORKFORCE_PROSPERITY_CONTRIBUTION_INCIDENCE_1_0_RETURN.md",
+    "countable_now_usd": 0,
+    "bound": {
+      "qcew_private_wages_2024_usd": 64458593075,
+      "qcew_private_employment_2024": 1097701,
+      "cit_gross_fy2026_usd": 523600000
+    },
+    "design_logic": "contribute_or_build_verified_workforce_capacity",
+    "engine_role_verdict": "REAL_SCALE_ENVELOPE_ZERO_COUNTABLE_UNTIL_INCIDENCE_AND_CREDITS",
+    "research_next": [
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+    ],
+    "parallel_empirical_next": [
+      "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
+    ],
+    "next_structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "illustrative_yield_is_not_countable",
+      "small_family_business_protected_by_default",
+      "existing_cit_already_spent"
+    ]
+  },
+  "arkansas_prosperity_fund_capital_path": {
+    "slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+    "status": "QUEUED_NEXT",
+    "mode": "seed_contributions_returns_drawdown_years_to_scale",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "engine_id": "ENGINE-PROSPERITY-FUND",
+    "question": "How could Arkansas accumulate enough productive public capital over 8–16 years that investment returns eventually replace a meaningful portion of recurring taxes?",
+    "must_model": [
+      "seed_capital",
+      "annual_contributions",
+      "investment_return_assumptions",
+      "volatility",
+      "drawdown_rule",
+      "inflation_protection",
+      "reserve_rule",
+      "annual_distributable_income",
+      "year_tax_retirement_thresholds"
+    ],
+    "payout_targets_usd": [250000000, 500000000, 1000000000, 2000000000],
+    "feeder_rule": "Windfalls and new prosperity revenues — not raiding existing obligations",
+    "feeder_candidates": [
+      "lithium_resource_participation",
+      "public_asset_returns",
+      "value_capture_proceeds",
+      "external_income_surpluses",
+      "settlement_windfall_revenue",
+      "portions_of_wpc_if_justified"
+    ],
+    "count_rule": "Unmodeled fund earnings are $0 replacement dollars; must show capital base needed to sustain targets without consuming principal",
+    "depends_on_completed": [
+      "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0"
+    ],
+    "research_after": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
     ]
   },
   "publication_pass9_structural_deepen": {

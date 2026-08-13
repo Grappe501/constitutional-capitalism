@@ -1,0 +1,423 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+  "generated_at": "2026-08-12",
+  "decision_id": "CC-DEC-130",
+  "update_id": "UPD-143",
+  "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+  "incubator_alias": "HYP-131",
+  "engine_id": "ENGINE-HUMAN-CAPITAL",
+  "status": "INCIDENCE_PASS_ZERO_COUNTABLE",
+  "central_question": "Can large employers materially finance Arkansas education and workforce capacity in a way that increases productive capability without simply shifting the cost back onto workers, consumers, or small businesses?",
+  "central_answer": {
+    "question": "Can large employers materially finance Arkansas education and workforce capacity in a way that increases productive capability without simply shifting the cost back onto workers, consumers, or small businesses?",
+    "answer_this_slice": "NOT_YET_DEMONSTRATED",
+    "why": [
+      "Addressable scale is real (private wages ~$64.5B; labor compensation ~$86B; GDP ~$188B) \u2014 Human-capital is not a tiny base.",
+      "Existing CIT ~$524M is already spent GR and is not free WPC capacity.",
+      "Payroll/headcount bases have high classical risk of worker incidence; VA base has high consumer-price risk; profits base is volatile and fights competitiveness narrative.",
+      "Credit path is the philosophical core but makes net cash for tax retirement uncertain until leakage is modeled.",
+      "Small/family businesses must stay structurally protected; large-employer size-class wage share still NEE."
+    ],
+    "what_would_make_it_yes": [
+      "Arkansas-specific incidence study (statutory\u2192economic payer)",
+      "QCEW/OES size-class and high-skill occupation binds",
+      "Credit verification + leakage microsimulation",
+      "Legal draft with dual thresholds and CIT interaction",
+      "Stress test: recession employment drop; credit uptake 30/60/90%"
+    ]
+  },
+  "design_logic": "Contribute to the shared workforce system OR directly build verified workforce capacity \u2014 not merely raise the corporate tax.",
+  "count_rule": "COUNTABLE NOW stays $0 until a design survives brutal incidence mapping, credit leakage, small-business protection, legal authority, and stress testing as truly incremental reserved cash.",
+  "replacement_target_usd": 7231905638,
+  "iit_gross_fy2026_usd": 3859100000,
+  "counted_toward_replacement_usd": 0,
+  "bound_anchors": {
+    "qcew_private_2024": {
+      "establishments": 99464,
+      "employment": 1097701,
+      "total_annual_wages_usd": 64458593075,
+      "avg_annual_pay_usd": 58721,
+      "source": "https://data.bls.gov/cew/data/api/2024/a/area/05000.csv"
+    },
+    "private_nonfarm_labor_compensation": {
+      "usd_2024": 86042723000,
+      "usd_2025": 91021406000,
+      "series": "IPUZNL020050000",
+      "source": "https://fred.stlouisfed.org/series/IPUZNL020050000"
+    },
+    "arkansas_gdp": {
+      "usd_2024": 188339600000,
+      "usd_2025": 198422000000,
+      "series": "ARNGSP",
+      "source": "https://fred.stlouisfed.org/series/ARNGSP"
+    },
+    "corporate_income_tax_fy2026": {
+      "gross_usd": 523600000,
+      "net_of_refunds_usd": 453800000,
+      "top_rate": 0.043,
+      "already_spent": true,
+      "source": "data/imports/arkansas-revenue-replacement/fy2026_dfa_general_revenue_bind.json"
+    },
+    "illustrative_0_5pct_private_wages_usd": 322292965,
+    "illustrative_1_0pct_private_wages_usd": 644585931,
+    "note": "Illustrative yields show scale envelopes only \u2014 not recommended rates and not countable dollars."
+  },
+  "bases_tested": [
+    {
+      "id": "WPC-BASE-PAYROLL",
+      "name": "Payroll base (QCEW private total annual wages)",
+      "base_definition": "Employer contribution as % of Arkansas-covered private wages (UI/QCEW concept)",
+      "bound_scale": {
+        "status": "BOUND",
+        "year": 2024,
+        "private_establishments": 99464,
+        "private_employment": 1097701,
+        "private_total_annual_wages_usd": 64458593075,
+        "avg_annual_pay_usd": 58721,
+        "source": "https://data.bls.gov/cew/data/api/2024/a/area/05000.csv",
+        "supplemental_compensation_2024_usd": 86042723000,
+        "supplemental_compensation_series": "IPUZNL020050000",
+        "note": "Compensation series > wages because it includes supplements (benefits, legally required)."
+      },
+      "illustrative_rates": [
+        "0.5%",
+        "1.0%",
+        "1.5% of QCEW private wages"
+      ],
+      "illustrative_gross_yields_usd": {
+        "at_0_5_percent": 322292965,
+        "at_1_0_percent": 644585931,
+        "at_1_5_percent": 966878896,
+        "status": "ILLUSTRATIVE_NOT_COUNTED \u2014 before credits, thresholds, behavioral response"
+      },
+      "already_spent_overlap": "Distinct from CIT, but wage costs already embed existing payroll taxes (FICA, UI, workers' comp). WPC would be additive unless CIT is redesigned/credited against it.",
+      "incidence": {
+        "statutory_payer": "Employers with Arkansas covered payroll (after thresholds)",
+        "likely_economic_payer": "SUBSTANTIAL SHARE ON WORKERS via lower wages/slower raises over time; remainder on owners/consumers depending on labor-market power and product-market competition",
+        "worker_effect": "HIGH RISK \u2014 classic payroll-tax incidence literature assigns much of the burden to labor; must not assume employers 'eat' the contribution",
+        "consumer_price_effect": "MODERATE \u2014 some pass-through in local/non-tradable sectors",
+        "investment_effect": "MODERATE \u2014 raises marginal cost of labor-intensive expansion",
+        "small_business_effect": "HIGH if no threshold \u2014 ~99k establishments; most are small. Structural exemption required.",
+        "competitiveness_effect": "MODERATE_TO_HIGH vs low-tax neighbors if rate material and base broad",
+        "revenue_stability": "MODERATE_HIGH \u2014 wages more stable than profits; still cyclical",
+        "incidence_confidence": "QUALITATIVE_LITERATURE \u2014 Arkansas-specific pass-through NEE"
+      },
+      "small_family_protection": {
+        "posture": "STRUCTURALLY_PROTECTED_BY_DEFAULT",
+        "design": "Exempt below employee-count and/or payroll thresholds; phase-in; sole props/small LLCs out unless evidence requires inclusion",
+        "size_class_payroll_share_status": "NEE \u2014 QCEW size-class bind not completed this slice"
+      },
+      "credit_interaction": "Payroll base pairs naturally with apprenticeship/tuition credits \u2014 but credits can zero out cash while still building capacity (gross \u2260 net GR)",
+      "legal_status": "NEW_STATUTE_REQUIRED \u2014 interaction with CIT, UI, and AEDC incentives LEGAL_PENDING",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Largest clean addressable wage base bound this slice (~$64.5B). Scale envelope is real; incidence/credit gates block counting."
+    },
+    {
+      "id": "WPC-BASE-PROFITS",
+      "name": "Profits / corporate taxable income base",
+      "base_definition": "Surcharge or redesign layered on Arkansas corporate net taxable income (or replacement of CIT with WPC-profits form)",
+      "bound_scale": {
+        "status": "BOUND_COLLECTIONS_ONLY",
+        "cit_gross_fy2026_usd": 523600000,
+        "cit_net_of_refunds_fy2026_usd": 453800000,
+        "cit_top_rate": 0.043,
+        "implied_taxable_income_if_flat_at_top_rate_usd": 12176744186,
+        "note": "Implied base is an envelope from collections\u00f7top rate \u2014 not a DFA taxable-income bind. Pass-through entities and credits make true base harder."
+      },
+      "illustrative_rates": [
+        "+1 percentage point",
+        "+2 percentage points on implied CIT base"
+      ],
+      "illustrative_gross_yields_usd": {
+        "plus_1pp_on_implied_base": 121767442,
+        "plus_2pp_on_implied_base": 243534884,
+        "existing_cit_gross_already_spent": 523600000,
+        "status": "ILLUSTRATIVE_NOT_COUNTED \u2014 CIT already funds GR; hike \u2260 free capacity"
+      },
+      "already_spent_overlap": "YES \u2014 entire ~$524M CIT gross is already GR. Raising CIT is not incremental replacement capacity without spending cuts or net-new yield after behavioral response.",
+      "incidence": {
+        "statutory_payer": "C-corporations (and whatever entities statute includes)",
+        "likely_economic_payer": "MIXED \u2014 more capital/shareholder in closed settings; mobile capital, markups, and monopsony can shift to workers/consumers",
+        "worker_effect": "NONZERO RISK especially if firms have local labor monopsony or cut training/wages",
+        "consumer_price_effect": "MODERATE in concentrated local markets",
+        "investment_effect": "HIGH RISK for marginal investment / HQ location if rate rises without credit path",
+        "small_business_effect": "LOWER if limited to C-corps above income thresholds \u2014 but many Arkansas employers are pass-throughs (would miss them)",
+        "competitiveness_effect": "HIGH sensitivity \u2014 Arkansas already cut top CIT to 4.3%; further profit taxes fight site-selection narrative",
+        "revenue_stability": "LOW_TO_MODERATE \u2014 profits more volatile than payroll (T2 weakness from prior T1\u2013T5)",
+        "incidence_confidence": "QUALITATIVE \u2014 entity composition and Arkansas pass-through share NEE"
+      },
+      "small_family_protection": {
+        "posture": "NATURALLY_NARROWER_IF_C_CORP_ONLY",
+        "design": "Keep pass-through/family firms out unless using public workforce at corporate scale; do not recreate broad business tax on Main Street",
+        "warning": "Narrow profits base may miss large pass-through employers that still depend on public human capital"
+      },
+      "credit_interaction": "Credit model can convert a profits surcharge into workforce investment \u2014 but then cash to Tax Retirement Fund falls",
+      "legal_status": "CIT statute exists; WPC-profits redesign LEGAL_PENDING",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Closest to 'just raise corporate tax' \u2014 philosophically weaker unless credits force workforce investment. Existing CIT already spent."
+    },
+    {
+      "id": "WPC-BASE-VALUE-ADDED",
+      "name": "Value-added base (output \u2212 intermediate inputs)",
+      "base_definition": "Arkansas value-added of in-scope employers (closer to GVA than profits or wages alone)",
+      "bound_scale": {
+        "status": "ENVELOPE_ONLY",
+        "arkansas_gdp_2024_usd": 188339600000,
+        "arkansas_gdp_2025_usd": 198422000000,
+        "series": "ARNGSP",
+        "private_value_added_status": "NEE \u2014 need BEA GDP-by-state private industries table",
+        "note": "Using total GDP as ceiling only; government/output mix means private VA < GDP."
+      },
+      "illustrative_rates": [
+        "0.25% of GDP envelope",
+        "0.50% of GDP envelope"
+      ],
+      "illustrative_gross_yields_usd": {
+        "at_0_25_percent_of_gdp_envelope": 470849000,
+        "at_0_50_percent_of_gdp_envelope": 941698000,
+        "status": "ILLUSTRATIVE_CEILING_NOT_COUNTED \u2014 true private VA base unbound"
+      },
+      "already_spent_overlap": "Would overlap economically with sales, CIT, and payroll costs; not a free new pie.",
+      "incidence": {
+        "statutory_payer": "In-scope businesses on Arkansas value added",
+        "likely_economic_payer": "SUBSTANTIAL CONSUMER/WORKER SHARE \u2014 VAT-like taxes commonly forward-shifted",
+        "worker_effect": "MODERATE_TO_HIGH via prices and labor demand",
+        "consumer_price_effect": "HIGH RISK \u2014 can resemble a broad consumption tax unless strongly targeted",
+        "investment_effect": "MODERATE \u2014 taxes capital+labor value creation",
+        "small_business_effect": "HIGH without thresholds \u2014 compliance complexity alone is a Main Street tax",
+        "competitiveness_effect": "MODERATE_TO_HIGH for tradable sectors",
+        "revenue_stability": "MODERATE \u2014 broader than profits, still cyclical",
+        "incidence_confidence": "QUALITATIVE \u2014 Arkansas VA base unbound"
+      },
+      "small_family_protection": {
+        "posture": "REQUIRES_STRONG_THRESHOLDS",
+        "design": "High VA/payroll floor; simplified computation for mid-size; exclude micro firms"
+      },
+      "credit_interaction": "Credits can offset, but VA measurement + credit audit is administratively heavy",
+      "legal_status": "NEW_STATUTE + ADMIN SYSTEM \u2014 LEGAL_AND_ADMIN_PENDING",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Philosophically closer to taxing productive activity than pure profits \u2014 but consumer-incidence risk is the fatal gate without careful design."
+    },
+    {
+      "id": "WPC-BASE-EMPLOYEE-COUNT",
+      "name": "Employee-count / headcount base",
+      "base_definition": "Fixed annual contribution per Arkansas employee (or FTE) above threshold",
+      "bound_scale": {
+        "status": "BOUND",
+        "year": 2024,
+        "private_employment": 1097701,
+        "source": "https://data.bls.gov/cew/data/api/2024/a/area/05000.csv"
+      },
+      "illustrative_rates": [
+        "$250 / employee",
+        "$500 / employee",
+        "$1,000 / employee"
+      ],
+      "illustrative_gross_yields_usd": {
+        "at_250_per_employee": 274425250,
+        "at_500_per_employee": 548850500,
+        "at_1000_per_employee": 1097701000,
+        "status": "ILLUSTRATIVE_NOT_COUNTED \u2014 before thresholds/credits"
+      },
+      "already_spent_overlap": "New form unless replacing other business taxes; interacts with hiring incentives.",
+      "incidence": {
+        "statutory_payer": "Employers above headcount threshold",
+        "likely_economic_payer": "Workers and firms \u2014 headcount taxes can suppress hiring, raise contractor use, or slow wage growth",
+        "worker_effect": "HIGH RISK for hiring margins and contingent-work substitution",
+        "consumer_price_effect": "MODERATE",
+        "investment_effect": "MODERATE \u2014 penalizes labor-intensive models vs capital/automation",
+        "small_business_effect": "PROTECTED if threshold high (e.g., 50/100/250 employees); HARMFUL if threshold low",
+        "competitiveness_effect": "MODERATE",
+        "revenue_stability": "MODERATE_HIGH \u2014 employment less volatile than profits",
+        "incidence_confidence": "QUALITATIVE"
+      },
+      "small_family_protection": {
+        "posture": "THRESHOLD_IS_THE_PROTECTION",
+        "design": "Hard floor (illustrative 100+ or 250+ employees) + phase-in; never per-head tax on micro firms"
+      },
+      "credit_interaction": "Per-head credits for apprentices/interns can neutralize anti-hiring bias if well designed",
+      "legal_status": "NEW_STATUTE_REQUIRED",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Simple admin, but blunt. Best only with high thresholds and strong apprentice credits."
+    },
+    {
+      "id": "WPC-BASE-HIGH-SKILL-DEMAND",
+      "name": "High-skill workforce demand base",
+      "base_definition": "Surcharge tied to employment/payroll in high-skill occupations or to H-1B/STEM/degree-intensive roles that most depend on public K-12\u2192university pipelines",
+      "bound_scale": {
+        "status": "NEE",
+        "need": "OES/ACS occupation\u00d7industry Arkansas tables + definition of high-skill bundle",
+        "related_bound": {
+          "private_avg_annual_pay_usd": 58721,
+          "private_compensation_2024_usd": 86042723000
+        }
+      },
+      "illustrative_rates": [
+        "UNMODELED \u2014 no occupation base bound"
+      ],
+      "illustrative_gross_yields_usd": {
+        "status": "UNMODELED",
+        "gross": null
+      },
+      "already_spent_overlap": "Could complement CIT; targets dependence on public human capital more precisely.",
+      "incidence": {
+        "statutory_payer": "Employers of in-scope high-skill roles",
+        "likely_economic_payer": "MIXED \u2014 may reduce skilled hiring, raise skilled wages (if supply constrained), or accelerate automation/remote hiring out of state",
+        "worker_effect": "AMBIGUOUS \u2014 could fund training (gain) or suppress skilled headcount (loss)",
+        "consumer_price_effect": "LOW_TO_MODERATE \u2014 concentrated in skill-intensive sectors",
+        "investment_effect": "MODERATE \u2014 site selection for HQ/tech/advanced manufacturing sensitive",
+        "small_business_effect": "LIKELY_LOWER if high-skill intensity correlates with larger firms \u2014 still need carveouts for clinics/small professional firms",
+        "competitiveness_effect": "HIGH for talent-competitive sectors",
+        "revenue_stability": "MODERATE \u2014 skill mix drifts; definition games likely",
+        "incidence_confidence": "LOW \u2014 base unbound"
+      },
+      "small_family_protection": {
+        "posture": "DESIGN_CAREFULLY",
+        "design": "Exclude small professional practices below payroll floor; focus on large corporate-scale skill demand"
+      },
+      "credit_interaction": "Strongest philosophical fit \u2014 credit for university partnerships, apprenticeships, rural training directly offsets high-skill dependence",
+      "legal_status": "NEW_STATUTE + OCCUPATION DEFINITIONS \u2014 LEGAL_PENDING",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Best philosophy match among pure bases, worst data readiness this slice."
+    },
+    {
+      "id": "WPC-BASE-COMBINATION",
+      "name": "Combination base (payroll + profits or payroll + headcount threshold)",
+      "base_definition": "Hybrid: e.g., payroll % above large-employer threshold with profits kicker, or dual-threshold (employees AND payroll)",
+      "bound_scale": {
+        "status": "COMPOSITE_OF_ABOVE",
+        "components": [
+          "WPC-BASE-PAYROLL",
+          "WPC-BASE-PROFITS",
+          "WPC-BASE-EMPLOYEE-COUNT"
+        ]
+      },
+      "illustrative_rates": [
+        "Design-dependent \u2014 not selected this slice"
+      ],
+      "illustrative_gross_yields_usd": {
+        "status": "UNSELECTED \u2014 premature to pick a winner before incidence/credit model",
+        "envelope_note": "Payroll 0.5\u20131.0% on full private wages spans ~$322M\u2013$645M before thresholds/credits; large-employer subset would be materially smaller (size share NEE)."
+      },
+      "already_spent_overlap": "Depends whether CIT is credited/replaced; double-tax risk if stacked carelessly.",
+      "incidence": {
+        "statutory_payer": "Large employers meeting dual thresholds",
+        "likely_economic_payer": "Still mixed \u2014 hybrid does not eliminate worker/consumer pass-through; it can reduce small-business hit",
+        "worker_effect": "REMAINS MATERIAL unless credits expand training supply and wages",
+        "consumer_price_effect": "MODERATE",
+        "investment_effect": "MODERATE",
+        "small_business_effect": "IMPROVED vs broad bases IF thresholds bind",
+        "competitiveness_effect": "MODERATE \u2014 depends on net rate after credits",
+        "revenue_stability": "MODERATE_HIGH if payroll-weighted",
+        "incidence_confidence": "QUALITATIVE"
+      },
+      "small_family_protection": {
+        "posture": "PREFERRED_DIRECTION",
+        "design": "Dual floor (employees + payroll) + phase-in + verified-credit pathway; target corporate scale that materially depends on Arkansas public human capital"
+      },
+      "credit_interaction": "Combination + credit model is the intended Constitutional Capitalism shape: contribute OR build verified capacity",
+      "legal_status": "NEW_STATUTE_REQUIRED",
+      "truly_incremental_recurring_usd_countable": 0,
+      "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+      "notes": "Do not pick a single base yet. Combination + credits is the design hypothesis to stress-test next."
+    }
+  ],
+  "credit_model": {
+    "id": "WPC-CREDIT-VERIFIED-CAPACITY",
+    "logic": "Contribute cash to the shared workforce system OR directly build verified workforce capacity",
+    "eligible_investments": [
+      "registered apprenticeships",
+      "CTE partnerships",
+      "university / community-college partnerships",
+      "rural training programs",
+      "paid internships",
+      "tuition support / student debt assistance tied to Arkansas work",
+      "workforce infrastructure (labs, training centers)"
+    ],
+    "design_rules": [
+      "Credits require third-party verification \u2014 no self-certified marketing spend",
+      "Credit cannot exceed obligation without creating refundable cash sink unless statute intends grants",
+      "Direct investment that builds capacity counts toward prosperity goals even when it reduces net GR cash",
+      "Net Tax Retirement Fund dollars = max(0, gross liability \u2212 verified credits \u2212 admin) after behavioral response"
+    ],
+    "gross_vs_net": {
+      "rule": "Gross illustrative yields are NOT countable replacement dollars",
+      "credit_leakage_status": "UNMODELED",
+      "warning": "A high-credit design can be philosophically correct and still produce little IIT-replacement cash"
+    },
+    "earmark": "K-12 \u2192 CTE \u2192 apprenticeships \u2192 community colleges \u2192 universities \u2192 strategic capacity",
+    "bucket": "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING",
+    "truly_incremental_recurring_usd_countable": 0
+  },
+  "unsuitable_designs": [
+    {
+      "id": "RAISE_CIT_WITHOUT_WORKFORCE_CREDIT_PATH",
+      "bucket": "NOT_MATERIAL_OR_NOT_SUITABLE",
+      "why": "Just raising corporate tax is not the Human-capital engine \u2014 misses 'contribute OR build capacity' logic; existing CIT already spent"
+    },
+    {
+      "id": "BROAD_HEADCOUNT_TAX_ON_SMALL_BUSINESS",
+      "bucket": "NOT_MATERIAL_OR_NOT_SUITABLE",
+      "why": "Violates small/family structural protection; high hiring distortion"
+    },
+    {
+      "id": "VA_BASE_WITHOUT_HOUSEHOLD_PROTECTION",
+      "bucket": "NOT_MATERIAL_OR_NOT_SUITABLE",
+      "why": "Risks becoming a regressive consumption-like burden rename"
+    }
+  ],
+  "buckets": {
+    "COUNTABLE_NOW": {
+      "ids": [],
+      "incremental_recurring_usd": 0,
+      "verdict": "EMPTY \u2014 no base clears incidence + credit leakage + legal + stress gates as free incremental replacement dollars"
+    },
+    "PLAUSIBLE_BUT_INCIDENCE_AND_CREDIT_PENDING": {
+      "ids": [
+        "WPC-BASE-PAYROLL",
+        "WPC-BASE-PROFITS",
+        "WPC-BASE-VALUE-ADDED",
+        "WPC-BASE-EMPLOYEE-COUNT",
+        "WPC-BASE-HIGH-SKILL-DEMAND",
+        "WPC-BASE-COMBINATION",
+        "WPC-CREDIT-VERIFIED-CAPACITY"
+      ],
+      "verdict": "All bases remain open for design; combination + verified-credit pathway is preferred hypothesis; none counted"
+    },
+    "NOT_MATERIAL_OR_NOT_SUITABLE": {
+      "ids": [
+        "RAISE_CIT_WITHOUT_WORKFORCE_CREDIT_PATH",
+        "BROAD_HEADCOUNT_TAX_ON_SMALL_BUSINESS",
+        "VA_BASE_WITHOUT_HOUSEHOLD_PROTECTION"
+      ],
+      "verdict": "Generic corporate-tax hike, Main-Street headcount tax, and unprotected VA/consumption-like designs fail the prosperity test even if they raise cash"
+    }
+  },
+  "scale_implication": {
+    "human_capital_role": "Last large near-term recurring-cash concept before long-horizon Prosperity Fund compounding",
+    "after_this_pass": "Still $0 countable \u2014 proceeds to Prosperity Fund capital path, then External Income, then integrate all 10 engines vs ~$7.23B",
+    "honesty_rule": "If integrated engines cannot safely replace IIT/property, say so \u2014 taxes are earned into retirement, not assumed away"
+  },
+  "next_slice": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+  "sequence_lock": [
+    "CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0",
+    "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+    "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+  ],
+  "holds": [
+    "overall_percent_held_at_43",
+    "KEEP_AS_HYPOTHESIS",
+    "no_abolish_today",
+    "zero_counted_until_cashflow_model",
+    "illustrative_yield_is_not_countable",
+    "small_family_business_protected_by_default",
+    "existing_cit_already_spent"
+  ]
+}

@@ -2273,6 +2273,24 @@
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
       "supersedes": null
+    },
+    {
+      "decision_id": "CC-DEC-130",
+      "title": "Arkansas Workforce Prosperity Contribution Incidence",
+      "question": "Should Constitutional Capitalism execute CC-ARKANSAS-WORKFORCE-PROSPERITY-CONTRIBUTION-INCIDENCE-1.0 by testing Workforce Prosperity Contribution bases separately (payroll, profits, value added, employee count, high-skill demand, and combinations), requiring a brutal incidence map (statutory→economic payer→worker→consumer→investment→small-business→competitiveness→stability), modeling a verified-credit pathway (contribute OR build workforce capacity), structurally protecting small/family businesses by default, keeping COUNTABLE NOW at $0 unless incidence/credit/legal/stress gates clear, and holding overall completion at 43% with no abolish recommendation?",
+      "status": "approved",
+      "rationale": "Steve sequenced Human-capital before Prosperity Fund because it is the last large near-term recurring-cash concept. Bound QCEW private wages (~$64.5B) and FRED compensation/GDP show real scale envelopes, but classical incidence risk, unmodeled credit leakage, and already-spent CIT (~$524M) block counting. The pass locks contribute-or-build logic over a generic corporate-tax hike and queues the Prosperity Fund capital path next.",
+      "impact": [
+        "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
+        "scripts/bind_workforce_prosperity_contribution_incidence.py",
+        "data/project/arkansas_public_income_engine_model.json",
+        "UPD-143",
+        "Overall % held at 43 / COUNTABLE NOW $0 / small-family protected / Prosperity Fund queued next"
+      ],
+      "recommendation": "Next tax research: CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0; then External Income; then integrate all 10 engines vs ~$7.23B. Parallel: QCEW size-class and OES high-skill binds; credit leakage microsim. Structural: definition-locks. Empirical: comparative diagnosis packets.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": null
     }
   ]
 }
