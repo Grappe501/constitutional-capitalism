@@ -2041,37 +2041,70 @@
   },
   "arkansas_residual_progressive_income_tax_top_down": {
     "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
-    "status": "PASSED_RESIDUAL_SHOCK_ABSORBER_MODELED",
+    "status": "SUPERSEDED_BY_RESIDUAL_WEALTH_CONTRIBUTION",
     "mode": "soi_top_down_residual_gap_schedules",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
-    "role": "RESIDUAL_SHOCK_ABSORBER_NOT_PROSPERITY_ENGINE",
+    "role": "SUPERSEDED_RESIDUAL_INSTRUMENT",
     "decision_id": "CC-DEC-132",
     "update_id": "UPD-145",
-    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "superseded_by": {
+      "decision_id": "CC-DEC-133",
+      "update_id": "UPD-146",
+      "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0"
+    },
+    "decision_posture": "KEEP_AS_HYPOTHESIS_HISTORICAL",
     "no_abolish_recommendation": true,
     "ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
     "script": "scripts/bind_residual_progressive_income_tax_top_down.py",
     "return": "reports/CC_ARKANSAS_RESIDUAL_PROGRESSIVE_INCOME_TAX_TOP_DOWN_MODEL_1_0_RETURN.md",
     "prosperity_engines_countable_now_usd": 0,
+    "note": "Residual Progressive IIT is no longer the active residual instrument — replaced by Residual Wealth Contribution"
+  },
+  "arkansas_residual_wealth_contribution": {
+    "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
+    "status": "PASSED_RESIDUAL_WEALTH_CONTRIBUTION_MODELED",
+    "mode": "irs_top_wealth_bases_rates_gap_table_legal_track",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "role": "RESIDUAL_SHOCK_ABSORBER_NOT_PROSPERITY_ENGINE",
+    "decision_id": "CC-DEC-133",
+    "update_id": "UPD-146",
+    "supersedes": {
+      "decision_id": "CC-DEC-132",
+      "update_id": "UPD-145",
+      "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0"
+    },
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+    "script": "scripts/bind_residual_wealth_contribution.py",
+    "return": "reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_MODEL_1_0_RETURN.md",
+    "prosperity_engines_countable_now_usd": 0,
     "bound": {
-      "soi_tax_year": 2022,
-      "soi_returns": 1295860,
-      "soi_agi_usd": 95807833000,
-      "top_1m_taxable_income_usd": 12708377000,
-      "current_iit_gross_fy2026_usd": 3859100000,
-      "current_top_rate_ty2026": 0.037
+      "irs_personal_wealth_year": 2019,
+      "floor_net_worth_usd": 11400000,
+      "holders": 2374,
+      "net_worth_usd": 48532391000,
+      "financial_assets_usd": 23021708000,
+      "all_real_estate_usd": 4075718000
     },
     "headline": {
-      "residual_250m_start_at": 1000000,
-      "residual_250m_rate_if_1m_plus": 0.0197,
-      "residual_3b_start_at_le_8pct": 100000
+      "flat_0_5pct_usd": 242661955,
+      "flat_1pct_usd": 485323910,
+      "flat_2pct_usd": 970647820,
+      "residual_250m_threshold_usd": 11400000,
+      "residual_250m_rate": 0.01,
+      "residual_500m_rate": 0.015,
+      "residual_1b_rate_needed": 0.0206
     },
     "hard_safeguards": [
-      "marginal_not_cliff",
-      "protected_labor_band_requires_public_trigger",
+      "never_ordinary_labor_income",
+      "primary_residence_retirement_farm_protections",
+      "liquidity_and_deferral_for_illiquid",
       "thresholds_not_locked",
-      "self_retiring_toward_zero"
+      "self_retiring_toward_zero",
+      "constitutional_uniformity_gate_open"
     ],
     "research_next": [
       "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
@@ -2082,7 +2115,9 @@
       "KEEP_AS_HYPOTHESIS",
       "no_abolish_today",
       "prosperity_engines_still_zero_countable",
-      "residual_iit_is_shock_absorber_not_prosperity_engine"
+      "residual_wealth_is_shock_absorber_not_prosperity_engine",
+      "never_ordinary_labor_income",
+      "residual_iit_superseded_by_residual_wealth"
     ]
   },
   "arkansas_external_income_sector_capture": {

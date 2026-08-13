@@ -1,5 +1,9 @@
 # CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0 — Return
 
+> **SUPERSEDED** by **CC-DEC-133 / UPD-146** — Residual Wealth Contribution.  
+> Active residual instrument: `reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_MODEL_1_0_RETURN.md`  
+> This return is retained for historical comparison only. Do not treat residual IIT as the active residual design.
+
 **Decision:** CC-DEC-132  
 **Update:** UPD-145  
 **Date:** 2026-08-12  

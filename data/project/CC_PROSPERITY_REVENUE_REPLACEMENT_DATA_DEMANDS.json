@@ -1,11 +1,11 @@
 {
-  "version": "1.8.0",
-  "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
+  "version": "1.9.0",
+  "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-132",
-  "update_id": "UPD-145",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Residual Progressive IIT is a shock absorber, not a prosperity engine. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Protected labor band requires public trigger. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-133",
+  "update_id": "UPD-146",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Residual Wealth Contribution is the last compulsory shock absorber — never ordinary labor income — and is not a prosperity engine. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Home/farm/retirement/illiquid protections required. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -216,11 +216,21 @@
       "id": "CC-DEM-RRR-024",
       "name": "residual_progressive_income_tax_top_down",
       "question": "If other engines cover $X of the ~$3.859B IIT, how high can the residual progressive income-tax starting point rise, and how far down the SOI distribution must a residual gap of $250M–$3B reach under marginal schedules?",
-      "status": "PASSED_TOP_DOWN_SOI_MODELED",
+      "status": "SUPERSEDED_BY_RESIDUAL_WEALTH_CONTRIBUTION",
       "priority": "critical",
       "layer": "transition",
       "artifact": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
-      "note": "Shock absorber not prosperity engine. $250M residual → $1M+ ~2%; $3B → ~$100k at ≤8% preference. Thresholds/labor-vs-rent not locked."
+      "note": "SUPERSEDED by CC-DEM-RRR-025 / CC-DEC-133. Residual instrument is wealth contribution, not residual IIT. Ledger retained for history."
+    },
+    {
+      "id": "CC-DEM-RRR-025",
+      "name": "residual_wealth_contribution",
+      "question": "How much revenue can Arkansas raise from households with very high net worth while fully exempting ordinary homes, retirement security, working farms/small businesses below a protected threshold, and everyone dependent primarily on labor income — and for residual gaps of $250M/$500M/$1B/$2B, what minimum wealth threshold and rate close the gap?",
+      "status": "PASSED_TOP_WEALTH_MODELED_MAJOR_NEE_REMAIN",
+      "priority": "critical",
+      "layer": "transition",
+      "artifact": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+      "note": "Shock absorber not prosperity engine. IRS 2019 AR top wealth ≥$11.4M: 2,374 holders / ~$48.5B. $250M→~1%; $500M→~1.5%; $1–$2B need >2% or broader base. $5M/$10M NEE. Art. 16 / Am. 57 legal gate open. Never ordinary labor income."
     }
   ],
   "holds": [
@@ -229,10 +239,12 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
-    "residual_iit_is_shock_absorber_not_prosperity_engine",
+    "residual_wealth_is_shock_absorber_not_prosperity_engine",
+    "never_ordinary_labor_income",
+    "residual_iit_superseded_by_residual_wealth",
     "thresholds_not_locked",
-    "marginal_not_cliff",
-    "protected_labor_band_requires_public_trigger",
+    "illiquid_productive_asset_protections_required",
+    "constitutional_uniformity_gate_open",
     "unrealized_gains_not_tax_retirement",
     "no_principal_raid",
     "no_raid_existing_obligations",

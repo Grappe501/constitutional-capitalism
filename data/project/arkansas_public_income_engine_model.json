@@ -6,39 +6,46 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "RESIDUAL_IIT_SHOCK_ABSORBER_MODELED_ENGINES_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
+  "status": "RESIDUAL_WEALTH_CONTRIBUTION_MODELED_ENGINES_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
   "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
-  "residual_progressive_iit_ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
+  "residual_wealth_contribution_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+  "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
-    "is": "Move government revenue away from taxing ordinary work and ownership of a home, and toward use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create — with residual progressive IIT only as a last-activated self-retiring shock absorber."
+    "is": "Move government revenue away from taxing ordinary work and ownership of a home, and toward use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create — with Residual Wealth Contribution only as a last-activated self-retiring compulsory instrument on substantial surplus wealth, never ordinary labor income."
   },
   "philosophical_transition": {
-    "TAX": "Government compels payment — residual progressive IIT is the last TAX activated",
+    "TAX": "Government compels payment — Residual Wealth Contribution is the last TAX activated; ordinary labor income is never the residual base",
     "FEE_RENT_ROYALTY": "Payment for use, consumption, depletion, or receipt of value from a public asset/system",
     "RETURN": "Arkansas earns because Arkansans own productive assets",
-    "direction": "Over time, reduce TAX as FEE/RENT/ROYALTY and RETURN grow; residual IIT threshold rises and can reach zero"
+    "direction": "Over time, reduce TAX as FEE/RENT/ROYALTY and RETURN grow; required wealth-contribution rate falls toward zero"
   },
   "residual_shock_absorber": {
-    "name": "Residual Progressive Income Tax",
+    "name": "Residual Wealth Contribution",
     "not_a_prosperity_engine": true,
-    "role": "Last revenue source after engines exhausted; top-down; marginal; self-retiring",
-    "current_iit_top_rate_ty2026": 0.037,
-    "current_iit_gross_fy2026_usd": 3859100000,
-    "soi_tax_year": 2022,
-    "headline": {
-      "residual_250m_starting_threshold_usd": 1000000,
-      "residual_250m_rate_if_1m_plus_only": 0.0197,
-      "residual_3b_starting_threshold_at_le_8pct_usd": 100000,
-      "ordinary_labor_exits_only_if_engines_cover_most_of_3859m": true
+    "role": "Last compulsory revenue source after engines exhausted; net-worth floor; self-retiring; never ordinary labor income",
+    "supersedes": {
+      "name": "Residual Progressive Income Tax",
+      "decision_id": "CC-DEC-132",
+      "update_id": "UPD-145"
     },
-    "hard_protection": "No expansion into protected labor band without public trigger, published shortfall, and statutory or voter authorization",
-    "ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json"
+    "bound_top_wealth_holders": 2374,
+    "bound_top_net_worth_usd": 48532391000,
+    "irs_floor_net_worth_usd": 11400000,
+    "headline": {
+      "residual_250m_threshold_usd": 11400000,
+      "residual_250m_rate_on_full_top_nw": 0.01,
+      "residual_500m_rate_on_full_top_nw": 0.015,
+      "residual_1b_requires_rate_above_2pct_or_broader_base": true,
+      "never_ordinary_labor_income": true
+    },
+    "hard_protection": "Liability begins only above substantial surplus net wealth; protections against forced liquidation of ordinary homes, productive family farms, retirement security, and closely held enterprises",
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json"
   },
   "count_rule": "Refuse to count any engine dollar toward the ~$7.23B IIT+property replacement requirement until it has an evidence-backed cash-flow model that is incremental, stress-tested, legally available, and reserved for the same essential obligations.",
   "replacement_targets_usd": {

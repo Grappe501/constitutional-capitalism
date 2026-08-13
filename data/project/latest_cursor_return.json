@@ -1,15 +1,15 @@
 {
-  "mission_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
-  "status": "PASSED_RESIDUAL_SHOCK_ABSORBER_MODELED",
+  "mission_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
+  "status": "PASSED_RESIDUAL_WEALTH_CONTRIBUTION_MODELED",
   "phase_2_status": "PARTIAL",
   "updated_at": "2026-08-12",
-  "summary": "CC-DEC-132 / UPD-145: Residual Progressive IIT top-down — SOI TY2022 bound; $250M residual can start at $1M+ (~2%); $3B forces toward $100k; self-retiring shock absorber; prosperity engines still $0. Next: External Income. 43% held.",
+  "summary": "CC-DEC-133 / UPD-146: Residual Wealth Contribution supersedes residual IIT (UPD-145). IRS Personal Wealth 2019 AR top wealth ≥$11.4M bound (2,374 holders / ~$48.5B). $250M→~1%; $500M→~1.5%; $1–$2B need >2% or broader base. Never ordinary labor income. Legal uniformity gate open. Prosperity engines still $0. Next: External Income. 43% held.",
   "repository_root": "H:\\constitutional-capitalism",
   "branch": "main",
-  "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
+  "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
   "returned_at": "2026-08-12",
-  "return_path": "reports/CC_ARKANSAS_RESIDUAL_PROGRESSIVE_INCOME_TAX_TOP_DOWN_MODEL_1_0_RETURN.md",
-  "decision_id": "CC-DEC-132",
+  "return_path": "reports/CC_ARKANSAS_RESIDUAL_WEALTH_CONTRIBUTION_MODEL_1_0_RETURN.md",
+  "decision_id": "CC-DEC-133",
   "overall_percent": 43,
   "baseline": "42/64",
   "publication_evidence_panels": 18,
@@ -20,5 +20,9 @@
     "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
     "CC-ARKANSAS-VALIDATED-COMPARATIVE-DIAGNOSIS-PACKETS-1.0"
   ],
-  "update_id": "UPD-145"
+  "update_id": "UPD-146",
+  "supersedes": {
+    "decision_id": "CC-DEC-132",
+    "update_id": "UPD-145"
+  }
 }

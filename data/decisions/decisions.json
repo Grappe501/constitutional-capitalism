@@ -2323,10 +2323,30 @@
         "UPD-145",
         "Overall % held at 43 / prosperity engines still $0 countable / residual IIT = shock absorber"
       ],
-      "recommendation": "Next prosperity-engine research: External Income sector capture. Then integrate all 10 engines + residual IIT shock absorber and stress-test vs ~$7.23B. Parallel: labor-vs-rent microsim; Arkansas taxable-income bridge from federal SOI. Structural: definition-locks.",
+      "recommendation": "SUPERSEDED by CC-DEC-133 / Residual Wealth Contribution. Retain SOI ledger for historical comparison only; do not treat residual IIT as the active residual instrument.",
       "approved_by": "Steve",
       "decided_at": "2026-08-12",
-      "supersedes": null
+      "supersedes": null,
+      "superseded_by": "CC-DEC-133"
+    },
+    {
+      "decision_id": "CC-DEC-133",
+      "title": "Arkansas Residual Wealth Contribution Model",
+      "question": "Should Constitutional Capitalism execute CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0 by superseding the residual progressive income-tax approach (CC-DEC-132 / UPD-145), binding IRS Personal Wealth 2019 Arkansas top wealthholders (NW≥$11.4M), modeling wealth bases/exemptions/rates for residual gaps of $250M/$500M/$1B/$2B, requiring primary-residence/retirement/family-farm/liquidity/deferral/anti-avoidance protections, opening the Art. 16 uniformity / Amendment 57 intangibles legal track, refusing to count residual wealth dollars as prosperity-engine capacity, keeping COUNTABLE NOW at $0, and holding overall completion at 43% with no abolish recommendation?",
+      "status": "approved",
+      "rationale": "Steve rejected residual taxation of wages/salaries/ordinary earned income. If compulsory taxation remains after prosperity engines are exhausted, the last instrument should be a Residual Wealth Contribution on substantial accumulated surplus wealth, with a very high net-worth floor and protections against forced liquidation of ordinary homes, productive family farms, retirement security, and closely held enterprises. IRS Personal Wealth 2019 binds ~2,374 Arkansas holders at ~$48.5B NW; $250M/$500M residuals are approachable near 1–1.5% on that floor before haircuts; $1–$2B strain or exceed 2%. Constitutional feasibility remains open.",
+      "impact": [
+        "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
+        "scripts/bind_residual_wealth_contribution.py",
+        "data/project/arkansas_public_income_engine_model.json",
+        "UPD-146",
+        "CC-DEC-132 / UPD-145 marked superseded",
+        "Overall % held at 43 / prosperity engines still $0 countable / residual = wealth contribution"
+      ],
+      "recommendation": "Next prosperity-engine research: External Income sector capture. Then integrate all 10 engines + residual wealth absorber and stress-test vs ~$7.23B. Parallel: wealth legal track (Art. 16 / Am. 57 / realization alternatives); Arkansas wealth composition below IRS floor; trust/beneficial-ownership measurement. Structural: definition-locks.",
+      "approved_by": "Steve",
+      "decided_at": "2026-08-12",
+      "supersedes": "CC-DEC-132"
     }
   ]
 }
