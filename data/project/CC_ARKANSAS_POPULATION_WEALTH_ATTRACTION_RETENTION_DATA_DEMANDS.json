@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-ARKANSAS-POPULATION-WEALTH-ATTRACTION-AND-RETENTION-SYSTEM-1.0",
+  "hypothesis_id": "CC-HYP-ARKANSAS-POPULATION-WEALTH-ATTRACTION-AND-RETENTION-SYSTEM",
+  "incubator_alias": "HYP-132",
+  "decision_id": "CC-DEC-136",
+  "update_id": "UPD-149",
+  "rule": "KEEP_AS_HYPOTHESIS. Measure Keep / Return / Attract separately by age, income, wealth, and family composition. Attraction is the primary retention strategy; anti-avoidance is legal design, not a mobility wall. Do not invent migration elasticities. Rootedness credits require measurable public value, caps, and verification — or they become loopholes. Remote work is a seed, not a community. Does not displace Public Income Replacement Stack or definition-locks.",
+  "demands": [
+    {
+      "id": "CC-DEM-PWAR-001",
+      "name": "keep_return_attract_composition_bind",
+      "question": "Can Arkansas county/state migration be bound separately for Keep / Return / Attract and by age, income, wealth, and family composition (young families vs retirees vs remote workers)?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "population_flows"
+    },
+    {
+      "id": "CC-DEM-PWAR-002",
+      "name": "household_lifetime_fiscal_value",
+      "question": "What is the lifetime fiscal and economic value of attracting each household type (young family, retiree, remote worker, entrepreneur), including service-cost offsets?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "prosperity_engine_modeling"
+    },
+    {
+      "id": "CC-DEM-PWAR-003",
+      "name": "family_attraction_package_gap_map",
+      "question": "For designated Living Systems / hub counties, what is the gap map for housing, broadband, schools, healthcare, childcare, safety, recreation, food/retail, remote-work infra, transport, journalism/civic networks, and ownership pathways?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "productive_population_infrastructure",
+      "linked": ["HYP-124", "HYP-129"]
+    },
+    {
+      "id": "CC-DEM-PWAR-004",
+      "name": "broadband_coverage_outcomes",
+      "question": "What share of Arkansas households/communities remain underserved after Arkansas Rural Connect / State Broadband Office programs, and what speeds/prices actually support remote work and schooling?",
+      "status": "PROGRAM_EXISTENCE_SECONDARY_OUTCOMES_NEE",
+      "priority": "high",
+      "layer": "infrastructure",
+      "anchor": "https://www.arkansasedc.com/community-resources/arkansas-rural-connect-program"
+    },
+    {
+      "id": "CC-DEM-PWAR-005",
+      "name": "come_home_shortage_pipelines",
+      "question": "Which shortage professions (doctor, dentist, nurse, engineer, teacher, trades, AI, farmer, vet, entrepreneur) have measurable leave-state / return-home pipelines that can be paired with housing + school + healthcare + ownership packages?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "return",
+      "linked": ["HYP-130"]
+    },
+    {
+      "id": "CC-DEM-PWAR-006",
+      "name": "entrepreneurship_hq_retention",
+      "question": "What share of Arkansas-founded firms keep HQ, employees, IP, investment, suppliers, and philanthropy in-state as they scale — and which place/amenity/capital factors correlate with retention?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "capital_retention"
+    },
+    {
+      "id": "CC-DEM-PWAR-007",
+      "name": "rootedness_credit_anti_loophole_design",
+      "question": "Can ARKANSAS_ROOTEDNESS credits against residual wealth contribution be designed with genuine expenditure, measurable public value, caps, and independent verification without becoming portfolio-renamed avoidance?",
+      "status": "RESEARCH_VARIABLE_NOT_LOCKED",
+      "priority": "critical",
+      "layer": "residual_wealth_link",
+      "linked": ["HYP-131", "CC-DEC-134"]
+    },
+    {
+      "id": "CC-DEM-PWAR-008",
+      "name": "permanent_vs_temporary_relocation",
+      "question": "Which interventions produce permanent households rather than temporary relocations (including remote-worker cash/internet experiments elsewhere)?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "evaluation"
+    },
+    {
+      "id": "CC-DEM-PWAR-009",
+      "name": "decentralized_investment_rule_test",
+      "question": "Can a major-state-investment rule that prefers strengthening smaller hubs before default metro concentration be operationalized without suppressing Little Rock / NWA growth?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "governance",
+      "linked": ["HYP-124"]
+    },
+    {
+      "id": "CC-DEM-PWAR-010",
+      "name": "tax_migration_arkansas_sensitivity",
+      "question": "What is Arkansas-specific sensitivity of high earners, entrepreneurs, and highly mobile talent to residual wealth contribution / tax packages — without locking national elasticities?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "taxation_and_mobility",
+      "note": "National evidence is mixed (e.g. NBER w26349 / w21120) — Arkansas microsim required before doctrine"
+    }
+  ],
+  "framework_path": "data/project/arkansas_population_wealth_attraction_retention.json",
+  "next_slice": "CC-ARKANSAS-KEEP-RETURN-ATTRACT-MIGRATION-COMPOSITION-BIND-1.0",
+  "parallel_does_not_displace": [
+    "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+    "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
+  ]
+}

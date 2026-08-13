@@ -52,7 +52,12 @@ Beneficial ownership · universal NW floor · illiquidity = collection timing ·
 | Use / Depletion / VC / Enterprise / Human-capital / Prosperity Fund / External Income | Modeled — **$0 countable** |
 | Residual Wealth Contribution | Modeled (effective base) |
 
+## Parallel: Population-Wealth Attraction (HYP-132)
+
+Residual wealth is sustainable only if people **choose** Arkansas. Registered: Keep / Return / Attract; Distributed Prosperity Network; Come Home pipelines; `ARKANSAS_ROOTEDNESS` research variable (anti-loophole). Attraction, not coercion. See `content/research/hypotheses/arkansas-population-wealth-attraction-and-retention.md`.
+
 ## Sequence
 
 1. **`CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0`** — integrate all 10 engines + effective residual wealth  
-2. Answer: how much IIT/property tax can Arkansas realistically retire, on what timeline, and what must be built first?
+2. Answer: how much IIT/property tax can Arkansas realistically retire, on what timeline, and what must be built first?  
+3. Parallel HYP-132: Keep/Return/Attract binds + household lifetime fiscal value
