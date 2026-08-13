@@ -1,11 +1,11 @@
 {
-  "version": "1.7.0",
-  "slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+  "version": "1.8.0",
+  "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-131",
-  "update_id": "UPD-144",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-132",
+  "update_id": "UPD-145",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Residual Progressive IIT is a shock absorber, not a prosperity engine. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Protected labor band requires public trigger. Small/family businesses protected by default. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -211,6 +211,16 @@
       "priority": "critical",
       "layer": "replacement_modeling",
       "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+    },
+    {
+      "id": "CC-DEM-RRR-024",
+      "name": "residual_progressive_income_tax_top_down",
+      "question": "If other engines cover $X of the ~$3.859B IIT, how high can the residual progressive income-tax starting point rise, and how far down the SOI distribution must a residual gap of $250M–$3B reach under marginal schedules?",
+      "status": "PASSED_TOP_DOWN_SOI_MODELED",
+      "priority": "critical",
+      "layer": "transition",
+      "artifact": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
+      "note": "Shock absorber not prosperity engine. $250M residual → $1M+ ~2%; $3B → ~$100k at ≤8% preference. Thresholds/labor-vs-rent not locked."
     }
   ],
   "holds": [
@@ -219,6 +229,10 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
+    "residual_iit_is_shock_absorber_not_prosperity_engine",
+    "thresholds_not_locked",
+    "marginal_not_cliff",
+    "protected_labor_band_requires_public_trigger",
     "unrealized_gains_not_tax_retirement",
     "no_principal_raid",
     "no_raid_existing_obligations",

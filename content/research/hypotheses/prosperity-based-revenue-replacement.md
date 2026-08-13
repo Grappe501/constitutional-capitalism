@@ -1,65 +1,47 @@
 # CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM (HYP-131)
 
 **Status:** Research framework — **not doctrine** · **not a principle** · **not an abolition plan**  
-**Latest update:** UPD-144 · Decision: CC-DEC-131 (Prosperity Fund capital path)  
-**Prior:** UPD-143 / CC-DEC-130 · UPD-142 / CC-DEC-129 · UPD-141 / CC-DEC-128 · UPD-140 / CC-DEC-127 · …  
-**Engine model:** `data/project/arkansas_public_income_engine_model.json`  
-**Prosperity Fund ledger:** `data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json`  
-**Latest return:** `reports/CC_ARKANSAS_PROSPERITY_FUND_CAPITAL_PATH_1_0_RETURN.md`
+**Latest update:** UPD-145 · Decision: CC-DEC-132 (Residual Progressive Income Tax top-down)  
+**Prior:** UPD-144 / CC-DEC-131 · UPD-143 / CC-DEC-130 · …  
+**Latest return:** `reports/CC_ARKANSAS_RESIDUAL_PROGRESSIVE_INCOME_TAX_TOP_DOWN_MODEL_1_0_RETURN.md`  
+**Residual IIT ledger:** `data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json`
 
 ## Objective (locked)
 
-Not: replace income tax with Tax X.
+Move revenue away from taxing ordinary work and homeownership toward **use, impact, depletion, visitor, luxury, human-capital, value capture, enterprise, prosperity-fund, and external income** — with personal income tax only as a **residual, self-retiring shock absorber**.
 
-Yes: move government revenue away from taxing ordinary work and homeownership toward **use, impact, depletion, visitor demand, luxury discretion, human-capital dependence, value capture, enterprise returns, prosperity-fund compounding, and external income.**
+## Counted prosperity-engine dollars: **$0**
 
-## Counted toward ~$7.23B: **$0**
+## Residual Progressive Income Tax (this pass)
 
-Every cash-flow / incidence / capital-path pass so far has been fail-closed. Retirement must be earned.
+Not the center of the system. Last activated. Top-down. Marginal (not cliff). Self-retiring.
 
-## Prosperity Fund (this pass)
+**Formula each year:**  
+`obligations − prosperity engines − Prosperity Fund distributions = Residual Revenue Requirement`
 
-At illustrative **4%** sustainable POMV:
+| If other engines cover | Residual | Starting threshold (≤8% pref.) | Rate needed |
+|---:|---:|---:|---:|
+| ~$3.61B | $250M | **$1M+** | ~2.0% |
+| ~$3.36B | $500M | **$1M+** | ~3.9% |
+| ~$2.86B | $1B | **$1M+** | ~7.9% |
+| ~$1.86B | $2B | **$200k+** | ~6.7% |
+| ~$0.86B | $3B | **$100k+** | ~6.2% |
 
-| Payout | Corpus |
-|---|---:|
-| $250M/yr | **$6.25B** |
-| $500M/yr | **$12.5B** |
-| $1B/yr | **$25B** |
-| $2B/yr | **$50B** |
+Bound from IRS SOI TY2022 Arkansas + DFA FY2026 IIT ~$3.859B + current top rate **3.7%**.  
+$2M/$5M splits and labor-vs-rent differentials: **not locked**.
 
-Time-to-threshold (illustrative feeders; recession stress included):
+**Hard protection:** no expansion into protected labor band without public trigger, published shortfall, and statutory/voter authorization.
 
-| Target | Conservative | Base | Accelerated |
-|---|---:|---:|---:|
-| $250M | y25 | **y11** | **y5** |
-| $500M | y36 | y18 | **y9** |
-| $1B | — | y26 | **y14** |
-| $2B | — | y36 | y21 |
+## Ten engines + residual absorber
 
-**Safeguards:** no unrealized-gain tax-retirement credit; no principal raid; no raiding existing obligations to seed the fund.
-
-Even **$2B**/year is only ~**28%** of ~$7.23B. External Income is the swing variable between Base and Accelerated.
-
-## Sequence lock (remaining)
-
-1. `CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0` ← **next**  
-2. `CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0`  
-3. State what portion of IIT/property retirement is actually achievable and on what timeline.
-
-## Ten engines (status)
-
-| Engine | Status |
+| Layer | Status |
 |---|---|
-| Use / Depletion | Support only — $0 |
-| Impact / Visitor / Luxury | Unmodeled or already spent |
-| Human-capital | Incidence mapped — $0 |
-| Value Capture / Enterprise | $0 |
-| Prosperity Fund | Capital path mapped — $0 |
-| External Income | **Queued** |
+| Use / Depletion / VC / Enterprise / Human-capital / Prosperity Fund | Modeled — **$0 countable** |
+| External Income | **Queued next** |
+| Residual Progressive IIT | Shock absorber modeled |
 
-## Transition rules
+## Sequence
 
-1. Never retire a tax dollar until a recurring replacement dollar is demonstrated, stress-tested, legally available, and reserved.  
-2. Property: millage-class by millage-class; debt-service first.  
-3. Unmodeled / illustrative / unrealized ≠ replacement dollars.
+1. `CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0`  
+2. Integrate all 10 engines + residual IIT  
+3. Stress-test vs ~$7.23B → state achievable retirement share and timeline

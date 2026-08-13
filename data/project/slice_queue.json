@@ -2039,6 +2039,52 @@
       "illustrative_feeders_not_bound_cash"
     ]
   },
+  "arkansas_residual_progressive_income_tax_top_down": {
+    "slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
+    "status": "PASSED_RESIDUAL_SHOCK_ABSORBER_MODELED",
+    "mode": "soi_top_down_residual_gap_schedules",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "role": "RESIDUAL_SHOCK_ABSORBER_NOT_PROSPERITY_ENGINE",
+    "decision_id": "CC-DEC-132",
+    "update_id": "UPD-145",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
+    "script": "scripts/bind_residual_progressive_income_tax_top_down.py",
+    "return": "reports/CC_ARKANSAS_RESIDUAL_PROGRESSIVE_INCOME_TAX_TOP_DOWN_MODEL_1_0_RETURN.md",
+    "prosperity_engines_countable_now_usd": 0,
+    "bound": {
+      "soi_tax_year": 2022,
+      "soi_returns": 1295860,
+      "soi_agi_usd": 95807833000,
+      "top_1m_taxable_income_usd": 12708377000,
+      "current_iit_gross_fy2026_usd": 3859100000,
+      "current_top_rate_ty2026": 0.037
+    },
+    "headline": {
+      "residual_250m_start_at": 1000000,
+      "residual_250m_rate_if_1m_plus": 0.0197,
+      "residual_3b_start_at_le_8pct": 100000
+    },
+    "hard_safeguards": [
+      "marginal_not_cliff",
+      "protected_labor_band_requires_public_trigger",
+      "thresholds_not_locked",
+      "self_retiring_toward_zero"
+    ],
+    "research_next": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "prosperity_engines_still_zero_countable",
+      "residual_iit_is_shock_absorber_not_prosperity_engine"
+    ]
+  },
   "arkansas_external_income_sector_capture": {
     "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
     "status": "QUEUED_NEXT",
@@ -2063,7 +2109,8 @@
     "philosophical_note": "Not fundamentally about taxation — about bringing outside dollars in",
     "count_rule": "COUNTABLE NOW stays $0 until ownership/contract capture produces demonstrated incremental recurring public cash",
     "depends_on_completed": [
-      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+      "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0"
     ],
     "research_after": [
       "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"

@@ -6,22 +6,39 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "PROSPERITY_FUND_CAPITAL_PATH_PASS_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
+  "status": "RESIDUAL_IIT_SHOCK_ABSORBER_MODELED_ENGINES_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
   "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
+  "residual_progressive_iit_ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
     "not": "Replace income tax with Tax X",
-    "is": "Move government revenue away from taxing ordinary work and ownership of a home, and toward use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create."
+    "is": "Move government revenue away from taxing ordinary work and ownership of a home, and toward use of public systems, extraction of finite resources, creation of public costs, consumption above ordinary needs, external demand, economic rents, and returns on assets the public helped create — with residual progressive IIT only as a last-activated self-retiring shock absorber."
   },
   "philosophical_transition": {
-    "TAX": "Government compels payment",
+    "TAX": "Government compels payment — residual progressive IIT is the last TAX activated",
     "FEE_RENT_ROYALTY": "Payment for use, consumption, depletion, or receipt of value from a public asset/system",
     "RETURN": "Arkansas earns because Arkansans own productive assets",
-    "direction": "Over time, reduce TAX as FEE/RENT/ROYALTY and RETURN grow"
+    "direction": "Over time, reduce TAX as FEE/RENT/ROYALTY and RETURN grow; residual IIT threshold rises and can reach zero"
+  },
+  "residual_shock_absorber": {
+    "name": "Residual Progressive Income Tax",
+    "not_a_prosperity_engine": true,
+    "role": "Last revenue source after engines exhausted; top-down; marginal; self-retiring",
+    "current_iit_top_rate_ty2026": 0.037,
+    "current_iit_gross_fy2026_usd": 3859100000,
+    "soi_tax_year": 2022,
+    "headline": {
+      "residual_250m_starting_threshold_usd": 1000000,
+      "residual_250m_rate_if_1m_plus_only": 0.0197,
+      "residual_3b_starting_threshold_at_le_8pct_usd": 100000,
+      "ordinary_labor_exits_only_if_engines_cover_most_of_3859m": true
+    },
+    "hard_protection": "No expansion into protected labor band without public trigger, published shortfall, and statutory or voter authorization",
+    "ledger": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json"
   },
   "count_rule": "Refuse to count any engine dollar toward the ~$7.23B IIT+property replacement requirement until it has an evidence-backed cash-flow model that is incremental, stress-tested, legally available, and reserved for the same essential obligations.",
   "replacement_targets_usd": {
@@ -492,6 +509,7 @@
   "scale_implication_after_vc_enterprise": "With Use/Depletion/Value Capture/Enterprise still at $0 countable, large-scale replacement burden shifts decisively toward Human-capital, Prosperity Fund, and External Income modeling",
   "scale_implication_after_human_capital": "Human-capital shows real wage/compensation envelopes but $0 countable after incidence gates; sequence continues Prosperity Fund → External Income → integrate all 10 engines vs ~$7.23B — retirement must be earned",
   "scale_implication_after_prosperity_fund": "Fund math is honest about capital and horizon — $250M in-window only if feeders arrive; $2B outside 16y on modeled paths; External Income determines Base vs Accelerated realism; even $2B/year is only ~28% of ~$7.23B",
+  "scale_implication_after_residual_iit": "Residual Progressive IIT can keep ordinary labor outside the tax only if prosperity engines cover most of today's ~$3.859B; a $250M residual can start at $1M+; a $3B residual forces the boundary toward $100k",
   "next_modeling_slices": [
     "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
     "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
@@ -504,6 +522,10 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
+    "residual_iit_is_shock_absorber_not_prosperity_engine",
+    "thresholds_not_locked",
+    "marginal_not_cliff",
+    "protected_labor_band_requires_public_trigger",
     "unrealized_gains_not_tax_retirement",
     "no_principal_raid",
     "no_raid_existing_obligations",
