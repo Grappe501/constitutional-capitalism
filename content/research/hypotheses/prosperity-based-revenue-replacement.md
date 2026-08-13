@@ -35,8 +35,12 @@ Hardest demotions: **External Income**, **Prosperity Fund**, **Impact→$0**. Al
 
 Beneficial ownership · universal NW floor · illiquidity = collection timing · Base effective ~57% of ~$48.5B → ~$27.7B · Acc capped at 1% until legal clears · legal tracks open.
 
+## Parallel: AI Abundance (HYP-134)
+
+Missing assumption: production may become less labor-constrained. Prefer **productive ownership** (including Prosperity Fund asset claims) over a giant AI tax. **AI Abundance Sensitivity** is not COUNTABLE and must not inflate demoted Base@16y (~$840M). See `content/research/hypotheses/ai-abundance-and-distributed-productive-ownership.md`.
+
 ## Next
 
 1. **`CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0`** — food processing / energy participation → reserved cash  
 2. Structural: definition-locks  
-3. Parallel: HYP-132 Keep/Return/Attract · HYP-133 Demand Map (queued, not expanded)
+3. Parallel: HYP-132 Keep/Return/Attract · HYP-133 Demand Map (queued) · HYP-134 dashboard/ownership comparison (queued)
