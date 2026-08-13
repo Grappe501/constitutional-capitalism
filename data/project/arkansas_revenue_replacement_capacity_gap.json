@@ -1,13 +1,13 @@
 {
-  "version": "1.9.0",
-  "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
-  "prior_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-MODEL-1.0",
+  "version": "1.10.0",
+  "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+  "prior_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
   "generated_at": "2026-08-12",
-  "decision_id": "CC-DEC-134",
-  "update_id": "UPD-147",
+  "decision_id": "CC-DEC-135",
+  "update_id": "UPD-148",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "RESIDUAL_WEALTH_NO_LOOPHOLES_BASE_LEGAL_MODELED_ENGINES_ZERO_COUNTABLE",
+  "status": "EXTERNAL_INCOME_SCORED_ENGINES_ZERO_COUNTABLE",
   "political_conclusion": "NONE — no recommendation to abolish IIT or property tax",
   "core_answers": {
     "iit_recurring_dollars_to_retire": {
@@ -75,11 +75,12 @@
     "prosperity_fund_countable_now_usd": 0,
     "prosperity_fund_verdict": "HORIZON_MAPPED_ZERO_COUNTABLE — 4% markers imply $6.25B–$50B corpus; Base ~y11 for $250M if feeders real; $2B outside 16y; External Income is the swing variable",
     "residual_wealth_role": "SHOCK_ABSORBER_NOT_PROSPERITY_ENGINE — beneficial ownership + universal floor; theoretical ~$48.5B → Base effective ~$27.7B (~57%); 1% ~$277M not ~$485M; $250M/$500M still inside ≤2% on Base effective; $1–$2B need stronger engines; legal tracks open; does not add countable prosperity dollars",
+    "external_income_role": "SWING_VARIABLE_ZERO_COUNTABLE — tourism spend ~$10.2B bound; 2% tax ~$26.9M already spent; manufacturing/ag GDP envelopes show scale with leakage risk; EICR ranks capture priority; no sector clears hard wall to public cash",
     "residual_iit_role_superseded": "SUPERSEDED by Residual Wealth Contribution (CC-DEC-133 / UPD-146) — SOI top-down IIT ledger retained for history only"
   },
   "fork": {
     "statement": "Arkansas cannot simply abolish personal income tax and property tax by leaning harder on revenue streams it already has.",
-    "executed_track": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+    "executed_track": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
     "engine_model": "data/project/arkansas_public_income_engine_model.json",
     "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
     "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
@@ -87,9 +88,10 @@
     "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
     "residual_wealth_contribution_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
     "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
+    "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
     "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
     "framework": "data/project/prosperity_revenue_modeling_framework.json",
-    "next_track": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+    "next_track": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0"
   },
   "regressivity_surface": {
     "rule": "If a proposed replacement merely shifts burden onto ordinary households through higher prices or regressive consumption taxes, surface that explicitly.",

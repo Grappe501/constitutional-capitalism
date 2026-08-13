@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0",
-  "slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+  "version": "1.11.0",
+  "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "decision_id": "CC-DEC-134",
-  "update_id": "UPD-147",
-  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income — and is not a prosperity engine. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. Small/family businesses protected by universal floor + deferral mechanics. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. Retire millage-class by millage-class.",
+  "decision_id": "CC-DEC-135",
+  "update_id": "UPD-148",
+  "rule": "Demands guide Money Flow Map and public-income engines. No tax abolition. Unmodeled returns are not replacement dollars. Zero counted until cash-flow model. External income is not automatically public revenue. Gross outside revenue ≠ Arkansas capture (EICR). Residual Wealth Contribution is the last compulsory shock absorber — beneficial ownership, universal NW floor, never ordinary labor income. Theoretical wealth base ≠ effective base. Residual Progressive IIT (UPD-145) is superseded. Illustrative yields/feeders are not countable. Unrealized gains are not tax-retirement credit. No principal or existing-obligation raids. Illiquidity is collection timing not exemption. PUBLIC_RISK_AT_RISK required on Value Capture/Enterprise. No discriminatory export taxes. HYP-130 capacity gates External Income scale claims. Retire millage-class by millage-class.",
   "demands": [
     {
       "id": "CC-DEM-RRR-001",
@@ -206,11 +206,21 @@
     {
       "id": "CC-DEM-RRR-023",
       "name": "external_income_sector_capture",
-      "question": "Which External Income sectors (energy, food, tourism, defense, manufacturing, healthcare, education, research, AI, logistics, high-value services) can pull outside dollars into Arkansas with public/community capture that feeds Enterprise and the Prosperity Fund?",
-      "status": "NEE_QUEUED_NEXT",
+      "question": "Which External Income sectors can pull outside dollars into Arkansas with public/community capture that feeds Enterprise and the Prosperity Fund — and what share remains after leakage?",
+      "status": "PASSED_SECTOR_CAPTURE_SCORED_ZERO_COUNTABLE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
+      "note": "12 sectors scored; tourism spend ~$10.2B bound; EICR modeling tool; hard wall holds; HYP-130 linked; COUNTABLE $0. Next: Replacement Stack integration."
+    },
+    {
+      "id": "CC-DEM-RRR-027",
+      "name": "public_income_replacement_stack",
+      "question": "Integrating all 10 engines plus the effective residual wealth base, how much of personal income tax and property tax can Arkansas realistically retire on 4/8/12/16-year timelines under stress and optimistic cases?",
+      "status": "NEE_QUEUED_NEXT",
+      "priority": "critical",
+      "layer": "integration",
+      "next_slice": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0"
     },
     {
       "id": "CC-DEM-RRR-024",
@@ -257,6 +267,9 @@
     "illiquidity_is_collection_timing_not_exemption",
     "symmetry_no_structuring_privilege",
     "theoretical_base_is_not_effective_base",
+    "external_income_not_automatically_public_revenue",
+    "gross_outside_revenue_ne_arkansas_capture",
+    "hyp130_capacity_gates_external_income",
     "thresholds_not_locked",
     "constitutional_lane_not_cleared",
     "unrealized_gains_not_tax_retirement",

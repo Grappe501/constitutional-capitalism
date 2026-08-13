@@ -6,14 +6,15 @@
   "update_id": "UPD-140",
   "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
   "incubator_alias": "HYP-131",
-  "status": "RESIDUAL_WEALTH_NO_LOOPHOLES_BASE_LEGAL_MODELED_ENGINES_ZERO_COUNTABLE",
-  "latest_cashflow_slice_id": "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+  "status": "EXTERNAL_INCOME_SCORED_ALL_ENGINES_ZERO_COUNTABLE",
+  "latest_cashflow_slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
   "use_depletion_ledger": "data/imports/arkansas-revenue-replacement/use_depletion_cashflow_ledger.json",
   "value_capture_enterprise_ledger": "data/imports/arkansas-revenue-replacement/value_capture_enterprise_cashflow_ledger.json",
   "workforce_prosperity_contribution_ledger": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json",
   "prosperity_fund_capital_path_ledger": "data/imports/arkansas-revenue-replacement/prosperity_fund_capital_path_ledger.json",
   "residual_wealth_contribution_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_contribution_ledger.json",
   "residual_wealth_no_loopholes_ledger": "data/imports/arkansas-revenue-replacement/residual_wealth_no_loopholes_base_legal_ledger.json",
+  "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
   "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
   "supersedes_queue_alias": "CC-PHASE-2.1-ARKANSAS-PROSPERITY-REVENUE-MODELING-1.0",
   "objective": {
@@ -485,9 +486,14 @@
         "logistics"
       ],
       "existing_bound_scale": {
-        "status": "STRATEGY_LAYER — not a single revenue line; tourism/defense/energy overlaps other engines"
+        "status": "SECTOR_CAPTURE_SCORED",
+        "tourism_visitor_spending_2025_usd": 10200000000,
+        "tourism_2pct_tax_fy2026_usd": 26851526,
+        "manufacturing_gdp_2023_usd": 25898000000,
+        "ag_forestry_fishing_gdp_2023_usd": 2855000000,
+        "note": "Outside-demand and GDP envelopes bound where available — not Arkansas capture and not countable public cash"
       },
-      "addressable_base_status": "NEE — sector export/GSP and public capture share models",
+      "addressable_base_status": "CAPTURE_CHAIN_MODELED — EICR illustrative; most ownership/export joins NEE",
       "authority": "Primarily economic development + ownership design; food-export tax rejected",
       "food_export_redirect": {
         "rejected": "Specific tax because food is exported to another state",
@@ -497,17 +503,26 @@
         "rejected": "State import tax for defense",
         "preferred": "Defense manufacturing, aerospace, logistics, cybersecurity, veteran pipelines, federal procurement as external income"
       },
+      "hard_wall": "External income is not automatically public revenue",
+      "external_income_capture_ratio": "MODELING_TOOL_NOT_PUBLIC_BASELINE",
       "plausible_incremental_range_usd_per_year": {
-        "status": "UNMODELED",
+        "status": "ZERO_COUNTABLE_UNTIL_MECHANISM",
         "low": null,
-        "high": null
+        "high": null,
+        "capture_priority_top": [
+          "food_ag_processing",
+          "tourism",
+          "specialty_ag_brands",
+          "energy_participation"
+        ]
       },
-      "incidence": "Depends on ownership structure — community capture vs leakage",
+      "incidence": "Depends on ownership structure — community capture vs leakage; EICR ranks sectors",
       "volatility": "Sector-specific",
       "earmark": "local prosperity accounts / productive ownership / Tax Retirement Fund when returns exist",
       "counts_toward_replacement_usd": 0,
-      "cash_flow_model_status": "NOT_STARTED",
-      "t1_t5_posture": "Not taxation — state economic strategy that feeds Enterprise/Prosperity Fund over time"
+      "cash_flow_model_status": "SECTOR_CAPTURE_PASSED_ZERO_COUNTABLE",
+      "ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
+      "t1_t5_posture": "Not taxation — state economic strategy that feeds Enterprise/Prosperity Fund over time; HYP-130 capacity gates apply"
     }
   ],
   "engine_summary_table": [
@@ -531,8 +546,9 @@
   "scale_implication_after_human_capital": "Human-capital shows real wage/compensation envelopes but $0 countable after incidence gates; sequence continues Prosperity Fund → External Income → integrate all 10 engines vs ~$7.23B — retirement must be earned",
   "scale_implication_after_prosperity_fund": "Fund math is honest about capital and horizon — $250M in-window only if feeders arrive; $2B outside 16y on modeled paths; External Income determines Base vs Accelerated realism; even $2B/year is only ~28% of ~$7.23B",
   "scale_implication_after_residual_iit": "Residual Progressive IIT can keep ordinary labor outside the tax only if prosperity engines cover most of today's ~$3.859B; a $250M residual can start at $1M+; a $3B residual forces the boundary toward $100k",
+  "scale_implication_after_external_income": "Outside-demand scale is real (tourism ~$10.2B spend) but COUNTABLE public cash remains $0; capture requires ownership/participation mechanisms; HYP-130 capacity gates block honest scale claims for healthcare/AI/advanced mfg; next integrate all 10 engines + effective residual wealth into the Public Income Replacement Stack",
   "next_modeling_slices": [
-    "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+    "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
     "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
     "CC-ARKANSAS-LITHIUM-PUBLIC-SHARE-AND-PERMANENT-FUND-1.0"
   ],
@@ -543,10 +559,11 @@
     "unmodeled_is_not_replacement_dollars",
     "zero_counted_until_cashflow_model",
     "illustrative_yield_is_not_countable",
-    "residual_iit_is_shock_absorber_not_prosperity_engine",
-    "thresholds_not_locked",
-    "marginal_not_cliff",
-    "protected_labor_band_requires_public_trigger",
+    "external_income_not_automatically_public_revenue",
+    "gross_outside_revenue_ne_arkansas_capture",
+    "residual_wealth_is_shock_absorber_not_prosperity_engine",
+    "never_ordinary_labor_income",
+    "theoretical_base_is_not_effective_base",
     "unrealized_gains_not_tax_retirement",
     "no_principal_raid",
     "no_raid_existing_obligations",
@@ -554,6 +571,7 @@
     "public_risk_at_risk_required",
     "no_discriminatory_export_tax",
     "defense_is_federal_ledger",
+    "hyp130_capacity_gates_external_income",
     "regressive_swap_surfaced"
   ]
 }

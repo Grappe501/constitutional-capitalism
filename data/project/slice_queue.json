@@ -2185,34 +2185,82 @@
   },
   "arkansas_external_income_sector_capture": {
     "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
-    "status": "QUEUED_NEXT",
-    "mode": "sector_capture_public_share_not_export_tax",
+    "status": "PASSED_SECTOR_CAPTURE_SCORED_ZERO_COUNTABLE",
+    "mode": "capture_chain_eicr_hyp130_hard_wall",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
     "engine_id": "ENGINE-EXTERNAL-INCOME",
-    "question": "How can Arkansas intentionally pull money into the state through energy, food, tourism, defense procurement, advanced manufacturing, healthcare, education, research, AI, logistics, and high-value service exports — with public/community capture that feeds Enterprise and the Prosperity Fund — without discriminatory export taxes?",
-    "sectors": [
-      "energy",
-      "food",
-      "tourism",
-      "defense_procurement",
-      "advanced_manufacturing",
-      "healthcare",
-      "education",
-      "research",
-      "ai",
-      "logistics",
-      "high_value_services"
+    "decision_id": "CC-DEC-135",
+    "update_id": "UPD-148",
+    "decision_posture": "KEEP_AS_HYPOTHESIS",
+    "no_abolish_recommendation": true,
+    "ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
+    "script": "scripts/bind_external_income_sector_capture.py",
+    "return": "reports/CC_ARKANSAS_EXTERNAL_INCOME_SECTOR_CAPTURE_1_0_RETURN.md",
+    "prosperity_engines_countable_now_usd": 0,
+    "bound": {
+      "tourism_visitor_spending_2025_usd": 10200000000,
+      "tourism_2pct_tax_fy2026_usd": 26851526,
+      "manufacturing_gdp_2023_usd": 25898000000,
+      "ag_forestry_fishing_gdp_2023_usd": 2855000000
+    },
+    "headline": {
+      "sectors_scored": 12,
+      "countable_usd": 0,
+      "top_capture_priorities": [
+        "food_ag_processing",
+        "tourism",
+        "specialty_ag_brands",
+        "energy_participation"
+      ],
+      "hard_wall": "external_income_not_automatically_public_revenue"
+    },
+    "hard_safeguards": [
+      "external_income_not_automatically_public_revenue",
+      "gross_outside_revenue_ne_arkansas_capture",
+      "illustrative_eicr_not_baseline",
+      "no_discriminatory_export_tax",
+      "hyp130_capacity_gates_external_income",
+      "defense_is_federal_ledger"
     ],
-    "philosophical_note": "Not fundamentally about taxation — about bringing outside dollars in",
-    "count_rule": "COUNTABLE NOW stays $0 until ownership/contract capture produces demonstrated incremental recurring public cash",
-    "depends_on_completed": [
-      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0",
-      "CC-ARKANSAS-RESIDUAL-PROGRESSIVE-INCOME-TAX-TOP-DOWN-MODEL-1.0"
-    ],
-    "research_after": [
+    "research_next": [
+      "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
       "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "prosperity_engines_still_zero_countable",
+      "external_income_not_automatically_public_revenue"
     ]
+  },
+  "arkansas_public_income_replacement_stack": {
+    "slice_id": "CC-ARKANSAS-PUBLIC-INCOME-REPLACEMENT-STACK-1.0",
+    "status": "QUEUED_NEXT",
+    "mode": "ten_engines_plus_effective_residual_wealth_timeline_stack",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "question": "How much of personal income tax and property tax can Arkansas realistically retire, on what timeline, and what has to be built first?",
+    "will_include": [
+      "countable_current_revenue",
+      "plausible_near_term_revenue",
+      "4_year",
+      "8_year",
+      "12_year",
+      "16_year_ranges",
+      "stress_case",
+      "optimistic_case",
+      "tax_retirement_thresholds",
+      "ten_engines_plus_effective_residual_wealth_base"
+    ],
+    "depends_on_completed": [
+      "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0",
+      "CC-ARKANSAS-RESIDUAL-WEALTH-CONTRIBUTION-NO-LOOPHOLES-BASE-AND-LEGAL-TEST-1.0",
+      "CC-ARKANSAS-PROSPERITY-FUND-CAPITAL-PATH-1.0"
+    ],
+    "alias_of_prior_queue": "CC-ARKANSAS-PUBLIC-INCOME-ENGINES-INTEGRATED-STRESS-TEST-1.0",
+    "count_rule": "Refuse to invent countable dollars; use effective residual wealth base; engines remain $0 until mechanisms clear"
   },
   "publication_pass9_structural_deepen": {
     "slice_id": "CC-PUBLICATION-EVIDENCE-UPGRADE-PASS-9.0-STRUCTURAL-DEEPEN",
