@@ -156,10 +156,13 @@ const cert = chapter.certification || {};
 
     <section class="hub-section">
       <h2>Next</h2>
-      <p class="lede">Pass 5.7 — So What Is Constitutional Capitalism?</p>
+      <p class="lede">
+        Pass 5.7 — So What Is Constitutional Capitalism? ·{" "}
+        <a href="/public-book/so-what-is-constitutional-capitalism/">Read →</a>
+      </p>
       <ul class="link-board">
         {
-          (plan.passes || []).slice(0, 8).map((p: any) => (
+          (plan.passes || []).slice(0, 9).map((p: any) => (
             <li>
               <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
                 {p.status}

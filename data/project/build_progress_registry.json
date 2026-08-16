@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-186",
-  "update_id": "UPD-199",
+  "decision_id": "CC-DEC-187",
+  "update_id": "UPD-200",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_7",
-  "next_objective": "Pass 5.7 \u2014 So What Is Constitutional Capitalism? Public-book translation only. No new theory.",
+  "current_pass": "PASS_5_8",
+  "next_objective": "Pass 5.8 \u2014 Building the Bridge. Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -679,6 +679,26 @@
           "label": "Public Book hub"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-187",
+      "title": "Pass 5.7 Public Book chapter complete \u2014 So What Is Constitutional Capitalism?",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-7/",
+      "links": [
+        {
+          "href": "/public-book/so-what-is-constitutional-capitalism/",
+          "label": "Chapter 7"
+        },
+        {
+          "href": "/compare/explorer/constitutional-capitalism/",
+          "label": "Explorer"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -898,18 +918,18 @@
       "number": "5.7",
       "slug": "pass-5-7",
       "name": "So What Is Constitutional Capitalism?",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-7/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_7.json",
+      "spine_href": "/public-book/so-what-is-constitutional-capitalism/",
+      "chapter_completion_percent": 100
     },
     {
       "id": "PASS_5_8",
       "number": "5.8",
       "slug": "pass-5-8",
       "name": "Building the Bridge",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-5-8/",
       "changelog": null,
       "spine_href": null,
