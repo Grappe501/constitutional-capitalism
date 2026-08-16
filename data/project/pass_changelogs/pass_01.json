@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_1",
+  "pass_number": 1,
+  "pass_name": "Money & Ownership Spine",
+  "status": "COMPLETE",
+  "decision_ids": ["CC-DEC-151"],
+  "update_ids": ["UPD-164"],
+  "slice_id": "CC-STAGE-1-PASS-1-MONEY-OWNERSHIP-SPINE-1.0",
+  "deployment_date": "2026-08-15",
+  "github_commit": "900c673",
+  "github_commit_url": "https://github.com/Grappe501/constitutional-capitalism/commit/900c673",
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-1/",
+  "progress_before": {
+    "skeleton_coverage_percent": null,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": null,
+    "note": "Pre-pass dashboard not frozen as a separate snapshot; Pass 1 exit numbers are authoritative."
+  },
+  "progress_after": {
+    "skeleton_coverage_percent": 63,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 20
+  },
+  "progress_movement": "Skeleton coverage locked at 63% after Money & Ownership Spine integration. Overall Project Completion 20%. First-pass / publication / validation unchanged this pass.",
+  "summary": "Locked the five-pass Stage 1 closure plan and integrated LOCK-01, LOCK-02, LOCK-04, and LOCK-05 into one Money & Ownership Spine — who earns, who owns, who lends, who extracts, and how public income can replace taxes on ordinary work and homes.",
+  "modules_added_or_modified": [
+    {
+      "id": "stage1_five_pass_plan",
+      "label": "Stage 1 five-pass closure plan",
+      "change": "added",
+      "href": "/build-progress/",
+      "path": "data/project/stage1_five_pass_closure_plan.json"
+    },
+    {
+      "id": "money_ownership_spine",
+      "label": "Money & Ownership Spine architecture",
+      "change": "added",
+      "href": "/system/money-ownership/",
+      "path": "data/project/stage1_pass1_money_ownership_spine.json"
+    },
+    {
+      "id": "completion_dashboard",
+      "label": "Completion ladder & four-bar dashboard",
+      "change": "updated",
+      "href": "/status/",
+      "path": "data/project/completion_ladder_and_dashboard.json"
+    },
+    {
+      "id": "local_ownership",
+      "label": "Local ownership",
+      "change": "linked_into_spine",
+      "href": "/local-ownership/"
+    },
+    {
+      "id": "community_prosperity",
+      "label": "Community prosperity accounts",
+      "change": "linked_into_spine",
+      "href": "/community-prosperity/"
+    },
+    {
+      "id": "civic_wealth",
+      "label": "Civic wealth",
+      "change": "linked_into_spine",
+      "href": "/civic-wealth/"
+    },
+    {
+      "id": "essential_systems",
+      "label": "Essential systems (banking, insurance, health markets)",
+      "change": "linked_into_spine",
+      "href": "/essential-systems/"
+    },
+    {
+      "id": "human_capital",
+      "label": "Human capital (ownership join)",
+      "change": "linked_into_spine",
+      "href": "/human-capital/"
+    },
+    {
+      "id": "hyp_131",
+      "label": "HYP-131 Prosperity revenue replacement",
+      "change": "research_surface_linked",
+      "href": "/research/#hyp-131"
+    }
+  ],
+  "source_documents": [
+    {
+      "label": "Pass 1 close report",
+      "path": "reports/CC_STAGE_1_PASS_1_MONEY_OWNERSHIP_SPINE_1_0_RETURN.md"
+    },
+    {
+      "label": "Completion ladder",
+      "path": "data/project/completion_ladder_and_dashboard.json"
+    },
+    {
+      "label": "Master system coverage audit",
+      "path": "data/project/master_system_coverage_audit.json"
+    }
+  ],
+  "unresolved_deferred": [
+    {
+      "item": "Prosperity Fund countable feeders",
+      "disposition": "KNOWN_DETAIL",
+      "defer_to": "Stage 2 / later evidence binds"
+    },
+    {
+      "item": "Public banking legal form",
+      "disposition": "KNOWN_DETAIL",
+      "defer_to": "Stage 2 / legal feasibility"
+    },
+    {
+      "item": "State vs federal antitrust posture",
+      "disposition": "VALIDATION_QUESTION",
+      "defer_to": "Stage 4"
+    }
+  ],
+  "next_pass_only": "PASS_2 — Household & Place Spine"
+}

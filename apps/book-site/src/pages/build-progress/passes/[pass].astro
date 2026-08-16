@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import registry from "../../../../../../data/project/build_progress_registry.json";
+import pass1 from "../../../../../../data/project/pass_changelogs/pass_01.json";
+import pass2 from "../../../../../../data/project/pass_changelogs/pass_02.json";
+
+export function getStaticPaths() {
+  return [
+    { params: { pass: "pass-1" } },
+    { params: { pass: "pass-2" } },
+    { params: { pass: "pass-3" } },
+    { params: { pass: "pass-4" } },
+    { params: { pass: "pass-5" } },
+  ];
+}
+
+const { pass: passSlug } = Astro.params;
+const meta = (registry.passes || []).find((p) => p.slug === passSlug);
+const changelogs: Record<string, any> = {
+  "pass-1": pass1,
+  "pass-2": pass2,
+};
+const log = changelogs[passSlug || ""] || null;
+
+function chipClass(status?: string) {
+  if (status === "COMPLETE") return "chip chip--done";
+  if (status === "ACTIVE") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function statusLabel(status?: string) {
+  if (status === "COMPLETE") return "Pass complete";
+  if (status === "ACTIVE") return "In progress";
+  return "Queued";
+}
+
+const title = meta ? `Pass ${meta.number} — ${meta.name}` : "Pass";
+const path = `/build-progress/passes/${passSlug}/`;
+---
+
+<BaseLayout
+  title={title}
+  path={path}
+  description={log?.summary || `Stage 1 ${title} changelog.`}
+>
+  <article>
+    <header class="hub-banner">
+      <p class="muted">
+        <a href="/build-progress/">Build Progress</a> →
+        <a href="/build-progress/passes/">Passes</a> → Pass {meta?.number}
+      </p>
+      <span class={chipClass(meta?.status || log?.status)}>{statusLabel(meta?.status || log?.status)}</span>
+      <h1>What Changed — Pass {meta?.number}</h1>
+      <p class="lede">{meta?.name}</p>
+    </header>
+
+    {
+      !log ? (
+        <section class="hub-section">
+          <p class="lede">
+            This pass has not started. The changelog page will fill when the pass opens and will
+            lock when the pass closes.
+          </p>
+          {meta?.spine_href && (
+            <p>
+              Spine home: <a href={meta.spine_href}>{meta.name}</a>
+            </p>
+          )}
+        </section>
+      ) : (
+        <>
+          <section class="hub-section" aria-labelledby="summary">
+            <h2 id="summary">Summary</h2>
+            <p class="lede">{log.summary}</p>
+            <p class="muted">
+              Decisions: {(log.decision_ids || []).join(", ") || "—"} · Updates:{" "}
+              {(log.update_ids || []).join(", ") || "—"}
+            </p>
+            <p class="muted">
+              Deployment date: <strong>{log.deployment_date || "—"}</strong>
+              {log.github_commit && (
+                <>
+                  {" "}
+                  · Commit:{" "}
+                  <a href={log.github_commit_url || "#"} rel="noopener noreferrer">
+                    <code>{log.github_commit}</code>
+                  </a>
+                </>
+              )}
+              {!log.github_commit && meta?.status === "ACTIVE" && (
+                <> · Commit: <em>will lock at pass close</em></>
+              )}
+            </p>
+            {meta?.spine_href && (
+              <p>
+                Spine: <a href={meta.spine_href}>{meta.name}</a>
+              </p>
+            )}
+          </section>
+
+          <section class="hub-section" aria-labelledby="progress">
+            <h2 id="progress">Progress movement</h2>
+            <p>{log.progress_movement}</p>
+            {log.progress_after && (
+              <div class="dash-row">
+                <div class="dash-cell">
+                  <strong>{log.progress_after.overall_project_completion_percent ?? "—"}%</strong>
+                  <span>Overall</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>{log.progress_after.skeleton_coverage_percent ?? "—"}%</strong>
+                  <span>Skeleton</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>{log.progress_after.first_pass_coverage_percent ?? "—"}%</strong>
+                  <span>First-pass</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>{log.progress_after.publication_completion_percent ?? "—"}%</strong>
+                  <span>Publication</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>{log.progress_after.validation_completion_percent ?? "—"}%</strong>
+                  <span>Validation</span>
+                </div>
+              </div>
+            )}
+          </section>
+
+          <section class="hub-section" aria-labelledby="modules">
+            <h2 id="modules">Modules added or modified</h2>
+            <ul class="stack">
+              {(log.modules_added_or_modified || []).map((m: any) => (
+                <li>
+                  <strong>{m.label}</strong>
+                  <span class="muted"> — {m.change}</span>
+                  {m.href && (
+                    <div>
+                      <a href={m.href}>Open on site →</a>
+                    </div>
+                  )}
+                  {m.path && <div class="muted"><code>{m.path}</code></div>}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section class="hub-section" aria-labelledby="sources">
+            <h2 id="sources">Source documents</h2>
+            <ul class="stack">
+              {(log.source_documents || []).map((s: any) => (
+                <li>
+                  <strong>{s.label}</strong>
+                  {s.path && <div class="muted"><code>{s.path}</code></div>}
+                  {s.url && (
+                    <div>
+                      <a href={s.url} rel="noopener noreferrer">Official source →</a>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section class="hub-section" aria-labelledby="deferred">
+            <h2 id="deferred">Unresolved / deferred</h2>
+            <ul class="stack">
+              {(log.unresolved_deferred || []).map((u: any) => (
+                <li>
+                  <strong>{u.item}</strong>
+                  <div class="muted">
+                    {u.disposition} → {u.defer_to}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {log.next_pass_only && (
+            <section class="hub-section" aria-labelledby="next">
+              <h2 id="next">Next</h2>
+              <p class="lede">{log.next_pass_only}</p>
+            </section>
+          )}
+        </>
+      )
+    }
+  </article>
+</BaseLayout>

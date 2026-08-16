@@ -25,8 +25,27 @@
     "updated_master_architecture",
     "updated_progress_dashboard",
     "updated_book_navigation_surface",
-    "pass_close_report_what_changed_what_remains_next_pass_only"
+    "pass_close_report_what_changed_what_remains_next_pass_only",
+    "permanent_what_changed_this_pass_page_on_live_netlify"
   ],
+  "pass_changelog_rule": {
+    "locked_by": "CC-DEC-152",
+    "hub": "/build-progress/",
+    "pattern": "/build-progress/passes/pass-{n}/",
+    "required_fields": [
+      "pass_number",
+      "decision_ids",
+      "progress_movement",
+      "modules_added_or_modified",
+      "short_description",
+      "hyperlinks_to_new_material",
+      "source_documents",
+      "unresolved_deferred",
+      "github_commit",
+      "deployment_date"
+    ]
+  },
+  "amended_by": "CC-DEC-152",
   "passes": [
     {
       "id": "PASS_1",
@@ -47,7 +66,7 @@
     {
       "id": "PASS_2",
       "name": "Household & Place Spine",
-      "status": "QUEUED_NEXT",
+      "status": "ACTIVE",
       "skeleton_target_percent": "75-80",
       "covers": [
         "LOCK-03 Housing/land",
@@ -61,7 +80,13 @@
         "Disability",
         "Rural/urban access"
       ],
-      "purpose": "Clean structural homes and contradiction check — most content already exists"
+      "purpose": "Clean structural homes and contradiction check — most content already exists",
+      "concurrent_infrastructure_locked_cc_dec_152": [
+        "Build Progress / What Changed This Pass system",
+        "Arkansas State Baseline / Budget Corpus (acquire & organize; analysis deferred)"
+      ],
+      "changelog": "data/project/pass_changelogs/pass_02.json",
+      "public_changelog": "/build-progress/passes/pass-2/"
     },
     {
       "id": "PASS_3",

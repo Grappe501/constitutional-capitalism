@@ -1,15 +1,28 @@
 {
   "version": "1.0.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-151",
+  "decision_id": "CC-DEC-152",
   "purpose": "Public site navigation organized by Stage 1 five-spine architecture. Every public page and research surface must appear exactly once as a primary home.",
   "primary_nav": [
     { "href": "/system/", "label": "System" },
     { "href": "/research/", "label": "Research" },
     { "href": "/book/", "label": "Book" },
     { "href": "/evidence/", "label": "Evidence" },
-    { "href": "/status/", "label": "Status" }
+    { "href": "/build-progress/", "label": "Build Progress" }
   ],
+  "build_progress": {
+    "href": "/build-progress/",
+    "title": "Build Progress",
+    "blurb": "Four completion bars, current pass, and a permanent What Changed This Pass changelog for every Stage 1 pass.",
+    "passes_index": "/build-progress/passes/",
+    "passes": [
+      { "href": "/build-progress/passes/pass-1/", "label": "Pass 1 — Money & Ownership" },
+      { "href": "/build-progress/passes/pass-2/", "label": "Pass 2 — Household & Place" },
+      { "href": "/build-progress/passes/pass-3/", "label": "Pass 3 — Government & Power" },
+      { "href": "/build-progress/passes/pass-4/", "label": "Pass 4 — Transition & Measurement" },
+      { "href": "/build-progress/passes/pass-5/", "label": "Pass 5 — Whole-System Closure" }
+    ]
+  },
   "foundations": {
     "id": "FOUNDATIONS",
     "title": "Foundations",
@@ -114,7 +127,9 @@
       "links": [
         { "href": "/community-resilience/", "label": "Community resilience" },
         { "href": "/metrics/", "label": "National baseline metrics" },
+        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline (budget corpus)" },
         { "href": "/where-we-are/", "label": "Where we are" },
+        { "href": "/build-progress/", "label": "Build Progress" },
         { "href": "/status/", "label": "Project status & completion bars" },
         { "href": "/updates/", "label": "Project updates" },
         { "href": "/systems-intelligence/", "label": "Systems intelligence (deferred)" },
@@ -137,6 +152,7 @@
       "links": [
         { "href": "/system/", "label": "Master system map" },
         { "href": "/research/", "label": "Research desk" },
+        { "href": "/build-progress/", "label": "Build Progress" },
         { "href": "/status/", "label": "Completion dashboard" }
       ],
       "research": []
@@ -146,7 +162,9 @@
     "blurb": "Find active architecture, hypotheses, and evidence without hunting the flat nav.",
     "working_now": [
       { "href": "/system/household-place/", "label": "Pass 2 — Household & Place Spine (active)" },
-      { "href": "/status/", "label": "Completion dashboard (Overall / Skeleton / First-pass / Publication / Validation)" },
+      { "href": "/build-progress/passes/pass-2/", "label": "What Changed — Pass 2 (live changelog)" },
+      { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline corpus" },
+      { "href": "/build-progress/", "label": "Build Progress hub" },
       { "href": "/updates/", "label": "Latest public updates" }
     ],
     "hypotheses": [
@@ -162,6 +180,7 @@
       { "href": "/evidence/methodology/", "label": "Evidence methodology" },
       { "href": "/evidence/open-questions/", "label": "Open questions" },
       { "href": "/metrics/", "label": "Baseline metrics" },
+      { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline (budgets)" },
       { "href": "/compare/", "label": "Comparative systems" },
       { "href": "/where-we-are/", "label": "National diagnosis snapshot" }
     ],
@@ -204,6 +223,8 @@
       "links": [
         { "href": "/research/", "label": "Research desk" },
         { "href": "/evidence/", "label": "Evidence" },
+        { "href": "/build-progress/", "label": "Build Progress" },
+        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas Baseline" },
         { "href": "/metrics/", "label": "Metrics" },
         { "href": "/compare/", "label": "Compare" },
         { "href": "/updates/", "label": "Updates" },

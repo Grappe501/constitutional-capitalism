@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import registry from "../../../../../data/project/build_progress_registry.json";
+import completion from "../../../../../data/project/completion_ladder_and_dashboard.json";
+import publishing from "../../../../../data/project/publishing_architecture_two_volumes.json";
+
+const bars = completion.progress_bars || {};
+const overall = completion.overall_project_completion?.percent ?? 0;
+const stages = completion.stages || [];
+const passes = registry.passes || [];
+
+function chipClass(status?: string) {
+  if (status === "COMPLETE") return "chip chip--done";
+  if (status === "ACTIVE") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function statusLabel(status?: string) {
+  if (status === "COMPLETE") return "Complete";
+  if (status === "ACTIVE") return "Building now";
+  return "Queued";
+}
+---
+
+<BaseLayout
+  title="Build Progress"
+  path="/build-progress/"
+  description="Four completion bars, current Stage 1 pass, and permanent What Changed This Pass changelogs."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">Readable changelog</span>
+      <h1>Build Progress</h1>
+      <p class="lede">
+        Follow the work without hunting the book. Every Stage 1 pass leaves a permanent
+        <strong>What Changed This Pass</strong> page with decisions, progress movement, modules,
+        sources, deferred items, commit, and deployment date.
+      </p>
+    </header>
+
+    <section class="hub-section" aria-labelledby="bars">
+      <h2 id="bars">Completion bars</h2>
+      <div class="dash-row">
+        <div class="dash-cell"><strong>{overall}%</strong><span>Overall</span></div>
+        <div class="dash-cell"><strong>{bars.skeleton_coverage_percent ?? 0}%</strong><span>Skeleton</span></div>
+        <div class="dash-cell"><strong>{bars.first_pass_coverage_percent ?? 0}%</strong><span>First-pass</span></div>
+        <div class="dash-cell"><strong>{bars.publication_completion_percent ?? 0}%</strong><span>Publication</span></div>
+        <div class="dash-cell"><strong>{bars.validation_completion_percent ?? 0}%</strong><span>Validation</span></div>
+      </div>
+      <p class="muted">
+        Current stage: <strong>{registry.current_stage}</strong> · Current pass:{" "}
+        <strong>{registry.current_pass}</strong>
+      </p>
+      <p>
+        <a href="/status/">Full status dials →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="next">
+      <h2 id="next">Next objective</h2>
+      <p class="lede">{registry.next_objective}</p>
+      <ul class="link-board">
+        <li><a href="/system/household-place/">Household & Place spine</a></li>
+        <li><a href="/build-progress/passes/pass-2/">Pass 2 changelog (in progress)</a></li>
+        <li><a href="/system/arkansas-state-baseline/">Arkansas State Baseline</a></li>
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="passes">
+      <h2 id="passes">Passes</h2>
+      <p class="lede">
+        <a href="/build-progress/passes/">Build Progress → Passes</a> — historical snapshots for each
+        Stage 1 pass.
+      </p>
+      <div class="spine-grid">
+        {
+          passes.map((p) => (
+            <a class="spine-tile" href={p.href}>
+              <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>
+              <h3>Pass {p.number}</h3>
+              <p>{p.name}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="hub-section" aria-labelledby="stages">
+      <h2 id="stages">Stages (refined)</h2>
+      <ul class="stack">
+        {
+          stages.map((s: any) => (
+            <li>
+              <strong>{s.id.replace("_", " ")}</strong> — {s.name}
+              <div class="muted">{s.target}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        Volume I = Unabridged source of truth. Volume II ≈ 100-page public book after validation.
+        Roadmap: {(publishing.arkansas_development_program_roadmap?.sequence || []).join(" → ")}.
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="infra">
+      <h2 id="infra">Infrastructure checkpoints</h2>
+      <ul class="stack">
+        {
+          (registry.infrastructure_checkpoints || []).map((c: any) => (
+            <li>
+              <strong>{c.id}</strong> — {c.title}
+              <div class="muted">{c.date}</div>
+              <ul class="link-board" style="margin-top:0.75rem;">
+                {(c.links || []).map((link: any) => (
+                  <li>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

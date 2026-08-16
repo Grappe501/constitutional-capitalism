@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-152",
+  "update_id": "UPD-165",
+  "status": "LIVE_SYSTEM_LOCKED",
+  "public_hub": "/build-progress/",
+  "passes_index": "/build-progress/passes/",
+  "pass_page_pattern": "/build-progress/passes/pass-{n}/",
+  "current_stage": "STAGE_1",
+  "current_pass": "PASS_2",
+  "next_objective": "Complete Pass 2 — Household & Place Spine (structural homes + contradiction check). Concurrent infrastructure from this lock already opened: Build Progress system + Arkansas State Baseline corpus.",
+  "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
+  "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
+  "arkansas_baseline_source": "data/project/arkansas_state_baseline_corpus.json",
+  "passes": [
+    {
+      "id": "PASS_1",
+      "number": 1,
+      "slug": "pass-1",
+      "name": "Money & Ownership Spine",
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-1/",
+      "changelog": "data/project/pass_changelogs/pass_01.json",
+      "spine_href": "/system/money-ownership/"
+    },
+    {
+      "id": "PASS_2",
+      "number": 2,
+      "slug": "pass-2",
+      "name": "Household & Place Spine",
+      "status": "ACTIVE",
+      "href": "/build-progress/passes/pass-2/",
+      "changelog": "data/project/pass_changelogs/pass_02.json",
+      "spine_href": "/system/household-place/"
+    },
+    {
+      "id": "PASS_3",
+      "number": 3,
+      "slug": "pass-3",
+      "name": "Government & Democratic Power Spine",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3/",
+      "changelog": null,
+      "spine_href": "/system/government-power/"
+    },
+    {
+      "id": "PASS_4",
+      "number": 4,
+      "slug": "pass-4",
+      "name": "Transition, Resilience & Measurement Spine",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-4/",
+      "changelog": null,
+      "spine_href": "/system/transition-measurement/"
+    },
+    {
+      "id": "PASS_5",
+      "number": 5,
+      "slug": "pass-5",
+      "name": "Whole-System Closure Audit",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5/",
+      "changelog": null,
+      "spine_href": "/system/#pass-5"
+    }
+  ],
+  "infrastructure_checkpoints": [
+    {
+      "id": "CC-DEC-152",
+      "title": "Two-volume publishing + Build Progress + Arkansas State Baseline",
+      "date": "2026-08-15",
+      "href": "/build-progress/",
+      "links": [
+        { "href": "/build-progress/", "label": "Build Progress hub" },
+        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline" },
+        { "href": "/system/household-place/", "label": "Pass 2 spine (active)" }
+      ]
+    }
+  ]
+}

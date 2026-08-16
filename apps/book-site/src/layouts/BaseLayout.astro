@@ -26,6 +26,7 @@ const primary = siteNav.primary_nav || [];
 const foundations = siteNav.foundations;
 const spines = siteNav.spines || [];
 const researchDesk = siteNav.research_desk;
+const buildProgress = siteNav.build_progress;
 const footerColumns = siteNav.footer_columns || [];
 
 function chipClass(status?: string) {
@@ -123,6 +124,24 @@ function statusLabel(status?: string) {
                   </li>
                 ))
               }
+            </ul>
+          </section>
+
+          <section class="nav-group" aria-labelledby="nav-build">
+            <h2 id="nav-build">{buildProgress?.title || "Build Progress"}</h2>
+            <p>{buildProgress?.blurb}</p>
+            <ul class="nav-group__links">
+              <li><a href="/build-progress/">Build Progress hub</a></li>
+              <li><a href="/build-progress/passes/">All passes</a></li>
+              {
+                (buildProgress?.passes || []).map((link) => (
+                  <li>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))
+              }
+              <li><a href="/status/">Status dials</a></li>
+              <li><a href="/system/arkansas-state-baseline/">Arkansas State Baseline</a></li>
             </ul>
           </section>
 

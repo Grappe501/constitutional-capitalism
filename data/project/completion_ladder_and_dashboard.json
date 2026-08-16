@@ -2,18 +2,25 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-150",
-  "update_id": "UPD-163",
+  "decision_id": "CC-DEC-152",
+  "update_id": "UPD-165",
+  "prior_decision_id": "CC-DEC-150",
   "status": "COMPLETION_SYSTEM_LOCKED_STAGE_1_IN_PROGRESS",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question_after_every_piece_of_work": "Did this materially move Constitutional Capitalism toward a finished system?",
+  "organizing_principle": "Literally build a path forward for the State of Arkansas — from today's balance sheet and operating system to the proposed state.",
   "build_strategy": "Breadth first. Completeness second. Depth third. Proof fourth.",
+  "publishing_architecture": "data/project/publishing_architecture_two_volumes.json",
+  "build_progress_registry": "data/project/build_progress_registry.json",
+  "arkansas_state_baseline": "data/project/arkansas_state_baseline_corpus.json",
   "not": [
     "single_percent_as_sole_progress_signal",
     "deepening_one_area_while_others_empty",
     "twenty_five_research_lanes",
     "dial_inflation_by_research_volume",
-    "stage_4_attack_before_skeleton_closes"
+    "stage_4_attack_before_skeleton_closes",
+    "theoretical_government_from_scratch_without_arkansas_baseline",
+    "stopping_skeleton_passes_for_full_budget_line_analysis"
   ],
   "historical_metric_reconciliation": {
     "legacy_overall_percent": 43,
@@ -24,8 +31,8 @@
   "stages": [
     {
       "id": "STAGE_1",
-      "name": "Complete the Skeleton",
-      "target": "100% structural coverage",
+      "name": "Full Skeleton",
+      "target": "Every component and relationship exists — 100% structural coverage",
       "status": "IN_PROGRESS",
       "exit_gate": "Draw the entire Constitutional Capitalism system on one master architecture and point to where every major function of government, markets, households, communities, capital, and democratic power lives — no orphan areas.",
       "minimum_bone_template": [
@@ -37,29 +44,30 @@
         "unresolved_questions",
         "later_evidence_testing_requirements"
       ],
-      "current_work": "Stage 1 Five-Pass Closure — Pass 1 complete; Pass 2 next",
+      "current_work": "Stage 1 Five-Pass Closure — Pass 1 complete; Pass 2 active (Household & Place + concurrent Build Progress / Arkansas Baseline infrastructure)",
       "five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
       "after_ten_locks": "Superseded by five-pass plan; Pass 5 is the whole-system closure audit"
     },
     {
       "id": "STAGE_2",
-      "name": "Complete the First Pass",
-      "target": "100% of modules at PARTIAL or better",
+      "name": "Full First Pass",
+      "target": "Every component has an actual working model — 100% of modules at PARTIAL or better",
       "status": "NOT_STARTED",
       "exit_gate": "Every module has minimum viable substance: what exists → what's wrong → what replaces/changes → how it works → who pays → who benefits → who owns → where money flows → safeguards → transition → intended result.",
       "rule": "No polishing while another category sits empty. Measure: % of system at minimum viable completeness."
     },
     {
       "id": "STAGE_3",
-      "name": "Write the Complete System",
-      "target": "100% publication-complete",
+      "name": "Unabridged Completion",
+      "target": "Every category written to exhaustive Volume I source-of-truth quality",
       "status": "NOT_STARTED",
-      "exit_gate": "Category-by-category publication completeness: 100% of Category N before starting Category N+1.",
-      "rule": "Finish one category at a time. Not 80% of twenty categories."
+      "exit_gate": "Category-by-category unabridged completeness: 100% of Category N before starting Category N+1.",
+      "rule": "Finish one category at a time. Not 80% of twenty categories. No arbitrary page limit.",
+      "volume": "Volume I — Unabridged Constitutional Capitalism System"
     },
     {
       "id": "STAGE_4",
-      "name": "Break It",
+      "name": "Validation / Break It",
       "target": "Validated system",
       "status": "NOT_STARTED",
       "exit_gate": "System survives ruthless attack; every failure resolves PASS | MODIFY | REPLACE | REMOVE.",
@@ -80,7 +88,33 @@
         "transition_failures",
         "unintended_consequences"
       ]
+    },
+    {
+      "id": "STAGE_5",
+      "name": "Public Book",
+      "target": "Compress the validated system into the ~100-page public roadmap (Volume II)",
+      "status": "NOT_STARTED",
+      "exit_gate": "Reader can travel Where Arkansas is → why outcomes → what changes → money flows → household life → transition → what Arkansas could become, with pointers into Unabridged.",
+      "volume": "Volume II — The Public Book",
+      "amended_by": "CC-DEC-152"
+    },
+    {
+      "id": "STAGE_6",
+      "name": "Implementation Manuals",
+      "target": "Administration-specific plans, legislative packages, agency transitions, local pilots, fiscal schedules, dashboards",
+      "status": "LATER_NOT_NOW",
+      "exit_gate": "Future Arkansas administration can execute without inventing the missing middle.",
+      "timing": "after_stage_5",
+      "amended_by": "CC-DEC-152"
     }
+  ],
+  "arkansas_development_program_roadmap": [
+    "ARKANSAS_NOW",
+    "YEARS_1_2",
+    "YEARS_3_5",
+    "YEARS_6_10",
+    "GENERATION_1",
+    "GENERATION_2"
   ],
   "progress_bars": {
     "skeleton_coverage_percent": 63,

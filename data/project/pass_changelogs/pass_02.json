@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_2",
+  "pass_number": 2,
+  "pass_name": "Household & Place Spine",
+  "status": "ACTIVE",
+  "decision_ids": ["CC-DEC-152"],
+  "update_ids": ["UPD-165"],
+  "slice_id": "CC-STAGE-1-PASS-2-HOUSEHOLD-PLACE-SPINE-1.0",
+  "deployment_date": "2026-08-15",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-2/",
+  "progress_before": {
+    "skeleton_coverage_percent": 63,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 20
+  },
+  "progress_after": null,
+  "progress_movement": "Pass still open. Concurrent infrastructure locked under CC-DEC-152 without moving skeleton % yet. Household & Place structural integration remains the primary exit work.",
+  "summary": "Pass 2 opened. Primary objective remains Household & Place Spine. Concurrent permanent infrastructure started this pass: live Build Progress / What Changed This Pass system, and Arkansas State Baseline budget corpus (acquire & organize — not full line-item analysis).",
+  "modules_added_or_modified": [
+    {
+      "id": "build_progress_system",
+      "label": "Build Progress + pass changelogs",
+      "change": "added",
+      "href": "/build-progress/",
+      "path": "data/project/build_progress_registry.json"
+    },
+    {
+      "id": "publishing_architecture",
+      "label": "Two-volume publishing architecture + stages 5–6",
+      "change": "added",
+      "href": "/build-progress/",
+      "path": "data/project/publishing_architecture_two_volumes.json"
+    },
+    {
+      "id": "arkansas_state_baseline",
+      "label": "Arkansas State Baseline / Budget Corpus",
+      "change": "added",
+      "href": "/system/arkansas-state-baseline/",
+      "path": "data/project/arkansas_state_baseline_corpus.json"
+    },
+    {
+      "id": "fy2026_gr_seed",
+      "label": "FY2026 General Revenue allocations seed",
+      "change": "added",
+      "href": "/system/arkansas-state-baseline/",
+      "path": "data/imports/arkansas-state-baseline/normalized/fy2026_general_revenue_allocations_seed.json"
+    },
+    {
+      "id": "household_place_spine",
+      "label": "Household & Place Spine hub",
+      "change": "open_structural_home",
+      "href": "/system/household-place/"
+    }
+  ],
+  "source_documents": [
+    {
+      "label": "FY2026 Fiscal Legislation Summary (downloaded)",
+      "path": "data/imports/arkansas-state-baseline/sources/fy2026_fiscal_legislation_summary_2025R.pdf"
+    },
+    {
+      "label": "FY2027 RSA draft portrait (downloaded)",
+      "path": "data/imports/arkansas-state-baseline/sources/fy2027_revenue_stabilization_draft_portrait_har.pdf"
+    },
+    {
+      "label": "SB75 / Acts 143–144 pointer",
+      "url": "https://arkleg.state.ar.us/Bills/Detail?ddBienniumSession=2025%2F2026F&id=SB75"
+    }
+  ],
+  "unresolved_deferred": [
+    {
+      "item": "Multi-year normalized Arkansas budget series (FY2023–FY2027)",
+      "disposition": "KNOWN_DETAIL",
+      "defer_to": "Baseline corpus continuation — pull as modules need"
+    },
+    {
+      "item": "Capability questions against each major allocation (purchase → household capability / productive assets / retained capital / liabilities / dependence / export / future public income)",
+      "disposition": "KNOWN_DETAIL",
+      "defer_to": "Module pulls across Passes 2–4 and Stage 2"
+    },
+    {
+      "item": "Full Household & Place spine integration (LOCK-03, LOCK-07 place half, health, education, food, energy, care, aging, disability, rural/urban)",
+      "disposition": "STRUCTURAL_HOLE_UNTIL_PASS_2_CLOSES",
+      "defer_to": "Remainder of Pass 2"
+    }
+  ],
+  "next_pass_only": "Finish Pass 2 Household & Place structural spine; do not divert into full budget line analysis."
+}
