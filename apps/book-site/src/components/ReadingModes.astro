@@ -1,0 +1,49 @@
+---
+interface Props {
+  defaultMode?: "understand" | "explore" | "prove";
+}
+const { defaultMode = "understand" } = Astro.props;
+---
+
+<div class="reading-modes" data-reading-modes data-default={defaultMode}>
+  <p class="reading-modes__label">Reading depth</p>
+  <div class="reading-modes__tabs" role="tablist" aria-label="Reading depth">
+    <button type="button" role="tab" data-mode="understand" aria-selected="true">Understand</button>
+    <button type="button" role="tab" data-mode="explore" aria-selected="false">Explore</button>
+    <button type="button" role="tab" data-mode="prove" aria-selected="false">Prove</button>
+  </div>
+  <p class="reading-modes__hint muted">
+    Understand = public book layer · Explore = unabridged argument · Prove = sources & validation
+  </p>
+</div>
+
+<script>
+  const root = document.querySelector("[data-reading-modes]");
+  if (root) {
+    const key = "cc-reading-mode";
+    const tabs = root.querySelectorAll("[data-mode]");
+    const apply = (mode: string) => {
+      document.body.setAttribute("data-reading-mode", mode);
+      tabs.forEach((btn) => {
+        const on = btn.getAttribute("data-mode") === mode;
+        btn.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      try {
+        sessionStorage.setItem(key, mode);
+      } catch {
+        /* ignore */
+      }
+    };
+    const saved = (() => {
+      try {
+        return sessionStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    })();
+    apply(saved || root.getAttribute("data-default") || "understand");
+    tabs.forEach((btn) => {
+      btn.addEventListener("click", () => apply(btn.getAttribute("data-mode") || "understand"));
+    });
+  }
+</script>

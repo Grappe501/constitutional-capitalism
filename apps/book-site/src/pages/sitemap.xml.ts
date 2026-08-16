@@ -55,6 +55,7 @@ const staticPages = [
   "/status/",
   "/system/",
   "/system/arkansas-state-baseline/",
+  "/system/visual-language/",
   "/system/money-ownership/",
   "/system/household-place/",
   "/system/government-power/",

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import CompletionLadderViz from "../../components/CompletionLadderViz.astro";
 import registry from "../../../../../data/project/build_progress_registry.json";
 import completion from "../../../../../data/project/completion_ladder_and_dashboard.json";
 import publishing from "../../../../../data/project/publishing_architecture_two_volumes.json";
@@ -39,20 +40,23 @@ function statusLabel(status?: string) {
     </header>
 
     <section class="hub-section" aria-labelledby="bars">
-      <h2 id="bars">Completion bars</h2>
-      <div class="dash-row">
-        <div class="dash-cell"><strong>{overall}%</strong><span>Overall</span></div>
-        <div class="dash-cell"><strong>{bars.skeleton_coverage_percent ?? 0}%</strong><span>Skeleton</span></div>
-        <div class="dash-cell"><strong>{bars.first_pass_coverage_percent ?? 0}%</strong><span>First-pass</span></div>
-        <div class="dash-cell"><strong>{bars.publication_completion_percent ?? 0}%</strong><span>Publication</span></div>
-        <div class="dash-cell"><strong>{bars.validation_completion_percent ?? 0}%</strong><span>Validation</span></div>
-      </div>
+      <h2 id="bars">Completion ladder</h2>
+      <CompletionLadderViz
+        overall={overall}
+        skeleton={bars.skeleton_coverage_percent ?? 0}
+        firstPass={bars.first_pass_coverage_percent ?? 0}
+        publication={bars.publication_completion_percent ?? 0}
+        validation={bars.validation_completion_percent ?? 0}
+        caption="Current after Pass 4. Skeleton completion advances before deeper writing and validation. Final ~3 points reserved for Pass 5."
+      />
       <p class="muted">
         Current stage: <strong>{registry.current_stage}</strong> · Current pass:{" "}
         <strong>{registry.current_pass}</strong>
       </p>
       <p>
         <a href="/status/">Full status dials →</a>
+        {" · "}
+        <a href="/system/visual-language/">Visual language →</a>
       </p>
     </section>
 

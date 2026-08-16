@@ -1,36 +1,26 @@
 ---
 ---
 
-<aside class="listen-bar" data-listen-bar aria-label="Listen to this page">
-  <div class="listen-bar__inner">
-    <div class="listen-bar__row">
-      <p class="listen-bar__title">
-        <span class="listen-bar__heading">Listen</span>
-        <span class="listen-bar__status" data-listen-status>Ready</span>
+<aside class="listen-dock" data-listen-bar data-listen-state="dormant" aria-label="Listen to this page">
+  <button type="button" class="listen-pill" data-listen-expand aria-expanded="false">
+    <span data-listen-pill-label>Listen</span>
+  </button>
+
+  <div class="listen-panel" data-listen-panel hidden>
+    <div class="listen-panel__head">
+      <p class="listen-panel__title">
+        <span class="listen-panel__heading">Listen</span>
+        <span class="listen-panel__status" data-listen-status>Ready</span>
       </p>
-      <div class="listen-bar__controls">
-        <button type="button" class="listen-btn listen-btn--primary" data-listen-play>
-          Play
-        </button>
-        <button type="button" class="listen-btn" data-listen-pause disabled>
-          Pause
-        </button>
-        <button type="button" class="listen-btn" data-listen-stop disabled>
-          Stop
-        </button>
-      </div>
-      <button
-        type="button"
-        class="listen-bar__toggle"
-        data-listen-toggle
-        aria-expanded="false"
-        aria-controls="listen-extras"
-      >
-        Options
+      <button type="button" class="listen-btn listen-btn--ghost" data-listen-minimize aria-label="Minimize player">
+        Minimize
       </button>
     </div>
-    <div class="listen-bar__extras" id="listen-extras" data-listen-extras>
-      <label class="listen-bar__rate">
+    <div class="listen-panel__controls">
+      <button type="button" class="listen-btn listen-btn--primary" data-listen-play>Play</button>
+      <button type="button" class="listen-btn" data-listen-pause disabled>Pause</button>
+      <button type="button" class="listen-btn" data-listen-stop disabled>Stop</button>
+      <label class="listen-panel__rate">
         <span>Speed</span>
         <select data-listen-rate aria-label="Speech speed">
           <option value="0.85">Slow</option>
@@ -38,22 +28,24 @@
           <option value="1.15">Fast</option>
         </select>
       </label>
-      <p class="listen-bar__note">
-        Uses your browser’s built-in voice (Chrome works best). For driving, start playback
-        before you move and keep the phone secured.
-      </p>
     </div>
+    <p class="listen-panel__note">
+      Browser voice (Chrome works best). Collapses when idle — expands while playing.
+    </p>
   </div>
 </aside>
 
 <script>
-  const bar = document.querySelector("[data-listen-bar]");
-  const playBtn = document.querySelector("[data-listen-play]");
-  const pauseBtn = document.querySelector("[data-listen-pause]");
-  const stopBtn = document.querySelector("[data-listen-stop]");
-  const statusEl = document.querySelector("[data-listen-status]");
+  const bar = document.querySelector("[data-listen-bar]") as HTMLElement | null;
+  const playBtn = document.querySelector("[data-listen-play]") as HTMLButtonElement | null;
+  const pauseBtn = document.querySelector("[data-listen-pause]") as HTMLButtonElement | null;
+  const stopBtn = document.querySelector("[data-listen-stop]") as HTMLButtonElement | null;
+  const statusEl = document.querySelector("[data-listen-status]") as HTMLElement | null;
   const rateEl = document.querySelector("[data-listen-rate]") as HTMLSelectElement | null;
-  const toggleBtn = document.querySelector("[data-listen-toggle]");
+  const expandBtn = document.querySelector("[data-listen-expand]") as HTMLButtonElement | null;
+  const minimizeBtn = document.querySelector("[data-listen-minimize]") as HTMLButtonElement | null;
+  const panel = document.querySelector("[data-listen-panel]") as HTMLElement | null;
+  const pillLabel = document.querySelector("[data-listen-pill-label]") as HTMLElement | null;
   const main = document.querySelector("#main");
 
   const supported =
@@ -63,36 +55,75 @@
     !!stopBtn &&
     !!statusEl &&
     !!rateEl &&
+    !!expandBtn &&
+    !!minimizeBtn &&
+    !!panel &&
+    !!pillLabel &&
     !!main &&
     "speechSynthesis" in window &&
     "SpeechSynthesisUtterance" in window;
 
-  const desktopMq = window.matchMedia("(min-width: 901px)");
+  const STATE_KEY = "cc-listen-pref";
+  let idleTimer: number | undefined;
+  let playbackState: "idle" | "playing" | "paused" = "idle";
 
-  const syncExtrasVisibility = () => {
-    if (!toggleBtn || !bar) return;
-    if (desktopMq.matches) {
-      toggleBtn.setAttribute("aria-expanded", "true");
-      bar.removeAttribute("data-expanded");
-      return;
+  type UiState = "dormant" | "mini" | "expanded";
+
+  const setUi = (state: UiState, persist = true) => {
+    if (!bar || !panel || !expandBtn || !pillLabel) return;
+    bar.setAttribute("data-listen-state", state);
+    const open = state === "expanded";
+    panel.hidden = !open;
+    expandBtn.hidden = open;
+    expandBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    if (state === "dormant") {
+      pillLabel.textContent = playbackState === "paused" ? "Resume" : "Listen";
+    } else if (state === "mini") {
+      pillLabel.textContent =
+        playbackState === "playing"
+          ? "Playing…"
+          : playbackState === "paused"
+            ? "Resume"
+            : "Listen";
     }
-    const expanded = bar.hasAttribute("data-expanded");
-    toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+    if (persist) {
+      try {
+        sessionStorage.setItem(STATE_KEY, state);
+      } catch {
+        /* ignore */
+      }
+    }
   };
 
-  toggleBtn?.addEventListener("click", () => {
-    if (!bar || desktopMq.matches) return;
-    if (bar.hasAttribute("data-expanded")) bar.removeAttribute("data-expanded");
-    else bar.setAttribute("data-expanded", "");
-    syncExtrasVisibility();
+  const scheduleCollapse = () => {
+    window.clearTimeout(idleTimer);
+    if (playbackState === "playing") return;
+    idleTimer = window.setTimeout(() => {
+      if (playbackState === "paused") setUi("mini");
+      else setUi("dormant");
+    }, 8000);
+  };
+
+  expandBtn?.addEventListener("click", () => {
+    setUi("expanded");
+    if (playbackState === "paused" && playBtn) playBtn.click();
+  });
+  minimizeBtn?.addEventListener("click", () => {
+    setUi(playbackState === "idle" ? "dormant" : "mini");
   });
 
-  desktopMq.addEventListener("change", syncExtrasVisibility);
-  syncExtrasVisibility();
+  try {
+    const pref = sessionStorage.getItem(STATE_KEY) as UiState | null;
+    if (pref === "expanded" || pref === "mini" || pref === "dormant") setUi(pref, false);
+    else setUi("dormant", false);
+  } catch {
+    setUi("dormant", false);
+  }
 
   if (!supported) {
-    if (statusEl) statusEl.textContent = "Voice not supported in this browser";
-    if (playBtn) playBtn.setAttribute("disabled", "true");
+    if (statusEl) statusEl.textContent = "Voice not supported";
+    if (playBtn) playBtn.disabled = true;
+    if (pillLabel) pillLabel.textContent = "Listen unavailable";
   } else {
     const synth = window.speechSynthesis;
     let chunks: string[] = [];
@@ -101,47 +132,48 @@
     let wakeLock: any = null;
 
     const setStatus = (text: string) => {
-      statusEl.textContent = text;
+      statusEl!.textContent = text;
     };
 
     const setControls = (state: "idle" | "playing" | "paused") => {
+      playbackState = state;
       if (state === "idle") {
-        playBtn.textContent = "Play";
-        playBtn.removeAttribute("disabled");
-        pauseBtn.setAttribute("disabled", "true");
-        stopBtn.setAttribute("disabled", "true");
+        playBtn!.textContent = "Play";
+        playBtn!.disabled = false;
+        pauseBtn!.disabled = true;
+        stopBtn!.disabled = true;
       } else if (state === "playing") {
-        playBtn.setAttribute("disabled", "true");
-        pauseBtn.removeAttribute("disabled");
-        pauseBtn.textContent = "Pause";
-        stopBtn.removeAttribute("disabled");
+        playBtn!.disabled = true;
+        pauseBtn!.disabled = false;
+        pauseBtn!.textContent = "Pause";
+        stopBtn!.disabled = false;
+        setUi("expanded");
+        window.clearTimeout(idleTimer);
       } else {
-        playBtn.removeAttribute("disabled");
-        playBtn.textContent = "Resume";
-        pauseBtn.setAttribute("disabled", "true");
-        stopBtn.removeAttribute("disabled");
+        playBtn!.disabled = false;
+        playBtn!.textContent = "Resume";
+        pauseBtn!.disabled = true;
+        stopBtn!.disabled = false;
+        scheduleCollapse();
       }
     };
 
     const collectChunks = (): string[] => {
-      const nodes = main.querySelectorAll(
+      const nodes = main!.querySelectorAll(
         "h1, h2, h3, h4, p, li, blockquote, figcaption, td, th, .page-lede, .lede"
       );
       const out: string[] = [];
       nodes.forEach((node) => {
         if (node.closest("[data-listen-bar]")) return;
         const text = (node.textContent || "").replace(/\s+/g, " ").trim();
-        if (!text) return;
-        if (text.length < 2) return;
+        if (!text || text.length < 2) return;
         if (text.length > 450) {
           const parts = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
           parts.forEach((part) => {
             const clean = part.replace(/\s+/g, " ").trim();
             if (clean) out.push(clean);
           });
-        } else {
-          out.push(text);
-        }
+        } else out.push(text);
       });
       return out;
     };
@@ -158,13 +190,13 @@
     const requestWakeLock = async () => {
       try {
         if ("wakeLock" in navigator) {
-          wakeLock = await navigator.wakeLock.request("screen");
+          wakeLock = await (navigator as any).wakeLock.request("screen");
           wakeLock.addEventListener("release", () => {
             wakeLock = null;
           });
         }
       } catch {
-        /* ignore — not critical */
+        /* ignore */
       }
     };
 
@@ -176,6 +208,7 @@
       await releaseWakeLock();
       setControls("idle");
       setStatus("Ready");
+      scheduleCollapse();
     };
 
     const speakNext = () => {
@@ -184,7 +217,7 @@
         return;
       }
       const utter = new SpeechSynthesisUtterance(chunks[index]);
-      utter.rate = Number(rateEl.value) || 1;
+      utter.rate = Number(rateEl!.value) || 1;
       utter.onstart = () => {
         setControls("playing");
         setStatus(`${index + 1}/${chunks.length}`);
@@ -202,7 +235,7 @@
       synth.speak(utter);
     };
 
-    playBtn.addEventListener("click", async () => {
+    playBtn!.addEventListener("click", async () => {
       if (paused && synth.paused) {
         paused = false;
         synth.resume();
@@ -214,15 +247,17 @@
       chunks = collectChunks();
       if (!chunks.length) {
         setStatus("No readable text on this page");
+        setUi("expanded");
         return;
       }
       index = 0;
       paused = false;
       await requestWakeLock();
+      setUi("expanded");
       window.setTimeout(() => speakNext(), 60);
     });
 
-    pauseBtn.addEventListener("click", () => {
+    pauseBtn!.addEventListener("click", () => {
       if (!synth.speaking) return;
       paused = true;
       synth.pause();
@@ -230,11 +265,11 @@
       setStatus("Paused");
     });
 
-    stopBtn.addEventListener("click", () => {
+    stopBtn!.addEventListener("click", () => {
       void stopAll();
     });
 
-    rateEl.addEventListener("change", () => {
+    rateEl!.addEventListener("change", () => {
       if (synth.speaking && !paused) {
         const current = index;
         synth.cancel();

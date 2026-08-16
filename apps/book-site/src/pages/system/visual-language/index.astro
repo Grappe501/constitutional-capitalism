@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import CompletionLadderViz from "../../../components/CompletionLadderViz.astro";
+import MoneyRiver from "../../../components/MoneyRiver.astro";
+import ArkansasPathway from "../../../components/ArkansasPathway.astro";
+import PowerCaptureLoop from "../../../components/PowerCaptureLoop.astro";
+import OwnershipFlow from "../../../components/OwnershipFlow.astro";
+import ProsperityFlywheel from "../../../components/ProsperityFlywheel.astro";
+import NowFutureCompare from "../../../components/NowFutureCompare.astro";
+import BudgetXRay from "../../../components/BudgetXRay.astro";
+import viz from "../../../../../../data/project/visual_system_v1.json";
+import completion from "../../../../../../data/project/completion_ladder_and_dashboard.json";
+
+const bars = completion.progress_bars || {};
+const overall = completion.overall_project_completion?.percent ?? 0;
+---
+
+<BaseLayout
+  title="Visual language"
+  path="/system/visual-language/"
+  description="Constitutional Capitalism Visual System v1 — reusable atlas components for money, ownership, power, pathway, and confidence."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">Visual System v1</span>
+      <h1>Interactive atlas vocabulary</h1>
+      <p class="lede">
+        Not a brochure. An atlas of Arkansas political economy. Same visual grammar throughout —
+        populated as spines deepen. Parallel to Stage 1; does not block Pass 5.
+      </p>
+      <p class="muted">
+        {viz.decision_id} · {viz.update_id} · Dual pass questions:{" "}
+        {(viz.pass_dual_question || []).join(" · ")}
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>Every chart answers one question</h2>
+      <ul class="stack">
+        {(viz.every_chart_answers_one_of || []).map((q: string) => <li>{q}</li>)}
+      </ul>
+      <p>
+        Example confidence marks:{" "}
+        <EvidenceConfidence level="proven" />{" "}
+        <EvidenceConfidence level="strong" />{" "}
+        <EvidenceConfidence level="working" />{" "}
+        <EvidenceConfidence level="illustrative" note="not counted revenue" />{" "}
+        <EvidenceConfidence level="untested" />
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore">
+      <h2>Live / shell components</h2>
+      <CompletionLadderViz
+        overall={overall}
+        skeleton={bars.skeleton_coverage_percent ?? 0}
+        firstPass={bars.first_pass_coverage_percent ?? 0}
+        publication={bars.publication_completion_percent ?? 0}
+        validation={bars.validation_completion_percent ?? 0}
+        caption="Current after Pass 4. Skeleton advances before deeper writing and validation. Final 3 points reserved for Pass 5 closure audit."
+      />
+      <ArkansasPathway activeId="YEARS_1_2" />
+      <MoneyRiver />
+      <NowFutureCompare
+        nowText="Income/property dependency, external processing, household energy as pure expense."
+        futureText="Diversified public-income architecture, Arkansas processing, energy as productive local asset — only after replacements clear capacity gates."
+      />
+      <OwnershipFlow domain="Arkansas productive system" />
+      <ProsperityFlywheel />
+      <PowerCaptureLoop />
+      <BudgetXRay />
+    </section>
+
+    <section class="hub-section" data-depth="prove">
+      <h2>Registry</h2>
+      <ul class="stack">
+        {
+          (viz.visualization_families || []).map((f: any) => (
+            <li>
+              <strong>{f.name}</strong> — {f.status}
+              <div class="muted">{f.question}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        Spec-only for now: Arkansas Capital Map (no fake county numbers) · Household Prosperity
+        Dashboard (Stage 2+). Source: <code>data/project/visual_system_v1.json</code>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

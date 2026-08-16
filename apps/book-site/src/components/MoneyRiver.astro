@@ -1,0 +1,50 @@
+---
+interface Props {
+  title?: string;
+}
+const { title = "The Money River" } = Astro.props;
+---
+
+<figure class="viz viz--river" data-viz="money-river">
+  <figcaption class="viz__cap">
+    <span class="viz__family">{title}</span>
+    <span class="viz__q">Where did it come from · where did it go · what leaks?</span>
+  </figcaption>
+  <svg class="viz-svg" viewBox="0 0 720 220" role="img" aria-label="Money River schematic">
+    <defs>
+      <linearGradient id="riverFill" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.85"></stop>
+        <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.55"></stop>
+        <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.35"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M20 110 C 120 40, 220 40, 300 110 S 480 180, 560 110 S 680 40, 700 90"
+      fill="none"
+      stroke="url(#riverFill)"
+      stroke-width="34"
+      stroke-linecap="round"></path>
+    <path
+      d="M420 118 C 480 150, 540 175, 620 190"
+      fill="none"
+      stroke="#b87333"
+      stroke-width="10"
+      stroke-linecap="round"
+      opacity="0.9"></path>
+    <path
+      d="M360 95 C 400 55, 450 35, 520 28"
+      fill="none"
+      stroke="#1e3a8a"
+      stroke-width="8"
+      stroke-linecap="round"
+      opacity="0.75"></path>
+    <text x="28" y="28" class="viz-svg__label">Money enters</text>
+    <text x="250" y="200" class="viz-svg__label">Local circulation</text>
+    <text x="500" y="22" class="viz-svg__label">Arkansas assets</text>
+    <text x="560" y="210" class="viz-svg__label viz-svg__label--leak">Leak outward</text>
+  </svg>
+  <p class="viz__note">
+    Signature shell — populate with Arkansas flows later. External leakage leaves the river;
+    public/community return creates tributaries back toward retained prosperity.
+  </p>
+</figure>

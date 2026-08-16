@@ -1,0 +1,27 @@
+---
+interface Props {
+  domain?: string;
+}
+const { domain = "productive system" } = Astro.props;
+---
+
+<figure class="viz viz--own" data-viz="ownership-flow">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Who Owns It?</span>
+    <span class="viz__q">Who owns it · who benefits?</span>
+  </figcaption>
+  <div class="own-grid">
+    <div class="own-col">
+      <h3>Today</h3>
+      <p>Arkansans → spend → company → profit → <strong>external owner</strong></p>
+    </div>
+    <div class="own-col own-col--proposed">
+      <h3>Proposed</h3>
+      <p>
+        Arkansans → spend → {domain} → operating income →
+        <strong>reinvestment + workers + owners + community/public return</strong>
+      </p>
+    </div>
+  </div>
+  <p class="viz__note">Required ownership artifact for economic modules — Stage 2 writing fills domain specifics.</p>
+</figure>

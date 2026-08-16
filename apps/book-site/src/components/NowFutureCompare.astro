@@ -1,0 +1,52 @@
+---
+interface Props {
+  nowLabel?: string;
+  futureLabel?: string;
+  nowText?: string;
+  futureText?: string;
+}
+const {
+  nowLabel = "Arkansas NOW",
+  futureLabel = "Constitutional Capitalism",
+  nowText = "Existing structure and outcomes",
+  futureText = "Proposed structure and household effects",
+} = Astro.props;
+---
+
+<figure class="viz viz--slider" data-viz="now-future" data-now-future>
+  <figcaption class="viz__cap">
+    <span class="viz__family">NOW → FUTURE</span>
+    <span class="viz__q">What happens if we change the structure?</span>
+  </figcaption>
+  <label class="now-future__label">
+    <span>{nowLabel}</span>
+    <input type="range" min="0" max="100" value="0" data-now-future-range />
+    <span>{futureLabel}</span>
+  </label>
+  <div class="now-future__panels">
+    <div class="now-future__panel" data-panel="now">
+      <strong>{nowLabel}</strong>
+      <p>{nowText}</p>
+    </div>
+    <div class="now-future__panel" data-panel="future" hidden>
+      <strong>{futureLabel}</strong>
+      <p>{futureText}</p>
+    </div>
+  </div>
+</figure>
+
+<script>
+  document.querySelectorAll("[data-now-future]").forEach((root) => {
+    const range = root.querySelector("[data-now-future-range]") as HTMLInputElement | null;
+    const now = root.querySelector('[data-panel="now"]') as HTMLElement | null;
+    const future = root.querySelector('[data-panel="future"]') as HTMLElement | null;
+    if (!range || !now || !future) return;
+    const sync = () => {
+      const towardFuture = Number(range.value) >= 50;
+      now.hidden = towardFuture;
+      future.hidden = !towardFuture;
+    };
+    range.addEventListener("input", sync);
+    sync();
+  });
+</script>

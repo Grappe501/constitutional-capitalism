@@ -2,6 +2,7 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import siteNav from "../../../../../../data/project/site_spine_navigation.json";
 import spineData from "../../../../../../data/project/stage1_pass3_government_democratic_power_spine.json";
+import PowerCaptureLoop from "../../../components/PowerCaptureLoop.astro";
 
 const spine = (siteNav.spines || []).find((s) => s.slug === "government-power");
 if (!spine) throw new Error("Government power spine missing");
@@ -31,6 +32,7 @@ const captureLoop = spineData.capture_loop;
 
     <section class="hub-section" aria-labelledby="loops">
       <h2 id="loops">Power Loop vs Capture Loop</h2>
+      <PowerCaptureLoop />
       <p class="lede"><strong>{powerLoop.name}:</strong> {powerLoop.one_sentence}</p>
       <p class="muted">{(powerLoop.sequence || []).join(" → ")}</p>
       <p class="lede" style="margin-top:1.25rem;">

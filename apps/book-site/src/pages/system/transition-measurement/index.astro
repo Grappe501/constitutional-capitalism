@@ -2,6 +2,7 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import siteNav from "../../../../../../data/project/site_spine_navigation.json";
 import spineData from "../../../../../../data/project/stage1_pass4_transition_resilience_measurement_spine.json";
+import ArkansasPathway from "../../../components/ArkansasPathway.astro";
 
 const spine = (siteNav.spines || []).find((s) => s.slug === "transition-measurement");
 if (!spine) throw new Error("Transition measurement spine missing");
@@ -37,6 +38,7 @@ const dep = spineData.dependency_rule;
 
     <section class="hub-section" aria-labelledby="map">
       <h2 id="map">Arkansas Transition Map</h2>
+      <ArkansasPathway />
       <p class="lede">{map.chain_display}</p>
       <p class="muted">{map.role.replaceAll("_", " ")} — {map.rule}</p>
       <ul class="stack">
