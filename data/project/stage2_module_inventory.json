@@ -3,7 +3,7 @@
   "slice_id": "CC-STAGE-2-MODULE-INVENTORY-1.0",
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
-  "update_id": "UPD-174",
+  "update_id": "UPD-175",
   "status": "LOCKED_DENOMINATOR",
   "total_modules": 50,
   "counting_standard": "data/project/stage2_first_pass_module_standard.json",
@@ -38,6 +38,11 @@
       "first_pass_count": 35,
       "first_pass_percent": 70,
       "note": "Pass 2.4: GO-01\u2013GO-10 remapped at 15-field FIRST_PASS. Net +8 (GO-02/GO-10 already in 27). 35/50 = 70%."
+    },
+    "after_pass_2_5": {
+      "first_pass_count": 43,
+      "first_pass_percent": 86,
+      "note": "Pass 2.5: TR-01\u2013TR-08 remapped at 15-field FIRST_PASS. All were NOT_STARTED. Net +8. 43/50 = 86%. Remaining: IX-01\u2013IX-06 for Pass 2.6."
     }
   },
   "prior_first_pass_ids_before_2_1": [
@@ -314,51 +319,63 @@
     },
     {
       "id": "TR-01",
-      "name": "Arkansas NOW fiscal baseline",
+      "name": "Arkansas NOW Baseline",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-01",
+      "note": "Current-State Ledger architecture bound"
     },
     {
       "id": "TR-02",
-      "name": "Transition architecture",
+      "name": "Dependency & Prerequisite Architecture",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-02",
+      "note": "LOCK-10 / Dependency Rule / Control Board"
     },
     {
       "id": "TR-03",
-      "name": "Sequencing & Dependency Rule",
+      "name": "Years 1–2: Build Capacity",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-03"
     },
     {
       "id": "TR-04",
-      "name": "Resilience under shock",
+      "name": "Years 3–5: Prove & Scale",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-04"
     },
     {
       "id": "TR-05",
-      "name": "Household prosperity measurement",
+      "name": "Years 6–10: Structural Transition",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-05"
     },
     {
       "id": "TR-06",
-      "name": "Geographic money statements",
+      "name": "Generation 1 → Generation 2",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-06",
+      "note": "Intergenerational Capital Ledger — no invented values"
     },
     {
       "id": "TR-07",
-      "name": "Intergenerational capital",
+      "name": "Resilience & Economic Continuity",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-07",
+      "note": "Categories bound; five-state tests Stage 4"
     },
     {
       "id": "TR-08",
-      "name": "Expansion & correction system",
+      "name": "Scale, Correction & Exit",
       "wave": "PASS_2_5",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/transition-engine/#tr-08"
     },
     {
       "id": "IX-01",

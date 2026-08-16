@@ -121,19 +121,22 @@
       "id": "PASS_2_5",
       "slug": "pass-2-5",
       "name": "Arkansas Transition Engine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "primary_objective": "NOW baseline + sequencing + dependencies + resilience + measurement + intergenerational transition",
-      "visual_targets": ["Arkansas Transition Map"]
+      "visual_targets": ["Arkansas Transition Map"],
+      "changelog": "data/project/pass_changelogs/pass_2_5.json",
+      "engine_href": "/system/transition-engine/",
+      "href": "/build-progress/passes/pass-2-5/"
     },
     {
       "id": "PASS_2_6",
       "slug": "pass-2-6",
       "name": "Whole-System Integration Audit",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "primary_objective": "Connect every model, resolve contradictions, close orphan flows, certify First-Pass 100%"
     }
   ],
-  "active_pass": "PASS_2_5",
+  "active_pass": "PASS_2_6",
   "holds": [
     "horizontal_expansion_frozen",
     "first_pass_standard_required",

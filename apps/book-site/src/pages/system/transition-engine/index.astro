@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import ArkansasTransitionMapWorking from "../../../components/ArkansasTransitionMapWorking.astro";
+import BridgeBeforeRoad from "../../../components/BridgeBeforeRoad.astro";
+import TransitionControlBoard from "../../../components/TransitionControlBoard.astro";
+import IntergenerationalCapitalLedger from "../../../components/IntergenerationalCapitalLedger.astro";
+import engine from "../../../../../../data/project/stage2_pass25_arkansas_transition_engine.json";
+
+const modules = engine.modules || [];
+const states = engine.transition_states || {};
+const guardrails = engine.fiscal_transition_guardrails || {};
+const ledger = engine.current_state_ledger_architecture || {};
+const resilience = engine.resilience_categories_bound || {};
+const integration = engine.theory_of_change_integration || {};
+const coverage = engine.coverage_reconciliation || {};
+const dep = engine.dependency_rule || {};
+
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+---
+
+<BaseLayout
+  title="Arkansas Transition Engine"
+  path="/system/transition-engine/"
+  description="Stage 2 Pass 2.5 — how Arkansas moves from NOW to Constitutional Capitalism without breaking the state or depending on unproven revenue."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 2.5 complete</span>
+      <h1>{engine.engine_name}</h1>
+      <p class="lede">{engine.one_sentence}</p>
+      <p class="muted">
+        {engine.decision_id} · {engine.update_id} · COUNTABLE claims added: $0 ·{" "}
+        <a href="/build-progress/passes/pass-2-5/">What Changed →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the transition machine</h2>
+      <ArkansasTransitionMapWorking />
+      <BridgeBeforeRoad />
+      <TransitionControlBoard />
+      <IntergenerationalCapitalLedger />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="dep">
+      <h2 id="dep">Dependency Rule</h2>
+      <p class="lede">{dep.statement}</p>
+      <p class="muted"><strong>{dep.one_line}</strong></p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="states">
+      <h2 id="states">Transition states</h2>
+      <p class="lede">{states.purpose}</p>
+      <ul class="link-board">
+        {(states.states || []).map((s: any) => (
+          <li>
+            <strong>{s.label}</strong> — {s.meaning}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="guardrails">
+      <h2 id="guardrails">Five fiscal-transition guardrails</h2>
+      <ul class="stack">
+        {(guardrails.guardrails || []).map((g: any) => (
+          <li>
+            <strong>{g.label}</strong> — {g.rule}
+          </li>
+        ))}
+      </ul>
+      <p>
+        <EvidenceConfidence level="working" note="governance rules — not COUNTABLE claims" />
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="ledger">
+      <h2 id="ledger">Current-State Ledger architecture</h2>
+      <p>
+        <span class="chip chip--queued">{ledger.status}</span>
+      </p>
+      <p class="lede">{ledger.framework}</p>
+      <p class="muted">{ledger.note} · {ledger.stage_3_ingest}</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="resilience">
+      <h2 id="resilience">Resilience categories (bound, not tested)</h2>
+      <p>
+        <span class="chip chip--queued">{resilience.status}</span>
+      </p>
+      <ul class="link-board">
+        {(resilience.categories || []).map((c: string) => (
+          <li>{c}</li>
+        ))}
+      </ul>
+      <p class="muted">{resilience.rule}</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="integration">
+      <h2 id="integration">Four engines + time</h2>
+      <p>
+        <span class="chip chip--done">{integration.result}</span>
+      </p>
+      <p class="fly-card fly-card--up" style="margin:0;">{integration.cycle}</p>
+      <p style="margin-top:0.85rem;">
+        <a href="/system/government-engine/">Government →</a>
+        {" · "}
+        <a href="/system/human-community-engine/">Human & Community →</a>
+        {" · "}
+        <a href="/system/money-engine/">Money →</a>
+        {" · "}
+        <a href="/system/household-engine/">Household →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Working modules (TR-01–TR-08)</h2>
+      <p class="lede">
+        Harvested from Pass 4 — not a research campaign. Coverage: net +{coverage.net_new} FIRST_PASS
+        ({coverage.before_first_pass_count} → {coverage.after_first_pass_count}). Remaining for 2.6:{" "}
+        {(coverage.remaining_for_pass_2_6 || []).join(", ")}.
+      </p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(engine.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(engine.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/system/transition-measurement/">Transition spine →</a>
+        {" · "}
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

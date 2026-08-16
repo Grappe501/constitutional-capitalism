@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_2_5",
+  "pass_number": "2.5",
+  "pass_name": "Arkansas Transition Engine",
+  "stage": "STAGE_2",
+  "status": "COMPLETE",
+  "is_stage_2_pass": true,
+  "decision_ids": ["CC-DEC-162"],
+  "update_ids": ["UPD-175"],
+  "slice_id": "CC-STAGE-2-PASS-2-5-ARKANSAS-TRANSITION-ENGINE-1.0",
+  "deployment_date": "2026-08-16",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-2-5/",
+  "engine_href": "/system/transition-engine/",
+  "progress_before": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 70,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 43,
+    "working_modules": "35/50",
+    "unresolved_structural_contradictions": 2,
+    "new_visual_assets": 4,
+    "countable_fiscal_claims_added": 0,
+    "items_deferred_to_validation": 6
+  },
+  "progress_after": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 86,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 47,
+    "working_modules": "43/50",
+    "unresolved_structural_contradictions": 2,
+    "new_visual_assets": 4,
+    "countable_fiscal_claims_added": 0,
+    "items_deferred_to_validation": 6
+  },
+  "before_after": [
+    { "label": "First-Pass Coverage", "before": "70%", "after": "86%" },
+    { "label": "Working modules", "before": "35/50", "after": "43/50" },
+    { "label": "Unresolved structural contradictions", "before": "2", "after": "2" },
+    { "label": "New visual assets", "before": "—", "after": "4" },
+    { "label": "COUNTABLE fiscal claims added", "before": "—", "after": "0" },
+    { "label": "Four engines + transition/time", "before": "—", "after": "PASS" },
+    { "label": "Remaining for Pass 2.6", "before": "—", "after": "IX-01–IX-06 (6)" },
+    { "label": "Items deferred to validation", "before": "—", "after": "6" }
+  ],
+  "coverage_honesty": "All eight TR modules were NOT_STARTED before this pass. Net FIRST_PASS +8. Inventory: 43/50 = 86%. Remaining six are IX integration modules for Pass 2.6.",
+  "experience_links": [
+    { "href": "/system/transition-engine/", "label": "Read the Transition Engine →" },
+    { "href": "/system/transition-engine/#control-board", "label": "See the Transition Control Board →" },
+    { "href": "/system/transition-engine/#bridge", "label": "Explore Bridge-Before-Road →" },
+    { "href": "/system/government-engine/", "label": "See Government join →" },
+    { "href": "/system/money-engine/", "label": "See Money Engine join →" },
+    { "href": "/system/transition-engine/#deferred", "label": "See deferred validation →" }
+  ],
+  "progress_movement": "First-pass 70% → 86% (35/50 → 43/50). Overall 43% → 47%. Eight TR modules FIRST_PASS (net +8). Four transition visual assets. Transition states, Control Board, five fiscal guardrails, Current-State Ledger architecture locked. Resilience categories bound not tested. Four-engine + time PASS. Contradictions held at 2. COUNTABLE +$0. Next: Pass 2.6 closes IX-01–IX-06 only.",
+  "summary": "Pass 2.5 converts the Pass-4 temporal skeleton into a working transition model: Dependency Rule operationalized via Transition Control Board, explicit transition states, fiscal guardrails that treat COUNTABLE $0 as $0, and a theory of change through money and time.",
+  "modules_added_or_modified": [
+    {
+      "id": "transition_engine",
+      "label": "Arkansas Transition Engine",
+      "change": "added_first_pass",
+      "href": "/system/transition-engine/",
+      "path": "data/project/stage2_pass25_arkansas_transition_engine.json"
+    },
+    { "id": "tr01", "label": "TR-01 Arkansas NOW Baseline", "change": "first_pass", "href": "/system/transition-engine/#tr-01" },
+    { "id": "tr02", "label": "TR-02 Dependency & Prerequisite Architecture", "change": "first_pass", "href": "/system/transition-engine/#tr-02" },
+    { "id": "tr03", "label": "TR-03 Years 1–2: Build Capacity", "change": "first_pass", "href": "/system/transition-engine/#tr-03" },
+    { "id": "tr04", "label": "TR-04 Years 3–5: Prove & Scale", "change": "first_pass", "href": "/system/transition-engine/#tr-04" },
+    { "id": "tr05", "label": "TR-05 Years 6–10: Structural Transition", "change": "first_pass", "href": "/system/transition-engine/#tr-05" },
+    { "id": "tr06", "label": "TR-06 Generation 1 → Generation 2", "change": "first_pass", "href": "/system/transition-engine/#tr-06" },
+    { "id": "tr07", "label": "TR-07 Resilience & Economic Continuity", "change": "first_pass", "href": "/system/transition-engine/#tr-07" },
+    { "id": "tr08", "label": "TR-08 Scale, Correction & Exit", "change": "first_pass", "href": "/system/transition-engine/#tr-08" }
+  ],
+  "visual_assets": [
+    { "id": "transition_map_working_v1", "label": "Arkansas Transition Map — Working", "href": "/system/transition-engine/#map" },
+    { "id": "bridge_before_road_v1", "label": "Bridge-Before-Road Diagram", "href": "/system/transition-engine/#bridge" },
+    { "id": "transition_control_board_v1", "label": "Transition Control Board", "href": "/system/transition-engine/#control-board" },
+    { "id": "intergenerational_capital_ledger_v1", "label": "Intergenerational Capital Ledger", "href": "/system/transition-engine/#igen-ledger" }
+  ],
+  "contradictions_disposition": "Held at 2 — CX-M21-01 and CX-M21-02 remain Stage 4; no natural resolution this pass.",
+  "next_pass": "PASS_2_6 — Whole-System Integration Audit"
+}

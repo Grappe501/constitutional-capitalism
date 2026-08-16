@@ -2,15 +2,15 @@
   "version": "1.1.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-161",
-  "update_id": "UPD-174",
+  "decision_id": "CC-DEC-162",
+  "update_id": "UPD-175",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_2",
-  "current_pass": "PASS_2_5",
-  "next_objective": "Pass 2.5 — Arkansas Transition Engine. NOW baseline + sequencing + dependencies + resilience + measurement + intergenerational transition.",
+  "current_pass": "PASS_2_6",
+  "next_objective": "Pass 2.6 — Whole-System Integration Audit. Close IX-01–IX-06 only. No new conceptual wave. Drive first-pass to 100% and certify Stage 2 complete.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "stage2_plan_source": "data/project/stage2_six_pass_plan.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
@@ -120,16 +120,17 @@
       "number": "2.5",
       "slug": "pass-2-5",
       "name": "Arkansas Transition Engine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-2-5/",
-      "changelog": null
+      "changelog": "data/project/pass_changelogs/pass_2_5.json",
+      "spine_href": "/system/transition-engine/"
     },
     {
       "id": "PASS_2_6",
       "number": "2.6",
       "slug": "pass-2-6",
       "name": "Whole-System Integration Audit",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "href": "/build-progress/passes/pass-2-6/",
       "changelog": null
     }
@@ -179,6 +180,18 @@
         { "href": "/system/human-community-engine/", "label": "Human & Community join" },
         { "href": "/system/money-engine/", "label": "Money Engine join" },
         { "href": "/system/household-engine/", "label": "Household Engine join" }
+      ]
+    },
+    {
+      "id": "CC-DEC-162",
+      "title": "Pass 2.5 Arkansas Transition Engine complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-2-5/",
+      "links": [
+        { "href": "/system/transition-engine/", "label": "Arkansas Transition Engine" },
+        { "href": "/build-progress/passes/pass-2-5/", "label": "Pass 2.5 What Changed" },
+        { "href": "/system/government-engine/", "label": "Government join" },
+        { "href": "/system/money-engine/", "label": "Money Engine join" }
       ]
     }
   ]
