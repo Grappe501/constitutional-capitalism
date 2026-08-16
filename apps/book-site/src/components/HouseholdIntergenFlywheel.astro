@@ -3,23 +3,27 @@
 
 <figure class="viz viz--intergen" data-viz="intergen-flywheel" id="intergen">
   <figcaption class="viz__cap">
-    <span class="viz__family">Household → Intergenerational Capital</span>
-    <span class="viz__q">What happens over time?</span>
+    <span class="viz__family">Prosperity → Intergenerational Capital</span>
+    <span class="viz__q">Surplus → security → savings → ownership → capability → inheritance</span>
   </figcaption>
-  <p class="fly-card fly-card--up" style="margin:0;">
-    Surplus → Savings → Ownership → Capability → Opportunity → Inheritance → Next generation →
-    stronger household base
-  </p>
+  <ol class="intergen-flow">
+    <li><strong>Surplus</strong><span>Usable remainder after essentials and obligations</span></li>
+    <li><strong>Security</strong><span>Emergency buffer and shock absorption</span></li>
+    <li><strong>Savings</strong><span>Liquidity that can become capital</span></li>
+    <li><strong>Ownership</strong><span>Home, business, retirement, co-op equity</span></li>
+    <li><strong>Capability</strong><span>Education and productive skill assets</span></li>
+    <li><strong>Inheritance</strong><span>Next generation starts with a stronger base</span></li>
+  </ol>
   <div class="loop-pair" style="margin-top:0.85rem;">
     <div class="loop-card loop-card--power">
-      <h3>Prosperity loop (household scale)</h3>
+      <h3>Prosperity loop</h3>
       <p>
         Retained capital → ownership income → lower essential squeeze → surplus → assets → Arkansas
         capital base → Money Engine strengthens
       </p>
     </div>
     <div class="loop-card loop-card--capture">
-      <h3>Extraction loop (household scale)</h3>
+      <h3>Extraction loop</h3>
       <p>
         Leakage → weak ownership → low household capture → high unavoidable costs → no surplus → no
         assets → dependency → more leakage
@@ -27,3 +31,27 @@
     </div>
   </div>
 </figure>
+
+<style>
+  .intergen-flow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 0.5rem;
+  }
+  .intergen-flow li {
+    padding: 0.55rem 0.65rem;
+    border: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 12%, transparent);
+  }
+  .intergen-flow strong {
+    display: block;
+  }
+  .intergen-flow span {
+    display: block;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 0.25rem;
+  }
+</style>

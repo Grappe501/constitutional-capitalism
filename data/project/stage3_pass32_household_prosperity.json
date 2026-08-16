@@ -1,0 +1,1430 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-3-PASS-3-2-HOUSEHOLD-PROSPERITY-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-165",
+  "update_id": "UPD-178",
+  "pass_id": "PASS_3_2",
+  "pass_name": "Household Prosperity",
+  "status": "UNABRIDGED_CATEGORY_COMPLETE",
+  "category_completion_percent": 100,
+  "epistemic_class": "HOUSEHOLD_PROSPERITY_CHAPTER_NOT_COUNTABLE_REVENUE",
+  "governing_question": "What would it take for an Arkansas household to become more secure, more solvent, more asset-owning, less exposed to unavoidable costs, and richer in both money and time?",
+  "central_proposition": "Prosperity is not merely earning more. It is retaining more, owning more, becoming less fragile, gaining greater agency, and having more control over one's time.",
+  "organizing_sentence": "Constitutional Capitalism succeeds only when Arkansas households improve across income, cost, security, ownership, and discretionary time \u2014 measured against Arkansas NOW, not against GDP slogans.",
+  "prior_first_pass": {
+    "artifact": "data/project/stage2_pass22_household_prosperity_engine.json",
+    "modules": [
+      "HP-01",
+      "HP-02",
+      "HP-03",
+      "HP-04",
+      "HP-05",
+      "HP-06",
+      "HP-07",
+      "HP-08",
+      "HP-09"
+    ],
+    "role": "HP-01\u2013HP-10 first-pass working models integrated into unabridged narrative \u2014 not discarded."
+  },
+  "discipline": {
+    "vertical_only": true,
+    "no_fabricated_statewide_surplus": true,
+    "countable_fiscal_claims_added": 0,
+    "horizontal_expansion_frozen": true,
+    "sideways_discoveries_routed": [
+      {
+        "topic": "Food/energy/healthcare/housing infrastructure sector depth",
+        "assign": "PASS_3_6"
+      },
+      {
+        "topic": "Education/capability ladder unabridged",
+        "assign": "PASS_3_3"
+      },
+      {
+        "topic": "Money/ownership/competition redesign",
+        "assign": "PASS_3_4"
+      },
+      {
+        "topic": "Tax/transfer legal architecture depth",
+        "assign": "PASS_3_5"
+      },
+      {
+        "topic": "Transition sequencing of household improvements",
+        "assign": "PASS_3_7"
+      },
+      {
+        "topic": "Mathematical surplus microsimulation / adversarial tests",
+        "assign": "STAGE_4"
+      }
+    ]
+  },
+  "source_hierarchy_rule": {
+    "order": [
+      "Arkansas government / federal primary data",
+      "Audited financial documents / academic research",
+      "High-quality institutional research",
+      "Secondary reporting"
+    ],
+    "claim_classes_visible": [
+      "FACT",
+      "DERIVED_CALCULATION",
+      "MODEL",
+      "HYPOTHESIS",
+      "ILLUSTRATION",
+      "PROPOSAL"
+    ],
+    "doc": "docs/research/SOURCE_HIERARCHY.md"
+  },
+  "public_surface": "/system/household-engine/",
+  "joins": {
+    "arkansas_now": "/system/arkansas-state-baseline/",
+    "money_engine": "/system/money-engine/",
+    "human_community": "/system/human-community-engine/",
+    "government_engine": "/system/government-engine/",
+    "transition_engine": "/system/transition-engine/",
+    "master_map": "/system/master-map/",
+    "pass_2_2": "/build-progress/passes/pass-2-2/"
+  },
+  "category_checklist": {
+    "baseline_evidence": {
+      "label": "Baseline evidence",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "problem_diagnosis": {
+      "label": "Problem diagnosis",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "existing_system_mechanics": {
+      "label": "Existing-system mechanics",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "cc_model": {
+      "label": "Constitutional Capitalism model",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "money_flows": {
+      "label": "Money flows",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "ownership": {
+      "label": "Ownership",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "household_effects": {
+      "label": "Household effects",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "government_market_roles": {
+      "label": "Government/market roles",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "arkansas_implementation": {
+      "label": "Arkansas-specific implementation",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "transition": {
+      "label": "Transition",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "dependencies": {
+      "label": "Dependencies",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "risks": {
+      "label": "Risks",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "counterarguments": {
+      "label": "Counterarguments",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "evidence": {
+      "label": "Evidence",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "visuals": {
+      "label": "Visuals",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "sources": {
+      "label": "Sources",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "open_validation_questions": {
+      "label": "Open validation questions",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    },
+    "cross_system_connections": {
+      "label": "Cross-system connections",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.2 Household Prosperity chapter"
+    }
+  },
+  "five_dimension_framework": {
+    "locked": true,
+    "dimensions": [
+      {
+        "id": "INCOME",
+        "label": "Income",
+        "definition": "How much enters the household (earned, benefits, ownership income, applicable transfers)."
+      },
+      {
+        "id": "COST",
+        "label": "Cost",
+        "definition": "How much must leave just to participate in society (essentials + required obligations)."
+      },
+      {
+        "id": "SECURITY",
+        "label": "Security",
+        "definition": "How vulnerable the household is to disruption (shocks, buffers, insurance, cliffs)."
+      },
+      {
+        "id": "OWNERSHIP",
+        "label": "Ownership",
+        "definition": "How much of today's economic activity becomes tomorrow's household capital."
+      },
+      {
+        "id": "TIME",
+        "label": "Time",
+        "definition": "How much life remains after earning income and meeting obligations \u2014 discretionary time as a prosperity dimension."
+      }
+    ],
+    "insight": "Conventional discussion collapses these into wages or GDP. Constitutional Capitalism refuses that collapse."
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "The Household as the Unit of Success",
+      "body": [
+        "GDP, state revenue, job counts, and median wages are necessary context \u2014 and insufficient success tests.",
+        "A state can grow output while households lose surplus, security, ownership, and time.",
+        "Pass 3.1 Arkansas NOW supplies the inherited baseline; Pass 3.2 defines what improvement means for the unit that must feel it: the household."
+      ],
+      "insufficient_alone": [
+        "GDP / GSP growth",
+        "State surplus or GR collections",
+        "Headline job counts",
+        "Median wage without cost, security, ownership, and time"
+      ],
+      "success_test": "CC succeeds only if households retain more usable surplus, greater security, and greater ownership over time"
+    },
+    {
+      "id": "S2",
+      "title": "Household Prosperity Surplus",
+      "formula_flow": "Resources \u2212 Essentials \u2212 Obligations = Prosperity Surplus",
+      "wealth_identity": "Assets \u2212 Liabilities = Household Net Wealth",
+      "time_dimension": "Discretionary time remains a separate prosperity dimension \u2014 not reducible to money.",
+      "surplus_uses_ladder": [
+        "Emergency security",
+        "Savings",
+        "Ownership",
+        "Education / capability",
+        "Investment",
+        "Entrepreneurship",
+        "Leisure / discretionary time",
+        "Intergenerational transfer"
+      ],
+      "insight": "A household earning $80k while spending $78k to maintain basic social participation is not necessarily more prosperous than one earning $65k with dramatically lower unavoidable costs and greater asset ownership.",
+      "mathematical_validation": "DEFERRED_STAGE_4 \u2014 architecture complete; no fabricated statewide surplus figure",
+      "panel_module": "HP-10"
+    },
+    {
+      "id": "S3",
+      "title": "Work, Income & Compensation",
+      "hp_modules": [
+        "HP-01"
+      ],
+      "arkansas_evidence": [
+        {
+          "label": "Median household income (ACS 5-year)",
+          "value": 58773,
+          "unit": "USD",
+          "period": "2023",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "source_id": "CC-SRC-268",
+          "note": "Prefer this 2023 ACS5 statewide narrative bind; do not silently mix with 2022 import."
+        },
+        {
+          "label": "Labor-force participation rate",
+          "value": 58.2,
+          "unit": "percent",
+          "period": "2022",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "consumer_metric_id": "CC-BASELINE-LF-001"
+        },
+        {
+          "label": "Unemployment rate (LAUS)",
+          "value": 3.7,
+          "unit": "percent",
+          "period": "2024-M12",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "consumer_metric_id": "CC-BASELINE-UNEMP-002"
+        },
+        {
+          "label": "QCEW private average annual pay",
+          "value": 58721,
+          "unit": "USD",
+          "period": "2024",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "source": "BLS QCEW"
+        },
+        {
+          "label": "BEA per capita personal income",
+          "value": 61752,
+          "unit": "USD",
+          "period": "2025",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "consumer_metric_id": "CC-PASS10-FRED-BEA-AR-PCPI"
+        }
+      ],
+      "architecture": "Wages + benefits + ownership participation + stability + time \u2014 not paycheck size alone.",
+      "gaps": [
+        "Multiple-job dependency rate OPEN",
+        "Ownership-income share of households OPEN",
+        "Bargaining-power / tenure series OPEN"
+      ],
+      "route_entrepreneurship_depth": "PASS_3_3 / PASS_3_4"
+    },
+    {
+      "id": "S4",
+      "title": "Essential Cost Structure",
+      "hp_modules": [
+        "HP-02",
+        "HP-03",
+        "HP-04",
+        "HP-05",
+        "HP-06",
+        "HP-07"
+      ],
+      "domains": {
+        "housing": {
+          "status": "PARTIAL",
+          "bound": "Homeownership 66.2% (2022 ACS FACT); rent/cost-burden series OPEN; sector depth \u2192 3.6"
+        },
+        "food": {
+          "status": "ARCHITECTURE",
+          "bound": "AR food-insecurity rate unbound; national SNAP scale NATIONAL_PROXY only; sector \u2192 3.6"
+        },
+        "healthcare": {
+          "status": "PARTIAL",
+          "bound": "HPSA counts FACT; 18% without usual source (CC-SRC-065); uninsured/OOP OPEN; sector \u2192 3.6"
+        },
+        "energy": {
+          "status": "PARTIAL",
+          "bound": "Residential price 12.32\u00a2/kWh FACT; energy burden (% income) OPEN"
+        },
+        "transportation": {
+          "status": "ARCHITECTURE",
+          "bound": "Commute/vehicle cost series OPEN; rural car dependence recognized qualitatively"
+        },
+        "care": {
+          "status": "ARCHITECTURE",
+          "bound": "AR childcare price/slots OPEN_PRIMARY_BIND"
+        },
+        "taxes": {
+          "status": "PARTIAL",
+          "bound": "State GR composition from NOW/DFA FACT; household incidence microsim OPEN"
+        },
+        "debt_service": {
+          "status": "OPEN",
+          "bound": "AR household debt OPEN_PRIMARY_BIND"
+        }
+      },
+      "interaction_rule": "Costs interact through the Pressure Stack \u2014 do not treat each domain as independent silos."
+    },
+    {
+      "id": "S5",
+      "title": "Household Risk & Security",
+      "hp_modules": [
+        "HP-04",
+        "HP-08",
+        "HP-09"
+      ],
+      "risk_classes": [
+        "Emergency reserves",
+        "Insurance exposure",
+        "Health shocks",
+        "Job loss",
+        "Disability",
+        "Caregiving intensity",
+        "Disaster",
+        "Debt traps",
+        "Retirement risk"
+      ],
+      "arkansas_signals": [
+        {
+          "label": "Primary-care HPSA designated areas",
+          "value": 70,
+          "unit": "areas",
+          "period": "2026-08-11 snapshot",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "consumer_metric_id": "CC-PASS8-HRSA-AR-HPSA-COUNT"
+        },
+        {
+          "label": "Adults without usual source of care",
+          "value": 18,
+          "unit": "percent",
+          "period": "cited 2026 ACHI/Milbank",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "source_id": "CC-SRC-065",
+          "note": "Secondary institutional cite \u2014 not uninsured rate."
+        },
+        {
+          "label": "Designated-county poverty divergence",
+          "claim_class": "FACT",
+          "note": "Phillips 34.2% vs White 15.7% (SAIPE 2023) \u2014 security is geographic."
+        }
+      ],
+      "national_proxy": {
+        "label": "Families with retirement accounts (SCF)",
+        "value": 54.3,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "United States",
+        "claim_class": "NATIONAL_PROXY",
+        "source_id": "CC-SRC-227"
+      },
+      "gaps": [
+        "AR emergency-savings incidence OPEN",
+        "Medical debt OPEN",
+        "Disability prevalence/economics series OPEN"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "Ownership & Asset Formation",
+      "hp_modules": [
+        "HP-02",
+        "HP-08",
+        "HP-10"
+      ],
+      "asset_classes": [
+        "Home equity",
+        "Savings",
+        "Business ownership",
+        "Retirement assets",
+        "Land",
+        "Cooperative / equity participation",
+        "Education / capability assets",
+        "Intergenerational transfer"
+      ],
+      "arkansas_evidence": [
+        {
+          "label": "Homeownership rate",
+          "value": 66.2,
+          "unit": "percent",
+          "period": "2022",
+          "geography": "Arkansas",
+          "claim_class": "FACT",
+          "consumer_metric_id": "CC-BASELINE-OWN-001"
+        }
+      ],
+      "national_proxies": [
+        {
+          "label": "Median family net worth (SCF)",
+          "value": 192900,
+          "unit": "USD_2022",
+          "period": "2022",
+          "geography": "United States",
+          "claim_class": "NATIONAL_PROXY",
+          "source_id": "CC-SRC-001"
+        },
+        {
+          "label": "Families with retirement accounts (SCF)",
+          "value": 54.3,
+          "unit": "percent",
+          "period": "2022",
+          "geography": "United States",
+          "claim_class": "NATIONAL_PROXY",
+          "source_id": "CC-SRC-227"
+        },
+        {
+          "label": "Young-adult homeownership (<35)",
+          "value": 36.1,
+          "unit": "percent",
+          "period": "2023",
+          "geography": "United States",
+          "claim_class": "NATIONAL_PROXY",
+          "source_id": "CC-SRC-245"
+        }
+      ],
+      "honesty": "Arkansas household wealth balances are not yet bound as FACT. National SCF is labeled NATIONAL_PROXY only.",
+      "join_money_engine": "/system/money-engine/"
+    },
+    {
+      "id": "S7",
+      "title": "Household Types Across Arkansas",
+      "rule": "Do not build one mythical average family. Use analytical archetypes \u2014 not invented case studies presented as data.",
+      "archetypes": [
+        {
+          "id": "ARCH-RURAL-WORKING",
+          "label": "Rural working family",
+          "claim_class": "ILLUSTRATION",
+          "note": "Analytical archetype \u2014 not a fabricated case study presented as data.",
+          "pressure_emphasis": [
+            "commute/time",
+            "limited care access",
+            "vehicle dependence",
+            "thin ownership income"
+          ],
+          "geography_signal": "Designated rural counties in NOW set often combine lower MHI with higher poverty (FACT)."
+        },
+        {
+          "id": "ARCH-URBAN-SUBURBAN",
+          "label": "Urban / suburban family",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "housing competition",
+            "childcare slots",
+            "dual-earner time crush",
+            "debt service"
+          ],
+          "geography_signal": "Statewide ACS/ownership averages mask metro vs rural divergence \u2014 full metro bind OPEN."
+        },
+        {
+          "id": "ARCH-SINGLE-PARENT",
+          "label": "Single-parent household",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "care cost share",
+            "schedule fragility",
+            "benefit cliffs",
+            "emergency reserve thinness"
+          ]
+        },
+        {
+          "id": "ARCH-RETIREE",
+          "label": "Retiree household",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "healthcare/LTC risk",
+            "fixed income",
+            "asset drawdown",
+            "caregiving mutual dependence"
+          ],
+          "national_proxy_note": "US SCF retirement-account ownership used only as NATIONAL_PROXY context \u2014 not AR balances."
+        },
+        {
+          "id": "ARCH-FARMER",
+          "label": "Farm / producer household",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "income volatility",
+            "land/debt leverage",
+            "processing margin leakage",
+            "weather/disaster risk"
+          ],
+          "route_sector_depth": "PASS_3_6"
+        },
+        {
+          "id": "ARCH-DISABLED",
+          "label": "Disabled / accessibility-constrained household",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "access costs",
+            "employment barriers",
+            "care intensity",
+            "benefit interaction risk"
+          ],
+          "join": "HP-09",
+          "evidence_status": "Architecture bound; AR disability prevalence series OPEN_PRIMARY_BIND"
+        },
+        {
+          "id": "ARCH-YOUNG-ADULT",
+          "label": "Young adult household / starter",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "tenure entry barrier",
+            "thin emergency reserves",
+            "student/auto debt",
+            "career ladder access"
+          ],
+          "national_proxy_note": "US young-adult homeownership 36.1% (2023) is NATIONAL_PROXY only."
+        },
+        {
+          "id": "ARCH-SMALL-BUSINESS",
+          "label": "Small-business household",
+          "claim_class": "ILLUSTRATION",
+          "pressure_emphasis": [
+            "income volatility",
+            "personal/business liability blend",
+            "credit access",
+            "healthcare for owners"
+          ],
+          "route_money_depth": "PASS_3_4"
+        }
+      ],
+      "county_divergence_fact": "Designated NOW counties show simultaneous population loss and elevated poverty in several rural places \u2014 archetypes must respect geography."
+    },
+    {
+      "id": "S8",
+      "title": "NOW \u2192 FUTURE Household Transition",
+      "rule": "Improve households without abolish-today. Dependency Rule from Transition Engine binds.",
+      "engine_transmission": [
+        {
+          "engine": "Money Engine",
+          "href": "/system/money-engine/",
+          "path": "Income/capital retention \u2192 household resources line; ownership ladders \u2192 ownership income"
+        },
+        {
+          "engine": "Human & Community Engine",
+          "href": "/system/human-community-engine/",
+          "path": "Capability \u2192 earning power + entrepreneurship + civic capacity (unabridged in 3.3)"
+        },
+        {
+          "engine": "Government Engine",
+          "href": "/system/government-engine/",
+          "path": "Taxes, services, rights, regulation, transfers \u2014 Public Dollar Chain judged by household effect"
+        },
+        {
+          "engine": "Productive systems",
+          "href": "/system/arkansas-state-baseline/",
+          "path": "Food/energy/housing/healthcare infrastructure alter essential costs \u2014 sector depth in 3.6"
+        },
+        {
+          "engine": "Transition Engine",
+          "href": "/system/transition-engine/",
+          "path": "Sequenced bridges; no sudden removal of inherited supports households still need"
+        }
+      ],
+      "prosperity_loop": "Arkansas earns/retains capital \u2192 productive ownership generates value \u2192 value reaches households \u2192 essential costs controlled/reduced \u2192 household surplus increases \u2192 households acquire assets \u2192 Arkansas capital base grows \u2192 Money Engine strengthens",
+      "extraction_loop": "Capital leakage \u2192 weak ownership \u2192 lower household capture \u2192 high unavoidable costs \u2192 little surplus \u2192 little asset formation \u2192 dependency/external ownership \u2192 greater leakage"
+    },
+    {
+      "id": "S9",
+      "title": "Household Prosperity Measurement System",
+      "purpose": "What Arkansas would need to measure annually and geographically to know whether the system is succeeding.",
+      "annual_core": [
+        "Median and distribution of household resources (income + ownership income)",
+        "Essential-cost shares (housing, food, healthcare, energy, transport, care) where series exist",
+        "Prosperity Surplus architecture readiness (until microsim clears Stage 4 \u2014 report components, not fake totals)",
+        "Homeownership and other asset-formation indicators",
+        "Labor-force participation, unemployment, hours-for-essentials (when bound)",
+        "Access: HPSA, broadband, usual source of care",
+        "Geographic divergence (county SAIPE/PEP panels expanding toward 75 counties)",
+        "Security proxies: arrears, medical debt, emergency savings (when bound)",
+        "Discretionary time method (defensible method OPEN \u2014 Stage 4)"
+      ],
+      "geographic_rule": "Statewide averages are insufficient. Publish county or multi-county panels.",
+      "keep_reform_phaseout_rule": "Join IX-06 measurement OS: Baseline \u2192 Action \u2192 Output \u2192 Outcome \u2192 Household Effect \u2192 Compare \u2192 KEEP/REFORM/PHASE OUT/ELIMINATE/NEW"
+    }
+  ],
+  "household_prosperity_ledger": {
+    "title": "Household Prosperity Ledger",
+    "status": "WORKING_V1_SIGNATURE_ASSET",
+    "honesty_rule": "Populate only what evidence permits. Unknown is acceptable. Do not fabricate a single statewide Prosperity Surplus from incompatible datasets.",
+    "shared_arkansas_baselines": [
+      {
+        "label": "Median household income (ACS 5-year)",
+        "value": 58773,
+        "unit": "USD",
+        "period": "2023",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "source_id": "CC-SRC-268",
+        "note": "Prefer this 2023 ACS5 statewide narrative bind; do not silently mix with 2022 import."
+      },
+      {
+        "label": "Median household income (ACS 5-year import)",
+        "value": 56335,
+        "unit": "USD",
+        "period": "2022",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-INC-001",
+        "note": "Separate verified bind \u2014 period caution."
+      },
+      {
+        "label": "All-ages poverty rate (ACS)",
+        "value": 16.2,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-POV-001"
+      },
+      {
+        "label": "Homeownership rate",
+        "value": 66.2,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-OWN-001"
+      },
+      {
+        "label": "Labor-force participation rate",
+        "value": 58.2,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-LF-001"
+      },
+      {
+        "label": "Unemployment rate (LAUS)",
+        "value": 3.7,
+        "unit": "percent",
+        "period": "2024-M12",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-UNEMP-002"
+      },
+      {
+        "label": "QCEW private average annual pay",
+        "value": 58721,
+        "unit": "USD",
+        "period": "2024",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "source": "BLS QCEW"
+      },
+      {
+        "label": "BEA per capita personal income",
+        "value": 61752,
+        "unit": "USD",
+        "period": "2025",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-PASS10-FRED-BEA-AR-PCPI"
+      },
+      {
+        "label": "Residential electricity average price",
+        "value": 12.32,
+        "unit": "cents_per_kWh",
+        "period": "2024",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-PASS7-EIA-AR-RES-PRICE",
+        "note": "Price \u2260 energy burden (% of income). Burden series OPEN."
+      },
+      {
+        "label": "Broadband subscription rate",
+        "value": 82.4,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-BASELINE-BB-001"
+      },
+      {
+        "label": "Primary-care HPSA designated areas",
+        "value": 70,
+        "unit": "areas",
+        "period": "2026-08-11 snapshot",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "consumer_metric_id": "CC-PASS8-HRSA-AR-HPSA-COUNT"
+      },
+      {
+        "label": "Adults without usual source of care",
+        "value": 18,
+        "unit": "percent",
+        "period": "cited 2026 ACHI/Milbank",
+        "geography": "Arkansas",
+        "claim_class": "FACT",
+        "source_id": "CC-SRC-065",
+        "note": "Secondary institutional cite \u2014 not uninsured rate."
+      }
+    ],
+    "national_proxies_labeled": [
+      {
+        "label": "Median family net worth (SCF)",
+        "value": 192900,
+        "unit": "USD_2022",
+        "period": "2022",
+        "geography": "United States",
+        "claim_class": "NATIONAL_PROXY",
+        "source_id": "CC-SRC-001"
+      },
+      {
+        "label": "Families with retirement accounts (SCF)",
+        "value": 54.3,
+        "unit": "percent",
+        "period": "2022",
+        "geography": "United States",
+        "claim_class": "NATIONAL_PROXY",
+        "source_id": "CC-SRC-227"
+      },
+      {
+        "label": "Young-adult homeownership (<35)",
+        "value": 36.1,
+        "unit": "percent",
+        "period": "2023",
+        "geography": "United States",
+        "claim_class": "NATIONAL_PROXY",
+        "source_id": "CC-SRC-245"
+      },
+      {
+        "label": "Personal saving rate",
+        "value": 4.6,
+        "unit": "percent_of_DPI",
+        "period": "2025",
+        "geography": "United States",
+        "claim_class": "NATIONAL_PROXY",
+        "source_id": "CC-SRC-223"
+      }
+    ],
+    "designated_county_context": [
+      {
+        "county": "Arkansas County",
+        "population_2020": 17107,
+        "population_2023": 16307,
+        "population_change_2020_2023": -800,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 16.8,
+        "median_household_income_usd": 50198,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "Lafayette County",
+        "population_2020": 6293,
+        "population_2023": 6095,
+        "population_change_2020_2023": -198,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 22.8,
+        "median_household_income_usd": 43824,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "Mississippi County",
+        "population_2020": 40538,
+        "population_2023": 38663,
+        "population_change_2020_2023": -1875,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 24.9,
+        "median_household_income_usd": 49484,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "Phillips County",
+        "population_2020": 16440,
+        "population_2023": 14961,
+        "population_change_2020_2023": -1479,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 34.2,
+        "median_household_income_usd": 37338,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "Searcy County",
+        "population_2020": 7840,
+        "population_2023": 7806,
+        "population_change_2020_2023": -34,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 20.2,
+        "median_household_income_usd": 40688,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "Van Buren County",
+        "population_2020": 15799,
+        "population_2023": 16142,
+        "population_change_2020_2023": 343,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 16.5,
+        "median_household_income_usd": 50332,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      },
+      {
+        "county": "White County",
+        "population_2020": 76860,
+        "population_2023": 78452,
+        "population_change_2020_2023": 1592,
+        "saipe_year": 2023,
+        "poverty_rate_all_ages_percent": 15.7,
+        "median_household_income_usd": 56178,
+        "claim_class": "FACT",
+        "sources": [
+          "Census PEP co-est2023-alldata",
+          "Census SAIPE"
+        ]
+      }
+    ],
+    "archetype_rows": [
+      {
+        "archetype_id": "ARCH-RURAL-WORKING",
+        "label": "Rural working family",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-URBAN-SUBURBAN",
+        "label": "Urban / suburban family",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-SINGLE-PARENT",
+        "label": "Single-parent household",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-RETIREE",
+        "label": "Retiree household",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-FARMER",
+        "label": "Farm / producer household",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-DISABLED",
+        "label": "Disabled / accessibility-constrained household",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-YOUNG-ADULT",
+        "label": "Young adult household / starter",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      },
+      {
+        "archetype_id": "ARCH-SMALL-BUSINESS",
+        "label": "Small-business household",
+        "claim_class": "ILLUSTRATION",
+        "resources": {
+          "earned_income": "UNKNOWN",
+          "benefits": "UNKNOWN",
+          "ownership_investment_income": "UNKNOWN",
+          "transfers": "UNKNOWN"
+        },
+        "essential_costs": {
+          "housing": "UNKNOWN",
+          "food": "UNKNOWN",
+          "healthcare": "UNKNOWN",
+          "energy": "UNKNOWN_BURDEN_PRICE_ONLY_BOUND",
+          "transportation": "UNKNOWN",
+          "care": "UNKNOWN"
+        },
+        "required_obligations": {
+          "taxes": "PARTIAL_STATE_CONTEXT_ONLY",
+          "debt": "UNKNOWN",
+          "required_payments": "UNKNOWN"
+        },
+        "result": {
+          "prosperity_surplus": "NOT_FABRICATED"
+        },
+        "balance_sheet": {
+          "assets": "UNKNOWN_AR",
+          "liabilities": "UNKNOWN_AR",
+          "net_wealth": "UNKNOWN_AR_NATIONAL_SCF_PROXY_ONLY"
+        },
+        "noncash": {
+          "time": "ARCHITECTURE_BOUND_NO_STATEWIDE_SERIES",
+          "security": "PARTIAL_ACCESS_SIGNALS",
+          "access": "PARTIAL_HPSA_BROADBAND",
+          "resilience": "ARCHITECTURE_BOUND"
+        },
+        "honesty": "Unknown is an acceptable value. Do not invent surplus dollars from incompatible datasets."
+      }
+    ]
+  },
+  "pressure_stack": {
+    "title": "Arkansas Household Pressure Stack",
+    "status": "WORKING_V1",
+    "claim_class": "MODEL",
+    "forward_chain": [
+      "Housing cost \u2191",
+      "Commute distance / vehicle dependence \u2191",
+      "Transportation cost & time \u2191",
+      "Available childcare / care options \u2193",
+      "Care cost \u2191 / unpaid hours \u2191",
+      "Workforce participation options \u2193",
+      "Income / schedule stability \u2193",
+      "Debt, food, and health vulnerability \u2191"
+    ],
+    "reverse_insight": "Multiple modest structural improvements can compound at the household level \u2014 more convincing than one giant program.",
+    "policy_implication": "Household policy cannot be siloed. Cost domains interact through time, access, and risk."
+  },
+  "counterarguments": [
+    {
+      "claim": "Lowering essential costs will suppress market supply.",
+      "strong_form": "Price ceilings or heavy subsidy can shrink housing, care, or energy supply and worsen shortages.",
+      "architecture_answer": "CC prefers ownership, competition, supply expansion, and anti-extraction before crude price suppression. Dependency Rule forbids abolish-today of existing capacity.",
+      "unresolved": "STAGE_4 incidence and supply-elasticity tests by sector (often via 3.6 joins)."
+    },
+    {
+      "claim": "Public intervention crowds out private provision.",
+      "strong_form": "State entry displaces private providers and reduces innovation.",
+      "architecture_answer": "Government role is capacity, rules, and public return where markets fail \u2014 not universal state landlord or sole employer. Markets remain primary in most household goods.",
+      "unresolved": "STAGE_4 sector crowding studies."
+    },
+    {
+      "claim": "Supports create dependency and destroy work incentives.",
+      "strong_form": "Transfers without work requirements trap households and shrink labor supply.",
+      "architecture_answer": "Surplus architecture targets productive participation, ownership, and cliff reduction. Care is treated as economic infrastructure enabling work \u2014 not as indefinite consumption.",
+      "unresolved": "STAGE_4 cliff/labor-supply microsim."
+    },
+    {
+      "claim": "Consumer choice will be lost.",
+      "strong_form": "Standardized public models erase household preference diversity.",
+      "architecture_answer": "Archetypes exist precisely because preferences and geographies differ. Portable supports and ownership pathways preserve choice within anti-extraction rules.",
+      "unresolved": "Design detail in 3.5/3.6 \u2014 not a reason to abandon household metrics."
+    },
+    {
+      "claim": "Disposable income gains just inflate scarce goods like housing.",
+      "strong_form": "Income transfers capitalize into rents/prices, leaving surplus unchanged.",
+      "architecture_answer": "Pressure Stack requires simultaneous cost-side and ownership-side reforms. Income-only policy is rejected by the five-dimension framework.",
+      "unresolved": "STAGE_4 capitalization tests; housing supply in 3.6."
+    },
+    {
+      "claim": "Subsidized consumption is not real prosperity.",
+      "strong_form": "If surplus is manufactured by transfers, households are not more capable or independent.",
+      "architecture_answer": "True prosperity requires surplus that can become security, savings, ownership, capability, and time \u2014 not perpetual subsidy as the end state.",
+      "unresolved": "Measurement must separate temporary bridges from durable capital formation (Stage 4)."
+    },
+    {
+      "claim": "Fiscal sustainability will collapse.",
+      "strong_form": "Household cost relief expands deficits without replacement revenue.",
+      "architecture_answer": "COUNTABLE engines remain $0 until Stage 4 clears. Money Engine + Dependency Rule forbid pretending. Household chapter does not invent revenue.",
+      "unresolved": "CX-M21-01 remains OPEN_ASSIGNED Stage 4."
+    },
+    {
+      "claim": "Personal responsibility, savings, work, and market discipline are ignored.",
+      "strong_form": "Structural talk excuses individual failure.",
+      "architecture_answer": "Agency is inside prosperity: surplus uses ladder includes savings, ownership, entrepreneurship, and time. Structure shapes the feasible set; it does not abolish responsibility.",
+      "unresolved": "Behavioral response estimation Stage 4 \u2014 not a substitute for cost/ownership architecture."
+    }
+  ],
+  "visuals": [
+    {
+      "id": "hh_dashboard_v2",
+      "label": "Household Prosperity Dashboard",
+      "href": "/system/household-engine/#dashboard",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Five gauges with AR baseline chips where bound; unknowns labeled."
+    },
+    {
+      "id": "hh_surplus_funnel_v2",
+      "label": "Prosperity Surplus Funnel",
+      "href": "/system/household-engine/#funnel",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Resources \u2192 essentials \u2192 obligations \u2192 surplus (no fake statewide dollar total)."
+    },
+    {
+      "id": "hh_balance_sheet_v2",
+      "label": "Household Balance Sheet",
+      "href": "/system/household-engine/#balance-sheet",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Assets vs liabilities identity; AR ownership FACT + national wealth PROXY labeled."
+    },
+    {
+      "id": "hh_pressure_stack_v1",
+      "label": "Arkansas Household Pressure Stack",
+      "href": "/system/household-engine/#pressure-stack",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Compounding cost relationships \u2014 why siloed policy fails."
+    },
+    {
+      "id": "hh_archetype_compare_v1",
+      "label": "Household Archetype Comparison",
+      "href": "/system/household-engine/#archetypes",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Burdens differ by geography/life stage; county FACT divergence shown."
+    },
+    {
+      "id": "hh_intergen_flow_v2",
+      "label": "Prosperity-to-Intergenerational-Capital Flow",
+      "href": "/system/household-engine/#intergen",
+      "status": "SHIPPED",
+      "supported_by_data": true,
+      "teaches": "Surplus \u2192 security \u2192 savings \u2192 ownership \u2192 capability \u2192 inheritance."
+    }
+  ],
+  "open_validation_questions": [
+    {
+      "id": "OV-32-01",
+      "question": "Can Arkansas publish a defensibly bounded county Prosperity Surplus microsim without incompatible dataset fusion?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-32-02",
+      "question": "What is Arkansas household energy burden (% income) by income quintile and county?",
+      "assign": "STAGE_4 / data bind"
+    },
+    {
+      "id": "OV-32-03",
+      "question": "What are Arkansas childcare market prices, slots, and cliffs for working families?",
+      "assign": "STAGE_4 after primary bind"
+    },
+    {
+      "id": "OV-32-04",
+      "question": "What is the Arkansas distribution of household wealth, medical debt, and emergency savings?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-32-05",
+      "question": "How should discretionary time be measured annually without fake precision?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-32-06",
+      "question": "Do housing-cost relief policies capitalize into rents without supply/ownership reforms?",
+      "assign": "STAGE_4 / PASS_3_6 join"
+    }
+  ],
+  "cross_system_connections": [
+    {
+      "to": "Arkansas NOW",
+      "href": "/system/arkansas-state-baseline/",
+      "join": "Baseline income/poverty/county divergence"
+    },
+    {
+      "to": "Money Engine",
+      "href": "/system/money-engine/",
+      "join": "Resources and ownership income pathways"
+    },
+    {
+      "to": "Human & Community Engine",
+      "href": "/system/human-community-engine/",
+      "join": "Capability changes earning and ownership potential (3.3 deepens)"
+    },
+    {
+      "to": "Government Engine",
+      "href": "/system/government-engine/",
+      "join": "Taxes, services, rights, transfers judged by household effect"
+    },
+    {
+      "to": "Transition Engine",
+      "href": "/system/transition-engine/",
+      "join": "NOW\u2192FUTURE without abolish-today"
+    },
+    {
+      "to": "Master System Map",
+      "href": "/system/master-map/",
+      "join": "Household at center of system"
+    }
+  ],
+  "measurement_system": {
+    "id": "S9",
+    "title": "Household Prosperity Measurement System",
+    "purpose": "What Arkansas would need to measure annually and geographically to know whether the system is succeeding.",
+    "annual_core": [
+      "Median and distribution of household resources (income + ownership income)",
+      "Essential-cost shares (housing, food, healthcare, energy, transport, care) where series exist",
+      "Prosperity Surplus architecture readiness (until microsim clears Stage 4 \u2014 report components, not fake totals)",
+      "Homeownership and other asset-formation indicators",
+      "Labor-force participation, unemployment, hours-for-essentials (when bound)",
+      "Access: HPSA, broadband, usual source of care",
+      "Geographic divergence (county SAIPE/PEP panels expanding toward 75 counties)",
+      "Security proxies: arrears, medical debt, emergency savings (when bound)",
+      "Discretionary time method (defensible method OPEN \u2014 Stage 4)"
+    ],
+    "geographic_rule": "Statewide averages are insufficient. Publish county or multi-county panels.",
+    "keep_reform_phaseout_rule": "Join IX-06 measurement OS: Baseline \u2192 Action \u2192 Output \u2192 Outcome \u2192 Household Effect \u2192 Compare \u2192 KEEP/REFORM/PHASE OUT/ELIMINATE/NEW"
+  },
+  "certification": {
+    "category": "PASS_3_2",
+    "category_completion_percent": 100,
+    "unabridged_completion_percent_after": 25,
+    "overall_project_completion_percent_after": 56,
+    "statement": "Pass 3.2 completes the Household Prosperity unabridged category: five-dimension framework, Surplus architecture, HP narrative integration, Arkansas baselines bound where defensible, Household Prosperity Ledger, archetypes, Pressure Stack, counterarguments, six evidence visuals, sourced claim classes, unknowns labeled, Stage 4 questions registered \u2014 without fabricating statewide surplus dollars or COUNTABLE revenue.",
+    "gates": {
+      "household_success_definition": true,
+      "hp_modules_integrated": true,
+      "arkansas_baseline_bound": true,
+      "ledger_established": true,
+      "archetypes_established": true,
+      "five_dimension_framework": true,
+      "now_future_mechanism": true,
+      "counterarguments_included": true,
+      "six_visuals_shipped": true,
+      "claims_classified": true,
+      "unknowns_labeled": true,
+      "stage4_questions_registered": true,
+      "countable_plus_zero": true,
+      "no_sideways_sector_research": true
+    }
+  }
+}

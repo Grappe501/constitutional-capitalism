@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-164",
-  "update_id": "UPD-177",
+  "decision_id": "CC-DEC-165",
+  "update_id": "UPD-178",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": "PASS_3_2",
-  "next_objective": "Pass 3.2 \u2014 Household Prosperity. Dig deep vertically. Do not open 3.3 until 3.2 is 100%.",
+  "current_pass": "PASS_3_3",
+  "next_objective": "Pass 3.3 \u2014 Human & Community Capital. Dig deep vertically. Do not open 3.4 until 3.3 is 100%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -295,6 +295,26 @@
           "label": "Budget X-Ray"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-165",
+      "title": "Pass 3.2 Household Prosperity unabridged complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-2/",
+      "links": [
+        {
+          "href": "/system/household-engine/",
+          "label": "Household Prosperity"
+        },
+        {
+          "href": "/build-progress/passes/pass-3-2/",
+          "label": "Pass 3.2 What Changed"
+        },
+        {
+          "href": "/system/household-engine/#ledger",
+          "label": "Household Prosperity Ledger"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -314,9 +334,9 @@
       "number": "3.2",
       "slug": "pass-3-2",
       "name": "Household Prosperity",
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-3-2/",
-      "changelog": null,
+      "changelog": "data/project/pass_changelogs/pass_3_2.json",
       "spine_href": "/system/household-engine/"
     },
     {

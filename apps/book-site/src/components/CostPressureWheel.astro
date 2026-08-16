@@ -1,22 +1,43 @@
 ---
+import chapter from "../../../../data/project/stage3_pass32_household_prosperity.json";
+
+const chain = chapter.pressure_stack?.forward_chain || [];
 ---
 
-<figure class="viz viz--wheel" data-viz="pressure-wheel" id="pressure-wheel">
+<figure class="viz viz--stack" data-viz="pressure-stack" id="pressure-stack">
   <figcaption class="viz__cap">
-    <span class="viz__family">Cost-of-Living Pressure Wheel</span>
-    <span class="viz__q">How did it change · what interacts?</span>
+    <span class="viz__family">Arkansas Household Pressure Stack</span>
+    <span class="viz__q">Why household policy cannot be siloed</span>
   </figcaption>
-  <ul class="pressure-wheel">
-    <li>Housing</li>
-    <li>Healthcare</li>
-    <li>Food</li>
-    <li>Energy</li>
-    <li>Transport</li>
-    <li>Care</li>
-  </ul>
+  <ol class="pressure-stack">
+    {
+      chain.map((step: string) => (
+        <li>
+          <strong>{step}</strong>
+        </li>
+      ))
+    }
+  </ol>
   <p class="lede" style="margin-top:0.85rem;">
-    Pressures interact — housing location drives transport time; care gaps force wage loss; health shocks
-    erase surplus; energy and food amplify every other line.
+    {chapter.pressure_stack?.reverse_insight}
   </p>
-  <p class="viz__note">Conceptual wheel for Stage 2. Treat essential costs as a system, not isolated silos.</p>
+  <p class="viz__note">
+    MODEL of compounding relationships — not a claim that every household follows this exact path.
+    Also available as the legacy pressure-wheel concept at cost domains on the ledger.
+  </p>
 </figure>
+
+<style>
+  .pressure-stack {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .pressure-stack li {
+    padding: 0.55rem 0.75rem;
+    border-left: 3px solid color-mix(in srgb, var(--copper, #b08d57) 80%, transparent);
+    background: color-mix(in srgb, var(--ink, #1a1a1a) 4%, transparent);
+  }
+</style>
