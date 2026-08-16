@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../../../../layouts/BaseLayout.astro";
 import log from "@data/project/pass_changelogs/v2_2_3.json";
+
+const ship = log.ship_record || {};
 ---
 
 <BaseLayout
@@ -16,6 +18,42 @@ import log from "@data/project/pass_changelogs/v2_2_3.json";
         {log.pass_id} · {log.decision_id} · {log.update_id} · {log.generated_at}
       </p>
     </header>
+
+    <section class="hub-section">
+      <h2>Ship record</h2>
+      <ul class="link-board">
+        <li>
+          <strong>Closure gate</strong>: {ship.closure_gate || "—"}
+        </li>
+        <li>
+          <strong>Git commit</strong>:{" "}
+          {ship.git_commit_short ? <code>{ship.git_commit_short}</code> : "pending"}
+          {ship.git_commit && <span class="muted"> ({ship.git_commit})</span>}
+        </li>
+        <li>
+          <strong>Production</strong>:{" "}
+          <a href={ship.production_url || "https://constitutional-capitalism.netlify.app"}>
+            {ship.production_url || "https://constitutional-capitalism.netlify.app"}
+          </a>
+        </li>
+        <li>
+          <strong>Deploy</strong>:{" "}
+          {ship.deploy_id ? (
+            <>
+              <code>{ship.deploy_id}</code>
+              {ship.deploy_url && (
+                <>
+                  {" · "}
+                  <a href={ship.deploy_url}>unique deploy →</a>
+                </>
+              )}
+            </>
+          ) : (
+            "pending"
+          )}
+        </li>
+      </ul>
+    </section>
 
     <section class="hub-section">
       <h2>Before → After</h2>
