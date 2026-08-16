@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-181",
-  "update_id": "UPD-194",
+  "decision_id": "CC-DEC-182",
+  "update_id": "UPD-195",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_2",
-  "next_objective": "Pass 5.2 \u2014 What Does Prosperity Mean? Public-book translation only. No new theory.",
+  "current_pass": "PASS_5_3",
+  "next_objective": "Pass 5.3 \u2014 Follow the Money. Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -595,6 +595,26 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-182",
+      "title": "Pass 5.2 Public Book chapter complete \u2014 What Does Prosperity Mean?",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-2/",
+      "links": [
+        {
+          "href": "/public-book/what-does-prosperity-mean/",
+          "label": "Chapter 2"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        },
+        {
+          "href": "/build-progress/passes/pass-5-2/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -759,18 +779,18 @@
       "number": "5.2",
       "slug": "pass-5-2",
       "name": "What Does Prosperity Mean?",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-2/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_2.json",
+      "spine_href": "/public-book/what-does-prosperity-mean/",
+      "chapter_completion_percent": 100
     },
     {
       "id": "PASS_5_3",
       "number": "5.3",
       "slug": "pass-5-3",
       "name": "Follow the Money",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-5-3/",
       "changelog": null,
       "spine_href": null,

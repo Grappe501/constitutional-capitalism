@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "decision_id": "CC-DEC-181",
-  "update_id": "UPD-194",
-  "status": "STAGE_5_ACTIVE_PASS_5_1_COMPLETE",
+  "decision_id": "CC-DEC-182",
+  "update_id": "UPD-195",
+  "status": "STAGE_5_ACTIVE_PASS_5_2_COMPLETE",
   "stage": "STAGE_5",
   "name": "Public Book \u2014 eleven writing passes",
   "rules": [
@@ -18,7 +18,7 @@
   "dials": {
     "technical_system_percent": 100,
     "technical_system_status": "CERTIFIED",
-    "public_book_completion_percent": 9,
+    "public_book_completion_percent": 18,
     "comparison_explorer": "PARALLEL_PUBLIC_EDUCATION_LANE"
   },
   "passes": [
@@ -40,8 +40,11 @@
       "slug": "pass-5-2",
       "name": "What Does Prosperity Mean?",
       "approx_pages": "8\u201310",
-      "status": "NEXT",
-      "chapter_completion_percent": 0
+      "status": "COMPLETE",
+      "chapter_completion_percent": 100,
+      "artifact": "data/project/stage5_pass52_what_does_prosperity_mean.json",
+      "surface_href": "/public-book/what-does-prosperity-mean/",
+      "changelog": "data/project/pass_changelogs/pass_5_2.json"
     },
     {
       "id": "PASS_5_3",
@@ -49,7 +52,7 @@
       "slug": "pass-5-3",
       "name": "Follow the Money",
       "approx_pages": "10\u201312",
-      "status": "QUEUED",
+      "status": "NEXT",
       "chapter_completion_percent": 0
     },
     {
