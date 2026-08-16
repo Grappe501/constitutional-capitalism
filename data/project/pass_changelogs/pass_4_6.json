@@ -1,0 +1,141 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_4_6",
+  "pass_number": "4.6",
+  "pass_name": "Whole-System Final Red Team & Certification",
+  "stage": "STAGE_4",
+  "status": "COMPLETE",
+  "is_stage_4_pass": true,
+  "decision_ids": [
+    "CC-DEC-180"
+  ],
+  "update_ids": [
+    "UPD-193"
+  ],
+  "slice_id": "CC-STAGE-4-PASS-4-6-WHOLE-SYSTEM-FINAL-RED-TEAM-1.0",
+  "deployment_date": "2026-08-16",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-4-6/",
+  "engine_href": "/system/final-red-team/",
+  "progress_before": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 100,
+    "unabridged_completion_percent": 100,
+    "validation_completion_percent": 83,
+    "overall_project_completion_percent": 96,
+    "countable_fiscal_claims_usd": 0
+  },
+  "progress_after": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 100,
+    "unabridged_completion_percent": 100,
+    "validation_completion_percent": 100,
+    "overall_project_completion_percent": 100,
+    "countable_fiscal_claims_usd": 0
+  },
+  "before_after": [
+    {
+      "label": "Validation",
+      "before": "83%",
+      "after": "100% (Stage 4 CERTIFIED)"
+    },
+    {
+      "label": "Overall",
+      "before": "96%",
+      "after": "100%"
+    },
+    {
+      "label": "Unabridged",
+      "before": "100%",
+      "after": "100% (unchanged)"
+    },
+    {
+      "label": "COUNTABLE",
+      "before": "$0",
+      "after": "$0 (unchanged)"
+    },
+    {
+      "label": "Join integrity",
+      "before": "untested as whole",
+      "after": "PASS \u2014 0 JOIN FAILS"
+    },
+    {
+      "label": "Architectural defects",
+      "before": "open risk",
+      "after": "0"
+    },
+    {
+      "label": "Project build vs public book",
+      "before": "conflated risk",
+      "after": "100% BUILD \u2260 public book finished"
+    },
+    {
+      "label": "Narrow public ownership standard",
+      "before": "scattered",
+      "after": "8-gate CERTIFIED WITH GUARDRAILS"
+    }
+  ],
+  "experience_links": [
+    {
+      "href": "/system/final-red-team/",
+      "label": "Open Final Red Team \u2192"
+    },
+    {
+      "href": "/system/changed-our-mind/",
+      "label": "What We Changed Our Mind About \u2192"
+    },
+    {
+      "href": "/system/stage4-certification/",
+      "label": "Stage 4 Certification \u2192"
+    },
+    {
+      "href": "/system/master-map/",
+      "label": "Final Master System Map \u2192"
+    },
+    {
+      "href": "/unabridged/validation/",
+      "label": "Validation queue \u2192"
+    }
+  ],
+  "progress_movement": "Validation 83% \u2192 100%. Overall 96% \u2192 100%. Stage 4 CERTIFIED. 15 joins PASS; crash test PASS; Changed Our Mind live. Next: Stage 5 Public Book compression only.",
+  "summary": "Pass 4.6 attacks joins only. Surviving pieces form one coherent system. Dead propositions reconciled. COUNTABLE remains $0. 100% project build \u2260 public book finished.",
+  "what_changed_stage4": {
+    "what_we_thought": "Domain attacks might leave incoherent remnants.",
+    "what_we_tested": "15 joins; crash test; doctrine sync; cumulative admin burden; resilience taxonomy.",
+    "what_evidence_said": "Prior Stage 4 dispositions cohere when attached to flows.",
+    "what_survived": "Waterfall; household unit; narrow ownership standard; net retention; resilience+capture locks; democracy hierarchy.",
+    "what_changed": "Canonical 8-gate ownership; Changed Our Mind page; Final Master Map; Stage 4 closed.",
+    "what_failed": "Already dead in 4.1\u20134.5 \u2014 reconciled, not revived.",
+    "what_remains_unknown": "UNPROVEN binds and FUTURE_RESEARCH amendment package \u2014 allowed under certification."
+  },
+  "modules_added_or_modified": [
+    {
+      "id": "pass46_chapter",
+      "label": "Whole-System Final Red Team chapter",
+      "change": "stage4_certified",
+      "href": "/system/final-red-team/",
+      "path": "data/project/stage4_pass46_whole_system_final_red_team.json"
+    },
+    {
+      "id": "changed_our_mind",
+      "label": "What CC Changed Its Mind About",
+      "change": "stage4_certified",
+      "href": "/system/changed-our-mind/",
+      "path": "data/project/stage4_changed_our_mind.json"
+    }
+  ],
+  "unresolved_deferred": [
+    {
+      "item": "Public Book compression",
+      "disposition": "STAGE_5",
+      "defer_to": "Stage 5"
+    },
+    {
+      "item": "UNPROVEN numeric binds",
+      "disposition": "UNPROVEN",
+      "defer_to": "evidence work / book footnotes"
+    }
+  ],
+  "next_pass_only": "STAGE_5 \u2014 Public Book (~100 pages). Compression only."
+}

@@ -2,10 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import UnabridgedNav from "../../components/UnabridgedNav.astro";
 import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+import stage4 from "../../../../../data/project/stage4_pass46_whole_system_final_red_team.json";
 
 const reg = chapter.validation_register || {};
 const items = reg.items || [];
 const cx = reg.cx_items || [];
+const s4 = stage4.certification || {};
 
 const byCat: Record<string, any[]> = {};
 for (const item of items) {
@@ -18,14 +20,25 @@ for (const item of items) {
 <BaseLayout
   title="Stage 4 Validation Register"
   path="/unabridged/validation/"
-  description="Canonical Stage 4 queue harvested from Passes 3.1–3.7."
+  description="Stage 4 queue harvest — Stage 4 now CERTIFIED; surviving dispositions live on Final Red Team."
 >
   <article class="unabridged">
     <header class="hub-banner">
-      <span class="chip chip--queued">Stage 4 queue · {reg.item_count} questions</span>
+      <span class="chip chip--done">{s4.verdict || "STAGE_4_CERTIFIED"}</span>
       <h1>{reg.title}</h1>
       <p class="lede">
-        Every deferred challenge from 3.1–3.7 lands here. Stage 3 hands cleanly to Stage 4.
+        Historical Stage 3→4 queue ({reg.item_count} questions). Stage 4 is now certified — dispositions
+        and surviving architecture live on the Final Red Team and Changed Our Mind pages.
+      </p>
+      <ul class="link-board">
+        <li><a href="/system/stage4-certification/">Stage 4 Certification →</a></li>
+        <li><a href="/system/final-red-team/">Final Red Team →</a></li>
+        <li><a href="/system/changed-our-mind/">Changed Our Mind →</a></li>
+      </ul>
+      <p class="muted">
+        {stage4.decision_id} · Validation {s4.validation_completion_percent_after}% · Overall{" "}
+        {s4.overall_project_completion_percent_after}% · COUNTABLE $0 ·{" "}
+        {stage4.project_build_distinction?.statement}
       </p>
     </header>
     <UnabridgedNav current="validation" />

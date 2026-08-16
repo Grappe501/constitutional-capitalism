@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-179",
-  "update_id": "UPD-192",
+  "decision_id": "CC-DEC-180",
+  "update_id": "UPD-193",
   "prior_decision_id": "CC-DEC-165",
   "status": "COMPLETION_SYSTEM_LOCKED_STAGE_3_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
@@ -85,7 +85,7 @@
       "id": "STAGE_4",
       "name": "Validation / Break It",
       "target": "Validated system",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "exit_gate": "System survives ruthless attack; every failure resolves PASS | MODIFY | REPLACE | REMOVE.",
       "attack_surfaces": [
         "economic_modeling",
@@ -104,19 +104,22 @@
         "transition_failures",
         "unintended_consequences"
       ],
-      "current_work": "Pass 4.5 Political, Administrative & Capture Attack COMPLETE. Next: Pass 4.6 Whole-System Final Red Team & Certification only (joins).",
-      "active_pass": "PASS_4_6",
-      "last_completed_pass": "PASS_4_5",
-      "plan": "data/project/stage4_six_pass_plan.json"
+      "current_work": "Stage 4 CERTIFIED. Passes 4.1\u20134.6 complete. Join integrity PASS. Next: Stage 5 Public Book compression only.",
+      "active_pass": null,
+      "last_completed_pass": "PASS_4_6",
+      "plan": "data/project/stage4_six_pass_plan.json",
+      "certified": true,
+      "certification_href": "/system/stage4-certification/"
     },
     {
       "id": "STAGE_5",
       "name": "Public Book",
       "target": "Compress the validated system into the ~100-page public roadmap (Volume II)",
-      "status": "NOT_STARTED",
+      "status": "NEXT",
       "exit_gate": "Reader can travel Where Arkansas is \u2192 why outcomes \u2192 what changes \u2192 money flows \u2192 household life \u2192 transition \u2192 what Arkansas could become, with pointers into Unabridged.",
       "volume": "Volume II \u2014 The Public Book",
-      "amended_by": "CC-DEC-152"
+      "amended_by": "CC-DEC-152",
+      "current_work": "Compress the validated system into the ~100-page public roadmap. No new theory-building."
     },
     {
       "id": "STAGE_6",
@@ -141,13 +144,13 @@
     "first_pass_coverage_percent": 100,
     "publication_completion_percent": 100,
     "unabridged_completion_percent": 100,
-    "validation_completion_percent": 83,
+    "validation_completion_percent": 100,
     "notes": {
       "skeleton": "Stage 1 COMPLETE \u2014 100%. Horizontal expansion frozen.",
       "first_pass": "Stage 2 COMPLETE \u2014 50/50 = 100%. Certified Pass 2.6.",
       "publication": "Alias for Unabridged Completion (Volume I). Aggressive Stage 3 dial.",
       "unabridged": "8 of 8 categories complete (Pass 3.1\u20133.8). Stage 3 CERTIFIED. Display label: Unabridged.",
-      "validation": "Stage 4 active. Pass 4.5 Political, Administrative & Capture Attack COMPLETE (83%). COUNTABLE remains $0. Next: 4.6 Final Red Team."
+      "validation": "Stage 4 CERTIFIED (100%). Join integrity PASS. COUNTABLE $0. 100% PROJECT BUILD \u2260 public book finished. Next: Stage 5 Public Book compression."
     }
   },
   "stage3_category_bars": [
@@ -209,17 +212,18 @@
     }
   ],
   "overall_project_completion": {
-    "percent": 96,
+    "percent": 100,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*unabridged + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+100+100+83)=95.75 \u2192 display 96",
+    "calculation": "0.25*(100+100+100+100)=100",
     "primary_number_going_forward": true,
-    "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression"
+    "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression",
+    "note_100_vs_public_book": "100% project build means the technical system is built, written, attacked, and certified \u2014 not that the ~100-page public book is finished."
   },
   "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
   "stage_2_six_pass_plan": "data/project/stage2_six_pass_plan.json",
   "active_stage1_pass": null,
   "last_completed_stage1_pass": "PASS_5",
-  "active_stage": "STAGE_4",
+  "active_stage": "STAGE_5",
   "active_stage2_pass": null,
   "last_completed_stage2_pass": "PASS_2_6",
   "active_stage3_pass": null,
@@ -268,8 +272,8 @@
     "stage_1_exit_requires_no_orphan_areas"
   ],
   "stage_3_complete": true,
-  "active_stage4_pass": "PASS_4_6",
-  "last_completed_stage4_pass": "PASS_4_5",
+  "active_stage4_pass": null,
+  "last_completed_stage4_pass": "PASS_4_6",
   "stage4_category_bars": [
     {
       "id": "PASS_4_1",
@@ -309,9 +313,10 @@
     {
       "id": "PASS_4_6",
       "label": "4.6 Whole-System Red Team & Certification",
-      "percent": 0,
-      "status": "NEXT",
-      "href": null
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-4-6/"
     }
-  ]
+  ],
+  "stage4_certified": true
 }

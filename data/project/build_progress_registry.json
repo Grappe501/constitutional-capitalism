@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-179",
-  "update_id": "UPD-192",
+  "decision_id": "CC-DEC-180",
+  "update_id": "UPD-193",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
-  "current_stage": "STAGE_4",
-  "current_pass": "PASS_4_6",
-  "next_objective": "Pass 4.6 \u2014 Whole-System Final Red Team & Certification. Attack the joins only. Dig down. Certify what survived.",
+  "current_stage": "STAGE_5",
+  "current_pass": null,
+  "next_objective": "Stage 5 \u2014 Public Book compression (~100 pages). Explain the pathway ordinary people can read. No new research lane.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -551,6 +551,30 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-180",
+      "title": "Stage 4 CERTIFIED \u2014 Whole-System Final Red Team complete",
+      "date": "2026-08-16",
+      "href": "/system/stage4-certification/",
+      "links": [
+        {
+          "href": "/system/final-red-team/",
+          "label": "Final Red Team"
+        },
+        {
+          "href": "/system/changed-our-mind/",
+          "label": "Changed Our Mind"
+        },
+        {
+          "href": "/system/stage4-certification/",
+          "label": "Certification"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-6/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -692,10 +716,10 @@
       "number": "4.6",
       "slug": "pass-4-6",
       "name": "Whole-System Red Team & Certification",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4-6/",
-      "changelog": null,
-      "spine_href": null
+      "changelog": "data/project/pass_changelogs/pass_4_6.json",
+      "spine_href": "/system/final-red-team/"
     }
   ]
 }
