@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-178",
-  "update_id": "UPD-191",
+  "decision_id": "CC-DEC-179",
+  "update_id": "UPD-192",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_4",
-  "current_pass": "PASS_4_5",
-  "next_objective": "Pass 4.5 \u2014 Political, Administrative & Capture Attack. Who captures the system? Dig down only.",
+  "current_pass": "PASS_4_6",
+  "next_objective": "Pass 4.6 \u2014 Whole-System Final Red Team & Certification. Attack the joins only. Dig down. Certify what survived.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -535,6 +535,22 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-179",
+      "title": "Pass 4.5 Political, Administrative & Capture Attack complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-4-5/",
+      "links": [
+        {
+          "href": "/system/capture-attack/",
+          "label": "Capture Attack"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-5/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -666,17 +682,17 @@
       "number": "4.5",
       "slug": "pass-4-5",
       "name": "Political, Administrative & Capture Attack",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4-5/",
-      "changelog": null,
-      "spine_href": null
+      "changelog": "data/project/pass_changelogs/pass_4_5.json",
+      "spine_href": "/system/capture-attack/"
     },
     {
       "id": "PASS_4_6",
       "number": "4.6",
       "slug": "pass-4-6",
       "name": "Whole-System Red Team & Certification",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-4-6/",
       "changelog": null,
       "spine_href": null

@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-4-SIX-PASS-ATTACK-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-178",
-  "update_id": "UPD-191",
-  "status": "STAGE_4_ACTIVE_PASS_4_4_COMPLETE",
+  "decision_id": "CC-DEC-179",
+  "update_id": "UPD-192",
+  "status": "STAGE_4_ACTIVE_PASS_4_5_COMPLETE",
   "governing_question": "If Constitutional Capitalism were a bad idea, where would the evidence show it?",
   "stance": "We do not defend the system. We attempt to falsify it.",
   "dispositions": [
@@ -138,7 +138,7 @@
       "slug": "pass-4-5",
       "name": "Political, Administrative & Capture Attack",
       "core_question": "What happens when imperfect people control it?",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "validation_after_percent": 83,
       "opens_only_after": "PASS_4_4",
       "ov_cx_assigned": [
@@ -147,7 +147,10 @@
         "OV-37-05",
         "OV-31-04",
         "OV-34-03"
-      ]
+      ],
+      "artifact": "data/project/stage4_pass45_political_administrative_capture_attack.json",
+      "surface_href": "/system/capture-attack/",
+      "changelog": "data/project/pass_changelogs/pass_4_5.json"
     },
     {
       "id": "PASS_4_6",
@@ -155,7 +158,7 @@
       "slug": "pass-4-6",
       "name": "Whole-System Red Team & Certification",
       "core_question": "What survives all attacks?",
-      "status": "QUEUED",
+      "status": "NEXT",
       "validation_after_percent": 100,
       "opens_only_after": "PASS_4_5",
       "ov_cx_assigned": [
