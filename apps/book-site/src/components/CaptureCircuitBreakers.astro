@@ -20,7 +20,14 @@ const breakers = chapter.capture_architecture?.circuit_breaker_families || [];
   </ul>
   <h3 style="margin:0.85rem 0 0.4rem;font-size:0.95rem;">Eight circuit-breaker families</h3>
   <ul class="breakers">
-    {breakers.map((b: string) => <li>{b}</li>)}
+    {
+      breakers.map((b: any) => (
+        <li>
+          {typeof b === "string" ? b : b.label}
+          {b?.interrupts ? <span class="muted"> — {b.interrupts}</span> : null}
+        </li>
+      ))
+    }
   </ul>
   <p class="viz__note">
     Architecture of where capture occurs and what control belongs at each point — not a hundred ethics
