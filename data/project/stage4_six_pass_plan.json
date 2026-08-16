@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-4-SIX-PASS-ATTACK-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-177",
-  "update_id": "UPD-190",
-  "status": "STAGE_4_ACTIVE_PASS_4_3_COMPLETE",
+  "decision_id": "CC-DEC-178",
+  "update_id": "UPD-191",
+  "status": "STAGE_4_ACTIVE_PASS_4_4_COMPLETE",
   "governing_question": "If Constitutional Capitalism were a bad idea, where would the evidence show it?",
   "stance": "We do not defend the system. We attempt to falsify it.",
   "dispositions": [
@@ -117,7 +117,7 @@
       "slug": "pass-4-4",
       "name": "Resilience & Adversarial Attack",
       "core_question": "What happens when the world goes wrong?",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "validation_after_percent": 67,
       "opens_only_after": "PASS_4_3",
       "ov_cx_assigned": [
@@ -127,7 +127,10 @@
         "OV-36-07",
         "OV-33-03",
         "OV-33-04"
-      ]
+      ],
+      "artifact": "data/project/stage4_pass44_resilience_adversarial_attack.json",
+      "surface_href": "/system/resilience-attack/",
+      "changelog": "data/project/pass_changelogs/pass_4_4.json"
     },
     {
       "id": "PASS_4_5",
@@ -135,7 +138,7 @@
       "slug": "pass-4-5",
       "name": "Political, Administrative & Capture Attack",
       "core_question": "What happens when imperfect people control it?",
-      "status": "QUEUED",
+      "status": "NEXT",
       "validation_after_percent": 83,
       "opens_only_after": "PASS_4_4",
       "ov_cx_assigned": [

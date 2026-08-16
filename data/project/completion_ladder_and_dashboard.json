@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-177",
-  "update_id": "UPD-190",
+  "decision_id": "CC-DEC-178",
+  "update_id": "UPD-191",
   "prior_decision_id": "CC-DEC-165",
   "status": "COMPLETION_SYSTEM_LOCKED_STAGE_3_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
@@ -104,9 +104,9 @@
         "transition_failures",
         "unintended_consequences"
       ],
-      "current_work": "Pass 4.3 Household, Market & Behavioral Attack COMPLETE. Next: Pass 4.4 Resilience & Adversarial Attack only.",
-      "active_pass": "PASS_4_4",
-      "last_completed_pass": "PASS_4_3",
+      "current_work": "Pass 4.4 Resilience & Adversarial Attack COMPLETE. Next: Pass 4.5 Political, Administrative & Capture Attack only.",
+      "active_pass": "PASS_4_5",
+      "last_completed_pass": "PASS_4_4",
       "plan": "data/project/stage4_six_pass_plan.json"
     },
     {
@@ -141,13 +141,13 @@
     "first_pass_coverage_percent": 100,
     "publication_completion_percent": 100,
     "unabridged_completion_percent": 100,
-    "validation_completion_percent": 50,
+    "validation_completion_percent": 67,
     "notes": {
       "skeleton": "Stage 1 COMPLETE \u2014 100%. Horizontal expansion frozen.",
       "first_pass": "Stage 2 COMPLETE \u2014 50/50 = 100%. Certified Pass 2.6.",
       "publication": "Alias for Unabridged Completion (Volume I). Aggressive Stage 3 dial.",
       "unabridged": "8 of 8 categories complete (Pass 3.1\u20133.8). Stage 3 CERTIFIED. Display label: Unabridged.",
-      "validation": "Stage 4 active. Pass 4.3 Household/Market/Behavioral Attack COMPLETE (50%). COUNTABLE remains $0. Next: 4.4 Resilience."
+      "validation": "Stage 4 active. Pass 4.4 Resilience & Adversarial Attack COMPLETE (67%). COUNTABLE remains $0. Next: 4.5 Capture."
     }
   },
   "stage3_category_bars": [
@@ -209,9 +209,9 @@
     }
   ],
   "overall_project_completion": {
-    "percent": 88,
+    "percent": 92,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*unabridged + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+100+100+50)=87.5 \u2192 display 88",
+    "calculation": "0.25*(100+100+100+67)=91.75 \u2192 display 92",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression"
   },
@@ -268,8 +268,8 @@
     "stage_1_exit_requires_no_orphan_areas"
   ],
   "stage_3_complete": true,
-  "active_stage4_pass": "PASS_4_4",
-  "last_completed_stage4_pass": "PASS_4_3",
+  "active_stage4_pass": "PASS_4_5",
+  "last_completed_stage4_pass": "PASS_4_4",
   "stage4_category_bars": [
     {
       "id": "PASS_4_1",
@@ -295,15 +295,15 @@
     {
       "id": "PASS_4_4",
       "label": "4.4 Resilience & Adversarial Attack",
-      "percent": 0,
-      "status": "NEXT",
-      "href": null
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-4-4/"
     },
     {
       "id": "PASS_4_5",
       "label": "4.5 Political, Administrative & Capture Attack",
       "percent": 0,
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": null
     },
     {

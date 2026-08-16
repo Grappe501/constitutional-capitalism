@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-177",
-  "update_id": "UPD-190",
+  "decision_id": "CC-DEC-178",
+  "update_id": "UPD-191",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_4",
-  "current_pass": "PASS_4_4",
-  "next_objective": "Pass 4.4 \u2014 Resilience & Adversarial Attack. What happens when the world goes wrong? Dig down only.",
+  "current_pass": "PASS_4_5",
+  "next_objective": "Pass 4.5 \u2014 Political, Administrative & Capture Attack. Who captures the system? Dig down only.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -519,6 +519,22 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-178",
+      "title": "Pass 4.4 Resilience & Adversarial Attack complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-4-4/",
+      "links": [
+        {
+          "href": "/system/resilience-attack/",
+          "label": "Resilience Attack"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-4/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -640,17 +656,17 @@
       "number": "4.4",
       "slug": "pass-4-4",
       "name": "Resilience & Adversarial Attack",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4-4/",
-      "changelog": null,
-      "spine_href": null
+      "changelog": "data/project/pass_changelogs/pass_4_4.json",
+      "spine_href": "/system/resilience-attack/"
     },
     {
       "id": "PASS_4_5",
       "number": "4.5",
       "slug": "pass-4-5",
       "name": "Political, Administrative & Capture Attack",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-4-5/",
       "changelog": null,
       "spine_href": null
