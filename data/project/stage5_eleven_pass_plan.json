@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "decision_id": "CC-DEC-187",
-  "update_id": "UPD-200",
-  "status": "STAGE_5_ACTIVE_PASS_5_7_COMPLETE",
+  "decision_id": "CC-DEC-188",
+  "update_id": "UPD-201",
+  "status": "STAGE_5_ACTIVE_PASS_5_8_COMPLETE",
   "stage": "STAGE_5",
   "name": "Public Book \u2014 eleven writing passes",
   "rules": [
@@ -18,7 +18,7 @@
   "dials": {
     "technical_system_percent": 100,
     "technical_system_status": "CERTIFIED",
-    "public_book_completion_percent": 64,
+    "public_book_completion_percent": 73,
     "comparison_explorer": "PARALLEL_PUBLIC_EDUCATION_LANE"
   },
   "passes": [
@@ -112,8 +112,11 @@
       "slug": "pass-5-8",
       "name": "Building the Bridge",
       "approx_pages": "10\u201312",
-      "status": "NEXT",
-      "chapter_completion_percent": 0
+      "status": "COMPLETE",
+      "chapter_completion_percent": 100,
+      "artifact": "data/project/stage5_pass58_building_the_bridge.json",
+      "surface_href": "/public-book/building-the-bridge/",
+      "changelog": "data/project/pass_changelogs/pass_5_8.json"
     },
     {
       "id": "PASS_5_9",
@@ -121,7 +124,7 @@
       "slug": "pass-5-9",
       "name": "We Tried to Break It",
       "approx_pages": "6\u20138",
-      "status": "QUEUED",
+      "status": "NEXT",
       "chapter_completion_percent": 0
     },
     {

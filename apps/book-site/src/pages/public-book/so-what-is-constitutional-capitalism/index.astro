@@ -190,10 +190,13 @@ const explorerLinks = matrix.explorer_links || [];
 
     <section class="hub-section">
       <h2>Next</h2>
-      <p class="lede">Pass 5.8 — Building the Bridge</p>
+      <p class="lede">
+        Pass 5.8 — Building the Bridge ·{" "}
+        <a href="/public-book/building-the-bridge/">Read →</a>
+      </p>
       <ul class="link-board">
         {
-          (plan.passes || []).slice(0, 9).map((p: any) => (
+          (plan.passes || []).slice(0, 10).map((p: any) => (
             <li>
               <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
                 {p.status}
