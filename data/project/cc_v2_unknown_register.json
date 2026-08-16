@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
-  "decision_id": "CC-DEC-200",
-  "update_id": "UPD-213",
+  "decision_id": "CC-DEC-205",
+  "update_id": "UPD-218",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
@@ -139,7 +139,7 @@
       "why_unknown": "Federal funds not fully normalized (OV-31-01).",
       "evidence_that_would_resolve": "AFY/CAFR + agency federal schedules joined by function.",
       "v2_2_requires_resolution": true,
-      "class": "BLOCKING",
+      "class": "NON-BLOCKING",
       "home_ids": [
         "federal_dependency",
         "revenue",
@@ -147,8 +147,11 @@
       ],
       "note": "Blocking for precise V2.2 fiscal redesign of federally entangled functions — not for closing V2.1.2 observation pass.",
       "blocks": "V2.2 funding redesign depth — NOT V2.1.2 closure",
-      "carried_into": "V2.2",
-      "see_certification": "DOES_NOT_BLOCK_SEE"
+      "carried_into": "V2.3.2+",
+      "see_certification": "DOES_NOT_BLOCK_SEE",
+      "status": "RESOLVED_ENVELOPE",
+      "resolved_in": "V2.3.1",
+      "resolution_note": "AFY federal fund-type share + ACFR function grant shares bound. Program FMAP/MOE matrix remains HOLD-COMPLETE (FISC-BASE-019)."
     },
     {
       "id": "UNK-FISC-002",
@@ -179,14 +182,17 @@
       "why_unknown": "CAFR notes not bound into Obligation Ledger amounts.",
       "evidence_that_would_resolve": "CAFR debt + pension extracts.",
       "v2_2_requires_resolution": true,
-      "class": "BLOCKING",
+      "class": "NON-BLOCKING",
       "blocks": "V2.2 redesign of long-term claims — NOT V2.1.2 closure",
       "home_ids": [
         "pensions",
         "intergenerational_obligations"
       ],
-      "carried_into": "V2.2",
-      "see_certification": "DOES_NOT_BLOCK_SEE"
+      "carried_into": "V2.3.2+",
+      "see_certification": "DOES_NOT_BLOCK_SEE",
+      "status": "RESOLVED_BALANCES",
+      "resolved_in": "V2.3.1",
+      "resolution_note": "Debt outstanding, NPL by plan, OPEB totals bound from ACFR FY2024. Full amortization schedule remains PARTIAL (FISC-BASE-020)."
     },
     {
       "id": "UNK-FISC-005",

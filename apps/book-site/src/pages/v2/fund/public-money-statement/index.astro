@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_3_1_current_fiscal_baseline.json";
+
+const s = pass.consolidated_public_money_statement || {};
+const inn = s.money_in || {};
+const claimed = s.money_already_claimed || {};
+const bal = s.balance || {};
+---
+
+<BaseLayout
+  title="Arkansas Consolidated Public Money Statement"
+  path="/v2/fund/public-money-statement/"
+  description="Money in, money already claimed, money operated, flexible margin, balance — for ordinary readers."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">ANALYTICAL STATEMENT</span>
+      <h1>{s.title}</h1>
+      <p class="lede">{s.not}</p>
+      <p class="muted">
+        Operating flow: {s.vintage?.operating_flow} · GR spine: {s.vintage?.gr_spine}
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>MONEY IN</h2>
+      <ul class="stack">
+        <li>
+          AFY General Revenue: $
+          {((inn.afy_fund_type_operating_usd?.general_revenue || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          AFY Federal: ${((inn.afy_fund_type_operating_usd?.federal_revenue || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          AFY Special / Cash / Other / HSC: remaining fund-type columns on the AFY bind
+        </li>
+        <li>
+          ACFR taxes (personal/corporate + sales + gas + other): $
+          {((inn.arkansas_source_taxes_acfr_thousands?.subtotal || 0) / 1e6).toFixed(1)}B
+        </li>
+        <li>
+          ACFR federal-proxy grants: $
+          {((inn.federal_proxy_grants_acfr_thousands || 0) / 1e6).toFixed(1)}B
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>MONEY ALREADY CLAIMED</h2>
+      <ul class="stack">
+        <li>
+          Federal conditions (AFY federal column): $
+          {((claimed.federal_conditions_afy_federal_column_usd || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          Debt outstanding: $
+          {((claimed.debt_outstanding_primary_usd || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          Near-term debt maturities: $
+          {((claimed.debt_due_within_one_year_bonds_notes_installment_usd || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          Net pension liability: ${((claimed.net_pension_liability_usd || 0) / 1e9).toFixed(2)}B
+        </li>
+        <li>
+          OPEB liability: ${((claimed.total_opeb_liability_usd || 0) / 1e9).toFixed(2)}B
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>MONEY OPERATED</h2>
+      <p>
+        AFY grand total ${(s.money_operated_afy_cabinet_and_acfr_functions?.afy_grand_total_usd / 1e9).toFixed(2)}B
+        · ACFR function expenses in the baseline table (education, HHS, justice, infrastructure, government…).
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>FLEXIBLE MARGIN</h2>
+      <p>{s.flexible_margin?.known_discretionary_anchor}</p>
+      <p class="muted">{s.flexible_margin?.redirectable_all_funds_share}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>BALANCE</h2>
+      <ul class="link-board">
+        <li>
+          ACFR Δ net position: $
+          {((bal.acfr_increase_in_net_position_thousands || 0) / 1e6).toFixed(2)}B
+        </li>
+        <li>
+          Ending net position: $
+          {((bal.acfr_ending_net_position_thousands || 0) / 1e6).toFixed(2)}B
+        </li>
+        <li>FY2026 GR surplus (bridge): ${((bal.gr_fy2026_surplus_usd || 0) / 1e9).toFixed(3)}B</li>
+      </ul>
+      <p class="lede">{bal.interpretation}</p>
+    </section>
+
+    <p>
+      <a href="/v2/fund/opening-balance/">Opening Balance & Flow →</a>
+      {" · "}
+      <a href="/v2/fund/">FUND hub →</a>
+    </p>
+  </article>
+</BaseLayout>

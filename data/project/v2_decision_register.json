@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-DECISION-REGISTER-1.0",
-  "decision_id": "CC-DEC-204",
-  "update_id": "UPD-217",
+  "decision_id": "CC-DEC-205",
+  "update_id": "UPD-218",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "Every material v2 decision is logged with why, evidence, losers, and reverse conditions.",
@@ -354,6 +354,27 @@
       ],
       "could_reverse_if": "V2.3/V2.4 discovers ARCHITECTURAL_DEFECT requiring explicit redesign referral — not spreadsheet convenience.",
       "v1_doctrine_impact": "NONE — applies frozen v1 to Arkansas operating architecture"
+    },
+    {
+      "id": "V2-DEC-019",
+      "date": "2026-08-16",
+      "title": "Open V2.3 FUND; close Current Fiscal Baseline",
+      "decision": "Open FUND ARKANSAS with 95 fund objects across five families. Close V2.3.1 Current Fiscal Baseline (20/20 incl. HOLD-COMPLETE). Bind AFY FY2024 all-funds envelope and ACFR FY2024 federal grant / debt / pension / OPEB figures. Resolve UNK-FISC-001 to envelope and UNK-FISC-004 to balances. COUNTABLE remains $0. No revenue ideation. No redesign costing. Do not quiet-edit frozen V2.2 model.",
+      "why": "Numbers get veto power only after the present system is priced honestly.",
+      "evidence": [
+        "AR-DFA-ACFR-2024",
+        "AR-DFA-AFY-2024",
+        "FY2026 DFA GR bind",
+        "V2.1.2 money ledgers"
+      ],
+      "alternatives_rejected": [
+        "Start FUND with tax design",
+        "Invent COUNTABLE from gross grants",
+        "Treat net position as spendable cash",
+        "Cost redesign before baseline"
+      ],
+      "could_reverse_if": "ACFR/AFY bind shown materially wrong — reopen baseline objects only.",
+      "v1_doctrine_impact": "NONE — applies COUNTABLE discipline to Arkansas application"
     }
   ]
 }

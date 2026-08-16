@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-MASTER-BUILD-PLAN-1.0",
-  "decision_id": "CC-DEC-204",
-  "update_id": "UPD-217",
+  "decision_id": "CC-DEC-205",
+  "update_id": "UPD-218",
   "generated_at": "2026-08-16",
-  "status": "V2_2_CERTIFIED_V2_3_NEXT",
+  "status": "V2_3_ACTIVE",
   "title": "Constitutional Capitalism v2.0 — Master Build Plan",
   "purpose": "Define what v2.0 means at 100% before researching, redesigning, funding, or piloting.",
   "foundational_system": {
@@ -19,13 +19,14 @@
   },
   "blueprint": {
     "label": "V2 BLUEPRINT",
-    "percent": 45.0,
+    "percent": 50.3,
     "status": "IN_PROGRESS",
     "completion_definition": "100% when all five gates pass: SEE → REDESIGN → FUND → LEGALIZE & BREAK → ROADMAP, measured by resolved objects — not words written.",
     "separate_from": [
       "FOUNDATIONAL SYSTEM v1.0 — COMPLETE",
       "EXPLORER EXPERIENCE — 0.1 HOLD"
-    ]
+    ],
+    "fund_weight": 25.0
   },
   "epistemic_rules": [
     "UNKNOWN is a completed research result when the evidence needed for the current decision does not exist.",
@@ -79,13 +80,17 @@
       "name": "FUND ARKANSAS",
       "question": "How does the redesigned state pay for itself?",
       "completion_result": "Complete fiscal architecture with evidence-gated money flows",
-      "status": "NEXT",
+      "status": "ACTIVE",
       "forbidden_until_plan_frozen": true,
       "object_focus": [
         "fiscal_flows_proven"
       ],
       "countable_discipline": "COUNTABLE remains $0 until waterfall proves cash. Hypotheticals are not revenue.",
-      "forbidden_note": "May cost/phase/refer the frozen V2.2 model — may not quietly redesign it for affordability."
+      "forbidden_note": "May cost/phase/refer the frozen V2.2 model — may not quietly redesign it for affordability.",
+      "completion_percent": 21.1,
+      "fund_objects_closed": 20,
+      "fund_objects_total": 95,
+      "countable_public_cash_usd": 0
     },
     {
       "id": "V2.4",
@@ -134,9 +139,9 @@
       "id": "fiscal_flows_proven",
       "label": "Fiscal flows proven",
       "gate": "V2.3",
-      "resolved": 0,
-      "total": null,
-      "note": "Totals set when map freezes / gate opens."
+      "resolved": 20,
+      "total": 95,
+      "note": "FUND objects; COUNTABLE tracked separately."
     },
     {
       "id": "legal_pathways_classified",
@@ -1309,7 +1314,7 @@
     "build_progress": "/build-progress/",
     "status": "/status/"
   },
-  "next_only": "V2.3 — FUND ARKANSAS. Cost the frozen operating model. COUNTABLE $0 until proven. Unaffordable → UNAFFORDABLE / REQUIRES PHASING / REQUIRES REDESIGN REFERRAL.",
+  "next_only": "V2.3.2 — Cost the Redesigned State (frozen operating model).",
   "map_freeze": {
     "status": "FROZEN",
     "frozen_at": "2026-08-16",
@@ -1323,7 +1328,7 @@
     "Dial inflation by words written",
     "Explorer expansion while V2.1 is the active build priority"
   ],
-  "active_pass": "V2.2 CERTIFIED → next V2.3 FUND ARKANSAS",
+  "active_pass": "V2.3.1 COMPLETE → next V2.3.2 (do not open revenue ideation)",
   "geographic_dimension": {
     "id": "V2-GEO-001",
     "status": "LOCKED",

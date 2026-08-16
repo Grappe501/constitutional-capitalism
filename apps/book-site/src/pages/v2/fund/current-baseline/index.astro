@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_3_1_current_fiscal_baseline.json";
+
+const pr = pass.pricing_readiness || {};
+const headline = pr.headline || {};
+const blockers = pass.blockers || [];
+const prog = pass.progress || {};
+const funcs = pass.acfr_function_federal_table || [];
+---
+
+<BaseLayout
+  title="V2.3.1 — Current Fiscal Baseline"
+  path="/v2/fund/current-baseline/"
+  description="What Arkansas costs now: all-funds envelope, federal share, debt, pensions — COUNTABLE $0."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">PASS COMPLETE</span>
+      <span class="chip chip--done">COUNTABLE $0</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_question}</p>
+      <p class="muted">
+        {pass.slice_id} · Blueprint <strong>{prog.v2_blueprint_percent}%</strong> · Objects{" "}
+        <strong>
+          {prog.fund_objects_closed}/{prog.fund_objects_total}
+        </strong>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>First number — pricing readiness</h2>
+      <p class="lede">{pr.question}</p>
+      <ul class="link-board">
+        <li>
+          <strong>KNOWN</strong>: {Math.round((headline.known_surface_share || 0) * 100)}%
+        </li>
+        <li>
+          <strong>PARTIAL</strong>: {Math.round((headline.partial_surface_share || 0) * 100)}%
+        </li>
+        <li>
+          <strong>UNKNOWN</strong>: {Math.round((headline.unknown_surface_share || 0) * 100)}%
+        </li>
+      </ul>
+      <p>{pr.verdict}</p>
+      <p class="muted">{headline.method}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Bound scales (FY2024 unless noted)</h2>
+      <ul class="stack">
+        <li>
+          <strong>AFY operating total</strong>: $33.223B · federal column $10.732B (32.3%)
+        </li>
+        <li>
+          <strong>ACFR primary expenses</strong>: $27.685B · op+cap grants $12.437B (~44.9%)
+        </li>
+        <li>
+          <strong>Net pension liability</strong>: $2.486B · OPEB ~$1.471B
+        </li>
+        <li>
+          <strong>Debt outstanding</strong> (bonds/notes/installment): ~$3.336B
+        </li>
+        <li>
+          <strong>FY2026 GR spine</strong>: gross $8.687B · net available $7.149B
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Federal share by ACFR function</h2>
+      <ul class="stack">
+        {
+          funcs.map((r: any) => (
+            <li>
+              <strong>{r.id}</strong>
+              <div class="muted">
+                expenses ${(r.expenses / 1000).toFixed(2)}B · grants $
+                {((r.grants_total || 0) / 1000).toFixed(2)}B · share{" "}
+                {r.grant_share_of_expenses != null
+                  ? `${(r.grant_share_of_expenses * 100).toFixed(1)}%`
+                  : "—"}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        Grants = operating + capital grants on the Statement of Activities (predominantly federal).
+        Not a CFDA/FMAP matrix.
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Blockers</h2>
+      <ul class="stack">
+        {
+          blockers.map((b: any) => (
+            <li>
+              <strong>{b.id}</strong> — {b.disposition}
+              <div class="muted">Still open: {(b.still_open || []).join("; ")}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <p>
+      <a href="/v2/fund/opening-balance/">Opening Balance & Flow →</a>
+      {" · "}
+      <a href="/v2/fund/public-money-statement/">Public Money Statement →</a>
+      {" · "}
+      <a href="/v2/fund/what-changed/v2-3-1/">What Changed →</a>
+      {" · "}
+      <a href="/v2/fund/">FUND hub →</a>
+    </p>
+  </article>
+</BaseLayout>
