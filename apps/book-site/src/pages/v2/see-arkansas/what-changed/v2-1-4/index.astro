@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import log from "@data/project/pass_changelogs/v2_1_4.json";
+---
+
+<BaseLayout
+  title="What Changed — V2.1.4"
+  path="/v2/see-arkansas/what-changed/v2-1-4/"
+  description="What Changed for V2.1.4 Institutions, Power & Constraints."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">WHAT CHANGED</span>
+      <h1>
+        {log.pass_id} — {log.pass_name}
+      </h1>
+      <p class="muted">
+        {log.decision_id} · recommendations: <strong>0</strong>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>BEFORE → AFTER</h2>
+      <ul class="stack">
+        {
+          (log.before_after || []).map((row: any) => (
+            <li>
+              <strong>{row.label}</strong>
+              <div class="muted">
+                {row.before} → <strong>{row.after}</strong>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Objects closed</h2>
+      <p class="muted">{(log.objects_closed || []).length} objects</p>
+      <p class="muted" style="font-size:0.9rem;">{(log.objects_closed || []).join(" · ")}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Chokepoints / patterns / unknowns</h2>
+      <p class="muted">PWR: {(log.chokepoints || []).join(" · ")}</p>
+      <p class="muted">PAT: {(log.patterns_observed || []).join(" · ")}</p>
+      <ul class="stack">
+        {(log.new_unknowns || []).map((u: string) => <li>{u}</li>)}
+      </ul>
+      <p class="lede">Nothing recommended. No county power scores.</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Surfaces</h2>
+      <ul class="link-board">
+        {
+          (log.experience_links || []).map((l: any) => (
+            <li>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

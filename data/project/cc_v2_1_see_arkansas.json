@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-SEE-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-198",
-  "update_id": "UPD-211",
+  "decision_id": "CC-DEC-199",
+  "update_id": "UPD-212",
   "generated_at": "2026-08-16",
   "status": "IN_PROGRESS",
   "gate": "V2.1",
@@ -68,9 +68,9 @@
   },
   "progress": {
     "closure_objects_total": 152,
-    "closure_objects_closed": 105,
-    "v2_1_completion_percent": 69.1,
-    "v2_blueprint_percent": 17.3
+    "closure_objects_closed": 137,
+    "v2_1_completion_percent": 90.1,
+    "v2_blueprint_percent": 22.5
   },
   "passes": [
     {
@@ -104,15 +104,16 @@
       "id": "V2.1.4",
       "slug": "institutions-power-constraints",
       "name": "Institutions, Power & Constraints",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "exit": "Arkansas Power Map + Authority/Constraint Matrix + federal/local dependency map.",
-      "href": null
+      "href": "/v2/see-arkansas/institutions-power-constraints/",
+      "what_changed": "/v2/see-arkansas/what-changed/v2-1-4/"
     },
     {
       "id": "V2.1.5",
       "slug": "whole-state-xray",
       "name": "Whole-State X-Ray",
-      "status": "QUEUED",
+      "status": "NEXT",
       "exit": "ARKANSAS NOW — OPERATING X-RAY interactive join of 2.1.1–2.1.4.",
       "href": null
     }

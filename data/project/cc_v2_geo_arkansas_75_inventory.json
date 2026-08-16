@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-GEO-ARKANSAS-75-INVENTORY-1.0",
-  "decision_id": "CC-DEC-198",
-  "update_id": "UPD-211",
+  "decision_id": "CC-DEC-199",
+  "update_id": "UPD-212",
   "geo_decision_id": "V2-GEO-001",
   "generated_at": "2026-08-16",
   "status": "SCHEMA_LOCKED_FIELD_POPULATION_OPEN",
   "county_count": 75,
   "dimension_count": 12,
   "matrix_cells": 900,
-  "cells_partial": 117,
-  "cells_empty": 783,
+  "cells_partial": 131,
+  "cells_empty": 769,
   "population_method": "field_first",
   "no_ranking": true,
   "records": [
@@ -188,7 +188,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -222,7 +224,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -337,7 +340,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -371,7 +376,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -486,7 +492,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -520,7 +528,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -631,11 +640,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -669,16 +686,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -784,7 +804,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -818,7 +840,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -933,7 +956,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -967,7 +992,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1082,7 +1108,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1116,7 +1144,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1231,7 +1260,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1265,7 +1296,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1380,7 +1412,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1414,7 +1448,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1529,7 +1564,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1563,7 +1600,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1678,7 +1716,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1712,7 +1752,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1827,7 +1868,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -1861,7 +1904,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -1976,7 +2020,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2010,7 +2056,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -2125,7 +2172,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2159,7 +2208,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -2274,7 +2324,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2308,7 +2360,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -2423,7 +2476,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2457,7 +2512,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -2572,7 +2628,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2606,7 +2664,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -2717,11 +2776,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2755,16 +2822,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -2870,7 +2940,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -2904,7 +2976,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3019,7 +3092,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3053,7 +3128,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3168,7 +3244,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3202,7 +3280,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3317,7 +3396,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3351,7 +3432,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3466,7 +3548,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3500,7 +3584,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3615,7 +3700,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3649,7 +3736,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3764,7 +3852,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3798,7 +3888,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -3913,7 +4004,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -3947,7 +4040,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4062,7 +4156,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4096,7 +4192,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4211,7 +4308,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4245,7 +4344,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4360,7 +4460,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4394,7 +4496,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4509,7 +4612,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4543,7 +4648,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4658,7 +4764,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4692,7 +4800,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4807,7 +4916,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4841,7 +4952,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -4956,7 +5068,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -4990,7 +5104,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -5105,7 +5220,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5139,7 +5256,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -5250,11 +5368,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5288,16 +5414,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -5403,7 +5532,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5437,7 +5568,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -5633,7 +5765,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5667,7 +5801,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -5782,7 +5917,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5816,7 +5953,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -5931,7 +6069,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -5965,7 +6105,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6080,7 +6221,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6114,7 +6257,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6229,7 +6373,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6263,7 +6409,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6378,7 +6525,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6412,7 +6561,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6527,7 +6677,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6561,7 +6713,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6676,7 +6829,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6710,7 +6865,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6825,7 +6981,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -6859,7 +7017,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -6974,7 +7133,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7008,7 +7169,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -7200,11 +7362,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7238,16 +7408,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -7353,7 +7526,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7387,7 +7562,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -7502,7 +7678,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7536,7 +7714,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -7651,7 +7830,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7685,7 +7866,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -7800,7 +7982,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7834,7 +8018,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -7949,7 +8134,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -7983,7 +8170,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -8098,7 +8286,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8132,7 +8322,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -8324,11 +8515,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8362,16 +8561,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -8477,7 +8679,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8511,7 +8715,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -8626,7 +8831,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8660,7 +8867,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -8775,7 +8983,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8809,7 +9019,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -8924,7 +9135,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -8958,7 +9171,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -9073,7 +9287,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9107,7 +9323,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -9222,7 +9439,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9256,7 +9475,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -9371,7 +9591,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9405,7 +9627,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -9516,11 +9739,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9554,16 +9785,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "Name join: millage uses St Francis."
+            "Name join: millage uses St Francis.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -9669,7 +9903,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9703,7 +9939,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -9818,7 +10055,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -9852,7 +10091,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10048,7 +10288,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10082,7 +10324,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10197,7 +10440,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10231,7 +10476,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10346,7 +10592,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10380,7 +10628,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10495,7 +10744,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10529,7 +10780,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10644,7 +10896,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10678,7 +10932,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -10789,11 +11044,19 @@
         },
         "essential_systems": {
           "dimension_id": "essential_systems",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "institutional_boundary_mismatch": {
+              "value": "OBSERVED_CLASS",
+              "evidence_class": "DERIVED"
+            }
+          },
+          "notes": [
+            "Institutional service geography: school/justice/health often cross county lines.",
+            "No political power score assigned."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -10827,16 +11090,19 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Connectivity as institutional/service adjacency (not broadband score)."
+          ]
         },
         "resilience": {
           "dimension_id": "resilience",
@@ -11023,7 +11289,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -11057,7 +11325,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -11172,7 +11441,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -11206,7 +11477,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -11402,7 +11674,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -11436,7 +11710,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -11551,7 +11826,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -11585,7 +11862,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -11700,7 +11978,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Essential Systems: institutional edges not bound for this county."
+          ]
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
@@ -11734,7 +12014,8 @@
           },
           "notes": [
             "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
-            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies.",
+            "V2.1.4: money-power chain join (raise→appropriate→allocate→spend→audit) — not a county power score."
           ]
         },
         "connectivity": {
@@ -11785,6 +12066,66 @@
       "relationship": "HEALTHCARE",
       "strength": null,
       "evidence": "HPSA designations in designated-county set",
+      "evidence_class": "PROXY",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "EDGE-INST-001",
+      "source": "05007",
+      "source_label": "Benton County",
+      "destination": "regional_health_hub",
+      "destination_label": "NW Arkansas / regional hospital system (class)",
+      "relationship": "HEALTHCARE",
+      "strength": null,
+      "evidence": "Designated Living Systems / regional hub pattern — facility graph not fully bound",
+      "evidence_class": "PROXY",
+      "confidence": "LOW"
+    },
+    {
+      "id": "EDGE-INST-002",
+      "source": "05107",
+      "source_label": "Phillips County",
+      "destination": "state_agency_service",
+      "destination_label": "State human-services / health administration (Little Rock hub class)",
+      "relationship": "PUBLIC_MONEY_SERVICE",
+      "strength": null,
+      "evidence": "V2.1.1/2.1.2 distance between agency line-item and local clinic — logistics observation",
+      "evidence_class": "DERIVED",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "EDGE-INST-003",
+      "source": "county_class",
+      "source_label": "Counties (class)",
+      "destination": "judicial_circuit",
+      "destination_label": "Judicial circuit/district (≠ county)",
+      "relationship": "JUSTICE",
+      "strength": null,
+      "evidence": "Circuit geography crosses counties — exact circuit map not ingested this pass",
+      "evidence_class": "DERIVED",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "EDGE-INST-004",
+      "source": "county_class",
+      "source_label": "Counties (class)",
+      "destination": "education_coop_district",
+      "destination_label": "School districts / education cooperatives",
+      "relationship": "EDUCATION",
+      "strength": null,
+      "evidence": "District boundaries ≠ county boundaries (general Arkansas fact)",
+      "evidence_class": "KNOWN",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "EDGE-INST-005",
+      "source": "05035",
+      "source_label": "Crittenden County",
+      "destination": "federal_metro_adjacency",
+      "destination_label": "Memphis TN metro / cross-state labor-service adjacency",
+      "relationship": "CONNECTIVITY",
+      "strength": null,
+      "evidence": "Designated county role — cross-border service geography",
       "evidence_class": "PROXY",
       "confidence": "MEDIUM"
     }
@@ -11888,5 +12229,11 @@
       },
       "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
     }
-  ]
+  ],
+  "v2_1_4_geo_note": {
+    "essential_systems_partial": 7,
+    "connectivity_partial": 7,
+    "institutional_edges_added": 5,
+    "method": "field_first_no_power_scores"
+  }
 }

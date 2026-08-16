@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-CLOSURE-OBJECTS-1.0",
-  "decision_id": "CC-DEC-198",
-  "update_id": "UPD-211",
+  "decision_id": "CC-DEC-199",
+  "update_id": "UPD-212",
   "generated_at": "2026-08-16",
   "rule": "38 homes × 4 objects (B/F/D/E) = 152. Status is OPEN, COMPLETE, or UNKNOWN-COMPLETE only.",
   "total_objects": 152,
-  "closed_objects": 105,
-  "open_objects": 47,
-  "v2_1_completion_percent": 69.1,
+  "closed_objects": 137,
+  "open_objects": 15,
+  "v2_1_completion_percent": 90.1,
   "objects": [
     {
       "id": "constitutional_structure.B",
@@ -16,9 +16,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Authority Ledger + constitutional officers/GA/judiciary/executive mapped as control diagram."
     },
     {
       "id": "constitutional_structure.F",
@@ -26,9 +26,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Six power forms tagged; change pathways for constitutional vs statutory vs ballot distinguished."
     },
     {
       "id": "constitutional_structure.D",
@@ -36,9 +36,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Constraint Ledger — AR/US constitutions as binding floors on actors."
     },
     {
       "id": "constitutional_structure.E",
@@ -46,9 +46,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 3.5 / 4.2 constitutional spine + authority map harvested."
     },
     {
       "id": "revenue.B",
@@ -256,9 +256,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Judiciary as authority actor; justice federalism row; circuit≠county edge."
     },
     {
       "id": "justice.F",
@@ -266,9 +266,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Caseflow/funding geography not fully bound — institutional role mapped."
     },
     {
       "id": "justice.D",
@@ -276,9 +276,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Courts as override/constraint on other actors."
     },
     {
       "id": "justice.E",
@@ -286,9 +286,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 3.5 justice relationships + justice_framework join."
     },
     {
       "id": "local_government.B",
@@ -786,9 +786,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Procurement as money-power + change-pathway + chokepoint; volumes still UNKNOWN."
     },
     {
       "id": "procurement.D",
@@ -796,9 +796,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Procurement depends on statute, federal fund conditions, protest/court paths."
     },
     {
       "id": "procurement.E",
@@ -826,9 +826,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "ED deal authority multi-actor; deal transparency FRAGMENTED."
     },
     {
       "id": "economic_development.D",
@@ -836,9 +836,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "ED tools constrained by statute, contracts, sometimes federal credits."
     },
     {
       "id": "economic_development.E",
@@ -1136,9 +1136,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Boards/commissions/authorities as class; roster count UNKNOWN-COMPLETE."
     },
     {
       "id": "civic_institutions.F",
@@ -1146,9 +1146,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Appointment→decision flows class-mapped; exhaustive board inventory not bound."
     },
     {
       "id": "civic_institutions.D",
@@ -1156,9 +1156,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Appointment chokepoints and oversight dependencies recorded."
     },
     {
       "id": "civic_institutions.E",
@@ -1166,9 +1166,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 2.4/3.5/4.5 appointment/board architecture + explicit UNKNOWN roster."
     },
     {
       "id": "elections.B",
@@ -1176,9 +1176,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Democratic Power Map — vote/representation steps + election administration actors."
     },
     {
       "id": "elections.F",
@@ -1186,9 +1186,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Citizen→vote→office chain specified; county EAVS series available for designated set."
     },
     {
       "id": "elections.D",
@@ -1196,9 +1196,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Election rules constrained by AR/US constitutions and federal law."
     },
     {
       "id": "elections.E",
@@ -1206,9 +1206,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 3.5 + designated-county EAVS imports + civic legislative evidence."
     },
     {
       "id": "direct_democracy.B",
@@ -1216,9 +1216,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Initiative/referendum/amendment pathways present in Change Pathway Matrix."
     },
     {
       "id": "direct_democracy.F",
@@ -1226,9 +1226,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Ballot process as reclaim mechanism in Democratic Power Map."
     },
     {
       "id": "direct_democracy.D",
@@ -1236,9 +1236,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Rights floors and constitutional limits constrain ballot outcomes."
     },
     {
       "id": "direct_democracy.E",
@@ -1246,9 +1246,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 3.5 / 4.2 / popular_sovereignty_framework harvested — detailed petition thresholds PARTIAL."
     },
     {
       "id": "administrative_power.B",
@@ -1256,9 +1256,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Administrative decision map for representative decision types."
     },
     {
       "id": "administrative_power.F",
@@ -1266,9 +1266,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Rulemaking/licensing inventories not fully bound — decision pattern mapped."
     },
     {
       "id": "administrative_power.D",
@@ -1276,9 +1276,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Admin power depends on statute, APA-like procedure, federal conditions, courts."
     },
     {
       "id": "administrative_power.E",
@@ -1286,9 +1286,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Pass 3.5 Digital Due Process / admin gov + Pass 4.2 pathway types."
     },
     {
       "id": "public_data.B",
@@ -1296,9 +1296,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Transparency architecture classified across major record types."
     },
     {
       "id": "public_data.F",
@@ -1306,9 +1306,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "FOIA fulfillment rates / portal completeness UNKNOWN — mechanisms exist."
     },
     {
       "id": "public_data.D",
@@ -1316,9 +1316,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "Accountability loop depends on information availability."
     },
     {
       "id": "public_data.E",
@@ -1326,9 +1326,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.4",
+      "note": "transparency_framework + Pass 3.5 FOIA posture; no invented fulfillment stats."
     },
     {
       "id": "ai.B",

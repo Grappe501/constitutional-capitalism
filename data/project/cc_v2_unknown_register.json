@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
-  "decision_id": "CC-DEC-198",
-  "update_id": "UPD-211",
+  "decision_id": "CC-DEC-199",
+  "update_id": "UPD-212",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
@@ -268,6 +268,64 @@
         "geographic_disparities",
         "labor"
       ]
+    },
+    {
+      "id": "UNK-INST-001",
+      "question": "Complete Arkansas boards/commissions roster with appointment, term, removal, confirmation?",
+      "why_unknown": "No authoritative inventory bound in corpus.",
+      "evidence_that_would_resolve": "SOS / legislative research board database join",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "blocks": "Not required for V2.1.4 control-diagram closure",
+      "home_ids": [
+        "civic_institutions"
+      ]
+    },
+    {
+      "id": "UNK-INST-002",
+      "question": "FOIA fulfillment rates / average response times statewide?",
+      "why_unknown": "No performance panel bound; inventing rates forbidden.",
+      "evidence_that_would_resolve": "Custodian logs / AG opinions dataset",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "public_data"
+      ]
+    },
+    {
+      "id": "UNK-INST-003",
+      "question": "Exact judicial circuit ↔ county membership graph for all 75?",
+      "why_unknown": "Circuit map not ingested.",
+      "evidence_that_would_resolve": "AOC circuit shapefile / table",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "justice"
+      ]
+    },
+    {
+      "id": "UNK-INST-004",
+      "question": "Economic-development deal registry (authority, amount, clawbacks) statewide?",
+      "why_unknown": "Transparency FRAGMENTED.",
+      "evidence_that_would_resolve": "AEDC / legislative disclosures structured extract",
+      "v2_2_requires_resolution": true,
+      "class": "BLOCKING",
+      "blocks": "V2.2 redesign of ED tools — not V2.1.4 observation closure",
+      "home_ids": [
+        "economic_development"
+      ]
+    },
+    {
+      "id": "UNK-INST-005",
+      "question": "Emergency powers statute inventory with sunsets and Guard activation pathways?",
+      "why_unknown": "Light baseline only this pass.",
+      "evidence_that_would_resolve": "Primary statute digest",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "emergency_government"
+      ],
+      "note": "emergency_government objects intentionally left OPEN for deeper fill / V2.4 adjacency"
     }
   ],
   "county_register": "data/project/cc_v2_geo_county_unknown_register.json"
