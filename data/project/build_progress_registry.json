@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-184",
-  "update_id": "UPD-197",
+  "decision_id": "CC-DEC-185",
+  "update_id": "UPD-198",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_5",
-  "next_objective": "Pass 5.5 \u2014 The Productive Arkansas. Public-book translation only. No new theory.",
+  "current_pass": "PASS_5_6",
+  "next_objective": "Pass 5.6 \u2014 Government That Belongs to the People. Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -647,6 +647,22 @@
           "label": "Public Book hub"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-185",
+      "title": "Pass 5.5 Public Book chapter complete \u2014 The Productive Arkansas",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-5/",
+      "links": [
+        {
+          "href": "/public-book/the-productive-arkansas/",
+          "label": "Chapter 5"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -844,18 +860,18 @@
       "number": "5.5",
       "slug": "pass-5-5",
       "name": "The Productive Arkansas",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-5/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_5.json",
+      "spine_href": "/public-book/the-productive-arkansas/",
+      "chapter_completion_percent": 100
     },
     {
       "id": "PASS_5_6",
       "number": "5.6",
       "slug": "pass-5-6",
       "name": "Government That Belongs to the People",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-5-6/",
       "changelog": null,
       "spine_href": null,
