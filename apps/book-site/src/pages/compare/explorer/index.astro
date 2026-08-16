@@ -4,6 +4,7 @@ import ExplorerNav from "../../../components/ExplorerNav.astro";
 import explorer from "../../../../../../data/project/comparison_explorer_v1.json";
 import deep from "../../../../../../data/project/comparison_explorer_deepening_v1.json";
 import lane from "../../../../../../data/project/public_understanding_lane.json";
+import flag from "../../../../../../data/project/comparison_explorer_flagship_v1.json";
 
 const paths = deep.contract.learning_paths || [];
 const exemplars = deep.contract.exemplars_this_pass;
@@ -25,14 +26,19 @@ const deepConcept = new Set(exemplars.concepts || []);
         definitions.
       </p>
       <p class="muted">
-        {lane.status} · {deep.decision_id} · {deep.update_id} · +0 dials (Unabridged 100% · Validation 17% ·
-        Overall 79%)
+        {lane.status} · Flagship {flag.decision_id || "CC-DEC-176"} · +0 dials (Unabridged 100% · Validation 33% ·
+        Overall 83%)
       </p>
       <p class="lede" style="margin-top:0.75rem;">
         <strong>Unabridged = source of truth.</strong> This Explorer makes the reader smarter—not a
         competing doctrine and not Stage 4 progress.
       </p>
       <ul class="link-board">
+        <li>
+          <a href="/compare/explorer/constitutional-capitalism/">
+            <strong>Start here: What is Constitutional Capitalism?</strong> (flagship journey) →
+          </a>
+        </li>
         <li><a href="/compare/explorer/matrix/">Open simple clickable matrix →</a></li>
         <li><a href="/compare/explorer/ownership-layers/">Ownership cell · six layers →</a></li>
         <li><a href="/compare/explorer/follow-100/">Follow the $100 →</a></li>

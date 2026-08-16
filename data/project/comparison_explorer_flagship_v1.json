@@ -1,0 +1,944 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-PUBLIC-UNDERSTANDING-FLAGSHIP-EXPERIENCE-1.0",
+  "decision_id": "CC-DEC-176",
+  "update_id": "UPD-189",
+  "generated_at": "2026-08-16",
+  "lane_id": "CC-PUBLIC-UNDERSTANDING-LANE",
+  "status": "FLAGSHIP_SHIPPED",
+  "public_path": "/compare/explorer/constitutional-capitalism/",
+  "progress_impact": {
+    "validation_delta": 0,
+    "unabridged_delta": 0,
+    "overall_delta": 0,
+    "note": "Parallel non-blocking. Stage 4 remains primary (Pass 4.3 next). Dials unchanged at Validation 33 / Overall 83 / Unabridged 100."
+  },
+  "success_test": "A skeptical 17-year-old and a political-economy professor should both be able to read the same page\u2014the first understands it, and the second recognizes that we have not trivialized the ideas.",
+  "opening": {
+    "eyebrow": "Flagship public understanding \u00b7 30\u201360 minute guided journey",
+    "title": "What is Constitutional Capitalism?",
+    "lede": "Not a vocabulary card. An intellectual journey: feel the differences between systems, watch incentives change, and see exactly what Constitutional Capitalism is\u2014and is not.",
+    "arkansas_open": {
+      "label": "ILLUSTRATION",
+      "text": "Imagine a poultry processing plant near a small Arkansas town. Farmers supply under contract. Workers clock in. Trucks leave for national buyers. A bank holds loans. Someone claims residual profit. The county watches taxes and road wear. That one plant already contains markets, ownership, labor, capital, power, and public rules. Different philosophies answer differently\u2014before they ever use their labels."
+    }
+  },
+  "choose_society": {
+    "title": "Choose the society you want to build",
+    "intro": "Questions first. Labels later. Pick an answer; then see how traditions tend to reason.",
+    "questions": [
+      {
+        "id": "hospital",
+        "prompt": "A town's only hospital is closing. What should happen?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Let the market decide\u2014if it cannot survive, it closes"
+          },
+          {
+            "id": "b",
+            "label": "Public ownership or heavy subsidy to keep doors open"
+          },
+          {
+            "id": "c",
+            "label": "Regulate + finance access while keeping mixed ownership options"
+          },
+          {
+            "id": "d",
+            "label": "Test function: access, outcomes, household burden, competition\u2014then choose the least-dominating tool that works"
+          }
+        ],
+        "traditions": {
+          "Laissez-faire": "Prefer exit and private alternatives; fear permanent political capture of healthcare capital.",
+          "Socialism": "Essential care should not depend on residual private claims; socialize or democratize the facility.",
+          "Social democracy": "Keep markets where useful; guarantee access through public finance and regulation.",
+          "Constitutional Capitalism": "Hospital function is essential. Ownership is not slogan-first. Measure household access and capture risk; public ownership only if it clears purpose, Role Conflict, and evidence."
+        }
+      },
+      {
+        "id": "poultry80",
+        "prompt": "A company controls 80% of the state's poultry processing capacity. Should government intervene?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "No\u2014scale is efficiency"
+          },
+          {
+            "id": "b",
+            "label": "Break it up or nationalize"
+          },
+          {
+            "id": "c",
+            "label": "Regulate pricing and labor standards"
+          },
+          {
+            "id": "d",
+            "label": "Measure scale benefits AND power harms (prices, entry, monopsony, politics) before choosing a tool"
+          }
+        ],
+        "traditions": {
+          "Laissez-faire": "Prefer contestability and entry; antitrust only for clear predation.",
+          "Progressive / antitrust": "Concentration itself can be a public problem\u2014antitrust as countervailing power.",
+          "Socialism": "Worker/public control of the essential processing chain.",
+          "Constitutional Capitalism": "Size is not automatically vice. Unaccountable market power and political capture are. Extraction Test + competition policy before ideology."
+        }
+      },
+      {
+        "id": "ai_jobs",
+        "prompt": "AI doubles productivity but eliminates thousands of jobs. Who should benefit from the productivity increase?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Whoever owns the capital that deployed the AI"
+          },
+          {
+            "id": "b",
+            "label": "Society as a whole via public ownership of AI capital"
+          },
+          {
+            "id": "c",
+            "label": "Workers and households via taxes, training, and transfers"
+          },
+          {
+            "id": "d",
+            "label": "Trace ownership, risk, surplus, and household agency\u2014then design claims without killing discovery"
+          }
+        ],
+        "traditions": {
+          "Market capitalism": "Residual claims follow capital risk; labor markets adjust; growth raises living standards over time.",
+          "Socialism": "Socialize the means that produce the surplus; do not leave AI rents to private capital alone.",
+          "Social democracy": "Keep private AI firms; tax and retrain; protect households from transition shocks.",
+          "Constitutional Capitalism": "Productivity is not prosperity until households can retain money, build assets, and keep agency. Ask who owns the AI stack and where surplus lands."
+        }
+      },
+      {
+        "id": "resource",
+        "prompt": "Arkansas discovers a valuable natural resource. Who should own the upside?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Whoever holds the private mineral rights"
+          },
+          {
+            "id": "b",
+            "label": "The public, via state ownership of extraction"
+          },
+          {
+            "id": "c",
+            "label": "Private extraction + royalties/taxes funding services"
+          },
+          {
+            "id": "d",
+            "label": "Public claim proportional to public resource/risk\u2014then intergenerational rules (not binge spending)"
+          }
+        ],
+        "traditions": {
+          "Georgism": "Land/resource rents are uniquely social; capture them for the commons.",
+          "Norway-style social market": "Public resource claim + disciplined sovereign investment abroad.",
+          "Laissez-faire": "Secure private rights; tax lightly; let markets allocate.",
+          "Constitutional Capitalism": "BORROW intergenerational treatment of exhaustible wealth. REJECT pretending Arkansas is Norway. QUESTION which Arkansas assets actually have rent characteristics."
+        }
+      },
+      {
+        "id": "household",
+        "prompt": "A family works full-time but cannot build savings because housing, healthcare, transportation and childcare consume nearly everything. Is that household prosperous?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Yes if GDP and employment are rising"
+          },
+          {
+            "id": "b",
+            "label": "No\u2014decommodify essentials via public provision"
+          },
+          {
+            "id": "c",
+            "label": "No\u2014raise wages and expand transfers"
+          },
+          {
+            "id": "d",
+            "label": "No\u2014Household Prosperity Surplus is the unit of success, not GDP"
+          }
+        ],
+        "traditions": {
+          "Growth-first": "Rising output eventually lifts boats; focus on productivity.",
+          "Social democracy": "Market wages plus welfare state make life livable.",
+          "Constitutional Capitalism": "If full-time work cannot produce retained surplus and shock buffers, the system is failing that household\u2014regardless of GSP headlines."
+        }
+      },
+      {
+        "id": "billionaire",
+        "prompt": "A successful entrepreneur becomes a billionaire. Is that itself a problem?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Never\u2014wealth is proof of value created"
+          },
+          {
+            "id": "b",
+            "label": "Yes\u2014extreme wealth should not exist"
+          },
+          {
+            "id": "c",
+            "label": "Only if it buys political power or destroys competition"
+          },
+          {
+            "id": "d",
+            "label": "Wealth is allowed; domination via capture is not"
+          }
+        ],
+        "traditions": {
+          "Libertarian": "Peaceful wealth is not aggression; curb state predation first.",
+          "Egalitarian socialist": "Extreme wealth concentrates power; tax or restructure.",
+          "Constitutional Capitalism": "People can become extremely wealthy. The constitutional problem begins when wealth purchases the referee."
+        }
+      },
+      {
+        "id": "public_profit",
+        "prompt": "A public enterprise earns a profit. Who should receive it?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "It should not exist\u2014privatize"
+          },
+          {
+            "id": "b",
+            "label": "The general treasury immediately"
+          },
+          {
+            "id": "c",
+            "label": "Reinvest in the enterprise"
+          },
+          {
+            "id": "d",
+            "label": "Only after costs\u2014and only COUNTABLE reserved public cash clears the waterfall"
+          }
+        ],
+        "traditions": {
+          "State capitalism": "State firms as national champions; surplus to state strategy.",
+          "Constitutional Capitalism": "Revenue \u2260 profit \u2260 distributable cash \u2260 public cash. COUNTABLE is still $0 because hope is not cash."
+        }
+      },
+      {
+        "id": "ai_benefits",
+        "prompt": "Government can use AI to make benefit decisions faster. Should it?",
+        "choices": [
+          {
+            "id": "a",
+            "label": "Yes\u2014speed is compassion"
+          },
+          {
+            "id": "b",
+            "label": "No\u2014humans only"
+          },
+          {
+            "id": "c",
+            "label": "Yes with audits"
+          },
+          {
+            "id": "d",
+            "label": "Only with Digital Due Process: notice, review, appeal, audit trail"
+          }
+        ],
+        "traditions": {
+          "Technocracy": "Optimize administration; accept some opacity for performance.",
+          "Constitutional Capitalism": "AI can enhance capacity. It cannot silently become sovereign. Consequential automation without process FAILED as designed in Pass 4.2."
+        }
+      }
+    ]
+  },
+  "act1_tensions": {
+    "title": "Act I \u2014 What problem are we trying to solve?",
+    "intro": "Before Constitutional Capitalism appears, confront the tensions every system must resolve. Every political-economic philosophy is, in part, a different answer to these tensions.",
+    "tensions": [
+      {
+        "id": "freedom_security",
+        "title": "Freedom vs security",
+        "q": "How much risk should individuals carry?"
+      },
+      {
+        "id": "markets_power",
+        "title": "Markets vs power",
+        "q": "When does successful competition create enough concentration to undermine future competition?"
+      },
+      {
+        "id": "private_public",
+        "title": "Private ownership vs public purpose",
+        "q": "When should ownership remain private, and when\u2014if ever\u2014does public participation make sense?"
+      },
+      {
+        "id": "local_rights",
+        "title": "Local control vs equal rights",
+        "q": "How much should communities decide for themselves?"
+      },
+      {
+        "id": "growth_inheritance",
+        "title": "Growth vs inheritance",
+        "q": "How much of today's prosperity can legitimately consume tomorrow's resources?"
+      },
+      {
+        "id": "capital_equality",
+        "title": "Capital accumulation vs political equality",
+        "q": "How wealthy can someone become before wealth starts becoming political power?"
+      },
+      {
+        "id": "capacity_domination",
+        "title": "Government capacity vs government domination",
+        "q": "How capable should the state be without becoming dangerous?"
+      }
+    ]
+  },
+  "act2_worlds_teaser": {
+    "title": "Act II \u2014 Walk through competing answers",
+    "intro": "Philosophies are worlds, not cards. Start with capitalism's bakery-to-power path\u2014then visit socialism and social democracy. Full world-pages deepen next; this flagship keeps the journey moving toward what CC proposes.",
+    "capitalism_world": {
+      "imagine": "Imagine you have an idea for a business. You find investors willing to risk their money. You hire workers who voluntarily accept wages. Customers decide whether what you produce is worth buying. If you succeed, you may become wealthy. If you fail, you may lose your investment.",
+      "why_powerful": [
+        "Prices convey information",
+        "Capital flows toward expected returns",
+        "People experiment without asking government permission for every try",
+        "Consumers vote with money",
+        "Failure reallocates resources",
+        "Innovation can produce enormous rewards"
+      ],
+      "tension": "Successful businesses accumulate capital. Capital can buy competitors. Scale lowers costs\u2014and can raise barriers. Ownership compounds. Wealth can influence politics. Workers may depend on employers more than employers depend on any one worker.",
+      "punch": "Capitalism's strength\u2014capital accumulation\u2014can eventually become one of capitalism's internal threats if it destroys competition.",
+      "href": "/compare/explorer/philosophy/modern-market-capitalism/"
+    },
+    "other_worlds": [
+      {
+        "name": "Socialism",
+        "href": "/compare/explorer/philosophy/socialism/",
+        "hook": "What if productive capital's surplus should not concentrate in private residual claims?"
+      },
+      {
+        "name": "Social democracy",
+        "href": "/compare/explorer/philosophy/social-democracy/",
+        "hook": "Keep markets productive\u2014protect households from insecurity with tax-and-transfer and public services."
+      },
+      {
+        "name": "Libertarianism",
+        "href": "/compare/explorer/philosophy/libertarianism/",
+        "hook": "Strong rights; minimal state; fear political allocation more than market inequality."
+      },
+      {
+        "name": "Distributism",
+        "href": "/compare/explorer/philosophy/distributism/",
+        "hook": "Spread productive property widely among families\u2014not capitalists or the state alone."
+      },
+      {
+        "name": "Georgism",
+        "href": "/compare/explorer/philosophy/georgism/",
+        "hook": "Socialize land/resource rents; leave produced capital freer."
+      }
+    ]
+  },
+  "is_not": {
+    "title": "Act III \u2014 So what are we proposing?",
+    "subtitle": "First: what Constitutional Capitalism refuses to accept",
+    "items": [
+      {
+        "id": "not_lf",
+        "title": "Not laissez-faire",
+        "body": "It does not assume every market outcome is automatically legitimate. Markets can fail. Competition can disappear. Costs can be shifted onto people who never agreed to bear them. Wealth can purchase political influence. The state sometimes must act.",
+        "highlight": false
+      },
+      {
+        "id": "not_soc",
+        "title": "Not socialism",
+        "body": "It does not presume productive property should generally be collectively or publicly owned. Private ownership, private enterprise, entrepreneurship, profit and capital accumulation remain legitimate and essential.",
+        "highlight": false
+      },
+      {
+        "id": "not_statecap",
+        "title": "Not state capitalism",
+        "body": "It does not envision government owning major industries simply because they are economically important. Public ownership has to pass a functional test.",
+        "highlight": false
+      },
+      {
+        "id": "not_socdem",
+        "title": "Not social democracy",
+        "body": "It does not primarily define prosperity as successful market capitalism followed by redistribution through taxation and public services. It asks an earlier question: Who owns the productive assets and who receives the returns before redistribution begins?",
+        "highlight": false
+      },
+      {
+        "id": "not_comm",
+        "title": "Not communism",
+        "body": "It does not seek abolition of private productive property, markets, profit, or capital accumulation.",
+        "highlight": false
+      },
+      {
+        "id": "not_prot",
+        "title": "Not protectionism",
+        "body": "It does not assume Arkansas should make everything Arkansas consumes. Trade can make Arkansas richer. The goal is productive retention, not economic isolation.",
+        "highlight": false
+      },
+      {
+        "id": "not_anticorp",
+        "title": "Not anti-corporate",
+        "body": "Scale can create efficiencies, innovation and consumer benefit. The problem is not corporate size by itself. The problem is unaccountable market power or political capture.",
+        "highlight": false
+      },
+      {
+        "id": "not_experts",
+        "title": "Not government by experts",
+        "body": "Experts provide evidence. Citizens remain sovereign.",
+        "highlight": false
+      },
+      {
+        "id": "not_techno",
+        "title": "Not technocracy",
+        "body": "Measurement informs decisions. It does not replace democracy.",
+        "highlight": false
+      },
+      {
+        "id": "not_eoe",
+        "title": "Not equality of outcomes",
+        "body": "People will make different decisions, possess different abilities, take different risks and achieve different outcomes. The objective is not identical wealth.",
+        "highlight": false
+      },
+      {
+        "id": "not_perfect",
+        "title": "Not a guarantee against failure",
+        "body": "Businesses will fail. Pilots will fail. Programs will fail. The system's obligation is to learn and correct, not promise perfection.",
+        "highlight": false
+      },
+      {
+        "id": "not_abolish",
+        "title": "Not abolish-taxes-first",
+        "body": "Build the bridge before removing the old road. No tax disappears because a spreadsheet says some future system might replace it.",
+        "highlight": true
+      }
+    ]
+  },
+  "seven_principles": [
+    {
+      "n": 1,
+      "title": "Liberty comes first",
+      "body": "Individuals possess rights that government doesn't grant and cannot casually remove for economic convenience. Economic prosperity does not excuse unlimited state power."
+    },
+    {
+      "n": 2,
+      "title": "Markets are powerful\u2014but they require competition",
+      "body": "Markets coordinate enormous amounts of information better than central planners generally can. Monopoly, capture, externalities and barriers to entry can prevent markets from functioning as markets. Government acts primarily to protect the conditions of genuine competition, not to substitute itself for every market decision."
+    },
+    {
+      "n": 3,
+      "title": "Ownership matters",
+      "body": "Two towns can have the same factory, workers, sales and wages\u2014and still have different economies if surplus stays local in one and leaves every year in the other. CC asks constantly: Who owns? Who bears risk? Who controls? Who receives surplus? Where does capital accumulate?"
+    },
+    {
+      "n": 4,
+      "title": "The household is the unit of success",
+      "body": "Not GDP. Not government revenue. Not the stock market. Not average wages alone. Can families retain money, build assets, survive shocks, access essential systems, gain economic agency, own productive capital, and have control over their time? That is why Household Prosperity Surplus matters."
+    },
+    {
+      "n": 5,
+      "title": "Public investment can earn a public return\u2014but only when earned",
+      "body": "If taxpayers bear risk or supply productive capital, they may sometimes participate in the upside. But revenue \u2260 profit \u2260 distributable cash \u2260 public cash. Public ownership is not the default. The burden of proof remains high. That is exactly why COUNTABLE is still $0\u2014a credibility point, not an embarrassment."
+    },
+    {
+      "n": 6,
+      "title": "Political and economic power must both remain distributed",
+      "body": "A government powerful enough to control everything can dominate citizens. Private wealth powerful enough to buy government can also dominate citizens. The system tries to prevent both state domination and private capture of the state."
+    },
+    {
+      "n": 7,
+      "title": "Prosperity must compound across generations",
+      "body": "A generation shouldn't appear prosperous by borrowing from the next, destroying infrastructure, depleting resources, creating unfunded obligations, or consuming assets future Arkansans need. Final accounting: Did we leave the next generation more capable than we found ourselves?"
+    }
+  ],
+  "twenty_questions": [
+    {
+      "q": "Can people become extremely wealthy?",
+      "sec30": "Yes.",
+      "sec5": "Wealth from peaceful production and voluntary exchange is legitimate. The constitutional problem begins when wealth purchases the referee, blocks entry, or converts market success into political domination.",
+      "unabridged": "/unabridged/is-is-not/"
+    },
+    {
+      "q": "Can corporations be huge?",
+      "sec30": "Yes.",
+      "sec5": "Scale can serve households through lower costs and innovation. Size is not the offense. Unaccountable market power and capture are.",
+      "unabridged": "/compare/explorer/follow-mechanism/why-monopolies-form/"
+    },
+    {
+      "q": "Can government own businesses?",
+      "sec30": "Sometimes\u2014never by default.",
+      "sec5": "Only when function, risk, capital source, competition, and public purpose justify it\u2014and after Role Conflict walls. Pass 4.1 killed public ownership as default; Pass 4.2 killed guarantee-heavy designs under Art. 16 \u00a71.",
+      "unabridged": "/system/legal-attack/"
+    },
+    {
+      "q": "Does everyone receive the same income?",
+      "sec30": "No.",
+      "sec5": "Equal standing under law is not identical outcomes. The test is household agency and anti-domination\u2014not forced equality of wealth.",
+      "unabridged": "/compare/explorer/concept/equality/"
+    },
+    {
+      "q": "Does government guarantee a job?",
+      "sec30": "Not inherently.",
+      "sec5": "CC cares whether households can earn, retain, and build. Job guarantees are a policy tool requiring separate evidence\u2014not a definitional requirement.",
+      "unabridged": "/system/household-engine/"
+    },
+    {
+      "q": "Does CC eliminate taxes?",
+      "sec30": "No.",
+      "sec5": "It seeks to reduce dependence on extractive taxation only after proven replacement exists. Near-term dual abolition FAILED under Pass 4.1. Build the bridge before removing the old road.",
+      "unabridged": "/system/fiscal-attack/"
+    },
+    {
+      "q": "Is healthcare government-run?",
+      "sec30": "Not necessarily.",
+      "sec5": "The test is access, outcomes, market function, household burden, and resilience\u2014not a single ownership slogan.",
+      "unabridged": "/compare/explorer/concept/social-safety-nets/"
+    },
+    {
+      "q": "Is this socialism?",
+      "sec30": "No.",
+      "sec5": "Private productive ownership, markets, profit, and capital accumulation remain essential. Socialism generally socializes productive claims; CC does not.",
+      "unabridged": "/compare/explorer/philosophy/socialism/"
+    },
+    {
+      "q": "Is this capitalism?",
+      "sec30": "Yes\u2014but not laissez-faire capitalism.",
+      "sec5": "Markets and private enterprise are load-bearing. Competition protection, anti-capture, ownership analysis, and household metrics modify pure laissez-faire.",
+      "unabridged": "/compare/explorer/philosophy/modern-market-capitalism/"
+    },
+    {
+      "q": "Can private businesses make profit?",
+      "sec30": "Absolutely.",
+      "sec5": "Profit is a signal and residual claim for risk-bearing. The question is whether competition and rights remain intact\u2014and where surplus accumulates.",
+      "unabridged": "/compare/explorer/concept/profit/"
+    },
+    {
+      "q": "Can people inherit wealth?",
+      "sec30": "Yes.",
+      "sec5": "Inheritance is part of family capital formation. Any tax architecture that eventually survives validation is Stage 4 / legislative work\u2014not a slogan.",
+      "unabridged": "/compare/explorer/concept/capital/"
+    },
+    {
+      "q": "Does government control prices?",
+      "sec30": "Generally no.",
+      "sec5": "Intervention needs a specific market-failure or essential-system justification\u2014not a preference for political allocation.",
+      "unabridged": "/compare/explorer/concept/markets/"
+    },
+    {
+      "q": "Does CC favor local businesses?",
+      "sec30": "It values local productive capacity\u2014rejects retention-at-any-cost.",
+      "sec5": "Pass 4.1 required a counterfactual price/quality/capacity test. Productive retention \u2260 autarky.",
+      "unabridged": "/system/fiscal-attack/"
+    },
+    {
+      "q": "Does it oppose globalization?",
+      "sec30": "No.",
+      "sec5": "Trade can enrich Arkansas. The issue is leakage of surplus and agency without compensatory capacity\u2014not borders as destiny.",
+      "unabridged": "/compare/explorer/concept/trade/"
+    },
+    {
+      "q": "Does it require unions?",
+      "sec30": "No singular labor institution is mandatory.",
+      "sec5": "Worker voice, ownership, and bargaining are tools evaluated by household and competition effects\u2014not loyalty to one form.",
+      "unabridged": "/compare/explorer/concept/labor/"
+    },
+    {
+      "q": "Does it rely on AI?",
+      "sec30": "AI can enhance capacity; it cannot silently become sovereign.",
+      "sec5": "Pass 4.2: consequential automation without Digital Due Process FAILED as designed.",
+      "unabridged": "/system/legal-attack/#v6"
+    },
+    {
+      "q": "What happens when an idea fails?",
+      "sec30": "Stop or reform it.",
+      "sec5": "Stage 4 is publicly trying to prove claims wrong. Failed propositions are progress when removed for good reasons.",
+      "unabridged": "/unabridged/validation/"
+    },
+    {
+      "q": "Who decides whether the system is working?",
+      "sec30": "Evidence informs; democratic institutions and citizens govern.",
+      "sec5": "Experts are not sovereign. Dashboards do not replace elections or rights.",
+      "unabridged": "/system/government-engine/"
+    },
+    {
+      "q": "What is COUNTABLE?",
+      "sec30": "Reserved public cash that cleared the evidence waterfall\u2014not hoped-for revenue.",
+      "sec5": "COUNTABLE remains $0 after Pass 4.1. That is a successful research result if evidence does not clear.",
+      "unabridged": "/system/fiscal-attack/"
+    },
+    {
+      "q": "What is the ultimate objective?",
+      "sec30": "Household prosperity, liberty, resilient communities, and greater inheritance for the next generation.",
+      "sec5": "Not GDP theater. Not government revenue theater. Capability compounding under constitutional constraint.",
+      "unabridged": "/unabridged/"
+    }
+  ],
+  "liberty_town": {
+    "title": "One town, five systems",
+    "label": "ILLUSTRATION",
+    "name": "Liberty, Arkansas",
+    "pop": 8500,
+    "intro": "A clearly fictional town. Same people, same geography\u2014different institutional answers. Not a utopian simulator.",
+    "assets": [
+      "hospital",
+      "grocery",
+      "manufacturer",
+      "bank",
+      "school",
+      "electric system",
+      "farms",
+      "rental housing",
+      "retirees",
+      "young people leaving",
+      "struggling downtown"
+    ],
+    "questions": [
+      "Who owns the hospital?",
+      "Who finances housing?",
+      "Who decides electric rates?",
+      "What happens when the factory closes?",
+      "Who provides retirement security?",
+      "How is education funded?",
+      "Who owns businesses?",
+      "What happens to profits?",
+      "What happens when monopoly emerges?",
+      "How does the town attract capital?"
+    ],
+    "systems": [
+      {
+        "id": "laissez",
+        "name": "Laissez-faire leaning",
+        "answers": {
+          "Who owns the hospital?": "Private / nonprofit market survivors",
+          "Who finances housing?": "Private credit and landlords",
+          "Who decides electric rates?": "Utility + limited regulation",
+          "What happens when the factory closes?": "Labor and capital reallocate; town absorbs shock",
+          "Who provides retirement security?": "Private saving + Social Security baseline",
+          "How is education funded?": "Local property + state formulas (legal baseline)",
+          "Who owns businesses?": "Private owners",
+          "What happens to profits?": "Owners / shareholders",
+          "What happens when monopoly emerges?": "Prefer entry; narrow antitrust",
+          "How does the town attract capital?": "Low friction, property rights, wages"
+        }
+      },
+      {
+        "id": "socdem",
+        "name": "Social democracy",
+        "answers": {
+          "Who owns the hospital?": "Often public or heavily publicly financed access",
+          "Who finances housing?": "Private + public housing finance / subsidies",
+          "Who decides electric rates?": "Regulated utility with social tariffs possible",
+          "What happens when the factory closes?": "Active labor market + income supports",
+          "Who provides retirement security?": "Strong public pensions/transfers + private",
+          "How is education funded?": "Broad tax-financed education",
+          "Who owns businesses?": "Mostly private",
+          "What happens to profits?": "Private then taxed for services",
+          "What happens when monopoly emerges?": "Regulate / competition policy + social protection",
+          "How does the town attract capital?": "Skills, infrastructure, stable rules + welfare floor"
+        }
+      },
+      {
+        "id": "socialism",
+        "name": "Socialism (strong form)",
+        "answers": {
+          "Who owns the hospital?": "Social / public",
+          "Who finances housing?": "Social housing priority",
+          "Who decides electric rates?": "Public power",
+          "What happens when the factory closes?": "Public planning / conversion",
+          "Who provides retirement security?": "Public systems primary",
+          "How is education funded?": "Public",
+          "Who owns businesses?": "Socialized productive property emphasis",
+          "What happens to profits?": "Social claim on surplus",
+          "What happens when monopoly emerges?": "Socialize the commanding heights",
+          "How does the town attract capital?": "Plan and public investment"
+        }
+      },
+      {
+        "id": "statecap",
+        "name": "State capitalism",
+        "answers": {
+          "Who owns the hospital?": "State-linked or state-directed",
+          "Who finances housing?": "State banks / directed credit",
+          "Who decides electric rates?": "State champions / regulators fused",
+          "What happens when the factory closes?": "State may prop or redirect",
+          "Who provides retirement security?": "State schemes",
+          "How is education funded?": "State industrial priorities",
+          "Who owns businesses?": "State champions + private satellites",
+          "What happens to profits?": "State strategy + elites",
+          "What happens when monopoly emerges?": "Often created as national champions",
+          "How does the town attract capital?": "State deals and directed investment"
+        }
+      },
+      {
+        "id": "cc",
+        "name": "Constitutional Capitalism",
+        "answers": {
+          "Who owns the hospital?": "Function test\u2014private, nonprofit, or public if earned",
+          "Who finances housing?": "Private markets + targeted public tools; no fake COUNTABLE",
+          "Who decides electric rates?": "Utility rules with Role Conflict walls if public participates",
+          "What happens when the factory closes?": "Household buffers + competition for new capital; no guarantee theater",
+          "Who provides retirement security?": "Mixed; federal constraints mapped in Pass 4.2",
+          "How is education funded?": "Current legal baseline; residency pricing differentials lawful with care",
+          "Who owns businesses?": "Mostly private; ownership geography tracked",
+          "What happens to profits?": "Follow ownership/risk; public share only after waterfall",
+          "What happens when monopoly emerges?": "Measure power harms; antitrust / entry / least-dominating tool",
+          "How does the town attract capital?": "Capability, rights, competition, honest books"
+        }
+      }
+    ]
+  },
+  "household_map": {
+    "title": "Stand in the middle of the system",
+    "center": "YOU / YOUR HOUSEHOLD",
+    "nodes": [
+      "Employer",
+      "Bank",
+      "Landlord / Mortgage",
+      "Grocery",
+      "Healthcare",
+      "Energy",
+      "Government",
+      "School",
+      "Transportation",
+      "Retirement",
+      "Businesses you buy from",
+      "Assets you own"
+    ],
+    "lenses": [
+      "who owns",
+      "who funds",
+      "who decides",
+      "who bears risk",
+      "where surplus goes",
+      "what government controls"
+    ],
+    "systems": {
+      "laissez": {
+        "name": "Laissez-faire capitalism",
+        "summary": "Private residual claims dominate. Government is night-watchman-ish. Household risk is high; discovery is high.",
+        "surplus": "Owners / shareholders",
+        "government": "Property, contract, limited regulation"
+      },
+      "socdem": {
+        "name": "Social democracy",
+        "summary": "Private production + large tax-financed services and transfers. Household risk buffered after market outcomes.",
+        "surplus": "Private first, then taxed",
+        "government": "Tax, regulate, insure, provide services"
+      },
+      "socialism": {
+        "name": "Socialism",
+        "summary": "Social claims on productive surplus. Markets may exist but ownership of capital is the core fight.",
+        "surplus": "Social / public / worker claims",
+        "government": "Allocates or heavily steers capital"
+      },
+      "statecap": {
+        "name": "State capitalism",
+        "summary": "State as owner-strategist. Households secondary to national projects.",
+        "surplus": "State champions",
+        "government": "Player and referee risk"
+      },
+      "cc": {
+        "name": "Constitutional Capitalism",
+        "summary": "Household at center. Markets + ownership geography + anti-capture + COUNTABLE honesty. Public play only when earned.",
+        "surplus": "Follow ownership/risk; public only after waterfall",
+        "government": "Protect competition and rights; limited functional ownership"
+      }
+    }
+  },
+  "stage4_attack": {
+    "title": "We are trying to prove ourselves wrong",
+    "intro": "Stage 4 is hostile validation. Most political projects hide failed assumptions. We publish them.",
+    "tabs": {
+      "survived": [
+        "Public-income waterfall / COUNTABLE firewall",
+        "Dependency Rule & Replacement Readiness",
+        "Household as unit of success",
+        "Ownership-by-function (against default public ownership)",
+        "Statutory IIT pathway (legality \u2260 near-term fiscal clearance)",
+        "Digital Due Process core architecture",
+        "Rights-floored direct democracy design requirement"
+      ],
+      "failed": [
+        "Near-term COUNTABLE > $0 (Pass 4.1)",
+        "Dual IIT + property abolition under Base@16y stacks (Pass 4.1)",
+        "Public ownership as default engine (Pass 4.1)",
+        "Private debt guarantees / lending-of-credit designs (Pass 4.2)",
+        "Blanket Arkansas-first procurement (Pass 4.2)",
+        "Statute-only full URT abolition (Pass 4.2)",
+        "Consequential AI without process (Pass 4.2)"
+      ],
+      "changed": [
+        "Tax-transition talk must carry ~$7.23B replacement burden map",
+        "Retention requires counterfactual price/quality/capacity test",
+        "Local pilots mapped on a legal ladder (not pure autonomy fiction)",
+        "Procurement redesigned as lawful toolkit, not ideology"
+      ],
+      "unknown": [
+        "Any feeder that honestly clears COUNTABLE",
+        "OV-35-05 AI state-action edge standards",
+        "Household incidence microsim",
+        "Behavioral reactions (Pass 4.3 next)"
+      ]
+    },
+    "featured_claim": {
+      "claim": "Arkansas could eventually eliminate personal income and property taxes.",
+      "hoped": "Alternative public-income mechanisms might replace them.",
+      "found": "Current replacement burden roughly $7.23B (IIT + layered property map).",
+      "result": "FAILED as a near-term proposition.",
+      "changed": "Dual abolition cannot proceed without independently proven replacement capacity.",
+      "countable": "$0 COUNTABLE"
+    },
+    "hrefs": {
+      "fiscal": "/system/fiscal-attack/",
+      "legal": "/system/legal-attack/",
+      "validation": "/unabridged/validation/"
+    }
+  },
+  "misconceptions": [
+    {
+      "q": "So this is socialism?",
+      "a": "No. Private productive ownership, markets, profit, and capital accumulation remain essential. CC asks who owns and where surplus goes\u2014without socializing productive property as the default answer."
+    },
+    {
+      "q": "So government owns everything?",
+      "a": "No. Public ownership is not default. It must clear function, evidence, Role Conflict, and\u2014after Pass 4.2\u2014avoid illegal private debt guarantees."
+    },
+    {
+      "q": "You're eliminating taxes?",
+      "a": "No. Abolish-taxes-first is explicitly rejected. Build the bridge before removing the old road. Pass 4.1 kept COUNTABLE at $0."
+    },
+    {
+      "q": "This sounds like Norway.",
+      "a": "Norway is a World Lab case to BORROW intergenerational resource discipline\u2014not to copy petroleum economics onto Arkansas. See NON-LESSON rules."
+    },
+    {
+      "q": "This is just capitalism with welfare.",
+      "a": "Social democracy prioritizes post-market redistribution. CC asks an earlier ownership and surplus question\u2014and treats capture of the referee as constitutional failure."
+    },
+    {
+      "q": "This is libertarianism.",
+      "a": "CC shares rights seriousness and market respect, but rejects the claim that every market outcome is automatically legitimate or that anti-capture tools are optional."
+    },
+    {
+      "q": "Why not just call it social democracy?",
+      "a": "Because ownership-before-redistribution, COUNTABLE discipline, and dual anti-domination (state and private) are not optional branding\u2014they change the architecture."
+    },
+    {
+      "q": "Isn't public investment central planning?",
+      "a": "It can become that\u2014which is why public ownership is not default, why the waterfall exists, and why Stage 4 attacks the claim."
+    },
+    {
+      "q": "What stops this from becoming authoritarian?",
+      "a": "Constitutional rights floors, distributed power, Digital Due Process, Role Conflict tests, and democratic sovereignty over experts. Capacity without domination is the design problem."
+    },
+    {
+      "q": "Who pays for all of this?",
+      "a": "Whoever the transparent incidence map says\u2014plus opportunity cost. No teleported cash. COUNTABLE remains $0 until evidence clears."
+    },
+    {
+      "q": "What if your numbers are wrong?",
+      "a": "Then the proposal changes. That is the culture Stage 4 is building."
+    }
+  ],
+  "challenges": [
+    {
+      "objection": "Government is terrible at investing.",
+      "serious": "Public-choice incentives, information problems, and historical failures are real.",
+      "cc_answer": "We agree this is a core risk. That is why public ownership is not default; why Role Conflict walls exist; why the public-income waterfall refuses hoped-for cash; and why Stage 4 keeps attacking.",
+      "satisfaction": "Partially / unresolved\u2014Pass 4.3\u20134.5 will keep pressing behavior, resilience, and capture."
+    },
+    {
+      "objection": "This will just become another tax-and-spend program.",
+      "serious": "Political systems drift toward spending without productive returns.",
+      "cc_answer": "Dependency Rule and Replacement Readiness exist to prevent abolish-or-spend theater. Pass 4.1 already failed near-term replacement fantasies.",
+      "satisfaction": "Architecture survived; clearance did not\u2014honesty over marketing."
+    },
+    {
+      "objection": "Household metrics will be gamed.",
+      "serious": "Any dashboard can be selectively framed.",
+      "cc_answer": "Comprehensible Government and anti-manipulation rules are Stage 4/5 work (OV-35-06). Metrics inform; they do not replace rights or elections.",
+      "satisfaction": "Unresolved\u2014listed openly."
+    }
+  ],
+  "journey_nav": [
+    {
+      "id": "choose",
+      "label": "Choose a society"
+    },
+    {
+      "id": "act1",
+      "label": "Tensions"
+    },
+    {
+      "id": "act2",
+      "label": "Competing worlds"
+    },
+    {
+      "id": "is-not",
+      "label": "What CC is not"
+    },
+    {
+      "id": "principles",
+      "label": "Seven principles"
+    },
+    {
+      "id": "twenty",
+      "label": "20 Questions"
+    },
+    {
+      "id": "town",
+      "label": "Liberty, AR"
+    },
+    {
+      "id": "middle",
+      "label": "Household map"
+    },
+    {
+      "id": "stage4",
+      "label": "Under attack"
+    },
+    {
+      "id": "myths",
+      "label": "Misconceptions"
+    },
+    {
+      "id": "challenge",
+      "label": "Challenge CC"
+    },
+    {
+      "id": "source",
+      "label": "Unabridged"
+    }
+  ],
+  "sources": [
+    {
+      "href": "/unabridged/",
+      "label": "Unabridged source of truth"
+    },
+    {
+      "href": "/unabridged/is-is-not/",
+      "label": "What CC Is / Is Not"
+    },
+    {
+      "href": "/system/master-map/",
+      "label": "Master System Map"
+    },
+    {
+      "href": "/system/fiscal-attack/",
+      "label": "Pass 4.1 Fiscal Attack"
+    },
+    {
+      "href": "/system/legal-attack/",
+      "label": "Pass 4.2 Legal Attack"
+    },
+    {
+      "href": "/system/household-engine/",
+      "label": "Household Engine"
+    },
+    {
+      "href": "/compare/explorer/follow-100/",
+      "label": "Follow the $100"
+    },
+    {
+      "href": "/compare/explorer/",
+      "label": "Explorer hub"
+    }
+  ]
+}

@@ -36,6 +36,15 @@ const title = d?.display_name || p.name;
       <ul class="link-board">
         <li><a href="/compare/explorer/">← Explorer home</a></li>
         {
+          p.slug === "constitutional-capitalism" ? (
+            <li>
+              <a href="/compare/explorer/constitutional-capitalism/">
+                <strong>Open the flagship journey (recommended) →</strong>
+              </a>
+            </li>
+          ) : null
+        }
+        {
           p.compare_dossier_slug ? (
             <li>
               <a href={`/compare/${p.compare_dossier_slug}/`}>Analytical dossier →</a>
