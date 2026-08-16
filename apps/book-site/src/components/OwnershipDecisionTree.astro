@@ -1,0 +1,25 @@
+---
+import chapter from "../../../../data/project/stage3_pass36_arkansas_productive_systems.json";
+
+const qs = chapter.ownership_decision_architecture?.questions || [];
+---
+
+<figure class="viz" data-viz="ownership-decision-tree" id="ownership-tree">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Essential-System Ownership Decision Tree</span>
+    <span class="viz__q">Essential ≠ automatic public ownership</span>
+  </figcaption>
+  <ol class="cap-ladder waterfall-steps">
+    <li>Competitive markets?</li>
+    <li>Natural monopoly?</li>
+    <li>Severe externalities?</li>
+    <li>Universal access necessary?</li>
+    <li>Regulation enough?</li>
+    <li>Public provision / investment / ownership?</li>
+    <li>Role Conflict Test</li>
+  </ol>
+  <ul class="stack" style="margin-top:0.85rem;">
+    {qs.map((q: string) => <li>{q}</li>)}
+  </ul>
+  <p class="viz__note">{chapter.ownership_decision_architecture?.rule}</p>
+</figure>

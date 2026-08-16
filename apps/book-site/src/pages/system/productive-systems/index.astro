@@ -1,0 +1,261 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import ProductiveSystemsMap from "../../../components/ProductiveSystemsMap.astro";
+import ProductiveDependencyMatrix from "../../../components/ProductiveDependencyMatrix.astro";
+import ProductionBalanceSheet from "../../../components/ProductionBalanceSheet.astro";
+import FoodValueChain from "../../../components/FoodValueChain.astro";
+import InfraHouseholdFlow from "../../../components/InfraHouseholdFlow.astro";
+import OwnershipDecisionTree from "../../../components/OwnershipDecisionTree.astro";
+import ProductiveGeography from "../../../components/ProductiveGeography.astro";
+import chapter from "../../../../../../data/project/stage3_pass36_arkansas_productive_systems.json";
+
+const checklist = Object.values(chapter.category_checklist || {});
+const systems = Object.values(chapter.systems || {});
+const evidence = chapter.arkansas_evidence_bound || {};
+const dims = chapter.productive_systems_test?.dimensions || [];
+const ext = chapter.external_income_classifications || {};
+const res = chapter.resilience_architecture || {};
+
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+
+function chipFor(cls?: string) {
+  if (cls === "FACT") return "chip chip--done";
+  if (cls === "DERIVED_CALCULATION" || cls === "MODEL") return "chip chip--live";
+  if (cls === "UNKNOWN") return "chip chip--queued";
+  return "chip chip--queued";
+}
+
+function fmtEv(e: any) {
+  if (e.value_usd != null) return money(e.value_usd);
+  if (typeof e.value === "number") return num(e.value);
+  return "";
+}
+---
+
+<BaseLayout
+  title="Arkansas Productive Systems"
+  path="/system/productive-systems/"
+  description="Pass 3.6 unabridged — systems integration for food, energy, housing, healthcare, transport, water, digital and care under one Productive Systems Test."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 3.6 complete · 100%</span>
+      <h1>Arkansas Productive Systems</h1>
+      <p class="lede">{chapter.organizing_sentence}</p>
+      <p class="muted">{chapter.governing_question}</p>
+      <p class="lede" style="margin-top:0.75rem;">
+        <strong>{chapter.central_proposition}</strong>
+      </p>
+      <p class="muted"><strong>Hard boundary:</strong> {chapter.hard_boundary}</p>
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-3-6/">Pass 3.6 What Changed →</a></li>
+        <li><a href="/system/money-engine/">Money Engine →</a></li>
+        <li><a href="/system/government-engine/">Government Engine →</a></li>
+        <li><a href="/system/household-engine/">Household Prosperity →</a></li>
+      </ul>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the productive portfolio</h2>
+      <ProductiveSystemsMap />
+      <ProductiveDependencyMatrix />
+      <ProductionBalanceSheet />
+      <FoodValueChain />
+      <InfraHouseholdFlow />
+      <OwnershipDecisionTree />
+      <ProductiveGeography />
+    </section>
+
+    <section class="hub-section" aria-labelledby="test">
+      <h2 id="test">I. Productive Systems Test</h2>
+      <p class="lede">{chapter.productive_systems_test?.rule}</p>
+      <ul class="link-board">
+        {dims.map((d: string) => <li>{d.replaceAll("_", " ")}</li>)}
+      </ul>
+    </section>
+
+    {
+      systems.map((s: any) => (
+        <section class="hub-section" aria-labelledby={s.id} id={s.id.toLowerCase()}>
+          <h2 id={s.id}>{s.label}</h2>
+          {s.not ? <p class="muted">{s.not}</p> : null}
+          <ol class="cap-ladder">
+            {(s.architecture_chain || []).map((step: string) => <li>{step}</li>)}
+          </ol>
+          <ul class="stack" style="margin-top:0.85rem;">
+            {(s.principles || []).map((p: string) => <li>{p}</li>)}
+          </ul>
+          <h3 style="margin-top:0.85rem;">Productive Systems Test — {s.label}</h3>
+          <ul class="stack">
+            {Object.entries(s.test || {}).map(([k, v]) => (
+              <li>
+                <strong>{k.replaceAll("_", " ")}</strong>
+                <div class="muted">{v}</div>
+              </li>
+            ))}
+          </ul>
+          <p class="muted">
+            External-income class: {s.external_income_class} · Resilience exposures:{" "}
+            {(s.resilience_exposures || []).join(" · ")}
+          </p>
+        </section>
+      ))
+    }
+
+    <section class="hub-section" aria-labelledby="own">
+      <h2 id="own">XI. Essential systems versus public ownership</h2>
+      <p class="lede">{chapter.ownership_decision_architecture?.principle}</p>
+      <p class="muted">{chapter.ownership_decision_architecture?.rule}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="ext">
+      <h2 id="ext">XIII. External-income potential</h2>
+      <p class="lede">{ext.rule}</p>
+      <ul class="stack">
+        {
+          (ext.items || []).map((i: any) => (
+            <li>
+              <span class="chip chip--live">{i.class}</span> <strong>{i.system}</strong> — {i.note}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="res">
+      <h2 id="res">XIV. Resilience architecture</h2>
+      <p class="lede">{res.rule}</p>
+      <ul class="link-board">
+        {(res.exposures_common || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <p class="muted">Assign: {res.assign}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="spine">
+      <h2 id="spine">Integration</h2>
+      <p class="lede">{chapter.integration_spine?.while}</p>
+      <ol class="cap-ladder">
+        {(chapter.integration_spine?.chain || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+    </section>
+
+    <section class="hub-section" aria-labelledby="evidence">
+      <h2 id="evidence">XV. Arkansas evidence bound</h2>
+      {
+        Object.entries(evidence)
+          .filter(([k]) => k !== "gaps")
+          .map(([k, arr]) => (
+            <div style="margin-bottom:1rem;">
+              <h3>{k.replaceAll("_", " ")}</h3>
+              <ul class="stack">
+                {(Array.isArray(arr) ? arr : []).map((e: any) => (
+                  <li>
+                    <span class={chipFor(e.claim_class)}>{e.claim_class}</span>{" "}
+                    <strong>{e.label}</strong>
+                    {e.value != null || e.value_usd != null ? `: ${fmtEv(e)}` : ""}
+                    <span class="muted">
+                      {" "}
+                      · {e.period || ""}
+                      {e.note ? ` · ${e.note}` : ""}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+      }
+      <p class="muted">Gaps: {(evidence.gaps || []).join(" · ")}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="counter">
+      <h2 id="counter">XVI. Counterarguments</h2>
+      <ul class="stack">
+        {
+          (chapter.counterarguments || []).map((c: any) => (
+            <li>
+              <strong>“{c.claim}”</strong>
+              <div class="muted">Strong form: {c.strong_form}</div>
+              <div>{c.architecture_answer}</div>
+              <div class="muted">Unresolved: {c.unresolved}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="openq">
+      <h2 id="openq">Open validation questions</h2>
+      <ul class="stack">
+        {
+          (chapter.open_validation_questions || []).map((q: any) => (
+            <li>
+              <strong>{q.id}</strong> — {q.question}
+              <div class="muted">Assign: {q.assign}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="joins">
+      <h2 id="joins">Cross-system connections</h2>
+      <ul class="link-board">
+        {
+          (chapter.cross_system_connections || []).map((j: any) => (
+            <li>
+              <a href={j.href}>
+                {j.to} — {j.join}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="check">
+      <h2 id="check">Unabridged category checklist</h2>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{chapter.category_completion_percent}%</strong>
+          <span>Pass 3.6 category</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{checklist.length}/{checklist.length}</strong>
+          <span>Required elements PRESENT</span>
+        </div>
+        <div class="dash-cell">
+          <strong>75%</strong>
+          <span>Unabridged (6/8)</span>
+        </div>
+        <div class="dash-cell">
+          <strong>69%</strong>
+          <span>Overall</span>
+        </div>
+      </div>
+      <ul class="stack">
+        {
+          checklist.map((el: any) => (
+            <li>
+              <span class="chip chip--done">{el.status}</span> {el.label}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-168",
-  "update_id": "UPD-181",
+  "decision_id": "CC-DEC-169",
+  "update_id": "UPD-182",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": "PASS_3_6",
-  "next_objective": "Pass 3.6 \u2014 Arkansas Productive Systems. Dig deep vertically. Do not open 3.7 until 3.6 is 100%.",
+  "current_pass": "PASS_3_7",
+  "next_objective": "Pass 3.7 \u2014 Transition & Intergenerational Arkansas. Dig deep vertically. Do not open 3.8 until 3.7 is 100%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -375,6 +375,26 @@
           "label": "Digital Due Process"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-169",
+      "title": "Pass 3.6 Arkansas Productive Systems unabridged complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-6/",
+      "links": [
+        {
+          "href": "/system/productive-systems/",
+          "label": "Arkansas Productive Systems"
+        },
+        {
+          "href": "/build-progress/passes/pass-3-6/",
+          "label": "Pass 3.6 What Changed"
+        },
+        {
+          "href": "/system/productive-systems/#dependency-matrix",
+          "label": "Dependency Matrix"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -434,10 +454,10 @@
       "number": "3.6",
       "slug": "pass-3-6",
       "name": "Arkansas Productive Systems",
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-3-6/",
-      "changelog": null,
-      "spine_href": "/system/"
+      "changelog": "data/project/pass_changelogs/pass_3_6.json",
+      "spine_href": "/system/productive-systems/"
     },
     {
       "id": "PASS_3_7",

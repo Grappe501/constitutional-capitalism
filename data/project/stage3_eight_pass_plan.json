@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-3-EIGHT-PASS-UNABRIDGED-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-168",
-  "update_id": "UPD-181",
-  "status": "STAGE_3_PLAN_LOCKED_PASS_3_5_COMPLETE_PASS_3_6_NEXT",
+  "decision_id": "CC-DEC-169",
+  "update_id": "UPD-182",
+  "status": "STAGE_3_PLAN_LOCKED_PASS_3_6_COMPLETE_PASS_3_7_NEXT",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question": "Can we prove, explain, source, quantify and document this deeply enough to become the authoritative technical blueprint for Arkansas's future?",
   "prior_stages": {
@@ -135,16 +135,21 @@
       "number": "3.6",
       "slug": "pass-3-6",
       "name": "Arkansas Productive Systems",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "what_gets_finished": "Food, energy, housing, healthcare, infrastructure, transportation and other real-economy systems \u2014 unabridged",
-      "opens_only_after": "PASS_3_5"
+      "opens_only_after": "PASS_3_5",
+      "category_completion_percent": 100,
+      "href": "/build-progress/passes/pass-3-6/",
+      "surface_href": "/system/productive-systems/",
+      "artifact": "data/project/stage3_pass36_arkansas_productive_systems.json",
+      "changelog": "data/project/pass_changelogs/pass_3_6.json"
     },
     {
       "id": "PASS_3_7",
       "number": "3.7",
       "slug": "pass-3-7",
       "name": "Transition & Intergenerational Arkansas",
-      "status": "QUEUED",
+      "status": "NEXT",
       "what_gets_finished": "The actual NOW \u2192 Generation 2 pathway \u2014 unabridged",
       "opens_only_after": "PASS_3_6"
     },

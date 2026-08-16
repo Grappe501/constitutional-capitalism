@@ -1,0 +1,26 @@
+---
+import chapter from "../../../../data/project/stage3_pass36_arkansas_productive_systems.json";
+
+const systems = Object.values(chapter.systems || {});
+---
+
+<figure class="viz" data-viz="productive-systems-map" id="systems-map">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Arkansas Productive Systems Map</span>
+    <span class="viz__q">Eight systems around households and productive enterprise</span>
+  </figcaption>
+  <ul class="roles-quad" style="grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));">
+    {
+      systems.map((s: any) => (
+        <li>
+          <strong>{s.label}</strong>
+          <span>{(s.architecture_chain || []).slice(0, 3).join(" → ")}…</span>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="viz__note">
+    Same Productive Systems Test on every system — not eight unrelated policy books. COUNTABLE engines remain
+    $0.
+  </p>
+</figure>
