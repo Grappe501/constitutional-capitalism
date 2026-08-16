@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
-  "decision_id": "CC-DEC-196",
-  "update_id": "UPD-209",
+  "decision_id": "CC-DEC-197",
+  "update_id": "UPD-210",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
@@ -131,6 +131,81 @@
         "geographic_disparities",
         "demographics",
         "household_economics"
+      ]
+    },
+    {
+      "id": "UNK-FISC-001",
+      "question": "What is Arkansas' all-funds federal share by major function?",
+      "why_unknown": "Federal funds not fully normalized (OV-31-01).",
+      "evidence_that_would_resolve": "AFY/CAFR + agency federal schedules joined by function.",
+      "v2_2_requires_resolution": true,
+      "class": "BLOCKING",
+      "home_ids": [
+        "federal_dependency",
+        "revenue",
+        "expenditures"
+      ],
+      "note": "Blocking for precise V2.2 fiscal redesign of federally entangled functions — not for closing V2.1.2 observation pass.",
+      "blocks": "V2.2 funding redesign depth — NOT V2.1.2 closure"
+    },
+    {
+      "id": "UNK-FISC-002",
+      "question": "FY2016–FY2024 comparable GR and Allocation A series?",
+      "why_unknown": "Prior-year DFA/Fiscal Summary PDFs not ingested.",
+      "evidence_that_would_resolve": "Ingest queued historical DFA GR + Allocation A documents.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "revenue",
+        "expenditures"
+      ]
+    },
+    {
+      "id": "UNK-FISC-003",
+      "question": "Real (inflation-adjusted) and per-capita transforms for major series?",
+      "why_unknown": "CPI and population joins not yet applied to fiscal panel.",
+      "evidence_that_would_resolve": "BLS CPI + Census PEP join to HIST series.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "expenditures"
+      ]
+    },
+    {
+      "id": "UNK-FISC-004",
+      "question": "Statewide debt service and pension/OPEB claim schedule?",
+      "why_unknown": "CAFR notes not bound into Obligation Ledger amounts.",
+      "evidence_that_would_resolve": "CAFR debt + pension extracts.",
+      "v2_2_requires_resolution": true,
+      "class": "BLOCKING",
+      "blocks": "V2.2 redesign of long-term claims — NOT V2.1.2 closure",
+      "home_ids": [
+        "pensions",
+        "intergenerational_obligations"
+      ]
+    },
+    {
+      "id": "UNK-FISC-005",
+      "question": "Official tax-expenditure / incentive inventory totaling forgone revenue?",
+      "why_unknown": "No normalized panel in corpus.",
+      "evidence_that_would_resolve": "DFA/BLR tax expenditure report bind.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "economic_development",
+        "revenue"
+      ]
+    },
+    {
+      "id": "UNK-FISC-006",
+      "question": "Complete state→county education/health/infrastructure dollar flows for all 75?",
+      "why_unknown": "Only proxies + selected lines bound.",
+      "evidence_that_would_resolve": "DESE/DHS/ARDOT county distribution tables.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "local_government",
+        "geographic_disparities"
       ]
     }
   ],

@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-GEO-ARKANSAS-75-INVENTORY-1.0",
-  "decision_id": "CC-DEC-196",
-  "update_id": "UPD-209",
+  "decision_id": "CC-DEC-197",
+  "update_id": "UPD-210",
   "geo_decision_id": "V2-GEO-001",
   "generated_at": "2026-08-16",
   "status": "SCHEMA_LOCKED_FIELD_POPULATION_OPEN",
   "county_count": 75,
   "dimension_count": 12,
   "matrix_cells": 900,
-  "cells_partial": 14,
-  "cells_empty": 886,
+  "cells_partial": 89,
+  "cells_empty": 811,
   "population_method": "field_first",
   "no_ranking": true,
   "records": [
@@ -131,11 +131,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 474300441,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.33,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 18848699.52534,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4339849.035150001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -245,11 +272,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 368989025,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.94,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 14349983.18225,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2660410.87025,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -359,11 +413,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1028683255,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 45.92,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 35448424.967300005,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 8743807.6675,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -473,11 +554,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 9180243183,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 55.04,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 394658654.43717,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 75186191.66876999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -587,11 +695,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 695883026,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 45.12,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 25928601.548759997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3896944.9455999997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -701,11 +836,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 151574870,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 54.48,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 6355534.2991,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1652166.083,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -815,11 +977,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 161316762,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.8,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 5878382.807279999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1338929.1246000002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -929,11 +1118,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 678903219,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.68,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 25893368.77266,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 6789032.19,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1043,11 +1259,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 213325238,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.53,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 8140491.082079999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2133252.38,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1157,11 +1400,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 390484916,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 53.85,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 17193050.85148,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2772442.9036,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1271,11 +1541,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 290393592,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.42,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11029148.62416,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2903935.92,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1385,11 +1682,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 927818954,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 43.39,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 33642715.272039995,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4731876.665399999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1499,11 +1823,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 123138327,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 48.87,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4749445.2723900005,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1108244.943,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1613,11 +1964,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 509787332,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.0,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 18010786.439559996,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4588085.988,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1727,11 +2105,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 566855932,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.56,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 22073369.99208,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 5555188.1336,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1841,11 +2246,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 2737373788,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.17,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 106702830.25624,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 18778384.185680002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -1955,11 +2387,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1055822388,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.11,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 43890536.66916,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 7707503.432399999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2069,11 +2528,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1013995700,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 53.28,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 44849029.811,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 5435016.952,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2183,11 +2669,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 340450673,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.39,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 13594195.37289,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3098101.1243,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2297,11 +2810,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 99456985,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.37,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4060828.6975499997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 825492.9755000002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2411,11 +2951,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 282010716,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.44,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11370672.069120001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2368890.0144,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2525,11 +3092,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 309340984,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.75,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12534496.67168,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1763243.6088,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2639,11 +3233,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 2720072567,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.19,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 108177285.98959002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 22576602.306100003,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2753,11 +3374,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 388817189,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.12,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 14658408.025300002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3654881.5766,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2867,11 +3515,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 196682623,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 41.89,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 6523962.604910001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1180095.738,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -2981,11 +3656,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 2735754728,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 43.84,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 109129256.09992,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 9848717.020800002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3095,11 +3797,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 341480766,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.14,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 13430438.526779998,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3073326.894,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3209,11 +3938,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 839612168,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 44.31,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 31325929.988080002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4701828.140799999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3323,11 +4079,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 471385559,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 46.19,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 16074247.561900001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4242470.031,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3437,11 +4220,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 555778875,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 52.85,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 23381617.27125,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 5002009.875,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3551,11 +4361,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 261170287,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 45.93,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 9762545.328060001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1723723.8941999997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3665,11 +4502,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 733735566,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.5,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 29048591.057940003,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 6310125.8675999995,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3779,11 +4643,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 217441617,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 48.24,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 8243211.70047,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1674300.4509,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -3893,11 +4784,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 334491404,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.86,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12647119.985240001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3010422.636,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4007,11 +4925,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1256691270,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 58.16,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 55118479.102199994,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 11574126.596700002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4121,11 +5066,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 396366029,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.87,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 15743658.67188,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 4082570.0987000004,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4263,11 +5235,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 126236601,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.87,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4333702.51233,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1136129.409,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4377,11 +5376,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 300336274,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 45.71,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 10728011.707279999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2703026.466,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4491,11 +5517,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 164457032,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 41.96,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4882729.28008,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1381439.0688,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4605,11 +5658,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 170833300,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.4,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 6688123.695,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1537499.7,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4719,11 +5799,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 307103561,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 46.23,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12038459.591200002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1904042.0782,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4833,11 +5940,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 365313879,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.44,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 13940377.622639999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2885979.6440999997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -4947,11 +6081,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1320179169,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.61,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 56384852.30799,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 8449146.6816,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5061,11 +6222,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 319807905,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.18,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11903250.224100001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2878271.145,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5175,11 +6363,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 315801388,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 47.43,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11507802.57872,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2810632.3532000002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5289,11 +6504,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 745419769,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 54.28,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 31255450.914169997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 6559693.967200001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5431,11 +6673,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 968418778,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 53.45,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 39279065.63568,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 9393662.146599999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5545,11 +6814,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 157341131,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.82,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 6188226.682229999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1321665.5004,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5659,11 +6955,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 179388958,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 43.58,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 5928805.061899999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1488928.3514,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5773,11 +7096,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 125178258,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 54.4,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 5034669.5367600005,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1376960.838,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -5887,11 +7237,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 132332387,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 46.33,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4793079.057139999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1190991.483,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6001,11 +7378,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 321418074,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 50.11,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12393880.93344,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2687055.09864,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6115,11 +7519,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 150543991,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.38,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 5741747.81674,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1294678.3225999998,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6257,11 +7688,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 264353627,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 53.71,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 10428750.585150002,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2828583.8088999996,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6371,11 +7829,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 199912344,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 46.05,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 8038475.35224,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 659710.7351999999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6485,11 +7970,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 417500835,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 48.84,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 16975583.9511,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2425679.85135,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6599,11 +8111,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 339329713,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 44.64,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12857202.82557,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1934179.3641000001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6713,11 +8252,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1670890104,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 44.39,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 66885730.863120005,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 7101282.942,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6827,11 +8393,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 176243110,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 52.13,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 6984514.4493,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1762431.1,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -6941,11 +8534,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 10277025426,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 59.56,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 461232901.11888003,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 97631741.547,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7055,11 +8675,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 315932095,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 42.76,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11228226.656299999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1895592.57,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7169,11 +8816,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 357012204,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 43.53,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 12420454.577159999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2213475.6648000004,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "Name join: millage uses St Francis."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7283,11 +8957,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 2753272223,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.98,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 110075823.47554,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 26706740.5631,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7397,11 +9098,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 139136078,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 41.17,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 5134121.2782,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 389581.0184,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7539,11 +9267,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 121249084,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 48.9,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 4437716.474400001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1333739.924,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7653,11 +9408,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 2556801331,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 52.18,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 102016373.10689999,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 21604971.246949997,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7767,11 +9549,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 232727601,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 46.35,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 8657466.7572,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1698911.4873,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7881,11 +9690,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 342378421,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 42.49,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11774393.898190001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2002913.7628499998,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -7995,11 +9831,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 210710967,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 41.76,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 7134673.34262,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1538190.0591,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8109,11 +9972,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1110373041,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.03,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 44292780.60549,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 8738635.83267,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8251,11 +10141,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 485298076,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 45.23,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 17640585.0626,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 3542675.9547999995,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8365,11 +10282,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 6596289462,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.54,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 274207752.93534,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 42018363.872940004,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8507,11 +10451,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 1588303134,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 43.42,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 59894911.18314,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 6512042.8494,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8621,11 +10592,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 188810770,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 51.32,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 7340962.737600001,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 1850345.5460000003,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8735,11 +10733,38 @@
         },
         "government_public_money": {
           "dimension_id": "government_public_money",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
+          "arkansas_now": "Local property assessed value and theoretical levies provide a partial public-money geography proxy.",
+          "metrics": {
+            "total_assessed_value": {
+              "value": 314451662,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "avg_overall_mills": {
+              "value": 49.46,
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "school_theoretical_levy": {
+              "value": 11716468.926119998,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            },
+            "county_theoretical_levy": {
+              "value": 2830064.958,
+              "unit": "USD",
+              "evidence_class": "PROXY",
+              "source": "county_av_millage_levy_map"
+            }
+          },
+          "notes": [
+            "Field-first V2.1.2 seed: local tax-base PROXY only — not a county P&L and not state GR.",
+            "KNOWN/DERIVED/PROXY/UNKNOWN discipline applies."
+          ]
         },
         "connectivity": {
           "dimension_id": "connectivity",
@@ -8760,5 +10785,6 @@
       },
       "unknowns": []
     }
-  ]
+  ],
+  "v2_1_2_geo_note": "government_public_money PARTIAL on 75/75 counties via AV/millage PROXY."
 }

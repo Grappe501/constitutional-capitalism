@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-CLOSURE-OBJECTS-1.0",
-  "decision_id": "CC-DEC-195",
-  "update_id": "UPD-208",
+  "decision_id": "CC-DEC-197",
+  "update_id": "UPD-210",
   "generated_at": "2026-08-16",
   "rule": "38 homes × 4 objects (B/F/D/E) = 152. Status is OPEN, COMPLETE, or UNKNOWN-COMPLETE only.",
   "total_objects": 152,
-  "closed_objects": 44,
-  "open_objects": 108,
-  "v2_1_completion_percent": 28.9,
+  "closed_objects": 76,
+  "open_objects": 76,
+  "v2_1_completion_percent": 50.0,
   "objects": [
     {
       "id": "constitutional_structure.B",
@@ -56,9 +56,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "GR composition FY2025–FY2026 FACT spine bound."
     },
     {
       "id": "revenue.F",
@@ -66,9 +66,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Gross → refunds/earmarks → net available → Allocation A flow mapped."
     },
     {
       "id": "revenue.D",
@@ -76,9 +76,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Revenue depends on economy/households; earmarks constrain fungibility."
     },
     {
       "id": "revenue.E",
@@ -86,9 +86,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "AR-DFA-GR-202606 primary."
     },
     {
       "id": "expenditures.B",
@@ -96,9 +96,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Selected Allocation A function spine bound."
     },
     {
       "id": "expenditures.F",
@@ -106,9 +106,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Agency/function consumption mapped for major GR lines."
     },
     {
       "id": "expenditures.D",
@@ -116,9 +116,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Spending constrained by earmarks, contracts, likely federal conditions."
     },
     {
       "id": "expenditures.E",
@@ -126,9 +126,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "AR-FISCAL-SUMMARY-2025R-FY2026 primary."
     },
     {
       "id": "agencies.B",
@@ -136,9 +136,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Major GR recipients identified (DHS, Higher Ed, Corrections, EFA)."
     },
     {
       "id": "agencies.F",
@@ -146,9 +146,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Allocation A → agency package flows for selected entities."
     },
     {
       "id": "agencies.D",
@@ -156,9 +156,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Agency continuity depends on GR + unknown federal overlays."
     },
     {
       "id": "agencies.E",
@@ -166,9 +166,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Fiscal Summary seed."
     },
     {
       "id": "education.B",
@@ -296,9 +296,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Local property AV/millage proxies field-first across 75 counties."
     },
     {
       "id": "local_government.F",
@@ -306,9 +306,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Full state↔local flow panel incomplete; selected jail reimbursement + property proxies only."
     },
     {
       "id": "local_government.D",
@@ -316,9 +316,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Local capacity depends on AV, mills, state transfers, federal grants."
     },
     {
       "id": "local_government.E",
@@ -326,9 +326,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Millage map + selected state→local lines."
     },
     {
       "id": "housing.B",
@@ -776,9 +776,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Statewide procurement spend panel not bound this pass."
     },
     {
       "id": "procurement.F",
@@ -806,9 +806,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Deferred explicitly."
     },
     {
       "id": "economic_development.B",
@@ -816,9 +816,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Incentive/tax-expenditure panel UNKNOWN."
     },
     {
       "id": "economic_development.F",
@@ -846,9 +846,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Tax-Expenditure Ledger opened as OPEN/UNKNOWN."
     },
     {
       "id": "pensions.B",
@@ -856,9 +856,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "CAFR pension panel not bound."
     },
     {
       "id": "pensions.F",
@@ -866,9 +866,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Contribution/benefit flows not bound."
     },
     {
       "id": "pensions.D",
@@ -876,9 +876,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Pensions classed as LOCKED future claims when present."
     },
     {
       "id": "pensions.E",
@@ -886,9 +886,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Gap explicit in Obligation Ledger."
     },
     {
       "id": "public_assets.B",
@@ -896,9 +896,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Statewide public asset valuation not bound."
     },
     {
       "id": "public_assets.F",
@@ -906,9 +906,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Maintenance vs capital expansion cash flows not bound."
     },
     {
       "id": "public_assets.D",
@@ -916,9 +916,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Assets sit opposite obligations on public balance sheet conceptually."
     },
     {
       "id": "public_assets.E",
@@ -926,9 +926,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Asset Ledger opened with UNKNOWN scale."
     },
     {
       "id": "natural_resources.B",
@@ -976,9 +976,9 @@
       "type": "B",
       "type_label": "Baseline",
       "meaning": "What it is now at useful resolution",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Statewide federal share not normalized — UNKNOWN is the result."
     },
     {
       "id": "federal_dependency.F",
@@ -986,9 +986,9 @@
       "type": "F",
       "type_label": "Flow",
       "meaning": "How people/money/services move through this home",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "UNKNOWN-COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Federal→state→program flow matrix not bound."
     },
     {
       "id": "federal_dependency.D",
@@ -996,9 +996,9 @@
       "type": "D",
       "type_label": "Dependency",
       "meaning": "What this home depends on / what depends on it",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Dependency graph questions locked per function."
     },
     {
       "id": "federal_dependency.E",
@@ -1006,9 +1006,9 @@
       "type": "E",
       "type_label": "Evidence",
       "meaning": "Best available primary evidence trail for current decision",
-      "status": "OPEN",
-      "closed_by_pass": null,
-      "note": "Queued for later V2.1 pass."
+      "status": "COMPLETE",
+      "closed_by_pass": "V2.1.2",
+      "note": "Evidence hierarchy + OV-31-01 gap recorded."
     },
     {
       "id": "household_economics.B",
