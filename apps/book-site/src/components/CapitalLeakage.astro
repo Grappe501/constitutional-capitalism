@@ -1,34 +1,35 @@
 ---
+import chapter from "../../../../data/project/stage3_pass34_money_markets_ownership.json";
+
+const productive = chapter.arkansas_dollar_lifecycle?.productive_chain || [];
+const extract = chapter.arkansas_dollar_lifecycle?.extraction_chain || [];
 ---
 
-<figure class="viz viz--leak" data-viz="capital-leakage" id="leakage">
+<figure class="viz viz--leak" data-viz="productive-retention" id="retention">
   <figcaption class="viz__cap">
-    <span class="viz__family">Capital Retention / Leakage</span>
-    <span class="viz__q">Where did it go · who benefits?</span>
+    <span class="viz__family">Productive Retention (not autarky)</span>
+    <span class="viz__q">Healthy trade ≠ structural extraction</span>
   </figcaption>
   <div class="leak-grid">
     <div class="leak-col leak-col--keep">
-      <h3>Retain in Arkansas</h3>
+      <h3>Productive chain</h3>
       <ul>
-        <li>Local wages & supplier spend</li>
-        <li>Worker / community ownership stakes</li>
-        <li>In-state interest & equity returns</li>
-        <li>Reserved public/community engine cash</li>
-        <li>Prosperity Fund productive assets</li>
+        {productive.map((s: string) => <li>{s}</li>)}
       </ul>
     </div>
     <div class="leak-col leak-col--leak">
-      <h3>Leak outward</h3>
+      <h3>Extraction chain</h3>
       <ul>
-        <li>Absentee profits & PE extraction</li>
-        <li>Out-of-state interest & fees</li>
-        <li>External processing margins</li>
-        <li>Dedicated fees with no free cash</li>
-        <li>Import-only consumption loops</li>
+        {extract.map((s: string) => <li>{s}</li>)}
       </ul>
+      <p style="margin-top:0.75rem;font-size:0.88rem;">
+        Imports are not automatically leakage. Outside investment is not automatically extraction. External firms are
+        not automatically harmful.
+      </p>
     </div>
   </div>
   <p class="viz__note">
-    Owner geography is the primary retention switch. Trade continues — retention is not autarky.
+    {chapter.productive_retention?.definition}. {chapter.productive_retention?.safeguard}{" "}
+    {chapter.productive_retention?.rule}
   </p>
 </figure>

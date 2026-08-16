@@ -1,35 +1,31 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
-import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
 import MoneyRiver from "../../../components/MoneyRiver.astro";
-import CapitalLeakage from "../../../components/CapitalLeakage.astro";
+import ThreeEconomies from "../../../components/ThreeEconomies.astro";
+import CapitalFormationLadder from "../../../components/CapitalFormationLadder.astro";
 import OwnershipFlow from "../../../components/OwnershipFlow.astro";
+import PublicIncomeWaterfall from "../../../components/PublicIncomeWaterfall.astro";
+import GeographicMoneyStatement from "../../../components/GeographicMoneyStatement.astro";
 import ProsperityFlywheel from "../../../components/ProsperityFlywheel.astro";
+import CapitalLeakage from "../../../components/CapitalLeakage.astro";
 import RevenueBridge from "../../../components/RevenueBridge.astro";
+import chapter from "../../../../../../data/project/stage3_pass34_money_markets_ownership.json";
 import engine from "../../../../../../data/project/stage2_pass21_money_engine.json";
 import bridge from "../../../../../../data/project/arkansas_money_engine_budget_bridge.json";
 
 const modules = engine.modules || [];
-const fieldOrder = [
-  ["now", "NOW"],
-  ["problem", "PROBLEM"],
-  ["future_state", "FUTURE STATE"],
-  ["mechanism", "MECHANISM"],
-  ["money_flow", "MONEY FLOW"],
-  ["ownership", "OWNERSHIP"],
-  ["household_effect", "HOUSEHOLD EFFECT"],
-  ["government_role", "GOVERNMENT ROLE"],
-  ["market_role", "MARKET ROLE"],
-  ["transition", "TRANSITION"],
-  ["dependencies", "DEPENDENCIES"],
-  ["risks", "RISKS"],
-  ["measurement", "MEASUREMENT"],
-  ["evidence_status", "EVIDENCE STATUS"],
-  ["deferred_validation", "DEFERRED VALIDATION"],
-] as const;
+const checklist = Object.values(chapter.category_checklist || {});
+const evidence = chapter.arkansas_evidence_bound || {};
+const revenue = chapter.revenue_taxonomy || {};
+const banking = chapter.banking_credit || {};
+const markets = chapter.competitive_markets || {};
+const entrepreneurship = chapter.entrepreneurship_pathway || {};
+const extraction = chapter.extraction_test || {};
+const external = chapter.external_income || {};
+const dollar = chapter.arkansas_dollar_lifecycle || {};
 
-function fmtUsd(n?: number) {
+function money(n?: number | null) {
   if (n == null) return "—";
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -37,136 +33,350 @@ function fmtUsd(n?: number) {
     maximumFractionDigits: 0,
   }).format(n);
 }
+
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+
+function chipFor(cls?: string) {
+  if (cls === "FACT") return "chip chip--done";
+  if (cls === "DERIVED_CALCULATION" || cls === "MODEL") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function fmtEv(e: any) {
+  if (e.value_usd != null) return money(e.value_usd);
+  if (e.unit === "USD") return money(e.value);
+  if (e.unit === "percent") return `${e.value}%`;
+  if (typeof e.value === "number") return num(e.value);
+  return "";
+}
 ---
 
 <BaseLayout
-  title="Arkansas Money Engine"
+  title="Money, Markets & Ownership"
   path="/system/money-engine/"
-  description="Stage 2 Pass 2.1 working models for revenue, credit, capital, ownership, markets, and external income."
+  description="Pass 3.4 unabridged — Arkansas dollar lifecycle, three economies, revenue taxonomy, public-income firewall, capital formation, ownership, and competitive markets."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--done">Pass 2.1 complete</span>
-      <h1>{engine.engine_name}</h1>
-      <p class="lede">{engine.one_sentence}</p>
-      <p class="muted">
-        {engine.decision_id} · {engine.update_id} · COUNTABLE engines: $0 ·{" "}
-        <a href="/build-progress/passes/pass-2-1/">What Changed →</a>
+      <span class="chip chip--done">Pass 3.4 complete · 100%</span>
+      <h1>Money, Markets &amp; Ownership</h1>
+      <p class="lede">{chapter.organizing_sentence}</p>
+      <p class="muted">{chapter.governing_question}</p>
+      <p class="lede" style="margin-top:0.75rem;">
+        <strong>{chapter.central_proposition}</strong>
       </p>
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-3-4/">Pass 3.4 What Changed →</a></li>
+        <li><a href="/system/household-engine/">Household Prosperity →</a></li>
+        <li><a href="/system/human-community-engine/">Human &amp; Community Capital →</a></li>
+        <li><a href="/system/arkansas-state-baseline/">Arkansas NOW →</a></li>
+      </ul>
     </header>
 
     <ReadingModes />
 
     <section class="hub-section" data-depth="understand" data-depth-keep>
-      <h2>See the machine</h2>
-      <MoneyRiver
-        stages={[
-          { label: "Taxes · federal · outside demand", kind: "entry" },
-          { label: "Wages · firms · ledgers", kind: "flow" },
-          { label: "Ownership · Fund · local assets", kind: "asset" },
-          { label: "Absentee profit · interest leak", kind: "leak" },
-        ]}
-      />
-      <RevenueBridge
-        nowGrBillions={fmtUsd(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}
-      />
-      <div id="ownership">
-        <OwnershipFlow domain="Arkansas Money Engine" />
-      </div>
-      <div id="flywheel">
-        <ProsperityFlywheel />
-      </div>
+      <h2>See the money system</h2>
+      <MoneyRiver />
+      <ThreeEconomies />
+      <CapitalFormationLadder />
+      <OwnershipFlow domain="Arkansas Money Engine" />
+      <PublicIncomeWaterfall />
+      <GeographicMoneyStatement />
+      <ProsperityFlywheel />
+    </section>
+
+    <section class="hub-section" aria-labelledby="dollar">
+      <h2 id="dollar">I. Start with the Arkansas Dollar</h2>
+      <p class="lede">{dollar.objective}</p>
+      <p class="muted">Not: {dollar.not}</p>
+      <ul class="link-board">
+        <li>Imports ≠ automatic leakage</li>
+        <li>Outside investment ≠ automatic extraction</li>
+        <li>External corporations ≠ automatic harm</li>
+      </ul>
+      <p>{dollar.distinctions?.question}</p>
       <CapitalLeakage />
     </section>
 
-    <section class="hub-section" data-depth="explore" aria-labelledby="budget-now">
-      <h2 id="budget-now">Arkansas NOW — budget bridge</h2>
-      <p class="lede">
-        {bridge.how_arkansas_is_funded_today?.summary}
-      </p>
+    <section class="hub-section" aria-labelledby="revenue">
+      <h2 id="revenue">III. Tax and revenue architecture</h2>
+      <p class="lede">{revenue.long_term_objective}</p>
+      <p class="muted">{revenue.dependency_rule}</p>
+      <RevenueBridge
+        nowGrBillions={money(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}
+      />
       <div class="dash-row">
         <div class="dash-cell">
-          <strong>{fmtUsd(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}</strong>
-          <span>FY2026 GR distributed</span>
+          <strong>{money(revenue.fy2026_gr_facts?.gross_general_revenue_usd)}</strong>
+          <span>FY2026 GR gross · FACT</span>
         </div>
         <div class="dash-cell">
-          <strong>+{bridge.headline_now?.percent_change}%</strong>
-          <span>vs FY2025</span>
+          <strong>{money(revenue.fy2026_gr_facts?.net_available_usd)}</strong>
+          <span>Net available GR · FACT</span>
         </div>
         <div class="dash-cell">
-          <strong>STRONG</strong>
-          <span>Seed confidence</span>
+          <strong>{money(revenue.fy2026_gr_facts?.iit_gross_usd)}</strong>
+          <span>IIT gross · FACT</span>
         </div>
         <div class="dash-cell">
           <strong>$0</strong>
           <span>COUNTABLE engines</span>
         </div>
       </div>
+      <h3>Revenue taxonomy (architecture before rates)</h3>
       <ul class="stack">
-        {(bridge.where_major_expenditures_flow || []).map((row: any) => (
-          <li>
-            <strong>{row.label}</strong> — {fmtUsd(row.fy2026_a_usd)}
-            <div class="muted">{row.character}</div>
-            <div class="muted">CC: {row.cc_implication}</div>
-          </li>
-        ))}
+        {
+          (revenue.categories || []).map((c: any) => (
+            <li>
+              <strong>{c.label}</strong>
+              <div class="muted">{(c.examples || []).join(" · ")}</div>
+            </li>
+          ))
+        }
       </ul>
-      <p>
-        <a href="/system/arkansas-state-baseline/">Arkansas State Baseline corpus →</a>
+      <h3>Classification axes</h3>
+      <ul class="link-board">
+        {(revenue.classification_axes || []).map((a: string) => <li>{a.replaceAll("_", " ")}</li>)}
+      </ul>
+      <p class="muted">Rates not solved in Pass 3.4. Build the architecture.</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="firewall">
+      <h2 id="firewall">IV. Public income versus taxation</h2>
+      <p class="lede">{chapter.public_income_firewall?.distinction}</p>
+      <ol class="cap-ladder">
+        {(chapter.public_income_firewall?.conceptual_chain || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+      <p class="muted" style="margin-top:0.75rem;">
+        {chapter.public_income_firewall?.countable_rule} · {chapter.public_income_firewall?.food_hub_discipline_example}
       </p>
     </section>
 
-    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
-      <h2 id="modules">Working modules (15-field first pass)</h2>
+    <section class="hub-section" aria-labelledby="credit">
+      <h2 id="credit">V. Banking, credit and capital formation</h2>
+      <ul class="stack">
+        {(banking.questions || []).map((q: string) => <li>{q}</li>)}
+      </ul>
+      <ol class="cap-ladder" style="margin-top:0.85rem;">
+        {(banking.flow || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+      <h3>Institutional roles</h3>
+      <ul class="link-board">
+        {(banking.institutional_roles || []).map((r: string) => <li>{r}</li>)}
+      </ul>
+      <p class="muted">{banking.not}</p>
+      <ul class="stack">
+        {
+          (banking.arkansas_evidence || []).map((e: any) => (
+            <li>
+              <span class={chipFor(e.claim_class)}>{e.claim_class}</span>{" "}
+              <strong>{e.label}</strong>
+              {e.value != null ? `: ${num(e.value)}` : ""}
+              {e.value_usd != null ? `: ${money(e.value_usd)}` : ""}
+              <span class="muted">{e.note ? ` · ${e.note}` : ""}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="markets">
+      <h2 id="markets">VIII. Competitive markets</h2>
       <p class="lede">
-        Enough that another expert can understand the proposal — not the unabridged book.
+        <strong>{markets.definition}</strong> {markets.state_objective}
       </p>
-      {
-        modules.map((m: any) => (
-          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
-            <h3 id={`${m.id}-title`}>
-              {m.id} — {m.name}
-            </h3>
-            <p class="module-card__meta">
-              {m.lock} · <EvidenceConfidence level="working" />
-            </p>
-            <dl class="module-fields">
-              {fieldOrder.map(([key, label]) => {
-                const val = m[key];
-                const text = Array.isArray(val) ? val.join("; ") : val;
-                return (
-                  <>
-                    <dt>{label}</dt>
-                    <dd>{text}</dd>
-                  </>
-                );
-              })}
-            </dl>
-          </section>
-        ))
-      }
+      <p>{markets.capitalism_in_cc}</p>
+      <h3>Competition provides</h3>
+      <ul class="link-board">
+        {(markets.competition_provides || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <h3>When markets stop being markets</h3>
+      <ul class="link-board">
+        {(markets.failure_modes || []).map((x: string) => <li>{x}</li>)}
+      </ul>
     </section>
 
-    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
-      <h2 id="deferred">Deferred validation</h2>
+    <section class="hub-section" aria-labelledby="venture">
+      <h2 id="venture">IX. Small business and entrepreneurship</h2>
+      <ol class="cap-ladder">
+        {(entrepreneurship.chain || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+      <p class="muted" style="margin-top:0.75rem;">
+        Barriers connected, not solved: {(entrepreneurship.barriers_connected_not_solved || []).join(" · ")}
+      </p>
+      <p>
+        <span class="chip chip--done">FACT</span> BDS AR establishment entry rate 2023:{" "}
+        <strong>{entrepreneurship.bds_entry_rate_ar_2023_percent}%</strong>
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="extract">
+      <h2 id="extract">X. Corporate concentration and Extraction Test</h2>
+      <p class="lede">{extraction.precision_rule}</p>
+      <p class="muted">{extraction.concern}</p>
       <ul class="stack">
-        {(engine.deferred_to_validation || []).map((item: string) => (
-          <li>{item}</li>
-        ))}
+        {(extraction.questions || []).map((q: string) => <li>{q}</li>)}
       </ul>
-      <h3>Stage 3 flags</h3>
-      <ul class="stack">
-        {(engine.deferred_to_stage_3 || []).map((item: string) => (
-          <li>{item}</li>
-        ))}
+      <p>{extraction.use}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="external">
+      <h2 id="external">XI. External income</h2>
+      <p class="lede">{external.insight}</p>
+      <ul class="link-board">
+        {(external.categories || []).map((c: string) => <li>{c}</li>)}
       </ul>
       <p>
-        <a href="/system/money-ownership/">Money & Ownership spine →</a>
-        {" · "}
-        <a href="/research/#hyp-131">HYP-131 →</a>
-        {" · "}
-        <a href="/build-progress/">Build Progress →</a>
+        <strong>External revenue</strong> vs <strong>external capital ownership</strong>:{" "}
+        {external.factory_note}
       </p>
+      <ul class="stack">
+        {
+          (external.bound_scales || []).map((e: any) => (
+            <li>
+              <span class={chipFor(e.claim_class)}>{e.claim_class}</span>{" "}
+              <strong>{e.label}</strong>: {money(e.value_usd)}
+              <span class="muted">
+                {" "}
+                · {e.period}
+                {e.note ? ` · ${e.note}` : ""}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="spine">
+      <h2 id="spine">Integration — economic heart</h2>
+      <p class="lede">{chapter.integration_spine?.while}</p>
+      <ol class="cap-ladder">
+        {(chapter.integration_spine?.chain || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+    </section>
+
+    <section class="hub-section" aria-labelledby="evidence">
+      <h2 id="evidence">XIV. Arkansas evidence bound</h2>
+      {
+        Object.entries(evidence)
+          .filter(([k]) => k !== "gaps")
+          .map(([k, arr]) => (
+            <div style="margin-bottom:1rem;">
+              <h3>{k.replaceAll("_", " ")}</h3>
+              <ul class="stack">
+                {(Array.isArray(arr) ? arr : []).map((e: any) => (
+                  <li>
+                    <span class={chipFor(e.claim_class)}>{e.claim_class}</span>{" "}
+                    <strong>{e.label}</strong>
+                    {e.value != null || e.value_usd != null ? `: ${fmtEv(e)}` : ""}
+                    <span class="muted">
+                      {" "}
+                      · {e.period}
+                      {e.note ? ` · ${e.note}` : ""}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+      }
+      <p class="muted">Gaps: {(evidence.gaps || []).join(" · ")}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="counter">
+      <h2 id="counter">XV. Counterarguments</h2>
+      <ul class="stack">
+        {
+          (chapter.counterarguments || []).map((c: any) => (
+            <li>
+              <strong>“{c.claim}”</strong>
+              <div class="muted">Strong form: {c.strong_form}</div>
+              <div>{c.architecture_answer}</div>
+              <div class="muted">Unresolved: {c.unresolved}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="me">
+      <h2 id="me">ME modules integrated</h2>
+      <ul class="link-board">
+        {
+          modules.map((m: any) => (
+            <li>
+              {m.id} — {m.name}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        First-pass 15-field models remain in Pass 2.1; Pass 3.4 writes the unabridged system around them.
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="openq">
+      <h2 id="openq">Open validation questions</h2>
+      <ul class="stack">
+        {
+          (chapter.open_validation_questions || []).map((q: any) => (
+            <li>
+              <strong>{q.id}</strong> — {q.question}
+              <div class="muted">Assign: {q.assign}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="joins">
+      <h2 id="joins">Cross-system connections</h2>
+      <ul class="link-board">
+        {
+          (chapter.cross_system_connections || []).map((j: any) => (
+            <li>
+              <a href={j.href}>
+                {j.to} — {j.join}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="check">
+      <h2 id="check">Unabridged category checklist</h2>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{chapter.category_completion_percent}%</strong>
+          <span>Pass 3.4 category</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{checklist.length}/{checklist.length}</strong>
+          <span>Required elements PRESENT</span>
+        </div>
+        <div class="dash-cell">
+          <strong>50%</strong>
+          <span>Unabridged (4/8)</span>
+        </div>
+        <div class="dash-cell">
+          <strong>63%</strong>
+          <span>Overall</span>
+        </div>
+      </div>
+      <ul class="stack">
+        {
+          checklist.map((el: any) => (
+            <li>
+              <span class="chip chip--done">{el.status}</span> {el.label}
+            </li>
+          ))
+        }
+      </ul>
     </section>
   </article>
 </BaseLayout>

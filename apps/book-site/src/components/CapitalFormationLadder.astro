@@ -1,0 +1,23 @@
+---
+import chapter from "../../../../data/project/stage3_pass34_money_markets_ownership.json";
+
+const chain = chapter.capital_formation_ladder?.chain || [];
+const levels = chapter.capital_formation_ladder?.levels || [];
+---
+
+<figure class="viz viz--ladder" data-viz="capital-formation-ladder" id="capital-ladder">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Capital Formation Ladder</span>
+    <span class="viz__q">Surplus → savings → investment → ownership → return → compounding</span>
+  </figcaption>
+  <ol class="cap-ladder">
+    {chain.map((step: string) => <li>{step}</li>)}
+  </ol>
+  <p class="lede" style="margin-top:0.85rem;">
+    Levels: {levels.join(" · ")}
+  </p>
+  <p class="viz__note">
+    Signature join from Pass 3.2 (Prosperity Surplus) and Pass 3.3 (capability → enterprise) into Money, Markets &amp;
+    Ownership. Working V1 — not a COUNTABLE cash claim.
+  </p>
+</figure>

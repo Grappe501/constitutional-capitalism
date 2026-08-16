@@ -1,0 +1,28 @@
+---
+import chapter from "../../../../data/project/stage3_pass34_money_markets_ownership.json";
+
+const economies = chapter.three_economies?.economies || [];
+---
+
+<figure class="viz viz--three-econ" data-viz="three-economies" id="three-economies">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Three Economies</span>
+    <span class="viz__q">Household ↔ Productive ↔ Public — none feeds indefinitely on the others</span>
+  </figcaption>
+  <div class="own-grid three-econ-grid">
+    {
+      economies.map((e: any) => (
+        <div class="own-col">
+          <h3>{e.label}</h3>
+          <ul class="stack" style="margin:0;padding-left:1.1rem;">
+            {(e.contents || []).map((c: string) => (
+              <li>{c}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <p class="lede" style="margin-top:0.85rem;">{chapter.three_economies?.rule}</p>
+  <p class="viz__note">Exchanges among the three must raise productive capacity and household prosperity—not merely transfer claims.</p>
+</figure>

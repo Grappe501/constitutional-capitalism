@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-166",
-  "update_id": "UPD-179",
+  "decision_id": "CC-DEC-167",
+  "update_id": "UPD-180",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": "PASS_3_4",
-  "next_objective": "Pass 3.4 \u2014 Money, Markets & Ownership. Dig deep vertically. Do not open 3.5 until 3.4 is 100%.",
+  "current_pass": "PASS_3_5",
+  "next_objective": "Pass 3.5 \u2014 Government & Democratic Power. Dig deep vertically. Do not open 3.6 until 3.5 is 100%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -335,6 +335,26 @@
           "label": "Capability Continuum"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-167",
+      "title": "Pass 3.4 Money, Markets & Ownership unabridged complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-4/",
+      "links": [
+        {
+          "href": "/system/money-engine/",
+          "label": "Money, Markets & Ownership"
+        },
+        {
+          "href": "/build-progress/passes/pass-3-4/",
+          "label": "Pass 3.4 What Changed"
+        },
+        {
+          "href": "/system/money-engine/#waterfall",
+          "label": "Public-Income Waterfall"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -374,9 +394,9 @@
       "number": "3.4",
       "slug": "pass-3-4",
       "name": "Money, Markets & Ownership",
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-3-4/",
-      "changelog": null,
+      "changelog": "data/project/pass_changelogs/pass_3_4.json",
       "spine_href": "/system/money-engine/"
     },
     {

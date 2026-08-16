@@ -2025,3 +2025,26 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   background: var(--panel);
   font-size: 0.88rem;
 }
+
+
+.own-spectrum {
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+}
+
+.own-spectrum .own-col h3 {
+  font-size: 0.95rem;
+}
+
+.own-spectrum .own-col p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.waterfall-steps {
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+}
+
+.three-econ-grid {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
