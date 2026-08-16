@@ -31,6 +31,7 @@ import pass52 from "../../../../../../data/project/pass_changelogs/pass_5_2.json
 import pass53 from "../../../../../../data/project/pass_changelogs/pass_5_3.json";
 import pass54 from "../../../../../../data/project/pass_changelogs/pass_5_4.json";
 import pass55 from "../../../../../../data/project/pass_changelogs/pass_5_5.json";
+import pass56 from "../../../../../../data/project/pass_changelogs/pass_5_6.json";
 import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
 import stage2Audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
 
@@ -66,6 +67,7 @@ export function getStaticPaths() {
     { params: { pass: "pass-5-3" } },
     { params: { pass: "pass-5-4" } },
     { params: { pass: "pass-5-5" } },
+    { params: { pass: "pass-5-6" } },
   ];
 }
 
@@ -106,6 +108,7 @@ const changelogs: Record<string, any> = {
   "pass-5-3": pass53,
   "pass-5-4": pass54,
   "pass-5-5": pass55,
+  "pass-5-6": pass56,
 };
 const log = changelogs[passSlug || ""] || null;
 const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;

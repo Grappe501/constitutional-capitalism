@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "decision_id": "CC-DEC-185",
-  "update_id": "UPD-198",
-  "status": "STAGE_5_ACTIVE_PASS_5_5_COMPLETE",
+  "decision_id": "CC-DEC-186",
+  "update_id": "UPD-199",
+  "status": "STAGE_5_ACTIVE_PASS_5_6_COMPLETE",
   "stage": "STAGE_5",
   "name": "Public Book \u2014 eleven writing passes",
   "rules": [
@@ -18,7 +18,7 @@
   "dials": {
     "technical_system_percent": 100,
     "technical_system_status": "CERTIFIED",
-    "public_book_completion_percent": 45,
+    "public_book_completion_percent": 55,
     "comparison_explorer": "PARALLEL_PUBLIC_EDUCATION_LANE"
   },
   "passes": [
@@ -88,8 +88,11 @@
       "slug": "pass-5-6",
       "name": "Government That Belongs to the People",
       "approx_pages": "10\u201312",
-      "status": "NEXT",
-      "chapter_completion_percent": 0
+      "status": "COMPLETE",
+      "chapter_completion_percent": 100,
+      "artifact": "data/project/stage5_pass56_government_that_belongs_to_the_people.json",
+      "surface_href": "/public-book/government-that-belongs-to-the-people/",
+      "changelog": "data/project/pass_changelogs/pass_5_6.json"
     },
     {
       "id": "PASS_5_7",
@@ -97,7 +100,7 @@
       "slug": "pass-5-7",
       "name": "So What Is Constitutional Capitalism?",
       "approx_pages": "8\u201310",
-      "status": "QUEUED",
+      "status": "NEXT",
       "chapter_completion_percent": 0
     },
     {

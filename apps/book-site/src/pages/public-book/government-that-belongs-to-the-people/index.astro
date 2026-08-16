@@ -1,35 +1,38 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
-import chapter from "../../../../../../data/project/stage5_pass55_the_productive_arkansas.json";
+import chapter from "../../../../../../data/project/stage5_pass56_government_that_belongs_to_the_people.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
 const sections = chapter.sections || [];
-const systems = chapter.eight_systems || [];
-const test = chapter.productive_systems_test || [];
+const roles = chapter.government_roles || [];
+const breakers = chapter.capture_breaker_families || [];
+const aiLevels = chapter.ai_power_levels || [];
 const visuals = chapter.signature_visuals || [];
-const box = chapter.misconception_box || {};
+const boxes = chapter.misconception_boxes || [];
 const trace = chapter.traceability || [];
 const cert = chapter.certification || {};
 ---
 
 <BaseLayout
-  title="The Productive Arkansas — Public Book"
-  path="/public-book/the-productive-arkansas/"
-  description="Public Book Chapter 5: food, energy, housing, healthcare, transportation, water, digital, and care as one interdependent productive system."
+  title="Government That Belongs to the People — Public Book"
+  path="/public-book/government-that-belongs-to-the-people/"
+  description="Public Book Chapter 6: capable but constrained government — Opposition Test, sovereignty, capture breakers, and citizens govern."
 >
   <article class="public-book">
     <header class="hub-banner">
-      <span class="chip chip--done">Public Book · Chapter 5 · Pass 5.5</span>
+      <span class="chip chip--done">Public Book · Chapter 6 · Pass 5.6</span>
       <p class="muted">Volume II · ~{chapter.approx_pages} pages</p>
       <h1>{chapter.pass_name}</h1>
-      <p class="lede">{chapter.governing_question}</p>
-      <p class="muted">{chapter.shared_role}</p>
+      <p class="lede">{chapter.governing_proposition}</p>
+      <p class="lede" style="margin-top:0.75rem;">
+        <strong>{chapter.opposition_test}</strong>
+      </p>
       <ul class="link-board">
         <li><a href="/public-book/">Public Book hub →</a></li>
-        <li><a href="/public-book/people-are-the-real-capital/">Chapter 4 →</a></li>
-        <li><a href="/system/productive-systems/">Unabridged Productive Systems →</a></li>
-        <li><a href="/build-progress/passes/pass-5-5/">What Changed →</a></li>
+        <li><a href="/public-book/the-productive-arkansas/">Chapter 5 →</a></li>
+        <li><a href="/system/government-engine/">Unabridged Government OS →</a></li>
+        <li><a href="/build-progress/passes/pass-5-6/">What Changed →</a></li>
       </ul>
       <p class="muted">
         Technical System 100% · Public Book {cert.public_book_completion_percent_after}% · COUNTABLE $0
@@ -39,33 +42,66 @@ const cert = chapter.certification || {};
 
     <ReadingModes />
 
-    <section class="hub-section" id="systems" data-depth="understand" data-depth-keep>
-      <h2>Arkansas' Productive Systems</h2>
-      <ul class="link-board">
-        {systems.map((s: string) => <li><strong>{s}</strong></li>)}
-      </ul>
-      <p class="muted">Systems — not eight government departments.</p>
+    <section class="hub-section" id="citizens-govern" data-depth="understand" data-depth-keep>
+      <h2>The governing line</h2>
+      <blockquote class="lede" style="font-size:1.15rem;">
+        {chapter.citizens_govern_line}
+      </blockquote>
     </section>
 
-    <section class="hub-section" id="test">
-      <h2>Productive Systems Test</h2>
+    <section class="hub-section" id="roles">
+      <h2>Four government roles</h2>
       <ul class="stack">
         {
-          test.map((t: any) => (
+          roles.map((r: any) => (
             <li>
-              <strong>{t.id.replaceAll("_", " ")}</strong> — {t.q}
+              <strong>{r.id.replaceAll("_", " / ")}</strong> — {r.q}
             </li>
           ))
         }
       </ul>
     </section>
 
-    <section class="hub-section" id="misconception">
-      <h2>{box.title}</h2>
-      <p class="lede">
-        <strong>{box.answer}</strong>
-      </p>
-      <p>{box.explain}</p>
+    <section class="hub-section" id="breakers">
+      <h2>Eight capture-breaker families</h2>
+      <ul class="stack">
+        {
+          breakers.map((b: any) => (
+            <li>
+              <strong>{b.id.replaceAll("_", " ")}</strong> — {b.q}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">Circuit breakers — not promises of virtuous leadership.</p>
+    </section>
+
+    <section class="hub-section" id="ai-levels">
+      <h2>AI and public power</h2>
+      <ul class="stack">
+        {
+          aiLevels.map((a: any) => (
+            <li>
+              <strong>{a.id.replaceAll("_", " ")}</strong> — {a.q}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="misconceptions">
+      <h2>Misconceptions</h2>
+      {
+        boxes.map((box: any) => (
+          <div style="margin-bottom:1.5rem;">
+            <h3>{box.title}</h3>
+            <p class="lede">
+              <strong>{box.answer}</strong>
+            </p>
+            <p>{box.explain}</p>
+          </div>
+        ))
+      }
     </section>
 
     <section class="hub-section" id="visuals">
@@ -77,21 +113,11 @@ const cert = chapter.certification || {};
               <strong>
                 {v.id} · {v.title}
               </strong>
-              <div class="muted">
-                {v.shows}
-                {v.claim_class ? ` · ${v.claim_class}` : ""}
-              </div>
+              <div class="muted">{v.shows}</div>
             </li>
           ))
         }
       </ul>
-    </section>
-
-    <section class="hub-section" id="efficiency">
-      <h2>Efficiency versus resilience</h2>
-      <blockquote class="lede" style="font-size:1.1rem;">
-        {chapter.efficiency_resilience}
-      </blockquote>
     </section>
 
     {
@@ -130,10 +156,7 @@ const cert = chapter.certification || {};
 
     <section class="hub-section">
       <h2>Next</h2>
-      <p class="lede">
-        Pass 5.6 — Government That Belongs to the People ·{" "}
-        <a href="/public-book/government-that-belongs-to-the-people/">Read →</a>
-      </p>
+      <p class="lede">Pass 5.7 — So What Is Constitutional Capitalism?</p>
       <ul class="link-board">
         {
           (plan.passes || []).slice(0, 8).map((p: any) => (
