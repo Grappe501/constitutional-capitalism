@@ -2,15 +2,15 @@
   "version": "1.1.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-158",
-  "update_id": "UPD-171",
+  "decision_id": "CC-DEC-159",
+  "update_id": "UPD-172",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_2",
-  "current_pass": "PASS_2_2",
-  "next_objective": "Pass 2.2 — Household Prosperity Engine. Income/work + housing + food + healthcare + energy + transportation + childcare + retirement. Ship working models AND household visual assets.",
+  "current_pass": "PASS_2_3",
+  "next_objective": "Pass 2.3 — Human & Community Capital. Education + capability + entrepreneurship + civic/service pathways + population + rural/urban/place.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "stage2_plan_source": "data/project/stage2_six_pass_plan.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
@@ -90,17 +90,17 @@
       "number": "2.2",
       "slug": "pass-2-2",
       "name": "Household Prosperity Engine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-2-2/",
-      "changelog": null,
-      "spine_href": "/system/household-place/"
+      "changelog": "data/project/pass_changelogs/pass_2_2.json",
+      "spine_href": "/system/household-engine/"
     },
     {
       "id": "PASS_2_3",
       "number": "2.3",
       "slug": "pass-2-3",
       "name": "Human & Community Capital",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "href": "/build-progress/passes/pass-2-3/",
       "changelog": null
     },
@@ -144,14 +144,14 @@
       ]
     },
     {
-      "id": "CC-DEC-158",
-      "title": "Stage 2 opened — Pass 2.1 Money Engine complete",
+      "id": "CC-DEC-159",
+      "title": "Pass 2.2 Household Prosperity Engine complete",
       "date": "2026-08-16",
-      "href": "/build-progress/passes/pass-2-1/",
+      "href": "/build-progress/passes/pass-2-2/",
       "links": [
-        { "href": "/system/money-engine/", "label": "Arkansas Money Engine" },
-        { "href": "/build-progress/passes/pass-2-1/", "label": "Pass 2.1 What Changed" },
-        { "href": "/build-progress/", "label": "Build Progress — Stage 2" }
+        { "href": "/system/household-engine/", "label": "Household Prosperity Engine" },
+        { "href": "/build-progress/passes/pass-2-2/", "label": "Pass 2.2 What Changed" },
+        { "href": "/system/money-engine/", "label": "Money Engine join" }
       ]
     }
   ]

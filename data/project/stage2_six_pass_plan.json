@@ -4,7 +4,7 @@
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
   "update_id": "UPD-171",
-  "status": "STAGE_2_SIX_PASS_PLAN_LOCKED_PASS_2_1_COMPLETE",
+  "status": "STAGE_2_SIX_PASS_PLAN_LOCKED_PASS_2_2_COMPLETE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question": "How does each part of Constitutional Capitalism actually work?",
   "not": [
@@ -80,19 +80,27 @@
       "id": "PASS_2_2",
       "slug": "pass-2-2",
       "name": "Household Prosperity Engine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "primary_objective": "Income/work + housing + food + healthcare + energy + transportation + childcare + retirement",
       "visual_targets": [
         "Household Prosperity Dashboard",
-        "Household Prosperity Surplus",
-        "NOW/FUTURE household comparison"
-      ]
+        "Household Money Funnel",
+        "NOW ↔ FUTURE Household Balance Sheet",
+        "Cost-of-Living Pressure Wheel",
+        "Household → Intergenerational Capital Flywheel"
+      ],
+      "decision_id": "CC-DEC-159",
+      "update_id": "UPD-172",
+      "artifact": "data/project/stage2_pass22_household_prosperity_engine.json",
+      "changelog": "data/project/pass_changelogs/pass_2_2.json",
+      "engine_href": "/system/household-engine/",
+      "href": "/build-progress/passes/pass-2-2/"
     },
     {
       "id": "PASS_2_3",
       "slug": "pass-2-3",
       "name": "Human & Community Capital",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "primary_objective": "Education + capability + entrepreneurship + civic/service pathways + population + rural/urban/place"
     },
     {
@@ -119,7 +127,7 @@
       "primary_objective": "Connect every model, resolve contradictions, close orphan flows, certify First-Pass 100%"
     }
   ],
-  "active_pass": "PASS_2_2",
+  "active_pass": "PASS_2_3",
   "holds": [
     "horizontal_expansion_frozen",
     "first_pass_standard_required",

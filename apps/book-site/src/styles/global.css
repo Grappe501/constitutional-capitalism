@@ -1577,3 +1577,128 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
 .before-after__row strong {
   font-variant-numeric: tabular-nums;
 }
+
+.hh-dash {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 900px) {
+  .hh-dash {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.hh-dash__gauge {
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--panel);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hh-dash__gauge--time {
+  border-top-color: var(--copper);
+}
+
+.hh-dash__gauge strong {
+  font-size: 0.95rem;
+}
+
+.hh-dash__gauge span {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.funnel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.funnel__step {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  display: grid;
+  gap: 0.25rem;
+}
+
+.funnel__step span {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.funnel__step--in {
+  border-top: 3px solid var(--accent);
+}
+
+.funnel__step--out {
+  border-top: 3px solid var(--copper);
+  background: color-mix(in srgb, var(--panel) 88%, var(--copper) 12%);
+}
+
+.hh-sheet {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .hh-sheet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.hh-sheet__col {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.hh-sheet__col h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.hh-sheet__col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.hh-sheet__col--result {
+  border-top: 3px solid var(--accent);
+}
+
+.hh-sheet__col--result p {
+  margin: 0 0 0.35rem;
+  color: var(--ink-soft);
+}
+
+.pressure-wheel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.pressure-wheel li {
+  min-width: 5.5rem;
+  text-align: center;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  font-weight: 650;
+  font-size: 0.88rem;
+}

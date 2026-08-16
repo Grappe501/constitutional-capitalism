@@ -1,0 +1,50 @@
+---
+import NowFutureCompare from "./NowFutureCompare.astro";
+---
+
+<figure class="viz viz--hh-sheet" data-viz="household-balance-sheet" id="balance-sheet">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Household Balance Sheet</span>
+    <span class="viz__q">What happens if we change the structure?</span>
+  </figcaption>
+  <div class="hh-sheet">
+    <div class="hh-sheet__col">
+      <h3>Resources</h3>
+      <ul>
+        <li>Wages</li>
+        <li>Benefits</li>
+        <li>Public benefits (where applicable)</li>
+        <li>Investment / ownership income</li>
+      </ul>
+    </div>
+    <div class="hh-sheet__col">
+      <h3>Required costs</h3>
+      <ul>
+        <li>Housing</li>
+        <li>Food</li>
+        <li>Healthcare</li>
+        <li>Energy</li>
+        <li>Transportation</li>
+        <li>Childcare / care</li>
+        <li>Taxes</li>
+        <li>Debt service</li>
+      </ul>
+    </div>
+    <div class="hh-sheet__col hh-sheet__col--result">
+      <h3>Result</h3>
+      <p><strong>Prosperity Surplus</strong></p>
+      <p class="muted">then</p>
+      <p><strong>Assets − Liabilities = Net Wealth</strong></p>
+    </div>
+  </div>
+  <NowFutureCompare
+    nowLabel="Arkansas household NOW"
+    futureLabel="CC household architecture"
+    nowText="Wage-dominant resources; high unavoidable costs; thin ownership income; surplus often near zero; time compressed by commute and unpaid care."
+    futureText="Broader participation income; controlled essential costs; ownership stakes; usable surplus ladder; discretionary time treated as prosperity — architecture only, not fake dollar claims."
+  />
+  <p class="viz__note">
+    Thesis test: Constitutional Capitalism succeeds only if households retain more usable surplus, greater
+    security, and greater ownership over time.
+  </p>
+</figure>

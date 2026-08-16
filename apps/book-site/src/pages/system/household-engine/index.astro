@@ -1,0 +1,178 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import HouseholdDashboard from "../../../components/HouseholdDashboard.astro";
+import HouseholdFunnel from "../../../components/HouseholdFunnel.astro";
+import HouseholdBalanceSheet from "../../../components/HouseholdBalanceSheet.astro";
+import CostPressureWheel from "../../../components/CostPressureWheel.astro";
+import HouseholdIntergenFlywheel from "../../../components/HouseholdIntergenFlywheel.astro";
+import engine from "../../../../../../data/project/stage2_pass22_household_prosperity_engine.json";
+
+const modules = engine.modules || [];
+const surplus = engine.prosperity_surplus_architecture || {};
+const timeDim = engine.time_as_prosperity || {};
+const integration = engine.money_household_integration || {};
+const hp10 = engine.hp10_surplus_panel || {};
+
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+---
+
+<BaseLayout
+  title="Household Prosperity Engine"
+  path="/system/household-engine/"
+  description="Stage 2 Pass 2.2 — what actually changes in the life and balance sheet of an Arkansas household."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 2.2 complete</span>
+      <h1>{engine.engine_name}</h1>
+      <p class="lede">{engine.one_sentence}</p>
+      <p class="muted">
+        {engine.decision_id} · {engine.update_id} · COUNTABLE claims added: $0 ·{" "}
+        <a href="/build-progress/passes/pass-2-2/">What Changed →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the household machine</h2>
+      <HouseholdDashboard />
+      <HouseholdFunnel />
+      <HouseholdBalanceSheet />
+      <CostPressureWheel />
+      <HouseholdIntergenFlywheel />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="surplus">
+      <h2 id="surplus">Household Prosperity Surplus</h2>
+      <p class="lede">
+        <strong>{surplus.formula}</strong>
+      </p>
+      <p>{surplus.insight}</p>
+      <p class="muted">Not the target: {surplus.not_the_target}</p>
+      <h3>What surplus can become</h3>
+      <ol>
+        {(surplus.surplus_uses_ladder || []).map((step: string) => <li>{step}</li>)}
+      </ol>
+      <h3>Prosperity dimensions (including time)</h3>
+      <ul class="link-board">
+        {(timeDim.dimensions || []).map((d: string) => (
+          <li>{d}</li>
+        ))}
+      </ul>
+      <p class="muted">{timeDim.note}</p>
+      <p>
+        <EvidenceConfidence level="working" note="architecture only — no fake dollars" />
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="integration">
+      <h2 id="integration">Money Engine ↔ Household Engine</h2>
+      <p>
+        <span class="chip chip--done">{integration.result}</span>
+      </p>
+      <div class="loop-pair">
+        <div class="loop-card loop-card--power">
+          <h3>Prosperity loop</h3>
+          <p>{integration.prosperity_loop}</p>
+        </div>
+        <div class="loop-card loop-card--capture">
+          <h3>Extraction loop</h3>
+          <p>{integration.extraction_loop}</p>
+        </div>
+      </div>
+      <p>
+        <a href="/system/money-engine/">Read the Money Engine →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Working modules (HP-01–HP-08)</h2>
+      <p class="lede">Harvested and integrated — not reopened as research campaigns.</p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+
+      <section class="module-card" id="hp-10" aria-labelledby="hp-10-title">
+        <h3 id="hp-10-title">
+          {hp10.id} — {hp10.name}
+        </h3>
+        <p class="module-card__meta">
+          Signature panel · <EvidenceConfidence level="working" note="architecture" />
+        </p>
+        <dl class="module-fields">
+          {fieldOrder.map(([key, label]) => {
+            const val = (hp10 as any)[key];
+            if (val == null) return null;
+            const text = Array.isArray(val) ? val.join("; ") : val;
+            return (
+              <>
+                <dt>{label}</dt>
+                <dd>{text}</dd>
+              </>
+            );
+          })}
+        </dl>
+      </section>
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(engine.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(engine.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/system/household-place/">Household & Place spine →</a>
+        {" · "}
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

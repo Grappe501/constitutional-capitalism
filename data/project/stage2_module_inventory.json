@@ -3,14 +3,14 @@
   "slice_id": "CC-STAGE-2-MODULE-INVENTORY-1.0",
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
-  "update_id": "UPD-171",
+  "update_id": "UPD-172",
   "status": "LOCKED_DENOMINATOR",
   "total_modules": 50,
   "counting_standard": "data/project/stage2_first_pass_module_standard.json",
   "statuses": {
     "NOT_STARTED": "No Stage 2 working model yet (Stage 1 bone may exist)",
     "IN_PROGRESS": "Pass open; fields incomplete",
-    "FIRST_PASS": "All 15 fields present at working-model depth — counts toward coverage",
+    "FIRST_PASS": "All 15 fields present at working-model depth \u2014 counts toward coverage",
     "DEFERRED_STAGE_3": "Known; depth reserved"
   },
   "coverage": {
@@ -22,60 +22,345 @@
     "after_pass_2_1": {
       "first_pass_count": 14,
       "first_pass_percent": 28,
-      "note": "Pass 2.1 adds eight Money Engine modules (ME-01–ME-08). Prior six non-money first-pass modules retained. 14/50 = 28%."
+      "note": "Pass 2.1 adds eight Money Engine modules (ME-01\u2013ME-08). Prior six non-money first-pass modules retained. 14/50 = 28%."
+    },
+    "after_pass_2_2": {
+      "first_pass_count": 22,
+      "first_pass_percent": 44,
+      "note": "Pass 2.2: HP-01\u2013HP-08 + HP-10 surplus architecture FIRST_PASS. Prior ME + HC/GO retained. 22/50 = 44%."
     }
   },
-  "prior_first_pass_ids_before_2_1": ["HP-03", "HC-01", "HC-05", "HC-08", "GO-02", "GO-10"],
+  "prior_first_pass_ids_before_2_1": [
+    "HP-03",
+    "HC-01",
+    "HC-05",
+    "HC-08",
+    "GO-02",
+    "GO-10"
+  ],
   "modules": [
-    { "id": "ME-01", "name": "Revenue & tax replacement", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-01" },
-    { "id": "ME-02", "name": "Banking & credit", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-02" },
-    { "id": "ME-03", "name": "Capital formation & Prosperity Fund", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-03" },
-    { "id": "ME-04", "name": "Labor → ownership ladder", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-04" },
-    { "id": "ME-05", "name": "Markets & competition", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-05" },
-    { "id": "ME-06", "name": "External income capture", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-06" },
-    { "id": "ME-07", "name": "Public income engines stack", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-07" },
-    { "id": "ME-08", "name": "Capital retention & leakage", "wave": "PASS_2_1", "status": "FIRST_PASS", "href": "/system/money-engine/#me-08" },
-    { "id": "HP-01", "name": "Household income & work", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-02", "name": "Housing & land tenure", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-03", "name": "Food security & local food", "wave": "PASS_2_2", "status": "FIRST_PASS", "note": "Food-hub pathway first-pass substance retained; Pass 2.2 may deepen" },
-    { "id": "HP-04", "name": "Healthcare capacity", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-05", "name": "Energy for households", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-06", "name": "Mobility & transportation", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-07", "name": "Childcare & family infrastructure", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-08", "name": "Retirement & aging security", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-09", "name": "Disability & accessibility economics", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HP-10", "name": "Household prosperity surplus panel", "wave": "PASS_2_2", "status": "NOT_STARTED" },
-    { "id": "HC-01", "name": "Education & capability pipeline", "wave": "PASS_2_3", "status": "FIRST_PASS", "note": "HYP-133 layer" },
-    { "id": "HC-02", "name": "Apprenticeship & skills", "wave": "PASS_2_3", "status": "NOT_STARTED" },
-    { "id": "HC-03", "name": "Entrepreneurship pathways", "wave": "PASS_2_3", "status": "NOT_STARTED" },
-    { "id": "HC-04", "name": "Civic & public service pathways", "wave": "PASS_2_3", "status": "NOT_STARTED" },
-    { "id": "HC-05", "name": "Population retain/attract", "wave": "PASS_2_3", "status": "FIRST_PASS", "note": "HYP-132 sensitivity architecture" },
-    { "id": "HC-06", "name": "Rural place viability", "wave": "PASS_2_3", "status": "NOT_STARTED" },
-    { "id": "HC-07", "name": "Urban/metro place viability", "wave": "PASS_2_3", "status": "NOT_STARTED" },
-    { "id": "HC-08", "name": "Community prosperity accounts", "wave": "PASS_2_3", "status": "FIRST_PASS", "note": "Community prosperity / civic-wealth frameworks" },
-    { "id": "GO-01", "name": "Constitutional rights & limits", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-02", "name": "Representative democracy", "wave": "PASS_2_4", "status": "FIRST_PASS", "note": "Democracy framework" },
-    { "id": "GO-03", "name": "Direct democracy & citizen power", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-04", "name": "Administrative government", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-05", "name": "State/local finance & federalism", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-06", "name": "Procurement design", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-07", "name": "Justice & public safety", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-08", "name": "Anti-corruption & political money", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-09", "name": "Data, information & AI rights", "wave": "PASS_2_4", "status": "NOT_STARTED" },
-    { "id": "GO-10", "name": "Public accountability measurement", "wave": "PASS_2_4", "status": "FIRST_PASS", "note": "Metrics / Build Progress substance" },
-    { "id": "TR-01", "name": "Arkansas NOW fiscal baseline", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-02", "name": "Transition architecture", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-03", "name": "Sequencing & Dependency Rule", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-04", "name": "Resilience under shock", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-05", "name": "Household prosperity measurement", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-06", "name": "Geographic money statements", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-07", "name": "Intergenerational capital", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "TR-08", "name": "Expansion & correction system", "wave": "PASS_2_5", "status": "NOT_STARTED" },
-    { "id": "IX-01", "name": "Cross-spine money continuity", "wave": "PASS_2_6", "status": "NOT_STARTED" },
-    { "id": "IX-02", "name": "Cross-spine power continuity", "wave": "PASS_2_6", "status": "NOT_STARTED" },
-    { "id": "IX-03", "name": "Contradiction register resolution", "wave": "PASS_2_6", "status": "NOT_STARTED" },
-    { "id": "IX-04", "name": "Orphan-flow closure", "wave": "PASS_2_6", "status": "NOT_STARTED" },
-    { "id": "IX-05", "name": "First-pass certification packet", "wave": "PASS_2_6", "status": "NOT_STARTED" },
-    { "id": "IX-06", "name": "Stage 3/4 handoff register", "wave": "PASS_2_6", "status": "NOT_STARTED" }
+    {
+      "id": "ME-01",
+      "name": "Revenue & tax replacement",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-01"
+    },
+    {
+      "id": "ME-02",
+      "name": "Banking & credit",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-02"
+    },
+    {
+      "id": "ME-03",
+      "name": "Capital formation & Prosperity Fund",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-03"
+    },
+    {
+      "id": "ME-04",
+      "name": "Labor \u2192 ownership ladder",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-04"
+    },
+    {
+      "id": "ME-05",
+      "name": "Markets & competition",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-05"
+    },
+    {
+      "id": "ME-06",
+      "name": "External income capture",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-06"
+    },
+    {
+      "id": "ME-07",
+      "name": "Public income engines stack",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-07"
+    },
+    {
+      "id": "ME-08",
+      "name": "Capital retention & leakage",
+      "wave": "PASS_2_1",
+      "status": "FIRST_PASS",
+      "href": "/system/money-engine/#me-08"
+    },
+    {
+      "id": "HP-01",
+      "name": "Work, Income & Compensation",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-01"
+    },
+    {
+      "id": "HP-02",
+      "name": "Housing & Household Capital",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-02"
+    },
+    {
+      "id": "HP-03",
+      "name": "Food & Household Security",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-03"
+    },
+    {
+      "id": "HP-04",
+      "name": "Healthcare & Household Risk",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-04"
+    },
+    {
+      "id": "HP-05",
+      "name": "Energy & Utilities",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-05"
+    },
+    {
+      "id": "HP-06",
+      "name": "Transportation & Mobility",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-06"
+    },
+    {
+      "id": "HP-07",
+      "name": "Family, Childcare & Care Economy",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-07"
+    },
+    {
+      "id": "HP-08",
+      "name": "Retirement, Aging & Household Wealth",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-08"
+    },
+    {
+      "id": "HP-09",
+      "name": "Disability & accessibility economics",
+      "wave": "PASS_2_2",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HP-10",
+      "name": "Household prosperity surplus panel",
+      "wave": "PASS_2_2",
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-10",
+      "note": "Prosperity Surplus panel architecture locked in Pass 2.2"
+    },
+    {
+      "id": "HC-01",
+      "name": "Education & capability pipeline",
+      "wave": "PASS_2_3",
+      "status": "FIRST_PASS",
+      "note": "HYP-133 layer"
+    },
+    {
+      "id": "HC-02",
+      "name": "Apprenticeship & skills",
+      "wave": "PASS_2_3",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HC-03",
+      "name": "Entrepreneurship pathways",
+      "wave": "PASS_2_3",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HC-04",
+      "name": "Civic & public service pathways",
+      "wave": "PASS_2_3",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HC-05",
+      "name": "Population retain/attract",
+      "wave": "PASS_2_3",
+      "status": "FIRST_PASS",
+      "note": "HYP-132 sensitivity architecture"
+    },
+    {
+      "id": "HC-06",
+      "name": "Rural place viability",
+      "wave": "PASS_2_3",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HC-07",
+      "name": "Urban/metro place viability",
+      "wave": "PASS_2_3",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HC-08",
+      "name": "Community prosperity accounts",
+      "wave": "PASS_2_3",
+      "status": "FIRST_PASS",
+      "note": "Community prosperity / civic-wealth frameworks"
+    },
+    {
+      "id": "GO-01",
+      "name": "Constitutional rights & limits",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-02",
+      "name": "Representative democracy",
+      "wave": "PASS_2_4",
+      "status": "FIRST_PASS",
+      "note": "Democracy framework"
+    },
+    {
+      "id": "GO-03",
+      "name": "Direct democracy & citizen power",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-04",
+      "name": "Administrative government",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-05",
+      "name": "State/local finance & federalism",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-06",
+      "name": "Procurement design",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-07",
+      "name": "Justice & public safety",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-08",
+      "name": "Anti-corruption & political money",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-09",
+      "name": "Data, information & AI rights",
+      "wave": "PASS_2_4",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "GO-10",
+      "name": "Public accountability measurement",
+      "wave": "PASS_2_4",
+      "status": "FIRST_PASS",
+      "note": "Metrics / Build Progress substance"
+    },
+    {
+      "id": "TR-01",
+      "name": "Arkansas NOW fiscal baseline",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-02",
+      "name": "Transition architecture",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-03",
+      "name": "Sequencing & Dependency Rule",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-04",
+      "name": "Resilience under shock",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-05",
+      "name": "Household prosperity measurement",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-06",
+      "name": "Geographic money statements",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-07",
+      "name": "Intergenerational capital",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "TR-08",
+      "name": "Expansion & correction system",
+      "wave": "PASS_2_5",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-01",
+      "name": "Cross-spine money continuity",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-02",
+      "name": "Cross-spine power continuity",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-03",
+      "name": "Contradiction register resolution",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-04",
+      "name": "Orphan-flow closure",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-05",
+      "name": "First-pass certification packet",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "IX-06",
+      "name": "Stage 3/4 handoff register",
+      "wave": "PASS_2_6",
+      "status": "NOT_STARTED"
+    }
   ]
 }

@@ -55,7 +55,7 @@
       "name": "Full First Pass",
       "target": "Every component has an actual working model — 100% of modules at FIRST_PASS (15-field standard)",
       "status": "ACTIVE",
-      "current_work": "Pass 2.1 Money Engine COMPLETE. Next: Pass 2.2 Household Prosperity Engine. 15-field first-pass standard locked. Visuals ship with every pass.",
+      "current_work": "Pass 2.2 Household Prosperity Engine COMPLETE. Next: Pass 2.3 Human & Community Capital. Prosperity Surplus + time dimensions locked. Money↔Household loops PASS.",
       "stage2_plan": "data/project/stage2_six_pass_plan.json",
       "module_inventory": "data/project/stage2_module_inventory.json",
       "first_pass_standard": "data/project/stage2_first_pass_module_standard.json",
@@ -124,20 +124,20 @@
   ],
   "progress_bars": {
     "skeleton_coverage_percent": 100,
-    "first_pass_coverage_percent": 28,
+    "first_pass_coverage_percent": 44,
     "publication_completion_percent": 3,
     "validation_completion_percent": 0,
     "notes": {
       "skeleton": "Stage 1 COMPLETE — 100%. Horizontal expansion frozen.",
-      "first_pass": "Stage 2 ACTIVE — Pass 2.1 Money Engine complete (14/50 modules = 28%). Next: Pass 2.2 Household Prosperity Engine.",
+      "first_pass": "Stage 2 ACTIVE — Pass 2.2 Household Engine complete (22/50 = 44%). Next: Pass 2.3 Human & Community Capital.",
       "publication": "Aligned to manuscript substance (~outline/concept dominant)",
       "validation": "Stage 4 not open; COUNTABLE engines remain $0"
     }
   },
   "overall_project_completion": {
-    "percent": 33,
+    "percent": 37,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+28+3+0)=32.75 → 33",
+    "calculation": "0.25*(100+44+3+0)=36.75 → 37",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2–3 close — that is honesty, not regression"
   },
@@ -146,8 +146,8 @@
   "active_stage1_pass": null,
   "last_completed_stage1_pass": "PASS_5",
   "active_stage": "STAGE_2",
-  "active_stage2_pass": "PASS_2_2",
-  "last_completed_stage2_pass": "PASS_2_1",
+  "active_stage2_pass": "PASS_2_3",
+  "last_completed_stage2_pass": "PASS_2_2",
   "horizontal_expansion_frozen": true,
   "manager_scorecard": {
     "purpose": "After each meaningful build cycle",
