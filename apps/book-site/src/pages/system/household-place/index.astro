@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import siteNav from "../../../../../../data/project/site_spine_navigation.json";
+import spineData from "../../../../../../data/project/stage1_pass2_household_place_spine.json";
 
 const spine = (siteNav.spines || []).find((s) => s.slug === "household-place");
 if (!spine) throw new Error("Household place spine missing");
+const areas = spineData.structural_areas || [];
 ---
 
 <BaseLayout
@@ -13,11 +15,49 @@ if (!spine) throw new Error("Household place spine missing");
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Pass 2 — building now</span>
+      <span class="chip chip--done">Pass 2 complete</span>
       <h1>{spine.title}</h1>
-      <p class="lede">{spine.blurb}</p>
-      <p class="muted">Locks: {(spine.locks || []).join(" · ")} · plus care, food, energy, education homes</p>
+      <p class="lede">{spineData.master_architecture_fragment?.one_sentence || spine.blurb}</p>
+      <p class="muted">
+        Locks: {(spine.locks || []).join(" · ")} · Areas: {areas.length}/10 · Skeleton after pass:{" "}
+        {spineData.skeleton_coverage_after_pass}%
+      </p>
+      <p>
+        <a href="/build-progress/passes/pass-2/">What Changed — Pass 2 →</a>
+      </p>
     </header>
+
+    <section class="hub-section" aria-labelledby="areas">
+      <h2 id="areas">Structural areas</h2>
+      <p class="lede">
+        Stage-1 standard only: problem → objective → mechanism → ownership/funding → household
+        effect → connections → deferred questions.
+      </p>
+      <ul class="stack">
+        {
+          areas.map((a: any) => (
+            <li>
+              <strong>
+                <a href={a.href}>{a.area}</a>
+              </strong>
+              {a.lock && <span class="muted"> · {a.lock}</span>}
+              <div class="muted">{a.objective}</div>
+              {(a.also || []).length > 0 && (
+                <div class="muted">
+                  Also:{" "}
+                  {a.also.map((h: string, i: number) => (
+                    <>
+                      {i > 0 && " · "}
+                      <a href={h}>{h.replace(/^\/|\/$/g, "")}</a>
+                    </>
+                  ))}
+                </div>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
 
     <section class="hub-section">
       <h2>Doctrine & system pages</h2>
@@ -31,26 +71,17 @@ if (!spine) throw new Error("Household place spine missing");
     </section>
 
     <section class="hub-section">
-      <h2>Research on this spine</h2>
+      <h2>Research & next</h2>
       <ul class="link-board">
         {spine.research.map((link) => (
           <li>
             <a href={link.href}>{link.label}</a>
           </li>
         ))}
-        <li><a href="/research/">Full research desk</a></li>
+        <li><a href="/system/government-power/">Next: Government & Democratic Power (Pass 3)</a></li>
         <li><a href="/system/money-ownership/">Previous: Money & Ownership</a></li>
         <li><a href="/system/">System map</a></li>
       </ul>
-    </section>
-
-    <section class="hub-section">
-      <h2>Pass 2 job</h2>
-      <p class="lede">
-        Give every household-and-place topic a clean structural home and check contradictions — not a
-        deep research campaign. Housing, mobility, infrastructure, healthcare, education, food,
-        energy, childcare, aging, disability, and rural/urban access belong here.
-      </p>
     </section>
   </article>
 </BaseLayout>

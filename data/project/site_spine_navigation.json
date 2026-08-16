@@ -71,24 +71,29 @@
       "slug": "household-place",
       "href": "/system/household-place/",
       "title": "Household & Place",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "blurb": "Housing, mobility, food, energy, health, education, care, and rural/urban access — the household unit of prosperity.",
       "locks": ["LOCK-03", "LOCK-07"],
       "links": [
+        { "href": "/local-ownership/", "label": "Local ownership / housing & land" },
         { "href": "/health/", "label": "Health & human capacity" },
-        { "href": "/prosperous-aging/", "label": "Prosperous aging" },
         { "href": "/food-security/", "label": "Food security" },
         { "href": "/family-farm-prosperity/", "label": "Family farm prosperity" },
         { "href": "/energy-sovereignty/", "label": "Energy sovereignty" },
-        { "href": "/resource-sovereignty/", "label": "Resource sovereignty" },
+        { "href": "/resource-sovereignty/", "label": "Resource / water / place infrastructure" },
         { "href": "/human-capital/", "label": "Human capital / education" },
-        { "href": "/family/", "label": "Family" },
+        { "href": "/family/", "label": "Family / childcare infrastructure" },
+        { "href": "/assistance/", "label": "Assistance" },
+        { "href": "/prosperous-aging/", "label": "Prosperous aging" },
+        { "href": "/equal-standing/", "label": "Equal standing / accessibility" },
         { "href": "/community-resilience/", "label": "Community resilience" },
-        { "href": "/flourishing/", "label": "Flourishing index" }
+        { "href": "/flourishing/", "label": "Flourishing index" },
+        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline (reference)" }
       ],
       "research": [
         { "href": "/research/#hyp-133", "label": "HYP-133 Human capital & education" },
-        { "href": "/research/#hyp-130", "label": "Arkansas needs / capacity" }
+        { "href": "/research/#hyp-130", "label": "Arkansas needs / capacity" },
+        { "href": "/build-progress/passes/pass-2/", "label": "Pass 2 What Changed" }
       ]
     },
     {
@@ -96,7 +101,7 @@
       "slug": "government-power",
       "href": "/system/government-power/",
       "title": "Government & Democratic Power",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "blurb": "How public power is structured, funded, constrained, and kept from capture.",
       "locks": ["LOCK-06", "LOCK-08", "LOCK-09"],
       "links": [
@@ -161,10 +166,10 @@
   "research_desk": {
     "blurb": "Find active architecture, hypotheses, and evidence without hunting the flat nav.",
     "working_now": [
-      { "href": "/system/household-place/", "label": "Pass 2 — Household & Place Spine (active)" },
-      { "href": "/build-progress/passes/pass-2/", "label": "What Changed — Pass 2 (live changelog)" },
+      { "href": "/system/government-power/", "label": "Pass 3 — Government & Democratic Power Spine (active)" },
+      { "href": "/build-progress/passes/pass-2/", "label": "Pass 2 What Changed (complete)" },
+      { "href": "/build-progress/", "label": "Build Progress hub — 3 passes remain to Stage-1 audit" },
       { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline corpus" },
-      { "href": "/build-progress/", "label": "Build Progress hub" },
       { "href": "/updates/", "label": "Latest public updates" }
     ],
     "hypotheses": [

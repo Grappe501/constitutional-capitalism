@@ -4,7 +4,9 @@
   "generated_at": "2026-08-15",
   "decision_id": "CC-DEC-151",
   "update_id": "UPD-164",
-  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_1_COMPLETE",
+  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_2_COMPLETE",
+  "amended_by": ["CC-DEC-152", "CC-DEC-153"],
+  "passes_remaining_after_pass_2": 3,
   "budget": "5_passes_to_stage_1_100_percent_skeleton",
   "may_finish_in": 4,
   "budget_reason": "Do not falsely declare skeleton complete while a major system function is still missing",
@@ -42,10 +44,9 @@
       "source_documents",
       "unresolved_deferred",
       "github_commit",
-      "deployment_date"
-    ]
+    "deployment_date"
+  ]
   },
-  "amended_by": "CC-DEC-152",
   "passes": [
     {
       "id": "PASS_1",
@@ -66,8 +67,9 @@
     {
       "id": "PASS_2",
       "name": "Household & Place Spine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "skeleton_target_percent": "75-80",
+      "skeleton_after_percent": 78,
       "covers": [
         "LOCK-03 Housing/land",
         "LOCK-07 Transportation/infrastructure (place half)",
@@ -85,13 +87,17 @@
         "Build Progress / What Changed This Pass system",
         "Arkansas State Baseline / Budget Corpus (acquire & organize; analysis deferred)"
       ],
+      "artifact": "data/project/stage1_pass2_household_place_spine.json",
+      "return": "reports/CC_STAGE_1_PASS_2_HOUSEHOLD_PLACE_SPINE_1_0_RETURN.md",
       "changelog": "data/project/pass_changelogs/pass_02.json",
-      "public_changelog": "/build-progress/passes/pass-2/"
+      "public_changelog": "/build-progress/passes/pass-2/",
+      "decision_id": "CC-DEC-153",
+      "update_id": "UPD-166"
     },
     {
       "id": "PASS_3",
       "name": "Government & Democratic Power Spine",
-      "status": "QUEUED",
+      "status": "QUEUED_NEXT",
       "skeleton_target_percent": "88-92",
       "covers": [
         "LOCK-06 State/local finance and procurement",

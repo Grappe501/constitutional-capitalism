@@ -1,0 +1,361 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-1-PASS-2-HOUSEHOLD-PLACE-SPINE-1.0",
+  "pass_id": "PASS_2",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-153",
+  "update_id": "UPD-166",
+  "status": "PASS_2_COMPLETE_SPINE_INTEGRATED",
+  "maturity": "STAGE_1_BONE_INTEGRATION_NOT_STAGE_2_SUBSTANCE",
+  "spine_name": "Household & Place Spine",
+  "purpose": "Give every household necessity and place foundation a clean structural home — housing, health, food, energy, education, mobility, care, aging, disability, and core infrastructure — so Stage 1 skeleton coverage advances without opening research campaigns.",
+  "locks_integrated": ["LOCK-03", "LOCK-07"],
+  "also_homes": [
+    "healthcare",
+    "food",
+    "energy",
+    "education_human_capability",
+    "childcare_family_infrastructure",
+    "aging_long_term_care",
+    "disability_accessibility"
+  ],
+  "exit_gate_judgment": {
+    "household_place_structural_areas_represented_percent": 100,
+    "orphan_household_necessities": 0,
+    "unresolved_issues_correctly_deferred_percent": 100,
+    "skeleton_target_band": "75-80",
+    "skeleton_coverage_after_pass": 78,
+    "commit_required": true,
+    "github_push_required": true,
+    "netlify_deployment_required": true,
+    "pass_2_what_changed_page_required": true
+  },
+  "master_architecture_fragment": {
+    "title": "Household & Place Engine",
+    "one_sentence": "Constitutional Capitalism treats the household as the unit of prosperity and place as the physical system that makes work, care, learning, health, food, energy, and mobility possible — so ownership, funding, and infrastructure rules must raise household capability without inventing a theoretical society detached from Arkansas today.",
+    "flow": [
+      {
+        "step": 1,
+        "id": "place_foundations",
+        "label": "Land, housing, water, digital, mobility, and energy set where households can live and produce (LOCK-03, LOCK-07)"
+      },
+      {
+        "step": 2,
+        "id": "daily_necessities",
+        "label": "Food, healthcare, and energy access determine whether wages convert into real security"
+      },
+      {
+        "step": 3,
+        "id": "capability_and_care",
+        "label": "Education, childcare/family infrastructure, aging, and disability access convert inheritance into capability across the life course (HYP-133)"
+      },
+      {
+        "step": 4,
+        "id": "money_join",
+        "label": "Household outcomes join Money & Ownership: credit, ownership ladders, and public-income engines fund place without taxing ordinary homes into insecurity (Pass 1)"
+      },
+      {
+        "step": 5,
+        "id": "power_and_transition_join",
+        "label": "Delivery agencies, procurement, and transition sequencing live on Pass 3–4 — this spine defines what must be delivered"
+      }
+    ]
+  },
+  "structural_areas": [
+    {
+      "id": "HP-01",
+      "area": "Housing / land",
+      "lock": "LOCK-03",
+      "href": "/local-ownership/",
+      "also": ["/family/", "/community-prosperity/"],
+      "problem": "Housing cost, land speculation, zoning barriers, and insecure tenure dominate household budgets; property-tax dependence ties local finance to a contested base.",
+      "objective": "Make secure, affordable housing and productive land access normal while preventing speculative capture of community-created land rents.",
+      "mechanism": "Ownership pathways (including CLT / limited-equity where fit); anti-speculation and vacant-land tools; supply-expanding zoning that preserves community character; property-tax replacement path via Community Prosperity Ledger; working-farm stewardship rewards.",
+      "ownership_funding": "Households and community vehicles own shelter assets; public/community claim on unearned land-value gains; mortgage/credit from LOCK-02; millage replacement from LOCK-01/06 later.",
+      "household_effect": "Lower shelter burden, secure tenure, pathway to equity without speculative displacement.",
+      "connections": ["LOCK-02 credit", "LOCK-07 location/infrastructure", "LOCK-01/06 finance", "aging accessibility", "childcare location"],
+      "unresolved_deferred": [
+        {"item": "Arkansas constitutional constraints on land-value capture", "disposition": "VALIDATION_QUESTION"},
+        {"item": "Rural vs metro housing strategy differentiation", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Property / local finance layers already partially bound elsewhere; full millage replacement design stays Pass 3 (LOCK-06) — do not reopen here."
+    },
+    {
+      "id": "HP-02",
+      "area": "Healthcare / human capacity",
+      "lock": null,
+      "href": "/health/",
+      "also": ["/essential-systems/"],
+      "problem": "The system finances billable illness transactions more reliably than permanent rural capacity; households face access gaps, medical debt risk, and workforce shortages.",
+      "objective": "Finance durable health capacity so households can work, learn, and age without medical insecurity destroying surplus.",
+      "mechanism": "Capacity-first rural health architecture; essential-systems rules for insurance/markets; prevention and primary care as household infrastructure; join to aging and disability accessibility.",
+      "ownership_funding": "Mix of public capacity investment, community facilities, and market providers under anti-extraction rules (LOCK-05); GR Medicaid/DHS patterns visible in State Baseline — analysis deferred.",
+      "household_effect": "Access, lower catastrophic risk, more usable time and earnings.",
+      "connections": ["essential systems", "aging", "disability", "LOCK-05 healthcare concentration", "HYP-133 human capital"],
+      "unresolved_deferred": [
+        {"item": "Arkansas Medicaid / DHS line-item capability audit", "disposition": "KNOWN_DETAIL"},
+        {"item": "Public-option vs regulated private mix by region", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "FY2026 DHS ~$1.86B GR allocation is a major touchpoint — flag for Stage 2/3 capability questions; no line-item pass here."
+    },
+    {
+      "id": "HP-03",
+      "area": "Food security / local food systems",
+      "lock": null,
+      "href": "/food-security/",
+      "also": ["/family-farm-prosperity/", "/local-ownership/"],
+      "problem": "Households face food insecurity while agricultural value often leaves the state before households and communities capture processing surplus.",
+      "objective": "Secure household nutrition and keep more food-system surplus inside Arkansas communities.",
+      "mechanism": "Community food security framework; family-farm prosperity; local ownership / hub pathways (HYP-131 food-hub stage closed at first-pass maturity — COUNTABLE $0).",
+      "ownership_funding": "Local/community ownership of processing and distribution where viable; public share only after free-cash gates; farms as productive household/community assets.",
+      "household_effect": "Reliable food access; potential local employment and ownership stakes.",
+      "connections": ["LOCK-05 concentration in food", "LOCK-01 external income", "energy/logistics", "LOCK-07 infrastructure"],
+      "unresolved_deferred": [
+        {"item": "Facility utilization / operating-statement validation", "disposition": "VALIDATION_QUESTION"},
+        {"item": "County-level food-access series completion", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Agriculture and DHS nutrition-adjacent spending are baseline-relevant; do not reopen food-hub deep bind."
+    },
+    {
+      "id": "HP-04",
+      "area": "Energy sovereignty",
+      "lock": null,
+      "href": "/energy-sovereignty/",
+      "also": ["/resource-sovereignty/"],
+      "problem": "Households and communities depend on energy systems that can export surplus, impose volatile bills, and leave rural reliability gaps.",
+      "objective": "Reliable, affordable energy access with ownership and pricing rules that retain productive surplus locally where public assets enable it.",
+      "mechanism": "Energy sovereignty framework; resource stewardship joins; public participation / cooperative and municipal pathways where markets fail; resilience under shock tests later.",
+      "ownership_funding": "Mix of utility ownership forms; public claim on rents from public-enabled surplus; Use/Depletion engines (LOCK-01) priced later — not counted now.",
+      "household_effect": "Bill stability, reliability, reduced energy poverty.",
+      "connections": ["LOCK-07 infrastructure", "LOCK-01 use/depletion", "food cold-chain", "resilience Pass 4"],
+      "unresolved_deferred": [
+        {"item": "County cooperative vs IOU ownership map", "disposition": "KNOWN_DETAIL"},
+        {"item": "Rate-design incidence on low-income households", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Utility regulation and capital outlays touch GR/special revenues — normalize later from baseline corpus."
+    },
+    {
+      "id": "HP-05",
+      "area": "Education / human capability",
+      "lock": null,
+      "href": "/human-capital/",
+      "also": ["/flourishing/"],
+      "problem": "Education is treated as a consumption cost rather than conversion of Arkansas inheritance into greater human capability across generations.",
+      "objective": "Every generation leaves Arkansas's stock of capability and prosperity larger than it found it — through bona fide residency and public investment (HYP-133), not citizenship rhetoric.",
+      "mechanism": "Human-capital / education prosperity architecture; intergenerational capital layer; Resident Investment Rate design (legal tests later); Demand Map remains first empirical pass.",
+      "ownership_funding": "Public educational assets as intergenerational capital; nonresident premiums reflect access value; public IP claim ∝ public contribution (joins Pass 1).",
+      "household_effect": "Capability, mobility with loyalty pathways, lower credential debt traps for residents.",
+      "connections": ["HYP-130 needs", "HYP-132 retain/attract", "LOCK-04 worker ladder", "childcare", "baseline higher-ed GR"],
+      "unresolved_deferred": [
+        {"item": "HYP-133 Demand Map empirical first pass", "disposition": "KNOWN_DETAIL"},
+        {"item": "Three separate legal tests (residency/premium/IP)", "disposition": "VALIDATION_QUESTION"}
+      ],
+      "arkansas_baseline_flag": "FY2026 Education Freedom Accounts $187.5M and ~$777.5M institutions of higher education GR are major patterns — Stage 2/3 capability questions; no EFA policy war inside Pass 2."
+    },
+    {
+      "id": "HP-06",
+      "area": "Transportation / mobility",
+      "lock": "LOCK-07",
+      "href": "/system/household-place/",
+      "also": ["/community-resilience/"],
+      "problem": "Without reliable mobility, households cannot reach work, care, school, or clinics — especially in rural Arkansas.",
+      "objective": "Guarantee mobility floors that make household participation real across geography.",
+      "mechanism": "Integrated mobility stack inside LOCK-07: roads, transit, rural mobility options; joins housing location and aging/disability access.",
+      "ownership_funding": "Public infrastructure ownership with pricing/use rules; capital from state/federal/local mixes; Use engines later — not counted now.",
+      "household_effect": "Access to jobs and services; lower time poverty.",
+      "connections": ["LOCK-03 housing location", "aging", "disability", "LOCK-04 labor access", "food logistics"],
+      "unresolved_deferred": [
+        {"item": "Rural mobility minimum service standards by county type", "disposition": "KNOWN_DETAIL"},
+        {"item": "Transit funding post-property-tax path", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Highway/transport appropriations live across GR and dedicated streams — corpus normalize later."
+    },
+    {
+      "id": "HP-07",
+      "area": "Childcare / family infrastructure",
+      "lock": null,
+      "href": "/family/",
+      "also": ["/assistance/", "/human-capital/"],
+      "problem": "Childcare scarcity and cost block labor participation, firm formation, and early capability formation; family is treated as private residual rather than prosperity infrastructure.",
+      "objective": "Make family formation and stable caregiving compatible with work, ownership ladders, and community rootedness.",
+      "mechanism": "Family framework + assistance architecture as household infrastructure; childcare as workforce and human-capital prerequisite; joins HYP-133 early years.",
+      "ownership_funding": "Public/community capacity mixed with private providers; anti-extraction in care markets; funding joins LOCK-01 engines and LOCK-04 labor — design-level only.",
+      "household_effect": "Time, earnings, and child capability rise together.",
+      "connections": ["HYP-133", "LOCK-04", "housing location", "assistance", "health"],
+      "unresolved_deferred": [
+        {"item": "Arkansas childcare slot/wage cost model", "disposition": "KNOWN_DETAIL"},
+        {"item": "Employer vs public vs co-op provision mix", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "DHS children/family and early-childhood lines are baseline touchpoints — flag only."
+    },
+    {
+      "id": "HP-08",
+      "area": "Aging / long-term care",
+      "lock": null,
+      "href": "/prosperous-aging/",
+      "also": ["/health/", "/community-resilience/"],
+      "problem": "Aging often forces asset exhaustion, institutionalization default, and caregiver collapse — destroying household and community surplus.",
+      "objective": "Prosperous aging: security, participation, and care without impoverishment.",
+      "mechanism": "Prosperous aging framework; home/community care preference; accessibility joins disability and housing; workforce for care economy.",
+      "ownership_funding": "Public long-term supports + family/community care capacity; facility ownership rules against extractive chains (LOCK-05).",
+      "household_effect": "Dignity, retained assets, reduced catastrophic care shocks.",
+      "connections": ["health", "disability", "LOCK-03 housing", "LOCK-07 mobility", "human capital caregivers"],
+      "unresolved_deferred": [
+        {"item": "Arkansas LTC payer mix and facility ownership map", "disposition": "KNOWN_DETAIL"},
+        {"item": "Caregiver wage/ownership pathway design", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "DHS aging/adult behavioral health and related GR lines — Stage 2 capability pull."
+    },
+    {
+      "id": "HP-09",
+      "area": "Disability / accessibility",
+      "lock": null,
+      "href": "/equal-standing/",
+      "also": ["/health/", "/prosperous-aging/", "/justice/"],
+      "problem": "Disability and accessibility gaps exclude households from work, education, housing, and civic life — converting treatable barriers into permanent disadvantage.",
+      "objective": "Equal standing in participation: physical, digital, and service accessibility as default system design.",
+      "mechanism": "Equal-standing doctrine applied to place systems; accessibility requirements across housing, mobility, digital, education, and care; assistance without dependency traps.",
+      "ownership_funding": "Public duty to accessible infrastructure; private providers under equal-access rules; funding via general capacity budgets — not a new extractive fee on disabled households.",
+      "household_effect": "Participation, earnings, and independence.",
+      "connections": ["LOCK-07", "LOCK-03", "health", "education", "justice/restoration"],
+      "unresolved_deferred": [
+        {"item": "County accessibility gap inventory", "disposition": "KNOWN_DETAIL"},
+        {"item": "Work/benefit cliff design under CC assistance rules", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "DDS and related DHS lines are baseline-relevant; no deep bind in Pass 2."
+    },
+    {
+      "id": "HP-10",
+      "area": "Physical / digital / water infrastructure",
+      "lock": "LOCK-07",
+      "href": "/resource-sovereignty/",
+      "also": ["/community-resilience/", "/energy-sovereignty/", "/systems-intelligence/"],
+      "problem": "Water, watershed, broadband, and core physical systems determine whether places can host households and enterprise — or become extractive private bottlenecks.",
+      "objective": "Reliable water stewardship and digital/physical access as shared productive capacity with clear public claim where public assets enable private surplus.",
+      "mechanism": "LOCK-07 stack: watershed/water rights stewardship; broadband/public-option digital layers where markets fail; cybersecurity baselines for public systems; joins energy and food logistics.",
+      "ownership_funding": "Public/community ownership of essential access layers where monopoly risk is high; pricing prevents private rents on necessity.",
+      "household_effect": "Participation in work/school/care; resilience under shock.",
+      "connections": ["LOCK-03", "energy", "food", "LOCK-08 data later", "resilience Pass 4"],
+      "unresolved_deferred": [
+        {"item": "Arkansas water-rights / agricultural use under climate stress", "disposition": "VALIDATION_QUESTION"},
+        {"item": "Public vs private broadband model by county type", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Capital and special-revenue streams for water/digital to be normalized in baseline corpus across years — not analyzed in this pass."
+    }
+  ],
+  "module_homes": [
+    {
+      "function": "Secure shelter and land access",
+      "lives_in": "LOCK-03 / HP-01",
+      "connects_to": ["LOCK-02", "LOCK-07", "aging", "childcare"],
+      "funded_how": "Ownership pathways + community claim on land rents + credit",
+      "household_effect": "Shelter security and equity pathway",
+      "capture_prevention": "Anti-speculation; limit absentee extractive ownership"
+    },
+    {
+      "function": "Deliver mobility, water, digital, core place infrastructure",
+      "lives_in": "LOCK-07 / HP-06 / HP-10",
+      "connects_to": ["LOCK-03", "energy", "food logistics", "LOCK-08 later"],
+      "funded_how": "Public capital + use pricing later; anti-monopoly access rules",
+      "household_effect": "Access to work, care, school, markets",
+      "capture_prevention": "No private necessity rents on essential access"
+    },
+    {
+      "function": "Health, food, energy as daily household foundations",
+      "lives_in": "HP-02 / HP-03 / HP-04",
+      "connects_to": ["essential systems", "LOCK-05", "LOCK-01 engines"],
+      "funded_how": "Capacity investment + market rules; baseline GR is reference not replacement math",
+      "household_effect": "Surplus survives necessities",
+      "capture_prevention": "Competition + local ownership pathways"
+    },
+    {
+      "function": "Capability and care across the life course",
+      "lives_in": "HP-05 / HP-07 / HP-08 / HP-09",
+      "connects_to": ["HYP-133", "LOCK-04", "equal standing", "assistance"],
+      "funded_how": "Intergenerational public capital + targeted supports",
+      "household_effect": "Capability, time, dignity from childhood through aging",
+      "capture_prevention": "Residency/investment framing; anti-benefit-tourism without anti-talent rules"
+    }
+  ],
+  "os_crosscut_pass_result": {
+    "ownership": "Homes, land, care facilities, food/energy assets, and infrastructure access rights are explicit household/community ownership questions",
+    "capital_formation": "Education, health capacity, infrastructure, and farm/energy assets are how current surplus becomes future household capability",
+    "market_design": "Care, food, energy, and housing markets need anti-extraction rules or they destroy household surplus",
+    "household_economics": "This spine is the household-economics core — income means little if shelter, care, food, energy, and mobility consume it",
+    "power": "Whoever controls housing, care chains, utilities, and digital access can reconcentrate political power — joins Pass 3"
+  },
+  "orphan_check": {
+    "household_necessities_scanned": [
+      "shelter",
+      "land_access",
+      "healthcare",
+      "food",
+      "energy",
+      "education",
+      "mobility",
+      "childcare",
+      "aging_care",
+      "disability_access",
+      "water",
+      "digital_access",
+      "physical_infrastructure"
+    ],
+    "orphans_found": [],
+    "note": "Water and digital sit inside HP-10 / LOCK-07 rather than separate top-level orphans."
+  },
+  "contradictions_flagged_not_resolved": [
+    {
+      "id": "CX-P2-01",
+      "note": "Education Freedom Accounts expansion vs public capability-investment framing — political and design tension; both touch baseline GR. Do not resolve inside skeleton pass.",
+      "disposition": "KNOWN_DETAIL"
+    },
+    {
+      "id": "CX-P2-02",
+      "note": "Corrections medical contract growth (~$139.4M line) sits next to household health capacity scarcity — joined to Pass 3 justice/public safety + Stage 2 capability questions.",
+      "disposition": "KNOWN_DETAIL"
+    },
+    {
+      "id": "CX-P2-03",
+      "note": "Property-tax replacement needed for housing security but municipal finance lives on Pass 3 LOCK-06 — sequence must not collapse schools/debt hard cores.",
+      "disposition": "KNOWN_DETAIL"
+    }
+  ],
+  "structural_holes_this_pass": [],
+  "structural_bones_added_because_missing": [],
+  "arkansas_baseline_usage_this_pass": {
+    "posture": "Reference existing spending touchpoints; flag patterns; no detailed budget analysis",
+    "corpus": "data/project/arkansas_state_baseline_corpus.json",
+    "public_surface": "/system/arkansas-state-baseline/",
+    "flags_raised": [
+      "DHS ~$1.86B GR",
+      "Corrections total ~$629M incl. medical contract",
+      "Education Freedom Accounts $187.5M",
+      "Institutions of higher education ~$777.5M"
+    ]
+  },
+  "what_changed": [
+    "Household & Place Spine integrated — 10/10 structural areas at Stage-1 seven-field standard",
+    "LOCK-03 and LOCK-07 joined to health, food, energy, education, care, aging, disability homes",
+    "Zero orphan household necessities at skeleton level",
+    "Arkansas Baseline referenced for spending touchpoints without line-item campaign",
+    "Skeleton coverage moved to 78%; Overall Project Completion recalculated",
+    "Pass 2 What Changed page completed with direct reading links"
+  ],
+  "what_remains": [
+    "Pass 3 Government & Democratic Power Spine",
+    "Pass 4 Transition/Resilience/Measurement Spine",
+    "Pass 5 Whole-System Closure Audit → Stage 1 = 100%"
+  ],
+  "passes_remaining_after_this_one": 3,
+  "next_pass_only": "PASS_3 — Government & Democratic Power Spine",
+  "skeleton_coverage_after_pass": 78,
+  "overall_project_completion_after_pass": 23,
+  "holds": [
+    "no_deep_research",
+    "no_full_budget_line_analysis",
+    "no_food_hub_reopen",
+    "bones_integrated_not_perfected",
+    "defer_unanswered_questions",
+    "deploy_checkpoint_required"
+  ]
+}
