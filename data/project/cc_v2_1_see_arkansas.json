@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-SEE-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-195",
-  "update_id": "UPD-208",
+  "decision_id": "CC-DEC-196",
+  "update_id": "UPD-209",
   "generated_at": "2026-08-16",
   "status": "IN_PROGRESS",
   "gate": "V2.1",
@@ -42,7 +42,11 @@
       "Tax proposals",
       "Public-bank exploration",
       "Pilots",
-      "Agency restructuring"
+      "Agency restructuring",
+      "75 county books",
+      "Best-to-worst county rankings",
+      "Pre-assigned county futures",
+      "Fabricated county cash-flow precision"
     ]
   },
   "evidence_standard": {
@@ -111,5 +115,14 @@
       "exit": "ARKANSAS NOW — OPERATING X-RAY interactive join of 2.1.1–2.1.4.",
       "href": null
     }
-  ]
+  ],
+  "geographic_dimension": {
+    "id": "V2-GEO-001",
+    "status": "LOCKED",
+    "matrix": "75 counties × 12 dimensions",
+    "href": "/v2/see-arkansas/counties/",
+    "decomposition_rule": "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability. Not every metric needs county data. Every major system must ask whether geography materially changes the answer.",
+    "finish_line_addition": "When V2.1 closes: Here's Arkansas—and here's how the Arkansas system manifests differently across its 75 counties."
+  },
+  "passes_note": "Geographic 75-county spine is permanent infrastructure inside SEE — populated field-first alongside passes 2.1.1–2.1.5, not as a sixth pass/gate."
 }

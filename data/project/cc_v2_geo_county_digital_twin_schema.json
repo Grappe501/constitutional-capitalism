@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-GEO-COUNTY-DIGITAL-TWIN-SCHEMA-1.0",
+  "decision_id": "CC-DEC-196",
+  "update_id": "UPD-209",
+  "geo_decision_id": "V2-GEO-001",
+  "generated_at": "2026-08-16",
+  "status": "LOCKED",
+  "title": "Arkansas 75 — County Digital Twin Schema",
+  "matrix": {
+    "counties": 75,
+    "dimensions": 12,
+    "cells": 900
+  },
+  "two_questions": {
+    "arkansas_now": {
+      "label": "ARKANSAS NOW",
+      "question": "What role does this county actually play in Arkansas' present political-economic system?"
+    },
+    "cc_future": {
+      "label": "CC FUTURE",
+      "question": "Given its people, assets, geography, capabilities, constraints and relationships with surrounding counties, what functions could this county realistically perform in a more prosperous Arkansas?",
+      "rule": "Identify possibilities and pathways — never decide that a county must become something."
+    }
+  },
+  "dimensions": [
+    {
+      "id": "people",
+      "label": "People",
+      "question": "Population, age, migration, households, workforce"
+    },
+    {
+      "id": "household_prosperity",
+      "label": "Household Prosperity",
+      "question": "Income, housing, costs, poverty, ownership proxies, economic pressure"
+    },
+    {
+      "id": "human_capability",
+      "label": "Human Capability",
+      "question": "Schools, credentials, trades, colleges, skills, health"
+    },
+    {
+      "id": "production",
+      "label": "Production",
+      "question": "What the county actually produces"
+    },
+    {
+      "id": "employment",
+      "label": "Employment",
+      "question": "Industries, occupations, wages, commuting"
+    },
+    {
+      "id": "ownership_capital",
+      "label": "Ownership & Capital",
+      "question": "Local businesses, farms, major employers, financial access, productive assets"
+    },
+    {
+      "id": "land_natural_capital",
+      "label": "Land & Natural Capital",
+      "question": "Agriculture, forests, water, minerals, recreation"
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "question": "Roads, rail, broadband, power, water, logistics"
+    },
+    {
+      "id": "essential_systems",
+      "label": "Essential Systems",
+      "question": "Healthcare, food, energy, care, housing"
+    },
+    {
+      "id": "government_public_money",
+      "label": "Government & Public Money",
+      "question": "Local revenue, expenditures, state/federal dependence, public assets"
+    },
+    {
+      "id": "connectivity",
+      "label": "Connectivity",
+      "question": "Where residents work/shop/study/receive care; county relationships"
+    },
+    {
+      "id": "resilience",
+      "label": "Resilience",
+      "question": "Concentration, population loss, disaster, employer/federal dependence"
+    }
+  ],
+  "evidence_classes": [
+    "KNOWN",
+    "ESTIMATED",
+    "PROXY",
+    "UNKNOWN"
+  ],
+  "balance_sheet": {
+    "assets": [
+      "people",
+      "skills",
+      "businesses",
+      "land",
+      "natural_resources",
+      "infrastructure",
+      "institutions",
+      "location",
+      "productive_capacity",
+      "community_capital"
+    ],
+    "pressures": [
+      "housing",
+      "healthcare",
+      "population_change",
+      "poverty",
+      "infrastructure_deficiencies",
+      "workforce_mismatch",
+      "fiscal_pressure",
+      "market_concentration",
+      "external_dependency"
+    ],
+    "flows": [
+      "people_in_out",
+      "workers_in_out",
+      "money_in_out",
+      "goods_in_out",
+      "energy_in_out",
+      "public_money_in_out",
+      "capital_in_out"
+    ],
+    "note": "Metabolism of the county — not a complete audited cash-flow statement."
+  },
+  "geographic_money_statement": {
+    "status": "CONTRACT_ONLY",
+    "inflows_targets": [
+      "private_income_entering",
+      "public_transfers_investment_entering",
+      "external_sales",
+      "investment_income",
+      "other_measurable_inflows"
+    ],
+    "rule": "Show KNOWN / ESTIMATED / PROXY / UNKNOWN. Do not fabricate precision."
+  },
+  "opportunity_portfolio": {
+    "status": "ARCHITECTURE_LOCKED_CONTENT_DEFERRED",
+    "fields": [
+      "existing_strengths",
+      "underused_capability",
+      "binding_constraints",
+      "regional_relationships",
+      "potential_pathways",
+      "required_conditions",
+      "failure_conditions",
+      "household_transmission",
+      "resilience_implications"
+    ],
+    "forbidden_publication": "The future of County X is [single industry].",
+    "philosophy": "The system identifies opportunity; people and markets still decide what actually emerges."
+  },
+  "network": {
+    "label": "THE ARKANSAS COUNTY NETWORK",
+    "stack": [
+      "county",
+      "neighboring_counties",
+      "regional_hub",
+      "arkansas",
+      "national_world"
+    ],
+    "emergent_role_candidates_not_preassigned": [
+      "production_county",
+      "commuter_county",
+      "regional_service_hub",
+      "logistics_corridor",
+      "tourism_recreation",
+      "agricultural_production_cluster",
+      "manufacturing_cluster",
+      "healthcare_hub",
+      "education_center",
+      "retirement_destination",
+      "high_growth_absorption_zone",
+      "graceful_contraction_candidate",
+      "multi_county_dependency_node"
+    ],
+    "example_graph_questions": [
+      "Which counties depend on the same hospital?",
+      "Where are food-processing gaps?",
+      "Where does electricity originate versus get consumed?",
+      "Where do workers commute?",
+      "Where are housing pressures spreading?",
+      "Where are childcare deserts?",
+      "Which counties depend disproportionately on one employer?",
+      "Which communities share water systems?",
+      "Where does broadband weakness constrain otherwise viable development?",
+      "Where could several counties share infrastructure rather than duplicating it?"
+    ]
+  },
+  "map_data_contract": {
+    "status": "CONTRACT_LOCKED_UI_DEFERRED",
+    "layers": [
+      "Population",
+      "Household Prosperity",
+      "Housing",
+      "Healthcare",
+      "Agriculture",
+      "Manufacturing",
+      "Energy",
+      "Employment",
+      "Wages",
+      "Ownership",
+      "Public Spending",
+      "Federal Dependency",
+      "Infrastructure",
+      "Migration",
+      "Resilience",
+      "Future Opportunity"
+    ],
+    "interaction": "Full-screen Arkansas map → choose layer → click county → County X-Ray.",
+    "what_if_scenarios_deferred_to_v2_v3": [
+      "RECESSION",
+      "AI_DISRUPTION",
+      "MAJOR_EMPLOYER_LOSS",
+      "FEDERAL_FUNDING_REDUCTION",
+      "POPULATION_PLUS_10",
+      "POPULATION_MINUS_10",
+      "ENERGY_EXPANSION",
+      "FOOD_PROCESSING_EXPANSION",
+      "HEALTHCARE_REGIONALIZATION"
+    ]
+  },
+  "field_first_pipeline": {
+    "rule": "Populate one field across all 75 before deepening interpretation.",
+    "phase_0": "Schema lock + empty 75 records (THIS SLICE)",
+    "phase_1": "People fields across all 75 (PEP/ACS)",
+    "phase_2": "Household prosperity fields across all 75 (SAIPE/ACS)",
+    "later": "Remaining dimensions field-first; network edges; balance sheets; portfolios"
+  },
+  "decomposition_rule": {
+    "id": "V2-GEO-DECOMPOSITION-RULE",
+    "text": "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability. Not every metric needs county data. Every major system must ask whether geography materially changes the answer."
+  }
+}

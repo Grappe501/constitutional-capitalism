@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import schema from "@data/project/cc_v2_geo_county_digital_twin_schema.json";
+---
+
+<BaseLayout
+  title="The Arkansas County Network"
+  path="/v2/see-arkansas/counties/network/"
+  description="Counties aren't islands. Network contract for relationships across Arkansas' 75 counties."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">CONTRACT</span>
+      <h1>{schema.network?.label || "The Arkansas County Network"}</h1>
+      <p class="lede">
+        A weak county isn't necessarily failing because it doesn't contain everything internally.
+        Map relationships before assigning roles.
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Relationship stack</h2>
+      <ol class="stack">
+        {(schema.network?.stack || []).map((s: string) => (
+          <li>
+            <strong>{s}</strong>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="hub-section">
+      <h2>Questions the graph should answer</h2>
+      <ul class="stack">
+        {(schema.network?.example_graph_questions || []).map((q: string) => <li>{q}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Emergent role candidates (not pre-assigned)</h2>
+      <p class="muted">These labels may emerge from evidence. They must not be stamped onto counties in advance.</p>
+      <ul class="stack">
+        {(schema.network?.emergent_role_candidates_not_preassigned || []).map((r: string) => (
+          <li>
+            <code>{r}</code>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Map / data contract</h2>
+      <p class="lede">{schema.map_data_contract?.interaction}</p>
+      <p class="muted">UI deferred. Layers locked:</p>
+      <ul class="stack">
+        {(schema.map_data_contract?.layers || []).map((l: string) => <li>{l}</li>)}
+      </ul>
+      <p class="muted">What-if scenarios deferred to later v2/v3 work.</p>
+      <p>
+        <a href="/v2/see-arkansas/counties/">Arkansas 75 →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

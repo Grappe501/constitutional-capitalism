@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import inventory from "@data/project/cc_v2_geo_arkansas_75_inventory.json";
+import schema from "@data/project/cc_v2_geo_county_digital_twin_schema.json";
+
+export function getStaticPaths() {
+  return (inventory.records || []).map((r: any) => ({
+    params: { fips: r.fips },
+  }));
+}
+
+const { fips } = Astro.params;
+const rec = (inventory.records || []).find((r: any) => r.fips === fips);
+const dimMeta = Object.fromEntries((schema.dimensions || []).map((d: any) => [d.id, d]));
+const dims = rec?.dimensions || {};
+
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+---
+
+<BaseLayout
+  title={rec ? `${rec.label} — County Digital Twin` : "County"}
+  path={`/v2/see-arkansas/counties/${fips}/`}
+  description="Standardized county digital twin — ARKANSAS NOW and CC FUTURE opportunity portfolio architecture."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--queued">{rec?.status || "—"}</span>
+      <h1>{rec?.label || fips}</h1>
+      <p class="muted">FIPS {fips} · same 12-dimension model as every other Arkansas county</p>
+      <p class="lede">No ranking. No assigned future. Evidence first.</p>
+    </header>
+
+    <section class="hub-section">
+      <h2>ARKANSAS NOW</h2>
+      <p class="muted">{schema.two_questions?.arkansas_now?.question}</p>
+      <p>{rec?.arkansas_now_summary || "Summary deferred until field-first population fills dimensions."}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>CC FUTURE — Opportunity Portfolio</h2>
+      <p class="muted">{schema.two_questions?.cc_future?.rule}</p>
+      <ul class="stack">
+        {(schema.opportunity_portfolio?.fields || []).map((f: string) => (
+          <li>
+            <strong>{f}</strong>
+            <div class="muted">Architecture locked · content deferred</div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>12 dimensions</h2>
+      <ul class="stack">
+        {
+          Object.entries(dims).map(([id, cell]: [string, any]) => (
+            <li>
+              <span
+                class={
+                  cell.status === "PARTIAL" || cell.status === "COMPLETE"
+                    ? "chip chip--done"
+                    : "chip chip--queued"
+                }
+              >
+                {cell.status} · {cell.evidence_class}
+              </span>{" "}
+              <strong>{dimMeta[id]?.label || id}</strong>
+              <div class="muted">{dimMeta[id]?.question}</div>
+              {cell.metrics && Object.keys(cell.metrics).length > 0 && (
+                <ul>
+                  {Object.entries(cell.metrics).map(([k, m]: [string, any]) => (
+                    <li class="muted">
+                      {k}:{" "}
+                      {m.unit === "USD"
+                        ? money(m.value)
+                        : m.unit === "percent"
+                          ? `${m.value}%`
+                          : num(m.value)}{" "}
+                      ({m.source})
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {(cell.notes || []).map((n: string) => (
+                <div class="muted">{n}</div>
+              ))}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Balance sheet (metabolism)</h2>
+      <p class="muted">Assets · Pressures · Flows — structure locked; values deferred.</p>
+      <ul class="link-board">
+        <li>
+          <strong>Assets</strong>
+          <div class="muted">{(schema.balance_sheet?.assets || []).join(" · ")}</div>
+        </li>
+        <li>
+          <strong>Pressures</strong>
+          <div class="muted">{(schema.balance_sheet?.pressures || []).join(" · ")}</div>
+        </li>
+        <li>
+          <strong>Flows</strong>
+          <div class="muted">{(schema.balance_sheet?.flows || []).join(" · ")}</div>
+        </li>
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/counties/">All 75 →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

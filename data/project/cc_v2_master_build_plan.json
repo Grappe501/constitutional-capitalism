@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-MASTER-BUILD-PLAN-1.0",
-  "decision_id": "CC-DEC-195",
-  "update_id": "UPD-208",
+  "decision_id": "CC-DEC-196",
+  "update_id": "UPD-209",
   "generated_at": "2026-08-16",
   "status": "V2_1_IN_PROGRESS",
   "title": "Constitutional Capitalism v2.0 — Master Build Plan",
@@ -32,7 +32,11 @@
     "Preassign for every v2 question: decision, minimum evidence, source hierarchy, completion gate, deferred.",
     "Deferred field protects against three-week rabbit holes when three facts would suffice.",
     "No doctrinal drift through implementation — architectural amendments are explicit version events.",
-    "COUNTABLE remains $0 until proven. Hypotheticals are not revenue."
+    "COUNTABLE remains $0 until proven. Hypotheticals are not revenue.",
+    "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability.",
+    "No county ranking from best to worst — compare dimensions.",
+    "County roles emerge from evidence; never pre-assign futures.",
+    "Populate county fields field-first across all 75 — not 75 sequential books."
   ],
   "gates": [
     {
@@ -1258,7 +1262,7 @@
     "build_progress": "/build-progress/",
     "status": "/status/"
   },
-  "next_only": "V2.1.2 — Government & Money (describe the money machine; no redesign).",
+  "next_only": "Continue V2.1.2 Government & Money — with geographic decomposition rule active. County field-first population proceeds in parallel as spine, not a separate gate.",
   "map_freeze": {
     "status": "FROZEN",
     "frozen_at": "2026-08-16",
@@ -1272,5 +1276,15 @@
     "Dial inflation by words written",
     "Explorer expansion while V2.1 is the active build priority"
   ],
-  "active_pass": "V2.1.1 COMPLETE → next V2.1.2"
+  "active_pass": "V2.1.1 COMPLETE → next V2.1.2",
+  "geographic_dimension": {
+    "id": "V2-GEO-001",
+    "status": "LOCKED",
+    "inside_gate": "V2.1",
+    "not_a_sixth_gate": true,
+    "schema": "data/project/cc_v2_geo_county_digital_twin_schema.json",
+    "inventory": "data/project/cc_v2_geo_arkansas_75_inventory.json",
+    "decomposition_rule": "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability. Not every metric needs county data. Every major system must ask whether geography materially changes the answer.",
+    "href": "/v2/see-arkansas/counties/"
+  }
 }

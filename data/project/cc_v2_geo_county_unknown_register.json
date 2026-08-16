@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-GEO-COUNTY-UNKNOWN-REGISTER-1.0",
+  "decision_id": "CC-DEC-196",
+  "update_id": "UPD-209",
+  "generated_at": "2026-08-16",
+  "status": "LIVE",
+  "rule": "County unknowns inherit NON-BLOCKING default unless a specific V2.2 redesign decision requires resolution.",
+  "entries": [
+    {
+      "id": "UNK-GEO-001",
+      "question": "Complete PEP/ACS people fields for all 75 counties on one vintage?",
+      "class": "NON-BLOCKING",
+      "resolves_via": "Field-first People pass across all 75",
+      "v2_2_requires": false
+    },
+    {
+      "id": "UNK-GEO-002",
+      "question": "Comparable household prosperity burden stack for all 75?",
+      "class": "NON-BLOCKING",
+      "resolves_via": "Field-first Household Prosperity pass",
+      "v2_2_requires": false
+    },
+    {
+      "id": "UNK-GEO-003",
+      "question": "Complete county cash-flow / Geographic Money Statement?",
+      "class": "NON-BLOCKING",
+      "resolves_via": "Partial KNOWN/ESTIMATED/PROXY panels — never fabricated completeness",
+      "v2_2_requires": false
+    },
+    {
+      "id": "UNK-GEO-004",
+      "question": "Commuting / care / shopping edge graph for the County Network?",
+      "class": "NON-BLOCKING",
+      "resolves_via": "LOD / ACS commute / healthcare referral proxies",
+      "v2_2_requires": false
+    }
+  ]
+}

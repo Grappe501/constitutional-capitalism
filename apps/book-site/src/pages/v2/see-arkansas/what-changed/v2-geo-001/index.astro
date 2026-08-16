@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import log from "@data/project/pass_changelogs/v2_geo_001.json";
+---
+
+<BaseLayout
+  title="What Changed — V2-GEO-001"
+  path="/v2/see-arkansas/what-changed/v2-geo-001/"
+  description="Narrow Master Plan amendment: 75-County Geographic Dimension."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">WHAT CHANGED</span>
+      <h1>
+        {log.pass_id} — {log.pass_name}
+      </h1>
+      <p class="muted">
+        {log.decision_id} · {log.update_id} · {log.amendment_class} · recommendations:{" "}
+        <strong>0</strong>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>BEFORE → AFTER</h2>
+      <ul class="stack">
+        {
+          (log.before_after || []).map((row: any) => (
+            <li>
+              <strong>{row.label}</strong>
+              <div class="muted">
+                {row.before} → <strong>{row.after}</strong>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">{log.note}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>New UNKNOWNs</h2>
+      <ul class="stack">
+        {(log.new_unknowns || []).map((u: string) => <li>{u}</li>)}
+      </ul>
+      <p class="lede">Nothing recommended. No rankings.</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Surfaces</h2>
+      <ul class="link-board">
+        {
+          (log.experience_links || []).map((l: any) => (
+            <li>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Deferred</h2>
+      <ul class="stack">
+        {(log.deferred_items || []).map((d: string) => <li>{d}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
