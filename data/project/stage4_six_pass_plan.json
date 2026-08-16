@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-4-SIX-PASS-ATTACK-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-173",
-  "update_id": "UPD-186",
-  "status": "STAGE_4_ACTIVE_PASS_4_1_COMPLETE",
+  "decision_id": "CC-DEC-175",
+  "update_id": "UPD-188",
+  "status": "STAGE_4_ACTIVE_PASS_4_2_COMPLETE",
   "governing_question": "If Constitutional Capitalism were a bad idea, where would the evidence show it?",
   "stance": "We do not defend the system. We attempt to falsify it.",
   "dispositions": [
@@ -62,7 +62,7 @@
       "slug": "pass-4-2",
       "name": "Legal & Constitutional Attack",
       "core_question": "Can Arkansas lawfully do it?",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "validation_after_percent": 33,
       "opens_only_after": "PASS_4_1",
       "ov_cx_assigned": [
@@ -79,7 +79,10 @@
         "OV-33-01",
         "OV-33-02",
         "OV-37-02"
-      ]
+      ],
+      "artifact": "data/project/stage4_pass42_legal_constitutional_attack.json",
+      "surface_href": "/system/legal-attack/",
+      "changelog": "data/project/pass_changelogs/pass_4_2.json"
     },
     {
       "id": "PASS_4_3",
@@ -87,7 +90,7 @@
       "slug": "pass-4-3",
       "name": "Household, Market & Behavioral Attack",
       "core_question": "How will actual humans and markets react?",
-      "status": "QUEUED",
+      "status": "NEXT",
       "validation_after_percent": 50,
       "opens_only_after": "PASS_4_2",
       "ov_cx_assigned": [

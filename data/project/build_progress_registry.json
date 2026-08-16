@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-173",
-  "update_id": "UPD-186",
+  "decision_id": "CC-DEC-175",
+  "update_id": "UPD-188",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_4",
-  "current_pass": "PASS_4_2",
-  "next_objective": "Pass 4.2 \u2014 Legal & Constitutional Attack. Can Arkansas lawfully do it? Dig down only.",
+  "current_pass": "PASS_4_3",
+  "next_objective": "Pass 4.3 \u2014 Household, Market & Behavioral Attack. How will actual humans and markets react? Dig down only.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -471,6 +471,22 @@
           "label": "Follow the Mechanism"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-175",
+      "title": "Pass 4.2 Legal & Constitutional Attack complete \u2014 pathway map +0 COUNTABLE",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-4-2/",
+      "links": [
+        {
+          "href": "/system/legal-attack/",
+          "label": "Legal Attack"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-2/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -572,17 +588,17 @@
       "number": "4.2",
       "slug": "pass-4-2",
       "name": "Legal & Constitutional Attack",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4-2/",
-      "changelog": null,
-      "spine_href": null
+      "changelog": "data/project/pass_changelogs/pass_4_2.json",
+      "spine_href": "/system/legal-attack/"
     },
     {
       "id": "PASS_4_3",
       "number": "4.3",
       "slug": "pass-4-3",
       "name": "Household, Market & Behavioral Attack",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-4-3/",
       "changelog": null,
       "spine_href": null

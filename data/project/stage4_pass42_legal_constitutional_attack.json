@@ -1,0 +1,1059 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-4-PASS-4-2-LEGAL-CONSTITUTIONAL-ATTACK-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-175",
+  "update_id": "UPD-188",
+  "pass_id": "PASS_4_2",
+  "pass_name": "Legal & Constitutional Attack",
+  "status": "PASS_COMPLETE",
+  "epistemic_class": "HOSTILE_AUDIT_NOT_LEGAL_ADVICE",
+  "disclaimer": "This pass maps legal pathways and risk. It is not legal advice, a compliance certification, or a prediction of litigation outcomes.",
+  "governing_question": "Even if Constitutional Capitalism is economically desirable, what can Arkansas actually do under the Arkansas Constitution, the U.S. Constitution, federal law, existing local-government authority, contractual obligations, and protected individual rights?",
+  "stance": "We do not try to win every argument. We classify authority, risk, and required pathway. Claims die for good legal reasons.",
+  "public_surface": "/system/legal-attack/",
+  "source_of_truth_unabridged": "/unabridged/",
+  "discipline": {
+    "dig_down_not_sideways": true,
+    "behavioral_issues_route_to": "PASS_4_3",
+    "resilience_issues_route_to": "PASS_4_4",
+    "capture_issues_route_to": "PASS_4_5",
+    "not_advocacy": true,
+    "policy_objective_may_survive_failed_mechanism": true
+  },
+  "legal_grades": {
+    "L-A": "CLEAR \u2014 Strong authority / established pathway",
+    "L-B": "DEFENSIBLE \u2014 Likely lawful with careful design",
+    "L-C": "UNCERTAIN \u2014 Meaningful unresolved doctrine",
+    "L-D": "HIGH RISK \u2014 Likely litigation / narrow path",
+    "L-E": "NOT VIABLE AS DESIGNED \u2014 Conflicts materially with controlling law"
+  },
+  "pathway_types": [
+    "Administrative",
+    "Statutory",
+    "Local",
+    "Voter_approval",
+    "Constitutional_amendment",
+    "Federal_change_required"
+  ],
+  "legal_status_labels": [
+    "CLEARLY_AUTHORIZED",
+    "AUTHORIZED_WITH_CONDITIONS",
+    "LEGISLATION_REQUIRED",
+    "CONSTITUTIONAL_AMENDMENT_LIKELY_REQUIRED",
+    "FEDERAL_CONSTRAINT",
+    "LOCAL_AUTHORITY_CONSTRAINT",
+    "LEGALLY_UNCERTAIN",
+    "HIGH_LITIGATION_RISK",
+    "NOT_LEGALLY_VIABLE_AS_CURRENTLY_DESIGNED"
+  ],
+  "proposition_dispositions": [
+    "SURVIVED",
+    "SURVIVED_WITH_REDESIGN",
+    "LEGAL_AMENDMENT_REQUIRED",
+    "FEDERAL_CHANGE_REQUIRED",
+    "UNRESOLVED",
+    "FAILED_AS_DESIGNED"
+  ],
+  "constitutional_spine": {
+    "title": "Arkansas constitutional authority spine",
+    "purpose": "One spine every proposal is checked against \u2014 prevents repetitive analysis.",
+    "nodes": [
+      {
+        "id": "taxing_authority",
+        "label": "Taxing authority",
+        "rule": "General Assembly holds primary state taxing power; local taxes require constitutional/statutory authorization; uniformity and classification constraints apply.",
+        "cc_implication": "IIT reduction is statutory pathway; school URT is constitutional hardness."
+      },
+      {
+        "id": "appropriations",
+        "label": "Appropriations",
+        "rule": "Public money spent only by appropriation for public purposes; dedicated funds and earmarks bind sequencing.",
+        "cc_implication": "Public-income engines cannot spend ahead of lawful appropriation and Replacement Readiness."
+      },
+      {
+        "id": "public_purpose",
+        "label": "Public purpose",
+        "rule": "Expenditures and credit uses must serve a public purpose; private benefit is scrutinized (e.g., Pulaski County v. Jacuzzi Bros. line).",
+        "cc_implication": "Economic development and equity stakes need direct public return and neutral process \u2014 not favoritism."
+      },
+      {
+        "id": "state_debt",
+        "label": "State debt / bonds",
+        "rule": "Amendment 20 generally requires voter approval for bonds pledging state faith/credit/revenues; revenue-bond and authority structures are fact-specific exceptions/designs.",
+        "cc_implication": "Large transition financing may need voter ratification \u2014 political difficulty \u2260 legal impossibility."
+      },
+      {
+        "id": "lending_of_credit",
+        "label": "Lending of credit (Art. 16 \u00a71)",
+        "rule": "Neither State nor municipalities may lend credit for any purpose; using credit for the State's own public purpose is distinct from guaranteeing private debts.",
+        "cc_implication": "Guaranteeing private partner debt / suretyship structures are high-risk or not viable as designed."
+      },
+      {
+        "id": "state_investment",
+        "label": "State investment",
+        "rule": "Investment of public funds is constrained by statute, fiduciary rules, and public-purpose doctrine; below-market returns for private benefit invite challenge.",
+        "cc_implication": "Pension/development deployment must clear fiduciary + public-purpose tests."
+      },
+      {
+        "id": "public_corporations",
+        "label": "Public corporations / authorities",
+        "rule": "Legislature may create authorities and public corporations for defined public purposes with enabling statutes.",
+        "cc_implication": "Narrow utility/authority models are clearer than open-ended public businesses."
+      },
+      {
+        "id": "local_government",
+        "label": "Local government authority",
+        "rule": "Counties/cities/school districts exercise delegated powers; home-rule scope is limited; Dillon-type constraints and state preemption remain material.",
+        "cc_implication": "Many 'local pilots' need enabling statutes \u2014 not pure local autonomy."
+      },
+      {
+        "id": "property_taxation",
+        "label": "Property taxation",
+        "rule": "School URT and related constitutional school-finance structures; local millage classes; debt-service pledges create contractual hardness.",
+        "cc_implication": "Full property-tax abolition = amendment + covenant unwind path (4.1 fiscal + 4.2 legal)."
+      },
+      {
+        "id": "education_obligations",
+        "label": "Education obligations",
+        "rule": "State has constitutional education duty; adequacy/equity litigation history shapes funding redesign.",
+        "cc_implication": "Revenue replacement cannot orphan adequacy without legal redesign."
+      },
+      {
+        "id": "special_local_legislation",
+        "label": "Special / local legislation",
+        "rule": "Constitutional limits on special/local acts; classification must be genuine.",
+        "cc_implication": "County-only carve-outs need careful classification or general enabling acts."
+      },
+      {
+        "id": "equal_protection",
+        "label": "Equal protection / privileges",
+        "rule": "State and federal equal protection; privileges & immunities for nonresidents in some contexts.",
+        "cc_implication": "Residency pricing and procurement preferences need rational/bona fide design."
+      },
+      {
+        "id": "initiative_referendum",
+        "label": "Initiative and referendum",
+        "rule": "Amendment 7 pathways; single-subject and signature rules; judicial review; rights floors constrain majority power.",
+        "cc_implication": "Structural reforms may require voter ratification; rights floors are not optional."
+      },
+      {
+        "id": "amendments",
+        "label": "Constitutional amendments",
+        "rule": "Legislatively referred or initiated amendments; distinct from ordinary statutes.",
+        "cc_implication": "URT redesign / some democracy reforms live here \u2014 transition facts, not automatic failure."
+      },
+      {
+        "id": "public_funds",
+        "label": "Public funds",
+        "rule": "Misapplication / illegal exaction doctrines; dedicated revenues; FOIA/public records overlay.",
+        "cc_implication": "COUNTABLE waterfall is also a legal culture: no spending of hoped-for cash."
+      },
+      {
+        "id": "immunity",
+        "label": "Governmental immunity (where relevant)",
+        "rule": "Immunity is limited and statutory; does not authorize unconstitutional action.",
+        "cc_implication": "Digital Due Process and takings claims remain live risk channels."
+      }
+    ]
+  },
+  "authority_map": {
+    "title": "Constitutional Authority Map \u2014 proposal families",
+    "rows": [
+      {
+        "proposal_family": "taxation (state IIT / sales / corporate)",
+        "state_authority": "General Assembly primary",
+        "local_authority": "Limited / none for state taxes",
+        "federal_constraint": "Federal tax interaction / program conditions",
+        "rights_issue": "Uniformity / equal protection on classifications",
+        "required_action": "Statute (rate/base); appropriation companion",
+        "legal_status": "CLEARLY_AUTHORIZED",
+        "grade": "L-A",
+        "pathway": "Statutory",
+        "note": "Rate reduction/abolition of IIT is statutory; wisdom \u2260 legality. Dual abolition still fails fiscally (4.1)."
+      },
+      {
+        "proposal_family": "property taxation / URT",
+        "state_authority": "Constitutional school URT + statutory local layers",
+        "local_authority": "School/county/city millage within authorization",
+        "federal_constraint": "Limited federal",
+        "rights_issue": "Uniformity; school adequacy",
+        "required_action": "Constitutional amendment for full URT retirement; covenants for debt mills",
+        "legal_status": "CONSTITUTIONAL_AMENDMENT_LIKELY_REQUIRED",
+        "grade": "L-D",
+        "pathway": "Constitutional_amendment",
+        "note": "Complete school property-tax retirement not a statute-only move."
+      },
+      {
+        "proposal_family": "public enterprises (narrow utility/authority)",
+        "state_authority": "Enabling statute + public purpose",
+        "local_authority": "Municipal utilities where authorized",
+        "federal_constraint": "Interstate commerce / FERC / environmental overlays",
+        "rights_issue": "Competition / equal protection challenges possible",
+        "required_action": "Enabling statute; possibly local voter for bonds",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Statutory",
+        "note": "Survives when function-limited; not as open commercial conglomerate."
+      },
+      {
+        "proposal_family": "public enterprises (open competing businesses + private debt guarantees)",
+        "state_authority": "Blocked / high-risk under Art. 16 \u00a71",
+        "local_authority": "Same lending-credit risk",
+        "federal_constraint": "Possibly also federal program conflict",
+        "rights_issue": "Takings / equal protection if selective",
+        "required_action": "Redesign: no private suretyship; authority model; or amendment (unlikely fix)",
+        "legal_status": "NOT_LEGALLY_VIABLE_AS_CURRENTLY_DESIGNED",
+        "grade": "L-E",
+        "pathway": "Statutory",
+        "note": "FAILED AS DESIGNED \u2014 objective may survive via redesign."
+      },
+      {
+        "proposal_family": "public investment / equity stakes",
+        "state_authority": "Possible via statute/authority if public purpose + structure",
+        "local_authority": "Often needs enabling act",
+        "federal_constraint": "Securities / tax / grant conditions",
+        "rights_issue": "Private benefit scrutiny",
+        "required_action": "Legislation + contractual equity; avoid credit lending",
+        "legal_status": "LEGISLATION_REQUIRED",
+        "grade": "L-C",
+        "pathway": "Statutory",
+        "note": "Equity with retained public claim is stronger than subsidy-only."
+      },
+      {
+        "proposal_family": "public ownership (default)",
+        "state_authority": "No general default authority \u2014 function-specific only",
+        "local_authority": "Limited",
+        "federal_constraint": "Varies",
+        "rights_issue": "Role conflict if referee + player",
+        "required_action": "Architecture already modified in 4.1; keep ownership-by-function",
+        "legal_status": "NOT_LEGALLY_VIABLE_AS_CURRENTLY_DESIGNED",
+        "grade": "L-E",
+        "pathway": "Statutory",
+        "note": "Confirms 4.1 fiscal kill of default public ownership."
+      },
+      {
+        "proposal_family": "energy / public power",
+        "state_authority": "PSC + municipal/coop frameworks",
+        "local_authority": "Municipal utilities common",
+        "federal_constraint": "FERC, interstate transmission, environmental federal law",
+        "rights_issue": "Ratepayer due process",
+        "required_action": "Existing utility law + targeted statutes",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Statutory",
+        "note": "Federal boundary map required for exports/transmission."
+      },
+      {
+        "proposal_family": "banking / credit / guarantees",
+        "state_authority": "Authorities, revolving funds, limited programs",
+        "local_authority": "Limited",
+        "federal_constraint": "Banking regulation; tax-exempt rules",
+        "rights_issue": "Credit clause; equal protection",
+        "required_action": "Use existing ED finance tools; avoid private debt guarantees",
+        "legal_status": "HIGH_LITIGATION_RISK",
+        "grade": "L-D",
+        "pathway": "Statutory",
+        "note": "Direct public bank not required by architecture (OV-34-05 \u2192 later if needed)."
+      },
+      {
+        "proposal_family": "education / residency pricing",
+        "state_authority": "Boards + statutes; resident tuition differentials established",
+        "local_authority": "N/A primarily",
+        "federal_constraint": "Immigration rules for internationals; Title VI",
+        "rights_issue": "Travel / equal protection / durational residency limits",
+        "required_action": "Administrative domicile rules + statute; avoid coercive service bonds",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Administrative",
+        "note": "Residency \u2260 citizenship \u2014 locked. Durational waiting periods constrained."
+      },
+      {
+        "proposal_family": "research / IP claims",
+        "state_authority": "University IP policies + statute",
+        "local_authority": "N/A",
+        "federal_constraint": "Bayh-Dole for federally funded research",
+        "rights_issue": "Inventor rights",
+        "required_action": "Policy/statute consistent with federal grant conditions",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Administrative",
+        "note": "Public upside claim must not conflict with federal title/royalty rules."
+      },
+      {
+        "proposal_family": "procurement preferences (Arkansas-first)",
+        "state_authority": "State procurement code",
+        "local_authority": "Local procurement rules",
+        "federal_constraint": "Dormant Commerce Clause; federal funding conditions",
+        "rights_issue": "P&I / equal protection",
+        "required_action": "Narrow preferences; market-participant; avoid federally funded conflicts",
+        "legal_status": "HIGH_LITIGATION_RISK",
+        "grade": "L-D",
+        "pathway": "Statutory",
+        "note": "CX-P3-03: blanket preference FAILED AS DESIGNED; toolkit SURVIVES WITH REDESIGN."
+      },
+      {
+        "proposal_family": "local pilots",
+        "state_authority": "Often needs enabling statute",
+        "local_authority": "Ordinances within delegated power",
+        "federal_constraint": "Preemption / funding conditions",
+        "rights_issue": "Rights floors",
+        "required_action": "Local Pilot Legal Ladder",
+        "legal_status": "LOCAL_AUTHORITY_CONSTRAINT",
+        "grade": "L-C",
+        "pathway": "Local",
+        "note": "Pilot requiring state permission is not local autonomy \u2014 transition fact."
+      },
+      {
+        "proposal_family": "direct democracy / People's Branch",
+        "state_authority": "Amendment 7 + legislative referral",
+        "local_authority": "Limited local initiative where authorized",
+        "federal_constraint": "Federal rights floors always",
+        "rights_issue": "Speech / religion / equal protection cannot be stripped by majority",
+        "required_action": "Statute + constitutional design with rights floors",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Constitutional_amendment",
+        "note": "CX-P3-02: rights floors required \u2014 SURVIVED WITH REDESIGN as architecture."
+      },
+      {
+        "proposal_family": "local-government reform",
+        "state_authority": "General Assembly + amendments",
+        "local_authority": "Charter/home-rule limits",
+        "federal_constraint": "Voting Rights / federal",
+        "rights_issue": "Equal protection / voting",
+        "required_action": "Statute or amendment depending on depth",
+        "legal_status": "LEGISLATION_REQUIRED",
+        "grade": "L-C",
+        "pathway": "Statutory",
+        "note": "Subsidiarity needs capacity + authorization, not slogans."
+      },
+      {
+        "proposal_family": "AI / data / Digital Due Process",
+        "state_authority": "Admin procedure + FOIA + due process",
+        "local_authority": "Local agencies same floors",
+        "federal_constraint": "Emerging federal privacy/civil-rights overlays",
+        "rights_issue": "Due process / equal protection / search / privacy",
+        "required_action": "Statute + admin standards; Stage 4 uncertainty remains on edges",
+        "legal_status": "LEGALLY_UNCERTAIN",
+        "grade": "L-C",
+        "pathway": "Statutory",
+        "note": "OV-35-05: when automation is state action requiring process \u2014 UNRESOLVED at edges."
+      },
+      {
+        "proposal_family": "public benefits",
+        "state_authority": "Statute + appropriation",
+        "local_authority": "Limited",
+        "federal_constraint": "Federal program conditions",
+        "rights_issue": "Due process / equal protection / travel",
+        "required_action": "Statute; careful residency rules",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Statutory",
+        "note": "Eligibility automation triggers Digital Due Process."
+      },
+      {
+        "proposal_family": "retirement structures",
+        "state_authority": "Public pensions statutory; supplemental savings possible",
+        "local_authority": "Local plans constrained",
+        "federal_constraint": "ERISA (private); tax qualification; Social Security",
+        "rights_issue": "Contract rights of pensioners",
+        "required_action": "Statute; fiduciary compliance",
+        "legal_status": "FEDERAL_CONSTRAINT",
+        "grade": "L-B",
+        "pathway": "Statutory",
+        "note": "Private employer mandate space heavily federalized."
+      },
+      {
+        "proposal_family": "healthcare financing",
+        "state_authority": "Insurance regulation; public providers; Medicaid admin",
+        "local_authority": "Hospital districts / local support limited",
+        "federal_constraint": "Medicaid; ERISA; ACA; EMTALA",
+        "rights_issue": "Equal protection / due process",
+        "required_action": "State programs within federal envelopes",
+        "legal_status": "FEDERAL_CONSTRAINT",
+        "grade": "L-C",
+        "pathway": "Statutory",
+        "note": "Federal law dominates much of the playing field."
+      },
+      {
+        "proposal_family": "housing / land",
+        "state_authority": "Enabling + spending programs",
+        "local_authority": "Zoning/land use primarily local",
+        "federal_constraint": "Fair housing; funding conditions",
+        "rights_issue": "Takings / due process / equal protection",
+        "required_action": "Local ordinance + statute; CLTs/land banks via enabling acts",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Local",
+        "note": "Rent regulation / aggressive anti-speculation = higher litigation risk."
+      },
+      {
+        "proposal_family": "natural resources",
+        "state_authority": "Severance, public lands, water frameworks",
+        "local_authority": "Limited",
+        "federal_constraint": "Interstate commerce; federal environmental / mineral overlays",
+        "rights_issue": "Property / takings",
+        "required_action": "Statute + royalty/lease design",
+        "legal_status": "AUTHORIZED_WITH_CONDITIONS",
+        "grade": "L-B",
+        "pathway": "Statutory",
+        "note": "Norway-style resource claim is illustration \u2014 Arkansas asset map differs (Explorer)."
+      }
+    ]
+  },
+  "domain_attacks": {
+    "public_ownership_investment": {
+      "title": "Public ownership & public investment (hardest attack)",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "questions_and_answers": [
+        {
+          "q": "Does Arkansas have authority to own a public enterprise?",
+          "a": "Yes for defined public purposes via enabling statutes/authorities/municipal utilities \u2014 not as a general commercial default."
+        },
+        {
+          "q": "Can public funds capitalize it?",
+          "a": "If appropriated for public purpose and structured as the State's own enterprise \u2014 not as a gift to private parties."
+        },
+        {
+          "q": "Does lending-of-credit doctrine apply?",
+          "a": "Yes to guarantees/suretyship of private debts. Art. 16 \u00a71 is a material kill-switch for many PPP guarantee designs."
+        },
+        {
+          "q": "Can the state own equity / share upside?",
+          "a": "Defensible with legislation and clear public claim; still L-C until specific structure drafted."
+        },
+        {
+          "q": "Can it guarantee private partner debt?",
+          "a": "Generally NOT_LEGALLY_VIABLE AS DESIGNED under lending-of-credit \u2014 redesign required."
+        },
+        {
+          "q": "Can it subsidize operating losses indefinitely?",
+          "a": "Appropriation + public-purpose possible but politically and legally fragile; looks like private benefit if selective."
+        },
+        {
+          "q": "Can a public entity regulate a market it participates in?",
+          "a": "Role Conflict / due process risk \u2014 Four Roles test is legally load-bearing, not optional branding."
+        }
+      ],
+      "hostile_case": {
+        "name": "Art. 16 \u00a71 lending-of-credit line (Hays / Turner / AG opinions)",
+        "rule": "Public bodies may not lend credit; private debt guarantees are classic risk.",
+        "why_threatens": "CC public-private upside models that rely on state guarantees fail.",
+        "distinguishing": "Own-purpose enterprise / revenue authority \u2260 private suretyship.",
+        "remaining_uncertainty": "Fact-specific bond/authority structures.",
+        "disposition": "FAILED_AS_DESIGNED for guarantee-heavy models; SURVIVED_WITH_REDESIGN for narrow authorities."
+      },
+      "redesign": "Prefer function-limited authorities, retained equity/royalty, competitive process, no private debt guarantee, Role Conflict walls."
+    },
+    "tax_pathways": {
+      "title": "Tax abolition & replacement pathways (legality, not wisdom)",
+      "status": "LEGAL_AMENDMENT_REQUIRED",
+      "items": [
+        {
+          "tax": "personal income tax",
+          "pathway": "Statutory change primarily",
+          "grade": "L-A",
+          "note": "Politically hard; legally possible by statute. 4.1 fiscal kill of near-term dual abolition still stands."
+        },
+        {
+          "tax": "school URT / constitutional school property",
+          "pathway": "Constitutional amendment (+ adequacy redesign)",
+          "grade": "L-D",
+          "note": "Not statute-only."
+        },
+        {
+          "tax": "school debt-service millage",
+          "pathway": "Contract/covenant unwind; cannot casually abolish",
+          "grade": "L-E",
+          "note": "Bondholder rights \u2014 FAILED AS DESIGNED if ignored."
+        },
+        {
+          "tax": "local property / special assessments / fees",
+          "pathway": "Local + statutory authorization; voter approval often",
+          "grade": "L-B",
+          "note": "Distinguish fees from taxes; uniformity issues."
+        },
+        {
+          "tax": "sales/use",
+          "pathway": "Statutory",
+          "grade": "L-A",
+          "note": "Federal program interactions possible; still statute-primary."
+        }
+      ],
+      "distinction": {
+        "politically_difficult": "IIT abolition / major rate cuts",
+        "legally_impossible_as_designed": "Ignoring pledged school debt mills",
+        "legally_possible_after_constitutional_change": "Full URT retirement"
+      }
+    },
+    "local_subsidiarity": {
+      "title": "Local government & subsidiarity",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "finding": "Arkansas local power is delegated and often preemption-sensitive. A pilot needing state permission is not autonomous \u2014 it changes the transition map.",
+      "local_pilot_legal_ladder": [
+        {
+          "rung": 1,
+          "label": "Local action now",
+          "examples": "Existing zoning, municipal utility ops within current charters"
+        },
+        {
+          "rung": 2,
+          "label": "Local action with voter approval",
+          "examples": "Certain bonds, millage, charter changes"
+        },
+        {
+          "rung": 3,
+          "label": "State enabling statute",
+          "examples": "New special districts, land banks, regional authorities"
+        },
+        {
+          "rung": 4,
+          "label": "Statewide legislation",
+          "examples": "Uniform procurement, residency tuition rules, Digital Due Process code"
+        },
+        {
+          "rung": 5,
+          "label": "Constitutional amendment",
+          "examples": "URT redesign; deep democracy redesign"
+        }
+      ]
+    },
+    "public_purpose_test": {
+      "title": "Public purpose test (legal)",
+      "status": "SURVIVED",
+      "checklist": [
+        "What public purpose is served?",
+        "Is benefit primarily public or private?",
+        "How direct is the public return?",
+        "Are benefits distributed neutrally?",
+        "Rational basis for differentiation?",
+        "Open competitive process?",
+        "Does the state retain contractual/equity interest?"
+      ],
+      "note": "Connects procurement, ED, PPP, research/IP, capital access, ownership."
+    },
+    "procurement": {
+      "title": "Procurement & Arkansas preference",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade_blanket": "L-E",
+      "grade_toolkit": "L-B/L-D mix",
+      "finding": "Blanket Arkansas-first mandates that burden interstate commerce \u2014 especially on federally funded buys \u2014 are not viable as designed. Narrow tools (small-business, market-participant proprietary purchases, carefully drafted resident preferences off federal funds) can be defensible.",
+      "hostile_case": {
+        "name": "Dormant Commerce Clause / discrimination against interstate commerce",
+        "why_threatens": "In-state preference on competitive interstate markets invites invalidation.",
+        "distinguishing": "Market-participant doctrine; proprietary functions; federal funding carve-outs compliance.",
+        "disposition": "CX-P3-03 SURVIVED_WITH_REDESIGN \u2014 lawful toolkit, not ideological insistence."
+      }
+    },
+    "education_residency": {
+      "title": "Education & residency",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "findings": [
+        "Resident vs nonresident tuition differentials are an established L-B pathway if domicile is bona fide.",
+        "Durational waiting periods for benefits face federal constitutional limits (travel/equal protection).",
+        "Residency, not citizenship \u2014 locked; immigration rules constrain international structures.",
+        "Post-graduation service conditions / recoupment: possible as contractual voluntary programs (L-C/L-D); coercive designs HIGH RISK.",
+        "Moving after benefit: contract design + notice; cannot invent peonage."
+      ],
+      "ov": [
+        "OV-33-01",
+        "OV-33-02"
+      ]
+    },
+    "research_ip": {
+      "title": "Research / IP & public upside",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "findings": [
+        "University-created IP today: institutional policies + inventor shares.",
+        "Federally funded research: Bayh-Dole and grant conditions dominate.",
+        "Arkansas may encourage equity/royalty participation for state-funded work \u2014 must not contradict federal title rules.",
+        "Public universities holding equity: often authorized with policy firewalls.",
+        "Aggressive claims that chill collaboration are policy risk (4.3) more than pure illegality \u2014 authority is conditional."
+      ]
+    },
+    "banking_credit_pensions": {
+      "title": "Banking, credit, investment & pension capital",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "findings": [
+        "Direct lending / revolving funds / ED authorities: existing toolkit \u2014 L-B with statutes.",
+        "Guaranteeing private borrowing: Art. 16 \u00a71 \u2014 L-E as designed.",
+        "Pension deployment for Arkansas development: fiduciary duty constrains 'below-market for vibes' \u2014 L-D if forced.",
+        "Public deposits / credit enhancement: fact-specific; avoid suretyship.",
+        "Public bank project not required by architecture; boundary map preferred."
+      ]
+    },
+    "housing_land": {
+      "title": "Housing & land",
+      "status": "SURVIVED",
+      "routes": {
+        "zoning": "Local L-A within enabling law",
+        "land_banks_clts": "Often L-B with enabling statute",
+        "eminent_domain": "Authorized with public use/purpose + just compensation \u2014 HIGH process risk if abuse",
+        "anti_speculation_rent": "L-D / litigation-prone depending on design",
+        "property_tax_transition": "See tax pathways / URT"
+      }
+    },
+    "healthcare_retirement": {
+      "title": "Healthcare & retirement \u2014 federal dominance map",
+      "status": "FEDERAL_CHANGE_REQUIRED",
+      "note": "Status means federal law dominates many fields \u2014 not that Arkansas can do nothing. State insurance regulation, public providers, Medicaid administration, and public pensions remain live. Private employer mandates / ERISA space often FEDERAL_CONSTRAINT.",
+      "healthcare": [
+        "Medicaid conditions",
+        "ERISA preemption (private plans)",
+        "EMTALA",
+        "ACA overlays"
+      ],
+      "retirement": [
+        "Public pension statutes",
+        "ERISA private",
+        "tax qualification",
+        "Social Security interaction"
+      ]
+    },
+    "energy_resources": {
+      "title": "Energy, utilities & natural resources",
+      "status": "SURVIVED",
+      "boundary": "Mixed state/federal. Municipal utilities and coops have clear lanes; interstate transmission/export and environmental overlays are federal-heavy."
+    },
+    "digital_due_process": {
+      "title": "AI, data & Digital Due Process",
+      "status": "UNRESOLVED",
+      "core_question": "At what point does an AI-assisted system become an exercise of state power requiring procedural protection?",
+      "survives": "Arkansas can use AI in many contexts; notice/appeal/human review for consequential eligibility is L-B architecture.",
+      "unresolved": "Edge cases on algorithmic discrimination standards, search/seizure analogies, and emerging federal privacy law \u2014 Stage 4 legal uncertainty allowed.",
+      "flow": [
+        "Automated or AI-assisted decision",
+        "Does it determine rights/benefits/sanctions? \u2192 state action trigger",
+        "Notice of basis",
+        "Access to record / explanation adequate for challenge",
+        "Human review / appeal",
+        "Retention & audit trail (FOIA/public records)"
+      ]
+    },
+    "direct_democracy": {
+      "title": "Direct democracy & constitutional change",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "pathways": [
+        "Administrative action",
+        "Statute",
+        "Appropriation",
+        "Local ordinance",
+        "Voter referendum / initiative",
+        "Constitutional amendment"
+      ],
+      "finding": "Majority cannot strip federal/state constitutional rights floors (CX-P3-02)."
+    },
+    "speech_pay_to_play": {
+      "title": "Speech / pay-to-play hostility (CX-P3-01)",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "finding": "Disclosure, recusal, contracting bans for donors, and pay-to-play limits can be L-B if carefully tailored. Content-based speech bans or punishing disfavored speakers are L-E.",
+      "hostile_case": {
+        "name": "Citizens United / free-speech campaign finance line (federal)",
+        "why_threatens": "Overbroad hostility to political speech collapses.",
+        "distinguishing": "Regulate corruption/access in contracting and official action \u2014 not viewpoint punishment.",
+        "disposition": "SURVIVED_WITH_REDESIGN"
+      }
+    },
+    "antitrust_reach": {
+      "title": "State antitrust reach vs federal preemption (CX-M21-02 / OV-34-02 / OV-35-03)",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "finding": "Arkansas may have complementary enforcement and state unfair-practice tools; it cannot contradict the Sherman Act or invent immunity for private cartels. Parker state-action immunity is narrow and requires clear articulation + active supervision when private parties are involved.",
+      "grade": "L-C"
+    }
+  },
+  "rights_matrix": {
+    "title": "Rights audit (compact)",
+    "rights": [
+      "speech",
+      "association",
+      "religion",
+      "property",
+      "contract",
+      "privacy",
+      "due_process",
+      "equal_protection",
+      "voting",
+      "travel_residency",
+      "federal_supremacy",
+      "interstate_commerce"
+    ],
+    "rule": "No proposal gets a pass merely because its economic objective is attractive.",
+    "collisions": [
+      {
+        "objective": "Arkansas-first procurement",
+        "rights": [
+          "interstate_commerce",
+          "equal_protection"
+        ],
+        "result": "Redesign toolkit"
+      },
+      {
+        "objective": "Pay-to-play hostility",
+        "rights": [
+          "speech",
+          "association"
+        ],
+        "result": "Tailor to corruption/contracting"
+      },
+      {
+        "objective": "Residency-priced education",
+        "rights": [
+          "travel_residency",
+          "equal_protection"
+        ],
+        "result": "Bona fide domicile; limit durational traps"
+      },
+      {
+        "objective": "AI eligibility automation",
+        "rights": [
+          "due_process",
+          "equal_protection",
+          "privacy"
+        ],
+        "result": "Digital Due Process mandatory for consequential decisions"
+      },
+      {
+        "objective": "Public investment selectivity",
+        "rights": [
+          "equal_protection",
+          "property"
+        ],
+        "result": "Public purpose + competitive process"
+      },
+      {
+        "objective": "Direct democracy structural change",
+        "rights": [
+          "voting",
+          "speech",
+          "religion",
+          "equal_protection"
+        ],
+        "result": "Rights floors non-negotiable"
+      }
+    ]
+  },
+  "visual_assets": [
+    {
+      "id": "V42-1",
+      "title": "Arkansas Constitutional Authority Map",
+      "href_anchor": "v1",
+      "summary": "Spine nodes: tax, appropriations, public purpose, debt, lending credit, investment, authorities, local gov, property tax, education, special legislation, equal protection, I&R, amendments, public funds, immunity."
+    },
+    {
+      "id": "V42-2",
+      "title": "Legal Pathway Ladder",
+      "href_anchor": "v2",
+      "rungs": [
+        "Administrative",
+        "Statute",
+        "Local / voter",
+        "Constitutional amendment",
+        "Federal change"
+      ]
+    },
+    {
+      "id": "V42-3",
+      "title": "Public Investment Legality Test",
+      "href_anchor": "v3",
+      "tests": [
+        "public purpose",
+        "lending credit",
+        "risk allocation",
+        "public benefit vs private",
+        "structure (equity/authority vs guarantee)"
+      ]
+    },
+    {
+      "id": "V42-4",
+      "title": "Rights Collision Map",
+      "href_anchor": "v4",
+      "summary": "Economic objectives mapped against speech, commerce, residency, due process, property."
+    },
+    {
+      "id": "V42-5",
+      "title": "Local Pilot Legal Ladder",
+      "href_anchor": "v5",
+      "summary": "Local now \u2192 local+voter \u2192 enabling statute \u2192 statewide law \u2192 amendment."
+    },
+    {
+      "id": "V42-6",
+      "title": "Digital Due Process Rights Flow",
+      "href_anchor": "v6",
+      "summary": "AI decision \u2192 state-action trigger \u2192 notice \u2192 review \u2192 appeal \u2192 audit trail."
+    },
+    {
+      "id": "V42-7",
+      "title": "Proposition Legal Risk Board",
+      "href_anchor": "v7",
+      "summary": "L-A through L-E across major components."
+    }
+  ],
+  "proposition_board": [
+    {
+      "id": "P-42-01",
+      "proposition": "Default public ownership / open commercial public conglomerate",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "Confirms 4.1; ownership-by-function survives"
+    },
+    {
+      "id": "P-42-02",
+      "proposition": "Public enterprise with private debt guarantee",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "Art. 16 \u00a71 lending of credit"
+    },
+    {
+      "id": "P-42-03",
+      "proposition": "Narrow public authority / municipal utility / retained public equity",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-B",
+      "note": "Enabling statute + public purpose + Role Conflict walls"
+    },
+    {
+      "id": "P-42-04",
+      "proposition": "Statutory IIT reduction/abolition pathway",
+      "status": "SURVIVED",
+      "grade": "L-A",
+      "note": "Legal pathway exists; 4.1 fiscal still fails near-term dual abolition"
+    },
+    {
+      "id": "P-42-05",
+      "proposition": "Full school URT abolition by statute alone",
+      "status": "LEGAL_AMENDMENT_REQUIRED",
+      "grade": "L-D",
+      "note": "Constitutional hardness"
+    },
+    {
+      "id": "P-42-06",
+      "proposition": "Abolish pledged school debt millage while bonds outstanding",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "Contract/covenant rights"
+    },
+    {
+      "id": "P-42-07",
+      "proposition": "Blanket Arkansas-first procurement",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "Dormant Commerce / federal funds \u2014 redesign toolkit"
+    },
+    {
+      "id": "P-42-08",
+      "proposition": "Lawful local-preference toolkit (narrow)",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-B",
+      "note": "CX-P3-03"
+    },
+    {
+      "id": "P-42-09",
+      "proposition": "Resident tuition differentials (bona fide domicile)",
+      "status": "SURVIVED",
+      "grade": "L-B",
+      "note": "OV-33-01/02 pathway"
+    },
+    {
+      "id": "P-42-10",
+      "proposition": "Coercive post-graduation service as condition of ordinary residency benefits",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-D",
+      "note": "Voluntary contractual reciprocal programs may survive redesign"
+    },
+    {
+      "id": "P-42-11",
+      "proposition": "Public IP/royalty claim consistent with Bayh-Dole",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-B",
+      "note": "Federal grant conditions bind"
+    },
+    {
+      "id": "P-42-12",
+      "proposition": "Direct democracy without rights floors",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "CX-P3-02 \u2014 floors required"
+    },
+    {
+      "id": "P-42-13",
+      "proposition": "People's Branch / I&R with constitutional rights floors",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-B",
+      "note": "May still need amendment for structural depth"
+    },
+    {
+      "id": "P-42-14",
+      "proposition": "Pay-to-play hostility as speech punishment",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-E",
+      "note": "CX-P3-01"
+    },
+    {
+      "id": "P-42-15",
+      "proposition": "Pay-to-play contracting/recusal/disclosure regime",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-B",
+      "note": "Tailored anti-corruption"
+    },
+    {
+      "id": "P-42-16",
+      "proposition": "Consequential AI without Digital Due Process",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-D",
+      "note": "Due process risk"
+    },
+    {
+      "id": "P-42-17",
+      "proposition": "Digital Due Process architecture (notice/review/appeal)",
+      "status": "SURVIVED",
+      "grade": "L-B",
+      "note": "Edge standards UNRESOLVED (OV-35-05)"
+    },
+    {
+      "id": "P-42-18",
+      "proposition": "State antitrust complementary reach",
+      "status": "SURVIVED_WITH_REDESIGN",
+      "grade": "L-C",
+      "note": "CX-M21-02 \u2014 no Sherman contradiction"
+    },
+    {
+      "id": "P-42-19",
+      "proposition": "Local pilots as pure autonomy without enabling law",
+      "status": "FAILED_AS_DESIGNED",
+      "grade": "L-D",
+      "note": "Use Local Pilot Legal Ladder"
+    },
+    {
+      "id": "P-42-20",
+      "proposition": "Legal pathway classification package (statute/amendment/local/voter/federal)",
+      "status": "SURVIVED",
+      "grade": "L-A",
+      "note": "OV-37-02 \u2014 this pass IS the package"
+    }
+  ],
+  "ov_cx_disposition": [
+    {
+      "id": "CX-M21-02",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Complementary state tools OK; cannot contradict federal antitrust; Parker immunity narrow"
+    },
+    {
+      "id": "CX-P3-01",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Anti-corruption contracting/disclosure OK; speech punishment FAILED"
+    },
+    {
+      "id": "CX-P3-02",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Direct democracy allowed only with rights floors"
+    },
+    {
+      "id": "CX-P3-03",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Blanket preference FAILED; narrow lawful toolkit SURVIVES"
+    },
+    {
+      "id": "OV-34-02",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Same family as CX-M21-02"
+    },
+    {
+      "id": "OV-35-01",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Harden rights floors in I&R design"
+    },
+    {
+      "id": "OV-35-02",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Speech/finance boundary = tailored pay-to-play, not hostility to speech"
+    },
+    {
+      "id": "OV-35-03",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Antitrust reach map"
+    },
+    {
+      "id": "OV-35-05",
+      "disposition": "UNRESOLVED",
+      "note": "Core Digital Due Process survives; edge AI-state-action standards remain uncertain"
+    },
+    {
+      "id": "OV-35-07",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Procurement redesign"
+    },
+    {
+      "id": "OV-33-01",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Bona fide residency differentials OK; durational traps constrained"
+    },
+    {
+      "id": "OV-33-02",
+      "disposition": "SURVIVED_WITH_REDESIGN",
+      "note": "Nonresident premiums lawful if not pretextual; economic viability \u2192 4.3"
+    },
+    {
+      "id": "OV-37-02",
+      "disposition": "SURVIVED",
+      "note": "Pathway classification package published this pass"
+    }
+  ],
+  "what_changed_format": {
+    "what_we_thought": "Many CC mechanisms could proceed as ordinary policy choices once economically designed.",
+    "what_law_allows": "Statutory IIT pathway; resident tuition differentials; narrow authorities/utilities; Digital Due Process architecture; complementary antitrust; rights-floored direct democracy; public purpose investment with retained claims.",
+    "what_law_conditions": "Enabling statutes; public purpose; competitive process; Role Conflict walls; fiduciary rules; federal grant/Medicaid/ERISA envelopes; bona fide domicile.",
+    "what_requires_amendment": "Full URT/school constitutional property redesign; some deep democracy/local-power reconstructions.",
+    "what_requires_federal_change": "Large private-employer retirement/healthcare mandate space; some interstate energy overlays \u2014 federal dominance map, not Arkansas impotence.",
+    "what_failed": "Default public ownership; private debt guarantees; blanket Arkansas-first procurement; ignoring bond covenants; speech-punishing pay-to-play; coercive service conditions; consequential AI without process; pure local autonomy fiction.",
+    "what_we_redesigned": "Ownership-by-function authorities; procurement toolkit; pay-to-play as anti-corruption; I&R with rights floors; Local Pilot Legal Ladder; voluntary reciprocal education contracts.",
+    "what_remains_legally_uncertain": "AI state-action edges (OV-35-05); specific equity/authority statutes not yet drafted; Parker immunity fact patterns; some housing anti-speculation designs."
+  },
+  "architectural_defects_surfaced": [
+    {
+      "id": "AD-42-01",
+      "defect": "Any remaining drafting that treats public ownership as default engine",
+      "fix": "Already killed fiscally in 4.1; legally L-E \u2014 keep ownership-by-function only"
+    },
+    {
+      "id": "AD-42-02",
+      "defect": "PPP designs relying on state guarantee of private debt",
+      "fix": "Remove guarantee; use authority revenue structures or private capital"
+    },
+    {
+      "id": "AD-42-03",
+      "defect": "Local pilot language implying autonomy without enabling law",
+      "fix": "Publish Local Pilot Legal Ladder on transition surfaces"
+    }
+  ],
+  "certification": {
+    "pass": "PASS_4_2",
+    "validation_completion_percent_after": 33,
+    "overall_project_completion_percent_after": 83,
+    "calculation": "0.25*(100+100+100+33)=83.25 \u2192 display 83",
+    "unabridged_unchanged": 100,
+    "countable_usd": 0,
+    "gates": {
+      "arkansas_constitutional_spine_mapped": true,
+      "rights_matrix_applied": true,
+      "tax_revenue_pathways_tested": true,
+      "public_ownership_investment_attacked": true,
+      "local_authority_attacked": true,
+      "procurement_preference_attacked": true,
+      "education_residency_attacked": true,
+      "research_ip_attacked": true,
+      "banking_credit_boundaries_attacked": true,
+      "housing_land_attacked": true,
+      "healthcare_retirement_federal_mapped": true,
+      "energy_resource_authority_mapped": true,
+      "digital_due_process_attacked": true,
+      "direct_democracy_routes_mapped": true,
+      "ov_cx_4_2_dispositioned": true,
+      "legal_grades_assigned": true,
+      "legal_redesign_attempted": true,
+      "hostile_authority_included": true,
+      "architectural_defects_surfaced": true,
+      "seven_visual_assets_defined": true
+    },
+    "next": "PASS_4_3 \u2014 Household, Market & Behavioral Attack"
+  }
+}

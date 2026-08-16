@@ -1,0 +1,260 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import chapter from "../../../../../../data/project/stage4_pass42_legal_constitutional_attack.json";
+
+const board = chapter.proposition_board || [];
+const spine = chapter.constitutional_spine || {};
+const map = chapter.authority_map || {};
+const domains = chapter.domain_attacks || {};
+const rights = chapter.rights_matrix || {};
+const visuals = chapter.visual_assets || [];
+const wcf = chapter.what_changed_format || {};
+const cert = chapter.certification || {};
+const ov = chapter.ov_cx_disposition || [];
+const defects = chapter.architectural_defects_surfaced || [];
+const ladder = domains.local_subsidiarity?.local_pilot_legal_ladder || [];
+const ddp = domains.digital_due_process?.flow || [];
+
+function statusChip(s?: string) {
+  if (s === "SURVIVED") return "chip chip--done";
+  if (s === "SURVIVED_WITH_REDESIGN" || s === "LEGAL_AMENDMENT_REQUIRED") return "chip chip--live";
+  if (s === "FAILED_AS_DESIGNED" || s === "FEDERAL_CHANGE_REQUIRED") return "chip chip--live";
+  if (s === "UNRESOLVED") return "chip chip--queued";
+  return "chip chip--queued";
+}
+
+function gradeChip(g?: string) {
+  if (g === "L-A" || g === "L-B") return "chip chip--done";
+  if (g === "L-C") return "chip chip--queued";
+  return "chip chip--live";
+}
+---
+
+<BaseLayout
+  title="Pass 4.2 — Legal & Constitutional Attack"
+  path="/system/legal-attack/"
+  description="Hostile pathway audit: what can Arkansas lawfully do? Not legal advice. Grades L-A–E and required pathways."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Stage 4 · Pass 4.2 complete</span>
+      <h1>Legal &amp; Constitutional Attack</h1>
+      <p class="lede">{chapter.governing_question}</p>
+      <p class="muted">{chapter.stance}</p>
+      <p class="muted" style="margin-top:0.5rem;">{chapter.disclaimer}</p>
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-4-2/">What Changed →</a></li>
+        <li><a href="/system/fiscal-attack/">Pass 4.1 Fiscal Attack →</a></li>
+        <li><a href="/unabridged/">Unabridged source of truth →</a></li>
+        <li><a href="/unabridged/validation/">Validation queue →</a></li>
+      </ul>
+      <p class="muted">
+        Validation {cert.validation_completion_percent_after}% · Overall{" "}
+        {cert.overall_project_completion_percent_after}% · Unabridged unchanged 100% · COUNTABLE $0 ·{" "}
+        {chapter.decision_id} · {chapter.update_id}
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>Proposition Legal Risk Board</h2>
+      <ul class="stack">
+        {
+          board.map((p: any) => (
+            <li>
+              <span class={statusChip(p.status)}>{p.status.replaceAll("_", " ")}</span>{" "}
+              <span class={gradeChip(p.grade)}>{p.grade}</span> <strong>{p.id}</strong> —{" "}
+              {p.proposition}
+              <div class="muted">{p.note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="v1" aria-labelledby="spine-title">
+      <h2 id="spine-title">{spine.title}</h2>
+      <p class="lede">{spine.purpose}</p>
+      <dl class="glossary-list">
+        {
+          (spine.nodes || []).map((n: any) => (
+            <>
+              <dt>{n.label}</dt>
+              <dd>
+                {n.rule}
+                <div class="muted">CC: {n.cc_implication}</div>
+              </dd>
+            </>
+          ))
+        }
+      </dl>
+    </section>
+
+    <section class="hub-section" id="authority-map" aria-labelledby="map-title">
+      <h2 id="map-title">{map.title}</h2>
+      <div class="table-wrap">
+        <table class="explorer-matrix">
+          <thead>
+            <tr>
+              <th>Proposal family</th>
+              <th>Status</th>
+              <th>Grade</th>
+              <th>Pathway</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              (map.rows || []).map((r: any) => (
+                <tr>
+                  <th scope="row">{r.proposal_family}</th>
+                  <td>{r.legal_status.replaceAll("_", " ")}</td>
+                  <td>{r.grade}</td>
+                  <td>{r.pathway}</td>
+                  <td class="muted">{r.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="hub-section" id="v2">
+      <h2>Legal Pathway Ladder</h2>
+      <ol class="stack">
+        {(visuals.find((v: any) => v.id === "V42-2")?.rungs || []).map((r: string) => <li>{r}</li>)}
+      </ol>
+    </section>
+
+    <section class="hub-section" id="v3">
+      <h2>Public Investment Legality Test</h2>
+      <ul class="stack">
+        {
+          (domains.public_ownership_investment?.questions_and_answers || []).map((qa: any) => (
+            <li>
+              <strong>{qa.q}</strong>
+              <div>{qa.a}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        Redesign: {domains.public_ownership_investment?.redesign}
+      </p>
+    </section>
+
+    <section class="hub-section" id="v4">
+      <h2>{rights.title}</h2>
+      <p class="lede">{rights.rule}</p>
+      <ul class="link-board">
+        {(rights.rights || []).map((r: string) => <li>{r.replaceAll("_", " ")}</li>)}
+      </ul>
+      <ul class="stack">
+        {
+          (rights.collisions || []).map((c: any) => (
+            <li>
+              <strong>{c.objective}</strong> vs {(c.rights || []).join(", ")} → {c.result}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="v5">
+      <h2>Local Pilot Legal Ladder</h2>
+      <p class="lede">{domains.local_subsidiarity?.finding}</p>
+      <ol class="stack">
+        {
+          ladder.map((r: any) => (
+            <li>
+              <strong>{r.label}</strong> — {r.examples}
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="hub-section" id="v6">
+      <h2>Digital Due Process Rights Flow</h2>
+      <p class="lede">{domains.digital_due_process?.core_question}</p>
+      <ol class="stack">
+        {ddp.map((s: string) => <li>{s}</li>)}
+      </ol>
+      <p>
+        <span class={statusChip(domains.digital_due_process?.status)}>
+          {domains.digital_due_process?.status}
+        </span>{" "}
+        {domains.digital_due_process?.unresolved}
+      </p>
+    </section>
+
+    <section class="hub-section" id="v7">
+      <h2>Tax pathways (legality ≠ wisdom)</h2>
+      <ul class="stack">
+        {
+          (domains.tax_pathways?.items || []).map((t: any) => (
+            <li>
+              <span class={gradeChip(t.grade)}>{t.grade}</span> <strong>{t.tax}</strong> —{" "}
+              {t.pathway}
+              <div class="muted">{t.note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Assigned OV / CX dispositions</h2>
+      <ul class="stack">
+        {
+          ov.map((o: any) => (
+            <li>
+              <span class={statusChip(o.disposition)}>{o.disposition.replaceAll("_", " ")}</span>{" "}
+              <strong>{o.id}</strong> — {o.note}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>What We Thought → What Law Allows</h2>
+      <dl class="glossary-list">
+        <dt>What we thought</dt>
+        <dd>{wcf.what_we_thought}</dd>
+        <dt>What law allows</dt>
+        <dd>{wcf.what_law_allows}</dd>
+        <dt>What law conditions</dt>
+        <dd>{wcf.what_law_conditions}</dd>
+        <dt>What requires amendment</dt>
+        <dd>{wcf.what_requires_amendment}</dd>
+        <dt>What requires federal change / dominance</dt>
+        <dd>{wcf.what_requires_federal_change}</dd>
+        <dt>What failed</dt>
+        <dd>{wcf.what_failed}</dd>
+        <dt>What we redesigned</dt>
+        <dd>{wcf.what_we_redesigned}</dd>
+        <dt>What remains legally uncertain</dt>
+        <dd>{wcf.what_remains_legally_uncertain}</dd>
+      </dl>
+    </section>
+
+    <section class="hub-section">
+      <h2>Architectural defects surfaced</h2>
+      <ul class="stack">
+        {
+          defects.map((d: any) => (
+            <li>
+              <strong>{d.id}</strong> — {d.defect}
+              <div class="muted">Fix: {d.fix}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">Next: {cert.next}</p>
+    </section>
+  </article>
+</BaseLayout>
