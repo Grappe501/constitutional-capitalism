@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-DECISION-REGISTER-1.0",
-  "decision_id": "CC-DEC-197",
-  "update_id": "UPD-210",
+  "decision_id": "CC-DEC-198",
+  "update_id": "UPD-211",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "Every material v2 decision is logged with why, evidence, losers, and reverse conditions.",
@@ -192,6 +192,28 @@
         "Moral labeling of expenditures"
       ],
       "could_reverse_if": "Primary DFA/Fiscal Summary binds shown wrong — correct FACTS and re-open affected objects.",
+      "v1_doctrine_impact": "NONE"
+    },
+    {
+      "id": "V2-DEC-012",
+      "date": "2026-08-16",
+      "title": "Close V2.1.3 with production/ownership separation and honest UNKNOWN ownership",
+      "decision": "What does Arkansas actually produce, who owns the productive capacity, where does the capital come from, where does economic value go, and what dependencies make that production possible? Answered at system level with bound FACT spine; ownership of productive capital mostly UNKNOWN-COMPLETE.",
+      "why": "Need productive machine map before power map and redesign — without inventing ownership shares.",
+      "evidence": [
+        "Pass 3.6",
+        "QCEW",
+        "USDA NASS",
+        "EIA-861",
+        "FDIC SOD"
+      ],
+      "alternatives_rejected": [
+        "Reopen food hub cashflow",
+        "Invent beneficial ownership shares",
+        "Design public bank / capital programs",
+        "Collapse location into ownership"
+      ],
+      "could_reverse_if": "Primary GDP/QCEW binds shown wrong — correct and reopen affected objects.",
       "v1_doctrine_impact": "NONE"
     }
   ],

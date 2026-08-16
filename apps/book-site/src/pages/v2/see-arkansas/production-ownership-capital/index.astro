@@ -1,0 +1,303 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_1_3_production_ownership_capital.json";
+
+const prod = pass.production_ledger || {};
+const three = pass.three_economies || {};
+const own = pass.ownership_ledger || {};
+const capital = pass.capital_formation_ledger || {};
+const assets = pass.productive_asset_register || {};
+const external = pass.external_income_map || {};
+const deps = pass.dependency_ledger || {};
+const metab = pass.productive_metabolism || {};
+const patterns = pass.observed_patterns || [];
+const sigs = pass.county_economic_signatures_designated || [];
+const edges = pass.county_network_edges_seed || [];
+
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+---
+
+<BaseLayout
+  title="V2.1.3 — Production, Ownership & Capital"
+  path="/v2/see-arkansas/production-ownership-capital/"
+  description="What Arkansas produces, who owns productive capacity, how capital forms — observation only."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">PASS COMPLETE</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_question}</p>
+      <p class="muted">
+        {pass.slice_id} · recommendations: <strong>0</strong>
+      </p>
+      <p class="lede">
+        Production in Arkansas ≠ productive capital owned by Arkansans ≠ wealth retained by Arkansas
+        households.
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Progress</h2>
+      <ul class="link-board">
+        <li>
+          Objects <strong>{pass.progress?.baseline_objects_closed_after}/152</strong> · Blueprint{" "}
+          <strong>{pass.progress?.v2_blueprint_percent}%</strong>
+        </li>
+        <li>
+          GEO production {pass.progress?.geo_production_partial}/75 · employment{" "}
+          {pass.progress?.geo_employment_partial}/75 · ownership{" "}
+          {pass.progress?.geo_ownership_capital_partial}/75
+        </li>
+        <li>Recommendations: <strong>0</strong></li>
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/what-changed/v2-1-3/">What Changed →</a>
+        {" · "}
+        <a href="/v2/see-arkansas/">V2.1 hub →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Productive Metabolism</h2>
+      <ol class="stack">
+        {(metab.diagram || []).map((line: string) => (
+          <li>
+            <strong>{line}</strong>
+          </li>
+        ))}
+      </ol>
+      <p class="muted">Known now: {(metab.known_now || []).join(" · ")}</p>
+      <p class="muted">Conceptual only: {(metab.conceptual_only || []).join(" · ")}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Statewide production anchors (FACT)</h2>
+      <ul class="stack">
+        {
+          (prod.statewide_anchors || []).map((a: any) => (
+            <li>
+              <strong>{a.label}</strong>:{" "}
+              {a.value_usd != null ? money(a.value_usd) : num(a.value)}{" "}
+              <span class="muted">
+                ({a.period || "—"} · {a.evidence_class})
+              </span>
+              {a.note && <div class="muted">{a.note}</div>}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Three economies (do not collapse)</h2>
+      <ul class="link-board">
+        <li>
+          <strong>{three.local_serving?.label}</strong>
+          <div class="muted">{three.local_serving?.definition}</div>
+        </li>
+        <li>
+          <strong>{three.external_income?.label}</strong>
+          <div class="muted">{three.external_income?.definition}</div>
+        </li>
+        <li>
+          <strong>{three.asset_ownership?.label}</strong>
+          <div class="muted">{three.asset_ownership?.definition}</div>
+          <div class="muted">
+            Productive ownership shares by sector:{" "}
+            {three.asset_ownership?.productive_ownership_shares_by_sector}
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Sector production ledger</h2>
+      <ul class="stack">
+        {
+          (prod.sectors || []).map((s: any) => (
+            <li>
+              <strong>{s.label}</strong>
+              <div class="muted">{s.economy_classes}</div>
+              <div>{s.output_activity}</div>
+              <div class="muted">Ownership evidence: {s.ownership_evidence}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Ownership ledger</h2>
+      <p class="lede">{own.rule}</p>
+      <ul class="stack">
+        {
+          (own.bound || []).map((b: any) => (
+            <li>
+              <span class="chip chip--done">{b.evidence_class}</span> <strong>{b.domain}</strong>
+              {b.shares && (
+                <div class="muted">
+                  IOU {b.shares.iou_percent}% · coop {b.shares.coop_percent}% · muni{" "}
+                  {b.shares.muni_percent}% · other {b.shares.other_percent}%
+                </div>
+              )}
+              {b.not && <div class="muted">Not: {b.not}</div>}
+            </li>
+          ))
+        }
+      </ul>
+      <h3>UNKNOWN-COMPLETE</h3>
+      <ul class="stack">
+        {(own.unknown_complete || []).map((u: string) => <li>{u}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Capital formation ladder</h2>
+      <p class="lede">{capital.rule}</p>
+      <ol class="stack">
+        {
+          (capital.ladder || []).map((r: any) => (
+            <li>
+              <strong>{r.rung}</strong> — {r.status}
+              {r.evidence && <span class="muted"> · {r.evidence}</span>}
+            </li>
+          ))
+        }
+      </ol>
+      <h3>Access map (not solved)</h3>
+      <ul class="stack">
+        {
+          (capital.access_questions || []).map((q: any) => (
+            <li>
+              {money(q.amount_usd)}: {q.where_today}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Productive asset register (classes)</h2>
+      <ul class="stack">
+        {
+          (assets.classes || []).map((a: any) => (
+            <li>
+              <strong>{a.id}</strong>
+              <div class="muted">
+                Where: {a.where} · Ownership: {a.ownership || "—"} · Network: {a.network_role || "—"}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>External-income map</h2>
+      <p class="muted">{external.rule}</p>
+      <ul class="stack">
+        {
+          (external.channels || []).map((c: any) => (
+            <li>
+              <strong>{c.sector}</strong>
+              <div class="muted">
+                External market: {String(c.external_market)} · Gross known:{" "}
+                {String(c.gross_activity_known)} · Ownership known: {String(c.ownership_known)}
+                {c.gross_usd != null && <> · {money(c.gross_usd)}</>}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Dependency ledger</h2>
+      <p class="lede">{deps.rule}</p>
+      <ul class="stack">
+        {
+          (deps.by_sector_common || []).map((d: any) => (
+            <li>
+              <strong>{d.dependency}</strong> — {d.evidence_class}
+              {d.note && <span class="muted"> · {d.note}</span>}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Designated county signatures (not rankings)</h2>
+      <ul class="stack">
+        {
+          sigs.map((s: any) => (
+            <li>
+              <a href={`/v2/see-arkansas/counties/${s.fips}/`}>
+                <strong>{s.county}</strong>
+              </a>
+              <div class="muted">
+                {Object.entries(s.signature || {})
+                  .map(([k, v]) => `${k}: ${v}`)
+                  .join(" · ")}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>County Network edges (seed)</h2>
+      <ul class="stack">
+        {
+          edges.map((e: any) => (
+            <li>
+              <strong>{e.id}</strong> — {e.relationship}: {e.source_label || e.source} →{" "}
+              {e.destination_label || e.destination}
+              <div class="muted">
+                {e.evidence_class} · {e.evidence}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/counties/network/">Network contract →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Observed patterns</h2>
+      <ul class="stack">
+        {
+          patterns.map((p: any) => (
+            <li>
+              <strong>{p.id}</strong>
+              <div>{p.observation}</div>
+              <div class="muted">Not: {p.not}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Deferred</h2>
+      <ul class="stack">
+        {(pass.deferred || []).map((d: string) => <li>{d}</li>)}
+      </ul>
+      <p class="lede">Next: {pass.next}</p>
+    </section>
+  </article>
+</BaseLayout>

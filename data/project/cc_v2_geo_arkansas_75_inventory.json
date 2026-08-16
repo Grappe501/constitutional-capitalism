@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-GEO-ARKANSAS-75-INVENTORY-1.0",
-  "decision_id": "CC-DEC-197",
-  "update_id": "UPD-210",
+  "decision_id": "CC-DEC-198",
+  "update_id": "UPD-211",
   "geo_decision_id": "V2-GEO-001",
   "generated_at": "2026-08-16",
   "status": "SCHEMA_LOCKED_FIELD_POPULATION_OPEN",
   "county_count": 75,
   "dimension_count": 12,
   "matrix_cells": 900,
-  "cells_partial": 89,
-  "cells_empty": 811,
+  "cells_partial": 117,
+  "cells_empty": 783,
   "population_method": "field_first",
   "no_ranking": true,
   "records": [
@@ -83,35 +83,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 328702000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 421.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 7987,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 6.8,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 8,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 715524000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 421.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 328702000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -228,7 +289,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -236,7 +299,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -244,7 +309,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -252,7 +319,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -369,7 +438,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -377,7 +448,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -385,7 +458,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -393,7 +468,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -510,7 +587,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -518,7 +597,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -526,7 +607,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -534,7 +617,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -651,7 +736,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -659,7 +746,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -667,7 +756,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -675,7 +766,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -792,7 +885,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -800,7 +895,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -808,7 +905,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -816,7 +915,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -933,7 +1034,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -941,7 +1044,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -949,7 +1054,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -957,7 +1064,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1074,7 +1183,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1082,7 +1193,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1090,7 +1203,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1098,7 +1213,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1215,7 +1332,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1223,7 +1342,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1231,7 +1352,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1239,7 +1362,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1356,7 +1481,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1364,7 +1491,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1372,7 +1501,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1380,7 +1511,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1497,7 +1630,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1505,7 +1640,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1513,7 +1650,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1521,7 +1660,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1638,7 +1779,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1646,7 +1789,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1654,7 +1799,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1662,7 +1809,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1779,7 +1928,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1787,7 +1938,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1795,7 +1948,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1803,7 +1958,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -1920,7 +2077,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -1928,7 +2087,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -1936,7 +2097,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -1944,7 +2107,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2061,7 +2226,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2069,7 +2236,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2077,7 +2246,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2085,7 +2256,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2202,7 +2375,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2210,7 +2385,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2218,7 +2395,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2226,7 +2405,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2343,7 +2524,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2351,7 +2534,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2359,7 +2544,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2367,7 +2554,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2484,7 +2673,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2492,7 +2683,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2500,7 +2693,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2508,7 +2703,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2625,7 +2822,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2633,7 +2832,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2641,7 +2842,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2649,7 +2852,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2766,7 +2971,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2774,7 +2981,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2782,7 +2991,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2790,7 +3001,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -2907,7 +3120,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -2915,7 +3130,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -2923,7 +3140,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -2931,7 +3150,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3048,7 +3269,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3056,7 +3279,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3064,7 +3289,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3072,7 +3299,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3189,7 +3418,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3197,7 +3428,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3205,7 +3438,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3213,7 +3448,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3330,7 +3567,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3338,7 +3577,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3346,7 +3587,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3354,7 +3597,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3471,7 +3716,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3479,7 +3726,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3487,7 +3736,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3495,7 +3746,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3612,7 +3865,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3620,7 +3875,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3628,7 +3885,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3636,7 +3895,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3753,7 +4014,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3761,7 +4024,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3769,7 +4034,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3777,7 +4044,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -3894,7 +4163,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -3902,7 +4173,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -3910,7 +4183,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -3918,7 +4193,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4035,7 +4312,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4043,7 +4322,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4051,7 +4332,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4059,7 +4342,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4176,7 +4461,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4184,7 +4471,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4192,7 +4481,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4200,7 +4491,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4317,7 +4610,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4325,7 +4620,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4333,7 +4630,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4341,7 +4640,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4458,7 +4759,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4466,7 +4769,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4474,7 +4779,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4482,7 +4789,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4599,7 +4908,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4607,7 +4918,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4615,7 +4928,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4623,7 +4938,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4740,7 +5057,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4748,7 +5067,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4756,7 +5077,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4764,7 +5087,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -4881,7 +5206,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -4889,7 +5216,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -4897,7 +5226,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -4905,7 +5236,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5022,7 +5355,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5030,7 +5365,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5038,7 +5375,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5046,7 +5385,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5187,35 +5528,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 152423000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 192.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 2324,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 8.8,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 5,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 178116000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 192.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 152423000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5332,7 +5734,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5340,7 +5744,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5348,7 +5754,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5356,7 +5764,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5473,7 +5883,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5481,7 +5893,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5489,7 +5903,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5497,7 +5913,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5614,7 +6032,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5622,7 +6042,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5630,7 +6052,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5638,7 +6062,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5755,7 +6181,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5763,7 +6191,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5771,7 +6201,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5779,7 +6211,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -5896,7 +6330,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -5904,7 +6340,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -5912,7 +6350,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -5920,7 +6360,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6037,7 +6479,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6045,7 +6489,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6053,7 +6499,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6061,7 +6509,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6178,7 +6628,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6186,7 +6638,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6194,7 +6648,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6202,7 +6658,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6319,7 +6777,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6327,7 +6787,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6335,7 +6797,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6343,7 +6807,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6460,7 +6926,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6468,7 +6936,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6476,7 +6946,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6484,7 +6956,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6625,35 +7099,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 462652000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 268.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 18690,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 8.4,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 19,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 781489000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 268.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 462652000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6770,7 +7305,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6778,7 +7315,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6786,7 +7325,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6794,7 +7335,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -6911,7 +7454,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -6919,7 +7464,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -6927,7 +7474,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -6935,7 +7484,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7052,7 +7603,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7060,7 +7613,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7068,7 +7623,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7076,7 +7633,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7193,7 +7752,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7201,7 +7762,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7209,7 +7772,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7217,7 +7782,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7334,7 +7901,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7342,7 +7911,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7350,7 +7921,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7358,7 +7931,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7475,7 +8050,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7483,7 +8060,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7491,7 +8070,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7499,7 +8080,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7640,35 +8223,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 306453000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 240.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 6070,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 15.8,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 10,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 453252000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 240.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 306453000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7785,7 +8429,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7793,7 +8439,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7801,7 +8449,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7809,7 +8459,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -7926,7 +8578,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -7934,7 +8588,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -7942,7 +8598,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -7950,7 +8608,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8067,7 +8727,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8075,7 +8737,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8083,7 +8747,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8091,7 +8757,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8208,7 +8876,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8216,7 +8886,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8224,7 +8896,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8232,7 +8906,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8349,7 +9025,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8357,7 +9035,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8365,7 +9045,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8373,7 +9055,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8490,7 +9174,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8498,7 +9184,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8506,7 +9194,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8514,7 +9204,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8631,7 +9323,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8639,7 +9333,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8647,7 +9343,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8655,7 +9353,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8772,7 +9472,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8780,7 +9482,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8788,7 +9492,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8796,7 +9502,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -8913,7 +9621,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -8921,7 +9631,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -8929,7 +9641,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -8937,7 +9651,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9054,7 +9770,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9062,7 +9780,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9070,7 +9790,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9078,7 +9800,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9219,35 +9943,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 33729000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 562.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 3014,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 5.3,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 3,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 166587000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 562.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 33729000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9364,7 +10149,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9372,7 +10159,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9380,7 +10169,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9388,7 +10179,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9505,7 +10298,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9513,7 +10308,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9521,7 +10318,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9529,7 +10328,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9646,7 +10447,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9654,7 +10457,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9662,7 +10467,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9670,7 +10477,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9787,7 +10596,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9795,7 +10606,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9803,7 +10616,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9811,7 +10626,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -9928,7 +10745,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -9936,7 +10755,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -9944,7 +10765,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -9952,7 +10775,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10093,35 +10918,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 15604000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 569.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 5842,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 4.3,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 7,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 432470000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 569.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 15604000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10238,7 +11124,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -10246,7 +11134,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -10254,7 +11144,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -10262,7 +11154,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10403,35 +11297,96 @@
         },
         "production": {
           "dimension_id": "production",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
-          "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
+          "arkansas_now": "Measurable farm-gate production activity present in bound NASS series.",
+          "metrics": {
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 236301000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "farm_operations": {
+              "year": "2022",
+              "value": 1552.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Field-first Production: designated Living Systems ag scaffold only — not full industry mix.",
+            "Production ≠ ownership ≠ household retention."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "acs5_civilian_labor_force": {
+              "year": "2023",
+              "value": 34263,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            },
+            "acs5_unemployment_rate": {
+              "year": "2023",
+              "value": 5.1,
+              "source": "CENSUS-ACS5-SF-B23025",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "ACS labor force — not industry employment mix."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "PROXY",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "fdic_branch_count": {
+              "year": "2025",
+              "value": 32,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            },
+            "fdic_deposits_usd": {
+              "year": "2025",
+              "value": 2048465000,
+              "source": "FDIC-SOD",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "PROXY for capital access only — deposits ≠ beneficial ownership of productive capital."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
-          "status": "EMPTY",
-          "evidence_class": "UNKNOWN",
+          "status": "PARTIAL",
+          "evidence_class": "KNOWN",
           "arkansas_now": null,
-          "metrics": {},
-          "notes": []
+          "metrics": {
+            "farm_operations": {
+              "year": "2022",
+              "value": 1552.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            },
+            "ag_product_sales_usd": {
+              "year": "2022",
+              "value": 236301000.0,
+              "source": "USDA-NASS-COA",
+              "evidence_class": "KNOWN"
+            }
+          },
+          "notes": [
+            "Farm operations / sales as land-use production proxy — not land title ownership."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10548,7 +11503,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -10556,7 +11513,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -10564,7 +11523,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -10572,7 +11533,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10689,7 +11652,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Production pass: county QCEW/NAICS not bound — cell EMPTY (not invented)."
+          ]
         },
         "employment": {
           "dimension_id": "employment",
@@ -10697,7 +11662,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Employment: no bound ACS/QCEW county industry panel."
+          ]
         },
         "ownership_capital": {
           "dimension_id": "ownership_capital",
@@ -10705,7 +11672,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Ownership & Capital: no FDIC SOD join for this county in corpus."
+          ]
         },
         "land_natural_capital": {
           "dimension_id": "land_natural_capital",
@@ -10713,7 +11682,9 @@
           "evidence_class": "UNKNOWN",
           "arkansas_now": null,
           "metrics": {},
-          "notes": []
+          "notes": [
+            "Field-first Land: no designated NASS bind for this county."
+          ]
         },
         "infrastructure": {
           "dimension_id": "infrastructure",
@@ -10786,5 +11757,136 @@
       "unknowns": []
     }
   ],
-  "v2_1_2_geo_note": "government_public_money PARTIAL on 75/75 counties via AV/millage PROXY."
+  "v2_1_2_geo_note": "government_public_money PARTIAL on 75/75 counties via AV/millage PROXY.",
+  "v2_1_3_geo_note": {
+    "production_partial": 7,
+    "employment_partial": 7,
+    "ownership_capital_partial": 7,
+    "method": "field_first"
+  },
+  "county_network_edges_seed": [
+    {
+      "id": "EDGE-001",
+      "source": "05085",
+      "source_label": "Lonoke County",
+      "destination": "05119",
+      "destination_label": "Pulaski County",
+      "relationship": "COMMUTING",
+      "strength": null,
+      "evidence": "Architectural example from V2-GEO narrative — LOD commute matrix not bound",
+      "evidence_class": "UNKNOWN",
+      "confidence": "LOW",
+      "note": "Placeholder relationship class only — do not treat as measured edge until LOD/ACS bound."
+    },
+    {
+      "id": "EDGE-002",
+      "source": "designated_rural_set",
+      "destination": "regional_healthcare",
+      "relationship": "HEALTHCARE",
+      "strength": null,
+      "evidence": "HPSA designations in designated-county set",
+      "evidence_class": "PROXY",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "county_economic_signatures_designated": [
+    {
+      "fips": "05001",
+      "county": "Arkansas County",
+      "signature": {
+        "Agriculture": "HIGH",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05073",
+      "county": "Lafayette County",
+      "signature": {
+        "Agriculture": "MEDIUM",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05093",
+      "county": "Mississippi County",
+      "signature": {
+        "Agriculture": "HIGH",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05107",
+      "county": "Phillips County",
+      "signature": {
+        "Agriculture": "HIGH",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05129",
+      "county": "Searcy County",
+      "signature": {
+        "Agriculture": "LOW",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05141",
+      "county": "Van Buren County",
+      "signature": {
+        "Agriculture": "LOW",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    },
+    {
+      "fips": "05145",
+      "county": "White County",
+      "signature": {
+        "Agriculture": "HIGH",
+        "Manufacturing": "UNKNOWN",
+        "Healthcare_hub_dependence": "UNKNOWN",
+        "External_commuting": "UNKNOWN",
+        "Tourism": "UNKNOWN",
+        "Ownership_evidence": "LOW_CONFIDENCE",
+        "Capital_access_proxy": "PARTIAL"
+      },
+      "rule": "Descriptive fingerprint — not a ranking and not a future assignment."
+    }
+  ]
 }

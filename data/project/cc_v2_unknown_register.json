@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
-  "decision_id": "CC-DEC-197",
-  "update_id": "UPD-210",
+  "decision_id": "CC-DEC-198",
+  "update_id": "UPD-211",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
@@ -206,6 +206,67 @@
       "home_ids": [
         "local_government",
         "geographic_disparities"
+      ]
+    },
+    {
+      "id": "UNK-PROD-001",
+      "question": "Beneficial ownership shares of manufacturing / processing / logistics by Arkansas vs external?",
+      "why_unknown": "No ownership registry bound.",
+      "evidence_that_would_resolve": "Firm HQ / UBO / BEA FDI joins",
+      "v2_2_requires_resolution": true,
+      "class": "BLOCKING",
+      "blocks": "V2.2 ownership redesign depth — not V2.1.3 observation closure",
+      "home_ids": [
+        "capital",
+        "agriculture",
+        "business_formation"
+      ]
+    },
+    {
+      "id": "UNK-PROD-002",
+      "question": "County QCEW/NAICS employment and wages for all 75?",
+      "why_unknown": "Not ingested.",
+      "evidence_that_would_resolve": "BLS QCEW county-industry extract",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "labor"
+      ]
+    },
+    {
+      "id": "UNK-PROD-003",
+      "question": "Where can an Arkansas firm obtain $10k–$100M at each rung today?",
+      "why_unknown": "Capital access ladder conceptual only.",
+      "evidence_that_would_resolve": "Lender/CDFIs/VC survey + public program inventory",
+      "v2_2_requires_resolution": true,
+      "class": "BLOCKING",
+      "blocks": "V2.3 capital architecture — not V2.1.3 close",
+      "home_ids": [
+        "capital",
+        "banking"
+      ]
+    },
+    {
+      "id": "UNK-PROD-004",
+      "question": "Energy generation mix and export/import balance?",
+      "why_unknown": "Pass 3.6 gap remains.",
+      "evidence_that_would_resolve": "EIA generation + interchange",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "energy"
+      ]
+    },
+    {
+      "id": "UNK-PROD-005",
+      "question": "Measured commuting edges for County Network?",
+      "why_unknown": "LOD/ACS commute matrix not bound.",
+      "evidence_that_would_resolve": "Census LODES",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "geographic_disparities",
+        "labor"
       ]
     }
   ],

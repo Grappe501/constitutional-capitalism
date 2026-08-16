@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-SEE-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-197",
-  "update_id": "UPD-210",
+  "decision_id": "CC-DEC-198",
+  "update_id": "UPD-211",
   "generated_at": "2026-08-16",
   "status": "IN_PROGRESS",
   "gate": "V2.1",
@@ -68,9 +68,9 @@
   },
   "progress": {
     "closure_objects_total": 152,
-    "closure_objects_closed": 76,
-    "v2_1_completion_percent": 50.0,
-    "v2_blueprint_percent": 12.5
+    "closure_objects_closed": 105,
+    "v2_1_completion_percent": 69.1,
+    "v2_blueprint_percent": 17.3
   },
   "passes": [
     {
@@ -95,15 +95,16 @@
       "id": "V2.1.3",
       "slug": "production-ownership-capital",
       "name": "Production, Ownership & Capital",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "exit": "Production Map + Ownership Map + Capital Formation Map + External Dependency/Income baseline.",
-      "href": null
+      "href": "/v2/see-arkansas/production-ownership-capital/",
+      "what_changed": "/v2/see-arkansas/what-changed/v2-1-3/"
     },
     {
       "id": "V2.1.4",
       "slug": "institutions-power-constraints",
       "name": "Institutions, Power & Constraints",
-      "status": "QUEUED",
+      "status": "NEXT",
       "exit": "Arkansas Power Map + Authority/Constraint Matrix + federal/local dependency map.",
       "href": null
     },
