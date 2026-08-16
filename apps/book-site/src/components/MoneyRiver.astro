@@ -1,16 +1,27 @@
 ---
 interface Props {
   title?: string;
+  note?: string;
+  stages?: { label: string; kind?: "entry" | "flow" | "asset" | "leak" }[];
 }
-const { title = "The Money River" } = Astro.props;
+const {
+  title = "Arkansas Money River",
+  note = "Working V1 — populate denser flows as Geographic Money Statements mature. COUNTABLE fiscal claims are not invented here.",
+  stages = [
+    { label: "Money enters", kind: "entry" },
+    { label: "Local circulation", kind: "flow" },
+    { label: "Arkansas assets", kind: "asset" },
+    { label: "Leak outward", kind: "leak" },
+  ],
+} = Astro.props;
 ---
 
-<figure class="viz viz--river" data-viz="money-river">
+<figure class="viz viz--river" data-viz="money-river" id="money-river">
   <figcaption class="viz__cap">
     <span class="viz__family">{title}</span>
     <span class="viz__q">Where did it come from · where did it go · what leaks?</span>
   </figcaption>
-  <svg class="viz-svg" viewBox="0 0 720 220" role="img" aria-label="Money River schematic">
+  <svg class="viz-svg" viewBox="0 0 720 220" role="img" aria-label="Arkansas Money River schematic">
     <defs>
       <linearGradient id="riverFill" x1="0" y1="0" x2="1" y2="0">
         <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.85"></stop>
@@ -38,13 +49,15 @@ const { title = "The Money River" } = Astro.props;
       stroke-width="8"
       stroke-linecap="round"
       opacity="0.75"></path>
-    <text x="28" y="28" class="viz-svg__label">Money enters</text>
-    <text x="250" y="200" class="viz-svg__label">Local circulation</text>
-    <text x="500" y="22" class="viz-svg__label">Arkansas assets</text>
-    <text x="560" y="210" class="viz-svg__label viz-svg__label--leak">Leak outward</text>
+    <text x="28" y="28" class="viz-svg__label">{stages[0]?.label || "Money enters"}</text>
+    <text x="250" y="200" class="viz-svg__label">{stages[1]?.label || "Local circulation"}</text>
+    <text x="500" y="22" class="viz-svg__label">{stages[2]?.label || "Arkansas assets"}</text>
+    <text x="560" y="210" class="viz-svg__label viz-svg__label--leak">{stages[3]?.label || "Leak outward"}</text>
   </svg>
-  <p class="viz__note">
-    Signature shell — populate with Arkansas flows later. External leakage leaves the river;
-    public/community return creates tributaries back toward retained prosperity.
-  </p>
+  <ol class="river-steps">
+    {stages.map((s) => (
+      <li data-kind={s.kind || "flow"}>{s.label}</li>
+    ))}
+  </ol>
+  <p class="viz__note">{note}</p>
 </figure>

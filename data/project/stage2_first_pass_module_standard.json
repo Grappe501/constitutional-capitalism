@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-2-FIRST-PASS-MODULE-STANDARD-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-158",
+  "update_id": "UPD-171",
+  "status": "LOCKED",
+  "purpose": "Harder definition of first pass — enough that another expert understands what we propose. Not a dissertation. Prevents thin definitions from counting as 100%.",
+  "stage_1_bone_template_superseded_for_counting": true,
+  "note": "Stage 1 seven-field bones remain the skeleton. Stage 2 first-pass counting requires the fields below.",
+  "required_fields": [
+    {
+      "id": "now",
+      "label": "NOW",
+      "question": "What exists in Arkansas today for this function?"
+    },
+    {
+      "id": "problem",
+      "label": "PROBLEM",
+      "question": "What structurally fails for households, communities, or the state?"
+    },
+    {
+      "id": "future_state",
+      "label": "FUTURE STATE",
+      "question": "What does success look like when this module works?"
+    },
+    {
+      "id": "mechanism",
+      "label": "MECHANISM",
+      "question": "What institutional / market / ownership design produces that future?"
+    },
+    {
+      "id": "money_flow",
+      "label": "MONEY FLOW",
+      "question": "Where does money come from, go, leak, and get retained?"
+    },
+    {
+      "id": "ownership",
+      "label": "OWNERSHIP",
+      "question": "Who owns assets, claims, and surplus under the proposal?"
+    },
+    {
+      "id": "household_effect",
+      "label": "HOUSEHOLD EFFECT",
+      "question": "How does an ordinary Arkansas household gain income, assets, time, or security?"
+    },
+    {
+      "id": "government_role",
+      "label": "GOVERNMENT ROLE",
+      "question": "What does government authorize, fund, operate, regulate, or stay out of?"
+    },
+    {
+      "id": "market_role",
+      "label": "MARKET ROLE",
+      "question": "What do private markets, firms, and competition do here?"
+    },
+    {
+      "id": "transition",
+      "label": "TRANSITION",
+      "question": "How do we move from NOW without collapsing essential systems (Dependency Rule)?"
+    },
+    {
+      "id": "dependencies",
+      "label": "DEPENDENCIES",
+      "question": "What other modules must exist or clear first?"
+    },
+    {
+      "id": "risks",
+      "label": "RISKS",
+      "question": "What fails under capture, recession, legal challenge, or poor sequencing?"
+    },
+    {
+      "id": "measurement",
+      "label": "MEASUREMENT",
+      "question": "How do we know this is working?"
+    },
+    {
+      "id": "evidence_status",
+      "label": "EVIDENCE STATUS",
+      "question": "PROVEN / STRONG / WORKING / ILLUSTRATIVE / UNTESTED — and why"
+    },
+    {
+      "id": "deferred_validation",
+      "label": "DEFERRED VALIDATION",
+      "question": "What is explicitly parked for Stage 3 depth or Stage 4 attack?"
+    }
+  ],
+  "counting_rule": {
+    "counts_toward_first_pass": "Module has all 15 fields filled at working-model depth (expert-handable).",
+    "does_not_count": [
+      "Stage 1 bone alone",
+      "title_and_blurb",
+      "research_hypothesis_without_mechanism",
+      "illustrative_numbers_treated_as_COUNTABLE"
+    ]
+  },
+  "evidence_confidence_levels": ["PROVEN", "STRONG", "WORKING", "ILLUSTRATIVE", "UNTESTED"]
+}

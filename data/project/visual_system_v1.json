@@ -4,9 +4,9 @@
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-156",
   "update_id": "UPD-169",
-  "status": "VISUAL_SYSTEM_V1_LOCKED_PARALLEL_TO_STAGE_1",
+  "status": "VISUAL_SYSTEM_V1_LOCKED_SHIPS_WITH_STAGE_2",
   "epistemic_class": "PRESENTATION_INFRASTRUCTURE_NOT_DOCTRINE_NOT_RESEARCH_BRANCH",
-  "posture": "Interactive atlas of Arkansas political economy — parallel to Stage 1 spine closure. Does not interrupt Pass 5. Component vocabulary first; populate on subsequent passes.",
+  "posture": "Interactive atlas of Arkansas political economy — ships with Stage 2 working models. Pass 2.1 promotes Money River, Ownership, Flywheel, Leakage, and Revenue Bridge to WORKING_V1.",
   "site_metaphor": "interactive_atlas_of_arkansas_political_economy",
   "not": [
     "separate_design_pass_that_blocks_skeleton",
@@ -73,9 +73,10 @@
     {
       "id": "money_river",
       "name": "The Money River",
-      "status": "SHELL_V1",
+      "status": "WORKING_V1",
       "question": "Where did it come from / where did it go / what leaks?",
-      "component": "MoneyRiver.astro"
+      "component": "MoneyRiver.astro",
+      "home": "/system/money-engine/#money-river"
     },
     {
       "id": "arkansas_capital_map",

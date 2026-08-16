@@ -9,6 +9,7 @@ const bars = completion.progress_bars || {};
 const overall = completion.overall_project_completion?.percent ?? 0;
 const stages = completion.stages || [];
 const passes = registry.passes || [];
+const stage2Passes = registry.stage2_passes || [];
 
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
@@ -26,16 +27,15 @@ function statusLabel(status?: string) {
 <BaseLayout
   title="Build Progress"
   path="/build-progress/"
-  description="Four completion bars, current Stage 1 pass, and permanent What Changed This Pass changelogs."
+  description="Completion ladder, Stage 2 passes, and permanent What Changed changelogs."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Readable changelog</span>
+      <span class="chip chip--live">Stage 2 active</span>
       <h1>Build Progress</h1>
       <p class="lede">
-        Follow the work without hunting the book. Every Stage 1 pass leaves a permanent
-        <strong>What Changed This Pass</strong> page with decisions, progress movement, modules,
-        sources, deferred items, commit, and deployment date.
+        Stage 1 skeleton is complete. Stage 2 builds working models — every pass ships intellect
+        <strong>and</strong> visual assets, with a BEFORE → AFTER scoreboard you can feel.
       </p>
     </header>
 
@@ -47,7 +47,7 @@ function statusLabel(status?: string) {
         firstPass={bars.first_pass_coverage_percent ?? 0}
         publication={bars.publication_completion_percent ?? 0}
         validation={bars.validation_completion_percent ?? 0}
-        caption="Stage 1 skeleton certified complete (Pass 5). Stage 2 Full First-Pass Coverage is now the governing objective."
+        caption="Stage 1 = 100% skeleton. Stage 2 first-pass coverage is the governing dial (12% → 100%)."
       />
       <p class="muted">
         Current stage: <strong>{registry.current_stage}</strong>
@@ -57,14 +57,13 @@ function statusLabel(status?: string) {
             · Current pass: <strong>{registry.current_pass}</strong>
           </>
         )}
-        {!registry.current_pass && <> · Stage 1 passes: all five complete</>}
       </p>
       <p>
         <a href="/status/">Full status dials →</a>
         {" · "}
-        <a href="/build-progress/passes/pass-5/">Stage 1 certification →</a>
+        <a href="/system/money-engine/">Money Engine →</a>
         {" · "}
-        <a href="/system/visual-language/">Visual language →</a>
+        <a href="/build-progress/passes/pass-2-1/">Pass 2.1 What Changed →</a>
       </p>
     </section>
 
@@ -72,19 +71,30 @@ function statusLabel(status?: string) {
       <h2 id="next">Next objective</h2>
       <p class="lede">{registry.next_objective}</p>
       <ul class="link-board">
-        <li><a href="/build-progress/passes/pass-5/">Stage 1 certification (Pass 5)</a></li>
-        <li><a href="/system/">Complete system architecture map</a></li>
-        <li><a href="/system/money-ownership/">Money & Ownership (Stage 2 deepening)</a></li>
-        <li><a href="/system/household-place/">Household & Place</a></li>
+        <li><a href="/system/money-engine/">Arkansas Money Engine (Pass 2.1 complete)</a></li>
+        <li><a href="/build-progress/passes/pass-2-1/">Pass 2.1 BEFORE → AFTER</a></li>
+        <li><a href="/system/household-place/">Household & Place (Pass 2.2 home)</a></li>
+        <li><a href="/build-progress/passes/pass-5/">Stage 1 certification</a></li>
       </ul>
     </section>
 
+    <section class="hub-section" aria-labelledby="stage2">
+      <h2 id="stage2">Stage 2 passes</h2>
+      <div class="spine-grid">
+        {
+          stage2Passes.map((p: any) => (
+            <a class="spine-tile" href={p.href}>
+              <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>
+              <h3>Pass {p.number}</h3>
+              <p>{p.name}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
     <section class="hub-section" aria-labelledby="passes">
-      <h2 id="passes">Passes</h2>
-      <p class="lede">
-        <a href="/build-progress/passes/">Build Progress → Passes</a> — historical snapshots for each
-        Stage 1 pass.
-      </p>
+      <h2 id="passes">Stage 1 passes (complete)</h2>
       <div class="spine-grid">
         {
           passes.map((p) => (

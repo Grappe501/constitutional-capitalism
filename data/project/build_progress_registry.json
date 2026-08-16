@@ -1,17 +1,18 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
-  "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-152",
-  "update_id": "UPD-165",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-158",
+  "update_id": "UPD-171",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_2",
-  "current_pass": null,
-  "next_objective": "Stage 2 — Full First-Pass Coverage. Every module gets a working model. Horizontal expansion frozen — new ideas absorb into existing bones unless they expose a genuine architectural defect.",
+  "current_pass": "PASS_2_2",
+  "next_objective": "Pass 2.2 — Household Prosperity Engine. Income/work + housing + food + healthcare + energy + transportation + childcare + retirement. Ship working models AND household visual assets.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
+  "stage2_plan_source": "data/project/stage2_six_pass_plan.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
   "arkansas_baseline_source": "data/project/arkansas_state_baseline_corpus.json",
   "stage_1_certification": {
@@ -73,18 +74,65 @@
       "spine_href": "/build-progress/passes/pass-5/"
     }
   ],
-  "infrastructure_checkpoints": [
+  "stage2_passes": [
     {
-      "id": "CC-DEC-152",
-      "title": "Two-volume publishing + Build Progress + Arkansas State Baseline",
-      "date": "2026-08-15",
-      "href": "/build-progress/",
-      "links": [
-        { "href": "/build-progress/", "label": "Build Progress hub" },
-        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline" },
-        { "href": "/system/", "label": "System map" }
-      ]
+      "id": "PASS_2_1",
+      "number": "2.1",
+      "slug": "pass-2-1",
+      "name": "Money Engine",
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-2-1/",
+      "changelog": "data/project/pass_changelogs/pass_2_1.json",
+      "spine_href": "/system/money-engine/"
     },
+    {
+      "id": "PASS_2_2",
+      "number": "2.2",
+      "slug": "pass-2-2",
+      "name": "Household Prosperity Engine",
+      "status": "ACTIVE",
+      "href": "/build-progress/passes/pass-2-2/",
+      "changelog": null,
+      "spine_href": "/system/household-place/"
+    },
+    {
+      "id": "PASS_2_3",
+      "number": "2.3",
+      "slug": "pass-2-3",
+      "name": "Human & Community Capital",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-2-3/",
+      "changelog": null
+    },
+    {
+      "id": "PASS_2_4",
+      "number": "2.4",
+      "slug": "pass-2-4",
+      "name": "Government Operating System",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-2-4/",
+      "changelog": null
+    },
+    {
+      "id": "PASS_2_5",
+      "number": "2.5",
+      "slug": "pass-2-5",
+      "name": "Arkansas Transition Engine",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-2-5/",
+      "changelog": null
+    },
+    {
+      "id": "PASS_2_6",
+      "number": "2.6",
+      "slug": "pass-2-6",
+      "name": "Whole-System Integration Audit",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-2-6/",
+      "changelog": null
+    }
+  ],
+  "infrastructure_checkpoints": [
     {
       "id": "CC-DEC-157",
       "title": "Stage 1 Full Skeleton certified complete (Pass 5)",
@@ -92,8 +140,18 @@
       "href": "/build-progress/passes/pass-5/",
       "links": [
         { "href": "/build-progress/passes/pass-5/", "label": "Stage 1 certification record" },
-        { "href": "/system/", "label": "Complete system architecture map" },
-        { "href": "/build-progress/", "label": "Build Progress — Stage 2 active" }
+        { "href": "/system/", "label": "Complete system architecture map" }
+      ]
+    },
+    {
+      "id": "CC-DEC-158",
+      "title": "Stage 2 opened — Pass 2.1 Money Engine complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-2-1/",
+      "links": [
+        { "href": "/system/money-engine/", "label": "Arkansas Money Engine" },
+        { "href": "/build-progress/passes/pass-2-1/", "label": "Pass 2.1 What Changed" },
+        { "href": "/build-progress/", "label": "Build Progress — Stage 2" }
       ]
     }
   ]

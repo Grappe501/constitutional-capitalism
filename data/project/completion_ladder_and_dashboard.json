@@ -53,10 +53,14 @@
     {
       "id": "STAGE_2",
       "name": "Full First Pass",
-      "target": "Every component has an actual working model — 100% of modules at PARTIAL or better",
+      "target": "Every component has an actual working model — 100% of modules at FIRST_PASS (15-field standard)",
       "status": "ACTIVE",
-      "exit_gate": "Every module has minimum viable substance: what exists → what's wrong → what replaces/changes → how it works → who pays → who benefits → who owns → where money flows → safeguards → transition → intended result.",
-      "rule": "No polishing while another category sits empty. Measure: % of system at minimum viable completeness."
+      "current_work": "Pass 2.1 Money Engine COMPLETE. Next: Pass 2.2 Household Prosperity Engine. 15-field first-pass standard locked. Visuals ship with every pass.",
+      "stage2_plan": "data/project/stage2_six_pass_plan.json",
+      "module_inventory": "data/project/stage2_module_inventory.json",
+      "first_pass_standard": "data/project/stage2_first_pass_module_standard.json",
+      "exit_gate": "Every module has minimum viable substance under the 15-field Stage 2 standard — expert-handable, not dissertation.",
+      "rule": "No polishing while another category sits empty. Measure: working modules / 50."
     },
     {
       "id": "STAGE_3",
@@ -120,27 +124,30 @@
   ],
   "progress_bars": {
     "skeleton_coverage_percent": 100,
-    "first_pass_coverage_percent": 12,
+    "first_pass_coverage_percent": 28,
     "publication_completion_percent": 3,
     "validation_completion_percent": 0,
     "notes": {
-      "skeleton": "Stage 1 COMPLETE — Pass 5 certified 100% skeleton. Horizontal expansion frozen. New bones only if genuine architectural defect.",
-      "first_pass": "Stage 2 ACTIVE — many frameworks exist; most have not crossed Stage 2 minimum viable completeness checklist",
+      "skeleton": "Stage 1 COMPLETE — 100%. Horizontal expansion frozen.",
+      "first_pass": "Stage 2 ACTIVE — Pass 2.1 Money Engine complete (14/50 modules = 28%). Next: Pass 2.2 Household Prosperity Engine.",
       "publication": "Aligned to manuscript substance (~outline/concept dominant)",
-      "validation": "Stage 4 not open; resilience framework connected as plan only"
+      "validation": "Stage 4 not open; COUNTABLE engines remain $0"
     }
   },
   "overall_project_completion": {
-    "percent": 29,
+    "percent": 33,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+12+3+0)=28.75 → 29",
+    "calculation": "0.25*(100+28+3+0)=32.75 → 33",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2–3 close — that is honesty, not regression"
   },
   "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
+  "stage_2_six_pass_plan": "data/project/stage2_six_pass_plan.json",
   "active_stage1_pass": null,
   "last_completed_stage1_pass": "PASS_5",
   "active_stage": "STAGE_2",
+  "active_stage2_pass": "PASS_2_2",
+  "last_completed_stage2_pass": "PASS_2_1",
   "horizontal_expansion_frozen": true,
   "manager_scorecard": {
     "purpose": "After each meaningful build cycle",

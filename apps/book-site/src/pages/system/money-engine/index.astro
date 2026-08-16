@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import MoneyRiver from "../../../components/MoneyRiver.astro";
+import CapitalLeakage from "../../../components/CapitalLeakage.astro";
+import OwnershipFlow from "../../../components/OwnershipFlow.astro";
+import ProsperityFlywheel from "../../../components/ProsperityFlywheel.astro";
+import RevenueBridge from "../../../components/RevenueBridge.astro";
+import engine from "../../../../../../data/project/stage2_pass21_money_engine.json";
+import bridge from "../../../../../../data/project/arkansas_money_engine_budget_bridge.json";
+
+const modules = engine.modules || [];
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+
+function fmtUsd(n?: number) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+---
+
+<BaseLayout
+  title="Arkansas Money Engine"
+  path="/system/money-engine/"
+  description="Stage 2 Pass 2.1 working models for revenue, credit, capital, ownership, markets, and external income."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 2.1 complete</span>
+      <h1>{engine.engine_name}</h1>
+      <p class="lede">{engine.one_sentence}</p>
+      <p class="muted">
+        {engine.decision_id} · {engine.update_id} · COUNTABLE engines: $0 ·{" "}
+        <a href="/build-progress/passes/pass-2-1/">What Changed →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the machine</h2>
+      <MoneyRiver
+        stages={[
+          { label: "Taxes · federal · outside demand", kind: "entry" },
+          { label: "Wages · firms · ledgers", kind: "flow" },
+          { label: "Ownership · Fund · local assets", kind: "asset" },
+          { label: "Absentee profit · interest leak", kind: "leak" },
+        ]}
+      />
+      <RevenueBridge
+        nowGrBillions={fmtUsd(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}
+      />
+      <div id="ownership">
+        <OwnershipFlow domain="Arkansas Money Engine" />
+      </div>
+      <div id="flywheel">
+        <ProsperityFlywheel />
+      </div>
+      <CapitalLeakage />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="budget-now">
+      <h2 id="budget-now">Arkansas NOW — budget bridge</h2>
+      <p class="lede">
+        {bridge.how_arkansas_is_funded_today?.summary}
+      </p>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{fmtUsd(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}</strong>
+          <span>FY2026 GR distributed</span>
+        </div>
+        <div class="dash-cell">
+          <strong>+{bridge.headline_now?.percent_change}%</strong>
+          <span>vs FY2025</span>
+        </div>
+        <div class="dash-cell">
+          <strong>STRONG</strong>
+          <span>Seed confidence</span>
+        </div>
+        <div class="dash-cell">
+          <strong>$0</strong>
+          <span>COUNTABLE engines</span>
+        </div>
+      </div>
+      <ul class="stack">
+        {(bridge.where_major_expenditures_flow || []).map((row: any) => (
+          <li>
+            <strong>{row.label}</strong> — {fmtUsd(row.fy2026_a_usd)}
+            <div class="muted">{row.character}</div>
+            <div class="muted">CC: {row.cc_implication}</div>
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a href="/system/arkansas-state-baseline/">Arkansas State Baseline corpus →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Working modules (15-field first pass)</h2>
+      <p class="lede">
+        Enough that another expert can understand the proposal — not the unabridged book.
+      </p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(engine.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(engine.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/system/money-ownership/">Money & Ownership spine →</a>
+        {" · "}
+        <a href="/research/#hyp-131">HYP-131 →</a>
+        {" · "}
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

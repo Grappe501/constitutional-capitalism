@@ -13,10 +13,13 @@ if (!spine) throw new Error("Money ownership spine missing from site_spine_navig
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--done">Pass 1 complete</span>
+      <span class="chip chip--done">Pass 1 spine · Pass 2.1 engine</span>
       <h1>{spine.title}</h1>
       <p class="lede">{spine.blurb}</p>
       <p class="muted">Locks: {(spine.locks || []).join(" · ")}</p>
+      <p>
+        <a class="button button--primary" href="/system/money-engine/">Open Money Engine working models →</a>
+      </p>
     </header>
 
     <section class="hub-section">
