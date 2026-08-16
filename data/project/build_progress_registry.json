@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-175",
-  "update_id": "UPD-188",
+  "decision_id": "CC-DEC-177",
+  "update_id": "UPD-190",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_4",
-  "current_pass": "PASS_4_3",
-  "next_objective": "Pass 4.3 \u2014 Household, Market & Behavioral Attack. How will actual humans and markets react? Dig down only.",
+  "current_pass": "PASS_4_4",
+  "next_objective": "Pass 4.4 \u2014 Resilience & Adversarial Attack. What happens when the world goes wrong? Dig down only.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -503,6 +503,22 @@
           "label": "Explorer hub"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-177",
+      "title": "Pass 4.3 Household/Market/Behavioral Attack complete \u2014 halfway validation",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-4-3/",
+      "links": [
+        {
+          "href": "/system/behavioral-attack/",
+          "label": "Behavioral Attack"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-3/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -614,17 +630,17 @@
       "number": "4.3",
       "slug": "pass-4-3",
       "name": "Household, Market & Behavioral Attack",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4-3/",
-      "changelog": null,
-      "spine_href": null
+      "changelog": "data/project/pass_changelogs/pass_4_3.json",
+      "spine_href": "/system/behavioral-attack/"
     },
     {
       "id": "PASS_4_4",
       "number": "4.4",
       "slug": "pass-4-4",
       "name": "Resilience & Adversarial Attack",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-4-4/",
       "changelog": null,
       "spine_href": null

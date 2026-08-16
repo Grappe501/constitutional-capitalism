@@ -1,0 +1,823 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-4-PASS-4-3-HOUSEHOLD-MARKET-BEHAVIORAL-ATTACK-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-177",
+  "update_id": "UPD-190",
+  "pass_id": "PASS_4_3",
+  "pass_name": "Household, Market & Behavioral Attack",
+  "status": "PASS_COMPLETE",
+  "epistemic_class": "HOSTILE_AUDIT_NOT_DEFENSE",
+  "governing_question": "Even if a policy is fiscally possible and legally allowed, how will real households, businesses, workers, investors, landlords, consumers, local governments, and markets actually react to it?",
+  "stance": "Economics changes when humans respond. No proposition may rely on people behaving better than ordinary people actually behave.",
+  "ordinary_humans_lock": {
+    "statement": "The system must function with ordinary human beings pursuing varied goals, making imperfect decisions, and responding to incentives.",
+    "status": "SURVIVED",
+    "note": "Locked as Stage 4 behavioral standard if architecture remains. Not a moral-superiority theory of citizenship."
+  },
+  "public_surface": "/system/behavioral-attack/",
+  "source_of_truth_unabridged": "/unabridged/",
+  "discipline": {
+    "dig_down_not_sideways": true,
+    "resilience_issues_route_to": "PASS_4_4",
+    "capture_issues_route_to": "PASS_4_5",
+    "fiscal_cleared_in": "PASS_4_1",
+    "legal_cleared_in": "PASS_4_2",
+    "countable_unchanged": 0
+  },
+  "proposition_dispositions": [
+    "SURVIVED",
+    "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+    "SURVIVED_ONLY_UNDER_CONDITIONS",
+    "UNPROVEN",
+    "HIGH_GAMING_RISK",
+    "MARKET_OFFSET_RISK",
+    "FAILED_BEHAVIORALLY"
+  ],
+  "behavioral_failure_modes": [
+    {
+      "id": "MORAL_HAZARD",
+      "plain": "Someone takes more risk because another party bears losses.",
+      "label": "MORAL HAZARD"
+    },
+    {
+      "id": "ADVERSE_SELECTION",
+      "plain": "A program disproportionately attracts costly/high-risk participants.",
+      "label": "ADVERSE SELECTION"
+    },
+    {
+      "id": "BENEFIT_CAPTURE",
+      "plain": "A third party absorbs intended household benefit.",
+      "label": "BENEFIT CAPTURE"
+    },
+    {
+      "id": "RENT_SEEKING",
+      "plain": "Actors use political rules to gain economic advantage.",
+      "label": "RENT SEEKING"
+    },
+    {
+      "id": "GAMING",
+      "plain": "People technically comply while defeating policy purpose.",
+      "label": "GAMING"
+    },
+    {
+      "id": "CLIFF_EFFECTS",
+      "plain": "Small income changes cause large benefit losses.",
+      "label": "CLIFF EFFECTS"
+    },
+    {
+      "id": "CROWD_OUT",
+      "plain": "Public action replaces rather than supplements private activity.",
+      "label": "CROWD OUT"
+    },
+    {
+      "id": "LOCK_IN",
+      "label": "LOCK-IN",
+      "plain": "A program creates dependency or makes switching expensive."
+    },
+    {
+      "id": "SELECTION_BIAS",
+      "plain": "Pilot results don't generalize.",
+      "label": "SELECTION BIAS"
+    },
+    {
+      "id": "REBOUND_EFFECT",
+      "plain": "Efficiency lowers cost and increases usage enough to offset expected savings.",
+      "label": "REBOUND EFFECT"
+    }
+  ],
+  "scenario_families": [
+    {
+      "id": "INTENDED",
+      "label": "Intended response",
+      "note": "People behave approximately as hoped."
+    },
+    {
+      "id": "WEAK",
+      "label": "Weak response",
+      "note": "Participation is lower than modeled."
+    },
+    {
+      "id": "GAMED",
+      "label": "Gamed response",
+      "note": "Actors exploit rules."
+    },
+    {
+      "id": "MARKET_OFFSET",
+      "label": "Market offset",
+      "note": "Prices/supply adjust and absorb benefits."
+    },
+    {
+      "id": "PERVERSE",
+      "label": "Perverse response",
+      "note": "Policy produces the opposite effect."
+    }
+  ],
+  "household_benefit_capture_test": {
+    "title": "Household Benefit Capture Test",
+    "chain": "policy change \u2192 business/government response \u2192 prices/wages/taxes/access \u2192 household resources/costs/security/ownership/time",
+    "questions": [
+      "Who receives the first dollar?",
+      "Who has pricing power?",
+      "Can another party raise prices because the household now has more resources?",
+      "Does supply expand?",
+      "Does scarcity absorb the benefit?",
+      "Is the effect temporary or durable?"
+    ],
+    "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+    "finding": "Any intervention that stops at legal payer or first recipient is incomplete. Benefit capture is the default red-team presumption until supply response and pricing power are checked."
+  },
+  "tax_incidence": {
+    "title": "Tax incidence \u2014 legal payer \u2260 economic payer",
+    "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+    "rule": "Attack every major revenue type by tracing burden through prices, wages, returns, rents, employment, and investment.",
+    "types": [
+      {
+        "type": "sales/use",
+        "legal_payer": "Buyer (usually)",
+        "likely_burden": "Consumers; more regressive for necessities with inelastic demand",
+        "modes": [
+          "BENEFIT_CAPTURE",
+          "REBOUND_EFFECT"
+        ]
+      },
+      {
+        "type": "business/corporate",
+        "legal_payer": "Firm",
+        "likely_burden": "Split among prices, wages, and capital returns \u2014 context-dependent",
+        "modes": [
+          "RENT_SEEKING"
+        ]
+      },
+      {
+        "type": "property",
+        "legal_payer": "Owner of record",
+        "likely_burden": "Owners short run; can capitalize into prices/rents; tenants via rent; buyers via purchase price",
+        "modes": [
+          "BENEFIT_CAPTURE",
+          "MARKET_OFFSET"
+        ]
+      },
+      {
+        "type": "fees / utility charges",
+        "legal_payer": "User",
+        "likely_burden": "Users; may be more progressive if optional, regressive if essentials",
+        "modes": [
+          "CLIFF_EFFECTS"
+        ]
+      },
+      {
+        "type": "alternative public-income (post 4.1)",
+        "legal_payer": "Varies by feeder",
+        "likely_burden": "Must be mapped per feeder; COUNTABLE still $0 so incidence of hoped-for cash is speculative",
+        "modes": [
+          "GAMING",
+          "RENT_SEEKING"
+        ]
+      }
+    ],
+    "safeguard": "Every revenue proposition must publish a legal-payer vs economic-burden note. Fake precision forbidden where elasticity unknown."
+  },
+  "domain_attacks": {
+    "housing": {
+      "title": "Housing \u2014 biggest behavioral trap",
+      "status": "MARKET_OFFSET_RISK",
+      "core": "If household income/subsidy rises and supply does not, purchasing power becomes higher bids \u2192 higher prices/rents.",
+      "property_tax_decline_capture": [
+        "Homeowner (short run)",
+        "Buyer via higher purchase price (capitalization)",
+        "Landlord",
+        "Tenant (partial pass-through uncertain)",
+        "Lender (collateral values)",
+        "Developer (land bids)"
+      ],
+      "mechanisms_tested": [
+        "land banking",
+        "homeownership incentives",
+        "housing subsidies",
+        "zoning reform",
+        "infrastructure expansion"
+      ],
+      "finding": "Subsidy-without-supply is FAILED BEHAVIORALLY as a household-prosperity strategy. Zoning/supply expansion + ownership reforms are SURVIVED ONLY UNDER CONDITIONS. OV-32-06 / OV-36-03: capitalize-into-rents is the default risk unless supply responds.",
+      "hostile": "Demand-side relief with inelastic housing supply is a landlord/landowner transfer machine dressed as household aid."
+    },
+    "healthcare": {
+      "title": "Healthcare household response",
+      "status": "SURVIVED_ONLY_UNDER_CONDITIONS",
+      "attacks": [
+        "If household exposure falls, utilization may rise",
+        "Provider prices may respond",
+        "Capacity may not expand",
+        "Rural providers may still fail",
+        "Insurance may shift costs elsewhere",
+        "Demand may outrun workforce supply"
+      ],
+      "punch": "Greater access without greater capacity can produce queues rather than care.",
+      "safeguard": "Access claims must be paired with capacity/workforce constraints \u2014 route deep design stress to 4.4 resilience."
+    },
+    "education": {
+      "title": "Education / residency incentives",
+      "status": "HIGH_GAMING_RISK",
+      "attacks": [
+        "Subsidized resident demand may exceed capacity",
+        "Institutions may capture subsidy via tuition/fees",
+        "Students may choose weak-value programs",
+        "Demand Map may become political workforce planning",
+        "Strategic recruits may not stay",
+        "Graduates may leave after subsidy",
+        "Service-linked support may distort careers",
+        "Residency rules encourage strategic domicile claims"
+      ],
+      "legal_note": "4.2: bona fide differentials OK; durational traps constrained. 4.3: incentives and gaming.",
+      "ov": [
+        "OV-33-05",
+        "OV-33-06"
+      ],
+      "finding": "Heavy subsidy without capacity + stay/value tests is HIGH GAMING RISK. Service-reciprocal design SURVIVED WITH BEHAVIORAL SAFEGUARD (voluntary, non-coercive, portable where possible). CTE pathways UNPROVEN quantitatively (OV-33-05)."
+    },
+    "labor": {
+      "title": "Work and labor incentives",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "attacks": [
+        "Benefit cliffs reduce net household prosperity from work",
+        "Employer benefits create job lock-in",
+        "Worker ownership may concentrate household risk if wages + retirement ride the same firm",
+        "Workers may prefer cash to equity",
+        "AI transition may raise productivity without household surplus"
+      ],
+      "punch": "Worker ownership can increase wealth AND concentrate household risk. Diversified claims may be safer than employer-concentrated equity.",
+      "safeguard": "Any worker-ownership push must disclose concentration risk and allow cash alternatives."
+    },
+    "entrepreneurship": {
+      "title": "Entrepreneurship response",
+      "status": "SURVIVED_ONLY_UNDER_CONDITIONS",
+      "attacks": [
+        "New capital may fund marginal businesses chasing same local demand",
+        "Failure rates, collateral, insurance, healthcare dependency constrain entry",
+        "Not everybody should become an entrepreneur"
+      ],
+      "punch": "The system must remain prosperous for people who choose ordinary employment.",
+      "finding": "Capital-access-as-universal-entrepreneurship FAILED BEHAVIORALLY as a slogan. Targeted capability + market-size realism SURVIVES UNDER CONDITIONS."
+    },
+    "public_capital": {
+      "title": "Public Capital Additionality Test",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "question": "Did public participation cause productive activity that would otherwise not occur, or did it merely subsidize something the market would have done anyway?",
+      "risks": [
+        "Private capital waits for subsidy",
+        "Projects structured to maximize public participation",
+        "Losses socialized / gains private",
+        "Expectation of rescue \u2192 moral hazard"
+      ],
+      "finding": "Public equity/participation without additionality test is HIGH GAMING RISK / FAILED BEHAVIORALLY as default. Additionality + waterfall + no private debt guarantee (4.2) are required safeguards."
+    },
+    "procurement": {
+      "title": "Procurement behavioral response",
+      "status": "SURVIVED_ONLY_UNDER_CONDITIONS",
+      "legal_note": "4.2 killed blanket Arkansas-first; lawful toolkit remains.",
+      "tradeoffs": [
+        "Preference margins may raise public prices",
+        "Reduce bidder count",
+        "Encourage shell residency",
+        "Protect weak firms",
+        "OR help new local firms achieve scale and long-run competition"
+      ],
+      "finding": "Short-run cost vs long-run competition tradeoff must be explicit. Preference without entry/graduation metrics is HIGH GAMING RISK."
+    },
+    "retention": {
+      "title": "Local retention and consumer behavior",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "attacks": [
+        "Would households pay 1% / 10% / 30% more for local?",
+        "Quality differences matter",
+        "Low-income households may not afford buy-Arkansas premiums"
+      ],
+      "punch": "Productive retention must not become a moral burden on households who need affordable goods.",
+      "finding": "Confirms 4.1 counterfactual test. Retention-as-virtue-signal FAILED BEHAVIORALLY."
+    },
+    "credit": {
+      "title": "Banking and credit behavior",
+      "status": "HIGH_GAMING_RISK",
+      "attacks": [
+        "Easier credit \u2192 asset price inflation",
+        "Weaker underwriting \u2192 defaults",
+        "Risk shifted to government",
+        "Overleverage",
+        "Politically favored sectors get cheap capital"
+      ],
+      "punch": "Access to credit is not automatically access to prosperity. Sometimes more credit simply means more debt.",
+      "ov": [
+        "OV-34-05"
+      ],
+      "finding": "Public bank not required by architecture. Existing authorities/CDFIs/ring-fenced funds preferred; cheap-credit expansion without underwriting discipline FAILED BEHAVIORALLY."
+    },
+    "external_investment": {
+      "title": "External investment \u2014 Capability Transfer Test",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "question": "When does external capital build Arkansas capability, and when does Arkansas become merely the location of someone else's productive asset?",
+      "leaves_behind": [
+        "skills",
+        "supplier capacity",
+        "infrastructure",
+        "local ownership opportunities",
+        "research capability",
+        "market access"
+      ],
+      "finding": "Out-of-state ownership is not binary bad. Capability Transfer Test required. Extraction-without-transfer is MARKET OFFSET / capture risk \u2192 4.5."
+    },
+    "migration": {
+      "title": "Migration / population response",
+      "status": "SURVIVED_ONLY_UNDER_CONDITIONS",
+      "attacks": [
+        "Prosperity raises housing demand and land values",
+        "Displacement risk for existing residents",
+        "Public-service demand rises",
+        "Population growth \u2260 prosperity; decline \u2260 failure if per-household capability rises"
+      ],
+      "safeguard": "Population strategy needs a capacity constraint (housing, schools, water, healthcare workforce)."
+    },
+    "pilots": {
+      "title": "Pilot Transferability Test",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "punch": "Pilot success does not automatically imply scale success.",
+      "questions": [
+        "What conditions made the pilot succeed?",
+        "Are those conditions reproducible?",
+        "What happens in the weakest county?",
+        "What happens with mediocre leadership?",
+        "What happens without grant money?"
+      ],
+      "modes": [
+        "SELECTION_BIAS"
+      ],
+      "feeds": "PASS_4_5"
+    },
+    "fiscal_visibility": {
+      "title": "Fiscal Visibility",
+      "status": "SURVIVED",
+      "finding": "Public-income can create an illusion that government resources are free and weaken fiscal discipline. Citizens must see opportunity cost of public assets, resources, and retained earnings. 'Government didn't tax us' \u2260 free money."
+    },
+    "elasticity": {
+      "title": "Elasticity as validation risk marker",
+      "status": "SURVIVED",
+      "rule": "Every major economic model must identify where it assumes behavior will not change. Those assumptions are validation risks. Full elasticity estimates not required this pass."
+    },
+    "market_structure": {
+      "title": "Market-structure test",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "questions": [
+        "Does this increase or decrease viable competitors?",
+        "Lower or raise barriers to entry?",
+        "Privilege incumbents?",
+        "Create switching costs?",
+        "Increase buyer power / monopsony?",
+        "Move concentration upstream/downstream rather than remove it?"
+      ],
+      "sectors": [
+        "agriculture",
+        "healthcare",
+        "utilities",
+        "finance",
+        "digital infrastructure"
+      ]
+    }
+  },
+  "distribution_grid": {
+    "title": "Distribution grid (representative households)",
+    "scale": [
+      "LIKELY_BENEFIT",
+      "LIKELY_COST",
+      "MIXED",
+      "UNKNOWN"
+    ],
+    "household_types": [
+      "low-income",
+      "middle-income",
+      "high-income",
+      "renter",
+      "homeowner",
+      "rural",
+      "urban",
+      "retiree",
+      "disabled",
+      "family with children",
+      "young adult",
+      "small-business household"
+    ],
+    "rows": [
+      {
+        "mechanism": "Demand-side housing subsidy (no supply)",
+        "effects": {
+          "low-income": "MIXED",
+          "renter": "MIXED",
+          "homeowner": "LIKELY_BENEFIT",
+          "rural": "UNKNOWN",
+          "note": "Renters may see temporary relief then rent capture; owners capitalize."
+        }
+      },
+      {
+        "mechanism": "Property tax cut (no supply reform)",
+        "effects": {
+          "homeowner": "LIKELY_BENEFIT",
+          "renter": "MIXED",
+          "low-income": "MIXED",
+          "high-income": "LIKELY_BENEFIT",
+          "note": "Capitalization and landlord pass-through uncertain; not automatic tenant win."
+        }
+      },
+      {
+        "mechanism": "Buy-local premium campaign",
+        "effects": {
+          "low-income": "LIKELY_COST",
+          "middle-income": "MIXED",
+          "small-business household": "LIKELY_BENEFIT",
+          "note": "Moral premium hits constrained budgets hardest."
+        }
+      },
+      {
+        "mechanism": "Resident tuition subsidy",
+        "effects": {
+          "young adult": "LIKELY_BENEFIT",
+          "family with children": "LIKELY_BENEFIT",
+          "retiree": "LIKELY_COST",
+          "note": "Taxpayers fund; institutional capture and out-migration risk."
+        }
+      },
+      {
+        "mechanism": "Worker equity in single employer",
+        "effects": {
+          "middle-income": "MIXED",
+          "small-business household": "MIXED",
+          "note": "Wealth upside + concentration risk if firm fails."
+        }
+      },
+      {
+        "mechanism": "Easier credit / debt expansion",
+        "effects": {
+          "low-income": "MIXED",
+          "young adult": "MIXED",
+          "homeowner": "MIXED",
+          "note": "Can raise assets or debt burden; defaults asymmetric."
+        }
+      },
+      {
+        "mechanism": "Healthcare cost-sharing reduction without capacity",
+        "effects": {
+          "disabled": "MIXED",
+          "retiree": "MIXED",
+          "rural": "MIXED",
+          "note": "Access intent; queue/price risk."
+        }
+      },
+      {
+        "mechanism": "Public capital with additionality + waterfall",
+        "effects": {
+          "middle-income": "UNKNOWN",
+          "small-business household": "MIXED",
+          "note": "COUNTABLE still $0; household transmission unproven."
+        }
+      }
+    ]
+  },
+  "five_scenarios_rule": {
+    "title": "Five scenario families",
+    "rule": "Any mechanism that only works in INTENDED RESPONSE is fragile.",
+    "scenarios": [
+      {
+        "id": "INTENDED",
+        "label": "Intended response",
+        "note": "People behave approximately as hoped."
+      },
+      {
+        "id": "WEAK",
+        "label": "Weak response",
+        "note": "Participation is lower than modeled."
+      },
+      {
+        "id": "GAMED",
+        "label": "Gamed response",
+        "note": "Actors exploit rules."
+      },
+      {
+        "id": "MARKET_OFFSET",
+        "label": "Market offset",
+        "note": "Prices/supply adjust and absorb benefits."
+      },
+      {
+        "id": "PERVERSE",
+        "label": "Perverse response",
+        "note": "Policy produces the opposite effect."
+      }
+    ]
+  },
+  "visual_assets": [
+    {
+      "id": "V43-1",
+      "title": "Household Benefit Capture Chain",
+      "anchor": "v1",
+      "summary": "Policy benefit \u2192 household \u2192 intermediaries that may absorb it."
+    },
+    {
+      "id": "V43-2",
+      "title": "Tax Incidence Flow",
+      "anchor": "v2",
+      "summary": "Legal payer versus actual burden."
+    },
+    {
+      "id": "V43-3",
+      "title": "Behavioral Response Map",
+      "anchor": "v3",
+      "summary": "Policy \u2192 incentives \u2192 response \u2192 second-order effects."
+    },
+    {
+      "id": "V43-4",
+      "title": "Housing Benefit Absorption Diagram",
+      "anchor": "v4",
+      "summary": "Income/subsidy \u2192 constrained supply \u2192 price/rent response."
+    },
+    {
+      "id": "V43-5",
+      "title": "Public Capital Additionality Test",
+      "anchor": "v5",
+      "summary": "Would it happen without government?"
+    },
+    {
+      "id": "V43-6",
+      "title": "Pilot Transferability Matrix",
+      "anchor": "v6",
+      "summary": "Strong pilot conditions versus statewide reality."
+    },
+    {
+      "id": "V43-7",
+      "title": "Behavioral Failure-Mode Board",
+      "anchor": "v7",
+      "summary": "Moral hazard, gaming, cliffs, crowd-out across propositions."
+    }
+  ],
+  "proposition_board": [
+    {
+      "id": "P-43-01",
+      "proposition": "Ordinary-humans lock \u2014 system must work without morally superior citizens",
+      "status": "SURVIVED",
+      "note": "Locked as behavioral standard"
+    },
+    {
+      "id": "P-43-02",
+      "proposition": "Household Benefit Capture Test as required gate",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Default presumption until disproven"
+    },
+    {
+      "id": "P-43-03",
+      "proposition": "Demand-side housing relief without supply response helps households durably",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Capitalizes into rents/prices (OV-32-06)"
+    },
+    {
+      "id": "P-43-04",
+      "proposition": "Housing supply expansion + ownership reforms",
+      "status": "SURVIVED_ONLY_UNDER_CONDITIONS",
+      "note": "OV-36-03 modeling still open; wealth effects mixed"
+    },
+    {
+      "id": "P-43-05",
+      "proposition": "Access expansion without capacity expansion = more care",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Queues rather than care"
+    },
+    {
+      "id": "P-43-06",
+      "proposition": "Heavy resident education subsidy without stay/value/capacity tests",
+      "status": "HIGH_GAMING_RISK",
+      "note": "Institutional capture + out-migration"
+    },
+    {
+      "id": "P-43-07",
+      "proposition": "Voluntary service-reciprocal benefits (non-coercive)",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "OV-33-06"
+    },
+    {
+      "id": "P-43-08",
+      "proposition": "Worker ownership always improves household prosperity",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Concentration of wage+equity risk"
+    },
+    {
+      "id": "P-43-09",
+      "proposition": "Worker ownership with cash alternative + risk disclosure",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Optional participation"
+    },
+    {
+      "id": "P-43-10",
+      "proposition": "More entrepreneurship capital always raises prosperity",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Marginal firms / ordinary employment must remain viable"
+    },
+    {
+      "id": "P-43-11",
+      "proposition": "Public capital without additionality test",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Subsidy magnet / moral hazard"
+    },
+    {
+      "id": "P-43-12",
+      "proposition": "Public Capital Additionality Test + waterfall",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Required for surviving public participation"
+    },
+    {
+      "id": "P-43-13",
+      "proposition": "Lawful local procurement preferences without graduation metrics",
+      "status": "HIGH_GAMING_RISK",
+      "note": "Shell residency / weak firms"
+    },
+    {
+      "id": "P-43-14",
+      "proposition": "Buy-local moral premium as household duty",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Regressive burden on constrained households"
+    },
+    {
+      "id": "P-43-15",
+      "proposition": "Easier credit = prosperity",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "May mean more debt / asset inflation"
+    },
+    {
+      "id": "P-43-16",
+      "proposition": "Public bank required for capital access",
+      "status": "UNPROVEN",
+      "note": "OV-34-05 \u2014 architecture does not require; prefer existing tools"
+    },
+    {
+      "id": "P-43-17",
+      "proposition": "Capability Transfer Test for external capital",
+      "status": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Not binary anti-outsider"
+    },
+    {
+      "id": "P-43-18",
+      "proposition": "Population growth = prosperity",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Needs capacity constraint"
+    },
+    {
+      "id": "P-43-19",
+      "proposition": "Pilot success implies statewide success",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Selection bias \u2014 Pilot Transferability Test required"
+    },
+    {
+      "id": "P-43-20",
+      "proposition": "Fiscal Visibility for public-income systems",
+      "status": "SURVIVED",
+      "note": "Opportunity cost must remain visible"
+    },
+    {
+      "id": "P-43-21",
+      "proposition": "Legal payer = economic payer",
+      "status": "FAILED_BEHAVIORALLY",
+      "note": "Incidence safeguard required"
+    },
+    {
+      "id": "P-43-22",
+      "proposition": "CTE / multiple pathways improve household surplus vs credential-only",
+      "status": "UNPROVEN",
+      "note": "OV-33-05 \u2014 directionally plausible; Arkansas evidence incomplete"
+    }
+  ],
+  "ov_cx_disposition": [
+    {
+      "id": "OV-31-05",
+      "disposition": "UNPROVEN",
+      "note": "Discretionary time measurement \u2014 no fake precision; method still open (joins OV-32-05)"
+    },
+    {
+      "id": "OV-32-01",
+      "disposition": "UNPROVEN",
+      "note": "County Prosperity Surplus microsim not published this pass; behavioral gates defined first"
+    },
+    {
+      "id": "OV-32-02",
+      "disposition": "UNPROVEN",
+      "note": "Energy burden by quintile/county still needs primary bind"
+    },
+    {
+      "id": "OV-32-03",
+      "disposition": "UNPROVEN",
+      "note": "Childcare prices/slots/cliffs \u2014 cliffs flagged as failure mode; numbers unbound"
+    },
+    {
+      "id": "OV-32-04",
+      "disposition": "UNPROVEN",
+      "note": "Wealth / medical debt / emergency savings distribution still open"
+    },
+    {
+      "id": "OV-32-05",
+      "disposition": "UNPROVEN",
+      "note": "Same family as OV-31-05 \u2014 refuse fake annual precision"
+    },
+    {
+      "id": "OV-32-06",
+      "disposition": "SURVIVED_AS_RISK_FINDING",
+      "note": "Housing-cost relief capitalizes into rents without supply/ownership reforms \u2014 FAILED BEHAVIORALLY as default"
+    },
+    {
+      "id": "OV-33-05",
+      "disposition": "UNPROVEN",
+      "note": "CTE vs credential-only household effects \u2014 plausible; not cleared"
+    },
+    {
+      "id": "OV-33-06",
+      "disposition": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Service-reciprocal must be voluntary/non-coercive; gaming and career distortion flagged"
+    },
+    {
+      "id": "OV-36-03",
+      "disposition": "UNPROVEN",
+      "note": "Housing supply vs existing wealth modeling still open; absorption risk established"
+    },
+    {
+      "id": "OV-37-06",
+      "disposition": "SURVIVED_WITH_BEHAVIORAL_SAFEGUARD",
+      "note": "Human transition costs must book into Household Prosperity Ledger \u2014 method open, requirement locked"
+    },
+    {
+      "id": "OV-34-05",
+      "disposition": "SURVIVED_AS_ARCHITECTURE",
+      "note": "Public bank not required; existing authorities + CDFIs + ring-fenced funds preferred; credit\u2260prosperity"
+    }
+  ],
+  "what_changed_format": {
+    "what_we_expected": "Fiscally possible and legally allowed policies would transmit benefits to households if designed with good intentions.",
+    "how_people_markets_could_react": "Benefit capture, capitalization into rents, institutional subsidy capture, moral hazard around public capital, gaming of residency/procurement, weak entrepreneurship response, credit-as-debt, pilot selection bias, fiscal illusion.",
+    "what_evidence_supports": "Standard incidence/housing capitalization logic; public-choice and moral-hazard literature patterns; Pass 4.1 retention counterfactual; Pass 4.2 legal narrowing of preferences.",
+    "what_breaks": "Demand-side housing without supply; access without capacity; worker-ownership-as-always-good; credit-as-prosperity; buy-local moral premiums; pilot\u2192statewide leap; public capital without additionality.",
+    "what_needs_guardrails": "Benefit Capture Test; incidence notes; Additionality Test; Capability Transfer Test; Pilot Transferability Test; Fiscal Visibility; five-scenario fragility rule; cash alternatives to concentrated equity.",
+    "what_remains_unknown": "County microsim; energy burden binds; childcare cliffs numbers; wealth/debt distribution; CTE surplus evidence; full elasticity tables.",
+    "what_we_changed": "Locked ordinary-humans standard; killed several slogans behaviorally; required tests before claims of household transmission."
+  },
+  "architectural_changes": [
+    {
+      "id": "AD-43-01",
+      "change": "Ordinary-humans lock",
+      "detail": "No proposition may require morally superior citizens."
+    },
+    {
+      "id": "AD-43-02",
+      "change": "Household Benefit Capture Test required",
+      "detail": "Before claiming household prosperity gains."
+    },
+    {
+      "id": "AD-43-03",
+      "change": "Public Capital Additionality Test required",
+      "detail": "Alongside waterfall and no private debt guarantees."
+    },
+    {
+      "id": "AD-43-04",
+      "change": "Fiscal Visibility",
+      "detail": "Public-income \u2260 free resources."
+    },
+    {
+      "id": "AD-43-05",
+      "change": "Pilot Transferability Test",
+      "detail": "Feeds 4.5; selection bias acknowledged."
+    }
+  ],
+  "certification": {
+    "pass": "PASS_4_3",
+    "validation_completion_percent_after": 50,
+    "overall_project_completion_percent_after": 88,
+    "calculation": "0.25*(100+100+100+50)=87.5 \u2192 display 88",
+    "unabridged_unchanged": 100,
+    "countable_usd": 0,
+    "gates": {
+      "household_transmission_attacked": true,
+      "benefit_capture_tested": true,
+      "tax_incidence_tested": true,
+      "housing_response_tested": true,
+      "healthcare_response_tested": true,
+      "education_residency_incentives_tested": true,
+      "labor_ownership_incentives_tested": true,
+      "entrepreneurship_assumptions_tested": true,
+      "public_capital_additionality_tested": true,
+      "procurement_response_tested": true,
+      "retention_behavior_tested": true,
+      "credit_debt_response_tested": true,
+      "external_investment_capability_transfer_tested": true,
+      "population_effects_tested": true,
+      "pilot_transferability_tested": true,
+      "fiscal_visibility_addressed": true,
+      "behavioral_failure_mode_register_applied": true,
+      "distribution_grid_completed": true,
+      "market_structure_effects_tested": true,
+      "ov_cx_4_3_dispositioned": true,
+      "claims_modified_or_killed": true,
+      "seven_visual_assets_defined": true,
+      "ordinary_humans_lock": true
+    },
+    "next": "PASS_4_4 \u2014 Resilience & Adversarial Attack"
+  }
+}
