@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import chapter from "@data/project/narration/chapters/ch01_the_arkansas_we_inherited.json";
+import style from "@data/project/narration/cc_narration_style_guide.json";
+
+const units = chapter.units || [];
+const stats = chapter.stats || {};
+const signatures = units.filter((u: any) => u.priority === "signature");
+
+const bySection: Record<string, any[]> = {};
+for (const u of units) {
+  const key = u.section_id;
+  if (!bySection[key]) bySection[key] = [];
+  bySection[key].push(u);
+}
+---
+
+<BaseLayout
+  title="Narration Director — Chapter 1"
+  path="/public-book/narration/ch01/"
+  description="Directed performance manuscript for The Arkansas We Inherited. Directions are narrator instructions only — not published book text."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">NARRATION DIRECTOR · DRAFT</span>
+      <h1>{chapter.chapter_title}</h1>
+      <p class="lede">
+        Performance manuscript for Chapter 1. Public Book prose is unchanged. Directions tell the
+        narrator how to perform — they are not part of the book.
+      </p>
+      <p class="muted">
+        {chapter.id} · spend: <strong>{chapter.spend_status}</strong> · Style Guide:{" "}
+        {style.status}
+      </p>
+      <ul class="link-board">
+        <li>
+          Units <strong>{stats.paragraph_units}</strong> · Signature{" "}
+          <strong>{stats.signature_units}</strong> · ~{stats.spoken_characters} chars
+        </li>
+        <li>
+          Voice: <strong>{style.voice?.selection_status || "TBD"}</strong>
+        </li>
+        <li>
+          <a href="/public-book/the-arkansas-we-inherited/">Published Chapter 1 →</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="hub-section">
+      <h2>Freeze gate (before any ElevenLabs spend)</h2>
+      <ol class="stack">
+        {(style.freeze_gate || []).map((g: string) => <li>{g}</li>)}
+      </ol>
+      <p class="muted">
+        Proof command (after freeze):{" "}
+        <code>python scripts/narration/generate_elevenlabs.py --model flash --dry-run</code>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Signature passages ({signatures.length})</h2>
+      <p class="lede">Priority for Actor Mode / Eleven v3 after Flash proofing.</p>
+      <ul class="stack">
+        {
+          signatures.map((u: any) => (
+            <li>
+              <strong>{u.unit_id}</strong> — {u.section_heading}
+              <div class="muted">{u.direction?.performance_note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      Object.entries(bySection).map(([sid, list]) => (
+        <section class="hub-section">
+          <h2>
+            {sid} — {(list as any[])[0]?.section_heading}
+          </h2>
+          <ul class="stack">
+            {(list as any[]).map((u) => (
+              <li>
+                <div style="display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin-bottom:0.35rem;">
+                  <strong>{u.unit_id}</strong>
+                  {u.priority === "signature" && <span class="chip chip--live">signature</span>}
+                  <span class="chip chip--queued">{u.status}</span>
+                  <span class="muted">
+                    energy {u.direction?.energy}/5 · {u.direction?.pace} · {u.direction?.emotion}
+                  </span>
+                </div>
+                <p>{u.spoken_text}</p>
+                {(u.direction?.emphasis || []).length > 0 && (
+                  <p class="muted">Emphasis: {(u.direction.emphasis || []).join(", ")}</p>
+                )}
+                {u.direction?.performance_note && (
+                  <p class="muted">
+                    <em>{u.direction.performance_note}</em>
+                  </p>
+                )}
+                <p class="muted" style="font-size:0.85rem;">
+                  Pauses: open {u.direction?.opening_pause_ms} ms · close{" "}
+                  {u.direction?.closing_pause_ms} ms
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <section class="hub-section">
+      <h2>Discipline</h2>
+      <ul class="stack">
+        {(chapter.discipline || []).map((d: string) => <li>{d}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
