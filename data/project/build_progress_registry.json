@@ -8,12 +8,19 @@
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
-  "current_stage": "STAGE_1",
-  "current_pass": "PASS_5",
-  "next_objective": "Pass 5 — Whole-System Closure Audit. Function-by-function orphan check. Close structural holes only. Then Stage-1 skeleton = 100%. 1 pass remains.",
+  "current_stage": "STAGE_2",
+  "current_pass": null,
+  "next_objective": "Stage 2 — Full First-Pass Coverage. Every module gets a working model. Horizontal expansion frozen — new ideas absorb into existing bones unless they expose a genuine architectural defect.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
   "arkansas_baseline_source": "data/project/arkansas_state_baseline_corpus.json",
+  "stage_1_certification": {
+    "certified": true,
+    "pass": "PASS_5",
+    "decision_id": "CC-DEC-157",
+    "href": "/build-progress/passes/pass-5/",
+    "audit": "data/project/stage1_pass5_whole_system_closure_audit.json"
+  },
   "passes": [
     {
       "id": "PASS_1",
@@ -60,10 +67,10 @@
       "number": 5,
       "slug": "pass-5",
       "name": "Whole-System Closure Audit",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5/",
-      "changelog": null,
-      "spine_href": "/system/#pass-5"
+      "changelog": "data/project/pass_changelogs/pass_05.json",
+      "spine_href": "/build-progress/passes/pass-5/"
     }
   ],
   "infrastructure_checkpoints": [
@@ -75,7 +82,18 @@
       "links": [
         { "href": "/build-progress/", "label": "Build Progress hub" },
         { "href": "/system/arkansas-state-baseline/", "label": "Arkansas State Baseline" },
-        { "href": "/system/household-place/", "label": "Pass 2 spine (active)" }
+        { "href": "/system/", "label": "System map" }
+      ]
+    },
+    {
+      "id": "CC-DEC-157",
+      "title": "Stage 1 Full Skeleton certified complete (Pass 5)",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5/",
+      "links": [
+        { "href": "/build-progress/passes/pass-5/", "label": "Stage 1 certification record" },
+        { "href": "/system/", "label": "Complete system architecture map" },
+        { "href": "/build-progress/", "label": "Build Progress — Stage 2 active" }
       ]
     }
   ]

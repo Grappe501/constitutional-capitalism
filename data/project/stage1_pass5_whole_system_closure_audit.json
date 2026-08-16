@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-1-PASS-5-WHOLE-SYSTEM-CLOSURE-AUDIT-1.0",
+  "pass_id": "PASS_5",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-157",
+  "update_id": "UPD-170",
+  "status": "STAGE_1_SKELETON_CERTIFIED_COMPLETE",
+  "maturity": "STAGE_1_CLOSURE_AUDIT_NOT_STAGE_2_SUBSTANCE",
+  "spine_name": "Whole-System Closure Audit",
+  "purpose": "Audit whether the Constitutional Capitalism machine is structurally complete — by function, not chapter title. Close only true structural holes. Certify Stage 1 skeleton at 100%.",
+  "audit_posture": "Not a construction pass. Not a research campaign. Not endless detail. Disposition every essential function.",
+  "hole_standard": {
+    "locked": true,
+    "a_structural_hole_exists_only_when": "We must answer 'How does this political-economic system perform an essential function?' and there is currently no answer or structural home.",
+    "not_holes": [
+      "missing_detail",
+      "missing_statistic",
+      "legal_uncertainty_alone",
+      "revenue_number_awaiting_validation",
+      "interesting_unexplored_topic"
+    ]
+  },
+  "disposition_scheme": {
+    "CLOSED": "Structural home exists — Stage 1 satisfied for this function",
+    "HOLE": "System cannot be explained without resolving before Stage 1 closes",
+    "STAGE_2": "Structure exists; working model needs development",
+    "STAGE_3": "Model exists; needs full unabridged treatment",
+    "STAGE_4": "Requires evidence, legal testing, modeling, or stress testing"
+  },
+  "exit_gate_judgment": {
+    "functions_audited": 20,
+    "functions_with_structural_home_percent": 100,
+    "true_structural_holes_found": 0,
+    "true_structural_holes_open_at_certification": 0,
+    "five_os_questions_final_pass": true,
+    "money_flow_continuity": "PASS",
+    "time_continuity": "PASS",
+    "skeleton_coverage_after_pass": 100,
+    "stage_1_status": "COMPLETE",
+    "horizontal_expansion_frozen": true,
+    "commit_required": true,
+    "github_push_required": true,
+    "netlify_deployment_required": true,
+    "pass_5_certification_page_required": true
+  },
+  "complete_system_architecture_map": {
+    "one_sentence": "Constitutional Capitalism is four integrated spines under foundations: Money & Ownership produces and retains surplus under anti-extraction rules; Household & Place converts surplus into household capability and place foundations; Government & Democratic Power authorizes, constrains, funds, and protects against capture; Transition, Resilience & Measurement moves Arkansas through time under the Dependency Rule while measuring whether households actually gain.",
+    "spines": [
+      { "id": "PASS_1", "href": "/system/money-ownership/", "title": "Money & Ownership", "locks": ["LOCK-01", "LOCK-02", "LOCK-04", "LOCK-05"] },
+      { "id": "PASS_2", "href": "/system/household-place/", "title": "Household & Place", "locks": ["LOCK-03", "LOCK-07"] },
+      { "id": "PASS_3", "href": "/system/government-power/", "title": "Government & Democratic Power", "locks": ["LOCK-06", "LOCK-08", "LOCK-09"] },
+      { "id": "PASS_4", "href": "/system/transition-measurement/", "title": "Transition, Resilience & Measurement", "locks": ["LOCK-10"] }
+    ],
+    "foundations_href": "/system/",
+    "baseline_href": "/system/arkansas-state-baseline/",
+    "power_loop": "People → Constitution → Democracy → Government → Resources → Outcomes → Measurement → Accountability → People",
+    "capture_loop": "Concentrated wealth → political money → government → preferential rules → contracts/assets → more concentrated wealth",
+    "dependency_rule": "Build the bridge before removing the old road",
+    "transition_map": "ARKANSAS NOW → YEARS 1–2 → YEARS 3–5 → YEARS 6–10 → GENERATION 1 → GENERATION 2"
+  },
+  "function_matrix": [
+    {
+      "id": "F01",
+      "function": "Democratic legitimacy",
+      "closure_question": "How do people choose, constrain, replace, and directly overrule government?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-02", "GP-03"],
+      "hrefs": ["/democracy/", "/peoples-branch/", "/citizen-service/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F02",
+      "function": "Rights & constitutional limits",
+      "closure_question": "What can government never violate, even in pursuit of prosperity?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-01"],
+      "hrefs": ["/constitutional-defense/", "/equal-standing/", "/foundational-axioms/"],
+      "forward": ["STAGE_3", "STAGE_4"]
+    },
+    {
+      "id": "F03",
+      "function": "Public administration",
+      "closure_question": "How are laws, agencies, boards, procurement and services actually operated?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-05", "GP-06"],
+      "hrefs": ["/public-service/", "/transparency/", "/federalism/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F04",
+      "function": "Revenue",
+      "closure_question": "How does government sustainably fund itself?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-01", "Pass 1 Money & Ownership"],
+      "hrefs": ["/system/money-ownership/", "/research/#hyp-131", "/system/arkansas-state-baseline/"],
+      "forward": ["STAGE_2", "STAGE_4"],
+      "note": "Architecture home exists; COUNTABLE engines remain $0 — validation later, not a skeleton hole"
+    },
+    {
+      "id": "F05",
+      "function": "Money & credit",
+      "closure_question": "How does capital get created, allocated, financed and retained?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-02"],
+      "hrefs": ["/system/money-ownership/", "/essential-systems/", "/civic-wealth/"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F06",
+      "function": "Ownership",
+      "closure_question": "Who owns productive assets and who receives their surplus?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-04", "LOCK-05", "local ownership"],
+      "hrefs": ["/local-ownership/", "/community-prosperity/", "/system/money-ownership/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F07",
+      "function": "Markets & competition",
+      "closure_question": "How are markets kept competitive, innovative and resistant to extraction/capture?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-05"],
+      "hrefs": ["/system/money-ownership/", "/essential-systems/"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F08",
+      "function": "Labor & enterprise",
+      "closure_question": "How do people move from work to skills to ownership to entrepreneurship?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-04", "HP-05", "HP-07"],
+      "hrefs": ["/system/money-ownership/", "/human-capital/", "/family/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F09",
+      "function": "Household necessities",
+      "closure_question": "How are housing, food, healthcare, energy, mobility, childcare and basic security structurally addressed?",
+      "disposition": "CLOSED",
+      "structural_home": ["HP-01", "HP-02", "HP-03", "HP-04", "HP-06", "HP-07", "HP-08", "HP-09"],
+      "hrefs": ["/system/household-place/", "/local-ownership/", "/health/", "/food-security/", "/energy-sovereignty/", "/family/", "/prosperous-aging/", "/equal-standing/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F10",
+      "function": "Education & capability",
+      "closure_question": "How does Arkansas continuously increase human capability?",
+      "disposition": "CLOSED",
+      "structural_home": ["HP-05", "TM-07", "HYP-133"],
+      "hrefs": ["/human-capital/", "/flourishing/", "/research/#hyp-133"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F11",
+      "function": "Infrastructure",
+      "closure_question": "How are transportation, water, energy, digital and physical systems built and maintained?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-07", "HP-06", "HP-10", "HP-04"],
+      "hrefs": ["/resource-sovereignty/", "/energy-sovereignty/", "/system/household-place/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F12",
+      "function": "Community & place",
+      "closure_question": "How do rural, urban, county, municipal and regional economies remain viable?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-04", "Pass 2 place", "build-your-community"],
+      "hrefs": ["/federalism/", "/build-your-community/", "/community-resilience/", "/community-prosperity/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F13",
+      "function": "Public safety & justice",
+      "closure_question": "How does the system protect people, enforce rules and restore productive participation?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-07"],
+      "hrefs": ["/justice/", "/constitutional-defense/", "/equal-standing/"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F14",
+      "function": "Population & generations",
+      "closure_question": "How does Arkansas retain people, attract people, support families and increase inherited capital?",
+      "disposition": "CLOSED",
+      "structural_home": ["TM-07", "HYP-132", "HYP-133", "HP-07"],
+      "hrefs": ["/human-capital/", "/family/", "/research/#hyp-132", "/research/#hyp-133"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F15",
+      "function": "External economy",
+      "closure_question": "How does Arkansas earn income from outside rather than merely circulate internal dollars?",
+      "disposition": "CLOSED",
+      "structural_home": ["LOCK-01 External Income / HYP-131", "TM-06"],
+      "hrefs": ["/system/money-ownership/", "/research/#hyp-131", "/civic-wealth/", "/food-security/"],
+      "forward": ["STAGE_2", "STAGE_4"],
+      "note": "External-income architecture home exists; feeder evidence gated — not a missing organ"
+    },
+    {
+      "id": "F16",
+      "function": "Measurement",
+      "closure_question": "How do we know whether households, communities and Arkansas itself are actually becoming more prosperous?",
+      "disposition": "CLOSED",
+      "structural_home": ["TM-05", "TM-06", "GP-10"],
+      "hrefs": ["/metrics/", "/flourishing/", "/civic-wealth/", "/build-progress/", "/status/"],
+      "forward": ["STAGE_2"]
+    },
+    {
+      "id": "F17",
+      "function": "Resilience",
+      "closure_question": "What happens when revenues, markets, technology, climate, demographics or institutions are stressed?",
+      "disposition": "CLOSED",
+      "structural_home": ["TM-04"],
+      "hrefs": ["/community-resilience/", "/system/transition-measurement/"],
+      "forward": ["STAGE_4"],
+      "note": "Connected in skeleton; five-state attack battery is Stage 4 — not a hole"
+    },
+    {
+      "id": "F18",
+      "function": "Transition",
+      "closure_question": "How do we move from today's Arkansas without destabilizing existing obligations or essential systems?",
+      "disposition": "CLOSED",
+      "structural_home": ["TM-01", "TM-02", "TM-03", "LOCK-10", "Dependency Rule"],
+      "hrefs": ["/system/transition-measurement/", "/system/arkansas-state-baseline/"],
+      "forward": ["STAGE_2", "STAGE_3"]
+    },
+    {
+      "id": "F19",
+      "function": "Political capture",
+      "closure_question": "What prevents accumulated economic power from purchasing political power and reversing the system?",
+      "disposition": "CLOSED",
+      "structural_home": ["GP-08", "LOCK-09", "Capture Loop", "LOCK-05"],
+      "hrefs": ["/transparency/", "/system/government-power/", "/democracy/"],
+      "forward": ["STAGE_2", "STAGE_4"]
+    },
+    {
+      "id": "F20",
+      "function": "Correction mechanism",
+      "closure_question": "How does Arkansas detect failure and KEEP / REFORM / PHASE OUT / ELIMINATE / CREATE NEW?",
+      "disposition": "CLOSED",
+      "structural_home": ["TM-08", "GP-10", "Build Progress"],
+      "hrefs": ["/build-your-community/", "/build-progress/", "/metrics/"],
+      "forward": ["STAGE_2"]
+    }
+  ],
+  "holes_discovered_and_closed": [],
+  "holes_remaining": [],
+  "deferred_register": [
+    { "item": "COUNTABLE prosperity-engine dollars still $0", "disposition": "STAGE_4", "home": "F04 / HYP-131" },
+    { "item": "Household Prosperity Surplus panel", "disposition": "STAGE_2", "home": "F16 / TM-05" },
+    { "item": "Geographic Money Statements", "disposition": "STAGE_2", "home": "F16 / TM-06" },
+    { "item": "Multi-year Arkansas baseline normalization", "disposition": "STAGE_2", "home": "F18 / TM-01" },
+    { "item": "Full prerequisite graph for major replacements", "disposition": "STAGE_2", "home": "F18 / TM-03" },
+    { "item": "Campaign finance / lobbying package constitutional review", "disposition": "STAGE_4", "home": "F19" },
+    { "item": "Arkansas-first procurement commerce-clause design", "disposition": "STAGE_4", "home": "F03 / GP-06" },
+    { "item": "Land-value capture constitutional path", "disposition": "STAGE_4", "home": "F09 / HP-01" },
+    { "item": "Five-state resilience attack battery", "disposition": "STAGE_4", "home": "F17" },
+    { "item": "HYP-133 Demand Map empirical first pass", "disposition": "STAGE_2", "home": "F10" },
+    { "item": "HYP-134 AI series (quarantined from COUNTABLE)", "disposition": "STAGE_4", "home": "F17 parallel" },
+    { "item": "Unabridged category writing", "disposition": "STAGE_3", "home": "all CLOSED functions" },
+    { "item": "Public Book ~100-page compression", "disposition": "STAGE_5", "home": "publishing architecture" },
+    { "item": "Implementation manuals", "disposition": "STAGE_6", "home": "publishing architecture" }
+  ],
+  "five_os_final_audit": {
+    "ownership": "Homes across LOCK-03/04/05, local ownership, GP-01 trusts, TM-06 capital-flow accounting, and HYP-133 intergenerational capital — no orphan ownership function",
+    "capital_formation": "Homes across LOCK-02, LOCK-01 Prosperity Fund design, infrastructure LOCK-07, education/human capital, and Transition Map generational stations",
+    "market_design": "Homes across LOCK-05, essential systems, procurement GP-06, and anti-capture GP-08 — markets are designed, not assumed",
+    "household_economics": "Pass 2 necessities + TM-05 measurement + Dependency Rule continuity — household is the unit of success",
+    "power": "Power Loop + Capture Loop + GP-08/09/10 + LOCK-09 — OS-POWER has an explicit home and circuit-breaker intent"
+  },
+  "money_flow_continuity": {
+    "result": "PASS",
+    "statement": "Every major proposal has a path into the larger Arkansas money system: production/external demand → ownership/market rules → credit/capital → public income engines → household/community ledgers → geographic accounting → measurement — with leakage and capture explicitly tracked as failure modes.",
+    "join_points": [
+      "/system/money-ownership/",
+      "/civic-wealth/",
+      "/community-prosperity/",
+      "/system/arkansas-state-baseline/",
+      "/metrics/"
+    ]
+  },
+  "time_continuity": {
+    "result": "PASS",
+    "statement": "Every major transformation has a station on ARKANSAS NOW → Years 1–2 → 3–5 → 6–10 → Generation 1 → Generation 2. Timelines are not deeply filled — places exist.",
+    "map_href": "/system/transition-measurement/",
+    "dependency_rule_href": "/system/transition-measurement/"
+  },
+  "stage_1_certification": {
+    "certified": true,
+    "certified_at": "2026-08-16",
+    "decision_id": "CC-DEC-157",
+    "statement": "Stage 1 — Full Skeleton is COMPLETE. Every essential political-economic function has a structural home. True structural holes open at certification: 0. Horizontal expansion is frozen. New ideas absorb into existing bones unless they expose a genuine architectural defect.",
+    "skeleton_percent": 100,
+    "next_stage": "STAGE_2 — Full First-Pass Coverage",
+    "freeze_rule": "From this point, new ideas do not create new bones unless they expose a genuine defect in the architecture."
+  },
+  "what_changed": [
+    "Whole-System Closure Audit executed — 20/20 functions CLOSED at skeleton level",
+    "0 true structural holes found or remaining",
+    "Five OS questions final pass recorded",
+    "Money-flow continuity PASS · Time continuity PASS",
+    "Stage 1 skeleton certified 100%",
+    "Horizontal expansion frozen",
+    "Pass 5 certification page published as Stage 1 record"
+  ],
+  "what_remains": [
+    "Stage 2 — Full First-Pass Coverage (working models)",
+    "Stage 3 — Unabridged Completion",
+    "Stage 4 — Validation / Break It",
+    "Stage 5 — Public Book",
+    "Stage 6 — Implementation Manuals (later)"
+  ],
+  "next_pass_only": "STAGE_2 begins — no new Stage 1 bones unless a genuine architectural defect appears",
+  "skeleton_coverage_after_pass": 100,
+  "overall_project_completion_after_pass": 29,
+  "holds": [
+    "stage_1_complete",
+    "horizontal_expansion_frozen",
+    "no_research_campaign_in_pass_5",
+    "detail_is_not_a_hole",
+    "countable_zero_is_not_a_hole"
+  ]
+}

@@ -5,7 +5,7 @@
   "decision_id": "CC-DEC-152",
   "update_id": "UPD-165",
   "prior_decision_id": "CC-DEC-150",
-  "status": "COMPLETION_SYSTEM_LOCKED_STAGE_1_IN_PROGRESS",
+  "status": "COMPLETION_SYSTEM_LOCKED_STAGE_1_COMPLETE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question_after_every_piece_of_work": "Did this materially move Constitutional Capitalism toward a finished system?",
   "organizing_principle": "Literally build a path forward for the State of Arkansas — from today's balance sheet and operating system to the proposed state.",
@@ -33,7 +33,7 @@
       "id": "STAGE_1",
       "name": "Full Skeleton",
       "target": "Every component and relationship exists — 100% structural coverage",
-      "status": "IN_PROGRESS",
+      "status": "COMPLETE",
       "exit_gate": "Draw the entire Constitutional Capitalism system on one master architecture and point to where every major function of government, markets, households, communities, capital, and democratic power lives — no orphan areas.",
       "minimum_bone_template": [
         "problem",
@@ -44,15 +44,17 @@
         "unresolved_questions",
         "later_evidence_testing_requirements"
       ],
-      "current_work": "Stage 1 Five-Pass Closure — Passes 1–4 complete; Pass 5 Whole-System Closure Audit next → 100% skeleton",
+      "current_work": "COMPLETE — Pass 5 Whole-System Closure Audit certified Stage 1 at 100% skeleton (CC-DEC-157). Horizontal expansion frozen.",
+      "certified_by": "data/project/stage1_pass5_whole_system_closure_audit.json",
+      "certification_page": "/build-progress/passes/pass-5/",
       "five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
-      "after_ten_locks": "Superseded by five-pass plan; Pass 5 is the whole-system closure audit"
+      "after_ten_locks": "Superseded by five-pass plan; Pass 5 closed Stage 1"
     },
     {
       "id": "STAGE_2",
       "name": "Full First Pass",
       "target": "Every component has an actual working model — 100% of modules at PARTIAL or better",
-      "status": "NOT_STARTED",
+      "status": "ACTIVE",
       "exit_gate": "Every module has minimum viable substance: what exists → what's wrong → what replaces/changes → how it works → who pays → who benefits → who owns → where money flows → safeguards → transition → intended result.",
       "rule": "No polishing while another category sits empty. Measure: % of system at minimum viable completeness."
     },
@@ -117,27 +119,29 @@
     "GENERATION_2"
   ],
   "progress_bars": {
-    "skeleton_coverage_percent": 97,
+    "skeleton_coverage_percent": 100,
     "first_pass_coverage_percent": 12,
     "publication_completion_percent": 3,
     "validation_completion_percent": 0,
     "notes": {
-      "skeleton": "Pass 4 Transition/Resilience/Measurement complete (97%). Pass 5 Whole-System Closure Audit reserved for final 3% → Stage 1 = 100%.",
-      "first_pass": "Many frameworks exist; most have not crossed Stage 2 minimum viable completeness checklist",
+      "skeleton": "Stage 1 COMPLETE — Pass 5 certified 100% skeleton. Horizontal expansion frozen. New bones only if genuine architectural defect.",
+      "first_pass": "Stage 2 ACTIVE — many frameworks exist; most have not crossed Stage 2 minimum viable completeness checklist",
       "publication": "Aligned to manuscript substance (~outline/concept dominant)",
       "validation": "Stage 4 not open; resilience framework connected as plan only"
     }
   },
   "overall_project_completion": {
-    "percent": 28,
-    "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights until Stage 1 closes)",
-    "calculation": "0.25*(97+12+3+0)=28",
+    "percent": 29,
+    "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights)",
+    "calculation": "0.25*(100+12+3+0)=28.75 → 29",
     "primary_number_going_forward": true,
-    "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 1–2 close — that is honesty, not regression"
+    "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2–3 close — that is honesty, not regression"
   },
   "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
-  "active_stage1_pass": "PASS_5",
-  "last_completed_stage1_pass": "PASS_4",
+  "active_stage1_pass": null,
+  "last_completed_stage1_pass": "PASS_5",
+  "active_stage": "STAGE_2",
+  "horizontal_expansion_frozen": true,
   "manager_scorecard": {
     "purpose": "After each meaningful build cycle",
     "questions": [

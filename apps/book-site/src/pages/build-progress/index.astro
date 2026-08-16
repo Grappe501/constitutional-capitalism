@@ -47,14 +47,22 @@ function statusLabel(status?: string) {
         firstPass={bars.first_pass_coverage_percent ?? 0}
         publication={bars.publication_completion_percent ?? 0}
         validation={bars.validation_completion_percent ?? 0}
-        caption="Current after Pass 4. Skeleton completion advances before deeper writing and validation. Final ~3 points reserved for Pass 5."
+        caption="Stage 1 skeleton certified complete (Pass 5). Stage 2 Full First-Pass Coverage is now the governing objective."
       />
       <p class="muted">
-        Current stage: <strong>{registry.current_stage}</strong> · Current pass:{" "}
-        <strong>{registry.current_pass}</strong>
+        Current stage: <strong>{registry.current_stage}</strong>
+        {registry.current_pass && (
+          <>
+            {" "}
+            · Current pass: <strong>{registry.current_pass}</strong>
+          </>
+        )}
+        {!registry.current_pass && <> · Stage 1 passes: all five complete</>}
       </p>
       <p>
         <a href="/status/">Full status dials →</a>
+        {" · "}
+        <a href="/build-progress/passes/pass-5/">Stage 1 certification →</a>
         {" · "}
         <a href="/system/visual-language/">Visual language →</a>
       </p>
@@ -64,10 +72,10 @@ function statusLabel(status?: string) {
       <h2 id="next">Next objective</h2>
       <p class="lede">{registry.next_objective}</p>
       <ul class="link-board">
-        <li><a href="/system/#pass-5">Whole-System Closure Audit (Pass 5)</a></li>
-        <li><a href="/build-progress/passes/pass-4/">Pass 4 What Changed (complete)</a></li>
-        <li><a href="/build-progress/passes/pass-5/">Pass 5 changelog (opening)</a></li>
-        <li><a href="/system/transition-measurement/">Transition spine (complete)</a></li>
+        <li><a href="/build-progress/passes/pass-5/">Stage 1 certification (Pass 5)</a></li>
+        <li><a href="/system/">Complete system architecture map</a></li>
+        <li><a href="/system/money-ownership/">Money & Ownership (Stage 2 deepening)</a></li>
+        <li><a href="/system/household-place/">Household & Place</a></li>
       </ul>
     </section>
 

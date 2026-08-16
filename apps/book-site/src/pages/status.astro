@@ -86,8 +86,9 @@ const generatedLabel = snapshot.generated_at
       ))}
     </div>
     <p class="muted" style="margin-top:0.75rem;">
-      Active stage: {completion.stages?.find((s: any) => s.status === "IN_PROGRESS")?.name || "—"}.
-      Stage 1 pass: {completion.active_stage1_pass || "—"}.
+      Active stage: {completion.stages?.find((s: any) => s.status === "ACTIVE" || s.status === "IN_PROGRESS")?.name || "—"}.
+      Stage 1: {completion.stages?.find((s: any) => s.id === "STAGE_1")?.status === "COMPLETE" ? "COMPLETE" : (completion.active_stage1_pass || "—")}.
+      {completion.horizontal_expansion_frozen && <> Horizontal expansion frozen.</>}
     </p>
 
     <h2>Honesty dials</h2>

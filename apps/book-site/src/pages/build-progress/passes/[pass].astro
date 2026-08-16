@@ -5,6 +5,8 @@ import pass1 from "../../../../../../data/project/pass_changelogs/pass_01.json";
 import pass2 from "../../../../../../data/project/pass_changelogs/pass_02.json";
 import pass3 from "../../../../../../data/project/pass_changelogs/pass_03.json";
 import pass4 from "../../../../../../data/project/pass_changelogs/pass_04.json";
+import pass5 from "../../../../../../data/project/pass_changelogs/pass_05.json";
+import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
 
 export function getStaticPaths() {
   return [
@@ -23,8 +25,18 @@ const changelogs: Record<string, any> = {
   "pass-2": pass2,
   "pass-3": pass3,
   "pass-4": pass4,
+  "pass-5": pass5,
 };
 const log = changelogs[passSlug || ""] || null;
+const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;
+const functions = audit.function_matrix || [];
+const architecture = audit.complete_system_architecture_map || {};
+const osAudit = audit.five_os_final_audit || {};
+const moneyFlow = audit.money_flow_continuity || {};
+const timeCont = audit.time_continuity || {};
+const cert = audit.stage_1_certification || {};
+const deferred = audit.deferred_register || [];
+const holesClosed = audit.holes_discovered_and_closed || [];
 
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
@@ -38,7 +50,17 @@ function statusLabel(status?: string) {
   return "Queued";
 }
 
-const title = meta ? `Pass ${meta.number} — ${meta.name}` : "Pass";
+function dispositionClass(d?: string) {
+  if (d === "CLOSED") return "chip chip--done";
+  if (d === "HOLE") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+const title = isCert
+  ? "Stage 1 Certification — Pass 5 Closure Audit"
+  : meta
+    ? `Pass ${meta.number} — ${meta.name}`
+    : "Pass";
 const path = `/build-progress/passes/${passSlug}/`;
 ---
 
@@ -54,8 +76,23 @@ const path = `/build-progress/passes/${passSlug}/`;
         <a href="/build-progress/passes/">Passes</a> → Pass {meta?.number}
       </p>
       <span class={chipClass(meta?.status || log?.status)}>{statusLabel(meta?.status || log?.status)}</span>
-      <h1>What Changed — Pass {meta?.number}</h1>
-      <p class="lede">{meta?.name}</p>
+      {
+        isCert ? (
+          <>
+            <h1>Stage 1 certification record</h1>
+            <p class="lede">Pass 5 — Whole-System Closure Audit</p>
+            <p class="muted">
+              This page is the permanent Stage 1 Full Skeleton certification — not a construction
+              changelog alone.
+            </p>
+          </>
+        ) : (
+          <>
+            <h1>What Changed — Pass {meta?.number}</h1>
+            <p class="lede">{meta?.name}</p>
+          </>
+        )
+      }
     </header>
 
     {
@@ -73,6 +110,35 @@ const path = `/build-progress/passes/${passSlug}/`;
         </section>
       ) : (
         <>
+          {isCert && cert.certified && (
+            <section class="hub-section" aria-labelledby="certification">
+              <h2 id="certification">Final Stage 1 certification</h2>
+              <p class="lede">{cert.statement}</p>
+              <div class="dash-row">
+                <div class="dash-cell">
+                  <strong>{cert.skeleton_percent}%</strong>
+                  <span>Skeleton</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>COMPLETE</strong>
+                  <span>Stage 1</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>0</strong>
+                  <span>Open holes</span>
+                </div>
+                <div class="dash-cell">
+                  <strong>FROZEN</strong>
+                  <span>Horizontal expansion</span>
+                </div>
+              </div>
+              <p>
+                Next: <a href="/build-progress/">{cert.next_stage}</a>
+              </p>
+              <p class="muted">{cert.freeze_rule}</p>
+            </section>
+          )}
+
           <section class="hub-section" aria-labelledby="summary">
             <h2 id="summary">Summary</h2>
             <p class="lede">{log.summary}</p>
@@ -97,7 +163,7 @@ const path = `/build-progress/passes/${passSlug}/`;
             </p>
             {meta?.spine_href && (
               <p>
-                Spine: <a href={meta.spine_href}>{meta.name}</a>
+                Record home: <a href={meta.spine_href}>{meta.name}</a>
               </p>
             )}
           </section>
@@ -131,6 +197,135 @@ const path = `/build-progress/passes/${passSlug}/`;
             )}
           </section>
 
+          {isCert && (
+            <>
+              <section class="hub-section" aria-labelledby="architecture">
+                <h2 id="architecture">Complete system architecture map</h2>
+                <p class="lede">{architecture.one_sentence}</p>
+                <ul class="stack">
+                  {(architecture.spines || []).map((s: any) => (
+                    <li>
+                      <a href={s.href}>
+                        <strong>{s.title}</strong>
+                      </a>
+                      <span class="muted"> — {(s.locks || []).join(", ")}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p class="muted">Power loop: {architecture.power_loop}</p>
+                <p class="muted">Capture loop: {architecture.capture_loop}</p>
+                <p class="muted">
+                  Dependency Rule: <em>{architecture.dependency_rule}</em>
+                </p>
+                <p class="muted">Transition map: {architecture.transition_map}</p>
+                <p>
+                  <a href={architecture.foundations_href}>Foundations / system hub →</a>
+                  {" · "}
+                  <a href={architecture.baseline_href}>Arkansas State Baseline →</a>
+                </p>
+              </section>
+
+              <section class="hub-section" aria-labelledby="functions">
+                <h2 id="functions">Twenty-function closure matrix</h2>
+                <p class="lede">
+                  Audited by function, not chapter title. Disposition scheme: CLOSED · HOLE · STAGE
+                  2 · STAGE 3 · STAGE 4.
+                </p>
+                <ul class="stack">
+                  {functions.map((f: any) => (
+                    <li>
+                      <span class={dispositionClass(f.disposition)}>{f.disposition}</span>{" "}
+                      <strong>
+                        {f.id} — {f.function}
+                      </strong>
+                      <div class="muted">{f.closure_question}</div>
+                      <div class="muted">
+                        Home: {(f.structural_home || []).join(", ")}
+                        {f.forward?.length ? ` · Forward: ${f.forward.join(", ")}` : ""}
+                      </div>
+                      <ul class="link-board" style="margin-top:0.5rem;">
+                        {(f.hrefs || []).slice(0, 4).map((h: string) => (
+                          <li>
+                            <a href={h}>{h}</a>
+                          </li>
+                        ))}
+                      </ul>
+                      {f.note && <p class="muted">{f.note}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section class="hub-section" aria-labelledby="holes">
+                <h2 id="holes">Holes discovered and closed</h2>
+                {holesClosed.length === 0 ? (
+                  <p class="lede">None. No true structural holes were found during Pass 5.</p>
+                ) : (
+                  <ul class="stack">
+                    {holesClosed.map((h: any) => (
+                      <li>
+                        <strong>{h.id || h.item}</strong>
+                        <div class="muted">{h.resolution || h.note}</div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+
+              <section class="hub-section" aria-labelledby="os">
+                <h2 id="os">Five OS questions — final crosscut</h2>
+                <ul class="stack">
+                  <li>
+                    <strong>Who owns it?</strong>
+                    <div class="muted">{osAudit.ownership}</div>
+                  </li>
+                  <li>
+                    <strong>How is capital formed?</strong>
+                    <div class="muted">{osAudit.capital_formation}</div>
+                  </li>
+                  <li>
+                    <strong>How is the market designed?</strong>
+                    <div class="muted">{osAudit.market_design}</div>
+                  </li>
+                  <li>
+                    <strong>What happens to the household?</strong>
+                    <div class="muted">{osAudit.household_economics}</div>
+                  </li>
+                  <li>
+                    <strong>Where does power accumulate?</strong>
+                    <div class="muted">{osAudit.power}</div>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="hub-section" aria-labelledby="money">
+                <h2 id="money">Money-flow continuity</h2>
+                <p>
+                  <span class="chip chip--done">{moneyFlow.result}</span>
+                </p>
+                <p class="lede">{moneyFlow.statement}</p>
+                <ul class="link-board">
+                  {(moneyFlow.join_points || []).map((h: string) => (
+                    <li>
+                      <a href={h}>{h}</a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section class="hub-section" aria-labelledby="time">
+                <h2 id="time">Time continuity</h2>
+                <p>
+                  <span class="chip chip--done">{timeCont.result}</span>
+                </p>
+                <p class="lede">{timeCont.statement}</p>
+                <p>
+                  <a href={timeCont.map_href}>Arkansas Transition Map →</a>
+                </p>
+              </section>
+            </>
+          )}
+
           <section class="hub-section" aria-labelledby="modules">
             <h2 id="modules">Modules added or modified</h2>
             <ul class="stack">
@@ -143,7 +338,11 @@ const path = `/build-progress/passes/${passSlug}/`;
                       <a href={m.href}>Open on site →</a>
                     </div>
                   )}
-                  {m.path && <div class="muted"><code>{m.path}</code></div>}
+                  {m.path && (
+                    <div class="muted">
+                      <code>{m.path}</code>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
@@ -155,10 +354,16 @@ const path = `/build-progress/passes/${passSlug}/`;
               {(log.source_documents || []).map((s: any) => (
                 <li>
                   <strong>{s.label}</strong>
-                  {s.path && <div class="muted"><code>{s.path}</code></div>}
+                  {s.path && (
+                    <div class="muted">
+                      <code>{s.path}</code>
+                    </div>
+                  )}
                   {s.url && (
                     <div>
-                      <a href={s.url} rel="noopener noreferrer">Official source →</a>
+                      <a href={s.url} rel="noopener noreferrer">
+                        Official source →
+                      </a>
                     </div>
                   )}
                 </li>
@@ -167,13 +372,17 @@ const path = `/build-progress/passes/${passSlug}/`;
           </section>
 
           <section class="hub-section" aria-labelledby="deferred">
-            <h2 id="deferred">Unresolved / deferred</h2>
+            <h2 id="deferred">
+              {isCert ? "Deferred items by destination stage" : "Unresolved / deferred"}
+            </h2>
             <ul class="stack">
-              {(log.unresolved_deferred || []).map((u: any) => (
+              {(isCert ? deferred : log.unresolved_deferred || []).map((u: any) => (
                 <li>
                   <strong>{u.item}</strong>
                   <div class="muted">
-                    {u.disposition} → {u.defer_to}
+                    {u.disposition}
+                    {u.defer_to ? ` → ${u.defer_to}` : ""}
+                    {u.home ? ` · Home: ${u.home}` : ""}
                   </div>
                 </li>
               ))}

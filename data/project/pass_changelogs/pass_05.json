@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_5",
+  "pass_number": 5,
+  "pass_name": "Whole-System Closure Audit",
+  "status": "COMPLETE",
+  "is_stage_1_certification_record": true,
+  "decision_ids": ["CC-DEC-157"],
+  "update_ids": ["UPD-170"],
+  "slice_id": "CC-STAGE-1-PASS-5-WHOLE-SYSTEM-CLOSURE-AUDIT-1.0",
+  "deployment_date": "2026-08-16",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-5/",
+  "audit_artifact": "data/project/stage1_pass5_whole_system_closure_audit.json",
+  "progress_before": {
+    "skeleton_coverage_percent": 97,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 28
+  },
+  "progress_after": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 29
+  },
+  "progress_movement": "Skeleton 97% → 100%. Overall 28% → 29%. Stage 1 Full Skeleton CERTIFIED COMPLETE. True structural holes at certification: 0. Horizontal expansion frozen. Stage 2 (Full First-Pass Coverage) is now active.",
+  "summary": "Pass 5 was an audit, not a construction pass. Twenty essential political-economic functions were dispositioned by function (not chapter title). Every function has a structural home from Passes 1–4. Zero true structural holes. Five OS questions, money-flow continuity, and time continuity all PASS. Stage 1 skeleton certified at 100%.",
+  "modules_added_or_modified": [
+    {
+      "id": "pass5_audit",
+      "label": "Whole-System Closure Audit (20-function matrix)",
+      "change": "added_certification_complete",
+      "href": "/build-progress/passes/pass-5/",
+      "path": "data/project/stage1_pass5_whole_system_closure_audit.json"
+    },
+    {
+      "id": "arch_map",
+      "label": "Complete system architecture map",
+      "change": "certified",
+      "href": "/system/"
+    },
+    {
+      "id": "p1",
+      "label": "Money & Ownership Spine",
+      "change": "referenced_as_home",
+      "href": "/system/money-ownership/"
+    },
+    {
+      "id": "p2",
+      "label": "Household & Place Spine",
+      "change": "referenced_as_home",
+      "href": "/system/household-place/"
+    },
+    {
+      "id": "p3",
+      "label": "Government & Democratic Power Spine",
+      "change": "referenced_as_home",
+      "href": "/system/government-power/"
+    },
+    {
+      "id": "p4",
+      "label": "Transition, Resilience & Measurement Spine",
+      "change": "referenced_as_home",
+      "href": "/system/transition-measurement/"
+    },
+    {
+      "id": "stage1_cert",
+      "label": "Stage 1 certification record",
+      "change": "locked",
+      "href": "/build-progress/passes/pass-5/"
+    }
+  ],
+  "source_documents": [
+    {
+      "label": "Pass 5 whole-system closure audit",
+      "path": "data/project/stage1_pass5_whole_system_closure_audit.json"
+    },
+    {
+      "label": "Pass 5 close report",
+      "path": "reports/CC_STAGE_1_PASS_5_WHOLE_SYSTEM_CLOSURE_AUDIT_1_0_RETURN.md"
+    },
+    {
+      "label": "Pass 1 Money & Ownership spine",
+      "path": "data/project/stage1_pass1_money_ownership_spine.json"
+    },
+    {
+      "label": "Pass 2 Household & Place spine",
+      "path": "data/project/stage1_pass2_household_place_spine.json"
+    },
+    {
+      "label": "Pass 3 Government & Democratic Power spine",
+      "path": "data/project/stage1_pass3_government_democratic_power_spine.json"
+    },
+    {
+      "label": "Pass 4 Transition/Resilience/Measurement spine",
+      "path": "data/project/stage1_pass4_transition_resilience_measurement_spine.json"
+    },
+    {
+      "label": "Completion ladder & dashboard",
+      "path": "data/project/completion_ladder_and_dashboard.json"
+    },
+    {
+      "label": "Master system coverage audit",
+      "path": "data/project/master_system_coverage_audit.json"
+    }
+  ],
+  "unresolved_deferred": [
+    { "item": "COUNTABLE prosperity-engine dollars still $0", "disposition": "STAGE_4", "defer_to": "Stage 4 validation" },
+    { "item": "Household Prosperity Surplus panel", "disposition": "STAGE_2", "defer_to": "Stage 2" },
+    { "item": "Geographic Money Statements", "disposition": "STAGE_2", "defer_to": "Stage 2" },
+    { "item": "Multi-year Arkansas baseline normalization", "disposition": "STAGE_2", "defer_to": "Stage 2" },
+    { "item": "Full prerequisite graph for major replacements", "disposition": "STAGE_2", "defer_to": "Stage 2/3" },
+    { "item": "Campaign finance / lobbying package constitutional review", "disposition": "STAGE_4", "defer_to": "Stage 4" },
+    { "item": "Arkansas-first procurement commerce-clause design", "disposition": "STAGE_4", "defer_to": "Stage 4" },
+    { "item": "Land-value capture constitutional path", "disposition": "STAGE_4", "defer_to": "Stage 4" },
+    { "item": "Five-state resilience attack battery", "disposition": "STAGE_4", "defer_to": "Stage 4" },
+    { "item": "HYP-133 Demand Map empirical first pass", "disposition": "STAGE_2", "defer_to": "Stage 2" },
+    { "item": "HYP-134 AI series (quarantined from COUNTABLE)", "disposition": "STAGE_4", "defer_to": "Stage 4" },
+    { "item": "Unabridged category writing", "disposition": "STAGE_3", "defer_to": "Stage 3" },
+    { "item": "Public Book ~100-page compression", "disposition": "STAGE_5", "defer_to": "Stage 5" },
+    { "item": "Implementation manuals", "disposition": "STAGE_6", "defer_to": "Stage 6" }
+  ],
+  "next_pass_only": "STAGE_2 — Full First-Pass Coverage. Horizontal expansion frozen. New ideas absorb into existing bones unless they expose a genuine architectural defect."
+}

@@ -27,16 +27,18 @@ function statusLabel(status?: string) {
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Stage 1 skeleton</span>
+      <span class="chip chip--done">Stage 1 complete</span>
       <h1>The complete system map</h1>
       <p class="lede">
         Every major function of government, markets, households, communities, capital, and democratic
-        power should live on one of these spines. If you cannot find a topic, start on the
-        <a href="/research/">Research desk</a>.
+        power lives on one of these spines. Stage 1 skeleton is certified. Stage 2 develops working
+        models without inventing new bones unless a genuine architectural defect appears.
       </p>
       <p class="muted">
         Skeleton coverage: <strong>{bars.skeleton_coverage_percent ?? 0}%</strong> · Overall project
         completion: <strong>{completion.overall_project_completion?.percent ?? 0}%</strong>
+        {" · "}
+        <a href="/build-progress/passes/pass-5/">Stage 1 certification →</a>
       </p>
     </header>
 
