@@ -1,19 +1,38 @@
 ---
+import chapter from "../../../../data/project/stage3_pass33_human_community_capital.json";
+
+const forms = chapter.community_capital?.forms || [];
 ---
 
-<figure class="viz viz--pentagon" data-viz="community-capital-pentagon" id="pentagon">
+<figure class="viz viz--pentagon" data-viz="community-capital-pentagon" id="community-capital">
   <figcaption class="viz__cap">
-    <span class="viz__family">Community Capital Pentagon</span>
-    <span class="viz__q">Who benefits · what is retained?</span>
+    <span class="viz__family">Community Capital Pentagon — Evidence Version</span>
+    <span class="viz__q">Who benefits · what is retained · what can we measure?</span>
   </figcaption>
   <ul class="pentagon">
-    <li><strong>Human</strong><span>skills · knowledge · health</span></li>
-    <li><strong>Financial / Productive</strong><span>businesses · land · tools</span></li>
-    <li><strong>Social</strong><span>trust · networks</span></li>
-    <li><strong>Civic</strong><span>leadership · institutions</span></li>
-    <li><strong>Cultural / Place</strong><span>identity · heritage · environment</span></li>
+    {
+      forms.map((f: any) => (
+        <li>
+          <strong>{f.label}</strong>
+          <span>{f.definition}</span>
+          <span class="pentagon__ev">
+            {(f.measurable_signals_bound || []).slice(0, 2).join(" · ")}
+          </span>
+        </li>
+      ))
+    }
   </ul>
-  <p class="viz__note">
-    Outside money alone cannot rescue a place that is losing the other four forms of capital.
+  <p class="lede" style="margin-top:0.85rem;">
+    {chapter.community_capital?.central_argument}
   </p>
+  <p class="viz__note">{chapter.community_capital?.factory_note}</p>
 </figure>
+
+<style>
+  .pentagon__ev {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 0.35rem;
+  }
+</style>

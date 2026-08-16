@@ -1,0 +1,38 @@
+---
+import chapter from "../../../../data/project/stage3_pass33_human_community_capital.json";
+
+const chain = chapter.research_to_prosperity?.chain || [];
+---
+
+<figure class="viz viz--research" data-viz="research-prosperity" id="research-flow">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Research-to-Prosperity Flow</span>
+    <span class="viz__q">Public investment → discovery → commercialization → Arkansas return</span>
+  </figcaption>
+  <ol class="research-flow">
+    {chain.map((s: string) => <li><strong>{s}</strong></li>)}
+  </ol>
+  <p class="lede" style="margin-top:0.85rem;">
+    {chapter.research_to_prosperity?.principle}
+  </p>
+  <p class="viz__note">
+    Not “government owns every invention.” Exact IP/legal structure → Stage 4. FY2026 Higher Education
+    GR Allocation A is FACT context for public investment scale — not a royalty claim.
+  </p>
+</figure>
+
+<style>
+  .research-flow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 0.4rem;
+  }
+  .research-flow li {
+    padding: 0.5rem 0.55rem;
+    border: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 12%, transparent);
+    font-size: 0.88rem;
+  }
+</style>

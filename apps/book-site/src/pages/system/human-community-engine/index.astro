@@ -1,166 +1,277 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
-import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
 import CapabilityLadder from "../../../components/CapabilityLadder.astro";
+import MultiplePathways from "../../../components/MultiplePathways.astro";
 import HumanCapitalFlywheel from "../../../components/HumanCapitalFlywheel.astro";
+import ResearchToProsperity from "../../../components/ResearchToProsperity.astro";
 import CommunityCapitalPentagon from "../../../components/CommunityCapitalPentagon.astro";
 import RetainReturnAttract from "../../../components/RetainReturnAttract.astro";
+import chapter from "../../../../../../data/project/stage3_pass33_human_community_capital.json";
 import engine from "../../../../../../data/project/stage2_pass23_human_community_capital.json";
 
+const sections = chapter.sections || [];
 const modules = engine.modules || [];
-const ladder = engine.capability_ladder || {};
-const demand = engine.demand_map_join || {};
-const capitals = engine.community_capital_forms || {};
-const cycle = engine.prosperity_cycle_integration || {};
+const checklist = Object.values(chapter.category_checklist || {});
+const evidence = chapter.arkansas_evidence_bound || {};
+const finance = chapter.education_financing_architecture || {};
+const worker = chapter.worker_to_owner || {};
+const service = chapter.service_as_capital || {};
+const place = chapter.place_capability_framework || {};
+const ai = chapter.ai_human_capital_bargain || {};
 
-const fieldOrder = [
-  ["now", "NOW"],
-  ["problem", "PROBLEM"],
-  ["future_state", "FUTURE STATE"],
-  ["mechanism", "MECHANISM"],
-  ["money_flow", "MONEY FLOW"],
-  ["ownership", "OWNERSHIP"],
-  ["household_effect", "HOUSEHOLD EFFECT"],
-  ["government_role", "GOVERNMENT ROLE"],
-  ["market_role", "MARKET ROLE"],
-  ["transition", "TRANSITION"],
-  ["dependencies", "DEPENDENCIES"],
-  ["risks", "RISKS"],
-  ["measurement", "MEASUREMENT"],
-  ["evidence_status", "EVIDENCE STATUS"],
-  ["deferred_validation", "DEFERRED VALIDATION"],
-] as const;
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+
+function chipFor(cls?: string) {
+  if (cls === "FACT") return "chip chip--done";
+  if (cls === "DERIVED_CALCULATION" || cls === "MODEL") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function fmtEv(e: any) {
+  if (e.value_usd != null) return money(e.value_usd);
+  if (e.unit === "USD") return money(e.value);
+  if (e.unit === "percent") return `${e.value}%`;
+  if (typeof e.value === "number") return num(e.value);
+  return e.label;
+}
 ---
 
 <BaseLayout
-  title="Human & Community Capital Engine"
+  title="Human & Community Capital"
   path="/system/human-community-engine/"
-  description="Stage 2 Pass 2.3 — how Arkansas turns people, knowledge, relationships, communities and place into productive capital."
+  description="Pass 3.3 unabridged — capability continuum, demand-informed education, community capital, and Retain→Belong for Arkansas."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--done">Pass 2.3 complete</span>
-      <h1>{engine.engine_name}</h1>
-      <p class="lede">{engine.one_sentence}</p>
-      <p class="muted">
-        {engine.decision_id} · {engine.update_id} · COUNTABLE claims added: $0 ·{" "}
-        <a href="/build-progress/passes/pass-2-3/">What Changed →</a>
+      <span class="chip chip--done">Pass 3.3 complete · 100%</span>
+      <h1>Human & Community Capital</h1>
+      <p class="lede">{chapter.organizing_sentence}</p>
+      <p class="muted">{chapter.governing_question}</p>
+      <p class="lede" style="margin-top:0.75rem;">
+        <strong>{chapter.central_proposition}</strong>
       </p>
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-3-3/">Pass 3.3 What Changed →</a></li>
+        <li><a href="/system/household-engine/">Household Prosperity join →</a></li>
+        <li><a href="/system/arkansas-state-baseline/">Arkansas NOW →</a></li>
+      </ul>
     </header>
 
     <ReadingModes />
 
     <section class="hub-section" data-depth="understand" data-depth-keep>
-      <h2>See the human-development machine</h2>
+      <h2>See the capability system</h2>
       <CapabilityLadder />
+      <MultiplePathways />
       <HumanCapitalFlywheel />
+      <ResearchToProsperity />
       <CommunityCapitalPentagon />
       <RetainReturnAttract />
     </section>
 
-    <section class="hub-section" data-depth="explore" aria-labelledby="ladder-lock">
-      <h2 id="ladder-lock">Arkansas Capability Ladder</h2>
-      <p class="lede">{ladder.objective}</p>
-      <p>{ladder.rule}</p>
-      <h3>Pathways (same objective)</h3>
+    <section class="hub-section" aria-labelledby="def">
+      <h2 id="def">1. Human capability begins before employment</h2>
+      <p class="lede">
+        Rejected: {chapter.broader_human_capital_definition?.rejects}
+      </p>
       <ul class="link-board">
-        {(ladder.pathways || []).map((p: string) => (
-          <li>{p}</li>
-        ))}
+        {
+          (chapter.broader_human_capital_definition?.encompasses || []).map((x: string) => (
+            <li>{x}</li>
+          ))
+        }
       </ul>
-      <p>
-        <EvidenceConfidence level="working" note="architecture — multiple routes, one ladder" />
-      </p>
     </section>
 
-    <section class="hub-section" data-depth="explore" aria-labelledby="demand">
-      <h2 id="demand">Demand Map join</h2>
-      <p>
-        <span class="chip chip--queued">{demand.status}</span>
+    <section class="hub-section" aria-labelledby="finance">
+      <h2 id="finance">4. Education financing & intergenerational investment</h2>
+      <p class="lede">
+        Frame: <strong>{finance.frame?.replaceAll("_", " ")}</strong>
       </p>
-      <p>
-        <strong>Wrong model:</strong> {demand.wrong_model}
-      </p>
-      <p>
-        <strong>Operating loop:</strong> {demand.operating_loop}
-      </p>
-      <p class="muted">{demand.note} · {demand.hyp}</p>
-    </section>
-
-    <section class="hub-section" data-depth="explore" aria-labelledby="five-capitals">
-      <h2 id="five-capitals">Five forms of community capital</h2>
-      <p class="lede">{capitals.insight}</p>
       <ul class="stack">
-        {(capitals.forms || []).map((f: any) => (
-          <li>
-            <strong>{f.label}</strong> — {f.meaning}
-          </li>
-        ))}
+        {
+          Object.entries(finance.layers || {}).map(([k, v]) => (
+            <li>
+              <strong>{k.replaceAll("_", " ")}</strong>
+              <div class="muted">{v}</div>
+            </li>
+          ))
+        }
       </ul>
-    </section>
-
-    <section class="hub-section" data-depth="explore" aria-labelledby="integration">
-      <h2 id="integration">Money ↔ Household ↔ Human/Community</h2>
-      <p>
-        <span class="chip chip--done">{cycle.result}</span>
-      </p>
-      <p class="fly-card fly-card--up" style="margin:0;">{cycle.cycle}</p>
-      <p class="muted" style="margin-top:0.85rem;">{cycle.alongside}</p>
-      <p>
-        <a href="/system/money-engine/">Money Engine →</a>
-        {" · "}
-        <a href="/system/household-engine/">Household Engine →</a>
+      <p class="muted">{finance.count_rule}</p>
+      <p class="muted">
+        Stage 4 tests: {(finance.stage_4_tests || []).join(" · ")}
       </p>
     </section>
 
-    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
-      <h2 id="modules">Working modules (HC-01–HC-08)</h2>
-      <p class="lede">Harvested and integrated — not reopened as research campaigns.</p>
+    <section class="hub-section" aria-labelledby="owner">
+      <h2 id="owner">6. From worker to owner</h2>
+      <p class="lede">{worker.objective}</p>
+      <ul class="stack">
+        {
+          (worker.pathways || []).map((p: any) => (
+            <li>
+              <strong>{p.id}</strong> — {p.chain}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">{worker.household_join}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="service">
+      <h2 id="service">7. Service as capital formation</h2>
+      <p class="lede">{service.principle}</p>
+      <ul class="link-board">
+        {(service.reciprocal_pathways_may_include || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <p class="muted">{service.rule}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="place">
+      <h2 id="place">10. Place Capability Framework</h2>
+      <p class="lede">{place.rule}</p>
+      <ul class="link-board">
+        {(place.elements || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <p class="muted">
+        Recognized geographies: {(place.recognized_geographies || []).join(" · ")}
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="ai">
+      <h2 id="ai">11. AI changes the human-capital bargain</h2>
+      <p class="lede">{ai.structural_problem}</p>
+      <ul class="link-board">
+        {(ai.architecture_response || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <p class="muted">{ai.ai_social_compact}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="evidence">
+      <h2 id="evidence">Arkansas evidence bound</h2>
       {
-        modules.map((m: any) => (
-          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
-            <h3 id={`${m.id}-title`}>
-              {m.id} — {m.name}
-            </h3>
-            <p class="module-card__meta">
-              {m.lock} · <EvidenceConfidence level="working" />
-            </p>
-            <dl class="module-fields">
-              {fieldOrder.map(([key, label]) => {
-                const val = m[key];
-                const text = Array.isArray(val) ? val.join("; ") : val;
-                return (
-                  <>
-                    <dt>{label}</dt>
-                    <dd>{text}</dd>
-                  </>
-                );
-              })}
-            </dl>
-          </section>
-        ))
+        Object.entries(evidence)
+          .filter(([k]) => k !== "gaps" && k !== "demand_bridge")
+          .map(([k, arr]) => (
+            <div style="margin-bottom:1rem;">
+              <h3>{k.replaceAll("_", " ")}</h3>
+              <ul class="stack">
+                {(Array.isArray(arr) ? arr : []).map((e: any) => (
+                  <li>
+                    <span class={chipFor(e.claim_class)}>{e.claim_class}</span>{" "}
+                    <strong>{e.label}</strong>
+                    {e.value != null || e.value_usd != null ? `: ${fmtEv(e)}` : ""}
+                    <span class="muted">
+                      {" "}
+                      · {e.period}
+                      {e.note ? ` · ${e.note}` : ""}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
       }
+      <p class="muted">Gaps: {(evidence.gaps || []).join(" · ")}</p>
     </section>
 
-    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
-      <h2 id="deferred">Deferred validation</h2>
+    <section class="hub-section" aria-labelledby="counter">
+      <h2 id="counter">Counterarguments</h2>
       <ul class="stack">
-        {(engine.deferred_to_validation || []).map((item: string) => (
-          <li>{item}</li>
-        ))}
+        {
+          (chapter.counterarguments || []).map((c: any) => (
+            <li>
+              <strong>“{c.claim}”</strong>
+              <div class="muted">Strong form: {c.strong_form}</div>
+              <div>{c.architecture_answer}</div>
+              <div class="muted">Unresolved: {c.unresolved}</div>
+            </li>
+          ))
+        }
       </ul>
-      <h3>Stage 3 flags</h3>
-      <ul class="stack">
-        {(engine.deferred_to_stage_3 || []).map((item: string) => (
-          <li>{item}</li>
-        ))}
+    </section>
+
+    <section class="hub-section" aria-labelledby="hc">
+      <h2 id="hc">HC modules integrated</h2>
+      <ul class="link-board">
+        {
+          modules.map((m: any) => (
+            <li>
+              {m.id} — {m.name}
+            </li>
+          ))
+        }
       </ul>
-      <p>
-        <a href="/human-capital/">Human capital spine →</a>
-        {" · "}
-        <a href="/build-progress/">Build Progress →</a>
+      <p class="muted">
+        First-pass 15-field models remain in Pass 2.3; Pass 3.3 writes the unabridged system around
+        them. Sections: {sections.map((s: any) => s.id).join(", ")}.
       </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="openq">
+      <h2 id="openq">Open validation questions</h2>
+      <ul class="stack">
+        {
+          (chapter.open_validation_questions || []).map((q: any) => (
+            <li>
+              <strong>{q.id}</strong> — {q.question}
+              <div class="muted">Assign: {q.assign}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="joins">
+      <h2 id="joins">Cross-system connections</h2>
+      <ul class="link-board">
+        {
+          (chapter.cross_system_connections || []).map((j: any) => (
+            <li>
+              <a href={j.href}>
+                {j.to} — {j.join}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="check">
+      <h2 id="check">Unabridged category checklist</h2>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{chapter.category_completion_percent}%</strong>
+          <span>Pass 3.3 category</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{checklist.length}/{checklist.length}</strong>
+          <span>Required elements PRESENT</span>
+        </div>
+      </div>
+      <ul class="stack">
+        {
+          checklist.map((el: any) => (
+            <li>
+              <span class="chip chip--done">{el.status}</span> {el.label}
+            </li>
+          ))
+        }
+      </ul>
     </section>
   </article>
 </BaseLayout>
