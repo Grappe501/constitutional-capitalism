@@ -5,64 +5,77 @@ import explorer from "../../../../../../data/project/comparison_explorer_v1.json
 import deep from "../../../../../../data/project/comparison_explorer_deepening_v1.json";
 import lane from "../../../../../../data/project/public_understanding_lane.json";
 import flag from "../../../../../../data/project/comparison_explorer_flagship_v1.json";
+import experience from "../../../../../../data/project/comparison_explorer_experience_v1.json";
+import completion from "../../../../../../data/project/completion_ladder_and_dashboard.json";
 
-const paths = deep.contract.learning_paths || [];
-const exemplars = deep.contract.exemplars_this_pass;
+const paths = deep.contract?.learning_paths || [];
+const exemplars = deep.contract?.exemplars_this_pass || {};
 const deepPhil = new Set(exemplars.philosophies || []);
 const deepConcept = new Set(exemplars.concepts || []);
+const fb = completion.foundational_build || {};
+const experiences = experience.experiences || [];
 ---
 
 <BaseLayout
-  title="Comparison Explorer 3.0"
+  title="Comparison Explorer — Public Intellectual Experience"
   path="/compare/explorer/"
-  description="College-senior political economy in readable language — translation layer into the Unabridged source of truth."
+  description="College-senior depth in high-school-readable language. Explore philosophies, world history, mechanisms, and Put Me in the System — without reopening Foundational System v1.0."
 >
   <article class="explorer">
     <header class="hub-banner">
-      <span class="chip chip--done">CC-PUBLIC-UNDERSTANDING-LANE · Explorer 3.0</span>
+      <span class="chip chip--done">Public Understanding · Explorer Experience {experience.version}</span>
       <h1>Comparison Explorer</h1>
-      <p class="lede">
-        {deep.contract.standard} Do not simplify the ideas—simplify language, sequencing, examples, and
-        definitions.
-      </p>
+      <p class="lede">{experience.target}</p>
       <p class="muted">
-        {lane.status} · Flagship {flag.decision_id || "CC-DEC-176"} · +0 dials (Unabridged 100% · Validation 33% ·
-        Overall 83%)
+        {fb.banner || "FOUNDATIONAL BUILD — COMPLETE"} · {fb.name || "Foundational System"}{" "}
+        {fb.version || "v1.0"} frozen · <strong>+0 foundational dials</strong>
       </p>
       <p class="lede" style="margin-top:0.75rem;">
-        <strong>Unabridged = source of truth.</strong> This Explorer makes the reader smarter—not a
-        competing doctrine and not Stage 4 progress.
+        Not an encyclopedia. Not a table with longer cells. A place to keep exploring —
+        UNDERSTAND → EXPLORE → DEEP DIVE → COMPARE → TEST IT → CC → PROVE.
       </p>
-      <ul class="link-board">
-        <li>
-          <a href="/compare/explorer/constitutional-capitalism/">
-            <strong>Start here: What is Constitutional Capitalism?</strong> (flagship journey) →
-          </a>
-        </li>
-        <li><a href="/compare/explorer/matrix/">Open simple clickable matrix →</a></li>
-        <li><a href="/compare/explorer/ownership-layers/">Ownership cell · six layers →</a></li>
-        <li><a href="/compare/explorer/follow-100/">Follow the $100 →</a></li>
-        <li>
-          <a href="/compare/explorer/follow-mechanism/why-monopolies-form/">Follow the Mechanism →</a>
-        </li>
-        <li><a href="/compare/explorer/jargon/">Economics Without Jargon →</a></li>
-        <li><a href="/compare/explorer/world-lab/">World Laboratory →</a></li>
-        <li><a href="/unabridged/">Unabridged source of truth →</a></li>
-      </ul>
     </header>
 
     <ExplorerNav current="home" />
 
+    <section class="hub-section" id="experiences">
+      <h2>Experiences</h2>
+      <ul class="stack">
+        {
+          experiences.map((e: any) => (
+            <li>
+              <strong>
+                <a href={e.href}>{e.label}</a>
+              </strong>
+              <div class="muted">{e.promise}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <ul class="link-board">
+        <li>
+          <a href="/compare/explorer/constitutional-capitalism/">
+            <strong>Flagship journey: What is Constitutional Capitalism?</strong> →
+          </a>
+        </li>
+        <li>
+          <a href="/compare/explorer/put-me/">
+            <strong>Start Put Me in the System</strong> →
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <section class="hub-section" id="learning-paths" aria-labelledby="paths-title">
-      <h2 id="paths-title">Learning paths</h2>
-      <p class="lede">Same pages—different time budgets. No separate content universe.</p>
+      <h2 id="paths-title">Time budgets</h2>
+      <p class="lede">Same pages — different depth. No separate content universe.</p>
       <ul class="stack">
         {
           paths.map((p: any) => (
             <li>
               <strong>{p.label}</strong> — {p.promise}
               <ul class="link-board">
-                {p.hrefs.map((h: string) => (
+                {(p.hrefs || []).map((h: string) => (
                   <li>
                     <a href={h}>{h}</a>
                   </li>
@@ -75,48 +88,41 @@ const deepConcept = new Set(exemplars.concepts || []);
     </section>
 
     <section class="hub-section" aria-labelledby="problem">
-      <h2 id="problem">What problem are we solving?</h2>
+      <h2 id="problem">Problems first</h2>
       <p class="lede">
         People often learn ideology as vocabulary. This lane teaches <strong>problems first</strong>, then
-        mechanisms, then disagreements.
+        mechanisms, then disagreements — at their strongest.
       </p>
       <ul class="stack">
         <li>
-          <strong>Capitalism</strong> — How do millions coordinate production without one central authority
-          deciding everything?
+          <strong>Capitalism</strong> — How do millions coordinate production without one central authority?
         </li>
         <li>
           <strong>Socialism</strong> — What happens when ownership of productive capital concentrates wealth
           and power?
         </li>
         <li>
-          <strong>Social democracy</strong> — Can we retain market productivity while protecting people from
-          insecurity and extreme inequality?
+          <strong>Social democracy</strong> — Can markets stay productive while protecting people from
+          insecurity?
         </li>
         <li>
-          <strong>Constitutional Capitalism</strong> — How do we preserve markets, initiative, ownership, and
-          liberty while preventing concentrated economic or government power from dominating citizens—and
-          make prosperity compound across households, communities, and generations?
+          <strong>Constitutional Capitalism</strong> — How do we preserve markets and liberty while
+          preventing concentrated economic or government power from dominating citizens?
         </li>
       </ul>
     </section>
 
     <section class="hub-section" id="philosophies" aria-labelledby="phil-title">
-      <h2 id="phil-title">Philosophy pages</h2>
-      <p class="lede">
-        Traditions are families of arguments, not monoliths. Explorer 3.0 exemplars carry full depth;
-        others remain shells until the template freezes.
-      </p>
-      <p class="muted">{explorer.neutrality_rule}</p>
-      <ul class="link-board">
+      <h2 id="phil-title">Philosophies</h2>
+      <ul class="stack">
         {
-          explorer.philosophies.map((p) => (
+          (explorer.philosophies || []).map((p: any) => (
             <li>
-              <a href={`/compare/explorer/philosophy/${p.slug}/`}>{p.name}</a>
-              <span class="muted">
-                {" "}
-                · {deepPhil.has(p.slug) ? "EXEMPLAR 3.0" : p.status}
-              </span>
+              <a href={`/compare/explorer/philosophy/${p.slug}/`}>
+                <strong>{p.name}</strong>
+              </a>
+              {deepPhil.has(p.slug) ? <span class="chip chip--done"> seven-layer</span> : null}
+              <div class="muted">{p.problem_it_tries_to_solve}</div>
             </li>
           ))
         }
@@ -124,53 +130,36 @@ const deepConcept = new Set(exemplars.concepts || []);
     </section>
 
     <section class="hub-section" id="concepts" aria-labelledby="concept-title">
-      <h2 id="concept-title">Concept mini-books</h2>
-      <p class="lede">
-        Ask a question—ownership, markets, capital, profit—and enter mechanisms, not slogans.
-      </p>
+      <h2 id="concept-title">Concepts</h2>
       <ul class="link-board">
         {
-          explorer.concepts.map((c) => (
+          (explorer.concepts || []).map((c: any) => (
             <li>
-              <a href={`/compare/explorer/concept/${c.slug}/`}>{c.title}</a>
-              <span class="muted">
-                {" "}
-                — {c.question}
-                {deepConcept.has(c.slug) ? " · EXEMPLAR 3.0" : ""}
-              </span>
+              <a href={`/compare/explorer/concept/${c.slug}/`}>
+                {c.name || c.title || c.slug}
+                {deepConcept.has(c.slug) ? " · deep" : ""}
+              </a>
             </li>
           ))
         }
       </ul>
     </section>
 
-    <section class="hub-section" aria-labelledby="experiences">
-      <h2 id="experiences">Teaching experiences</h2>
-      <ul class="link-board">
-        <li><a href="/compare/explorer/follow-100/">Follow the $100 (ILLUSTRATION)</a></li>
-        <li>
-          <a href="/compare/explorer/follow-mechanism/why-monopolies-form/">
-            Follow the Mechanism — Why monopolies form
-          </a>
-        </li>
-        <li><a href="/compare/explorer/same-family/">Same Arkansas Family (ILLUSTRATION)</a></li>
-        <li><a href="/compare/explorer/world-lab/">World Laboratory — historical cases</a></li>
-        <li><a href="/compare/explorer/same-problem/">Same Problem, Different Answers</a></li>
-        <li><a href="/compare/explorer/table-talk/">Around the table</a></li>
-        <li><a href="/compare/explorer/jargon/">Economics Without Jargon</a></li>
-        <li><a href="/compare/explorer/ownership-layers/">Ownership · six cell layers</a></li>
-      </ul>
-    </section>
-
-    <section class="hub-section" aria-labelledby="rules">
-      <h2 id="rules">Lane rules</h2>
+    <section class="hub-section">
+      <h2>Lane rules</h2>
       <ul class="stack">
-        <li>Zero effect on Validation / Unabridged / Overall completion metrics</li>
-        <li>Does not delay Stage 4 — Break It (Pass 4.2 next)</li>
-        <li>Links into Unabridged rather than inventing parallel doctrine</li>
-        <li>No fake statistics; illustrations labeled ILLUSTRATION</li>
-        <li>Never ask readers for vocabulary before the idea</li>
-        <li>Six-question lens: Who pays / benefits / owns / decides / bears risk / receives surplus</li>
+        <li>Unabridged remains source of truth.</li>
+        <li>Present the strongest serious version before criticizing.</li>
+        <li>Illustrations labeled. No fake statistics.</li>
+        <li>
+          Status: {lane.status} · Flagship {flag.decision_id || "CC-DEC-176"} · Experience{" "}
+          {experience.decision_id}
+        </li>
+      </ul>
+      <ul class="link-board">
+        <li><a href="/public-book/">UNDERSTAND · Public Book →</a></li>
+        <li><a href="/unabridged/">PROVE · Unabridged →</a></li>
+        <li><a href="/status/">Project status →</a></li>
       </ul>
     </section>
   </article>

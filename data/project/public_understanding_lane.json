@@ -1,32 +1,55 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "lane_id": "CC-PUBLIC-UNDERSTANDING-LANE",
   "name": "Comparison Explorer / Public Understanding",
-  "status": "PARALLEL_NON_BLOCKING",
+  "status": "ACTIVE_STEWARDSHIP_EXPERIENCE",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-172",
-  "update_id": "UPD-185",
-  "slice_id": "CC-PUBLIC-UNDERSTANDING-COMPARISON-EXPLORER-2-0-SHELL-1.0",
+  "decision_id": "CC-DEC-193",
+  "update_id": "UPD-206",
+  "slice_id": "CC-EXPLORER-EXPERIENCE-FRAME-0-1-1.0",
+  "experience_artifact": "data/project/comparison_explorer_experience_v1.json",
+  "experience_version": "0.1.0",
+  "foundational_system": {
+    "version": "v1.0",
+    "frozen": true,
+    "dials_reopened": 0
+  },
   "rules": {
-    "zero_effect_on_stage3_completion_metrics": true,
-    "zero_permission_to_delay_primary_lane": true,
-    "not_a_ninth_stage3_category": true,
+    "zero_effect_on_foundational_completion_metrics": true,
+    "zero_permission_to_reopen_architecture": true,
+    "interesting_discoveries_do_not_reopen_v1": true,
     "unabridged_is_source_of_truth": true,
-    "explorer_is_translation_layer_only": true,
+    "explorer_is_public_intellectual_experience": true,
     "neutrality": "Present the strongest serious version of each philosophy before criticizing it.",
     "no_fake_statistics": true,
-    "illustration_must_be_labeled": true
+    "illustration_must_be_labeled": true,
+    "not_a_completion_percentage_rush": true
   },
   "progress_impact": {
-    "skeleton_coverage_percent_delta": 0,
-    "first_pass_coverage_percent_delta": 0,
-    "unabridged_completion_percent_delta": 0,
+    "technical_system_percent_delta": 0,
+    "public_book_percent_delta": 0,
     "validation_completion_percent_delta": 0,
-    "overall_project_completion_percent_delta": 0,
-    "note": "This lane does not move completion dials. Current project dials remain whatever Stage 4 set (Unabridged 100 / Validation 33 / Overall 83 as of Pass 4.2)."
+    "unabridged_completion_percent_delta": 0,
+    "foundational_system_version": "v1.0 unchanged",
+    "note": "This lane does not move foundational dials. Report Explorer as experience versioning (0.1 → 0.2…), not as unfinished architecture."
   },
-  "primary_lane_reminder": "Primary work remains Stage 4 — Break It (Pass 4.3 next). This lane runs in parallel.",
+  "subject_layers": [
+    "UNDERSTAND",
+    "EXPLORE",
+    "DEEP DIVE",
+    "COMPARE",
+    "TEST IT",
+    "CC",
+    "PROVE"
+  ],
   "public_hub": "/compare/explorer/",
+  "primary_experiences": [
+    "/compare/explorer/put-me/",
+    "/compare/explorer/thinkers/",
+    "/compare/explorer/mechanisms/",
+    "/compare/explorer/world-lab/",
+    "/compare/explorer/constitutional-capitalism/"
+  ],
   "links_into_unabridged": [
     "/unabridged/",
     "/unabridged/is-is-not/",
@@ -49,5 +72,13 @@
     "status": "FLAGSHIP_SHIPPED",
     "artifact": "data/project/comparison_explorer_flagship_v1.json",
     "href": "/compare/explorer/constitutional-capitalism/"
+  },
+  "experience_frame": {
+    "slice_id": "CC-EXPLORER-EXPERIENCE-FRAME-0-1-1.0",
+    "decision_id": "CC-DEC-193",
+    "update_id": "UPD-206",
+    "status": "FRAME_SHIPPED",
+    "artifact": "data/project/comparison_explorer_experience_v1.json",
+    "href": "/compare/explorer/"
   }
 }

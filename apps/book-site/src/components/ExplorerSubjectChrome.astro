@@ -1,0 +1,104 @@
+---
+/**
+ * Seven-layer subject chrome for Comparison Explorer experiences.
+ * UNDERSTAND → EXPLORE → DEEP DIVE → COMPARE → TEST IT → CC → PROVE
+ */
+interface Props {
+  layers?: { id: string; label: string; promise: string }[];
+}
+import experience from "../../../../data/project/comparison_explorer_experience_v1.json";
+
+const { layers = experience.subject_layers } = Astro.props;
+---
+
+<nav class="explorer-subject-chrome" aria-label="Subject layers" data-explorer-subject-chrome>
+  <p class="muted explorer-subject-chrome__intro">
+    Move through the subject — not another encyclopedia scroll.
+  </p>
+  <ul class="explorer-subject-chrome__list">
+    {
+      layers.map((l) => (
+        <li>
+          <a href={`#layer-${l.id}`} data-layer-link={l.id}>
+            <strong>{l.label}</strong>
+            <span class="muted">{l.promise}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .explorer-subject-chrome {
+    margin: 1rem 0 1.5rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.45rem;
+    background: color-mix(in srgb, var(--panel) 92%, var(--accent) 8%);
+  }
+  .explorer-subject-chrome__intro {
+    margin: 0 0 0.65rem;
+    font-size: 0.85rem;
+  }
+  .explorer-subject-chrome__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+  }
+  @media (min-width: 720px) {
+    .explorer-subject-chrome__list {
+      grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    }
+  }
+  .explorer-subject-chrome__list a {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+  }
+  .explorer-subject-chrome__list a:hover,
+  .explorer-subject-chrome__list a:focus-visible {
+    border-color: var(--accent);
+    outline: none;
+  }
+  .explorer-subject-chrome__list a[aria-current="true"] {
+    border-color: var(--accent-deep);
+    background: color-mix(in srgb, var(--panel) 80%, var(--accent) 20%);
+  }
+  .explorer-subject-chrome__list strong {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  .explorer-subject-chrome__list .muted {
+    font-size: 0.72rem;
+    line-height: 1.25;
+  }
+</style>
+
+<script>
+  const root = document.querySelector("[data-explorer-subject-chrome]");
+  if (root) {
+    const links = root.querySelectorAll("[data-layer-link]");
+    const sections = [...document.querySelectorAll("[id^='layer-']")];
+    const setCurrent = () => {
+      let active = "";
+      const y = window.scrollY + 120;
+      for (const sec of sections) {
+        const el = sec as HTMLElement;
+        if (el.offsetTop <= y) active = el.id.replace(/^layer-/, "");
+      }
+      links.forEach((a) => {
+        const id = a.getAttribute("data-layer-link");
+        a.setAttribute("aria-current", id === active ? "true" : "false");
+      });
+    };
+    window.addEventListener("scroll", setCurrent, { passive: true });
+    setCurrent();
+  }
+</script>

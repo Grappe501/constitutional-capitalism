@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import experience from "../../../../../../../data/project/comparison_explorer_experience_v1.json";
+
+const roles = experience.put_me_roles || [];
+---
+
+<BaseLayout
+  title="Put Me in the System — Comparison Explorer"
+  path="/compare/explorer/put-me/"
+  description="Pick an Arkansas role. See how serious philosophies approach the same problem — then what Constitutional Capitalism agrees with, borrows, modifies, or rejects."
+>
+  <article class="explorer">
+    <header class="hub-banner">
+      <span class="chip chip--live">ILLUSTRATION · experience</span>
+      <h1>Put Me in the System</h1>
+      <p class="lede">
+        Same person. Same place. Different political-economic logics — presented at their strongest
+        defensible versions, not as cartoons.
+      </p>
+      <p class="muted">
+        Foundational System v1.0 frozen · Explorer Experience {experience.version} · +0 dials
+      </p>
+    </header>
+    <ExplorerNav current="put-me" />
+
+    <section class="hub-section">
+      <h2>How this works</h2>
+      <ol class="stack">
+        <li>Choose a role.</li>
+        <li>Enter the problem that role actually faces.</li>
+        <li>Compare philosophies through existing Explorer tools.</li>
+        <li>
+          Finish with <strong>Agree · Borrow · Modify · Reject · Unresolved</strong> — not a scoreboard of
+          villains.
+        </li>
+      </ol>
+    </section>
+
+    <section class="hub-section" id="roles">
+      <h2>Choose your role</h2>
+      <ul class="stack">
+        {
+          roles.map((r: any) => (
+            <li id={r.id}>
+              <strong>{r.label}</strong>
+              {r.illustration ? <span class="chip chip--live"> ILLUSTRATION</span> : null}
+              <p>{r.situation}</p>
+              <p class="lede">
+                <em>{r.problem}</em>
+              </p>
+              <ul class="link-board">
+                {r.enter.map((e: any) => (
+                  <li>
+                    <a href={e.href}>{e.label} →</a>
+                  </li>
+                ))}
+                <li>
+                  <a href="/compare/explorer/philosophy/constitutional-capitalism/#layer-cc">
+                    CC stance on related philosophy →
+                  </a>
+                </li>
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Then ask</h2>
+      <ul class="stack">
+        <li>What does this philosophy get right about my situation?</li>
+        <li>What does it miss or overclaim?</li>
+        <li>What would Constitutional Capitalism keep, change, or refuse — and why?</li>
+      </ul>
+      <ul class="link-board">
+        <li><a href="/compare/explorer/table-talk/">Table Talk →</a></li>
+        <li><a href="/compare/explorer/same-family/">Same Family →</a></li>
+        <li><a href="/compare/explorer/same-problem/">Same Problem →</a></li>
+        <li><a href="/compare/explorer/constitutional-capitalism/">Flagship: What is CC? →</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

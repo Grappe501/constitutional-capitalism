@@ -1,0 +1,260 @@
+{
+  "version": "0.1.0",
+  "experience_id": "CC-COMPARISON-EXPLORER-EXPERIENCE",
+  "title": "Comparison Explorer — Public Intellectual Experience",
+  "status": "OPEN_STEWARDSHIP_LANE",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-193",
+  "update_id": "UPD-206",
+  "slice_id": "CC-EXPLORER-EXPERIENCE-FRAME-0-1-1.0",
+  "foundational_system": {
+    "version": "v1.0",
+    "frozen": true,
+    "dials_reopened": 0,
+    "note": "This lane cannot reopen foundational architecture. Interesting discoveries do not become Stage work."
+  },
+  "target": "College-senior intellectual depth, high-school-readable language, compelling enough that someone wants to keep exploring.",
+  "not": [
+    "another encyclopedia",
+    "a giant comparison table with longer cells",
+    "a completion-percentage rush",
+    "a competing doctrine against the Unabridged"
+  ],
+  "subject_layers": [
+    {
+      "id": "understand",
+      "label": "UNDERSTAND",
+      "promise": "Explain it plainly."
+    },
+    {
+      "id": "explore",
+      "label": "EXPLORE",
+      "promise": "Examples, stories, diagrams, and comparisons."
+    },
+    {
+      "id": "deep-dive",
+      "label": "DEEP DIVE",
+      "promise": "Serious mechanisms, intellectual disagreements, second-order effects."
+    },
+    {
+      "id": "compare",
+      "label": "COMPARE",
+      "promise": "Strongest competing explanations."
+    },
+    {
+      "id": "test-it",
+      "label": "TEST IT",
+      "promise": "Historical and world evidence — and counterexamples."
+    },
+    {
+      "id": "cc",
+      "label": "CC",
+      "promise": "Agree · Borrow · Modify · Reject · Unresolved."
+    },
+    {
+      "id": "prove",
+      "label": "PROVE",
+      "promise": "Evidence and links into the Unabridged."
+    }
+  ],
+  "cc_stance_labels": ["AGREE", "BORROW", "MODIFY", "REJECT", "UNRESOLVED"],
+  "experiences": [
+    {
+      "id": "philosophy",
+      "label": "Philosophy Journey",
+      "href": "/compare/explorer/#philosophies",
+      "promise": "Strongest case → branches → thinkers → criticisms → CC relationship."
+    },
+    {
+      "id": "world-lab",
+      "label": "World Laboratory",
+      "href": "/compare/explorer/world-lab/",
+      "promise": "Real societies and periods — without pretending any country is an ideology."
+    },
+    {
+      "id": "mechanisms",
+      "label": "Interactive Mechanisms",
+      "href": "/compare/explorer/mechanisms/",
+      "promise": "Watch ownership concentrate, money leave, monopolies form, investment succeed or fail."
+    },
+    {
+      "id": "put-me",
+      "label": "Put Me in the System",
+      "href": "/compare/explorer/put-me/",
+      "promise": "Same Arkansas role, different philosophies — strongest defensible versions, then CC."
+    },
+    {
+      "id": "thinkers",
+      "label": "Thinkers & Worlds",
+      "href": "/compare/explorer/thinkers/",
+      "promise": "Ideas with people, conflicts, and consequences — not quotation stickers."
+    }
+  ],
+  "put_me_roles": [
+    {
+      "id": "household",
+      "label": "Arkansas household",
+      "illustration": true,
+      "situation": "Two adults, kids or dependents, rent or mortgage, work, groceries, healthcare, school — trying to keep capability from leaking away.",
+      "problem": "What would different philosophies do about costs, ownership paths, and security for this household?",
+      "enter": [
+        { "href": "/compare/explorer/same-family/", "label": "Same Family across systems" },
+        { "href": "/compare/explorer/same-problem/", "label": "Same Problem answers" },
+        { "href": "/public-book/what-does-prosperity-mean/", "label": "Public Book · Prosperity" }
+      ]
+    },
+    {
+      "id": "worker",
+      "label": "Worker",
+      "illustration": true,
+      "situation": "Skilled or entry-level work in Arkansas. Wages matter — but so do skills, hours, security, and whether work can become ownership.",
+      "problem": "Who sets the rules of work, who captures surplus, and what pathways exist beyond a paycheck?",
+      "enter": [
+        { "href": "/compare/explorer/concept/labor/", "label": "Labor concept" },
+        { "href": "/compare/explorer/concept/wages/", "label": "Wages concept" },
+        { "href": "/compare/explorer/same-problem/", "label": "Same Problem" }
+      ]
+    },
+    {
+      "id": "small-business",
+      "label": "Small-business owner",
+      "illustration": true,
+      "situation": "A shop, trade, farm-adjacent business, or service firm that must compete, hire, and survive without owning the rules.",
+      "problem": "How do philosophies treat entry, competition, credit, and the right to grow without capture?",
+      "enter": [
+        { "href": "/compare/explorer/concept/competition/", "label": "Competition" },
+        { "href": "/compare/explorer/concept/markets/", "label": "Markets" },
+        { "href": "/compare/explorer/follow-mechanism/why-monopolies-form/", "label": "Why monopolies form" }
+      ]
+    },
+    {
+      "id": "billionaire",
+      "label": "Billionaire / large owner",
+      "illustration": true,
+      "situation": "Enormous productive success. Legitimate wealth — and the temptation to convert wealth into governing power.",
+      "problem": "What may they keep, what may they fund, and what may they never own?",
+      "enter": [
+        { "href": "/compare/explorer/concept/monopoly/", "label": "Monopoly" },
+        { "href": "/compare/explorer/concept/political-power/", "label": "Political power" },
+        { "href": "/public-book/so-what-is-constitutional-capitalism/", "label": "Public Book · What CC is" }
+      ]
+    },
+    {
+      "id": "farmer",
+      "label": "Farmer / land steward",
+      "illustration": true,
+      "situation": "Land, weather, commodity prices, equipment debt, rural services — producing for markets far from home.",
+      "problem": "How do philosophies treat land, food systems, rural decline, and intergenerational farming?",
+      "enter": [
+        { "href": "/compare/explorer/world-lab/rural-electrification/", "label": "World Lab · Rural electrification" },
+        { "href": "/compare/explorer/concept/ownership/", "label": "Ownership" },
+        { "href": "/public-book/the-productive-arkansas/", "label": "Public Book · Productive Arkansas" }
+      ]
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "illustration": true,
+      "situation": "Building capability before owning much. Education, debt, job pathways, and the right to leave — or return.",
+      "problem": "Is education consumption, credentialing, or intergenerational capital?",
+      "enter": [
+        { "href": "/compare/explorer/concept/capital/", "label": "Capital" },
+        { "href": "/public-book/people-are-the-real-capital/", "label": "Public Book · People are capital" },
+        { "href": "/compare/explorer/table-talk/", "label": "Table Talk" }
+      ]
+    },
+    {
+      "id": "rural-town",
+      "label": "Rural town",
+      "illustration": true,
+      "situation": "Population pressure, clinic distance, school enrollment, water systems, main-street vacancy — still a place people love.",
+      "problem": "What does prosperity mean if growth is not guaranteed?",
+      "enter": [
+        { "href": "/compare/explorer/same-problem/", "label": "Same Problem (e.g. rural hospital)" },
+        { "href": "/compare/explorer/world-lab/arkansas-walmart-scale/", "label": "World Lab · Arkansas scale" },
+        { "href": "/public-book/the-arkansas-we-could-leave-behind/", "label": "Public Book · Leave Behind" }
+      ]
+    }
+  ],
+  "thinkers": [
+    {
+      "id": "adam-smith",
+      "name": "Adam Smith",
+      "responding_to": "Mercantilist privilege, guild barriers, and the puzzle of how strangers coordinate production through exchange.",
+      "not_just": "A quotation attached to capitalism.",
+      "href": "/compare/explorer/philosophy/classical-liberalism/",
+      "also": "/compare/explorer/philosophy/laissez-faire-capitalism/"
+    },
+    {
+      "id": "karl-marx",
+      "name": "Karl Marx",
+      "responding_to": "Industrial capitalism's concentration of capital, wage labor, and the claim that private ownership of productive means structures power.",
+      "not_just": "A slogan for abolition.",
+      "href": "/compare/explorer/philosophy/communism/",
+      "also": "/compare/explorer/philosophy/socialism/"
+    },
+    {
+      "id": "john-maynard-keynes",
+      "name": "John Maynard Keynes",
+      "responding_to": "Mass unemployment and the failure of markets alone to restore demand in deep depression.",
+      "not_just": "A blank check for spending.",
+      "href": "/compare/explorer/philosophy/social-democracy/",
+      "also": "/compare/explorer/world-lab/new-deal-postwar-us/"
+    },
+    {
+      "id": "friedrich-hayek",
+      "name": "Friedrich Hayek",
+      "responding_to": "Central planning's knowledge problem and the danger that concentrated political power destroys discovery.",
+      "not_just": "A veto against all public goods.",
+      "href": "/compare/explorer/philosophy/libertarianism/",
+      "also": "/compare/explorer/philosophy/classical-liberalism/"
+    }
+  ],
+  "mechanisms_backlog": [
+    {
+      "id": "why-monopolies-form",
+      "status": "SHIPPED",
+      "href": "/compare/explorer/follow-mechanism/why-monopolies-form/",
+      "label": "Why monopolies form"
+    },
+    {
+      "id": "ownership-concentrates",
+      "status": "PLANNED",
+      "label": "Ownership concentrates"
+    },
+    {
+      "id": "housing-supply-constrained",
+      "status": "PLANNED",
+      "label": "Housing supply is constrained"
+    },
+    {
+      "id": "money-leaves-community",
+      "status": "PLANNED",
+      "label": "Money leaves a community"
+    },
+    {
+      "id": "subsidize-demand",
+      "status": "PLANNED",
+      "label": "Government subsidizes demand"
+    },
+    {
+      "id": "public-investment-succeeds-fails",
+      "status": "PLANNED",
+      "label": "Public investment succeeds or fails"
+    },
+    {
+      "id": "ai-raises-productivity",
+      "status": "PLANNED",
+      "label": "AI raises productivity"
+    }
+  ],
+  "ship_this_slice": [
+    "Experience governance + zero-dial lock",
+    "Seven-layer subject chrome",
+    "Put Me in the System hub",
+    "Thinkers & Worlds hub",
+    "Mechanisms index",
+    "Philosophy exemplar pages remapped to seven layers",
+    "Explorer hub rewritten as experience home"
+  ]
+}

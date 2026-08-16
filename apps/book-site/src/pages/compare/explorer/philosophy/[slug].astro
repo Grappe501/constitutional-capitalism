@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import ExplorerSubjectChrome from "../../../../components/ExplorerSubjectChrome.astro";
 import DepthMode from "../../../../components/DepthMode.astro";
 import SixQuestions from "../../../../components/SixQuestions.astro";
 import DefendOtherSide from "../../../../components/DefendOtherSide.astro";
@@ -26,7 +27,7 @@ const title = d?.display_name || p.name;
   <article class="explorer prose">
     <header class="hub-banner">
       <span class={d ? "chip chip--done" : "chip chip--queued"}>
-        {d ? "Explorer 3.0 exemplar" : p.status}
+        {d ? "Seven-layer experience" : p.status}
       </span>
       <h1>{title}</h1>
       <p class="lede">
@@ -35,11 +36,12 @@ const title = d?.display_name || p.name;
       <p class="muted">{p.variants_note}</p>
       <ul class="link-board">
         <li><a href="/compare/explorer/">← Explorer home</a></li>
+        <li><a href="/compare/explorer/put-me/">Put Me in the System →</a></li>
         {
           p.slug === "constitutional-capitalism" ? (
             <li>
               <a href="/compare/explorer/constitutional-capitalism/">
-                <strong>Open the flagship journey (recommended) →</strong>
+                <strong>Open the flagship journey →</strong>
               </a>
             </li>
           ) : null
@@ -51,20 +53,16 @@ const title = d?.display_name || p.name;
             </li>
           ) : null
         }
-        {(d?.unabridged_links || p.unabridged_links || []).slice(0, 4).map((href: string) => (
-          <li>
-            <a href={href}>Source link →</a>
-          </li>
-        ))}
       </ul>
     </header>
     <ExplorerNav current="philosophies" />
+    <ExplorerSubjectChrome />
 
     {
       d ? (
         <>
-          <section class="hub-section">
-            <h2>Plain-English opening</h2>
+          <section class="hub-section" id="layer-understand">
+            <h2>UNDERSTAND</h2>
             <DepthMode
               plain={d.plain_english_opening}
               deep={d.mechanism}
@@ -72,15 +70,12 @@ const title = d?.display_name || p.name;
             />
           </section>
 
-          <section class="hub-section">
-            <h2>Arkansas classroom</h2>
+          <section class="hub-section" id="layer-explore">
+            <h2>EXPLORE</h2>
             <p>
               <span class="chip chip--live">{d.arkansas_scenario.label}</span> {d.arkansas_scenario.text}
             </p>
-          </section>
-
-          <section class="hub-section">
-            <h2>Branches inside this tradition</h2>
+            <h3>Branches inside this tradition</h3>
             <p class="muted">{d.branches_note}</p>
             <ul class="stack">
               {d.branches.map((b: any) => (
@@ -89,10 +84,14 @@ const title = d?.display_name || p.name;
                 </li>
               ))}
             </ul>
+            <p>
+              <a href="/compare/explorer/put-me/">See this through an Arkansas role →</a>
+            </p>
           </section>
 
-          <section class="hub-section">
-            <h2>{d.thinkers_disagreement.title}</h2>
+          <section class="hub-section" id="layer-deep-dive">
+            <h2>DEEP DIVE</h2>
+            <h3>{d.thinkers_disagreement.title}</h3>
             {d.thinkers_disagreement.smith ? (
               <>
                 <p>
@@ -125,12 +124,8 @@ const title = d?.display_name || p.name;
             ) : null}
             <p class="lede">{d.thinkers_disagreement.question}</p>
             <p class="muted">{d.thinkers_disagreement.no_winner}</p>
-          </section>
-
-          <SixQuestions six={d.six_questions} />
-
-          <section class="hub-section">
-            <h2>First-order vs second-order</h2>
+            <SixQuestions six={d.six_questions} />
+            <h3>First-order vs second-order</h3>
             <p>
               <strong>First-order:</strong> {d.first_order}
             </p>
@@ -144,45 +139,88 @@ const title = d?.display_name || p.name;
             </p>
           </section>
 
-          <section class="hub-section">
-            <h2>Strongest argument for</h2>
-            <p>{d.strongest_for}</p>
-            <h2>Strongest argument against this page</h2>
-            <p>{d.argument_against_page}</p>
-            <p class="muted">
-              <strong>What evidence would settle it?</strong> {d.what_evidence_would_settle}
+          <section class="hub-section" id="layer-compare">
+            <h2>COMPARE</h2>
+            <p>
+              <strong>Strongest argument for:</strong> {d.strongest_for}
+            </p>
+            <p>
+              <strong>Strongest argument against this page:</strong> {d.argument_against_page}
+            </p>
+            <DefendOtherSide questions={d.defend_other_side} />
+            <p>
+              <a href="/compare/explorer/matrix/">Open the simple matrix →</a> ·{" "}
+              <a href="/compare/explorer/same-problem/">Same problem, different answers →</a>
             </p>
           </section>
 
-          <section class="hub-section">
-            <h2>Empirical note & scholarly disagreement</h2>
+          <section class="hub-section" id="layer-test-it">
+            <h2>TEST IT</h2>
             <p>{d.empirical_note}</p>
             <p class="muted">{d.scholarly_disagreement}</p>
+            <p>
+              <strong>What evidence would settle it?</strong> {d.what_evidence_would_settle}
+            </p>
+            <p>
+              <a href="/compare/explorer/world-lab/">World Laboratory →</a>
+            </p>
           </section>
 
-          <section class="hub-section">
-            <h2>Constitutional Capitalism</h2>
+          <section class="hub-section" id="layer-cc">
+            <h2>CC — Agree · Borrow · Modify · Reject · Unresolved</h2>
             <p>
               <strong>Position:</strong> {d.cc_position}
             </p>
-            <p>
-              <strong>Uncertainty:</strong> {d.cc_uncertainty}
-            </p>
-            <p>
-              <strong>Stage 4:</strong> {d.stage4_testing}
+            <ul class="stack">
+              <li>
+                <strong>AGREE:</strong> {(rel.WE_AGREE_HERE || []).join(" · ") || "—"}
+              </li>
+              <li>
+                <strong>BORROW:</strong> {(rel.WE_BORROW_THIS || []).join(" · ") || "—"}
+              </li>
+              <li>
+                <strong>MODIFY:</strong> {(rel.WE_MODIFY_THIS || []).join(" · ") || "—"}
+              </li>
+              <li>
+                <strong>REJECT:</strong> {(rel.WE_REJECT_THIS || []).join(" · ") || "—"}
+              </li>
+              <li>
+                <strong>UNRESOLVED:</strong> {d.cc_uncertainty || "Open questions remain — honesty over forced closure."}
+              </li>
+            </ul>
+            <p class="muted">
+              <strong>Stage 4 posture:</strong> {d.stage4_testing}
             </p>
           </section>
 
-          <DefendOtherSide questions={d.defend_other_side} />
+          <section class="hub-section" id="layer-prove">
+            <h2>PROVE</h2>
+            <p class="muted">
+              Unabridged is the source of truth. The Explorer translates — it does not compete.
+            </p>
+            <ul class="link-board">
+              {(d?.unabridged_links || p.unabridged_links || []).map((href: string) => (
+                <li>
+                  <a href={href}>{href} →</a>
+                </li>
+              ))}
+              <li>
+                <a href="/unabridged/">Unabridged hub →</a>
+              </li>
+              <li>
+                <a href="/evidence/">Evidence desk →</a>
+              </li>
+            </ul>
+          </section>
         </>
       ) : (
         <>
-          <section class="hub-section">
-            <h2>The 60-second explanation</h2>
+          <section class="hub-section" id="layer-understand">
+            <h2>UNDERSTAND</h2>
             <DepthMode plain={p.depths.plain} deep={p.depths.deep} technical={p.depths.technical} />
           </section>
-          <section class="hub-section">
-            <h2>Core map</h2>
+          <section class="hub-section" id="layer-explore">
+            <h2>EXPLORE</h2>
             <dl class="glossary-list">
               <dt>Where did it come from?</dt>
               <dd>{p.where_it_came_from}</dd>
@@ -194,36 +232,61 @@ const title = d?.display_name || p.name;
               <dd>{p.success_looks_like}</dd>
             </dl>
           </section>
-          <section class="hub-section">
-            <h2>Why supporters believe / critics / complications</h2>
+          <section class="hub-section" id="layer-deep-dive">
+            <h2>DEEP DIVE</h2>
             <p>{p.why_supporters_believe}</p>
-            <p>{p.what_critics_say}</p>
             <p>{p.where_reality_gets_complicated}</p>
+            <p class="muted">
+              Full seven-layer depth is expanding across philosophies. Exemplars already rebuilt:
+              modern market capitalism, socialism, social democracy, constitutional capitalism.
+            </p>
           </section>
-          <section class="hub-section">
-            <h2>Constitutional Capitalism's relationship</h2>
+          <section class="hub-section" id="layer-compare">
+            <h2>COMPARE</h2>
+            <p>{p.what_critics_say}</p>
+            <p>
+              <a href="/compare/explorer/matrix/">Simple matrix →</a>
+            </p>
+          </section>
+          <section class="hub-section" id="layer-test-it">
+            <h2>TEST IT</h2>
+            <p>
+              <a href="/compare/explorer/world-lab/">World Laboratory →</a>
+            </p>
+          </section>
+          <section class="hub-section" id="layer-cc">
+            <h2>CC — Agree · Borrow · Modify · Reject · Unresolved</h2>
             <ul class="stack">
               <li>
-                <strong>WE AGREE HERE:</strong> {(rel.WE_AGREE_HERE || []).join(" · ")}
+                <strong>AGREE:</strong> {(rel.WE_AGREE_HERE || []).join(" · ")}
               </li>
               <li>
-                <strong>WE DISAGREE HERE:</strong> {(rel.WE_DISAGREE_HERE || []).join(" · ")}
+                <strong>DISAGREE:</strong> {(rel.WE_DISAGREE_HERE || []).join(" · ")}
               </li>
               <li>
-                <strong>WE BORROW THIS:</strong> {(rel.WE_BORROW_THIS || []).join(" · ")}
+                <strong>BORROW:</strong> {(rel.WE_BORROW_THIS || []).join(" · ")}
               </li>
               <li>
-                <strong>WE MODIFY THIS:</strong> {(rel.WE_MODIFY_THIS || []).join(" · ")}
+                <strong>MODIFY:</strong> {(rel.WE_MODIFY_THIS || []).join(" · ")}
               </li>
               <li>
-                <strong>WE REJECT THIS:</strong> {(rel.WE_REJECT_THIS || []).join(" · ")}
+                <strong>REJECT:</strong> {(rel.WE_REJECT_THIS || []).join(" · ")}
+              </li>
+              <li>
+                <strong>UNRESOLVED:</strong> Shell page — deepen without forcing premature closure.
               </li>
             </ul>
           </section>
-          <p class="muted">
-            Shell page. Vertical exemplars (Capitalism, Socialism, Social Democracy, CC) are rebuilt to
-            Explorer 3.0 depth first.
-          </p>
+          <section class="hub-section" id="layer-prove">
+            <h2>PROVE</h2>
+            <ul class="link-board">
+              {(p.unabridged_links || []).map((href: string) => (
+                <li>
+                  <a href={href}>{href} →</a>
+                </li>
+              ))}
+            </ul>
+          </section>
         </>
       )
     }
