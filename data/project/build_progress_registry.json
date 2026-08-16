@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-182",
-  "update_id": "UPD-195",
+  "decision_id": "CC-DEC-183",
+  "update_id": "UPD-196",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_3",
-  "next_objective": "Pass 5.3 \u2014 Follow the Money. Public-book translation only. No new theory.",
+  "current_pass": "PASS_5_4",
+  "next_objective": "Pass 5.4 \u2014 People Are the Real Capital. Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -615,6 +615,22 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-183",
+      "title": "Pass 5.3 Public Book chapter complete \u2014 Follow the Money",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-3/",
+      "links": [
+        {
+          "href": "/public-book/follow-the-money/",
+          "label": "Chapter 3"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -790,18 +806,18 @@
       "number": "5.3",
       "slug": "pass-5-3",
       "name": "Follow the Money",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-3/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_3.json",
+      "spine_href": "/public-book/follow-the-money/",
+      "chapter_completion_percent": 100
     },
     {
       "id": "PASS_5_4",
       "number": "5.4",
       "slug": "pass-5-4",
       "name": "People Are the Real Capital",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-5-4/",
       "changelog": null,
       "spine_href": null,

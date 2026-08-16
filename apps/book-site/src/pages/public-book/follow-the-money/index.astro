@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import chapter from "../../../../../../data/project/stage5_pass53_follow_the_money.json";
+import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
+
+const sections = chapter.sections || [];
+const visuals = chapter.signature_visuals || [];
+const gates = chapter.eight_gates || [];
+const tax = chapter.tax_replacement_lesson || {};
+const countable = chapter.countable_pride || {};
+const trace = chapter.traceability || [];
+const cert = chapter.certification || {};
+const lesson = chapter.landing_lesson || "";
+---
+
+<BaseLayout
+  title="Follow the Money — Public Book"
+  path="/public-book/follow-the-money/"
+  description="Public Book Chapter 3: where the dollar goes, ownership, capital formation, markets, and why COUNTABLE remains $0."
+>
+  <article class="public-book">
+    <header class="hub-banner">
+      <span class="chip chip--done">Public Book · Chapter 3 · Pass 5.3</span>
+      <p class="muted">Volume II · ~{chapter.approx_pages} pages</p>
+      <h1>{chapter.pass_name}</h1>
+      <p class="lede">{chapter.governing_question}</p>
+      <ul class="link-board">
+        <li><a href="/public-book/">Public Book hub →</a></li>
+        <li><a href="/public-book/what-does-prosperity-mean/">Chapter 2 →</a></li>
+        <li><a href="/system/money-engine/">Unabridged Money Engine →</a></li>
+        <li><a href="/build-progress/passes/pass-5-3/">What Changed →</a></li>
+      </ul>
+      <p class="muted">
+        Technical System 100% · Public Book {cert.public_book_completion_percent_after}% · COUNTABLE $0
+        · {chapter.decision_id} · {chapter.update_id}
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" id="visuals" data-depth="understand" data-depth-keep>
+      <h2>Six signature visuals</h2>
+      <ul class="stack">
+        {
+          visuals.map((v: any) => (
+            <li>
+              <strong>
+                {v.id} · {v.title}
+              </strong>
+              <div class="muted">
+                {v.shows}
+                {v.claim_class ? ` · ${v.claim_class}` : ""}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="waterfall">
+      <h2>Revenue ≠ Profit ≠ Distributable Cash ≠ Public Cash</h2>
+      <p class="lede">
+        <strong>COUNTABLE = {countable.value}</strong> — {countable.line}
+      </p>
+      <p class="muted">{countable.note}</p>
+    </section>
+
+    <section class="hub-section" id="eight-gates">
+      <h2>Eight-gate public investment standard</h2>
+      <ol class="stack">
+        {gates.map((g: string) => <li>{g}</li>)}
+      </ol>
+      <p class="muted">Fail one? It does not automatically proceed.</p>
+    </section>
+
+    <section class="hub-section" id="tax-lesson">
+      <h2>The ~$7.23 billion lesson</h2>
+      <ul class="link-board">
+        <li>IIT ~{tax.iit_gross_approx}</li>
+        <li>Property layers ~{tax.property_layers_approx}</li>
+        <li>Combined map {tax.combined_map_approx}</li>
+      </ul>
+      <p class="lede">{tax.verdict}</p>
+      <p class="muted">
+        {tax.source} · <span class="chip chip--done">{tax.claim_class}</span>
+      </p>
+    </section>
+
+    {
+      sections.map((s: any) => (
+        <section class="hub-section" id={s.id.toLowerCase()}>
+          <h2>{s.heading}</h2>
+          {s.prose.map((p: string) => (
+            <p class="lede" style="font-size:1.05rem; font-weight:400;">{p}</p>
+          ))}
+        </section>
+      ))
+    }
+
+    <section class="hub-section" id="lesson">
+      <h2>The lesson to land</h2>
+      <blockquote class="lede" style="font-size:1.15rem;">{lesson}</blockquote>
+    </section>
+
+    <section class="hub-section" id="trace">
+      <h2>Trace this chapter</h2>
+      <ul class="stack">
+        {
+          trace.map((t: any) => (
+            <li>
+              <span class="chip chip--done">{t.class}</span> {t.claim}
+              <div class="muted">
+                {t.source_note} · <a href={t.unabridged}>Open →</a>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Next</h2>
+      <p class="lede">Pass 5.4 — People Are the Real Capital</p>
+      <ul class="link-board">
+        {
+          (plan.passes || []).slice(0, 5).map((p: any) => (
+            <li>
+              <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
+                {p.status}
+              </span>{" "}
+              {p.number} {p.name}
+              {p.surface_href ? (
+                <>
+                  {" "}
+                  · <a href={p.surface_href}>Read →</a>
+                </>
+              ) : null}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
