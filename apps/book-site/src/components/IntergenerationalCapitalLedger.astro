@@ -1,17 +1,31 @@
 ---
+import chapter from "../../../../data/project/stage3_pass37_transition_intergenerational.json";
+
+const capitals =
+  chapter.generation_2?.intergenerational_balance_sheet?.capitals || [];
+const rule = chapter.intergenerational_capital_rule || {};
 ---
 
-<figure class="viz viz--igen" data-viz="intergenerational-capital-ledger" id="igen-ledger">
+<figure class="viz viz--igen" data-viz="intergenerational-balance-sheet" id="igen-ledger">
   <figcaption class="viz__cap">
-    <span class="viz__family">Intergenerational Capital Ledger</span>
-    <span class="viz__q">What must Generation 1 leave Generation 2?</span>
+    <span class="viz__family">Arkansas Intergenerational Balance Sheet</span>
+    <span class="viz__q">What Generation 1 inherited versus what Generation 1 leaves</span>
   </figcaption>
   <ul class="igen-ledger">
-    <li><strong>Human</strong><span>skills · health · capability</span></li>
-    <li><strong>Productive</strong><span>businesses · tools · IP</span></li>
-    <li><strong>Financial</strong><span>savings · public fiscal position</span></li>
-    <li><strong>Civic</strong><span>institutions · trust · leadership</span></li>
-    <li><strong>Natural / Place</strong><span>environment · heritage · belonging</span></li>
+    {
+      capitals.map((c: any) => (
+        <li>
+          <strong>{c.label}</strong>
+          <span>{c.contents}</span>
+        </li>
+      ))
+    }
   </ul>
-  <p class="viz__note">Dimensions locked — no invented values yet. Stage 3/4 populate the series.</p>
+  <p class="lede" style="margin-top:0.85rem;">
+    <strong>{rule.rule}</strong>
+  </p>
+  <p class="viz__note">
+    Dimensions locked — no invented values yet. Unknown beats fabricated statewide surplus. More
+    powerful than balancing one annual budget.
+  </p>
 </figure>

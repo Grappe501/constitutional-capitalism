@@ -1,20 +1,40 @@
 ---
+import chapter from "../../../../data/project/stage3_pass37_transition_intergenerational.json";
 ---
 
 <figure class="viz viz--tmap" data-viz="transition-map-working" id="map">
   <figcaption class="viz__cap">
-    <span class="viz__family">Arkansas Transition Map</span>
-    <span class="viz__q">What happens over time?</span>
+    <span class="viz__family">Arkansas Transition Roadmap</span>
+    <span class="viz__q">NOW → 1–2 → 3–5 → 6–10 → Gen 1 → Gen 2</span>
   </figcaption>
   <ol class="tmap">
-    <li><strong>NOW</strong><span>Baseline & inherited obligations</span></li>
-    <li><strong>Years 1–2</strong><span>Build capacity · pilots · measurement</span></li>
-    <li><strong>Years 3–5</strong><span>Prove & scale</span></li>
-    <li><strong>Years 6–10</strong><span>Structural transition</span></li>
-    <li><strong>Generation 1</strong><span>Measured household/public wealth</span></li>
-    <li><strong>Generation 2</strong><span>Inherit greater capability</span></li>
+    <li>
+      <strong>NOW</strong>
+      <span>Steward inherited Arkansas</span>
+    </li>
+    <li>
+      <strong>Years 1–2</strong>
+      <span>{chapter.years_1_2?.label || "BUILD & PROVE"}</span>
+    </li>
+    <li>
+      <strong>Years 3–5</strong>
+      <span>{chapter.years_3_5?.label || "PROVE & SCALE"}</span>
+    </li>
+    <li>
+      <strong>Years 6–10</strong>
+      <span>{chapter.years_6_10?.label || "STRUCTURAL TRANSITION"}</span>
+    </li>
+    <li>
+      <strong>Generation 1</strong>
+      <span>Success tests — not claims</span>
+    </li>
+    <li>
+      <strong>Generation 2</strong>
+      <span>Intergenerational Balance Sheet</span>
+    </li>
   </ol>
   <p class="viz__note">
-    Dependencies underneath: TR-02 gates every advance; TR-07 binds shocks; TR-08 corrects and exits.
+    {chapter.dependency_rule?.one_line} COUNTABLE $0 is not a bridge. Structural transition only if
+    Replacement-Ready.
   </p>
 </figure>

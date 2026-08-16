@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-3-EIGHT-PASS-UNABRIDGED-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-169",
-  "update_id": "UPD-182",
-  "status": "STAGE_3_PLAN_LOCKED_PASS_3_6_COMPLETE_PASS_3_7_NEXT",
+  "decision_id": "CC-DEC-170",
+  "update_id": "UPD-183",
+  "status": "STAGE_3_PLAN_LOCKED_PASS_3_7_COMPLETE_PASS_3_8_NEXT",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question": "Can we prove, explain, source, quantify and document this deeply enough to become the authoritative technical blueprint for Arkansas's future?",
   "prior_stages": {
@@ -149,16 +149,21 @@
       "number": "3.7",
       "slug": "pass-3-7",
       "name": "Transition & Intergenerational Arkansas",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "what_gets_finished": "The actual NOW \u2192 Generation 2 pathway \u2014 unabridged",
-      "opens_only_after": "PASS_3_6"
+      "opens_only_after": "PASS_3_6",
+      "category_completion_percent": 100,
+      "href": "/build-progress/passes/pass-3-7/",
+      "surface_href": "/system/transition-engine/",
+      "artifact": "data/project/stage3_pass37_transition_intergenerational.json",
+      "changelog": "data/project/pass_changelogs/pass_3_7.json"
     },
     {
       "id": "PASS_3_8",
       "number": "3.8",
       "slug": "pass-3-8",
       "name": "Unabridged Integration & Editorial Closure",
-      "status": "QUEUED",
+      "status": "NEXT",
       "what_gets_finished": "Join into one technical work and certify Stage 3",
       "opens_only_after": "PASS_3_7"
     }

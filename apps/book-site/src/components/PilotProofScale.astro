@@ -1,0 +1,22 @@
+---
+import chapter from "../../../../data/project/stage3_pass37_transition_intergenerational.json";
+
+const chain = chapter.pilot_proof_scale_replace?.chain || [];
+const exits = chapter.pilot_proof_scale_replace?.exit_ramps || [];
+const fail = chapter.failure_architecture || {};
+---
+
+<figure class="viz viz--ladder" data-viz="pilot-proof-scale" id="pilot-path">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Pilot → Proof → Scale → Replace</span>
+    <span class="viz__q">Governed experimentation with failure exits</span>
+  </figcaption>
+  <ol class="cap-ladder">
+    {chain.map((s: string) => <li>{s}</li>)}
+  </ol>
+  <ul class="link-board" style="margin-top:0.85rem;">
+    {exits.map((e: string) => <li>Exit: {e}</li>)}
+  </ul>
+  <p class="lede" style="margin-top:0.75rem;">{fail.cultural_principle}</p>
+  <p class="viz__note">{fail.insight}</p>
+</figure>

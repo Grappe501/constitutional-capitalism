@@ -18,6 +18,7 @@ import pass33 from "../../../../../../data/project/pass_changelogs/pass_3_3.json
 import pass34 from "../../../../../../data/project/pass_changelogs/pass_3_4.json";
 import pass35 from "../../../../../../data/project/pass_changelogs/pass_3_5.json";
 import pass36 from "../../../../../../data/project/pass_changelogs/pass_3_6.json";
+import pass37 from "../../../../../../data/project/pass_changelogs/pass_3_7.json";
 import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
 import stage2Audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
 
@@ -67,6 +68,7 @@ const changelogs: Record<string, any> = {
   "pass-3-4": pass34,
   "pass-3-5": pass35,
   "pass-3-6": pass36,
+  "pass-3-7": pass37,
 };
 const log = changelogs[passSlug || ""] || null;
 const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;
