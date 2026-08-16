@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "lane_id": "CC-PUBLIC-UNDERSTANDING-LANE",
+  "name": "Comparison Explorer / Public Understanding",
+  "status": "PARALLEL_NON_BLOCKING",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-172",
+  "update_id": "UPD-185",
+  "slice_id": "CC-PUBLIC-UNDERSTANDING-COMPARISON-EXPLORER-2-0-SHELL-1.0",
+  "rules": {
+    "zero_effect_on_stage3_completion_metrics": true,
+    "zero_permission_to_delay_primary_lane": true,
+    "not_a_ninth_stage3_category": true,
+    "unabridged_is_source_of_truth": true,
+    "explorer_is_translation_layer_only": true,
+    "neutrality": "Present the strongest serious version of each philosophy before criticizing it.",
+    "no_fake_statistics": true,
+    "illustration_must_be_labeled": true
+  },
+  "progress_impact": {
+    "skeleton_coverage_percent_delta": 0,
+    "first_pass_coverage_percent_delta": 0,
+    "unabridged_completion_percent_delta": 0,
+    "validation_completion_percent_delta": 0,
+    "overall_project_completion_percent_delta": 0,
+    "note": "This lane does not move completion dials. Stage 3 remains certified at unabridged 100% / overall 75%."
+  },
+  "primary_lane_reminder": "Primary work remains Stage 4 \u2014 Break It. This lane runs in parallel.",
+  "public_hub": "/compare/explorer/",
+  "links_into_unabridged": [
+    "/unabridged/",
+    "/unabridged/is-is-not/",
+    "/system/master-map/",
+    "/system/money-engine/",
+    "/system/household-engine/",
+    "/system/government-engine/"
+  ]
+}

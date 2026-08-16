@@ -1,0 +1,36 @@
+---
+interface Props {
+  current?: string;
+}
+const { current = "" } = Astro.props;
+
+const links = [
+  { id: "home", href: "/compare/explorer/", label: "Explorer home" },
+  { id: "matrix", href: "/compare/explorer/matrix/", label: "Simple matrix" },
+  { id: "philosophies", href: "/compare/explorer/#philosophies", label: "Philosophies" },
+  { id: "concepts", href: "/compare/explorer/#concepts", label: "Concepts" },
+  { id: "follow-100", href: "/compare/explorer/follow-100/", label: "Follow $100" },
+  { id: "same-family", href: "/compare/explorer/same-family/", label: "Same Family" },
+  { id: "world-lab", href: "/compare/explorer/world-lab/", label: "World Lab" },
+  { id: "same-problem", href: "/compare/explorer/same-problem/", label: "Same Problem" },
+  { id: "unabridged", href: "/unabridged/", label: "Unabridged source" },
+];
+---
+
+<nav class="explorer-nav" aria-label="Comparison Explorer">
+  <p class="explorer-nav__lane muted">
+    <span class="chip chip--queued">Public-understanding lane</span>
+    Parallel · non-blocking · does not move Stage 3 dials
+  </p>
+  <ul>
+    {
+      links.map((l) => (
+        <li>
+          <a href={l.href} aria-current={current === l.id ? "page" : undefined}>
+            {l.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

@@ -1,0 +1,37 @@
+---
+interface Props {
+  plain: string;
+  deep: string;
+  technical: string;
+}
+const { plain, deep, technical } = Astro.props;
+---
+
+<div class="depth-mode" data-depth-mode>
+  <div class="depth-mode__controls" role="tablist" aria-label="Reading depth">
+    <button type="button" role="tab" aria-selected="true" data-depth="plain">Plain English</button>
+    <button type="button" role="tab" aria-selected="false" data-depth="deep">Deep Dive</button>
+    <button type="button" role="tab" aria-selected="false" data-depth="technical">Technical</button>
+  </div>
+  <div class="depth-mode__panel" data-panel="plain" role="tabpanel">{plain}</div>
+  <div class="depth-mode__panel" data-panel="deep" role="tabpanel" hidden>{deep}</div>
+  <div class="depth-mode__panel" data-panel="technical" role="tabpanel" hidden>{technical}</div>
+</div>
+
+<script>
+  document.querySelectorAll("[data-depth-mode]").forEach((root) => {
+    const buttons = root.querySelectorAll("[data-depth]");
+    const panels = root.querySelectorAll("[data-panel]");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const depth = btn.getAttribute("data-depth");
+        buttons.forEach((b) => b.setAttribute("aria-selected", String(b === btn)));
+        panels.forEach((p) => {
+          const show = p.getAttribute("data-panel") === depth;
+          if (show) p.removeAttribute("hidden");
+          else p.setAttribute("hidden", "");
+        });
+      });
+    });
+  });
+</script>

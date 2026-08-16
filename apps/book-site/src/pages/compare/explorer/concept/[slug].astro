@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import DepthMode from "../../../../components/DepthMode.astro";
+import explorer from "../../../../../../../data/project/comparison_explorer_v1.json";
+
+export function getStaticPaths() {
+  return explorer.concepts.map((c) => ({ params: { slug: c.slug } }));
+}
+
+const slug = Astro.params.slug as string;
+const c = explorer.concepts.find((x) => x.slug === slug)!;
+---
+
+<BaseLayout
+  title={`${c.title} — Concept mini-book`}
+  path={`/compare/explorer/concept/${c.slug}/`}
+  description={c.question}
+>
+  <article class="explorer prose">
+    <header class="hub-banner">
+      <span class="chip chip--queued">{c.status}</span>
+      <h1>{c.title}</h1>
+      <p class="lede">{c.question}</p>
+      <p class="muted">
+        Vocabulary comes after the idea. Unabridged remains source of truth.
+      </p>
+    </header>
+    <ExplorerNav current="concepts" />
+
+    <section class="hub-section">
+      <h2>1. Imagine this…</h2>
+      <p>{c.imagine_this}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>2–4. Simple idea → deepen</h2>
+      <DepthMode plain={c.depths.plain} deep={c.depths.deep} technical={c.depths.technical} />
+    </section>
+
+    <section class="hub-section">
+      <h2>Storytelling spine (full mini-book contract)</h2>
+      <ol class="stack">
+        {c.storytelling_spine.map((s: string) => <li>{s}</li>)}
+      </ol>
+      <p class="muted">
+        First pass ships the shell. Population deepens progressively without touching completion dials.
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>14. How Constitutional Capitalism approaches it</h2>
+      <p>{c.cc_approach}</p>
+      <ul class="link-board">
+        {(c.unabridged_links || []).map((href: string) => (
+          <li>
+            <a href={href}>{href}</a>
+          </li>
+        ))}
+        <li><a href="/compare/explorer/follow-100/">Follow the $100 →</a></li>
+        <li><a href="/compare/explorer/same-family/">Same Family →</a></li>
+        <li><a href="/compare/explorer/world-lab/">World Lab →</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

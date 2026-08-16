@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import DepthMode from "../../../../components/DepthMode.astro";
+import explorer from "../../../../../../../data/project/comparison_explorer_v1.json";
+
+export function getStaticPaths() {
+  return explorer.philosophies.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const slug = Astro.params.slug as string;
+const p = explorer.philosophies.find((x) => x.slug === slug)!;
+const rel = p.cc_relationship || {};
+---
+
+<BaseLayout
+  title={`${p.name} — Comparison Explorer`}
+  path={`/compare/explorer/philosophy/${p.slug}/`}
+  description={`What ${p.name} believes, why people find it attractive, where reality gets complicated, and how Constitutional Capitalism relates.`}
+>
+  <article class="explorer prose">
+    <header class="hub-banner">
+      <span class="chip chip--queued">{p.status}</span>
+      <h1>{p.name}</h1>
+      <p class="lede"><strong>Problem it tries to solve:</strong> {p.problem_it_tries_to_solve}</p>
+      <p class="muted">{p.variants_note}</p>
+      <ul class="link-board">
+        <li><a href="/compare/explorer/">← Explorer home</a></li>
+        {
+          p.compare_dossier_slug ? (
+            <li>
+              <a href={`/compare/${p.compare_dossier_slug}/`}>Analytical dossier →</a>
+            </li>
+          ) : null
+        }
+        {(p.unabridged_links || []).slice(0, 3).map((href: string) => (
+          <li>
+            <a href={href}>Unabridged link →</a>
+          </li>
+        ))}
+      </ul>
+    </header>
+    <ExplorerNav current="philosophies" />
+
+    <section class="hub-section">
+      <h2>The 60-second explanation</h2>
+      <DepthMode plain={p.depths.plain} deep={p.depths.deep} technical={p.depths.technical} />
+    </section>
+
+    <section class="hub-section">
+      <h2>Core map</h2>
+      <dl class="glossary-list">
+        <dt>Where did it come from?</dt>
+        <dd>{p.where_it_came_from}</dd>
+        <dt>What does it believe about people?</dt>
+        <dd>{p.believes_about_people}</dd>
+        <dt>Who should own productive property?</dt>
+        <dd>{p.who_owns_productive_property}</dd>
+        <dt>Who should control capital?</dt>
+        <dd>{p.who_controls_capital}</dd>
+        <dt>How should markets work?</dt>
+        <dd>{p.how_markets_work}</dd>
+        <dt>What should government do?</dt>
+        <dd>{p.what_government_does}</dd>
+        <dt>How should government raise money?</dt>
+        <dd>{p.how_government_raises_money}</dd>
+        <dt>What happens to profits?</dt>
+        <dd>{p.what_happens_to_profits}</dd>
+        <dt>Workers</dt>
+        <dd>{p.workers}</dd>
+        <dt>Inequality</dt>
+        <dd>{p.inequality}</dd>
+        <dt>Poverty</dt>
+        <dd>{p.poverty}</dd>
+        <dt>Monopoly</dt>
+        <dd>{p.monopoly}</dd>
+        <dt>Political power</dt>
+        <dd>{p.political_power}</dd>
+        <dt>Individual liberty</dt>
+        <dd>{p.individual_liberty}</dd>
+        <dt>What does success look like?</dt>
+        <dd>{p.success_looks_like}</dd>
+      </dl>
+    </section>
+
+    <section class="hub-section">
+      <h2>Why supporters believe in it</h2>
+      <p>{p.why_supporters_believe}</p>
+      <h2>What critics say</h2>
+      <p>{p.what_critics_say}</p>
+      <h2>Where reality gets complicated</h2>
+      <p>{p.where_reality_gets_complicated}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Constitutional Capitalism's relationship</h2>
+      <ul class="stack">
+        <li><strong>WE AGREE HERE:</strong> {(rel.WE_AGREE_HERE || []).join(" · ")}</li>
+        <li><strong>WE DISAGREE HERE:</strong> {(rel.WE_DISAGREE_HERE || []).join(" · ")}</li>
+        <li><strong>WE BORROW THIS:</strong> {(rel.WE_BORROW_THIS || []).join(" · ")}</li>
+        <li><strong>WE MODIFY THIS:</strong> {(rel.WE_MODIFY_THIS || []).join(" · ")}</li>
+        <li><strong>WE REJECT THIS:</strong> {(rel.WE_REJECT_THIS || []).join(" · ")}</li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>What did this look like in the real world?</h2>
+      <p class="lede">
+        Historical cases live in the <a href="/compare/explorer/world-lab/">World Laboratory</a>. Countries
+        are mixtures—not pure labels.
+      </p>
+    </section>
+  </article>
+</BaseLayout>

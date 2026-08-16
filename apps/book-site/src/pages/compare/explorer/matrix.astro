@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../components/ExplorerNav.astro";
+import explorer from "../../../../../../data/project/comparison_explorer_v1.json";
+
+const layer = explorer.layer1;
+const questions = layer.questions || [];
+const columns = layer.columns || [];
+const cells = layer.cells || {};
+---
+
+<BaseLayout
+  title="Simple Comparison Matrix"
+  path="/compare/explorer/matrix/"
+  description="Clickable Layer 1 comparison — Capitalism, Socialism, Social Democracy, Communism, Constitutional Capitalism."
+>
+  <article class="explorer">
+    <header class="hub-banner">
+      <span class="chip chip--done">Layer 1</span>
+      <h1>{layer.title}</h1>
+      <p class="lede">{layer.intro}</p>
+      <p class="muted">Homepage stays simple. Complexity lives underneath each cell.</p>
+    </header>
+    <ExplorerNav current="matrix" />
+
+    <section class="hub-section">
+      <div class="table-wrap">
+        <table class="explorer-matrix">
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              {columns.map((c) => (
+                <th scope="col">
+                  <a href={c.href}>{c.label}</a>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {
+              questions.map((q) => (
+                <tr>
+                  <th scope="row">{q.label}</th>
+                  {columns.map((c) => {
+                    const cell = (cells as any)[q.id]?.[c.id];
+                    if (!cell) return <td>—</td>;
+                    return (
+                      <td>
+                        <details class="cell-explain">
+                          <summary>
+                            <strong>{cell.short}</strong>
+                            <span class="cell-explain__why">Why?</span>
+                          </summary>
+                          <div class="cell-explain__body">
+                            <p>{cell.plain}</p>
+                            <p><strong>Why this answer:</strong> {cell.why}</p>
+                            <p><strong>Problem it tries to solve:</strong> {cell.problem}</p>
+                            <p><strong>Incentives:</strong> {cell.incentives}</p>
+                            <p><strong>When ownership/power concentrates:</strong> {cell.concentration}</p>
+                            <p><strong>Family business vs monopoly:</strong> {cell.family_vs_monopoly}</p>
+                            <p><strong>Socialism would say:</strong> {cell.socialism_says}</p>
+                            <p><strong>Constitutional Capitalism would say:</strong> {cell.cc_says}</p>
+                            <p>
+                              <a href={c.href}>Open philosophy page →</a>
+                            </p>
+                          </div>
+                        </details>
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">
+        Full 40-system analytical matrix remains at <a href="/compare/">/compare/</a>. This Layer 1 chart
+        is the public front door.
+      </p>
+    </section>
+  </article>
+</BaseLayout>

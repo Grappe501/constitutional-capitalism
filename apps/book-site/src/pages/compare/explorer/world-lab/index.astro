@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import explorer from "../../../../../../../data/project/comparison_explorer_v1.json";
+
+const lab = explorer.world_laboratory;
+---
+
+<BaseLayout
+  title="World Laboratory"
+  path="/compare/explorer/world-lab/"
+  description="How nations tried to build prosperity — historical mixtures, not pure ideological labels."
+>
+  <article class="explorer">
+    <header class="hub-banner">
+      <span class="chip chip--done">Historical & world experience</span>
+      <h1>{lab.title}</h1>
+      <p class="lede">{lab.subtitle}</p>
+      <p class="muted">{lab.rule}</p>
+    </header>
+    <ExplorerNav current="world-lab" />
+
+    <section class="hub-section">
+      <ul class="link-board">
+        {
+          lab.cases.map((c) => (
+            <li>
+              <a href={`/compare/explorer/world-lab/${c.slug}/`}>
+                {c.title}
+              </a>
+              <div class="muted">{c.tagline}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>History's warning lights</h2>
+      <ul class="stack">
+        {
+          explorer.history_warning_lights.map((w) => (
+            <li>
+              <strong>{w.title}</strong> — {w.case}. Lesson: {w.lesson}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

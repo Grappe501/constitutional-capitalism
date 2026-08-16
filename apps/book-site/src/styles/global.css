@@ -2177,3 +2177,157 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
 .three-econ-grid {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
+
+.explorer-nav ul {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.85rem;
+}
+
+.explorer-nav a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.explorer-nav a[aria-current="page"],
+.explorer-nav a:hover {
+  color: var(--ink);
+}
+
+.explorer-nav__lane {
+  margin: 0 0 0.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.depth-mode__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.depth-mode__controls button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: inherit;
+  padding: 0.4rem 0.7rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.depth-mode__controls button[aria-selected="true"] {
+  border-color: var(--accent);
+  border-bottom-width: 3px;
+}
+
+.depth-mode__panel {
+  padding: 0.85rem 0;
+  line-height: 1.55;
+}
+
+.explorer-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 920px;
+}
+
+.explorer-matrix th,
+.explorer-matrix td {
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  padding: 0.65rem 0.5rem;
+  vertical-align: top;
+}
+
+.explorer-matrix thead th {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.cell-explain summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.cell-explain summary::-webkit-details-marker {
+  display: none;
+}
+
+.cell-explain__why {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent, #8a4b1a);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.cell-explain__body {
+  margin-top: 0.55rem;
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  font-size: 0.86rem;
+}
+
+.follow-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.follow-card {
+  border: 1px solid var(--line);
+  padding: 0.85rem 1rem;
+  background: var(--panel);
+}
+
+.follow-card h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.65rem;
+}
+
+.follow-flows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.follow-flows li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 0.5rem;
+  font-size: 0.86rem;
+}
+
+.follow-bar {
+  grid-column: 1 / -1;
+  height: 0.35rem;
+  background: var(--accent);
+  opacity: 0.55;
+}
+
+.explorer-callout {
+  margin: 0.75rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--panel);
+}
