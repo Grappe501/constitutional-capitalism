@@ -25,7 +25,14 @@ function chipClass(status?: string) {
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--done">{status.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
+      <span class="chip chip--done">{completion.foundational_build?.banner || status.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
+      <p class="muted" style="margin-top:0.65rem;">
+        <strong>
+          {(completion.foundational_build?.name || "Constitutional Capitalism Foundational System") +
+            " " +
+            (completion.foundational_build?.version || "v1.0")}
+        </strong>
+      </p>
       <h1>The Public Book</h1>
       <p class="lede">
         Ten chapters. One continuous argument — from the Arkansas we inherited to the Arkansas we

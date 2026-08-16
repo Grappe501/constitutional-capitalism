@@ -48,27 +48,38 @@ const generatedLabel = snapshot.generated_at
       <span class="chip chip--done">{completion.foundational_build?.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
     </p>
     <p class="lede">
+      <strong>
+        {completion.foundational_build?.name || "Constitutional Capitalism Foundational System"}{" "}
+        {completion.foundational_build?.version || "v1.0"}
+      </strong>
+    </p>
+    <p class="lede">
       {completion.foundational_build?.distinction ||
         "The Constitutional Capitalism foundational build is complete."}
-      {" "}
-      Organized by five system spines — find living resources on the{" "}
-      <a href="/research/">Research desk</a> and{" "}
-      <a href="/compare/explorer/">Comparison Explorer</a>.
+    </p>
+    <p>
+      Depths: <a href="/public-book/">UNDERSTAND</a> ·{" "}
+      <a href="/compare/explorer/">LEARN</a> · <a href="/unabridged/">PROVE</a>
     </p>
     <p class="muted">
-      Snapshot {generatedLabel}. Completion measures foundational architecture — later work is versions,
-      evidence updates, and pilots.
+      Snapshot {generatedLabel}. Architecture is closed. Later work is stewardship — versions,
+      evidence, public understanding, and deliberately chosen pilots.
     </p>
 
-    <h2>Completion dashboard</h2>
+    <h2>Certified lanes</h2>
     <p class="lede">
-      <strong>Technical System — {completion.technical_system?.percent ?? overallCompletion}% CERTIFIED</strong>
+      <strong>Technical System — Certified</strong>
       {" · "}
-      <strong>Public Book — {completion.public_book?.percent ?? 0}% {completion.public_book?.status || "CERTIFIED"}</strong>
-      ({completion.public_book?.chapters_complete ?? 0}/{completion.public_book?.chapters_total ?? 11})
+      <strong>Public Book — Certified</strong>
+      {" · "}
+      <strong>Validation — Certified</strong>
+      {" · "}
+      <strong>Unabridged — Published</strong>
     </p>
     <p class="muted">
-      Comparison Explorer remains a living educational lane. Implementation manuals are future / pilot-dependent.
+      Recommended next stewardship priority:{" "}
+      <a href="/compare/explorer/">Comparison Explorer</a> (Public Understanding). Does not reopen
+      the foundational build.
     </p>
     <div class="progress-list" style="margin-top:1rem;">
       {[

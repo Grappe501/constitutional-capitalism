@@ -5,8 +5,7 @@ import siteNav from "../../../../data/project/site_spine_navigation.json";
 import completion from "../../../../data/project/completion_ladder_and_dashboard.json";
 
 const spines = siteNav.spines || [];
-const bars = completion.progress_bars || {};
-const overall = completion.overall_project_completion?.percent ?? 0;
+const fb = completion.foundational_build || {};
 
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
@@ -46,34 +45,44 @@ function statusLabel(status?: string) {
     </section>
 
     <section class="section" aria-labelledby="dash-title">
-      <h2 id="dash-title">Completion now</h2>
+      <h2 id="dash-title">Foundational Build</h2>
+      <p class="lede">
+        <span class="chip chip--done">{fb.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
+      </p>
+      <p class="lede">
+        <strong>
+          {fb.name || "Constitutional Capitalism Foundational System"}{" "}
+          {fb.version || "v1.0"}
+        </strong>
+      </p>
       <p class="muted">
-        Technical System 100% CERTIFIED is separate from the Public Book dial.
+        Architecture closed. UNDERSTAND → Public Book · LEARN → Comparison Explorer · PROVE →
+        Unabridged.
       </p>
       <div class="dash-row">
         <div class="dash-cell">
-          <strong>{completion.technical_system?.percent ?? overall}%</strong>
+          <strong>Certified</strong>
           <span>Technical system</span>
         </div>
         <div class="dash-cell">
-          <strong>{completion.public_book?.percent ?? 0}%</strong>
+          <strong>Certified</strong>
           <span>Public book</span>
         </div>
         <div class="dash-cell">
-          <strong>{bars.skeleton_coverage_percent ?? 0}%</strong>
-          <span>Skeleton</span>
+          <strong>Certified</strong>
+          <span>Validation</span>
         </div>
         <div class="dash-cell">
-          <strong>{bars.validation_completion_percent ?? 0}%</strong>
-          <span>Validation</span>
+          <strong>Published</strong>
+          <span>Unabridged</span>
         </div>
       </div>
       <p>
         <a class="button button--solid" href="/public-book/">Public Book</a>
-        <a class="button button--solid" href="/status/" style="margin-left:0.5rem;">Full status</a>
-        <a class="button button--solid" href="/build-progress/" style="margin-left:0.5rem;">
-          Build progress
+        <a class="button button--solid" href="/compare/explorer/" style="margin-left:0.5rem;">
+          Comparison Explorer
         </a>
+        <a class="button button--solid" href="/status/" style="margin-left:0.5rem;">Full status</a>
       </p>
     </section>
 
