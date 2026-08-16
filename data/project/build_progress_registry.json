@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-188",
-  "update_id": "UPD-201",
+  "decision_id": "CC-DEC-189",
+  "update_id": "UPD-202",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_9",
-  "next_objective": "Pass 5.9 \u2014 We Tried to Break It. Public-book translation only. No new theory.",
+  "current_pass": "PASS_5_10",
+  "next_objective": "Pass 5.10 \u2014 The Arkansas We Could Leave Behind. Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -719,6 +719,26 @@
           "label": "Public Book hub"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-189",
+      "title": "Pass 5.9 Public Book chapter complete \u2014 We Tried to Break It",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-9/",
+      "links": [
+        {
+          "href": "/public-book/we-tried-to-break-it/",
+          "label": "Chapter 9"
+        },
+        {
+          "href": "/system/changed-our-mind/",
+          "label": "Changed Our Mind"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -960,18 +980,18 @@
       "number": "5.9",
       "slug": "pass-5-9",
       "name": "We Tried to Break It",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-9/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_9.json",
+      "spine_href": "/public-book/we-tried-to-break-it/",
+      "chapter_completion_percent": 100
     },
     {
       "id": "PASS_5_10",
       "number": "5.10",
       "slug": "pass-5-10",
       "name": "The Arkansas We Could Leave Behind",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": "/build-progress/passes/pass-5-10/",
       "changelog": null,
       "spine_href": null,

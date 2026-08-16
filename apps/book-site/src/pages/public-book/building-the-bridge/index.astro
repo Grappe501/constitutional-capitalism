@@ -158,10 +158,13 @@ const cert = chapter.certification || {};
 
     <section class="hub-section">
       <h2>Next</h2>
-      <p class="lede">Pass 5.9 — We Tried to Break It</p>
+      <p class="lede">
+        Pass 5.9 — We Tried to Break It ·{" "}
+        <a href="/public-book/we-tried-to-break-it/">Read →</a>
+      </p>
       <ul class="link-board">
         {
-          (plan.passes || []).slice(0, 10).map((p: any) => (
+          (plan.passes || []).map((p: any) => (
             <li>
               <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
                 {p.status}
