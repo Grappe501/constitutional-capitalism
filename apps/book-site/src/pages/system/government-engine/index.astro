@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import GovernmentPowerLoop from "../../../components/GovernmentPowerLoop.astro";
+import CaptureCircuitBreakers from "../../../components/CaptureCircuitBreakers.astro";
+import GovernmentRolesQuadrant from "../../../components/GovernmentRolesQuadrant.astro";
+import PublicDollarChain from "../../../components/PublicDollarChain.astro";
+import engine from "../../../../../../data/project/stage2_pass24_government_operating_system.json";
+
+const modules = engine.modules || [];
+const roles = engine.government_roles || {};
+const procurement = engine.procurement_as_economic_flow || {};
+const ai = engine.ai_government_principle || {};
+const integration = engine.four_engine_integration || {};
+const coverage = engine.coverage_reconciliation || {};
+
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+---
+
+<BaseLayout
+  title="Government Operating System"
+  path="/system/government-engine/"
+  description="Stage 2 Pass 2.4 — democratic, competent, transparent government that circulates power back to the people."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 2.4 complete</span>
+      <h1>{engine.engine_name}</h1>
+      <p class="lede">{engine.one_sentence}</p>
+      <p class="muted">
+        {engine.decision_id} · {engine.update_id} · COUNTABLE claims added: $0 ·{" "}
+        <a href="/build-progress/passes/pass-2-4/">What Changed →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the governance machine</h2>
+      <GovernmentPowerLoop />
+      <CaptureCircuitBreakers />
+      <GovernmentRolesQuadrant />
+      <PublicDollarChain />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="roles-lock">
+      <h2 id="roles-lock">Four government roles</h2>
+      <p class="lede">{roles.conflict_rule}</p>
+      <ul class="stack">
+        {(roles.roles || []).map((r: any) => (
+          <li>
+            <strong>{r.label}</strong> — {r.meaning}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="procurement">
+      <h2 id="procurement">Procurement as economic flow</h2>
+      <p>
+        <span class="chip chip--queued">{procurement.status}</span>
+      </p>
+      <p class="lede">Major public purchases are Money Engine flows — not mere overhead.</p>
+      <ul class="stack">
+        {(procurement.operating_questions || []).map((q: string) => (
+          <li>{q}</li>
+        ))}
+      </ul>
+      <p class="muted">{procurement.guardrail}</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="ai-gov">
+      <h2 id="ai-gov">AI government principle</h2>
+      <p class="lede">
+        <strong>{ai.statement}</strong>
+      </p>
+      <p>Consequential decisions: {(ai.consequential_decision_path || []).join(" → ")}</p>
+      <p class="muted">{ai.note}</p>
+      <p>
+        <EvidenceConfidence level="working" note="architecture — legal standards Stage 4" />
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="integration">
+      <h2 id="integration">Government ↔ Human ↔ Money ↔ Household</h2>
+      <p>
+        <span class="chip chip--done">{integration.result}</span>
+      </p>
+      <p class="fly-card fly-card--up" style="margin:0;">{integration.cycle}</p>
+      <p class="fly-card fly-card--down" style="margin-top:0.85rem;">{integration.antithesis}</p>
+      <p style="margin-top:0.85rem;">
+        <a href="/system/human-community-engine/">Human & Community →</a>
+        {" · "}
+        <a href="/system/money-engine/">Money Engine →</a>
+        {" · "}
+        <a href="/system/household-engine/">Household Engine →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Working modules (GO-01–GO-10)</h2>
+      <p class="lede">
+        Harvested from Pass 3 — not reopened as constitutional-law research. Coverage: net +
+        {coverage.net_new} FIRST_PASS ({coverage.before_first_pass_count} →{" "}
+        {coverage.after_first_pass_count}).
+      </p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(engine.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(engine.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/system/government-power/">Government & Democratic Power spine →</a>
+        {" · "}
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

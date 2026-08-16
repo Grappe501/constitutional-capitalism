@@ -1776,3 +1776,89 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   font-size: 0.78rem;
   line-height: 1.35;
 }
+
+.power-chain,
+.dollar-chain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (min-width: 800px) {
+  .power-chain {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .dollar-chain {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.power-chain li,
+.dollar-chain li {
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--panel);
+  font-weight: 650;
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.breakers {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 800px) {
+  .breakers {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.breakers li {
+  padding: 0.65rem 0.75rem;
+  border: 1px dashed var(--line);
+  background: var(--panel);
+  font-weight: 650;
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.roles-quad {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+@media (min-width: 700px) {
+  .roles-quad {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.roles-quad li {
+  padding: 0.9rem 0.85rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.roles-quad li strong {
+  font-size: 0.95rem;
+}
+
+.roles-quad li span {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}

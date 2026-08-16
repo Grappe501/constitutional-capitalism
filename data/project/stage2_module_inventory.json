@@ -3,7 +3,7 @@
   "slice_id": "CC-STAGE-2-MODULE-INVENTORY-1.0",
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
-  "update_id": "UPD-173",
+  "update_id": "UPD-174",
   "status": "LOCKED_DENOMINATOR",
   "total_modules": 50,
   "counting_standard": "data/project/stage2_first_pass_module_standard.json",
@@ -33,6 +33,11 @@
       "first_pass_count": 27,
       "first_pass_percent": 54,
       "note": "Pass 2.3: HC-01\u2013HC-08 remapped and FIRST_PASS at 15-field depth. Net +5 (HC-01/05/08 already in 22). 27/50 = 54%. Not 30/50 — that would double-count prior HC IDs."
+    },
+    "after_pass_2_4": {
+      "first_pass_count": 35,
+      "first_pass_percent": 70,
+      "note": "Pass 2.4: GO-01\u2013GO-10 remapped at 15-field FIRST_PASS. Net +8 (GO-02/GO-10 already in 27). 35/50 = 70%."
     }
   },
   "prior_first_pass_ids_before_2_1": [
@@ -233,65 +238,79 @@
     },
     {
       "id": "GO-01",
-      "name": "Constitutional rights & limits",
+      "name": "Constitutional Order & Rights",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-01"
     },
     {
       "id": "GO-02",
-      "name": "Representative democracy",
+      "name": "Representative Democracy & Elections",
       "wave": "PASS_2_4",
       "status": "FIRST_PASS",
-      "note": "Democracy framework"
+      "href": "/system/government-engine/#go-02",
+      "note": "Remapped Pass 2.4; prior democracy framework substance"
     },
     {
       "id": "GO-03",
-      "name": "Direct democracy & citizen power",
+      "name": "Direct Democracy & Citizen Sovereignty",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-03"
     },
     {
       "id": "GO-04",
-      "name": "Administrative government",
+      "name": "Subsidiarity & Local Government",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-04"
     },
     {
       "id": "GO-05",
-      "name": "State/local finance & federalism",
+      "name": "Competent Administrative Government",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-05",
+      "note": "LOCK-09 join"
     },
     {
       "id": "GO-06",
-      "name": "Procurement design",
+      "name": "Public Finance, Budgeting & Procurement",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-06",
+      "note": "Money Engine / Public Dollar Chain join; LOCK-06"
     },
     {
       "id": "GO-07",
-      "name": "Justice & public safety",
+      "name": "Justice, Corrections & Public Safety",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-07"
     },
     {
       "id": "GO-08",
-      "name": "Anti-corruption & political money",
+      "name": "Anti-Corruption & Anti-Capture Architecture",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-08",
+      "note": "Capture Circuit Breakers home"
     },
     {
       "id": "GO-09",
-      "name": "Data, information & AI rights",
+      "name": "Data Rights, Privacy & AI Government",
       "wave": "PASS_2_4",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/government-engine/#go-09",
+      "note": "LOCK-08; AI may assist, not silently become government"
     },
     {
       "id": "GO-10",
-      "name": "Public accountability measurement",
+      "name": "Measurement, Transparency & Public Accountability",
       "wave": "PASS_2_4",
       "status": "FIRST_PASS",
-      "note": "Metrics / Build Progress substance"
+      "href": "/system/government-engine/#go-10",
+      "note": "Remapped Pass 2.4; Power Loop close"
     },
     {
       "id": "TR-01",
