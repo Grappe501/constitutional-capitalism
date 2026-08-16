@@ -2,63 +2,43 @@
 import "../styles/global.css";
 import ListenBar from "../components/ListenBar.astro";
 import { identity } from "../lib/data";
+import siteNav from "../../../../data/project/site_spine_navigation.json";
 
 interface Props {
   title?: string;
   description?: string;
   path?: string;
+  bareMain?: boolean;
 }
 
 const {
   title,
   description = "Constitutional Capitalism — Restoring Prosperity Through Constitutional Principles. A free public book project in development.",
   path = "/",
+  bareMain = false,
 } = Astro.props;
 
 const pageTitle = title
   ? `${title} | ${identity.title}`
   : `${identity.title} | ${identity.subtitle}`;
 const canonical = new URL(path, Astro.site).toString();
-const nav = [
-  { href: "/", label: "Home" },
-  { href: "/definition/", label: "Definition" },
-  { href: "/declaration/", label: "Declaration" },
-  { href: "/foundational-axioms/", label: "Axioms" },
-  { href: "/principles/", label: "Principles" },
-  { href: "/equal-standing/", label: "Equal Standing" },
-  { href: "/constitutional-citizenship/", label: "Citizenship" },
-  { href: "/family/", label: "Family" },
-  { href: "/assistance/", label: "Assistance" },
-  { href: "/federalism/", label: "Federalism" },
-  { href: "/peoples-branch/", label: "People’s Branch" },
-  { href: "/flourishing/", label: "Flourishing" },
-  { href: "/where-we-are/", label: "Where We Are" },
-  { href: "/justice/", label: "Justice" },
-  { href: "/democracy/", label: "Democracy" },
-  { href: "/public-service/", label: "Public Service" },
-  { href: "/citizen-service/", label: "Citizen Service" },
-  { href: "/constitutional-defense/", label: "Defense" },
-  { href: "/civic-wealth/", label: "Civic Wealth" },
-  { href: "/energy-sovereignty/", label: "Energy" },
-  { href: "/health/", label: "Health" },
-  { href: "/prosperous-aging/", label: "Aging" },
-  { href: "/community-prosperity/", label: "Community Prosperity" },
-  { href: "/local-ownership/", label: "Local Ownership" },
-  { href: "/community-resilience/", label: "Resilience" },
-  { href: "/transparency/", label: "Transparency" },
-  { href: "/essential-systems/", label: "Essential Systems" },
-  { href: "/human-capital/", label: "Human Capital" },
-  { href: "/build-your-community/", label: "Build Community" },
-  { href: "/resource-sovereignty/", label: "Resource Sovereignty" },
-  { href: "/food-security/", label: "Food Security" },
-  { href: "/family-farm-prosperity/", label: "Family Farms" },
-  { href: "/evidence/", label: "Evidence" },
-  { href: "/metrics/", label: "Metrics" },
-  { href: "/compare/", label: "Compare" },
-  { href: "/book/", label: "Book" },
-  { href: "/status/", label: "Status" },
-  { href: "/about/", label: "About" },
-];
+const primary = siteNav.primary_nav || [];
+const foundations = siteNav.foundations;
+const spines = siteNav.spines || [];
+const researchDesk = siteNav.research_desk;
+const footerColumns = siteNav.footer_columns || [];
+
+function chipClass(status?: string) {
+  if (status === "COMPLETE") return "chip chip--done";
+  if (status === "ACTIVE") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function statusLabel(status?: string) {
+  if (status === "COMPLETE") return "Pass complete";
+  if (status === "ACTIVE") return "Building now";
+  return "Queued";
+}
 ---
 
 <!doctype html>
@@ -86,33 +66,91 @@ const nav = [
     <header class="site-header" data-site-header>
       <div class="site-header__bar">
         <a class="brand" href="/">
+          <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__full">{identity.title}</span>
           <span class="brand__short" aria-hidden="true">CC</span>
         </a>
-        <button
-          type="button"
-          class="nav-toggle"
-          data-nav-toggle
-          aria-expanded="false"
-          aria-controls="primary-nav"
-        >
-          <span class="nav-toggle__label" data-nav-toggle-label>Menu</span>
-        </button>
+        <div class="header-actions">
+          <nav class="primary-links" aria-label="Primary">
+            {
+              primary.map((item) => (
+                <a
+                  href={item.href}
+                  aria-current={path === item.href || path.startsWith(item.href) ? "page" : undefined}
+                >
+                  {item.label}
+                </a>
+              ))
+            }
+          </nav>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="site-nav-panel"
+          >
+            <span data-nav-toggle-label>Explore</span>
+          </button>
+        </div>
       </div>
-      <nav class="nav" id="primary-nav" data-primary-nav aria-label="Primary">
-        {
-          nav.map((item) => (
-            <a
-              href={item.href}
-              aria-current={path === item.href ? "page" : undefined}
-            >
-              {item.label}
-            </a>
-          ))
-        }
-      </nav>
+      <div class="nav-panel" id="site-nav-panel" data-nav-panel>
+        <div class="nav-panel__inner">
+          <section class="nav-group" aria-labelledby="nav-spines">
+            <h2 id="nav-spines">System spines</h2>
+            <p>Follow the build in order. Every major function lives on one spine.</p>
+            <div class="nav-spine-row">
+              {
+                spines.map((spine) => (
+                  <a class="nav-spine-card" href={spine.href}>
+                    <span class={chipClass(spine.status)}>{statusLabel(spine.status)}</span>
+                    <strong>{spine.title}</strong>
+                    <span>{spine.blurb}</span>
+                  </a>
+                ))
+              }
+            </div>
+          </section>
+
+          <section class="nav-group" aria-labelledby="nav-foundations">
+            <h2 id="nav-foundations">{foundations.title}</h2>
+            <p>{foundations.blurb}</p>
+            <ul class="nav-group__links">
+              {
+                foundations.links.map((link) => (
+                  <li>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+
+          <section class="nav-group" aria-labelledby="nav-research">
+            <h2 id="nav-research">Research desk</h2>
+            <p>{researchDesk.blurb}</p>
+            <ul class="nav-group__links">
+              <li><a href="/research/">Open research desk</a></li>
+              {
+                researchDesk.working_now.map((link) => (
+                  <li>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))
+              }
+              {
+                researchDesk.evidence_surfaces.map((link) => (
+                  <li>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+        </div>
+      </div>
     </header>
-    <main id="main" class="shell" data-listen-root>
+    <main id="main" class={bareMain ? "home-main" : "shell"} data-listen-root>
       <slot />
     </main>
     <ListenBar />
@@ -121,45 +159,49 @@ const nav = [
         <p>
           <strong>{identity.title}</strong> — {identity.subtitle}
         </p>
+        <div class="footer-grid">
+          {
+            footerColumns.map((col) => (
+              <div>
+                <h2>{col.title}</h2>
+                <ul>
+                  {col.links.map((link) => (
+                    <li>
+                      <a href={link.href}>{link.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
         <p>
           Free public edition intended. Manuscript in development. Licensing decision open.
           Project status: {identity.project_status}.
-        </p>
-        <p>
-          <a href="/why/">Why</a> ·
-          <a href="/read/">Read</a> ·
-          <a href="/resources/">Resources</a> ·
-          <a href="/updates/">Updates</a> ·
-          <a href="/status/">Status</a>
         </p>
       </div>
     </footer>
     <script>
       const header = document.querySelector("[data-site-header]");
       const toggle = document.querySelector("[data-nav-toggle]");
-      const nav = document.querySelector("[data-primary-nav]");
+      const panel = document.querySelector("[data-nav-panel]");
       const label = document.querySelector("[data-nav-toggle-label]");
-      if (header && toggle && nav && label) {
+      if (header && toggle && panel && label) {
         const setOpen = (open: boolean) => {
           header.classList.toggle("is-nav-open", open);
           document.body.classList.toggle("nav-lock", open);
           toggle.setAttribute("aria-expanded", open ? "true" : "false");
-          label.textContent = open ? "Close" : "Menu";
+          label.textContent = open ? "Close" : "Explore";
         };
         toggle.addEventListener("click", () => {
           setOpen(!header.classList.contains("is-nav-open"));
         });
-        nav.querySelectorAll("a").forEach((link) => {
+        panel.querySelectorAll("a").forEach((link) => {
           link.addEventListener("click", () => setOpen(false));
         });
         document.addEventListener("keydown", (event) => {
           if (event.key === "Escape") setOpen(false);
         });
-        const mq = window.matchMedia("(min-width: 901px)");
-        const syncDesktop = () => {
-          if (mq.matches) setOpen(false);
-        };
-        mq.addEventListener("change", syncDesktop);
       }
     </script>
   </body>

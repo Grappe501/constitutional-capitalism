@@ -1,0 +1,223 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-151",
+  "purpose": "Public site navigation organized by Stage 1 five-spine architecture. Every public page and research surface must appear exactly once as a primary home.",
+  "primary_nav": [
+    { "href": "/system/", "label": "System" },
+    { "href": "/research/", "label": "Research" },
+    { "href": "/book/", "label": "Book" },
+    { "href": "/evidence/", "label": "Evidence" },
+    { "href": "/status/", "label": "Status" }
+  ],
+  "foundations": {
+    "id": "FOUNDATIONS",
+    "title": "Foundations",
+    "blurb": "What Constitutional Capitalism is — before the operating spines.",
+    "links": [
+      { "href": "/definition/", "label": "Definition" },
+      { "href": "/declaration/", "label": "Declaration" },
+      { "href": "/foundational-axioms/", "label": "Foundational axioms" },
+      { "href": "/principles/", "label": "Principles" },
+      { "href": "/why/", "label": "Why this book" },
+      { "href": "/about/", "label": "About the project" },
+      { "href": "/flourishing/", "label": "Human Flourishing Index" },
+      { "href": "/equal-standing/", "label": "Equal standing" },
+      { "href": "/constitutional-citizenship/", "label": "Constitutional citizenship" },
+      { "href": "/family/", "label": "Family" },
+      { "href": "/assistance/", "label": "Assistance" },
+      { "href": "/compare/", "label": "Compare economic systems" },
+      { "href": "/where-we-are/", "label": "Where we are (diagnosis)" }
+    ]
+  },
+  "spines": [
+    {
+      "id": "PASS_1",
+      "slug": "money-ownership",
+      "href": "/system/money-ownership/",
+      "title": "Money & Ownership",
+      "status": "COMPLETE",
+      "blurb": "Who earns, who owns, who lends, who extracts — and how public income can replace taxes on ordinary work and homes.",
+      "locks": ["LOCK-01", "LOCK-02", "LOCK-04", "LOCK-05"],
+      "links": [
+        { "href": "/local-ownership/", "label": "Local ownership" },
+        { "href": "/community-prosperity/", "label": "Community prosperity accounts" },
+        { "href": "/civic-wealth/", "label": "Civic wealth" },
+        { "href": "/essential-systems/", "label": "Essential systems (banking, insurance, health markets)" },
+        { "href": "/human-capital/", "label": "Human capital" },
+        { "href": "/build-your-community/", "label": "Build your community" }
+      ],
+      "research": [
+        { "href": "/research/#hyp-131", "label": "HYP-131 Prosperity revenue replacement" },
+        { "href": "/research/#money-spine", "label": "Pass 1 spine architecture" },
+        { "href": "/status/", "label": "Completion dashboard" }
+      ]
+    },
+    {
+      "id": "PASS_2",
+      "slug": "household-place",
+      "href": "/system/household-place/",
+      "title": "Household & Place",
+      "status": "ACTIVE",
+      "blurb": "Housing, mobility, food, energy, health, education, care, and rural/urban access — the household unit of prosperity.",
+      "locks": ["LOCK-03", "LOCK-07"],
+      "links": [
+        { "href": "/health/", "label": "Health & human capacity" },
+        { "href": "/prosperous-aging/", "label": "Prosperous aging" },
+        { "href": "/food-security/", "label": "Food security" },
+        { "href": "/family-farm-prosperity/", "label": "Family farm prosperity" },
+        { "href": "/energy-sovereignty/", "label": "Energy sovereignty" },
+        { "href": "/resource-sovereignty/", "label": "Resource sovereignty" },
+        { "href": "/human-capital/", "label": "Human capital / education" },
+        { "href": "/family/", "label": "Family" },
+        { "href": "/community-resilience/", "label": "Community resilience" },
+        { "href": "/flourishing/", "label": "Flourishing index" }
+      ],
+      "research": [
+        { "href": "/research/#hyp-133", "label": "HYP-133 Human capital & education" },
+        { "href": "/research/#hyp-130", "label": "Arkansas needs / capacity" }
+      ]
+    },
+    {
+      "id": "PASS_3",
+      "slug": "government-power",
+      "href": "/system/government-power/",
+      "title": "Government & Democratic Power",
+      "status": "QUEUED",
+      "blurb": "How public power is structured, funded, constrained, and kept from capture.",
+      "locks": ["LOCK-06", "LOCK-08", "LOCK-09"],
+      "links": [
+        { "href": "/democracy/", "label": "Democracy & representation" },
+        { "href": "/peoples-branch/", "label": "People’s Branch" },
+        { "href": "/federalism/", "label": "Federalism" },
+        { "href": "/public-service/", "label": "Public service / state capacity" },
+        { "href": "/citizen-service/", "label": "Citizen service" },
+        { "href": "/justice/", "label": "Justice & restoration" },
+        { "href": "/transparency/", "label": "Transparency / People’s Ledger" },
+        { "href": "/constitutional-defense/", "label": "Constitutional defense" },
+        { "href": "/equal-standing/", "label": "Equal standing" },
+        { "href": "/constitutional-citizenship/", "label": "Citizenship" }
+      ],
+      "research": [
+        { "href": "/evidence/", "label": "Evidence & claims" },
+        { "href": "/research/#os-power", "label": "Power / anti-capture OS question" }
+      ]
+    },
+    {
+      "id": "PASS_4",
+      "slug": "transition-measurement",
+      "href": "/system/transition-measurement/",
+      "title": "Transition, Resilience & Measurement",
+      "status": "QUEUED",
+      "blurb": "How we move from today’s system, measure household prosperity, and survive shocks.",
+      "locks": ["LOCK-10"],
+      "links": [
+        { "href": "/community-resilience/", "label": "Community resilience" },
+        { "href": "/metrics/", "label": "National baseline metrics" },
+        { "href": "/where-we-are/", "label": "Where we are" },
+        { "href": "/status/", "label": "Project status & completion bars" },
+        { "href": "/updates/", "label": "Project updates" },
+        { "href": "/systems-intelligence/", "label": "Systems intelligence (deferred)" },
+        { "href": "/collaborative-review/", "label": "Collaborative review (deferred)" }
+      ],
+      "research": [
+        { "href": "/research/#hyp-132", "label": "HYP-132 Population / wealth attraction" },
+        { "href": "/research/#hyp-134", "label": "HYP-134 AI abundance (quarantined)" },
+        { "href": "/research/#hyp-129", "label": "Local pilots" }
+      ]
+    },
+    {
+      "id": "PASS_5",
+      "slug": "closure-audit",
+      "href": "/system/#pass-5",
+      "title": "Whole-System Closure",
+      "status": "QUEUED",
+      "blurb": "Final orphan check: every government, market, household, community, capital, and power function has a home.",
+      "locks": [],
+      "links": [
+        { "href": "/system/", "label": "Master system map" },
+        { "href": "/research/", "label": "Research desk" },
+        { "href": "/status/", "label": "Completion dashboard" }
+      ],
+      "research": []
+    }
+  ],
+  "research_desk": {
+    "blurb": "Find active architecture, hypotheses, and evidence without hunting the flat nav.",
+    "working_now": [
+      { "href": "/system/household-place/", "label": "Pass 2 — Household & Place Spine (active)" },
+      { "href": "/status/", "label": "Completion dashboard (Overall / Skeleton / First-pass / Publication / Validation)" },
+      { "href": "/updates/", "label": "Latest public updates" }
+    ],
+    "hypotheses": [
+      { "id": "hyp-131", "label": "HYP-131 Prosperity-based revenue replacement", "href": "/research/#hyp-131", "spine": "PASS_1" },
+      { "id": "hyp-133", "label": "HYP-133 Human capital & education prosperity", "href": "/research/#hyp-133", "spine": "PASS_2" },
+      { "id": "hyp-132", "label": "HYP-132 Population & wealth attraction", "href": "/research/#hyp-132", "spine": "PASS_4" },
+      { "id": "hyp-134", "label": "HYP-134 AI abundance & distributed ownership", "href": "/research/#hyp-134", "spine": "PASS_4" },
+      { "id": "hyp-129", "label": "HYP-129 Local pilots / magnet hubs", "href": "/research/#hyp-129", "spine": "PASS_4" },
+      { "id": "hyp-130", "label": "HYP-130 Arkansas strategic capacity / needs", "href": "/research/#hyp-130", "spine": "PASS_2" }
+    ],
+    "evidence_surfaces": [
+      { "href": "/evidence/", "label": "Claim ledger & sources" },
+      { "href": "/evidence/methodology/", "label": "Evidence methodology" },
+      { "href": "/evidence/open-questions/", "label": "Open questions" },
+      { "href": "/metrics/", "label": "Baseline metrics" },
+      { "href": "/compare/", "label": "Comparative systems" },
+      { "href": "/where-we-are/", "label": "National diagnosis snapshot" }
+    ],
+    "os_questions": [
+      { "id": "ownership", "label": "Ownership" },
+      { "id": "capital_formation", "label": "Capital formation" },
+      { "id": "market_design", "label": "Market design" },
+      { "id": "household_economics", "label": "Household economics" },
+      { "id": "power", "label": "Power" }
+    ]
+  },
+  "book_and_tools": [
+    { "href": "/book/", "label": "Manuscript structure" },
+    { "href": "/read/", "label": "Read (coming chapters)" },
+    { "href": "/resources/", "label": "Resources" },
+    { "href": "/updates/", "label": "Updates" },
+    { "href": "/status/", "label": "Status" }
+  ],
+  "footer_columns": [
+    {
+      "title": "Start",
+      "links": [
+        { "href": "/definition/", "label": "Definition" },
+        { "href": "/declaration/", "label": "Declaration" },
+        { "href": "/system/", "label": "Full system" },
+        { "href": "/why/", "label": "Why" }
+      ]
+    },
+    {
+      "title": "Spines",
+      "links": [
+        { "href": "/system/money-ownership/", "label": "Money & Ownership" },
+        { "href": "/system/household-place/", "label": "Household & Place" },
+        { "href": "/system/government-power/", "label": "Government & Power" },
+        { "href": "/system/transition-measurement/", "label": "Transition & Measurement" }
+      ]
+    },
+    {
+      "title": "Research",
+      "links": [
+        { "href": "/research/", "label": "Research desk" },
+        { "href": "/evidence/", "label": "Evidence" },
+        { "href": "/metrics/", "label": "Metrics" },
+        { "href": "/compare/", "label": "Compare" },
+        { "href": "/updates/", "label": "Updates" },
+        { "href": "/status/", "label": "Status" }
+      ]
+    },
+    {
+      "title": "Book",
+      "links": [
+        { "href": "/book/", "label": "Chapters" },
+        { "href": "/read/", "label": "Read" },
+        { "href": "/resources/", "label": "Resources" },
+        { "href": "/about/", "label": "About" }
+      ]
+    }
+  ]
+}

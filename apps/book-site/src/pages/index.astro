@@ -1,9 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { identity, snapshot } from "../lib/data";
+import { identity } from "../lib/data";
+import siteNav from "../../../../data/project/site_spine_navigation.json";
+import completion from "../../../../data/project/completion_ladder_and_dashboard.json";
+
+const spines = siteNav.spines || [];
+const bars = completion.progress_bars || {};
+const overall = completion.overall_project_completion?.percent ?? 0;
+
+function chipClass(status?: string) {
+  if (status === "COMPLETE") return "chip chip--done";
+  if (status === "ACTIVE") return "chip chip--live";
+  return "chip chip--queued";
+}
+
+function statusLabel(status?: string) {
+  if (status === "COMPLETE") return "Pass complete";
+  if (status === "ACTIVE") return "Building now";
+  return "Queued";
+}
 ---
 
-<BaseLayout path="/">
+<BaseLayout path="/" bareMain={true}>
   <section class="hero" aria-labelledby="hero-title">
     <h1 id="hero-title" class="hero__brand">{identity.title}</h1>
     <p class="hero__subtitle">{identity.subtitle}</p>
@@ -11,61 +29,87 @@ import { identity, snapshot } from "../lib/data";
       {identity.central_belief}
     </blockquote>
     <div class="cta-row">
-      <a class="button button--primary" href="/declaration/">Read the Declaration</a>
-      <a class="button button--ghost" href="/definition/">Definition</a>
-      <a class="button button--ghost" href="/principles/">Principles</a>
+      <a class="button button--primary" href="/system/">Enter the system</a>
+      <a class="button button--ghost" href="/research/">Research desk</a>
+      <a class="button button--ghost" href="/declaration/">Declaration</a>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="def-title">
-    <h2 id="def-title">Canonical definition</h2>
-    <blockquote class="quote">{identity.canonical_definition}</blockquote>
-  </section>
+  <div class="shell">
+    <section class="section" aria-labelledby="path-title">
+      <h2 id="path-title">How to read this project</h2>
+      <p class="lede">
+        The site is organized as five spines — not a flat list of topics. Start with foundations,
+        then follow Money & Ownership → Household & Place → Government & Power → Transition &
+        Measurement. Research for work-in-progress lives on the Research desk.
+      </p>
+    </section>
 
-  <section class="section stack" aria-labelledby="preserve-title">
-    <h2 id="preserve-title">What the system preserves</h2>
-    <p class="lede">
-      Private property, free enterprise, entrepreneurship, lawful profit, voluntary exchange,
-      innovation, investment, competition, limited government, and the rule of law.
-    </p>
-  </section>
+    <section class="section" aria-labelledby="dash-title">
+      <h2 id="dash-title">Completion now</h2>
+      <p class="muted">
+        Legacy research composite ({completion.historical_metric_reconciliation?.legacy_overall_percent ?? 43}%)
+        is historical only. These bars are the governing signal.
+      </p>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{overall}%</strong>
+          <span>Overall</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{bars.skeleton_coverage_percent ?? 0}%</strong>
+          <span>Skeleton</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{bars.first_pass_coverage_percent ?? 0}%</strong>
+          <span>First-pass</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{bars.publication_completion_percent ?? 0}%</strong>
+          <span>Publication</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{bars.validation_completion_percent ?? 0}%</strong>
+          <span>Validation</span>
+        </div>
+      </div>
+      <p>
+        <a class="button button--solid" href="/status/">Full status</a>
+        <a class="button button--solid" href="/system/household-place/" style="margin-left:0.5rem;">
+          Active: Pass 2
+        </a>
+      </p>
+    </section>
 
-  <section class="section stack" aria-labelledby="change-title">
-    <h2 id="change-title">What the system changes</h2>
-    <p class="lede">
-      It requires constitutional accountability for economic power; broad ownership pathways;
-      protected competition; fairer treatment of ordinary work; and recognition that communities and
-      technological inheritance are part of national prosperity.
-    </p>
-  </section>
+    <section class="section" aria-labelledby="spines-title">
+      <h2 id="spines-title">The five spines</h2>
+      <div class="spine-grid">
+        {
+          spines.map((spine) => (
+            <a class="spine-tile" href={spine.href}>
+              <span class={chipClass(spine.status)}>{statusLabel(spine.status)}</span>
+              <h3>{spine.title}</h3>
+              <p>{spine.blurb}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
 
-  <section class="section stack" aria-labelledby="new-title">
-    <h2 id="new-title">Why this framework is new</h2>
-    <p class="lede">
-      Constitutional Capitalism refuses two failures: unaccountable private power and unaccountable
-      state power. It keeps markets and ownership while insisting that public-scale economic power
-      remain transparent, rivalrous, and accountable to a free people.
-      <a href="/compare/">Compare systems →</a>
-    </p>
-  </section>
+    <section class="section stack" aria-labelledby="def-title">
+      <h2 id="def-title">Canonical definition</h2>
+      <blockquote class="quote">{identity.canonical_definition}</blockquote>
+      <p>
+        <a href="/definition/">Definition</a> ·
+        <a href="/foundational-axioms/">Axioms</a> ·
+        <a href="/principles/">Principles</a> ·
+        <a href="/compare/">Compare systems</a>
+      </p>
+    </section>
 
-  <section class="section stack" aria-labelledby="free-title">
-    <h2 id="free-title">Why the book is free</h2>
-    <p class="lede">{identity.public_availability_commitment}</p>
-  </section>
-
-  <section class="section stack" aria-labelledby="status-title">
-    <h2 id="status-title">Current project status</h2>
-    <p class="muted">Living project underway — Declaration drafted; civilizational architecture proposed; evidence and baseline work next</p>
-    <p class="lede">
-      Overall progress estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>. The Declaration
-      and principles form the philosophical spine. The longer work is a living constitutional
-      philosophy — not a finished book alone. Source verification, modeling, and legal review remain
-      early-stage.
-    </p>
-    <p>
-      <a class="button button--solid" href="/status/">View public status</a>
-      <a class="button button--solid" href="/declaration/" style="margin-left:0.5rem;">Open Declaration</a>
-    </p>
-  </section>
+    <section class="section stack" aria-labelledby="free-title">
+      <h2 id="free-title">Why the book is free</h2>
+      <p class="lede">{identity.public_availability_commitment}</p>
+    </section>
+  </div>
 </BaseLayout>

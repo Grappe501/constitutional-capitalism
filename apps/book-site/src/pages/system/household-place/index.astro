@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import siteNav from "../../../../../../data/project/site_spine_navigation.json";
+
+const spine = (siteNav.spines || []).find((s) => s.slug === "household-place");
+if (!spine) throw new Error("Household place spine missing");
+---
+
+<BaseLayout
+  title={spine.title}
+  path="/system/household-place/"
+  description={spine.blurb}
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">Pass 2 — building now</span>
+      <h1>{spine.title}</h1>
+      <p class="lede">{spine.blurb}</p>
+      <p class="muted">Locks: {(spine.locks || []).join(" · ")} · plus care, food, energy, education homes</p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Doctrine & system pages</h2>
+      <ul class="link-board">
+        {spine.links.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Research on this spine</h2>
+      <ul class="link-board">
+        {spine.research.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+        <li><a href="/research/">Full research desk</a></li>
+        <li><a href="/system/money-ownership/">Previous: Money & Ownership</a></li>
+        <li><a href="/system/">System map</a></li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Pass 2 job</h2>
+      <p class="lede">
+        Give every household-and-place topic a clean structural home and check contradictions — not a
+        deep research campaign. Housing, mobility, infrastructure, healthcare, education, food,
+        energy, childcare, aging, disability, and rural/urban access belong here.
+      </p>
+    </section>
+  </article>
+</BaseLayout>

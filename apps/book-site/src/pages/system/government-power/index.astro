@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import siteNav from "../../../../../../data/project/site_spine_navigation.json";
+
+const spine = (siteNav.spines || []).find((s) => s.slug === "government-power");
+if (!spine) throw new Error("Government power spine missing");
+---
+
+<BaseLayout
+  title={spine.title}
+  path="/system/government-power/"
+  description={spine.blurb}
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--queued">Pass 3 — queued</span>
+      <h1>{spine.title}</h1>
+      <p class="lede">{spine.blurb}</p>
+      <p class="muted">Locks: {(spine.locks || []).join(" · ")}</p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Doctrine & system pages</h2>
+      <ul class="link-board">
+        {spine.links.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Research on this spine</h2>
+      <ul class="link-board">
+        {spine.research.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+        <li><a href="/research/">Full research desk</a></li>
+        <li><a href="/system/">System map</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

@@ -1,0 +1,229 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import siteNav from "../../../../../data/project/site_spine_navigation.json";
+import completion from "../../../../../data/project/completion_ladder_and_dashboard.json";
+import latestReturn from "../../../../../data/project/latest_cursor_return.json";
+import { updates } from "../../lib/data";
+import pass1 from "../../../../../data/project/stage1_pass1_money_ownership_spine.json";
+import fivePass from "../../../../../data/project/stage1_five_pass_closure_plan.json";
+
+const desk = siteNav.research_desk;
+const publicUpdates = (updates.updates || [])
+  .filter((u: any) => u.public)
+  .slice(-10)
+  .reverse();
+const bars = completion.progress_bars || {};
+const overall = completion.overall_project_completion?.percent ?? 0;
+---
+
+<BaseLayout
+  title="Research desk"
+  path="/research/"
+  description="Find active Constitutional Capitalism research, hypotheses, evidence, and Stage 1 spine work without hunting a flat menu."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">Working surface</span>
+      <h1>Research desk</h1>
+      <p class="lede">{desk.blurb}</p>
+    </header>
+
+    <section class="hub-section" aria-labelledby="now">
+      <h2 id="now">Working now</h2>
+      <ul class="link-board">
+        {
+          desk.working_now.map((link) => (
+            <li>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted" style="margin-top:1rem;">
+        Latest return: <code>{latestReturn.mission_id}</code> · Next:{" "}
+        <code>{latestReturn.next_slice}</code>
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="dash">
+      <h2 id="dash">Completion dashboard</h2>
+      <div class="dash-row">
+        <div class="dash-cell"><strong>{overall}%</strong><span>Overall</span></div>
+        <div class="dash-cell"><strong>{bars.skeleton_coverage_percent ?? 0}%</strong><span>Skeleton</span></div>
+        <div class="dash-cell"><strong>{bars.first_pass_coverage_percent ?? 0}%</strong><span>First-pass</span></div>
+        <div class="dash-cell"><strong>{bars.publication_completion_percent ?? 0}%</strong><span>Publication</span></div>
+        <div class="dash-cell"><strong>{bars.validation_completion_percent ?? 0}%</strong><span>Validation</span></div>
+      </div>
+      <p>
+        <a href="/status/">Full public status →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="passes">
+      <h2 id="passes">Stage 1 five-pass plan</h2>
+      <p class="lede">
+        Budget: {fivePass.budget}. Deploy every pass. Four deliverables each pass. No sprawl.
+      </p>
+      <ul class="link-board">
+        {
+          (fivePass.passes || []).map((p: any) => (
+            <li>
+              <a href={
+                p.id === "PASS_1" ? "/system/money-ownership/" :
+                p.id === "PASS_2" ? "/system/household-place/" :
+                p.id === "PASS_3" ? "/system/government-power/" :
+                p.id === "PASS_4" ? "/system/transition-measurement/" :
+                "/system/#pass-5"
+              }>
+                {p.id.replace("_", " ")} — {p.name} ({p.status})
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="money-spine" aria-labelledby="p1">
+      <h2 id="p1">Pass 1 architecture (Money & Ownership)</h2>
+      <div class="research-block">
+        <h3>{pass1.spine_name}</h3>
+        <p>{pass1.purpose}</p>
+        <p class="muted">{pass1.master_architecture_fragment?.one_sentence}</p>
+        <p>
+          <a href="/system/money-ownership/">Open Money & Ownership spine →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="hub-section" aria-labelledby="hyps">
+      <h2 id="hyps">Active hypotheses</h2>
+      <p class="muted">Research frameworks — not doctrine. COUNTABLE revenue remains gated.</p>
+
+      <div class="research-block" id="hyp-131">
+        <h3>HYP-131 — Prosperity-based revenue replacement</h3>
+        <p>
+          Move revenue away from taxing ordinary work and homeownership toward use, impact,
+          depletion, visitor, luxury, human-capital, value capture, enterprise, prosperity-fund,
+          and external income. Counted prosperity-engine dollars: <strong>$0</strong>. Food-hub
+          evidence stage closed at first-pass maturity.
+        </p>
+        <p>
+          Spine: <a href="/system/money-ownership/">Money & Ownership</a> ·
+          <a href="/essential-systems/">Essential systems</a> ·
+          <a href="/local-ownership/">Local ownership</a>
+        </p>
+      </div>
+
+      <div class="research-block" id="hyp-133">
+        <h3>HYP-133 — Human capital & education prosperity</h3>
+        <p>
+          Education converts Arkansas inheritance into greater human capability. Frame: bona fide
+          residency and public investment — not citizenship. Intergenerational capital layer locked;
+          Demand Map remains first empirical pass.
+        </p>
+        <p>
+          Spine: <a href="/system/household-place/">Household & Place</a> ·
+          <a href="/human-capital/">Human capital</a>
+        </p>
+      </div>
+
+      <div class="research-block" id="hyp-132">
+        <h3>HYP-132 — Population & wealth attraction / retention</h3>
+        <p>
+          Keep / return / attract pathways. Upside sensitivity only — not counted as replacement
+          revenue. Joins transition and measurement spine.
+        </p>
+        <p>
+          Spine: <a href="/system/transition-measurement/">Transition & Measurement</a>
+        </p>
+      </div>
+
+      <div class="research-block" id="hyp-134">
+        <h3>HYP-134 — AI abundance & distributed productive ownership</h3>
+        <p>
+          Parallel evidence-only until transition-indicator series are bound. Anti-rescue: cannot
+          become the convenient answer when revenue math fails. Quarantined from COUNTABLE stack.
+        </p>
+        <p>
+          Spine: <a href="/system/transition-measurement/">Transition & Measurement</a>
+        </p>
+      </div>
+
+      <div class="research-block" id="hyp-129">
+        <h3>HYP-129 — Local pilots / magnet hubs</h3>
+        <p>
+          Prove systems locally before expansion. Layered intervention packets; no locked pilot site
+          yet.
+        </p>
+        <p>
+          Related: <a href="/build-your-community/">Build your community</a>
+        </p>
+      </div>
+
+      <div class="research-block" id="hyp-130">
+        <h3>HYP-130 — Arkansas strategic capacity / needs</h3>
+        <p>
+          What Arkansas lacks and must build — gates External Income scale claims and sequences
+          human-capital demand.
+        </p>
+        <p>
+          Spine: <a href="/system/household-place/">Household & Place</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="hub-section" id="os-ownership" aria-labelledby="os">
+      <h2 id="os">Five operating-system questions</h2>
+      {
+        (desk.os_questions || []).map((q) => (
+          <div class="research-block" id={`os-${q.id}`}>
+            <h3>{q.label}</h3>
+            <p class="muted">Cross-cuts every spine. Elevated under the master coverage audit.</p>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" aria-labelledby="ev">
+      <h2 id="ev">Evidence surfaces</h2>
+      <ul class="link-board">
+        {
+          desk.evidence_surfaces.map((link) => (
+            <li>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="upd">
+      <h2 id="upd">Recent public updates</h2>
+      <ul class="stack">
+        {
+          publicUpdates.map((u: any) => (
+            <li>
+              <strong>{u.id}</strong> — {u.title}
+              <div class="muted">{u.summary}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p><a href="/updates/">All updates →</a></p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="all">
+      <h2 id="all">All system spines</h2>
+      <ul class="link-board">
+        {
+          (siteNav.spines || []).map((s) => (
+            <li>
+              <a href={s.href}>{s.title}</a>
+            </li>
+          ))
+        }
+        <li><a href="/system/">Master system map</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

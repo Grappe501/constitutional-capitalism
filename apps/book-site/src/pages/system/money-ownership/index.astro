@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import siteNav from "../../../../../../data/project/site_spine_navigation.json";
+
+const spine = (siteNav.spines || []).find((s) => s.slug === "money-ownership");
+if (!spine) throw new Error("Money ownership spine missing from site_spine_navigation.json");
+---
+
+<BaseLayout
+  title={spine.title}
+  path="/system/money-ownership/"
+  description={spine.blurb}
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 1 complete</span>
+      <h1>{spine.title}</h1>
+      <p class="lede">{spine.blurb}</p>
+      <p class="muted">Locks: {(spine.locks || []).join(" · ")}</p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Doctrine & system pages</h2>
+      <ul class="link-board">
+        {spine.links.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Research on this spine</h2>
+      <ul class="link-board">
+        {spine.research.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
+        <li><a href="/research/">Full research desk</a></li>
+        <li><a href="/system/">Back to system map</a></li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>What this spine answers</h2>
+      <p class="lede">
+        Production and outside demand enter Arkansas → ownership and competition rules determine who
+        captures surplus → credit and capital formation convert surplus into local assets → public
+        income engines claim reserved cash → State and Community ledgers fund services → anti-capture
+        rules keep winners from rewriting the rules.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
