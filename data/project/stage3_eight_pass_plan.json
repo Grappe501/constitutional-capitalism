@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "slice_id": "CC-STAGE-3-EIGHT-PASS-UNABRIDGED-PLAN-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-167",
-  "update_id": "UPD-180",
-  "status": "STAGE_3_PLAN_LOCKED_PASS_3_4_COMPLETE_PASS_3_5_NEXT",
+  "decision_id": "CC-DEC-168",
+  "update_id": "UPD-181",
+  "status": "STAGE_3_PLAN_LOCKED_PASS_3_5_COMPLETE_PASS_3_6_NEXT",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question": "Can we prove, explain, source, quantify and document this deeply enough to become the authoritative technical blueprint for Arkansas's future?",
   "prior_stages": {
@@ -121,16 +121,21 @@
       "number": "3.5",
       "slug": "pass-3-5",
       "name": "Government & Democratic Power",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "what_gets_finished": "Constitutional government, democracy, administration, justice, procurement, rights and anti-capture \u2014 unabridged",
-      "opens_only_after": "PASS_3_4"
+      "opens_only_after": "PASS_3_4",
+      "category_completion_percent": 100,
+      "href": "/build-progress/passes/pass-3-5/",
+      "surface_href": "/system/government-engine/",
+      "artifact": "data/project/stage3_pass35_government_democratic_power.json",
+      "changelog": "data/project/pass_changelogs/pass_3_5.json"
     },
     {
       "id": "PASS_3_6",
       "number": "3.6",
       "slug": "pass-3-6",
       "name": "Arkansas Productive Systems",
-      "status": "QUEUED",
+      "status": "NEXT",
       "what_gets_finished": "Food, energy, housing, healthcare, infrastructure, transportation and other real-economy systems \u2014 unabridged",
       "opens_only_after": "PASS_3_5"
     },

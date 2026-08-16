@@ -1,0 +1,941 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-3-PASS-3-5-GOVERNMENT-DEMOCRATIC-POWER-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-168",
+  "update_id": "UPD-181",
+  "pass_id": "PASS_3_5",
+  "pass_name": "Government & Democratic Power",
+  "status": "UNABRIDGED_CATEGORY_COMPLETE",
+  "category_completion_percent": 100,
+  "epistemic_class": "GOVERNMENT_DEMOCRATIC_POWER_CHAPTER_NOT_CONSTITUTIONAL_ADJUDICATION",
+  "governing_question": "How do we build a government powerful enough to protect rights, administer common institutions and maintain fair markets, while preventing government itself\u2014or accumulated private wealth\u2014from becoming powerful enough to dominate the people?",
+  "central_proposition": "Government possesses delegated power; the people possess sovereignty. Prosperity cannot justify unlimited government, and liberty cannot survive government unconstrained by law\u2014nor can concentrated economic resources purchase unequal sovereignty.",
+  "organizing_sentence": "Government & Democratic Power is the constitutional and democratic core of the unabridged system: purpose and limits of collective authority, popular sovereignty, rights, representation and direct democracy, subsidiarity, four roles with a Role Conflict Test, capable administration, public-dollar accountability, anti-capture architecture, justice relationships, Digital Due Process, Comprehensible Government, and a closed Accountability Loop.",
+  "prior_first_pass": {
+    "artifact": "data/project/stage2_pass24_government_operating_system.json",
+    "modules": [
+      "GO-01",
+      "GO-02",
+      "GO-03",
+      "GO-04",
+      "GO-05",
+      "GO-06",
+      "GO-07",
+      "GO-08",
+      "GO-09",
+      "GO-10"
+    ],
+    "role": "GO-01\u2013GO-10 first-pass working models integrated into unabridged narrative. Harvest \u2014 do not reopen."
+  },
+  "discipline": {
+    "vertical_only": true,
+    "countable_fiscal_claims_added": 0,
+    "countable_prosperity_engines_usd": 0,
+    "horizontal_expansion_frozen": true,
+    "no_constitutional_encyclopedia": true,
+    "no_criminal_justice_policy_book": true,
+    "no_sideways_legal_rabbit_holes": true,
+    "sideways_discoveries_routed": [
+      {
+        "topic": "State antitrust vs federal preemption adjudication",
+        "assign": "STAGE_4 (CX-M21-02)"
+      },
+      {
+        "topic": "Arkansas campaign/lobbying statute package design",
+        "assign": "STAGE_4"
+      },
+      {
+        "topic": "Productive-sector ownership conflicts in food/energy/housing",
+        "assign": "PASS_3_6"
+      },
+      {
+        "topic": "Transition sequencing of democratic reforms",
+        "assign": "PASS_3_7"
+      },
+      {
+        "topic": "Free-speech vs pay-to-play / direct democracy vs rights floors",
+        "assign": "STAGE_4 (CX-P3-01 / CX-P3-02)"
+      },
+      {
+        "topic": "Arkansas-first procurement vs dormant commerce clause",
+        "assign": "STAGE_4 (CX-P3-03)"
+      }
+    ]
+  },
+  "source_hierarchy_rule": {
+    "order": [
+      "Arkansas government / federal primary data",
+      "Audited financial documents / academic research",
+      "High-quality institutional research",
+      "Secondary reporting"
+    ],
+    "claim_classes_visible": [
+      "FACT",
+      "DERIVED_CALCULATION",
+      "MODEL",
+      "HYPOTHESIS",
+      "ILLUSTRATION",
+      "PROPOSAL",
+      "NATIONAL_PROXY"
+    ],
+    "doc": "docs/research/SOURCE_HIERARCHY.md"
+  },
+  "public_surface": "/system/government-engine/",
+  "joins": {
+    "arkansas_now": "/system/arkansas-state-baseline/",
+    "household": "/system/household-engine/",
+    "human_community": "/system/human-community-engine/",
+    "money_engine": "/system/money-engine/",
+    "transition_engine": "/system/transition-engine/",
+    "government_power_spine": "/system/government-power/",
+    "master_map": "/system/master-map/",
+    "pass_2_4": "/build-progress/passes/pass-2-4/"
+  },
+  "category_checklist": {
+    "baseline_evidence": {
+      "label": "Baseline evidence",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "problem_diagnosis": {
+      "label": "Problem diagnosis",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "existing_system_mechanics": {
+      "label": "Existing-system mechanics",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "cc_model": {
+      "label": "Constitutional Capitalism model",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "money_flows": {
+      "label": "Money flows",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "ownership": {
+      "label": "Ownership",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "household_effects": {
+      "label": "Household effects",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "government_market_roles": {
+      "label": "Government/market roles",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "arkansas_implementation": {
+      "label": "Arkansas-specific implementation",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "transition": {
+      "label": "Transition",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "dependencies": {
+      "label": "Dependencies",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "risks": {
+      "label": "Risks",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "counterarguments": {
+      "label": "Counterarguments",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "evidence": {
+      "label": "Evidence",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "visuals": {
+      "label": "Visuals",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "sources": {
+      "label": "Sources",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "open_validation_questions": {
+      "label": "Open validation questions",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    },
+    "cross_system_connections": {
+      "label": "Cross-system connections",
+      "status": "PRESENT",
+      "note": "Bound in Pass 3.5 Government & Democratic Power chapter"
+    }
+  },
+  "purpose_of_government": {
+    "title": "Purpose of government",
+    "spheres": [
+      {
+        "id": "INDIVIDUAL",
+        "label": "Individual sphere",
+        "rule": "Presumptively belongs to the person."
+      },
+      {
+        "id": "COMMUNITY_LOCAL",
+        "label": "Community / local sphere",
+        "rule": "Decisions appropriately made close to those affected."
+      },
+      {
+        "id": "MARKET_CIVIL",
+        "label": "Market / civil-society sphere",
+        "rule": "Voluntary association and exchange."
+      },
+      {
+        "id": "GOVERNMENT",
+        "label": "Government sphere",
+        "rule": "Legitimate collective authority exercised under constitutional constraint."
+      }
+    ],
+    "not_automatic_burden": [
+      "Why shouldn't government act?",
+      "Government should never act."
+    ],
+    "test": "What legitimate public purpose requires collective authority, at what level, under what constitutional power, with what safeguards and accountability?"
+  },
+  "popular_sovereignty": {
+    "title": "Popular sovereignty",
+    "principle": "Government possesses delegated power. The people possess sovereignty.",
+    "distinction": {
+      "delegation_of_authority": "Citizens authorize agents to exercise defined powers for a term.",
+      "transfer_of_sovereignty": "Citizens do not surrender political ownership for two or four years."
+    },
+    "join": "Direct-democracy architecture is the pressure-release when representation fails.",
+    "module": "GO-03"
+  },
+  "constitutional_order": {
+    "title": "Constitutional order and rights",
+    "central_principle": "Prosperity cannot justify unlimited government, and liberty cannot survive government unconstrained by law.",
+    "elements": [
+      "Separation of powers",
+      "Checks and balances",
+      "Due process",
+      "Equal protection",
+      "Speech and association",
+      "Property and contract rights",
+      "Privacy",
+      "Religious liberty",
+      "Voting / political participation",
+      "Procedural rights",
+      "Limits on state power"
+    ],
+    "purpose": "Explain how constitutional restraint fits the political-economic system \u2014 not a constitutional-law encyclopedia.",
+    "unresolved_to_stage_4": true,
+    "module": "GO-01"
+  },
+  "representative_democracy": {
+    "title": "Representative democracy",
+    "chain": [
+      "Citizens",
+      "Preferences",
+      "Representatives",
+      "Deliberation",
+      "Law",
+      "Administration",
+      "Outcomes",
+      "Accountability",
+      "Citizens"
+    ],
+    "failure_modes": [
+      "Uncompetitive elections",
+      "Distorted representation",
+      "Low participation",
+      "Gerrymandering",
+      "At-large dilution",
+      "Information asymmetry",
+      "Incumbency advantage",
+      "Money concentration",
+      "Administrative distance"
+    ],
+    "harvest_rule": "Substantial prior work exists \u2014 harvest; do not reopen.",
+    "module": "GO-02"
+  },
+  "direct_democracy": {
+    "title": "Direct democracy",
+    "status": "FOUNDATIONAL",
+    "principle": "Initiative and referendum are constitutional pressure-release mechanisms \u2014 not merely election procedures.",
+    "when": "When representative institutions become captured or systematically unresponsive, citizens retain a lawful mechanism for changing policy directly.",
+    "risks": [
+      "Money can capture ballot measures",
+      "Complex questions can be oversimplified",
+      "Majorities can threaten minority rights",
+      "Petition processes can be manipulated"
+    ],
+    "safeguard": "Direct democracy itself must operate inside constitutional protections and transparent rules.",
+    "contradiction": "CX-P3-02 OPEN_ASSIGNED Stage 4",
+    "module": "GO-03"
+  },
+  "subsidiarity": {
+    "title": "Subsidiarity",
+    "status": "WORKING_V1_SIGNATURE",
+    "principle": "Exercise power at the lowest level capable of performing the function effectively while protecting rights and legitimate statewide interests.",
+    "ladder": [
+      "Individual",
+      "Household",
+      "Community",
+      "Municipality",
+      "County / Region",
+      "State",
+      "Federal"
+    ],
+    "decision_test": [
+      "Who is affected?",
+      "Where are externalities?",
+      "Does scale create necessary efficiency?",
+      "Can local variation improve experimentation?",
+      "Are constitutional rights at risk?",
+      "Does fragmentation make the function impossible?"
+    ],
+    "not": "Simply saying 'local control.'",
+    "module": "GO-04"
+  },
+  "four_roles": {
+    "title": "Government's four roles",
+    "roles": [
+      {
+        "id": "RULEMAKER",
+        "label": "Rulemaker",
+        "meaning": "Creates general rules under which people and markets interact."
+      },
+      {
+        "id": "REFEREE",
+        "label": "Referee",
+        "meaning": "Enforces rules, rights, contracts and competition."
+      },
+      {
+        "id": "PROVIDER",
+        "label": "Provider",
+        "meaning": "Delivers justified public goods and services."
+      },
+      {
+        "id": "INVESTOR_OWNER",
+        "label": "Investor / Owner",
+        "meaning": "Deploys or owns productive capital where specifically justified."
+      }
+    ],
+    "prior_conflict_rule": "Roles should not be casually blended. Public ownership of a competitor while regulating rivals is a structural conflict for Stage 3 examination.",
+    "role_conflict_test": {
+      "title": "Role Conflict Test",
+      "status": "WORKING_V1",
+      "claim_class": "MODEL",
+      "when": "When government occupies multiple roles in the same market.",
+      "questions": [
+        "Can it write rules favoring itself?",
+        "Can competitors receive equal treatment?",
+        "Who independently audits performance?",
+        "Who prices risk?",
+        "Can failure be hidden through public subsidy?",
+        "Can citizens distinguish public purpose from political favoritism?"
+      ],
+      "join_3_4": "Especially important for public-income architecture from Pass 3.4."
+    }
+  },
+  "administrative_government": {
+    "title": "Administrative government",
+    "insight": "A complex state cannot operate entirely through elected officials.",
+    "distinction": {
+      "political_direction": "Elected/constitutional direction of ends and constraints.",
+      "professional_administration": "Merit-based execution of lawful authority."
+    },
+    "principles": [
+      "Merit",
+      "Competence",
+      "Institutional knowledge",
+      "Clear statutory authority",
+      "Transparent rulemaking",
+      "Performance measurement",
+      "Appeal",
+      "Audit",
+      "Sunset / review",
+      "Public accessibility"
+    ],
+    "goal": "Capable government with bounded authority \u2014 not simply smaller or larger government.",
+    "module": "GO-05"
+  },
+  "budget_procurement": {
+    "title": "Budgeting and procurement",
+    "chain": [
+      "Public Revenue",
+      "Budget",
+      "Appropriation",
+      "Program / Procurement / Investment",
+      "Recipient",
+      "Output",
+      "Outcome",
+      "Household / Community Effect",
+      "Measurement"
+    ],
+    "distinction": {
+      "spending_authority": "A dollar appropriated is not an accomplishment.",
+      "successful_outcome": "A contract executed is not an accomplishment.",
+      "question": "What public purpose was actually achieved?"
+    },
+    "procurement": "Receives competition/capture treatment established previously.",
+    "joins": [
+      "Pass 3.1 Budget X-Ray",
+      "Pass 3.4 Money Engine"
+    ],
+    "fy2026_gr_distributed_usd": 6493998981,
+    "claim_class": "FACT",
+    "module": "GO-06",
+    "contradiction": "CX-P3-03 OPEN_ASSIGNED Stage 4"
+  },
+  "capture_architecture": {
+    "title": "Anti-corruption and Capture Loop",
+    "loop": [
+      "Concentrated Wealth",
+      "Political Money",
+      "Government",
+      "Preferential Rules / Contracts / Assets",
+      "Greater Concentrated Wealth"
+    ],
+    "capture_mechanisms": [
+      "Campaign finance",
+      "Lobbying",
+      "Revolving doors",
+      "Conflicts of interest",
+      "Patronage",
+      "Procurement favoritism",
+      "Regulatory capture",
+      "Information control",
+      "Appointments",
+      "Monopoly / concentration"
+    ],
+    "circuit_breaker_families": [
+      {
+        "id": "transparency",
+        "label": "Transparency",
+        "interrupts": "Hidden influence and opaque spending"
+      },
+      {
+        "id": "competition",
+        "label": "Competition",
+        "interrupts": "Monopoly of office, contracts, and markets"
+      },
+      {
+        "id": "distributed_political_power",
+        "label": "Distributed political power",
+        "interrupts": "Single-chokepoint capture of elections or institutions"
+      },
+      {
+        "id": "conflict_rules",
+        "label": "Conflict rules",
+        "interrupts": "Self-dealing, revolving doors, dual-role abuse"
+      },
+      {
+        "id": "independent_oversight",
+        "label": "Independent oversight",
+        "interrupts": "Captured self-policing"
+      },
+      {
+        "id": "public_measurement",
+        "label": "Public measurement",
+        "interrupts": "Narrative success without household outcomes"
+      },
+      {
+        "id": "citizen_review",
+        "label": "Citizen review / recourse",
+        "interrupts": "No appeal from administrative or automated harm"
+      },
+      {
+        "id": "constitutional_rights",
+        "label": "Constitutional rights",
+        "interrupts": "Majority or agency erasure of liberty floors"
+      }
+    ],
+    "architecture_rule": "Explain where capture occurs and what type of control belongs at each point \u2014 not design 100 ethics laws.",
+    "module": "GO-08",
+    "contradictions": [
+      "CX-P3-01",
+      "CX-M21-02"
+    ]
+  },
+  "justice_public_safety": {
+    "title": "Justice and public safety",
+    "principle": "Public safety protects the conditions under which liberty, community and economic participation can exist.",
+    "systems": [
+      "Courts",
+      "Law enforcement",
+      "Corrections",
+      "Re-entry",
+      "Fire",
+      "EMS",
+      "Emergency response"
+    ],
+    "economic_join": "Fines, incarceration, criminal records, inability to work, family disruption and re-entry barriers affect household prosperity and community capital.",
+    "not": "Do not become a criminal-justice-policy book. Establish system relationships; route detailed reforms appropriately.",
+    "arkansas_doc_fy2026_allocation_a_usd": 628778821.0,
+    "claim_class": "FACT",
+    "module": "GO-07"
+  },
+  "digital_due_process": {
+    "title": "Data rights, privacy and AI government",
+    "status": "WORKING_V1_FORWARD_LOOKING",
+    "claim_class": "MODEL",
+    "flow": [
+      "NOTICE",
+      "DISCLOSURE OF CONSEQUENTIAL AUTOMATION",
+      "EXPLANATION",
+      "HUMAN ACCOUNTABILITY",
+      "ABILITY TO CHALLENGE",
+      "CORRECTION",
+      "AUDITABILITY"
+    ],
+    "distinction": {
+      "ai_assisting_employee": "AI may help a public employee decide.",
+      "ai_exercising_authority": "AI must not silently exercise state authority."
+    },
+    "principle": "AI may assist government. It must not silently become government.",
+    "prior_statement": "AI may assist government. It should not silently become government.",
+    "module": "GO-09"
+  },
+  "comprehensible_government": {
+    "title": "Comprehensible Government",
+    "insight": "Publishing 10,000 PDFs isn't meaningful transparency if citizens cannot understand them.",
+    "citizen_questions": [
+      "What did government promise?",
+      "What did it authorize?",
+      "What did it spend?",
+      "Who received it?",
+      "What was delivered?",
+      "What changed?",
+      "Did households / communities improve?",
+      "Who is accountable?"
+    ],
+    "joins": [
+      "Future public dashboards",
+      "Geographic Money Statements (Pass 3.4)",
+      "GO-10"
+    ]
+  },
+  "accountability_loop": {
+    "title": "Accountability Loop",
+    "status": "WORKING_V1",
+    "claim_class": "MODEL",
+    "upgrades": "Power Loop into a measurable closed system",
+    "sequence": [
+      "People",
+      "authorize \u2192 Government",
+      "administers \u2192 Public Resources",
+      "produce \u2192 Outcomes",
+      "measured against \u2192 Promises / Objectives",
+      "visible through \u2192 Public Information",
+      "citizens respond through \u2192 Elections / Direct Democracy / Courts / Oversight",
+      "\u2192 People"
+    ],
+    "rule": "The loop must close. Government that collects data but doesn't expose accountability hasn't closed it.",
+    "prior_power_loop": [
+      "People",
+      "Constitution",
+      "Elections / Direct Democracy",
+      "Government",
+      "Administration",
+      "Public Resources",
+      "Outcomes",
+      "Measurement",
+      "Accountability",
+      "People"
+    ],
+    "module": "GO-10"
+  },
+  "economic_power_political_independence": {
+    "title": "Economic power and political independence",
+    "join_3_4": true,
+    "arguments": [
+      "Extreme political concentration threatens economic liberty.",
+      "Extreme economic concentration can threaten political liberty."
+    ],
+    "objective": "The objective is not equality of wealth or equality of political opinion. It is preventing concentrated economic resources from purchasing unequal sovereignty.",
+    "distinction": "Legitimate economic success \u2260 political capture.",
+    "extraction_test_join": "/system/money-engine/#leakage"
+  },
+  "arkansas_evidence_bound": {
+    "fiscal_structure": [
+      {
+        "label": "FY2026 GR distributed (Allocation A)",
+        "value_usd": 6493998981,
+        "claim_class": "FACT",
+        "source": "AR DFA / Budget bridge"
+      },
+      {
+        "label": "DOC total FY2026 Allocation A",
+        "value_usd": 628778821.0,
+        "claim_class": "FACT",
+        "note": "~9.68% of distributed GR \u2014 corrections scale, not reform plan"
+      }
+    ],
+    "elections_participation": [
+      {
+        "label": "EAVS multi-year designated-county registration/ballots",
+        "period": "2016\u20132024",
+        "claim_class": "FACT",
+        "status": "BOUND",
+        "note": "Designated counties \u2014 not statewide fabricated turnout",
+        "artifact": "data/imports/arkansas-registered-voter-multiyear/designated_county_eavs_multiyear.json"
+      }
+    ],
+    "campaign_finance": [
+      {
+        "label": "OpenFEC locality probe (federal)",
+        "claim_class": "HYPOTHESIS",
+        "status": "COMPLETE_PILOT",
+        "note": "Does not cover Arkansas state/local campaign finance \u2014 Stage 4 gap"
+      },
+      {
+        "label": "National campaign funding concentration (CC-IND-D04)",
+        "value": 73,
+        "unit": "percent",
+        "claim_class": "NATIONAL_PROXY",
+        "note": "National dial \u2014 not Arkansas incidence"
+      }
+    ],
+    "transparency": [
+      {
+        "label": "FOIA / portal statistics",
+        "claim_class": "UNKNOWN",
+        "note": "No invented FOIA statistics"
+      }
+    ],
+    "gaps": [
+      "Arkansas SOS rolls / local election administration complete bind OPEN",
+      "Arkansas state/local campaign-finance & lobbying statute evidence package OPEN",
+      "FOIA request/fulfillment statistics OPEN",
+      "Ethics commission caseload metrics OPEN",
+      "Digital/data governance inventory OPEN",
+      "CX-M21-02 antitrust preemption adjudication deferred Stage 4"
+    ]
+  },
+  "integration_spine": {
+    "title": "Constitutional-democratic heart",
+    "chain": [
+      "Legitimate public purpose",
+      "Constitutional authorization",
+      "Subsidiarity placement",
+      "Role clarity + Conflict Test",
+      "Competent administration",
+      "Public resources",
+      "Measurable outcomes",
+      "Comprehensible information",
+      "Citizen response (elections / direct democracy / courts / oversight)",
+      "Returned sovereignty"
+    ],
+    "while": "Markets remain competitive (3.4) and capital cannot purchase the rules."
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Purpose of government",
+      "ref": "purpose_of_government"
+    },
+    {
+      "id": "S2",
+      "title": "Popular sovereignty",
+      "ref": "popular_sovereignty"
+    },
+    {
+      "id": "S3",
+      "title": "Constitutional order and rights",
+      "ref": "constitutional_order"
+    },
+    {
+      "id": "S4",
+      "title": "Representative democracy",
+      "ref": "representative_democracy"
+    },
+    {
+      "id": "S5",
+      "title": "Direct democracy",
+      "ref": "direct_democracy"
+    },
+    {
+      "id": "S6",
+      "title": "Subsidiarity",
+      "ref": "subsidiarity"
+    },
+    {
+      "id": "S7",
+      "title": "Four roles + Role Conflict Test",
+      "ref": "four_roles"
+    },
+    {
+      "id": "S8",
+      "title": "Administrative government",
+      "ref": "administrative_government"
+    },
+    {
+      "id": "S9",
+      "title": "Budgeting and procurement",
+      "ref": "budget_procurement"
+    },
+    {
+      "id": "S10",
+      "title": "Anti-corruption and Capture Loop",
+      "ref": "capture_architecture"
+    },
+    {
+      "id": "S11",
+      "title": "Justice and public safety",
+      "ref": "justice_public_safety"
+    },
+    {
+      "id": "S12",
+      "title": "Digital Due Process",
+      "ref": "digital_due_process"
+    },
+    {
+      "id": "S13",
+      "title": "Comprehensible Government",
+      "ref": "comprehensible_government"
+    },
+    {
+      "id": "S14",
+      "title": "Accountability Loop",
+      "ref": "accountability_loop"
+    },
+    {
+      "id": "S15",
+      "title": "Economic power and political independence",
+      "ref": "economic_power_political_independence"
+    }
+  ],
+  "counterarguments": [
+    {
+      "claim": "Direct democracy produces populism or bad technical policy.",
+      "strong_form": "Ballot measures are demagoguery that wrecks expert governance.",
+      "architecture_answer": "Direct democracy is a pressure-release inside constitutional rights and transparent rules\u2014not unconstrained majoritarianism. Complex technical domains still require administration under statute; initiative revises the statute.",
+      "unresolved": "STAGE_4 (CX-P3-02) rights-floor design"
+    },
+    {
+      "claim": "Subsidiarity creates unequal services.",
+      "strong_form": "Local variation means poor counties get worse government permanently.",
+      "architecture_answer": "Subsidiarity ladder includes rights protection and statewide interests; fragmentation that makes a function impossible escalates. Local experimentation \u2260 abandonment of floors.",
+      "unresolved": "STAGE_4 service-floor tests"
+    },
+    {
+      "claim": "Local majorities violate minority rights.",
+      "strong_form": "Subsidiarity and direct democracy empower oppression.",
+      "architecture_answer": "Constitutional rights and equal protection bind every level. Popular sovereignty does not authorize rights violations.",
+      "unresolved": "STAGE_4 enforcement design"
+    },
+    {
+      "claim": "Anti-corruption rules restrict political speech.",
+      "strong_form": "Any limit on money in politics is censorship.",
+      "architecture_answer": "CX-P3-01 remains OPEN. Architecture targets purchasing preferential rules/contracts/assets\u2014not equality of opinion. Circuit breakers are structural, not viewpoint bans.",
+      "unresolved": "STAGE_4 (CX-P3-01)"
+    },
+    {
+      "claim": "Professional bureaucracy becomes unaccountable.",
+      "strong_form": "Merit systems create a permanent deep state.",
+      "architecture_answer": "Distinguish political direction from professional administration; require statutory authority, appeal, audit, sunset/review, and public accessibility. Capable \u2260 sovereign.",
+      "unresolved": "STAGE_4 accountability metrics"
+    },
+    {
+      "claim": "Transparency violates privacy.",
+      "strong_form": "Open government forces disclosure of private lives.",
+      "architecture_answer": "Comprehensible Government answers public-purpose questions; Digital Due Process and privacy rights constrain what may be published about persons.",
+      "unresolved": "STAGE_4 disclosure taxonomy"
+    },
+    {
+      "claim": "AI can make government fairer than humans.",
+      "strong_form": "Replace discretion with algorithms and bias disappears.",
+      "architecture_answer": "AI may assist; it must not silently become government. Digital Due Process requires notice, explanation, human accountability, challenge, correction, auditability.",
+      "unresolved": "STAGE_4 standards"
+    },
+    {
+      "claim": "Extensive measurement becomes surveillance.",
+      "strong_form": "Accountability Loop is a panopticon.",
+      "architecture_answer": "Measurement targets public promises, spend, delivery, and outcomes\u2014not total population monitoring. Privacy and Digital Due Process bound data use.",
+      "unresolved": "STAGE_4 data-minimization rules"
+    },
+    {
+      "claim": "Government cannot fairly referee a market it owns.",
+      "strong_form": "Any public enterprise is inherently corrupt.",
+      "architecture_answer": "Role Conflict Test forces separation questions: self-favoring rules, equal treatment, independent audit, risk pricing, subsidy concealment, public-purpose clarity. Join 3.4 waterfall.",
+      "unresolved": "PASS_3_6 / STAGE_4 sector cases"
+    },
+    {
+      "claim": "Who watches the watchdogs?",
+      "strong_form": "Oversight institutions capture themselves.",
+      "architecture_answer": "Distributed breakers: transparency, competition, citizen review, constitutional rights, elections/direct democracy/courts. No single watchdog owns the loop.",
+      "unresolved": "STAGE_4 watchdog design"
+    },
+    {
+      "claim": "Public dashboards manipulate citizens through selective metrics.",
+      "strong_form": "Comprehensible Government is propaganda.",
+      "architecture_answer": "Require claim classes, source hierarchy, and Unknown beats fabricated precision. Dashboards expose methods and gaps\u2014not only favorable numbers.",
+      "unresolved": "STAGE_4 metric governance"
+    },
+    {
+      "claim": "What prevents Constitutional Capitalism itself from becoming the ideology through which future officials justify accumulating more power?",
+      "strong_form": "CC is a blank check for expansionary government.",
+      "architecture_answer": "Answer is structural, not rhetorical: constitutional rights floors; separation of powers; subsidiarity; Role Conflict Test; public-income waterfall/COUNTABLE discipline; Capture Loop circuit breakers; Comprehensible Government; closed Accountability Loop returning sovereignty to the people; and Stage 4 adversarial testing that can MODIFY/REPLACE/REMOVE architecture. No prosperity claim authorizes unlimited power.",
+      "unresolved": "STAGE_4 adversarial attack on CC power claims"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "sovereignty_delegation_v1",
+      "label": "Sovereignty & Delegation Map",
+      "href": "/system/government-engine/#sovereignty",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "subsidiarity_ladder_v1",
+      "label": "Subsidiarity Ladder",
+      "href": "/system/government-engine/#subsidiarity",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "four_roles_conflict_v1",
+      "label": "Government Four Roles + Conflict Test",
+      "href": "/system/government-engine/#roles",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "power_loop_evidence_v1",
+      "label": "Power Loop \u2014 Evidence Version",
+      "href": "/system/government-engine/#power-loop",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "capture_breakers_v2",
+      "label": "Capture Loop + Circuit Breakers",
+      "href": "/system/government-engine/#capture",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "public_dollar_v2",
+      "label": "Public Dollar Accountability Chain",
+      "href": "/system/government-engine/#dollar-chain",
+      "status": "SHIPPED"
+    },
+    {
+      "id": "digital_due_process_v1",
+      "label": "Digital Due Process Flow",
+      "href": "/system/government-engine/#digital-due-process",
+      "status": "SHIPPED"
+    }
+  ],
+  "open_validation_questions": [
+    {
+      "id": "OV-35-01",
+      "question": "How should Arkansas initiative/referendum rules harden rights floors without emptying citizen sovereignty (CX-P3-02)?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-35-02",
+      "question": "What is the lawful speech/finance boundary for pay-to-play hostility (CX-P3-01)?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-35-03",
+      "question": "What is Arkansas's lawful reach on concentrated markets given federal antitrust preemption (CX-M21-02)?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-35-04",
+      "question": "Can Role Conflict Test be operationalized for each public-income engine without Stage 4 sector cases?",
+      "assign": "PASS_3_6 / STAGE_4"
+    },
+    {
+      "id": "OV-35-05",
+      "question": "What Digital Due Process standards bind consequential automation under Arkansas and federal law?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-35-06",
+      "question": "How should Comprehensible Government dashboards prevent selective-metric manipulation?",
+      "assign": "STAGE_4"
+    },
+    {
+      "id": "OV-35-07",
+      "question": "Arkansas-first procurement vs dormant commerce clause (CX-P3-03)?",
+      "assign": "STAGE_4"
+    }
+  ],
+  "cross_system_connections": [
+    {
+      "to": "Money, Markets & Ownership",
+      "href": "/system/money-engine/",
+      "join": "Role Conflict Test + Extraction Test; public-income waterfall; GMS"
+    },
+    {
+      "to": "Arkansas NOW",
+      "href": "/system/arkansas-state-baseline/",
+      "join": "Budget X-Ray \u2192 Public Dollar Chain"
+    },
+    {
+      "to": "Household Prosperity",
+      "href": "/system/household-engine/",
+      "join": "Justice/economic consequences; accountability outcomes"
+    },
+    {
+      "to": "Human & Community Capital",
+      "href": "/system/human-community-engine/",
+      "join": "Civic capacity; place capability"
+    },
+    {
+      "to": "Transition Engine",
+      "href": "/system/transition-engine/",
+      "join": "Sequencing democratic/administrative reforms"
+    },
+    {
+      "to": "Government Power spine",
+      "href": "/system/government-power/",
+      "join": "Stage 1 dual-loop visual home"
+    }
+  ],
+  "certification": {
+    "category": "PASS_3_5",
+    "category_completion_percent": 100,
+    "unabridged_completion_percent_after": 63,
+    "overall_project_completion_percent_after": 66,
+    "calculation_note": "Unabridged 5/8 = 62.5 \u2192 63%. Overall 0.25*(100+100+63+0)=65.75 \u2192 66.",
+    "statement": "Pass 3.5 completes Government & Democratic Power unabridged: purpose/limits, popular sovereignty, constitutional rights architecture, representative and direct democracy, subsidiarity, four roles + Role Conflict Test, administrative model, budget/procurement accountability, Capture Loop, justice relationships, Digital Due Process, Comprehensible Government, Accountability Loop, economic-power/political-sovereignty join \u2014 seven visuals, Arkansas evidence, counterarguments, Stage 4 questions. No sideways legal rabbit holes. COUNTABLE +$0.",
+    "gates": {
+      "purpose_limits": true,
+      "popular_sovereignty": true,
+      "constitutional_rights": true,
+      "representative_democracy": true,
+      "direct_democracy": true,
+      "subsidiarity": true,
+      "four_roles_conflict_test": true,
+      "administrative_model": true,
+      "budget_procurement": true,
+      "capture_loop": true,
+      "justice_relationships": true,
+      "digital_due_process": true,
+      "comprehensible_government": true,
+      "accountability_loop": true,
+      "economic_political_join": true,
+      "counterarguments": true,
+      "arkansas_evidence": true,
+      "seven_visuals": true,
+      "claim_classes": true,
+      "stage4_questions": true,
+      "no_sideways_legal": true,
+      "countable_plus_zero": true
+    }
+  }
+}

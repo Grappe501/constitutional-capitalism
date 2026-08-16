@@ -1,25 +1,34 @@
 ---
+import chapter from "../../../../data/project/stage3_pass35_government_democratic_power.json";
+
+const seq = chapter.accountability_loop?.prior_power_loop?.length
+  ? chapter.accountability_loop.prior_power_loop
+  : [
+      "People",
+      "Constitution",
+      "Elections / Direct Democracy",
+      "Government",
+      "Administration",
+      "Public Resources",
+      "Outcomes",
+      "Measurement",
+      "Accountability",
+      "People",
+    ];
+const acct = chapter.accountability_loop?.sequence || [];
 ---
 
-<figure class="viz viz--power-working" data-viz="power-loop-working" id="power-loop">
+<figure class="viz viz--power-working" data-viz="power-loop-evidence" id="power-loop">
   <figcaption class="viz__cap">
-    <span class="viz__family">Power Loop</span>
-    <span class="viz__q">Who holds power · how does it return?</span>
+    <span class="viz__family">Power Loop — Evidence Version</span>
+    <span class="viz__q">Authority → resources → outcomes → accountability → people</span>
   </figcaption>
   <ol class="power-chain">
-    <li>People</li>
-    <li>Constitution</li>
-    <li>Elections / Direct Democracy</li>
-    <li>Government</li>
-    <li>Administration</li>
-    <li>Public Resources</li>
-    <li>Outcomes</li>
-    <li>Measurement</li>
-    <li>Accountability</li>
-    <li>People</li>
+    {seq.map((s: string) => <li>{s}</li>)}
   </ol>
-  <p class="viz__note">
-    Political power should circulate back to the people just as economic surplus circulates through
-    households and communities. Every arrow now has a GO module mechanism.
-  </p>
+  <p class="lede" style="margin-top:0.85rem;">Accountability Loop upgrade:</p>
+  <ol class="cap-ladder" style="margin-top:0.5rem;">
+    {acct.map((s: string) => <li>{s}</li>)}
+  </ol>
+  <p class="viz__note">{chapter.accountability_loop?.rule}</p>
 </figure>

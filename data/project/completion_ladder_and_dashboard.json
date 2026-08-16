@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-167",
-  "update_id": "UPD-180",
+  "decision_id": "CC-DEC-168",
+  "update_id": "UPD-181",
   "prior_decision_id": "CC-DEC-165",
   "status": "COMPLETION_SYSTEM_LOCKED_STAGE_3_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
@@ -72,14 +72,14 @@
       "name": "Unabridged Completion",
       "target": "Every category written to exhaustive Volume I source-of-truth quality",
       "status": "ACTIVE",
-      "current_work": "Pass 3.4 Money, Markets & Ownership COMPLETE. Next: Pass 3.5 Government & Democratic Power only.",
+      "current_work": "Pass 3.5 Government & Democratic Power COMPLETE. Next: Pass 3.6 Arkansas Productive Systems only.",
       "exit_gate": "Category-by-category unabridged completeness: 100% of Category N before starting Category N+1.",
       "rule": "Finish one category at a time. Dig deep inside the active category. Route sideways discoveries to later passes. No arbitrary page limit.",
       "volume": "Volume I \u2014 Unabridged Constitutional Capitalism System",
       "stage3_plan": "data/project/stage3_eight_pass_plan.json",
       "category_standard": "data/project/stage3_unabridged_category_standard.json",
-      "active_pass": "PASS_3_5",
-      "last_completed_pass": "PASS_3_4"
+      "active_pass": "PASS_3_6",
+      "last_completed_pass": "PASS_3_5"
     },
     {
       "id": "STAGE_4",
@@ -135,14 +135,14 @@
   "progress_bars": {
     "skeleton_coverage_percent": 100,
     "first_pass_coverage_percent": 100,
-    "publication_completion_percent": 50,
-    "unabridged_completion_percent": 50,
+    "publication_completion_percent": 63,
+    "unabridged_completion_percent": 63,
     "validation_completion_percent": 0,
     "notes": {
       "skeleton": "Stage 1 COMPLETE \u2014 100%. Horizontal expansion frozen.",
       "first_pass": "Stage 2 COMPLETE \u2014 50/50 = 100%. Certified Pass 2.6.",
       "publication": "Alias for Unabridged Completion (Volume I). Aggressive Stage 3 dial.",
-      "unabridged": "4 of 8 categories complete (Pass 3.1\u20133.4). Display label: Unabridged.",
+      "unabridged": "5 of 8 categories complete (Pass 3.1\u20133.5). Display label: Unabridged.",
       "validation": "Stage 4 not open; COUNTABLE engines remain $0; CX-M21-01/02 OPEN_ASSIGNED"
     }
   },
@@ -178,9 +178,9 @@
     {
       "id": "PASS_3_5",
       "label": "3.5 Government & Democratic Power",
-      "percent": 0,
-      "status": "QUEUED",
-      "href": null
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-3-5/"
     },
     {
       "id": "PASS_3_6",
@@ -205,9 +205,9 @@
     }
   ],
   "overall_project_completion": {
-    "percent": 63,
+    "percent": 66,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*unabridged + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+100+50+0)=62.5 \u2192 63",
+    "calculation": "0.25*(100+100+63+0)=65.75 \u2192 66",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression"
   },
@@ -218,8 +218,8 @@
   "active_stage": "STAGE_3",
   "active_stage2_pass": null,
   "last_completed_stage2_pass": "PASS_2_6",
-  "active_stage3_pass": "PASS_3_5",
-  "last_completed_stage3_pass": "PASS_3_4",
+  "active_stage3_pass": "PASS_3_6",
+  "last_completed_stage3_pass": "PASS_3_5",
   "stage_2_complete": true,
   "horizontal_expansion_frozen": true,
   "manager_scorecard": {

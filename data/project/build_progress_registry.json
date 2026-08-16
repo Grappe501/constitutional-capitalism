@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-167",
-  "update_id": "UPD-180",
+  "decision_id": "CC-DEC-168",
+  "update_id": "UPD-181",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": "PASS_3_5",
-  "next_objective": "Pass 3.5 \u2014 Government & Democratic Power. Dig deep vertically. Do not open 3.6 until 3.5 is 100%.",
+  "current_pass": "PASS_3_6",
+  "next_objective": "Pass 3.6 \u2014 Arkansas Productive Systems. Dig deep vertically. Do not open 3.7 until 3.6 is 100%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -355,6 +355,26 @@
           "label": "Public-Income Waterfall"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-168",
+      "title": "Pass 3.5 Government & Democratic Power unabridged complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-5/",
+      "links": [
+        {
+          "href": "/system/government-engine/",
+          "label": "Government & Democratic Power"
+        },
+        {
+          "href": "/build-progress/passes/pass-3-5/",
+          "label": "Pass 3.5 What Changed"
+        },
+        {
+          "href": "/system/government-engine/#digital-due-process",
+          "label": "Digital Due Process"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -404,9 +424,9 @@
       "number": "3.5",
       "slug": "pass-3-5",
       "name": "Government & Democratic Power",
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-3-5/",
-      "changelog": null,
+      "changelog": "data/project/pass_changelogs/pass_3_5.json",
       "spine_href": "/system/government-engine/"
     },
     {

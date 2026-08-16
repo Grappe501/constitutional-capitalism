@@ -1,22 +1,43 @@
 ---
+import chapter from "../../../../data/project/stage3_pass35_government_democratic_power.json";
+import bridge from "../../../../data/project/arkansas_money_engine_budget_bridge.json";
+
+const chain = chapter.budget_procurement?.chain || [];
+
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
 ---
 
 <figure class="viz viz--dollar-chain" data-viz="public-dollar-chain" id="dollar-chain">
   <figcaption class="viz__cap">
     <span class="viz__family">Public Dollar Accountability Chain</span>
-    <span class="viz__q">Where did the dollar go · what did it produce?</span>
+    <span class="viz__q">Join Budget X-Ray → outcomes → citizen accountability</span>
   </figcaption>
   <ol class="dollar-chain">
-    <li>Revenue</li>
-    <li>Budget</li>
-    <li>Appropriation</li>
-    <li>Procurement / Program / Investment</li>
-    <li>Delivery</li>
-    <li>Outcome</li>
-    <li>Measurement</li>
-    <li>Citizen Accountability</li>
+    {chain.map((s: string) => <li>{s}</li>)}
   </ol>
+  <div class="dash-row" style="margin-top:0.85rem;">
+    <div class="dash-cell">
+      <strong>{money(bridge.headline_now?.general_revenue_distributed_to_agencies_and_institutions_usd)}</strong>
+      <span>FY2026 GR distributed · FACT</span>
+    </div>
+    <div class="dash-cell">
+      <strong>{money(chapter.justice_public_safety?.arkansas_doc_fy2026_allocation_a_usd)}</strong>
+      <span>DOC Allocation A · FACT</span>
+    </div>
+    <div class="dash-cell">
+      <strong>$0</strong>
+      <span>COUNTABLE engines</span>
+    </div>
+  </div>
   <p class="viz__note">
-    Connects Money Engine spend to citizen audit — future home of the Arkansas Budget X-Ray.
+    Spending authority ≠ successful outcome. An appropriation or contract is not an accomplishment —
+    public purpose achieved is.
   </p>
 </figure>

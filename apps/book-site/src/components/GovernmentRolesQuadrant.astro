@@ -1,31 +1,32 @@
 ---
+import chapter from "../../../../data/project/stage3_pass35_government_democratic_power.json";
+
+const roles = chapter.four_roles?.roles || [];
+const test = chapter.four_roles?.role_conflict_test || {};
 ---
 
 <figure class="viz viz--roles" data-viz="government-roles-quadrant" id="roles">
   <figcaption class="viz__cap">
-    <span class="viz__family">Government Roles Quadrant</span>
-    <span class="viz__q">What role is government playing?</span>
+    <span class="viz__family">Government Four Roles + Conflict Test</span>
+    <span class="viz__q">What role · and can roles collide in the same market?</span>
   </figcaption>
   <ul class="roles-quad">
-    <li>
-      <strong>Rulemaker</strong>
-      <span>Establishes the rules under which people and markets interact</span>
-    </li>
-    <li>
-      <strong>Provider</strong>
-      <span>Provides genuine public goods and services where appropriate</span>
-    </li>
-    <li>
-      <strong>Investor / Owner</strong>
-      <span>Holds productive assets only where public ownership is specifically justified</span>
-    </li>
-    <li>
-      <strong>Referee</strong>
-      <span>Enforces rights, contracts, competition, and rules</span>
-    </li>
+    {
+      roles.map((r: any) => (
+        <li>
+          <strong>{r.label}</strong>
+          <span>{r.meaning}</span>
+        </li>
+      ))
+    }
   </ul>
+  <div class="fly-card" style="margin-top:0.85rem;">
+    <h3 style="margin:0 0 0.45rem;font-size:1rem;">{test.title}</h3>
+    <ul class="stack" style="margin:0;">
+      {(test.questions || []).map((q: string) => <li>{q}</li>)}
+    </ul>
+  </div>
   <p class="viz__note">
-    Do not casually blend roles. Owning a competitor while regulating rivals is a structural conflict
-    for Stage 3 examination.
+    Especially important for public-income architecture (Pass 3.4). Do not casually blend roles.
   </p>
 </figure>

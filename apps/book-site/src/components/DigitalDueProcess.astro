@@ -1,0 +1,23 @@
+---
+import chapter from "../../../../data/project/stage3_pass35_government_democratic_power.json";
+
+const flow = chapter.digital_due_process?.flow || [];
+---
+
+<figure class="viz viz--ladder" data-viz="digital-due-process" id="digital-due-process">
+  <figcaption class="viz__cap">
+    <span class="viz__family">Digital Due Process Flow</span>
+    <span class="viz__q">AI may assist government · it must not silently become government</span>
+  </figcaption>
+  <ol class="cap-ladder waterfall-steps">
+    {flow.map((step: string) => <li>{step}</li>)}
+  </ol>
+  <p class="lede" style="margin-top:0.85rem;">
+    <strong>{chapter.digital_due_process?.principle}</strong>
+  </p>
+  <ul class="link-board">
+    <li>AI assisting a public employee</li>
+    <li>AI effectively exercising state authority — forbidden without the flow above</li>
+  </ul>
+  <p class="viz__note">Working V1 — forward-looking constitutional contribution. Legal standards Stage 4.</p>
+</figure>
