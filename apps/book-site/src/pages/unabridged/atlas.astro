@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnabridgedNav from "../../components/UnabridgedNav.astro";
+import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+
+const atlas = chapter.asset_atlas || {};
+const assets = atlas.assets || [];
+---
+
+<BaseLayout
+  title="Visual Asset Atlas"
+  path="/unabridged/atlas/"
+  description="Inventory of Stage 3 visuals with status, claim support, and Stage 4 work."
+>
+  <article class="unabridged">
+    <header class="hub-banner">
+      <span class="chip chip--done">{atlas.asset_count} assets</span>
+      <h1>{atlas.title}</h1>
+      <p class="lede">{atlas.rule}</p>
+      <p class="muted">{atlas.canonical_note}</p>
+    </header>
+    <UnabridgedNav current="atlas" />
+
+    <section class="hub-section" aria-labelledby="semantics">
+      <h2 id="semantics">Visual semantics</h2>
+      <ul class="link-board">
+        {(atlas.visual_semantics || []).map((s: string) => <li>{s}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="assets">
+      <h2 id="assets">Asset inventory</h2>
+      <ul class="stack">
+        {
+          assets.map((a: any) => (
+            <li>
+              <strong>{a.label || a.id}</strong>
+              <div class="muted">
+                Part {a.part} · Pass {a.pass} · {a.status || "SHIPPED"}
+                {a.href ? (
+                  <>
+                    {" · "}
+                    <a href={a.href}>Open →</a>
+                  </>
+                ) : a.engine_href ? (
+                  <>
+                    {" · "}
+                    <a href={a.engine_href}>Engine →</a>
+                  </>
+                ) : null}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

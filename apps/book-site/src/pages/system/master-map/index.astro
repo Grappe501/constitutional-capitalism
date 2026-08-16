@@ -4,12 +4,15 @@ import ReadingModes from "../../../components/ReadingModes.astro";
 import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
 import MasterSystemMap from "../../../components/MasterSystemMap.astro";
 import audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
+import stage3 from "../../../../../../data/project/stage3_pass38_unabridged_integration.json";
 
 const modules = audit.modules || [];
 const recon = audit.inventory_reconciliation || {};
 const tests = audit.seven_integration_tests || [];
 const contradictions = audit.contradictions || {};
 const cert = audit.stage_2_certification || {};
+const s3 = stage3.stage_3_certification || {};
+const parts = stage3.frozen_architecture?.parts || [];
 
 const fieldOrder = [
   ["now", "NOW"],
@@ -39,16 +42,20 @@ function testChip(result?: string) {
 <BaseLayout
   title="Master System Map"
   path="/system/master-map/"
-  description="Stage 2 Pass 2.6 — Constitutional Capitalism Master System Map and whole-system integration."
+  description="Front door to the unabridged Constitutional Capitalism system — seven parts around Household Prosperity."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--done">Stage 2 certified</span>
-      <h1>{audit.engine_name}</h1>
-      <p class="lede">{audit.one_sentence}</p>
+      <span class="chip chip--done">Stage 3 certified · Front door</span>
+      <h1>Master System Map</h1>
+      <p class="lede">
+        Seven unabridged parts around Household Prosperity. Capability, money, ownership, authority,
+        information, physical systems, and time.
+      </p>
       <p class="muted">
-        {audit.decision_id} · {audit.update_id} · First-pass 50/50 ·{" "}
-        <a href="/build-progress/passes/pass-2-6/">What Changed & Certification →</a>
+        {s3.decision_id} · {s3.update_id} · {s3.verdict} ·{" "}
+        <a href="/unabridged/">Unabridged Reader →</a> ·{" "}
+        <a href="/build-progress/passes/pass-3-8/">Pass 3.8 →</a>
       </p>
     </header>
 
@@ -57,6 +64,19 @@ function testChip(result?: string) {
     <section class="hub-section" data-depth="understand" data-depth-keep>
       <h2>Master System Map</h2>
       <MasterSystemMap />
+      <h3>Parts I–VII</h3>
+      <ul class="link-board">
+        {
+          parts.map((p: any) => (
+            <li>
+              <a href={p.href}>
+                Part {p.roman} — {p.title}
+              </a>
+              <span class="muted"> · {p.subtitle}</span>
+            </li>
+          ))
+        }
+      </ul>
     </section>
 
     <section class="hub-section" data-depth="explore" aria-labelledby="recon">

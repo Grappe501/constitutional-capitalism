@@ -1962,7 +1962,7 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
 }
 
 @media (min-width: 800px) {
-  .master-map__ring {
+  .master-map__ring:not(.master-map__ring--seven) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "hc me"
@@ -1970,19 +1970,49 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
       "go tr";
   }
 
-  .master-map__ring > :nth-child(1) {
+  .master-map__ring:not(.master-map__ring--seven) > :nth-child(1) {
     grid-area: hc;
   }
-  .master-map__ring > :nth-child(2) {
+  .master-map__ring:not(.master-map__ring--seven) > :nth-child(2) {
     grid-area: me;
   }
-  .master-map__ring > :nth-child(3) {
+  .master-map__ring:not(.master-map__ring--seven) > :nth-child(3) {
     grid-area: center;
   }
-  .master-map__ring > :nth-child(4) {
+  .master-map__ring:not(.master-map__ring--seven) > :nth-child(4) {
     grid-area: go;
   }
-  .master-map__ring > :nth-child(5) {
+  .master-map__ring:not(.master-map__ring--seven) > :nth-child(5) {
+    grid-area: tr;
+  }
+
+  .master-map__ring--seven {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "now hc me"
+      "center center center"
+      "ps gov tr";
+  }
+
+  .master-map__ring--seven > :nth-child(1) {
+    grid-area: now;
+  }
+  .master-map__ring--seven > :nth-child(2) {
+    grid-area: hc;
+  }
+  .master-map__ring--seven > :nth-child(3) {
+    grid-area: me;
+  }
+  .master-map__ring--seven > :nth-child(4) {
+    grid-area: center;
+  }
+  .master-map__ring--seven > :nth-child(5) {
+    grid-area: ps;
+  }
+  .master-map__ring--seven > :nth-child(6) {
+    grid-area: gov;
+  }
+  .master-map__ring--seven > :nth-child(7) {
     grid-area: tr;
   }
 }
@@ -1997,6 +2027,15 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   text-decoration: none;
   color: inherit;
   font-weight: 650;
+}
+
+.master-map__part {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
 }
 
 .master-map__center {
@@ -2024,6 +2063,96 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   border-left: 3px solid var(--accent);
   background: var(--panel);
   font-size: 0.88rem;
+}
+
+.master-map__reader {
+  margin: 0;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.unabridged-nav ul {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.85rem;
+}
+
+.unabridged-nav a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.unabridged-nav a[aria-current="page"],
+.unabridged-nav a:hover {
+  color: var(--ink);
+}
+
+.part-pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.part-pager a {
+  text-decoration: none;
+}
+
+.toc-parts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.toc-part > a {
+  display: grid;
+  gap: 0.15rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.toc-part__roman {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.toc-sections {
+  margin: 0.4rem 0 0 1rem;
+  padding: 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.glossary-list {
+  display: grid;
+  gap: 0.35rem 1rem;
+}
+
+.glossary-list dt {
+  font-weight: 700;
+  margin-top: 0.85rem;
+}
+
+.glossary-list dd {
+  margin: 0;
+  color: var(--ink-soft);
 }
 
 

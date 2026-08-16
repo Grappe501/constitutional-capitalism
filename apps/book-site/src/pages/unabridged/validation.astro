@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnabridgedNav from "../../components/UnabridgedNav.astro";
+import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+
+const reg = chapter.validation_register || {};
+const items = reg.items || [];
+const cx = reg.cx_items || [];
+
+const byCat: Record<string, any[]> = {};
+for (const item of items) {
+  const cat = item.category || "ECONOMIC";
+  if (!byCat[cat]) byCat[cat] = [];
+  byCat[cat].push(item);
+}
+---
+
+<BaseLayout
+  title="Stage 4 Validation Register"
+  path="/unabridged/validation/"
+  description="Canonical Stage 4 queue harvested from Passes 3.1–3.7."
+>
+  <article class="unabridged">
+    <header class="hub-banner">
+      <span class="chip chip--queued">Stage 4 queue · {reg.item_count} questions</span>
+      <h1>{reg.title}</h1>
+      <p class="lede">
+        Every deferred challenge from 3.1–3.7 lands here. Stage 3 hands cleanly to Stage 4.
+      </p>
+    </header>
+    <UnabridgedNav current="validation" />
+
+    <section class="hub-section" aria-labelledby="cx">
+      <h2 id="cx">Open contradictions (CX)</h2>
+      <ul class="stack">
+        {
+          cx.map((c: any) => (
+            <li>
+              <strong>{c.id}</strong> — {c.topic}
+              <div class="muted">{c.disposition} · {c.note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      Object.entries(byCat)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([cat, list]) => (
+          <section class="hub-section" aria-labelledby={`cat-${cat}`}>
+            <h2 id={`cat-${cat}`}>
+              {cat} · {list.length}
+            </h2>
+            <ul class="stack">
+              {list.map((q: any) => (
+                <li>
+                  <strong>{q.id}</strong> — {q.question}
+                  <div class="muted">
+                    Origin Pass {q.origin_pass} · Part {q.origin_part} · Severity {q.severity} ·{" "}
+                    {q.stage_4_destination}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+    }
+  </article>
+</BaseLayout>

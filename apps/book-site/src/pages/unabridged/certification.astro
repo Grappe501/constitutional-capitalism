@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnabridgedNav from "../../components/UnabridgedNav.astro";
+import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+
+const cert = chapter.stage_3_certification || {};
+const gates = chapter.certification?.gates || {};
+const cx = chapter.contradiction_audit?.counts || {};
+---
+
+<BaseLayout
+  title="Stage 3 Certification Report"
+  path="/unabridged/certification/"
+  description="Formal Stage 3 certification: complete enough to test honestly."
+>
+  <article class="unabridged">
+    <header class="hub-banner">
+      <span class="chip chip--done">{cert.verdict}</span>
+      <h1>{cert.title}</h1>
+      <p class="lede">{cert.statement}</p>
+      <p class="muted">
+        {cert.decision_id} · {cert.update_id} · {cert.date}
+      </p>
+    </header>
+    <UnabridgedNav current="certification" />
+
+    <section class="hub-section" aria-labelledby="scorecard">
+      <h2 id="scorecard">Certification scorecard</h2>
+      <ul class="link-board">
+        <li>Structural completeness: <strong>{cert.structural_completeness}</strong></li>
+        <li>Unabridged completion: <strong>{cert.unabridged_completion}</strong></li>
+        <li>Claim integrity: <strong>{cert.claim_integrity}</strong></li>
+        <li>Evidence register: <strong>{cert.evidence_register}</strong></li>
+        <li>Money-flow integrity: <strong>{cert.money_flow_integrity}</strong></li>
+        <li>Household integration: <strong>{cert.household_integration}</strong></li>
+        <li>Power integration: <strong>{cert.power_integration}</strong></li>
+        <li>Transition sequencing: <strong>{cert.transition_sequencing}</strong></li>
+        <li>Architectural defects: <strong>{cert.architectural_defects}</strong></li>
+        <li>Stage 4 validation queue: <strong>{cert.stage_4_validation_queue}</strong></li>
+        <li>COUNTABLE integrity: <strong>{cert.countable_integrity}</strong></li>
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="cx">
+      <h2 id="cx">Contradiction dispositions</h2>
+      <ul class="link-board">
+        {Object.entries(cx).map(([k, v]) => (
+          <li>
+            <strong>{v as number}</strong> · {k}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="gates">
+      <h2 id="gates">Closure gates</h2>
+      <ul class="stack">
+        {
+          Object.entries(gates).map(([k, v]) => (
+            <li>
+              <span class={v ? "chip chip--done" : "chip chip--live"}>{v ? "PASS" : "FAIL"}</span>{" "}
+              {k.replaceAll("_", " ")}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="next">
+      <h2 id="next">What comes next</h2>
+      <p class="lede">
+        Stage 4 — Break It. We no longer ask what else Constitutional Capitalism should contain. We ask
+        where it is wrong.
+      </p>
+      <ul class="link-board">
+        <li><a href="/unabridged/validation/">Open Stage 4 validation queue →</a></li>
+        <li><a href="/unabridged/">Back to Unabridged Reader →</a></li>
+        <li><a href="/build-progress/passes/pass-3-8/">Pass 3.8 What Changed →</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

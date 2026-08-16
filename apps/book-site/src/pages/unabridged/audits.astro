@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnabridgedNav from "../../components/UnabridgedNav.astro";
+import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+
+const cx = chapter.contradiction_audit || {};
+const claim = chapter.claim_audit || {};
+const money = chapter.money_flow_audit || {};
+const power = chapter.power_audit || {};
+const hh = chapter.household_test || {};
+const time = chapter.time_test || {};
+
+function chipForDisposition(d?: string) {
+  if (d === "RESOLVED" || d === "FALSE CONTRADICTION") return "chip chip--done";
+  if (d === "ARCHITECTURAL DEFECT") return "chip chip--live";
+  return "chip chip--queued";
+}
+---
+
+<BaseLayout
+  title="Master Audits — Constitutional Capitalism"
+  path="/unabridged/audits/"
+  description="Contradiction, claim, money-flow, power, household, and time audits for Stage 3 closure."
+>
+  <article class="unabridged">
+    <header class="hub-banner">
+      <span class="chip chip--done">Architectural defects = 0</span>
+      <h1>Master Audits</h1>
+      <p class="lede">
+        Cross-tests of the unabridged work. Evidence-dependent items stay OPEN — STAGE 4. Only
+        architectural defects would block Stage 3.
+      </p>
+    </header>
+    <UnabridgedNav current="audits" />
+
+    <section class="hub-section" id="contradictions" aria-labelledby="cx-title">
+      <h2 id="cx-title">{cx.title}</h2>
+      <ul class="link-board">
+        {
+          Object.entries(cx.counts || {}).map(([k, v]) => (
+            <li>
+              <strong>{v as number}</strong> · {k}
+            </li>
+          ))
+        }
+      </ul>
+      <ul class="stack">
+        {
+          (cx.items || []).map((c: any) => (
+            <li>
+              <span class={chipForDisposition(c.disposition)}>{c.disposition}</span>{" "}
+              <strong>{c.id}</strong> — {c.topic}
+              <div class="muted">{c.note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="claims" aria-labelledby="claim-title">
+      <h2 id="claim-title">Master Claim Audit — {claim.status}</h2>
+      <p class="lede">Classes: {(claim.classes || []).join(" · ")}. Data state: {claim.data_state}.</p>
+      <h3>Language firewall</h3>
+      <ul class="link-board">
+        {(claim.firewall || []).map((f: string) => <li>{f}</li>)}
+      </ul>
+      <ul class="stack">
+        {
+          (claim.findings || []).map((f: any) => (
+            <li>
+              <span class="chip chip--done">{f.status}</span> {f.item}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="money" aria-labelledby="money-title">
+      <h2 id="money-title">Master Money-Flow Audit — {money.status}</h2>
+      <p class="lede">{(money.chain || [])[0]}</p>
+      <p class="muted">{(money.public_chain || [])[0]}</p>
+      <p>{money.note}</p>
+      <ul class="stack">
+        {
+          (money.registered_gaps || []).map((g: any) => (
+            <li>
+              {g.item} · <span class="muted">{g.disposition}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="power" aria-labelledby="power-title">
+      <h2 id="power-title">Master Power Audit — {power.status}</h2>
+      <p class="lede">{(power.authority_chain || [])[0]}</p>
+      <p class="muted">Capture overlay: {(power.capture_overlay || [])[0]}</p>
+      <ul class="stack">
+        {
+          (power.breaker_homes || []).map((b: any) => (
+            <li>
+              <strong>{b.breaker}</strong> → {b.home}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="household" aria-labelledby="hh-title">
+      <h2 id="hh-title">Master Household Test — {hh.status}</h2>
+      <p class="lede">{hh.rule}</p>
+      <ul class="stack">
+        {
+          (hh.sample_passes || []).map((s: any) => (
+            <li>
+              <strong>{s.mechanism}</strong> — {s.path}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" id="time" aria-labelledby="time-title">
+      <h2 id="time-title">Master Time Test — {time.status}</h2>
+      <ol class="link-board">
+        {(time.sequence || []).map((s: string) => <li>{s}</li>)}
+      </ol>
+      <p class="muted">
+        Circular dependencies found: {time.circular_dependencies_found}. {time.note}
+      </p>
+    </section>
+  </article>
+</BaseLayout>

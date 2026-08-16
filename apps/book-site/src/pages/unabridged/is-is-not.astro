@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnabridgedNav from "../../components/UnabridgedNav.astro";
+import chapter from "../../../../../data/project/stage3_pass38_unabridged_integration.json";
+
+const doc = chapter.what_constitutional_capitalism_is || {};
+---
+
+<BaseLayout
+  title="What Constitutional Capitalism Is / Is Not"
+  path="/unabridged/is-is-not/"
+  description="Intellectual boundary document for the complete unabridged architecture."
+>
+  <article class="unabridged">
+    <header class="hub-banner">
+      <span class="chip chip--done">Boundary document</span>
+      <h1>{doc.title}</h1>
+      <p class="lede">
+        Not marketing copy. An intellectual boundary so later chapters, critics—and ourselves—cannot
+        gradually change the theory without noticing.
+      </p>
+    </header>
+    <UnabridgedNav current="is-is-not" />
+
+    <section class="hub-section" aria-labelledby="is">
+      <h2 id="is">What it is</h2>
+      <ul class="stack">
+        {(doc.is || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="is-not">
+      <h2 id="is-not">What it is not</h2>
+      <ul class="stack">
+        {(doc.is_not || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

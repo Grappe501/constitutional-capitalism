@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-170",
-  "update_id": "UPD-183",
+  "decision_id": "CC-DEC-171",
+  "update_id": "UPD-184",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": "PASS_3_8",
-  "next_objective": "Pass 3.8 \u2014 Unabridged Integration & Editorial Closure. Audit 3.1\u20133.7, close cross-category gaps, certify Volume I ready for Stage 4 attack.",
+  "current_pass": "STAGE_4",
+  "next_objective": "Stage 4 \u2014 Break It. Attack economics, law, assumptions, fiscal math, incentives, resilience, unintended consequences, implementation capacity, and political durability. Do not expand content architecture.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -415,6 +415,26 @@
           "label": "Replacement Readiness Gate"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-171",
+      "title": "Pass 3.8 Unabridged Integration & Stage 3 Certification",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-8/",
+      "links": [
+        {
+          "href": "/unabridged/",
+          "label": "Unabridged Reader"
+        },
+        {
+          "href": "/unabridged/certification/",
+          "label": "Stage 3 Certification"
+        },
+        {
+          "href": "/system/master-map/",
+          "label": "Master Map"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -494,10 +514,10 @@
       "number": "3.8",
       "slug": "pass-3-8",
       "name": "Unabridged Integration & Editorial Closure",
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-3-8/",
-      "changelog": null,
-      "spine_href": "/system/master-map/"
+      "changelog": "data/project/pass_changelogs/pass_3_8.json",
+      "spine_href": "/unabridged/"
     }
   ]
 }
