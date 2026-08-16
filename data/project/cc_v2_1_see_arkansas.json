@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-1-SEE-ARKANSAS-1.0",
+  "decision_id": "CC-DEC-195",
+  "update_id": "UPD-208",
+  "generated_at": "2026-08-16",
+  "status": "IN_PROGRESS",
+  "gate": "V2.1",
+  "title": "SEE ARKANSAS",
+  "governing_question": "If every elected official disappeared tomorrow and we had to explain to a new group exactly how Arkansas presently functions—who governs, who pays, where the money goes, what Arkansas owns, what households experience, what Arkansas produces, and what it depends upon—could we do it?",
+  "finished_when": "Answer to governing question is yes — via closed objects, not word count.",
+  "discipline": {
+    "describe_not_redesign": true,
+    "no_recommendations_in_baseline_language": true,
+    "no_moral_spending_labels": true,
+    "descriptive_expenditure_classes_for_later": [
+      "Current Service",
+      "Transfer",
+      "Maintenance",
+      "Human Capability",
+      "Physical Capital",
+      "Risk Protection",
+      "Administration",
+      "Debt/Legacy Obligation",
+      "Economic Development",
+      "Unknown/Mixed"
+    ],
+    "historical_budget_questions": [
+      "NOMINAL",
+      "REAL",
+      "PER PERSON",
+      "CASELOAD",
+      "SERVICE",
+      "FUNDING MIX",
+      "STRUCTURAL"
+    ],
+    "forbidden": [
+      "Recommendations",
+      "Redesign",
+      "New CC doctrine",
+      "Revenue mechanisms",
+      "Tax proposals",
+      "Public-bank exploration",
+      "Pilots",
+      "Agency restructuring"
+    ]
+  },
+  "evidence_standard": {
+    "hierarchy": [
+      "Arkansas Constitution & statutes",
+      "Official state fiscal documents",
+      "Official federal statistical series (Census, BLS, BEA, USDA, CMS, EIA, Fed as applicable)",
+      "Official agency reports / open data",
+      "Peer-reviewed / audited secondary (labeled)",
+      "ILLUSTRATION / MODEL (never FACT without gate)"
+    ],
+    "record_fields": [
+      "as_of",
+      "measurement_year",
+      "source",
+      "geography",
+      "definition"
+    ]
+  },
+  "progress": {
+    "closure_objects_total": 152,
+    "closure_objects_closed": 44,
+    "v2_1_completion_percent": 28.9,
+    "v2_blueprint_percent": 7.2,
+    "note": "Blueprint % derives from object inventory (V2.1 ≈ 25% of blueprint when 152/152)."
+  },
+  "passes": [
+    {
+      "id": "V2.1.1",
+      "slug": "people-households-place",
+      "name": "People, Households & Place",
+      "status": "COMPLETE",
+      "exit": "Arkansas' people/place baseline + household archetype framework + geographic comparison framework.",
+      "href": "/v2/see-arkansas/people-households-place/",
+      "what_changed": "/v2/see-arkansas/what-changed/v2-1-1/"
+    },
+    {
+      "id": "V2.1.2",
+      "slug": "government-money",
+      "name": "Government & Money",
+      "status": "NEXT",
+      "exit": "Arkansas Money Map + Government Function Map + Historical Budget Panel + dependency map.",
+      "href": null
+    },
+    {
+      "id": "V2.1.3",
+      "slug": "production-ownership-capital",
+      "name": "Production, Ownership & Capital",
+      "status": "QUEUED",
+      "exit": "Production Map + Ownership Map + Capital Formation Map + External Dependency/Income baseline.",
+      "href": null
+    },
+    {
+      "id": "V2.1.4",
+      "slug": "institutions-power-constraints",
+      "name": "Institutions, Power & Constraints",
+      "status": "QUEUED",
+      "exit": "Arkansas Power Map + Authority/Constraint Matrix + federal/local dependency map.",
+      "href": null
+    },
+    {
+      "id": "V2.1.5",
+      "slug": "whole-state-xray",
+      "name": "Whole-State X-Ray",
+      "status": "QUEUED",
+      "exit": "ARKANSAS NOW — OPERATING X-RAY interactive join of 2.1.1–2.1.4.",
+      "href": null
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import cards from "@data/project/cc_v2_1_home_baseline_cards.json";
+import objects from "@data/project/cc_v2_1_closure_objects.json";
+
+export function getStaticPaths() {
+  return (cards.cards || []).map((c: any) => ({
+    params: { id: c.home_id },
+  }));
+}
+
+const { id } = Astro.params;
+const card = (cards.cards || []).find((c: any) => c.home_id === id);
+const fields = card?.fields || {};
+const objs = (objects.objects || []).filter((o: any) => o.home_id === id);
+const order = ["what_it_is_now", "who_what_it_serves", "who_controls_it", "how_funded", "scale", "geography", "key_assets", "dependencies", "major_obligations", "best_available_evidence", "known", "unknown", "confidence", "v2_relevance", "source_trail"];
+const labels: Record<string, string> = {
+  what_it_is_now: "What it is now",
+  who_what_it_serves: "Who/what it serves",
+  who_controls_it: "Who controls it",
+  how_funded: "How it is funded",
+  scale: "Scale",
+  geography: "Geography",
+  key_assets: "Key assets",
+  dependencies: "Dependencies",
+  major_obligations: "Major obligations",
+  best_available_evidence: "Best available evidence",
+  known: "Known",
+  unknown: "Unknown",
+  confidence: "Confidence",
+  v2_relevance: "V2 relevance",
+  source_trail: "Source trail",
+};
+---
+
+<BaseLayout
+  title={card ? `${card.label} — baseline card` : "Home card"}
+  path={`/v2/see-arkansas/homes/${id}/`}
+  description="V2.1 baseline card — describe Arkansas as it is."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--queued">{card?.status || "—"}</span>
+      <h1>{card?.label || id}</h1>
+      <p class="muted">
+        Home <code>{id}</code>
+        {card?.pass_owner && <> · pass {card.pass_owner}</>}
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Closure objects</h2>
+      <ul class="stack">
+        {
+          objs.map((o: any) => (
+            <li>
+              <span
+                class={
+                  o.status === "COMPLETE" || o.status === "UNKNOWN-COMPLETE"
+                    ? "chip chip--done"
+                    : "chip chip--queued"
+                }
+              >
+                {o.status}
+              </span>{" "}
+              <strong>
+                {o.type} — {o.type_label}
+              </strong>
+              <div class="muted">{o.note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Baseline card</h2>
+      <ul class="stack">
+        {
+          order.map((key) => {
+            const val = fields[key];
+            const display = Array.isArray(val) ? val.join(" · ") : val;
+            return (
+              <li>
+                <strong>{labels[key] || key}</strong>
+                <div>{display || "—"}</div>
+              </li>
+            );
+          })
+        }
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/homes/">All homes →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

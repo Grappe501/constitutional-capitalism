@@ -1,0 +1,184 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_1_1_people_households_place.json";
+import geo from "@data/project/cc_v2_1_1_geographic_lens.json";
+import arch from "@data/project/cc_v2_1_1_household_archetypes.json";
+
+const rows = pass.designated_county_panel?.rows || [];
+const metrics = pass.statewide_metrics || [];
+const patterns = pass.patterns_observed || [];
+const lens = geo.lens || [];
+const regions = geo.regions || [];
+const archetypes = arch.archetypes || [];
+
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+---
+
+<BaseLayout
+  title="V2.1.1 — People, Households & Place"
+  path="/v2/see-arkansas/people-households-place/"
+  description="Arkansas' people/place baseline, household archetypes, and geographic comparison lens. Description only."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">PASS COMPLETE</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_move}</p>
+      <p class="muted">
+        {pass.slice_id} · {pass.decision_id} · {pass.update_id} · recommendations:{" "}
+        <strong>0</strong>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Exit criteria</h2>
+      <ul class="link-board">
+        <li><span class="chip chip--done">YES</span> People/place baseline</li>
+        <li><span class="chip chip--done">YES</span> Household archetype framework</li>
+        <li><span class="chip chip--done">YES</span> Geographic comparison framework</li>
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/what-changed/v2-1-1/">What Changed →</a>
+        {" · "}
+        <a href="/v2/see-arkansas/">V2.1 hub →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Statewide anchors (FACT)</h2>
+      <ul class="stack">
+        {
+          metrics.map((m: any) => (
+            <li>
+              <strong>{m.label}</strong>: {typeof m.value === "number" && m.unit === "USD" ? money(m.value) : num(m.value)}
+              <div class="muted">
+                {m.measurement_year} · {m.geography} · {m.source}
+                <br />
+                Definition: {m.definition}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Geographic lens (locked)</h2>
+      <p class="lede">{geo.rule}</p>
+      <ol class="stack">
+        {lens.map((l: any) => (
+          <li>
+            <strong>
+              {l.level}. {l.label}
+            </strong>
+          </li>
+        ))}
+      </ol>
+      <h3>Functional regions (comparison labels, not jurisdictions)</h3>
+      <ul class="stack">
+        {regions.map((r: any) => (
+          <li>
+            <strong>{r.label}</strong>
+            <div class="muted">{(r.settlement_emphasis || []).join(" · ")}</div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Designated-county scaffold</h2>
+      <p class="muted">
+        {pass.designated_county_panel?.measurement}. Sources:{" "}
+        {(pass.designated_county_panel?.sources || []).join(" · ")}. Not 75 county books.
+      </p>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>County</th>
+              <th>Pop 2020</th>
+              <th>Pop 2023</th>
+              <th>Δ</th>
+              <th>Poverty 2023</th>
+              <th>MHI 2023</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              rows.map((r: any) => (
+                <tr>
+                  <td>{r.county}</td>
+                  <td>{num(r.pop_2020)}</td>
+                  <td>{num(r.pop_2023)}</td>
+                  <td>{r.delta > 0 ? `+${num(r.delta)}` : num(r.delta)}</td>
+                  <td>{r.poverty_2023}%</td>
+                  <td>{money(r.mhi_2023)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="hub-section">
+      <h2>Household archetypes (descriptive)</h2>
+      <p class="lede">{arch.rule}</p>
+      <ul class="stack">
+        {
+          archetypes.map((a: any) => (
+            <li>
+              <strong>
+                {a.id} — {a.label}
+              </strong>
+              <div class="muted">
+                Settlement: {(a.typical_settlement || []).join(", ")}
+                <br />
+                Composition: {a.composition}
+                <br />
+                Income position: {a.income_position}
+                <br />
+                Pressure surfaces: {(a.pressure_surfaces || []).join(", ")}
+                <br />
+                Geographic sensitivity: {a.geographic_sensitivity}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Patterns observed (not recommendations)</h2>
+      <ul class="stack">
+        {
+          patterns.map((p: any) => (
+            <li>
+              <strong>{p.id}</strong>
+              <div>{p.observation}</div>
+              <div class="muted">Not: {p.not}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Deferred</h2>
+      <ul class="stack">
+        {(pass.deferred || []).map((d: string) => <li>{d}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

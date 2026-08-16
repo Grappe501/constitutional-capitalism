@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-1-1-HOUSEHOLD-ARCHETYPES-1.0",
+  "decision_id": "CC-DEC-195",
+  "update_id": "UPD-208",
+  "generated_at": "2026-08-16",
+  "status": "LOCKED",
+  "rule": "Archetypes are descriptive lenses for incidence later — not ideals and not recommendations.",
+  "fields_per_archetype": [
+    "id",
+    "label",
+    "typical_settlement",
+    "composition",
+    "income_position",
+    "pressure_surfaces",
+    "geographic_sensitivity"
+  ],
+  "archetypes": [
+    {
+      "id": "HH-A",
+      "label": "Wage-earning family with children",
+      "typical_settlement": [
+        "suburban",
+        "rural",
+        "urban"
+      ],
+      "composition": "Two adults or one adult + dependents",
+      "income_position": "Near or below statewide median",
+      "pressure_surfaces": [
+        "housing",
+        "childcare/time",
+        "healthcare",
+        "transportation",
+        "food"
+      ],
+      "geographic_sensitivity": "High — childcare and commute differ sharply by place"
+    },
+    {
+      "id": "HH-B",
+      "label": "Single earner / single adult household",
+      "typical_settlement": [
+        "urban",
+        "suburban",
+        "rural"
+      ],
+      "composition": "One adult, with or without dependents",
+      "income_position": "Often below median; higher rent share risk",
+      "pressure_surfaces": [
+        "housing",
+        "healthcare",
+        "transportation",
+        "income volatility"
+      ],
+      "geographic_sensitivity": "High in rural areas with thin job density"
+    },
+    {
+      "id": "HH-C",
+      "label": "Fixed-income older household",
+      "typical_settlement": [
+        "rural",
+        "suburban"
+      ],
+      "composition": "Adult 65+; owner-occupant common",
+      "income_position": "Fixed income; asset rich / cash poor possible",
+      "pressure_surfaces": [
+        "healthcare",
+        "energy",
+        "property tax liquidity",
+        "accessibility"
+      ],
+      "geographic_sensitivity": "High where hospital/pharmacy distance rises"
+    },
+    {
+      "id": "HH-D",
+      "label": "Rural working household tied to production",
+      "typical_settlement": [
+        "rural"
+      ],
+      "composition": "Farm, plant, logistics, or trades employment",
+      "income_position": "Varies with commodity/plant cycles",
+      "pressure_surfaces": [
+        "fuel/transport",
+        "healthcare access",
+        "broadband",
+        "childcare"
+      ],
+      "geographic_sensitivity": "Very high — local employer concentration"
+    },
+    {
+      "id": "HH-E",
+      "label": "Metro professional dual-earner household",
+      "typical_settlement": [
+        "urban",
+        "suburban"
+      ],
+      "composition": "Two earners; NWA or Central corridor common",
+      "income_position": "Above statewide median",
+      "pressure_surfaces": [
+        "housing price growth",
+        "childcare",
+        "time"
+      ],
+      "geographic_sensitivity": "Moderate — metro housing markets dominate"
+    },
+    {
+      "id": "HH-F",
+      "label": "Transfer-supported / disability-constrained household",
+      "typical_settlement": [
+        "rural",
+        "urban"
+      ],
+      "composition": "Adults with disability or care responsibility",
+      "income_position": "Often below median; benefit cliffs matter",
+      "pressure_surfaces": [
+        "healthcare",
+        "accessibility",
+        "human_services",
+        "housing"
+      ],
+      "geographic_sensitivity": "Very high where HPSA and transit are thin"
+    }
+  ]
+}

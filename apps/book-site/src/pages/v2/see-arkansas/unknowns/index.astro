@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import reg from "@data/project/cc_v2_unknown_register.json";
+
+const entries = reg.entries || [];
+---
+
+<BaseLayout
+  title="V2 Unknown Register"
+  path="/v2/see-arkansas/unknowns/"
+  description="Meaningful unknowns for SEE ARKANSAS — BLOCKING vs NON-BLOCKING. Non-blocking cannot hold V2.1 open."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">LIVE</span>
+      <h1>Unknown Register</h1>
+      <p class="lede">{reg.rule}</p>
+      <p class="muted">{reg.slice_id} · {entries.length} entries</p>
+    </header>
+
+    <section class="hub-section">
+      <ul class="stack">
+        {
+          entries.map((e: any) => (
+            <li>
+              <span
+                class={e.class === "BLOCKING" ? "chip chip--live" : "chip chip--queued"}
+              >
+                {e.class}
+              </span>{" "}
+              <strong>{e.id}</strong>
+              <div>{e.question}</div>
+              <div class="muted">
+                Why unknown: {e.why_unknown}
+                <br />
+                Would resolve: {e.evidence_that_would_resolve}
+                <br />
+                V2.2 requires resolution: {e.v2_2_requires_resolution ? "yes" : "no"}
+                {e.deferred_to && (
+                  <>
+                    <br />
+                    Deferred to: {e.deferred_to}
+                  </>
+                )}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/">V2.1 hub →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

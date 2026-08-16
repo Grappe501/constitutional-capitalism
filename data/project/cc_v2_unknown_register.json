@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
+  "decision_id": "CC-DEC-195",
+  "update_id": "UPD-208",
+  "generated_at": "2026-08-16",
+  "status": "LIVE",
+  "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
+  "classes": [
+    "BLOCKING",
+    "NON-BLOCKING"
+  ],
+  "entries": [
+    {
+      "id": "UNK-V211-001",
+      "question": "What are Arkansas' complete county-to-county and state-to-state migration origin/destination flows for recent years?",
+      "why_unknown": "PEP shows net change; full flow matrices not yet bound as FACT series.",
+      "evidence_that_would_resolve": "Census migration/flow tables or IRS SOI migration bound with definitions.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "demographics"
+      ]
+    },
+    {
+      "id": "UNK-V211-002",
+      "question": "What is comparable housing cost burden (30%/50% income) for all 75 counties on one vintage?",
+      "why_unknown": "ACS county estimates exist but not yet normalized into V2.1 cards for all counties.",
+      "evidence_that_would_resolve": "ACS table B25070/B25106 county extract with MOE.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "housing",
+        "household_economics"
+      ]
+    },
+    {
+      "id": "UNK-V211-003",
+      "question": "What is household energy burden by county and settlement type?",
+      "why_unknown": "No single Arkansas primary panel bound yet.",
+      "evidence_that_would_resolve": "EIA RECS / ACS utility cost joins with definition lock.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "energy",
+        "household_economics"
+      ]
+    },
+    {
+      "id": "UNK-V211-004",
+      "question": "What is address-level broadband availability vs ACS subscription for rural counties?",
+      "why_unknown": "FCC fabric vs ACS measure different things; not yet dual-bound.",
+      "evidence_that_would_resolve": "FCC Broadband Data Collection + ACS S2801 with definition note.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "digital_infrastructure"
+      ]
+    },
+    {
+      "id": "UNK-V211-005",
+      "question": "What are current DHS caseloads and dollars by major program and county?",
+      "why_unknown": "Deferred to Government & Money pass (V2.1.2) by design.",
+      "evidence_that_would_resolve": "DHS/official program reports + appropriation joins.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "human_services"
+      ],
+      "deferred_to": "V2.1.2"
+    },
+    {
+      "id": "UNK-V211-006",
+      "question": "What is disability prevalence and accessibility economics by county?",
+      "why_unknown": "ACS disability tables not yet bound into V2.1 household cards.",
+      "evidence_that_would_resolve": "ACS S1810 county extract.",
+      "v2_2_requires_resolution": false,
+      "class": "NON-BLOCKING",
+      "home_ids": [
+        "household_economics",
+        "healthcare"
+      ]
+    }
+  ]
+}

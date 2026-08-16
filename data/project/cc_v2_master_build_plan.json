@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-MASTER-BUILD-PLAN-1.0",
-  "decision_id": "CC-DEC-194",
-  "update_id": "UPD-207",
+  "decision_id": "CC-DEC-195",
+  "update_id": "UPD-208",
   "generated_at": "2026-08-16",
-  "status": "MAP_FROZEN_READY_FOR_V2_1",
+  "status": "V2_1_IN_PROGRESS",
   "title": "Constitutional Capitalism v2.0 — Master Build Plan",
   "purpose": "Define what v2.0 means at 100% before researching, redesigning, funding, or piloting.",
   "foundational_system": {
@@ -19,8 +19,8 @@
   },
   "blueprint": {
     "label": "V2 BLUEPRINT",
-    "percent": 0,
-    "status": "DEFINED_NOT_STARTED",
+    "percent": 7.2,
+    "status": "IN_PROGRESS",
     "completion_definition": "100% when all five gates pass: SEE → REDESIGN → FUND → LEGALIZE & BREAK → ROADMAP, measured by resolved objects — not words written.",
     "separate_from": [
       "FOUNDATIONAL SYSTEM v1.0 — COMPLETE",
@@ -41,13 +41,16 @@
       "name": "SEE ARKANSAS",
       "question": "How does Arkansas actually work today?",
       "completion_result": "Government + fiscal + household + productive-capital baseline",
-      "status": "OPEN_NOT_STARTED",
+      "status": "IN_PROGRESS",
       "forbidden_until_plan_frozen": false,
       "object_focus": [
         "baseline_objects_resolved",
         "household_models_completed",
         "geographies_modeled"
-      ]
+      ],
+      "completion_percent": 28.9,
+      "objects_closed": 44,
+      "objects_total": 152
     },
     {
       "id": "V2.2",
@@ -105,9 +108,9 @@
       "id": "baseline_objects_resolved",
       "label": "Baseline objects resolved",
       "gate": "V2.1",
-      "resolved": 0,
-      "total": null,
-      "note": "Totals set when map freezes / gate opens."
+      "resolved": 44,
+      "total": 152,
+      "note": "V2.1 uses 152 B/F/D/E objects across 38 homes."
     },
     {
       "id": "functions_dispositioned",
@@ -137,17 +140,17 @@
       "id": "household_models_completed",
       "label": "Household models completed",
       "gate": "V2.1–V2.5",
-      "resolved": 0,
-      "total": null,
-      "note": "Totals set when map freezes / gate opens."
+      "resolved": 6,
+      "total": 6,
+      "note": "Descriptive archetypes locked in V2.1.1 (not prosperity model)."
     },
     {
       "id": "geographies_modeled",
       "label": "Geographies modeled",
       "gate": "V2.1–V2.5",
-      "resolved": 0,
-      "total": null,
-      "note": "Totals set when map freezes / gate opens."
+      "resolved": 1,
+      "total": 1,
+      "note": "Geographic lens locked; designated-county scaffold attached."
     },
     {
       "id": "propositions_validated",
@@ -1229,7 +1232,7 @@
       "step": 5,
       "id": "V2_1_SEE",
       "label": "V2.1 — SEE ARKANSAS",
-      "status": "NEXT"
+      "status": "ACTIVE"
     }
   ],
   "forbidden_before_map_freeze": [
@@ -1255,7 +1258,7 @@
     "build_progress": "/build-progress/",
     "status": "/status/"
   },
-  "next_only": "V2.1 — SEE ARKANSAS (baseline objects only). No redesign, funding architecture, or pilots yet.",
+  "next_only": "V2.1.2 — Government & Money (describe the money machine; no redesign).",
   "map_freeze": {
     "status": "FROZEN",
     "frozen_at": "2026-08-16",
@@ -1268,5 +1271,6 @@
     "Silent v1 doctrine change",
     "Dial inflation by words written",
     "Explorer expansion while V2.1 is the active build priority"
-  ]
+  ],
+  "active_pass": "V2.1.1 COMPLETE → next V2.1.2"
 }
