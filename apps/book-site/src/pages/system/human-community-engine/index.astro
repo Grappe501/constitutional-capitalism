@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import CapabilityLadder from "../../../components/CapabilityLadder.astro";
+import HumanCapitalFlywheel from "../../../components/HumanCapitalFlywheel.astro";
+import CommunityCapitalPentagon from "../../../components/CommunityCapitalPentagon.astro";
+import RetainReturnAttract from "../../../components/RetainReturnAttract.astro";
+import engine from "../../../../../../data/project/stage2_pass23_human_community_capital.json";
+
+const modules = engine.modules || [];
+const ladder = engine.capability_ladder || {};
+const demand = engine.demand_map_join || {};
+const capitals = engine.community_capital_forms || {};
+const cycle = engine.prosperity_cycle_integration || {};
+
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+---
+
+<BaseLayout
+  title="Human & Community Capital Engine"
+  path="/system/human-community-engine/"
+  description="Stage 2 Pass 2.3 — how Arkansas turns people, knowledge, relationships, communities and place into productive capital."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Pass 2.3 complete</span>
+      <h1>{engine.engine_name}</h1>
+      <p class="lede">{engine.one_sentence}</p>
+      <p class="muted">
+        {engine.decision_id} · {engine.update_id} · COUNTABLE claims added: $0 ·{" "}
+        <a href="/build-progress/passes/pass-2-3/">What Changed →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>See the human-development machine</h2>
+      <CapabilityLadder />
+      <HumanCapitalFlywheel />
+      <CommunityCapitalPentagon />
+      <RetainReturnAttract />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="ladder-lock">
+      <h2 id="ladder-lock">Arkansas Capability Ladder</h2>
+      <p class="lede">{ladder.objective}</p>
+      <p>{ladder.rule}</p>
+      <h3>Pathways (same objective)</h3>
+      <ul class="link-board">
+        {(ladder.pathways || []).map((p: string) => (
+          <li>{p}</li>
+        ))}
+      </ul>
+      <p>
+        <EvidenceConfidence level="working" note="architecture — multiple routes, one ladder" />
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="demand">
+      <h2 id="demand">Demand Map join</h2>
+      <p>
+        <span class="chip chip--queued">{demand.status}</span>
+      </p>
+      <p>
+        <strong>Wrong model:</strong> {demand.wrong_model}
+      </p>
+      <p>
+        <strong>Operating loop:</strong> {demand.operating_loop}
+      </p>
+      <p class="muted">{demand.note} · {demand.hyp}</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="five-capitals">
+      <h2 id="five-capitals">Five forms of community capital</h2>
+      <p class="lede">{capitals.insight}</p>
+      <ul class="stack">
+        {(capitals.forms || []).map((f: any) => (
+          <li>
+            <strong>{f.label}</strong> — {f.meaning}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="integration">
+      <h2 id="integration">Money ↔ Household ↔ Human/Community</h2>
+      <p>
+        <span class="chip chip--done">{cycle.result}</span>
+      </p>
+      <p class="fly-card fly-card--up" style="margin:0;">{cycle.cycle}</p>
+      <p class="muted" style="margin-top:0.85rem;">{cycle.alongside}</p>
+      <p>
+        <a href="/system/money-engine/">Money Engine →</a>
+        {" · "}
+        <a href="/system/household-engine/">Household Engine →</a>
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Working modules (HC-01–HC-08)</h2>
+      <p class="lede">Harvested and integrated — not reopened as research campaigns.</p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(engine.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(engine.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/human-capital/">Human capital spine →</a>
+        {" · "}
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

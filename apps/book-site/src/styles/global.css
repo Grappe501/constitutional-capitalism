@@ -1702,3 +1702,77 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   font-weight: 650;
   font-size: 0.88rem;
 }
+
+.cap-ladder,
+.rra {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (min-width: 800px) {
+  .cap-ladder {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .rra {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cap-ladder li,
+.rra li {
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--panel);
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+
+.rra li {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.rra li span {
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.pentagon {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+@media (min-width: 700px) {
+  .pentagon {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.pentagon li {
+  padding: 0.85rem 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  display: grid;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.pentagon li strong {
+  font-size: 0.88rem;
+}
+
+.pentagon li span {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}

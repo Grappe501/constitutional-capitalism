@@ -3,7 +3,7 @@
   "slice_id": "CC-STAGE-2-MODULE-INVENTORY-1.0",
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
-  "update_id": "UPD-172",
+  "update_id": "UPD-173",
   "status": "LOCKED_DENOMINATOR",
   "total_modules": 50,
   "counting_standard": "data/project/stage2_first_pass_module_standard.json",
@@ -28,6 +28,11 @@
       "first_pass_count": 22,
       "first_pass_percent": 44,
       "note": "Pass 2.2: HP-01\u2013HP-08 + HP-10 surplus architecture FIRST_PASS. Prior ME + HC/GO retained. 22/50 = 44%."
+    },
+    "after_pass_2_3": {
+      "first_pass_count": 27,
+      "first_pass_percent": 54,
+      "note": "Pass 2.3: HC-01\u2013HC-08 remapped and FIRST_PASS at 15-field depth. Net +5 (HC-01/05/08 already in 22). 27/50 = 54%. Not 30/50 — that would double-count prior HC IDs."
     }
   },
   "prior_first_pass_ids_before_2_1": [
@@ -167,54 +172,64 @@
     },
     {
       "id": "HC-01",
-      "name": "Education & capability pipeline",
+      "name": "Early Childhood & Family Foundation",
       "wave": "PASS_2_3",
       "status": "FIRST_PASS",
-      "note": "HYP-133 layer"
+      "href": "/system/human-community-engine/#hc-01",
+      "note": "Remapped Pass 2.3; family as first human-capital institution"
     },
     {
       "id": "HC-02",
-      "name": "Apprenticeship & skills",
+      "name": "K–12 Education & Civic Capability",
       "wave": "PASS_2_3",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/human-community-engine/#hc-02"
     },
     {
       "id": "HC-03",
-      "name": "Entrepreneurship pathways",
+      "name": "Higher Education, Technical & Lifelong Learning",
       "wave": "PASS_2_3",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/human-community-engine/#hc-03",
+      "note": "Demand Map structural home; HYP-133 relationship bound"
     },
     {
       "id": "HC-04",
-      "name": "Civic & public service pathways",
+      "name": "Research, Innovation & Arkansas IP",
       "wave": "PASS_2_3",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/human-community-engine/#hc-04"
     },
     {
       "id": "HC-05",
-      "name": "Population retain/attract",
+      "name": "Entrepreneurship & Local Ownership Pipeline",
       "wave": "PASS_2_3",
       "status": "FIRST_PASS",
-      "note": "HYP-132 sensitivity architecture"
+      "href": "/system/human-community-engine/#hc-05",
+      "note": "Remapped Pass 2.3; ME-04 ownership join"
     },
     {
       "id": "HC-06",
-      "name": "Rural place viability",
+      "name": "Civic & Community Service Capital",
       "wave": "PASS_2_3",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/human-community-engine/#hc-06"
     },
     {
       "id": "HC-07",
-      "name": "Urban/metro place viability",
+      "name": "Place, Community & Local Capacity",
       "wave": "PASS_2_3",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/human-community-engine/#hc-07",
+      "note": "Community Capital Pentagon operating home"
     },
     {
       "id": "HC-08",
-      "name": "Community prosperity accounts",
+      "name": "Population: Retain, Return & Attract",
       "wave": "PASS_2_3",
       "status": "FIRST_PASS",
-      "note": "Community prosperity / civic-wealth frameworks"
+      "href": "/system/human-community-engine/#hc-08",
+      "note": "Remapped Pass 2.3; HYP-132 sensitivity — not COUNTABLE"
     },
     {
       "id": "GO-01",

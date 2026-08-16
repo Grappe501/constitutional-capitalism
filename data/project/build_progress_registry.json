@@ -2,15 +2,15 @@
   "version": "1.1.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-159",
-  "update_id": "UPD-172",
+  "decision_id": "CC-DEC-160",
+  "update_id": "UPD-173",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_2",
-  "current_pass": "PASS_2_3",
-  "next_objective": "Pass 2.3 — Human & Community Capital. Education + capability + entrepreneurship + civic/service pathways + population + rural/urban/place.",
+  "current_pass": "PASS_2_4",
+  "next_objective": "Pass 2.4 — Government Operating System. Democracy + administration + state/local finance + procurement + justice + anti-capture + data/AI rights.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "stage2_plan_source": "data/project/stage2_six_pass_plan.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
@@ -100,16 +100,17 @@
       "number": "2.3",
       "slug": "pass-2-3",
       "name": "Human & Community Capital",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-2-3/",
-      "changelog": null
+      "changelog": "data/project/pass_changelogs/pass_2_3.json",
+      "spine_href": "/system/human-community-engine/"
     },
     {
       "id": "PASS_2_4",
       "number": "2.4",
       "slug": "pass-2-4",
       "name": "Government Operating System",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "href": "/build-progress/passes/pass-2-4/",
       "changelog": null
     },
@@ -151,6 +152,18 @@
       "links": [
         { "href": "/system/household-engine/", "label": "Household Prosperity Engine" },
         { "href": "/build-progress/passes/pass-2-2/", "label": "Pass 2.2 What Changed" },
+        { "href": "/system/money-engine/", "label": "Money Engine join" }
+      ]
+    },
+    {
+      "id": "CC-DEC-160",
+      "title": "Pass 2.3 Human & Community Capital complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-2-3/",
+      "links": [
+        { "href": "/system/human-community-engine/", "label": "Human & Community Capital Engine" },
+        { "href": "/build-progress/passes/pass-2-3/", "label": "Pass 2.3 What Changed" },
+        { "href": "/system/household-engine/", "label": "Household Engine join" },
         { "href": "/system/money-engine/", "label": "Money Engine join" }
       ]
     }
