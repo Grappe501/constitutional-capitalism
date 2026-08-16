@@ -237,10 +237,41 @@
       "id": "CC-DEM-RRR-029",
       "name": "external_income_capture_mechanism_bind",
       "question": "Which External Income sectors (priority: food/ag processing, energy participation) can clear the hard wall with royalty/lease/participation/enterprise mechanisms that produce incremental reserved public cash?",
-      "status": "NEE_QUEUED_NEXT",
+      "status": "PASSED_MECHANISM_BIND_ZERO_COUNTABLE",
       "priority": "critical",
       "layer": "replacement_modeling",
-      "next_slice": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0"
+      "artifact": "data/imports/arkansas-revenue-replacement/external_income_capture_mechanism_ledger.json",
+      "note": "12 mechanisms scored; gas severance & tourism 2% already spent; lithium framework not countable; top paths food-hub ownership, energy equity, AEDC conversion. COUNTABLE $0. Next: food-hub ownership / processing-margin bind."
+    },
+    {
+      "id": "CC-DEM-RRR-030",
+      "name": "food_hub_ownership_and_processing_margin_bind",
+      "question": "What incremental reserved public cash can Arkansas earn from cooperative/community food-hub ownership and in-state processing margins (NASS cash receipts vs processing), with audited free cash covenanted to Tax Retirement / Prosperity Fund?",
+      "status": "PASSED_SCALE_BOUND_ZERO_COUNTABLE_DOLLAR_TRACE",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/imports/arkansas-revenue-replacement/food_hub_ownership_processing_margin_ledger.json",
+      "note": "~$13.1B cash receipts secondary-bound; processing margins NEE; dollar-trace + resilience first object; COUNTABLE $0. Next: audited hub/facility cashflow cases."
+    },
+    {
+      "id": "CC-DEM-RRR-031",
+      "name": "food_hub_and_processing_facility_cashflow_case_bind",
+      "question": "Which Arkansas food hubs, co-ops, and cold-storage/processing facilities can show audited net distributable cash (after O&M/debt) that could be covenanted as reserved public/community feeder dollars?",
+      "status": "PASSED_CASE_HUNT_ZERO_FULL_RECONSTRUCTION",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/imports/arkansas-revenue-replacement/food_hub_facility_cashflow_case_ledger.json",
+      "note": "4 cases; ALFN thin 990 only; AFIC/cold storage P&L NEE; ownership gate closed; COUNTABLE $0. Closed into one-pass operating-statement bind (CC-DEM-RRR-032)."
+    },
+    {
+      "id": "CC-DEM-RRR-032",
+      "name": "food_facility_operating_statement_and_utilization_bind",
+      "question": "Can Arkansas bind AFIC@MCO and similar shared-kitchen/processing facilities' operating statements, utilization rates, fee schedules, and net cash after O&M/debt — still without treating facility surplus as public revenue?",
+      "status": "PASSED_ONE_PASS_STAGE_CLOSED_ZERO_COUNTABLE",
+      "priority": "critical",
+      "layer": "replacement_modeling",
+      "artifact": "data/imports/arkansas-revenue-replacement/food_facility_operating_statement_utilization_ledger.json",
+      "note": "One-pass: AFIC@MCO fees bound; utilization/P&L gaps recorded; food-hub evidence stage CLOSED first-pass. Facility validation = implementation gate. COUNTABLE $0. Next: definition-locks + AEDC equity memo — no further food-hub drilling."
     },
     {
       "id": "CC-DEM-RRR-024",

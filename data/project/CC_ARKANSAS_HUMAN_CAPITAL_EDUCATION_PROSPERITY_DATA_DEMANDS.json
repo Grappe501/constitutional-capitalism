@@ -1,12 +1,13 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
   "hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
   "incubator_alias": "HYP-133",
-  "decision_id": "CC-DEC-139",
-  "update_id": "UPD-152",
+  "decision_id": "CC-DEC-144",
+  "update_id": "UPD-157",
+  "prior_operating_architecture_decision_id": "CC-DEC-139",
   "prior_registration_decision_id": "CC-DEC-138",
-  "rule": "KEEP_AS_HYPOTHESIS. Stop adding conceptual branches. Prove operating architecture in locked order: (1) Demand Map (2) Compact legal memo (3) Learning Network + Centers with BUILD/EXPAND/PARTNER/IMPORT-TEMPORARILY (4) Full implementation/legal matrix as 8–16y program. Feeder Binding remains main fiscal lane; definition-locks structural; HYP-133 parallel until empirical build. Never 'free.' Repayment = incremental subsidy not punitive debt. System chain: HYP-130→133→129→132→131.",
+  "rule": "KEEP_AS_HYPOTHESIS. Intergenerational Arkansas Capital is a research layer, not a principle and not a fifth operating pass. Frame bona fide residency and public investment — not citizenship. Four passes remain in order. Parallel until Demand Map. Main fiscal evidence: food-hub stage closed first-pass; External Income remains high-potential uncounted. Never 'free.' Prevent benefit tourism, not talent immigration. Public claim corresponds to public contribution. System chain: HYP-130→133→129→132→131.",
   "demands": [
     {
       "id": "CC-DEM-HCEP-001",
@@ -22,17 +23,19 @@
     {
       "id": "CC-DEM-HCEP-002",
       "name": "residency_and_service_compact_legal_design",
-      "question": "What can Arkansas offer bona fide residents; how long may residency reasonably be required; what additional subsidy is the 'Arkansas investment'; how do serve-or-repay contracts, hardship/disability/military exceptions, interstate mobility, and professional programs work — with repayment following the incremental subsidy rather than punitive tuition debt — in a constitutional/legal memo before policy?",
+      "question": "Separately: (1) How strong can bona fide residency requirements for subsidized higher education legally be? (2) How much premium can Arkansas lawfully and economically charge nonresidents? (3) How can Arkansas capture continuing public return from publicly financed research and advanced educational assets without undermining academic freedom, private innovation, or talent attraction? Also: what Arkansas can offer bona fide residents; residency duration with proof of domicile; incremental subsidy definition; serve-or-repay; exceptions; interstate mobility; strategic recruit vs benefit tourism — repayment = incremental subsidy not punitive debt.",
       "status": "NEE_QUEUED_PASS_2",
       "priority": "critical",
       "layer": "legal_constitutional",
       "pass_order": 2,
-      "next_slice": "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0"
+      "linked": ["HYP-131", "HYP-132"],
+      "next_slice": "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
+      "note": "Three legal tests must not be blended. Frame residency/public investment, not citizenship. Cite Vlandis v. Kline, 412 U.S. 441."
     },
     {
       "id": "CC-DEM-HCEP-003",
       "name": "current_arkansas_residency_tuition_scholarship_bind",
-      "question": "What are the primary-bound bona fide domicile / continuous-residence rules for Arkansas public institutions (including UA reclassification) and residency criteria for state-funded scholarships?",
+      "question": "What are the primary-bound bona fide domicile / continuous-residence rules for Arkansas public institutions (including UA reclassification) and residency criteria for state-funded scholarships — and do any create irrebuttable permanent nonresident labels?",
       "status": "NEE",
       "priority": "critical",
       "layer": "legal_constitutional"
@@ -79,11 +82,12 @@
     {
       "id": "CC-DEM-HCEP-008",
       "name": "public_research_ip_royalty_path",
-      "question": "What share of Arkansas publicly funded university research IP is currently licensed, what royalties return to institutions, and what redesign would feed a Prosperity Fund / Enterprise path without harming commercialization incentives?",
+      "question": "What share of Arkansas publicly funded university research IP is currently licensed, what royalties return to institutions, and what redesign would feed university reinvestment + researcher reward + Prosperity Fund / Enterprise return in proportion to public contribution — without literal state ownership of every idea and without harming commercialization, academic freedom, or talent attraction?",
       "status": "NEE",
       "priority": "high",
       "layer": "public_wealth",
-      "linked": ["HYP-131"]
+      "linked": ["HYP-131", "LEGAL-TEST-3"],
+      "next_slice": "CC-ARKANSAS-PUBLIC-RESEARCH-IP-PUBLIC-CONTRIBUTION-RETURN-1.0"
     },
     {
       "id": "CC-DEM-HCEP-009",
@@ -117,31 +121,57 @@
       "status": "NEE",
       "priority": "medium",
       "layer": "measurement"
+    },
+    {
+      "id": "CC-DEM-HCEP-013",
+      "name": "human_capital_external_income_nonresident_premium",
+      "question": "What nonresident / international premium schedule maximizes Arkansas public return (Human-Capital External Income) without undermining program quality, enrollment, research reputation, talent recruitment, or federal constraints — and what share could be reserved to Tax Retirement / Prosperity Fund?",
+      "status": "NEE",
+      "priority": "critical",
+      "layer": "external_income_join",
+      "linked": ["HYP-131", "LEGAL-TEST-2"],
+      "next_slice": "CC-ARKANSAS-HUMAN-CAPITAL-EXTERNAL-INCOME-AND-NONRESIDENT-PREMIUM-1.0",
+      "note": "Illustrative headcount × premium is not COUNTABLE until reserved cash is bound"
+    },
+    {
+      "id": "CC-DEM-HCEP-014",
+      "name": "strategic_recruit_vs_benefit_tourism",
+      "question": "How should Arkansas design strategic-recruit scholarships so residency rules deter tuition benefit tourism while still attracting people Arkansas wants to become Arkansans (HYP-132 join)?",
+      "status": "NEE",
+      "priority": "high",
+      "layer": "compact_design",
+      "linked": ["HYP-132"]
     }
   ],
   "queued_next": [
     "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
     "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
     "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
-    "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
+    "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0",
+    "CC-ARKANSAS-HUMAN-CAPITAL-EXTERNAL-INCOME-AND-NONRESIDENT-PREMIUM-1.0",
+    "CC-ARKANSAS-PUBLIC-RESEARCH-IP-PUBLIC-CONTRIBUTION-RETURN-1.0"
   ],
   "parallel_does_not_displace": [
-    "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+    "CC-ARKANSAS-FOOD-HUB-OWNERSHIP-AND-PROCESSING-MARGIN-BIND-1.0",
     "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0"
   ],
   "holds": [
     "overall_percent_held_at_43",
     "KEEP_AS_HYPOTHESIS",
+    "intergenerational_capital_is_research_layer_not_principle",
+    "bona_fide_residency_and_public_investment_not_citizenship",
     "stop_adding_conceptual_branches",
     "operating_passes_locked_in_order",
     "parallel_until_empirical_build_pass",
-    "feeder_binding_remains_main_fiscal_lane",
+    "main_fiscal_evidence_remains_external_income_food_hub",
     "never_call_it_free",
     "positive_compact_not_exit_penalty",
     "no_mobility_wall",
+    "prevent_benefit_tourism_not_talent_immigration",
+    "public_claim_corresponds_to_public_contribution",
     "repayment_is_incremental_subsidy_not_punitive_debt",
     "gap_actions_build_expand_partner_import",
     "system_chain_130_133_129_132_131",
-    "does_not_displace_feeder_binding_or_definition_locks"
+    "does_not_displace_external_income_evidence_or_definition_locks"
   ]
 }

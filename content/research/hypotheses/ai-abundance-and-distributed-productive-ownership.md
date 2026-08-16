@@ -88,14 +88,21 @@ Add separate **AI Abundance Sensitivity** (not revenue, not COUNTABLE): compare 
 
 > **AI abundance may change the long-run economics of Constitutional Capitalism, but it does not rescue today’s replacement stack by assumption.**
 
+**Anti-rescue rule:** HYP-134 cannot become the convenient answer whenever current revenue math fails. If AI-driven abundance materializes, the evidence will tell us when underlying economic assumptions have changed.
+
 | Lane | Role |
 |---|---|
 | **Main** | External Income capture mechanism → reserved cash → replacement stack |
-| **Structural** | Definition-locks |
-| **HYP-134** | Parallel evidence inventory **only when grounded in real series** |
+| **Structural** | Definition-locks → stronger measurement |
+| **HYP-134** | Evidence first, modeling later — parallel inventory only when grounded in real series |
 
-Do **not** expand further until bound: labor share · output/worker · hours · AI capital investment · automation intensity · ownership concentration · productivity · profits · prices · household wealth distribution.  
-**Then** compare ownership structures under AI-abundance sensitivity.
+### Pre-transition baseline (next major empirical pass — gated)
+
+Before transformation, bind nationally / Arkansas-wide / county-local where defensible: labor share · productivity · hours · employment · capital intensity · profits · ownership concentration · household wealth · business formation · energy intensity · prices · geographic distribution.
+
+Purpose: years later, say not merely “AI changed Arkansas,” but **what changed, where, who captured gains, who lost income or bargaining power, and whether CC institutions kept prosperity distributed locally.**
+
+Do **not** expand further until transition-indicator series are bound. **Then** compare ownership structures under AI-abundance sensitivity.
 
 ## Next research (gated)
 

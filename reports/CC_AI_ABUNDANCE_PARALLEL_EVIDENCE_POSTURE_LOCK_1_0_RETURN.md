@@ -14,13 +14,19 @@ HYP-134 stays important for later modeling and **isolated from today’s fiscal 
 
 > AI abundance may change the long-run economics of Constitutional Capitalism, but it does not rescue today’s replacement stack by assumption.
 
+**Anti-rescue rule:** HYP-134 cannot become the convenient answer whenever current revenue math fails. If AI-driven abundance materializes, the evidence will tell us when underlying economic assumptions have changed.
+
 ## Sequence (unchanged)
 
 | Lane | Work |
 |---|---|
-| **Main** | External Income capture mechanism → reserved cash → replacement stack |
-| **Structural** | Definition-locks |
-| **Parallel** | HYP-134 evidence inventory only when grounded in real series |
+| **Main** | External Income evidence → reserved cash → Replacement Stack |
+| **Structural** | Definition-locks → stronger measurement |
+| **Parallel** | HYP-134 — evidence first, modeling later |
+
+## Pre-transition baseline (next major empirical pass — gated)
+
+Bind nationally / Arkansas-wide / county-local where defensible: labor share · productivity · hours · employment · capital intensity · profits · ownership concentration · household wealth · business formation · energy intensity · prices · geographic distribution — so later we can say what changed, where, who captured gains, who lost, and whether CC institutions kept prosperity distributed locally.
 
 ## Gate before ownership-sensitivity modeling
 

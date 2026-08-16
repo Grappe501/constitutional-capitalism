@@ -10,6 +10,7 @@ import {
 import phase2Lock from "../../../../data/project/phase2_mission_lock.json";
 import ia from "../../../../data/project/website_information_architecture.json";
 import latestReturn from "../../../../data/project/latest_cursor_return.json";
+import completion from "../../../../data/project/completion_ladder_and_dashboard.json";
 
 const publicLayers = publicProgressLayers();
 const publicUpdates = (updates.updates || [])
@@ -21,6 +22,8 @@ const majorDomains = seededDomains.filter((n: any) => n.path || n.framework_file
 const principleCount = principles.principles?.length ?? snapshot.principles_count ?? 0;
 const research = snapshot.research || {};
 const doctrine = snapshot.doctrine || {};
+const bars = completion.progress_bars || {};
+const overallCompletion = completion.overall_project_completion?.percent ?? 0;
 const generatedLabel = snapshot.generated_at
   ? new Date(snapshot.generated_at).toLocaleString("en-US", {
       timeZone: "UTC",
@@ -46,8 +49,45 @@ const generatedLabel = snapshot.generated_at
       canonical records — not a claim that Phase 2 proof work is finished.
     </p>
     <p class="muted">
-      Snapshot {generatedLabel}. Overall completion estimate reflects scaffolding and inventory
-      across many layers; it is <strong>not</strong> Phase 2 completion.
+      Snapshot {generatedLabel}. Completion is measured by stage coverage — not research volume.
+    </p>
+
+    <h2>Completion dashboard</h2>
+    <p class="lede">
+      Overall project completion: <strong>{overallCompletion}%</strong>
+    </p>
+    <p class="muted">
+      Legacy research/infrastructure composite ({completion.historical_metric_reconciliation?.legacy_overall_percent ?? 43}%)
+      is historical only. Source of truth: four bars below.
+    </p>
+    <div class="progress-list" style="margin-top:1rem;">
+      {[
+        ["Skeleton coverage", bars.skeleton_coverage_percent],
+        ["First-pass coverage", bars.first_pass_coverage_percent],
+        ["Publication completion", bars.publication_completion_percent],
+        ["Validation completion", bars.validation_completion_percent],
+      ].map(([label, percent]) => (
+        <div class="progress-item">
+          <label>
+            <span>{label}</span>
+            <span aria-hidden="true">{percent ?? 0}%</span>
+          </label>
+          <div
+            class="bar"
+            role="progressbar"
+            aria-label={`${label} progress`}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={percent ?? 0}
+          >
+            <span style={`width:${percent ?? 0}%`} />
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="muted" style="margin-top:0.75rem;">
+      Active stage: {completion.stages?.find((s: any) => s.status === "IN_PROGRESS")?.name || "—"}.
+      Stage 1 pass: {completion.active_stage1_pass || "—"}.
     </p>
 
     <h2>Honesty dials</h2>
@@ -72,17 +112,14 @@ const generatedLabel = snapshot.generated_at
         Legal review: <span class="chip">0%</span>
       </li>
       <li>
-        Active mission: <code>{phase2Lock.active_mission?.mission_id || "—"}</code>
+        Active mission: <code>{latestReturn.mission_id || phase2Lock.active_mission?.mission_id || "—"}</code>
       </li>
     </ul>
 
-    <h2>Overall estimate</h2>
-    <p class="lede">
-      Overall completion estimate: <strong>{snapshot.overall_percent ?? 0}%</strong>
-    </p>
+    <h2>Layer inventory (legacy)</h2>
     <p class="muted">
-      Forensic audit snapshot was 36% earlier in Phase 2. Regenerated overall moves only when
-      canonical inventory changes. Modeling and legal remain hard-zero until real work exists.
+      Layer percents below remain useful scaffolding inventory. They are not the Stage completion
+      dashboard.
     </p>
 
     <div class="progress-list" style="margin-top:1.25rem;">

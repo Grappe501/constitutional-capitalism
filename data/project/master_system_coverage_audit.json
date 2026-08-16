@@ -1,0 +1,527 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-MASTER-SYSTEM-COVERAGE-AUDIT-AND-TEN-STRUCTURAL-LOCKS-1.0",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-149",
+  "update_id": "UPD-162",
+  "status": "MASTER_COVERAGE_AUDIT_LOCKED",
+  "epistemic_class": "COMPLETION_GOVERNANCE_ARTIFACT_NOT_DOCTRINE",
+  "overall_percent_held": 43,
+  "governing_priority": "finish_the_system_then_deepen_it",
+  "not": [
+    "twenty_five_new_research_lanes",
+    "deep_evidence_binds_for_every_area",
+    "dial_inflation",
+    "new_CC_PRIN",
+    "doctrine_promotion",
+    "perfection_of_modules_before_skeleton",
+    "reopening_food_hub_drilling"
+  ],
+  "deep_research_gate_rule": {
+    "locked": true,
+    "rule": "No new area gets a deep research bind unless failure to resolve it prevents us from explaining how the system works.",
+    "everything_else": "POST_BOOK_VALIDATION_REGISTER"
+  },
+  "classification_scheme": {
+    "COVERED": "Structurally framed enough for book architecture; may still need later validation",
+    "NEEDS_DEFINITION": "Must be defined well enough to fit the system before the book skeleton is complete",
+    "NEEDS_FIRST_PASS_STRUCTURE": "Needs a light structural write-up; not a research campaign",
+    "IMPLEMENTATION_VALIDATION_LATER": "Gap acknowledged; deferred past first complete skeleton"
+  },
+  "already_substantially_framed": [
+    {
+      "area": "Democratic structure and civic participation",
+      "class": "COVERED"
+    },
+    {
+      "area": "Direct democracy / voting systems / local representation",
+      "class": "COVERED"
+    },
+    {
+      "area": "Public ownership and local capital retention",
+      "class": "COVERED"
+    },
+    {
+      "area": "Food systems (first-pass evidence closed)",
+      "class": "COVERED",
+      "note": "High-potential pathway; COUNTABLE $0; facility validation = implementation gate"
+    },
+    {
+      "area": "Healthcare (framework-level)",
+      "class": "COVERED"
+    },
+    {
+      "area": "Retirement concepts",
+      "class": "COVERED",
+      "note": "Care economy for aging remains underdeveloped — see Aging & Long-Term Care"
+    },
+    {
+      "area": "Education / human capability (HYP-133)",
+      "class": "COVERED"
+    },
+    {
+      "area": "Military / civic service pathways",
+      "class": "COVERED"
+    },
+    {
+      "area": "Energy independence (framework)",
+      "class": "COVERED"
+    },
+    {
+      "area": "AI transition (HYP-134 parallel posture)",
+      "class": "COVERED",
+      "note": "Quarantined from countable revenue; evidence-only until series bound"
+    },
+    {
+      "area": "Intergenerational capital",
+      "class": "COVERED"
+    },
+    {
+      "area": "Resilience stress-test layer",
+      "class": "COVERED"
+    },
+    {
+      "area": "Geographic money flows (queued panel)",
+      "class": "COVERED"
+    },
+    {
+      "area": "Public income engines (HYP-131 architecture)",
+      "class": "COVERED"
+    },
+    {
+      "area": "Workforce / human capability",
+      "class": "COVERED"
+    },
+    {
+      "area": "Rural revitalization / local pilots",
+      "class": "COVERED"
+    },
+    {
+      "area": "Public research / IP return (framed)",
+      "class": "COVERED"
+    },
+    {
+      "area": "Beginnings of post-IIT / post-property-tax revenue model",
+      "class": "COVERED",
+      "note": "Architecture exists; COUNTABLE $0; full tax/revenue lock still required"
+    }
+  ],
+  "master_audit_areas": [
+    {
+      "id": "AREA-TAX-REVENUE",
+      "area": "Tax & Revenue Architecture",
+      "why_essential": "The whole system has to fund itself without personal income/property taxes",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-01"
+    },
+    {
+      "id": "AREA-MONEY-BANKING-CREDIT",
+      "area": "Money, Banking & Credit",
+      "why_essential": "Who creates credit, who gets it, and where interest flows determines local prosperity",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-02"
+    },
+    {
+      "id": "AREA-HOUSING-LAND",
+      "area": "Housing & Land",
+      "why_essential": "Housing cost, land speculation, zoning, ownership, and property access shape nearly every household outcome",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-03"
+    },
+    {
+      "id": "AREA-TRANSPORT-MOBILITY",
+      "area": "Transportation & Mobility",
+      "why_essential": "Work, healthcare, school, aging, rural access, and logistics depend on mobility",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-07"
+    },
+    {
+      "id": "AREA-WATER-NATURAL-RESOURCES",
+      "area": "Water & Natural Resources",
+      "why_essential": "Water rights, watersheds, extraction, agriculture, industry, and long-term resilience",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-07"
+    },
+    {
+      "id": "AREA-DIGITAL-INFRASTRUCTURE",
+      "area": "Digital Infrastructure",
+      "why_essential": "Broadband, public data, cybersecurity, digital identity, AI access, cloud infrastructure",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-07"
+    },
+    {
+      "id": "AREA-LABOR-WORKER-POWER",
+      "area": "Labor & Worker Power",
+      "why_essential": "Wages alone are insufficient; bargaining power, ownership, portability, scheduling, benefits matter",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-04"
+    },
+    {
+      "id": "AREA-SMALL-BUSINESS",
+      "area": "Small Business & Entrepreneurship",
+      "why_essential": "Pathway from worker → owner → local employer → local capital formation",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-04"
+    },
+    {
+      "id": "AREA-CORPORATE-MARKET-POWER",
+      "area": "Corporate Structure & Market Power",
+      "why_essential": "Monopoly, consolidation, franchise extraction, private equity, and absentee ownership drain local wealth",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-05"
+    },
+    {
+      "id": "AREA-CAPITAL-MARKETS",
+      "area": "Capital Markets & Investment",
+      "why_essential": "Rules for where public and private capital goes and what returns stay local",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-02"
+    },
+    {
+      "id": "AREA-INSURANCE",
+      "area": "Insurance",
+      "why_essential": "Health, crop, property, disaster, liability, and business insurance can silently determine system viability",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null,
+      "note": "First-pass structure in book; deep bind only if unexplained system failure"
+    },
+    {
+      "id": "AREA-JUSTICE-CORRECTIONS",
+      "area": "Justice & Corrections",
+      "why_essential": "Incarceration, fines, re-entry, employment barriers, and community reintegration are economic architecture",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-PUBLIC-SAFETY",
+      "area": "Public Safety",
+      "why_essential": "Police, fire, EMS, disaster response, and emergency capacity are core public goods",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-CHILDCARE-FAMILY",
+      "area": "Childcare & Family Formation",
+      "why_essential": "Childcare is workforce infrastructure affecting labor participation, fertility, education, and household surplus",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null,
+      "note": "Also feeds household-economics OS question"
+    },
+    {
+      "id": "AREA-AGING-LTC",
+      "area": "Aging & Long-Term Care",
+      "why_essential": "Retirement concepts exist; full care economy for older Arkansans does not",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-DISABILITY",
+      "area": "Disability & Accessibility",
+      "why_essential": "Economic participation requires mobility, employment, care, housing, and service accessibility",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-MIGRATION-POPULATION",
+      "area": "Migration & Population Strategy",
+      "why_essential": "Arkansas must decide who it wants to retain, attract, educate, and integrate",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "COVERED",
+      "note": "HYP-132 framed; deepen inside structural locks where needed, not as a new research lane"
+    },
+    {
+      "id": "AREA-PROCUREMENT",
+      "area": "Procurement & Government Purchasing",
+      "why_essential": "Public dollars can leak out or deliberately build Arkansas firms and supply chains",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-06"
+    },
+    {
+      "id": "AREA-MUNICIPAL-COUNTY-FINANCE",
+      "area": "Municipal & County Finance",
+      "why_essential": "Cities/counties need a revenue model after property-tax dependence is reduced or eliminated",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-06"
+    },
+    {
+      "id": "AREA-FEDERALISM",
+      "area": "Intergovernmental Federalism",
+      "why_essential": "State/local/federal responsibilities, grants, preemption, and fiscal transfers must fit together",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-06"
+    },
+    {
+      "id": "AREA-TRADE-EXTERNAL-REVENUE",
+      "area": "Trade & External Revenue",
+      "why_essential": "Distinguish money earned from Arkansans versus money imported into Arkansas",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "COVERED",
+      "note": "External Income / EICR architecture exists; COUNTABLE $0; refine inside LOCK-01"
+    },
+    {
+      "id": "AREA-TOURISM-CULTURE",
+      "area": "Tourism, Culture & Creative Economy",
+      "why_essential": "External-income engines and community-identity assets",
+      "current_status": "Thin",
+      "book_level_need": "DEFINE_LIGHTLY",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-TELECOM-MEDIA",
+      "area": "Telecommunications & Media",
+      "why_essential": "Information markets shape democracy, civic trust, rural access, and political power",
+      "current_status": "Thin",
+      "book_level_need": "DEFINE_LIGHTLY",
+      "class": "NEEDS_FIRST_PASS_STRUCTURE",
+      "maps_to_structural_lock": null
+    },
+    {
+      "id": "AREA-DATA-GOVERNANCE",
+      "area": "Data Governance & Privacy",
+      "why_essential": "Integrated AI/state systems require strong limits on surveillance and data abuse",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-08"
+    },
+    {
+      "id": "AREA-CONSTITUTIONAL-RIGHTS",
+      "area": "Constitutional Rights & Civil Liberties",
+      "why_essential": "Re-engineering government requires explicit constraints on government itself",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-08"
+    },
+    {
+      "id": "AREA-ADMINISTRATIVE-STATE",
+      "area": "Administrative State / Government Design",
+      "why_essential": "Agencies, boards, authorities, performance rules, sunset reviews, and accountability need redesign",
+      "current_status": "Thin",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-09"
+    },
+    {
+      "id": "AREA-CORRUPTION-LOBBYING",
+      "area": "Corruption, Lobbying & Campaign Finance",
+      "why_essential": "Economic reform fails if concentrated wealth can buy the rules back",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-09"
+    },
+    {
+      "id": "AREA-PUBLIC-MEASUREMENT",
+      "area": "Public Measurement & Accounting",
+      "why_essential": "GDP, tax revenue, jobs, and wages do not fully measure household prosperity or capital retention",
+      "current_status": "Strong conceptually",
+      "book_level_need": "LOCK_DEFINITIONS",
+      "class": "COVERED",
+      "note": "Lock definitions inside household-economics OS layer; no new research lane"
+    },
+    {
+      "id": "AREA-TRANSITION-MECHANICS",
+      "area": "Transition Mechanics",
+      "why_essential": "Move from today’s system to the new one without breaking pensions, services, credit, or markets",
+      "current_status": "Partial",
+      "book_level_need": "MUST_DEFINE",
+      "class": "NEEDS_DEFINITION",
+      "maps_to_structural_lock": "LOCK-10"
+    }
+  ],
+  "operating_system_questions": [
+    {
+      "id": "OS-OWNERSHIP",
+      "title": "Ownership",
+      "question": "For every major asset class—land, energy, housing, infrastructure, IP, utilities, processing, healthcare, finance—who owns it, who controls it, who bears the risk, and who receives the surplus?",
+      "status": "TOUCHED_NOT_ELEVATED",
+      "book_role": "Cross-cuts all ten structural locks"
+    },
+    {
+      "id": "OS-CAPITAL-FORMATION",
+      "title": "Capital formation",
+      "question": "How does Arkansas turn current production into future productive assets—savings, investment, public capital, pension capital, local equity, credit, and reinvestment?",
+      "status": "TOUCHED_NOT_ELEVATED",
+      "book_role": "Centered in LOCK-02; appears across LOCK-01/04/06"
+    },
+    {
+      "id": "OS-MARKET-DESIGN",
+      "title": "Market design",
+      "question": "What rules make markets produce broad prosperity instead of extraction—competition policy, public options, cooperatives, procurement, ownership incentives, anti-monopoly?",
+      "status": "TOUCHED_NOT_ELEVATED",
+      "book_role": "Centered in LOCK-05; joins LOCK-04/06"
+    },
+    {
+      "id": "OS-HOUSEHOLD-ECONOMICS",
+      "title": "Household economics",
+      "question": "Does an Arkansas household have enough income, assets, time, security, housing, healthcare, transportation, food, education, and retirement capacity to build a good life?",
+      "status": "TOUCHED_NOT_ELEVATED",
+      "book_role": "Ultimate unit of measurement; queued Household Prosperity Surplus panel remains future validation"
+    },
+    {
+      "id": "OS-POWER",
+      "title": "Power",
+      "question": "How does the system prevent economic concentration from reconcentrating political power?",
+      "status": "TOUCHED_NOT_ELEVATED",
+      "book_role": "May be one of the most important ideas in the project; centered in LOCK-09; constrains all other locks"
+    }
+  ],
+  "ten_structural_locks": [
+    {
+      "id": "LOCK-01",
+      "title": "Revenue and tax system",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "definitions": "data/project/ten_structural_locks_stage1_definitions.json",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-02",
+      "title": "Banking, credit, and capital formation",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-03",
+      "title": "Housing, land, and property",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-04",
+      "title": "Labor, ownership, and small-business formation",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-05",
+      "title": "Corporate concentration and competition",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-06",
+      "title": "State/local government finance and procurement",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-07",
+      "title": "Transportation, water, digital, and core infrastructure",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-08",
+      "title": "Data rights, civil liberties, and AI governance",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-09",
+      "title": "Administrative government, anti-corruption, and political-power controls",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    },
+    {
+      "id": "LOCK-10",
+      "title": "Transition architecture from the current system to the new one",
+      "maturity_target": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+      "status": "BONE_DRAFTED",
+      "not": "perfected_modeled_or_counted"
+    }
+  ],
+  "post_book_validation_register": {
+    "purpose": "Hold everything that is essential later but must not open as a deep research lane now",
+    "includes": [
+      "Food-hub facility P&L / utilization (implementation gate)",
+      "Insurance deep bind",
+      "Justice/corrections deep bind",
+      "Public safety operational design",
+      "Childcare / aging / disability care-economy microsims",
+      "Tourism/culture and telecom/media second-pass",
+      "Household Prosperity Surplus panel",
+      "County Geographic Money Statements",
+      "Five-state resilience stress tests as active fiscal work",
+      "AEDC incentive→equity legal memo (parallel legal; not blocked by audit)",
+      "Any area that does not prevent explaining how the system works"
+    ]
+  },
+  "completion_path": {
+    "now": "Final whole-system gap audit — then Stage 1 = 100% if no structural holes",
+    "then": "Stage 2: 100% first-pass coverage",
+    "then_write": "Stage 3: 100% written category-by-category",
+    "then_attack": "Stage 4: Break it",
+    "parallel_ok": [
+      "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "do_not": [
+      "open_twenty_five_area_research_projects",
+      "deep_bind_unless_explaining_the_system_fails_without_it",
+      "polish_while_other_categories_empty"
+    ]
+  },
+  "next_slice": "CC-STAGE-1-FINAL-WHOLE-SYSTEM-GAP-AUDIT-1.0",
+  "holds": [
+    "completion_ladder_governs",
+    "legacy_43_historical_only",
+    "completion_first_discipline",
+    "deep_research_gate_rule",
+    "ten_locks_not_twenty_five_lanes",
+    "defined_not_perfected",
+    "food_hub_stage_remains_closed",
+    "hyp134_quarantined_from_countable",
+    "no_new_principle"
+  ]
+}

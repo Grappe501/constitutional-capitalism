@@ -672,7 +672,7 @@
       "hypothesis_id": "HYP-131",
       "title": "Prosperity-Based Revenue Replacement System",
       "proposition": "Arkansas can eventually retire individual income tax and property tax only if it first inventories every current revenue source and legal dependency, then builds dual State and Community Prosperity Revenue Ledgers where replacement streams that grow with prosperity are demonstrably online — ring-fenced in a Tax Retirement Fund — before staged tax reductions, without shifting the same burden onto ordinary people through a single regressive swap and without treating unmodeled public-wealth returns as replacement dollars.",
-      "status": "Research framework — not doctrine — all 10 engines scored $0 countable; External Income capture modeled; next Public Income Replacement Stack",
+      "status": "Research framework — not doctrine — COUNTABLE $0; food-hub stage CLOSED first-pass; completion-first",
       "publishable": false,
       "confidence_percent": 20,
       "related_principle_ids": [],
@@ -691,7 +691,11 @@
         "CC-DEC-135",
         "CC-DEC-136",
         "CC-DEC-137",
-        "CC-DEC-140"
+        "CC-DEC-140",
+        "CC-DEC-143",
+        "CC-DEC-146",
+        "CC-DEC-147",
+        "CC-DEC-148"
       ],
       "related_framework": "data/project/arkansas_revenue_replacement_architecture.json",
       "ledger_path": "data/project/arkansas_revenue_replacement_ledger.json",
@@ -707,16 +711,24 @@
       "external_income_sector_capture_ledger": "data/imports/arkansas-revenue-replacement/external_income_sector_capture_ledger.json",
       "public_income_replacement_stack_ledger": "data/imports/arkansas-revenue-replacement/public_income_replacement_stack_ledger.json",
       "feeder_binding_ledger": "data/imports/arkansas-revenue-replacement/replacement_stack_feeder_binding_ledger.json",
+      "external_income_capture_mechanism_ledger": "data/imports/arkansas-revenue-replacement/external_income_capture_mechanism_ledger.json",
+      "food_hub_ownership_processing_margin_ledger": "data/imports/arkansas-revenue-replacement/food_hub_ownership_processing_margin_ledger.json",
+      "food_hub_facility_cashflow_case_ledger": "data/imports/arkansas-revenue-replacement/food_hub_facility_cashflow_case_ledger.json",
+      "food_facility_operating_statement_utilization_ledger": "data/imports/arkansas-revenue-replacement/food_facility_operating_statement_utilization_ledger.json",
       "residual_progressive_iit_ledger_superseded": "data/imports/arkansas-revenue-replacement/residual_progressive_income_tax_top_down_ledger.json",
       "canonical_hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
       "public_path": null,
       "dossier_path": "content/research/hypotheses/prosperity-based-revenue-replacement.md",
       "demand_manifest_path": "data/project/CC_PROSPERITY_REVENUE_REPLACEMENT_DATA_DEMANDS.json",
-      "latest_return": "reports/CC_ARKANSAS_REPLACEMENT_STACK_FEEDER_BINDING_PASS_1_0_RETURN.md",
+      "latest_return": "reports/CC_ARKANSAS_FOOD_FACILITY_OPERATING_STATEMENT_AND_UTILIZATION_BIND_1_0_RETURN.md",
       "evidence_needed": [
-        "External Income capture-mechanism bind (food processing / energy participation → reserved cash)",
+        "IMPLEMENTATION GATE: AFIC@MCO / hub facility P&L + utilization (not another research branch now)",
+        "Primary-bind ERS cash-receipts commodity table (replace secondary compile)",
+        "Packer/brand ownership map for poultry and major crops",
+        "AEDC deal inventory for equity/return conversion legal authority",
+        "Energy/generation-storage participation candidates with cash-flow + PUBLIC_RISK_AT_RISK",
         "USASpending defense/federal procurement Arkansas capture join",
-        "NASS cash receipts vs in-state processing margins; university out-of-state tuition/spend",
+        "University out-of-state tuition/spend",
         "Constitutional memorandum: Am. 57 intangible-only vs realization/deferral vs amendment",
         "Calibrate effective-base haircut factors and EICR bands (not placeholders)",
         "WPC size-class payroll share + Arkansas-specific incidence microsim",
@@ -726,7 +738,7 @@
         "ACS/renter incidence tables"
       ],
       "proof_packet_status": "not_started",
-      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-140: Feeder Binding demoted envelopes — Base@16y ceiling ~12%; Acc@16y ~19%; COUNTABLE $0. HYP-134 AI Abundance Sensitivity must not inflate these ceilings. Next: External Income capture-mechanism bind."
+      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-148: One-pass fees bound; food-hub stage CLOSED first-pass; COUNTABLE $0. Completion-first. Next: definition-locks + AEDC equity memo."
     },
     {
       "hypothesis_id": "HYP-132",
@@ -773,7 +785,8 @@
       "related_principle_ids": [],
       "related_decision_ids": [
         "CC-DEC-138",
-        "CC-DEC-139"
+        "CC-DEC-139",
+        "CC-DEC-144"
       ],
       "related_framework": "data/project/arkansas_human_capital_education_prosperity_system.json",
       "canonical_hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
@@ -790,16 +803,17 @@
       "system_chain": ["HYP-130", "HYP-133", "HYP-129", "HYP-132", "HYP-131"],
       "evidence_needed": [
         "Pass 1: Demand Map ledger (employment/projected/replacement demand/wages/programs/enrollment/completers/geo shortages/imports/missing capacity) — first-wave sectors",
-        "Pass 2: Compact constitutional/legal memo (bona fide residency, incremental subsidy, serve-or-repay, exceptions, interstate mobility)",
+        "Pass 2: Compact constitutional/legal memo — three separate tests (residency strength; nonresident premium; public research return) + bona fide residency/public investment frame (not citizenship); Vlandis-compatible proof of domicile; serve-or-repay; strategic recruit vs benefit tourism",
         "Pass 3: 1,759 programs onto Demand Map with BUILD/EXPAND/PARTNER/IMPORT-TEMPORARILY",
         "Pass 4: Implementation/legal matrix as 8–16y program (authority→rule→appropriation→statute→constitutional→federal + institution/funding/pilot/measure/failure/expansion)",
+        "Human-Capital External Income / nonresident premium optimization (not countable until reserved cash)",
+        "Public research IP path: license/equity/royalty → university + researcher + public prosperity (claim ∝ contribution)",
         "School-based health integration gap maps",
-        "Public research IP royalty path to Prosperity Fund",
         "CTE spine / concurrent education inventory",
         "Adult reskilling + employer Workforce Transition Plan design"
       ],
       "proof_packet_status": "not_started",
-      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-139 locked four-pass operating architecture; stop conceptual branching; parallel until empirical build. HYP-134 abundance-capability join note only — do not expand before Demand Map. System chain 130→133→129→132→131."
+      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-139 locked four-pass operating architecture; CC-DEC-144 locked Intergenerational Arkansas Capital research layer (residency/public investment not citizenship; not a new principle or fifth pass). Parallel until Demand Map. System chain 130→133→129→132→131."
     },
     {
       "hypothesis_id": "HYP-134",
@@ -827,7 +841,8 @@
         "HYP-133"
       ],
       "evidence_needed": [
-        "Bind transition-indicator series before any expansion (labor share, output/worker, hours, AI investment, automation intensity, ownership concentration, productivity, profits, prices, household wealth)",
+        "Pre-transition baseline bind (national / AR / county where defensible): labor share, productivity, hours, employment, capital intensity, profits, ownership concentration, household wealth, business formation, energy intensity, prices, geographic distribution",
+        "Bind transition-indicator series before any expansion",
         "Then: AI Productivity Transition Dashboard (warning indicators, not forecasts)",
         "Then: Ownership-structure surplus comparison under illustrative AI productivity shocks",
         "Then: AI Abundance Sensitivity vs demoted Replacement Stack (non-revenue)",
@@ -835,7 +850,7 @@
         "Community/employee/co-op automation-gain case binds"
       ],
       "proof_packet_status": "not_started",
-      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-142: parallel evidence-only until series bound; do not expand further; does not rescue today’s Replacement Stack by assumption. Main lane: External Income capture-mechanism bind."
+      "note": "KEEP_AS_HYPOTHESIS. CC-DEC-142: parallel evidence-only until series bound; anti-rescue — cannot become convenient answer when revenue math fails; evidence first, modeling later. Food-hub stage closed first-pass; next definition-locks."
     }
   ],
   "website_node": {

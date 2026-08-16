@@ -1,0 +1,121 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-1-FIVE-PASS-CLOSURE-PLAN-1.0",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-151",
+  "update_id": "UPD-164",
+  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_1_COMPLETE",
+  "budget": "5_passes_to_stage_1_100_percent_skeleton",
+  "may_finish_in": 4,
+  "budget_reason": "Do not falsely declare skeleton complete while a major system function is still missing",
+  "build_strategy": "Breadth first. Completeness second. Depth third. Proof fourth.",
+  "deployment_rule": {
+    "locked": true,
+    "sequence": [
+      "full_build",
+      "validate",
+      "commit",
+      "push_github",
+      "deploy_netlify",
+      "read_live_system"
+    ],
+    "purpose": "Visible checkpoint every pass; prevent unpublished internal pile-up"
+  },
+  "pass_deliverables": [
+    "updated_master_architecture",
+    "updated_progress_dashboard",
+    "updated_book_navigation_surface",
+    "pass_close_report_what_changed_what_remains_next_pass_only"
+  ],
+  "passes": [
+    {
+      "id": "PASS_1",
+      "name": "Money & Ownership Spine",
+      "status": "COMPLETE",
+      "skeleton_target_percent": "60-65",
+      "skeleton_after_percent": 63,
+      "covers": [
+        "LOCK-01 Revenue and tax system",
+        "LOCK-02 Banking, credit, and capital formation",
+        "LOCK-04 Labor, ownership, and small-business formation",
+        "LOCK-05 Corporate concentration and competition"
+      ],
+      "purpose": "Core economic engine — who earns, who owns, who lends, who extracts, how public income replaces labor/home taxes",
+      "artifact": "data/project/stage1_pass1_money_ownership_spine.json",
+      "return": "reports/CC_STAGE_1_PASS_1_MONEY_OWNERSHIP_SPINE_1_0_RETURN.md"
+    },
+    {
+      "id": "PASS_2",
+      "name": "Household & Place Spine",
+      "status": "QUEUED_NEXT",
+      "skeleton_target_percent": "75-80",
+      "covers": [
+        "LOCK-03 Housing/land",
+        "LOCK-07 Transportation/infrastructure (place half)",
+        "Healthcare",
+        "Education",
+        "Food",
+        "Energy",
+        "Childcare",
+        "Aging",
+        "Disability",
+        "Rural/urban access"
+      ],
+      "purpose": "Clean structural homes and contradiction check — most content already exists"
+    },
+    {
+      "id": "PASS_3",
+      "name": "Government & Democratic Power Spine",
+      "status": "QUEUED",
+      "skeleton_target_percent": "88-92",
+      "covers": [
+        "LOCK-06 State/local finance and procurement",
+        "LOCK-08 Data rights, civil liberties, AI governance",
+        "LOCK-09 Administrative government, anti-corruption, political-power controls",
+        "Federalism",
+        "Voting/direct democracy",
+        "Justice/public safety"
+      ],
+      "purpose": "Close political/governance side"
+    },
+    {
+      "id": "PASS_4",
+      "name": "Transition, Resilience & Measurement Spine",
+      "status": "QUEUED",
+      "skeleton_target_percent": "96-98",
+      "covers": [
+        "LOCK-10 Transition architecture",
+        "Intergenerational capital",
+        "Migration/population strategy",
+        "External income/trade",
+        "Public accounting",
+        "Household Prosperity Surplus",
+        "Geographic Money Statements",
+        "Resilience/shocks",
+        "Implementation gates"
+      ],
+      "purpose": "Know how to move from today’s system into the proposed one"
+    },
+    {
+      "id": "PASS_5",
+      "name": "Whole-System Closure Audit",
+      "status": "QUEUED",
+      "skeleton_target_percent": 100,
+      "purpose": "No new doctrine unless absolutely necessary. Walk every major function: where does it live, how does it connect, who owns it, how is it funded, what happens to households, what prevents capture?",
+      "dispositions_only": [
+        "STRUCTURAL_HOLE",
+        "KNOWN_DETAIL",
+        "VALIDATION_QUESTION"
+      ],
+      "rule": "True structural holes close here; everything else → Stage 2, Stage 3, or validation register"
+    }
+  ],
+  "active_pass_after_this_slice": "PASS_2",
+  "holds": [
+    "five_pass_budget",
+    "no_sprawl",
+    "deploy_every_pass",
+    "four_deliverables_every_pass",
+    "pass_5_is_closure_not_new_research"
+  ]
+}

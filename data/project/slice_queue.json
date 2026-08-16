@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
-  "last_updated": "2026-08-12",
-  "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+  "last_updated": "2026-08-15",
+  "active_slice": "CC-STAGE-1-PASS-2-HOUSEHOLD-PLACE-SPINE-1.0",
   "slices": [
     {
       "slice_id": "CC-PHASE-0-MASTER-PROJECT-FOUNDATION-1.0",
@@ -2364,18 +2364,196 @@
   },
   "arkansas_external_income_capture_mechanism_bind": {
     "slice_id": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0",
-    "status": "QUEUED_NEXT",
+    "status": "PASSED_MECHANISM_BIND_ZERO_COUNTABLE",
     "mode": "mechanism_cashflow_not_outside_demand_volume",
     "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
     "incubator_alias": "HYP-131",
     "engine_id": "ENGINE-EXTERNAL-INCOME",
+    "decision_id": "CC-DEC-143",
+    "update_id": "UPD-156",
     "question": "Which External Income sectors can clear the hard wall with royalty/lease/participation/enterprise mechanisms that produce incremental reserved public cash?",
     "priority_sectors": ["food_ag_processing", "energy_participation"],
     "depends_on_completed": [
       "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
       "CC-ARKANSAS-EXTERNAL-INCOME-SECTOR-CAPTURE-1.0"
     ],
-    "count_rule": "Outside demand ≠ public revenue; countable only with evidence-backed capture mechanism"
+    "count_rule": "Outside demand ≠ public revenue; countable only with evidence-backed capture mechanism",
+    "ledger": "data/imports/arkansas-revenue-replacement/external_income_capture_mechanism_ledger.json",
+    "script": "scripts/bind_external_income_capture_mechanism.py",
+    "return": "reports/CC_ARKANSAS_EXTERNAL_INCOME_CAPTURE_MECHANISM_BIND_1_0_RETURN.md",
+    "headline": {
+      "mechanisms_scored": 12,
+      "countable_now_usd": 0,
+      "promoted_to_countable": 0,
+      "conditional_reservable": 6,
+      "top_build_paths": [
+        "EIM-005 cooperative food-hub ownership",
+        "EIM-003 energy public equity participation",
+        "EIM-012 AEDC incentive→equity conversion"
+      ]
+    },
+    "research_next": [
+      "CC-ARKANSAS-FOOD-HUB-OWNERSHIP-AND-PROCESSING-MARGIN-BIND-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "KEEP_AS_HYPOTHESIS",
+      "no_abolish_today",
+      "zero_counted_until_cashflow_model",
+      "external_income_hard_wall",
+      "hyp134_cannot_rescue_todays_stack"
+    ]
+  },
+  "arkansas_food_hub_ownership_processing_margin_bind": {
+    "slice_id": "CC-ARKANSAS-FOOD-HUB-OWNERSHIP-AND-PROCESSING-MARGIN-BIND-1.0",
+    "status": "PASSED_SCALE_BOUND_ZERO_COUNTABLE_DOLLAR_TRACE",
+    "mode": "cash_receipts_vs_processing_margin_vs_reserved_cash",
+    "hypothesis_id": "CC-HYP-PROSPERITY-BASED-REVENUE-REPLACEMENT-SYSTEM",
+    "incubator_alias": "HYP-131",
+    "engine_id": "ENGINE-EXTERNAL-INCOME",
+    "decision_id": "CC-DEC-146",
+    "update_id": "UPD-159",
+    "prior_mechanism": "EIM-005",
+    "ledger": "data/imports/arkansas-revenue-replacement/food_hub_ownership_processing_margin_ledger.json",
+    "script": "scripts/bind_food_hub_ownership_processing_margin.py",
+    "return": "reports/CC_ARKANSAS_FOOD_HUB_OWNERSHIP_AND_PROCESSING_MARGIN_BIND_1_0_RETURN.md",
+    "headline": {
+      "cash_receipts_2023_usd": 13100000000,
+      "countable_now_usd": 0,
+      "audited_hub_cases": 0,
+      "resilience_first_object": "RES-OBJ-FOOD-HUB-DOLLAR-PATH"
+    },
+    "research_next": [
+      "CC-ARKANSAS-FOOD-HUB-AND-PROCESSING-FACILITY-CASHFLOW-CASE-BIND-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "cash_receipts_ne_public_cash",
+      "resilience_object_not_implementation_slice",
+      "hyp134_quarantined_from_countable"
+    ]
+  },
+  "arkansas_food_hub_facility_cashflow_case_bind": {
+    "slice_id": "CC-ARKANSAS-FOOD-HUB-AND-PROCESSING-FACILITY-CASHFLOW-CASE-BIND-1.0",
+    "status": "PASSED_CASE_HUNT_ZERO_FULL_RECONSTRUCTION",
+    "mode": "facility_cashflow_before_ownership_or_public_share",
+    "decision_id": "CC-DEC-147",
+    "update_id": "UPD-160",
+    "ledger": "data/imports/arkansas-revenue-replacement/food_hub_facility_cashflow_case_ledger.json",
+    "script": "scripts/bind_food_hub_facility_cashflow_cases.py",
+    "return": "reports/CC_ARKANSAS_FOOD_HUB_AND_PROCESSING_FACILITY_CASHFLOW_CASE_BIND_1_0_RETURN.md",
+    "headline": {
+      "cases_scored": 4,
+      "full_reconstructions": 0,
+      "free_cash_for_public_share": 0,
+      "countable_now_usd": 0
+    },
+    "research_next": [
+      "CC-ARKANSAS-FOOD-FACILITY-OPERATING-STATEMENT-AND-UTILIZATION-BIND-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "facility_profit_ne_public_revenue",
+      "ownership_gate_closed"
+    ]
+  },
+  "arkansas_food_facility_operating_statement_utilization_bind": {
+    "slice_id": "CC-ARKANSAS-FOOD-FACILITY-OPERATING-STATEMENT-AND-UTILIZATION-BIND-1.0",
+    "status": "PASSED_ONE_PASS_STAGE_CLOSED_ZERO_COUNTABLE",
+    "mode": "one_pass_depth_limit_then_close_stage",
+    "decision_id": "CC-DEC-148",
+    "update_id": "UPD-161",
+    "ledger": "data/imports/arkansas-revenue-replacement/food_facility_operating_statement_utilization_ledger.json",
+    "script": "scripts/bind_food_facility_operating_statement_utilization.py",
+    "return": "reports/CC_ARKANSAS_FOOD_FACILITY_OPERATING_STATEMENT_AND_UTILIZATION_BIND_1_0_RETURN.md",
+    "headline": {
+      "fees_bound": true,
+      "utilization_bound": false,
+      "operating_statement_bound": false,
+      "countable_now_usd": 0,
+      "food_hub_evidence_stage": "CLOSED_FIRST_PASS_MATURITY"
+    },
+    "research_next": [
+      "CC-TEN-STRUCTURAL-LOCKS-FIRST-PASS-DEFINITION-WAVE-1.0",
+      "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "food_hub_second_pass": "GATED_IMPLEMENTATION_STAGE_ONLY",
+    "holds": [
+      "overall_percent_held_at_43",
+      "completion_first_discipline",
+      "food_hub_stage_closed_first_pass",
+      "fee_schedule_ne_reserved_cash",
+      "no_further_food_hub_drilling_now"
+    ]
+  },
+  "master_system_coverage_audit_ten_structural_locks": {
+    "slice_id": "CC-MASTER-SYSTEM-COVERAGE-AUDIT-AND-TEN-STRUCTURAL-LOCKS-1.0",
+    "status": "PASSED_MASTER_COVERAGE_AUDIT_LOCKED",
+    "mode": "coverage_audit_then_ten_locks_not_twenty_five_lanes",
+    "decision_id": "CC-DEC-149",
+    "update_id": "UPD-162",
+    "audit": "data/project/master_system_coverage_audit.json",
+    "return": "reports/CC_MASTER_SYSTEM_COVERAGE_AUDIT_AND_TEN_STRUCTURAL_LOCKS_1_0_RETURN.md",
+    "classification_scheme": [
+      "COVERED",
+      "NEEDS_DEFINITION",
+      "NEEDS_FIRST_PASS_STRUCTURE",
+      "IMPLEMENTATION_VALIDATION_LATER"
+    ],
+    "operating_system_questions": [
+      "ownership",
+      "capital_formation",
+      "market_design",
+      "household_economics",
+      "power"
+    ],
+    "ten_structural_locks_count": 10,
+    "maturity_bar": "DEFINED_WELL_ENOUGH_TO_FIT_THE_SYSTEM",
+    "deep_research_gate_rule": "No new area gets a deep research bind unless failure to resolve it prevents us from explaining how the system works.",
+    "research_next": [
+      "CC-TEN-STRUCTURAL-LOCKS-FIRST-PASS-DEFINITION-WAVE-1.0",
+      "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+      "CC-ARKANSAS-AEDC-INCENTIVE-EQUITY-CONVERSION-LEGAL-MEMO-1.0"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "completion_first_discipline",
+      "deep_research_gate_rule",
+      "ten_locks_not_twenty_five_lanes",
+      "defined_not_perfected",
+      "post_book_validation_register"
+    ]
+  },
+  "completion_ladder_and_stage1_closure_wave": {
+    "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
+    "status": "PASSED_COMPLETION_SYSTEM_LOCKED_TEN_BONES_DRAFTED",
+    "mode": "four_stage_ladder_plus_ten_lock_bones",
+    "decision_id": "CC-DEC-150",
+    "update_id": "UPD-163",
+    "ladder": "data/project/completion_ladder_and_dashboard.json",
+    "ten_locks": "data/project/ten_structural_locks_stage1_definitions.json",
+    "return": "reports/CC_COMPLETION_LADDER_AND_STAGE_1_CLOSURE_WAVE_1_0_RETURN.md",
+    "dashboard": {
+      "skeleton_coverage_percent": 78,
+      "first_pass_coverage_percent": 12,
+      "publication_completion_percent": 3,
+      "validation_completion_percent": 0,
+      "overall_project_completion_percent": 23,
+      "legacy_43": "HISTORICAL_COMPOSITE_ANCHOR_ONLY"
+    },
+    "research_next": [
+      "CC-STAGE-1-FINAL-WHOLE-SYSTEM-GAP-AUDIT-1.0"
+    ],
+    "holds": [
+      "completion_ladder_governs",
+      "legacy_43_historical_only",
+      "breadth_then_completeness_then_depth_then_proof",
+      "stage_1_not_closed_until_gap_audit"
+    ]
   },
   "ai_abundance_distributed_productive_ownership": {
     "slice_id": "CC-AI-ABUNDANCE-AND-DISTRIBUTED-PRODUCTIVE-OWNERSHIP-1.0",
@@ -2394,7 +2572,7 @@
     "posture_return": "reports/CC_AI_ABUNDANCE_PARALLEL_EVIDENCE_POSTURE_LOCK_1_0_RETURN.md",
     "linked_hypotheses": ["HYP-126", "HYP-129", "HYP-130", "HYP-131", "HYP-132", "HYP-133"],
     "lane_posture": {
-      "main": "CC-ARKANSAS-EXTERNAL-INCOME-CAPTURE-MECHANISM-BIND-1.0",
+      "main": "CC-ARKANSAS-FOOD-HUB-OWNERSHIP-AND-PROCESSING-MARGIN-BIND-1.0",
       "structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
       "hyp134": "PARALLEL_EVIDENCE_INVENTORY_ONLY_WHEN_GROUNDED_IN_REAL_SERIES"
     },
@@ -2402,6 +2580,7 @@
       "do_not_expand_hyp134_further_yet",
       "parallel_evidence_only_until_series_bound",
       "does_not_rescue_todays_replacement_stack_by_assumption",
+      "anti_rescue_rule_hyp134_not_convenient_answer_when_revenue_math_fails",
       "ai_abundance_is_hypothesis_not_forecast",
       "projected_productivity_not_replacement_stack_revenue",
       "do_not_inflate_demoted_stack_for_ai_boom",
@@ -2409,6 +2588,7 @@
       "no_new_principle"
     ],
     "research_next_gated": [
+      "CC-AI-PRE-TRANSITION-BASELINE-BIND-1.0",
       "CC-AI-PRODUCTIVITY-TRANSITION-DASHBOARD-1.0",
       "CC-AI-ABUNDANCE-OWNERSHIP-STRUCTURE-COMPARISON-1.0",
       "CC-AI-ABUNDANCE-SENSITIVITY-VS-REPLACEMENT-STACK-1.0"
@@ -2416,18 +2596,19 @@
     "holds": [
       "overall_percent_held_at_43",
       "KEEP_AS_HYPOTHESIS",
-      "external_income_mechanism_bind_remains_main_evidence_lane",
-      "does_not_displace_external_income_mechanism_bind_or_definition_locks"
+      "evidence_first_modeling_later",
+      "does_not_displace_external_income_evidence_or_definition_locks"
     ]
   },
   "arkansas_human_capital_education_prosperity": {
     "slice_id": "CC-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM-1.0",
-    "status": "PASSED_REGISTRATION_AND_OPERATING_ARCHITECTURE_LOCKED",
-    "mode": "largest_class_education_module_four_pass_operating_architecture",
+    "status": "PASSED_REGISTRATION_OPERATING_ARCHITECTURE_AND_INTERGENERATIONAL_CAPITAL_LAYER",
+    "mode": "largest_class_education_module_four_pass_operating_architecture_plus_research_layer",
     "hypothesis_id": "CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM",
     "incubator_alias": "HYP-133",
-    "decision_id": "CC-DEC-139",
-    "update_id": "UPD-152",
+    "decision_id": "CC-DEC-144",
+    "update_id": "UPD-157",
+    "operating_architecture_decision_id": "CC-DEC-139",
     "registration_decision_id": "CC-DEC-138",
     "decision_posture": "KEEP_AS_HYPOTHESIS",
     "module_scale": "LARGEST_CLASS_ARKANSAS_TRANSITION_ARCHITECTURE",
@@ -2436,7 +2617,8 @@
     "dossier": "content/research/hypotheses/arkansas-human-capital-and-education-prosperity-system.md",
     "return": "reports/CC_ARKANSAS_HUMAN_CAPITAL_AND_EDUCATION_PROSPERITY_SYSTEM_1_0_RETURN.md",
     "operating_architecture_return": "reports/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_OPERATING_ARCHITECTURE_LOCK_1_0_RETURN.md",
-    "linked_hypotheses": ["HYP-124", "HYP-129", "HYP-130", "HYP-131", "HYP-132"],
+    "intergenerational_capital_return": "reports/CC_ARKANSAS_HUMAN_CAPITAL_INTERGENERATIONAL_CAPITAL_LAYER_1_0_RETURN.md",
+    "linked_hypotheses": ["HYP-124", "HYP-129", "HYP-130", "HYP-131", "HYP-132", "HYP-134"],
     "system_chain": ["HYP-130", "HYP-133", "HYP-129", "HYP-132", "HYP-131"],
     "stages": ["universal_foundation_plus_health", "pathway_formation_14_18", "advanced_capacity_investment", "adult_lifelong_reskilling"],
     "operating_passes_locked": [
@@ -2445,34 +2627,76 @@
       "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
       "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
     ],
+    "research_layer": {
+      "name": "Intergenerational Arkansas Capital",
+      "frame": "bona_fide_residency_and_public_investment_not_citizenship",
+      "not_a_principle": true,
+      "not_a_fifth_operating_pass": true
+    },
     "lane_posture": {
-      "main_fiscal_evidence": "CC-ARKANSAS-REPLACEMENT-STACK-FEEDER-BINDING-PASS-1.0",
+      "main_fiscal_evidence": "CC-ARKANSAS-FOOD-HUB-OWNERSHIP-AND-PROCESSING-MARGIN-BIND-1.0",
       "structural": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
       "hyp133": "PARALLEL_UNTIL_EMPIRICAL_BUILD_PASS"
     },
     "hard_safeguards": [
       "stop_adding_conceptual_branches",
       "never_call_it_free",
+      "bona_fide_residency_and_public_investment_not_citizenship",
       "positive_compact_not_exit_penalty",
       "no_mobility_wall",
+      "prevent_benefit_tourism_not_talent_immigration",
+      "public_claim_corresponds_to_public_contribution",
       "repayment_is_incremental_subsidy_not_punitive_debt",
       "gap_actions_build_expand_partner_import",
       "bachelor_not_only_prestige_path",
       "education_is_public_capital_investment",
+      "three_legal_tests_separate_in_pass_2",
       "no_new_principle"
     ],
     "research_next": [
       "CC-ARKANSAS-STRATEGIC-HUMAN-CAPITAL-DEMAND-MAP-1.0",
       "CC-ARKANSAS-RESIDENCY-AND-SERVICE-COMPACT-LEGAL-DESIGN-1.0",
       "CC-ARKANSAS-LEARNING-NETWORK-AND-REGIONAL-CENTERS-ARCHITECTURE-1.0",
-      "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0"
+      "CC-ARKANSAS-EDUCATION-IMPLEMENTATION-LEGAL-MATRIX-1.0",
+      "CC-ARKANSAS-HUMAN-CAPITAL-EXTERNAL-INCOME-AND-NONRESIDENT-PREMIUM-1.0",
+      "CC-ARKANSAS-PUBLIC-RESEARCH-IP-PUBLIC-CONTRIBUTION-RETURN-1.0"
     ],
     "holds": [
       "overall_percent_held_at_43",
       "KEEP_AS_HYPOTHESIS",
       "parallel_until_empirical_build_pass",
-      "feeder_binding_remains_main_fiscal_lane",
-      "does_not_displace_feeder_binding_or_definition_locks"
+      "intergenerational_capital_is_research_layer_not_principle",
+      "does_not_displace_external_income_evidence_or_definition_locks"
+    ]
+  },
+  "master_build_plan_resilience_transition": {
+    "slice_id": "CC-MASTER-BUILD-PLAN-RESILIENCE-AND-TRANSITION-LAYER-1.0",
+    "status": "PASSED_MASTER_PLAN_INTEGRATION_VALIDATION_FRAMEWORK_ONLY",
+    "mode": "cross_cutting_validation_layer_not_active_fiscal_slice",
+    "decision_id": "CC-DEC-145",
+    "update_id": "UPD-158",
+    "framework": "data/project/master_build_plan_resilience_transition_integration.json",
+    "milestone_chain": "data/project/arkansas_transition_milestone_chain.json",
+    "return": "reports/CC_MASTER_BUILD_PLAN_RESILIENCE_AND_TRANSITION_LAYER_1_0_RETURN.md",
+    "operating_chain": "Evidence → Comparative Diagnosis → Arkansas Needs → Human Capability → Local Pilot → Retain/Attract → Public Income & Ownership → Resilience Stress Test → Legal Feasibility → Measurement → Expansion",
+    "queued_future_modules": [
+      "CC-ARKANSAS-HOUSEHOLD-PROSPERITY-SURPLUS-PANEL-1.0",
+      "CC-ARKANSAS-COUNTY-GEOGRAPHIC-MONEY-STATEMENTS-1.0",
+      "CC-AI-SOCIAL-COMPACT-LEGAL-RESEARCH-TRACK-1.0",
+      "CC-ARKANSAS-ECONOMIC-CONTINUITY-LAYER-1.0"
+    ],
+    "hard_safeguards": [
+      "no_new_principle",
+      "does_not_alter_current_fiscal_projections",
+      "hyp134_quarantined_from_countable",
+      "no_giant_resilience_implementation_slice_now",
+      "completion_first_discipline",
+      "food_hub_stage_closed_first_pass"
+    ],
+    "holds": [
+      "overall_percent_held_at_43",
+      "resilience_is_validation_not_prediction",
+      "does_not_displace_external_income_evidence_or_definition_locks"
     ]
   },
   "publication_pass9_structural_deepen": {
@@ -2549,7 +2773,7 @@
     "principles": 47,
     "modeling": 0,
     "legal": 0,
-    "active_slice": "CC-PHASE-2.1-BASELINE-DEFINITION-LOCKS-AND-NEXT-LEGITIMATE-FILLS-1.0",
+    "active_slice": "CC-STAGE-1-PASS-2-HOUSEHOLD-PLACE-SPINE-1.0",
     "last_completed": "RCIP-PASS-10-FRED-RELEASE-OBSERVATIONS-DENSITY-1.0",
     "last_completed_parallel": "CC-CIVIC-ENGAGEMENT-AND-COMMUNITY-STRUCTURE-RESEARCH-TRACK-1.0",
     "export_id": "exp_5da8b3fe67d94923",

@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-150",
+  "update_id": "UPD-163",
+  "status": "COMPLETION_SYSTEM_LOCKED_STAGE_1_IN_PROGRESS",
+  "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
+  "governing_question_after_every_piece_of_work": "Did this materially move Constitutional Capitalism toward a finished system?",
+  "build_strategy": "Breadth first. Completeness second. Depth third. Proof fourth.",
+  "not": [
+    "single_percent_as_sole_progress_signal",
+    "deepening_one_area_while_others_empty",
+    "twenty_five_research_lanes",
+    "dial_inflation_by_research_volume",
+    "stage_4_attack_before_skeleton_closes"
+  ],
+  "historical_metric_reconciliation": {
+    "legacy_overall_percent": 43,
+    "legacy_role": "Historical research / governance / website / evidence composite — useful archive, no longer the governing completion signal",
+    "rule": "Do not erase 43; do not treat it as Stage completion. Dashboard four bars + overall_project_completion become source of truth after module inventory.",
+    "frozen_as": "HISTORICAL_COMPOSITE_ANCHOR"
+  },
+  "stages": [
+    {
+      "id": "STAGE_1",
+      "name": "Complete the Skeleton",
+      "target": "100% structural coverage",
+      "status": "IN_PROGRESS",
+      "exit_gate": "Draw the entire Constitutional Capitalism system on one master architecture and point to where every major function of government, markets, households, communities, capital, and democratic power lives — no orphan areas.",
+      "minimum_bone_template": [
+        "problem",
+        "objective",
+        "governing_principle",
+        "proposed_mechanism",
+        "relationship_to_other_modules",
+        "unresolved_questions",
+        "later_evidence_testing_requirements"
+      ],
+      "current_work": "Stage 1 Five-Pass Closure — Pass 1 complete; Pass 2 next",
+      "five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
+      "after_ten_locks": "Superseded by five-pass plan; Pass 5 is the whole-system closure audit"
+    },
+    {
+      "id": "STAGE_2",
+      "name": "Complete the First Pass",
+      "target": "100% of modules at PARTIAL or better",
+      "status": "NOT_STARTED",
+      "exit_gate": "Every module has minimum viable substance: what exists → what's wrong → what replaces/changes → how it works → who pays → who benefits → who owns → where money flows → safeguards → transition → intended result.",
+      "rule": "No polishing while another category sits empty. Measure: % of system at minimum viable completeness."
+    },
+    {
+      "id": "STAGE_3",
+      "name": "Write the Complete System",
+      "target": "100% publication-complete",
+      "status": "NOT_STARTED",
+      "exit_gate": "Category-by-category publication completeness: 100% of Category N before starting Category N+1.",
+      "rule": "Finish one category at a time. Not 80% of twenty categories."
+    },
+    {
+      "id": "STAGE_4",
+      "name": "Break It",
+      "target": "Validated system",
+      "status": "NOT_STARTED",
+      "exit_gate": "System survives ruthless attack; every failure resolves PASS | MODIFY | REPLACE | REMOVE.",
+      "attack_surfaces": [
+        "economic_modeling",
+        "constitutional_analysis",
+        "five_state_comparisons",
+        "recession",
+        "ai_disruption",
+        "demographic_decline",
+        "inflation_deflation",
+        "federal_funding_loss",
+        "political_capture",
+        "corruption",
+        "rural_urban_implementation",
+        "revenue_sensitivity",
+        "legal_challenges",
+        "transition_failures",
+        "unintended_consequences"
+      ]
+    }
+  ],
+  "progress_bars": {
+    "skeleton_coverage_percent": 63,
+    "first_pass_coverage_percent": 12,
+    "publication_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "notes": {
+      "skeleton": "Pass 1 Money & Ownership Spine complete (63%). Passes 2–5 remain to Stage 1 = 100%.",
+      "first_pass": "Many frameworks exist; most have not crossed Stage 2 minimum viable completeness checklist",
+      "publication": "Aligned to manuscript substance (~outline/concept dominant)",
+      "validation": "Stage 4 not open; resilience framework exists as plan only"
+    }
+  },
+  "overall_project_completion": {
+    "percent": 20,
+    "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights until Stage 1 closes)",
+    "calculation": "0.25*(63+12+3+0)=19.5 → 20",
+    "primary_number_going_forward": true,
+    "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 1–2 close — that is honesty, not regression"
+  },
+  "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
+  "active_stage1_pass": "PASS_2",
+  "last_completed_stage1_pass": "PASS_1",
+  "manager_scorecard": {
+    "purpose": "After each meaningful build cycle",
+    "questions": [
+      "Completion movement: Did I advance a stage exit gate?",
+      "Scope discipline: Did I prevent unnecessary expansion?",
+      "Coverage discipline: Did I catch a missing structural issue rather than blindly rushing forward?",
+      "Depth discipline: Did I stop research when additional depth stopped affecting architecture?",
+      "Integration: Did the new work connect to the existing system instead of becoming another island?",
+      "Decision rate: Did we turn uncertainty into decisions?",
+      "Writing completion: Did we increase the amount of genuinely finished material?"
+    ],
+    "failure_condition": "If none of these move, the completion objective failed — even if research was fascinating."
+  },
+  "gap_disposition_rule": {
+    "applies_at": "Final Stage 1 whole-system gap audit",
+    "only_three": [
+      "STRUCTURAL_HOLE — must resolve before Stage 1 closes",
+      "KNOWN_DETAIL — assign to Stage 2 or 3",
+      "VALIDATION_QUESTION — send directly to Stage 4"
+    ]
+  },
+  "os_questions_crosscut": [
+    "OS-OWNERSHIP",
+    "OS-CAPITAL-FORMATION",
+    "OS-MARKET-DESIGN",
+    "OS-HOUSEHOLD-ECONOMICS",
+    "OS-POWER"
+  ],
+  "related_artifacts": {
+    "coverage_audit": "data/project/master_system_coverage_audit.json",
+    "ten_locks_definitions": "data/project/ten_structural_locks_stage1_definitions.json",
+    "master_build_plan": "data/project/master_build_plan_resilience_transition_integration.json"
+  },
+  "holds": [
+    "completion_ladder_governs",
+    "four_bars_plus_overall_are_dashboard",
+    "legacy_43_historical_only",
+    "deep_research_gate_rule",
+    "breadth_then_completeness_then_depth_then_proof",
+    "stage_1_exit_requires_no_orphan_areas"
+  ]
+}

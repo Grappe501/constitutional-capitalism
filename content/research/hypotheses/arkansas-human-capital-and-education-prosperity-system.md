@@ -1,114 +1,104 @@
 # CC-HYP-ARKANSAS-HUMAN-CAPITAL-AND-EDUCATION-PROSPERITY-SYSTEM (HYP-133)
 
-**Status:** Research hypothesis — **not doctrine** · **not a principle** · **not “free college”** · **not an exit wall**  
-**Update:** UPD-152 · Decision: CC-DEC-139 (operating architecture locked) · Registration: CC-DEC-138  
+**Status:** Research hypothesis — **not doctrine** · **not a principle** · **not “free college”** · **not an exit wall** · **not Arkansas citizenship for rates**  
+**Update:** UPD-157 · Decision: CC-DEC-144 (Intergenerational Arkansas Capital research layer)  
+**Prior:** UPD-152 / CC-DEC-139 (operating architecture) · Registration: CC-DEC-138  
 **Module scale:** Largest-class Arkansas transition architecture  
 **Framework:** `data/project/arkansas_human_capital_education_prosperity_system.json`  
-**Demands:** `data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json`
+**Demands:** `data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json`  
+**Return:** `reports/CC_ARKANSAS_HUMAN_CAPITAL_INTERGENERATIONAL_CAPITAL_LAYER_1_0_RETURN.md`
 
-## Central question
+## Conceptual spine (locked — research layer)
 
-> Can Arkansas redesign education from early childhood through lifelong advanced learning as an integrated human-capital, economic-development, civic-development, and public-wealth system that gives every child a world-class foundation while strategically building and retaining the capabilities Arkansas needs?
+> **Education is the process by which Arkansas converts its inherited natural, institutional, intellectual and financial capital into greater human capability—and every generation is expected to leave the state's stock of capability and prosperity larger than it found it.**
 
-## Design posture
+## Frame (locked)
 
-> **Arkansas should treat education as a public capital investment in human capability—not as an unlimited transferable benefit with no expectation of contribution back to the state.**
+**Bona fide Arkansas residency and Arkansas public investment** — not “Arkansas citizenship.”
 
-Never call it “free.” Use: **publicly guaranteed · publicly financed · resident-invested · prosperity-funded · no direct tuition at point of access where appropriate.**
+> Arkansas taxpayers, families, institutions, land, research, infrastructure, and generations of accumulated public investment have built educational assets. Bona fide Arkansas residents should receive the strongest public investment rate; nonresidents should pay a premium that reflects the real value of access to those assets.
 
-## Four stages
+## Inheritance obligation
+
+> Every generation receives an Arkansas inheritance. Its responsibility is not merely to consume it, but to enlarge it and pass a stronger inheritance to the next generation.
+
+### Intergenerational public capital
+
+| Category | Examples |
+|---|---|
+| **Natural** | land, water, minerals, forests, agricultural productivity |
+| **Physical** | roads, universities, laboratories, hospitals, utilities, public buildings |
+| **Human** | teachers, scientists, workers, farmers, engineers, physicians, entrepreneurs |
+| **Institutional** | legal systems, universities, extension, research institutions, public datasets |
+| **Intellectual** | publicly financed research, plant science, medicine, software, patents, accumulated knowledge |
+
+## Access and pricing (postsecondary)
+
+| Tier | Posture |
+|---|---|
+| **Pre-K3 → secondary** | Publicly guaranteed for bona fide resident children. No tuition concept. |
+| **Arkansas resident** | Deeply publicly invested Resident Investment Rate after defensible residency/domicile test |
+| **New bona fide resident** | Qualifies after legitimate criteria — must be allowed to prove bona fide residence (*Vlandis v. Kline*, 412 U.S. 441) |
+| **Nonresident** | Premium market rate for scarce elite seats — **optimize public return**, do not blindly maximize price |
+| **International** | Premium global-market tuition where competitive |
+| **Strategic recruit** | Scholarships when Arkansas deliberately wants that person to become an Arkansan |
+
+**Rule:** prevent **benefit tourism**, not **talent immigration** (HYP-132).
+
+Nonresident/international premium can become **Human-Capital External Income** (HYP-131) — countable only when reserved cash is bound.
+
+## Public research / IP
+
+> The public's claim should correspond to the **public contribution** — not literal state ownership of every idea.
+
+`research → IP → license/equity/royalty → university reinvestment + researcher reward + public prosperity return`
+
+Scientist, entrepreneur, company, **and Arkansas** should benefit.
+
+## Flow redirection
+
+**Desired:** Arkansas resources → education → capability → innovation → ownership → wealth → reinvestment in Arkansans  
+
+**Rejected pattern:** Arkansas resources → outside processing / outside ownership / graduate leaves → wealth exits  
+
+## Three separate legal tests (Pass 2 — do not blend)
+
+1. How strong can bona fide residency requirements for subsidized higher education legally be?  
+2. How much premium can Arkansas lawfully and economically charge nonresidents?  
+3. How can Arkansas capture continuing public return from publicly financed research/advanced educational assets without undermining academic freedom, private innovation, or talent attraction?
+
+## End-state formulation
+
+> Arkansas invests heavily in Arkansans, sells world-class educational capacity to the rest of the world, recruits the people it wants to become Arkansans, and keeps a durable share of the economic value its public institutions help create.
+
+## Four stages (unchanged bands)
 
 | Stage | Band | Core |
 |---|---|---|
 | **1** | Birth → ~Grade 12 | Universal human-capital foundation + health inside education |
-| **2** | ~Ages 14–18 | Pathway formation (CTE on the main spine; bachelor’s not sole prestige) |
-| **3** | Advanced / specialty | Arkansas capacity investment via Strategic Human-Capital Demand Map (HYP-130) |
-| **4** | Adult lifelong | Continuous reskilling + employer Workforce Transition Plans (AI era) |
+| **2** | ~Ages 14–18 | Pathway formation (CTE on the main spine) |
+| **3** | Advanced / specialty | Capacity investment + residency/public-investment pricing |
+| **4** | Adult lifelong | Continuous reskilling + Workforce Transition Plans |
 
-### Stage 1 floor (ambitious)
+## Positive residency-and-service compact
 
-Early childhood · literacy · math · science · civics · health · nutrition · technology · arts · PE · financial literacy · trades exposure · agriculture · AI literacy · community service · career exploration.
+**Rejected:** “You may not leave.”  
+**Legal room:** reasonable bona fide-residency criteria; no irrebuttable permanent nonresident labels (*Vlandis*).  
+**Strategic Capacity Contract:** serve/invest in Arkansas **or** repay incremental public subsidy — investment contract, not exit tax.
 
-Health inside the system: pediatric, dental, vision, hearing, nutrition, mental health, developmental screening, maternal/family support, school-based clinics where useful.
+## System chain (deepened)
 
-### Stage 2 pathways
+> **HYP-130** need → **HYP-133** build people / enlarge inheritance → **HYP-129** prove locally → **HYP-132** retain/attract talent without blocking immigration → **HYP-131** capture prosperity (incl. Human-Capital External Income + public-contribution IP)
 
-University-prep · skilled trades · healthcare · ag/food · manufacturing · tech/AI · entrepreneurship · public/civic · arts/media · military/service · research/science.
+## Operating architecture (unchanged order)
 
-Students become builders: supervised real systems that produce **education + productive capacity**.
+1. Demand Map · 2. Compact legal memo (three tests) · 3. Learning Network BUILD/EXPAND/PARTNER/IMPORT · 4. 8–16y implementation matrix  
 
-### Stage 3 — capacity investment
-
-Need → seats → graduates → shortages → geographic shortage → program expansion. Education spending = economic infrastructure.
-
-### Stage 4 — permanent adult education
-
-Worker → automation displacement → short credential → apprenticeship → new occupation. Not unlimited taxpayer-paid degrees.
-
-## Positive residency-and-service compact (not exit penalty)
-
-**Rejected:** “You received an Arkansas education, therefore you may not leave.”
-
-**Legal room (research posture):** States may use reasonable bona fide-residency criteria for subsidized rates; Arkansas already distinguishes residents/nonresidents. Irrebuttable presumptions and travel-right walls are out.
-
-### Arkansas Resident Investment Rate
-
-After genuine residency or Arkansas K–12 history (and other constitutionally valid categories).
-
-### State Strategic Capacity Contract
-
-For urgently needed, heavily subsidized professions:
-
-1. **Serve/invest in Arkansas for X years**, or  
-2. **Repay a defined portion of the additional public subsidy.**
-
-Investment contract — not an exit tax. Fulfillment clears the obligation.
-
-## Public research as a prosperity asset
-
-`public research funding → patent/IP → licensing → royalty → university reinvestment + Prosperity Fund`
-
-## Arkansas Learning Network + Regional Centers of Excellence
-
-Not 45 competing silos duplicating everything (HYP-130: 1,759 programs). Local school + magnet + community college + university + online specialist + apprenticeship + lab on one pathway.
-
-Illustrative centers (not locked): Delta Ag Tech · South AR Energy/Lithium · North Central Food Systems · River Valley Advanced Manufacturing · Rural Health & Maternal Care · Ozarks Tourism/Outdoor · State AI/Automation.
-
-## Economic bargain
-
-> Arkansas will invest more deeply in your potential than almost anywhere in America. In return, we expect you to use that capability to build a productive life, contribute to your community, and strengthen the society investing in you.
-
-Not coerced service. Not debt slavery. Not a citizenship test. A social and contractual compact.
-
-## Eighteen tracks
-
-Early childhood · K–8 · Secondary pathways · Rural/regional magnets · CTE/apprenticeship · University network · Strategic capacity · Residency/service compact · Healthcare integration · AI literacy · Adult reskilling · Public research/IP · Employer finance · Union/apprenticeship · Regional centers · Digital learning network · Civic education/service · Outcome measurement
-
-Each track requires legal gates: **CAN START NOW / RULE CHANGE / LEGISLATION / CONSTITUTIONAL / FEDERAL**.
-
-## System chain (locked)
-
-> **HYP-130** tells Arkansas what capability it needs. **HYP-133** builds the people capable of doing it. **HYP-129** determines where we prove it locally. **HYP-132** gives those people reasons to stay, return, raise families and build wealth here. **HYP-131** captures enough resulting prosperity to reduce compulsory taxation.
-
-## Operating architecture (locked — stop conceptual branching)
-
-When HYP-133 gets its next substantial pass, execute in this order only:
-
-| # | Pass | Core deliverable |
-|---|---|---|
-| **1** | Human-Capital Demand Map | Statewide ledger: occupation → employment → projected/replacement demand → wages → programs → enrollment → completers → geographic shortages → imports → missing capacity. First wave: healthcare, dental/maternal, ag/food, trades, engineering/energy, teachers, advanced mfg, AI/tech |
-| **2** | Residency/Service Compact legal design | Constitutional/legal memo: bona fide offer, residency duration, incremental subsidy definition, serve-or-repay, exceptions, interstate mobility, professional programs — repayment ≠ punitive tuition debt |
-| **3** | Learning Network + Centers | Map 1,759 programs onto Demand Map; for gaps issue **BUILD / EXPAND / PARTNER / IMPORT-TEMPORARILY** |
-| **4** | Implementation/legal matrix | Per component: existing authority → rule → appropriation → statute → constitutional → federal + institution, funding, pilot geography, measurement, failure trigger, expansion gate — the **8–16 year program** |
-
-**Global lanes unchanged:** Feeder Binding = main fiscal/evidence · definition-locks = structural · HYP-133 = **parallel until empirical build pass**.
+**Not a fifth empirical pass.** Main fiscal lane remains External Income / food-hub evidence. Structural: definition-locks.
 
 ## Holds
 
-- Stop adding conceptual branches  
-- No new principle · 43% dial held  
-- Does not displace feeder-binding or definition-locks
-
-## Long-term vision
-
-> Arkansas becomes a learning society in which every stage of education deliberately builds the health, knowledge, skills, ownership, civic capacity, and productive power of its people—and every critical capability Arkansas needs can ultimately be learned, practiced, and built inside Arkansas.
+- No new principle · research layer only · 43% dial held  
+- Residency/public investment ≠ citizenship  
+- Never “free” · no mobility wall · public claim ∝ public contribution  
+- Does not displace External Income evidence or definition-locks
