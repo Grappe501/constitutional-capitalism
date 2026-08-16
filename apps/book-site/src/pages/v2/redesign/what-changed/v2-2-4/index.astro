@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import log from "@data/project/pass_changelogs/v2_2_4.json";
+
+const ship = log.ship_record || {};
+---
+
+<BaseLayout
+  title="What Changed — V2.2.4"
+  path="/v2/redesign/what-changed/v2-2-4/"
+  description="What changed in V2.2.4 Redesign Integration & Certification."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">{log.status}</span>
+      <h1>{log.pass_name}</h1>
+      <p class="muted">
+        {log.pass_id} · {log.decision_id} · {log.update_id} · {log.generated_at}
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Ship record</h2>
+      <ul class="link-board">
+        <li>
+          <strong>Closure gate</strong>: {ship.closure_gate || "—"}
+        </li>
+        <li>
+          <strong>Git commit</strong>:{" "}
+          {ship.git_commit_short ? <code>{ship.git_commit_short}</code> : "pending"}
+          {ship.git_commit && <span class="muted"> ({ship.git_commit})</span>}
+        </li>
+        <li>
+          <strong>Production</strong>:{" "}
+          <a href={ship.production_url || "https://constitutional-capitalism.netlify.app"}>
+            {ship.production_url || "https://constitutional-capitalism.netlify.app"}
+          </a>
+        </li>
+        <li>
+          <strong>Deploy</strong>:{" "}
+          {ship.deploy_id ? (
+            <>
+              <code>{ship.deploy_id}</code>
+              {ship.deploy_url && (
+                <>
+                  {" · "}
+                  <a href={ship.deploy_url}>unique deploy →</a>
+                </>
+              )}
+            </>
+          ) : (
+            "pending"
+          )}
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Before → After</h2>
+      <ul class="stack">
+        {
+          (log.before_after || []).map((row: any) => (
+            <li>
+              <strong>{row.label}</strong>
+              <div class="muted">
+                {row.before} → <strong>{row.after}</strong>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Surfaces</h2>
+      <ul class="link-board">
+        {
+          (log.experience_links || []).map((l: any) => (
+            <li>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-2-REDESIGN-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-203",
-  "update_id": "UPD-216",
+  "decision_id": "CC-DEC-204",
+  "update_id": "UPD-217",
   "generated_at": "2026-08-16",
-  "status": "OBJECTS_CLOSED_AWAITING_CERTIFICATION",
+  "status": "CERTIFIED",
   "gate": "V2.2",
   "title": "REDESIGN ARKANSAS",
   "governing_question": "Given how Arkansas actually works today, what should we KEEP, REFORM, CONSOLIDATE, DEVOLVE, REGIONALIZE, PHASE OUT, ELIMINATE, or create NEW under Constitutional Capitalism?",
@@ -47,10 +47,11 @@
     },
     {
       "id": "V2.2.4",
-      "name": "Whole-State Operating Model & Redesign Certification",
-      "status": "NEXT",
-      "href": null,
-      "exit": "Join 114 decisions; hostile tests; then CERTIFY redesign (no new redesign)."
+      "name": "Redesign Integration & Certification",
+      "status": "COMPLETE",
+      "href": "/v2/redesign/certification/",
+      "exit": "114 joined; hostile tests passed; REDESIGN CERTIFIED and frozen.",
+      "what_changed": "/v2/redesign/what-changed/v2-2-4/"
     }
   ],
   "progress": {
@@ -61,7 +62,8 @@
     "f_objects_closed": 38,
     "i_objects_closed": 38,
     "o_objects_closed": 38,
-    "o_objects_open": 0
+    "o_objects_open": 0,
+    "certification": "CERTIFIED"
   },
   "object_model": "38 × F/I/O = 114 redesign objects",
   "see_certified": true,
@@ -71,7 +73,18 @@
     "functional_geography_atlas": "/v2/redesign/functional-geography-atlas/",
     "operating_system": "/v2/redesign/operating-system/",
     "life_events": "/v2/redesign/life-events/",
-    "public_decision_receipt": "/v2/redesign/public-decision-receipt/"
+    "public_decision_receipt": "/v2/redesign/public-decision-receipt/",
+    "certification": "/v2/redesign/certification/",
+    "operating_model": "/v2/redesign/proposed-operating-model/",
+    "changed_our_mind": "/v2/redesign/changed-our-mind/",
+    "contradiction_register": "/v2/redesign/contradiction-register/"
   },
-  "note": "114/114 objects closed. V2.2 not CERTIFIED until V2.2.4 join/hostile pass."
+  "note": "V2.2 REDESIGN ARKANSAS — CERTIFIED. Operating model frozen. Next: V2.3 FUND.",
+  "freeze": {
+    "operating_model_frozen": true,
+    "v2_3_forbidden": "V2.3 may not change the redesigned operating model merely because something is expensive. If unaffordable: report UNAFFORDABLE, REQUIRES PHASING, or REQUIRES REDESIGN REFERRAL — never quiet spreadsheet redesign.",
+    "new_redesign_objects": 0,
+    "new_theory": 0,
+    "funding_design": 0
+  }
 }

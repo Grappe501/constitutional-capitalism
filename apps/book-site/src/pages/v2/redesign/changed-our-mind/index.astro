@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_2_4_redesign_integration_certification.json";
+
+const rows = pass.changed_our_mind || [];
+---
+
+<BaseLayout
+  title="Changed Our Mind — V2.2 Redesign"
+  path="/v2/redesign/changed-our-mind/"
+  description="Where V2.2 analysis rejected intuitive redesigns."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">ANALYTICAL, NOT IDEOLOGICAL</span>
+      <h1>Changed Our Mind</h1>
+      <p class="lede">
+        REDESIGN rejected neat intuitions when evidence and coexistence tests required it.
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <ul class="stack">
+        {
+          rows.map((r: any) => (
+            <li>
+              <strong>Rejected:</strong> {r.intuitive}
+              <div class="muted">{r.rejected_because}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <p>
+      <a href="/v2/redesign/certification/">Certification →</a>
+      {" · "}
+      <a href="/v2/redesign/">Redesign hub →</a>
+    </p>
+  </article>
+</BaseLayout>
