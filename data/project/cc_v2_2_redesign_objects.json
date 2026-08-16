@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-2-REDESIGN-OBJECTS-1.0",
-  "decision_id": "CC-DEC-201",
-  "update_id": "UPD-214",
+  "decision_id": "CC-DEC-202",
+  "update_id": "UPD-215",
   "generated_at": "2026-08-16",
   "rule": "38 homes × F/I/O = 114 redesign objects. HOLD-COMPLETE is a legitimate closed result.",
   "disposition_vocabulary": [
@@ -24,7 +24,7 @@
   "total_objects": 114,
   "closed_objects": 38,
   "open_objects": 76,
-  "v2_2_completion_percent": 33.3,
+  "v2_2_completion_percent": 66.7,
   "objects": [
     {
       "object_id": "constitutional_structure.F",
@@ -41,10 +41,11 @@
       "home_id": "constitutional_structure",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "F=KEEP. Institution stays statewide. No redesign theater.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "constitutional_structure.O",
@@ -71,10 +72,11 @@
       "home_id": "revenue",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No rates. Institutional placement only.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "revenue.O",
@@ -101,10 +103,11 @@
       "home_id": "expenditures",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Feeds RD-DEP-001 → public_data visibility before agency consolidate.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "expenditures.O",
@@ -131,10 +134,11 @@
       "home_id": "agencies",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "High burden met only for shared services — not org-chart elegance.",
+      "structural_verb": "CONSOLIDATE"
     },
     {
       "object_id": "agencies.O",
@@ -161,10 +165,11 @@
       "home_id": "education",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Institutional geography only — no county education-economy assignment.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "education.O",
@@ -191,10 +196,11 @@
       "home_id": "healthcare",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Says regional function — NOT 'County X becomes healthcare economy'.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "healthcare.O",
@@ -221,10 +227,11 @@
       "home_id": "justice",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No new courts invented without capacity+accountability.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "justice.O",
@@ -251,10 +258,11 @@
       "home_id": "local_government",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MUNICIPAL / LOCAL",
+      "closed_by_pass": "V2.2.2",
+      "note": "RD-DEP-006 resolved: local democracy kept; functions tested separately.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "local_government.O",
@@ -281,10 +289,11 @@
       "home_id": "housing",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Devolution with resources/authority — no unfunded subsidiarity.",
+      "structural_verb": "DEVOLVE"
     },
     {
       "object_id": "housing.O",
@@ -311,10 +320,11 @@
       "home_id": "land",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No statewide zoning bureau.",
+      "structural_verb": "DEVOLVE"
     },
     {
       "object_id": "land.O",
@@ -341,10 +351,11 @@
       "home_id": "agriculture",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "F=KEEP carries into institutional KEEP posture.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "agriculture.O",
@@ -371,10 +382,11 @@
       "home_id": "energy",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Essential ≠ publicly owned.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "energy.O",
@@ -401,10 +413,11 @@
       "home_id": "water",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Regionalize systems — not redraw counties.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "water.O",
@@ -431,10 +444,11 @@
       "home_id": "transportation",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No county logistics-economy assignment.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "transportation.O",
@@ -461,10 +475,11 @@
       "home_id": "digital_infrastructure",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Investor/Owner only under eight gates.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "digital_infrastructure.O",
@@ -491,10 +506,11 @@
       "home_id": "labor",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No county 'workforce future' assignment.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "labor.O",
@@ -521,10 +537,11 @@
       "home_id": "capital",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No public bank / funding architecture (V2.3).",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "capital.O",
@@ -551,10 +568,11 @@
       "home_id": "banking",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "F=KEEP.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "banking.O",
@@ -581,10 +599,11 @@
       "home_id": "business_formation",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Feeds V2.2.3 citizen friction work.",
+      "structural_verb": "CONSOLIDATE"
     },
     {
       "object_id": "business_formation.O",
@@ -611,10 +630,11 @@
       "home_id": "procurement",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Consolidation burden met for common buys.",
+      "structural_verb": "CONSOLIDATE"
     },
     {
       "object_id": "procurement.O",
@@ -641,10 +661,11 @@
       "home_id": "economic_development",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Institutional geography only — Opportunity Portfolios OFF.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "economic_development.O",
@@ -671,10 +692,11 @@
       "home_id": "pensions",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "HOLD-COMPLETE: enough to place institution statewide; not enough to redesign funding (V2.3).",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "pensions.O",
@@ -701,10 +723,11 @@
       "home_id": "public_assets",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "No fire-sale. Inventory first.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "public_assets.O",
@@ -731,10 +754,11 @@
       "home_id": "natural_resources",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Functional resource atlas layer.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "natural_resources.O",
@@ -761,10 +785,11 @@
       "home_id": "federal_dependency",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "Institutional placement for visibility — not funding redesign.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "federal_dependency.O",
@@ -791,10 +816,11 @@
       "home_id": "household_economics",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Measurement home — not a new benefits agency.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "household_economics.O",
@@ -821,10 +847,11 @@
       "home_id": "demographics",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "F=KEEP.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "demographics.O",
@@ -851,10 +878,11 @@
       "home_id": "geographic_disparities",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Uses V2-GEO-001; no county future assignment.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "geographic_disparities.O",
@@ -881,10 +909,11 @@
       "home_id": "civic_institutions",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Do not nationalize civil society.",
+      "structural_verb": "DEVOLVE"
     },
     {
       "object_id": "civic_institutions.O",
@@ -911,10 +940,11 @@
       "home_id": "elections",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Rights floor dominates.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "elections.O",
@@ -941,10 +971,11 @@
       "home_id": "direct_democracy",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "F=KEEP.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "direct_democracy.O",
@@ -971,10 +1002,11 @@
       "home_id": "administrative_power",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Role Conflict Test → institutional architecture.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "administrative_power.O",
@@ -1001,10 +1033,11 @@
       "home_id": "public_data",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Unlocks expenditures visibility (RD-DEP-001).",
+      "structural_verb": "CONSOLIDATE"
     },
     {
       "object_id": "public_data.O",
@@ -1031,10 +1064,11 @@
       "home_id": "ai",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Minimum institutional posture only. HOLD-COMPLETE valid.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "ai.O",
@@ -1061,10 +1095,11 @@
       "home_id": "emergency_government",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Power concentration test critical.",
+      "structural_verb": "REGIONALIZE"
     },
     {
       "object_id": "emergency_government.O",
@@ -1091,10 +1126,11 @@
       "home_id": "intergenerational_obligations",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "STATEWIDE",
+      "closed_by_pass": "V2.2.2",
+      "note": "HOLD-COMPLETE: who carries stewardship = statewide; not funding design.",
+      "structural_verb": "NONE"
     },
     {
       "object_id": "intergenerational_obligations.O",
@@ -1121,10 +1157,11 @@
       "home_id": "human_services",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Key question: household experience of many functions — interface later, friction now.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "human_services.O",
@@ -1151,10 +1188,11 @@
       "home_id": "insurance_and_risk",
       "type": "I",
       "label": "Institutional/geographic home",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "MULTI-LEVEL",
+      "closed_by_pass": "V2.2.2",
+      "note": "Cross-cutting map — not one agency.",
+      "structural_verb": "REFORM_INSTITUTION"
     },
     {
       "object_id": "insurance_and_risk.O",
@@ -1166,5 +1204,24 @@
       "closed_by_pass": null,
       "note": "Queued — function first; institution/operating model later."
     }
-  ]
+  ],
+  "counts": {
+    "total": 114,
+    "closed": 76,
+    "open": 38,
+    "by_type": {
+      "F": {
+        "closed": 38,
+        "open": 0
+      },
+      "I": {
+        "closed": 38,
+        "open": 0
+      },
+      "O": {
+        "closed": 0,
+        "open": 38
+      }
+    }
+  }
 }

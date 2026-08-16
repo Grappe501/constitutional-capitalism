@@ -1,7 +1,7 @@
 ---
 /**
- * Consistent prev / next / deeper / sources footer for every Public Book chapter.
- * PRESENTATION — Pass 5.11 assembly.
+ * Prev / next / quieter deeper footer for every Public Book chapter.
+ * PRESENTATION — Pass 5.11 assembly · reader-first chrome.
  */
 interface Props {
   chapter: number; // 1–10
@@ -98,50 +98,54 @@ const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
 ---
 
 <nav class="hub-section public-book-nav" aria-label="Chapter navigation">
-  <p class="muted">
-    Chapter {current.n} of 10 · {current.question}
-  </p>
-  <ul class="link-board">
+  <p class="muted">Chapter {current.n} of 10 · {current.question}</p>
+  <div class="public-book-nav__steps">
     {
       prev ? (
-        <li>
-          <strong>Previous</strong> —{" "}
-          <a href={prev.href}>
-            Ch. {prev.n}: {prev.title} →
-          </a>
-        </li>
+        <a class="public-book-nav__step" href={prev.href}>
+          <span>Previous</span>
+          <strong>
+            Ch. {prev.n}: {prev.title}
+          </strong>
+        </a>
       ) : (
-        <li>
-          <strong>Previous</strong> —{" "}
-          <a href="/public-book/introduction/">Introduction →</a>
-        </li>
+        <a class="public-book-nav__step" href="/public-book/introduction/">
+          <span>Previous</span>
+          <strong>Introduction</strong>
+        </a>
       )
     }
     {
       next ? (
-        <li>
-          <strong>Next</strong> —{" "}
-          <a href={next.href}>
-            Ch. {next.n}: {next.title} →
-          </a>
-        </li>
+        <a class="public-book-nav__step public-book-nav__step--next" href={next.href}>
+          <span>Next</span>
+          <strong>
+            Ch. {next.n}: {next.title}
+          </strong>
+        </a>
       ) : (
-        <li>
-          <strong>Next</strong> — <a href="/public-book/afterword/">Afterword →</a>
-        </li>
+        <a class="public-book-nav__step public-book-nav__step--next" href="/public-book/afterword/">
+          <span>Next</span>
+          <strong>Afterword</strong>
+        </a>
       )
     }
-    <li>
-      <strong>Explore this deeper</strong> — <a href={current.deeper}>Open →</a>
-    </li>
-    <li>
-      <strong>Sources / Evidence</strong> — <a href={current.evidence}>Open →</a>
-    </li>
-    <li>
-      <a href="/public-book/table-of-contents/">Table of Contents →</a>
-    </li>
-    <li>
-      <a href="/public-book/">Public Book hub →</a>
-    </li>
-  </ul>
+  </div>
+  <details class="public-book-nav__deeper">
+    <summary>Go deeper (optional)</summary>
+    <ul class="link-board">
+      <li>
+        <a href={current.deeper}>Background for this chapter →</a>
+      </li>
+      <li>
+        <a href={current.evidence}>Sources / Evidence →</a>
+      </li>
+      <li>
+        <a href="/book/">All chapters →</a>
+      </li>
+      <li>
+        <a href="/public-book/">Edition notes &amp; tools →</a>
+      </li>
+    </ul>
+  </details>
 </nav>

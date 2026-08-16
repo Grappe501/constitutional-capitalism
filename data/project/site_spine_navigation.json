@@ -4,11 +4,11 @@
   "decision_id": "CC-DEC-152",
   "purpose": "Public site navigation organized by Stage 1 five-spine architecture. Every public page and research surface must appear exactly once as a primary home.",
   "primary_nav": [
+    { "href": "/book/", "label": "Read" },
+    { "href": "/compare/explorer/", "label": "Explore" },
     { "href": "/system/", "label": "System" },
-    { "href": "/research/", "label": "Research" },
-    { "href": "/book/", "label": "Book" },
     { "href": "/evidence/", "label": "Evidence" },
-    { "href": "/build-progress/", "label": "Build Progress" }
+    { "href": "/v2/", "label": "V2" }
   ],
   "build_progress": {
     "href": "/build-progress/",
@@ -28,6 +28,7 @@
     "title": "Foundations",
     "blurb": "What Constitutional Capitalism is — before the operating spines.",
     "links": [
+      { "href": "/book/", "label": "Read the Public Book" },
       { "href": "/unabridged/", "label": "Unabridged Reader" },
       { "href": "/unabridged/is-is-not/", "label": "What CC Is / Is Not" },
       { "href": "/definition/", "label": "Definition" },
@@ -233,44 +234,43 @@
   ],
   "footer_columns": [
     {
-      "title": "Start",
+      "title": "Read",
       "links": [
-        { "href": "/definition/", "label": "Definition" },
-        { "href": "/declaration/", "label": "Declaration" },
-        { "href": "/system/", "label": "Full system" },
-        { "href": "/system/visual-language/", "label": "Visual language" },
-        { "href": "/why/", "label": "Why" }
+        { "href": "/book/", "label": "Start reading" },
+        { "href": "/public-book/the-arkansas-we-inherited/", "label": "Chapter 1" },
+        { "href": "/public-book/table-of-contents/", "label": "Table of contents" },
+        { "href": "/public-book/readers-contract/", "label": "Reader's Contract" },
+        { "href": "/public-book/afterword/", "label": "Afterword" }
       ]
     },
     {
-      "title": "Spines",
+      "title": "Go deeper",
       "links": [
-        { "href": "/system/money-ownership/", "label": "Money & Ownership" },
-        { "href": "/system/household-place/", "label": "Household & Place" },
-        { "href": "/system/government-power/", "label": "Government & Power" },
-        { "href": "/system/transition-measurement/", "label": "Transition & Measurement" }
-      ]
-    },
-    {
-      "title": "Research",
-      "links": [
-        { "href": "/research/", "label": "Research desk" },
+        { "href": "/compare/explorer/", "label": "Comparison Explorer" },
+        { "href": "/unabridged/", "label": "Unabridged" },
         { "href": "/evidence/", "label": "Evidence" },
+        { "href": "/v2/", "label": "V2 Blueprint" },
+        { "href": "/definition/", "label": "Definition" }
+      ]
+    },
+    {
+      "title": "Project",
+      "links": [
+        { "href": "/about/", "label": "About" },
+        { "href": "/why/", "label": "Why this book" },
         { "href": "/build-progress/", "label": "Build Progress" },
-        { "href": "/system/arkansas-state-baseline/", "label": "Arkansas Baseline" },
-        { "href": "/metrics/", "label": "Metrics" },
-        { "href": "/compare/", "label": "Compare" },
+        { "href": "/research/", "label": "Research desk" },
         { "href": "/updates/", "label": "Updates" },
         { "href": "/status/", "label": "Status" }
       ]
     },
     {
-      "title": "Book",
+      "title": "Arkansas",
       "links": [
-        { "href": "/book/", "label": "Chapters" },
-        { "href": "/read/", "label": "Read" },
-        { "href": "/resources/", "label": "Resources" },
-        { "href": "/about/", "label": "About" }
+        { "href": "/v2/see-arkansas/", "label": "SEE ARKANSAS" },
+        { "href": "/v2/redesign/", "label": "REDESIGN" },
+        { "href": "/system/arkansas-state-baseline/", "label": "State baseline" },
+        { "href": "/resources/", "label": "Resources" }
       ]
     }
   ]

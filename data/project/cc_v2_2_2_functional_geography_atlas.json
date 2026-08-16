@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-2-2-FUNCTIONAL-GEOGRAPHY-ATLAS-1.0",
+  "decision_id": "CC-DEC-202",
+  "update_id": "UPD-215",
+  "generated_at": "2026-08-16",
+  "status": "COMPLETE",
+  "title": "Functional Geography Atlas",
+  "rule": "Classify political vs functional geography. Where they differ, record it. Do not redraw governmental boundaries yet.",
+  "county_opportunity_portfolios": "OFF",
+  "layers": [
+    {
+      "id": "healthcare",
+      "title": "Healthcare geography",
+      "political": "County health units / political counties",
+      "functional": "Hospital referral / trauma / specialty catchments crossing counties",
+      "alignment": "DIVERGE",
+      "homes": [
+        "healthcare",
+        "insurance_and_risk",
+        "emergency_government"
+      ],
+      "implication": "REGIONALIZE specialty/EMS capacity; do not treat care as county-sealed"
+    },
+    {
+      "id": "education",
+      "title": "Education geography",
+      "political": "School districts (≠ counties) + state ADE",
+      "functional": "Coops + higher-ed / labor catchments",
+      "alignment": "DIVERGE",
+      "homes": [
+        "education",
+        "labor"
+      ],
+      "implication": "REGIONALIZE specialized capacity; keep local delivery"
+    },
+    {
+      "id": "transportation",
+      "title": "Transportation / logistics geography",
+      "political": "ARDOT districts / counties / cities",
+      "functional": "Commute sheds, freight corridors, MPO regions",
+      "alignment": "DIVERGE",
+      "homes": [
+        "transportation",
+        "economic_development",
+        "labor"
+      ],
+      "implication": "REGIONALIZE corridor planning"
+    },
+    {
+      "id": "water",
+      "title": "Water geography",
+      "political": "Municipal / district utility borders",
+      "functional": "Watersheds and shared treatment systems",
+      "alignment": "DIVERGE",
+      "homes": [
+        "water",
+        "natural_resources",
+        "land"
+      ],
+      "implication": "REGIONALIZE where capacity/spillover fail locally"
+    },
+    {
+      "id": "workforce_economy",
+      "title": "Economic / workforce geography",
+      "political": "Counties / cities / local ED orgs",
+      "functional": "Labor-market / site regions",
+      "alignment": "DIVERGE",
+      "homes": [
+        "labor",
+        "economic_development",
+        "business_formation",
+        "capital"
+      ],
+      "implication": "Regional partnerships allowed; county opportunity portfolios OFF"
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency-service geography",
+      "political": "County/municipal EM",
+      "functional": "Mutual aid / hazard footprints",
+      "alignment": "DIVERGE",
+      "homes": [
+        "emergency_government",
+        "healthcare"
+      ],
+      "implication": "REGIONALIZE mutual aid specialty"
+    },
+    {
+      "id": "admin_access",
+      "title": "Administrative / service-access geography",
+      "political": "Agency field offices / county seats",
+      "functional": "Household travel-to-service reality (SEE distance patterns)",
+      "alignment": "DIVERGE",
+      "homes": [
+        "human_services",
+        "agencies",
+        "justice",
+        "healthcare"
+      ],
+      "implication": "Shared interface + regional access points; V2.2.3 deepens experience"
+    }
+  ],
+  "href": "/v2/redesign/functional-geography-atlas/"
+}

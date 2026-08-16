@@ -1,95 +1,119 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { structure, chapterAvailability } from "../lib/data";
+import assembly from "../../../../data/project/stage5_pass511_whole_book_assembly.json";
+import completion from "../../../../data/project/completion_ladder_and_dashboard.json";
 
-const front = structure.chapters.filter((c) => c.section === "front-matter");
-const closing = structure.chapters.filter((c) => c.section === "closing");
+const chapters = (assembly.chapters || []).filter((c: any) => c.n <= 10);
+const intro = assembly.introduction || {};
+const contract = assembly.readers_contract || {};
+const book = completion.public_book || {};
 ---
 
 <BaseLayout
-  title="Book"
+  title="Read the Book"
   path="/book/"
-  description="Full table of contents for Constitutional Capitalism."
+  description="Read Constitutional Capitalism — Volume II. Ten chapters. One continuous argument for Arkansas households."
+  bareMain={true}
 >
-  <article>
-    <h1 style="font-family: var(--serif); margin-top:0;">Book architecture</h1>
-    <p class="muted">Initial master architecture — titles not permanently fixed</p>
-    <p class="lede">
-      Stable chapter IDs survive reordering. Public pages are not published as finished content
-      until review standards are met.
-    </p>
+  <section class="reader-hero" aria-labelledby="reader-title">
+    <div class="reader-hero__inner">
+      <p class="reader-hero__eyebrow">Volume II · Public Book · Free</p>
+      <h1 id="reader-title">Constitutional Capitalism</h1>
+      <p class="reader-hero__deck">
+        {intro.opening ||
+          "Ten chapters. One continuous argument — from the Arkansas we inherited to the Arkansas we could leave behind."}
+      </p>
+      <div class="reader-hero__actions">
+        <a class="button button--primary" href="/public-book/the-arkansas-we-inherited/">
+          Begin Chapter 1
+        </a>
+        <a class="button button--ghost" href="/public-book/introduction/">Introduction</a>
+        <a class="button button--ghost" href="/public-book/readers-contract/">Reader's Contract</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="toc-part" aria-labelledby="fm">
-      <h2 id="fm">Front Matter</h2>
-      <ol class="toc-list">
+  <div class="reader-shell">
+    <section class="reader-section" aria-labelledby="path-heading">
+      <h2 id="path-heading">The reading path</h2>
+      <p class="lede">
+        Read straight through if you can. Chapters 1–10 are one argument. Use Understand / Learn /
+        Prove when you want depth — those doors stay open without interrupting the story.
+      </p>
+      <div class="chapter-path" role="list">
         {
-          front.map((ch) => {
-            const avail = chapterAvailability(ch.status, ch.public_status);
-            return (
-              <li>
-                <span aria-hidden="true">—</span>
-                <span>{ch.title}</span>
-                <span class:list={["badge", avail === "available" && "badge--available", avail === "in_development" && "badge--dev"]}>
-                  {avail.replace("_", " ")}
-                </span>
-              </li>
-            );
-          })
+          chapters.map((ch: any) => (
+            <a class="chapter-path__item" href={ch.href} role="listitem">
+              <span class="chapter-path__n">{String(ch.n).padStart(2, "0")}</span>
+              <div>
+                <p class="chapter-path__title">{ch.title}</p>
+                <p class="chapter-path__q">{ch.question}</p>
+              </div>
+              <span class="chapter-path__role">{ch.role}</span>
+            </a>
+          ))
         }
-      </ol>
+      </div>
     </section>
 
-    {
-      structure.parts.map((part) => {
-        const chapters = structure.chapters.filter((c) => c.part_id === part.part_id);
-        return (
-          <section class="toc-part" aria-labelledby={part.part_id}>
-            <h2 id={part.part_id}>
-              Part {part.number} — {part.title}
-            </h2>
-            <ol class="toc-list">
-              {chapters.map((ch) => {
-                const avail = chapterAvailability(ch.status, ch.public_status);
-                return (
-                  <li>
-                    <span>{ch.chapter_number}</span>
-                    <span>{ch.title}</span>
-                    <span
-                      class:list={[
-                        "badge",
-                        avail === "available" && "badge--available",
-                        avail === "in_development" && "badge--dev",
-                      ]}
-                    >
-                      {avail.replace("_", " ")}
-                    </span>
-                  </li>
-                );
-              })}
-            </ol>
-          </section>
-        );
-      })
-    }
-
-    <section class="toc-part" aria-labelledby="close">
-      <h2 id="close">Closing Materials</h2>
-      <ol class="toc-list">
-        {
-          closing.map((ch) => {
-            const avail = chapterAvailability(ch.status, ch.public_status);
-            return (
-              <li>
-                <span>{ch.chapter_number}</span>
-                <span>{ch.title}</span>
-                <span class:list={["badge", avail === "available" && "badge--available", avail === "in_development" && "badge--dev"]}>
-                  {avail.replace("_", " ")}
-                </span>
-              </li>
-            );
-          })
-        }
-      </ol>
+    <section class="reader-section" aria-labelledby="start-heading">
+      <h2 id="start-heading">Before you begin</h2>
+      <div class="reader-rail">
+        <a href="/public-book/introduction/">
+          <strong>Introduction</strong>
+          <span>Why this book, why Arkansas, why now.</span>
+        </a>
+        <a href="/public-book/readers-contract/">
+          <strong>Reader's Contract</strong>
+          <span>What we promise — and what we refuse to pretend.</span>
+        </a>
+        <a href="/public-book/follow-one-idea/">
+          <strong>Follow One Idea</strong>
+          <span>A single thread if you don't want the full arc yet.</span>
+        </a>
+      </div>
     </section>
-  </article>
+
+    <section class="reader-section" aria-labelledby="contract-heading">
+      <h2 id="contract-heading">Our contract with you</h2>
+      <div class="reader-contract">
+        <p class="lede" style="margin:0;">
+          You do not have to agree. Our responsibility is to make the argument clear enough that you
+          can decide for yourself.
+        </p>
+        <ol>
+          {(contract.promises || []).slice(0, 4).map((p: string) => <li>{p}</li>)}
+        </ol>
+        <p class="muted" style="margin-top:0.85rem;">
+          <a href="/public-book/readers-contract/">Full contract →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="reader-section" aria-labelledby="deeper-heading">
+      <h2 id="deeper-heading">Go deeper when you want</h2>
+      <p class="lede">
+        The book is the front door. Everything else is drill-down — not a second homework assignment
+        before you are allowed to read.
+      </p>
+      <div class="reader-rail">
+        <a href="/compare/explorer/">
+          <strong>Learn</strong>
+          <span>Comparison Explorer — how CC sits among other systems.</span>
+        </a>
+        <a href="/unabridged/">
+          <strong>Prove</strong>
+          <span>Unabridged system + Stage 4 certification.</span>
+        </a>
+        <a href="/v2/">
+          <strong>Build</strong>
+          <span>V2 Arkansas redesign — after SEE, now redesign.</span>
+        </a>
+      </div>
+      <p class="muted" style="margin-top:1.25rem;">
+        Public Book {book.percent ?? 100}% · Technical system certified · COUNTABLE $0 · Edition
+        notes also at <a href="/public-book/">/public-book/</a>
+      </p>
+    </section>
+  </div>
 </BaseLayout>

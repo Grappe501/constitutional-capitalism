@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-2-REDESIGN-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-201",
-  "update_id": "UPD-214",
+  "decision_id": "CC-DEC-202",
+  "update_id": "UPD-215",
   "generated_at": "2026-08-16",
   "status": "IN_PROGRESS",
   "gate": "V2.2",
@@ -32,14 +32,15 @@
     {
       "id": "V2.2.2",
       "name": "Institutional & Geographic Redesign",
-      "status": "NEXT",
-      "href": null,
-      "exit": "Who performs functions — statewide/regional/local/market/multi-level."
+      "status": "COMPLETE",
+      "href": "/v2/redesign/institutional-geographic/",
+      "exit": "Who performs functions — architectures, geography, burden tests.",
+      "what_changed": "/v2/redesign/what-changed/v2-2-2/"
     },
     {
       "id": "V2.2.3",
       "name": "Program, Process & Administrative Redesign",
-      "status": "QUEUED",
+      "status": "NEXT",
       "href": null,
       "exit": "Citizen/Business Friction Map — experience redesign inside functions."
     },
@@ -52,15 +53,20 @@
     }
   ],
   "progress": {
-    "redesign_objects_closed": 38,
+    "redesign_objects_closed": 76,
     "redesign_objects_total": 114,
-    "v2_2_percent": 33.3,
-    "v2_blueprint_percent": 31.7,
+    "v2_2_percent": 66.7,
+    "v2_blueprint_percent": 38.3,
     "f_objects_closed": 38,
-    "i_objects_open": 38,
+    "i_objects_closed": 38,
+    "i_objects_open": 0,
     "o_objects_open": 38
   },
   "object_model": "38 × F/I/O = 114 redesign objects",
   "see_certified": true,
-  "see_href": "/v2/see-arkansas/"
+  "see_href": "/v2/see-arkansas/",
+  "signature_outputs": {
+    "institutional_future_map": "/v2/redesign/institutional-future-map/",
+    "functional_geography_atlas": "/v2/redesign/functional-geography-atlas/"
+  }
 }

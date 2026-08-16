@@ -29,6 +29,22 @@ const researchDesk = siteNav.research_desk;
 const buildProgress = siteNav.build_progress;
 const footerColumns = siteNav.footer_columns || [];
 
+const readerChrome =
+  path === "/book/" ||
+  path.startsWith("/public-book/") ||
+  path.startsWith("/read/");
+
+function navIsCurrent(href: string, currentPath: string) {
+  if (href === "/book/") {
+    return (
+      currentPath === "/book/" ||
+      currentPath.startsWith("/public-book/") ||
+      currentPath.startsWith("/read/")
+    );
+  }
+  return currentPath === href || currentPath.startsWith(href);
+}
+
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
   if (status === "ACTIVE") return "chip chip--live";
@@ -62,7 +78,7 @@ function statusLabel(status?: string) {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <slot name="head" />
   </head>
-  <body>
+  <body class={readerChrome ? "chrome-reader" : undefined}>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-site-header>
       <div class="site-header__bar">
@@ -77,7 +93,7 @@ function statusLabel(status?: string) {
               primary.map((item) => (
                 <a
                   href={item.href}
-                  aria-current={path === item.href || path.startsWith(item.href) ? "page" : undefined}
+                  aria-current={navIsCurrent(item.href, path) ? "page" : undefined}
                 >
                   {item.label}
                 </a>
@@ -91,15 +107,40 @@ function statusLabel(status?: string) {
             aria-expanded="false"
             aria-controls="site-nav-panel"
           >
-            <span data-nav-toggle-label>Explore</span>
+            <span data-nav-toggle-label>More</span>
           </button>
         </div>
       </div>
       <div class="nav-panel" id="site-nav-panel" data-nav-panel>
         <div class="nav-panel__inner">
+          <section class="nav-group" aria-labelledby="nav-read">
+            <h2 id="nav-read">Read the book</h2>
+            <p>Volume II is the front door. Everything else is drill-down.</p>
+            <ul class="nav-group__links">
+              <li><a href="/book/">Start reading</a></li>
+              <li><a href="/public-book/the-arkansas-we-inherited/">Chapter 1 — The Arkansas We Inherited</a></li>
+              <li><a href="/public-book/introduction/">Introduction</a></li>
+              <li><a href="/public-book/readers-contract/">Reader's Contract</a></li>
+              <li><a href="/public-book/table-of-contents/">Table of contents</a></li>
+              <li><a href="/public-book/">Edition notes &amp; tools</a></li>
+            </ul>
+          </section>
+
+          <section class="nav-group" aria-labelledby="nav-deeper">
+            <h2 id="nav-deeper">Go deeper</h2>
+            <p>Learn, prove, and build — available when you want them.</p>
+            <ul class="nav-group__links">
+              <li><a href="/compare/explorer/">Comparison Explorer</a></li>
+              <li><a href="/unabridged/">Unabridged</a></li>
+              <li><a href="/evidence/">Evidence</a></li>
+              <li><a href="/v2/">V2 Blueprint</a></li>
+              <li><a href="/system/">System spines</a></li>
+            </ul>
+          </section>
+
           <section class="nav-group" aria-labelledby="nav-spines">
             <h2 id="nav-spines">System spines</h2>
-            <p>Follow the build in order. Every major function lives on one spine.</p>
+            <p>Architecture by lane — for readers who want the machinery behind the book.</p>
             <div class="nav-spine-row">
               {
                 spines.map((spine) => (
@@ -195,7 +236,7 @@ function statusLabel(status?: string) {
           }
         </div>
         <p>
-          Free public edition intended. Manuscript in development. Licensing decision open.
+          Free public edition · Volume II ready to read · Licensing decision open ·
           Project status: {identity.project_status}.
         </p>
       </div>
@@ -210,7 +251,7 @@ function statusLabel(status?: string) {
           header.classList.toggle("is-nav-open", open);
           document.body.classList.toggle("nav-lock", open);
           toggle.setAttribute("aria-expanded", open ? "true" : "false");
-          label.textContent = open ? "Close" : "Explore";
+          label.textContent = open ? "Close" : "More";
         };
         toggle.addEventListener("click", () => {
           setOpen(!header.classList.contains("is-nav-open"));

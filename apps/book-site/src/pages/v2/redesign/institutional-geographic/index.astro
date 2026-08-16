@@ -1,0 +1,147 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_2_2_institutional_geographic_redesign.json";
+
+const cards = pass.cards || [];
+const families = pass.families || {};
+const arch = pass.architecture_counts || {};
+const verbs = pass.structural_verb_counts || {};
+const friction = pass.institutional_friction_register || [];
+const locked = pass.locked_rules || {};
+
+const byFamily: Record<string, any[]> = {};
+for (const c of cards) {
+  const k = c.family || "other";
+  if (!byFamily[k]) byFamily[k] = [];
+  byFamily[k].push(c);
+}
+---
+
+<BaseLayout
+  title="V2.2.2 — Institutional & Geographic Redesign"
+  path="/v2/redesign/institutional-geographic/"
+  description="Who should perform each Arkansas function, at what geographic level, and through what institutional form?"
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">PASS COMPLETE</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_question}</p>
+      <p class="lede">{pass.placement_rule}</p>
+      <p class="muted">
+        {pass.slice_id} · Blueprint <strong>{pass.progress?.v2_blueprint_percent}%</strong> · Redesign{" "}
+        {pass.progress?.redesign_objects_closed}/{pass.progress?.redesign_objects_total}
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Discipline</h2>
+      <ul class="stack">
+        {(pass.discipline || []).map((d: string) => <li>{d}</li>)}
+      </ul>
+      <p>
+        <a href="/v2/redesign/what-changed/v2-2-2/">What Changed →</a>
+        {" · "}
+        <a href="/v2/redesign/institutional-future-map/">Institutional Future Map →</a>
+        {" · "}
+        <a href="/v2/redesign/functional-geography-atlas/">Functional Geography Atlas →</a>
+        {" · "}
+        <a href="/v2/redesign/">Redesign hub →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Architecture counts</h2>
+      <ul class="link-board">
+        {
+          Object.entries(arch).map(([k, v]) => (
+            <li>
+              <strong>{k}</strong>: {v}
+            </li>
+          ))
+        }
+      </ul>
+      <h3 style="margin-top:1.25rem;">Structural verbs (burden-tested)</h3>
+      <ul class="link-board">
+        {
+          Object.entries(verbs).map(([k, v]) => (
+            <li>
+              <strong>{k}</strong>: {v}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        HOLD-COMPLETE I objects: {pass.hold_complete_i_objects}. Funding invented:{" "}
+        {locked.funding_invented ?? 0}. County opportunity portfolios:{" "}
+        {locked.county_opportunity_portfolios}.
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Five placement tests</h2>
+      <p class="lede">Every home faced Rights · Capacity · Scale · Proximity · Spillover.</p>
+      <ul class="stack">
+        <li>
+          <strong>Standards vs delivery</strong> — layers recorded so one component does not force the
+          whole function into a single level.
+        </li>
+        <li>
+          <strong>No unfunded subsidiarity</strong> — {locked.no_unfunded_subsidiarity}
+        </li>
+      </ul>
+    </section>
+
+    {
+      Object.entries(byFamily).map(([fid, list]) => (
+        <section class="hub-section">
+          <h2>{(families[fid] && families[fid].label) || fid}</h2>
+          <ul class="stack">
+            {(list as any[]).map((c) => (
+              <li>
+                <strong>{c.label}</strong>{" "}
+                <span class="chip chip--live">{c.architecture}</span>{" "}
+                {c.structural_verb !== "NONE" && (
+                  <span class="chip chip--queued">{c.structural_verb}</span>
+                )}{" "}
+                <span class="muted">F={c.f_disposition}</span>
+                <div class="muted">{c.proposed_institutional_architecture}</div>
+                <div class="muted">
+                  Levels: {(c.geographic_levels || []).join(" · ")} · Confidence: {c.confidence}
+                </div>
+                <div class="muted">
+                  Standards: {c.layers?.standard_setting} · Capacity: {c.layers?.capacity} · Delivery:{" "}
+                  {c.layers?.delivery}
+                </div>
+                <div class="muted">
+                  Rights floor: {c.rights_floor} · Accountability: {c.accountability_pathway}
+                </div>
+                <div class="muted">Power risk: {c.power_concentration_risk}</div>
+                {(c.evidence_blockers || []).length > 0 && (
+                  <div class="muted">Blockers: {(c.evidence_blockers || []).join(", ")}</div>
+                )}
+                <div class="muted">{c.note}</div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <section class="hub-section" id="friction">
+      <h2>Institutional Friction Register</h2>
+      <p class="lede">Observation from SEE + redesign response here. Feeds V2.2.3 directly.</p>
+      <ul class="stack">
+        {
+          friction.slice(0, 40).map((f: any) => (
+            <li>
+              <strong>{f.label}</strong> — {f.friction}
+              <div class="muted">{f.redesign_response}</div>
+            </li>
+          ))
+        }
+      </ul>
+      {friction.length > 40 && <p class="muted">Showing 40 of {friction.length} friction rows.</p>}
+    </section>
+  </article>
+</BaseLayout>

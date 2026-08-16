@@ -19,70 +19,35 @@ function chipClass(status?: string) {
 ---
 
 <BaseLayout
-  title="Public Book — Volume II"
+  title="Edition Notes — Public Book"
   path="/public-book/"
-  description="The certified Public Book of Constitutional Capitalism — ten chapters, one argument."
+  description="Edition notes, tools, and certification for Constitutional Capitalism Volume II. Start reading at /book/."
 >
-  <article>
+  <article class="public-book">
     <header class="hub-banner">
-      <span class="chip chip--done">{completion.foundational_build?.banner || status.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
-      <p class="muted" style="margin-top:0.65rem;">
-        <strong>
-          {(completion.foundational_build?.name || "Constitutional Capitalism Foundational System") +
-            " " +
-            (completion.foundational_build?.version || "v1.0")}
-        </strong>
-      </p>
-      <h1>The Public Book</h1>
+      <p class="muted">Volume II · tools &amp; certification</p>
+      <h1>Edition notes</h1>
       <p class="lede">
-        Ten chapters. One continuous argument — from the Arkansas we inherited to the Arkansas we
-        could leave behind.
+        The reading experience lives at the book foyer. This page keeps certification, tools, and
+        assembly history for anyone who wants the backstage.
       </p>
-      <p class="muted">
-        House style: <strong>Arkansas'</strong> — never “Arkansas's.” COUNTABLE <strong>$0</strong>.
-      </p>
+      <div class="cta-row" style="margin-top:1.25rem;">
+        <a class="button button--primary" href="/book/">Start reading</a>
+        <a class="button button--ghost" href="/public-book/the-arkansas-we-inherited/">
+          Chapter 1
+        </a>
+      </div>
     </header>
 
     <section class="hub-section">
-      <h2>Start here</h2>
+      <h2>Quick links</h2>
       <ul class="link-board">
+        <li><a href="/book/">Reading foyer →</a></li>
         <li><a href="/public-book/introduction/">Introduction →</a></li>
         <li><a href="/public-book/readers-contract/">Reader's Contract →</a></li>
         <li><a href="/public-book/table-of-contents/">Table of Contents →</a></li>
-        <li><a href="/public-book/the-arkansas-we-inherited/">Chapter 1 →</a></li>
         <li><a href="/public-book/follow-one-idea/">Follow One Idea →</a></li>
         <li><a href="/public-book/certification/">Certification →</a></li>
-      </ul>
-    </section>
-
-    <section class="hub-section">
-      <h2>Scoreboard</h2>
-      <ul class="link-board">
-        <li>
-          <span class="chip chip--done">{tech.status || "CERTIFIED"}</span>{" "}
-          <strong>{tech.label || "TECHNICAL SYSTEM"}</strong> — {tech.percent ?? 100}%
-        </li>
-        <li>
-          <span class={chipClass(book.status)}>{book.status || "CERTIFIED"}</span>{" "}
-          <strong>{book.label || "PUBLIC BOOK"}</strong> — {book.percent ?? 100}% ({book.chapters_complete ?? 11}/
-          {book.chapters_total ?? 11})
-          <div class="muted">{book.note}</div>
-        </li>
-        <li>
-          <span class="chip chip--queued">{explorer.status || "HOLD"}</span>{" "}
-          <strong>{explorer.label || "EXPLORER EXPERIENCE — 0.1 HOLD"}</strong>
-          <div class="muted">
-            Paused by design · <a href={explorer.href || "/compare/explorer/"}>Open Explorer →</a>
-          </div>
-        </li>
-        <li>
-          <span class="chip chip--live">BLUEPRINT</span>{" "}
-          <strong>{completion.v2_blueprint?.label || "V2 BLUEPRINT"}</strong> —{" "}
-          {completion.v2_blueprint?.percent ?? 0}% → 100%
-          <div class="muted">
-            <a href="/v2/">Master Build Plan →</a>
-          </div>
-        </li>
       </ul>
     </section>
 
@@ -119,6 +84,41 @@ function chipClass(status?: string) {
     </section>
 
     <section class="hub-section">
+      <h2>Scoreboard</h2>
+      <ul class="link-board">
+        <li>
+          <span class="chip chip--done">{tech.status || "CERTIFIED"}</span>{" "}
+          <strong>{tech.label || "TECHNICAL SYSTEM"}</strong> — {tech.percent ?? 100}%
+        </li>
+        <li>
+          <span class={chipClass(book.status)}>{book.status || "CERTIFIED"}</span>{" "}
+          <strong>{book.label || "PUBLIC BOOK"}</strong> — {book.percent ?? 100}% ({
+            book.chapters_complete ?? 11
+          }/{book.chapters_total ?? 11})
+          <div class="muted">{book.note}</div>
+        </li>
+        <li>
+          <span class="chip chip--queued">{explorer.status || "HOLD"}</span>{" "}
+          <strong>{explorer.label || "EXPLORER EXPERIENCE — 0.1 HOLD"}</strong>
+          <div class="muted">
+            Paused by design · <a href={explorer.href || "/compare/explorer/"}>Open Explorer →</a>
+          </div>
+        </li>
+        <li>
+          <span class="chip chip--live">BLUEPRINT</span>{" "}
+          <strong>{completion.v2_blueprint?.label || "V2 BLUEPRINT"}</strong> —{" "}
+          {completion.v2_blueprint?.percent ?? 0}% → 100%
+          <div class="muted">
+            <a href="/v2/">Master Build Plan →</a>
+          </div>
+        </li>
+        <li>
+          <span class="chip chip--done">{completion.foundational_build?.banner || status.banner || "FOUNDATIONAL BUILD — COMPLETE"}</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
       <h2>How deep?</h2>
       <ul class="stack">
         <li><strong>UNDERSTAND</strong> — Public Book (this volume)</li>
@@ -129,7 +129,7 @@ function chipClass(status?: string) {
           <strong>PROVE</strong> — <a href="/unabridged/">Unabridged</a> / <a href="/evidence/">Evidence</a>
         </li>
         <li>
-          <strong>BUILD</strong> — Implementation manuals <span class="chip chip--queued">FUTURE</span>
+          <strong>BUILD</strong> — <a href="/v2/">V2 Blueprint</a>
         </li>
       </ul>
     </section>
