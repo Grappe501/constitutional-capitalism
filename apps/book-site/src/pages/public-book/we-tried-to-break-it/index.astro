@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass59_we_tried_to_break_it.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -222,5 +223,7 @@ const cert = chapter.certification || {};
         }
       </ul>
     </section>
+  
+    <PublicBookChapterNav chapter={9} />
   </article>
 </BaseLayout>

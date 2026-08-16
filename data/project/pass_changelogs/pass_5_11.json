@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_5_11",
+  "pass_number": "5.11",
+  "pass_name": "Whole-Book Assembly & Editorial Certification",
+  "stage": "STAGE_5",
+  "status": "COMPLETE",
+  "is_stage_5_pass": true,
+  "decision_ids": [
+    "CC-DEC-191"
+  ],
+  "update_ids": [
+    "UPD-204"
+  ],
+  "slice_id": "CC-STAGE-5-PASS-5-11-WHOLE-BOOK-ASSEMBLY-1.0",
+  "deployment_date": "2026-08-16",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-5-11/",
+  "engine_href": "/public-book/certification/",
+  "progress_before": {
+    "technical_system_percent": 100,
+    "public_book_completion_percent": 91,
+    "countable_fiscal_claims_usd": 0
+  },
+  "progress_after": {
+    "technical_system_percent": 100,
+    "public_book_completion_percent": 100,
+    "countable_fiscal_claims_usd": 0,
+    "chapter_completion_percent": 100,
+    "chapters_complete": "11/11",
+    "foundational_build": "COMPLETE"
+  },
+  "before_after": [
+    {
+      "label": "Technical System",
+      "before": "100% CERTIFIED",
+      "after": "100% CERTIFIED (unchanged)"
+    },
+    {
+      "label": "Public Book",
+      "before": "91% (10/11)",
+      "after": "100% (11/11) \u2014 CERTIFIED"
+    },
+    {
+      "label": "Pass 5.11",
+      "before": "0%",
+      "after": "100% assembly"
+    },
+    {
+      "label": "COUNTABLE",
+      "before": "$0",
+      "after": "$0 (unchanged)"
+    },
+    {
+      "label": "New theory in 5.11",
+      "before": "\u2014",
+      "after": "0"
+    },
+    {
+      "label": "Project status",
+      "before": "BUILDING (Stage 5 active)",
+      "after": "FOUNDATIONAL BUILD \u2014 COMPLETE"
+    }
+  ],
+  "experience_links": [
+    {
+      "href": "/public-book/",
+      "label": "Public Book hub \u2192"
+    },
+    {
+      "href": "/public-book/introduction/",
+      "label": "Introduction \u2192"
+    },
+    {
+      "href": "/public-book/certification/",
+      "label": "Certification \u2192"
+    },
+    {
+      "href": "/public-book/visual-atlas/",
+      "label": "Visual Atlas \u2192"
+    },
+    {
+      "href": "/public-book/follow-one-idea/",
+      "label": "Follow One Idea \u2192"
+    }
+  ],
+  "progress_movement": "Public Book 91% \u2192 100%. Technical System unchanged 100% CERTIFIED. FOUNDATIONAL BUILD COMPLETE. No Pass 5.12.",
+  "summary": "Pass 5.11 assembled ten chapters into one certified Public Book: Introduction, Reader's Contract, TOC, Afterword, definitions, Visual Atlas, Follow One Idea, glossary, Is/Is Not, system map, certification. COUNTABLE $0. New theory: 0.",
+  "modules_added_or_modified": [
+    {
+      "id": "pass511_assembly",
+      "label": "Public Book Whole-Book Assembly & Certification",
+      "change": "stage5_assembly_complete",
+      "href": "/public-book/certification/",
+      "path": "data/project/stage5_pass511_whole_book_assembly.json"
+    }
+  ],
+  "next_pass_only": "None \u2014 foundational build complete. Future work is versions, not unfinished architecture."
+}

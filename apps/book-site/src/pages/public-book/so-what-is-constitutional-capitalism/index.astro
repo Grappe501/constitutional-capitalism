@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass57_so_what_is_constitutional_capitalism.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -213,5 +214,7 @@ const explorerLinks = matrix.explorer_links || [];
         }
       </ul>
     </section>
+  
+    <PublicBookChapterNav chapter={7} />
   </article>
 </BaseLayout>

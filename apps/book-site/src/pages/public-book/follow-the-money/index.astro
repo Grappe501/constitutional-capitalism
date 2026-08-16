@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass53_follow_the_money.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -141,5 +142,7 @@ const lesson = chapter.landing_lesson || "";
         }
       </ul>
     </section>
+  
+    <PublicBookChapterNav chapter={3} />
   </article>
 </BaseLayout>

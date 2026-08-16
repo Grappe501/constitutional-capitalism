@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass510_the_arkansas_we_could_leave_behind.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -50,6 +51,10 @@ const cert = chapter.certification || {};
 
     <section class="hub-section" id="dashboard">
       <h2>Generation 2 Household Dashboard</h2>
+      <p class="muted">
+        The Chapter 2 Prosperity Dashboard — moved one generation forward. Same questions. Higher
+        stakes.
+      </p>
       <ul class="stack">
         {
           dashboard.map((d: any) => (
@@ -144,28 +149,6 @@ const cert = chapter.certification || {};
       </ul>
     </section>
 
-    <section class="hub-section">
-      <h2>Next</h2>
-      <p class="lede">Pass 5.11 — Whole-Book Assembly &amp; Editorial Certification</p>
-      <p class="muted">One book. One voice. No new substantive subject.</p>
-      <ul class="link-board">
-        {
-          (plan.passes || []).map((p: any) => (
-            <li>
-              <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
-                {p.status}
-              </span>{" "}
-              {p.number} {p.name}
-              {p.surface_href ? (
-                <>
-                  {" "}
-                  · <a href={p.surface_href}>Read →</a>
-                </>
-              ) : null}
-            </li>
-          ))
-        }
-      </ul>
-    </section>
+    <PublicBookChapterNav chapter={10} />
   </article>
 </BaseLayout>

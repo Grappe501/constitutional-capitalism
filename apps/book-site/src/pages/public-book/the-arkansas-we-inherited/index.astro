@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass51_the_arkansas_we_inherited.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -116,27 +117,6 @@ const facts = community.bound_facts || {};
       </ul>
     </section>
 
-    <section class="hub-section">
-      <h2>Next in the Public Book</h2>
-      <p class="lede">Pass 5.2 — What Does Prosperity Mean?</p>
-      <ul class="link-board">
-        {
-          (plan.passes || []).slice(0, 4).map((p: any) => (
-            <li>
-              <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
-                {p.status}
-              </span>{" "}
-              {p.number} {p.name}
-              {p.surface_href ? (
-                <>
-                  {" "}
-                  · <a href={p.surface_href}>Read →</a>
-                </>
-              ) : null}
-            </li>
-          ))
-        }
-      </ul>
-    </section>
+    <PublicBookChapterNav chapter={1} />
   </article>
 </BaseLayout>

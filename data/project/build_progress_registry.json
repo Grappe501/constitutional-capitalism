@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-190",
-  "update_id": "UPD-203",
+  "decision_id": "CC-DEC-191",
+  "update_id": "UPD-204",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": "PASS_5_11",
-  "next_objective": "Pass 5.11 \u2014 Whole-Book Assembly & Editorial Certification. One book. One voice. No new theory.",
+  "current_pass": null,
+  "next_objective": "Foundational build complete. Stewardship mode: versions, evidence updates, explorer expansion, pilots \u2014 not unfinished architecture.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -755,6 +755,22 @@
           "label": "Public Book hub"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-191",
+      "title": "Pass 5.11 Public Book CERTIFIED \u2014 Whole-Book Assembly complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-11/",
+      "links": [
+        {
+          "href": "/public-book/certification/",
+          "label": "Certification"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -1018,11 +1034,11 @@
       "number": "5.11",
       "slug": "pass-5-11",
       "name": "Whole-Book Assembly & Editorial Certification",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-5-11/",
-      "changelog": null,
-      "spine_href": null,
-      "chapter_completion_percent": 0
+      "changelog": "data/project/pass_changelogs/pass_5_11.json",
+      "spine_href": "/public-book/certification/",
+      "chapter_completion_percent": 100
     }
   ]
 }

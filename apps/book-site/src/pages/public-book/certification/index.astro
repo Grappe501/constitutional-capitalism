@@ -1,0 +1,112 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import assembly from "../../../../../../data/project/stage5_pass511_whole_book_assembly.json";
+import completion from "../../../../../../data/project/completion_ladder_and_dashboard.json";
+
+const gates = assembly.certification_gates;
+const status = assembly.project_status_after;
+const numbers = assembly.numbers_verified || [];
+const log = assembly.editorial_log || [];
+const book = completion.public_book || {};
+---
+
+<BaseLayout
+  title="Certification — Public Book"
+  path="/public-book/certification/"
+  description="Public Book editorial certification record — FOUNDATIONAL BUILD COMPLETE."
+>
+  <article class="public-book">
+    <header class="hub-banner">
+      <span class="chip chip--done">PUBLIC BOOK — CERTIFIED</span>
+      <h1>Whole-Book Certification</h1>
+      <p class="lede">{status.distinction}</p>
+      <p class="muted">
+        {status.banner} · Public Book {book.percent ?? 100}% · COUNTABLE $
+        {gates.countable_usd} · New theory in 5.11: {gates.new_theory_in_5_11}
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Completion</h2>
+      <ul class="link-board">
+        {
+          Object.entries(status.completion_table || {}).map(([k, v]) => (
+            <li>
+              <strong>{k}</strong> — {v as string}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Lanes after certification</h2>
+      <ul class="stack">
+        {
+          Object.entries(status.lanes || {}).map(([k, v]) => (
+            <li>
+              <strong>{k.replaceAll("_", " ")}</strong> — {v as string}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Certification gates</h2>
+      <ul class="stack">
+        <li><strong>MANUSCRIPT</strong> — {gates.manuscript}</li>
+        <li><strong>NARRATIVE</strong> — {gates.narrative}</li>
+        <li><strong>TERMINOLOGY</strong> — {gates.terminology}</li>
+        <li><strong>CONTRADICTIONS</strong> — {gates.contradictions}</li>
+        <li><strong>STAGE 4 CORRECTIONS</strong> — {gates.stage_4_corrections}</li>
+        <li><strong>NUMBERS</strong> — {gates.numbers}</li>
+        <li><strong>CLAIM CLASSES</strong> — {gates.claim_classes}</li>
+        <li><strong>SOURCES</strong> — {gates.sources}</li>
+        <li><strong>VISUALS</strong> — {gates.visuals}</li>
+        <li><strong>MOBILE</strong> — {gates.mobile}</li>
+        <li><strong>ACCESSIBILITY</strong> — {gates.accessibility}</li>
+        <li><strong>ARKANSAS' HOUSE STYLE</strong> — {gates.arkansas_house_style}</li>
+        <li><strong>COUNTABLE</strong> — ${gates.countable_usd}</li>
+        <li><strong>NEW THEORY IN 5.11</strong> — {gates.new_theory_in_5_11}</li>
+      </ul>
+      <p class="lede"><strong>{gates.verdict}</strong></p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Material numbers verified</h2>
+      <ul class="stack">
+        {
+          numbers.map((n: any) => (
+            <li>
+              <span class="chip chip--done">{n.class}</span> <strong>{n.value}</strong> — {n.what} (
+              {n.year}) · Ch.{n.chapter}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Editorial changes in 5.11</h2>
+      <ul class="stack">
+        {
+          log.map((e: any) => (
+            <li>
+              <span class="chip chip--live">{e.reason}</span> {e.item}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-5-11/">What Changed →</a></li>
+        <li><a href="/public-book/">Public Book hub →</a></li>
+        <li><a href="/public-book/afterword/">Afterword →</a></li>
+        <li><a href="/status/">Project status →</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

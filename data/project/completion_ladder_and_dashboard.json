@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-190",
-  "update_id": "UPD-203",
+  "decision_id": "CC-DEC-191",
+  "update_id": "UPD-204",
   "prior_decision_id": "CC-DEC-165",
   "status": "STAGE_5_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
@@ -115,15 +115,15 @@
       "id": "STAGE_5",
       "name": "Public Book",
       "target": "Compress the validated system into the ~100-page public roadmap (Volume II)",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "exit_gate": "Reader can travel Where Arkansas is \u2192 why outcomes \u2192 what changes \u2192 money flows \u2192 household life \u2192 transition \u2192 what Arkansas could become, with pointers into Unabridged.",
       "volume": "Volume II \u2014 The Public Book",
       "amended_by": "CC-DEC-152",
-      "current_work": "Pass 5.10 The Arkansas We Could Leave Behind COMPLETE. Public Book 91%. Next: Pass 5.11 Whole-Book Assembly only \u2014 no new substantive subject.",
-      "active_pass": "PASS_5_11",
-      "last_completed_pass": "PASS_5_10",
+      "current_work": "Pass 5.11 COMPLETE. Public Book CERTIFIED 100%. FOUNDATIONAL BUILD COMPLETE.",
+      "active_pass": null,
+      "last_completed_pass": "PASS_5_11",
       "plan": "data/project/stage5_eleven_pass_plan.json",
-      "public_book_percent": 91
+      "public_book_percent": 100
     },
     {
       "id": "STAGE_6",
@@ -330,15 +330,15 @@
     "note": "Skeleton \u00b7 First Pass \u00b7 Unabridged \u00b7 Validation all 100%. Stage 4 closed."
   },
   "public_book": {
-    "percent": 91,
-    "status": "ACTIVE",
+    "percent": 100,
+    "status": "CERTIFIED",
     "label": "PUBLIC BOOK",
-    "chapters_complete": 10,
+    "chapters_complete": 11,
     "chapters_total": 11,
-    "active_pass": "PASS_5_11",
-    "last_completed_pass": "PASS_5_10",
+    "active_pass": null,
+    "last_completed_pass": "PASS_5_11",
     "plan": "data/project/stage5_eleven_pass_plan.json",
-    "note": "Chapter completion only \u2014 not research activity. Clarity controls length. One assembly pass remains."
+    "note": "Published. Foundational build complete. Clarity controlled length. COUNTABLE $0."
   },
   "comparison_explorer_lane": {
     "status": "PARALLEL_PUBLIC_EDUCATION",
@@ -432,12 +432,17 @@
     {
       "id": "PASS_5_11",
       "label": "5.11 Whole-Book Assembly & Editorial Certification",
-      "percent": 0,
-      "status": "NEXT",
-      "href": null,
-      "surface": null
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-5-11/",
+      "surface": "/public-book/certification/"
     }
   ],
-  "active_stage5_pass": "PASS_5_11",
-  "last_completed_stage5_pass": "PASS_5_10"
+  "active_stage5_pass": null,
+  "last_completed_stage5_pass": "PASS_5_11",
+  "foundational_build": {
+    "status": "COMPLETE",
+    "banner": "FOUNDATIONAL BUILD \u2014 COMPLETE",
+    "distinction": "The Constitutional Capitalism foundational build is complete."
+  }
 }

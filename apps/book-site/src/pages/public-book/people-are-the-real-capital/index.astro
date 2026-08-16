@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ReadingModes from "../../../components/ReadingModes.astro";
+import PublicBookChapterNav from "../../../components/PublicBookChapterNav.astro";
 import chapter from "../../../../../../data/project/stage5_pass54_people_are_the_real_capital.json";
 import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
 
@@ -138,5 +139,7 @@ const ladder = chapter.learn_earn_own || [];
         }
       </ul>
     </section>
+  
+    <PublicBookChapterNav chapter={4} />
   </article>
 </BaseLayout>

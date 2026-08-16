@@ -1,0 +1,147 @@
+---
+/**
+ * Consistent prev / next / deeper / sources footer for every Public Book chapter.
+ * PRESENTATION — Pass 5.11 assembly.
+ */
+interface Props {
+  chapter: number; // 1–10
+}
+
+const chapters = [
+  {
+    n: 1,
+    title: "The Arkansas We Inherited",
+    href: "/public-book/the-arkansas-we-inherited/",
+    question: "What are we actually starting with?",
+    deeper: "/system/arkansas-state-baseline/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 2,
+    title: "What Does Prosperity Mean?",
+    href: "/public-book/what-does-prosperity-mean/",
+    question: "What should an economy ultimately accomplish for a household?",
+    deeper: "/system/household-engine/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 3,
+    title: "Follow the Money",
+    href: "/public-book/follow-the-money/",
+    question: "How does prosperity accumulate—or escape accumulation?",
+    deeper: "/system/money-engine/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 4,
+    title: "People Are the Real Capital",
+    href: "/public-book/people-are-the-real-capital/",
+    question: "Who ultimately creates prosperity?",
+    deeper: "/system/human-community-engine/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 5,
+    title: "The Productive Arkansas",
+    href: "/public-book/the-productive-arkansas/",
+    question: "What must function around those people?",
+    deeper: "/system/productive-systems/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 6,
+    title: "Government That Belongs to the People",
+    href: "/public-book/government-that-belongs-to-the-people/",
+    question: "Who governs, and what constrains them?",
+    deeper: "/system/government-engine/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 7,
+    title: "So What Is Constitutional Capitalism?",
+    href: "/public-book/so-what-is-constitutional-capitalism/",
+    question: "What philosophy do these pieces form?",
+    deeper: "/compare/explorer/constitutional-capitalism/",
+    evidence: "/unabridged/is-is-not/",
+  },
+  {
+    n: 8,
+    title: "Building the Bridge",
+    href: "/public-book/building-the-bridge/",
+    question: "How could Arkansas get there without breaking what exists?",
+    deeper: "/system/transition-engine/",
+    evidence: "/evidence/",
+  },
+  {
+    n: 9,
+    title: "We Tried to Break It",
+    href: "/public-book/we-tried-to-break-it/",
+    question: "What happened when we attacked our own theory?",
+    deeper: "/system/final-red-team/",
+    evidence: "/system/changed-our-mind/",
+  },
+  {
+    n: 10,
+    title: "The Arkansas We Could Leave Behind",
+    href: "/public-book/the-arkansas-we-could-leave-behind/",
+    question: "Why do any of it?",
+    deeper: "/public-book/afterword/",
+    evidence: "/public-book/certification/",
+  },
+] as const;
+
+const { chapter } = Astro.props;
+const idx = Math.max(1, Math.min(10, chapter)) - 1;
+const current = chapters[idx];
+const prev = idx > 0 ? chapters[idx - 1] : null;
+const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
+---
+
+<nav class="hub-section public-book-nav" aria-label="Chapter navigation">
+  <p class="muted">
+    Chapter {current.n} of 10 · {current.question}
+  </p>
+  <ul class="link-board">
+    {
+      prev ? (
+        <li>
+          <strong>Previous</strong> —{" "}
+          <a href={prev.href}>
+            Ch. {prev.n}: {prev.title} →
+          </a>
+        </li>
+      ) : (
+        <li>
+          <strong>Previous</strong> —{" "}
+          <a href="/public-book/introduction/">Introduction →</a>
+        </li>
+      )
+    }
+    {
+      next ? (
+        <li>
+          <strong>Next</strong> —{" "}
+          <a href={next.href}>
+            Ch. {next.n}: {next.title} →
+          </a>
+        </li>
+      ) : (
+        <li>
+          <strong>Next</strong> — <a href="/public-book/afterword/">Afterword →</a>
+        </li>
+      )
+    }
+    <li>
+      <strong>Explore this deeper</strong> — <a href={current.deeper}>Open →</a>
+    </li>
+    <li>
+      <strong>Sources / Evidence</strong> — <a href={current.evidence}>Open →</a>
+    </li>
+    <li>
+      <a href="/public-book/table-of-contents/">Table of Contents →</a>
+    </li>
+    <li>
+      <a href="/public-book/">Public Book hub →</a>
+    </li>
+  </ul>
+</nav>

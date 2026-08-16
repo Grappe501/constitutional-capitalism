@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import assembly from "../../../../../../data/project/stage5_pass511_whole_book_assembly.json";
+
+const map = assembly.public_system_map;
+const layers = assembly.depth_layers;
+---
+
+<BaseLayout
+  title="System Map — Public Book"
+  path="/public-book/system-map/"
+  description="One public system map: people and households at the center — for a kitchen-table explanation."
+>
+  <article class="public-book">
+    <header class="hub-banner">
+      <span class="chip chip--done">Public Book · System map</span>
+      <h1>One-Page System Map</h1>
+      <p class="lede">
+        Enough to explain Constitutional Capitalism at a kitchen table. Technical Master System Map
+        remains for proof depth.
+      </p>
+    </header>
+
+    <section class="hub-section viz" aria-label="Public system map">
+      <p class="muted" style="text-align:center; letter-spacing:0.06em; text-transform:uppercase;">
+        {map.surrounding}
+      </p>
+      <div
+        style="display:grid; gap:0.75rem; justify-items:center; text-align:center; margin:1rem 0;"
+      >
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center;">
+          {map.around.slice(0, 3).map((x: string) => <span class="chip chip--live">{x}</span>)}
+        </div>
+        <strong style="font-size:1.45rem; font-family:var(--serif);">{map.center}</strong>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center;">
+          {map.around.slice(3).map((x: string) => <span class="chip chip--live">{x}</span>)}
+        </div>
+      </div>
+      <p class="muted" style="text-align:center;">
+        → {map.forward}
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>How deep do you want to go?</h2>
+      <ul class="stack">
+        <li>
+          <strong>{layers.understand.label}</strong> — {layers.understand.surface} ·{" "}
+          <a href={layers.understand.href}>Open →</a>
+        </li>
+        <li>
+          <strong>{layers.learn.label}</strong> — {layers.learn.surface} ·{" "}
+          <a href={layers.learn.href}>Open →</a>
+        </li>
+        <li>
+          <strong>{layers.prove.label}</strong> — {layers.prove.surface} ·{" "}
+          <a href={layers.prove.href}>Open →</a>
+        </li>
+        <li>
+          <strong>{layers.build_future.label}</strong> — {layers.build_future.surface}{" "}
+          <span class="chip chip--queued">{layers.build_future.status}</span>
+          <div class="muted">{layers.build_future.note}</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <ul class="link-board">
+        <li><a href="/system/master-map/">Technical Master System Map →</a></li>
+        <li><a href="/public-book/visual-atlas/">Visual Atlas →</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>
