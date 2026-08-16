@@ -4,9 +4,9 @@
   "generated_at": "2026-08-15",
   "decision_id": "CC-DEC-151",
   "update_id": "UPD-164",
-  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_3_COMPLETE",
-  "amended_by": ["CC-DEC-152", "CC-DEC-153", "CC-DEC-154"],
-  "passes_remaining_after_pass_3": 2,
+  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_4_COMPLETE",
+  "amended_by": ["CC-DEC-152", "CC-DEC-153", "CC-DEC-154", "CC-DEC-155"],
+  "passes_remaining_after_pass_4": 1,
   "budget": "5_passes_to_stage_1_100_percent_skeleton",
   "may_finish_in": 4,
   "budget_reason": "Do not falsely declare skeleton complete while a major system function is still missing",
@@ -119,26 +119,38 @@
     {
       "id": "PASS_4",
       "name": "Transition, Resilience & Measurement Spine",
-      "status": "QUEUED_NEXT",
+      "status": "COMPLETE",
       "skeleton_target_percent": "96-98",
+      "skeleton_after_percent": 97,
       "covers": [
         "LOCK-10 Transition architecture",
+        "Arkansas NOW Baseline",
+        "Sequencing & Dependency Rule",
         "Intergenerational capital",
         "Migration/population strategy",
-        "External income/trade",
-        "Public accounting",
-        "Household Prosperity Surplus",
-        "Geographic Money Statements",
-        "Resilience/shocks",
-        "Implementation gates"
+        "Public accounting / geographic capital flows",
+        "Household Prosperity Measurement",
+        "Resilience/shocks (connected)",
+        "Expansion & correction / implementation gates"
       ],
-      "purpose": "Know how to move from today’s system into the proposed one"
+      "purpose": "Know how to move from today’s system into the proposed one through time, shocks, and measurement — without inventing more policy",
+      "artifact": "data/project/stage1_pass4_transition_resilience_measurement_spine.json",
+      "return": "reports/CC_STAGE_1_PASS_4_TRANSITION_RESILIENCE_MEASUREMENT_SPINE_1_0_RETURN.md",
+      "changelog": "data/project/pass_changelogs/pass_04.json",
+      "public_changelog": "/build-progress/passes/pass-4/",
+      "decision_id": "CC-DEC-155",
+      "update_id": "UPD-168"
     },
     {
       "id": "PASS_5",
       "name": "Whole-System Closure Audit",
-      "status": "QUEUED",
+      "status": "QUEUED_NEXT",
       "skeleton_target_percent": 100,
+      "covers": [
+        "Function-by-function orphan check",
+        "STRUCTURAL_HOLE | KNOWN_DETAIL | VALIDATION_QUESTION dispositions",
+        "Stage 1 = 100% skeleton"
+      ],
       "purpose": "No new doctrine unless absolutely necessary. Walk every major function: where does it live, how does it connect, who owns it, how is it funded, what happens to households, what prevents capture?",
       "dispositions_only": [
         "STRUCTURAL_HOLE",
@@ -148,7 +160,7 @@
       "rule": "True structural holes close here; everything else → Stage 2, Stage 3, or validation register"
     }
   ],
-  "active_pass_after_this_slice": "PASS_2",
+  "active_pass_after_this_slice": "PASS_5",
   "holds": [
     "five_pass_budget",
     "no_sprawl",

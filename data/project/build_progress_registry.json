@@ -9,8 +9,8 @@
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_1",
-  "current_pass": "PASS_4",
-  "next_objective": "Complete Pass 4 — Transition, Resilience & Measurement Spine (LOCK-10, migration, measurement, resilience, implementation gates). No intermediate research campaign. 2 passes remain to Stage-1 closure including the final audit.",
+  "current_pass": "PASS_5",
+  "next_objective": "Pass 5 — Whole-System Closure Audit. Function-by-function orphan check. Close structural holes only. Then Stage-1 skeleton = 100%. 1 pass remains.",
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
   "arkansas_baseline_source": "data/project/arkansas_state_baseline_corpus.json",
@@ -50,9 +50,9 @@
       "number": 4,
       "slug": "pass-4",
       "name": "Transition, Resilience & Measurement Spine",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-4/",
-      "changelog": null,
+      "changelog": "data/project/pass_changelogs/pass_04.json",
       "spine_href": "/system/transition-measurement/"
     },
     {
@@ -60,7 +60,7 @@
       "number": 5,
       "slug": "pass-5",
       "name": "Whole-System Closure Audit",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "href": "/build-progress/passes/pass-5/",
       "changelog": null,
       "spine_href": "/system/#pass-5"

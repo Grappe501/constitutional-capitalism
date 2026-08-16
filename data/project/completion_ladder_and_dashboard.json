@@ -44,7 +44,7 @@
         "unresolved_questions",
         "later_evidence_testing_requirements"
       ],
-      "current_work": "Stage 1 Five-Pass Closure — Passes 1–3 complete; Pass 4 next (Transition, Resilience & Measurement)",
+      "current_work": "Stage 1 Five-Pass Closure — Passes 1–4 complete; Pass 5 Whole-System Closure Audit next → 100% skeleton",
       "five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
       "after_ten_locks": "Superseded by five-pass plan; Pass 5 is the whole-system closure audit"
     },
@@ -117,27 +117,27 @@
     "GENERATION_2"
   ],
   "progress_bars": {
-    "skeleton_coverage_percent": 90,
+    "skeleton_coverage_percent": 97,
     "first_pass_coverage_percent": 12,
     "publication_completion_percent": 3,
     "validation_completion_percent": 0,
     "notes": {
-      "skeleton": "Pass 3 Government & Democratic Power Spine complete (90%). Passes 4–5 remain to Stage 1 = 100%.",
+      "skeleton": "Pass 4 Transition/Resilience/Measurement complete (97%). Pass 5 Whole-System Closure Audit reserved for final 3% → Stage 1 = 100%.",
       "first_pass": "Many frameworks exist; most have not crossed Stage 2 minimum viable completeness checklist",
       "publication": "Aligned to manuscript substance (~outline/concept dominant)",
-      "validation": "Stage 4 not open; resilience framework exists as plan only"
+      "validation": "Stage 4 not open; resilience framework connected as plan only"
     }
   },
   "overall_project_completion": {
-    "percent": 26,
+    "percent": 28,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights until Stage 1 closes)",
-    "calculation": "0.25*(90+12+3+0)=26.25 → 26",
+    "calculation": "0.25*(97+12+3+0)=28",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 1–2 close — that is honesty, not regression"
   },
   "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
-  "active_stage1_pass": "PASS_4",
-  "last_completed_stage1_pass": "PASS_3",
+  "active_stage1_pass": "PASS_5",
+  "last_completed_stage1_pass": "PASS_4",
   "manager_scorecard": {
     "purpose": "After each meaningful build cycle",
     "questions": [
