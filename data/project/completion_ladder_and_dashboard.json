@@ -124,20 +124,20 @@
   ],
   "progress_bars": {
     "skeleton_coverage_percent": 100,
-    "first_pass_coverage_percent": 86,
+    "first_pass_coverage_percent": 100,
     "publication_completion_percent": 3,
     "validation_completion_percent": 0,
     "notes": {
       "skeleton": "Stage 1 COMPLETE — 100%. Horizontal expansion frozen.",
-      "first_pass": "Stage 2 ACTIVE — Pass 2.5 Transition Engine complete (43/50 = 86%). Next: Pass 2.6 closes IX-01–IX-06 → 100%.",
+      "first_pass": "Stage 2 COMPLETE — 50/50 = 100%. Certified Pass 2.6. Next: Stage 3 Unabridged Completion.",
       "publication": "Aligned to manuscript substance (~outline/concept dominant)",
-      "validation": "Stage 4 not open; COUNTABLE engines remain $0"
+      "validation": "Stage 4 not open; COUNTABLE engines remain $0; CX-M21-01/02 OPEN_ASSIGNED"
     }
   },
   "overall_project_completion": {
-    "percent": 47,
+    "percent": 51,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*publication + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+86+3+0)=47.25 → 47",
+    "calculation": "0.25*(100+100+3+0)=50.75 → 51",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2–3 close — that is honesty, not regression"
   },
@@ -145,9 +145,10 @@
   "stage_2_six_pass_plan": "data/project/stage2_six_pass_plan.json",
   "active_stage1_pass": null,
   "last_completed_stage1_pass": "PASS_5",
-  "active_stage": "STAGE_2",
-  "active_stage2_pass": "PASS_2_6",
-  "last_completed_stage2_pass": "PASS_2_5",
+  "active_stage": "STAGE_3",
+  "active_stage2_pass": null,
+  "last_completed_stage2_pass": "PASS_2_6",
+  "stage_2_complete": true,
   "horizontal_expansion_frozen": true,
   "manager_scorecard": {
     "purpose": "After each meaningful build cycle",

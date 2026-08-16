@@ -11,7 +11,9 @@ import pass22 from "../../../../../../data/project/pass_changelogs/pass_2_2.json
 import pass23 from "../../../../../../data/project/pass_changelogs/pass_2_3.json";
 import pass24 from "../../../../../../data/project/pass_changelogs/pass_2_4.json";
 import pass25 from "../../../../../../data/project/pass_changelogs/pass_2_5.json";
+import pass26 from "../../../../../../data/project/pass_changelogs/pass_2_6.json";
 import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
+import stage2Audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
 
 export function getStaticPaths() {
   return [
@@ -25,6 +27,7 @@ export function getStaticPaths() {
     { params: { pass: "pass-2-3" } },
     { params: { pass: "pass-2-4" } },
     { params: { pass: "pass-2-5" } },
+    { params: { pass: "pass-2-6" } },
   ];
 }
 
@@ -42,9 +45,11 @@ const changelogs: Record<string, any> = {
   "pass-2-3": pass23,
   "pass-2-4": pass24,
   "pass-2-5": pass25,
+  "pass-2-6": pass26,
 };
 const log = changelogs[passSlug || ""] || null;
 const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;
+const isStage2Cert = passSlug === "pass-2-6" && log?.is_stage_2_certification_record;
 const isStage2 = Boolean(log?.is_stage_2_pass);
 const functions = audit.function_matrix || [];
 const architecture = audit.complete_system_architecture_map || {};
@@ -52,6 +57,7 @@ const osAudit = audit.five_os_final_audit || {};
 const moneyFlow = audit.money_flow_continuity || {};
 const timeCont = audit.time_continuity || {};
 const cert = audit.stage_1_certification || {};
+const stage2Cert = stage2Audit.stage_2_certification || {};
 const deferred = audit.deferred_register || [];
 const holesClosed = audit.holes_discovered_and_closed || [];
 
@@ -75,6 +81,8 @@ function dispositionClass(d?: string) {
 
 const title = isCert
   ? "Stage 1 Certification — Pass 5 Closure Audit"
+  : isStage2Cert
+  ? "Stage 2 Certification — Pass 2.6 Integration Audit"
   : meta
     ? `Pass ${meta.number} — ${meta.name}`
     : "Pass";
@@ -98,6 +106,11 @@ const path = `/build-progress/passes/${passSlug}/`;
           <>
             <h1>Stage 1 certification record</h1>
             <p class="lede">Pass 5 — Whole-System Closure Audit</p>
+          </>
+        ) : isStage2Cert ? (
+          <>
+            <h1>Stage 2 certification record</h1>
+            <p class="lede">Pass 2.6 — Whole-System Integration & Closure Audit</p>
           </>
         ) : (
           <>
@@ -125,6 +138,25 @@ const path = `/build-progress/passes/${passSlug}/`;
                 <div class="dash-cell"><strong>0</strong><span>Open holes</span></div>
                 <div class="dash-cell"><strong>FROZEN</strong><span>Horizontal expansion</span></div>
               </div>
+            </section>
+          )}
+
+          {isStage2Cert && stage2Cert.certified && (
+            <section class="hub-section" aria-labelledby="stage2-certification">
+              <h2 id="stage2-certification">Final Stage 2 certification</h2>
+              <p class="lede">{stage2Cert.achievement}</p>
+              <div class="dash-row">
+                <div class="dash-cell"><strong>100%</strong><span>Skeleton</span></div>
+                <div class="dash-cell"><strong>100%</strong><span>First-Pass</span></div>
+                <div class="dash-cell"><strong>50/50</strong><span>Modules</span></div>
+                <div class="dash-cell"><strong>COMPLETE</strong><span>Stage 2</span></div>
+              </div>
+              <p class="muted">
+                Next: {stage2Cert.next_stage} — {stage2Cert.next_discipline}
+              </p>
+              <p>
+                <a href="/system/master-map/">Open Master System Map →</a>
+              </p>
             </section>
           )}
 

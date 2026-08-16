@@ -1940,3 +1940,88 @@ body[data-reading-mode="explore"] [data-depth="prove"] {
   font-size: 0.84rem;
   line-height: 1.45;
 }
+
+.master-map {
+  display: grid;
+  gap: 1rem;
+}
+
+.master-map__external {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px dashed var(--line);
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.master-map__ring {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .master-map__ring {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hc me"
+      "center center"
+      "go tr";
+  }
+
+  .master-map__ring > :nth-child(1) {
+    grid-area: hc;
+  }
+  .master-map__ring > :nth-child(2) {
+    grid-area: me;
+  }
+  .master-map__ring > :nth-child(3) {
+    grid-area: center;
+  }
+  .master-map__ring > :nth-child(4) {
+    grid-area: go;
+  }
+  .master-map__ring > :nth-child(5) {
+    grid-area: tr;
+  }
+}
+
+.master-map__engine,
+.master-map__center {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  text-decoration: none;
+  color: inherit;
+  font-weight: 650;
+}
+
+.master-map__center {
+  border-top: 4px solid var(--accent);
+  text-align: center;
+  justify-items: center;
+}
+
+.master-map__center span {
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.master-map__flows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.master-map__flows li {
+  padding: 0.55rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  font-size: 0.88rem;
+}

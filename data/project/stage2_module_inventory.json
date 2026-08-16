@@ -3,8 +3,8 @@
   "slice_id": "CC-STAGE-2-MODULE-INVENTORY-1.0",
   "generated_at": "2026-08-16",
   "decision_id": "CC-DEC-158",
-  "update_id": "UPD-175",
-  "status": "LOCKED_DENOMINATOR",
+  "update_id": "UPD-176",
+  "status": "LOCKED_DENOMINATOR_STAGE_2_COMPLETE",
   "total_modules": 50,
   "counting_standard": "data/project/stage2_first_pass_module_standard.json",
   "statuses": {
@@ -27,12 +27,12 @@
     "after_pass_2_2": {
       "first_pass_count": 22,
       "first_pass_percent": 44,
-      "note": "Pass 2.2: HP-01\u2013HP-08 + HP-10 surplus architecture FIRST_PASS. Prior ME + HC/GO retained. 22/50 = 44%."
+      "note": "Pass 2.2: HP-01\u2013HP-08 + HP-10 surplus architecture FIRST_PASS. HP-09 remained NOT_STARTED (later found in Pass 2.6). Prior ME + HC/GO retained. 22/50 = 44%."
     },
     "after_pass_2_3": {
       "first_pass_count": 27,
       "first_pass_percent": 54,
-      "note": "Pass 2.3: HC-01\u2013HC-08 remapped and FIRST_PASS at 15-field depth. Net +5 (HC-01/05/08 already in 22). 27/50 = 54%. Not 30/50 — that would double-count prior HC IDs."
+      "note": "Pass 2.3: HC-01\u2013HC-08 remapped and FIRST_PASS at 15-field depth. Net +5 (HC-01/05/08 already in 22). 27/50 = 54%."
     },
     "after_pass_2_4": {
       "first_pass_count": 35,
@@ -42,7 +42,12 @@
     "after_pass_2_5": {
       "first_pass_count": 43,
       "first_pass_percent": 86,
-      "note": "Pass 2.5: TR-01\u2013TR-08 remapped at 15-field FIRST_PASS. All were NOT_STARTED. Net +8. 43/50 = 86%. Remaining: IX-01\u2013IX-06 for Pass 2.6."
+      "note": "Pass 2.5: TR-01\u2013TR-08 FIRST_PASS. Net +8. 43/50 = 86%. Notes incorrectly implied only IX remained — HP-09 was still NOT_STARTED."
+    },
+    "after_pass_2_6": {
+      "first_pass_count": 50,
+      "first_pass_percent": 100,
+      "note": "Pass 2.6 reconciliation: HP-09 was the missing module (43+6=49≠50). Closed HP-09 + IX-01\u2013IX-06 (+7). 50/50 = 100%. Stage 2 certified."
     }
   },
   "prior_first_pass_ids_before_2_1": [
@@ -168,9 +173,11 @@
     },
     {
       "id": "HP-09",
-      "name": "Disability & accessibility economics",
+      "name": "Disability & Accessibility Economics",
       "wave": "PASS_2_2",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/household-engine/#hp-09",
+      "note": "Closed in Pass 2.6 inventory reconciliation — was the missing 50th module"
     },
     {
       "id": "HP-10",
@@ -379,39 +386,45 @@
     },
     {
       "id": "IX-01",
-      "name": "Cross-spine money continuity",
+      "name": "Whole-System Money Flow",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-01"
     },
     {
       "id": "IX-02",
-      "name": "Cross-spine power continuity",
+      "name": "Ownership & Surplus Distribution",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-02"
     },
     {
       "id": "IX-03",
-      "name": "Contradiction register resolution",
+      "name": "Household Prosperity Transmission",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-03"
     },
     {
       "id": "IX-04",
-      "name": "Orphan-flow closure",
+      "name": "Political-Economic Power Balance",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-04"
     },
     {
       "id": "IX-05",
-      "name": "First-pass certification packet",
+      "name": "Arkansas Transition Dependency Network",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-05"
     },
     {
       "id": "IX-06",
-      "name": "Stage 3/4 handoff register",
+      "name": "Measurement & Correction Operating System",
       "wave": "PASS_2_6",
-      "status": "NOT_STARTED"
+      "status": "FIRST_PASS",
+      "href": "/system/master-map/#ix-06"
     }
   ]
 }

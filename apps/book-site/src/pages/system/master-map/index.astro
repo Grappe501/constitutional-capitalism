@@ -1,0 +1,181 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import EvidenceConfidence from "../../../components/EvidenceConfidence.astro";
+import MasterSystemMap from "../../../components/MasterSystemMap.astro";
+import audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
+
+const modules = audit.modules || [];
+const recon = audit.inventory_reconciliation || {};
+const tests = audit.seven_integration_tests || [];
+const contradictions = audit.contradictions || {};
+const cert = audit.stage_2_certification || {};
+
+const fieldOrder = [
+  ["now", "NOW"],
+  ["problem", "PROBLEM"],
+  ["future_state", "FUTURE STATE"],
+  ["mechanism", "MECHANISM"],
+  ["money_flow", "MONEY FLOW"],
+  ["ownership", "OWNERSHIP"],
+  ["household_effect", "HOUSEHOLD EFFECT"],
+  ["government_role", "GOVERNMENT ROLE"],
+  ["market_role", "MARKET ROLE"],
+  ["transition", "TRANSITION"],
+  ["dependencies", "DEPENDENCIES"],
+  ["risks", "RISKS"],
+  ["measurement", "MEASUREMENT"],
+  ["evidence_status", "EVIDENCE STATUS"],
+  ["deferred_validation", "DEFERRED VALIDATION"],
+] as const;
+
+function testChip(result?: string) {
+  if (result === "PASS") return "chip chip--done";
+  if (result === "FAIL") return "chip chip--live";
+  return "chip chip--queued";
+}
+---
+
+<BaseLayout
+  title="Master System Map"
+  path="/system/master-map/"
+  description="Stage 2 Pass 2.6 — Constitutional Capitalism Master System Map and whole-system integration."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Stage 2 certified</span>
+      <h1>{audit.engine_name}</h1>
+      <p class="lede">{audit.one_sentence}</p>
+      <p class="muted">
+        {audit.decision_id} · {audit.update_id} · First-pass 50/50 ·{" "}
+        <a href="/build-progress/passes/pass-2-6/">What Changed & Certification →</a>
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>Master System Map</h2>
+      <MasterSystemMap />
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="recon">
+      <h2 id="recon">Inventory reconciliation</h2>
+      <p class="lede">
+        Arithmetic anomaly before correction: {recon.arithmetic_anomaly}
+      </p>
+      <p>
+        <strong>Finding:</strong> {recon.finding?.id} — {recon.finding?.name} was still{" "}
+        {recon.finding?.prior_status}. {recon.finding?.explanation}
+      </p>
+      <p class="muted">{recon.finding?.correction}</p>
+      <p>
+        After correction: FIRST_PASS {recon.first_pass_after}/50 · Unreconciled:{" "}
+        {recon.unreconciled_after}
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="tests">
+      <h2 id="tests">Seven integration tests</h2>
+      <ul class="stack">
+        {
+          tests.map((t: any) => (
+            <li>
+              <span class={testChip(t.result)}>{t.result.replaceAll("_", " ")}</span>{" "}
+              <strong>{t.id}</strong> — {t.question}
+              <div class="muted">
+                {t.note} · <a href={t.evidence_href}>Evidence →</a>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">FAIL count: {audit.integration_tests_summary?.fail_count} (certification requires 0 FAIL)</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="cx">
+      <h2 id="cx">Contradiction inspection</h2>
+      <p class="lede">{contradictions.standard}</p>
+      <ul class="stack">
+        {
+          (contradictions.inspection || []).map((c: any) => (
+            <li>
+              <strong>{c.id}</strong> — {c.title}
+              <div>{c.assessment}</div>
+              <div class="muted">
+                {c.status} · {c.disposition} · <a href={c.href}>Home →</a>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">{contradictions.certification_effect}</p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="cert">
+      <h2 id="cert">Stage 2 certification</h2>
+      <p>
+        <span class="chip chip--done">CERTIFIED</span> {cert.decision_id} · {cert.certified_at}
+      </p>
+      <p class="lede">{cert.achievement}</p>
+      <ul class="link-board">
+        <li>Skeleton {cert.progress_bars_after_validation?.skeleton_coverage_percent}%</li>
+        <li>First-Pass {cert.progress_bars_after_validation?.first_pass_coverage_percent}%</li>
+        <li>Overall {cert.progress_bars_after_validation?.overall_project_completion_percent}%</li>
+      </ul>
+      <p class="muted">
+        Next: {cert.next_stage} — {cert.next_discipline}
+      </p>
+    </section>
+
+    <section class="hub-section" data-depth="explore" aria-labelledby="modules">
+      <h2 id="modules">Integration modules (IX-01–IX-06)</h2>
+      <p class="lede">Integration only — not another policy family. HP-09 closed on the Household Engine.</p>
+      <p>
+        <a href="/system/household-engine/#hp-09">HP-09 Disability & Accessibility →</a>
+      </p>
+      {
+        modules.map((m: any) => (
+          <section class="module-card" id={m.id.toLowerCase()} aria-labelledby={`${m.id}-title`}>
+            <h3 id={`${m.id}-title`}>
+              {m.id} — {m.name}
+            </h3>
+            <p class="module-card__meta">
+              {m.lock} · <EvidenceConfidence level="working" />
+            </p>
+            <dl class="module-fields">
+              {fieldOrder.map(([key, label]) => {
+                const val = m[key];
+                const text = Array.isArray(val) ? val.join("; ") : val;
+                return (
+                  <>
+                    <dt>{label}</dt>
+                    <dd>{text}</dd>
+                  </>
+                );
+              })}
+            </dl>
+          </section>
+        ))
+      }
+    </section>
+
+    <section class="hub-section" data-depth="prove" aria-labelledby="deferred">
+      <h2 id="deferred">Deferred validation</h2>
+      <ul class="stack">
+        {(audit.deferred_to_validation || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <h3>Stage 3 flags</h3>
+      <ul class="stack">
+        {(audit.deferred_to_stage_3 || []).map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/build-progress/">Build Progress →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

@@ -2,15 +2,22 @@
   "version": "1.1.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-162",
-  "update_id": "UPD-175",
+  "decision_id": "CC-DEC-163",
+  "update_id": "UPD-176",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
-  "current_stage": "STAGE_2",
-  "current_pass": "PASS_2_6",
-  "next_objective": "Pass 2.6 — Whole-System Integration Audit. Close IX-01–IX-06 only. No new conceptual wave. Drive first-pass to 100% and certify Stage 2 complete.",
+  "current_stage": "STAGE_3",
+  "current_pass": null,
+  "next_objective": "Stage 3 — Unabridged Completion. Dig deep one completed category at a time. First-pass is 100%; Stage 2 is certified.",
+  "stage_2_certification": {
+    "certified": true,
+    "pass": "PASS_2_6",
+    "decision_id": "CC-DEC-163",
+    "href": "/build-progress/passes/pass-2-6/",
+    "audit": "data/project/stage2_pass26_whole_system_integration_audit.json"
+  },
   "completion_dashboard_source": "data/project/completion_ladder_and_dashboard.json",
   "stage2_plan_source": "data/project/stage2_six_pass_plan.json",
   "publishing_architecture_source": "data/project/publishing_architecture_two_volumes.json",
@@ -130,9 +137,10 @@
       "number": "2.6",
       "slug": "pass-2-6",
       "name": "Whole-System Integration Audit",
-      "status": "ACTIVE",
+      "status": "COMPLETE",
       "href": "/build-progress/passes/pass-2-6/",
-      "changelog": null
+      "changelog": "data/project/pass_changelogs/pass_2_6.json",
+      "spine_href": "/system/master-map/"
     }
   ],
   "infrastructure_checkpoints": [
@@ -192,6 +200,17 @@
         { "href": "/build-progress/passes/pass-2-5/", "label": "Pass 2.5 What Changed" },
         { "href": "/system/government-engine/", "label": "Government join" },
         { "href": "/system/money-engine/", "label": "Money Engine join" }
+      ]
+    },
+    {
+      "id": "CC-DEC-163",
+      "title": "Stage 2 certified complete (Pass 2.6)",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-2-6/",
+      "links": [
+        { "href": "/build-progress/passes/pass-2-6/", "label": "Stage 2 certification record" },
+        { "href": "/system/master-map/", "label": "Master System Map" },
+        { "href": "/system/household-engine/#hp-09", "label": "HP-09 reconciliation close" }
       ]
     }
   ]
