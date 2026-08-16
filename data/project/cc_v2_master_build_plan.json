@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-MASTER-BUILD-PLAN-1.0",
-  "decision_id": "CC-DEC-200",
-  "update_id": "UPD-213",
+  "decision_id": "CC-DEC-201",
+  "update_id": "UPD-214",
   "generated_at": "2026-08-16",
-  "status": "SEE_CERTIFIED_V2_2_NEXT",
+  "status": "V2_2_IN_PROGRESS",
   "title": "Constitutional Capitalism v2.0 — Master Build Plan",
   "purpose": "Define what v2.0 means at 100% before researching, redesigning, funding, or piloting.",
   "foundational_system": {
@@ -19,7 +19,7 @@
   },
   "blueprint": {
     "label": "V2 BLUEPRINT",
-    "percent": 25.0,
+    "percent": 31.7,
     "status": "IN_PROGRESS",
     "completion_definition": "100% when all five gates pass: SEE → REDESIGN → FUND → LEGALIZE & BREAK → ROADMAP, measured by resolved objects — not words written.",
     "separate_from": [
@@ -62,11 +62,14 @@
       "name": "REDESIGN ARKANSAS",
       "question": "What specifically changes under CC?",
       "completion_result": "Every major state function dispositioned",
-      "status": "NEXT",
+      "status": "IN_PROGRESS",
       "forbidden_until_plan_frozen": true,
       "object_focus": [
         "functions_dispositioned"
-      ]
+      ],
+      "completion_percent": 33.3,
+      "redesign_objects_closed": 38,
+      "redesign_objects_total": 114
     },
     {
       "id": "V2.3",
@@ -1303,7 +1306,7 @@
     "build_progress": "/build-progress/",
     "status": "/status/"
   },
-  "next_only": "V2.2 — REDESIGN ARKANSAS (KEEP/REFORM/REPLACE… under redesign discipline; SHOULD now permitted).",
+  "next_only": "V2.2.2 — Institutional & Geographic Redesign (who performs functions; GEO tests).",
   "map_freeze": {
     "status": "FROZEN",
     "frozen_at": "2026-08-16",
@@ -1317,7 +1320,7 @@
     "Dial inflation by words written",
     "Explorer expansion while V2.1 is the active build priority"
   ],
-  "active_pass": "V2.1 SEE CERTIFIED → next V2.2 REDESIGN",
+  "active_pass": "V2.2.1 COMPLETE → next V2.2.2",
   "geographic_dimension": {
     "id": "V2-GEO-001",
     "status": "LOCKED",
@@ -1331,5 +1334,21 @@
   "see_arkansas": {
     "status": "CERTIFIED",
     "href": "/v2/see-arkansas/"
+  },
+  "redesign": {
+    "status": "IN_PROGRESS",
+    "href": "/v2/redesign/",
+    "object_model": "114 F/I/O",
+    "disposition_vocabulary": [
+      "KEEP",
+      "REFORM",
+      "CONSOLIDATE",
+      "DEVOLVE",
+      "REGIONALIZE",
+      "PHASE OUT",
+      "ELIMINATE",
+      "NEW",
+      "HOLD / INSUFFICIENT EVIDENCE"
+    ]
   }
 }
