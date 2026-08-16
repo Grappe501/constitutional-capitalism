@@ -12,6 +12,7 @@ import pass23 from "../../../../../../data/project/pass_changelogs/pass_2_3.json
 import pass24 from "../../../../../../data/project/pass_changelogs/pass_2_4.json";
 import pass25 from "../../../../../../data/project/pass_changelogs/pass_2_5.json";
 import pass26 from "../../../../../../data/project/pass_changelogs/pass_2_6.json";
+import pass31 from "../../../../../../data/project/pass_changelogs/pass_3_1.json";
 import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
 import stage2Audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
 
@@ -28,12 +29,21 @@ export function getStaticPaths() {
     { params: { pass: "pass-2-4" } },
     { params: { pass: "pass-2-5" } },
     { params: { pass: "pass-2-6" } },
+    { params: { pass: "pass-3-1" } },
+    { params: { pass: "pass-3-2" } },
+    { params: { pass: "pass-3-3" } },
+    { params: { pass: "pass-3-4" } },
+    { params: { pass: "pass-3-5" } },
+    { params: { pass: "pass-3-6" } },
+    { params: { pass: "pass-3-7" } },
+    { params: { pass: "pass-3-8" } },
   ];
 }
 
 const { pass: passSlug } = Astro.params;
 const meta = (registry.passes || []).find((p: any) => p.slug === passSlug)
-  || (registry.stage2_passes || []).find((p: any) => p.slug === passSlug);
+  || (registry.stage2_passes || []).find((p: any) => p.slug === passSlug)
+  || (registry.stage3_passes || []).find((p: any) => p.slug === passSlug);
 const changelogs: Record<string, any> = {
   "pass-1": pass1,
   "pass-2": pass2,
@@ -46,11 +56,13 @@ const changelogs: Record<string, any> = {
   "pass-2-4": pass24,
   "pass-2-5": pass25,
   "pass-2-6": pass26,
+  "pass-3-1": pass31,
 };
 const log = changelogs[passSlug || ""] || null;
 const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;
 const isStage2Cert = passSlug === "pass-2-6" && log?.is_stage_2_certification_record;
 const isStage2 = Boolean(log?.is_stage_2_pass);
+const isStage3 = Boolean(log?.is_stage_3_pass);
 const functions = audit.function_matrix || [];
 const architecture = audit.complete_system_architecture_map || {};
 const osAudit = audit.five_os_final_audit || {};
@@ -180,7 +192,7 @@ const path = `/build-progress/passes/${passSlug}/`;
             </p>
           </section>
 
-          {isStage2 && log.before_after && (
+          {(isStage2 || isStage3) && log.before_after && (
             <section class="hub-section" aria-labelledby="before-after">
               <h2 id="before-after">BEFORE → AFTER</h2>
               <div class="before-after">
@@ -223,8 +235,8 @@ const path = `/build-progress/passes/${passSlug}/`;
                   <span>First-pass</span>
                 </div>
                 <div class="dash-cell">
-                  <strong>{log.progress_after.publication_completion_percent ?? "—"}%</strong>
-                  <span>Publication</span>
+                  <strong>{log.progress_after.unabridged_completion_percent ?? log.progress_after.publication_completion_percent ?? "—"}%</strong>
+                  <span>Unabridged</span>
                 </div>
                 <div class="dash-cell">
                   <strong>{log.progress_after.validation_completion_percent ?? "—"}%</strong>

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import now from "../../../../../../data/project/stage3_pass31_arkansas_now.json";
 import corpus from "../../../../../../data/project/arkansas_state_baseline_corpus.json";
-import seed from "../../../../../../data/imports/arkansas-state-baseline/normalized/fy2026_general_revenue_allocations_seed.json";
 
 function money(n?: number | null) {
   if (n == null) return "—";
@@ -11,109 +11,451 @@ function money(n?: number | null) {
     maximumFractionDigits: 0,
   }).format(n);
 }
+
+function num(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US").format(n);
+}
+
+function chipFor(cls?: string) {
+  if (cls === "FACT") return "chip chip--done";
+  if (cls === "DERIVED_CALCULATION") return "chip chip--live";
+  if (cls === "MODEL" || cls === "HYPOTHESIS") return "chip chip--queued";
+  return "chip";
+}
+
+const dims = now.state_xray?.dimensions || [];
+const people = dims.find((d: any) => d.id === "PEOPLE");
+const households = dims.find((d: any) => d.id === "HOUSEHOLDS");
+const economy = dims.find((d: any) => d.id === "ECONOMY");
+const government = dims.find((d: any) => d.id === "GOVERNMENT");
+const assets = dims.find((d: any) => d.id === "PRODUCTIVE_ASSETS");
+const leakage = dims.find((d: any) => d.id === "MONEY_LEAKAGE_AND_DEPENDENCY");
+const counties =
+  people?.baseline_evidence?.find((e: any) => e.counties)?.counties || [];
+const revRows =
+  now.budget_xray?.source_of_money?.composition || [];
+const allocs =
+  now.budget_xray?.state_treasury_to_agency?.allocations_classified || [];
+const taxonomy = now.expenditure_taxonomy?.definitions || {};
+const checklist = Object.values(now.category_checklist || {});
 ---
 
 <BaseLayout
-  title="Arkansas State Baseline"
+  title="Arkansas NOW — State X-Ray"
   path="/system/arkansas-state-baseline/"
-  description="Shared Arkansas budget and fiscal baseline infrastructure — starting balance sheet for the unabridged system, not an exploratory research branch."
+  description="Pass 3.1 unabridged diagnosis: the Arkansas we inherited — people, households, economy, government budgets, productive assets, and leakage/dependency — with claim classes and sources."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Shared infrastructure</span>
-      <h1>Arkansas State Baseline</h1>
-      <p class="lede">{corpus.organizing_sentence}</p>
+      <span class="chip chip--done">Pass 3.1 complete · 100%</span>
+      <h1>Arkansas NOW</h1>
+      <p class="lede">{now.organizing_sentence}</p>
       <p class="muted">
-        Decision {corpus.decision_id} · Status: {corpus.status.replaceAll("_", " ")}
-      </p>
-    </header>
-
-    <section class="hub-section" aria-labelledby="role">
-      <h2 id="role">Role</h2>
-      <p class="lede">{corpus.role}</p>
-      <p>
-        We are not writing a theoretical government from scratch. The actual State of Arkansas is
-        the starting balance sheet and operating system. Acquire and organize budgets now; pull
-        analysis into later modules as needed. Do <strong>not</strong> stop Pass 2 to analyze every
-        line.
+        {now.governing_question} · Decision {now.decision_id} · Status:{" "}
+        {String(now.status).replaceAll("_", " ")}
       </p>
       <ul class="link-board">
-        <li><a href="/build-progress/passes/pass-2/">Pass 2 changelog</a></li>
-        <li><a href="/system/household-place/">Household & Place spine</a></li>
-        <li><a href="/research/">Research desk</a></li>
+        <li><a href="/build-progress/passes/pass-3-1/">Pass 3.1 What Changed →</a></li>
+        <li><a href="/system/transition-engine/#tr-01">TR-01 join →</a></li>
+        <li><a href="/system/master-map/">Master System Map →</a></li>
+      </ul>
+    </header>
+
+    <section class="hub-section" aria-labelledby="diagnosis">
+      <h2 id="diagnosis">Problem diagnosis</h2>
+      <p class="lede">{now.problem_diagnosis?.one_sentence}</p>
+      <ul class="stack">
+        {(now.problem_diagnosis?.structural_problems || []).map((p: string) => (
+          <li>{p}</li>
+        ))}
+      </ul>
+      <p class="muted">
+        Not claimed: {(now.problem_diagnosis?.what_we_are_not_claiming || []).join(" · ")}
+      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="claim-classes">
+      <h2 id="claim-classes">Claim classes (mandatory)</h2>
+      <p class="lede">
+        Stage 3 separates what we know from what we model. Prefer Arkansas/federal primary
+        sources, then audited research, then institutional analysis, then secondary reporting.
+      </p>
+      <div class="dash-row">
+        {(now.source_hierarchy_rule?.claim_classes_visible || []).map((c: string) => (
+          <div class="dash-cell">
+            <span class={chipFor(c)}>{c.replaceAll("_", " ")}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="hub-section" aria-labelledby="xray">
+      <h2 id="xray">Arkansas State X-Ray — six dimensions</h2>
+      <div class="spine-grid">
+        {dims.map((d: any) => (
+          <a class="spine-tile" href={`#${d.id.toLowerCase().replaceAll("_", "-")}`}>
+            <span class="chip chip--live">{d.id.replaceAll("_", " ")}</span>
+            <h3>{d.title}</h3>
+            <p>{d.question}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="hub-section" id="people" aria-labelledby="people-h">
+      <h2 id="people-h">1. People</h2>
+      <p class="lede">{people?.question}</p>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>3,032,651</strong>
+          <span>ACS 5-year population (2023) · FACT</span>
+        </div>
+        <div class="dash-cell">
+          <strong>$58,773</strong>
+          <span>ACS 5-year median household income · FACT</span>
+        </div>
+      </div>
+      <p>{people?.problem_diagnosis}</p>
+      <p class="muted">Gaps routed: {(people?.gaps || []).join(" · ")}</p>
+    </section>
+
+    <section class="hub-section" id="households" aria-labelledby="households-h">
+      <h2 id="households-h">2. Households</h2>
+      <p class="lede">{households?.question}</p>
+      <p>{households?.problem_diagnosis}</p>
+      <ul class="stack">
+        {Object.entries(households?.pressure_domains_status || {}).map(([k, v]) => (
+          <li>
+            <strong>{k}</strong>
+            <span class="muted"> — {String(v).replaceAll("_", " ")}</span>
+          </li>
+        ))}
+      </ul>
+      <p>
+        Full Prosperity Surplus stack:{" "}
+        <a href="/system/household-engine/">Household Engine</a> · unabridged in Pass 3.2.
+      </p>
+    </section>
+
+    <section class="hub-section" id="counties" aria-labelledby="counties-h">
+      <h2 id="counties-h">Designated County Prosperity Snapshot</h2>
+      <p class="lede">
+        FACT — Census PEP population 2020→2023 and SAIPE income/poverty for the designated
+        observation set (not a full 75-county map).
+      </p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>County</th>
+              <th>Pop 2020</th>
+              <th>Pop 2023</th>
+              <th>Δ</th>
+              <th>MHI</th>
+              <th>Poverty %</th>
+            </tr>
+          </thead>
+          <tbody>
+            {counties.map((c: any) => (
+              <tr>
+                <td>{c.county}</td>
+                <td>{num(c.population_2020)}</td>
+                <td>{num(c.population_2023)}</td>
+                <td>{c.population_change_2020_2023 > 0 ? "+" : ""}{num(c.population_change_2020_2023)}</td>
+                <td>{money(c.median_household_income_usd)}</td>
+                <td>{c.poverty_rate_all_ages_percent}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="hub-section" id="economy" aria-labelledby="economy-h">
+      <h2 id="economy-h">3. Economy</h2>
+      <p class="lede">{economy?.question}</p>
+      <div class="dash-row">
+        {(economy?.baseline_evidence || [])
+          .filter((e: any) => e.value_usd || e.value)
+          .slice(0, 4)
+          .map((e: any) => (
+            <div class="dash-cell">
+              <strong>{e.value_usd != null ? money(e.value_usd) : num(e.value)}</strong>
+              <span>
+                {e.label}
+                {e.period ? ` (${e.period})` : ""} · {e.claim_class}
+              </span>
+            </div>
+          ))}
+      </div>
+      {(economy?.derived || []).map((d: any) => (
+        <p>
+          <span class={chipFor(d.claim_class)}>{d.claim_class}</span>{" "}
+          {d.label}: <strong>{(d.value * 100).toFixed(1)}%</strong>
+          <span class="muted"> — {d.formula}</span>
+        </p>
+      ))}
+      <p>{economy?.problem_diagnosis}</p>
+    </section>
+
+    <section class="hub-section" id="budget-xray" aria-labelledby="budget-h">
+      <h2 id="budget-h">Arkansas Budget X-Ray</h2>
+      <p class="lede">
+        Signature Pass 3.1 asset — trace public money by economic function, not only agency
+        labels.
+      </p>
+      <ol class="stack">
+        {(now.budget_xray?.chain || []).map((step: string) => (
+          <li>
+            <strong>{step}</strong>
+          </li>
+        ))}
+      </ol>
+      <div class="dash-row">
+        <div class="dash-cell">
+          <strong>{money(now.budget_xray?.source_of_money?.fy2026_gross_gr_millions * 1_000_000)}</strong>
+          <span>Gross GR FY2026 actual · FACT</span>
+        </div>
+        <div class="dash-cell">
+          <strong>
+            {money((now.budget_xray?.source_of_money?.net_available_millions || 0) * 1_000_000)}
+          </strong>
+          <span>Net available GR FY2026 · FACT</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{money(now.budget_xray?.state_treasury_to_agency?.fy2026_usd)}</strong>
+          <span>RSA Allocation A distributed · FACT</span>
+        </div>
+      </div>
+      <p class="muted">{now.budget_xray?.program_recipient_effect_status}</p>
+    </section>
+
+    <section class="hub-section" id="revenue" aria-labelledby="revenue-h">
+      <h2 id="revenue-h">4. Government — revenue composition</h2>
+      <p class="lede">FACT — DFA General Revenue Report FY2025 actual → FY2026 actual ($ millions).</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>FY2025</th>
+              <th>FY2026</th>
+              <th>Δ</th>
+            </tr>
+          </thead>
+          <tbody>
+            {revRows.map((r: any) => (
+              <tr>
+                <td>{r.source}</td>
+                <td>{r.fy2025_actual_millions}</td>
+                <td>{r.fy2026_actual_millions}</td>
+                <td>
+                  {r.delta_millions > 0 ? "+" : ""}
+                  {r.delta_millions}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <ul class="stack">
+        {(government?.what_changed || []).map((w: any) => (
+          <li>
+            <span class={chipFor(w.claim_class)}>{w.claim_class}</span> {w.pattern}
+            {w.note && <div class="muted">{w.note}</div>}
+          </li>
+        ))}
+      </ul>
+      <p class="muted">{government?.federal_dependency_status}</p>
+    </section>
+
+    <section class="hub-section" id="taxonomy" aria-labelledby="taxonomy-h">
+      <h2 id="taxonomy-h">Expenditure taxonomy</h2>
+      <p class="lede">{now.expenditure_taxonomy?.method}</p>
+      <ul class="stack">
+        {Object.entries(taxonomy).map(([k, v]) => (
+          <li>
+            <strong>{k.replaceAll("_", " ")}</strong>
+            <div class="muted">{v}</div>
+          </li>
+        ))}
+      </ul>
+      <h3>Applied to FY2026 Allocation A selected patterns</h3>
+      <ul class="stack">
+        {allocs.map((a: any) => (
+          <li>
+            <strong>{a.agency_or_function}</strong> — {money(a.fy2026_allocation_a_usd)} (
+            {(a.share_of_gr_distributed * 100).toFixed(1)}%)
+            <div>
+              {(a.taxonomy || []).map((t: string) => (
+                <span class="chip chip--live" style="margin-right:0.35rem;">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div class="muted">{a.taxonomy_note}</div>
+          </li>
+        ))}
       </ul>
     </section>
 
-    <section class="hub-section" aria-labelledby="fy26">
-      <h2 id="fy26">FY2026 seed snapshot</h2>
-      <p class="lede">
-        From the official 2025 Regular Session Fiscal Legislation Summary (RSA Allocation A /
-        agency totals as labeled in source).
-      </p>
+    <section class="hub-section" id="productive-assets" aria-labelledby="assets-h">
+      <h2 id="assets-h">5. Productive Assets</h2>
+      <p class="lede">{assets?.question}</p>
+      <p>{assets?.problem_diagnosis}</p>
+      <ul class="stack">
+        {Object.entries(assets?.asset_classes_status || {}).map(([k, v]) => (
+          <li>
+            <strong>{k.replaceAll("_", " ")}</strong>
+            <span class="muted"> — {String(v).replaceAll("_", " ")}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" id="money-leakage-and-dependency" aria-labelledby="leak-h">
+      <h2 id="leak-h">6. Money Leakage & Dependency</h2>
+      <p class="lede">{leakage?.honesty_rule}</p>
+      <p>{leakage?.problem_diagnosis}</p>
+      <ul class="stack">
+        {(leakage?.evidence_channels || []).map((ch: any) => (
+          <li>
+            <strong>{ch.channel}</strong>
+            <div class="muted">
+              {ch.status.replaceAll("_", " ")}
+              {ch.assign ? ` → ${ch.assign}` : ""}
+              {ch.note ? ` · ${ch.note}` : ""}
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="muted">{leakage?.claim_class_guard}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="cc-role">
+      <h2 id="cc-role">Constitutional Capitalism role of NOW</h2>
+      <p class="lede">{now.cc_model_role_of_now?.role}</p>
+      <ul class="stack">
+        <li><strong>Money flows</strong> — {now.cc_model_role_of_now?.money_flows}</li>
+        <li><strong>Ownership</strong> — {now.cc_model_role_of_now?.ownership}</li>
+        <li><strong>Household effects</strong> — {now.cc_model_role_of_now?.household_effects}</li>
+        <li><strong>Government/market</strong> — {now.cc_model_role_of_now?.government_market_roles}</li>
+        <li><strong>Transition</strong> — {now.cc_model_role_of_now?.transition}</li>
+        <li><strong>Dependencies</strong> — {now.cc_model_role_of_now?.dependencies}</li>
+        <li><strong>Risks</strong> — {now.cc_model_role_of_now?.risks}</li>
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="counter">
+      <h2 id="counter">Counterarguments</h2>
+      <ul class="stack">
+        {(now.counterarguments || []).map((c: any) => (
+          <li>
+            <strong>“{c.claim}”</strong>
+            <div>{c.response}</div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="openq">
+      <h2 id="openq">Open validation questions</h2>
+      <ul class="stack">
+        {(now.open_validation_questions || []).map((q: any) => (
+          <li>
+            <strong>{q.id}</strong> — {q.question}
+            <div class="muted">Assign: {q.assign}</div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="joins">
+      <h2 id="joins">Cross-system connections</h2>
+      <ul class="link-board">
+        {(now.cross_system_connections || []).map((j: any) => (
+          <li>
+            <a href={j.href}>
+              {j.to} — {j.join}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="checklist">
+      <h2 id="checklist">Unabridged category checklist</h2>
       <div class="dash-row">
         <div class="dash-cell">
-          <strong>{money(seed.headline.general_revenue_distributed_to_agencies_and_institutions_fy2026_a)}</strong>
-          <span>GR to agencies & institutions</span>
+          <strong>{now.category_completion_percent}%</strong>
+          <span>Pass 3.1 category</span>
         </div>
         <div class="dash-cell">
-          <strong>+{seed.headline.percent_change}%</strong>
-          <span>vs FY2025</span>
+          <strong>{checklist.length}/{checklist.length}</strong>
+          <span>Required elements PRESENT</span>
         </div>
       </div>
       <ul class="stack">
-        {
-          (seed.selected_patterns || []).map((p: any) => (
-            <li>
-              <strong>{p.label}</strong>
-              <div>{money(p.fy2026_a)}</div>
-              {p.narrative_note && <div class="muted">{p.narrative_note}</div>}
-              {p.note && <div class="muted">{p.note}</div>}
-            </li>
-          ))
-        }
-      </ul>
-      <p class="muted">
-        Seed path: <code>{corpus.normalized_seeds?.[0]}</code> · Not a full state-finance model ·
-        Not countable Replacement Stack revenue.
-      </p>
-    </section>
-
-    <section class="hub-section" aria-labelledby="questions">
-      <h2 id="questions">Questions later modules must ask</h2>
-      <ul class="stack">
-        {
-          (corpus.capability_questions_for_later_modules || []).map((q: string) => (
-            <li>{q}</li>
-          ))
-        }
+        {checklist.map((el: any) => (
+          <li>
+            <span class="chip chip--done">{el.status}</span> {el.label}
+          </li>
+        ))}
       </ul>
     </section>
 
-    <section class="hub-section" aria-labelledby="sources">
-      <h2 id="sources">Sources ingested / indexed</h2>
+    <section class="hub-section" id="sources" aria-labelledby="sources-h">
+      <h2 id="sources-h">Sources</h2>
       <ul class="stack">
-        {
-          (corpus.sources_ingested || []).map((s: any) => (
-            <li>
-              <strong>{s.title}</strong>
-              <div class="muted">
-                {s.fiscal_year} · {s.status.replaceAll("_", " ")}
+        {(now.sources_register || []).map((s: any) => (
+          <li>
+            <strong>{s.label}</strong>
+            <div class="muted">
+              Tier {s.tier}
+              {s.status ? ` · ${s.status}` : ""}
+              {s.path ? ` · ${s.path}` : ""}
+            </div>
+            {s.url && (
+              <div>
+                <a href={s.url} rel="noopener noreferrer">
+                  Official / primary →
+                </a>
               </div>
-              {s.local_path && <div class="muted"><code>{s.local_path}</code></div>}
-              {s.url && (
-                <div>
-                  <a href={s.url} rel="noopener noreferrer">Official document →</a>
-                </div>
-              )}
-              {s.notes && <div class="muted">{s.notes}</div>}
-            </li>
-          ))
-        }
+            )}
+            {s.note && <div class="muted">{s.note}</div>}
+          </li>
+        ))}
       </ul>
       <p class="muted">
-        Years queued: {(corpus.years_queued_for_ingest || []).join(", ")}. Categories to normalize:{" "}
-        {(corpus.normalize_categories || []).slice(0, 6).join(", ")}, …
+        Corpus years queued: {(corpus.years_queued_for_ingest || []).join(", ")}. Sideways
+        discoveries routed — not chased:{" "}
+        {(now.discipline?.sideways_discoveries_routed || [])
+          .map((r: any) => `${r.topic}→${r.assign}`)
+          .join("; ")}
+          .
       </p>
     </section>
   </article>
 </BaseLayout>
+
+<style>
+  .table-wrap {
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  .data-table th,
+  .data-table td {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 12%, transparent);
+  }
+  .data-table th {
+    font-weight: 600;
+  }
+</style>

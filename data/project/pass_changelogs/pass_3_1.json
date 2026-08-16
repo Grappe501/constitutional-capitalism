@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "pass_id": "PASS_3_1",
+  "pass_number": "3.1",
+  "pass_name": "Arkansas NOW — The State We Inherited",
+  "stage": "STAGE_3",
+  "status": "COMPLETE",
+  "is_stage_3_pass": true,
+  "decision_ids": ["CC-DEC-164"],
+  "update_ids": ["UPD-177"],
+  "slice_id": "CC-STAGE-3-PASS-3-1-ARKANSAS-NOW-1.0",
+  "deployment_date": "2026-08-16",
+  "github_commit": null,
+  "github_commit_url": null,
+  "live_url": "https://constitutional-capitalism.netlify.app/build-progress/passes/pass-3-1/",
+  "engine_href": "/system/arkansas-state-baseline/",
+  "progress_before": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 100,
+    "publication_completion_percent": 3,
+    "unabridged_completion_percent": 3,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 51,
+    "pass_3_1_category_percent": 0,
+    "new_evidence_graphics": 0,
+    "countable_fiscal_claims_added": 0,
+    "items_deferred_to_validation_or_later_pass": 5
+  },
+  "progress_after": {
+    "skeleton_coverage_percent": 100,
+    "first_pass_coverage_percent": 100,
+    "publication_completion_percent": 13,
+    "unabridged_completion_percent": 13,
+    "validation_completion_percent": 0,
+    "overall_project_completion_percent": 53,
+    "pass_3_1_category_percent": 100,
+    "new_evidence_graphics": 6,
+    "countable_fiscal_claims_added": 0,
+    "items_deferred_to_validation_or_later_pass": 5
+  },
+  "before_after": [
+    { "label": "Unabridged Completion", "before": "3%", "after": "13% (1/8 categories)" },
+    { "label": "3.1 Arkansas NOW", "before": "0%", "after": "100%" },
+    { "label": "Overall project", "before": "51%", "after": "53%" },
+    { "label": "State X-Ray dimensions", "before": "—", "after": "6 bound" },
+    { "label": "Budget X-Ray", "before": "seed only", "after": "WORKING_V1" },
+    { "label": "Expenditure taxonomy", "before": "—", "after": "DEFINED + applied" },
+    { "label": "Evidence graphics shipped", "before": "0", "after": "6" },
+    { "label": "COUNTABLE integrity", "before": "PASS", "after": "PASS (+$0)" }
+  ],
+  "experience_links": [
+    { "href": "/system/arkansas-state-baseline/", "label": "Open Arkansas NOW / State X-Ray →" },
+    { "href": "/system/arkansas-state-baseline/#budget-xray", "label": "See Budget X-Ray →" },
+    { "href": "/system/arkansas-state-baseline/#taxonomy", "label": "See expenditure taxonomy →" },
+    { "href": "/system/arkansas-state-baseline/#counties", "label": "See designated county snapshot →" },
+    { "href": "/system/arkansas-state-baseline/#sources", "label": "See sources & claim classes →" },
+    { "href": "/system/transition-engine/#tr-01", "label": "Join TR-01 Arkansas NOW →" }
+  ],
+  "progress_movement": "Unabridged 3% → 13% (Pass 3.1 category 0% → 100%). Overall 51% → 53%. Skeleton and First-Pass held at 100%. Six-dimension State X-Ray + Budget X-Ray shipped from primary binds. Sideways discoveries routed to 3.2–3.7/Stage 4. COUNTABLE +$0. Next: Pass 3.2 Household Prosperity only.",
+  "summary": "Pass 3.1 closes the first unabridged category: Arkansas NOW — the definitive current-state diagnosis. It joins People, Households, Economy, Government, Productive Assets, and Money Leakage & Dependency into one State X-Ray; ships the Budget X-Ray signature asset and expenditure taxonomy; enforces FACT/DERIVED/MODEL claim classes; and refuses fake leakage totals.",
+  "modules_added_or_modified": [
+    {
+      "id": "arkansas_now_xray",
+      "label": "Arkansas State X-Ray (six dimensions)",
+      "change": "unabridged_category_complete",
+      "href": "/system/arkansas-state-baseline/",
+      "path": "data/project/stage3_pass31_arkansas_now.json"
+    },
+    {
+      "id": "budget_xray",
+      "label": "Arkansas Budget X-Ray",
+      "change": "added",
+      "href": "/system/arkansas-state-baseline/#budget-xray"
+    },
+    {
+      "id": "expenditure_taxonomy",
+      "label": "Expenditure taxonomy (CONSUME→GENERATE RETURN)",
+      "change": "added",
+      "href": "/system/arkansas-state-baseline/#taxonomy"
+    },
+    {
+      "id": "stage3_plan",
+      "label": "Stage 3 eight-pass unabridged plan",
+      "change": "locked",
+      "path": "data/project/stage3_eight_pass_plan.json"
+    }
+  ],
+  "visual_assets": [
+    { "id": "budget_xray_v1", "label": "Arkansas Budget X-Ray", "href": "/system/arkansas-state-baseline/#budget-xray" },
+    { "id": "revenue_composition", "label": "Revenue Composition FY2025→FY2026", "href": "/system/arkansas-state-baseline/#revenue" },
+    { "id": "taxonomy_panel", "label": "Expenditure Taxonomy", "href": "/system/arkansas-state-baseline/#taxonomy" },
+    { "id": "county_snapshot", "label": "Designated County Prosperity Snapshot", "href": "/system/arkansas-state-baseline/#counties" },
+    { "id": "household_now", "label": "Household Pressure NOW anchors", "href": "/system/arkansas-state-baseline/#households" },
+    { "id": "econ_scale", "label": "Arkansas Economic Scale", "href": "/system/arkansas-state-baseline/#economy" }
+  ],
+  "source_documents": [
+    { "label": "Pass 3.1 Arkansas NOW artifact", "path": "data/project/stage3_pass31_arkansas_now.json" },
+    { "label": "DFA FY2026 General Revenue bind", "path": "data/imports/arkansas-revenue-replacement/fy2026_dfa_general_revenue_bind.json" },
+    { "label": "FY2026 GR Allocation A seed", "path": "data/imports/arkansas-state-baseline/normalized/fy2026_general_revenue_allocations_seed.json" },
+    { "label": "QCEW / FRED workforce ledger", "path": "data/imports/arkansas-revenue-replacement/workforce_prosperity_contribution_incidence_ledger.json" }
+  ],
+  "unresolved_deferred": [
+    { "item": "Full all-funds federal dependency series", "disposition": "STAGE_4 / NOW_INGEST", "defer_to": "OV-31-01" },
+    { "item": "Statewide capital-leakage estimate", "disposition": "STAGE_4", "defer_to": "after 3.4/3.6" },
+    { "item": "75-county population map", "disposition": "NOW_INGEST", "defer_to": "when full PEP panel bound" },
+    { "item": "Household cost stack unabridged", "disposition": "PASS_3_2", "defer_to": "Pass 3.2" },
+    { "item": "Public asset register / capital stock", "disposition": "PASS_3_6", "defer_to": "Pass 3.6" }
+  ],
+  "next_pass_only": "PASS_3_2 — Household Prosperity"
+}

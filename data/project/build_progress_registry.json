@@ -1,16 +1,16 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-163",
-  "update_id": "UPD-176",
+  "decision_id": "CC-DEC-164",
+  "update_id": "UPD-177",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_3",
-  "current_pass": null,
-  "next_objective": "Stage 3 — Unabridged Completion. Dig deep one completed category at a time. First-pass is 100%; Stage 2 is certified.",
+  "current_pass": "PASS_3_2",
+  "next_objective": "Pass 3.2 \u2014 Household Prosperity. Dig deep vertically. Do not open 3.3 until 3.2 is 100%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -150,8 +150,14 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-5/",
       "links": [
-        { "href": "/build-progress/passes/pass-5/", "label": "Stage 1 certification record" },
-        { "href": "/system/", "label": "Complete system architecture map" }
+        {
+          "href": "/build-progress/passes/pass-5/",
+          "label": "Stage 1 certification record"
+        },
+        {
+          "href": "/system/",
+          "label": "Complete system architecture map"
+        }
       ]
     },
     {
@@ -160,9 +166,18 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-2-2/",
       "links": [
-        { "href": "/system/household-engine/", "label": "Household Prosperity Engine" },
-        { "href": "/build-progress/passes/pass-2-2/", "label": "Pass 2.2 What Changed" },
-        { "href": "/system/money-engine/", "label": "Money Engine join" }
+        {
+          "href": "/system/household-engine/",
+          "label": "Household Prosperity Engine"
+        },
+        {
+          "href": "/build-progress/passes/pass-2-2/",
+          "label": "Pass 2.2 What Changed"
+        },
+        {
+          "href": "/system/money-engine/",
+          "label": "Money Engine join"
+        }
       ]
     },
     {
@@ -171,10 +186,22 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-2-3/",
       "links": [
-        { "href": "/system/human-community-engine/", "label": "Human & Community Capital Engine" },
-        { "href": "/build-progress/passes/pass-2-3/", "label": "Pass 2.3 What Changed" },
-        { "href": "/system/household-engine/", "label": "Household Engine join" },
-        { "href": "/system/money-engine/", "label": "Money Engine join" }
+        {
+          "href": "/system/human-community-engine/",
+          "label": "Human & Community Capital Engine"
+        },
+        {
+          "href": "/build-progress/passes/pass-2-3/",
+          "label": "Pass 2.3 What Changed"
+        },
+        {
+          "href": "/system/household-engine/",
+          "label": "Household Engine join"
+        },
+        {
+          "href": "/system/money-engine/",
+          "label": "Money Engine join"
+        }
       ]
     },
     {
@@ -183,11 +210,26 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-2-4/",
       "links": [
-        { "href": "/system/government-engine/", "label": "Government Operating System" },
-        { "href": "/build-progress/passes/pass-2-4/", "label": "Pass 2.4 What Changed" },
-        { "href": "/system/human-community-engine/", "label": "Human & Community join" },
-        { "href": "/system/money-engine/", "label": "Money Engine join" },
-        { "href": "/system/household-engine/", "label": "Household Engine join" }
+        {
+          "href": "/system/government-engine/",
+          "label": "Government Operating System"
+        },
+        {
+          "href": "/build-progress/passes/pass-2-4/",
+          "label": "Pass 2.4 What Changed"
+        },
+        {
+          "href": "/system/human-community-engine/",
+          "label": "Human & Community join"
+        },
+        {
+          "href": "/system/money-engine/",
+          "label": "Money Engine join"
+        },
+        {
+          "href": "/system/household-engine/",
+          "label": "Household Engine join"
+        }
       ]
     },
     {
@@ -196,10 +238,22 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-2-5/",
       "links": [
-        { "href": "/system/transition-engine/", "label": "Arkansas Transition Engine" },
-        { "href": "/build-progress/passes/pass-2-5/", "label": "Pass 2.5 What Changed" },
-        { "href": "/system/government-engine/", "label": "Government join" },
-        { "href": "/system/money-engine/", "label": "Money Engine join" }
+        {
+          "href": "/system/transition-engine/",
+          "label": "Arkansas Transition Engine"
+        },
+        {
+          "href": "/build-progress/passes/pass-2-5/",
+          "label": "Pass 2.5 What Changed"
+        },
+        {
+          "href": "/system/government-engine/",
+          "label": "Government join"
+        },
+        {
+          "href": "/system/money-engine/",
+          "label": "Money Engine join"
+        }
       ]
     },
     {
@@ -208,10 +262,122 @@
       "date": "2026-08-16",
       "href": "/build-progress/passes/pass-2-6/",
       "links": [
-        { "href": "/build-progress/passes/pass-2-6/", "label": "Stage 2 certification record" },
-        { "href": "/system/master-map/", "label": "Master System Map" },
-        { "href": "/system/household-engine/#hp-09", "label": "HP-09 reconciliation close" }
+        {
+          "href": "/build-progress/passes/pass-2-6/",
+          "label": "Stage 2 certification record"
+        },
+        {
+          "href": "/system/master-map/",
+          "label": "Master System Map"
+        },
+        {
+          "href": "/system/household-engine/#hp-09",
+          "label": "HP-09 reconciliation close"
+        }
       ]
+    },
+    {
+      "id": "CC-DEC-164",
+      "title": "Pass 3.1 Arkansas NOW unabridged complete",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-3-1/",
+      "links": [
+        {
+          "href": "/system/arkansas-state-baseline/",
+          "label": "Arkansas NOW / State X-Ray"
+        },
+        {
+          "href": "/build-progress/passes/pass-3-1/",
+          "label": "Pass 3.1 What Changed"
+        },
+        {
+          "href": "/system/arkansas-state-baseline/#budget-xray",
+          "label": "Budget X-Ray"
+        }
+      ]
+    }
+  ],
+  "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
+  "stage3_passes": [
+    {
+      "id": "PASS_3_1",
+      "number": "3.1",
+      "slug": "pass-3-1",
+      "name": "Arkansas NOW",
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-3-1/",
+      "changelog": "data/project/pass_changelogs/pass_3_1.json",
+      "spine_href": "/system/arkansas-state-baseline/"
+    },
+    {
+      "id": "PASS_3_2",
+      "number": "3.2",
+      "slug": "pass-3-2",
+      "name": "Household Prosperity",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-2/",
+      "changelog": null,
+      "spine_href": "/system/household-engine/"
+    },
+    {
+      "id": "PASS_3_3",
+      "number": "3.3",
+      "slug": "pass-3-3",
+      "name": "Human & Community Capital",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-3/",
+      "changelog": null,
+      "spine_href": "/system/human-community-engine/"
+    },
+    {
+      "id": "PASS_3_4",
+      "number": "3.4",
+      "slug": "pass-3-4",
+      "name": "Money, Markets & Ownership",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-4/",
+      "changelog": null,
+      "spine_href": "/system/money-engine/"
+    },
+    {
+      "id": "PASS_3_5",
+      "number": "3.5",
+      "slug": "pass-3-5",
+      "name": "Government & Democratic Power",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-5/",
+      "changelog": null,
+      "spine_href": "/system/government-engine/"
+    },
+    {
+      "id": "PASS_3_6",
+      "number": "3.6",
+      "slug": "pass-3-6",
+      "name": "Arkansas Productive Systems",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-6/",
+      "changelog": null,
+      "spine_href": "/system/"
+    },
+    {
+      "id": "PASS_3_7",
+      "number": "3.7",
+      "slug": "pass-3-7",
+      "name": "Transition & Intergenerational Arkansas",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-7/",
+      "changelog": null,
+      "spine_href": "/system/transition-engine/"
+    },
+    {
+      "id": "PASS_3_8",
+      "number": "3.8",
+      "slug": "pass-3-8",
+      "name": "Unabridged Integration & Editorial Closure",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-3-8/",
+      "changelog": null,
+      "spine_href": "/system/master-map/"
     }
   ]
 }

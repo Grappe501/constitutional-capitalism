@@ -10,16 +10,20 @@ const overall = completion.overall_project_completion?.percent ?? 0;
 const stages = completion.stages || [];
 const passes = registry.passes || [];
 const stage2Passes = registry.stage2_passes || [];
+const stage3Passes = registry.stage3_passes || [];
+const categoryBars = completion.stage3_category_bars || [];
+const unabridged =
+  bars.unabridged_completion_percent ?? bars.publication_completion_percent ?? 0;
 
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
-  if (status === "ACTIVE") return "chip chip--live";
+  if (status === "ACTIVE" || status === "NEXT") return "chip chip--live";
   return "chip chip--queued";
 }
 
 function statusLabel(status?: string) {
   if (status === "COMPLETE") return "Complete";
-  if (status === "ACTIVE") return "Building now";
+  if (status === "ACTIVE" || status === "NEXT") return "Building now";
   return "Queued";
 }
 ---
@@ -27,15 +31,15 @@ function statusLabel(status?: string) {
 <BaseLayout
   title="Build Progress"
   path="/build-progress/"
-  description="Completion ladder, Stage 2 passes, and permanent What Changed changelogs."
+  description="Completion ladder, Stage 3 unabridged categories, and permanent What Changed changelogs."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Stage 2 active</span>
+      <span class="chip chip--live">Stage 3 active</span>
       <h1>Build Progress</h1>
       <p class="lede">
-        Stage 1 skeleton is complete. Stage 2 builds working models — every pass ships intellect
-        <strong>and</strong> visual assets, with a BEFORE → AFTER scoreboard you can feel.
+        Stages 1–2 are certified. Stage 3 finishes categories vertically — one unabridged
+        category to 100% before the next opens.
       </p>
     </header>
 
@@ -45,43 +49,79 @@ function statusLabel(status?: string) {
         overall={overall}
         skeleton={bars.skeleton_coverage_percent ?? 0}
         firstPass={bars.first_pass_coverage_percent ?? 0}
-        publication={bars.publication_completion_percent ?? 0}
+        publication={unabridged}
         validation={bars.validation_completion_percent ?? 0}
-        caption="Stage 1 = 100% skeleton. Stage 2 first-pass coverage is the governing dial (12% → 100%)."
+        caption="Unabridged Completion is the aggressive Stage 3 dial (1/8 categories after Pass 3.1)."
       />
       <p class="muted">
         Current stage: <strong>{registry.current_stage}</strong>
         {registry.current_pass && (
           <>
             {" "}
-            · Current pass: <strong>{registry.current_pass}</strong>
+            · Next pass: <strong>{registry.current_pass}</strong>
           </>
         )}
       </p>
-      <p>
-        <a href="/status/">Full status dials →</a>
-        {" · "}
-        <a href="/system/money-engine/">Money Engine →</a>
-        {" · "}
-        <a href="/build-progress/passes/pass-2-1/">Pass 2.1 What Changed →</a>
-      </p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="cats">
+      <h2 id="cats">Stage 3 category bars</h2>
+      <div class="progress-list">
+        {categoryBars.map((c: any) => (
+          <div class="progress-item">
+            <label>
+              <span>
+                {c.href && c.status === "COMPLETE" ? (
+                  <a href={c.href}>{c.label}</a>
+                ) : (
+                  c.label
+                )}
+              </span>
+              <span aria-hidden="true">{c.percent}%</span>
+            </label>
+            <div
+              class="bar"
+              role="progressbar"
+              aria-label={`${c.label} progress`}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={c.percent}
+            >
+              <span style={`width:${c.percent}%`} />
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
 
     <section class="hub-section" aria-labelledby="next">
       <h2 id="next">Next objective</h2>
       <p class="lede">{registry.next_objective}</p>
       <ul class="link-board">
-        <li><a href="/system/master-map/">Master System Map (Stage 2 certified)</a></li>
-        <li><a href="/build-progress/passes/pass-2-6/">Pass 2.6 / Stage 2 certification</a></li>
-        <li><a href="/system/transition-engine/">Arkansas Transition Engine</a></li>
-        <li><a href="/system/government-engine/">Government Operating System</a></li>
-        <li><a href="/system/money-engine/">Money Engine</a></li>
-        <li><a href="/build-progress/passes/pass-5/">Stage 1 certification</a></li>
+        <li><a href="/system/arkansas-state-baseline/">Arkansas NOW / State X-Ray</a></li>
+        <li><a href="/build-progress/passes/pass-3-1/">Pass 3.1 What Changed</a></li>
+        <li><a href="/system/master-map/">Master System Map</a></li>
+        <li><a href="/build-progress/passes/pass-2-6/">Stage 2 certification</a></li>
       </ul>
     </section>
 
+    <section class="hub-section" aria-labelledby="stage3">
+      <h2 id="stage3">Stage 3 passes</h2>
+      <div class="spine-grid">
+        {
+          stage3Passes.map((p: any) => (
+            <a class="spine-tile" href={p.href}>
+              <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>
+              <h3>Pass {p.number}</h3>
+              <p>{p.name}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
     <section class="hub-section" aria-labelledby="stage2">
-      <h2 id="stage2">Stage 2 passes</h2>
+      <h2 id="stage2">Stage 2 passes (complete)</h2>
       <div class="spine-grid">
         {
           stage2Passes.map((p: any) => (
@@ -111,42 +151,22 @@ function statusLabel(status?: string) {
     </section>
 
     <section class="hub-section" aria-labelledby="stages">
-      <h2 id="stages">Stages (refined)</h2>
+      <h2 id="stages">Stages</h2>
       <ul class="stack">
         {
           stages.map((s: any) => (
             <li>
               <strong>{s.id.replace("_", " ")}</strong> — {s.name}
               <div class="muted">{s.target}</div>
+              <span class={chipClass(s.status)}>{s.status}</span>
             </li>
           ))
         }
       </ul>
       <p class="muted">
-        Volume I = Unabridged source of truth. Volume II ≈ 100-page public book after validation.
-        Roadmap: {(publishing.arkansas_development_program_roadmap?.sequence || []).join(" → ")}.
+        Two volumes: {publishing.volumes?.[0]?.name || "Unabridged"} ·{" "}
+        {publishing.volumes?.[1]?.name || "Public Book"}
       </p>
-    </section>
-
-    <section class="hub-section" aria-labelledby="infra">
-      <h2 id="infra">Infrastructure checkpoints</h2>
-      <ul class="stack">
-        {
-          (registry.infrastructure_checkpoints || []).map((c: any) => (
-            <li>
-              <strong>{c.id}</strong> — {c.title}
-              <div class="muted">{c.date}</div>
-              <ul class="link-board" style="margin-top:0.75rem;">
-                {(c.links || []).map((link: any) => (
-                  <li>
-                    <a href={link.href}>{link.label}</a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))
-        }
-      </ul>
     </section>
   </article>
 </BaseLayout>

@@ -2,21 +2,21 @@
   "version": "1.0.0",
   "slice_id": "CC-ARKANSAS-STATE-BASELINE-BUDGET-CORPUS-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-152",
-  "update_id": "UPD-165",
-  "status": "CORPUS_OPEN_INGEST_STARTED_ANALYSIS_DEFERRED",
+  "decision_id": "CC-DEC-164",
+  "update_id": "UPD-177",
+  "status": "PASS_3_1_UNABRIDGED_NOW_COMPLETE",
   "epistemic_class": "SHARED_FISCAL_INFRASTRUCTURE_NOT_DOCTRINE_NOT_RESEARCH_BRANCH",
-  "role": "Arkansas today is the starting balance sheet and operating system for the unabridged work.",
+  "role": "Arkansas today is the starting balance sheet and operating system for the unabridged work \u2014 Pass 3.1 State X-Ray is the public diagnosis surface.",
   "organizing_sentence": "Here is Arkansas today. Here is where its money comes from. Here is where it goes. Here are the patterns created by decades of policy. Here are the structural problems. Here is the destination. And here is the path from one to the other.",
   "discipline": {
     "do_now": [
-      "acquire_official_budget_and_revenue_stabilization_documents",
-      "normalize_into_common_structure_over_multiple_years",
-      "index_sources_for_later_module_pull"
+      "maintain_and_extend_multi_year_ingest_inside_NOW_corpus",
+      "keep_claim_classes_visible",
+      "serve_as_judgment_baseline_for_later_stage3_passes"
     ],
     "do_not_now": [
-      "stop_pass_2_to_analyze_every_budget_line",
-      "open_new_exploratory_research_branch",
+      "open_pass_3_2_topics_inside_this_surface",
+      "invent_statewide_leakage_totals",
       "claim_countable_replacement_revenue_from_baseline_alone"
     ]
   },
@@ -55,7 +55,7 @@
   "sources_ingested": [
     {
       "id": "AR-FISCAL-SUMMARY-2025R-FY2026",
-      "title": "2025 Regular Session — Fiscal Legislation Summary",
+      "title": "2025 Regular Session \u2014 Fiscal Legislation Summary",
       "fiscal_year": "FY2026",
       "publisher": "Arkansas General Assembly / Bureau of Legislative Research (session fiscal summary)",
       "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2Fassembly%2F2025%2F2025R%2FDocuments%2F2025+Regular+Session+-+Fiscal+Legislation+Summary.pdf",
@@ -65,13 +65,13 @@
     },
     {
       "id": "AR-RSA-FY2027-DRAFT-PORTRAIT-HAR",
-      "title": "FY2027 Revenue Stabilization Law Allocations (Draft Portrait — HAR)",
+      "title": "FY2027 Revenue Stabilization Law Allocations (Draft Portrait \u2014 HAR)",
       "fiscal_year": "FY2027",
       "publisher": "Arkansas General Assembly (meeting attachment)",
       "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F005%2F27865%2FC++FY2027+DRAFT+-+Portrait+-+HAR.pdf",
       "local_path": "data/imports/arkansas-state-baseline/sources/fy2027_revenue_stabilization_draft_portrait_har.pdf",
       "status": "DOWNLOADED",
-      "notes": "Forward structure — do not treat draft as final enacted totals without Acts cross-check."
+      "notes": "Forward structure \u2014 do not treat draft as final enacted totals without Acts cross-check."
     },
     {
       "id": "AR-SB75-2026F-RSA-ACTS",
@@ -98,5 +98,6 @@
     "baseline_is_infrastructure",
     "analysis_pulls_on_demand_from_passes",
     "no_countable_stack_from_seed_alone"
-  ]
+  ],
+  "pass_3_1_artifact": "data/project/stage3_pass31_arkansas_now.json"
 }

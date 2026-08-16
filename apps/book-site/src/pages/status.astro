@@ -64,7 +64,7 @@ const generatedLabel = snapshot.generated_at
       {[
         ["Skeleton coverage", bars.skeleton_coverage_percent],
         ["First-pass coverage", bars.first_pass_coverage_percent],
-        ["Publication completion", bars.publication_completion_percent],
+        ["Unabridged completion", bars.unabridged_completion_percent ?? bars.publication_completion_percent],
         ["Validation completion", bars.validation_completion_percent],
       ].map(([label, percent]) => (
         <div class="progress-item">
@@ -88,8 +88,35 @@ const generatedLabel = snapshot.generated_at
     <p class="muted" style="margin-top:0.75rem;">
       Active stage: {completion.stages?.find((s: any) => s.status === "ACTIVE" || s.status === "IN_PROGRESS")?.name || "—"}.
       Stage 1: {completion.stages?.find((s: any) => s.id === "STAGE_1")?.status === "COMPLETE" ? "COMPLETE" : (completion.active_stage1_pass || "—")}.
+      Stage 2: {completion.stage_2_complete ? "COMPLETE" : "—"}.
       {completion.horizontal_expansion_frozen && <> Horizontal expansion frozen.</>}
     </p>
+
+    {(completion.stage3_category_bars || []).length > 0 && (
+      <>
+        <h3>Stage 3 categories</h3>
+        <div class="progress-list" style="margin-top:0.75rem;">
+          {(completion.stage3_category_bars || []).map((c: any) => (
+            <div class="progress-item">
+              <label>
+                <span>{c.label}</span>
+                <span aria-hidden="true">{c.percent}%</span>
+              </label>
+              <div
+                class="bar"
+                role="progressbar"
+                aria-label={`${c.label} progress`}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={c.percent}
+              >
+                <span style={`width:${c.percent}%`} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
 
     <h2>Honesty dials</h2>
     <ul>
