@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import plan from "@data/project/cc_v2_master_build_plan.json";
+import audit from "@data/project/cc_v2_orphan_scope_completion_audit.json";
+import completion from "@data/project/completion_ladder_and_dashboard.json";
+
+const fb = completion.foundational_build || {};
+const bp = plan.blueprint || {};
+const v2 = completion.v2_blueprint || {};
+const gates = plan.gates || [];
+const counters = plan.object_counters || [];
+const domains = plan.operating_system_inventory?.domains || [];
+const sequence = plan.sequence || [];
+const forbidden = plan.forbidden_before_map_freeze || [];
+const orphan = plan.orphan_audit || {};
+---
+
+<BaseLayout
+  title="V2 Blueprint — Master Build Plan"
+  path="/v2/"
+  description="Constitutional Capitalism v2.0 Master Build Plan — define what v2.0 means at 100% before researching Arkansas."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">{bp.label || v2.label || "V2 BLUEPRINT"}</span>
+      <h1>{plan.title}</h1>
+      <p class="lede">{plan.purpose}</p>
+      <p class="muted">
+        {plan.slice_id} · {plan.decision_id} · {plan.update_id} · status: {plan.status}
+      </p>
+      <p class="lede" style="margin-top:1rem;">
+        <strong>{bp.percent ?? v2.percent ?? 0}% → 100%</strong>
+        <span class="muted"> · measured by resolved objects, not words written</span>
+      </p>
+    </header>
+
+    <section class="hub-section" aria-labelledby="triad">
+      <h2 id="triad">Three permanent indicators</h2>
+      <ul class="link-board">
+        <li>
+          <span class="chip chip--done">COMPLETE</span>{" "}
+          <strong>FOUNDATIONAL SYSTEM {fb.version || "v1.0"}</strong> — frozen
+        </li>
+        <li>
+          <span class="chip chip--queued">HOLD</span>{" "}
+          <strong>EXPLORER EXPERIENCE — {plan.explorer_experience?.version || "0.1"}</strong>
+        </li>
+        <li>
+          <span class="chip chip--live">BLUEPRINT</span>{" "}
+          <strong>{bp.label}</strong> — {bp.percent ?? 0}% → 100%
+          <div class="muted">{bp.completion_definition}</div>
+        </li>
+      </ul>
+      <p class="muted">Never confuse the growth of the project with the completion of the project.</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Sequence (disciplined)</h2>
+      <ol class="stack">
+        {
+          sequence.map((s: any) => (
+            <li>
+              <span
+                class={
+                  s.status === "COMPLETE" || s.status === "THIS_SLICE"
+                    ? "chip chip--done"
+                    : s.status === "NEXT"
+                      ? "chip chip--live"
+                      : "chip chip--queued"
+                }
+              >
+                {s.status}
+              </span>{" "}
+              <strong>
+                {s.step}. {s.label}
+              </strong>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="hub-section">
+      <h2>Five gates to 100%</h2>
+      <ul class="stack">
+        {
+          gates.map((g: any) => (
+            <li>
+              <span class="chip chip--queued">{g.status}</span>{" "}
+              <strong>
+                {g.id} — {g.name}
+              </strong>
+              <div class="muted">
+                {g.question}
+                <br />
+                Completion: {g.completion_result}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Object counters (progress)</h2>
+      <ul class="link-board">
+        {
+          counters.map((c: any) => (
+            <li>
+              <strong>{c.label}</strong>
+              <div class="muted">
+                {c.resolved}/{c.total == null ? "—" : c.total} · gate {c.gate}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        UNKNOWN is a completed research result when the evidence needed for the current decision does
+        not exist.
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Arkansas operating-system inventory</h2>
+      <p class="lede">
+        {plan.operating_system_inventory?.domain_count ?? domains.length} domains — enumerated homes
+        only. Not researched.
+      </p>
+      <ul class="stack">
+        {
+          domains.map((d: any) => (
+            <li>
+              <strong>{d.label}</strong>
+              <span class="muted">
+                {" "}
+                · {d.id} · primary {d.primary_gate} · {d.status}
+              </span>
+              <div class="muted">{d.home_note}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Orphan / scope / completion</h2>
+      <p class="muted">
+        Audit status: <strong>{audit.status}</strong> · map freeze:{" "}
+        <strong>{audit.map_freeze?.status || orphan.status}</strong>
+      </p>
+      <p class="lede">{orphan.test_question || audit.tests?.[0]?.question}</p>
+      <p>
+        <a href="/v2/decisions/">V2 Decision Register →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Forbidden before map freeze</h2>
+      <ul class="stack">
+        {forbidden.map((f: string) => <li>{f}</li>)}
+      </ul>
+      <p class="muted">{plan.next_only}</p>
+    </section>
+  </article>
+</BaseLayout>

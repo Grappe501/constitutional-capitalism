@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import register from "@data/project/v2_decision_register.json";
+---
+
+<BaseLayout
+  title="V2 Decision Register"
+  path="/v2/decisions/"
+  description="Permanent register of v2 decisions — what, why, evidence, alternatives rejected, reverse conditions."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Permanent from Day 1</span>
+      <h1>V2 Decision Register</h1>
+      <p class="lede">{register.rule}</p>
+      <p class="muted">
+        {register.slice_id} · {register.entries?.length || 0} entries ·{" "}
+        <a href="/v2/">Master Build Plan →</a>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <ul class="stack">
+        {
+          (register.entries || []).map((e: any) => (
+            <li>
+              <span class="chip chip--done">{e.id}</span>{" "}
+              <strong>{e.title}</strong>
+              <div class="muted">{e.date}</div>
+              <p>
+                <strong>Decision:</strong> {e.decision}
+              </p>
+              <p>
+                <strong>Why:</strong> {e.why}
+              </p>
+              {(e.evidence || []).length > 0 && (
+                <p class="muted">
+                  <strong>Evidence:</strong> {(e.evidence || []).join(" · ")}
+                </p>
+              )}
+              {(e.alternatives_rejected || []).length > 0 && (
+                <p class="muted">
+                  <strong>Rejected:</strong> {(e.alternatives_rejected || []).join(" · ")}
+                </p>
+              )}
+              {e.could_reverse_if && (
+                <p class="muted">
+                  <strong>Could reverse if:</strong> {e.could_reverse_if}
+                </p>
+              )}
+              {e.v1_doctrine_impact && (
+                <p class="muted">
+                  <strong>v1 doctrine impact:</strong> {e.v1_doctrine_impact}
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

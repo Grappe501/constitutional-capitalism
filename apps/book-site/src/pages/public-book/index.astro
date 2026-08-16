@@ -69,10 +69,18 @@ function chipClass(status?: string) {
           <div class="muted">{book.note}</div>
         </li>
         <li>
-          <span class="chip chip--queued">{explorer.status || "PARALLEL"}</span>{" "}
-          <strong>{explorer.label || "COMPARISON EXPLORER"}</strong>
+          <span class="chip chip--queued">{explorer.status || "HOLD"}</span>{" "}
+          <strong>{explorer.label || "EXPLORER EXPERIENCE — 0.1 HOLD"}</strong>
           <div class="muted">
-            Living educational resource · <a href={explorer.href || "/compare/explorer/"}>Open Explorer →</a>
+            Paused by design · <a href={explorer.href || "/compare/explorer/"}>Open Explorer →</a>
+          </div>
+        </li>
+        <li>
+          <span class="chip chip--live">BLUEPRINT</span>{" "}
+          <strong>{completion.v2_blueprint?.label || "V2 BLUEPRINT"}</strong> —{" "}
+          {completion.v2_blueprint?.percent ?? 0}% → 100%
+          <div class="muted">
+            <a href="/v2/">Master Build Plan →</a>
           </div>
         </li>
       </ul>

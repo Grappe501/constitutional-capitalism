@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-193",
-  "update_id": "UPD-206",
+  "decision_id": "CC-DEC-194",
+  "update_id": "UPD-207",
   "status": "FOUNDATIONAL_BUILD_COMPLETE_STEWARDSHIP",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": null,
   "current_pass": null,
-  "next_objective": "Comparison Explorer Experience 0.1 active. Deepen World Lab, mechanisms, philosophies. Foundational System v1.0 remains frozen.",
+  "next_objective": "V2.1 SEE ARKANSAS — baseline objects only. Explorer HOLD. Foundational v1.0 frozen. V2 BLUEPRINT 0%.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -807,6 +807,22 @@
           "label": "Mechanisms"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-194",
+      "title": "CC-V2-MASTER-BUILD-PLAN-1.0 locked — V2 BLUEPRINT 0%",
+      "date": "2026-08-16",
+      "href": "/v2/",
+      "links": [
+        {
+          "href": "/v2/decisions/",
+          "label": "V2 Decision Register"
+        },
+        {
+          "href": "/status/",
+          "label": "Status"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -1078,5 +1094,11 @@
     }
   ],
   "foundational_system_version": "v1.0",
-  "stewardship_governance": "data/project/stewardship_governance_v1.json"
+  "stewardship_governance": "data/project/stewardship_governance_v1.json",
+  "v2_blueprint": {
+    "percent": 0,
+    "status": "MAP_FROZEN_READY_FOR_V2_1",
+    "plan": "data/project/cc_v2_master_build_plan.json",
+    "href": "/v2/"
+  }
 }

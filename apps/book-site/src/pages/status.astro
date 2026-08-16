@@ -76,11 +76,31 @@ const generatedLabel = snapshot.generated_at
       {" · "}
       <strong>Unabridged — Published</strong>
     </p>
+    <h2>Three permanent indicators</h2>
+    <ul class="link-board" style="margin:0.75rem 0 1rem;">
+      <li>
+        <span class="chip chip--done">COMPLETE</span>{" "}
+        <strong>FOUNDATIONAL SYSTEM v1.0</strong> — frozen
+      </li>
+      <li>
+        <span class="chip chip--queued">HOLD</span>{" "}
+        <strong>{completion.comparison_explorer_lane?.label || "EXPLORER EXPERIENCE — 0.1 HOLD"}</strong>
+        {" · "}
+        <a href="/compare/explorer/">Open →</a>
+      </li>
+      <li>
+        <span class="chip chip--live">BLUEPRINT</span>{" "}
+        <strong>{completion.v2_blueprint?.label || "V2 BLUEPRINT"}</strong> —{" "}
+        {completion.v2_blueprint?.percent ?? 0}% → 100%
+        {" · "}
+        <a href="/v2/">Master Build Plan →</a>
+        <div class="muted">{completion.v2_blueprint?.note}</div>
+      </li>
+    </ul>
     <p class="muted">
-      Recommended next stewardship priority:{" "}
-      <a href="/compare/explorer/">Comparison Explorer Experience 0.1</a> (Public Understanding) —
-      Put Me in the System, Thinkers, Mechanisms, seven-layer subjects. Does not reopen the
-      foundational build.
+      Recommended next:{" "}
+      <a href="/v2/">V2.1 — SEE ARKANSAS</a> (baseline objects only). Map frozen · Explorer 0.1 HOLD ·
+      no redesign/funding/pilots yet.
     </p>
     <div class="progress-list" style="margin-top:1rem;">
       {[
