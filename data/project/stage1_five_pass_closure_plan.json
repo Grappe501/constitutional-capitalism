@@ -4,9 +4,9 @@
   "generated_at": "2026-08-15",
   "decision_id": "CC-DEC-151",
   "update_id": "UPD-164",
-  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_2_COMPLETE",
-  "amended_by": ["CC-DEC-152", "CC-DEC-153"],
-  "passes_remaining_after_pass_2": 3,
+  "status": "STAGE_1_FIVE_PASS_PLAN_LOCKED_PASS_3_COMPLETE",
+  "amended_by": ["CC-DEC-152", "CC-DEC-153", "CC-DEC-154"],
+  "passes_remaining_after_pass_3": 2,
   "budget": "5_passes_to_stage_1_100_percent_skeleton",
   "may_finish_in": 4,
   "budget_reason": "Do not falsely declare skeleton complete while a major system function is still missing",
@@ -97,8 +97,9 @@
     {
       "id": "PASS_3",
       "name": "Government & Democratic Power Spine",
-      "status": "QUEUED_NEXT",
+      "status": "COMPLETE",
       "skeleton_target_percent": "88-92",
+      "skeleton_after_percent": 90,
       "covers": [
         "LOCK-06 State/local finance and procurement",
         "LOCK-08 Data rights, civil liberties, AI governance",
@@ -107,12 +108,18 @@
         "Voting/direct democracy",
         "Justice/public safety"
       ],
-      "purpose": "Close political/governance side"
+      "purpose": "Close political/governance side — protect economic system from capture and liberty from government",
+      "artifact": "data/project/stage1_pass3_government_democratic_power_spine.json",
+      "return": "reports/CC_STAGE_1_PASS_3_GOVERNMENT_DEMOCRATIC_POWER_SPINE_1_0_RETURN.md",
+      "changelog": "data/project/pass_changelogs/pass_03.json",
+      "public_changelog": "/build-progress/passes/pass-3/",
+      "decision_id": "CC-DEC-154",
+      "update_id": "UPD-167"
     },
     {
       "id": "PASS_4",
       "name": "Transition, Resilience & Measurement Spine",
-      "status": "QUEUED",
+      "status": "QUEUED_NEXT",
       "skeleton_target_percent": "96-98",
       "covers": [
         "LOCK-10 Transition architecture",

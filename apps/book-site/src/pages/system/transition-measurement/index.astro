@@ -13,10 +13,13 @@ if (!spine) throw new Error("Transition measurement spine missing");
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--queued">Pass 4 — queued</span>
+      <span class="chip chip--live">Pass 4 — building now</span>
       <h1>{spine.title}</h1>
       <p class="lede">{spine.blurb}</p>
       <p class="muted">Locks: {(spine.locks || []).join(" · ") || "LOCK-10 + measurement layer"}</p>
+      <p>
+        <a href="/build-progress/passes/pass-3/">Previous: Pass 3 What Changed →</a>
+      </p>
     </header>
 
     <section class="hub-section">

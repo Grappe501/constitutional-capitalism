@@ -1,0 +1,439 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-1-PASS-3-GOVERNMENT-DEMOCRATIC-POWER-SPINE-1.0",
+  "pass_id": "PASS_3",
+  "generated_at": "2026-08-15",
+  "decision_id": "CC-DEC-154",
+  "update_id": "UPD-167",
+  "status": "PASS_3_COMPLETE_SPINE_INTEGRATED",
+  "maturity": "STAGE_1_BONE_INTEGRATION_NOT_STAGE_2_SUBSTANCE",
+  "spine_name": "Government & Democratic Power Spine",
+  "purpose": "Skeleton of a political system that protects the economic system from capture while protecting individual liberty from government itself — by integrating constitutional structure, democracy, federalism, administration, public finance, justice, anti-corruption, data/AI rights, and public measurement.",
+  "locks_integrated": ["LOCK-06", "LOCK-08", "LOCK-09"],
+  "exit_gate_judgment": {
+    "government_power_bones_represented_percent": 100,
+    "orphan_government_functions": 0,
+    "five_os_questions_applied": true,
+    "power_loop_established": true,
+    "capture_loop_identified": true,
+    "unresolved_issues_correctly_deferred_percent": 100,
+    "skeleton_target_band": "~90",
+    "skeleton_coverage_after_pass": 90,
+    "commit_required": true,
+    "github_push_required": true,
+    "netlify_deployment_required": true,
+    "pass_3_what_changed_page_required": true
+  },
+  "power_loop": {
+    "name": "Legitimate Power Loop",
+    "purpose": "Strengthen this loop so government remains answerable to people and prosperity outcomes.",
+    "sequence": [
+      "People",
+      "Constitution",
+      "Elections / Direct Democracy",
+      "Government",
+      "Administration",
+      "Public Resources",
+      "Outcomes",
+      "Measurement",
+      "Accountability",
+      "People"
+    ],
+    "one_sentence": "People authorize constrained government through constitution and democratic channels; administration deploys public resources; measured outcomes feed accountability back to people."
+  },
+  "capture_loop": {
+    "name": "Extractive Capture Loop",
+    "purpose": "Break this loop structurally — home mechanisms live on LOCK-05/06/09 and related bones; Stage 2/4 prove them.",
+    "sequence": [
+      "Concentrated wealth",
+      "Campaigns / lobbying",
+      "Government",
+      "Contracts / regulation / public assets",
+      "Greater concentrated wealth"
+    ],
+    "one_sentence": "Concentrated wealth purchases political influence that rewrites contracts, regulation, and public-asset rules to enlarge itself — Constitutional Capitalism must interrupt each arrow."
+  },
+  "master_architecture_fragment": {
+    "title": "Government & Democratic Power Engine",
+    "one_sentence": "Constitutional Capitalism uses constrained democratic government to protect broad ownership and household prosperity from capture, while hard rights and measurement keep the state from becoming the new extractive center.",
+    "flow": [
+      {
+        "step": 1,
+        "id": "constitution_and_rights",
+        "label": "Constitution and rights set what government may and may never do (GP-01)"
+      },
+      {
+        "step": 2,
+        "id": "democratic_authorization",
+        "label": "Elections and direct democracy authorize and constrain governing power (GP-02, GP-03)"
+      },
+      {
+        "step": 3,
+        "id": "federalism_and_administration",
+        "label": "Federalism assigns functions; administrative state executes under accountability (GP-04, GP-05)"
+      },
+      {
+        "step": 4,
+        "id": "public_resources_and_justice",
+        "label": "Public finance, procurement, and justice deploy community capital without extraction (GP-06, GP-07)"
+      },
+      {
+        "step": 5,
+        "id": "anti_capture_and_measurement",
+        "label": "Anti-corruption, data/AI rights, and public measurement close the Power Loop and attack the Capture Loop (GP-08, GP-09, GP-10)"
+      }
+    ]
+  },
+  "structural_areas": [
+    {
+      "id": "GP-01",
+      "area": "Constitutional Structure & Rights",
+      "lock": null,
+      "href": "/constitutional-defense/",
+      "also": ["/foundational-axioms/", "/equal-standing/", "/constitutional-citizenship/", "/declaration/"],
+      "problem": "Without hard limits, political majorities or agencies can erase liberty; without affirmative structure, government cannot protect households from private capture either.",
+      "objective": "Define what government may do, what it may never do, and which rights remain beyond ordinary political majorities.",
+      "mechanism": "Constitutional defense framework; foundational axioms; equal standing; citizenship as mutual obligation — not as a license for state domination.",
+      "ownership_funding": "The constitution is public supreme law; rights are not state property. Funding of rights enforcement is a core public duty.",
+      "household_effect": "Security of person, conscience, speech, due process, and equal standing while participating in prosperity architecture.",
+      "connections": ["Power Loop start", "GP-02/03 democracy", "GP-09 data rights", "Pass 1 ownership firewall"],
+      "os_check": {
+        "ownership": "People retain rights; government holds limited delegated authority",
+        "capital_formation": "Stable rights enable long-horizon household and firm investment",
+        "market_design": "Constitutional baselines constrain extractive coercion",
+        "household_economics": "Liberty and security are preconditions of usable surplus",
+        "power": "Hard rights block both majority tyranny and state capture of persons"
+      },
+      "unresolved_deferred": [
+        {"item": "Full Arkansas amendment package sequencing", "disposition": "KNOWN_DETAIL"},
+        {"item": "Federal supremacy conflicts on specific rights floors", "disposition": "VALIDATION_QUESTION"}
+      ]
+    },
+    {
+      "id": "GP-02",
+      "area": "Representative Democracy & Elections",
+      "lock": null,
+      "href": "/democracy/",
+      "also": ["/citizen-service/"],
+      "problem": "Representation can drift from citizen preference through districting, access barriers, low information, and donor-skewed campaigns.",
+      "objective": "Make political representation accurately translate citizen preference into governing authority.",
+      "mechanism": "Democracy framework: election integrity, access, competitive representation design, civic capacity — harvest existing material; age-16 local suffrage remains hypothesis only.",
+      "ownership_funding": "Elections are public infrastructure; campaign resources must not become ownership of offices (joins GP-08).",
+      "household_effect": "Votes map to policy that affects wages, services, taxes, and place.",
+      "connections": ["GP-01", "GP-03", "GP-08", "GP-10 measurement of trust"],
+      "os_check": {
+        "ownership": "Offices are public trusts, not private assets",
+        "capital_formation": "Predictable democratic turnover without oligarchic lock-in",
+        "market_design": "Election rules as political market design against monopoly of office",
+        "household_economics": "Policy responsiveness to household conditions",
+        "power": "Core authorization channel in the Power Loop"
+      },
+      "unresolved_deferred": [
+        {"item": "Specific districting / primary reform package for Arkansas", "disposition": "KNOWN_DETAIL"},
+        {"item": "Age-16 local suffrage (HYP) empirical path", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-03",
+      "area": "Direct Democracy & Citizen Power",
+      "lock": null,
+      "href": "/peoples-branch/",
+      "also": ["/citizen-service/", "/collaborative-review/"],
+      "problem": "If all power sits in elected institutions, capture of those institutions captures the people; if direct tools are unbound, majorities can strip rights.",
+      "objective": "Reserve specific powers directly with the people while keeping rights and hard cores protected.",
+      "mechanism": "People's Branch / popular sovereignty framework; citizen service; collaborative constitutional review (deferred build) as participation channel — not endless ballot chaos.",
+      "ownership_funding": "Direct democratic instruments are public process infrastructure; cost and signature rules must not become pay-to-play.",
+      "household_effect": "Citizens can correct drift without waiting for elite permission.",
+      "connections": ["GP-01 rights floor", "GP-02 elections", "GP-10 accountability", "Power Loop"],
+      "os_check": {
+        "ownership": "Ultimate political ownership remains with the people",
+        "capital_formation": "Stable rules for initiatives/referenda reduce speculative politics",
+        "market_design": "Process design against petition-industry capture",
+        "household_economics": "Households can defend local prosperity rules",
+        "power": "Second authorization channel beside representation"
+      },
+      "unresolved_deferred": [
+        {"item": "Arkansas initiative/referendum redesign details", "disposition": "KNOWN_DETAIL"},
+        {"item": "People's Branch institutional form statute", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-04",
+      "area": "State / Local / Federal Power",
+      "lock": null,
+      "href": "/federalism/",
+      "also": ["/build-your-community/", "/public-service/"],
+      "problem": "Wrong-level assignment creates either remote capture or local incapacity; preemption and grants can hollow home rule.",
+      "objective": "Assign functions by subsidiarity and capacity — clear federalism, home rule, and shared-service rules.",
+      "mechanism": "Federalism framework; community operating system for local build; regional shared services where county capacity fails.",
+      "ownership_funding": "Each level owns distinct fiscal and operational duties; LOCK-06 joins municipal finance to engines.",
+      "household_effect": "Services delivered at the nearest competent level without runaway remote bureaucracy.",
+      "connections": ["LOCK-06", "GP-05", "Pass 2 place systems", "Pass 4 transition"],
+      "os_check": {
+        "ownership": "Who owns which public function and revenue stream",
+        "capital_formation": "Local public capital vs state/federal capital roles",
+        "market_design": "Procurement and regulation layered without double capture",
+        "household_economics": "Tax/service package matches place",
+        "power": "Prevent one level from becoming the capture chokepoint"
+      },
+      "unresolved_deferred": [
+        {"item": "Arkansas home-rule / preemption matrix completion", "disposition": "KNOWN_DETAIL"},
+        {"item": "Which county functions must regionalize", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-05",
+      "area": "Administrative Government",
+      "lock": "LOCK-09",
+      "href": "/public-service/",
+      "also": ["/citizen-service/", "/transparency/"],
+      "problem": "Agencies, boards, and commissions can drift into capture, opacity, or mission creep while remaining essential to delivery.",
+      "objective": "Make agencies, boards, commissions, and civil service operate with competence and continuous accountability.",
+      "mechanism": "Government capacity / public service framework; performance and sunset review (LOCK-09); transparent rulemaking; civil service as capability not patronage.",
+      "ownership_funding": "Agencies steward public capital; they do not own policy; budgets join GP-06.",
+      "household_effect": "Reliable permits, benefits, safety, and services without arbitrary power.",
+      "connections": ["LOCK-09", "GP-06", "GP-08", "GP-10", "Power Loop Administration step"],
+      "os_check": {
+        "ownership": "Public trusts vs privatized gatekeeping",
+        "capital_formation": "State capacity as productive institutional capital",
+        "market_design": "Regulatory design that does not sell outcomes",
+        "household_economics": "Time cost of bureaucracy and service quality",
+        "power": "Administrative discretion is a primary capture surface"
+      },
+      "unresolved_deferred": [
+        {"item": "Highest-capture-risk Arkansas boards inventory", "disposition": "KNOWN_DETAIL"},
+        {"item": "Sunset review statutory package", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-06",
+      "area": "Public Finance & Procurement",
+      "lock": "LOCK-06",
+      "href": "/transparency/",
+      "also": ["/system/arkansas-state-baseline/", "/civic-wealth/", "/community-prosperity/"],
+      "problem": "Budgets and contracts can leak to favoritism and out-of-state extraction; property-tax dependence and opaque procurement recreate capture.",
+      "objective": "Budget, purchase, contract, and deploy public capital without extraction or favoritism — post-property-tax viable local finance.",
+      "mechanism": "LOCK-06 bone: Community Prosperity Ledger replacements; open contracting; Arkansas-competitive procurement within legal bounds; AEDC incentive→equity path (parallel legal).",
+      "ownership_funding": "Public money is community capital; vendors do not own the state; baseline corpus is reference infrastructure.",
+      "household_effect": "Better services per dollar; less tax burden on ordinary homes as engines mature.",
+      "connections": ["LOCK-01", "LOCK-05", "GP-08", "Arkansas State Baseline", "Pass 4 transition"],
+      "os_check": {
+        "ownership": "Who owns vendors, incentives, and public equity stakes",
+        "capital_formation": "Procurement as local capital formation tool",
+        "market_design": "Purchasing rules shape markets",
+        "household_economics": "Incidence of taxes and quality of funded services",
+        "power": "Contracts are a Capture Loop arrow — must be broken here"
+      },
+      "unresolved_deferred": [
+        {"item": "URT / school foundation hard-core under replacement", "disposition": "KNOWN_DETAIL"},
+        {"item": "Commerce-clause-safe Arkansas-first procurement design", "disposition": "VALIDATION_QUESTION"},
+        {"item": "Full multi-year baseline normalization", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "Reference FY2026 GR patterns; no line-item campaign in Pass 3."
+    },
+    {
+      "id": "GP-07",
+      "area": "Justice & Public Safety",
+      "lock": null,
+      "href": "/justice/",
+      "also": ["/constitutional-defense/", "/equal-standing/"],
+      "problem": "Courts, corrections, policing, fire, EMS, and re-entry can either protect household security or become extractive, racialized, or fiscally self-perpetuating systems.",
+      "objective": "Fit justice and public safety inside the prosperity framework — safety, restoration, and reduced future liability.",
+      "mechanism": "Justice framework; equal standing; constitutional defense; re-entry as human-capital and household restoration; community safety joins Pass 2 resilience.",
+      "ownership_funding": "Public safety is a core public duty; private prison / extractive fee models are capture risks (LOCK-05/09).",
+      "household_effect": "Personal security without asset-destroying justice traps.",
+      "connections": ["Pass 2 health/aging", "GP-01 rights", "baseline Corrections medical pattern", "Pass 4 resilience"],
+      "os_check": {
+        "ownership": "Who owns facilities and supervision systems",
+        "capital_formation": "Re-entry as human-capital recovery vs permanent exclusion",
+        "market_design": "Fee/fine and private corrections incentives",
+        "household_economics": "Crime, incarceration, and family surplus destruction",
+        "power": "Coercive power must stay inside rights and accountability"
+      },
+      "unresolved_deferred": [
+        {"item": "Corrections medical contract vs household health capacity tension", "disposition": "KNOWN_DETAIL"},
+        {"item": "Arkansas re-entry / diversion model package", "disposition": "KNOWN_DETAIL"}
+      ],
+      "arkansas_baseline_flag": "FY2026 Corrections ~$629M incl. medical contract — Stage 2 capability question."
+    },
+    {
+      "id": "GP-08",
+      "area": "Anti-Corruption & Political Money",
+      "lock": "LOCK-09",
+      "href": "/transparency/",
+      "also": ["/democracy/", "/peoples-branch/"],
+      "problem": "Lobbying, campaign finance, contracting, patronage, and concentrated wealth can purchase government and reverse prosperity rules.",
+      "objective": "Prevent economic concentration from reconcentrating political power — break the Capture Loop.",
+      "mechanism": "LOCK-09: open contracting; lobbying/campaign-finance constraints hostile to pay-to-play within free-speech doctrine; revolving-door limits; beneficial-ownership transparency; forensic audit governance; OpenFEC/OpenStates infrastructure already built.",
+      "ownership_funding": "Politics must be fundable without donor ownership of policy; public disclosure is default.",
+      "household_effect": "Rules stay aligned with broad prosperity rather than donor portfolios.",
+      "connections": ["LOCK-05", "GP-02", "GP-06", "Capture Loop", "Pass 1 residual wealth"],
+      "os_check": {
+        "ownership": "Beneficial owners of influence and contractors",
+        "capital_formation": "Stop converting public rules into private capital rents",
+        "market_design": "Political markets must not auction policy",
+        "household_economics": "Capture raises prices and taxes on households",
+        "power": "Home lock for OS-POWER"
+      },
+      "unresolved_deferred": [
+        {"item": "Arkansas-packaged campaign finance / lobbying statute set", "disposition": "VALIDATION_QUESTION"},
+        {"item": "How to fund politics without donor capture or state speech monopoly", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-09",
+      "area": "Information, Data & AI Rights",
+      "lock": "LOCK-08",
+      "href": "/systems-intelligence/",
+      "also": ["/transparency/", "/research/#hyp-134"],
+      "problem": "Public data and AI can enlarge prosperity or enable surveillance, discrimination, and concentrated digital power.",
+      "objective": "Define who owns/controls public data, what privacy rights exist, and what limits constrain surveillance and automated government.",
+      "mechanism": "LOCK-08: data minimization; citizen data rights; AI procurement/audit for agencies; anti-surveillance firewalls; HYP-134 remains parallel evidence-only until series bound — not COUNTABLE revenue.",
+      "ownership_funding": "Public data is a public asset with citizen rights; models trained on public contribution create proportional public claim (joins Pass 1) without government owning all AI.",
+      "household_effect": "Service convenience without a control state; protection from automated injustice.",
+      "connections": ["LOCK-07 digital", "GP-05 admin", "HYP-134 quarantine", "GP-01 rights"],
+      "os_check": {
+        "ownership": "Data, models, surplus claims",
+        "capital_formation": "Digital/IP capital stock",
+        "market_design": "Anti-lock-in in AI/cloud procurement",
+        "household_economics": "Access vs privacy tradeoffs",
+        "power": "Information power is political power"
+      },
+      "unresolved_deferred": [
+        {"item": "Arkansas privacy statutory floor above federal minima", "disposition": "KNOWN_DETAIL"},
+        {"item": "Public AI inventory and audit protocol", "disposition": "KNOWN_DETAIL"},
+        {"item": "HYP-134 series binds", "disposition": "KNOWN_DETAIL"}
+      ]
+    },
+    {
+      "id": "GP-10",
+      "area": "Accountability & Public Measurement",
+      "lock": null,
+      "href": "/metrics/",
+      "also": ["/transparency/", "/status/", "/flourishing/", "/build-progress/"],
+      "problem": "Without continuous public measurement, government can claim success while household prosperity stagnates — and capture hides inside narrative.",
+      "objective": "Enable citizens to continuously determine whether government is increasing shared prosperity.",
+      "mechanism": "Transparency / People's Ledger; national baseline metrics; Human Flourishing Index; Build Progress and completion bars; Geographic Money Statements and Household Prosperity Surplus queued to Pass 4.",
+      "ownership_funding": "Measurement systems are public goods; data must be open enough for citizen audit without violating GP-09 rights.",
+      "household_effect": "Visible link from policy → household outcomes; trustworthy feedback into the Power Loop.",
+      "connections": ["Power Loop close", "Pass 4 measurement spine", "Pass 1–2 outcome joins"],
+      "os_check": {
+        "ownership": "Who controls official statistics and dashboards",
+        "capital_formation": "Measurement as institutional capital for learning",
+        "market_design": "Publish outcomes that reveal extractive markets",
+        "household_economics": "Household Prosperity Surplus is the north star metric (Pass 4 detail)",
+        "power": "Measurement without capture of the measuring stick"
+      },
+      "unresolved_deferred": [
+        {"item": "Household Prosperity Surplus panel build", "disposition": "KNOWN_DETAIL"},
+        {"item": "Geographic Money Statements", "disposition": "KNOWN_DETAIL"}
+      ]
+    }
+  ],
+  "module_homes": [
+    {
+      "function": "Authorize and constrain government",
+      "lives_in": "GP-01 / GP-02 / GP-03",
+      "connects_to": ["Power Loop", "equal standing", "citizenship"],
+      "funded_how": "Public constitutional and election infrastructure",
+      "household_effect": "Liberty + voice",
+      "capture_prevention": "Rights floors + dual democratic channels"
+    },
+    {
+      "function": "Assign and administer public power",
+      "lives_in": "GP-04 / GP-05",
+      "connects_to": ["LOCK-09", "federalism", "public service"],
+      "funded_how": "Layered budgets; capacity investment",
+      "household_effect": "Competent delivery without remote domination",
+      "capture_prevention": "Sunset, transparency, subsidiarity"
+    },
+    {
+      "function": "Deploy public capital and coerce only under justice",
+      "lives_in": "GP-06 / GP-07",
+      "connects_to": ["LOCK-06", "LOCK-01", "justice", "baseline"],
+      "funded_how": "Ledgers, open contracting, hard-core protections",
+      "household_effect": "Services and safety that raise surplus",
+      "capture_prevention": "Break contracts/regulation arrow of Capture Loop"
+    },
+    {
+      "function": "Prevent purchase of government; measure and return power to people",
+      "lives_in": "GP-08 / GP-09 / GP-10",
+      "connects_to": ["LOCK-08", "LOCK-09", "metrics", "transparency"],
+      "funded_how": "Disclosure regimes; public measurement systems",
+      "household_effect": "Rules stay public; outcomes visible",
+      "capture_prevention": "Attack wealth→politics→rules→wealth cycle"
+    }
+  ],
+  "os_crosscut_pass_result": {
+    "ownership": "Public offices, data, contracts, and agencies are trusts — not privately owned control rights",
+    "capital_formation": "State capacity, infrastructure procurement, and re-entry convert public surplus into future productive assets",
+    "market_design": "Procurement, regulation, and political-money rules are market design for the political economy",
+    "household_economics": "Government succeeds only if household security, time, and surplus rise — measured publicly",
+    "power": "This spine is the OS-POWER home: strengthen Power Loop, break Capture Loop"
+  },
+  "orphan_check": {
+    "government_functions_scanned": [
+      "constitution_rights",
+      "elections_representation",
+      "direct_democracy",
+      "federalism_local_federal",
+      "administrative_agencies",
+      "public_finance_procurement",
+      "justice_public_safety",
+      "anti_corruption_political_money",
+      "data_ai_surveillance_limits",
+      "public_measurement_accountability",
+      "civil_service",
+      "lobbying",
+      "campaign_finance",
+      "policing_corrections_courts",
+      "fire_ems"
+    ],
+    "orphans_found": [],
+    "note": "Fire/EMS sit inside GP-07 public safety; civil service inside GP-05; lobbying/campaign finance inside GP-08."
+  },
+  "contradictions_flagged_not_resolved": [
+    {
+      "id": "CX-P3-01",
+      "note": "Free-speech doctrine vs pay-to-play hostility — design must survive constitutional review without opening donor ownership of policy.",
+      "disposition": "VALIDATION_QUESTION"
+    },
+    {
+      "id": "CX-P3-02",
+      "note": "Direct democracy power vs rights floors — People's Branch must not become a rights-stripping machine.",
+      "disposition": "KNOWN_DETAIL"
+    },
+    {
+      "id": "CX-P3-03",
+      "note": "Arkansas-first procurement vs dormant commerce clause — legal design deferred.",
+      "disposition": "VALIDATION_QUESTION"
+    }
+  ],
+  "structural_holes_this_pass": [],
+  "structural_bones_added_because_missing": [],
+  "what_changed": [
+    "Government & Democratic Power Spine integrated — 10/10 bones at Stage-1 seven-field standard",
+    "Power Loop and Capture Loop established in skeleton",
+    "LOCK-06/08/09 joined to democracy, federalism, justice, transparency, and measurement homes",
+    "Five OS questions applied across bones",
+    "Zero orphan government functions at skeleton level",
+    "Skeleton coverage moved to 90%; Overall Project Completion recalculated",
+    "Pass 3 What Changed page completed with direct reading links"
+  ],
+  "what_remains": [
+    "Pass 4 Transition, Resilience & Measurement Spine",
+    "Pass 5 Whole-System Closure Audit → Stage 1 = 100%"
+  ],
+  "passes_remaining_after_this_one": 2,
+  "next_pass_only": "PASS_4 — Transition, Resilience & Measurement Spine",
+  "skeleton_coverage_after_pass": 90,
+  "overall_project_completion_after_pass": 26,
+  "holds": [
+    "no_deep_research",
+    "no_intermediate_research_campaign",
+    "harvest_existing_modules",
+    "bones_not_chapters",
+    "defer_unanswered_questions",
+    "deploy_checkpoint_required"
+  ]
+}

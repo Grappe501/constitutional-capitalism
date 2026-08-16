@@ -3,6 +3,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import registry from "../../../../../../data/project/build_progress_registry.json";
 import pass1 from "../../../../../../data/project/pass_changelogs/pass_01.json";
 import pass2 from "../../../../../../data/project/pass_changelogs/pass_02.json";
+import pass3 from "../../../../../../data/project/pass_changelogs/pass_03.json";
 
 export function getStaticPaths() {
   return [
@@ -19,6 +20,7 @@ const meta = (registry.passes || []).find((p) => p.slug === passSlug);
 const changelogs: Record<string, any> = {
   "pass-1": pass1,
   "pass-2": pass2,
+  "pass-3": pass3,
 };
 const log = changelogs[passSlug || ""] || null;
 
