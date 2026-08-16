@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_2_3_program_process_administrative_redesign.json";
+
+const receipt = pass.public_decision_receipt?.fields || [];
+const black = pass.no_black_box_government || {};
+const time = pass.citizen_time_tax || {};
+const biz = pass.business_friction_ledger || {};
+const complex = pass.complexity_budget || {};
+const outcomes = pass.public_outcome_ledger || {};
+---
+
+<BaseLayout
+  title="Public Decision Receipt — V2.2.3"
+  path="/v2/redesign/public-decision-receipt/"
+  description="The Public Decision Receipt operationalizes Comprehensible Government and Digital Due Process."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">SIGNATURE CONCEPT</span>
+      <h1>The Public Decision Receipt</h1>
+      <p class="lede">
+        After a consequential interaction, the citizen receives a standardized record — authority,
+        rule, inputs, result, reason, next step, and appeal.
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Receipt fields</h2>
+      <ol class="stack">
+        {receipt.map((f: string) => <li>{f}</li>)}
+      </ol>
+    </section>
+
+    <section class="hub-section">
+      <h2>No Black Box Government</h2>
+      <p class="lede">{(black.chain || []).join(" → ")}</p>
+      <p class="muted">AI: {black.ai_assistance}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Citizen Time Tax</h2>
+      <p class="lede">{time.definition}</p>
+      <ul class="link-board">
+        {(time.measures || []).map((m: string) => (
+          <li>{m}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Business Friction Ledger</h2>
+      <p class="lede">Test: {biz.test}</p>
+      <ul class="link-board">
+        {(biz.tracks || []).map((t: string) => (
+          <li>{t}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Complexity Budget</h2>
+      <p class="lede">{complex.name} — every new requirement spends:</p>
+      <ul class="link-board">
+        {(complex.spends || []).map((s: string) => (
+          <li>{s}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Public Outcome Ledger families</h2>
+      {
+        Object.entries(outcomes).map(([k, vals]) => (
+          <div style="margin-bottom:1rem;">
+            <strong>{k}</strong>
+            <div class="muted">{(vals as string[]).join(" · ")}</div>
+          </div>
+        ))
+      }
+      <p class="muted">No magic index. Attribution confidence required.</p>
+    </section>
+
+    <section class="hub-section">
+      <p>
+        <a href="/v2/redesign/operating-system/">Operating system →</a>
+        {" · "}
+        <a href="/v2/redesign/life-events/">Life events →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>

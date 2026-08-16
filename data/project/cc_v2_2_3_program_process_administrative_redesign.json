@@ -1,0 +1,4291 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-V2-2-3-PROGRAM-PROCESS-ADMINISTRATIVE-REDESIGN-1.0",
+  "decision_id": "CC-DEC-203",
+  "update_id": "UPD-216",
+  "v2_decision_id": "V2-DEC-017",
+  "generated_at": "2026-08-16",
+  "status": "COMPLETE",
+  "pass_id": "V2.2.3",
+  "title": "Program, Process & Administrative Redesign",
+  "gate": "V2.2",
+  "epistemic_class": "REDESIGN_OPERATING_SYSTEM_NOT_TECH_NOT_BUDGET_NOT_MANUALS",
+  "governing_question": "If the institutional architecture is right, how should Arkansas actually work for the person using it—and for the public servants operating it?",
+  "permanent_principle": "A citizen should not need to understand the organizational chart of government to receive a legitimate public service.",
+  "locked_principles": {
+    "citizen_not_org_chart": "A citizen should not need to understand the organizational chart of government to receive a legitimate public service.",
+    "one_arkansas_front_door": "Citizen-facing service layer over institutional architecture — not necessarily one giant agency. Concept only; no tech procurement.",
+    "tell_government_once": "Reuse verified information where lawful, secure, appropriate, and consent-compatible.",
+    "data_reuse_counter_rule": "Data reuse does not imply unrestricted data access.",
+    "public_decision_receipt": "Consequential interactions produce a standardized Public Decision Receipt.",
+    "no_black_box": "Consequential decisions require explainable authority→rule→input→decision→reason→institution→appeal chain.",
+    "citizen_time_tax": "Administrative burden consumes household prosperity even when no money changes hands.",
+    "business_friction_test": "Does this burden accomplish a legitimate purpose proportionate to its cost?",
+    "complexity_budget": "Every new requirement spends citizen/business/staff/data/appeal/technology/compliance burden.",
+    "rural_equivalence": "Does this work for someone 45 minutes from the nearest service center with unreliable broadband?",
+    "accessibility_architecture": "Good default design reduces unnecessary exceptional treatment; accommodations handle what remains.",
+    "graceful_failure": "Systems must degrade to a less convenient but still functional pathway.",
+    "no_tech_architecture": true,
+    "no_program_budgets": true,
+    "no_implementation_manuals": true,
+    "funding_invented": 0,
+    "redesign_certification": "DEFERRED_TO_V2_2_4"
+  },
+  "public_service_operating_standard": [
+    "What am I trying to do?",
+    "Where do I start?",
+    "What information does government need?",
+    "Why does it need it?",
+    "Who makes the decision?",
+    "How long should it take?",
+    "What is happening while I wait?",
+    "Why was this decision made?",
+    "What can I do if it is wrong?",
+    "Who is accountable?"
+  ],
+  "admin_layers": [
+    "POLICY",
+    "RULE",
+    "PROCESS",
+    "EXPERIENCE"
+  ],
+  "universal_process_grammar": [
+    "DISCOVER",
+    "APPLY / REQUEST",
+    "VERIFY",
+    "DECIDE",
+    "EXPLAIN",
+    "DELIVER",
+    "REVIEW / APPEAL",
+    "CLOSE"
+  ],
+  "life_events": {
+    "household": [
+      "Have a child",
+      "Enroll a child in school",
+      "Lose a job",
+      "Become disabled",
+      "Care for an aging parent",
+      "Need healthcare",
+      "Buy/rent a home",
+      "Move",
+      "Retire"
+    ],
+    "productive": [
+      "Start a business",
+      "Hire someone",
+      "Build something",
+      "Farm",
+      "Obtain a professional license",
+      "Expand a facility",
+      "Export a product"
+    ],
+    "civic": [
+      "Register/vote",
+      "See how money was spent",
+      "Request a record",
+      "Challenge a decision",
+      "Participate in government"
+    ]
+  },
+  "one_arkansas_front_door": {
+    "status": "CONCEPT_ONLY",
+    "not": "Not necessarily one giant agency; not a software procurement",
+    "flow": [
+      "ONE ENTRY POINT",
+      "determine need",
+      "identify applicable functions",
+      "reuse permitted information",
+      "route to responsible institution",
+      "display status",
+      "explain decisions",
+      "surface next action",
+      "provide appeal",
+      "close case"
+    ]
+  },
+  "tell_government_once": {
+    "principle": "Reuse verified information where lawful, secure, appropriate, and consent-compatible.",
+    "counter_rule": "Data reuse does not imply unrestricted data access.",
+    "controls": [
+      "purpose limitation",
+      "minimum necessary access",
+      "access logging",
+      "retention rules",
+      "citizen visibility",
+      "correction rights",
+      "sensitive-data separation",
+      "legal authorization"
+    ]
+  },
+  "public_decision_receipt": {
+    "fields": [
+      "WHAT HAPPENED",
+      "WHO DECIDED",
+      "WHAT RULE APPLIED",
+      "WHAT INFORMATION WAS USED",
+      "RESULT",
+      "WHY",
+      "WHAT HAPPENS NEXT",
+      "IF YOU DISAGREE",
+      "DEADLINE"
+    ]
+  },
+  "no_black_box_government": {
+    "chain": [
+      "authority",
+      "rule",
+      "evidence/input",
+      "decision",
+      "reason",
+      "responsible institution",
+      "appeal"
+    ],
+    "ai_assistance": "Disclosed where consequential; institutional responsibility remains; lineage; reason; appeal"
+  },
+  "citizen_time_tax": {
+    "definition": "Time government requires from a person to comply with or obtain something legitimately owed/available",
+    "measures": [
+      "forms",
+      "documents",
+      "visits",
+      "calls",
+      "websites",
+      "agencies touched",
+      "waiting time",
+      "travel",
+      "repeat submissions",
+      "appeals",
+      "total citizen time"
+    ]
+  },
+  "business_friction_ledger": {
+    "test": "Does this burden accomplish a legitimate purpose proportionate to its cost?",
+    "tracks": [
+      "steps",
+      "institutions",
+      "time",
+      "duplicated information",
+      "uncertain requirements",
+      "decision latency",
+      "appeal/review",
+      "fees"
+    ]
+  },
+  "rule_sunset_review_architecture": [
+    "PERMANENT FOUNDATION",
+    "PERIODIC REVIEW",
+    "TRIGGERED REVIEW",
+    "SUNSET UNLESS RENEWED"
+  ],
+  "program_purpose_card": [
+    "Why do we exist?",
+    "Who is served/protected?",
+    "What outcome are we trying to change?",
+    "What authority permits us to act?",
+    "What does it cost? → V2.3",
+    "What do we measure?",
+    "What would success look like?",
+    "What would make us change?",
+    "What would make us stop?"
+  ],
+  "public_outcome_ledger": {
+    "household": [
+      "Income",
+      "Cost",
+      "Security",
+      "Ownership",
+      "Time",
+      "Agency"
+    ],
+    "productive": [
+      "Capacity",
+      "Competition",
+      "Formation",
+      "Retention",
+      "Resilience"
+    ],
+    "government": [
+      "Access",
+      "Timeliness",
+      "Accuracy",
+      "Cost",
+      "Appeal",
+      "Trust/accountability evidence"
+    ],
+    "place": [
+      "Access",
+      "Capacity",
+      "Connectivity",
+      "Resilience"
+    ]
+  },
+  "complexity_budget": {
+    "name": "COMPLEXITY BUDGET",
+    "spends": [
+      "citizen burden",
+      "business burden",
+      "staff burden",
+      "data burden",
+      "appeal burden",
+      "technology burden",
+      "compliance burden"
+    ]
+  },
+  "procurement_process": [
+    "PUBLIC NEED",
+    "specification",
+    "market discovery",
+    "competition/allowed exception",
+    "award",
+    "contract",
+    "performance",
+    "payment",
+    "outcome",
+    "public record"
+  ],
+  "grants_incentives_process": [
+    "PUBLIC PURPOSE",
+    "eligibility",
+    "application",
+    "evaluation",
+    "decision",
+    "agreement",
+    "public contribution",
+    "recipient contribution",
+    "milestones",
+    "performance",
+    "clawback/exit",
+    "outcome"
+  ],
+  "before_after_visual": {
+    "label": "PROPOSED MODEL — illustrative, not a claim that every current process was timed",
+    "arkansas_now": [
+      "Person",
+      "website A",
+      "form",
+      "agency",
+      "missing document",
+      "second agency",
+      "repeat data",
+      "phone call",
+      "waiting",
+      "decision",
+      "unclear reason"
+    ],
+    "cc_operating_model": [
+      "Person",
+      "Front Door",
+      "need recognized",
+      "authorized information reused",
+      "responsible institutions coordinate",
+      "status visible",
+      "decision",
+      "Public Decision Receipt",
+      "service / appeal"
+    ]
+  },
+  "families": {
+    "people_human_capability": {
+      "label": "People & Human Capability",
+      "homes": [
+        "demographics",
+        "household_economics",
+        "education",
+        "healthcare",
+        "human_services",
+        "labor",
+        "insurance_and_risk"
+      ]
+    },
+    "household_essential_systems": {
+      "label": "Household & Essential Systems",
+      "homes": [
+        "housing",
+        "water",
+        "energy",
+        "digital_infrastructure"
+      ]
+    },
+    "markets_production_capital": {
+      "label": "Markets, Production & Capital",
+      "homes": [
+        "agriculture",
+        "natural_resources",
+        "land",
+        "capital",
+        "banking",
+        "business_formation",
+        "economic_development",
+        "procurement"
+      ]
+    },
+    "government_operations_public_money": {
+      "label": "Government Operations & Public Money",
+      "homes": [
+        "revenue",
+        "expenditures",
+        "agencies",
+        "pensions",
+        "public_assets",
+        "federal_dependency",
+        "intergenerational_obligations"
+      ]
+    },
+    "democracy_rights_administration": {
+      "label": "Democracy, Rights & Administration",
+      "homes": [
+        "constitutional_structure",
+        "elections",
+        "direct_democracy",
+        "justice",
+        "civic_institutions",
+        "administrative_power",
+        "public_data",
+        "ai",
+        "emergency_government"
+      ]
+    },
+    "infrastructure_place_resilience": {
+      "label": "Infrastructure, Place & Resilience",
+      "homes": [
+        "transportation",
+        "local_government",
+        "geographic_disparities"
+      ]
+    }
+  },
+  "progress": {
+    "redesign_objects_closed": 114,
+    "redesign_objects_total": 114,
+    "v2_2_percent": 100.0,
+    "v2_blueprint_percent": 45.0,
+    "f_objects_closed": 38,
+    "i_objects_closed": 38,
+    "o_objects_closed": 38,
+    "o_hold_complete": 3
+  },
+  "exit_gate": {
+    "o_objects_38": true,
+    "redesign_objects_114": true,
+    "life_event_architecture": true,
+    "operating_standard": true,
+    "process_grammar": true,
+    "tell_once_and_privacy": true,
+    "decision_receipt": true,
+    "no_black_box": true,
+    "citizen_time_tax": true,
+    "business_friction_ledger": true,
+    "program_purpose_card": true,
+    "outcome_ledger": true,
+    "complexity_budget": true,
+    "accessibility_rural_failure": true,
+    "procurement_grant_architecture": true,
+    "funding_invented": 0,
+    "redesign_certified": false,
+    "next": "V2.2.4 Redesign Integration & Certification"
+  },
+  "surfaces": {
+    "pass": "/v2/redesign/operating-system/",
+    "life_events": "/v2/redesign/life-events/",
+    "receipt": "/v2/redesign/public-decision-receipt/",
+    "what_changed": "/v2/redesign/what-changed/v2-2-3/",
+    "hub": "/v2/redesign/"
+  },
+  "next": "V2.2.4 — Redesign Integration & Certification (join + hostile tests; then certify)",
+  "cards": [
+    {
+      "home_id": "constitutional_structure",
+      "label": "State constitutional structure",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "KEEP",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Citizens",
+        "Legislature",
+        "Courts"
+      ],
+      "purpose": "Keep constitutional change and interpretation comprehensible and usable.",
+      "entry_point": "Civic Front Door → Constitution / amendment / court pathways",
+      "life_events": [
+        "Participate in government",
+        "Challenge a decision"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Voters (amendment) / courts (interpretation) per constitution",
+      "information_required": "Ballot titles, amendment text, published opinions",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Public text + election/court process",
+      "decision_explanation": "Plain-language ballot explanations + authoritative text",
+      "appeal_review": "Judicial review / subsequent amendment",
+      "citizen_time_implication": "Ballot complexity and petition burden are Citizen Time Tax",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Amendments proposed/passed",
+        "Opinions published"
+      ],
+      "outcome_measures": [
+        "Agency (civic)",
+        "Trust/accountability evidence"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: civic information capacity",
+      "legal_question_v2_4": "V2.4: ballot title due process",
+      "transition_dependency_v2_5": "V2.5: none beyond clarity",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If amendment pathways become elite-only in practice",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "revenue",
+      "label": "Revenue",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Taxpayers",
+        "Employers",
+        "Local collectors"
+      ],
+      "purpose": "Collect lawful revenue with comprehensible rules and visible status.",
+      "entry_point": "Front Door → Pay / file / appeal tax",
+      "life_events": [
+        "Start a business",
+        "Hire someone",
+        "Buy/rent a home",
+        "Retire"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "DFA/Revenue + local collectors; independent appeal",
+      "information_required": "Identity, income/base facts already on file where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Electronic filing + local payment; receipt always",
+      "decision_explanation": "Assessment notice = Public Decision Receipt fields",
+      "appeal_review": "Independent tax appeal path with deadline",
+      "citizen_time_implication": "Duplicate filings and unclear collectors are Time Tax / Business Friction",
+      "business_friction_implication": "Tax compliance friction ledger: steps, institutions, latency, fees",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Returns filed",
+        "Collections",
+        "Appeals resolved"
+      ],
+      "outcome_measures": [
+        "Household Cost/Time/Agency",
+        "Business Formation friction"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: rates/structure later — not here",
+      "legal_question_v2_4": "V2.4: appeal statute clarity",
+      "transition_dependency_v2_5": "V2.5: portal consolidation after I shared-services",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If tell-once proves unlawful for major tax bases",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "expenditures",
+      "label": "Expenditures",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Citizens",
+        "Legislature",
+        "Agencies"
+      ],
+      "purpose": "Make functional public spending visible and outcome-linked.",
+      "entry_point": "Civic Front Door → See how money was spent",
+      "life_events": [
+        "See how money was spent",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Legislature appropriates; agencies execute; audits measure",
+      "information_required": "Functional chart of accounts (depends public_data)",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Public expenditure explorer by function/place where feasible",
+      "decision_explanation": "Appropriation and allotment decisions documented",
+      "appeal_review": "Political + audit pathways; bid protests where procurement",
+      "citizen_time_implication": "Opacity forces citizen research Time Tax",
+      "business_friction_implication": "Vendor payment latency on Business Friction Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Dollars by function",
+        "Audit findings"
+      ],
+      "outcome_measures": [
+        "Government Trust/accountability",
+        "Household Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: full fiscal join",
+      "legal_question_v2_4": "V2.4: disclosure mandates",
+      "transition_dependency_v2_5": "V2.5: publish functional views",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If functional visibility proves technically impossible without fabricating",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "agencies",
+      "label": "Agencies & institutions",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "CONSOLIDATE",
+      "users": [
+        "Citizens",
+        "Businesses",
+        "Public servants"
+      ],
+      "purpose": "Operate mission agencies behind a coherent citizen experience layer.",
+      "entry_point": "One Arkansas Front Door → need recognition → route to mission owner",
+      "life_events": [
+        "Challenge a decision",
+        "Request a record",
+        "Have a child",
+        "Enroll a child in school",
+        "Lose a job"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Program owner agency; shared services do not own appeals",
+      "information_required": "Reuse identity/eligibility packets across programs where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Agency program units + shared interface",
+      "decision_explanation": "Receipt names program owner, not only portal brand",
+      "appeal_review": "Independent of program office where rights affected",
+      "citizen_time_implication": "Duplicate portals/applications are primary Time Tax target",
+      "business_friction_implication": "Multi-agency licensing maze on Business Friction Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Cases closed",
+        "Shared-service SLAs"
+      ],
+      "outcome_measures": [
+        "Access",
+        "Timeliness",
+        "Appeal",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: shared services cost",
+      "legal_question_v2_4": "V2.4: delegation + appeal independence",
+      "transition_dependency_v2_5": "V2.5: phase shared interface after I consolidate",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If consolidation of interface worsens specialized capability",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "education",
+      "label": "Education",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Families",
+        "Students",
+        "Districts",
+        "Educators"
+      ],
+      "purpose": "Make enrollment, transfers, supports, and appeals navigable without org-chart literacy.",
+      "entry_point": "Front Door → Enroll / transfer / support a learner",
+      "life_events": [
+        "Enroll a child in school",
+        "Have a child",
+        "Move"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Local district for delivery; state for floors; coop for specialty capacity",
+      "information_required": "Student records reuse across district transfer with privacy controls",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local schools + regional specialty",
+      "decision_explanation": "Placement/IEP/discipline decisions produce receipts where consequential",
+      "appeal_review": "Local → state → courts as rights require",
+      "citizen_time_implication": "Enrollment/transfer paperwork and travel to specialty services",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Enrollment",
+        "Graduates",
+        "Specialy service access"
+      ],
+      "outcome_measures": [
+        "Capability",
+        "Time",
+        "Agency",
+        "Place Access"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: adequacy/formula",
+      "legal_question_v2_4": "V2.4: adequacy litigation envelope",
+      "transition_dependency_v2_5": "V2.5: enrollment front door",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If local boards cannot remain accountable under regional capacity",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "healthcare",
+      "label": "Healthcare",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Patients",
+        "Families",
+        "Providers"
+      ],
+      "purpose": "Get care/coverage decisions without forcing households to integrate payers and agencies.",
+      "entry_point": "Front Door → Need healthcare / coverage / public health",
+      "life_events": [
+        "Need healthcare",
+        "Have a child",
+        "Become disabled",
+        "Care for an aging parent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State eligibility floors; providers deliver; regional hubs for specialty",
+      "information_required": "Eligibility reuse across related programs where lawful; clinical data purpose-limited",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market/clinic + regional specialty + local public health",
+      "decision_explanation": "Coverage denials/approvals = Public Decision Receipt",
+      "appeal_review": "Independent eligibility appeal; clinical grievance paths",
+      "citizen_time_implication": "Travel to hubs + eligibility maze = Time Tax (rural critical)",
+      "business_friction_implication": "Provider enrollment/credentialing on Business Friction Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Enrollments",
+        "Claims",
+        "Clinic visits"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Cost",
+        "Time",
+        "Access"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3 after UNK-FISC-001 depth",
+      "legal_question_v2_4": "V2.4: Medicaid/appeal",
+      "transition_dependency_v2_5": "V2.5: coverage front door — not EHR mega-build",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If regional hubs lack accountability pathway",
+      "evidence_blockers": [
+        "UNK-FISC-001"
+      ],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "justice",
+      "label": "Justice & public safety",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Litigants",
+        "Victims",
+        "Accused",
+        "Counsel"
+      ],
+      "purpose": "Make court access, counsel, and case status comprehensible.",
+      "entry_point": "Front Door → Court / counsel / records / specialty docket",
+      "life_events": [
+        "Challenge a decision",
+        "Request a record"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Judges/prosecutors/defense per role separation",
+      "information_required": "Case filings; identity verification; counsel appointment facts",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local trial + regional specialty capacity",
+      "decision_explanation": "Orders and charging decisions with reasons where due process requires",
+      "appeal_review": "Appellate review",
+      "citizen_time_implication": "Travel to specialty dockets + counsel deserts",
+      "business_friction_implication": "Licensing/court-related business filings friction where relevant",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Cases disposed",
+        "Counsel appointments"
+      ],
+      "outcome_measures": [
+        "Rights floors",
+        "Timeliness",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: counsel/specialty capacity",
+      "legal_question_v2_4": "V2.4: counsel rights",
+      "transition_dependency_v2_5": "V2.5: case-status visibility",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If regional specialty worsens access without transport remedy",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "local_government",
+      "label": "Local government",
+      "family": "infrastructure_place_resilience",
+      "family_label": "Infrastructure, Place & Resilience",
+      "f_disposition": "KEEP",
+      "i_architecture": "MUNICIPAL / LOCAL",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Residents",
+        "Local officials"
+      ],
+      "purpose": "Keep local democracy usable: permits, meetings, services without state portal capture.",
+      "entry_point": "Local Front Door (city/county) federated under statewide standards for receipts/appeals",
+      "life_events": [
+        "Buy/rent a home",
+        "Build something",
+        "Participate in government",
+        "Move"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Local elected/administrative within state floors",
+      "information_required": "Local property/identity; reuse with state where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local",
+      "decision_explanation": "Permit/zoning decisions = receipts",
+      "appeal_review": "Local board → courts; state only where rights floors",
+      "citizen_time_implication": "Permit opacity and meeting access",
+      "business_friction_implication": "Local permitting on Business Friction Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Permits",
+        "Meetings held",
+        "Services delivered"
+      ],
+      "outcome_measures": [
+        "Agency",
+        "Place Access",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: local fiscal capacity (no unfunded devolution)",
+      "legal_question_v2_4": "V2.4: home rule / floors",
+      "transition_dependency_v2_5": "V2.5: federated local portals",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If federation becomes forced metro government",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "housing",
+      "label": "Housing",
+      "family": "household_essential_systems",
+      "family_label": "Household & Essential Systems",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "DEVOLVE",
+      "users": [
+        "Renters",
+        "Buyers",
+        "Builders",
+        "Housing authorities"
+      ],
+      "purpose": "Find, finance, and permit housing without multi-agency scavenger hunts.",
+      "entry_point": "Front Door → Housing help / fair housing / permit path",
+      "life_events": [
+        "Buy/rent a home",
+        "Move",
+        "Have a child"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Local land-use; state fair-housing/floors; HA for targeted stock",
+      "information_required": "Income/identity reuse for assistance; property records",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market production + local permitting + targeted public/nonprofit",
+      "decision_explanation": "Assistance and enforcement decisions = receipts",
+      "appeal_review": "Fair housing + local board + courts",
+      "citizen_time_implication": "Permit delay + assistance application maze",
+      "business_friction_implication": "Builder permitting friction ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Units permitted",
+        "Assistance cases"
+      ],
+      "outcome_measures": [
+        "Ownership",
+        "Cost",
+        "Security",
+        "Time"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: assistance/finance tools",
+      "legal_question_v2_4": "V2.4: fair housing",
+      "transition_dependency_v2_5": "V2.5: housing front door",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If local devolution proceeds without funding/authority",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "land",
+      "label": "Land & property systems",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "DEVOLVE",
+      "users": [
+        "Owners",
+        "Developers",
+        "Farmers",
+        "Assessors"
+      ],
+      "purpose": "Clear land-use, assessment, and state-lands processes.",
+      "entry_point": "Front Door → Land use / assessment / state lands",
+      "life_events": [
+        "Buy/rent a home",
+        "Build something",
+        "Farm"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Local planning; county assessment; state for state lands/floors",
+      "information_required": "Parcel/cadastre reuse",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local + county + state stewards",
+      "decision_explanation": "Zoning/assessment decisions = receipts",
+      "appeal_review": "Boards of equalization / planning appeals / courts",
+      "citizen_time_implication": "Assessment opacity; conflicting permits",
+      "business_friction_implication": "Site control/permit friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Assessments",
+        "Permits",
+        "State land actions"
+      ],
+      "outcome_measures": [
+        "Ownership security",
+        "Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: assessment capacity",
+      "legal_question_v2_4": "V2.4: property due process",
+      "transition_dependency_v2_5": "V2.5: parcel-linked status",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If watershed coordination becomes unaccountable region",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "agriculture",
+      "label": "Agriculture & food systems",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "KEEP",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Farmers",
+        "Processors",
+        "Consumers"
+      ],
+      "purpose": "Keep inspection, programs, and extension navigable for producers.",
+      "entry_point": "Front Door → Farm / food safety / extension",
+      "life_events": [
+        "Farm",
+        "Start a business",
+        "Export a product"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State/federal program owners; extension delivery",
+      "information_required": "Producer identity/licenses reuse",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market production + inspection + extension",
+      "decision_explanation": "Enforcement and program decisions = receipts",
+      "appeal_review": "Administrative + judicial",
+      "citizen_time_implication": "Program navigation for small producers",
+      "business_friction_implication": "Ag licensing/reporting friction ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Inspections",
+        "Program enrollments"
+      ],
+      "outcome_measures": [
+        "Productive Capacity",
+        "Resilience",
+        "Security"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: extension/inspection capacity",
+      "legal_question_v2_4": "V2.4: food safety authority",
+      "transition_dependency_v2_5": "V2.5: producer front door",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If capture by incumbents blocks new entrants",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "energy",
+      "label": "Energy",
+      "family": "household_essential_systems",
+      "family_label": "Household & Essential Systems",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Households",
+        "Businesses",
+        "Utilities"
+      ],
+      "purpose": "Comprehensible bills, outage status, and regulatory decisions.",
+      "entry_point": "Front Door → Utility issue / assistance / PSC matter",
+      "life_events": [
+        "Move",
+        "Need healthcare",
+        "Start a business",
+        "Expand a facility"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "PSC/referee; utilities deliver",
+      "information_required": "Account identity; assistance eligibility reuse where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "IOU/coop/muni",
+      "decision_explanation": "Rate/case decisions public; disconnection rules explained",
+      "appeal_review": "PSC complaint / courts",
+      "citizen_time_implication": "Bill complexity; outage unknown status",
+      "business_friction_implication": "Interconnection/permit friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Complaints resolved",
+        "Outage minutes"
+      ],
+      "outcome_measures": [
+        "Cost",
+        "Security",
+        "Resilience"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: assistance/programs if any",
+      "legal_question_v2_4": "V2.4: PSC authority",
+      "transition_dependency_v2_5": "V2.5: status visibility standards",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If referee independence fails capture test",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "water",
+      "label": "Water",
+      "family": "household_essential_systems",
+      "family_label": "Household & Essential Systems",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Households",
+        "Utilities",
+        "Farmers"
+      ],
+      "purpose": "Safe water access with visible quality, rates, and regional system status.",
+      "entry_point": "Front Door → Water quality / service / assistance",
+      "life_events": [
+        "Buy/rent a home",
+        "Farm",
+        "Build something"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State primacy for quality; local/regional utilities deliver",
+      "information_required": "Service address; quality reports public",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local/regional systems",
+      "decision_explanation": "Boil advisories and enforcement = receipts/alerts",
+      "appeal_review": "Utility board + state + courts",
+      "citizen_time_implication": "System failure risk and rate shock communication",
+      "business_friction_implication": "Connection/expansion friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Violations",
+        "Connections",
+        "Advisories"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Health",
+        "Place Resilience"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: regional system finance",
+      "legal_question_v2_4": "V2.4: SDWA primacy",
+      "transition_dependency_v2_5": "V2.5: quality/status alerts",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If regional authorities lack local representation",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "transportation",
+      "label": "Transportation",
+      "family": "infrastructure_place_resilience",
+      "family_label": "Infrastructure, Place & Resilience",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Travelers",
+        "Freight",
+        "Local governments"
+      ],
+      "purpose": "Project status, permits, and transit access without black-box selection.",
+      "entry_point": "Front Door → Roads / permits / transit / project status",
+      "life_events": [
+        "Move",
+        "Build something",
+        "Expand a facility",
+        "Farm"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "ARDOT/MPO/local per layer",
+      "information_required": "Project records public; permit applications",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "State highways + local streets + regional transit",
+      "decision_explanation": "Major awards and route decisions documented",
+      "appeal_review": "Administrative + political + legal",
+      "citizen_time_implication": "Travel time to services is rural Time Tax",
+      "business_friction_implication": "Oversize/access permits friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Lane-miles",
+        "Projects completed",
+        "Transit trips"
+      ],
+      "outcome_measures": [
+        "Access",
+        "Connectivity",
+        "Time"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: capital program",
+      "legal_question_v2_4": "V2.4: ROW/procurement",
+      "transition_dependency_v2_5": "V2.5: project status public grammar",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If corridor regionalization removes public process",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "digital_infrastructure",
+      "label": "Digital infrastructure",
+      "family": "household_essential_systems",
+      "family_label": "Household & Essential Systems",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Households",
+        "ISPs",
+        "Communities"
+      ],
+      "purpose": "Coverage, grants, and complaints with rural-equivalent pathways.",
+      "entry_point": "Front Door → Broadband access / grant / complaint",
+      "life_events": [
+        "Move",
+        "Start a business",
+        "Enroll a child in school"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State broadband program + referee; market/coop deliver",
+      "information_required": "Address eligibility; coverage maps",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market/coop last-mile; regional middle-mile",
+      "decision_explanation": "Grant awards = Public Deal / Decision Receipt fields",
+      "appeal_review": "Program appeal + procurement protest",
+      "citizen_time_implication": "Unreliable broadband forces travel Time Tax for other services",
+      "business_friction_implication": "ROW/permit friction for builds",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Locations served",
+        "Grant milestones"
+      ],
+      "outcome_measures": [
+        "Connectivity",
+        "Agency",
+        "Productive Capacity"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "TRIGGERED REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: program spend under eight gates",
+      "legal_question_v2_4": "V2.4: authority for public builds",
+      "transition_dependency_v2_5": "V2.5: coverage+complaint front door",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If public builds lock out competition without exit",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "labor",
+      "label": "Labor & workforce",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Workers",
+        "Employers",
+        "Training providers"
+      ],
+      "purpose": "Jobs, UI, safety, and training without multi-program scavenger hunts.",
+      "entry_point": "Front Door → Lose a job / hire / train / workplace rights",
+      "life_events": [
+        "Lose a job",
+        "Hire someone",
+        "Become disabled",
+        "Obtain a professional license"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State labor/workforce; regional boards for labor-market geography",
+      "information_required": "Work history/UI eligibility reuse where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Employers + local providers + regional boards",
+      "decision_explanation": "UI and enforcement decisions = receipts",
+      "appeal_review": "UI appeals; safety appeals",
+      "citizen_time_implication": "Program maze after job loss",
+      "business_friction_implication": "Hiring/reporting friction ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "UI claims",
+        "Placements",
+        "Inspections"
+      ],
+      "outcome_measures": [
+        "Income",
+        "Security",
+        "Time",
+        "Productive Capacity"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: UI/trust funds later",
+      "legal_question_v2_4": "V2.4: worker rights",
+      "transition_dependency_v2_5": "V2.5: job-loss life-event package",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If regional boards captured by incumbents",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "capital",
+      "label": "Capital formation",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Entrepreneurs",
+        "CDFIs",
+        "Investors"
+      ],
+      "purpose": "Transparent public capital tools under eight gates — market primary.",
+      "entry_point": "Front Door → Capital access / public instrument (if any)",
+      "life_events": [
+        "Start a business",
+        "Expand a facility",
+        "Farm"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Regulators + any public instrument board under eight gates",
+      "information_required": "Business identity; disclose public deals",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market + CDFI; public exceptional",
+      "decision_explanation": "Public awards = Public Deal Ledger + Decision Receipt",
+      "appeal_review": "Program appeal; securities processes",
+      "citizen_time_implication": "Opaque incentive capital wastes applicant time",
+      "business_friction_implication": "Core Business Friction / Deal Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Deals disclosed",
+        "Gate checklists completed"
+      ],
+      "outcome_measures": [
+        "Formation",
+        "Competition",
+        "Ownership"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "TRIGGERED REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: any public capital priced then",
+      "legal_question_v2_4": "V2.4: authority for instruments",
+      "transition_dependency_v2_5": "V2.5: after UNK-INST-004 registry",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If eight gates cannot be operationalized",
+      "evidence_blockers": [
+        "UNK-INST-004"
+      ],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "banking",
+      "label": "Banking & credit",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "KEEP",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Consumers",
+        "Banks",
+        "Credit unions"
+      ],
+      "purpose": "Consumer protection and charter processes with clear complaints.",
+      "entry_point": "Front Door → Banking complaint / charter matter",
+      "life_events": [
+        "Buy/rent a home",
+        "Start a business",
+        "Retire"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State banking dept within federal frame",
+      "information_required": "Complaint facts; exam confidential where law requires",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market banks/CUs",
+      "decision_explanation": "Enforcement actions public as law allows",
+      "appeal_review": "Administrative + judicial",
+      "citizen_time_implication": "Credit desert travel/time",
+      "business_friction_implication": "Charter/exam friction proportionate to safety",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Complaints",
+        "Exams"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Ownership",
+        "Competition"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: exam capacity",
+      "legal_question_v2_4": "V2.4: dual banking",
+      "transition_dependency_v2_5": "V2.5: complaint front door",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If examiner capture evidenced",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "business_formation",
+      "label": "Business formation",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "CONSOLIDATE",
+      "users": [
+        "Entrepreneurs",
+        "Licensees"
+      ],
+      "purpose": "One-door formation: discover → apply → verify → decide → receipt.",
+      "entry_point": "Front Door → Start a business / license",
+      "life_events": [
+        "Start a business",
+        "Obtain a professional license",
+        "Hire someone",
+        "Expand a facility"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Secretary of State + specialized boards behind portal",
+      "information_required": "Tell-once identity/entity packet across licenses",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "State portal + local permits federated",
+      "decision_explanation": "License grant/deny = Public Decision Receipt",
+      "appeal_review": "Board appeal + courts",
+      "citizen_time_implication": "Primary Business Friction reduction target",
+      "business_friction_implication": "Steps/institutions/duplication/latency ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Entities formed",
+        "Licenses issued",
+        "Time-to-license"
+      ],
+      "outcome_measures": [
+        "Formation",
+        "Competition",
+        "Time"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: portal shared services",
+      "legal_question_v2_4": "V2.4: board authorities preserved",
+      "transition_dependency_v2_5": "V2.5: consolidate front door (from I CONSOLIDATE)",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If one door becomes gatekeeper without appeal",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "procurement",
+      "label": "Procurement",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "CONSOLIDATE",
+      "users": [
+        "Vendors",
+        "Agencies",
+        "Citizens"
+      ],
+      "purpose": "Public need → competition → award → performance → public record.",
+      "entry_point": "Front Door → Sell to government / protest / contract status",
+      "life_events": [
+        "Start a business",
+        "Expand a facility",
+        "See how money was spent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": [
+        "PUBLIC NEED",
+        "specification",
+        "market discovery",
+        "competition/allowed exception",
+        "award",
+        "contract",
+        "performance",
+        "payment",
+        "outcome",
+        "public record"
+      ],
+      "decision_authority": "OSP/agency buyers; independent protest path",
+      "information_required": "Vendor registration reuse; specs public",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Shared procurement capacity + agency execution",
+      "decision_explanation": "Awards on Public Deal Ledger + Decision Receipt fields",
+      "appeal_review": "Protest/appeal with deadlines",
+      "citizen_time_implication": "Opaque bids waste vendor time",
+      "business_friction_implication": "Core Business Friction Ledger",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Awards",
+        "Protests",
+        "Performance scores"
+      ],
+      "outcome_measures": [
+        "Competition",
+        "Cost",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: procurement savings measurement",
+      "legal_question_v2_4": "V2.4: procurement code",
+      "transition_dependency_v2_5": "V2.5: deal ledger publish",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If central buyer capture worsens outcomes",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "economic_development",
+      "label": "Economic development",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Communities",
+        "Firms",
+        "Workers"
+      ],
+      "purpose": "Public purpose → agreement → milestones → outcome; not silent gifts.",
+      "entry_point": "Front Door → Site / incentive inquiry (disclosed)",
+      "life_events": [
+        "Start a business",
+        "Expand a facility",
+        "Hire someone",
+        "See how money was spent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": [
+        "PUBLIC PURPOSE",
+        "eligibility",
+        "application",
+        "evaluation",
+        "decision",
+        "agreement",
+        "public contribution",
+        "recipient contribution",
+        "milestones",
+        "performance",
+        "clawback/exit",
+        "outcome"
+      ],
+      "decision_authority": "State standards/referee; regional partnerships; local site work",
+      "information_required": "Deal registry public (UNK-INST-004 dependency)",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market firms; public contribution only under gates",
+      "decision_explanation": "Every material deal = Public Deal Ledger + Receipt",
+      "appeal_review": "Protest/FOIA/political",
+      "citizen_time_implication": "Opaque chase wastes community time",
+      "business_friction_implication": "Incentive application friction vs purpose test",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Deals disclosed",
+        "Milestones met",
+        "Clawbacks"
+      ],
+      "outcome_measures": [
+        "Formation",
+        "Retention",
+        "Competition",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "TRIGGERED REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: incentive fiscal design",
+      "legal_question_v2_4": "V2.4: authority/clawback",
+      "transition_dependency_v2_5": "V2.5: after deal registry",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If disclosure destroys legitimate negotiation without redesign",
+      "evidence_blockers": [
+        "UNK-INST-004"
+      ],
+      "note": "Giving money is an event; public investment requires theory of return + accountability.",
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "pensions",
+      "label": "Pensions & long-term liabilities",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "HOLD / INSUFFICIENT EVIDENCE",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Members",
+        "Retirees",
+        "Employers",
+        "Taxpayers"
+      ],
+      "purpose": "Member-facing status and fiduciary decisions comprehensible; deep redesign HOLD.",
+      "entry_point": "Front Door → Retirement account / estimate / appeal",
+      "life_events": [
+        "Retire",
+        "Lose a job",
+        "Care for an aging parent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statewide system trustees/boards",
+      "information_required": "Service/salary records; schedule transparency pending UNK-FISC-004",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Statewide systems",
+      "decision_explanation": "Benefit determinations = receipts",
+      "appeal_review": "Administrative + judicial",
+      "citizen_time_implication": "Estimate opacity",
+      "business_friction_implication": "Employer reporting friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Estimates issued",
+        "Appeals"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Ownership",
+        "Intergenerational honesty"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3 after UNK-FISC-004",
+      "legal_question_v2_4": "V2.4: fiduciary duties",
+      "transition_dependency_v2_5": "V2.5: member portal clarity — not funding redesign",
+      "confidence": "LOW",
+      "what_changes_our_mind": "When schedules known — reopen depth",
+      "evidence_blockers": [
+        "UNK-FISC-004"
+      ],
+      "note": null,
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "public_assets",
+      "label": "Public assets",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Agencies",
+        "Citizens",
+        "Lessees"
+      ],
+      "purpose": "Inventory, surplus, and lease decisions with public record.",
+      "entry_point": "Front Door → Public property / surplus / lease",
+      "life_events": [
+        "See how money was spent",
+        "Start a business",
+        "Build something"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Owner agency under statewide inventory standards",
+      "information_required": "Asset registry",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Owner stewardship + market lease under rules",
+      "decision_explanation": "Surplus/lease awards = receipts / deal ledger",
+      "appeal_review": "Administrative + FOIA + courts",
+      "citizen_time_implication": "Unknown inventory wastes inquiry time",
+      "business_friction_implication": "Lease opportunity friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Assets inventoried",
+        "Surplus disposed"
+      ],
+      "outcome_measures": [
+        "Trust",
+        "Cost",
+        "Ownership (public)"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: asset valuation",
+      "legal_question_v2_4": "V2.4: surplus process",
+      "transition_dependency_v2_5": "V2.5: inventory publish",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If silent privatization pathway appears",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "natural_resources",
+      "label": "Natural resources",
+      "family": "markets_production_capital",
+      "family_label": "Markets, Production & Capital",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Public",
+        "Industry",
+        "Landowners"
+      ],
+      "purpose": "Permits and stewardship with watershed-aware process grammar.",
+      "entry_point": "Front Door → Resource permit / recreation / enforcement",
+      "life_events": [
+        "Farm",
+        "Build something",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State agencies; regional resource units",
+      "information_required": "Location/resource facts; public comment record",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market operators under referee",
+      "decision_explanation": "Permit decisions = receipts",
+      "appeal_review": "Administrative + courts",
+      "citizen_time_implication": "Conflicting local/state permits",
+      "business_friction_implication": "Extraction/recreation permit friction vs purpose",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Permits",
+        "Monitoring"
+      ],
+      "outcome_measures": [
+        "Resilience",
+        "Public trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: stewardship capacity",
+      "legal_question_v2_4": "V2.4: public trust doctrines",
+      "transition_dependency_v2_5": "V2.5: permit status grammar",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If regional units unaccountable",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "federal_dependency",
+      "label": "Federal dependency",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "REFORM",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Agencies",
+        "Legislature",
+        "Citizens"
+      ],
+      "purpose": "All-funds visibility so citizens see federal/state joins.",
+      "entry_point": "Civic Front Door → Federal funds by function",
+      "life_events": [
+        "See how money was spent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statewide coordination for visibility; programs remain mission-owned",
+      "information_required": "Grant awards and CFDA-like identifiers",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Publication layer",
+      "decision_explanation": "Major acceptances documented",
+      "appeal_review": "Political/FOIA",
+      "citizen_time_implication": "Hidden federal share forces research Time Tax",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "All-funds reports"
+      ],
+      "outcome_measures": [
+        "Trust",
+        "Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "TRIGGERED REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3 blocked in depth by UNK-FISC-001",
+      "legal_question_v2_4": "V2.4: reporting mandates",
+      "transition_dependency_v2_5": "V2.5: publish after map",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "When UNK-FISC-001 resolved",
+      "evidence_blockers": [
+        "UNK-FISC-001"
+      ],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "household_economics",
+      "label": "Household economics",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Citizens",
+        "Policymakers"
+      ],
+      "purpose": "Publish household-lens measures; not a benefits agency.",
+      "entry_point": "Civic Front Door → Household prosperity measures",
+      "life_events": [
+        "See how money was spent",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statistical/measurement home independent of program PR",
+      "information_required": "Public statistics; privacy floors",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Dashboards by state/county where valid",
+      "decision_explanation": "Methodology cards public",
+      "appeal_review": "Method critique / correction process",
+      "citizen_time_implication": "Agency optics force citizens to reverse-engineer outcomes",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Dashboards published"
+      ],
+      "outcome_measures": [
+        "Income",
+        "Cost",
+        "Security",
+        "Ownership",
+        "Time",
+        "Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: measurement capacity",
+      "legal_question_v2_4": "V2.4: privacy",
+      "transition_dependency_v2_5": "V2.5: public outcome ledger join",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If measures become allocation weapons without rules",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "demographics",
+      "label": "Demographics",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "KEEP",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Public",
+        "Agencies",
+        "Researchers"
+      ],
+      "purpose": "Honest population facts with county truth.",
+      "entry_point": "Civic Front Door → Demographics",
+      "life_events": [
+        "See how money was spent",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statistical office",
+      "information_required": "Census/state estimates; microdata protected",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Publication",
+      "decision_explanation": "Method notes",
+      "appeal_review": "Correction process",
+      "citizen_time_implication": "Averages that hide place waste local advocacy time",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Estimates",
+        "County tables"
+      ],
+      "outcome_measures": [
+        "Agency",
+        "Place understanding"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: statistical capacity",
+      "legal_question_v2_4": "V2.4: privacy",
+      "transition_dependency_v2_5": "V2.5: county twin join",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If politicized allocation without rules",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "geographic_disparities",
+      "label": "Geographic disparities",
+      "family": "infrastructure_place_resilience",
+      "family_label": "Infrastructure, Place & Resilience",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Citizens",
+        "Counties",
+        "Policymakers"
+      ],
+      "purpose": "Show place differences without ranking futures.",
+      "entry_point": "Civic Front Door → Place differences / county twins",
+      "life_events": [
+        "Move",
+        "See how money was spent",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "GEO measurement spine",
+      "information_required": "V2-GEO-001 twins",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Public twins; no opportunity portfolios",
+      "decision_explanation": "Field notes and unknowns labeled",
+      "appeal_review": "Data correction",
+      "citizen_time_implication": "Statewide averages erase rural Time Tax reality",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Twins updated",
+        "Unknowns listed"
+      ],
+      "outcome_measures": [
+        "Place Access/Capacity/Connectivity/Resilience"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: none assigned by county future",
+      "legal_question_v2_4": "V2.4: none for portfolios",
+      "transition_dependency_v2_5": "V2.5: keep portfolios OFF until operating model ready",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If used to pre-assign county economies",
+      "evidence_blockers": [],
+      "note": "County Opportunity Portfolios remain OFF.",
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "civic_institutions",
+      "label": "Civic institutions",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "DEVOLVE",
+      "users": [
+        "Nonprofits",
+        "Libraries",
+        "Associations"
+      ],
+      "purpose": "Enable civic life without turning it into a ministry.",
+      "entry_point": "Front Door → Civic grants / library / association (local-first)",
+      "life_events": [
+        "Participate in government",
+        "Request a record"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Local/nonprofit; state enabling only",
+      "information_required": "Grant applications where state funds",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local/coop/nonprofit",
+      "decision_explanation": "Grant decisions = receipts",
+      "appeal_review": "Grant appeal terms",
+      "citizen_time_implication": "Grant navigation for small nonprofits",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Grants",
+        "Library access metrics"
+      ],
+      "outcome_measures": [
+        "Agency",
+        "Trust",
+        "Capability"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: enabling funds if any",
+      "legal_question_v2_4": "V2.4: association rights",
+      "transition_dependency_v2_5": "V2.5: light grant grammar",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If state captures civic space",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "elections",
+      "label": "Elections",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Voters",
+        "Clerks",
+        "Candidates"
+      ],
+      "purpose": "Register, vote, and track ballots with equal rights floors.",
+      "entry_point": "Front Door → Register / vote / ballot status",
+      "life_events": [
+        "Register/vote",
+        "Move"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "State standards; county clerks administer",
+      "information_required": "Voter registration reuse on move where lawful",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "County administration",
+      "decision_explanation": "Provisional/rejection reasons = receipt fields",
+      "appeal_review": "Canvass/contest/courts",
+      "citizen_time_implication": "Registration friction and polling access/travel",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Registration",
+        "Turnout ops metrics",
+        "Provisional rates"
+      ],
+      "outcome_measures": [
+        "Rights",
+        "Trust",
+        "Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: equipment/security",
+      "legal_question_v2_4": "V2.4: election code",
+      "transition_dependency_v2_5": "V2.5: ballot-status grammar",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If centralization removes local admin accountability",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "direct_democracy",
+      "label": "Direct democracy",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "KEEP",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Petitioners",
+        "Voters"
+      ],
+      "purpose": "Clear petition → title → ballot → result pathway.",
+      "entry_point": "Front Door → Initiative / referendum",
+      "life_events": [
+        "Participate in government",
+        "Challenge a decision"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statutory process + courts on titles",
+      "information_required": "Petition forms; signatures",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Statewide pathway",
+      "decision_explanation": "Title decisions reasoned",
+      "appeal_review": "Courts",
+      "citizen_time_implication": "Signature process complexity",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Petitions qualified",
+        "Measures passed"
+      ],
+      "outcome_measures": [
+        "Agency",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: process capacity",
+      "legal_question_v2_4": "V2.4: title due process",
+      "transition_dependency_v2_5": "V2.5: petitioner guidance",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If title gatekeeping becomes partisan capture",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "administrative_power",
+      "label": "Administrative power",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Citizens",
+        "Regulated parties",
+        "Agencies"
+      ],
+      "purpose": "APA grammar: discover rule → apply → decide → explain → appeal.",
+      "entry_point": "Front Door → Challenge a decision / find the rule",
+      "life_events": [
+        "Challenge a decision",
+        "Request a record",
+        "Obtain a professional license"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Agency decision; independent appeal/ALJ where rights affected",
+      "information_required": "Record of decision inputs",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Agency + appeal body",
+      "decision_explanation": "No Black Box — full chain required",
+      "appeal_review": "Independent review + courts",
+      "citizen_time_implication": "Unclear appeal paths",
+      "business_friction_implication": "Regulatory process friction vs purpose test",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Rules published",
+        "Appeals resolved",
+        "Time-to-appeal"
+      ],
+      "outcome_measures": [
+        "Accuracy",
+        "Appeal",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERMANENT FOUNDATION",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: hearing capacity",
+      "legal_question_v2_4": "V2.4: APA modernization",
+      "transition_dependency_v2_5": "V2.5: universal appeal discovery",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If AI decisions skip disclosure requirements",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "public_data",
+      "label": "Public data & transparency",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "CONSOLIDATE",
+      "users": [
+        "Citizens",
+        "Agencies",
+        "Journalists"
+      ],
+      "purpose": "Request records and reuse open data under privacy floors.",
+      "entry_point": "Front Door → Request a record / open data",
+      "life_events": [
+        "Request a record",
+        "See how money was spent"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Custodian agencies; shared platform standards",
+      "information_required": "Public records; privacy redaction rules",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Shared platform + domain stewards",
+      "decision_explanation": "Denial/redaction = receipt fields",
+      "appeal_review": "FOIA appeal",
+      "citizen_time_implication": "Fragmented portals",
+      "business_friction_implication": "Data access for compliance reporting",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Requests fulfilled",
+        "Datasets published"
+      ],
+      "outcome_measures": [
+        "Trust",
+        "Agency",
+        "Accuracy"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: platform capacity",
+      "legal_question_v2_4": "V2.4: FOIA/privacy",
+      "transition_dependency_v2_5": "V2.5: consolidate platforms",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If consolidation creates single point of opacity",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "ai",
+      "label": "AI in government & economy",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "HOLD / INSUFFICIENT EVIDENCE",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Agencies",
+        "Affected persons"
+      ],
+      "purpose": "Any consequential AI assistance must satisfy No Black Box + disclosure — no AI agency invented.",
+      "entry_point": "Front Door → Challenge automated/assisted decision",
+      "life_events": [
+        "Challenge a decision"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Agency remains responsible; provisional statewide policy floors",
+      "information_required": "Input lineage retained as appropriate; inventory still UNKNOWN",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Agency execution under floors",
+      "decision_explanation": "AI assistance disclosed where consequential; human/institutional responsibility identifiable",
+      "appeal_review": "Same as underlying program appeal",
+      "citizen_time_implication": "Invisible automation increases error-correction Time Tax",
+      "business_friction_implication": "Automated compliance tools must be explainable",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Disclosures",
+        "Appeals involving AI assist"
+      ],
+      "outcome_measures": [
+        "Accuracy",
+        "Appeal",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "TRIGGERED REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: none until inventory",
+      "legal_question_v2_4": "V2.4: automated decision due process",
+      "transition_dependency_v2_5": "V2.5: minimum inventory then deepen",
+      "confidence": "LOW",
+      "what_changes_our_mind": "When inventory exists — refine architecture",
+      "evidence_blockers": [
+        "AI baseline inventory UNKNOWN"
+      ],
+      "note": "Administrative requirement for future AI — not an AI stack design.",
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "emergency_government",
+      "label": "Emergency government",
+      "family": "democracy_rights_administration",
+      "family_label": "Democracy, Rights & Administration",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REGIONALIZE",
+      "users": [
+        "Public",
+        "Local EM",
+        "First responders"
+      ],
+      "purpose": "Alerts, aid, and emergency powers with sunsets and after-action transparency.",
+      "entry_point": "Front Door → Emergency alert / aid / after-action",
+      "life_events": [
+        "Need healthcare",
+        "Lose a job",
+        "Move"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Governor/local ICS per law; mutual aid regional",
+      "information_required": "Situational; privacy in aid applications",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local ICS + regional mutual aid",
+      "decision_explanation": "Declarations and aid decisions documented; sunsets visible",
+      "appeal_review": "Aid eligibility appeal; political review of powers",
+      "citizen_time_implication": "Unclear command and travel for specialty teams",
+      "business_friction_implication": "Emergency procurement exceptions — still recorded",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Declarations",
+        "AARs",
+        "Aid cases"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Resilience",
+        "Trust"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "SUNSET UNLESS RENEWED",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: EM capacity",
+      "legal_question_v2_4": "V2.4: emergency powers bounds",
+      "transition_dependency_v2_5": "V2.5: alert+aid grammar",
+      "confidence": "HIGH",
+      "what_changes_our_mind": "If emergency powers lack sunsets",
+      "evidence_blockers": [],
+      "note": "Emergency mechanisms default toward sunset-unless-renewed class.",
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "intergenerational_obligations",
+      "label": "Intergenerational obligations",
+      "family": "government_operations_public_money",
+      "family_label": "Government Operations & Public Money",
+      "f_disposition": "HOLD / INSUFFICIENT EVIDENCE",
+      "i_architecture": "STATEWIDE",
+      "i_structural_verb": "NONE",
+      "users": [
+        "Citizens",
+        "Legislature"
+      ],
+      "purpose": "Publish stewardship ledger; funding instruments later.",
+      "entry_point": "Civic Front Door → Long-term obligations ledger",
+      "life_events": [
+        "See how money was spent",
+        "Retire",
+        "Participate in government"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Statewide stewardship home",
+      "information_required": "Schedules pending UNK-FISC-004",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Public ledger publication",
+      "decision_explanation": "Methodology + unknowns labeled",
+      "appeal_review": "Political/FOIA",
+      "citizen_time_implication": "Invisible claims shift burden to future households",
+      "business_friction_implication": null,
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Ledger editions"
+      ],
+      "outcome_measures": [
+        "Trust",
+        "Intergenerational honesty"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3 after schedules",
+      "legal_question_v2_4": "V2.4: disclosure duties",
+      "transition_dependency_v2_5": "V2.5: publish partial ledger with unknowns",
+      "confidence": "LOW",
+      "what_changes_our_mind": "When UNK-FISC-004 resolves",
+      "evidence_blockers": [
+        "UNK-FISC-004"
+      ],
+      "note": null,
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "human_services",
+      "label": "Human services & safety-net programs",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Households",
+        "Caseworkers",
+        "Providers"
+      ],
+      "purpose": "Life-event packages so households are not systems integrators.",
+      "entry_point": "One Arkansas Front Door → life event (child/job loss/disability/aging/care)",
+      "life_events": [
+        "Have a child",
+        "Lose a job",
+        "Become disabled",
+        "Care for an aging parent",
+        "Need healthcare",
+        "Buy/rent a home"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "Program back-ends retain authority; front door routes/status",
+      "information_required": "Tell-once eligibility packet with privacy counter-rules",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Local/nonprofit delivery + state programs",
+      "decision_explanation": "Eligibility decisions = Public Decision Receipt",
+      "appeal_review": "Independent eligibility appeal",
+      "citizen_time_implication": "Duplicate applications/eligibility = core Citizen Time Tax",
+      "business_friction_implication": "Provider enrollment friction",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Cases",
+        "Time-to-decision",
+        "Repeat submissions"
+      ],
+      "outcome_measures": [
+        "Income",
+        "Security",
+        "Time",
+        "Agency"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3 + UNK-FISC-001",
+      "legal_question_v2_4": "V2.4: eligibility appeals",
+      "transition_dependency_v2_5": "V2.5: life-event packages — not mega-agency",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If front door becomes a new eligibility bottleneck without appeal",
+      "evidence_blockers": [
+        "UNK-FISC-001"
+      ],
+      "note": "Single citizen-facing interface with multiple back-end functions — concept only.",
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    },
+    {
+      "home_id": "insurance_and_risk",
+      "label": "Insurance & risk regulation",
+      "family": "people_human_capability",
+      "family_label": "People & Human Capability",
+      "f_disposition": "REFORM",
+      "i_architecture": "MULTI-LEVEL",
+      "i_structural_verb": "REFORM_INSTITUTION",
+      "users": [
+        "Consumers",
+        "Employers",
+        "Insurers",
+        "Public pools"
+      ],
+      "purpose": "Navigate private lines and public pools without pretending one agency owns all risk.",
+      "entry_point": "Front Door → Insurance complaint / UI-WC / disaster residual",
+      "life_events": [
+        "Lose a job",
+        "Need healthcare",
+        "Farm",
+        "Start a business",
+        "Become disabled"
+      ],
+      "process_grammar": [
+        "DISCOVER",
+        "APPLY / REQUEST",
+        "VERIFY",
+        "DECIDE",
+        "EXPLAIN",
+        "DELIVER",
+        "REVIEW / APPEAL",
+        "CLOSE"
+      ],
+      "special_process_chain": null,
+      "decision_authority": "DOI referee for private; statute for public pools",
+      "information_required": "Policy/claim facts; purpose-limited",
+      "data_reuse_rules": "Tell-once where lawful + consent-compatible; purpose limitation; min necessary; logging; retention; citizen visibility/correction; sensitive separation.",
+      "delivery_mechanism": "Market insurers + public pools",
+      "decision_explanation": "Coverage decisions and enforcement = receipts",
+      "appeal_review": "DOI/UI/WC appeal paths",
+      "citizen_time_implication": "Coverage maze across related risks",
+      "business_friction_implication": "Workers comp / unemployment reporting friction vs purpose",
+      "accessibility": "Defaults assume vision/hearing/mobility/cognition/literacy/language/tech/transport variation; accommodations for remainder.",
+      "rural_equivalence": "Digital-first not digital-only; regionalization must not dump travel/time cost onto households; phone/mail/in-person pathway required.",
+      "failure_pathway": "Degrade to staffed/phone/mail/in-person path when web/AI/data/staff/hazard conditions fail; never silent dead-end.",
+      "output_measures": [
+        "Complaints",
+        "Pool claims",
+        "Solvency actions"
+      ],
+      "outcome_measures": [
+        "Security",
+        "Cost",
+        "Resilience"
+      ],
+      "measurement_chain": [
+        "INPUT",
+        "ACTIVITY",
+        "OUTPUT",
+        "OBSERVED OUTCOME",
+        "ATTRIBUTION CONFIDENCE"
+      ],
+      "power_capture_safeguards": "Split rulemaking / decision / appeal where Role Conflict risk; publish decision authority; anti-capture on eligibility/procurement/incentives.",
+      "admin_layers_separated": [
+        "POLICY",
+        "RULE",
+        "PROCESS",
+        "EXPERIENCE"
+      ],
+      "rule_review_class": "PERIODIC REVIEW",
+      "program_purpose_card": [
+        "Why do we exist?",
+        "Who is served/protected?",
+        "What outcome are we trying to change?",
+        "What authority permits us to act?",
+        "What does it cost? → V2.3",
+        "What do we measure?",
+        "What would success look like?",
+        "What would make us change?",
+        "What would make us stop?"
+      ],
+      "public_decision_receipt": [
+        "WHAT HAPPENED",
+        "WHO DECIDED",
+        "WHAT RULE APPLIED",
+        "WHAT INFORMATION WAS USED",
+        "RESULT",
+        "WHY",
+        "WHAT HAPPENS NEXT",
+        "IF YOU DISAGREE",
+        "DEADLINE"
+      ],
+      "fiscal_question_v2_3": "V2.3: pool funding later",
+      "legal_question_v2_4": "V2.4: insurance code",
+      "transition_dependency_v2_5": "V2.5: risk-type router in front door",
+      "confidence": "MEDIUM",
+      "what_changes_our_mind": "If markets fail residual lines without statutory redesign",
+      "evidence_blockers": [],
+      "note": null,
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "funding_invented": 0,
+      "tech_architecture": null,
+      "implementation_manual": null
+    }
+  ],
+  "should_rule": "Every should in V2.2 must point backward to a V2.1 fact, flow, dependency, constraint, or explicitly acknowledged unknown."
+}

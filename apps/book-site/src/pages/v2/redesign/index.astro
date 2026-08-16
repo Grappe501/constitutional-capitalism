@@ -15,7 +15,7 @@ const prog = hub.progress || {};
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">V2.2 ACTIVE</span>
+      <span class="chip chip--live">V2.2 OBJECTS CLOSED · CERTIFY IN V2.2.4</span>
       <h1>{hub.title}</h1>
       <p class="lede">{hub.governing_question}</p>
       <p class="lede">{hub.should_rule}</p>
@@ -33,8 +33,8 @@ const prog = hub.progress || {};
           V2.2 <strong>{prog.v2_2_percent}%</strong>
         </li>
         <li>
-          F closed {prog.f_objects_closed} · I closed {prog.i_objects_closed ?? 0} · O open{" "}
-          {prog.o_objects_open}
+          F closed {prog.f_objects_closed} · I closed {prog.i_objects_closed ?? 0} · O closed{" "}
+          {prog.o_objects_closed ?? 0}
         </li>
         <li>
           <span class="chip chip--done">COMPLETE</span> Foundational v1.0 ·{" "}
@@ -92,6 +92,12 @@ const prog = hub.progress || {};
       </ul>
       <p>
         <a href="/v2/redesign/disposition-map/">Disposition Map →</a>
+        {" · "}
+        <a href="/v2/redesign/operating-system/">Operating System →</a>
+        {" · "}
+        <a href="/v2/redesign/life-events/">Life Events →</a>
+        {" · "}
+        <a href="/v2/redesign/public-decision-receipt/">Public Decision Receipt →</a>
         {" · "}
         <a href="/v2/redesign/institutional-future-map/">Institutional Future Map →</a>
         {" · "}

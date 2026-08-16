@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_2_3_program_process_administrative_redesign.json";
+
+const cards = pass.cards || [];
+const families = pass.families || {};
+const visual = pass.before_after_visual || {};
+const locked = pass.locked_principles || {};
+const door = pass.one_arkansas_front_door || {};
+
+const byFamily: Record<string, any[]> = {};
+for (const c of cards) {
+  const k = c.family || "other";
+  if (!byFamily[k]) byFamily[k] = [];
+  byFamily[k].push(c);
+}
+---
+
+<BaseLayout
+  title="V2.2.3 — Operating System Redesign"
+  path="/v2/redesign/operating-system/"
+  description="How Arkansas should work for the person using government—and the public servants operating it."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">PASS COMPLETE</span>
+      <span class="chip chip--live">CERTIFICATION PENDING V2.2.4</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_question}</p>
+      <p class="lede"><strong>{pass.permanent_principle}</strong></p>
+      <p class="muted">
+        {pass.slice_id} · Objects <strong>{pass.progress?.redesign_objects_closed}/{pass.progress?.redesign_objects_total}</strong> ·
+        Blueprint <strong>{pass.progress?.v2_blueprint_percent}%</strong>
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Locked operating contract</h2>
+      <ul class="stack">
+        <li><strong>Front Door</strong> — {door.status}: {door.not}</li>
+        <li><strong>Tell Government Once</strong> — {locked.tell_government_once}</li>
+        <li><strong>Counter-rule</strong> — {locked.data_reuse_counter_rule}</li>
+        <li><strong>Citizen Time Tax</strong> — {locked.citizen_time_tax}</li>
+        <li><strong>Complexity Budget</strong> — {locked.complexity_budget}</li>
+        <li><strong>Rural equivalence</strong> — {locked.rural_equivalence}</li>
+        <li>Funding invented: {locked.funding_invented} · Tech architecture: none · Manuals: none</li>
+      </ul>
+      <p>
+        <a href="/v2/redesign/life-events/">Life events →</a>
+        {" · "}
+        <a href="/v2/redesign/public-decision-receipt/">Public Decision Receipt →</a>
+        {" · "}
+        <a href="/v2/redesign/what-changed/v2-2-3/">What Changed →</a>
+        {" · "}
+        <a href="/v2/redesign/">Redesign hub →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Public Service Operating Standard</h2>
+      <ol class="stack">
+        {(pass.public_service_operating_standard || []).map((q: string) => <li>{q}</li>)}
+      </ol>
+    </section>
+
+    <section class="hub-section">
+      <h2>Four administrative layers</h2>
+      <ul class="link-board">
+        {(pass.admin_layers || []).map((l: string) => (
+          <li>
+            <strong>{l}</strong>
+          </li>
+        ))}
+      </ul>
+      <p class="muted">A pleasant website can conceal a bad policy. V2 separates all four.</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Universal Process Grammar</h2>
+      <p class="lede">{(pass.universal_process_grammar || []).join(" → ")}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Before / after (proposed model)</h2>
+      <p class="muted">{visual.label}</p>
+      <div class="reader-rail">
+        <div>
+          <strong>Arkansas NOW</strong>
+          <p class="muted">{(visual.arkansas_now || []).join(" → ")}</p>
+        </div>
+        <div>
+          <strong>CC Operating Model</strong>
+          <p class="muted">{(visual.cc_operating_model || []).join(" → ")}</p>
+        </div>
+      </div>
+    </section>
+
+    {
+      Object.entries(byFamily).map(([fid, list]) => (
+        <section class="hub-section">
+          <h2>{(families[fid] && families[fid].label) || fid}</h2>
+          <ul class="stack">
+            {(list as any[]).map((c) => (
+              <li>
+                <strong>{c.label}</strong>{" "}
+                <span class="chip chip--done">{c.status}</span>{" "}
+                <span class="muted">
+                  F={c.f_disposition} · I={c.i_architecture}
+                </span>
+                <div>{c.purpose}</div>
+                <div class="muted">Users: {(c.users || []).join(", ")}</div>
+                <div class="muted">Entry: {c.entry_point}</div>
+                <div class="muted">Decision: {c.decision_authority}</div>
+                <div class="muted">Appeal: {c.appeal_review}</div>
+                <div class="muted">Time Tax: {c.citizen_time_implication}</div>
+                {c.business_friction_implication && (
+                  <div class="muted">Business: {c.business_friction_implication}</div>
+                )}
+                <div class="muted">
+                  Fiscal→V2.3: {c.fiscal_question_v2_3} · Legal→V2.4: {c.legal_question_v2_4}
+                </div>
+                <div class="muted">Confidence: {c.confidence}</div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </article>
+</BaseLayout>

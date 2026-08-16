@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-2-REDESIGN-OBJECTS-1.0",
-  "decision_id": "CC-DEC-202",
-  "update_id": "UPD-215",
+  "decision_id": "CC-DEC-203",
+  "update_id": "UPD-216",
   "generated_at": "2026-08-16",
   "rule": "38 homes × F/I/O = 114 redesign objects. HOLD-COMPLETE is a legitimate closed result.",
   "disposition_vocabulary": [
@@ -24,7 +24,7 @@
   "total_objects": 114,
   "closed_objects": 38,
   "open_objects": 76,
-  "v2_2_completion_percent": 66.7,
+  "v2_2_completion_percent": 100.0,
   "objects": [
     {
       "object_id": "constitutional_structure.F",
@@ -52,10 +52,10 @@
       "home_id": "constitutional_structure",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Keep constitutional change and interpretation comprehensible and usable."
     },
     {
       "object_id": "revenue.F",
@@ -83,10 +83,10 @@
       "home_id": "revenue",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Collect lawful revenue with comprehensible rules and visible status."
     },
     {
       "object_id": "expenditures.F",
@@ -114,10 +114,10 @@
       "home_id": "expenditures",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Make functional public spending visible and outcome-linked."
     },
     {
       "object_id": "agencies.F",
@@ -145,10 +145,10 @@
       "home_id": "agencies",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Operate mission agencies behind a coherent citizen experience layer."
     },
     {
       "object_id": "education.F",
@@ -176,10 +176,10 @@
       "home_id": "education",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Make enrollment, transfers, supports, and appeals navigable without org-chart literacy."
     },
     {
       "object_id": "healthcare.F",
@@ -207,10 +207,10 @@
       "home_id": "healthcare",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Get care/coverage decisions without forcing households to integrate payers and agencies."
     },
     {
       "object_id": "justice.F",
@@ -238,10 +238,10 @@
       "home_id": "justice",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Make court access, counsel, and case status comprehensible."
     },
     {
       "object_id": "local_government.F",
@@ -269,10 +269,10 @@
       "home_id": "local_government",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Keep local democracy usable: permits, meetings, services without state portal capture."
     },
     {
       "object_id": "housing.F",
@@ -300,10 +300,10 @@
       "home_id": "housing",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Find, finance, and permit housing without multi-agency scavenger hunts."
     },
     {
       "object_id": "land.F",
@@ -331,10 +331,10 @@
       "home_id": "land",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Clear land-use, assessment, and state-lands processes."
     },
     {
       "object_id": "agriculture.F",
@@ -362,10 +362,10 @@
       "home_id": "agriculture",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Keep inspection, programs, and extension navigable for producers."
     },
     {
       "object_id": "energy.F",
@@ -393,10 +393,10 @@
       "home_id": "energy",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Comprehensible bills, outage status, and regulatory decisions."
     },
     {
       "object_id": "water.F",
@@ -424,10 +424,10 @@
       "home_id": "water",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Safe water access with visible quality, rates, and regional system status."
     },
     {
       "object_id": "transportation.F",
@@ -455,10 +455,10 @@
       "home_id": "transportation",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Project status, permits, and transit access without black-box selection."
     },
     {
       "object_id": "digital_infrastructure.F",
@@ -486,10 +486,10 @@
       "home_id": "digital_infrastructure",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Coverage, grants, and complaints with rural-equivalent pathways."
     },
     {
       "object_id": "labor.F",
@@ -517,10 +517,10 @@
       "home_id": "labor",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Jobs, UI, safety, and training without multi-program scavenger hunts."
     },
     {
       "object_id": "capital.F",
@@ -548,10 +548,10 @@
       "home_id": "capital",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Transparent public capital tools under eight gates — market primary."
     },
     {
       "object_id": "banking.F",
@@ -579,10 +579,10 @@
       "home_id": "banking",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Consumer protection and charter processes with clear complaints."
     },
     {
       "object_id": "business_formation.F",
@@ -610,10 +610,10 @@
       "home_id": "business_formation",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "One-door formation: discover → apply → verify → decide → receipt."
     },
     {
       "object_id": "procurement.F",
@@ -641,10 +641,10 @@
       "home_id": "procurement",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Public need → competition → award → performance → public record."
     },
     {
       "object_id": "economic_development.F",
@@ -672,10 +672,10 @@
       "home_id": "economic_development",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Public purpose → agreement → milestones → outcome; not silent gifts."
     },
     {
       "object_id": "pensions.F",
@@ -703,10 +703,10 @@
       "home_id": "pensions",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "closed_by_pass": "V2.2.3",
+      "note": "Member-facing status and fiduciary decisions comprehensible; deep redesign HOLD."
     },
     {
       "object_id": "public_assets.F",
@@ -734,10 +734,10 @@
       "home_id": "public_assets",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Inventory, surplus, and lease decisions with public record."
     },
     {
       "object_id": "natural_resources.F",
@@ -765,10 +765,10 @@
       "home_id": "natural_resources",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Permits and stewardship with watershed-aware process grammar."
     },
     {
       "object_id": "federal_dependency.F",
@@ -796,10 +796,10 @@
       "home_id": "federal_dependency",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "All-funds visibility so citizens see federal/state joins."
     },
     {
       "object_id": "household_economics.F",
@@ -827,10 +827,10 @@
       "home_id": "household_economics",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Publish household-lens measures; not a benefits agency."
     },
     {
       "object_id": "demographics.F",
@@ -858,10 +858,10 @@
       "home_id": "demographics",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Honest population facts with county truth."
     },
     {
       "object_id": "geographic_disparities.F",
@@ -889,10 +889,10 @@
       "home_id": "geographic_disparities",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Show place differences without ranking futures."
     },
     {
       "object_id": "civic_institutions.F",
@@ -920,10 +920,10 @@
       "home_id": "civic_institutions",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Enable civic life without turning it into a ministry."
     },
     {
       "object_id": "elections.F",
@@ -951,10 +951,10 @@
       "home_id": "elections",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Register, vote, and track ballots with equal rights floors."
     },
     {
       "object_id": "direct_democracy.F",
@@ -982,10 +982,10 @@
       "home_id": "direct_democracy",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Clear petition → title → ballot → result pathway."
     },
     {
       "object_id": "administrative_power.F",
@@ -1013,10 +1013,10 @@
       "home_id": "administrative_power",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "APA grammar: discover rule → apply → decide → explain → appeal."
     },
     {
       "object_id": "public_data.F",
@@ -1044,10 +1044,10 @@
       "home_id": "public_data",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Request records and reuse open data under privacy floors."
     },
     {
       "object_id": "ai.F",
@@ -1075,10 +1075,10 @@
       "home_id": "ai",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "closed_by_pass": "V2.2.3",
+      "note": "Any consequential AI assistance must satisfy No Black Box + disclosure — no AI agency invented."
     },
     {
       "object_id": "emergency_government.F",
@@ -1106,10 +1106,10 @@
       "home_id": "emergency_government",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Alerts, aid, and emergency powers with sunsets and after-action transparency."
     },
     {
       "object_id": "intergenerational_obligations.F",
@@ -1137,10 +1137,10 @@
       "home_id": "intergenerational_obligations",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "HOLD-COMPLETE",
+      "disposition": "OPERATING_MODEL_HOLD",
+      "closed_by_pass": "V2.2.3",
+      "note": "Publish stewardship ledger; funding instruments later."
     },
     {
       "object_id": "human_services.F",
@@ -1168,10 +1168,10 @@
       "home_id": "human_services",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Life-event packages so households are not systems integrators."
     },
     {
       "object_id": "insurance_and_risk.F",
@@ -1199,16 +1199,16 @@
       "home_id": "insurance_and_risk",
       "type": "O",
       "label": "Operating-model integration",
-      "status": "OPEN",
-      "disposition": null,
-      "closed_by_pass": null,
-      "note": "Queued — function first; institution/operating model later."
+      "status": "CLOSED",
+      "disposition": "OPERATING_MODEL",
+      "closed_by_pass": "V2.2.3",
+      "note": "Navigate private lines and public pools without pretending one agency owns all risk."
     }
   ],
   "counts": {
     "total": 114,
-    "closed": 76,
-    "open": 38,
+    "closed": 114,
+    "open": 0,
     "by_type": {
       "F": {
         "closed": 38,
@@ -1219,8 +1219,8 @@
         "open": 0
       },
       "O": {
-        "closed": 0,
-        "open": 38
+        "closed": 38,
+        "open": 0
       }
     }
   }
