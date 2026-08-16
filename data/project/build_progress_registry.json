@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-180",
-  "update_id": "UPD-193",
+  "decision_id": "CC-DEC-181",
+  "update_id": "UPD-194",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
   "current_stage": "STAGE_5",
-  "current_pass": null,
-  "next_objective": "Stage 5 \u2014 Public Book compression (~100 pages). Explain the pathway ordinary people can read. No new research lane.",
+  "current_pass": "PASS_5_2",
+  "next_objective": "Pass 5.2 \u2014 What Does Prosperity Mean? Public-book translation only. No new theory.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -575,6 +575,26 @@
           "label": "What Changed"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-181",
+      "title": "Pass 5.1 Public Book chapter complete \u2014 The Arkansas We Inherited",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-5-1/",
+      "links": [
+        {
+          "href": "/public-book/the-arkansas-we-inherited/",
+          "label": "Chapter 1"
+        },
+        {
+          "href": "/public-book/",
+          "label": "Public Book hub"
+        },
+        {
+          "href": "/build-progress/passes/pass-5-1/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -720,6 +740,129 @@
       "href": "/build-progress/passes/pass-4-6/",
       "changelog": "data/project/pass_changelogs/pass_4_6.json",
       "spine_href": "/system/final-red-team/"
+    }
+  ],
+  "stage5_passes": [
+    {
+      "id": "PASS_5_1",
+      "number": "5.1",
+      "slug": "pass-5-1",
+      "name": "The Arkansas We Inherited",
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-5-1/",
+      "changelog": "data/project/pass_changelogs/pass_5_1.json",
+      "spine_href": "/public-book/the-arkansas-we-inherited/",
+      "chapter_completion_percent": 100
+    },
+    {
+      "id": "PASS_5_2",
+      "number": "5.2",
+      "slug": "pass-5-2",
+      "name": "What Does Prosperity Mean?",
+      "status": "NEXT",
+      "href": "/build-progress/passes/pass-5-2/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_3",
+      "number": "5.3",
+      "slug": "pass-5-3",
+      "name": "Follow the Money",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-3/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_4",
+      "number": "5.4",
+      "slug": "pass-5-4",
+      "name": "People Are the Real Capital",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-4/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_5",
+      "number": "5.5",
+      "slug": "pass-5-5",
+      "name": "The Productive Arkansas",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-5/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_6",
+      "number": "5.6",
+      "slug": "pass-5-6",
+      "name": "Government That Belongs to the People",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-6/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_7",
+      "number": "5.7",
+      "slug": "pass-5-7",
+      "name": "So What Is Constitutional Capitalism?",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-7/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_8",
+      "number": "5.8",
+      "slug": "pass-5-8",
+      "name": "Building the Bridge",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-8/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_9",
+      "number": "5.9",
+      "slug": "pass-5-9",
+      "name": "We Tried to Break It",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-9/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_10",
+      "number": "5.10",
+      "slug": "pass-5-10",
+      "name": "The Arkansas We Could Leave Behind",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-10/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
+    },
+    {
+      "id": "PASS_5_11",
+      "number": "5.11",
+      "slug": "pass-5-11",
+      "name": "Whole-Book Assembly & Editorial Certification",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-5-11/",
+      "changelog": null,
+      "spine_href": null,
+      "chapter_completion_percent": 0
     }
   ]
 }

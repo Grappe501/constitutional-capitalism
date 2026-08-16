@@ -54,11 +54,13 @@ const generatedLabel = snapshot.generated_at
 
     <h2>Completion dashboard</h2>
     <p class="lede">
-      Overall project completion: <strong>{overallCompletion}%</strong>
+      <strong>Technical System — {completion.technical_system?.percent ?? overallCompletion}% CERTIFIED</strong>
+      {" · "}
+      <strong>Public Book — {completion.public_book?.percent ?? 0}%</strong>
+      ({completion.public_book?.chapters_complete ?? 0}/{completion.public_book?.chapters_total ?? 11})
     </p>
     <p class="muted">
-      Legacy research/infrastructure composite ({completion.historical_metric_reconciliation?.legacy_overall_percent ?? 43}%)
-      is historical only. Source of truth: four bars below.
+      100% technical build ≠ public book finished. Comparison Explorer is a parallel lane.
     </p>
     <div class="progress-list" style="margin-top:1rem;">
       {[
@@ -66,6 +68,7 @@ const generatedLabel = snapshot.generated_at
         ["First-pass coverage", bars.first_pass_coverage_percent],
         ["Unabridged completion", bars.unabridged_completion_percent ?? bars.publication_completion_percent],
         ["Validation completion", bars.validation_completion_percent],
+        ["Public Book (Stage 5)", completion.public_book?.percent ?? 0],
       ].map(([label, percent]) => (
         <div class="progress-item">
           <label>
@@ -87,8 +90,7 @@ const generatedLabel = snapshot.generated_at
     </div>
     <p class="muted" style="margin-top:0.75rem;">
       Active stage: {completion.stages?.find((s: any) => s.status === "ACTIVE" || s.status === "IN_PROGRESS")?.name || "—"}.
-      Stage 1: {completion.stages?.find((s: any) => s.id === "STAGE_1")?.status === "COMPLETE" ? "COMPLETE" : (completion.active_stage1_pass || "—")}.
-      Stage 2: {completion.stage_2_complete ? "COMPLETE" : "—"}.
+      <a href="/public-book/">Public Book hub →</a>
       {completion.horizontal_expansion_frozen && <> Horizontal expansion frozen.</>}
     </p>
 

@@ -2,10 +2,10 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-180",
-  "update_id": "UPD-193",
+  "decision_id": "CC-DEC-181",
+  "update_id": "UPD-194",
   "prior_decision_id": "CC-DEC-165",
-  "status": "COMPLETION_SYSTEM_LOCKED_STAGE_3_ACTIVE",
+  "status": "STAGE_5_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
   "governing_question_after_every_piece_of_work": "Did this materially move Constitutional Capitalism toward a finished system?",
   "organizing_principle": "Literally build a path forward for the State of Arkansas \u2014 from today's balance sheet and operating system to the proposed state.",
@@ -115,11 +115,15 @@
       "id": "STAGE_5",
       "name": "Public Book",
       "target": "Compress the validated system into the ~100-page public roadmap (Volume II)",
-      "status": "NEXT",
+      "status": "ACTIVE",
       "exit_gate": "Reader can travel Where Arkansas is \u2192 why outcomes \u2192 what changes \u2192 money flows \u2192 household life \u2192 transition \u2192 what Arkansas could become, with pointers into Unabridged.",
       "volume": "Volume II \u2014 The Public Book",
       "amended_by": "CC-DEC-152",
-      "current_work": "Compress the validated system into the ~100-page public roadmap. No new theory-building."
+      "current_work": "Pass 5.1 The Arkansas We Inherited COMPLETE. Public Book 9%. Next: Pass 5.2 What Does Prosperity Mean? only.",
+      "active_pass": "PASS_5_2",
+      "last_completed_pass": "PASS_5_1",
+      "plan": "data/project/stage5_eleven_pass_plan.json",
+      "public_book_percent": 9
     },
     {
       "id": "STAGE_6",
@@ -150,7 +154,7 @@
       "first_pass": "Stage 2 COMPLETE \u2014 50/50 = 100%. Certified Pass 2.6.",
       "publication": "Alias for Unabridged Completion (Volume I). Aggressive Stage 3 dial.",
       "unabridged": "8 of 8 categories complete (Pass 3.1\u20133.8). Stage 3 CERTIFIED. Display label: Unabridged.",
-      "validation": "Stage 4 CERTIFIED (100%). Join integrity PASS. COUNTABLE $0. 100% PROJECT BUILD \u2260 public book finished. Next: Stage 5 Public Book compression."
+      "validation": "Stage 4 CERTIFIED (100%). Technical system complete. Stage 5 measures Public Book chapter completion separately."
     }
   },
   "stage3_category_bars": [
@@ -214,10 +218,10 @@
   "overall_project_completion": {
     "percent": 100,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*unabridged + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+100+100+100)=100",
+    "calculation": "0.25*(100+100+100+100)=100 \u2014 TECHNICAL SYSTEM",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression",
-    "note_100_vs_public_book": "100% project build means the technical system is built, written, attacked, and certified \u2014 not that the ~100-page public book is finished."
+    "note_100_vs_public_book": "TECHNICAL SYSTEM 100% CERTIFIED \u2260 Public Book finished. Public Book is a separate dial."
   },
   "stage_1_five_pass_plan": "data/project/stage1_five_pass_closure_plan.json",
   "stage_2_six_pass_plan": "data/project/stage2_six_pass_plan.json",
@@ -318,5 +322,122 @@
       "href": "/build-progress/passes/pass-4-6/"
     }
   ],
-  "stage4_certified": true
+  "stage4_certified": true,
+  "technical_system": {
+    "percent": 100,
+    "status": "CERTIFIED",
+    "label": "TECHNICAL SYSTEM \u2014 100% CERTIFIED",
+    "note": "Skeleton \u00b7 First Pass \u00b7 Unabridged \u00b7 Validation all 100%. Stage 4 closed."
+  },
+  "public_book": {
+    "percent": 9,
+    "status": "ACTIVE",
+    "label": "PUBLIC BOOK",
+    "chapters_complete": 1,
+    "chapters_total": 11,
+    "active_pass": "PASS_5_2",
+    "last_completed_pass": "PASS_5_1",
+    "plan": "data/project/stage5_eleven_pass_plan.json",
+    "note": "Chapter completion only \u2014 not research activity. Clarity controls length."
+  },
+  "comparison_explorer_lane": {
+    "status": "PARALLEL_PUBLIC_EDUCATION",
+    "label": "COMPARISON EXPLORER \u2014 parallel / public-education lane",
+    "validation_points": 0,
+    "public_book_points": 0,
+    "href": "/compare/explorer/",
+    "note": "Does not move Technical System or Public Book dials."
+  },
+  "stage5_category_bars": [
+    {
+      "id": "PASS_5_1",
+      "label": "5.1 The Arkansas We Inherited",
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-5-1/",
+      "surface": "/public-book/the-arkansas-we-inherited/"
+    },
+    {
+      "id": "PASS_5_2",
+      "label": "5.2 What Does Prosperity Mean?",
+      "percent": 0,
+      "status": "NEXT",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_3",
+      "label": "5.3 Follow the Money",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_4",
+      "label": "5.4 People Are the Real Capital",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_5",
+      "label": "5.5 The Productive Arkansas",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_6",
+      "label": "5.6 Government That Belongs to the People",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_7",
+      "label": "5.7 So What Is Constitutional Capitalism?",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_8",
+      "label": "5.8 Building the Bridge",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_9",
+      "label": "5.9 We Tried to Break It",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_10",
+      "label": "5.10 The Arkansas We Could Leave Behind",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    },
+    {
+      "id": "PASS_5_11",
+      "label": "5.11 Whole-Book Assembly & Editorial Certification",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null,
+      "surface": null
+    }
+  ],
+  "active_stage5_pass": "PASS_5_2",
+  "last_completed_stage5_pass": "PASS_5_1"
 }

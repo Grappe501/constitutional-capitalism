@@ -37,23 +37,49 @@ function statusLabel(status?: string) {
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Stage 4 active — Break It</span>
+      <span class="chip chip--live">Stage 5 active — Public Book</span>
       <h1>Build Progress</h1>
       <p class="lede">
-        Stages 1–3 are certified. Stage 4 attempts to falsify the system. Validation moves;
-        Unabridged stays frozen at 100%.
+        Technical system certified at 100%. Stage 5 translates it into the Public Book. Those are
+        separate dials — on purpose.
       </p>
     </header>
 
+    <section class="hub-section" aria-labelledby="split">
+      <h2 id="split">Scoreboard split</h2>
+      <ul class="link-board">
+        <li>
+          <span class="chip chip--done">CERTIFIED</span>{" "}
+          <strong>{completion.technical_system?.label || "TECHNICAL SYSTEM"}</strong> —{" "}
+          {completion.technical_system?.percent ?? 100}%
+        </li>
+        <li>
+          <span class="chip chip--live">ACTIVE</span>{" "}
+          <strong>{completion.public_book?.label || "PUBLIC BOOK"}</strong> —{" "}
+          {completion.public_book?.percent ?? 0}% ({completion.public_book?.chapters_complete ?? 0}/
+          {completion.public_book?.chapters_total ?? 11})
+        </li>
+        <li>
+          <span class="chip chip--queued">PARALLEL</span>{" "}
+          <strong>{completion.comparison_explorer_lane?.label || "COMPARISON EXPLORER"}</strong>
+          {" · "}
+          <a href="/compare/explorer/">Open →</a>
+        </li>
+      </ul>
+      <p class="muted">
+        <a href="/public-book/">Public Book hub →</a>
+      </p>
+    </section>
+
     <section class="hub-section" aria-labelledby="bars">
-      <h2 id="bars">Completion ladder</h2>
+      <h2 id="bars">Technical completion ladder (certified)</h2>
       <CompletionLadderViz
         overall={overall}
         skeleton={bars.skeleton_coverage_percent ?? 0}
         firstPass={bars.first_pass_coverage_percent ?? 0}
         publication={unabridged}
         validation={bars.validation_completion_percent ?? 0}
-        caption="Unabridged is frozen at 100%. Validation is the Stage 4 dial."
+        caption="Technical System 100% CERTIFIED. Public Book is measured separately below."
       />
       <p class="muted">
         Current stage: <strong>{registry.current_stage}</strong>
@@ -66,8 +92,54 @@ function statusLabel(status?: string) {
       </p>
     </section>
 
+    <section class="hub-section" aria-labelledby="s5">
+      <h2 id="s5">Stage 5 — Public Book chapters</h2>
+      <div class="progress-list">
+        {(completion.stage5_category_bars || []).map((c: any) => (
+          <div class="progress-item">
+            <label>
+              <span>
+                {c.surface && c.status === "COMPLETE" ? (
+                  <a href={c.surface}>{c.label}</a>
+                ) : c.href && c.status === "COMPLETE" ? (
+                  <a href={c.href}>{c.label}</a>
+                ) : (
+                  c.label
+                )}
+              </span>
+              <span aria-hidden="true">{c.percent}%</span>
+            </label>
+            <div
+              class="bar"
+              role="progressbar"
+              aria-label={`${c.label} progress`}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={c.percent}
+            >
+              <span style={`width:${c.percent}%`} />
+            </div>
+          </div>
+        ))}
+      </div>
+      <ul class="link-board">
+        {(registry.stage5_passes || []).map((p: any) => (
+          <li>
+            <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>{" "}
+            {p.status === "COMPLETE" ? <a href={p.href}>{p.number} {p.name}</a> : `${p.number} ${p.name}`}
+            {p.spine_href ? (
+              <>
+                {" "}
+                · <a href={p.spine_href}>Read chapter →</a>
+              </>
+            ) : null}
+          </li>
+        ))}
+      </ul>
+    </section>
+
     <section class="hub-section" aria-labelledby="s4">
-      <h2 id="s4">Stage 4 attack passes</h2>
+      <h2 id="s4">Stage 4 attack passes (certified)</h2>
       <div class="progress-list">
         {stage4Bars.map((c: any) => (
           <div class="progress-item">

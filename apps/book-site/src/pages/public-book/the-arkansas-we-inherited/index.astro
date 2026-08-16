@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import chapter from "../../../../../../data/project/stage5_pass51_the_arkansas_we_inherited.json";
+import plan from "../../../../../../data/project/stage5_eleven_pass_plan.json";
+
+const sections = chapter.sections || [];
+const guides = chapter.recurring_guides || {};
+const visual = chapter.signature_visual || {};
+const trace = chapter.traceability || [];
+const cert = chapter.certification || {};
+const hh = guides.household || {};
+const community = guides.community || {};
+const facts = community.bound_facts || {};
+---
+
+<BaseLayout
+  title="The Arkansas We Inherited — Public Book"
+  path="/public-book/the-arkansas-we-inherited/"
+  description="Public Book Chapter 1: Where Arkansas is — people, households, budget, assets, and the central problem, told for ordinary Arkansans."
+>
+  <article class="public-book">
+    <header class="hub-banner">
+      <span class="chip chip--done">Public Book · Chapter 1 · Pass 5.1</span>
+      <p class="muted">Volume II · ~{chapter.approx_pages} pages · Clarity controls length</p>
+      <h1>{chapter.pass_name}</h1>
+      <p class="lede">
+        Where Arkansas is — before we change anything.
+      </p>
+      <ul class="link-board">
+        <li><a href="/public-book/">Public Book hub →</a></li>
+        <li><a href="/system/arkansas-state-baseline/">Unabridged Arkansas NOW →</a></li>
+        <li><a href="/build-progress/passes/pass-5-1/">What Changed →</a></li>
+        <li><a href="/system/stage4-certification/">Technical system certified →</a></li>
+      </ul>
+      <p class="muted">
+        Technical System 100% · Public Book {cert.public_book_completion_percent_after}% · COUNTABLE $0
+        · {chapter.decision_id} · {chapter.update_id}
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" id="visual" data-depth="understand" data-depth-keep>
+      <h2>{visual.title}</h2>
+      <p class="lede">{visual.shows}</p>
+      <ol class="stack">
+        <li><strong>People</strong> — who lives here, and where averages hide decline</li>
+        <li><strong>Households</strong> — the unit of success the inherited machine forgets</li>
+        <li><strong>Economy</strong> — real production; public revenue riding household cashflow</li>
+        <li><strong>Government money</strong> — tax-and-appropriate by agency</li>
+        <li><strong>Productive assets</strong> — capacity we can name; register we still lack</li>
+        <li><strong>Leakage &amp; dependency</strong> — central, and easy to fake-measure</li>
+      </ol>
+      <p class="muted">Signature visual for Chapter 1 — not decoration.</p>
+    </section>
+
+    <section class="hub-section" id="guides">
+      <h2>Recurring guides</h2>
+      <p class="muted">{guides.rule}</p>
+      <div class="stack">
+        <div>
+          <span class="chip chip--live">{hh.claim_class}</span>
+          <strong>{hh.name}</strong> — {hh.archetype_id}
+          <p class="muted">{hh.note}</p>
+        </div>
+        <div>
+          <span class="chip chip--done">{community.claim_class}</span>
+          <strong>{community.name}</strong>
+          <p class="muted">{community.note}</p>
+          <ul class="link-board">
+            <li>Population 2020 → 2023: {facts.population_2020} → {facts.population_2023} ({facts.population_change_2020_2023})</li>
+            <li>Poverty (SAIPE {facts.saipe_year}): {facts.poverty_rate_all_ages_percent}%</li>
+            <li>Median household income: ${facts.median_household_income_usd?.toLocaleString?.() ?? facts.median_household_income_usd}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {
+      sections.map((s: any) => (
+        <section class="hub-section" id={s.id.toLowerCase()}>
+          <h2>{s.heading}</h2>
+          {s.prose.map((p: string) => (
+            <p class="lede" style="font-size:1.05rem; font-weight:400;">{p}</p>
+          ))}
+          {s.bound_figures ? (
+            <ul class="link-board">
+              {s.bound_figures.map((f: any) => (
+                <li>
+                  <span class="chip chip--done">{f.class}</span> {f.label}: <strong>{f.value}</strong>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </section>
+      ))
+    }
+
+    <section class="hub-section" id="trace">
+      <h2>Trace this chapter</h2>
+      <p class="muted">
+        Curious readers can move from public claim → evidence class → Unabridged surface.
+      </p>
+      <ul class="stack">
+        {
+          trace.map((t: any) => (
+            <li>
+              <span class="chip chip--done">{t.class}</span> {t.claim}
+              <div class="muted">
+                {t.source_note} · <a href={t.unabridged}>Open source surface →</a>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Next in the Public Book</h2>
+      <p class="lede">Pass 5.2 — What Does Prosperity Mean?</p>
+      <ul class="link-board">
+        {
+          (plan.passes || []).slice(0, 4).map((p: any) => (
+            <li>
+              <span class={p.status === "COMPLETE" ? "chip chip--done" : "chip chip--queued"}>
+                {p.status}
+              </span>{" "}
+              {p.number} {p.name}
+              {p.surface_href ? (
+                <>
+                  {" "}
+                  · <a href={p.surface_href}>Read →</a>
+                </>
+              ) : null}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

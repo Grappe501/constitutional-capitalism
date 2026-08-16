@@ -1,0 +1,115 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import completion from "../../../../../data/project/completion_ladder_and_dashboard.json";
+import plan from "../../../../../data/project/stage5_eleven_pass_plan.json";
+
+const tech = completion.technical_system || {};
+const book = completion.public_book || {};
+const explorer = completion.comparison_explorer_lane || {};
+const bars = completion.stage5_category_bars || plan.passes || [];
+
+function chipClass(status?: string) {
+  if (status === "COMPLETE" || status === "CERTIFIED") return "chip chip--done";
+  if (status === "ACTIVE" || status === "NEXT") return "chip chip--live";
+  return "chip chip--queued";
+}
+---
+
+<BaseLayout
+  title="Public Book — Volume II"
+  path="/public-book/"
+  description="Stage 5: translate the certified Constitutional Capitalism system into a story ordinary Arkansans can read from beginning to end."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--live">Stage 5 · Public Book</span>
+      <h1>The Public Book</h1>
+      <p class="lede">
+        Not a 100-page summary of the Unabridged — a story from where Arkansas is to what Arkansas
+        could become.
+      </p>
+      <p class="muted">
+        House style: <strong>Arkansas'</strong> — never “Arkansas's.” Clarity controls length.
+      </p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Scoreboard (separated on purpose)</h2>
+      <ul class="link-board">
+        <li>
+          <span class="chip chip--done">{tech.status || "CERTIFIED"}</span>{" "}
+          <strong>{tech.label || "TECHNICAL SYSTEM"}</strong> — {tech.percent ?? 100}%
+          <div class="muted">{tech.note}</div>
+        </li>
+        <li>
+          <span class={chipClass(book.status)}>{book.status || "ACTIVE"}</span>{" "}
+          <strong>{book.label || "PUBLIC BOOK"}</strong> — {book.percent ?? 0}% ({book.chapters_complete ?? 0}/
+          {book.chapters_total ?? 11} chapters)
+          <div class="muted">{book.note}</div>
+        </li>
+        <li>
+          <span class="chip chip--queued">{explorer.status || "PARALLEL"}</span>{" "}
+          <strong>{explorer.label || "COMPARISON EXPLORER"}</strong>
+          <div class="muted">
+            {explorer.note} · <a href={explorer.href || "/compare/explorer/"}>Open Explorer →</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Narrative spine</h2>
+      <p class="lede">
+        Where Arkansas is → Why the current system produces the outcomes it does → What prosperity
+        actually means → What Constitutional Capitalism changes → How the pieces work together → How
+        Arkansas gets from here to there → What could go wrong → How we protect against it → What
+        Arkansas could become.
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Chapters</h2>
+      <ul class="stack">
+        {
+          bars.map((p: any) => (
+            <li>
+              <span class={chipClass(p.status)}>{(p.status || "").replaceAll("_", " ")}</span>{" "}
+              <strong>
+                {p.label || `${p.number} ${p.name}`}
+              </strong>{" "}
+              — {p.percent ?? p.chapter_completion_percent ?? 0}%
+              {p.surface || p.surface_href ? (
+                <>
+                  {" "}
+                  · <a href={p.surface || p.surface_href}>Read →</a>
+                </>
+              ) : null}
+              {p.href && p.status === "COMPLETE" ? (
+                <>
+                  {" "}
+                  · <a href={p.href}>What Changed →</a>
+                </>
+              ) : null}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Three rules</h2>
+      <ol class="stack">
+        <li>
+          <strong>No new theory.</strong> Contradictions return to the certified technical system.
+        </li>
+        <li>
+          <strong>Every important claim remains traceable</strong> to evidence and Unabridged
+          discussion.
+        </li>
+        <li>
+          <strong>Write for an intelligent Arkansan</strong> — mechanism before jargon.
+        </li>
+      </ol>
+    </section>
+  </article>
+</BaseLayout>

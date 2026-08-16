@@ -48,25 +48,20 @@ function statusLabel(status?: string) {
     <section class="section" aria-labelledby="dash-title">
       <h2 id="dash-title">Completion now</h2>
       <p class="muted">
-        Legacy research composite ({completion.historical_metric_reconciliation?.legacy_overall_percent ?? 43}%)
-        is historical only. These bars are the governing signal.
+        Technical System 100% CERTIFIED is separate from the Public Book dial.
       </p>
       <div class="dash-row">
         <div class="dash-cell">
-          <strong>{overall}%</strong>
-          <span>Overall</span>
+          <strong>{completion.technical_system?.percent ?? overall}%</strong>
+          <span>Technical system</span>
+        </div>
+        <div class="dash-cell">
+          <strong>{completion.public_book?.percent ?? 0}%</strong>
+          <span>Public book</span>
         </div>
         <div class="dash-cell">
           <strong>{bars.skeleton_coverage_percent ?? 0}%</strong>
           <span>Skeleton</span>
-        </div>
-        <div class="dash-cell">
-          <strong>{bars.first_pass_coverage_percent ?? 0}%</strong>
-          <span>First-pass</span>
-        </div>
-        <div class="dash-cell">
-          <strong>{bars.publication_completion_percent ?? 0}%</strong>
-          <span>Publication</span>
         </div>
         <div class="dash-cell">
           <strong>{bars.validation_completion_percent ?? 0}%</strong>
@@ -74,12 +69,10 @@ function statusLabel(status?: string) {
         </div>
       </div>
       <p>
-        <a class="button button--solid" href="/status/">Full status</a>
-        <a class="button button--solid" href="/build-progress/passes/pass-5/" style="margin-left:0.5rem;">
-          Stage 1 certified
-        </a>
+        <a class="button button--solid" href="/public-book/">Public Book</a>
+        <a class="button button--solid" href="/status/" style="margin-left:0.5rem;">Full status</a>
         <a class="button button--solid" href="/build-progress/" style="margin-left:0.5rem;">
-          Stage 2 active
+          Build progress
         </a>
       </p>
     </section>
