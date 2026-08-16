@@ -11,7 +11,9 @@ const stages = completion.stages || [];
 const passes = registry.passes || [];
 const stage2Passes = registry.stage2_passes || [];
 const stage3Passes = registry.stage3_passes || [];
+const stage4Passes = registry.stage4_passes || [];
 const categoryBars = completion.stage3_category_bars || [];
+const stage4Bars = completion.stage4_category_bars || [];
 const unabridged =
   bars.unabridged_completion_percent ?? bars.publication_completion_percent ?? 0;
 
@@ -35,11 +37,11 @@ function statusLabel(status?: string) {
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">Stage 3 active</span>
+      <span class="chip chip--live">Stage 4 active — Break It</span>
       <h1>Build Progress</h1>
       <p class="lede">
-        Stages 1–2 are certified. Stage 3 finishes categories vertically — one unabridged
-        category to 100% before the next opens.
+        Stages 1–3 are certified. Stage 4 attempts to falsify the system. Validation moves;
+        Unabridged stays frozen at 100%.
       </p>
     </header>
 
@@ -51,7 +53,7 @@ function statusLabel(status?: string) {
         firstPass={bars.first_pass_coverage_percent ?? 0}
         publication={unabridged}
         validation={bars.validation_completion_percent ?? 0}
-        caption="Unabridged Completion is the aggressive Stage 3 dial (3/8 categories after Pass 3.3)."
+        caption="Unabridged is frozen at 100%. Validation is the Stage 4 dial."
       />
       <p class="muted">
         Current stage: <strong>{registry.current_stage}</strong>
@@ -64,8 +66,54 @@ function statusLabel(status?: string) {
       </p>
     </section>
 
+    <section class="hub-section" aria-labelledby="s4">
+      <h2 id="s4">Stage 4 attack passes</h2>
+      <div class="progress-list">
+        {stage4Bars.map((c: any) => (
+          <div class="progress-item">
+            <label>
+              <span>
+                {c.href && c.status === "COMPLETE" ? (
+                  <a href={c.href}>{c.label}</a>
+                ) : (
+                  c.label
+                )}
+              </span>
+              <span aria-hidden="true">{c.percent}%</span>
+            </label>
+            <div
+              class="bar"
+              role="progressbar"
+              aria-label={`${c.label} progress`}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={c.percent}
+            >
+              <span style={`width:${c.percent}%`} />
+            </div>
+          </div>
+        ))}
+      </div>
+      <ul class="link-board">
+        {stage4Passes.map((p: any) => (
+          <li>
+            <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>{" "}
+            {p.status === "COMPLETE" ? (
+              <a href={p.href}>
+                Pass {p.number} — {p.name}
+              </a>
+            ) : (
+              <>
+                Pass {p.number} — {p.name}
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+
     <section class="hub-section" aria-labelledby="cats">
-      <h2 id="cats">Stage 3 category bars</h2>
+      <h2 id="cats">Stage 3 category bars (frozen)</h2>
       <div class="progress-list">
         {categoryBars.map((c: any) => (
           <div class="progress-item">

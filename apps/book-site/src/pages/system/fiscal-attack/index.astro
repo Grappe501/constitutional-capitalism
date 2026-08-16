@@ -1,0 +1,220 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ReadingModes from "../../../components/ReadingModes.astro";
+import chapter from "../../../../../../data/project/stage4_pass41_economic_fiscal_attack.json";
+import plan from "../../../../../../data/project/stage4_six_pass_plan.json";
+
+const baseline = chapter.fiscal_baseline || {};
+const hist = chapter.budget_history || {};
+const tax = chapter.tax_replacement_mathematics || {};
+const board = chapter.proposition_board || [];
+const scenarios = chapter.scenarios || {};
+const wcf = chapter.what_changed_format || {};
+const cert = chapter.certification || {};
+const derived = baseline.derived_usd || {};
+const repl = baseline.replacement_requirement || {};
+
+function money(n?: number | null) {
+  if (n == null) return "—";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+
+function statusChip(s?: string) {
+  if (s === "SURVIVED") return "chip chip--done";
+  if (s === "SURVIVED_WITH_MODIFICATION") return "chip chip--live";
+  if (s === "FAILED" || s === "FAILED_AS_COUNTABLE") return "chip chip--live";
+  if (s === "UNPROVEN" || s === "OPEN") return "chip chip--queued";
+  return "chip chip--queued";
+}
+---
+
+<BaseLayout
+  title="Pass 4.1 — Economic & Fiscal Attack"
+  path="/system/fiscal-attack/"
+  description="Hostile audit: does the money work when optimistic assumptions are removed? COUNTABLE recalculated — not protected."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">Stage 4 · Pass 4.1 complete</span>
+      <h1>Economic &amp; Fiscal Attack</h1>
+      <p class="lede">{chapter.governing_question}</p>
+      <p class="muted">{chapter.stance}</p>
+      <p class="lede" style="margin-top:0.75rem;">
+        <strong>COUNTABLE after attack: {money(chapter.countable_after_usd)}</strong> —{" "}
+        {chapter.countable_verdict}
+      </p>
+      <ul class="link-board">
+        <li><a href="/build-progress/passes/pass-4-1/">What Changed →</a></li>
+        <li><a href="/unabridged/">Unabridged source of truth →</a></li>
+        <li><a href="/system/money-engine/">Money Engine →</a></li>
+        <li><a href="/system/transition-engine/">Transition Engine →</a></li>
+        <li><a href="/unabridged/validation/">Stage 4 validation queue →</a></li>
+      </ul>
+      <p class="muted">
+        Validation {cert.validation_completion_percent_after}% · Overall {cert.overall_project_completion_percent_after}% ·
+        Unabridged unchanged 100% · {chapter.decision_id} · {chapter.update_id}
+      </p>
+    </header>
+
+    <ReadingModes />
+
+    <section class="hub-section" data-depth="understand" data-depth-keep>
+      <h2>Proposition board</h2>
+      <ul class="stack">
+        {
+          board.map((p: any) => (
+            <li>
+              <span class={statusChip(p.status)}>{p.status.replaceAll("_", " ")}</span>{" "}
+              <strong>{p.id}</strong> — {p.proposition}
+              <div class="muted">
+                Grade {p.grade} · {p.note}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="a1">
+      <h2 id="a1">
+        <span class={statusChip(baseline.status)}>{baseline.status?.replaceAll("_", " ")}</span>{" "}
+        {baseline.title}
+      </h2>
+      <p class="lede">{baseline.what_must_be_replaced_finding}</p>
+      <ul class="link-board">
+        <li>IIT gross FY2026: <strong>{money(repl.iit_gross_usd)}</strong></li>
+        <li>Property layers sum: <strong>{money(repl.property_layers_sum_usd)}</strong></li>
+        <li>Combined illustrative: <strong>{money(repl.combined_illustrative_usd)}</strong></li>
+        <li>Net available GR: <strong>{money(derived.net_available_general_revenues)}</strong></li>
+        <li>FY2026 surplus: <strong>{money(baseline.surplus_usd)}</strong></li>
+      </ul>
+      <p class="muted">Evidence grade {baseline.evidence_grade}. Modification: {baseline.modification}</p>
+    </section>
+
+    <section class="hub-section" aria-labelledby="a2">
+      <h2 id="a2">
+        <span class={statusChip(hist.status)}>{hist.status?.replaceAll("_", " ")}</span> {hist.title}
+      </h2>
+      <p>{hist.limitation}</p>
+      <ul class="stack">
+        {
+          (hist.patterns_observed || []).map((p: any) => (
+            <li>
+              <span class="chip chip--done">Grade {p.grade}</span> {p.finding}
+            </li>
+          ))
+        }
+      </ul>
+      <h3>Still unknown</h3>
+      <ul class="stack">
+        {(hist.unknowns || []).map((u: string) => <li>{u}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="a3">
+      <h2 id="a3">
+        <span class={statusChip(tax.status)}>{tax.status}</span> {tax.title}
+      </h2>
+      <p class="lede">{tax.status_note}</p>
+      <p>{tax.verdict}</p>
+      <h3>Scenarios</h3>
+      <dl class="glossary-list">
+        {
+          Object.entries(tax.scenarios || {}).map(([k, v]) => (
+            <>
+              <dt>{k}</dt>
+              <dd>{v as string}</dd>
+            </>
+          ))
+        }
+      </dl>
+      <h3>Already-spent cannot refill Tax Retirement</h3>
+      <ul class="stack">
+        {
+          (tax.already_spent_cannot_refill || []).map((s: any) => (
+            <li>
+              <strong>{s.stream}</strong> — {money(s.usd)} · Grade {s.grade}
+              {s.note ? ` · ${s.note}` : ""}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      [
+        chapter.public_ownership_attack,
+        chapter.productive_retention_attack,
+        chapter.external_income_attack,
+        chapter.household_transmission,
+        chapter.distribution_attack,
+        chapter.geographic_attack,
+        chapter.transition_cost_attack,
+      ].map((atk: any) => (
+        <section class="hub-section">
+          <h2>
+            <span class={statusChip(atk.status)}>{atk.status?.replaceAll("_", " ")}</span> {atk.title}
+          </h2>
+          <p class="lede">{atk.finding}</p>
+          {atk.modification ? <p class="muted">Modification: {atk.modification}</p> : null}
+          {atk.candidates ? (
+            <ul class="stack">
+              {atk.candidates.map((c: any) => (
+                <li>
+                  <strong>{c.id}</strong> — {c.verdict}
+                  <div class="muted">{c.rank_note}</div>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          <p class="muted">Evidence grade {atk.evidence_grade}</p>
+        </section>
+      ))
+    }
+
+    <section class="hub-section" aria-labelledby="scen">
+      <h2 id="scen">{scenarios.title}</h2>
+      <p class="muted">Forbidden false precision: “{scenarios.forbidden}”</p>
+      <p>
+        Scenario set: {(scenarios.set || []).join(" · ")}. Failure stresses:{" "}
+        {(scenarios.failure_stresses || []).join("; ")}.
+      </p>
+      <h3>What survives FAILURE</h3>
+      <ul class="link-board">
+        {(scenarios.what_survives_failure || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section" aria-labelledby="wcf">
+      <h2 id="wcf">Stage 4 What Changed format</h2>
+      <dl class="glossary-list">
+        <dt>What we thought</dt>
+        <dd>{wcf.what_we_thought}</dd>
+        <dt>What we tested</dt>
+        <dd>{wcf.what_we_tested}</dd>
+        <dt>What evidence said</dt>
+        <dd>{wcf.what_evidence_said}</dd>
+        <dt>What survived</dt>
+        <dd>{wcf.what_survived}</dd>
+        <dt>What changed</dt>
+        <dd>{wcf.what_changed}</dd>
+        <dt>What failed</dt>
+        <dd>{wcf.what_failed}</dd>
+        <dt>What remains unknown</dt>
+        <dd>{wcf.what_remains_unknown}</dd>
+      </dl>
+    </section>
+
+    <section class="hub-section" aria-labelledby="next">
+      <h2 id="next">Next attack</h2>
+      <p class="lede">{cert.next}</p>
+      <p class="muted">
+        Six-pass plan: {plan.slice_id}. Comparison Explorer remains parallel · 0 validation points.
+      </p>
+    </section>
+  </article>
+</BaseLayout>

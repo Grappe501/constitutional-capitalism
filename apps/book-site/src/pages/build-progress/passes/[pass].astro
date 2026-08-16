@@ -20,6 +20,7 @@ import pass35 from "../../../../../../data/project/pass_changelogs/pass_3_5.json
 import pass36 from "../../../../../../data/project/pass_changelogs/pass_3_6.json";
 import pass37 from "../../../../../../data/project/pass_changelogs/pass_3_7.json";
 import pass38 from "../../../../../../data/project/pass_changelogs/pass_3_8.json";
+import pass41 from "../../../../../../data/project/pass_changelogs/pass_4_1.json";
 import audit from "../../../../../../data/project/stage1_pass5_whole_system_closure_audit.json";
 import stage2Audit from "../../../../../../data/project/stage2_pass26_whole_system_integration_audit.json";
 
@@ -44,13 +45,15 @@ export function getStaticPaths() {
     { params: { pass: "pass-3-6" } },
     { params: { pass: "pass-3-7" } },
     { params: { pass: "pass-3-8" } },
+    { params: { pass: "pass-4-1" } },
   ];
 }
 
 const { pass: passSlug } = Astro.params;
 const meta = (registry.passes || []).find((p: any) => p.slug === passSlug)
   || (registry.stage2_passes || []).find((p: any) => p.slug === passSlug)
-  || (registry.stage3_passes || []).find((p: any) => p.slug === passSlug);
+  || (registry.stage3_passes || []).find((p: any) => p.slug === passSlug)
+  || (registry.stage4_passes || []).find((p: any) => p.slug === passSlug);
 const changelogs: Record<string, any> = {
   "pass-1": pass1,
   "pass-2": pass2,
@@ -71,12 +74,14 @@ const changelogs: Record<string, any> = {
   "pass-3-6": pass36,
   "pass-3-7": pass37,
   "pass-3-8": pass38,
+  "pass-4-1": pass41,
 };
 const log = changelogs[passSlug || ""] || null;
 const isCert = passSlug === "pass-5" && log?.is_stage_1_certification_record;
 const isStage2Cert = passSlug === "pass-2-6" && log?.is_stage_2_certification_record;
 const isStage2 = Boolean(log?.is_stage_2_pass);
 const isStage3 = Boolean(log?.is_stage_3_pass);
+const isStage4 = Boolean(log?.is_stage_4_pass);
 const functions = audit.function_matrix || [];
 const architecture = audit.complete_system_architecture_map || {};
 const osAudit = audit.five_os_final_audit || {};
@@ -206,7 +211,7 @@ const path = `/build-progress/passes/${passSlug}/`;
             </p>
           </section>
 
-          {(isStage2 || isStage3) && log.before_after && (
+          {(isStage2 || isStage3 || isStage4) && log.before_after && (
             <section class="hub-section" aria-labelledby="before-after">
               <h2 id="before-after">BEFORE → AFTER</h2>
               <div class="before-after">

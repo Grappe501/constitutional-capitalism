@@ -1,0 +1,618 @@
+{
+  "version": "1.0.0",
+  "slice_id": "CC-STAGE-4-PASS-4-1-ECONOMIC-FISCAL-ATTACK-1.0",
+  "generated_at": "2026-08-16",
+  "decision_id": "CC-DEC-173",
+  "update_id": "UPD-186",
+  "pass_id": "PASS_4_1",
+  "pass_name": "Economic & Fiscal Attack",
+  "status": "PASS_COMPLETE",
+  "epistemic_class": "HOSTILE_AUDIT_NOT_DEFENSE",
+  "governing_question": "Does Constitutional Capitalism's economic architecture still work when every optimistic assumption is removed?",
+  "stance": "We attempt to falsify. Survival is earned. $0 COUNTABLE is a successful research result if evidence does not clear.",
+  "public_surface": "/system/fiscal-attack/",
+  "source_of_truth_unabridged": "/unabridged/",
+  "discipline": {
+    "dig_down_not_sideways": true,
+    "constitutional_issues_route_to": "PASS_4_2",
+    "behavioral_issues_route_to": "PASS_4_3",
+    "recession_issues_route_to": "PASS_4_4",
+    "corruption_issues_route_to": "PASS_4_5",
+    "countable_not_protected": true,
+    "no_false_precision_forecast": true
+  },
+  "evidence_grades_used": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "countable_before_usd": 0,
+  "countable_after_usd": 0,
+  "countable_verdict": "REMAINS_$0 \u2014 no engine cleared addressable\u2192\u2026\u2192reserved public cash\u2192COUNTABLE under hostile assumptions. Successful research result.",
+  "fiscal_baseline": {
+    "title": "Attack 1 \u2014 Arkansas fiscal reality",
+    "status": "SURVIVED_WITH_MODIFICATION",
+    "evidence_grade": "A",
+    "sources": [
+      {
+        "label": "Arkansas DFA Economic Analysis & Tax Research \u2014 General Revenue Report for June 2026 (FY 2026)",
+        "url": "https://www.dfa.arkansas.gov/wp-content/uploads/generalRevenue202606.pdf",
+        "date": "2026-07-02",
+        "forecast_date": "05/20/26",
+        "unit": "millions_USD",
+        "companion_news": "https://www.dfa.arkansas.gov/news/state-completes-fiscal-year-with-655-million-surplus/"
+      }
+    ],
+    "fy2026_gr_millions": {
+      "Individual Income": {
+        "fy2025_actual": 3594.3,
+        "fy2026_forecast": 3846.9,
+        "fy2026_actual": 3859.1
+      },
+      "Corporate Income": {
+        "fy2025_actual": 533.1,
+        "fy2026_forecast": 507.8,
+        "fy2026_actual": 523.6
+      },
+      "Sales & Use": {
+        "fy2025_actual": 3527.9,
+        "fy2026_forecast": 3648.7,
+        "fy2026_actual": 3666.7
+      },
+      "Alcohol": {
+        "fy2025_actual": 78.1,
+        "fy2026_forecast": 76.6,
+        "fy2026_actual": 76.6
+      },
+      "Tobacco": {
+        "fy2025_actual": 182.9,
+        "fy2026_forecast": 178.8,
+        "fy2026_actual": 179.9
+      },
+      "Insurance": {
+        "fy2025_actual": 281.8,
+        "fy2026_forecast": 217.1,
+        "fy2026_actual": 216.7
+      },
+      "Racing": {
+        "fy2025_actual": 1.4,
+        "fy2026_forecast": 1.3,
+        "fy2026_actual": 1.3
+      },
+      "Gaming": {
+        "fy2025_actual": 62.0,
+        "fy2026_forecast": 64.6,
+        "fy2026_actual": 64.4
+      },
+      "Severance": {
+        "fy2025_actual": 10.6,
+        "fy2026_forecast": 9.6,
+        "fy2026_actual": 10.6
+      },
+      "Franchise": {
+        "fy2025_actual": 8.0,
+        "fy2026_forecast": 8.0,
+        "fy2026_actual": 8.0
+      },
+      "Real Estate Transfer": {
+        "fy2025_actual": 2.6,
+        "fy2026_forecast": 2.6,
+        "fy2026_actual": 2.6
+      },
+      "Miscellaneous": {
+        "fy2025_actual": 77.0,
+        "fy2026_forecast": 76.4,
+        "fy2026_actual": 77.2
+      },
+      "Total Gross": {
+        "fy2025_actual": 8359.7,
+        "fy2026_forecast": 8638.4,
+        "fy2026_actual": 8686.6
+      }
+    },
+    "derived_usd": {
+      "individual_income_tax_gross": 3859100000,
+      "individual_income_tax_net_of_refunds": 3304600000,
+      "sales_and_use_gross": 3666700000,
+      "corporate_income_tax_gross": 523600000,
+      "corporate_income_tax_net_of_refunds": 453800000,
+      "severance_gross": 10600000,
+      "gaming_gross_general_revenue": 64400000,
+      "franchise_gross": 8000000,
+      "gross_general_revenues": 8686600000,
+      "net_available_general_revenues": 7149000000
+    },
+    "net_available_gr_usd": 7149000000,
+    "surplus_usd": 655000000,
+    "earmarks": [
+      {
+        "id": "Educational Adequacy Fund",
+        "fy2026_net_collections_usd": 777700000,
+        "dependency": "Special revenues from sales/services/franchise/dyed-diesel increments dedicated to educational adequacy \u2014 not available as unconstrained IIT replacement dollars"
+      },
+      {
+        "id": "Highway Casino Transfer",
+        "fy2026_usd_millions": 31.2,
+        "dependency": "Earmarked transfer from gaming-related revenues"
+      }
+    ],
+    "replacement_requirement": {
+      "iit_gross_usd": 3859100000,
+      "property_layers_sum_usd": 3372805638,
+      "combined_illustrative_usd": 7231905638,
+      "note": "Combined ~$7.23B is the preferred map of IIT + layered property \u2014 not a single magic tax target. Property layers mix BOUND URT with ESTIMATED local layers.",
+      "legal_classes": {
+        "constitutional": [
+          "school_urt"
+        ],
+        "statutory_local": [
+          "school_additional_mo",
+          "county",
+          "municipal_general"
+        ],
+        "contractual_blocker_first": [
+          "school_debt_service",
+          "municipal_bond_mills"
+        ],
+        "varies": [
+          "special_districts"
+        ]
+      },
+      "who_depends": {
+        "urt": "Traditional school foundation M&O \u2014 constitutional",
+        "school_additional_mo": "Local school M&O above foundation",
+        "school_debt": "Bondholders / debt service \u2014 covenant-protected",
+        "county": "County general, roads, libraries, hospitals, colleges, other",
+        "municipal": "City general, pensions, libraries, bonds, parks",
+        "special": "Special districts / other"
+      }
+    },
+    "what_must_be_replaced_finding": "Abolishing personal income and property taxes is not a slogan exercise. Recurring IIT alone is ~$3.86B gross (Grade A). Property layers sum ~$3.37B with URT constitutional and school debt covenant-blocked (Grade A/B mix). Combined illustrative burden ~$7.23B with $0 COUNTABLE replacement capacity now.",
+    "modification": "Stage 3 ambition language must always display the replacement requirement beside any tax-transition claim."
+  },
+  "budget_history": {
+    "title": "Attack 2 \u2014 Budget history / Budget X-Ray",
+    "status": "SURVIVED_WITH_MODIFICATION",
+    "evidence_grade": "B",
+    "bound_years": [
+      "FY2025",
+      "FY2026"
+    ],
+    "limitation": "Hostile audit does not invent a multi-decade normalized series. FY25\u2192FY26 DFA GR table is bound; Allocation A seed is official for FY2026. Deeper multi-year actual-vs-appropriated and all-funds federal dependency remain OPEN (OV-31-01).",
+    "patterns_observed": [
+      {
+        "finding": "IIT and Sales & Use dominate GR \u2014 together ~$7.53B of $8.69B gross FY2026",
+        "grade": "A"
+      },
+      {
+        "finding": "Net available GR ($7.15B) is far below gross after refunds and earmarked transfers",
+        "grade": "A"
+      },
+      {
+        "finding": "Educational Adequacy Fund ~$778M is dedicated \u2014 not free replacement cash",
+        "grade": "A"
+      },
+      {
+        "finding": "Allocation A seed: DHS ~$1.86B, higher ed ~$778M, corrections ~$629M among large consumers",
+        "grade": "A",
+        "source": "arkansas_money_engine_budget_bridge / FY2026 Allocation A"
+      },
+      {
+        "finding": "Formula-driven and constitutional/statutory constraints are material; discretionary share is not the whole budget",
+        "grade": "B"
+      }
+    ],
+    "unknowns": [
+      "All-funds federal dependency FY2023\u201327 (OV-31-01)",
+      "Actual vs appropriated outturn series",
+      "Pension/OPEB and other off-appropriations liabilities full map",
+      "Which spending creates future capacity vs maintains capacity \u2014 requires program-level classification pass"
+    ],
+    "modification": "Do not claim a complete Budget X-Ray until multi-year all-funds series is bound. Current X-Ray is PARTIAL and labeled as such."
+  },
+  "tax_replacement_mathematics": {
+    "title": "Attack 3 \u2014 Tax replacement mathematics",
+    "status": "FAILED",
+    "status_note": "FAILED means: no feeder clears the full waterfall to COUNTABLE > $0 under hostile assumptions. Architecture of the waterfall SURVIVED.",
+    "waterfall_attacked": [
+      "addressable market",
+      "gross revenue",
+      "operating cost",
+      "capital requirements",
+      "maintenance",
+      "debt service",
+      "reserves",
+      "reinvestment",
+      "distributable cash",
+      "public ownership/share",
+      "actual public cash",
+      "volatility haircut",
+      "COUNTABLE"
+    ],
+    "stack_verdicts": {
+      "prior_illustrative_base_16y_usd": 1930000000,
+      "prior_illustrative_acc_16y_usd": 4450000000,
+      "after_feeder_demotion_base_16y_usd": 840000000,
+      "after_feeder_demotion_acc_16y_usd": 1350000000,
+      "countable_now_usd": 0,
+      "dual_abolition": "FAILS Base@16y and fails again after feeder demotion",
+      "source": "arkansas_revenue_replacement_capacity_gap.json",
+      "grade": "D",
+      "rule": "Illustrative envelopes are not COUNTABLE. Demotion was required; promotion was not earned."
+    },
+    "already_spent_cannot_refill": [
+      {
+        "stream": "Sales & Use GR",
+        "usd": 3666700000,
+        "grade": "A"
+      },
+      {
+        "stream": "Corporate Income GR",
+        "usd": 523600000,
+        "grade": "A"
+      },
+      {
+        "stream": "Motor fuel (approx FY)",
+        "usd": 571800000,
+        "grade": "B",
+        "note": "Dedicated highways"
+      },
+      {
+        "stream": "Tourism 2%",
+        "usd": 26851526,
+        "grade": "B",
+        "note": "Already spent on tourism marketing"
+      },
+      {
+        "stream": "Severance GR",
+        "usd": 10600000,
+        "grade": "A",
+        "note": "Negligible vs IIT"
+      }
+    ],
+    "scenarios": {
+      "CONSERVATIVE": "Feeder demotion Base@16y ceiling ~$0.84B illustrative (~12% of combined target) \u2014 still $0 COUNTABLE",
+      "BASE": "Same grounded ceiling; no promotion",
+      "UPSIDE": "Accelerated demoted ~$1.35B illustrative (~19%) \u2014 still $0 COUNTABLE; dual abolition still fails",
+      "FAILURE": "Utilization half / margins compress / capital doubles / revenue five years late / federal falls \u2192 COUNTABLE remains $0; Dependency Rule forbids removing legacy taxes"
+    },
+    "verdict": "Tax-transition ambition without replacement capacity is falsified as near-term COUNTABLE policy. Waterfall firewall SURVIVED because it correctly refused fake cash."
+  },
+  "public_ownership_attack": {
+    "title": "Attack 4 \u2014 Public ownership",
+    "status": "SURVIVED_WITH_MODIFICATION",
+    "evidence_grade": "C",
+    "hostile_questions": [
+      "Why wouldn't private capital do this better?",
+      "What return compensates taxpayers for risk?",
+      "Who chooses investments?",
+      "What prevents political favoritism?",
+      "What happens when the enterprise loses money?",
+      "Who recapitalizes it?",
+      "Does government receive unfair regulatory advantages?",
+      "Does public capital crowd out private capital?",
+      "Can the asset be sold?",
+      "Who absorbs stranded assets?"
+    ],
+    "finding": "Public ownership is not automatically superior. Hostile audit supports ownership-by-function: private / regulated private / cooperative / public-private / public must be compared per system. Soft-budget and Role Conflict risks are real (route deeper operationalization to 4.2/4.5).",
+    "modification": "Any public-income claim must show why private/coop alternatives fail the Productive Systems + Role Conflict tests before public ownership is preferred.",
+    "structure_comparison_required": [
+      "private",
+      "regulated private",
+      "cooperative",
+      "public-private",
+      "public"
+    ]
+  },
+  "productive_retention_attack": {
+    "title": "Attack 5 \u2014 Productive retention",
+    "status": "SURVIVED_WITH_MODIFICATION",
+    "evidence_grade": "C",
+    "tests": [
+      "comparative advantage",
+      "opportunity cost",
+      "consumer prices",
+      "quality",
+      "economies of scale",
+      "specialization",
+      "trade benefits",
+      "capital mobility"
+    ],
+    "finding": "Retaining Arkansas dollars is not automatically wealth-creating. Hostile reading: shifting spend to a more expensive local producer can destroy household surplus while looking like 'local success.' Extraction Test must distinguish capacity-building retention from costly diversion.",
+    "modification": "Productive retention claims require a counterfactual price/quality/capacity test before celebration. Autarky framing remains REJECTED.",
+    "empirical_teeth_status": "UNPROVEN at statewide scale \u2014 OV-31-02 capital-leakage estimate still open"
+  },
+  "external_income_attack": {
+    "title": "Attack 6 \u2014 External income",
+    "status": "UNPROVEN",
+    "evidence_grade": "C",
+    "ranking_rule": "Candidates compete. Some should lose. Public claim only after waterfall.",
+    "candidates": [
+      {
+        "id": "tourism",
+        "existing": "Visitor spend envelope bound; 2% tax ~$27M already spent",
+        "public_claim_countable": 0,
+        "rank_note": "Real activity; weak incremental public cash for tax replacement",
+        "verdict": "LOSES as COUNTABLE replacement feeder"
+      },
+      {
+        "id": "energy_export",
+        "existing": "Scale hypothesis; export share unbound (OV)",
+        "public_claim_countable": 0,
+        "rank_note": "Possible swing variable \u2014 not cleared",
+        "verdict": "UNPROVEN \u2014 priority for deeper bind, not celebration"
+      },
+      {
+        "id": "agriculture_processing",
+        "existing": "Food-hub cashflow closed Stage 3; free cash NEE (OV-36-01)",
+        "public_claim_countable": 0,
+        "rank_note": "Does not clear waterfall",
+        "verdict": "LOSES until P&L clears"
+      },
+      {
+        "id": "manufacturing_export",
+        "existing": "GDP envelopes; ownership/leakage risk",
+        "public_claim_countable": 0,
+        "rank_note": "Activity \u2260 public cash",
+        "verdict": "UNPROVEN"
+      },
+      {
+        "id": "research_ip",
+        "existing": "Unmodeled in countable stack",
+        "public_claim_countable": 0,
+        "rank_note": "Speculative",
+        "verdict": "LOSES for near-term COUNTABLE"
+      }
+    ],
+    "finding": "No external-income candidate clears to COUNTABLE public cash in Pass 4.1. Enthusiasm is not evidence."
+  },
+  "household_transmission": {
+    "title": "Attack 7 \u2014 Household transmission",
+    "status": "SURVIVED",
+    "evidence_grade": "B",
+    "finding": "GSP-up / household-flat is a fail under CC's own test. Hostile audit affirms household pathways (wages, prices, housing, taxes, healthcare, energy, time, ownership, wealth) as mandatory transmission checks \u2014 not optional rhetoric.",
+    "modification": "None to architecture; incidence microsim still open (OV-34-04) so quantitative clearance is UNPROVEN.",
+    "quantitative_status": "UNPROVEN"
+  },
+  "distribution_attack": {
+    "title": "Attack 8 \u2014 Distribution / who captures upside",
+    "status": "SURVIVED_WITH_MODIFICATION",
+    "evidence_grade": "C",
+    "risks": [
+      "Public investment \u2192 land values \u2192 homeowners gain / renters lose",
+      "Wage gains absorbed by housing",
+      "Energy export \u2192 household rate pressure",
+      "Local success reconcentrates ownership",
+      "AI productivity owned narrowly"
+    ],
+    "finding": "Distribution risks are real attack vectors. Household Prosperity Ledger must be used as an attack instrument, not a branding device.",
+    "modification": "Any public investment proposition must state expected incidence across owners vs renters and wage vs price channels \u2014 or be graded UNPROVEN."
+  },
+  "geographic_attack": {
+    "title": "Attack 9 \u2014 Geographic economics",
+    "status": "UNPROVEN",
+    "evidence_grade": "C",
+    "risk": "NWA wins / Delta loses; metro grows / rural hollows; investment follows easy returns",
+    "finding": "Geographic Money Statement architecture is the right instrument; county ownership geography and leakage estimates are not yet bound tightly enough to certify geographic neutrality.",
+    "open": "OV-34-03, OV-31-02",
+    "modification": "Do not claim geographically just outcomes without GMS evidence."
+  },
+  "transition_cost_attack": {
+    "title": "Attack 10 \u2014 Transition cost",
+    "status": "SURVIVED",
+    "evidence_grade": "B",
+    "finding": "Even if Future Arkansas is richer, the bridge costs money: capex, admin, tech, workforce, temporary duplication, reserves, transition assistance, debt, opportunity cost, forgone legacy revenue. Pass 3.7 Dependency Rule and Replacement Readiness survive hostile reading because they forbid pretending the bridge is free.",
+    "modeled_status": "QUALITATIVE_ACKNOWLEDGED \u2014 no fabricated dollar schedule; FAILURE scenario includes late/half utilization",
+    "modification": "Any transition narrative must list bridge cost categories even when dollars remain UNKNOWN."
+  },
+  "scenarios": {
+    "title": "Scenarios \u2014 not one forecast",
+    "forbidden": "Constitutional Capitalism will generate $X.XX billion",
+    "set": [
+      "CONSERVATIVE",
+      "BASE",
+      "UPSIDE",
+      "FAILURE"
+    ],
+    "failure_stresses": [
+      "utilization half expected",
+      "margins compress",
+      "capital costs double",
+      "revenue five years late",
+      "federal money falls",
+      "growth underperforms"
+    ],
+    "what_survives_failure": [
+      "COUNTABLE firewall ($0)",
+      "Dependency Rule",
+      "Replacement Readiness Gate",
+      "Household unit of success",
+      "Ownership-by-function (against ownership slogans)"
+    ]
+  },
+  "proposition_board": [
+    {
+      "id": "P-41-01",
+      "proposition": "Public-income waterfall / COUNTABLE firewall",
+      "status": "SURVIVED",
+      "grade": "A",
+      "note": "Hostile pressure confirmed: refusing fake cash is correct"
+    },
+    {
+      "id": "P-41-02",
+      "proposition": "Near-term COUNTABLE > $0 from existing public-income stack",
+      "status": "FAILED",
+      "grade": "A",
+      "note": "Remains $0 after feeder demotion and already-spent analysis"
+    },
+    {
+      "id": "P-41-03",
+      "proposition": "Dual IIT + property abolition under Base@16y illustrative stack",
+      "status": "FAILED",
+      "grade": "D",
+      "note": "Fails before and after feeder demotion"
+    },
+    {
+      "id": "P-41-04",
+      "proposition": "Arkansas fiscal baseline (GR composition + replacement burden map)",
+      "status": "SURVIVED_WITH_MODIFICATION",
+      "grade": "A",
+      "note": "Always display ~$7.23B combined map beside tax-transition talk"
+    },
+    {
+      "id": "P-41-05",
+      "proposition": "Complete multi-year Budget X-Ray",
+      "status": "UNPROVEN",
+      "grade": "B",
+      "note": "PARTIAL FY25\u201326; OV-31-01 open"
+    },
+    {
+      "id": "P-41-06",
+      "proposition": "Public ownership as default prosperity engine",
+      "status": "FAILED",
+      "grade": "C",
+      "note": "Ownership-by-function SURVIVED; default public ownership did not"
+    },
+    {
+      "id": "P-41-07",
+      "proposition": "Productive retention always increases Arkansas wealth",
+      "status": "FAILED",
+      "grade": "C",
+      "note": "Modified: requires counterfactual price/quality/capacity test"
+    },
+    {
+      "id": "P-41-08",
+      "proposition": "External-income sectors clear to public COUNTABLE cash",
+      "status": "UNPROVEN",
+      "grade": "C",
+      "note": "Several candidates lose for near-term COUNTABLE"
+    },
+    {
+      "id": "P-41-09",
+      "proposition": "Household transmission as success test",
+      "status": "SURVIVED",
+      "grade": "B",
+      "note": "Quantitative incidence still UNPROVEN"
+    },
+    {
+      "id": "P-41-10",
+      "proposition": "Geographic neutrality of development path",
+      "status": "UNPROVEN",
+      "grade": "C",
+      "note": "GMS instrument right; evidence incomplete"
+    },
+    {
+      "id": "P-41-11",
+      "proposition": "Transition bridge is costly; Dependency Rule required",
+      "status": "SURVIVED",
+      "grade": "B",
+      "note": "No free bridge"
+    },
+    {
+      "id": "P-41-12",
+      "proposition": "CX-M21-01 \u2014 COUNTABLE public-income / replacement capacity",
+      "status": "UNPROVEN",
+      "grade": "A",
+      "note": "Remains OPEN; Pass 4.1 did not clear \u2014 confirmed $0"
+    }
+  ],
+  "ov_cx_disposition": [
+    {
+      "id": "CX-M21-01",
+      "disposition": "UNPROVEN",
+      "note": "Attacked; COUNTABLE still $0; remains Stage 4 open for later clearance attempts"
+    },
+    {
+      "id": "OV-34-01",
+      "disposition": "UNPROVEN",
+      "note": "Promotion criteria unchanged; no engine met them"
+    },
+    {
+      "id": "OV-37-03",
+      "disposition": "UNPROVEN",
+      "note": "Available Replacement Capacity still $0 COUNTABLE"
+    },
+    {
+      "id": "OV-34-04",
+      "disposition": "OPEN",
+      "note": "Incidence microsim not completed in 4.1 \u2014 household transmission affirmed qualitatively"
+    },
+    {
+      "id": "OV-34-06",
+      "disposition": "OPEN",
+      "note": "Federal volatility acknowledged; all-funds series unbound"
+    },
+    {
+      "id": "OV-31-01",
+      "disposition": "OPEN",
+      "note": "Routes to continued fiscal data bind; not legal 4.2"
+    },
+    {
+      "id": "OV-31-03",
+      "disposition": "OPEN",
+      "note": "EFA opportunity cost needs program X-Ray deepen"
+    },
+    {
+      "id": "OV-36-01",
+      "disposition": "FAILED_AS_COUNTABLE",
+      "note": "Food free cash does not clear waterfall"
+    },
+    {
+      "id": "OV-31-02",
+      "disposition": "OPEN",
+      "note": "Capital leakage statewide estimate still needed for retention teeth"
+    },
+    {
+      "id": "OV-37-04",
+      "disposition": "SURVIVED_AS_RULE",
+      "note": "No fabricated intergenerational surplus; measurement series still open"
+    },
+    {
+      "id": "OV-35-04",
+      "disposition": "ROUTE_4_2_4_5",
+      "note": "Role Conflict operationalization for public income"
+    },
+    {
+      "id": "OV-36-06",
+      "disposition": "ROUTE_4_2_4_5",
+      "note": "Same family as Role Conflict on productive systems"
+    }
+  ],
+  "what_changed_format": {
+    "what_we_thought": "Stage 3 built a complete economic architecture including public-income pathways and eventual tax transition ambition under Dependency Rule.",
+    "what_we_tested": "Fiscal baseline, replacement burden, waterfall to COUNTABLE, public ownership default, retention, external income, household transmission, distribution, geography, transition cost, CONSERVATIVE/BASE/UPSIDE/FAILURE.",
+    "what_evidence_said": "DFA/BLR primary binds show large real GR and property maps; already-spent streams cannot refill replacement; feeder stack demotes hard; COUNTABLE $0.",
+    "what_survived": "Waterfall firewall; Dependency Rule; Replacement Readiness; household unit of success; ownership-by-function; no-false-precision rule.",
+    "what_changed": "Tax-transition talk must carry ~$7.23B map; retention requires counterfactual test; public ownership is not default; Budget X-Ray labeled PARTIAL; external-income candidates ranked with losers.",
+    "what_failed": "Near-term COUNTABLE > $0; dual abolition under demoted stacks; public ownership as automatic engine; retention-as-always-good; complete multi-year X-Ray claim.",
+    "what_remains_unknown": "All-funds federal series; incidence microsim; energy export share; county GMS ownership geography; any future feeder that could honestly clear COUNTABLE."
+  },
+  "certification": {
+    "pass": "PASS_4_1",
+    "validation_completion_percent_after": 17,
+    "overall_project_completion_percent_after": 79,
+    "calculation": "0.25*(100+100+100+17)=79.25 \u2192 display 79",
+    "unabridged_unchanged": 100,
+    "countable_usd": 0,
+    "gates": {
+      "fiscal_baseline_tested": true,
+      "budget_patterns_analyzed": true,
+      "tax_replacement_requirement_established": true,
+      "waterfall_attacked": true,
+      "public_ownership_challenged": true,
+      "productive_retention_challenged": true,
+      "external_income_ranked": true,
+      "household_transmission_tested": true,
+      "distribution_tested": true,
+      "geographic_examined": true,
+      "transition_costs_acknowledged": true,
+      "scenarios_established": true,
+      "evidence_grades_assigned": true,
+      "ov_cx_4_1_dispositioned": true,
+      "countable_recalculated_not_protected": true
+    },
+    "next": "PASS_4_2 \u2014 Legal & Constitutional Attack"
+  }
+}

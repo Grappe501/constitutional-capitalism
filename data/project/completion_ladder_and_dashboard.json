@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "slice_id": "CC-COMPLETION-LADDER-AND-STAGE-1-CLOSURE-WAVE-1.0",
   "generated_at": "2026-08-15",
-  "decision_id": "CC-DEC-171",
-  "update_id": "UPD-184",
+  "decision_id": "CC-DEC-173",
+  "update_id": "UPD-186",
   "prior_decision_id": "CC-DEC-165",
   "status": "COMPLETION_SYSTEM_LOCKED_STAGE_3_ACTIVE",
   "epistemic_class": "COMPLETION_GOVERNANCE_NOT_DOCTRINE",
@@ -85,7 +85,7 @@
       "id": "STAGE_4",
       "name": "Validation / Break It",
       "target": "Validated system",
-      "status": "NEXT",
+      "status": "ACTIVE",
       "exit_gate": "System survives ruthless attack; every failure resolves PASS | MODIFY | REPLACE | REMOVE.",
       "attack_surfaces": [
         "economic_modeling",
@@ -103,7 +103,11 @@
         "legal_challenges",
         "transition_failures",
         "unintended_consequences"
-      ]
+      ],
+      "current_work": "Pass 4.1 Economic & Fiscal Attack COMPLETE. Next: Pass 4.2 Legal & Constitutional Attack only.",
+      "active_pass": "PASS_4_2",
+      "last_completed_pass": "PASS_4_1",
+      "plan": "data/project/stage4_six_pass_plan.json"
     },
     {
       "id": "STAGE_5",
@@ -137,13 +141,13 @@
     "first_pass_coverage_percent": 100,
     "publication_completion_percent": 100,
     "unabridged_completion_percent": 100,
-    "validation_completion_percent": 0,
+    "validation_completion_percent": 17,
     "notes": {
       "skeleton": "Stage 1 COMPLETE \u2014 100%. Horizontal expansion frozen.",
       "first_pass": "Stage 2 COMPLETE \u2014 50/50 = 100%. Certified Pass 2.6.",
       "publication": "Alias for Unabridged Completion (Volume I). Aggressive Stage 3 dial.",
       "unabridged": "8 of 8 categories complete (Pass 3.1\u20133.8). Stage 3 CERTIFIED. Display label: Unabridged.",
-      "validation": "Stage 4 not open; COUNTABLE engines remain $0; CX-M21-01/02 OPEN_ASSIGNED"
+      "validation": "Stage 4 active. Pass 4.1 Economic & Fiscal Attack COMPLETE (17%). COUNTABLE remains $0. CX-M21-01 UNPROVEN."
     }
   },
   "stage3_category_bars": [
@@ -205,9 +209,9 @@
     }
   ],
   "overall_project_completion": {
-    "percent": 75,
+    "percent": 79,
     "formula": "0.25*skeleton + 0.25*first_pass + 0.25*unabridged + 0.25*validation (equal stage weights)",
-    "calculation": "0.25*(100+100+100+0)=75",
+    "calculation": "0.25*(100+100+100+17)=79.25 \u2192 display 79",
     "primary_number_going_forward": true,
     "legacy_43_relationship": "Stricter completion accounting; overall may sit below historical composite until Stage 2\u20133 close \u2014 that is honesty, not regression"
   },
@@ -263,5 +267,51 @@
     "breadth_then_completeness_then_depth_then_proof",
     "stage_1_exit_requires_no_orphan_areas"
   ],
-  "stage_3_complete": true
+  "stage_3_complete": true,
+  "active_stage4_pass": "PASS_4_2",
+  "last_completed_stage4_pass": "PASS_4_1",
+  "stage4_category_bars": [
+    {
+      "id": "PASS_4_1",
+      "label": "4.1 Economic & Fiscal Attack",
+      "percent": 100,
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-4-1/"
+    },
+    {
+      "id": "PASS_4_2",
+      "label": "4.2 Legal & Constitutional Attack",
+      "percent": 0,
+      "status": "NEXT",
+      "href": null
+    },
+    {
+      "id": "PASS_4_3",
+      "label": "4.3 Household, Market & Behavioral Attack",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null
+    },
+    {
+      "id": "PASS_4_4",
+      "label": "4.4 Resilience & Adversarial Attack",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null
+    },
+    {
+      "id": "PASS_4_5",
+      "label": "4.5 Political, Administrative & Capture Attack",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null
+    },
+    {
+      "id": "PASS_4_6",
+      "label": "4.6 Whole-System Red Team & Certification",
+      "percent": 0,
+      "status": "QUEUED",
+      "href": null
+    }
+  ]
 }

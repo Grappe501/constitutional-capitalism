@@ -5,6 +5,7 @@ import registry from "../../../../../../data/project/build_progress_registry.jso
 const passes = registry.passes || [];
 const stage2Passes = registry.stage2_passes || [];
 const stage3Passes = registry.stage3_passes || [];
+const stage4Passes = registry.stage4_passes || [];
 
 function chipClass(status?: string) {
   if (status === "COMPLETE") return "chip chip--done";
@@ -33,6 +34,29 @@ function statusLabel(status?: string) {
         deferred items, GitHub commit, and deployment date.
       </p>
     </header>
+
+    <section class="hub-section">
+      <h2>Stage 4 — Break It</h2>
+      <ul class="link-board">
+        {
+          stage4Passes.map((p: any) => (
+            <li>
+              {p.status === "COMPLETE" ? (
+                <a href={p.href}>
+                  <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>
+                  {" "}Pass {p.number} — {p.name}
+                </a>
+              ) : (
+                <>
+                  <span class={chipClass(p.status)}>{statusLabel(p.status)}</span>
+                  {" "}Pass {p.number} — {p.name}
+                </>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
 
     <section class="hub-section">
       <h2>Stage 3</h2>

@@ -2,15 +2,15 @@
   "version": "1.2.0",
   "slice_id": "CC-BUILD-PROGRESS-AND-PASS-CHANGELOG-SYSTEM-1.0",
   "generated_at": "2026-08-16",
-  "decision_id": "CC-DEC-171",
-  "update_id": "UPD-184",
+  "decision_id": "CC-DEC-173",
+  "update_id": "UPD-186",
   "status": "LIVE_SYSTEM_LOCKED",
   "public_hub": "/build-progress/",
   "passes_index": "/build-progress/passes/",
   "pass_page_pattern": "/build-progress/passes/pass-{n}/",
-  "current_stage": "STAGE_3",
-  "current_pass": "STAGE_4",
-  "next_objective": "Stage 4 \u2014 Break It. Attack economics, law, assumptions, fiscal math, incentives, resilience, unintended consequences, implementation capacity, and political durability. Do not expand content architecture.",
+  "current_stage": "STAGE_4",
+  "current_pass": "PASS_4_2",
+  "next_objective": "Pass 4.2 \u2014 Legal & Constitutional Attack. Can Arkansas lawfully do it? Dig down only.",
   "stage_2_certification": {
     "certified": true,
     "pass": "PASS_2_6",
@@ -435,6 +435,22 @@
           "label": "Master Map"
         }
       ]
+    },
+    {
+      "id": "CC-DEC-173",
+      "title": "Pass 4.1 Economic & Fiscal Attack complete \u2014 COUNTABLE still $0",
+      "date": "2026-08-16",
+      "href": "/build-progress/passes/pass-4-1/",
+      "links": [
+        {
+          "href": "/system/fiscal-attack/",
+          "label": "Fiscal Attack"
+        },
+        {
+          "href": "/build-progress/passes/pass-4-1/",
+          "label": "What Changed"
+        }
+      ]
     }
   ],
   "stage_3_plan_source": "data/project/stage3_eight_pass_plan.json",
@@ -518,6 +534,68 @@
       "href": "/build-progress/passes/pass-3-8/",
       "changelog": "data/project/pass_changelogs/pass_3_8.json",
       "spine_href": "/unabridged/"
+    }
+  ],
+  "stage4_passes": [
+    {
+      "id": "PASS_4_1",
+      "number": "4.1",
+      "slug": "pass-4-1",
+      "name": "Economic & Fiscal Attack",
+      "status": "COMPLETE",
+      "href": "/build-progress/passes/pass-4-1/",
+      "changelog": "data/project/pass_changelogs/pass_4_1.json",
+      "spine_href": "/system/fiscal-attack/"
+    },
+    {
+      "id": "PASS_4_2",
+      "number": "4.2",
+      "slug": "pass-4-2",
+      "name": "Legal & Constitutional Attack",
+      "status": "NEXT",
+      "href": "/build-progress/passes/pass-4-2/",
+      "changelog": null,
+      "spine_href": null
+    },
+    {
+      "id": "PASS_4_3",
+      "number": "4.3",
+      "slug": "pass-4-3",
+      "name": "Household, Market & Behavioral Attack",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-4-3/",
+      "changelog": null,
+      "spine_href": null
+    },
+    {
+      "id": "PASS_4_4",
+      "number": "4.4",
+      "slug": "pass-4-4",
+      "name": "Resilience & Adversarial Attack",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-4-4/",
+      "changelog": null,
+      "spine_href": null
+    },
+    {
+      "id": "PASS_4_5",
+      "number": "4.5",
+      "slug": "pass-4-5",
+      "name": "Political, Administrative & Capture Attack",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-4-5/",
+      "changelog": null,
+      "spine_href": null
+    },
+    {
+      "id": "PASS_4_6",
+      "number": "4.6",
+      "slug": "pass-4-6",
+      "name": "Whole-System Red Team & Certification",
+      "status": "QUEUED",
+      "href": "/build-progress/passes/pass-4-6/",
+      "changelog": null,
+      "spine_href": null
     }
   ]
 }
