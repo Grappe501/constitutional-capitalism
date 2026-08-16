@@ -1,0 +1,21 @@
+---
+interface Props {
+  questions: string[];
+}
+const { questions } = Astro.props;
+---
+
+<section class="hub-section" aria-labelledby="defend">
+  <h2 id="defend">Could you defend the other side?</h2>
+  <p class="lede">
+    Before criticizing this page, could you explain why a reasonable person supports the strongest version of
+    the argument?
+  </p>
+  <ol class="stack">
+    {questions.map((q) => <li>{q}</li>)}
+  </ol>
+  <p class="muted">
+    If you can only recite a slogan, we failed. Success means you can articulate the best version of the
+    argument—even when you disagree.
+  </p>
+</section>

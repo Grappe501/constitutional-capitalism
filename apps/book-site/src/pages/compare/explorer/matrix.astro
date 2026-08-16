@@ -62,6 +62,14 @@ const cells = layer.cells || {};
                             <p><strong>Constitutional Capitalism would say:</strong> {cell.cc_says}</p>
                             <p>
                               <a href={c.href}>Open philosophy page →</a>
+                              {q.id === "own" ? (
+                                <>
+                                  {" · "}
+                                  <a href="/compare/explorer/ownership-layers/">
+                                    Six-layer ownership depth →
+                                  </a>
+                                </>
+                              ) : null}
                             </p>
                           </div>
                         </details>

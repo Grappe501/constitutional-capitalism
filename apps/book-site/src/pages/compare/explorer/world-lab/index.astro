@@ -23,14 +23,16 @@ const lab = explorer.world_laboratory;
     <section class="hub-section">
       <ul class="link-board">
         {
-          lab.cases.map((c) => (
-            <li>
-              <a href={`/compare/explorer/world-lab/${c.slug}/`}>
-                {c.title}
-              </a>
-              <div class="muted">{c.tagline}</div>
-            </li>
-          ))
+          lab.cases.map((c) => {
+            const exemplar = c.slug === "norway" || c.slug === "gilded-age-us";
+            return (
+              <li>
+                <a href={`/compare/explorer/world-lab/${c.slug}/`}>{c.title}</a>
+                {exemplar ? <span class="chip chip--done">EXEMPLAR 3.0</span> : null}
+                <div class="muted">{c.tagline}</div>
+              </li>
+            );
+          })
         }
       </ul>
     </section>

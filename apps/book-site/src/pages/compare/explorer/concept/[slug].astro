@@ -2,7 +2,10 @@
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import ExplorerNav from "../../../../components/ExplorerNav.astro";
 import DepthMode from "../../../../components/DepthMode.astro";
+import SixQuestions from "../../../../components/SixQuestions.astro";
+import DefendOtherSide from "../../../../components/DefendOtherSide.astro";
 import explorer from "../../../../../../../data/project/comparison_explorer_v1.json";
+import deep from "../../../../../../../data/project/comparison_explorer_deepening_v1.json";
 
 export function getStaticPaths() {
   return explorer.concepts.map((c) => ({ params: { slug: c.slug } }));
@@ -10,57 +13,126 @@ export function getStaticPaths() {
 
 const slug = Astro.params.slug as string;
 const c = explorer.concepts.find((x) => x.slug === slug)!;
+const d = (deep.concepts_deep as any)?.[slug] || null;
 ---
 
 <BaseLayout
-  title={`${c.title} — Concept mini-book`}
+  title={`${d?.title || c.title} — Concept mini-book`}
   path={`/compare/explorer/concept/${c.slug}/`}
-  description={c.question}
+  description={d?.question || c.question}
 >
   <article class="explorer prose">
     <header class="hub-banner">
-      <span class="chip chip--queued">{c.status}</span>
-      <h1>{c.title}</h1>
-      <p class="lede">{c.question}</p>
-      <p class="muted">
-        Vocabulary comes after the idea. Unabridged remains source of truth.
-      </p>
+      <span class={d ? "chip chip--done" : "chip chip--queued"}>
+        {d ? "Explorer 3.0 exemplar" : c.status}
+      </span>
+      <h1>{d?.title || c.title}</h1>
+      <p class="lede">{d?.question || c.question}</p>
     </header>
     <ExplorerNav current="concepts" />
 
-    <section class="hub-section">
-      <h2>1. Imagine this…</h2>
-      <p>{c.imagine_this}</p>
-    </section>
-
-    <section class="hub-section">
-      <h2>2–4. Simple idea → deepen</h2>
-      <DepthMode plain={c.depths.plain} deep={c.depths.deep} technical={c.depths.technical} />
-    </section>
-
-    <section class="hub-section">
-      <h2>Storytelling spine (full mini-book contract)</h2>
-      <ol class="stack">
-        {c.storytelling_spine.map((s: string) => <li>{s}</li>)}
-      </ol>
-      <p class="muted">
-        First pass ships the shell. Population deepens progressively without touching completion dials.
-      </p>
-    </section>
-
-    <section class="hub-section">
-      <h2>14. How Constitutional Capitalism approaches it</h2>
-      <p>{c.cc_approach}</p>
-      <ul class="link-board">
-        {(c.unabridged_links || []).map((href: string) => (
-          <li>
-            <a href={href}>{href}</a>
-          </li>
-        ))}
-        <li><a href="/compare/explorer/follow-100/">Follow the $100 →</a></li>
-        <li><a href="/compare/explorer/same-family/">Same Family →</a></li>
-        <li><a href="/compare/explorer/world-lab/">World Lab →</a></li>
-      </ul>
-    </section>
+    {
+      d ? (
+        <>
+          <section class="hub-section">
+            <h2>Imagine this…</h2>
+            <p>{d.imagine}</p>
+          </section>
+          <section class="hub-section">
+            <h2>Plain → deep → technical</h2>
+            <DepthMode plain={d.plain} deep={d.mechanism} technical={d.technical} />
+          </section>
+          {d.compounding ? (
+            <section class="hub-section">
+              <h2>Follow the mechanism</h2>
+              <p class="lede">
+                <code>{d.compounding}</code>
+              </p>
+              {d.unequal_start ? <p>{d.unequal_start}</p> : null}
+              {d.compounding_bridge ? <p>{d.compounding_bridge}</p> : null}
+            </section>
+          ) : null}
+          {d.schools ? (
+            <section class="hub-section">
+              <h2>Major schools</h2>
+              <ul class="stack">
+                {d.schools.map((s: string) => (
+                  <li>{s}</li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+          <section class="hub-section">
+            <h2>Arkansas classroom</h2>
+            <p>{d.arkansas}</p>
+          </section>
+          <SixQuestions six={d.six_questions} />
+          <section class="hub-section">
+            <h2>First-order / second-order / opportunity cost</h2>
+            <p>
+              <strong>First-order:</strong> {d.first_order}
+            </p>
+            <ul class="stack">
+              {d.second_order.map((s: string) => (
+                <li>{s}</li>
+              ))}
+            </ul>
+            <p>
+              <strong>Opportunity cost:</strong> {d.opportunity_cost}
+            </p>
+          </section>
+          <section class="hub-section">
+            <h2>For / against / CC</h2>
+            <p>
+              <strong>For:</strong> {d.for}
+            </p>
+            <p>
+              <strong>Against:</strong> {d.against}
+            </p>
+            <p>
+              <strong>CC:</strong> {d.cc}
+            </p>
+            <p class="muted">
+              <strong>Stage 4:</strong> {d.stage4}
+            </p>
+          </section>
+          {d.follow_100 ? (
+            <p>
+              <a href={d.follow_100}>Follow the $100 →</a>
+            </p>
+          ) : null}
+          <DefendOtherSide questions={d.defend} />
+          {d.jargon ? (
+            <p class="muted">
+              Related jargon:{" "}
+              {d.jargon.map((j: string, i: number) => (
+                <>
+                  {i > 0 ? ", " : ""}
+                  <a href="/compare/explorer/jargon/">{j}</a>
+                </>
+              ))}
+            </p>
+          ) : null}
+          <ul class="link-board">
+            {(d.unabridged_links || []).map((href: string) => (
+              <li>
+                <a href={href}>{href}</a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <>
+          <section class="hub-section">
+            <h2>1. Imagine this…</h2>
+            <p>{c.imagine_this}</p>
+          </section>
+          <section class="hub-section">
+            <DepthMode plain={c.depths.plain} deep={c.depths.deep} technical={c.depths.technical} />
+          </section>
+          <p class="muted">Shell. Ownership, Markets, Capital, and Profit are Explorer 3.0 exemplars.</p>
+        </>
+      )
+    }
   </article>
 </BaseLayout>

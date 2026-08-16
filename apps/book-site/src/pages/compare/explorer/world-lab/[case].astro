@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import ExplorerNav from "../../../../components/ExplorerNav.astro";
+import SixQuestions from "../../../../components/SixQuestions.astro";
 import explorer from "../../../../../../../data/project/comparison_explorer_v1.json";
+import deep from "../../../../../../../data/project/comparison_explorer_deepening_v1.json";
 
 export function getStaticPaths() {
   return explorer.world_laboratory.cases.map((c) => ({ params: { case: c.slug } }));
@@ -9,54 +11,100 @@ export function getStaticPaths() {
 
 const slug = Astro.params.case as string;
 const c = explorer.world_laboratory.cases.find((x) => x.slug === slug)!;
+const d = (deep.cases_deep as any)?.[slug] || null;
 ---
 
 <BaseLayout
-  title={`${c.title} — World Laboratory`}
+  title={`${d?.title || c.title} — World Laboratory`}
   path={`/compare/explorer/world-lab/${c.slug}/`}
-  description={c.tagline}
+  description={d?.tagline || c.tagline}
 >
   <article class="explorer prose">
     <header class="hub-banner">
-      <span class="chip chip--queued">{c.status}</span>
-      <h1>{c.title}</h1>
-      <p class="lede">{c.tagline}</p>
-      <p><strong>Governing question:</strong> {c.question}</p>
+      <span class={d ? "chip chip--done" : "chip chip--queued"}>
+        {d ? "Explorer 3.0 exemplar" : c.status}
+      </span>
+      <h1>{d?.title || c.title}</h1>
+      <p class="lede">{d?.tagline || c.tagline}</p>
+      {!d ? <p><strong>Governing question:</strong> {c.question}</p> : null}
     </header>
     <ExplorerNav current="world-lab" />
 
-    <section class="hub-section">
-      <h2>What did this look like in the real world?</h2>
-      <dl class="glossary-list">
-        <dt>What existed before?</dt>
-        <dd>{c.before}</dd>
-        <dt>What problem were they confronting?</dt>
-        <dd>{c.problem}</dd>
-        <dt>What did they change?</dt>
-        <dd>{c.changed}</dd>
-        <dt>Who owned what?</dt>
-        <dd>{c.owned}</dd>
-        <dt>What role did markets play?</dt>
-        <dd>{c.markets}</dd>
-        <dt>What role did government play?</dt>
-        <dd>{c.government}</dd>
-        <dt>How was it financed?</dt>
-        <dd>{c.financed}</dd>
-        <dt>What happened to ordinary households?</dt>
-        <dd>{c.households}</dd>
-        <dt>What worked?</dt>
-        <dd>{c.worked}</dd>
-        <dt>What failed?</dt>
-        <dd>{c.failed}</dd>
-        <dt>What happened later?</dt>
-        <dd>{c.later}</dd>
-        <dt>What lesson applies to Arkansas?</dt>
-        <dd>{c.arkansas_lesson}</dd>
-        <dt>What does NOT apply (no transplant)?</dt>
-        <dd>{c.not_a_transplant}</dd>
-      </dl>
-    </section>
+    {
+      d ? (
+        <>
+          <section class="hub-section">
+            <h2>BEFORE → DECISION → AFTER</h2>
+            <dl class="glossary-list">
+              <dt>BEFORE</dt>
+              <dd>{d.BEFORE}</dd>
+              <dt>PROBLEM</dt>
+              <dd>{d.PROBLEM}</dd>
+              <dt>THEORY</dt>
+              <dd>{d.THEORY}</dd>
+              <dt>INTERVENTION</dt>
+              <dd>{d.INTERVENTION}</dd>
+              <dt>SHORT TERM</dt>
+              <dd>{d.SHORT_TERM}</dd>
+              <dt>SECOND-ORDER EFFECTS</dt>
+              <dd>{d.SECOND_ORDER_EFFECTS}</dd>
+              <dt>LONG TERM</dt>
+              <dd>{d.LONG_TERM}</dd>
+              <dt>DISTRIBUTION</dt>
+              <dd>{d.DISTRIBUTION}</dd>
+              <dt>INSTITUTIONS</dt>
+              <dd>{d.INSTITUTIONS}</dd>
+              <dt>COUNTERFACTUAL</dt>
+              <dd>{d.COUNTERFACTUAL}</dd>
+              <dt>SCHOLARLY DISPUTE</dt>
+              <dd>{d.SCHOLARLY_DISPUTE}</dd>
+              <dt>ARKANSAS LESSON</dt>
+              <dd>{d.ARKANSAS_LESSON}</dd>
+              <dt>NON-LESSON</dt>
+              <dd>{d.NON_LESSON}</dd>
+            </dl>
+          </section>
+          <section class="hub-section">
+            <h2>CC: Borrow / Modify / Reject / Question</h2>
+            <ul class="stack">
+              <li>
+                <strong>BORROW:</strong> {d.CC.BORROW}
+              </li>
+              <li>
+                <strong>MODIFY:</strong> {d.CC.MODIFY}
+              </li>
+              <li>
+                <strong>REJECT:</strong> {d.CC.REJECT}
+              </li>
+              <li>
+                <strong>QUESTION:</strong> {d.CC.QUESTION}
+              </li>
+            </ul>
+          </section>
+          <SixQuestions six={d.six_questions} />
+        </>
+      ) : (
+        <section class="hub-section">
+          <h2>What did this look like in the real world?</h2>
+          <dl class="glossary-list">
+            <dt>What existed before?</dt>
+            <dd>{c.before}</dd>
+            <dt>What problem were they confronting?</dt>
+            <dd>{c.problem}</dd>
+            <dt>What did they change?</dt>
+            <dd>{c.changed}</dd>
+            <dt>Arkansas lesson</dt>
+            <dd>{c.arkansas_lesson}</dd>
+            <dt>What does NOT apply?</dt>
+            <dd>{c.not_a_transplant}</dd>
+          </dl>
+          <p class="muted">Shell case. Norway and Gilded Age→Progressive are Explorer 3.0 exemplars.</p>
+        </section>
+      )
+    }
 
-    <p><a href="/compare/explorer/world-lab/">← All World Lab cases</a></p>
+    <p>
+      <a href="/compare/explorer/world-lab/">← All World Lab cases</a>
+    </p>
   </article>
 </BaseLayout>

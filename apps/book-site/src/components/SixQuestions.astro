@@ -1,0 +1,23 @@
+---
+interface Props {
+  six?: Record<string, string> | null;
+}
+const { six = null } = Astro.props;
+---
+
+{
+  six ? (
+    <section class="hub-section" aria-labelledby="sixq">
+      <h2 id="sixq">Who pays? Benefits? Owns? Decides? Risks? Surplus?</h2>
+      <p class="muted">Universal Comparison Explorer analytical lens.</p>
+      <dl class="glossary-list">
+        {Object.entries(six).map(([k, v]) => (
+          <>
+            <dt>{k}</dt>
+            <dd>{v}</dd>
+          </>
+        ))}
+      </dl>
+    </section>
+  ) : null
+}

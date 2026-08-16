@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ExplorerNav from "../../../components/ExplorerNav.astro";
+import deep from "../../../../../../data/project/comparison_explorer_deepening_v1.json";
+
+const L = deep.ownership_cell_layers;
+const layers = L.layers;
+---
+
+<BaseLayout
+  title="Who should own productive property? — Six layers"
+  path="/compare/explorer/ownership-layers/"
+  description="Matrix cell depth exemplar: ownership as a bundle of rights, not a slogan."
+>
+  <article class="explorer prose">
+    <header class="hub-banner">
+      <span class="chip chip--done">Cell depth exemplar</span>
+      <h1>{L.question}</h1>
+      <p class="lede">
+        The matrix can still say “Primarily private ownership.” Clicking must open undergraduate-level
+        thinking without difficult prose.
+      </p>
+    </header>
+    <ExplorerNav current="matrix" />
+
+    <section class="hub-section">
+      <h2>1. The simple answer</h2>
+      <p>{layers.simple}</p>
+    </section>
+    <section class="hub-section">
+      <h2>2. What that actually means</h2>
+      <p>{layers.means}</p>
+      <ul class="link-board">
+        <li>Control</li>
+        <li>Income</li>
+        <li>Risk</li>
+        <li>Transfer</li>
+        <li>Capital appreciation</li>
+      </ul>
+    </section>
+    <section class="hub-section">
+      <h2>3. Why capitalism generally favors this</h2>
+      <p>{layers.why_capitalism}</p>
+    </section>
+    <section class="hub-section">
+      <h2>4. Where it becomes complicated</h2>
+      <p>{layers.complicated}</p>
+    </section>
+    <section class="hub-section">
+      <h2>5. What competing traditions object to</h2>
+      <ul class="stack">
+        {
+          Object.entries(layers.competitors).map(([k, v]) => (
+            <li>
+              <strong>{k.replaceAll("_", " ")}:</strong> {v as string}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section class="hub-section">
+      <h2>6. Constitutional Capitalism's question</h2>
+      <p class="lede">{layers.cc_question}</p>
+      <p>
+        <a href="/compare/explorer/concept/ownership/">Open Ownership mini-book →</a> ·{" "}
+        <a href="/system/money-engine/">Ownership Spectrum (unabridged) →</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>
