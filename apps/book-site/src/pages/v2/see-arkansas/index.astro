@@ -6,32 +6,48 @@ import completion from "@data/project/completion_ladder_and_dashboard.json";
 
 const bp = completion.v2_blueprint || {};
 const passes = v21.passes || [];
-const closed = objects.closed_objects ?? 0;
+const closed = objects.closed_objects ?? objects.dispositioned_objects ?? 0;
 const total = objects.total_objects ?? 152;
 const pct = objects.v2_1_completion_percent ?? 0;
+const certified = v21.status === "CERTIFIED" || objects.see_certification === "CERTIFIED";
 ---
 
 <BaseLayout
   title="V2.1 — SEE ARKANSAS"
   path="/v2/see-arkansas/"
-  description="Describe how Arkansas presently functions before redesign. Object-counted baseline."
+  description="Arkansas NOW as one joined political-economic system. SEE CERTIFIED. Recommendations: 0."
 >
   <article>
     <header class="hub-banner">
-      <span class="chip chip--live">V2.1 ACTIVE</span>
+      {
+        certified ? (
+          <span class="chip chip--done">V2.1 CERTIFIED</span>
+        ) : (
+          <span class="chip chip--live">V2.1 ACTIVE</span>
+        )
+      }
       <h1>{v21.title}</h1>
       <p class="lede">{v21.governing_question}</p>
-      <p class="muted">
-        Finished when the answer is yes — via closed objects, not words written. Describe only.
-      </p>
+      {
+        certified ? (
+          <p class="lede">
+            {v21.certification?.statement ||
+              "We now have enough evidence to begin judging the system. We do not claim to know everything about Arkansas."}
+          </p>
+        ) : (
+          <p class="muted">
+            Finished when the answer is yes — via closed objects, not words written. Describe only.
+          </p>
+        )
+      }
     </header>
 
     <section class="hub-section">
       <h2>Progress</h2>
       <ul class="link-board">
         <li>
-          <span class="chip chip--live">V2.1</span>{" "}
-          <strong>{closed}/{total}</strong> objects · {pct}%
+          <span class={certified ? "chip chip--done" : "chip chip--live"}>V2.1</span>{" "}
+          <strong>{closed}/{total}</strong> dispositioned · {pct}%
         </li>
         <li>
           <span class="chip chip--live">BLUEPRINT</span>{" "}
@@ -43,6 +59,14 @@ const pct = objects.v2_1_completion_percent ?? 0;
         <li>
           <span class="chip chip--done">COMPLETE</span> Foundational v1.0
         </li>
+        {
+          certified && (
+            <li>
+              <span class="chip chip--live">NEXT</span>{" "}
+              <a href="/v2/">V2.2 REDESIGN ARKANSAS →</a>
+            </li>
+          )
+        }
       </ul>
       <div class="progress-list" style="margin-top:1rem;">
         <div class="progress-item">
@@ -55,6 +79,13 @@ const pct = objects.v2_1_completion_percent ?? 0;
           </div>
         </div>
       </div>
+      {
+        certified && (
+          <p class="lede" style="margin-top:1rem;">
+            Recommendations during SEE: <strong>0</strong>
+          </p>
+        )
+      }
     </section>
 
     <section class="hub-section">
@@ -65,7 +96,7 @@ const pct = objects.v2_1_completion_percent ?? 0;
             <li>
               <span
                 class={
-                  p.status === "COMPLETE"
+                  p.status === "COMPLETE" || p.status === "CERTIFIED"
                     ? "chip chip--done"
                     : p.status === "NEXT"
                       ? "chip chip--live"

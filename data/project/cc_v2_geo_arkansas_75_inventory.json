@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-GEO-ARKANSAS-75-INVENTORY-1.0",
-  "decision_id": "CC-DEC-199",
-  "update_id": "UPD-212",
+  "decision_id": "CC-DEC-200",
+  "update_id": "UPD-213",
   "geo_decision_id": "V2-GEO-001",
   "generated_at": "2026-08-16",
   "status": "SCHEMA_LOCKED_FIELD_POPULATION_OPEN",
@@ -12235,5 +12235,95 @@
     "connectivity_partial": 7,
     "institutional_edges_added": 5,
     "method": "field_first_no_power_scores"
+  },
+  "arkansas_75_coverage_map": {
+    "people": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_REQUIRED"
+    },
+    "household_prosperity": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_REQUIRED"
+    },
+    "human_capability": {
+      "COMPLETE": 0,
+      "PARTIAL": 0,
+      "EMPTY": 75,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V3_DEPTH"
+    },
+    "production": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_REQUIRED"
+    },
+    "employment": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_REQUIRED"
+    },
+    "ownership_capital": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_USEFUL"
+    },
+    "land_natural_capital": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_USEFUL"
+    },
+    "infrastructure": {
+      "COMPLETE": 0,
+      "PARTIAL": 0,
+      "EMPTY": 75,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_USEFUL"
+    },
+    "essential_systems": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_USEFUL"
+    },
+    "government_public_money": {
+      "COMPLETE": 0,
+      "PARTIAL": 75,
+      "EMPTY": 0,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_REQUIRED"
+    },
+    "connectivity": {
+      "COMPLETE": 0,
+      "PARTIAL": 7,
+      "EMPTY": 68,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V2.2_USEFUL"
+    },
+    "resilience": {
+      "COMPLETE": 0,
+      "PARTIAL": 0,
+      "EMPTY": 75,
+      "UNKNOWN-COMPLETE": 0,
+      "v2_2_class": "V3_DEPTH"
+    }
+  },
+  "v2_1_5_geo_note": {
+    "rule": "900/900 not required for SEE certification",
+    "see_certification": "county↔state PASS via coverage map + network seeds"
   }
 }

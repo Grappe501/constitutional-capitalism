@@ -1,0 +1,296 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import pass from "@data/project/cc_v2_1_5_whole_state_xray.json";
+
+const join = pass.whole_system_join || {};
+const follow = pass.follow_an_arkansan || {};
+const dollar = pass.who_controls_the_dollar || {};
+const prod = pass.production_household_join || {};
+const cov = pass.arkansas_75_coverage_map || {};
+const clusters = pass.observed_relationship_clusters || {};
+const deps = pass.dependency_graph || {};
+const bal = pass.arkansas_balance_sheet_conceptual || {};
+const know = pass.what_we_know_what_we_dont || {};
+const audit = pass.home_audit_38 || [];
+const cert = pass.certification || {};
+const ready = pass.redesign_readiness || {};
+---
+
+<BaseLayout
+  title="V2.1.5 — Whole-State X-Ray"
+  path="/v2/see-arkansas/whole-state-xray/"
+  description="Arkansas as one joined political-economic system. SEE CERTIFIED. Recommendations: 0."
+>
+  <article>
+    <header class="hub-banner">
+      <span class="chip chip--done">SEE CERTIFIED</span>
+      <h1>{pass.title}</h1>
+      <p class="lede">{pass.governing_question}</p>
+      <p class="lede"><strong>Answer: {pass.answer}</strong></p>
+      <p class="muted">
+        {pass.slice_id} · recommendations during SEE: <strong>0</strong>
+      </p>
+      <p class="lede">{cert.statement}</p>
+    </header>
+
+    <section class="hub-section">
+      <h2>Progress</h2>
+      <ul class="link-board">
+        <li>
+          Objects dispositioned <strong>152/152</strong> · Blueprint{" "}
+          <strong>{pass.progress?.v2_blueprint_percent}%</strong>
+        </li>
+        <li>
+          Homes audited <strong>38/38</strong> · Structural orphans{" "}
+          <strong>{pass.progress?.structural_orphans}</strong>
+        </li>
+        <li>
+          V2.2 readiness: READY {ready.counts?.READY ?? 0} · READY WITH BLOCKER{" "}
+          {ready.counts?.READY_WITH_BLOCKER ?? 0} · NOT READY{" "}
+          {ready.counts?.["NOT READY"] ?? 0}
+        </li>
+      </ul>
+      <p>
+        <a href="/v2/see-arkansas/what-changed/v2-1-5/">What Changed →</a>
+        {" · "}
+        <a href="/v2/see-arkansas/">SEE hub →</a>
+        {" · "}
+        <a href="/v2/">Next: REDESIGN →</a>
+      </p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Arkansas Whole-System Join</h2>
+      <p class="lede">Center: <strong>{join.center}</strong></p>
+      <ol class="stack">
+        {(join.spine || []).map((s: string) => (
+          <li>
+            <strong>{s}</strong>
+          </li>
+        ))}
+      </ol>
+      <p class="muted">Around: {(join.surround || []).join(" · ")}</p>
+      <h3>Structural connections</h3>
+      <ul class="stack">
+        {
+          (join.causal_connections || []).map((c: any) => (
+            <li>
+              <strong>
+                {c.from} → {c.to}
+              </strong>{" "}
+              via {c.via}
+              <div class="muted">
+                {c.evidence_class} · {c.pass}
+                {c.note ? ` · ${c.note}` : ""}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Follow an Arkansan</h2>
+      <p class="muted">
+        <span class="chip chip--queued">{follow.claim_class}</span> {follow.household}
+      </p>
+      <ol class="stack">
+        {
+          (follow.loop || []).map((s: any) => (
+            <li>
+              <strong>{s.step}</strong> — {s.status}
+              {s.note && <span class="muted"> · {s.note}</span>}
+            </li>
+          ))
+        }
+      </ol>
+      <h3>Ownership exposure</h3>
+      <ul class="stack">
+        {
+          (follow.ownership_split || []).map((o: any) => (
+            <li>
+              <strong>{o.channel}</strong> → {o.destination}
+              {!o.known && <span class="muted"> · UNKNOWN</span>}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="lede">{follow.teaching_point}</p>
+    </section>
+
+    <section class="hub-section">
+      <h2>Who Controls the Dollar?</h2>
+      <p class="muted">{dollar.join}</p>
+      <ul class="stack">
+        {
+          (dollar.junctions || []).map((j: any) => (
+            <li>
+              <strong>{j.source}</strong>
+              <div class="muted">
+                {j.legal_control} → {j.appropriation} → {j.administration} → {j.spending}
+              </div>
+              <div>
+                Who decides: {(j.who_decides || []).join("; ")}
+              </div>
+              {j.blocker && <div class="muted">Blocker: {j.blocker}</div>}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Production ↔ household prosperity</h2>
+      <p class="lede">{prod.analytical_distinction}</p>
+      <p class="muted">{prod.epistemic_class}</p>
+      <ul class="stack">
+        {
+          (prod.channels || []).map((c: any) => (
+            <li>
+              <strong>{c.channel}</strong> — {c.evidence_class}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Arkansas 75 Coverage Map</h2>
+      <p class="muted">900/900 cells not required for SEE certification.</p>
+      <ul class="stack">
+        {
+          Object.entries(cov).map(([dim, row]: [string, any]) => (
+            <li>
+              <strong>{dim}</strong>
+              <div class="muted">
+                COMPLETE {row.COMPLETE} · PARTIAL {row.PARTIAL} · EMPTY {row.EMPTY} ·{" "}
+                {row["v2_2_class"]}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Observed relationship clusters</h2>
+      <p class="lede">{clusters.rule}</p>
+      <ul class="stack">
+        {
+          (clusters.clusters || []).map((c: any) => (
+            <li>
+              <strong>{c.id}</strong> ({c.type}) — {c.hint}
+              <span class="muted"> · {c.evidence_class}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Dependency graph</h2>
+      <p class="lede">{deps.rule}</p>
+      <ul class="stack">
+        {
+          (deps.nodes_edges || []).map((e: any) => (
+            <li>
+              {e.from} → {e.to} <span class="muted">({e.type} · {e.evidence_class})</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Arkansas Balance Sheet (conceptual)</h2>
+      <p class="lede">{bal.rule}</p>
+      <ul class="stack">
+        {
+          Object.entries(bal.assets || {}).map(([k, v]: [string, any]) => (
+            <li>
+              <strong>{k}</strong> — {v.contents}
+              <div class="muted">
+                {v.measure} · valuation: {v.valuation}
+              </div>
+            </li>
+          ))
+        }
+        <li>
+          <strong>obligations & dependencies</strong> — {bal.obligations_dependencies?.contents}
+          <div class="muted">
+            {bal.obligations_dependencies?.measure} · valuation:{" "}
+            {bal.obligations_dependencies?.valuation}
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>What we know / what we don't</h2>
+      <h3>We know</h3>
+      <ul class="stack">
+        {(know.we_know || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <h3>We partly know</h3>
+      <ul class="stack">
+        {(know.we_partly_know || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <h3>We don't know</h3>
+      <ul class="stack">
+        {(know.we_dont_know || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <h3>We cannot currently know</h3>
+      <ul class="stack">
+        {(know.we_cannot_currently_know || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+      <h3>We don't need to know yet</h3>
+      <ul class="stack">
+        {(know.we_dont_need_to_know_yet || []).map((x: string) => <li>{x}</li>)}
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>38-home audit (summary)</h2>
+      <ul class="stack">
+        {
+          audit.map((h: any) => (
+            <li>
+              <a href={h.baseline_location}>
+                <strong>{h.home_id}</strong>
+              </a>{" "}
+              — {h.v2_2_readiness}
+              {(h.remaining_unknowns || []).length > 0 && (
+                <span class="muted"> · blockers: {(h.remaining_unknowns || []).join(", ")}</span>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="hub-section">
+      <h2>Certification gates</h2>
+      <ul class="stack">
+        {
+          Object.entries(cert.gates || {}).map(([k, v]) => (
+            <li>
+              <strong>{k}</strong>: {String(v)}
+            </li>
+          ))
+        }
+      </ul>
+      <h3>V2.2 blockers preserved</h3>
+      <ul class="stack">
+        {
+          (cert.v2_2_blockers_preserved || []).map((b: any) => (
+            <li>
+              <strong>{b.id}</strong> — {b.question}
+              <div class="muted">{b.blocks}</div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="lede">Next: {pass.next}</p>
+    </section>
+  </article>
+</BaseLayout>

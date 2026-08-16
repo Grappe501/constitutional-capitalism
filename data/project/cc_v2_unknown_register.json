@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-UNKNOWN-REGISTER-1.0",
-  "decision_id": "CC-DEC-199",
-  "update_id": "UPD-212",
+  "decision_id": "CC-DEC-200",
+  "update_id": "UPD-213",
   "generated_at": "2026-08-16",
   "status": "LIVE",
   "rule": "A non-blocking unknown cannot hold V2.1 open. UNKNOWN-COMPLETE is a valid closure.",
@@ -146,7 +146,9 @@
         "expenditures"
       ],
       "note": "Blocking for precise V2.2 fiscal redesign of federally entangled functions — not for closing V2.1.2 observation pass.",
-      "blocks": "V2.2 funding redesign depth — NOT V2.1.2 closure"
+      "blocks": "V2.2 funding redesign depth — NOT V2.1.2 closure",
+      "carried_into": "V2.2",
+      "see_certification": "DOES_NOT_BLOCK_SEE"
     },
     {
       "id": "UNK-FISC-002",
@@ -182,7 +184,9 @@
       "home_ids": [
         "pensions",
         "intergenerational_obligations"
-      ]
+      ],
+      "carried_into": "V2.2",
+      "see_certification": "DOES_NOT_BLOCK_SEE"
     },
     {
       "id": "UNK-FISC-005",
@@ -328,5 +332,6 @@
       "note": "emergency_government objects intentionally left OPEN for deeper fill / V2.4 adjacency"
     }
   ],
-  "county_register": "data/project/cc_v2_geo_county_unknown_register.json"
+  "county_register": "data/project/cc_v2_geo_county_unknown_register.json",
+  "see_certified": true
 }

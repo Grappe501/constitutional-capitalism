@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-1-SEE-ARKANSAS-1.0",
-  "decision_id": "CC-DEC-199",
-  "update_id": "UPD-212",
+  "decision_id": "CC-DEC-200",
+  "update_id": "UPD-213",
   "generated_at": "2026-08-16",
-  "status": "IN_PROGRESS",
+  "status": "CERTIFIED",
   "gate": "V2.1",
   "title": "SEE ARKANSAS",
   "governing_question": "If every elected official disappeared tomorrow and we had to explain to a new group exactly how Arkansas presently functions—who governs, who pays, where the money goes, what Arkansas owns, what households experience, what Arkansas produces, and what it depends upon—could we do it?",
@@ -68,9 +68,11 @@
   },
   "progress": {
     "closure_objects_total": 152,
-    "closure_objects_closed": 137,
-    "v2_1_completion_percent": 90.1,
-    "v2_blueprint_percent": 22.5
+    "closure_objects_closed": 152,
+    "closure_objects_dispositioned": 152,
+    "v2_1_completion_percent": 100,
+    "v2_blueprint_percent": 25.0,
+    "see_status": "CERTIFIED"
   },
   "passes": [
     {
@@ -113,9 +115,10 @@
       "id": "V2.1.5",
       "slug": "whole-state-xray",
       "name": "Whole-State X-Ray",
-      "status": "NEXT",
+      "status": "COMPLETE",
       "exit": "ARKANSAS NOW — OPERATING X-RAY interactive join of 2.1.1–2.1.4.",
-      "href": null
+      "href": "/v2/see-arkansas/whole-state-xray/",
+      "what_changed": "/v2/see-arkansas/what-changed/v2-1-5/"
     }
   ],
   "geographic_dimension": {
@@ -126,5 +129,54 @@
     "decomposition_rule": "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability. Not every metric needs county data. Every major system must ask whether geography materially changes the answer.",
     "finish_line_addition": "When V2.1 closes: Here's Arkansas—and here's how the Arkansas system manifests differently across its 75 counties."
   },
-  "passes_note": "Geographic 75-county spine is permanent infrastructure inside SEE — populated field-first alongside passes 2.1.1–2.1.5, not as a sixth pass/gate."
+  "passes_note": "Geographic 75-county spine is permanent infrastructure inside SEE — populated field-first alongside passes 2.1.1–2.1.5, not as a sixth pass/gate.",
+  "certified_at": "2026-08-16",
+  "certification": {
+    "status": "CERTIFIED",
+    "certified_at": "2026-08-16",
+    "decision_id": "CC-DEC-200",
+    "update_id": "UPD-213",
+    "v2_decision_id": "V2-DEC-014",
+    "gates": {
+      "objects_152_dispositioned": true,
+      "homes_38_located": true,
+      "structural_orphans": 0,
+      "whole_system_joins": "PASS",
+      "money_power": "PASS",
+      "production_household": "PASS",
+      "county_state": "PASS",
+      "dependency_graph": "PASS",
+      "known_unknown_ledger": "PASS",
+      "v2_2_readiness_38": true,
+      "recommendations_during_v2_1": 0
+    },
+    "statement": "We now have enough evidence to begin judging the system. We do not claim to know everything about Arkansas.",
+    "v2_2_blockers_preserved": [
+      {
+        "id": "UNK-FISC-001",
+        "question": "All-funds federal share by major function",
+        "blocks": "Precise V2.2 fiscal redesign of federally entangled functions"
+      },
+      {
+        "id": "UNK-FISC-004",
+        "question": "Statewide debt service and pension/OPEB claim schedules",
+        "blocks": "Intergenerational / pension redesign dispositions"
+      }
+    ],
+    "forbidden_during_see_confirmed": [
+      "tax proposals",
+      "agency eliminations",
+      "new authorities",
+      "public enterprises",
+      "county futures",
+      "ED strategies",
+      "funding models",
+      "government consolidation",
+      "regional-government proposals",
+      "healthcare redesign",
+      "education redesign",
+      "here's what Arkansas should do"
+    ]
+  },
+  "next_gate": "V2.2 — REDESIGN ARKANSAS"
 }

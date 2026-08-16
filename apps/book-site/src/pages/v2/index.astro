@@ -86,7 +86,17 @@ const orphan = plan.orphan_audit || {};
         {
           gates.map((g: any) => (
             <li>
-              <span class="chip chip--queued">{g.status}</span>{" "}
+              <span
+                class={
+                  g.status === "CERTIFIED" || g.status === "COMPLETE"
+                    ? "chip chip--done"
+                    : g.status === "NEXT"
+                      ? "chip chip--live"
+                      : "chip chip--queued"
+                }
+              >
+                {g.status}
+              </span>{" "}
               <strong>
                 {g.id} — {g.name}
               </strong>
@@ -94,6 +104,7 @@ const orphan = plan.orphan_audit || {};
                 {g.question}
                 <br />
                 Completion: {g.completion_result}
+                {g.completion_percent != null ? ` · ${g.completion_percent}%` : ""}
               </div>
             </li>
           ))
@@ -162,7 +173,13 @@ const orphan = plan.orphan_audit || {};
       </ul>
       <p class="muted">{plan.next_only}</p>
       <p>
-        <a class="button button--solid" href="/v2/see-arkansas/">Open V2.1 SEE ARKANSAS →</a>
+        <a class="button button--solid" href="/v2/see-arkansas/">
+          V2.1 SEE ARKANSAS — CERTIFIED →
+        </a>
+      </p>
+      <p class="lede" style="margin-top:1rem;">
+        Next gate: <strong>V2.2 REDESIGN ARKANSAS</strong> — the word SHOULD is now permitted under
+        redesign discipline.
       </p>
     </section>
   </article>

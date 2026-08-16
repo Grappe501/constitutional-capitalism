@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "slice_id": "CC-V2-MASTER-BUILD-PLAN-1.0",
-  "decision_id": "CC-DEC-199",
-  "update_id": "UPD-212",
+  "decision_id": "CC-DEC-200",
+  "update_id": "UPD-213",
   "generated_at": "2026-08-16",
-  "status": "V2_1_IN_PROGRESS",
+  "status": "SEE_CERTIFIED_V2_2_NEXT",
   "title": "Constitutional Capitalism v2.0 — Master Build Plan",
   "purpose": "Define what v2.0 means at 100% before researching, redesigning, funding, or piloting.",
   "foundational_system": {
@@ -19,7 +19,7 @@
   },
   "blueprint": {
     "label": "V2 BLUEPRINT",
-    "percent": 22.5,
+    "percent": 25.0,
     "status": "IN_PROGRESS",
     "completion_definition": "100% when all five gates pass: SEE → REDESIGN → FUND → LEGALIZE & BREAK → ROADMAP, measured by resolved objects — not words written.",
     "separate_from": [
@@ -45,15 +45,15 @@
       "name": "SEE ARKANSAS",
       "question": "How does Arkansas actually work today?",
       "completion_result": "Government + fiscal + household + productive-capital baseline",
-      "status": "IN_PROGRESS",
+      "status": "CERTIFIED",
       "forbidden_until_plan_frozen": false,
       "object_focus": [
         "baseline_objects_resolved",
         "household_models_completed",
         "geographies_modeled"
       ],
-      "completion_percent": 90.1,
-      "objects_closed": 137,
+      "completion_percent": 100,
+      "objects_closed": 152,
       "objects_total": 152
     },
     {
@@ -62,7 +62,7 @@
       "name": "REDESIGN ARKANSAS",
       "question": "What specifically changes under CC?",
       "completion_result": "Every major state function dispositioned",
-      "status": "QUEUED",
+      "status": "NEXT",
       "forbidden_until_plan_frozen": true,
       "object_focus": [
         "functions_dispositioned"
@@ -112,7 +112,7 @@
       "id": "baseline_objects_resolved",
       "label": "Baseline objects resolved",
       "gate": "V2.1",
-      "resolved": 137,
+      "resolved": 152,
       "total": 152,
       "note": "V2.1 uses 152 B/F/D/E objects across 38 homes."
     },
@@ -195,8 +195,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "revenue",
@@ -216,8 +217,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "expenditures",
@@ -237,8 +239,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "agencies",
@@ -258,8 +261,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "education",
@@ -279,8 +283,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "healthcare",
@@ -300,8 +305,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "justice",
@@ -321,8 +327,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "local_government",
@@ -342,8 +349,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "housing",
@@ -363,8 +371,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "land",
@@ -384,8 +393,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "agriculture",
@@ -405,8 +415,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "energy",
@@ -426,8 +437,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "water",
@@ -447,8 +459,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "transportation",
@@ -468,8 +481,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "digital_infrastructure",
@@ -489,8 +503,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "labor",
@@ -510,8 +525,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "capital",
@@ -531,8 +547,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.3) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "banking",
@@ -552,8 +569,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.3) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "business_formation",
@@ -573,8 +591,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "procurement",
@@ -594,8 +613,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "economic_development",
@@ -615,8 +635,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "pensions",
@@ -636,8 +657,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.3) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "public_assets",
@@ -657,8 +679,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.3) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "natural_resources",
@@ -678,8 +701,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "federal_dependency",
@@ -699,8 +723,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "household_economics",
@@ -720,8 +745,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "demographics",
@@ -741,8 +767,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "geographic_disparities",
@@ -762,8 +789,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.1) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "civic_institutions",
@@ -783,8 +811,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "elections",
@@ -804,8 +833,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "direct_democracy",
@@ -825,8 +855,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "administrative_power",
@@ -846,8 +877,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "public_data",
@@ -867,8 +899,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "ai",
@@ -888,8 +921,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "emergency_government",
@@ -909,8 +943,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.4) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       },
       {
         "id": "intergenerational_obligations",
@@ -930,8 +965,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.5) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "human_services",
@@ -951,8 +987,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY_WITH_BLOCKER"
       },
       {
         "id": "insurance_and_risk",
@@ -972,8 +1009,9 @@
         ],
         "completion_gate": "Domain has a known home; orphan-test PASS for this domain; deferred list explicit; no silent v1 doctrine change.",
         "deferred_until": "Deep measurement, redesign, fiscal proof, legal pathway, or implementation objects — only when the active gate (V2.2) opens that work.",
-        "status": "ENUMERATED_NOT_RESEARCHED",
-        "resolved_objects": 0
+        "status": "SEE_BASELINE_DISPOSITIONED",
+        "resolved_objects": 4,
+        "v2_2_readiness": "READY"
       }
     ]
   },
@@ -1205,7 +1243,10 @@
       "insurance_and_risk"
     ],
     "domain_count_after": 38,
-    "freeze_condition": "Orphan test PASS + Master Plan accepted → freeze v2 build map → open V2.1 only."
+    "freeze_condition": "Orphan test PASS + Master Plan accepted → freeze v2 build map → open V2.1 only.",
+    "v2_1_5_retest": "PASS",
+    "structural_orphans": 0,
+    "date": "2026-08-16"
   },
   "sequence": [
     {
@@ -1236,7 +1277,7 @@
       "step": 5,
       "id": "V2_1_SEE",
       "label": "V2.1 — SEE ARKANSAS",
-      "status": "ACTIVE"
+      "status": "COMPLETE"
     }
   ],
   "forbidden_before_map_freeze": [
@@ -1262,7 +1303,7 @@
     "build_progress": "/build-progress/",
     "status": "/status/"
   },
-  "next_only": "V2.1.5 — Whole-State X-Ray (join 2.1.1–2.1.4 + GEO; almost no new research).",
+  "next_only": "V2.2 — REDESIGN ARKANSAS (KEEP/REFORM/REPLACE… under redesign discipline; SHOULD now permitted).",
   "map_freeze": {
     "status": "FROZEN",
     "frozen_at": "2026-08-16",
@@ -1276,7 +1317,7 @@
     "Dial inflation by words written",
     "Explorer expansion while V2.1 is the active build priority"
   ],
-  "active_pass": "V2.1.4 COMPLETE → next V2.1.5",
+  "active_pass": "V2.1 SEE CERTIFIED → next V2.2 REDESIGN",
   "geographic_dimension": {
     "id": "V2-GEO-001",
     "status": "LOCKED",
@@ -1286,5 +1327,9 @@
     "inventory": "data/project/cc_v2_geo_arkansas_75_inventory.json",
     "decomposition_rule": "Every baseline object capable of geographic decomposition must be evaluated for State → Region → County applicability. Not every metric needs county data. Every major system must ask whether geography materially changes the answer.",
     "href": "/v2/see-arkansas/counties/"
+  },
+  "see_arkansas": {
+    "status": "CERTIFIED",
+    "href": "/v2/see-arkansas/"
   }
 }
