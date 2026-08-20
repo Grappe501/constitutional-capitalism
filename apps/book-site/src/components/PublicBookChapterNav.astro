@@ -1,10 +1,11 @@
 ---
 /**
- * Prev / next / quieter deeper footer for every Public Book chapter.
- * PRESENTATION — Pass 5.11 assembly · reader-first chrome.
+ * Prev / next chapter navigation for the Public Book.
+ * readingRoom: strip question/deeper chrome — book surface only.
  */
 interface Props {
   chapter: number; // 1–10
+  readingRoom?: boolean;
 }
 
 const chapters = [
@@ -90,15 +91,24 @@ const chapters = [
   },
 ] as const;
 
-const { chapter } = Astro.props;
+const { chapter, readingRoom = false } = Astro.props;
 const idx = Math.max(1, Math.min(10, chapter)) - 1;
 const current = chapters[idx];
 const prev = idx > 0 ? chapters[idx - 1] : null;
 const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
 ---
 
-<nav class="hub-section public-book-nav" aria-label="Chapter navigation">
-  <p class="muted">Chapter {current.n} of 10 · {current.question}</p>
+<nav
+  class:list={["hub-section", "public-book-nav", readingRoom && "public-book-nav--room"]}
+  aria-label="Chapter navigation"
+>
+  {
+    readingRoom ? null : (
+      <p class="muted">
+        Chapter {current.n} of 10 · {current.question}
+      </p>
+    )
+  }
   <div class="public-book-nav__steps">
     {
       prev ? (
@@ -107,6 +117,11 @@ const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
           <strong>
             Ch. {prev.n}: {prev.title}
           </strong>
+        </a>
+      ) : readingRoom ? (
+        <a class="public-book-nav__step" href="/book/">
+          <span>Previous</span>
+          <strong>Book home</strong>
         </a>
       ) : (
         <a class="public-book-nav__step" href="/public-book/introduction/">
@@ -131,21 +146,25 @@ const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
       )
     }
   </div>
-  <details class="public-book-nav__deeper">
-    <summary>Go deeper (optional)</summary>
-    <ul class="link-board">
-      <li>
-        <a href={current.deeper}>Background for this chapter →</a>
-      </li>
-      <li>
-        <a href={current.evidence}>Sources / Evidence →</a>
-      </li>
-      <li>
-        <a href="/book/">All chapters →</a>
-      </li>
-      <li>
-        <a href="/public-book/">Edition notes &amp; tools →</a>
-      </li>
-    </ul>
-  </details>
+  {
+    readingRoom ? null : (
+      <details class="public-book-nav__deeper">
+        <summary>Go deeper (optional)</summary>
+        <ul class="link-board">
+          <li>
+            <a href={current.deeper}>Background for this chapter →</a>
+          </li>
+          <li>
+            <a href={current.evidence}>Sources / Evidence →</a>
+          </li>
+          <li>
+            <a href="/book/">All chapters →</a>
+          </li>
+          <li>
+            <a href="/public-book/">Edition notes &amp; tools →</a>
+          </li>
+        </ul>
+      </details>
+    )
+  }
 </nav>

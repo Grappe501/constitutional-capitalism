@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "slice_id": "CC-PUBLIC-BOOK-NARRATIVE-REBUILD-2.0",
+  "decision_id": "CC-DEC-207",
+  "update_id": "UPD-220",
+  "generated_at": "2026-08-19",
+  "status": "PASS_2_AWAITING_COLD_READ",
+  "lane": "VERSION_IMPROVEMENTS",
+  "title": "Public Book Narrative Rebuild — Chapter 1 Pass 2",
+  "diagnosis": "Pass 1 improved language but kept the old technical architecture in control: X-Ray framing, FACT/ILLUSTRATION spam, data dumps, Rivers as analytical device, and site chrome fighting the book. Certified 100% measured completeness, not whether a human wants to keep reading.",
+  "old_governing_question": "Did we successfully abridge the system?",
+  "new_governing_question": "Can we make someone care enough to follow the argument all the way to the end?",
+  "literary_gate": "Does the reader want to turn the page?",
+  "pass_2_rules": [
+    "Do not preserve Pass 1 / certified-compression structure",
+    "Begin inside ordinary Arkansas life — not CC, certification, or methodology",
+    "Meet the Rivers household before explaining them; disclose composite once in author's note",
+    "Let Arkansas be place, not county dashboard",
+    "Strip data dumps and internal project vocabulary from prose",
+    "Do not explain Constitutional Capitalism in Chapter 1",
+    "Leave incomplete on purpose — hunger for where the money went",
+    "Reading room: book title → chapter → prose → prev/next"
+  ],
+  "chapter_1": {
+    "status": "PASS_2_AWAITING_COLD_READ",
+    "frozen_as_standard_for_2_10": false,
+    "href": "/public-book/the-arkansas-we-inherited/",
+    "literary_standard": "reports/CH01_NARRATIVE_STANDARD.md",
+    "json": "data/project/public_book_ch01_narrative.json",
+    "source_verbatim": "reports/CH01_CURRENT_VERBATIM_WORKING.md",
+    "reading_room": true
+  },
+  "chapters_2_through_10": "DO_NOT_REBUILD_UNTIL_CH01_CLEARS_LITERARY_GATE",
+  "next": "Cold-read Chapter 1 Pass 2. Only if the page-turn gate clears, freeze voice and rebuild 2–10.",
+  "foundational_doctrine": "UNCHANGED — narrative rebuild is translation/voice, not new theory",
+  "countable_usd": 0
+}

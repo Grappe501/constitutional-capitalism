@@ -9,6 +9,8 @@ interface Props {
   description?: string;
   path?: string;
   bareMain?: boolean;
+  /** Strip engineering chrome — book title, prose, prev/next. */
+  readingRoom?: boolean;
 }
 
 const {
@@ -16,6 +18,7 @@ const {
   description = "Constitutional Capitalism — Restoring Prosperity Through Constitutional Principles. A free public book project in development.",
   path = "/",
   bareMain = false,
+  readingRoom = false,
 } = Astro.props;
 
 const pageTitle = title
@@ -23,6 +26,11 @@ const pageTitle = title
   : `${identity.title} | ${identity.subtitle}`;
 const canonical = new URL(path, Astro.site).toString();
 const primary = siteNav.primary_nav || [];
+const readingPrimary = [
+  { href: "/book/", label: "Book" },
+  { href: "/public-book/table-of-contents/", label: "Contents" },
+];
+const headerPrimary = readingRoom ? readingPrimary : primary;
 const foundations = siteNav.foundations;
 const spines = siteNav.spines || [];
 const researchDesk = siteNav.research_desk;
@@ -33,6 +41,13 @@ const readerChrome =
   path === "/book/" ||
   path.startsWith("/public-book/") ||
   path.startsWith("/read/");
+
+const bodyChrome = [
+  readerChrome ? "chrome-reader" : "",
+  readingRoom ? "chrome-reading-room" : "",
+]
+  .filter(Boolean)
+  .join(" ") || undefined;
 
 function navIsCurrent(href: string, currentPath: string) {
   if (href === "/book/") {
@@ -78,11 +93,11 @@ function statusLabel(status?: string) {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <slot name="head" />
   </head>
-  <body class={readerChrome ? "chrome-reader" : undefined}>
+  <body class={bodyChrome}>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-site-header>
       <div class="site-header__bar">
-        <a class="brand" href="/">
+        <a class="brand" href={readingRoom ? "/book/" : "/"}>
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__full">{identity.title}</span>
           <span class="brand__short" aria-hidden="true">CC</span>
@@ -90,7 +105,7 @@ function statusLabel(status?: string) {
         <div class="header-actions">
           <nav class="primary-links" aria-label="Primary">
             {
-              primary.map((item) => (
+              headerPrimary.map((item) => (
                 <a
                   href={item.href}
                   aria-current={navIsCurrent(item.href, path) ? "page" : undefined}
@@ -107,12 +122,85 @@ function statusLabel(status?: string) {
             aria-expanded="false"
             aria-controls="site-nav-panel"
           >
-            <span data-nav-toggle-label>More</span>
+            <span data-nav-toggle-label>{readingRoom ? "Menu" : "More"}</span>
           </button>
         </div>
       </div>
       <div class="nav-panel" id="site-nav-panel" data-nav-panel>
         <div class="nav-panel__inner">
+          {
+            readingRoom ? (
+              <>
+                <section class="nav-group" aria-labelledby="nav-read">
+                  <h2 id="nav-read">Chapters</h2>
+                  <ul class="nav-group__links">
+                    <li>
+                      <a href="/public-book/the-arkansas-we-inherited/">
+                        1 — The Arkansas We Inherited
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/what-does-prosperity-mean/">
+                        2 — What Does Prosperity Mean?
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/follow-the-money/">3 — Follow the Money</a>
+                    </li>
+                    <li>
+                      <a href="/public-book/people-are-the-real-capital/">
+                        4 — People Are the Real Capital
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/the-productive-arkansas/">
+                        5 — The Productive Arkansas
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/government-that-belongs-to-the-people/">
+                        6 — Government That Belongs to the People
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/so-what-is-constitutional-capitalism/">
+                        7 — So What Is Constitutional Capitalism?
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/building-the-bridge/">8 — Building the Bridge</a>
+                    </li>
+                    <li>
+                      <a href="/public-book/we-tried-to-break-it/">9 — We Tried to Break It</a>
+                    </li>
+                    <li>
+                      <a href="/public-book/the-arkansas-we-could-leave-behind/">
+                        10 — The Arkansas We Could Leave Behind
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/public-book/table-of-contents/">Full table of contents</a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="nav-group" aria-labelledby="nav-deeper">
+                  <h2 id="nav-deeper">Go deeper</h2>
+                  <p>Optional. The book stands alone.</p>
+                  <ul class="nav-group__links">
+                    <li>
+                      <a href="/evidence/">Sources / Evidence</a>
+                    </li>
+                    <li>
+                      <a href="/book/">All chapters</a>
+                    </li>
+                    <li>
+                      <a href="/">Project home</a>
+                    </li>
+                  </ul>
+                </section>
+              </>
+            ) : (
+              <>
           <section class="nav-group" aria-labelledby="nav-read">
             <h2 id="nav-read">Read the book</h2>
             <p>Volume II is the front door. Everything else is drill-down.</p>
@@ -207,6 +295,9 @@ function statusLabel(status?: string) {
               }
             </ul>
           </section>
+              </>
+            )
+          }
         </div>
       </div>
     </header>
@@ -216,32 +307,51 @@ function statusLabel(status?: string) {
     <ListenBar />
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p>
-          <strong>{identity.title}</strong> — {identity.subtitle}
-        </p>
-        <div class="footer-grid">
-          {
-            footerColumns.map((col) => (
-              <div>
-                <h2>{col.title}</h2>
-                <ul>
-                  {col.links.map((link) => (
-                    <li>
-                      <a href={link.href}>{link.label}</a>
-                    </li>
-                  ))}
-                </ul>
+        {
+          readingRoom ? (
+            <>
+              <p>
+                <strong>{identity.title}</strong>
+              </p>
+              <p>
+                <a href="/book/">All chapters</a>
+                {" · "}
+                <a href="/evidence/">Sources</a>
+                {" · "}
+                <a href="/">Project home</a>
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                <strong>{identity.title}</strong> — {identity.subtitle}
+              </p>
+              <div class="footer-grid">
+                {
+                  footerColumns.map((col) => (
+                    <div>
+                      <h2>{col.title}</h2>
+                      <ul>
+                        {col.links.map((link) => (
+                          <li>
+                            <a href={link.href}>{link.label}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+                }
               </div>
-            ))
-          }
-        </div>
-        <p>
-          Free public edition · Volume II ready to read · Licensing decision open ·
-          Project status: {identity.project_status}.
-        </p>
+              <p>
+                Free public edition · Volume II ready to read · Licensing decision open ·
+                Project status: {identity.project_status}.
+              </p>
+            </>
+          )
+        }
       </div>
     </footer>
-    <script>
+    <script define:vars={{ readingRoomMenuLabel: readingRoom ? "Menu" : "More" }}>
       const header = document.querySelector("[data-site-header]");
       const toggle = document.querySelector("[data-nav-toggle]");
       const panel = document.querySelector("[data-nav-panel]");
@@ -251,7 +361,7 @@ function statusLabel(status?: string) {
           header.classList.toggle("is-nav-open", open);
           document.body.classList.toggle("nav-lock", open);
           toggle.setAttribute("aria-expanded", open ? "true" : "false");
-          label.textContent = open ? "Close" : "More";
+          label.textContent = open ? "Close" : readingRoomMenuLabel;
         };
         toggle.addEventListener("click", () => {
           setOpen(!header.classList.contains("is-nav-open"));
