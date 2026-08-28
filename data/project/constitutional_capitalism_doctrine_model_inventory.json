@@ -1,0 +1,383 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-08-28",
+  "status": "canonical_planning_inventory_pre_code",
+  "purpose": "Exhaustive first-pass doctrine-to-model crosswalk for the National Debt & Prosperity Model as the fiscal/economic spine of the Constitutional Capitalism Systems Intelligence Engine.",
+  "authority": {
+    "website_architecture": "data/project/website_information_architecture.json",
+    "systems_intelligence_engine": "data/project/systems_intelligence_engine_framework.json",
+    "national_debt_architecture": "docs/architecture/NATIONAL_DEBT_AND_PROSPERITY_MODELING_SYSTEM.md",
+    "national_debt_registry": "data/project/national_debt_modeling_registry.json",
+    "rule": "Doctrine becomes the source of model questions. Evidence determines model parameters. The model must never manufacture evidence or convert a normative proposal into an empirical fact."
+  },
+  "model_chain": [
+    "policy_or_investment",
+    "institutional_output",
+    "household_and_community_change",
+    "population_labor_and_capital_response",
+    "productivity_and_market_response",
+    "tax_base_and_public_cost_response",
+    "federal_state_local_fiscal_response",
+    "debt_interest_and_public_asset_response",
+    "human_flourishing_response",
+    "intergenerational_response"
+  ],
+  "geographic_levels": ["person","household","family","neighborhood","community","county","region","state","nation"],
+  "time_horizons_years": [1,5,10,20,30,50,70],
+  "epistemic_states": [
+    "verified_fact",
+    "institutional_estimate",
+    "established_causal_relationship",
+    "supported_causal_inference",
+    "observed_correlation",
+    "plausible_mechanism",
+    "project_assumption",
+    "illustrative_parameter",
+    "unresolved_hypothesis",
+    "normative_proposal"
+  ],
+  "universal_outputs": [
+    "federal_budget_effect",
+    "state_budget_effect",
+    "local_budget_effect",
+    "debt_effect",
+    "interest_cost_effect",
+    "public_asset_effect",
+    "gdp_and_productivity_effect",
+    "employment_and_earnings_effect",
+    "household_disposable_income_effect",
+    "housing_effect",
+    "health_effect",
+    "education_and_skill_effect",
+    "family_stability_and_proximity_effect",
+    "population_and_migration_effect",
+    "local_ownership_and_wealth_effect",
+    "regional_distribution_effect",
+    "environment_and_resource_effect",
+    "resilience_effect",
+    "civic_participation_effect",
+    "concentration_of_power_effect",
+    "intergenerational_fairness_effect",
+    "constitutional_and_legal_constraint",
+    "administrative_feasibility",
+    "uncertainty_and_sensitivity"
+  ],
+  "domains": [
+    {
+      "id": "MD-001",
+      "website_node": "CC-WEB-FEDERALISM",
+      "title": "National Finance, Debt, Federalism, and Infrastructure",
+      "source_files": ["data/project/federalism_framework.json"],
+      "model_inputs": ["federal_revenue","federal_primary_spending","interest_rates","treasury_maturity_mix","federal_grants","national_infrastructure_investment","regional_redistribution"],
+      "required_outputs": ["primary_balance","overall_deficit","debt_held_by_public","debt_to_gdp","interest_to_revenue","rollover_requirement","federal_state_local_cost_shift","infrastructure_asset_value"],
+      "key_dependencies": ["energy","transportation","education","health","public_data","regional_capacity"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-002",
+      "website_node": "CC-WEB-HUMANCAPITAL",
+      "title": "Human Capital, Education, Regional Academies, and Apprenticeships",
+      "source_files": ["data/project/human_capital_framework.json","data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json"],
+      "model_inputs": ["education_operating_spend","education_capital_spend","academy_locations","regional_specializations","apprenticeship_slots","student_enterprise","teacher_supply","higher_education_capacity","public_research_investment"],
+      "required_outputs": ["skill_attainment","graduation_pathways","earnings","labor_force_participation","business_creation","graduate_retention","return_migration","local_employer_capacity","tax_revenue","public_research_return","civic_capacity"],
+      "key_dependencies": ["housing","transportation","healthcare","childcare","broadband","employers","capital_access","regional_demand"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-003",
+      "website_node": "CC-WEB-FAMILY",
+      "title": "Family, Childhood, and Intergenerational Prosperity",
+      "source_files": ["data/project/family_framework.json"],
+      "model_inputs": ["maternal_health","early_childhood","nutrition","education","mental_health","safe_housing","literacy","apprenticeships","caregiving_support","multigenerational_housing","local_employment","transportation_access"],
+      "required_outputs": ["child_flourishing","family_proximity","family_stability","caregiving_capacity","adult_independence","homeownership","family_business_continuity","intergenerational_asset_transfer","lifetime_fiscal_effect"],
+      "key_dependencies": ["housing","health","food","education","transportation","ownership","local_jobs"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-004",
+      "website_node": "CC-WEB-HEALTHCARE",
+      "title": "Health, Human Capacity, Rural Care, and Prevention Dividend",
+      "source_files": ["data/project/health_human_capacity_framework.json","data/project/essential_systems_framework.json"],
+      "model_inputs": ["primary_care_capacity","preventive_spend","rural_health_formula","health_workforce","drug_prices","insurance_structure","community_health_budget","maternal_child_health"],
+      "required_outputs": ["healthcare_spending_trajectory","avoidable_hospitalization","labor_force_health","disability_burden","life_expectancy_proxy","medicare_medicaid_cost","household_health_cost","rural_provider_capacity","prevention_dividend"],
+      "key_dependencies": ["education","housing","food","transportation","workforce","aging"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-005",
+      "website_node": "CC-WEB-ENERGY",
+      "title": "Energy Sovereignty, Grid Expansion, Public Return, and Energy Dividend",
+      "source_files": ["data/project/energy_sovereignty_framework.json","data/project/resource_sovereignty_framework.json"],
+      "model_inputs": ["generation_capacity","transmission_investment","storage","fuel_mix","export_capacity","community_ownership","public_royalty_share","energy_efficiency","industrial_load_growth"],
+      "required_outputs": ["energy_price","grid_reliability","industrial_investment","household_energy_burden","export_income","public_revenue","community_dividend","debt_retirement_contribution","environmental_footprint","strategic_resilience"],
+      "key_dependencies": ["industry","housing","transportation","data_centers","water","environment","treasury"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-006",
+      "website_node": "CC-WEB-AGRICULTURE",
+      "title": "Community Food Security, Local Processing, and Food Resilience",
+      "source_files": ["data/project/community_food_security_framework.json"],
+      "model_inputs": ["local_food_procurement","processing_capacity","regional_food_networks","food_reserves","fresh_food_access","regenerative_payments","waste_reduction"],
+      "required_outputs": ["local_food_share","food_price_resilience","farm_income","processing_margin_retained","nutrition_access","supply_chain_resilience","local_jobs","tax_base","emergency_food_capacity"],
+      "key_dependencies": ["family_farms","transportation","schools","health","water","energy","local_ownership"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-007",
+      "website_node": "CC-WEB-FAMILY-FARM",
+      "title": "Family Farm Wealth, Succession, Stewardship, and Rural Prosperity",
+      "source_files": ["data/project/family_farm_prosperity_framework.json"],
+      "model_inputs": ["purchase_guarantees","regional_food_utilities","stewardship_contracts","transition_guarantees","farm_ownership_finance","anti_concentration_rules","farm_health_retirement_security"],
+      "required_outputs": ["farm_survival","farmer_income","farm_equity","succession_rate","young_farmer_entry","soil_water_outcomes","local_processing","local_wealth_retention","rural_population"],
+      "key_dependencies": ["food_security","education","finance","health","housing","land_prices"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-008",
+      "website_node": "CC-WEB-HOUSING",
+      "title": "Housing, Land Use, Family Formation, and Geographic Capacity",
+      "source_files": ["data/project/CC_ARKANSAS_POPULATION_WEALTH_ATTRACTION_RETENTION_DATA_DEMANDS.json","data/project/family_framework.json"],
+      "model_inputs": ["housing_units","construction_rate","infrastructure_capacity","land_use_constraints","mortgage_cost","rental_cost","multigenerational_options","rural_housing_investment"],
+      "required_outputs": ["housing_cost","vacancy","household_formation","homeownership","migration_capacity","commute_burden","property_tax_base","family_proximity","construction_employment"],
+      "key_dependencies": ["transportation","jobs","schools","healthcare","utilities","interest_rates"],
+      "priority": "critical",
+      "research_gap": "Website node remains proposed; requires dedicated framework before policy parameters become canonical."
+    },
+    {
+      "id": "MD-009",
+      "website_node": "CC-WEB-COMMUNITY-PROSPERITY",
+      "title": "Community Prosperity Accounts and Local Capital Formation",
+      "source_files": ["data/project/community_prosperity_framework.json"],
+      "model_inputs": ["participation_rate","local_investment_share","return_assumptions","exposure_caps","community_equity_credits","municipal_project_pipeline"],
+      "required_outputs": ["household_assets","local_capital_pool","investment_return","loss_risk","business_capital_access","municipal_finance_capacity","retirement_diversification","community_wealth"],
+      "key_dependencies": ["local_ownership","housing","business_creation","fiduciary_rules","demography"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-010",
+      "website_node": "CC-WEB-LOCAL-OWNERSHIP",
+      "title": "Local Ownership, Business Succession, Cooperatives, and Wealth Retention",
+      "source_files": ["data/project/local_ownership_framework.json"],
+      "model_inputs": ["local_ownership_share","business_finance","succession_support","cooperative_support","community_reinvestment","tax_incentives"],
+      "required_outputs": ["local_multiplier","profits_retained_locally","business_survival","succession","employment","wages","tax_base","wealth_distribution","market_concentration"],
+      "key_dependencies": ["capital_access","education","population","procurement","antitrust"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-011",
+      "website_node": "CC-WEB-ASSISTANCE",
+      "title": "Assistance, Benefit Cliffs, Participation, and Pathways to Independence",
+      "source_files": ["data/project/assistance_framework.json"],
+      "model_inputs": ["benefit_schedule","phaseout_rates","work_income","childcare_support","health_security","prosperity_accounts","community_work_guarantee","navigation_support"],
+      "required_outputs": ["effective_marginal_tax_rate","labor_force_participation","household_disposable_income","poverty","public_assistance_cost","asset_accumulation","employment_duration","benefit_exit"],
+      "key_dependencies": ["wages","housing","health","childcare","transportation","jobs"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-012",
+      "website_node": "CC-WEB-PROSPEROUS-AGING",
+      "title": "Social Security, Aging, Caregiving, Housing, and Retirement Security",
+      "source_files": ["data/project/prosperous_aging_framework.json"],
+      "model_inputs": ["social_security_floor","retirement_assets","health_cost","housing_cost","transportation","care_networks","caregiving_credit","community_dividends"],
+      "required_outputs": ["retirement_income","elder_poverty","caregiving_burden","medicare_cost","housing_stability","local_participation","family_care_capacity","fiscal_sustainability"],
+      "key_dependencies": ["health","family","housing","community_wealth","labor"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-013",
+      "website_node": "CC-WEB-COMMUNITY-RESILIENCE",
+      "title": "Fire, EMS, Disaster Preparedness, Public Health, and Loss Prevention",
+      "source_files": ["data/project/community_resilience_framework.json"],
+      "model_inputs": ["ems_capacity","fire_capacity","volunteer_capacity","reserve_funds","preparedness_spend","insurance_partnership","public_health_readiness"],
+      "required_outputs": ["response_time","property_loss","mortality_risk","insurance_cost","business_continuity","disaster_recovery_time","prevented_loss_value","community_attractiveness"],
+      "key_dependencies": ["health","housing","insurance","population","local_finance"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-014",
+      "website_node": "CC-WEB-GOVERNMENT",
+      "title": "Government Capacity, Administrative Friction, Procurement, and Technology",
+      "source_files": ["data/project/government_capacity_framework.json","data/project/transparency_framework.json"],
+      "model_inputs": ["administrative_cost","process_time","staffing","technology_investment","procurement_structure","duplication","fraud_error_rate","sunset_review"],
+      "required_outputs": ["administrative_savings","service_time","takeup_accuracy","procurement_savings","fraud_loss","staff_productivity","public_trust_proxy","federal_state_local_cost"],
+      "key_dependencies": ["public_data","AI","federalism","workforce"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-015",
+      "website_node": "CC-WEB-ENVIRONMENT",
+      "title": "Resource Sovereignty, Water, Soil, Extraction, and Future Generations",
+      "source_files": ["data/project/resource_sovereignty_framework.json"],
+      "model_inputs": ["resource_use","scarcity_price","royalties","pollution_cost","restoration_spend","water_use","community_equity","future_generations_fund"],
+      "required_outputs": ["resource_revenue","community_return","water_security","soil_health","pollution_damage","industrial_cost","asset_value","future_generations_assets"],
+      "key_dependencies": ["energy","agriculture","industry","housing","data_centers"],
+      "priority": "high"
+    },
+    {
+      "id": "MD-016",
+      "website_node": "CC-WEB-SECURITY",
+      "title": "Defense, Strategic Industry, Veterans, and National Resilience",
+      "source_files": ["data/project/constitutional_defense_framework.json"],
+      "model_inputs": ["defense_spending","force_structure","industrial_base","veteran_transition","national_service","strategic_stockpiles","community_resilience"],
+      "required_outputs": ["federal_cost","industrial_capacity","deterrence_readiness_proxy","veteran_employment","veteran_health","regional_industry","shock_resilience"],
+      "key_dependencies": ["energy","manufacturing","education","health","supply_chain"],
+      "priority": "medium"
+    },
+    {
+      "id": "MD-017",
+      "website_node": "CC-WEB-CIVIC-WEALTH",
+      "title": "Civic Service, Contribution, Ownership, and Rural Revitalization",
+      "source_files": ["data/project/civic_wealth_framework.json","data/project/citizen_public_service_framework.json"],
+      "model_inputs": ["service_participation","civic_investment_accounts","rural_service_incentives","public_service_leave","replacement_fund"],
+      "required_outputs": ["public_service_access","household_assets","rural_population","leadership_pipeline","labor_supply_effect","program_cost","community_capacity"],
+      "key_dependencies": ["employment","family","housing","government_capacity"],
+      "priority": "medium"
+    },
+    {
+      "id": "MD-018",
+      "website_node": "CC-WEB-CITIZENSHIP",
+      "title": "Civic Education, Participation, and Social Capital",
+      "source_files": ["data/project/constitutional_citizenship_framework.json"],
+      "model_inputs": ["civic_education","service_learning","youth_councils","participation_pathways"],
+      "required_outputs": ["civic_knowledge","participation","volunteerism","local_leadership","institutional_trust_proxy","community_problem_solving_capacity"],
+      "key_dependencies": ["schools","community_organizations","government_transparency"],
+      "priority": "medium"
+    },
+    {
+      "id": "MD-019",
+      "website_node": "CC-WEB-JUSTICE",
+      "title": "Safety, Restoration, Reentry, Behavioral Health, and Human Potential",
+      "source_files": ["data/project/justice_framework.json"],
+      "model_inputs": ["policing_model","behavioral_health_response","sentencing","corrections","reentry","victim_services","youth_justice"],
+      "required_outputs": ["crime_and_victimization","incarceration_cost","employment_after_reentry","recidivism","family_disruption","public_safety","health_cost","taxpayer_cost"],
+      "key_dependencies": ["health","employment","housing","education","family"],
+      "priority": "medium"
+    },
+    {
+      "id": "MD-020",
+      "website_node": "CC-WEB-BUILD",
+      "title": "Community Operating System and Community Digital Twin",
+      "source_files": ["data/project/community_operating_system_framework.json","data/project/systems_intelligence_engine_framework.json","data/project/CC_ARKANSAS_POPULATION_WEALTH_ATTRACTION_RETENTION_DATA_DEMANDS.json"],
+      "model_inputs": ["community_asset_inventory","population","income","tax_base","housing","schools","health","energy","food","transportation","ownership","civic_capacity","public_safety"],
+      "required_outputs": ["25_year_prosperity_path","30_year_path","50_year_path","70_year_path","community_balance_sheet","household_lifetime_fiscal_value","keep_return_attract","system_dependencies","missing_capacity"],
+      "key_dependencies": ["all_domains"],
+      "priority": "critical"
+    },
+    {
+      "id": "MD-021",
+      "website_node": "CC-WEB-TECH_AI",
+      "title": "AI, Automation, Productivity, Labor Transition, and Distributed Ownership",
+      "source_files": ["data/project/CC_AI_ABUNDANCE_DISTRIBUTED_OWNERSHIP_DATA_DEMANDS.json","data/project/CC_ARKANSAS_HUMAN_CAPITAL_EDUCATION_PROSPERITY_DATA_DEMANDS.json"],
+      "model_inputs": ["automation_rate","productivity_growth","labor_displacement","reskilling_capacity","AI_capital_ownership","compute_energy_demand"],
+      "required_outputs": ["gdp","labor_share","employment_transition","wages","tax_base","energy_demand","ownership_distribution","assistance_cost","new_business_creation"],
+      "key_dependencies": ["education","energy","ownership","taxation","assistance"],
+      "priority": "critical",
+      "research_gap": "Website node remains proposed; dedicated doctrine requires later lock."
+    },
+    {
+      "id": "MD-022",
+      "website_node": "CC-WEB-FLOURISHING",
+      "title": "Human Flourishing and Non-GDP Outcomes",
+      "source_files": ["data/project/human_flourishing_index.json"],
+      "model_inputs": ["domain_outcomes_from_all_models"],
+      "required_outputs": ["household_prosperity","child_wellbeing","health","security","opportunity","ownership","community_strength","civic_participation","environment","time_and_family","intergenerational_fairness"],
+      "key_dependencies": ["all_domains"],
+      "priority": "critical",
+      "rule": "Never collapse the full result into one score that hides tradeoffs."
+    }
+  ],
+  "cross_domain_systems": [
+    {
+      "id": "XS-001",
+      "name": "Rural Repopulation and Distributed Prosperity",
+      "interventions": ["regional_academies","transportation","broadband","housing","healthcare","food_systems","local_ownership","remote_work","public_service"],
+      "outputs": ["keep_return_attract","young_family_population","employment","housing","school_enrollment","healthcare_viability","tax_base","local_business","family_proximity","fiscal_cost_per_resident"],
+      "example": "Agricultural magnet academy in Rose Bud / similar community"
+    },
+    {
+      "id": "XS-002",
+      "name": "Children as Infrastructure",
+      "interventions": ["maternal_health","nutrition","early_learning","school_quality","mental_health","housing","civic_education","apprenticeship"],
+      "outputs": ["adult_health","earnings","employment","crime_risk","public_cost","tax_contribution","family_stability","civic_participation"]
+    },
+    {
+      "id": "XS-003",
+      "name": "Productive Public Debt",
+      "interventions": ["grid","transportation","water","education","health_prevention","housing_enabling_infrastructure","public_research"],
+      "outputs": ["initial_borrowing","interest_cost","asset_value","private_capital_crowd_in_or_out","productivity","tax_revenue","operating_savings","30_50_70_year_net_public_position"]
+    },
+    {
+      "id": "XS-004",
+      "name": "Local Wealth Retention",
+      "interventions": ["local_ownership","farm_successions","community_prosperity_accounts","procurement","processing","energy_dividends"],
+      "outputs": ["profit_retention","household_assets","local_multiplier","business_survival","tax_base","wealth_concentration"]
+    },
+    {
+      "id": "XS-005",
+      "name": "Prevention Dividend",
+      "interventions": ["preventive_health","child_development","fire_ems","disaster_preparedness","food_security","infrastructure_maintenance"],
+      "outputs": ["upfront_cost","avoided_future_loss","health_cost","disaster_loss","labor_capacity","insurance_cost","net_present_public_value"]
+    },
+    {
+      "id": "XS-006",
+      "name": "AI Transition and Abundance",
+      "interventions": ["automation","reskilling","ownership_distribution","energy_expansion","enterprise_creation","assistance_redesign"],
+      "outputs": ["productivity","labor_displacement","wages","household_assets","tax_revenue","energy_load","transition_cost","regional_distribution"]
+    }
+  ],
+  "community_digital_twin_minimum_variables": [
+    "population_by_age",
+    "households_by_type",
+    "births_deaths_migration",
+    "employment_by_industry",
+    "earnings",
+    "labor_force_participation",
+    "business_count_and_ownership",
+    "housing_units_prices_rents_vacancy",
+    "school_enrollment_and_capacity",
+    "education_pathways",
+    "health_provider_capacity",
+    "food_system_capacity",
+    "energy_capacity_and_cost",
+    "water_and_wastewater_capacity",
+    "broadband",
+    "transportation_access_and_commute",
+    "fire_ems_public_safety",
+    "local_government_revenue_and_cost",
+    "property_tax_base",
+    "household_assets_and_debt",
+    "public_assets_and_debt",
+    "civic_participation",
+    "family_proximity",
+    "environmental_and_resource_constraints"
+  ],
+  "rose_bud_agricultural_academy_scenario_template": {
+    "status": "scenario_contract_not_model_result",
+    "intervention": "Agricultural / food / logistics / technology regional magnet academy",
+    "initial_costs": ["site","construction","equipment","staff","transportation","student_support","operating_subsidy"],
+    "direct_outputs": ["student_capacity","jobs","apprenticeships","student_enterprises","employer_partnerships"],
+    "first_order_effects": ["skills","local_purchases","employment","school_enrollment","commuting","housing_demand"],
+    "second_order_effects": ["graduate_retention","return_migration","farm_successions","business_creation","processing_capacity","healthcare_and_retail_viability"],
+    "third_order_effects": ["family_reunification_or_proximity","young_family_population","property_values","tax_base","community_institution_capacity","regional_specialization"],
+    "long_run_outputs": ["30_year_net_fiscal_position","50_year_net_fiscal_position","70_year_scenario_band","intergenerational_wealth","population_age_structure","public_asset_value","human_flourishing_profile"],
+    "required_complements": ["housing","healthcare","childcare","broadband","transportation","employers","farm_land_access","business_capital","food_processing_markets"],
+    "failure_modes": ["academy_trains_students_to_leave","housing_constraint_blocks_inmigration","employer_demand_absent","operating_cost_exceeds_local_capacity","regional_duplication","transportation_barrier","capital_access_failure"],
+    "parameter_rule": "All elasticities, retention effects, multipliers, migration effects, lifetime fiscal values, and long-run outcomes remain null until evidence or explicitly labeled scenario assumptions are registered."
+  },
+  "master_build_plan_prerequisites": [
+    "doctrine_inventory_complete",
+    "domain_to_variable_crosswalk_complete",
+    "causal_relationship_registry_schema_complete",
+    "data_source_and_baseline_inventory_complete",
+    "government_accounting_and_no_double_counting_rules_complete",
+    "economic_modeling_and_uncertainty_standard_complete",
+    "geographic_modeling_standard_complete",
+    "transition_and_time_lag_standard_complete",
+    "human_flourishing_output_contract_complete",
+    "stress_test_and_resilience_scenario_catalog_complete",
+    "public_education_and_drilldown_content_contract_complete",
+    "public_UI_information_architecture_complete"
+  ],
+  "code_gate": "CLOSED_UNTIL_MASTER_BUILD_PLAN_ACCEPTED"
+}
