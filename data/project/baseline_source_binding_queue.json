@@ -1,0 +1,150 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-08-28",
+  "slice_id": "CC-BASELINE-AND-DATA-SOURCE-INVENTORY-1.0",
+  "status": "canonical_queue_pre_code",
+  "purpose": "Prioritize exact source binding for the first national baseline and Rose Bud community twin. This is a research/data queue, not a permission to build simulator UI.",
+  "binding_definition": "A variable is bound only when its statistical definition, owner, exact source series/table/API path, geography, cadence, revision behavior, transformations, and missing-data rules are documented.",
+  "priority_0_national_fiscal_spine": [
+    {
+      "variable": "federal_revenues_total",
+      "owner": "CBO/OMB actual-history reconciliation",
+      "initial_source": "CBO 2026 baseline for current-law projection",
+      "reason": "top-line budget identity"
+    },
+    {
+      "variable": "federal_outlays_total",
+      "owner": "CBO/OMB actual-history reconciliation",
+      "initial_source": "CBO 2026 baseline for current-law projection",
+      "reason": "top-line budget identity"
+    },
+    {
+      "variable": "overall_deficit",
+      "owner": "CBO/OMB/Treasury depending observed vs projection",
+      "initial_source": "CBO 2026 baseline",
+      "reason": "debt-flow model"
+    },
+    {
+      "variable": "primary_deficit",
+      "owner": "CBO derived/explicit baseline",
+      "initial_source": "CBO 2026 baseline",
+      "reason": "separates policy imbalance from inherited interest cost"
+    },
+    {
+      "variable": "net_interest",
+      "owner": "CBO for baseline projection; Treasury/OMB for actuals",
+      "initial_source": "CBO 2026 baseline",
+      "reason": "interest-burden model"
+    },
+    {
+      "variable": "debt_held_by_public",
+      "owner": "Treasury actual; CBO baseline projection",
+      "initial_source": "Treasury FiscalData + CBO 2026 baseline",
+      "reason": "core debt stock"
+    },
+    {
+      "variable": "gross_federal_debt",
+      "owner": "Treasury",
+      "initial_source": "Treasury FiscalData Debt to the Penny",
+      "reason": "public education and reconciliation"
+    },
+    {
+      "variable": "debt_to_gdp",
+      "owner": "derived from compatible debt and GDP definitions; CBO baseline reference",
+      "initial_source": "CBO 2026 baseline",
+      "reason": "primary sustainability ratio"
+    },
+    {
+      "variable": "nominal_gdp",
+      "owner": "BEA",
+      "initial_source": "BEA National Income and Product Accounts",
+      "reason": "debt denominator and tax capacity"
+    },
+    {
+      "variable": "real_gdp_growth",
+      "owner": "BEA observed; CBO projected",
+      "initial_source": "BEA + CBO",
+      "reason": "growth path"
+    },
+    {
+      "variable": "treasury_maturity_structure",
+      "owner": "Treasury",
+      "initial_source": "Treasury debt/auction/marketable securities data",
+      "reason": "interest-rate pass-through and rollover risk"
+    },
+    {
+      "variable": "treasury_interest_rate_structure",
+      "owner": "Treasury/Federal Reserve",
+      "initial_source": "Treasury yield/auction series and Federal Reserve market series",
+      "reason": "interest-cost model"
+    }
+  ],
+  "priority_1_national_people_and_capacity": [
+    "population",
+    "age_structure",
+    "households",
+    "labor_force_participation",
+    "employment",
+    "unemployment_rate",
+    "employment_by_industry",
+    "wages_and_earnings",
+    "labor_productivity",
+    "median_household_income",
+    "poverty",
+    "housing_units",
+    "homeownership",
+    "housing_cost_burden",
+    "national_health_expenditures",
+    "medicare_spending",
+    "medicaid_spending",
+    "school_enrollment",
+    "postsecondary_enrollment_and_completion",
+    "electricity_generation_and_capacity",
+    "electricity_prices",
+    "farm_count_and_farm_income",
+    "state_local_revenue_and_spending"
+  ],
+  "priority_2_rose_bud_twin": [
+    "Rose Bud place population and age structure",
+    "Rose Bud/functional-region households and family structure",
+    "school district and school enrollment crosswalk",
+    "education attainment",
+    "labor force and employment",
+    "industry/occupation/wage profile",
+    "commuting origins/destinations and commute times",
+    "housing stock, vacancy, tenure, values and rents",
+    "health-access geography and CDC PLACES-compatible measures",
+    "food access",
+    "farm structure and operator age",
+    "business establishments and employer mix",
+    "municipal/county/school-district fiscal records",
+    "broadband availability and quality",
+    "transport travel time to regional jobs/services",
+    "nearby CTE/postsecondary/apprenticeship capacity",
+    "migration/retention proxy",
+    "farm/land availability and price research slot",
+    "regional food-processing and logistics capacity"
+  ],
+  "priority_3_causal_parameter_research": [
+    "education investment to skill attainment",
+    "regional academy to graduate retention",
+    "local job availability to household retention",
+    "housing supply response to population demand",
+    "transport accessibility to rural migration",
+    "preventive health investment to long-run public cost",
+    "grid investment to electricity price/reliability/productive capacity",
+    "local ownership to local income/wealth retention",
+    "farm succession support to farm survival",
+    "child investment to long-run earnings/public cost",
+    "AI automation to task productivity/displacement by occupation"
+  ],
+  "execution_rules": [
+    "Bind Priority 0 before any national fiscal simulator work.",
+    "Do not begin Rose Bud scenario parameterization until the twin geography is explicitly defined.",
+    "Do not use county values as Rose Bud values without a geography-mismatch flag and visible disclosure.",
+    "Separate observed baseline source binding from causal parameter research.",
+    "Exact API/series binding belongs in the next slice, not this inventory pass.",
+    "Keep missing values null rather than inventing substitutes."
+  ],
+  "next_slice": "CC-BASELINE-SCHEMA-SOURCE-BINDING-AND-NATIONAL-SEED-1.0"
+}
